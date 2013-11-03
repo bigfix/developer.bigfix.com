@@ -9,6 +9,10 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static(path.join(__dirname, 'deps')));
 
+app.get('/evaluate', function (req, res) {
+	res.send(new Date());
+});
+
 app.get('/', function (req, res) {
   res.render('home');
 });

@@ -5,3 +5,23 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <form class="form-inline" role="form" id="qna">
+    <div class="form-group">
+      <label class="sr-only" for="relevance">relevance</label>
+      <input type="text" class="form-control" id="relevance" placeholder="Enter relevance">
+    </div>
+    <button type="submit" class="btn btn-primary">Evaluate</button>
+  </form>
+  <h1>Results</h1>
+  <p id="results"></p>
+</div>
+<script>
+  $('#qna').submit(function () {
+    var relevance = $('#relevance').val();
+    $.get('/evaluate', function (response) {
+      $('#results').text(response);
+    });
+    return false;
+  });
+</script>
