@@ -19,7 +19,7 @@
 <script>
   $('#qna').submit(function () {
     var relevance = $('#relevance').val();
-    $.get('/evaluate', function (response) {
+    $.get('/evaluate?q=' + encodeURI(relevance), function (response) {
       $('#results').text(response);
     }).fail(function (error) {
       $('#results').text('Error: ' + error.responseText);

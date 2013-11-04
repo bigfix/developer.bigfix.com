@@ -1,9 +1,11 @@
 var express = require('express');
+var child = require('child_process');
+var fs = require('fs');
 
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send(new Date());
+  res.send('you evaluated: ' + req.query.q);
 });
 
-app.listen(3001, '127.0.0.1');
+app.listen(3001);
