@@ -8,4 +8,4 @@ app.get('/', function (req, res) {
   res.send('you evaluated: ' + req.query.q);
 });
 
-app.listen(3001);
+app.listen(80);
