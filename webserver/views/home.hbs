@@ -1,21 +1,28 @@
 <div class="navbar navbar-default navbar-static-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">Relevance.io</a>
+      <a class="navbar-brand" href="/">relevance.io</a>
     </div>
   </div>
 </div>
 <div class="container">
-  <form class="form-inline" role="form" id="qna">
-    <div class="form-group">
-      <label class="sr-only" for="relevance">relevance</label>
-      <input type="text" class="form-control" id="relevance" placeholder="Enter relevance">
-    </div>
-    <button type="submit" class="btn btn-primary">Evaluate</button>
-  </form>
+  <div class="well">
+    <div id="editor">Q: name of operating system</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Evaluate</button>
   <h1>Results</h1>
   <p id="results"></p>
 </div>
+<script>
+    var editor = ace.edit("editor");
+    editor.getSession().setMode("ace/mode/plain_text");
+    editor.renderer.setShowGutter(false);
+    editor.renderer.setShowPrintMargin(false);
+    editor.setHighlightActiveLine(false);
+    editor.setDisplayIndentGuides(false);
+    editor.setOptions({maxLines: 10});
+    editor.setFontSize(14);
+  </script>
 <script>
   $('#qna').submit(function () {
     var relevance = $('#relevance').val();
