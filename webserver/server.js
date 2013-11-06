@@ -5,8 +5,8 @@ var http = require('http');
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
+app.engine('hbs', exphbs({defaultLayout: 'main.hbs'}));
+app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'deps')));
 
