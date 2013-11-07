@@ -26,7 +26,7 @@
       bindKey: {win: 'Ctrl-Enter',  mac: 'Command-Enter'},
       exec: function (editor) {
         var relevance = editor.getValue();
-        $.get('/evaluate?q=' + encodeURI(relevance), function (response) {
+        $.get('/evaluate?q=' + encodeURIComponent(relevance), function (response) {
           $('#results').html('');
           var results = JSON.parse(response);
           for (var i = 0; i < results.length; ++i) {
