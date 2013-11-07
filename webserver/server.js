@@ -9,6 +9,7 @@ app.engine('hbs', exphbs({defaultLayout: 'main.hbs'}));
 app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'deps')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/evaluate', function (req, res) {
   http.get('http://ec2-204-236-174-221.us-west-1.compute.amazonaws.com?q=' + encodeURI(req.query.q), function (upstreamRes) {

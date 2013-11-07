@@ -6,12 +6,10 @@
   </div>
 </div>
 <div class="container">
-  <div class="well">
-    <div id="editor">Q: name of operating system</div>
+  <div class="relevance">
+    <div id="editor">now, name of operating system</div>
   </div>
-  <button type="submit" class="btn btn-primary">Evaluate</button>
-  <h1>Results</h1>
-  <p id="results"></p>
+  <ul class="list-group" id="results"></ul>
 </div>
 <script>
     var editor = ace.edit("editor");
@@ -22,15 +20,25 @@
     editor.setDisplayIndentGuides(false);
     editor.setOptions({maxLines: 10});
     editor.setFontSize(14);
-  </script>
-<script>
-  $('#qna').submit(function () {
-    var relevance = $('#relevance').val();
-    $.get('/evaluate?q=' + encodeURI(relevance), function (response) {
-      $('#results').text(response);
-    }).fail(function (error) {
-      $('#results').text('Error: ' + error.responseText);
+
+    editor.commands.addCommand({
+      name: 'evaluate',
+      bindKey: {win: 'Ctrl-Enter',  mac: 'Command-Enter'},
+      exec: function (editor) {
+        var relevance = editor.getValue();
+        $.get('/evaluate?q=' + encodeURI(relevance), function (response) {
+          $('#results').html('');
+          var results = JSON.parse(response);
+          for (var i = 0; i < results.length; ++i) {
+            $('#results').append('<li class="list-group-item">' + results[i] + '</li>');
+          }
+        }).fail(function (error) {
+          $('#results').text('Error: ' + error.responseText);
+        });
+      }
     });
-    return false;
-  });
+
+    editor.selection.moveCursorFileEnd();
+    editor.focus();
+  </script>
 </script>
