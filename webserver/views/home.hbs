@@ -30,7 +30,7 @@
           $('#results').html('');
           var results = JSON.parse(response);
           for (var i = 0; i < results.length; ++i) {
-            $('#results').append('<li class="list-group-item">' + results[i] + '</li>');
+            $('#results').append($('<li class="list-group-item">').text(results[i]));
           }
         }).fail(function (error) {
           $('#results').text('Error: ' + error.responseText);
