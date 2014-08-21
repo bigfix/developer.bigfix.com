@@ -19,3 +19,6 @@ cd /var/www/site/api
 npm install
 
 chown -R www-data:www-data /var/www/site
+
+start api
+nginx -s reload
