@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+curl -sL https://deb.nodesource.com/setup | bash -
+apt-get -y install nodejs

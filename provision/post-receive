@@ -1,0 +1,8 @@
+GIT_DIR=/home/deploy/repo.git
+TMP_DIR=/home/deploy/tmp
+SITE_DIR=/var/www/site
+
+rm -rf $TMP_DIR
+git clone $GIT_DIR $TMP_DIR
+jekyll build -s $TMP_DIR -d $SITE_DIR
+rm -rf $TMP_DIR
