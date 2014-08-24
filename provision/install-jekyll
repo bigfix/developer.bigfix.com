@@ -1,4 +1,4 @@
 #!/bin/bash -e
 
-apt-get install -y ruby1.9.1-dev
+apt-get install -y ruby1.9.1-dev build-essential
 gem install jekyll --no-ri --no-rdoc
