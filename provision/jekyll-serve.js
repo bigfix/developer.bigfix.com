@@ -4,7 +4,7 @@ var exec = require('child_process').exec,
   initialSyncDone = false;
 
 function jekyllServe() {
-  var child = exec('jekyll serve --source /home/vagrant/site --watch');
+  var child = exec('jekyll serve --watch -s /home/vagrant/site -H 0.0.0.0');
 
   child.stdout.pipe(process.stdout);
   child.stderr.pipe(process.stderr);
