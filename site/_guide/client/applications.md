@@ -6,6 +6,7 @@ Reg apps (registered applications)
 
 Windows
 
+````
 Q: names of regapps
 A: 7zFM.exe
 A: AcroRd32.exe
@@ -21,8 +22,9 @@ A: vsta.exe
 A: WinMergeU.exe
 A: WinMergeU.exe
 A: WinRAR.exe
-T: 14.435 ms
+````
 
+````
 Q: (names of it, versions of it) of regapps
 A: 7zFM.exe, 9.20.0.0
 A: AcroRd32.exe, 11.0.9.29
@@ -38,11 +40,11 @@ A: vsta.exe, 9.0.30729.1
 A: WinMergeU.exe, 2.12.4.0
 A: WinMergeU.exe, 2.12.4.0
 A: WinRAR.exe, 5.1.0.0
-T: 16.024 ms
-
+````
 
 Is this application installed?
 
+````
 Q: values "DisplayName" of keys of key "HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall" of registry
 A: Adobe Flash Player 11 ActiveX
 A: Google Chrome
@@ -52,19 +54,23 @@ A: IBM Endpoint Manager Server
 ...
 A: Perforce Visual Components
 A: Microsoft Visual C++ 2008 Redistributable - x86 9.0.21022
-T: 142.635 ms
+````
 
+````
 Q: exists key whose (value "DisplayName" of it as string as lowercase contains "google chrome") of key "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" of native registry
 A: True
-T: 0.301 ms
+````
 
+````
 Q: exists key whose (value "DisplayName" of it as string as lowercase contains "google chromes") of key "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" of native registry
 A: False
-T: 1.734 ms
+````
 
 Is an application installed on a mac (mac specific inspector)
 
 ### Same inspectors work on mac
+
+````
 Q: (names of it, versions of it) of regapps
 A: Dota 2.app, 1.0
 A: GitHub.app, Medium Hefson
@@ -76,4 +82,4 @@ A: AT&T Global Network Client.app, 1.5.0.3024
 A: Automator.app, 2.4
 A: Balsamiq Mockups.app, 2.2.22
 A: Calculator.app, 10.8
-T: 300655
+````
