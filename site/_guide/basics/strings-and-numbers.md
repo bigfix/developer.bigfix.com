@@ -59,7 +59,7 @@ letter 'w'. How many of these substrings are there?
 ````
 Q: number of (substrings separated by " " of "who observed what happened, when and where?") whose (it contains "w")
 A: 4 
-```
+````
 
 This expression shows how you can count up the number of items returned and
 filtered from a plural inspector. As these examples show, you can get either
