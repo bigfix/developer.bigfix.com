@@ -1,0 +1,16 @@
+{% assign section = include.section %}
+{% assign base_url = "/guide/" | append:section.title | append: "/" %}
+
+<ul>
+  {% for doc in section.docs %}
+    {% assign doc_url = base_url | append:doc | append:".html" | downcase %}
+
+    {% for p in site.guide %}
+      {% if p.url == doc_url %}
+      <li>
+        <a href="{{ p.url }}">{{ p.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>

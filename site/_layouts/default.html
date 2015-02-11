@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="container">
+      <div class="row navbar">
+        <div class="three columns">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="/">relevance.io</a></li>
+          </ul>
+        </div>
+        <div class="nine columns">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="/guide/basics/introduction.html">Guide</a></li>
+          </ul>
+        </div>
       </div>
+      {{ content }}
     </div>
-
-    {% include footer.html %}
-
   </body>
-
 </html>

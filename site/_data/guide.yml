@@ -1,0 +1,25 @@
+- title: Basics
+  docs:
+  - introduction
+  - strings-and-numbers
+  - properties
+  - exists
+  - whose
+  - it-expressions
+  - if-then-else
+  - casts
+  - tuples
+  - plurals-and-errors
+
+- title: Client
+  docs:
+  - system-information
+  - users
+  - files
+  - registry
+  - network
+  - processes
+  - applications
+  - services
+  - event-log
+  - wmi

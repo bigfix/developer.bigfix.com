@@ -1,0 +1,10 @@
+<div class="sidebar">
+  <ul>
+    {% for section in site.data.guide %}
+    <li>
+      {{ section.title }}
+      {% include guide_nav_section.html section=section %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
