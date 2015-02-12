@@ -6,26 +6,26 @@ As you saw in the preceding section, plurals of inspectors are easy to create,
 typically by adding an 's' to the end of the name. For example, `substring` is
 singular, `substrings` is plural:
 
-````
+{% example %}
 Q: substrings separated by " " of "a short string"
 A: a
 A: short
 A: string
-````
+{% endexample %}
 
 But a plural inspector doesn’t have to return multiple values:
 
-````
+{% example %}
 Q: substrings separated by " " whose (it contains "o") of "a short string"
 A: short
-````
+{% endexample %}
 
 Although the result is a plural substring type, there is only a single value. In
 fact, as you saw in the last section, a plural expression can return no value at
 all, without incurring an error.
 
 ````
-Q: substrings separated by " " whose (it contains "z") of "a short string"
+substrings separated by " " whose (it contains "z") of "a short string"
 ````
 
 This returns no values, but no error either. So it’s important to remember that
@@ -35,10 +35,10 @@ Furthermore, there are restraints on singular expressions. Whereas a plural can
 return zero, one or more values, a singular expression is expected to return a
 single value. For example:
 
-````
+{% example %}
 Q: substring separated by " " whose (it contains "o") of "a short string"
 A: short
-````
+{% endexample %}
 
 You should be expecting a solitary value like this as a result of inspector.
 However, the following returns an error:
@@ -71,27 +71,27 @@ error. This is because there are multiple folders in the specified location, and
 this command only retrieves the first one. To see the complete list, you need to
 use the plural version:
 
-````
+{% example %}
 Q: names of folders of folder "C:\Documents and Settings"
 A: All Users
 A: Default User
 A: LocalService
 A: NetworkService
-````
+{% endexample %}
 
 You can explicitly create plurals using a semi-colon `;` to separate the items.
 These are called "collections".
 
-````
+{% example %}
 Q: "two"; "words"
 A: two
 A: words
-````
+{% endexample %}
 
-````
+{% example %}
 Q: exist files ("c:\whitelist.txt"; "c:\blacklist.txt")
 A: True
-````
+{% endexample %}
 
 Notice that plurals must be the same type, or you will generate an error:
 

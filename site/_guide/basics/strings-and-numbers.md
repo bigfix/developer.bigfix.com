@@ -5,49 +5,49 @@ title: Strings and Numbers
 The basic building blocks of the language are numbers, strings and expressions
 that combine them.
 
-````
+{% example %}
 Q: "hello world"
 A: hello world
-````
+{% endexample %}
 
 This example outputs a string of characters.
 
 Strings aren’t the only primitives:
 
-````
+{% example %}
 Q: 6000
 A: 6000
-````
+{% endexample %}
 
 This above example demonstrates an integer. You can also do math:
 
-````
+{% example %}
 Q: (8+3)*6
 A: 66
-````
+{% endexample %}
 
 Primary elements include parenthetical expressions like `(8+3)` above. These
 primary elements can be teased apart as well:
 
-````
+{% example %}
 Q: substrings separated by "-" of "an-over-hyphenated-string"
 A: an
 A: over
 A: hyphenated
 A: string
-````
+{% endexample %}
 
 Note in the example above that four values were returned, not just one. This
 output is typical of a plural inspector like `substrings`. You can filter this
 list with a `whose` statement:
 
-````
+{% example %}
 Q: (substrings separated by " " of "who observed what happened, when and where?") whose (it contains "w")
 A: who
 A: what
 A: when
 A: where?
-````
+{% endexample %}
 
 This example shows two clauses in parentheses. The first parenthetical clause
 creates a list of words (substrings separated by a space). This `whose` clause
@@ -56,10 +56,10 @@ stand in for another object – in this case, `it` stands in for each of the
 individual words, and the expression returns just those words that contain the
 letter 'w'. How many of these substrings are there?
 
-````
+{% example %}
 Q: number of (substrings separated by " " of "who observed what happened, when and where?") whose (it contains "w")
 A: 4 
-````
+{% endexample %}
 
 This expression shows how you can count up the number of items returned and
 filtered from a plural inspector. As these examples show, you can get either

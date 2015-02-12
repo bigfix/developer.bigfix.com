@@ -19,10 +19,10 @@ inspectors on the branch not taken are ignored. This makes it safe to write
 cross-platform expressions without worrying about throwing errors for incorrect
 OS-specific Inspectors. For instance, you can write:
 
-````
+{% example %}
 Q: if name of operating system contains "Win" then name of application "conf.exe" of registry else "conf.exe"
 A: conf.exe
-````
+{% endexample %}
 
 On a non-Windows OS, this expression will execute the `else` expression and
 avoid an attempt to inspect a non-existent registry.
@@ -36,9 +36,9 @@ E: User-defined error: Expired
 
 This expression throws a user-defined error if the argument is false.
 
-````
+{% example %}
 Q: if (name of operating system = "WinXP") then "wired" else if (name of operating system ="WinNT") then "tired" else "expired"
 A: wired
-````
+{% endexample %}
 
 This expression does a three-way test of the operating system.

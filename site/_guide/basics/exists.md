@@ -26,10 +26,10 @@ generate an error. If you aren’t sure about the existence of an object, use th
 
 The second usage is to determine whether a *plural* result contains any values: 
 
-````
+{% example %}
 Q: exists (files of folder "c:")
 A: True
-````
+{% endexample %}
 
 This expression returns `True`, since files exist on drive `c:`. Note that using
 the plural property `files` is a safe way to refer to something that may or may
@@ -44,30 +44,30 @@ An error is generated here because there is no drive `z:` on the client
 computer. If you ask for a plural answer:
 
 ````
-Q: files of folder "z:"
+files of folder "z:"
 ````
 
 It doesn’t give you an answer, but it also doesn’t throw an error. Nevertheless,
 both of these constructs can be examined with the `exists` keyword without
 causing an error:
 
-````
+{% example %}
 Q: exists file of folders "z:"
 A: False
-````
+{% endexample %}
 
-````
+{% example %}
 Q: exists files of folders "z:"
 A: False
-````
+{% endexample %}
 
 You can use existence to determine if two directories have any files in common
 with an expression like this:
 
-````
+{% example %}
 Q: exists file (names of files of folder "c:\") of folder "c:\old C"
 A: True
-````
+{% endexample %}
 
 This expression creates inspector objects for each file in the `c:\` folder. It
 then looks for a file of the same name in the folder `c:\old C`. It returns true
