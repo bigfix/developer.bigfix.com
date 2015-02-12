@@ -54,3 +54,34 @@ code {
 .sidebar ul {
   list-style: none;
 }
+
+.example {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
+
+.example pre {
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  padding: 0;
+}
+
+.example code {
+  border: none;
+  margin: 0;
+  padding: 1rem 1.5rem;
+}
+
+.example ul {
+  font-family: monospace, monospace;
+  font-size: 90%;
+  list-style: none;
+  line-height: normal;
+  margin: .5rem 0;
+}
+
+.example li {
+  margin: 0;
+  padding: .5rem 1.5rem;
+}

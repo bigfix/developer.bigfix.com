@@ -1,0 +1,10 @@
+{% assign example = include.example %}
+
+<div class="example">
+  <pre><code>{{ example.question }}</code></pre>
+  <ul class="answers">
+    {% for answer in example.answers %}
+    <li>{{ answer }}</li>
+    {% endfor %}
+  </ul>
+</div>

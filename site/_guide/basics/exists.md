@@ -8,15 +8,15 @@ test for existence before you test for a value and possibly incur an error. The
 keyword has two slightly different typical uses. The first is to determine
 whether a singular object specified by an inspector exists:
 
-````
+{% example %}
 Q: exists drive "c:"
 A: True
-````
+{% endexample %}
 
-````
+{% example %}
 Q: exists drive "z:"
 A: False
-````
+{% endexample %}
 
 The above examples test for the existence of the specified objects on the client
 computer. In these examples, you can see that the client has a drive `c:`, but
