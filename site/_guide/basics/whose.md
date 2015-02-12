@@ -148,7 +148,7 @@ to evaluate a non-existent object. By itself, such an expression would throw an
 error such as:
 
 ````
-E: Singular expression refers to nonexistent object.
+Singular expression refers to nonexistent object.
 ````
 
 But in the case of a `whose` clause, the non-existent value is simply ignored
