@@ -29,10 +29,10 @@ avoid an attempt to inspect a non-existent registry.
 
 If-statements can be useful for reporting user-defined errors:
 
-````
+{% example %}
 Q: if (year of current date as integer < 2006) then "Still good" else error "Expired"
 E: User-defined error: Expired
-````
+{% endexample %}
 
 This expression throws a user-defined error if the argument is false.
 

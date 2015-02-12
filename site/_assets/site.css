@@ -85,3 +85,8 @@ code {
   margin: 0;
   padding: .5rem 1.5rem;
 }
+
+.example-error {
+  color: red;
+  font-weight: 600;
+}

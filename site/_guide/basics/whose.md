@@ -157,10 +157,10 @@ you to examine an object for existence before you attempt to inspect it (and
 throw an error). As an example, here's a Relevance clause that will trigger an
 existence error:
 
-````
+{% example %}
 Q: exists file of folder "z:\bar"
 E: Singular expression refers to nonexistent object.
-````
+{% endexample %}
 
 But, by placing this clause inside a `whose` statement, you can avoid the error:
 

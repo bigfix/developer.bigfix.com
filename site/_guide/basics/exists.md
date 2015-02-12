@@ -35,10 +35,10 @@ This expression returns `True`, since files exist on drive `c:`. Note that using
 the plural property `files` is a safe way to refer to something that may or may
 not exist. For instance:
 
-````
+{% example %}
 Q: file of folder "z:"
 E: Singular expression refers to nonexistent object.
-````
+{% endexample %}
 
 An error is generated here because there is no drive `z:` on the client
 computer. If you ask for a plural answer:

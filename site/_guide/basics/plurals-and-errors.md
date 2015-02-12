@@ -43,28 +43,28 @@ A: short
 You should be expecting a solitary value like this as a result of inspector.
 However, the following returns an error:
 
-````
+{% example %}
 Q: substring separated by " " whose (it contains "s") of "a short string"
 E: Singular expression refers to non-unique object.
-````
+{% endexample %}
 
 This is because there are two words containing 's', and this expression is
 looking for a singular value. While two is too much, zero is not enough:
 
-````
+{% example %}
 Q: substring separated by " " whose (it contains "z") of "a short string"
 E: Singular expression refers to nonexistent object.
-````
+{% endexample %}
 
 If you're certain of retrieving a solitary value, use the singular version.
 Otherwise, for greater flexibility, use the plural. As a practical example, you
 can find a single folder like this:
 
-````
+{% example %}
 Q: name of folder of folder "c:\Documents and Settings"
 A: All Users
 E: Singular expression refers to non-unique object. 
-````
+{% endexample %}
 
 But as you can see, even though it returns an answer, it also generates an
 error. This is because there are multiple folders in the specified location, and
@@ -95,7 +95,7 @@ A: True
 
 Notice that plurals must be the same type, or you will generate an error:
 
-````
+{% example %}
 Q: "one", 1
 E: Incompatible types.
-````
+{% endexample %}

@@ -2,9 +2,12 @@
 
 <div class="example">
   <pre><code>{{ example.question }}</code></pre>
-  <ul class="answers">
+  <ul class="example-results">
     {% for answer in example.answers %}
     <li>{{ answer }}</li>
+    {% endfor %}
+    {% for error in example.errors %}
+    <li class="example-error">{{ error }}</li>
     {% endfor %}
   </ul>
 </div>

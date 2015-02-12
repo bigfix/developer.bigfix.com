@@ -77,10 +77,10 @@ A: 3, 4
 However, attempting to form a plural of tuples of different types yields an
 error. As we've already seen, plurals must always be of the same type:
 
-````
+{% example %}
 Q: (1,2);("a","b")
 E: Incompatible types.
-````
+{% endexample %}
 
 Interestingly, forming a tuple of plural expressions generates a set of tuples
 that represents the cross product of all the component plurals:

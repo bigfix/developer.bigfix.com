@@ -49,15 +49,15 @@ A: "blacklist.txt" "" "" "" ""
 Note that this is not the same as the following expressions, which both have the
 wrong placement of parentheses:
 
-````
+{% example %}
 Q: files of folder "c:" whose (name of it contains "a")
 E: Singular expression refers to nonexistent object.
-````
+{% endexample %}
 
-````
+{% example %}
 Q: files of (folder "c:" whose (name of it contains "a"))
 E: Singular expression refers to nonexistent object.
-````
+{% endexample %}
 
 These are two equivalent (and wrong) statements where the `it` refers to the
 closest object, which is the folder, not the files.
