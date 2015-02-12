@@ -4,15 +4,15 @@ title: Event Log
 
 Show me the events with this ID in the application log:
 
-````
+{% example %}
 Q: (time generated of it, (if exists description of it then description of it else "NA")) of records whose (event id of it mod 65536 = 1 AND now - time generated of it < 5*day) of application event log  =
 A: ( Wed, 12 Nov 2014 06:44:01 -0800 ), The Windows Security Center Service has started.
-````
+{% endexample %}
 
-````
+{% example %}
 Q: number of records whose (event id of it mod 65536 = 7036 AND now - time generated of it < 1*day) of system event log
 A: 30075
-````
+{% endexample %}
 
 // this one is tricky and is due to a weird windows glitch
 
@@ -32,12 +32,12 @@ bits of the event id so we are having a hard time calling this a full bug, but
 it seems to me that we should allow you to get the Event Viewer's concept of the
 ID that doesn't include the high-bits.
 
-````
+{% example %}
 Q: exists records whose (event id of it = 7036) of event log "system"  =
 A: False
-````
+{% endexample %}
 
-````
+{% example %}
 Q: number of records whose (now - time generated of it < 3*day) of system event log
 A: 1090
-````
+{% endexample %}
