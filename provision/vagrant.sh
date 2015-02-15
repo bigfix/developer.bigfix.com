@@ -14,5 +14,5 @@ gem install jekyll --no-ri --no-rdoc
 gem install japr --no-ri --no-rdoc
 
 # Install the jekyll-serve script
-cp /vagrant/provision/jekyll-serve.js /home/vagrant/jekyll-serve
+cp /vagrant/provision/jekyll-serve.sh /home/vagrant/jekyll-serve
 chmod +x /home/vagrant/jekyll-serve
