@@ -1,12 +1,14 @@
 #!/bin/bash
 
 set -e
+set -x
 
-GIT_DIR=/home/deploy/repo.git
+GIT_DIR=/home/deploy/site.git
 TMP_DIR=/home/deploy/tmp
 SITE_DIR=/var/www/site
 
 rm -rf $TMP_DIR
 git clone $GIT_DIR $TMP_DIR
-jekyll build -s $TMP_DIR/site -d $SITE_DIR
+jekyll build --source $TMP_DIR/site --destination $TMP_DIR/_site
+rsync --archive --delete-excluded $TMP_DIR/_site/ $SITE_DIR
 rm -rf $TMP_DIR
