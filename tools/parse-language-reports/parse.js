@@ -202,7 +202,7 @@ function parse(doc) {
   function parseProperties(line) {
     var property;
 
-    if (line.length === 0) {
+    if (line.trim().length === 0) {
       state = waitForTypesOrProperties;
       return;
     }
@@ -212,8 +212,13 @@ function parse(doc) {
   }
 
   state = waitForTypesOrProperties;
-  doc.toString().split('\n').forEach(function(line) {
-    state(line);
+  doc.toString().split('\n').forEach(function(line, i) {
+    try {
+      state(line);
+    } catch (err) {
+      console.error('On line ' + (i + 1) + ': ' + err.toString());
+      throw err;
+    }
   });
 
   return result;
