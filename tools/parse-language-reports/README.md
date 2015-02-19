@@ -2,7 +2,11 @@ This tool parses a bunch of "relevance language report" files. These are files
 produced internally by the platform build that lists all inspectors available on
 that platform.
 
-The folder structure is expected to look like:
+The tool should be run like:
+
+    $ node parse-language-reports LanguageReportFiles
+
+The folder structure of `LanguageReportFiles` is expected to look like:
 
     8.0.584.0/
       Language.Console_WebReports.txt
