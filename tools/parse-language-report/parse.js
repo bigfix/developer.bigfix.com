@@ -1,5 +1,3 @@
-var fs = require('fs');
-
 /**
  * Convert <foo> into foo.
  */
@@ -179,7 +177,7 @@ function parseType(line) {
 
   return {
     name: match[1].trim(),
-    parent: match[3].trim()
+    parent: match[3] ? match[3].trim() : undefined
   };
 }
 
@@ -221,49 +219,4 @@ function parse(doc) {
   return result;
 }
 
-function makeStructured(result) {
-  var structured = {
-    types: [],
-    properties: [],
-    casts: [],
-    binaryOperators: [],
-    unaryOperators: []
-  };
-
-  Object.keys(result.types).forEach(function(key) {
-    structured.types.push(result.types[key]);
-  });
-
-  Object.keys(result.properties).forEach(function(key) {
-    var property = result.properties[key];
-
-    if (property.type === 'property') {
-      structured.properties.push(property);
-    } else if (property.type === 'cast') {
-      structured.casts.push(property);
-    } else if (property.type === 'binaryOp') {
-      structured.binaryOperators.push(property);
-    } else if (property.type === 'unaryOp') {
-      structured.unaryOperators.push(property);
-    } else {
-      throw new Error('Unknown property type: ' + property.type);
-    }
-  });
-
-  return structured;
-}
-
-function main() {
-  var lines, result;
-
-  if (process.argv.length !== 3) {
-    console.error('usage: parse-language-report <file>');
-    process.exit(1);
-  }
-
-  lines = fs.readFileSync(process.argv[2]).toString().split('\n');
-  result = makeStructured(parse(lines));
-  console.log(JSON.stringify(result));
-}
-
-main();
+module.exports = parse;

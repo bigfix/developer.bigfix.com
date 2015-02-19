@@ -1,0 +1,17 @@
+  Type <string position> (derives from integer)
+    Properties of <string position> { key phrase, plural keyword, form, <result type>}:
+      following text of <string position>, following texts, Plain, <substring>
+      preceding text of <string position>, preceding texts, Plain, <substring>
+
+  Type <day of month>
+    Properties of <day of month> { key phrase, plural keyword, form, <result type>}:
+      <day of month> & <month and year>, , BinaryOperator, <date>
+      <day of month> as string, , Cast, <string>
+      extrema of <day of month>, extremas, Plain, <( day of month, day of month )>
+
+  Type <symlink>
+    Properties of <symlink> { key phrase, plural keyword, form, <result type>}:
+      <symlink> as device file, , Cast, <device file>
+
+Properties of World { key phrase, plural keyword, form, <result type>}:
+  current day_of_month, current days_of_month, PlainGlobal, <day of month>
