@@ -11,9 +11,15 @@ kramdown:
 collections:
   guide:
     output: true
+  types:
+    output: true
 
 defaults:
   - scope:
       path: guide
     values:
       layout: guide
+  - scope:
+      path: types
+    values:
+      layout: type

@@ -13,12 +13,11 @@ if (process.argv.length !== 5) {
   return process.exit(1);
 }
 
-var referenceDir = path.join(process.argv[2], '_reference');
+var siteDir = process.argv[2];
 var language = JSON.parse(fs.readFileSync(process.argv[3]));
 var docs = JSON.parse(fs.readFileSync(process.argv[4]));
 
-var typesDir = path.join(referenceDir, 'types');
-
+var typesDir = path.join(siteDir, '_types');
 rimraf.sync(typesDir);
 fs.mkdirSync(typesDir);
 
@@ -26,6 +25,7 @@ Object.keys(language.types).forEach(function(typeName) {
   var typeFile = typeName.replace(/ /g, '-') + '.html';
 
   var frontMatter = {
+    permalink: 'reference/' + typeFile,
     name: typeName
   };
 

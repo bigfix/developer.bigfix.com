@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h1>Types</h1>
+<ul>
+  {% for page in site.types %}
+  <li><a href="{{ page.url }}">{{ page.name }}</a></li>
+  {% endfor %}
+</ul>

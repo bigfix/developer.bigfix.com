@@ -5,7 +5,7 @@ var extend = require('util')._extend,
 
 if (process.argv.length !== 3) {
   console.error('usage: parse-language-reports <folder>');
-  process.exit(1);
+  return process.exit(1);
 }
 
 var combinedReport = {
