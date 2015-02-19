@@ -22,10 +22,10 @@ rimraf.sync(typesDir);
 fs.mkdirSync(typesDir);
 
 Object.keys(language.types).forEach(function(typeName) {
-  var typeFile = typeName.replace(/ /g, '-') + '.html';
+  var typeFile = typeName.replace(/ /g, '-') + '.md';
 
   var frontMatter = {
-    permalink: 'reference/' + typeFile,
+    permalink: 'reference/' + typeFile.replace('.md', '.html'),
     name: typeName
   };
 
