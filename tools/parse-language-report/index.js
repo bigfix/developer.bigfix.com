@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var fs = require('fs');
 
 function trimResultType(resultType) {
