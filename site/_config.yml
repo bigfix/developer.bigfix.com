@@ -20,6 +20,6 @@ defaults:
     values:
       layout: guide
   - scope:
-      path: types
+      path: reference
     values:
-      layout: type
+      layout: reference

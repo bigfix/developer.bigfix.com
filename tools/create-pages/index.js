@@ -1,41 +1,112 @@
 var fs = require('fs'),
   path = require('path'),
   rimraf = require('rimraf'),
-  yaml = require('js-yaml');
+  escape = require('escape-html');
 
-function writeWithFrontMatter(filePath, frontMatter, body) {
-  var contents = '---\n' + yaml.safeDump(frontMatter) + '---\n\n' + body;
-  fs.writeFileSync(filePath, contents);
-}
+if (process.argv.length !== 6) {
+  console.error(
+    'usage: create-pages ' +
+    '<site-dir> <categories.json> <language.json> <docs.json>');
 
-if (process.argv.length !== 5) {
-  console.error('usage: create-pages <site-dir> <language.json> <docs.json>');
   return process.exit(1);
 }
 
 var siteDir = process.argv[2];
-var language = JSON.parse(fs.readFileSync(process.argv[3]));
-var docs = JSON.parse(fs.readFileSync(process.argv[4]));
+var categories = JSON.parse(fs.readFileSync(process.argv[3]));
+var language = JSON.parse(fs.readFileSync(process.argv[4]));
+var docs = JSON.parse(fs.readFileSync(process.argv[5]));
 
-var typesDir = path.join(siteDir, '_types');
-rimraf.sync(typesDir);
-fs.mkdirSync(typesDir);
+function castsOf(type) {
+  var body = '';
 
-Object.keys(language.types).forEach(function(typeName) {
-  var typeFile = typeName.replace(/ /g, '-') + '.md';
+  Object.keys(language.properties).forEach(function(key) {
+    var property = language.properties[key];
 
-  var frontMatter = {
-    permalink: 'reference/' + typeFile.replace('.md', '.html'),
-    name: typeName
-  };
+    if (property.type === 'cast' && property.argType === type) {
+      body += '#### ' + escape(property.key) + ' : ' + property.resultType;
+      body += '\n';
+      body += '\n';
 
-  if (language.types[typeName].parent) {
-    frontMatter.parent = language.types[typeName].parent;
-  }
+      if (docs.properties[key]) {
+        body += escape(docs.properties[key]);
+      } else {
+        body += 'No documentation exists for this cast.';
+      }
 
-  var body = 'No documentation exists for this type.';
-  if (docs.types[typeName])
-    body = docs.types[typeName];
+      body += '\n';
+      body += '\n';
+    }
+  });
 
-  writeWithFrontMatter(path.join(typesDir, typeFile), frontMatter, body);
+  return body;
+}
+
+function propertiesOf(type) {
+  var body = '';
+
+  Object.keys(language.properties).forEach(function(key) {
+    var property = language.properties[key];
+
+    if (property.type === 'property' && property.directObjectType === type) {
+      body += '#### ' + escape(property.key) + ' : ' + property.resultType;
+      body += '\n';
+      body += '\n';
+
+      if (docs.properties[key]) {
+        body += escape(docs.properties[key]);
+      } else {
+        body += 'No documentation exists for this property.';
+      }
+
+      body += '\n';
+      body += '\n';
+    }
+  });
+
+  return body;
+}
+
+rimraf.sync(path.join(siteDir, 'reference'));
+fs.mkdirSync(path.join(siteDir, 'reference'));
+
+Object.keys(categories).forEach(function(category) {
+  fs.mkdirSync(path.join(siteDir, 'reference', category));
+
+  Object.keys(categories[category]).forEach(function(topic) {
+    var types = categories[category][topic];
+    var body = '';
+
+    body += '---\n';
+    body += 'title: ' + topic + '\n';
+    body += '---\n';
+    body += '\n';
+
+    types.forEach(function(type) {
+      body += '## ' + escape(type);
+      body += '\n';
+      body += '\n';
+
+      if (docs.types[type]) {
+        body += escape(docs.types[type]);
+      } else {
+        body += 'No documentation exists for this type.';
+      }
+
+      body += '\n';
+      body += '\n';
+
+      var casts = castsOf(type);
+      if (casts.length !== 0) {
+        body += casts;
+      }
+      
+      var properties = propertiesOf(type);
+      if (properties.length !== 0) {
+        body += properties;
+      }
+    });
+
+    var filePath = path.join(siteDir, 'reference', category, topic + '.md');
+    fs.writeFileSync(filePath, body);
+  });
 });

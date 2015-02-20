@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "escape-html": "^1.0.1",
     "js-yaml": "^3.2.6",
     "rimraf": "^2.2.8"
   }

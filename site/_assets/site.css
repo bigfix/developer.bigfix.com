@@ -89,3 +89,8 @@ code {
 .example-error {
   color: red;
 }
+
+.reference h4 {
+  font-family: monospace;
+  font-size: 2rem;
+}
