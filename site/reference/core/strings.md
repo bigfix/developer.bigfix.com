@@ -10,6 +10,8 @@ No documentation exists for this type.
 
 A substring object is a part of a larger string and has all the properties of a string, as well as extra methods and properties.
 
+#### Properties
+
 {% property start of <substring> %}
 
 Returns the position within the string of the substring. For example, start of substring &quot;or&quot; of &quot;to be or not to be&quot; = 6.
@@ -30,6 +32,8 @@ Returns the position of the substring within its containing string. For example,
 
 The &lt;string with multiplicity&gt; inspectors deal with arrays of strings, allowing you to extract unique strings and count them.
 
+#### Properties
+
 {% property multiplicity of <string with multiplicity> %}
 
 Returns the multiplicity (quantity) of each element in a multiple string list.Example: multiplicities of unique values of (&quot;steak&quot;; &quot;chop&quot;; &quot;rib&quot;; &quot;rib&quot;; &quot;rib&quot;) - Returns the multiplicity of (the number of times) each string in the list is used, namely, 1,3,1. Note that the multiplicities are based on the alphabetic order of the strings (chop, rib, steak), not their position in the list.
@@ -37,6 +41,8 @@ Returns the multiplicity (quantity) of each element in a multiple string list.Ex
 {% type string set%}
 
 The &lt;string set&gt; inspectors deal with sets of strings, which are essentially lists or arrays with string elements. Think of them as mathematical sets: you can compare them, subtract them from other sets and form the union and intersection of multiple sets.Note: These inspectors are not available on SUSE Linux systems.
+
+#### Properties
 
 {% property union of <string set> %}
 
@@ -58,6 +64,8 @@ Returns the unique elements of the specified &lt;string set&gt;, removing duplic
 
 String position works in combination with the string and substring data types. A string position is a point within a string. It can be compared to an integer (which it is derived from), but it also acts as a pointer within a string so that the preceding and following text can be extracted. 
 
+#### Properties
+
 {% property preceding text of <string position> %}
 
 Returns the substring preceding the position in the string. For example, preceding text of position 5 of &quot;0123456789&quot; = &quot;01234&quot;.
@@ -69,6 +77,8 @@ Returns the substring following the position in the string. For example, followi
 {% type string%}
 
 Strings are typically core objects, but some string inspectors may be client-specific. Note: A string literal is written within double quotes. Special characters must be inserted by using the percent sign followed by 2 hex digits. Special characters include those characters with ASCII codes less than the &#39;space&#39; character (hex 20) or greater than &#39;tilde&#39; character (hex 7f) as well as the percent character itself (25 hex). For example, to create a string containing a null character and a percent character use &quot;a null is %00, the percent itself is %25&quot;. Conversion to upper and lower case is also provided. String works in combination with the string position and substring data types. A string position is a point within a string. It can be compared to an integer, but it also acts as a pointer within a string so that the preceding and following text can be extracted. A substring is a part of a larger string. All operations allowed on a string can be performed on a substring. There are two substrings &quot;be&quot; in the string &quot;To be or not to be&quot;. The substrings only differ in their positions within the string.
+
+#### Casts
 
 {% property <string> as zoned time_of_day %}
 
@@ -193,6 +203,8 @@ Returns a boolean value for the string. All possible capitalization&#39;s of &qu
 {% property <string> as strverscmp version %}
 
 Converts a string to strverscmp version, which is compared to other versions using the OS supplied strverscmp function.
+
+#### Properties
 
 {% property xml document of <string> %}
 
@@ -838,9 +850,13 @@ No documentation exists for this property.
 
 The &lt;rope&gt; object is a way to efficiently concatenate long strings. String literals in the Relevence language are limited to 512 characters, but internally, they can be any length. Ropes provide a technique for concatenating string literals that is memory-efficient. In general, the Fixlet author will not need to worry about ropes, but they are useful for increasing efficiency.
 
+#### Casts
+
 {% property <rope> as string %}
 
 Converts a rope into a string object. When converted, all the other string properties are available.
+
+#### Properties
 
 {% property length of <rope> %}
 
@@ -849,6 +865,8 @@ Returns the number of bytes in the rope.
 {% type regular expression match%}
 
 The &lt;regular expression match&gt; inspectors let you match regular expressions (or regexes) in relevance statements. They use the boost library implementation of the &#39;POSIX-Extended&#39; regular expression syntax, as documented at Wikipedia using the search term &quot;posix-extended regex&quot;. 
+
+#### Properties
 
 {% property parenthesized part of <regular expression match> %}
 
@@ -865,6 +883,8 @@ The &lt;regular expression&gt; inspectors let you use regular expressions (or re
 {% type format%}
 
 Format inspectors make it easier for content authors to create localizable content. Similar in concept to the C printf function, they allow you to embed arguments into a formatting string, which is followed by the argument values themselves. The arguments are numbered and enclosed in curly brackets {0} and the values to be substituted are preceded by a plus sign (+). For example:Q: format &quot;At {1}, user {0} is logged on.&quot; + name of current user + nowA: At 9/27/2010 3:03:26 PM, user Scott is logged on.
+
+#### Casts
 
 {% property <format> as string %}
 

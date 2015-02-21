@@ -6,9 +6,13 @@ title: image-packaging-system
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <ips version dependency> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property version with time of <ips version dependency> %}
 
@@ -62,9 +66,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <ips setting pieces> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property value of <ips setting pieces> %}
 
@@ -85,6 +93,8 @@ No documentation exists for this property.
 {% type ips repo%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property version of <ips repo> %}
 
@@ -134,6 +144,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property version with time of <ips partial matching fmri> %}
 
 No documentation exists for this property.
@@ -182,9 +194,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <ips package> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property version with time of <ips package> %}
 
@@ -346,6 +362,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property variant of <ips image> %}
 
 No documentation exists for this property.
@@ -434,6 +452,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property version with time of <ips fmri> %}
 
 No documentation exists for this property.
@@ -482,6 +502,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <ips component version> as string %}
 
 No documentation exists for this cast.
@@ -489,6 +511,8 @@ No documentation exists for this cast.
 {% type ips build version%}
 
 No documentation exists for this type.
+
+#### Casts
 
 {% property <ips build version> as string %}
 
@@ -498,6 +522,8 @@ No documentation exists for this cast.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <ips branch version> as string %}
 
 No documentation exists for this cast.
@@ -506,9 +532,13 @@ No documentation exists for this cast.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <ips authority info> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property uuid of <ips authority info> %}
 
@@ -613,6 +643,8 @@ No documentation exists for this property.
 {% type version with time%}
 
 No documentation exists for this type.
+
+#### Casts
 
 {% property <version with time> as string %}
 

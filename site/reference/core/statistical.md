@@ -6,6 +6,8 @@ title: statistical
 
 Statistical bins contain property information summed over all computers in a given time period.
 
+#### Properties
+
 {% property variance of <statistical bin> %}
 
 Returns the variance of the specified statistical bin.
@@ -146,6 +148,8 @@ Returns the ending time of the specified statistical bin.
 
 Statistical ranges are time intervals used to examine particular statistical bins.
 
+#### Properties
+
 {% property total of <statistic range> %}
 
 Totals the bins over the specified range, producing a single summary bin. This allows you to reduce the data by constraining the range.
@@ -178,6 +182,8 @@ Returns the bin in the specified statistical range which brackets the given time
 
 The &lt;rate with multiplicity&gt; inspectors deal with rate arrays, allowing you to extract unique rate values and count them.
 
+#### Properties
+
 {% property multiplicity of <rate with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;rate&gt; types.
@@ -186,9 +192,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 Rates are floating point numbers divided by time intervals. These inspectors let you examine and convert rate objects.
 
+#### Casts
+
 {% property <rate> as string %}
 
 Casts a rate as a string.
+
+#### Properties
 
 {% property unique value of <rate> %}
 
@@ -210,6 +220,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;rate&gt;
 
 The &lt;linear projection&gt; inspectors return statistical correlation information about the linearity of specific aggregated properties.
 
+#### Properties
+
 {% property rate of <linear projection> %}
 
 Returns the slope of the linear projection. Multiply this by a time interval to compute the projected growth over that period.
@@ -225,6 +237,8 @@ Returns a floating-point number between -1 and 1, representing how well a linear
 {% type exponential projection%}
 
 The &lt;exponential projection&gt; inspectors return statistical correlation information about the logarithms of the aggregated properties.
+
+#### Properties
 
 {% property rate <time interval> of <exponential projection> %}
 

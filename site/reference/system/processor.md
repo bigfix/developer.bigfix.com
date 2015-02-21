@@ -6,6 +6,8 @@ title: processor
 
 The &lt;processor&gt; object is used to identify the number and properties of processors in the system. You can identify the manufacturer of the CPU as well as the speed and other features. Many operating systems provide for multiple processors. You can inspect any one of them by their ordinal number.For more information on Windows processors, see the Resource section at the end of this guide.
 
+#### Properties
+
 {% property wp of <processor> %}
 
 Returns TRUE if the specified processor has the WP feature.
@@ -278,6 +280,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property thread of <cpupackage> %}
 
 Returns the number of SMT threads (Simultaneous multithreading, called Hyper-Threading on some platforms) in a single cpupackage (a single socket or physical CPU)
@@ -302,9 +306,13 @@ Returns the number of physical cores in a single cpupackage (a single socket or 
 
 The &lt;hertz&gt; object is useful to measure clock cycles. It is used primarily to measure clock frequency by the speed of the processor inspector. Hertz objects have a resolution of 1 hertz and are stored internally as a 64 bit signed integer.
 
+#### Casts
+
 {% property <hertz> as string %}
 
 Returns a string formatted &quot;##### hertz&quot;.
+
+#### Properties
 
 {% property unique value of <hertz> %}
 
@@ -333,6 +341,8 @@ Returns the positive value of the hertz object.
 {% type hertz with multiplicity%}
 
 The &lt;hertz with multiplicity&gt; inspectors deal with hertz arrays, allowing you to extract unique hertz values and count them. 
+
+#### Properties
 
 {% property multiplicity of <hertz with multiplicity> %}
 

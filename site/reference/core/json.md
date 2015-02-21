@@ -6,6 +6,8 @@ title: json
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <json value> as string %}
 
 No documentation exists for this cast.
@@ -21,6 +23,8 @@ No documentation exists for this cast.
 {% property <json value> as boolean %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property type of <json value> %}
 
@@ -50,9 +54,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <json key> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property value of <json key> %}
 

@@ -6,6 +6,8 @@ title: wizards
 
 The &lt;bes wizard with multiplicity&gt; inspectors deal with arrays of BES Wizards, allowing you to extract unique properties and count them. 
 
+#### Properties
+
 {% property multiplicity of <bes wizard with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes wizard&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes wizard variable%}
 
 The &lt;bes wizard variable&gt; objects are Console-only inspectors that return a list of the available BES Wizard variables.
+
+#### Properties
 
 {% property wizard of <bes wizard variable> %}
 
@@ -34,6 +38,8 @@ Returns the name of the specified Wizard variable.
 
 The &lt;bes wizard set&gt; inspectors iterate over the BES Wizards and return a set of such wizards.
 
+#### Properties
+
 {% property union of <bes wizard set> %}
 
 Returns the union (as a set) derived from the specified set of BES Wizards.
@@ -53,6 +59,8 @@ Returns the BES Wizards that constitute the elements of the specified set.
 {% type bes wizard%}
 
 The &lt;bes wizard&gt; objects are Console-only inspectors that return a list of the available BES Wizards.
+
+#### Properties
 
 {% property variable of <bes wizard> %}
 

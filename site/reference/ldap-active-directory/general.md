@@ -6,6 +6,8 @@ title: general
 
 The &lt;distinguished name component&gt; inspectors refer to the various components of the distinguished name (DN) as defined by the Microsoft Active Directory API. A DN is a sequence of relative distinguished names (RDN) connected by commas. An RDN is an attribute with an associated value in the form attribute=value; normally expressed in a UTF-8 string format. For more information, see the MSDN article on Distinguished Names.
 
+#### Properties
+
 {% property value of <distinguished name component> %}
 
 Returns the value of the specified component of the distinguished name.Example: value of component 0 of distinguished name &quot;CN=BIGFOOT,CN=Computers,DC=devlan,DC=bigfix,DC=com&quot; - Returns &quot;BIGFOOT&quot;.
@@ -18,6 +20,8 @@ Returns the type of the specified component of the distinguished name.Example: (
 
 The &lt;distinguished name&gt; inspectors refer to the distinguished name (DN) as defined by the Microsoft Active Directory service. See the core inspector guide for a list of properties of a distinguished name object. 
 
+#### Properties
+
 {% property component of <distinguished name> %}
 
 Used as a plural, returns a list of the components of the given distinguished name.
@@ -29,6 +33,8 @@ Returns the component (as specified by &lt;integer&gt;) of the distinguished nam
 {% type active directory server%}
 
 The &lt;active directory server&gt; objects are the base types that allows access to the AD objects such as local machine and local user.
+
+#### Properties
 
 {% property local computer of <active directory server> %}
 
@@ -61,6 +67,8 @@ Returns the named group if a local active directory user has this group membersh
 {% type active directory local computer%}
 
 The &lt;active directory local computer&gt; objects are the Active Directory inspectors for the local computer. Caching (using XML files to represent the last data update) limits how often the client refreshes the AD data, reducing network traffic. These inspectors require network access to work. If no network connection is available and the information is not cached, then the inspectors will return NoSuchObject. AD user requests are limited to users that are either cached or have a local profile on the specified machine.
+
+#### Properties
 
 {% property sample time of <active directory local computer> %}
 
@@ -97,6 +105,8 @@ No documentation exists for this property.
 {% type active directory local user%}
 
 The &lt;active directory local user&gt; objects are the inspectors for the AD local users. They include the distinguished name and groups.
+
+#### Properties
 
 {% property sample time of <active directory local user> %}
 
@@ -145,6 +155,8 @@ No documentation exists for this property.
 {% type active directory group%}
 
 The &lt;active directory group&gt; inspectors constitute the base types that allow access to the AD group information, such as distinguished name.
+
+#### Properties
 
 {% property sid of <active directory group> %}
 

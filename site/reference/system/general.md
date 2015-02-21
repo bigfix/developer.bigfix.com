@@ -6,6 +6,8 @@ title: general
 
 The &lt;computer&gt; inspectors provide access to the name of the computer.
 
+#### Properties
+
 {% property name of <computer> %}
 
 The name of the computer.
@@ -13,6 +15,8 @@ The name of the computer.
 {% type ram%}
 
 The &lt;ram&gt; object is used to inspect properties of the computer&#39;s random access memory.
+
+#### Properties
 
 {% property used amount of <ram> %}
 
@@ -54,6 +58,8 @@ Returns the amount of system ram that is currently available, in bytes.
 
 A primary language identifier indicates the written/spoken language that is used by the system. However, to identify the language that is used in a country or region you must combine the primary language with a sub-language identifier to form language identifiers.
 
+#### Casts
+
 {% property <primary language> as string %}
 
 Returns the primary language.
@@ -62,9 +68,13 @@ Returns the primary language.
 
 The operating system object provides access to several important properties of the system.
 
+#### Casts
+
 {% property <operating system> as string %}
 
 Returns a string containing the name of the operating system concatenated with the release.
+
+#### Properties
 
 {% property windows of <operating system> %}
 
@@ -254,6 +264,8 @@ The &lt;operating system product type&gt; inspectors return the product type of 
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property multiplicity of <technology level with multiplicity> %}
 
 Returns an the number of times a technology level occurs.
@@ -262,9 +274,13 @@ Returns an the number of times a technology level occurs.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <technology level> as string %}
 
 Returns a string that uniquely identifies a technolgoy level in the format &quot;base-tl&quot;. For example, AIX 5.3 at technology level 6 would be &quot;5300-06&quot;.
+
+#### Properties
 
 {% property unique value of <technology level> %}
 
@@ -314,6 +330,8 @@ Returns a string in the format &quot;AIX base-tl Update&quot;.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property multiplicity of <service pack with multiplicity> %}
 
 Returns an the number of times a service pack occurs.
@@ -322,9 +340,13 @@ Returns an the number of times a service pack occurs.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <service pack> as string %}
 
 Returns a string that uniquely identifies a service pack in the format &quot;base-tl-sp-date&quot;. For example, AIX 5.3 at technology level 6 and service pack 3, which was released on the 32nd week of 2007, would be &quot;5300-06-03-0732&quot;. Note: older service packs may not have a date portion, and the final service pack at a particular technology level has a SP value of &#39;CSP&#39;.
+
+#### Properties
 
 {% property unique value of <service pack> %}
 
@@ -378,9 +400,13 @@ Returns a string in the format &quot;AIX base-tl-sp (Concluding) Service Pack&qu
 
 A language is composed of a primary language (for example, Swiss) and a sub-language (for example, Swiss German).
 
+#### Casts
+
 {% property <language> as string %}
 
 Returns the language of the system locale.
+
+#### Properties
 
 {% property primary language of <language> %}
 

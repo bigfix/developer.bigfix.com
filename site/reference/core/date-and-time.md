@@ -6,6 +6,8 @@ title: date-and-time
 
 The &lt;year with multiplicity&gt; inspectors deal with year arrays, allowing you to extract unique year values and count them. 
 
+#### Properties
+
 {% property multiplicity of <year with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;year&gt; types.
@@ -14,6 +16,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;year&gt; inspectors provide tools for dealing and calculating with year types, which are of the form YYYY, as in 2008.
 
+#### Casts
+
 {% property <year> as string %}
 
 Casts a year as a string.
@@ -21,6 +25,8 @@ Casts a year as a string.
 {% property <year> as integer %}
 
 Casts a year as an integer.
+
+#### Properties
 
 {% property unique value of <year> %}
 
@@ -50,6 +56,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;year&gt;
 
 The &lt;time zone with multiplicity&gt; inspectors deal with time zone arrays, allowing you to extract unique time zone values and count them. 
 
+#### Properties
+
 {% property multiplicity of <time zone with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;time zone&gt; types.
@@ -58,9 +66,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 Time zones are used in conjunction with the time object. Time zones have a resolution of 1 minute.
 
+#### Casts
+
 {% property <time zone> as string %}
 
 Returns a string corresponding to the time zone object provided.
+
+#### Properties
 
 {% property unique value of <time zone> %}
 
@@ -70,6 +82,8 @@ Returns the unique values of a given list of &lt;time zone&gt; types, removing d
 
 The &lt;time with multiplicity&gt; inspectors deal with time arrays, allowing you to extract unique time values and count them.
 
+#### Properties
+
 {% property multiplicity of <time with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;time&gt; types.
@@ -77,6 +91,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type time range with multiplicity%}
 
 The &lt;time range with multiplicity&gt; inspectors deal with time-range arrays, allowing you to extract unique time-range values and count them.
+
+#### Properties
 
 {% property multiplicity of <time range with multiplicity> %}
 
@@ -86,9 +102,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;time range&gt; inspectors provide tools for dealing and calculating with time-range types, which are of the form &#39;time to time&#39;, such as Tue, 18 Apr 2006 16:46:07 -0400 to Wed, 19 Apr 2006 16:46:07 -0400
 
+#### Casts
+
 {% property <time range> as string %}
 
 Casts a time range as a string.
+
+#### Properties
 
 {% property unique value of <time range> %}
 
@@ -126,6 +146,8 @@ Returns the end date of a time range.
 
 The &lt;time of day with time zone with multiplicity&gt; inspectors deal with time-of-day-with-time-zone arrays, allowing you to extract unique time-of-day-with-time-zone values and count them. 
 
+#### Properties
+
 {% property multiplicity of <time of day with time zone with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;time of day with time zone&gt; types.
@@ -134,9 +156,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;time of day with time zone&gt; inspectors provide tools for dealing and calculating with time-of-day-with-time-zone types, which are of the form HH:MM:SS +ZZZZ, as in 12:59:59 -0400. 
 
+#### Casts
+
 {% property <time of day with time zone> as string %}
 
 Converts a &#39;time of day with time zone&#39; object into a string.
+
+#### Properties
 
 {% property zone of <time of day with time zone> %}
 
@@ -178,6 +204,8 @@ Returns the hour section of the &#39;time of day with time zone&#39; object.Exam
 
 The &lt;time of day with multiplicity&gt; inspectors deal with time-of-day arrays, allowing you to extract unique time-of-day values and count them. 
 
+#### Properties
+
 {% property multiplicity of <time of day with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;time of day&gt; types.
@@ -186,9 +214,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;time of day&gt; inspectors provide tools for dealing and calculating with time-of-day types, which are of the form HH:MM:SS, as in 12:59:59. 
 
+#### Casts
+
 {% property <time of day> as string %}
 
 Casts the time of day as a string type.
+
+#### Properties
 
 {% property unique value of <time of day> %}
 
@@ -234,6 +266,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;time of 
 
 The &lt;time interval with multiplicity&gt; inspectors deal with time-interval arrays, allowing you to extract unique time-interval values and count them. 
 
+#### Properties
+
 {% property multiplicity of <time interval with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;time interval&gt; types.
@@ -242,9 +276,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 Time intervals are used in conjunction with the time object. Time intervals have a resolution of 1 microsecond.
 
+#### Casts
+
 {% property <time interval> as string %}
 
 Returns a string formatted as ddd days, HH:MM:SS.mmmmmmFor example, millisecond as string = &quot; 00:00:00.001&quot;.
+
+#### Properties
 
 {% property unique value of <time interval> %}
 
@@ -274,6 +312,8 @@ Returns positive value of the time interval.
 
 A &lt;time&gt; object is used to identify a point in time. Time objects are used to represent important properties of objects such as the modification time of a file. You can create time objects from literal strings. The format of the string is defined by the MIME standard. The difference between two Time objects may be calculated by subtracting them and yields time intervals. Time intervals may be added or subtracted from time objects to obtain time objects.
 
+#### Casts
+
 {% property <time> as universal string %}
 
 Returns a string in MIME format of the given time object. The format is:ddd, DD mmm YYYY HH:MM:SS +0000The string is formatted using the universal time zone.
@@ -285,6 +325,8 @@ Same as above.
 {% property <time> as local string %}
 
 Returns a string in MIME format of the given time object. The format is: ddd, DD mmm YYYY HH:MM:SS sZZZZ. The string is formatted using the local time zone.
+
+#### Properties
 
 {% property unique value of <time> %}
 
@@ -314,6 +356,8 @@ Returns the date adjusted for the specified time zone.
 
 The &lt;number of months with multiplicity&gt; inspectors deal with number-of-month arrays, allowing you to extract unique number-of-month values and count them.
 
+#### Properties
+
 {% property multiplicity of <number of months with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;number of month&gt; types.
@@ -322,9 +366,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;number of months&gt; inspectors provide tools for dealing and calculating with number-of-month types, which are similar to integers, but wih yearly roll-over.
 
+#### Casts
+
 {% property <number of months> as string %}
 
 Converts a number of months type into a string type.
+
+#### Properties
 
 {% property unique value of <number of months> %}
 
@@ -346,6 +394,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;number o
 
 The &lt;month with multiplicity&gt; inspectors deal with month arrays, allowing you to extract unique month values and count them.
 
+#### Properties
+
 {% property multiplicity of <month with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;month&gt; types.
@@ -353,6 +403,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type month and year with multiplicity%}
 
 The &lt;month and year with multiplicity&gt; inspectors deal with month-and-year arrays, allowing you to extract unique month-and-year values and count them. 
+
+#### Properties
 
 {% property multiplicity of <month and year with multiplicity> %}
 
@@ -362,9 +414,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;month and year&gt; inspectors provide tools for dealing and calculating with month-and-year types, which are of the form month of year, eg., January of 2007.
 
+#### Casts
+
 {% property <month and year> as string %}
 
 Casts a date (in month year format) as a string.
+
+#### Properties
 
 {% property year of <month and year> %}
 
@@ -430,6 +486,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;month an
 
 The &lt;month&gt; inspectors provide tools for dealing and calculating with month types, which are of the form January, February, and more. This set of inspectors includes each month as a self-named object.
 
+#### Casts
+
 {% property <month> as two digits %}
 
 Converts the month into a two digit number (01 - 12).Example: january as two digits - Returns 01.
@@ -445,6 +503,8 @@ Converts the given month into a string value.
 {% property <month> as integer %}
 
 Converts the given month into an integer (1-12).
+
+#### Properties
 
 {% property unique value of <month> %}
 
@@ -466,6 +526,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;month&gt
 
 The &lt;day of year with multiplicity&gt; inspectors deal with day-of-year arrays, allowing you to extract unique day-of-year values and count them. 
 
+#### Properties
+
 {% property multiplicity of <day of year with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;day of year&gt; types.
@@ -474,9 +536,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;day of year&gt; inspectors provide tools for dealing and calculating with day-of-month types, which are of the form Sun, 01 Apr 2007.
 
+#### Casts
+
 {% property <day of year> as string %}
 
 Casts a day of the year as a string type.
+
+#### Properties
 
 {% property unique value of <day of year> %}
 
@@ -506,6 +572,8 @@ Returns the day of the month of the specified date.Example: day of July 4 - Retu
 
 The &lt;day of week with multiplicity&gt; inspectors deal with day-of-week arrays, allowing you to extract unique day-of-week values and count them.
 
+#### Properties
+
 {% property multiplicity of <day of week with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;day of week&gt; types.
@@ -513,6 +581,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type day of week%}
 
 The &lt;day of week&gt; inspectors provide tools for dealing and calculating with day-of-week types, which include Monday, Tuesday, and more. This set of inspectors includes each day as a self-named object.
+
+#### Casts
 
 {% property <day of week> as three letters %}
 
@@ -522,6 +592,8 @@ Casts the day of week as a three-letter abbreviation (Mon, Tue, etcetera.).Examp
 
 Casts the day of week as a string.
 
+#### Properties
+
 {% property unique value of <day of week> %}
 
 Returns the unique values of a given list of &lt;day of week&gt; types, removing duplicates and sorting by value.
@@ -530,6 +602,8 @@ Returns the unique values of a given list of &lt;day of week&gt; types, removing
 
 The &lt;day of month with multiplicity&gt; inspectors deal with day-of-month arrays, allowing you to extract unique day-of-month values and count them.
 
+#### Properties
+
 {% property multiplicity of <day of month with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;day of month&gt; types.
@@ -537,6 +611,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type day of month%}
 
 The &lt;day of month&gt; inspectors provide tools for dealing and calculating with day-of-month types, which are numbers from 1-31.
+
+#### Casts
 
 {% property <day of month> as two digits %}
 
@@ -549,6 +625,8 @@ Cast a day of month type as a string.
 {% property <day of month> as integer %}
 
 Cast a day of month type as an integer.Example: current day_of_month as integer - Returns the day of the month as an integer.
+
+#### Properties
 
 {% property unique value of <day of month> %}
 
@@ -570,6 +648,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;day of m
 
 The &lt;date with multiplicity&gt; inspectors deal with arrays of dates, allowing you to extract unique dates and count them.
 
+#### Properties
+
 {% property multiplicity of <date with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;date&gt; types.
@@ -578,9 +658,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;date&gt; objects are the various inspectors that access the date types.
 
+#### Casts
+
 {% property <date> as string %}
 
 Cast a date type as a string.
+
+#### Properties
 
 {% property year of <date> %}
 

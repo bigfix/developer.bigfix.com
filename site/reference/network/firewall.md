@@ -10,6 +10,8 @@ The &lt;firewall service type&gt; inspectors provide access to the firewall serv
 
 The &lt;firewall service restriction&gt; inspectors provide a wrapper for the Windows Firewall Service Restriction. They are Vista-only. On a non-Vista machine, they return no results. For more information see the MSDN Library reference to INetFwServiceRestriction at http://msdn.microsoft.com/library/.
 
+#### Properties
+
 {% property service restricted <( string, string )> of <firewall service restriction> %}
 
 Returns the service restriction state of a given service. There are two strings passed to define the restriction: the service name and the application name. For more information, see the MSDN Library section on INetFwServiceRestriction.
@@ -21,6 +23,8 @@ Retrieves the collection of Windows Service Hardening network rules for the spec
 {% type firewall service%}
 
 The &lt;firewall service&gt; inspectors provide access to the properties of a service that may be authorized to listen through the firewall. These properties correspond to the INetFwService interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
+
+#### Properties
 
 {% property type of <firewall service> %}
 
@@ -61,6 +65,8 @@ The &lt;firewall scope&gt; inspectors provide access to the firewall scope. The 
 {% type firewall rule%}
 
 The &lt;firewall rule&gt; inspectors provide a wrapper for the Windows Firewall Rule. They are Vista-only. On a non-Vista machine, they return no results. For more information, see the MSDN library for INetFwRule at http://msdn.microsoft.com/library/.
+
+#### Properties
 
 {% property service name of <firewall rule> %}
 
@@ -150,6 +156,8 @@ No documentation exists for this type.
 
 The &lt;firewall profile type&gt; inspectors provide access to the firewall profile type. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
 
+#### Casts
+
 {% property <firewall profile type> as string %}
 
 No documentation exists for this cast.
@@ -157,6 +165,8 @@ No documentation exists for this cast.
 {% type firewall profile%}
 
 The &lt;firewall profile&gt; inspectors provide access to the firewall profile. These properties correspond to the INetFwProfile interface in the Windows Firewall API. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
+
+#### Properties
 
 {% property unicast responses to multicast broadcast disabled of <firewall profile> %}
 
@@ -218,6 +228,8 @@ Access to the AuthorizedApplications collection for this profile. This inspector
 
 The &lt;firewall policy&gt; inspectors provide access to the local, current, domain and standard firewall policies. These properties correspond to the INetFwPolicy interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
 
+#### Properties
+
 {% property standard profile of <firewall policy> %}
 
 Returns the standard profile of the specified firewall policy. The standard profile settings are used when a computer is connected to a network that does not contain the organization&#39;s domain controllers. This inspector corresponds to the Microsoft Windows Firewall enumerated type NET_FW_PROFILE_STANDARD.
@@ -245,6 +257,8 @@ No documentation exists for this property.
 {% type firewall open port%}
 
 The &lt;firewall open port&gt; inspectors provide access to the properties of a port that has been opened in the Windows Firewall. These properties correspond to the INetFwOpenPort interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
+
+#### Properties
 
 {% property scope of <firewall open port> %}
 
@@ -285,6 +299,8 @@ The &lt;firewall local policy modify state&gt; inspectors provide a wrapper for 
 {% type firewall icmp settings%}
 
 The &lt;firewall icmp settings&gt; inspectors provide access to the settings controlling Internet Control Message Protocol (ICMP) packets. These properties correspond to the INetFwIcmpSettings interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
+
+#### Properties
 
 {% property allow redirect of <firewall icmp settings> %}
 
@@ -330,6 +346,8 @@ Returns the value of the AllowInboundEchoRequest property. Type common to IPv4 a
 
 The &lt;firewall authorized application&gt; inspectors apply to applications that are authorized to exchange traffic through the Windows Firewall. These properties correspond to the INetFwAuthorizedApplication interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
 
+#### Properties
+
 {% property scope of <firewall authorized application> %}
 
 Returns the contents of the Scope property for the specified application. This property controls the network scope that a port can listen to.
@@ -362,6 +380,8 @@ The firewall action inspectors provide wrappers around the Windows Vista Firewal
 
 The Firewall inspectors allow you to view the settings of the Windows Firewall on Windows Clients. By inspecting the firewall properties, you can determine which applications have access to unsolicited traffic and how the firewall is configured for various subsets of your network. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the MSDN site (http://msdn.microsoft.com/library/).
 
+#### Properties
+
 {% property service restriction of <firewall> %}
 
 Retrieves the access interface to manipulate the Windows Service Hardening store. On Windows operating systems earlier than Vista, this inspector always returns no-such-object. For more information, see the MSDN Library entry for INetFwPolicy2.
@@ -393,6 +413,8 @@ No documentation exists for this property.
 {% type port mapping%}
 
 Refers to a port mapping object for the built-in firewall.
+
+#### Properties
 
 {% property target name of <port mapping> %}
 
@@ -437,6 +459,8 @@ Returns the firewall internet protocol corresponding to the Microsoft enumerated
 {% type internet connection firewall%}
 
 The &lt;internet connection firewall&gt; inspectors provide access to the settings of the Internet Connection Firewall introduced in Windows XP. The Internet Connection Firewall helps to protect a computer that is directly connected to the Internet, or a home network, from network attacks.
+
+#### Properties
 
 {% property port mapping of <internet connection firewall> %}
 

@@ -10,9 +10,13 @@ Threads are scheduled based on priority, which ranges from zero, the lowest, to 
 
 Every variable defined by the environment has both a name and a value. Both names and values are treated as strings.
 
+#### Casts
+
 {% property <environment variable> as string %}
 
 Casting the variable as a string yields a string containing the variable name and the value of the variable separated by &#39; = &#39;.
+
+#### Properties
 
 {% property value of <environment variable> %}
 
@@ -25,6 +29,8 @@ Returns the name of the variable.
 {% type environment%}
 
 Environment variables define a particular set of paths and variables for a computer or an application. These inspectors let you examine this set.
+
+#### Properties
 
 {% property variable of <environment> %}
 
@@ -45,6 +51,8 @@ Returns the same as the the named variable inspector, but from outside the WOW64
 {% type process%}
 
 Processes allocate the various resources needed to execute a program. Processes have a process identifier, a virtual address space, associated code, a priority class, security settings, environment variables, min and max working set sizes, and at least one executing thread. Processes are typically started with a single primary thread which in turn can spawn additional threads.
+
+#### Properties
 
 {% property process id of <process> %}
 

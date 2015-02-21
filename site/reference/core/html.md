@@ -10,6 +10,8 @@ No documentation exists for this type.
 
 This type helps you to author HTML commands to create customized content for the BigFix Console and Web Reports. They allow construction of HTML snippets that can be used to display BigFix data elements in a browser.
 
+#### Casts
+
 {% property <html> as string %}
 
 Casts an html string into a string type.
@@ -17,6 +19,8 @@ Casts an html string into a string type.
 {% property <html> as html %}
 
 Casts an html string into an html type.
+
+#### Properties
 
 {% property var of <html> %}
 

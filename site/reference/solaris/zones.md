@@ -6,9 +6,13 @@ title: zones
 
 The &lt;zone network interface&gt; objects allow you to inspect the network interfaces (IP layers) installed when booting a Solaris Zone.
 
+#### Casts
+
 {% property <zone network interface> as string %}
 
 Casts a Zone network interface as a string type.
+
+#### Properties
 
 {% property name of <zone network interface> %}
 
@@ -22,9 +26,13 @@ Returns the address of the specified Solaris zone network interface as a string 
 
 The Solaris OS allows you to set up zones, which provide a virtual view of the runtime environment that is segregated from other zones. Solaris Zones act as completely isolated virtual servers within a single operating system instance. These inspectors allow you to monitor the user&#39;s zone configurations.
 
+#### Casts
+
 {% property <zone> as string %}
 
 Casts a Zone as a string type.
+
+#### Properties
 
 {% property uuid of <zone> %}
 

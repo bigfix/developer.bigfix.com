@@ -6,6 +6,8 @@ title: ldap
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property multiplicity of <bes ldap directory with multiplicity> %}
 
 No documentation exists for this property.
@@ -13,6 +15,8 @@ No documentation exists for this property.
 {% type bes ldap directory set%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property union of <bes ldap directory set> %}
 
@@ -33,6 +37,8 @@ No documentation exists for this property.
 {% type bes ldap directory%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property unique value of <bes ldap directory> %}
 
@@ -89,6 +95,8 @@ No documentation exists for this property.
 {% type bes ldap directory server%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property priority of <bes ldap directory server> %}
 

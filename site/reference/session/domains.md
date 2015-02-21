@@ -6,6 +6,8 @@ title: domains
 
 The &lt;bes domain with multiplicity&gt; inspectors deal with sets of BES Domains, allowing you to extract unique domains and count them.
 
+#### Properties
+
 {% property multiplicity of <bes domain with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes domain&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes domain set%}
 
 The &lt;bes domain set&gt; inspectors return the current collection of BES Domains as a set, which can be manipulated by intersection, union, and more.
+
+#### Properties
 
 {% property union of <bes domain set> %}
 
@@ -33,6 +37,8 @@ Returns the unique elements of the specified &lt;bes domain set&gt;, removing du
 {% type bes domain%}
 
 BES Domains are collections of sites that constitute a product, such as Patch Management. In the BES Console, domains are represented as the high-level buttons on the left side of the screen. Listing the domains for the Console yields all the currently loaded domains. In Web Reports, only those domains with at least one visible report are listed.
+
+#### Properties
 
 {% property unique value of <bes domain> %}
 

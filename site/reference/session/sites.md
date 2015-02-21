@@ -6,6 +6,8 @@ title: sites
 
 The &lt;bes site with multiplicity&gt; inspectors deal with arrays of BES sites, allowing you to extract unique properties and count them. 
 
+#### Properties
+
 {% property multiplicity of <bes site with multiplicity> %}
 
 This unique values inspector returns the number of times each object occurrs in the original set of objects.
@@ -13,6 +15,8 @@ This unique values inspector returns the number of times each object occurrs in 
 {% type bes site set%}
 
 The &lt;bes site set&gt; inspectors iterate over the BES sites and return a set of such sites.
+
+#### Properties
 
 {% property union of <bes site set> %}
 
@@ -33,6 +37,8 @@ Returns the elements of the specified set of BES sites.
 {% type bes site%}
 
 The site inspectors return the names and IDs of the specified site objects. As of BES 7.0, the BES custom site type has been merged with BES site, which now represents all supported types, including external sites, master action sites, operator sites, and custom sites. All properties of BES custom site are now accessible via BES site. As a compatibility measure, BES sites still returns only external and master action sites. 
+
+#### Properties
 
 {% property writer set of <bes site> %}
 

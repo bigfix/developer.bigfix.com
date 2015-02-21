@@ -6,6 +6,8 @@ title: computers
 
 The &lt;bes property with multiplicity&gt; inspectors deal with arrays of BES properties, allowing you to extract unique properties and count them.
 
+#### Properties
+
 {% property multiplicity of <bes property with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes property&gt; types.
@@ -14,9 +16,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;bes property set&gt; inspectors iterate over the current set of BES properties and package them as a mathematical set, suitable for further set manipulation.
 
+#### Casts
+
 {% property <bes property set> as xml %}
 
 Converts the specified set of BES Properties to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property union of <bes property set> %}
 
@@ -37,6 +43,8 @@ Returns the unique elements of the specified &lt;bes property set&gt;, removing 
 {% type bes property result%}
 
 The &lt;bes property result&gt; inspectors return the results returned by the given properties of the specified BES Client computers. 
+
+#### Properties
 
 {% property value of <bes property result> %}
 
@@ -70,9 +78,13 @@ Returns the computer corresponding to the specified BES property result.
 
 The &lt;bes property&gt; inspectors return information about the properties of BES Client computers. Properties -- along with their names, IDs and definitions -- can be iterated to produce property lists of all your networked BES computers.
 
+#### Casts
+
 {% property <bes property> as xml %}
 
 Converts the specified BES Property to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property unique value of <bes property> %}
 
@@ -186,6 +198,8 @@ Returns TRUE if the specified BES property is an analysis property.
 
 The &lt;bes client setting&gt; inspectors return the name, value and scope of BES Client settings. These are named variables that are used to report on and control various client behaviors.
 
+#### Properties
+
 {% property value of <bes client setting> %}
 
 Returns the value associated with the specified BES Client setting.
@@ -202,6 +216,8 @@ Returns the name of the specified BES client setting.
 
 The &lt;bes computer with multiplicity&gt; inspectors deal with arrays of BES computers, allowing you to extract unique computers and count them.
 
+#### Properties
+
 {% property multiplicity of <bes computer with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes computer&gt; types.
@@ -209,6 +225,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes computer set%}
 
 The &lt;bes computer set&gt; inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions and other mathematical operations on them.
+
+#### Properties
 
 {% property union of <bes computer set> %}
 
@@ -230,6 +248,8 @@ Returns the unique elements of the specified &lt;bes computer set&gt;, removing 
 
 The &lt;bes computer group with multiplicity&gt; inspectors deal with arrays of BES computer groups, allowing you to extract unique computer groups and count them.
 
+#### Properties
+
 {% property multiplicity of <bes computer group with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes computer group&gt; types.
@@ -238,9 +258,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;bes computer group set&gt; inspectors convert an iterated list of computer groups into a set, which allows you to perform intersections, unions and other mathematical operations on them.
 
+#### Casts
+
 {% property <bes computer group set> as xml %}
 
 Converts the specified set of BES computer groups to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property union of <bes computer group set> %}
 
@@ -262,9 +286,13 @@ Returns the unique elements of the specified &lt;bes computer group set&gt;, rem
 
 The &lt;bes computer group&gt; inspectors return an iterated list of computer groups, as defined in the BES Console.
 
+#### Casts
+
 {% property <bes computer group> as xml %}
 
 Converts the specified BES computer group to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property unique value of <bes computer group> %}
 
@@ -325,6 +353,8 @@ Returns the value of the &#39;Automatic&#39; flag corresponding to the specified
 {% type bes computer%}
 
 The &lt;bes computer&gt; inspectors return lists of the computers currently visible through the BES Console.
+
+#### Properties
 
 {% property unique value of <bes computer> %}
 

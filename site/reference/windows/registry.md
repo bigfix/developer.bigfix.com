@@ -6,6 +6,8 @@ title: registry
 
 The type identifier of the data associated with a registry key value.
 
+#### Casts
+
 {% property <registry key value type> as string %}
 
 Returns the type of value as a string. One of REG_SZ, REG_NONE, REG_DWORD, REG_LINK, REG_BINARY, REG_MULTI_SZ, REG_EXPAND_SZ, REG_RESOURCE_LIST, REG_DWORD_LITTLE_ENDIAN, REG_DWORD_BIG_ENDIAN, REG_FULL_RESOURCE_DESCRIPTOR, REG_RESOURCE_REQUIREMENTS_LIST.
@@ -13,6 +15,8 @@ Returns the type of value as a string. One of REG_SZ, REG_NONE, REG_DWORD, REG_L
 {% type registry key value%}
 
 The &lt;registry key value&gt; inspectors are used to access values stored within a registry key. All values have sizes and types. All of the values of a registry key have names except one, and it is called the &#39;default value&#39;. The type of the data stored in the value determines what casting operations are allowed. We have implemented several casting inspectors that you can use to extract values from the registry.
+
+#### Casts
 
 {% property <registry key value> as time %}
 
@@ -50,6 +54,8 @@ If the value contains a string and the string points to an file, a file object i
 
 If the value contains a string and the string points to an file, a file object is returned. Relative paths are interpreted relative to the x32 system folder.
 
+#### Properties
+
 {% property type of <registry key value> %}
 
 Returns the type of the data of the value. See type of value of key or registry.
@@ -70,9 +76,13 @@ No documentation exists for this property.
 
 The &lt;registry key&gt; objects represent Windows registry keys whose existence and properties can be inspected. Keys can be identified by name. There are several inspectors that return keys from parts of the registry that store file associations and active device drivers.
 
+#### Casts
+
 {% property <registry key> as string %}
 
 Returns the registry key name as a string
+
+#### Properties
 
 {% property value of <registry key> %}
 
@@ -141,6 +151,8 @@ No documentation exists for this property.
 {% type registry%}
 
 The &lt;registry&gt; objects are the inspectors that expose the Windows registry.
+
+#### Properties
 
 {% property key <string> of <registry> %}
 

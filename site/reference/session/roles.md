@@ -6,6 +6,8 @@ title: roles
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property multiplicity of <bes role with multiplicity> %}
 
 No documentation exists for this property.
@@ -13,6 +15,8 @@ No documentation exists for this property.
 {% type bes role set%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property union of <bes role set> %}
 
@@ -33,6 +37,8 @@ No documentation exists for this property.
 {% type bes role%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property user set of <bes role> %}
 

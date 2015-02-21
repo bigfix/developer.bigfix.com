@@ -6,6 +6,8 @@ title: content
 
 The &lt;site group&gt; inspectors return information on the automatic groups defined for a given site.
 
+#### Properties
+
 {% property member of <site group> %}
 
 Returns TRUE if the current computer is a member of the specified group.
@@ -17,6 +19,8 @@ Returns the numeric ID of the specified site group. This is the number assigned 
 {% type site%}
 
 A &lt;site&gt; object is provided to access properties of Fixlet sites. 
+
+#### Properties
 
 {% property version of <site> %}
 
@@ -106,6 +110,8 @@ No documentation exists for this property.
 
 Fixlet headers are name:value pairs that can provide important information about the Fixlet messages at any site. These inspectors only work in the context of property evaluation, not Fixlet evaluation.
 
+#### Properties
+
 {% property value of <fixlet_header> %}
 
 Headers are name:value pairs, separated by a colon. This inspector returns the value on the right hand side of the pair.Example: number of relevant fixlets whose (value of header &quot;x-fixlet-source-severity&quot; of it as lowercase = &quot;critical&quot;) of site &quot;enterprise security&quot;. - Returns the number of critical fixlets in the Enterprise Security site.
@@ -117,6 +123,8 @@ Headers are name:value pairs, separated by a colon. This inspector returns the n
 {% type fixlet%}
 
 The &lt;fixlet&gt; inspectors can provide important information about the Fixlet messages at any site. These inspectors only work in the context of property evaluation, not Fixlet evaluation.
+
+#### Properties
 
 {% property relevance of <fixlet> %}
 
@@ -142,6 +150,8 @@ Returns the site corresponding to the specified Fixlet message.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property last time of <analysis> %}
 
 No documentation exists for this property.
@@ -150,9 +160,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <action lock state> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property locked of <action lock state> %}
 
@@ -178,9 +192,13 @@ No documentation exists for this property.
 
 The &lt;action&gt; objects are the keywords associated with properties available for inspection during the execution of BigFix Actions.
 
+#### Casts
+
 {% property <action> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property waiting for download of <action> %}
 
@@ -302,9 +320,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <site profile variable> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property value of <site profile variable> %}
 
@@ -317,6 +339,8 @@ No documentation exists for this property.
 {% type site profile%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property variable of <site profile> %}
 
@@ -338,9 +362,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <manual group> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property setting of <manual group> %}
 
@@ -354,6 +382,8 @@ No documentation exists for this property.
 
 The &lt;site version list with multiplicity&gt; inspectors deal with site-version-list arrays, allowing you to extract unique site-version-list values and count them. 
 
+#### Properties
+
 {% property multiplicity of <site version list with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;site version list&gt; types.
@@ -362,9 +392,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;site version list&gt; inspectors examine the multidimensional version numbers (ManyVersions) that are used by the Database to reconcile reconnected sites after a DSA failback event.
 
+#### Casts
+
 {% property <site version list> as string %}
 
 Converts a site version list to a string.
+
+#### Properties
 
 {% property unique value of <site version list> %}
 

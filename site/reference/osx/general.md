@@ -10,6 +10,8 @@ The &lt;country&gt; inspectors allow comparing countries (as seen in version num
 
 The &lt;preference&gt; inspectors provide access to application preference files.
 
+#### Properties
+
 {% property string <string> of <preference> %}
 
 Get, from a preference, the string keyed by the specified string.Example: string &quot;FXSearchFieldTarget&quot; of preference &quot;com.apple.finder&quot; - Returns a string, such as Spcf.
@@ -37,6 +39,8 @@ Get, from a preference file, an array keyed by the specified string.
 {% type osxvalue%}
 
 The &lt;osxvalue&gt; inspectors provide access to the elements of a dictionary.
+
+#### Properties
 
 {% property type of <osxvalue> %}
 
@@ -78,6 +82,8 @@ Casts the osxvalue (which is essentially untyped) to an array.
 
 The &lt;dictionaryentry&gt; inspectors provide access to the entries of a dictionary.
 
+#### Properties
+
 {% property value of <dictionaryentry> %}
 
 Values of the dictionary entry.
@@ -89,6 +95,8 @@ The key of the given dictionary entry.
 {% type dictionary%}
 
 The &lt;dictionary&gt; inspectors provide access to an XML dictionary as used in .plist (property list) files.
+
+#### Properties
 
 {% property string <string> of <dictionary> %}
 
@@ -138,6 +146,8 @@ Get, from a dictionary, an array keyed by the specified string.
 
 Components are handled by the MacOS Component Manager. These inspectors provide access to the various software components available through the Component Manager. The information contained in a component is placed there by its maker. How it should be interpreted is also determined by the maker.
 
+#### Properties
+
 {% property version of <component> %}
 
 The version of the component, as determined by the component maker.
@@ -165,6 +175,8 @@ Returns information about the component, as determined by the creator of the com
 {% type array%}
 
 The &lt;array&gt; inspectors return a list of values in a dictionary array.
+
+#### Properties
 
 {% property value of <array> %}
 
@@ -201,6 +213,8 @@ An array from an array by index.
 {% type stage%}
 
 The &lt;stage&gt; objects are for inspecting the stage portion of version numbers, which is the penultimate section of a version string: Major.Minor.ReleaseStageBuild. 
+
+#### Casts
 
 {% property <stage> as string %}
 

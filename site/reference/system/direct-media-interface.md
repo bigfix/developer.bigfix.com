@@ -6,6 +6,8 @@ title: direct-media-interface
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property tolerance of <dmi voltage_probe> %}
 
 No documentation exists for this property.
@@ -50,6 +52,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property tolerance of <dmi temperature_probe> %}
 
 No documentation exists for this property.
@@ -93,6 +97,8 @@ No documentation exists for this property.
 {% type dmi system_slots%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property slot_type of <dmi system_slots> %}
 
@@ -146,6 +152,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property timer_interval of <dmi system_reset> %}
 
 No documentation exists for this property.
@@ -173,6 +181,8 @@ No documentation exists for this property.
 {% type dmi system_power_supply%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property serial_number of <dmi system_power_supply> %}
 
@@ -234,6 +244,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property next_scheduled_power_on_second of <dmi system_power_controls> %}
 
 No documentation exists for this property.
@@ -261,6 +273,8 @@ No documentation exists for this property.
 {% type dmi system_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property wake_up_type of <dmi system_information> %}
 
@@ -301,6 +315,8 @@ No documentation exists for this property.
 {% type dmi system_enclosure_or_chassis%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property version of <dmi system_enclosure_or_chassis> %}
 
@@ -370,6 +386,8 @@ No documentation exists for this type.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property reserved of <dmi system_boot_information> %}
 
 No documentation exists for this property.
@@ -381,6 +399,8 @@ No documentation exists for this property.
 {% type dmi processor_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property voltage of <dmi processor_information> %}
 
@@ -482,6 +502,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property serial_number of <dmi portable_battery> %}
 
 No documentation exists for this property.
@@ -550,6 +572,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property port_type of <dmi port_connector_information> %}
 
 No documentation exists for this property.
@@ -577,6 +601,8 @@ No documentation exists for this property.
 {% type dmi physical_memory_array%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property use of <dmi physical_memory_array> %}
 
@@ -610,6 +636,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property manufacturer_name of <dmi out_of_band_remote_access> %}
 
 No documentation exists for this property.
@@ -625,6 +653,8 @@ No documentation exists for this property.
 {% type dmi onboard_devices_extended_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property segment_group_number of <dmi onboard_devices_extended_information> %}
 
@@ -653,6 +683,8 @@ No documentation exists for this property.
 {% type dmi on_board_devices_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property length of <dmi on_board_devices_information> %}
 
@@ -685,6 +717,8 @@ No documentation exists for this type.
 {% type dmi memory_module_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property socket_designation of <dmi memory_module_information> %}
 
@@ -722,6 +756,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property starting_address of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
@@ -757,6 +793,8 @@ No documentation exists for this property.
 {% type dmi memory_device%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property type_detail of <dmi memory_device> %}
 
@@ -834,6 +872,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property supported_speeds of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
@@ -878,6 +918,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property memory_device_load of <dmi memory_channel> %}
 
 No documentation exists for this property.
@@ -906,6 +948,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property starting_address of <dmi memory_array_mapped_address> %}
 
 No documentation exists for this property.
@@ -929,6 +973,8 @@ No documentation exists for this property.
 {% type dmi management_device_threshold_data%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property upper_threshold_non_recoverable of <dmi management_device_threshold_data> %}
 
@@ -962,6 +1008,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property threshold_handle of <dmi management_device_component> %}
 
 No documentation exists for this property.
@@ -986,6 +1034,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property type of <dmi management_device> %}
 
 No documentation exists for this property.
@@ -1009,6 +1059,8 @@ No documentation exists for this property.
 {% type dmi ipmi_device_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property nv_storage_device_address of <dmi ipmi_device_information> %}
 
@@ -1038,6 +1090,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property length of <dmi inactive> %}
 
 No documentation exists for this property.
@@ -1045,6 +1099,8 @@ No documentation exists for this property.
 {% type dmi hardware_security%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property length of <dmi hardware_security> %}
 
@@ -1057,6 +1113,8 @@ No documentation exists for this property.
 {% type dmi group_associations%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property length of <dmi group_associations> %}
 
@@ -1078,6 +1136,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property length of <dmi end_of_table> %}
 
 No documentation exists for this property.
@@ -1085,6 +1145,8 @@ No documentation exists for this property.
 {% type dmi electrical_current_probe%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property tolerance of <dmi electrical_current_probe> %}
 
@@ -1130,6 +1192,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property temperature_probe_handle of <dmi cooling_device> %}
 
 No documentation exists for this property.
@@ -1157,6 +1221,8 @@ No documentation exists for this property.
 {% type dmi cache_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property system_cache_type of <dmi cache_information> %}
 
@@ -1206,6 +1272,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property type of <dmi built_in_pointing_device> %}
 
 No documentation exists for this property.
@@ -1225,6 +1293,8 @@ No documentation exists for this property.
 {% type dmi bios_language_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property reserved of <dmi bios_language_information> %}
 
@@ -1249,6 +1319,8 @@ No documentation exists for this property.
 {% type dmi bios_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property vendor of <dmi bios_information> %}
 
@@ -1298,6 +1370,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property version of <dmi base_board_information> %}
 
 No documentation exists for this property.
@@ -1346,6 +1420,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property vendor_syndrome of <dmi b64_bit_memory_error_information> %}
 
 No documentation exists for this property.
@@ -1381,6 +1457,8 @@ No documentation exists for this property.
 {% type dmi b32_bit_memory_error_information%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property vendor_syndrome of <dmi b32_bit_memory_error_information> %}
 
@@ -1418,6 +1496,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property number_of_additional_information_entries of <dmi additional_information> %}
 
 No documentation exists for this property.
@@ -1429,6 +1509,8 @@ No documentation exists for this property.
 {% type dmi%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property voltage_probe of <dmi> %}
 

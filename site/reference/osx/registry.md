@@ -6,6 +6,8 @@ title: registry
 
 The &lt;registryroot&gt; objects are the inspectors for the planes of the IOKit Registry
 
+#### Properties
+
 {% property usb plane of <registryroot> %}
 
 The usb plane of IOKit&#39;s registry.
@@ -41,6 +43,8 @@ The audio plane of IOKit&#39;s registry.
 {% type registrynode%}
 
 The &lt;registrynode&gt; inspectors provide access to the nodes of the IOKit Registry.
+
+#### Properties
 
 {% property path of <registrynode> %}
 

@@ -6,9 +6,13 @@ title: wmi
 
 The &lt;wmi select&gt; object represents a value returned as a result of a WMI select query. You can find more information at the MSDN Library (http://msdn.microsoft.com/library/) under WMI Classes. WMI inspectors can provide you with useful information about your Client computers. For instance, to get the asset tag from a dell, use: string value of select &quot;SerialNumber from Win32_systemenclosure&quot; of wmi.
 
+#### Casts
+
 {% property <wmi select> as string %}
 
 Returns a string formatted as &lt;name&gt;=&lt;value&gt; for the wmi select.
+
+#### Properties
 
 {% property type of <wmi select> %}
 
@@ -54,9 +58,13 @@ Returns the WMI value cast to boolean.
 
 The &lt;wmi object&gt; inspectors allow you to analyze the properties of WMI objects.
 
+#### Casts
+
 {% property <wmi object> as string %}
 
 Casts the given wmi object as a string type.
+
+#### Properties
 
 {% property property of <wmi object> %}
 
@@ -69,6 +77,8 @@ Returns the inspector properties of the form &lt;string&gt; of &lt;wmi object&gt
 {% type wmi%}
 
 A &lt;wmi&gt; object provides access to the WMI (Windows Management Instrumentation) query facility. This object provides access to a large amount of configuration and client-specific data.
+
+#### Properties
 
 {% property select object <string> of <wmi> %}
 

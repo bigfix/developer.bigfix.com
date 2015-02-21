@@ -6,9 +6,13 @@ title: winrt
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <winrt package user information> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property sid of <winrt package user information> %}
 
@@ -21,6 +25,8 @@ No documentation exists for this property.
 {% type winrt package id%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property version of <winrt package id> %}
 
@@ -54,9 +60,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <winrt package> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property winrt package user of <winrt package> %}
 
@@ -74,9 +84,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <winrt enumeration> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property value of <winrt enumeration> %}
 

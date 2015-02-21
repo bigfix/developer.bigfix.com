@@ -6,6 +6,8 @@ title: devices
 
 The &lt;scsidevice&gt; inspectors refer to the Small Computer System Interface devices connected to the Client computer.
 
+#### Properties
+
 {% property vendor of <scsidevice> %}
 
 Vendor string for given SCSI device.
@@ -25,6 +27,8 @@ The product string for the given SCSI device.
 {% type scsibus%}
 
 The &lt;scsibus&gt; inspectors refer to the Small Computer System Interface bus components.
+
+#### Properties
 
 {% property wide32 scsi of <scsibus> %}
 
@@ -54,6 +58,8 @@ Determines if fast SCSI is supported by the SCSI bus.
 
 The &lt;usb&gt; objects are the Universal Serial Bus inspectors.
 
+#### Properties
+
 {% property version of <usb> %}
 
 The version of the USB installed in the system. Taken from the Gestalt Manager.
@@ -65,6 +71,8 @@ The isochronous attribute of the USB installed. Taken from the Gestalt Manager.
 {% type active device%}
 
 On Windows NT systems (including XP and 2K), the &lt;active device&gt; inspectors returns a set of objects corresponding to the active devices on the machine, for example: modems, graphics cards, printers, and more.
+
+#### Properties
 
 {% property status of <active device> %}
 

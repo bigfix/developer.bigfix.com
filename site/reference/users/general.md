@@ -6,6 +6,8 @@ title: general
 
 The &lt;user&gt; inspectors allow you to list properties of all users, whether they are logged in or not.
 
+#### Properties
+
 {% property tty of <user> %}
 
 Returns the tty of the user.
@@ -214,6 +216,8 @@ No documentation exists for this property.
 
 These Windows and Macintosh inspectors return information about the currently logged-on user. With the advent of Terminal Services and Fast User Switching, these inspectors are designed to iterate over all logged on users. Windows Note: If Terminal Services are available (NT/2000/2003/XP/Vista) and enabled, these inspectors iterate over the active and disconnected sessions as returned by WTSEnumerateSessions. Disconnected sessions are those where a user logs on, but is currently inactive. On Vista, the non-interactive session 0 (used for services isolation) is not included. If Terminal Services aren&#39;t available, the ACLs on the security descriptor of the &quot;winsta0&quot; window station are examined for user logons. On Windows 9x systems, these inspectors return the user session associated with the registry value &quot;Current User&quot; of &quot;SYSTEM\CurrentControlSet\Control&quot; if it exists. Otherwise, if a shell process process such as Explorer.exe is running, they return a single session associated with an unnamed user (which occurs when the user cancels the 9x login dialog).
 
+#### Properties
+
 {% property session id of <logged on user> %}
 
 Returns the session id, which uniquely identifies a logged on user session. A logged-on user is a subclass of a user, and adding the session id uniquely identifies the session.
@@ -257,6 +261,8 @@ Returns the registry key of the specified logged on user
 {% type local user%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property workstation trust account flag of <local user> %}
 
@@ -430,6 +436,8 @@ No documentation exists for this property.
 
 The &lt;local group member&gt; inspectors return information (such as security IDs) on members of local groups as defined on the local BES Client computer using the windows NetLocalGroupEnum API, one of Windows Network Management Functions.
 
+#### Casts
+
 {% property <local group member> as string %}
 
 Casts a local group member as a string.
@@ -437,6 +445,8 @@ Casts a local group member as a string.
 {% type local group%}
 
 The &lt;local group&gt; inspectors return information on local groups as defined on the local BES Client computer using the windows NetLocalGroupEnum API, one of Windows Network Management Functions. Local groups have names, comments, members and security IDs.
+
+#### Properties
 
 {% property name of <local group> %}
 
@@ -454,9 +464,13 @@ Returns a string containing a comment associated with the specfied local group (
 
 These Macintosh inspectors provide information, such as user ID and home directory, about the specified user.
 
+#### Casts
+
 {% property <user attribute> as string %}
 
 Returns a list of user attributes. These can be inspected for value and key, but this inspector concatenates them so the cast yields a string of the form &quot;key: value&quot;. These attributes are gathered from the LocalHost node of Apple&#39;s OpenDirectory system (much like ActiveDirectory). For more information, see the Apple developer site.
+
+#### Properties
 
 {% property value of <user attribute> %}
 
@@ -469,6 +483,8 @@ Returns the key names of the specified user attribute, as specified by the Local
 {% type activity history%}
 
 The &lt;activity history&gt; inspectors keep track of the activity of a single logged-on user. You may iterate over all logged-on users and get the history for each user separately. User information is purged at log off and power off/client off, even if the user immediately logs back in. These inspectors retrieve information within a tracking window (defaulting to 14 days) or, if the window is still open, the start of that window. Information is in the form of a list of (interval, state) tuples. The first element of the list is the current state of the system. The event lists are fetched from the client each time &#39;activity history&#39; is referenced, so you should avoid referencing these inspectors more than once in a relevance statement. Note: Activity tracking only works while the Client UI is running. These inspectors only work with Windows 2000 or better.
+
+#### Properties
 
 {% property user interval of <activity history> %}
 

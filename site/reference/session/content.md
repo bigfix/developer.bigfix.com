@@ -6,6 +6,8 @@ title: content
 
 The &lt;bes fixlet with multiplicity&gt; inspectors deal with arrays of BES fixlets, allowing you to extract unique fixlets and count them.
 
+#### Properties
+
 {% property multiplicity of <bes fixlet with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes fixlet&gt; types.
@@ -14,9 +16,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;bes fixlet set&gt; inspectors iterate over the current set of BES Fixlets and package them as a mathematical set, suitable for further set manipulation.
 
+#### Casts
+
 {% property <bes fixlet set> as xml %}
 
 Converts the specified set of BES Fixlets to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property union of <bes fixlet set> %}
 
@@ -37,6 +43,8 @@ Returns the unique elements of the specified &lt;bes fixlet set&gt;, removing du
 {% type bes fixlet result%}
 
 The &lt;bes fixlet result&gt; inspectors allow you to inspect the results of BES Fixlet messages, including relevance and affected computers.
+
+#### Properties
 
 {% property relevant flag of <bes fixlet result> %}
 
@@ -70,6 +78,8 @@ No documentation exists for this property.
 
 The &lt;bes fixlet field value&gt; inspectors provide access to the values of informational fields that are included with some Fixlet messages and Tasks. For more Information, see the BES Fixlet field inspectors.
 
+#### Casts
+
 {% property <bes fixlet field value> as time %}
 
 Returns the value of the specified BES Fixlet field cast as a time type.
@@ -86,6 +96,8 @@ Returns the value of the specified BES Fixlet field cast as an integer type.
 
 Returns the value of the specified BES Fixlet field cast as a date type.
 
+#### Properties
+
 {% property display value of <bes fixlet field value> %}
 
 Returns the value of a BES Fixlet field as a human-readable string.
@@ -93,6 +105,8 @@ Returns the value of a BES Fixlet field as a human-readable string.
 {% type bes fixlet field%}
 
 In addition to the Relevance and Action fields, Fixlet messages and Tasks can contain various additional fields. If the content is developed in BDE, these fields may be specified by the Fixlet templates you use. Depending on the site or the template, fields may have different interpretations.
+
+#### Properties
 
 {% property value of <bes fixlet field> %}
 
@@ -105,6 +119,8 @@ Returns the name(s) of the specified BES Fixlet field(s).
 {% type bes fixlet action%}
 
 The &lt;bes fixlet action&gt; inspectors let you examine BES Actions that are attached to Fixlet messages.
+
+#### Properties
 
 {% property script type of <bes fixlet action> %}
 
@@ -138,9 +154,13 @@ No documentation exists for this property.
 
 The &lt;bes fixlet&gt; inspectors allow you to iterate over the BES Fixlet messages to create lists of various Fixlet properties such as name, ID, site, and more.
 
+#### Casts
+
 {% property <bes fixlet> as xml %}
 
 Converts the specified BES Fixlet to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property wizard name of <bes fixlet> %}
 
@@ -450,6 +470,8 @@ No documentation exists for this property.
 
 The &lt;bes filter with multiplicity&gt; inspectors deal with arrays of BES filters, allowing you to extract unique filters and count them.
 
+#### Properties
+
 {% property multiplicity of <bes filter with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes filter&gt; types.
@@ -457,6 +479,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes filter set%}
 
 The &lt;bes filter set&gt; inspectors return the iterated list of BES Filters, converted into a set to make it easy to do set arithmetic with the list.
+
+#### Properties
 
 {% property union of <bes filter set> %}
 
@@ -477,6 +501,8 @@ Returns the unique elements of the specified &lt;bes filter set&gt;, removing du
 {% type bes filter%}
 
 The &lt;bes filter&gt; inspectors return the filters, which represent the criteria used by the Find command (Ctrl-F in the BES Console). The filters are specific to computers, computer groups, Actions, Analyses, Baselines, Unmanaged Assets, Users, Tasks or Fixlets, and are appropriately flagged.
+
+#### Properties
 
 {% property user set of <bes filter> %}
 
@@ -578,6 +604,8 @@ Returns TRUE if the specified BES Filter was designed for finding Actions.
 
 Baselines provide a method of grouping Actions from multiple Fixlets, Tasks, or other Baselines. Once a Baseline is defined (in the BES Console) the Actions are all grouped for simulataneous application. This technique allows you to form natural groupings of Actions for a single-click deployment.
 
+#### Properties
+
 {% property name of <bes baseline component group> %}
 
 Returns the name(s) of the specified BES Baseline component group(s).
@@ -589,6 +617,8 @@ Returns a list of the components of the specified BES Baseline component group.
 {% type bes baseline component%}
 
 The &lt;bes baseline component&gt; inspectors return the individual components of a Baseline, such as Fixlets, Tasks or other Baselines.
+
+#### Properties
 
 {% property unknown computer set of <bes baseline component> %}
 
@@ -633,6 +663,8 @@ Returns the Action corresponding to the specified BES Baseline component.
 {% type bes activation%}
 
 The &lt;bes activation&gt; inspectors examine the various Analyses that have been activated on the networked BES Clients.
+
+#### Properties
 
 {% property name of <bes activation> %}
 

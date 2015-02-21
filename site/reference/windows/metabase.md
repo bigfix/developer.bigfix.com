@@ -6,6 +6,8 @@ title: metabase
 
 This inspector is used to access values stored in an IIS metabase key. The type of the data stored in the value determines what casting operations are allowed. There are several casting inspectors that you can use to extract values from the registry.
 
+#### Casts
+
 {% property <metabase value> as string %}
 
 Returns the string value of the metabase value.
@@ -13,6 +15,8 @@ Returns the string value of the metabase value.
 {% property <metabase value> as integer %}
 
 Returns the integer value of the metabase value.
+
+#### Properties
 
 {% property volatile attribute of <metabase value> %}
 
@@ -50,6 +54,8 @@ Returns the metabase identifier of the specified value.
 
 The user type is a DWORD that specifies how the property value is used. User types enable IIS to classify properties by application.
 
+#### Casts
+
 {% property <metabase user type> as string %}
 
 Returns the metabase user type as a string:&quot;Server&quot;&quot;File&quot;&quot;WAM&quot;&quot;ASP App&quot;&quot;(Other)&quot;.
@@ -62,6 +68,8 @@ Returns the metabase user type as an integer:2 = Server2 = File100 = WAM200 = AS
 
 The type identifier of the data associated with a metabase key value.
 
+#### Casts
+
 {% property <metabase type> as string %}
 
 Returns metabase types as strings:&quot;DWord&quot;&quot;String&quot;&quot;Binary&quot;&quot;ExpandSz&quot;&quot;MultiSz&quot;.
@@ -73,6 +81,8 @@ Meanings same as registry types:1 = DWORD2 = STRING3 = BINARY4 = EXPANDSZ5 = MUL
 {% type metabase key%}
 
 Like a registry key, a metabase key contains named properties about the IIS metabase.
+
+#### Properties
 
 {% property value of <metabase key> %}
 
@@ -94,6 +104,8 @@ Returns the named subkey of the specified metabase key.
 
 The &lt;metabase identifier&gt; objects are unique numerical identifiers which IIS recognizes internally.
 
+#### Casts
+
 {% property <metabase identifier> as string %}
 
 This is a Casting Operator that takes a &lt;metabase identifier&gt; type and returns a &lt;string&gt; type
@@ -105,6 +117,8 @@ The integer value of the specified identifier. Use the Microsoft MetaEdit utilit
 {% type metabase%}
 
 The IIS metabase is similar in structure to the Windows Registry, providing hierarchal storage of IIS configuration properties for Web sites, virtual directories, FTP, and more.
+
+#### Properties
 
 {% property key of <metabase> %}
 

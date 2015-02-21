@@ -6,13 +6,17 @@ class Property < Liquid::Tag
 
   def render(context)
     site = context.registers[:site]
+    property = site.data['language']['properties'][@property]
 
     dir = site.in_source_dir('_includes')
-    file = File.join(dir, 'property.html')
+
+    if (property['type'] == 'cast')
+      file = File.join(dir, 'cast.html')
+    else 
+      file = File.join(dir, 'property.html')
+    end
 
     partial = Liquid::Template.parse(File.read(file))
-
-    property = site.data['language']['properties'][@property];
 
     context.stack do
       context['include'] = { 'property' => property }

@@ -6,6 +6,8 @@ title: volumes
 
 The &lt;drive&gt; object is available to inspect these aspects of the file system.
 
+#### Properties
+
 {% property type of <drive> %}
 
 Returns the type of drive as a string.Example: type of drive of the system folder = &quot;DRIVE_FIXED&quot; - Returns TRUE if the system folder is on a fixed disk drive.
@@ -90,9 +92,13 @@ Returns the volume name of the drive if present
 
 On AIX systems, physical disk volumes are organized into volume groups. The partition size of a physical volume is determined by the volume group that it belongs to. If multiple physical volumes belong to the same volume group, then they must all have the same partition size. A typical partition size might be 16 or 32 megabytes.
 
+#### Casts
+
 {% property <volume group> as string %}
 
 Casts an AIX volume group as a string type.
+
+#### Properties
 
 {% property partition size of <volume group> %}
 
@@ -122,6 +128,8 @@ Returns the number of physical partitions within the specified volume group that
 
 On AIX, the logical volume manager provides a flexible means of allocating disk space using volume groups, logical volumes, and physical volumes. A volume group is a collection of one or more physical volumes and a logical volume is an abstraction representing a pool of disk space. The disk space assigned to a logical volume appears contiguous to the user, but it may actually be distributed across one or more physical volumes within a single volume group.
 
+#### Properties
+
 {% property volume group of <logical volume manager> %}
 
 Returns the volume group corresponding to the given logical volume manager.
@@ -134,9 +142,13 @@ On an AIX system, returns a volume group from the logical group whose name prope
 
 A logical volume consists of an array of identically sized logical partitions. The partition size of a logical volume is determined by the volume group that contains it, and is the same as the volume group&#39;s physical partition size. Contiguous logical partitions within a logical volume may map to discontiguous physical partitions, possibly distributed across multiple physical volumes. A logical volume may be configured so that its logical partitions are mirrored to protect data from hardware failures. Mirroring may be configured so that each logical partition maps to either 2 or 3 physical partition mirrors.
 
+#### Casts
+
 {% property <logical volume> as string %}
 
 Casts an AIX logical volume as a string type.
+
+#### Properties
 
 {% property volume group of <logical volume> %}
 

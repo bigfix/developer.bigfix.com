@@ -6,9 +6,13 @@ title: language
 
 Some inspectors look at the Relevance language itself, inspecting the inspectors, so to speak. There are several aspects to view, including the types, properties, casts and operators. This group of inspectors looks at the various binary operators available from the Relevance language.
 
+#### Casts
+
 {% property <binary operator> as string %}
 
 A short description of the use of the operator.
+
+#### Properties
 
 {% property symbol of <binary operator> %}
 
@@ -34,9 +38,13 @@ The type required before the operator in an expression.
 
 Some inspectors look at the Relevance language itself, inspecting the inspectors, so to speak. There are several aspects to view, including the types, properties, casts and operators. This group of inspectors looks at the various unary operators available from the Relevance language.
 
+#### Casts
+
 {% property <unary operator> as string %}
 
 A short description of the use of the operator.
+
+#### Properties
 
 {% property symbol of <unary operator> %}
 
@@ -58,6 +66,8 @@ A phrase naming the operator.
 
 The &quot;undefined&quot; type is used as the result type of inspectors that never return a value.
 
+#### Casts
+
 {% property <undefined> as string %}
 
 Casts the &#39;undefined&#39; error as a string.
@@ -66,9 +76,13 @@ Casts the &#39;undefined&#39; error as a string.
 
 Some inspectors look at the Relevance language itself, inspecting the inspectors, so to speak. There are several aspects to view, including the types, properties, casts and operators. This group of inspectors looks at the various type options available from the Relevance language.
 
+#### Casts
+
 {% property <type> as string %}
 
 A string indicating the type.
+
+#### Properties
 
 {% property size of <type> %}
 
@@ -102,9 +116,13 @@ Returns the casts that can be created from the specified &lt;type&gt;.
 
 Some inspectors look at the Relevance language itself, inspecting the inspectors, so to speak. There are several aspects to view, including the types, properties, casts and operators. This group of inspectors looks at the properties available from the Relevance language.
 
+#### Casts
+
 {% property <property> as string %}
 
 A short description of the use of the property.
+
+#### Properties
 
 {% property usual name of <property> %}
 
@@ -142,9 +160,13 @@ This introspector returns TRUE if a property&#39;s dependency is known. If it is
 
 Some inspectors look at the Relevance language itself, inspecting the inspectors, so to speak. There are several aspects to view, including the types, properties, casts and operators. This group of inspectors looks at the various casting operations available from the Relevance language.
 
+#### Casts
+
 {% property <cast> as string %}
 
 A short description of the use of the cast.
+
+#### Properties
 
 {% property result type of <cast> %}
 
@@ -166,6 +188,8 @@ No documentation exists for this type.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <boolean> as string %}
 
 Converts the boolean value to a string. The possible values returned are &quot;True&quot; and &quot;False&quot; with this exact case, for example:TRUE as string = &quot;True&quot;.
@@ -173,6 +197,8 @@ Converts the boolean value to a string. The possible values returned are &quot;T
 {% property <boolean> as boolean %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property javascript array <string> of <boolean> %}
 
@@ -190,6 +216,8 @@ This inspector performs a serial AND on all its boolean arguments:conjunction of
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <dummy type> as string %}
 
 No documentation exists for this cast.
@@ -197,6 +225,8 @@ No documentation exists for this cast.
 {% type dummy%}
 
 The &lt;dummy&gt; inspectors are place holders for compatability with Windows clients
+
+#### Properties
 
 {% property state of <dummy> %}
 
@@ -206,6 +236,8 @@ A dummy inspector to provide compatibility with other operating systems.
 
 A small, numbered collection of bits that can be examined and manipulated.
 
+#### Casts
+
 {% property <bit set> as string %}
 
 Returns the bits (0s and 1s) in a string format.
@@ -213,6 +245,8 @@ Returns the bits (0s and 1s) in a string format.
 {% property <bit set> as integer %}
 
 Returns the integer whose binary representation matches the bit set.
+
+#### Properties
 
 {% property right shift <integer> of <bit set> %}
 

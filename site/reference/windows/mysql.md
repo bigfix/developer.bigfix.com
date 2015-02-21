@@ -6,6 +6,8 @@ title: mysql
 
 The &lt;local mssql database&gt; inspectors retrieve the properties of the MS SQL databases on the local machine.
 
+#### Properties
+
 {% property running of <local mssql database> %}
 
 Returns a boolean indicating if the MSSQL database is running.

@@ -6,6 +6,8 @@ title: package
 
 The &lt;uuid with multiplicity&gt; inspectors deal with arrays of UUIDs, allowing you to extract unique IDs and count them.
 
+#### Properties
+
 {% property multiplicity of <uuid with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;uuid&gt; types.
@@ -14,9 +16,13 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 UUID is a Universally Unique IDentifier code given to each storage device on your Solaris system. UUIDs are used to identify DVD drives, removable media and drive partitions. The UUID is a  hexadecimal string such as c73a37c8-ef7f-40e4-b9de-8b2f81038441. UUID values may be compared to each other using the arithmetic operators (=, &lt;, &gt;, and more.).
 
+#### Casts
+
 {% property <uuid> as string %}
 
 Casts a UUID as a string type.
+
+#### Properties
 
 {% property unique value of <uuid> %}
 
@@ -38,9 +44,13 @@ Returns the minimum and maximum extreme values of the given list of UUIDs (Unive
 
 Pkginfo is an object containing information about Solaris packages, which are used to deliver patches. Pkginfo contains information about the category, the intended architecture, vendors, patch IDs and revision numbers. Other package information can be inspected using the &quot;param&quot; property which lets you access other parameters by name.
 
+#### Casts
+
 {% property <pkginfo> as string %}
 
 Converts a pkginfo object into a string.
+
+#### Properties
 
 {% property version of <pkginfo> %}
 
@@ -90,6 +100,8 @@ Returns a string representing the architecture of the package specified by the p
 
 This is a database object created by BigFix to keep track of all the Solaris packages (pkginfos) that have been installed on this computer. The pkginfo object, in turn, contains Solaris patches, each with an ID and a revision number. The database essentially contains a comprehensive list of patches, allowing you to directly access a patch without going through pkginfo. The syntax is &quot;patch of pkgdb&quot;, which can greatly simplify your relevance expressions.
 
+#### Properties
+
 {% property pkginfo of <pkgdb> %}
 
 Returns all the packages (as pkginfos) in the given package database.
@@ -117,6 +129,8 @@ Returns the requested patch from the package database. Typically used for existe
 {% type patch%}
 
 An object that exposes the properties of a Solaris patch, each of which has a base ID followed by a revision number, such as 123456-12. Here the base is 123456, which identifies the patch, and 12, which represents the revision of this particular patch. 
+
+#### Properties
 
 {% property revision of <patch> %}
 

@@ -6,6 +6,8 @@ title: files
 
 Symlinks, or symbolic links, are the Unix version of shortcut files (pointers to other files). inspectors can analyze the file objects (files and folders) that symlinks point to by using the standard file inspectors. The symlink inspectors, on the other hand, allow you to analyze the properties of a symlink itself, not just the underlying file. There are many properties that symlinks have in common with files, such as name, pathname, parent folder, and more. In addition, a symlink has a value corresponding to the file object it points to. You can also determine if the file is available or not.
 
+#### Casts
+
 {% property <symlink> as symlink %}
 
 Casts a symlink, provided for completeness.
@@ -33,6 +35,8 @@ Casts a symlink type as a FIFO (named pipe) file.
 {% property <symlink> as device file %}
 
 Casts a symlink type as a device file type.
+
+#### Properties
 
 {% property value of <symlink> %}
 
@@ -105,6 +109,8 @@ Returns the last accessed time of the specified symlink.
 {% type folder%}
 
 For every folder that exists in the file system, you can create a folder object. These inspectors allow you to examine dozens of properties of folder objects. On the Macintosh, there are dozens of specialized folders; access to them depends on the domain. If the domain is not specified, it defaults to the system domain.
+
+#### Properties
 
 {% property symlink of <folder> %}
 
@@ -270,6 +276,8 @@ Specifies the security descriptor associated with the specified folder.
 
 The &lt;filesystem object&gt; inspectors provide handles for the various objects available in the file system.
 
+#### Casts
+
 {% property <filesystem object> as symlink %}
 
 Casts a link in the form of a file into a symlink.
@@ -297,6 +305,8 @@ Returns a folder or nothing.
 {% property <filesystem object> as file %}
 
 Returns a file or nothing (if, for example, the filesystem object was a folder).
+
+#### Properties
 
 {% property user write of <filesystem object> %}
 
@@ -486,6 +496,8 @@ Returns TRUE if the Archive bit is turned on for the specified file or folder (f
 
 The filesystem object can be used to inspect various aspects of mounted file systems, including the format of the file system. Here are some of the possible format types:affsext, ext2, ext2_oldhpfsisominix, minix_30, minix2, minix2_30 msdos ncpnfsprocsmbxenixsysv4, sysv2cohufsxia
 
+#### Properties
+
 {% property used space of <filesystem> %}
 
 Returns the number of bytes on this filesystem currently in use.
@@ -542,6 +554,8 @@ This is a &lt;Plain&gt; property inspector that takes a &lt;filesystem&gt; type 
 
 Many programs and utilities store their settings in &#39;ini&#39; files. This object is designed to access these settings. An &#39;ini&#39; file is composed of zero or more named sections, each with zero or more keys. Each key is identified by name and has a string value.
 
+#### Properties
+
 {% property key <string> of <file section> %}
 
 Returns a string containing the value for the name provided. A case-insensitive search is performed through the section of the file.
@@ -549,6 +563,8 @@ Returns a string containing the value for the name provided. A case-insensitive 
 {% type file line%}
 
 A &lt;file line&gt; object produces strings from a text file.
+
+#### Properties
 
 {% property previous line of <file line> %}
 
@@ -566,6 +582,8 @@ Returns the line number of a given line. Can be used to locate specific lines in
 
 Content objects can be constructed from file objects to inspect their contents.
 
+#### Casts
+
 {% property <file content> as uppercase %}
 
 Returns an uppercase version of the content provided.
@@ -578,9 +596,13 @@ Returns a lowercase version of the content provided.
 
 For each file in the file system, you can create a corresponding file object and inspect its properties. inspectors are also provided to look at version data of executable files.Note: File systems that do not maintain the creation or last accessed times will often return the last modification time when queried for the creation or last accessed times or files. Modification times are preserved when files are copied. Thus, it is not uncommon to see a file that appears to have been modified before it was created.
 
+#### Casts
+
 {% property <file> as string %}
 
 Creates a string containing the full pathname of the specified file. See &lt;file&gt;.
+
+#### Properties
 
 {% property variable of <file> %}
 
@@ -826,6 +848,8 @@ No documentation exists for this property.
 
 In Unix systems, a FIFO file is a named pipe that uses the file system as a way to store the pipe name. These inspectors provide access to these named pipes.
 
+#### Properties
+
 {% property filesystem of <fifo file> %}
 
 Returns the filesystem object corresponding to the specified FIFO file.
@@ -837,6 +861,8 @@ Returns the drive associated with the specified FIFO (named pipe) file.
 {% type device file%}
 
 These inspector types interrogate Unix-style device files, which contain device drivers or system resources. Unix identifies these resources by a major number and a minor number, both stored as part of a node structure. Typically, the major number identifies the device driver and the minor number identifies the particular device controlled by that driver.
+
+#### Properties
 
 {% property minor of <device file> %}
 
@@ -862,6 +888,8 @@ Returns the device type corresponding to the give device file, as a string.
 
 This object lets you inspect the properties of your swap space.
 
+#### Properties
+
 {% property used amount of <swap> %}
 
 Returns the amount of the swap partition currently in use, in bytes.
@@ -882,6 +910,8 @@ Returns the amount of the swap partition currently unused, in bytes.
 
 You can inspect the version blocks of a file. There may be several language-specific version blocks. Version blocks contain version and name information in a human readable form for the specified language. This is the information that Windows displays in the file properties dialog. This technique uses string values and has a limited array of comparators. For better speed, utility and compactness see the version object.
 
+#### Properties
+
 {% property value <string> of <file version block> %}
 
 Returns a string corresponding to the name provided. Values have names such as &#39;CompanyName&#39;, &#39;FileDescription&#39;, &#39;FileVersion&#39;.Example: value &quot;FileVersion&quot; of version block 1 of regapp &quot;bigfix.exe&quot; as version - When casting a string value to a version, the parser skips through the string until it identifies something that can be interpreted as a version. This is convenient for extracting version numbers from strings containing added text.
@@ -901,6 +931,8 @@ A string representation of the codepage portion of the id of this version block.
 {% type file shortcut%}
 
 Shortcuts to files can be constructed in the file system. The shortcut contains some additional properties that can be inspected.
+
+#### Properties
 
 {% property start in pathname of <file shortcut> %}
 
@@ -926,6 +958,8 @@ Returns the arguments that are passed to the application to which the shortcut p
 
 The &lt;mode_mask&gt; inspector is a differently formatted version of the mode, created by shifting the key information down to the low three bits. 
 
+#### Casts
+
 {% property <mode_mask> as string %}
 
 Converts the mode mask to a string, for example &quot;rwx&quot;.
@@ -933,6 +967,8 @@ Converts the mode mask to a string, for example &quot;rwx&quot;.
 {% property <mode_mask> as integer %}
 
 Converts the mode mask to an integer, 1-4.
+
+#### Properties
 
 {% property write of <mode_mask> %}
 
@@ -950,6 +986,8 @@ Returns TRUE if the execute flag (x) of the rwx mode mask is on. (binary 001 = 1
 
 The &lt;mode&gt; inpector returns file type information and permissions. These are the possible values of mode:S_IFMT 170000 bitmask for the file type bitfieldsS_IFSOCK 140000 socketS_IFLNK 120000 symbolic linkS_IFREG 100000 regular fileS_IFBLK 060000 block deviceS_IFDIR 040000 directoryS_IFCHR 020000 character deviceS_IFIFO 010000 fifoS_ISUID 004000 set UID bitS_ISGID 002000 set GID bitS_ISVTX 001000 sticky bitS_IRWXU 000700 mask for file owner permissionsS_IRUSR 000400 owner has read permissionS_IWUSR 000200 owner has write permissionS_IXUSR 000100 owner has execute permissionS_IRWXG 000070 mask for group permissionsS_IRGRP 000040 group has read permissionS_IWGRP 000020 group has write permissionS_IXGRP 000010 group has execute permissionS_IRWXO 000007 mask for permissions for others (not in group)S_IROTH 000004 others have read permissionS_IWOTH 000002 others have write permissionS_IXOTH 000001 others have execute permission
 
+#### Casts
+
 {% property <mode> as string %}
 
 Converts the mode to a string.
@@ -957,6 +995,8 @@ Converts the mode to a string.
 {% property <mode> as octal string %}
 
 Converts the mode to a string of octal numbers.
+
+#### Properties
 
 {% property user mask of <mode> %}
 
@@ -986,6 +1026,8 @@ Returns the mask for group permissions for the given mode.
 
 The &lt;datafork&gt; inspectors refer to the data fork of a filesystem object.
 
+#### Properties
+
 {% property size of <datafork> %}
 
 Returns the size of the specified datafork.
@@ -998,6 +1040,8 @@ The logical length of the data fork of the file.
 
 The &lt;resfork&gt; inspectors refer to the resource fork of a filesystem object.
 
+#### Properties
+
 {% property size of <resfork> %}
 
 Returns the size of the resource fork.
@@ -1009,6 +1053,8 @@ The logical length of the resource fork of the file.
 {% type volume%}
 
 The &lt;volume&gt; inspectors refer to the mounted drive volumes.
+
+#### Properties
 
 {% property used space of <volume> %}
 
@@ -1078,6 +1124,8 @@ The &lt;file signature&gt; inspectors provide access to each of the four charact
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property enabled of <enableable_file> %}
 
 No documentation exists for this property.
@@ -1089,6 +1137,8 @@ No documentation exists for this property.
 {% type domain%}
 
 Mac OS X defines several file system domains to control access to system resources on multi-user systems. These include the User, Local, Network, Classic and System domains. The domain for a given resource or folder determines its accessibility to the user. For example, while a user-installed font is only available to that user, an administrator-installed font is available to all network users. These inspectors allow folder access to be parceled out according to domain.Note: The &quot;user domain&quot; refers to the root user, not the currently logged in user.
+
+#### Properties
 
 {% property volume settings folder of <domain> %}
 

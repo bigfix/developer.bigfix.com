@@ -6,6 +6,8 @@ title: tasks
 
 The &lt;daily task trigger&gt; inspectors deal with tasks that are triggered on a daily basis. For example, a task might start at 9:00 AM every day or every other day. More information about this subset of task triggers can be found by searching for Daily Trigger at the MSDN site.
 
+#### Properties
+
 {% property random delay of <daily task trigger> %}
 
 Returns  a random time interval to be added to the start time of the trigger referred to by the specified daily task trigger.
@@ -17,6 +19,8 @@ Returns the interval between the days in the schedule referred to by the specifi
 {% type weekly task trigger%}
 
 Weekly triggers are used by the Task Scheduler to launch a task at a specific time of day on a weekly schedule, such as 9:00 PM every other Friday.
+
+#### Properties
 
 {% property weeks interval of <weekly task trigger> %}
 
@@ -33,6 +37,8 @@ Returns a day of week corresponding to the days that a task will run given the s
 {% type session state change task trigger%}
 
 The &lt;session state change task trigger&gt; inspectors return information about Windows actions that are triggered by changes in Terminal Server session states, such as switching users or logging in remotely.
+
+#### Properties
 
 {% property user id of <session state change task trigger> %}
 
@@ -70,6 +76,8 @@ Returns a boolean TRUE if the terminal server console has experienced a connecti
 
 Time triggers are used by the Task Scheduler to launch a task at a specific date and time.
 
+#### Properties
+
 {% property random delay of <time task trigger> %}
 
 Returns a delay time that is randomly added to the start time of the specified time task trigger.
@@ -81,6 +89,8 @@ The &lt;task trigger type&gt; objects represent the possible types of triggers u
 {% type task trigger%}
 
 Task triggers for the Task Scheduler have properties that identify and modify the action of each trigger. 
+
+#### Casts
 
 {% property <task trigger> as weekly task trigger %}
 
@@ -126,6 +136,8 @@ Casts the given task trigger as a daily trigger type.
 
 Casts the given task trigger as a boot trigger type.
 
+#### Properties
+
 {% property type of <task trigger> %}
 
 Returns the task trigger type corresponding to the specified task trigger.
@@ -157,6 +169,8 @@ Returns TRUE if the specified trigger is enabled.
 {% type task settings%}
 
 The &lt;task settings&gt; inspectors examine the settings used by the Task Scheduler service to perform the task. These settings include dealing with starts, restarts and stops, how to manage hidden or multiple tasks, and more.
+
+#### Properties
 
 {% property xml of <task settings> %}
 
@@ -262,6 +276,8 @@ Returns TRUE if the task can be started by using the run command or the context 
 
 The &lt;task repetition pattern&gt; inspectors define how often a scheduled task should be run and determine how long the repetition pattern will be repeated after the task is initiated.
 
+#### Properties
+
 {% property stop at duration end of <task repetition pattern> %}
 
 Returns TRUE if the task repetition  pattern has reached the end of its run.
@@ -277,6 +293,8 @@ Returns a time interval specifying how long the given task pattern is repeated.
 {% type task registration info%}
 
 The &lt;task registration info&gt; objects provide the administrative information used to describe a scheduled task. This information includes details such as a description, the name of the author, the date the task was registered, and the security descriptor.
+
+#### Properties
 
 {% property xml of <task registration info> %}
 
@@ -317,6 +335,8 @@ Returns the author of the scheduled task included in the specified task registra
 {% type task principal%}
 
 The &lt;task principal&gt; inspectors provide information about the scheduled task principal, which incapsulates the security credentials. The principal object includes a display name, a logon type, a run level and a set of IDs.
+
+#### Properties
 
 {% property user id of <task principal> %}
 
@@ -374,6 +394,8 @@ Returns the name of the principal (as a string) that is displayed in the Task Sc
 
 The &lt;task network settings&gt; inspectors provide the settings used by the Task Scheduler to obtain a network profile. A network settings object has an ID and a name.
 
+#### Properties
+
 {% property name of <task network settings> %}
 
 Returns the name of a network profile. The name is used for display purposes.
@@ -386,6 +408,8 @@ Returns a GUID that identifies a network profile.
 
 The &lt;task named value pair&gt; inspectors return name-value pairs associated with various aspects of a scheduled task.
 
+#### Properties
+
 {% property value of <task named value pair> %}
 
 Returns the string value(s) associated with the specified name-value pair(s).
@@ -397,6 +421,8 @@ Returns the string name(s) associated with the specified name-value pair(s).
 {% type task idle settings%}
 
 The &lt;task idle settings&gt; objects specify how the Task Scheduler performs tasks when the computer is in an idle condition. These settings concern the duration, restart, stop and wait conditions for the specified idle settings. For more information about idle conditions, see &#39;Task Idle Conditions&#39; at MSDN.
+
+#### Properties
 
 {% property wait timeout of <task idle settings> %}
 
@@ -417,6 +443,8 @@ Returns a value that indicates the amount of time that the computer must be in a
 {% type task folder%}
 
 The &lt;task folder&gt; objects provide the methods that are used to retrieve tasks from the folder, as well as from its subfolders. Task folders are specified by name, path and include scheduled tasks.
+
+#### Properties
 
 {% property task folder of <task folder> %}
 
@@ -449,6 +477,8 @@ Returns the descendant tasks, which include the tasks in the specified folder pl
 {% type task definition%}
 
 The &lt;task definition&gt; inspectors give access to the components of a task, such as the settings, triggers, actions and registration information.
+
+#### Properties
 
 {% property xml of <task definition> %}
 
@@ -486,6 +516,8 @@ The &lt;task action type&gt; inspectors return the Action Type(s) for a Windows 
 
 The &lt;task action&gt; inspectors grant access to the set of scheduled task actions. Actions have an ID and a type. The action types include starting COM handles, executing programs,  sending emails and displaying messages.
 
+#### Casts
+
 {% property <task action> as show message task action %}
 
 Casts the specified task action as a message display action.
@@ -502,6 +534,8 @@ Casts the specified task action as an email action.
 
 Casts the specified task action as a com handler task action.
 
+#### Properties
+
 {% property type of <task action> %}
 
 Returns the type of the specified task action. This is one of the following types:com handler: start a custom COM handler.email: send an email.exec: perform a command-line operation such as running a script, launching an executable, or, if the name of.
@@ -513,6 +547,8 @@ Returns the user-defined identifier for the specified action.
 {% type exec task action%}
 
 The &lt;exec task action&gt; inspectors deal with Windows Exec Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Exec Action causes a program to run. For more information, see Exec Action at the MSDN site.
+
+#### Properties
 
 {% property working directory of <exec task action> %}
 
@@ -530,6 +566,8 @@ Returns the arguments associated with the command-line operation referenced by t
 
 The &lt;event task trigger&gt; inspectors deal with tasks that are triggered by a specific event, such as a system start, logon or idle. More information about event task triggers can be found by searching for Task Triggers at the MSDN site.
 
+#### Properties
+
 {% property value query of <event task trigger> %}
 
 Returns a list of named XPath queries as name-value pairs. Each query in the list is applied to the last matching event XML returned from the subscription query specified in the Subscription property. The name of the query can be used as a variable in the message of a ShowMessage action.
@@ -545,6 +583,8 @@ Returns a value indicating the amount of time lapsed between the event trigger a
 {% type email task action%}
 
 The &lt;email task action&gt; inspectors deal with Windows Email Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Email Action causes an email to be sent. For more information, see Email Action at the MSDN site.
+
+#### Properties
 
 {% property to of <email task action> %}
 
@@ -589,6 +629,8 @@ Returns the array of attachments (as strings) to be sent with the email referenc
 {% type scheduled task%}
 
 The &lt;scheduled task&gt; inspectors are built on top of the Windows Task Scheduler (see the MSDN reference). There are two versions: the 1.0 interface (Win 2000, XP &amp; Server 2003) and the 2.0 interface (Win 7, Vista and Server 2008) which is favored when available. The Task Scheduler inspector set reflects the 2.0 interface layout which in turn maps back to the 1.0 interface. Features of the 1.0 interface are available in the 2.0 interface, but not vice-versa. If the 2.0 interface isn&#39;t available, you may encounter undefined objects. Each of these inspectors works with both 1.0 and 2.0 unless explicitly Noted.
+
+#### Properties
 
 {% property xml of <scheduled task> %}
 
@@ -658,6 +700,8 @@ Returns the task definition for the specified scheduled task for both the 1.0 an
 
 This group of inspectors is built on top of the Windows Task Scheduler (see the MSDN reference). They only work with the 2.0 interface (Win 7, Vista and Server 2008). The scheduler allows tasks to be run according to various criteria. These inspectors provide information such as the name and action(s) of each running task.These inspectors are for the 2.0 interface only.
 
+#### Properties
+
 {% property unknown state of <running task> %}
 
 Returns TRUE if the specified running task is unknown.
@@ -702,6 +746,8 @@ Returns the currently executing action of the specified running task.
 
 The &lt;registration task trigger&gt; inspectors deal with tasks that are triggered whenever the task is registered or updated. More information about this subset of task triggers can be found by searching for Registration triggers at the MSDN site.
 
+#### Properties
+
 {% property delay of <registration task trigger> %}
 
 This inspector returns the amount of time between when the task is registered and when the task is started. .
@@ -709,6 +755,8 @@ This inspector returns the amount of time between when the task is registered an
 {% type show message task action%}
 
 The &lt;show message task action&gt; inspectors deal with Windows Show Message Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Show Message Action causes a a message box to be displayed. For more information, see Show Message Action at the MSDN site.
+
+#### Properties
 
 {% property title of <show message task action> %}
 
@@ -722,6 +770,8 @@ Returns the message text (as a string)  associated with the specified task actio
 
 The &lt;com handler task action&gt; inspectors deal with Windows COM Handler Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The COM Handler Action causes a handler to be fired. For more information, see COM Handler Action at the MSDN site.
 
+#### Properties
+
 {% property data of <com handler task action> %}
 
 Returns a string containing the data of the specified &#39;com handler task action&#39;, corresponding to a task that activates a COM handler.
@@ -734,6 +784,8 @@ Returns a string containing the class ID of the specified &#39;com handler task 
 
 The &lt;boot task trigger&gt; inspectors deal with tasks that are triggered when the system is booted up. More information about this subset of task triggers can be found by searching for Boot Trigger at the MSDN site.
 
+#### Properties
+
 {% property delay of <boot task trigger> %}
 
 Returns  a delay time interval to add to the start time of the trigger referred to by the specified boot task trigger.
@@ -741,6 +793,8 @@ Returns  a delay time interval to add to the start time of the trigger referred 
 {% type monthlydow task trigger%}
 
 The &lt;monthlydow task trigger&gt; inspectors deal with tasks that are triggered on a repeating day-of-the-week basis. For example, the task might start at 9:00 AM on specific days of the week, weeks of the month, or months of the year. More information about this subset of task triggers can be found by searching for MonthlyDOW Trigger at the MSDN site.
+
+#### Properties
 
 {% property run on third week in month of <monthlydow task trigger> %}
 
@@ -782,6 +836,8 @@ Returns the days of the month during which the monthly day-of-week task will run
 
 The &lt;monthly task trigger&gt; inspectors deal with tasks that are triggered on a monthly basis. For example, a task might start at 9:00 AM on specific days of specific months. More information about this subset of task triggers can be found by searching for Monthly Trigger at the MSDN site.
 
+#### Properties
+
 {% property run on last day in month of <monthly task trigger> %}
 
 Returns TRUE if the specified monthly trigger is set to run on the last day of the month.
@@ -801,6 +857,8 @@ Returns the days of the month during which the task will run.
 {% type logon task trigger%}
 
 The &lt;logon task trigger&gt; inspectors deal with tasks that are triggered when a user logs on to the computer. More information about this subset of task triggers can be found by searching for Logon Trigger at the MSDN site.
+
+#### Properties
 
 {% property user id of <logon task trigger> %}
 

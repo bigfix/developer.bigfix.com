@@ -6,6 +6,8 @@ title: xml
 
 The &lt;xml dom node&gt; objects are the inspectors for the XML Document Object Module (DOM) nodes. The console uses MSXML 6.0 if it is available. Otherwise it falls back to 4.0. The console requires at least 4.0 since 3.0 does not provide XML schema validation.
 
+#### Casts
+
 {% property <xml dom node> as xml %}
 
 Casts an xml document object module node as xml.
@@ -13,6 +15,8 @@ Casts an xml document object module node as xml.
 {% property <xml dom node> as text %}
 
 Casts an xml document object module node as text.
+
+#### Properties
 
 {% property xpath <string> of <xml dom node> %}
 

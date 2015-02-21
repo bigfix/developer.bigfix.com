@@ -6,6 +6,8 @@ title: rpm
 
 The &lt;short rpm package version record with multiplicity&gt; inspectors deal with arrays of short RPM package version records, allowing you to extract unique records and count them. 
 
+#### Properties
+
 {% property multiplicity of <short rpm package version record with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;short rpm package version record&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type short rpm package version record%}
 
 This is the same as an RPM package version record, except that the epoch (if one exists) is not shown when converted to a string. However, even though it isn&#39;t displayed, the epoch is still retained. If you need to remove the epoch, use one of the &#39;no epoch&#39; inspectors.
+
+#### Casts
 
 {% property <short rpm package version record> as string %}
 
@@ -25,6 +29,8 @@ No documentation exists for this cast.
 {% property <short rpm package version record> as rpm package version record %}
 
 Casts a short RPM Package version record as a long version.
+
+#### Properties
 
 {% property version of <short rpm package version record> %}
 
@@ -66,6 +72,8 @@ Returns the integer Epoch (which grants RPM more flexibility in versioning) of t
 
 The &lt;rpmdatabase&gt; objects are the Linux RPM Package Manager inspectors. The RPM database contains entries for all the installed programs on this computer.
 
+#### Properties
+
 {% property package requiring <capability> of <rpmdatabase> %}
 
 Returns a package in the RPM database that requires this capability. If any packages are returned, then the rpm command will not allow any installed package that provides this capability to be uninstalled.
@@ -102,6 +110,8 @@ Returns a capability object matching this string if some package in the RPM data
 
 The &lt;rpm package version with multiplicity&gt; inspectors deal with arrays of RPM package versions, allowing you to extract unique versions and count them. 
 
+#### Properties
+
 {% property multiplicity of <rpm package version with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;rpm package version&gt; types.
@@ -110,6 +120,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;rpm package version record with multiplicity&gt; inspectors deal with arrays of RPM package version records, allowing you to extract unique records and count them. 
 
+#### Properties
+
 {% property multiplicity of <rpm package version record with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;rpm package version record&gt; types.
@@ -117,6 +129,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type rpm package version record%}
 
 The &lt;rpm package version record&gt; inspectors provide version-related information, such as Epoch, Version and Release, for an RPM package. inspectors of this type are sorted according to an RPM-specific ordering mechanism defined by the rpmVersionCompare() function of the RPM library.Note: Requires the presence of the RPM library and librpminfo (an open source library created by BigFix containing modified RPM library code) on the client machine. librpminfo is installed on the client as part of the normal BES client RPM installation procedure.
+
+#### Casts
 
 {% property <rpm package version record> as string %}
 
@@ -129,6 +143,8 @@ Casts an RPM package version record as a short version by stripping the epoch of
 {% property <rpm package version record> as rpm package version record %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property version of <rpm package version record> %}
 
@@ -170,6 +186,8 @@ Returns the integer Epoch (which grants RPM more flexibility in versioning) of t
 
 The &lt;rpm package version&gt; inspectors disclose properties of the RPM package version record inspector. They are collected from the &#39;Version&#39; component of the Epoch, Version and Release fields associated with an RPM package. The behavior of this inspector differs from a string, because they are sorted according to RPM rules defined by the rpmvercmp() function of the RPM library. Don&#39;t create an &lt;rpm package release&gt; inspector with embedded &#39;-&#39; or whitespace characters. These characters are disallowed in RPM, and will cause the statement to fail. Note: Requires the presence of the RPM library and librpminfo (an open source library created by BigFix containing modified RPM library code) on the client machine. librpminfo is installed on the client as part of the normal BES client RPM installation procedure.
 
+#### Casts
+
 {% property <rpm package version> as string %}
 
 Casts an RPM package version as a string type.
@@ -177,6 +195,8 @@ Casts an RPM package version as a string type.
 {% property <rpm package version> as rpm package version %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property unique value of <rpm package version> %}
 
@@ -198,6 +218,8 @@ Returns the minimum and maximum extreme values of the given list of RPM package 
 
 The &lt;rpm package release with multiplicity&gt; inspectors deal with arrays of RPM package releases, allowing you to extract unique releases and count them. 
 
+#### Properties
+
 {% property multiplicity of <rpm package release with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;rpm package release&gt; types.
@@ -206,6 +228,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 The &lt;rpm package release&gt; inspectors disclose properties of the RPM package version record inspector. They are collected from the &#39;Release&#39; component of the Epoch, Version and Release fields associated with an RPM package. The behavior of this inspector differs from a string, because they are sorted according to RPM rules defined by the rpmvercmp() function of the RPM library. Don&#39;t create an &lt;rpm package release&gt; inspector with embedded &#39;-&#39; or whitespace characters. These characters are disallowed in RPM, and will cause the statement to fail. Note: Requires the presence of the RPM library and librpminfo (an open source library created by BigFix containing modified RPM library code) on the client machine. librpminfo is installed on the client as part of the normal BES client RPM installation procedure.
 
+#### Casts
+
 {% property <rpm package release> as string %}
 
 Casts an RPM Package release object as a string type.
@@ -213,6 +237,8 @@ Casts an RPM Package release object as a string type.
 {% property <rpm package release> as rpm package release %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property unique value of <rpm package release> %}
 
@@ -234,9 +260,13 @@ Returns the minimum and maximum extreme values of the given list of RPM package 
 
 This filesystem object can inspect the propeties of an RPM (RPM Package Manager) package. Each package contains information about the program, including name and version.
 
+#### Casts
+
 {% property <package> as string %}
 
 Creates a string containing the package&#39;s name, version and release.Example: package &quot;apache&quot; of rpm as string - Returns a string with information about the package, such as &quot;apache-1.3.23-88&quot;.
+
+#### Properties
 
 {% property version of <package> %}
 
@@ -282,9 +312,13 @@ The architecture represents the CPU type that the RPM Package was designed to be
 
 A package can have capabilities that it requires, provides, obsoletes, or conflicts with. For instance, apache may require sh, and provide httpd. If you want to install apache, you will need to have sh in the RPM database. If you want to install a package that uses httpd, you will need to install apache.
 
+#### Casts
+
 {% property <capability> as string %}
 
 Creates a string containing the capability&#39;s name, relation and version.Example: capability &quot;libxml2 &gt;= 2.4.7&quot; - Casts the capability as a string, returning &quot;libxml2 &gt;= 2.4.7&quot;.
+
+#### Properties
 
 {% property version of <capability> %}
 

@@ -6,9 +6,13 @@ title: grub
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub module> as string %}
 
 String representing the name of the module module
+
+#### Properties
 
 {% property nounzip of <grub module> %}
 
@@ -17,6 +21,8 @@ True if module is to be loaded without unzipping it
 {% type grub kernel%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property location of <grub kernel> %}
 
@@ -34,9 +40,13 @@ The numbered boot argument for the kernel, in parameter=value form, if applicabl
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub image choice> as string %}
 
 String representation of a zero-based index to an image within the grub config file.
+
+#### Properties
 
 {% property index of <grub image choice> %}
 
@@ -46,9 +56,13 @@ Zero-based index to an image within the grub config file.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub file location> as string %}
 
 Full name of file consisting of device (if present) and path.
+
+#### Properties
 
 {% property path of <grub file location> %}
 
@@ -66,6 +80,8 @@ List of blocks contained int the file.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub device> as string %}
 
 String containing name of a device, such as (hd0,0).
@@ -73,6 +89,8 @@ String containing name of a device, such as (hd0,0).
 {% type grub config file%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property timeout of <grub config file> %}
 
@@ -126,6 +144,8 @@ Bootable image at zero-based-indexed entry in grub config file.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property normal of <grub color scheme> %}
 
 Color pair used for normal text.
@@ -138,9 +158,13 @@ Color pair used for highlighted text.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub color pair> as string %}
 
 String displaying color pair in form &quot;foreground-color/background-color
+
+#### Properties
 
 {% property foreground of <grub color pair> %}
 
@@ -154,6 +178,8 @@ Name of background color of the color pair.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub color> as string %}
 
 String containing the name of one of the colors in a color pair.
@@ -162,9 +188,13 @@ String containing the name of one of the colors in a color pair.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <grub bootable image> as string %}
 
 String containg title of bootable image.
+
+#### Properties
 
 {% property title of <grub bootable image> %}
 
@@ -209,6 +239,8 @@ File pointed to by chainloader for a bootable image.
 {% type grub block list%}
 
 No documentation exists for this type.
+
+#### Casts
 
 {% property <grub block list> as string %}
 

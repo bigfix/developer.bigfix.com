@@ -6,6 +6,8 @@ title: access-control
 
 The &lt;system access control list&gt; inspectors retrieve information from the access control list that controls the generation of audit messages for attempts to access a securable object. The ability to get or set an object&#39;s SACL is controlled by a privilege typically held only by system administrators.
 
+#### Casts
+
 {% property <system access control list> as string %}
 
 Converts the specified system access control list (SACL) into a string value in the Microsoft Security Descriptor String Format.
@@ -14,9 +16,13 @@ Converts the specified system access control list (SACL) into a string value in 
 
 A Security Identifier, or SID, is a data structure that identifies user, group, and computer accounts. Every account on a network is issued a unique SID when the account is first created. Internal processes in Windows refer to an account&#39;s SID rather than the account&#39;s user or group name.
 
+#### Casts
+
 {% property <security identifier> as string %}
 
 Returns the security identifier in string format.
+
+#### Properties
 
 {% property domain name of <security identifier> %}
 
@@ -38,9 +44,13 @@ No documentation exists for this property.
 
 The &lt;security descriptor&gt; objects are structures and associated data that contain the security information for a securable object. A security descriptor identifies the object&#39;s owner and primary group. It can also contain a DACL that controls access to the object, and a SACL that controls the logging of attempts to access the object.
 
+#### Casts
+
 {% property <security descriptor> as string %}
 
 Returns the security descriptor in string format.
+
+#### Properties
 
 {% property sacl of <security descriptor> %}
 
@@ -73,6 +83,8 @@ No documentation exists for this property.
 {% type security database%}
 
 The &lt;security database&gt; inspectors retrieve information from the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory. The Security database and its properties expose the NetUserModalsGet API, levels 0 and 3. For more information, see the NetUserModalsGet Function at the MSDN site: http://msdn.microsoft.com.
+
+#### Properties
 
 {% property password history length of <security database> %}
 
@@ -110,6 +122,8 @@ Returns the time interval corresponding to how long a locked account remains loc
 
 The &lt;security account&gt; type serves as a base type for the &quot;user&quot; and &quot;local group&quot; types and for properties common to users and groups.
 
+#### Properties
+
 {% property sid of <security account> %}
 
 Returns the Security ID (SID) associated with the specified security account.
@@ -122,6 +136,8 @@ Returns a string describing the privileges assigned to the specified security ac
 
 The &lt;discretionary access control list&gt; inspectors retrieve information from the access control list that is monitored by the owner of the object and specifies what kinds of access particular users or groups can have to the specified object.
 
+#### Casts
+
 {% property <discretionary access control list> as string %}
 
 Converts the discretionary system access control list (DACL) into a string value in the Microsoft Security Descriptor String Format.
@@ -129,6 +145,8 @@ Converts the discretionary system access control list (DACL) into a string value
 {% type access control list%}
 
 An Access Control List, or ACL, is a list of security protections that applies to an object. An object can be a file, process, event, or anything else having a security descriptor. An entry in an access control list (ACL) is an access control entry (ACE). These inspectors work by exposing the GetEffectiveRightsFromAcl method, as explained at the MSDN site. Note: Requires Windows XP, Windows 2000 Professional, or Windows NT Workstation 3.1 and later.
+
+#### Properties
 
 {% property entry of <access control list> %}
 
@@ -385,6 +403,8 @@ Returns an integer corresponding to the access mode for the trustee specified by
 {% type access control entry%}
 
 An Access Control Entity, or ACE, is an entry in an access control list (ACL). An ACE contains a set of access rights and a security identifier (SID) that identifies a trustee for whom the rights are allowed, denied, or audited.
+
+#### Properties
 
 {% property write permission of <access control entry> %}
 

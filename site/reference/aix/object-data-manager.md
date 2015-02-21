@@ -6,6 +6,8 @@ title: object-data-manager
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property predefined device of <odm> %}
 
 No documentation exists for this property.
@@ -42,9 +44,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <customized_device> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property status of <customized_device> %}
 
@@ -82,9 +88,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <customized_attribute> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property representation flag of <customized_attribute> %}
 
@@ -118,9 +128,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <predefined_device> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property vpd flag of <predefined_device> %}
 
@@ -226,9 +240,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <predefined_attribute> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property width of <predefined_attribute> %}
 

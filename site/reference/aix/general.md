@@ -6,6 +6,8 @@ title: general
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <fileset version requirement> as string %}
 
 Returns a string contain the LLP name and the version of a fileset separated by a space.
@@ -13,6 +15,8 @@ Returns a string contain the LLP name and the version of a fileset separated by 
 {% property <fileset version requirement> as fileset version requirement %}
 
 A self cast, used only for simplifying relevance.
+
+#### Properties
 
 {% property version record of <fileset version requirement> %}
 
@@ -34,6 +38,8 @@ Returns the filesets that are installed with the same LPP name, regardless of ve
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property multiplicity of <fileset version record with multiplicity> %}
 
 Returns an the number of times a fileset version record occurs.
@@ -42,6 +48,8 @@ Returns an the number of times a fileset version record occurs.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <fileset version record> as string %}
 
 Returns a string containing the version of the fileset in the format &quot;ver.rel.mod.fix&quot;.
@@ -49,6 +57,8 @@ Returns a string containing the version of the fileset in the format &quot;ver.r
 {% property <fileset version record> as fileset version record %}
 
 A self cast, used only for simplifying relevance.
+
+#### Properties
 
 {% property ver_part of <fileset version record> %}
 
@@ -90,9 +100,13 @@ No documentation exists for this type.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <apar> as string %}
 
 Returns a string containing the APAR number.
+
+#### Properties
 
 {% property uninstalled fileset version requirement of <apar> %}
 
@@ -130,9 +144,13 @@ Returns a string containing a short description of the APAR.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <kernel_extension> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property text address of <kernel_extension> %}
 
@@ -150,9 +168,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <network_option> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property value of <network_option> %}
 
@@ -166,9 +188,13 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <rpc_program> as string %}
 
 No documentation exists for this cast.
+
+#### Properties
 
 {% property version of <rpc_program> %}
 
@@ -189,6 +215,8 @@ No documentation exists for this property.
 {% type object repository%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property product of <object repository> %}
 
@@ -222,6 +250,8 @@ Returns all filesets exactly matching the string in the format &quot;lpp_name ve
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property message <integer> of <message_catalog_set> %}
 
 No documentation exists for this property.
@@ -229,6 +259,8 @@ No documentation exists for this property.
 {% type message_catalog%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property set <integer> of <message_catalog> %}
 
@@ -238,9 +270,13 @@ No documentation exists for this property.
 
 The &lt;fileset&gt; objects represent the set of files required for installing a software package.
 
+#### Casts
+
 {% property <fileset> as string %}
 
 Casts a fileset as a string type.
+
+#### Properties
 
 {% property version of <fileset> %}
 
@@ -282,9 +318,13 @@ Returns the machine-specific portions of the specified fileset (the root part), 
 
 The &lt;product&gt; object contains properties (such as vendor and revision) of the associated software product. On AIX, products are installed into an Object Repository.On HPUX products are installed in the Software Depot.
 
+#### Casts
+
 {% property <product> as string %}
 
 Brief text string identifying a product including the tag and version.Example: product &quot;BESAgent&quot; of software depot as string - Returns the full name of the product, such as &quot;BESAgent 4.0.3.7&quot;.
+
+#### Properties
 
 {% property vendor of <product> %}
 

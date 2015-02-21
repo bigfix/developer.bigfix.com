@@ -6,6 +6,8 @@ title: actions
 
 The &lt;bes action with multiplicity&gt; inspectors deal with arrays of BES Actions, allowing you to extract unique actions and count them.
 
+#### Properties
+
 {% property multiplicity of <bes action with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes action&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes action status%}
 
 The &lt;bes action status&gt; inspectors return information about the status of BES Actions, such as whether it is running, evaluating, expired, and more.
+
+#### Casts
 
 {% property <bes action status> as string %}
 
@@ -22,9 +26,13 @@ Casts an action status as a string.
 
 The &lt;bes action set&gt; inspectors return the iterated list of BES Actions, converted into a set to make it easy to do set arithmetic with the list.
 
+#### Casts
+
 {% property <bes action set> as xml %}
 
 Casts a BES Action set as an XML document, for submission to to the ImportXML API in the Console. It can only be used in the Console using the EvaluateRelevance API, not the &lt;?relevance ?&gt; interface.
+
+#### Properties
 
 {% property union of <bes action set> %}
 
@@ -45,6 +53,8 @@ Returns the unique elements of the specified &lt;bes action set&gt;, removing du
 {% type bes action result%}
 
 The &lt;bes action result&gt; inspectors examine the results of BES Actions, which can be used to make reports.
+
+#### Properties
 
 {% property status of <bes action result> %}
 
@@ -78,6 +88,8 @@ Returns the action corresponding to the specified action result.
 
 A Fixlet can incorporate parameters in its associated Action(s). When the Fixlet becomes relevant to the network, the BES Console will prompt the user for the value of the parameter. For example, a Fixlet Action might need to start a Windows service specified by the Console user. When the the Action is taken, the Console would prompt for the name of the service. That value would then be passed down to the BES Client and substituted into the local Action script upon execution.
 
+#### Properties
+
 {% property value of <bes action parameter> %}
 
 Returns the value associated with the specified Action parameter.
@@ -90,9 +102,13 @@ Returns the name of the specified Action parameter.
 
 The &lt;bes action&gt; inspectors are used to access information about the actions which have been issued by the BES Operators. You can iterate over the actions to create lists. Each action may have several properties that can be examined.
 
+#### Casts
+
 {% property <bes action> as xml %}
 
 Converts the specified BES Action to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
+
+#### Properties
 
 {% property utc time flag of <bes action> %}
 

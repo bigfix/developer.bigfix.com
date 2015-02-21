@@ -6,6 +6,8 @@ title: event-log
 
 The &lt;event log record&gt; inspectors return individual records from the Windows Event logs, which record information about operating system events.
 
+#### Properties
+
 {% property user sid of <event log record> %}
 
 Returns the user security ID for the specified record in the event log.
@@ -57,6 +59,8 @@ The &lt;event log event type&gt; inspectors return information about the types o
 {% type event log%}
 
 The &lt;event log&gt; inspectors return information about the specified Windows Event logs, including the System, Security and the Application log.
+
+#### Properties
 
 {% property record of <event log> %}
 

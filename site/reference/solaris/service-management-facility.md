@@ -6,6 +6,8 @@ title: service-management-facility
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf value> as string %}
 
 Returns a string representation of the value for all types of smf values.
@@ -22,6 +24,8 @@ Returns the numeric value for values of type SCF_TYPE_INTEGER or SCF_TYPE_COUNT.
 
 Returns the boolean state for values of type SCF_TYPE_BOOLEAN. Returns type conversion error for other types.
 
+#### Properties
+
 {% property type of <smf value> %}
 
 Returns a string representation of the type of an smf value. These types can have values of SCF_TYPE_INVALID, SCF_TYPE_BOOLEAN, SCF_TYPE_COUNT, SCF_TYPE_INTEGER, SCF_TYPE_TIME, SCF_TYPE_ASTRING, SCF_TYPE_OPAQUE, SCF_TYPE_USTRING, SCF_TYPE_URI, SCF_TYPE_FMRI, SCF_TYPE_HOST, SCF_TYPE_HOSTNAME, SCF_TYPE_NET_ADDR_V4, SCF_TYPE_NET_ADDR_V6.
@@ -30,9 +34,13 @@ Returns a string representation of the type of an smf value. These types can hav
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf time> as string %}
 
 Returns a string representation of an smf time. An smf time consists of a seconds portion and a nanoseconds portion.
+
+#### Properties
 
 {% property seconds value of <smf time> %}
 
@@ -45,6 +53,8 @@ Returns a number corresponding to the nanoseconds portion of an smf time.
 {% type smf snapshot part%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property property group of <smf snapshot part> %}
 
@@ -62,9 +72,13 @@ Returns the snapshot to which this snapshot part belongs.
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf snapshot> as string %}
 
 A string representation of an smf snapshot. This is the same as the name of the snapshot.
+
+#### Properties
 
 {% property service part of <smf snapshot> %}
 
@@ -90,9 +104,13 @@ Represents an instance part of an smf snapshot. Each snapshot has two parts: a &
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf service> as string %}
 
 Returns a string representation of an smf service object. This is the same as the name of the service.
+
+#### Properties
 
 {% property property group of <smf service> %}
 
@@ -122,9 +140,13 @@ Returns an smf fmri object representing the &#39;Fault Management Resource Ident
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf property group> as string %}
 
 A string representation of an smf property group. An smf property group is a group of name/value pairs that represent configuration settings. Thus, there are some configuration settings that are applicable in general to a particular type of service, and others that are applicable only to a particular instance of a service.
+
+#### Properties
 
 {% property type of <smf property group> %}
 
@@ -166,9 +188,13 @@ Returns an smf fmri object representing the &#39;Fault Management Resource Ident
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf property> as string %}
 
 Returns a string representation of an smf property object. Each smf property represents a setting as a name/value pair. This string representation is just the name portion of the property.
+
+#### Properties
 
 {% property value of <smf property> %}
 
@@ -190,9 +216,13 @@ Returns an smf fmri object representing the &#39;Fault Management Resource Ident
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf instance> as string %}
 
 Returns a string representation of the smf instance object. This is the same as the end component of the FMRI (&#39;Fault Management Resource Identifier&#39;) of the instance, and the same as the name of the instance.
+
+#### Properties
 
 {% property snapshot of <smf instance> %}
 
@@ -226,6 +256,8 @@ Returns an smf fmri object representing the &#39;Fault Management Resource Ident
 
 No documentation exists for this type.
 
+#### Casts
+
 {% property <smf fmri> as string %}
 
 Returns a string representation of the smf fmri object. The string has the general form &#39;svc:&lt;service name&gt;:&lt;service instance&gt;&#39;. For example &#39;svc:/network/login:rlogin&#39;, where &#39;svc&#39; signifies an SMF service, &#39;/network/login&#39; is the service name, and &#39;rlogin&#39; is the service instance.
@@ -233,6 +265,8 @@ Returns a string representation of the smf fmri object. The string has the gener
 {% type smf%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property service of <smf> %}
 

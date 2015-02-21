@@ -6,6 +6,8 @@ title: numbers
 
 The &lt;integer with multiplicity&gt; inspectors deal with arrays of integers, allowing you to extract unique numbers and count them. 
 
+#### Properties
+
 {% property multiplicity of <integer with multiplicity> %}
 
 Returns the multiplicity (quantity) of each element in a multiple integer list.Example: multiplicities of unique values of (1;2;3;3) - Returns the multiplicity of (the number of times) each number in the list is used, namely, 1,1,2.
@@ -13,6 +15,8 @@ Returns the multiplicity (quantity) of each element in a multiple integer list.E
 {% type integer set%}
 
 The &lt;integer set&gt; inspectors deal with sets of integers, which are essentially lists or arrays with integer elements. Think of them as mathematical sets: you can compare them, subtract them from other sets and form the union and intersection of multiple sets.Note: These inspectors are not available on SUSE Linux systems.
+
+#### Properties
 
 {% property union of <integer set> %}
 
@@ -33,6 +37,8 @@ Returns the unique elements of the specified &lt;integer set&gt;, removing dupli
 {% type integer%}
 
 Integers are represented internally as 64-bit signed values.
+
+#### Casts
 
 {% property <integer> as year %}
 
@@ -69,6 +75,8 @@ Returns the bits of the binary representation of the integer; bit zero is the le
 {% property <integer> as bit set %}
 
 Returns the bits of the binary representation of the integer; bit zero is the least-significant bit.
+
+#### Properties
 
 {% property unique value of <integer> %}
 
@@ -226,6 +234,8 @@ No documentation exists for this property.
 
 The &lt;floating point with multiplicity&gt; inspectors deal with floating point arrays, allowing you to extract unique floating point numbers and count them. 
 
+#### Properties
+
 {% property multiplicity of <floating point with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;floating point&gt; types.
@@ -233,6 +243,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type floating point%}
 
 The &lt;floating point&gt; type holds a floating-point number, with precision dependent on the computer. It also keeps track of the IEEE floating-point exceptions raised in a calculation and an estimate of the significance with which the number should be expressed when it is converted to a string. All arithmetic operations are carried out to the full precision of the computer; only conversions to string are affected by the estimated significance.
+
+#### Casts
 
 {% property <floating point> as string %}
 
@@ -253,6 +265,8 @@ Rounds off and casts a floating point number as an integer.Example: 15/2 as inte
 {% property <floating point> as floating point %}
 
 This casting operator is added for completeness. It takes a floating point number and casts it as a floating point number. It facilitates automatic relevance generation where the software is not aware of the input types.
+
+#### Properties
 
 {% property unique value of <floating point> %}
 
@@ -365,6 +379,8 @@ No documentation exists for this property.
 {% type integer range%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property upper bound of <integer range> %}
 

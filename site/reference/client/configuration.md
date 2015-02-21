@@ -6,9 +6,13 @@ title: configuration
 
 A &lt;setting&gt; is a simple object with name and value properties. It is a property of a client, or a property of a site. Settings of a site have a site scope. Settings of the client have a client scope.  See the  setting&#39; commands in the action guide for more details.
 
+#### Casts
+
 {% property <setting> as string %}
 
 Returns a string formatted as &lt;name&gt;=&lt;value&gt; for the setting.
+
+#### Properties
 
 {% property value of <setting> %}
 
@@ -33,6 +37,8 @@ No documentation exists for this property.
 {% type selected server%}
 
 The &lt;selected server&gt; inspectors return information about the BES Server or BES Relay to which the BigFix agent reports.
+
+#### Properties
 
 {% property weight of <selected server> %}
 
@@ -82,6 +88,8 @@ The number of servers in the competition from which this server was selected.
 
 Before an Action executes, the download storage folder points to a temporary directory that holds the downloads for the Action.  During execution of the Action, those downloads are moved to the standard BigFix __Download folder and the inspector then points there. These inspectors return information about the currently specified download storage folder, and can be used with relevance substitution in download and prefetch Action commands.
 
+#### Properties
+
 {% property total size of <download storage folder> %}
 
 Returns the amount of storage currently being used to store downloads (in bytes).
@@ -90,6 +98,8 @@ Returns the amount of storage currently being used to store downloads (in bytes)
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property name of <download server> %}
 
 No documentation exists for this property.
@@ -97,6 +107,8 @@ No documentation exists for this property.
 {% type root server%}
 
 The &lt;root server&gt; inspectors refer to the root server that the Bes Client is currently connected to. 
+
+#### Properties
 
 {% property id of <root server> %}
 
@@ -109,6 +121,8 @@ The host (DNS) name of the BES root server that the BES Client last registered w
 {% type registration server%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property version of <registration server> %}
 
@@ -126,6 +140,8 @@ No documentation exists for this property.
 
 X.509 is a public key infrastructure standard, specifying formats for public key certificates and revocations. These inspectors interpret the certificate from a file in the PEM format. They can be used to analyze encryption credentials on decrypting relays or root servers.
 
+#### Properties
+
 {% property sha1 of <x509 certificate> %}
 
 Returns the SHA1 hash of the given certificate, which uniquely identifies it.
@@ -137,6 +153,8 @@ Returns the date on which the certificate first becomes valid. This is useful fo
 {% type evaluation cycle%}
 
 An Evaluation cycle represents a complete run through all the content available on the BigFix Client, measured in milliseconds. These inspectors return statistics based on the time sampled whenever the client returns to the beginning of its content set. These inspectors require a Client context.
+
+#### Properties
 
 {% property maximum of <evaluation cycle> %}
 
@@ -254,6 +272,8 @@ Time taken performing action processing since agent start
 
 This is a global object that has several properties that expose the state of the cryptography controls. BigFix uses cryptographic functions throughout the BigFix Platform. Every time an operator logs in to BigFix, creates a new user, starts an action or subscribes to new content, authentication and signature routines are executed using cryptographic libraries based on the FIPS 140-2 standard.
 
+#### Properties
+
 {% property fips mode of <cryptography> %}
 
 Returns TRUE if the application (the client, console, or web reports, depending on the context) is operating in FIPS 140-2 mode (the mode provided by openssl). FIPS mode limits the set of ciphers and SSL protocols that can be used in the cryptographic library.
@@ -269,6 +289,8 @@ Returns TRUE if the application (the client, console, or web reports, depending 
 {% type license%}
 
 The &lt;license&gt; inspectors are available to inspect the properties of the deployment license. 
+
+#### Properties
 
 {% property type of <license> %}
 
@@ -370,6 +392,8 @@ No documentation exists for this property.
 
 The &lt;client_cryptography&gt; inspectors expose cryptographic properties exclusive to the client.
 
+#### Properties
+
 {% property encrypt report of <client_cryptography> %}
 
 Returns TRUE if the client is successfully encrypting reports.
@@ -386,6 +410,8 @@ Returns TRUE if the client is configured to attempt to encrypt reports.
 
 The &lt;current relay&gt; inspectors refer to the BES Server or Relay that the client last registered with. 
 
+#### Properties
+
 {% property version of <current relay> %}
 
 Returns a version object that is the version of the server that the client last registered with. This may be a BES Relay or the BES root server.
@@ -397,6 +423,8 @@ Returns true if the current relay is using authentication
 {% type client%}
 
 The client object allows access to properties of the client application hosting the relevance evaluation, typically a BigFix program. In addition, the client maintains a collection of settings with both name and value properties that are inspectable using the client object. These inspectors share properties of application types, such as version and size.
+
+#### Properties
 
 {% property version of <client> %}
 
@@ -518,6 +546,8 @@ No documentation exists for this property.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property version string <string> of <module> %}
 
 No documentation exists for this property.
@@ -534,9 +564,13 @@ No documentation exists for this property.
 
 The &lt;client process owner&gt; inspectors tell what user context the client is running in.
 
+#### Casts
+
 {% property <client process owner> as string %}
 
 Owner of the agent process.Example: process owner of client as string - Typically returns &quot;root&quot;.
+
+#### Properties
 
 {% property short name of <client process owner> %}
 
@@ -553,6 +587,8 @@ The long name of the client process owner.Example: long name of process owner of
 {% type administrative rights%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property enabled of <administrative rights> %}
 

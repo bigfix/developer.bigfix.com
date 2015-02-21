@@ -6,9 +6,13 @@ title: services
 
 The &lt;service&gt; inspectors provide access to all services configured on Windows NT, 2K and XP systems. On a non-Windows system, expressions using these objects will fail gracefully instead of generating an error.
 
+#### Casts
+
 {% property <service> as string %}
 
 Returns a string containing the Service name, Display name, and State of the service.
+
+#### Properties
 
 {% property version of <service> %}
 
@@ -86,9 +90,13 @@ No documentation exists for this property.
 
 The &lt;runlevel&gt; inspectors refer to a mode of operation in various Unix systems. Typically, when a computer enters runlevel zero, it halts and when it enters runlevel six, it reboots. The intermediate runlevels differ widely among operating systems.
 
+#### Casts
+
 {% property <runlevel> as string %}
 
 Casts a runlevel object as a string.
+
+#### Properties
 
 {% property value of <runlevel> %}
 

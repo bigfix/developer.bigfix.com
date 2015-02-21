@@ -6,6 +6,8 @@ title: users
 
 The &lt;bes user with multiplicity&gt; inspectors deal with arrays of BES users, allowing you to extract unique users and count them.
 
+#### Properties
+
 {% property multiplicity of <bes user with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes user&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes user set%}
 
 The &lt;bes user set&gt; inspectors iterate over the current set of BES users and package them as a mathematical set, suitable for further set manipulation.
+
+#### Properties
 
 {% property union of <bes user set> %}
 
@@ -33,6 +37,8 @@ Returns the unique elements of the specified &lt;bes user set&gt;, removing dupl
 {% type bes user%}
 
 The &lt;bes user&gt; inspectors let you keep track of the users authorized to use the BES Console. You can iterate over the users, producing lists containing information such as the name and authorization level.
+
+#### Properties
 
 {% property unmanagedasset privilege shownone flag of <bes user> %}
 

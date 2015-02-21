@@ -6,6 +6,8 @@ title: debian
 
 The pkg inspectors deal with base packages, i.e., packages stripped of their version information. This set of inspectors deals with the versions corresponding to the given package(s).
 
+#### Casts
+
 {% property <debianpkg version> as debian package version %}
 
 Converts a Debian Pkg version into a Debian package version.
@@ -13,6 +15,8 @@ Converts a Debian Pkg version into a Debian package version.
 {% property <debianpkg version> as string %}
 
 Returns a string containing the package version in its canonical form.
+
+#### Properties
 
 {% property section of <debianpkg version> %}
 
@@ -30,6 +34,8 @@ Returns a string representing the architecture (such as i386) of a Debian Pkg ve
 
 The pkg inspectors deal with base packages, i.e., packages stripped of their version information. This set of inspectors lists the names of the APT system files that describe the package in question. If you edit and search the files that result from this inspector, you can find descriptive information about the specified packages.
 
+#### Casts
+
 {% property <debianpkg verfile> as string %}
 
 Converts a Debian Pkg verfile into a string.
@@ -38,9 +44,13 @@ Converts a Debian Pkg verfile into a string.
 
 Debian packages often depend on other packages, with you can find by looking in the given package. You can reverse the situation and instead use the Advanced Packageing Tool (APT) to discover which programs are dependent on a given package. These inspectors allow you to find these reverse dependencies.
 
+#### Casts
+
 {% property <debianpkg reverse dependencies> as string %}
 
 Converts Debian Pkg reverse dependencies into a string.
+
+#### Properties
 
 {% property version of <debianpkg reverse dependencies> %}
 
@@ -50,9 +60,13 @@ Returns the Debian package version from the given debianpkg reverse dependency a
 
 A package may depend on the previous installation of other software packages. The &lt;debianpkg dependency&gt; inspectors detail those dependencies. A Debian package may replace another package, conflict with it or depend on it. For more information, see the Debian.org site.
 
+#### Casts
+
 {% property <debianpkg dependency> as string %}
 
 Converts a Debian Pkg dependency into a string.
+
+#### Properties
 
 {% property version of <debianpkg dependency> %}
 
@@ -73,6 +87,8 @@ Returns a string corresponding to the comparison operator of the specified Debia
 {% type debianpackagecache%}
 
 The &lt;debianpackagecache&gt; inspectors refer to the cache directory set up for Debian packages.
+
+#### Properties
 
 {% property package of <debianpackagecache> %}
 
@@ -98,9 +114,13 @@ Returns a string containing the version of libapt-pkg.
 
 The &lt;debian versioned package&gt; inspectors return all the versions of the Debian package that are available for the base package.
 
+#### Casts
+
 {% property <debian versioned package> as string %}
 
 Converts a Debian versioned package into a string.
+
+#### Properties
 
 {% property version of <debian versioned package> %}
 
@@ -142,6 +162,8 @@ Returns a string representing the architecture (such as i386) of a Debian versio
 
 The &lt;debian package version with multiplicity&gt; inspectors deal with arrays of Debian packages, allowing you to extract unique versions and count them.
 
+#### Properties
+
 {% property multiplicity of <debian package version with multiplicity> %}
 
 Returns a list of the unique values (along with their frequency count) as extracted from the specified list of debian package versions.
@@ -149,6 +171,8 @@ Returns a list of the unique values (along with their frequency count) as extrac
 {% type debian package version revision with multiplicity%}
 
 The &lt;debian package version revision with multiplicity&gt; inspectors deal with arrays of Debian package  allowing you to extract unique version revisions and count them.
+
+#### Properties
 
 {% property multiplicity of <debian package version revision with multiplicity> %}
 
@@ -158,6 +182,8 @@ Returns a list of the unique values (along with their frequency count) as extrac
 
 Also known as the &#39;debian_revision&#39;, these inspectors reveal the revision of a Debian package based on the upstream_version. The revision component of the version is optional. Typically, the revision is set to 1 whenever the upstream_version is increased.
 
+#### Casts
+
 {% property <debian package version revision> as string %}
 
 Converts a Debian package version_revision into a string.
@@ -165,6 +191,8 @@ Converts a Debian package version_revision into a string.
 {% property <debian package version revision> as debian package version revision %}
 
 Reflexive cast for completeness.
+
+#### Properties
 
 {% property unique value of <debian package version revision> %}
 
@@ -186,6 +214,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;debian p
 
 The &lt;debian package version epoch with multiplicity&gt; inspectors deal with arrays of Debian packages, allowing you to extract unique version &#39;epochs&#39; and count them.
 
+#### Properties
+
 {% property multiplicity of <debian package version epoch with multiplicity> %}
 
 Returns a list of the unique values (along with their frequency count) as extracted from the specified list of debian package epochs.
@@ -194,6 +224,8 @@ Returns a list of the unique values (along with their frequency count) as extrac
 
 The &lt;debian package version epoch&gt; inspectors deal with the &#39;epoch&#39; component of a Debian package version. The epoch is an unsigned integer, typically a small number. If it is omitted,  zero is the default. It allows the package provider to create a fresh start with version numbering schemes.
 
+#### Casts
+
 {% property <debian package version epoch> as string %}
 
 Converts a Debian package version &#39;epoch&#39; into a string.
@@ -201,6 +233,8 @@ Converts a Debian package version &#39;epoch&#39; into a string.
 {% property <debian package version epoch> as debian package version epoch %}
 
 Reflexive cast for completeness.
+
+#### Properties
 
 {% property unique value of <debian package version epoch> %}
 
@@ -222,6 +256,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;debian p
 
 For Tivoli inspectors, a Debian package is considered to include both the package and the version. This allows the inspectors to home in on specific versioned packages and not just the package itself, which may have numerous versions. These version inspectors return just the version(s) of a given Debian package. A version is composed of three parts: an epoch, an upstream_version and a debian_revision.
 
+#### Casts
+
 {% property <debian package version> as string %}
 
 Converts a Debian package version (including epoch, upstream_version and revision) into a string.
@@ -229,6 +265,8 @@ Converts a Debian package version (including epoch, upstream_version and revisio
 {% property <debian package version> as debian package version %}
 
 Reflexive cast for completeness.
+
+#### Properties
 
 {% property upstream of <debian package version> %}
 
@@ -262,6 +300,8 @@ Returns the epoch component of the specified debian package version. This is pri
 
 The &lt;debian package upstream version with multiplicity&gt; inspectors deal with arrays of Debian packages, allowing you to extract unique upstream_versions and count them.
 
+#### Properties
+
 {% property multiplicity of <debian package upstream version with multiplicity> %}
 
 Returns a list of the unique values (along with their frequency count) as extracted from the specified list of debian package upstream versions.
@@ -270,6 +310,8 @@ Returns a list of the unique values (along with their frequency count) as extrac
 
 The upstream_version of a Debian package is the main version number. Along with the epoch and revision, it is one of the components of the Debian versioning scheme.
 
+#### Casts
+
 {% property <debian package upstream version> as string %}
 
 Converts a Debian package upstream_version into a string.
@@ -277,6 +319,8 @@ Converts a Debian package upstream_version into a string.
 {% property <debian package upstream version> as debian package version upstream %}
 
 This is a reflexive casting for the sake of completeness. Note: upstream version is treated the same as version upstream.
+
+#### Properties
 
 {% property unique value of <debian package upstream version> %}
 
@@ -298,9 +342,13 @@ Returns the minimum and maximum extreme values of the given list of &lt;debian p
 
 For Tivoli inspectors, a Debian package is considered to include both the package and the version. This allows the inspectors to home in on specific versioned packages and not just the package itself, which may have numerous versions. The base package inspectors help to tease these two aspects apart, stripping the version info and returning a list of the packages by name only.
 
+#### Casts
+
 {% property <debian base package> as string %}
 
 Converts a Debian base package into a string.
+
+#### Properties
 
 {% property pkg version of <debian base package> %}
 

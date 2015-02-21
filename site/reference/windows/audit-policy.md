@@ -6,6 +6,8 @@ title: audit-policy
 
 Windows audit policy categories, as of Vista and later, are divided into about 50 subcategories. This level of granularity is designed to narrow in on specific security-related operations on the client computer, helping to filter out the normal noise of an active environment.
 
+#### Properties
+
 {% property system policy of <audit policy subcategory> %}
 
 Returns the audit policy information (audit success or audit failure) corresponding to the specified audit policy subcategory.
@@ -30,6 +32,8 @@ No documentation exists for this property.
 
 The &lt;audit policy information&gt; inspectors return the two attributes of the audit policy for a given subcategory: whether or not succesful operations will be audited (&quot;audit success&quot;), and whether or not unsuccessful operations will be audited (&quot;audit failure&quot;).
 
+#### Properties
+
 {% property audit success of <audit policy information> %}
 
 Returns the boolean audit success status of the specified audit policy information.Example: audit success of system policies of subcategory whose (name of it is &quot;User Account Management&quot;) of account management category of audit policy - Returns the TRUE/FALSE status of the specified audit policy subcategory.
@@ -46,6 +50,8 @@ No documentation exists for this property.
 
 Windows audit policies, as of Vista and later, are divided into categories. Currently there are 9 categories, including System, Logon/Logoff, Object Access, Privilege Use, Detailed Tracking, Policy Change, Account Management, DS Access and Account Logon.
 
+#### Properties
+
 {% property subcategory of <audit policy category> %}
 
 Returns the subcategory for the specified audit policy category.
@@ -57,6 +63,8 @@ Returns the name of the specified audit policy category.
 {% type audit policy%}
 
 The &lt;audit policy&gt; inspectors return the policies put in place for recording information about security-related operations on the client computer. For example, you can set a policy to monitor the modification of files. This will trigger an audit entry showing whenever a file is modified, the associated user account, and the date and time of the action. You can audit both successful and failed attempts at actions. Often, the failed attempts are more interesting, as they may indicate attempts to unsuccessfully subvert a policy. For instance, a successful login is not as interesting as a repeated failure might be.
+
+#### Properties
 
 {% property system category of <audit policy> %}
 

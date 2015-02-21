@@ -6,6 +6,8 @@ title: hpux
 
 Software Depot uses the swlist INDEX to identify the collection of products installed on the HPUX machine.
 
+#### Properties
+
 {% property product of <software_depot> %}
 
 Direct access to specified installed software product. Use the product tag as the identifying name.Example: exists product &quot;OS-Core&quot; of software depot - Returns TRUE if the specified software exists.
@@ -25,6 +27,8 @@ Returns the bundle object corresponding to the name provided. Useful for seeing 
 {% type bundle%}
 
 On HPUX platforms, a bundle object is derived from a product type and used to inspect software installations as managed by the Software Depot. On Macintosh platforms, a bundle refers to a core foundation folder hierarchy derived from CFBundle.
+
+#### Properties
 
 {% property version of <bundle> %}
 

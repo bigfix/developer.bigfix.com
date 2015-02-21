@@ -6,6 +6,8 @@ title: general
 
 The &lt;ipv6 address with multiplicity&gt; inspectors deal with ipv6 address arrays, allowing you to extract unique ipv6 addresses and count them.
 
+#### Properties
+
 {% property multiplicity of <ipv6 address with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;ipv6 address&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type ipv6 address%}
 
 The &lt;ipv6 address&gt; inspectors deal with the Internet Protocol addressing scheme, version 6. Note: Prior to version 8.0 of BigFix, this was not a derived type.
+
+#### Casts
 
 {% property <ipv6 address> as string %}
 
@@ -58,6 +62,8 @@ Similar to casting as a string, but with both colon-compression and standard IPv
 
 Similar to casting as a string, but with both colon-compression and standard IPv4 representation for the low 32-bits as well as any zone index.
 
+#### Properties
+
 {% property unique value of <ipv6 address> %}
 
 Returns the unique values of a given list of &lt;ipv6 address&gt; types, removing duplicates and sorting by value.
@@ -86,6 +92,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;ipv6 add
 
 The &lt;ipv4or6 address with multiplicity&gt; inspectors deal with arrays of ipv4or6 addresses, allowing you to extract unique addresses and count them. 
 
+#### Properties
+
 {% property multiplicity of <ipv4or6 address with multiplicity> %}
 
 Returns the multiplicity (how many entries of each unique address) of a list of ipv4or6 addresses.
@@ -93,6 +101,8 @@ Returns the multiplicity (how many entries of each unique address) of a list of 
 {% type ipv4or6 address%}
 
 The &lt;ipv4or6 address&gt; inspectors allow you to represent IPv4 and IPv6 addresses as a common type. From these inclusive inspectors, you can derive the corresponding v4 and v6 IP addresses.
+
+#### Casts
 
 {% property <ipv4or6 address> as string %}
 
@@ -134,6 +144,8 @@ Similar to casting to a string, but with both colon-compression and standard IPv
 
 Creates a compressed string (replacing multiple zeroes with double colons) with the lower 32 bits in IPv4 format. It includes the zone index (on Windows, typically a number) following a percent sign (%).
 
+#### Properties
+
 {% property unique value of <ipv4or6 address> %}
 
 Returns the unique values of a given list of addresses (ipv4or6), removing duplicates and sorting by value.
@@ -166,6 +178,8 @@ Returns the minimum and maximum of the specified list of ipv4or6 addresses.
 
 The &lt;ipv4 address with multiplicity&gt; inspectors deal with ipv4 address arrays, allowing you to extract unique ipv4 addresses and count them.
 
+#### Properties
+
 {% property multiplicity of <ipv4 address with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;ipv4 address&gt; types.
@@ -173,6 +187,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type ipv4 address%}
 
 This is an Internet Protocol address, version 4. IP addresses are composed of four single-byte integers separated by periods, such as &quot;192.5.0.7&quot;. Note: Prior to version 8.0 of BigFix, this was not a derived type.
+
+#### Casts
 
 {% property <ipv4 address> as string %}
 
@@ -185,6 +201,8 @@ Returns the specified IPv4 address embedded in a IPv6 address space as defined b
 {% property <ipv4 address> as ipv4or6 address %}
 
 Converts an IPv4 address into the more inclusive ipv4or6 type.
+
+#### Properties
 
 {% property unique value of <ipv4 address> %}
 
@@ -206,6 +224,8 @@ Returns the minimum and maximum extreme values of the given list of &lt;ipv4 add
 
 The &lt;ip version&gt; inspectors distinguish between ipv6 and ipv4. The integer representations of these are chosen to meet existing standards.
 
+#### Casts
+
 {% property <ip version> as string %}
 
 Converts an IP version to a string.
@@ -213,6 +233,8 @@ Converts an IP version to a string.
 {% type network ip interface%}
 
 In general, the network ip interface object holds locally determined properties of logical network devices configured on the computer. On the Mac, these correspond to interfaces of type AF_INET. The properties that are available depend on the socket support installed on the computer. For Windows computers with winsock 2 support installed, for instance, the information is obtained by an ioctl call and includes Interface address, Interface broadcast address, Interface network mask, Broadcast support flag, Multicast support flag, Loopback interface flag and Point to point interface flag.
+
+#### Properties
 
 {% property up of <network ip interface> %}
 
@@ -274,6 +296,8 @@ Returns the ip address of the ip interface.
 
 The network interface object describes a generic network interface, and has information about the name and family of that interface. On the Mac these are commonly of type AF_INET, AF_LINK and AF_INET6.
 
+#### Properties
+
 {% property family of <network interface> %}
 
 Returns an family designator of the address family (i.e., 2=AFI_NET).
@@ -293,6 +317,8 @@ Returns the name of the interface family. There are about 35 of these, but the m
 {% type network adapter interface%}
 
 A network adapter interfaces a computer to a network. These inspectors expose the adapter so that you can determine its properties, such as its address, subnet mask, mac address and whether or not it supports broadcast, multicast or point-to-point.
+
+#### Properties
 
 {% property up of <network adapter interface> %}
 
@@ -349,6 +375,8 @@ Returns the adapters associated with the specified network adapter interface.
 {% type network adapter%}
 
 One or more network adapters may be inspected using this property of the network object. Each network adapter has a number of interesting properties such as the MAC address.
+
+#### Properties
 
 {% property up of <network adapter> %}
 
@@ -542,6 +570,8 @@ No documentation exists for this property.
 
 The &lt;network&gt; objects are the keywords used to query the local network configuration.
 
+#### Properties
+
 {% property ipv6 interface of <network> %}
 
 Returns all the ipv6 interfaces of the specified network.
@@ -634,6 +664,8 @@ No documentation exists for this property.
 
 The &lt;socket file&gt; inspectors allow you to interrogate socket files, which are representations of UNIX domain sockets identified by their pathname.
 
+#### Properties
+
 {% property filesystem of <socket file> %}
 
 Returns the filesystem object corresponding to the specified socket file.
@@ -645,6 +677,8 @@ Returns the drive associated with the specified socket file.
 {% type wifi%}
 
 These inspectors expose the WiFi adapters available on an endpoint.
+
+#### Properties
 
 {% property ssid of <wifi> %}
 
@@ -661,6 +695,8 @@ Returns a string of the encryption type of the WiFi connection. eg: &quot;WEP&qu
 {% type network share%}
 
 The network share inspector does not work on Windows 95/98/Me. The password and permission properties are relevant only for shares using share-level security. User-level security is given by the security descriptor. The use limit property will throw NoSuchObject if use is unlimited.
+
+#### Properties
 
 {% property write permission of <network share> %}
 
@@ -726,6 +762,8 @@ Returns TRUE if permission is granted to modify the attributes of the shared res
 
 A network adapter may be configured to respond to a list of network addresses. This object type provides access to such a list.
 
+#### Properties
+
 {% property subnet mask of <network address list> %}
 
 Returns the subnet mask (IPv4) of the specified network address list.
@@ -750,9 +788,13 @@ Returns the IP address of the address list.
 
 These inspectors expose the state of a socket on an endpoint
 
+#### Casts
+
 {% property <tcp state> as string %}
 
 Cast a &lt;tcp state&gt; to a string representation
+
+#### Properties
 
 {% property time wait of <tcp state> %}
 
@@ -806,6 +848,8 @@ Returns true if the state represented is CLOSE_WAIT
 
 These inspectors expose the sockets opened on the network on the endpoint
 
+#### Properties
+
 {% property udp of <socket> %}
 
 Returns true if the socket is a UDP socket
@@ -842,6 +886,8 @@ Returns an &lt;ipv4or6 address&gt; representing the local address of the socket
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property route of <ipv4 routing table> %}
 
 Returns all the routes in the routing table in Linux. On Solaris, this returns all routes which are not broadcast, local, or cache routes.
@@ -853,6 +899,8 @@ Returns all the routes in the routing table on Solaris.
 {% type ipv4 route%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property window of <ipv4 route> %}
 
@@ -966,6 +1014,8 @@ Returns a boolean specifying if the route is a blackhole route.
 
 No documentation exists for this type.
 
+#### Properties
+
 {% property route of <routing table> %}
 
 No documentation exists for this property.
@@ -973,6 +1023,8 @@ No documentation exists for this property.
 {% type route%}
 
 No documentation exists for this type.
+
+#### Properties
 
 {% property window of <route> %}
 
@@ -1174,6 +1226,8 @@ The &lt;connection status&gt; objects return information about the status of you
 
 The &lt;connection&gt; objects are used to query your connections. These are all properties of the Internet Connection Firewall, as returned in the NETCON_PROPERTIES structure.
 
+#### Properties
+
 {% property status of <connection> %}
 
 Returns the status of the specified connection.
@@ -1205,6 +1259,8 @@ The &lt;media type&gt; objects allow you to inspect the media type of your Inter
 {% type network link interface%}
 
 The network link interface objects correspond to interfaces of type AF_LINK.
+
+#### Properties
 
 {% property mac address of <network link interface> %}
 

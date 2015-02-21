@@ -1,18 +1,19 @@
 var fs = require('fs'),
   path = require('path'),
   rimraf = require('rimraf'),
-  escape = require('escape-html');
+  escape = require('escape-html'),
+  yaml = require('js-yaml');
 
 if (process.argv.length !== 6) {
   console.error(
     'usage: create-pages ' +
-    '<site-dir> <categories.json> <language.json> <docs.json>');
+    '<site-dir> <categories.yml> <language.json> <docs.json>');
 
   return process.exit(1);
 }
 
 var siteDir = process.argv[2];
-var categories = JSON.parse(fs.readFileSync(process.argv[3]));
+var categories = yaml.safeLoad(fs.readFileSync(process.argv[3]));
 var language = JSON.parse(fs.readFileSync(process.argv[4]));
 var docs = JSON.parse(fs.readFileSync(process.argv[5]));
 
@@ -102,11 +103,17 @@ Object.keys(categories).forEach(function(category) {
 
       var casts = castsOf(type);
       if (casts.length !== 0) {
+        body += '#### Casts';
+        body += '\n';
+        body += '\n';
         body += casts;
       }
       
       var properties = propertiesOf(type);
       if (properties.length !== 0) {
+        body += '#### Properties';
+        body += '\n';
+        body += '\n';
         body += properties;
       }
     });

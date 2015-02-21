@@ -6,6 +6,8 @@ title: general
 
 The &lt;mime field&gt; inspectors deal with the MIME fields that constitute a Fixlet file. These fields typically start with &#39;x-fixlet&#39;. For instance, to return the value of a specific MIME field, you might use:mime fields &quot;x-fixlet-cve&quot; of bes fixlets
 
+#### Properties
+
 {% property value of <mime field> %}
 
 Returns the values of the specified MIME fields. Fixlet files are in MIME format which may have several iterated fields composed of name/value pairs.
@@ -17,6 +19,8 @@ Returns the names of the specified MIME fields. Fixlet files are in MIME format 
 {% type historical fixlet count%}
 
 The &lt;historical fixlet count&gt; objects provide historical information about the number of Fixlets at different severity levels.
+
+#### Properties
 
 {% property time of <historical fixlet count> %}
 
@@ -34,6 +38,8 @@ Returns all of the &lt;fixlet count pair&gt; objects (one for each severity leve
 
 The &lt;historical computer count&gt; inspectors provide information about historical computer count objects.
 
+#### Properties
+
 {% property time of <historical computer count> %}
 
 Returns the time when the specified count was archived.
@@ -50,6 +56,8 @@ Returns the count when the specified historical computer count was last archived
 
 The &lt;fixlet count pair&gt; inspectors return information about the Fixlet count pair objects for each severity level.
 
+#### Properties
+
 {% property source severity of <fixlet count pair> %}
 
 Returns the severity level corresponding to the given Fixlet count pair.
@@ -61,6 +69,8 @@ Returns the Fixlet count for each severity level of the Fixlet count pairs.
 {% type bes wakeonlan status%}
 
 The &lt;bes wakeonlan status&gt; objects are Windows inspectors that return the status of the BES WakeOnLan feature.
+
+#### Properties
 
 {% property enabled of <bes wakeonlan status> %}
 
@@ -78,6 +88,8 @@ Returns the integer ID corresponding to the Database with WoL.
 
 The &lt;bes server&gt; inspectors return information about the BES Server, allowing Dashboards and Web Reports to access files and other information from the BES database.
 
+#### Properties
+
 {% property url of <bes server> %}
 
 Returns the URL of the specified BES Server, providing access to any files hosted on that server.
@@ -93,6 +105,8 @@ Returns the integer database ID corresponding to the specified BES Server.
 {% type bes product%}
 
 A BigFix license can include more than one product. Each product has an expiration date and a maximum seat count for any type of computer, or by non-windows server, windows server, or workstation. Each product also has a name and a list of site urls. For example, a patch management product might include site urls pointing to the individual patch sites.
+
+#### Properties
 
 {% property workstation count of <bes product> %}
 
@@ -158,6 +172,8 @@ No documentation exists for this property.
 
 These options allow you to customize the behavior of your BES deployment. They are set by the system administrator in the BES Admin Tool, under the Advanced Options tab.
 
+#### Properties
+
 {% property value of <bes deployment option> %}
 
 Returns the &lt;string&gt; value reported by this computer for the specified BES deployment option(s).
@@ -177,6 +193,8 @@ In the Web Reports environment, this inspector returns the numeric ID of the dat
 {% type bes comment%}
 
 The &lt;bes comment&gt; inspectors return the text, timestamp and author of BES Comments. 
+
+#### Properties
 
 {% property timestamp of <bes comment> %}
 

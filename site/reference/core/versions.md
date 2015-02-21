@@ -6,6 +6,8 @@ title: versions
 
 The &lt;version with multiplicity&gt; inspectors deal with version arrays, allowing you to extract unique version values and count them. 
 
+#### Properties
+
 {% property multiplicity of <version with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;version&gt; types.
@@ -14,6 +16,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 
 This is the numeric method of indicating the file version, which is compact, convenient and fast. It makes use of a short string to define the version number. Version types are available as both client and core inspectors, so if you don&#39;t find what you want in one guide, please check the other.
 
+#### Casts
+
 {% property <version> as version %}
 
 Reflexive cast of version.
@@ -21,6 +25,8 @@ Reflexive cast of version.
 {% property <version> as string %}
 
 Turns a version type into a string of the form &quot;1.2.3.4&quot;.Example: version of regapp &quot;bigfix.exe&quot; as string = &quot;1.0.45.0&quot; - Returns TRUE if the BigFix application has the specified version.Example: version of package &quot;BESAgent&quot; of rpm as string = &quot;3.1.0.19-1&quot; - TRUE if the BESAgent program has the given version.
+
+#### Properties
 
 {% property unique value of <version> %}
 

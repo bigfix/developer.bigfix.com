@@ -6,6 +6,8 @@ title: unmanaged-assets
 
 The &lt;bes unmanagedasset with multiplicity&gt; inspectors deal with arrays of BES unmanaged assets, allowing you to extract unique properties and count them. 
 
+#### Properties
+
 {% property multiplicity of <bes unmanagedasset with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes unmanagedasset&gt; types.
@@ -13,6 +15,8 @@ Sorts the list and returns the multiplicity, or count, of each unique element in
 {% type bes unmanagedasset set%}
 
 The &lt;bes unmanagedasset set&gt; inspectors iterate over the BES unmanaged assets and return a set of such assets.
+
+#### Properties
 
 {% property union of <bes unmanagedasset set> %}
 
@@ -33,6 +37,8 @@ Returns the elements of the specified set of BES Unmanaged Assets.
 {% type bes unmanagedasset field%}
 
 The &lt;bes unmanagedasset field&gt; inspectors provide authors with access to the individual fields of various unmanaged assets. Each field consists of a name / value pair, analogous to BES properties. There are three types of fields:IdentifyingField: Each asset must have one IdentifyingField, such as a MAC Address, which is used to identify and correlate different reports from the same asset.FilterableField: These are displayed in the Console in both the Unmanaged Asset list and the unmanaged asset document, allowing sorting and filtering.NonFilterable: These are only displayed in the Unmanaged Assets document, and typically return a large amount of data, such as a list of vulnerabilities.
+
+#### Properties
 
 {% property value of <bes unmanagedasset field> %}
 
@@ -57,6 +63,8 @@ Returns an asset (containing a name / value pair) from the specified BES unmanag
 {% type bes unmanagedasset%}
 
 The &lt;bes unmanagedasset&gt; inspectors provide access to externally sourced data, such as that resulting from Nmap scans on client computers. The results, such as OS, Device Type, Network Card Vendor, and Open Ports, are uploaded to the BES Server for storage and analysis. These inspectors provide a way to monitor and report on mobile or hand-held devices that are not traditional BES Clients, but instead use &quot;microAgents&quot; to report their status. For more information on currently supported devices, consult the BigFix support pages.
+
+#### Properties
 
 {% property unique value of <bes unmanagedasset> %}
 
