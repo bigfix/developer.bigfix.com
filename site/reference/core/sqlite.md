@@ -2,135 +2,135 @@
 title: sqlite
 ---
 
-## sqlite table
+{% type sqlite table%}
 
 No documentation exists for this type.
 
-#### &lt;sqlite table&gt; as string : string
+{% property <sqlite table> as string %}
 
 No documentation exists for this cast.
 
-#### schema of &lt;sqlite table&gt; : string
+{% property schema of <sqlite table> %}
 
 No documentation exists for this property.
 
-#### name of &lt;sqlite table&gt; : string
+{% property name of <sqlite table> %}
 
 No documentation exists for this property.
 
-#### index of &lt;sqlite table&gt; : string
+{% property index of <sqlite table> %}
 
 No documentation exists for this property.
 
-#### column type of &lt;sqlite table&gt; : sqlite column type
+{% property column type of <sqlite table> %}
 
 No documentation exists for this property.
 
-#### column type &lt;string&gt; of &lt;sqlite table&gt; : sqlite column type
+{% property column type <string> of <sqlite table> %}
 
 No documentation exists for this property.
 
-#### column type &lt;integer&gt; of &lt;sqlite table&gt; : sqlite column type
+{% property column type <integer> of <sqlite table> %}
 
 No documentation exists for this property.
 
-## sqlite statement
+{% type sqlite statement%}
 
 No documentation exists for this type.
 
-#### row of &lt;sqlite statement&gt; : sqlite row
+{% property row of <sqlite statement> %}
 
 No documentation exists for this property.
 
-## sqlite row
+{% type sqlite row%}
 
 No documentation exists for this type.
 
-#### &lt;sqlite row&gt; as string : string
+{% property <sqlite row> as string %}
 
 No documentation exists for this cast.
 
-#### column &lt;string&gt; of &lt;sqlite row&gt; : sqlite column
+{% property column <string> of <sqlite row> %}
 
 No documentation exists for this property.
 
-#### column &lt;integer&gt; of &lt;sqlite row&gt; : sqlite column
+{% property column <integer> of <sqlite row> %}
 
 No documentation exists for this property.
 
-## sqlite database
+{% type sqlite database%}
 
 No documentation exists for this type.
 
-#### &lt;sqlite database&gt; as string : string
+{% property <sqlite database> as string %}
 
 No documentation exists for this cast.
 
-#### table of &lt;sqlite database&gt; : sqlite table
+{% property table of <sqlite database> %}
 
 No documentation exists for this property.
 
-#### table &lt;string&gt; of &lt;sqlite database&gt; : sqlite table
+{% property table <string> of <sqlite database> %}
 
 No documentation exists for this property.
 
-#### statement &lt;string&gt; of &lt;sqlite database&gt; : sqlite statement
+{% property statement <string> of <sqlite database> %}
 
 No documentation exists for this property.
 
-#### encoding of &lt;sqlite database&gt; : string
+{% property encoding of <sqlite database> %}
 
 No documentation exists for this property.
 
-## sqlite column type
+{% type sqlite column type%}
 
 No documentation exists for this type.
 
-#### &lt;sqlite column type&gt; as string : string
+{% property <sqlite column type> as string %}
 
 No documentation exists for this cast.
 
-#### type of &lt;sqlite column type&gt; : string
+{% property type of <sqlite column type> %}
 
 No documentation exists for this property.
 
-#### text of &lt;sqlite column type&gt; : boolean
+{% property text of <sqlite column type> %}
 
 No documentation exists for this property.
 
-#### null of &lt;sqlite column type&gt; : boolean
+{% property null of <sqlite column type> %}
 
 No documentation exists for this property.
 
-#### name of &lt;sqlite column type&gt; : string
+{% property name of <sqlite column type> %}
 
 No documentation exists for this property.
 
-#### integer of &lt;sqlite column type&gt; : boolean
+{% property integer of <sqlite column type> %}
 
 No documentation exists for this property.
 
-#### float of &lt;sqlite column type&gt; : boolean
+{% property float of <sqlite column type> %}
 
 No documentation exists for this property.
 
-#### blob of &lt;sqlite column type&gt; : boolean
+{% property blob of <sqlite column type> %}
 
 No documentation exists for this property.
 
-## sqlite column
+{% type sqlite column%}
 
 No documentation exists for this type.
 
-#### &lt;sqlite column&gt; as string : string
+{% property <sqlite column> as string %}
 
 No documentation exists for this cast.
 
-#### type of &lt;sqlite column&gt; : sqlite column type
+{% property type of <sqlite column> %}
 
 No documentation exists for this property.
 
-#### name of &lt;sqlite column&gt; : string
+{% property name of <sqlite column> %}
 
 No documentation exists for this property.
 

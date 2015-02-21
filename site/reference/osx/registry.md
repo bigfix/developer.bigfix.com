@@ -2,67 +2,67 @@
 title: registry
 ---
 
-## registryroot
+{% type registryroot%}
 
 The &lt;registryroot&gt; objects are the inspectors for the planes of the IOKit Registry
 
-#### usb plane of &lt;registryroot&gt; : registrynode
+{% property usb plane of <registryroot> %}
 
 The usb plane of IOKit&#39;s registry.
 
-#### service plane of &lt;registryroot&gt; : registrynode
+{% property service plane of <registryroot> %}
 
 The service plane of IOKit&#39;s registry.
 
-#### power plane of &lt;registryroot&gt; : registrynode
+{% property power plane of <registryroot> %}
 
 The power plane of IOKit&#39;s registry.
 
-#### node &lt;string&gt; of &lt;registryroot&gt; : registrynode
+{% property node <string> of <registryroot> %}
 
 The named node of the root of the IOKit&#39;s registry.
 
-#### firewire plane of &lt;registryroot&gt; : registrynode
+{% property firewire plane of <registryroot> %}
 
 The firewire plane of IOKit&#39;s registry.
 
-#### dictionary of &lt;registryroot&gt; : dictionary
+{% property dictionary of <registryroot> %}
 
 Returns a dictionary from the root of the IOKit registry.
 
-#### devicetree plane of &lt;registryroot&gt; : registrynode
+{% property devicetree plane of <registryroot> %}
 
 Returns the device tree plane of IOKit&#39;s registry. The device tree contains extensive information about devices in the system.
 
-#### audio plane of &lt;registryroot&gt; : registrynode
+{% property audio plane of <registryroot> %}
 
 The audio plane of IOKit&#39;s registry.
 
-## registrynode
+{% type registrynode%}
 
 The &lt;registrynode&gt; inspectors provide access to the nodes of the IOKit Registry.
 
-#### path of &lt;registrynode&gt; : string
+{% property path of <registrynode> %}
 
 Path of the node in the IOKit registry.
 
-#### node of &lt;registrynode&gt; : registrynode
+{% property node of <registrynode> %}
 
 The nodes of the given node of the IOKit registry.
 
-#### node &lt;string&gt; of &lt;registrynode&gt; : registrynode
+{% property node <string> of <registrynode> %}
 
 The named node of the given node of the IOKit registry.
 
-#### name of &lt;registrynode&gt; : string
+{% property name of <registrynode> %}
 
 Name of the given IOKit registry node.
 
-#### dictionary of &lt;registrynode&gt; : dictionary
+{% property dictionary of <registrynode> %}
 
 Returns a dictionary from a node in the IORegistry.
 
-#### classname of &lt;registrynode&gt; : string
+{% property classname of <registrynode> %}
 
 The class name of the IOKit registry node.
 

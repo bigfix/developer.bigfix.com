@@ -2,619 +2,619 @@
 title: image-packaging-system
 ---
 
-## ips version dependency
+{% type ips version dependency%}
 
 No documentation exists for this type.
 
-#### &lt;ips version dependency&gt; as string : string
+{% property <ips version dependency> as string %}
 
 No documentation exists for this cast.
 
-#### version with time of &lt;ips version dependency&gt; : version with time
+{% property version with time of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### version of &lt;ips version dependency&gt; : string
+{% property version of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### type of &lt;ips version dependency&gt; : string
+{% property type of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### time stamp of &lt;ips version dependency&gt; : string
+{% property time stamp of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### publisher of &lt;ips version dependency&gt; : string
+{% property publisher of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips version dependency&gt; : string
+{% property name of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### full name of &lt;ips version dependency&gt; : string
+{% property full name of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### fmri of &lt;ips version dependency&gt; : string
+{% property fmri of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### component version of &lt;ips version dependency&gt; : ips component version
+{% property component version of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### category of &lt;ips version dependency&gt; : string
+{% property category of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### build version of &lt;ips version dependency&gt; : ips build version
+{% property build version of <ips version dependency> %}
 
 No documentation exists for this property.
 
-#### branch version of &lt;ips version dependency&gt; : ips branch version
+{% property branch version of <ips version dependency> %}
 
 No documentation exists for this property.
 
-## ips setting pieces
+{% type ips setting pieces%}
 
 No documentation exists for this type.
 
-#### &lt;ips setting pieces&gt; as string : string
+{% property <ips setting pieces> as string %}
 
 No documentation exists for this cast.
 
-#### value of &lt;ips setting pieces&gt; : string
+{% property value of <ips setting pieces> %}
 
 No documentation exists for this property.
 
-#### section of &lt;ips setting pieces&gt; : string
+{% property section of <ips setting pieces> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips setting pieces&gt; : string
+{% property name of <ips setting pieces> %}
 
 No documentation exists for this property.
 
-#### fullsetting of &lt;ips setting pieces&gt; : string
+{% property fullsetting of <ips setting pieces> %}
 
 No documentation exists for this property.
 
-## ips repo
+{% type ips repo%}
 
 No documentation exists for this type.
 
-#### version of &lt;ips repo&gt; : string
+{% property version of <ips repo> %}
 
 No documentation exists for this property.
 
-#### package of &lt;ips repo&gt; : ips package
+{% property package of <ips repo> %}
 
 No documentation exists for this property.
 
-#### package &lt;string&gt; of &lt;ips repo&gt; : ips package
+{% property package <string> of <ips repo> %}
 
 No documentation exists for this property.
 
-#### ordered catalog of &lt;ips repo&gt; : string
+{% property ordered catalog of <ips repo> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips repo&gt; : string
+{% property name of <ips repo> %}
 
 No documentation exists for this property.
 
-#### latest package of &lt;ips repo&gt; : ips package
+{% property latest package of <ips repo> %}
 
 No documentation exists for this property.
 
-#### latest package &lt;string&gt; of &lt;ips repo&gt; : ips package
+{% property latest package <string> of <ips repo> %}
 
 No documentation exists for this property.
 
-#### earliest package of &lt;ips repo&gt; : ips package
+{% property earliest package of <ips repo> %}
 
 No documentation exists for this property.
 
-#### earliest package &lt;string&gt; of &lt;ips repo&gt; : ips package
+{% property earliest package <string> of <ips repo> %}
 
 No documentation exists for this property.
 
-#### description of &lt;ips repo&gt; : string
+{% property description of <ips repo> %}
 
 No documentation exists for this property.
 
-#### configuration version of &lt;ips repo&gt; : string
+{% property configuration version of <ips repo> %}
 
 No documentation exists for this property.
 
-## ips partial matching fmri
+{% type ips partial matching fmri%}
 
 No documentation exists for this type.
 
-#### version with time of &lt;ips partial matching fmri&gt; : version with time
+{% property version with time of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### version of &lt;ips partial matching fmri&gt; : string
+{% property version of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### time stamp of &lt;ips partial matching fmri&gt; : string
+{% property time stamp of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### publisher of &lt;ips partial matching fmri&gt; : string
+{% property publisher of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips partial matching fmri&gt; : string
+{% property name of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### full name of &lt;ips partial matching fmri&gt; : string
+{% property full name of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### fmri of &lt;ips partial matching fmri&gt; : string
+{% property fmri of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### component version of &lt;ips partial matching fmri&gt; : ips component version
+{% property component version of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### category of &lt;ips partial matching fmri&gt; : string
+{% property category of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### build version of &lt;ips partial matching fmri&gt; : ips build version
+{% property build version of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-#### branch version of &lt;ips partial matching fmri&gt; : ips branch version
+{% property branch version of <ips partial matching fmri> %}
 
 No documentation exists for this property.
 
-## ips package
+{% type ips package%}
 
 No documentation exists for this type.
 
-#### &lt;ips package&gt; as string : string
+{% property <ips package> as string %}
 
 No documentation exists for this cast.
 
-#### version with time of &lt;ips package&gt; : version with time
+{% property version with time of <ips package> %}
 
 No documentation exists for this property.
 
-#### version ordinal of &lt;ips package&gt; : integer
+{% property version ordinal of <ips package> %}
 
 No documentation exists for this property.
 
-#### version of &lt;ips package&gt; : string
+{% property version of <ips package> %}
 
 No documentation exists for this property.
 
-#### version count of &lt;ips package&gt; : integer
+{% property version count of <ips package> %}
 
 No documentation exists for this property.
 
-#### variant of &lt;ips package&gt; : ips setting pieces
+{% property variant of <ips package> %}
 
 No documentation exists for this property.
 
-#### v1 of &lt;ips package&gt; : boolean
+{% property v1 of <ips package> %}
 
 No documentation exists for this property.
 
-#### v0 of &lt;ips package&gt; : boolean
+{% property v0 of <ips package> %}
 
 No documentation exists for this property.
 
-#### upgradable of &lt;ips package&gt; : boolean
+{% property upgradable of <ips package> %}
 
 No documentation exists for this property.
 
-#### unsupported of &lt;ips package&gt; : boolean
+{% property unsupported of <ips package> %}
 
 No documentation exists for this property.
 
-#### unknown of &lt;ips package&gt; : boolean
+{% property unknown of <ips package> %}
 
 No documentation exists for this property.
 
-#### uninstalled of &lt;ips package&gt; : boolean
+{% property uninstalled of <ips package> %}
 
 No documentation exists for this property.
 
-#### time stamp of &lt;ips package&gt; : string
+{% property time stamp of <ips package> %}
 
 No documentation exists for this property.
 
-#### summary of &lt;ips package&gt; : string
+{% property summary of <ips package> %}
 
 No documentation exists for this property.
 
-#### setting of &lt;ips package&gt; : ips setting pieces
+{% property setting of <ips package> %}
 
 No documentation exists for this property.
 
-#### require dependency of &lt;ips package&gt; : ips version dependency
+{% property require dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### renamed pkg of &lt;ips package&gt; : boolean
+{% property renamed pkg of <ips package> %}
 
 No documentation exists for this property.
 
-#### renamed of &lt;ips package&gt; : boolean
+{% property renamed of <ips package> %}
 
 No documentation exists for this property.
 
-#### publisher of &lt;ips package&gt; : string
+{% property publisher of <ips package> %}
 
 No documentation exists for this property.
 
-#### parent dependency of &lt;ips package&gt; : ips version dependency
+{% property parent dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### optional dependency of &lt;ips package&gt; : ips version dependency
+{% property optional dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### obsolete pkg of &lt;ips package&gt; : boolean
+{% property obsolete pkg of <ips package> %}
 
 No documentation exists for this property.
 
-#### obsolete of &lt;ips package&gt; : boolean
+{% property obsolete of <ips package> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips package&gt; : string
+{% property name of <ips package> %}
 
 No documentation exists for this property.
 
-#### known of &lt;ips package&gt; : boolean
+{% property known of <ips package> %}
 
 No documentation exists for this property.
 
-#### installed of &lt;ips package&gt; : boolean
+{% property installed of <ips package> %}
 
 No documentation exists for this property.
 
-#### incorporate dependency of &lt;ips package&gt; : ips version dependency
+{% property incorporate dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### group dependency of &lt;ips package&gt; : ips version dependency
+{% property group dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### full name of &lt;ips package&gt; : string
+{% property full name of <ips package> %}
 
 No documentation exists for this property.
 
-#### frozen of &lt;ips package&gt; : boolean
+{% property frozen of <ips package> %}
 
 No documentation exists for this property.
 
-#### fmri of &lt;ips package&gt; : string
+{% property fmri of <ips package> %}
 
 No documentation exists for this property.
 
-#### exclude dependency of &lt;ips package&gt; : ips version dependency
+{% property exclude dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### description of &lt;ips package&gt; : string
+{% property description of <ips package> %}
 
 No documentation exists for this property.
 
-#### dependency of &lt;ips package&gt; : ips version dependency
+{% property dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### conditional dependency of &lt;ips package&gt; : ips version dependency
+{% property conditional dependency of <ips package> %}
 
 No documentation exists for this property.
 
-#### component version of &lt;ips package&gt; : ips component version
+{% property component version of <ips package> %}
 
 No documentation exists for this property.
 
-#### category of &lt;ips package&gt; : string
+{% property category of <ips package> %}
 
 No documentation exists for this property.
 
-#### build version of &lt;ips package&gt; : ips build version
+{% property build version of <ips package> %}
 
 No documentation exists for this property.
 
-#### branch version of &lt;ips package&gt; : ips branch version
+{% property branch version of <ips package> %}
 
 No documentation exists for this property.
 
-#### alt source of &lt;ips package&gt; : boolean
+{% property alt source of <ips package> %}
 
 No documentation exists for this property.
 
-## ips image
+{% type ips image%}
 
 No documentation exists for this type.
 
-#### variant of &lt;ips image&gt; : ips setting pieces
+{% property variant of <ips image> %}
 
 No documentation exists for this property.
 
-#### setting of &lt;ips image&gt; : ips setting pieces
+{% property setting of <ips image> %}
 
 No documentation exists for this property.
 
-#### property of &lt;ips image&gt; : ips setting pieces
+{% property property of <ips image> %}
 
 No documentation exists for this property.
 
-#### package of &lt;ips image&gt; : ips package
+{% property package of <ips image> %}
 
 No documentation exists for this property.
 
-#### package &lt;string&gt; of &lt;ips image&gt; : ips package
+{% property package <string> of <ips image> %}
 
 No documentation exists for this property.
 
-#### ordered catalog of &lt;ips image&gt; : string
+{% property ordered catalog of <ips image> %}
 
 No documentation exists for this property.
 
-#### latest package of &lt;ips image&gt; : ips package
+{% property latest package of <ips image> %}
 
 No documentation exists for this property.
 
-#### latest package &lt;string&gt; of &lt;ips image&gt; : ips package
+{% property latest package <string> of <ips image> %}
 
 No documentation exists for this property.
 
-#### latest installed package of &lt;ips image&gt; : ips package
+{% property latest installed package of <ips image> %}
 
 No documentation exists for this property.
 
-#### latest installed package &lt;string&gt; of &lt;ips image&gt; : ips package
+{% property latest installed package <string> of <ips image> %}
 
 No documentation exists for this property.
 
-#### installed package of &lt;ips image&gt; : ips package
+{% property installed package of <ips image> %}
 
 No documentation exists for this property.
 
-#### installed package &lt;string&gt; of &lt;ips image&gt; : ips package
+{% property installed package <string> of <ips image> %}
 
 No documentation exists for this property.
 
-#### image version of &lt;ips image&gt; : string
+{% property image version of <ips image> %}
 
 No documentation exists for this property.
 
-#### facet of &lt;ips image&gt; : ips setting pieces
+{% property facet of <ips image> %}
 
 No documentation exists for this property.
 
-#### earliest package of &lt;ips image&gt; : ips package
+{% property earliest package of <ips image> %}
 
 No documentation exists for this property.
 
-#### earliest package &lt;string&gt; of &lt;ips image&gt; : ips package
+{% property earliest package <string> of <ips image> %}
 
 No documentation exists for this property.
 
-#### earliest installed package of &lt;ips image&gt; : ips package
+{% property earliest installed package of <ips image> %}
 
 No documentation exists for this property.
 
-#### earliest installed package &lt;string&gt; of &lt;ips image&gt; : ips package
+{% property earliest installed package <string> of <ips image> %}
 
 No documentation exists for this property.
 
-#### configuration version of &lt;ips image&gt; : string
+{% property configuration version of <ips image> %}
 
 No documentation exists for this property.
 
-#### authority of &lt;ips image&gt; : ips authority info
+{% property authority of <ips image> %}
 
 No documentation exists for this property.
 
-#### authority &lt;string&gt; of &lt;ips image&gt; : ips authority info
+{% property authority <string> of <ips image> %}
 
 No documentation exists for this property.
 
-## ips fmri
+{% type ips fmri%}
 
 No documentation exists for this type.
 
-#### version with time of &lt;ips fmri&gt; : version with time
+{% property version with time of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### version of &lt;ips fmri&gt; : string
+{% property version of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### time stamp of &lt;ips fmri&gt; : string
+{% property time stamp of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### publisher of &lt;ips fmri&gt; : string
+{% property publisher of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips fmri&gt; : string
+{% property name of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### full name of &lt;ips fmri&gt; : string
+{% property full name of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### fmri of &lt;ips fmri&gt; : string
+{% property fmri of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### component version of &lt;ips fmri&gt; : ips component version
+{% property component version of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### category of &lt;ips fmri&gt; : string
+{% property category of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### build version of &lt;ips fmri&gt; : ips build version
+{% property build version of <ips fmri> %}
 
 No documentation exists for this property.
 
-#### branch version of &lt;ips fmri&gt; : ips branch version
+{% property branch version of <ips fmri> %}
 
 No documentation exists for this property.
 
-## ips component version
+{% type ips component version%}
 
 No documentation exists for this type.
 
-#### &lt;ips component version&gt; as string : string
+{% property <ips component version> as string %}
 
 No documentation exists for this cast.
 
-## ips build version
+{% type ips build version%}
 
 No documentation exists for this type.
 
-#### &lt;ips build version&gt; as string : string
+{% property <ips build version> as string %}
 
 No documentation exists for this cast.
 
-## ips branch version
+{% type ips branch version%}
 
 No documentation exists for this type.
 
-#### &lt;ips branch version&gt; as string : string
+{% property <ips branch version> as string %}
 
 No documentation exists for this cast.
 
-## ips authority info
+{% type ips authority info%}
 
 No documentation exists for this type.
 
-#### &lt;ips authority info&gt; as string : string
+{% property <ips authority info> as string %}
 
 No documentation exists for this cast.
 
-#### uuid of &lt;ips authority info&gt; : string
+{% property uuid of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### sticky of &lt;ips authority info&gt; : boolean
+{% property sticky of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### ssl key of &lt;ips authority info&gt; : string
+{% property ssl key of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### ssl cert of &lt;ips authority info&gt; : string
+{% property ssl cert of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### signing ca certs of &lt;ips authority info&gt; : string
+{% property signing ca certs of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### signature required names of &lt;ips authority info&gt; : string
+{% property signature required names of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### revoked ca certs of &lt;ips authority info&gt; : string
+{% property revoked ca certs of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo sort policy of &lt;ips authority info&gt; : string
+{% property repo sort policy of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo related uris of &lt;ips authority info&gt; : string
+{% property repo related uris of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo registration uri of &lt;ips authority info&gt; : string
+{% property repo registration uri of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo registered of &lt;ips authority info&gt; : boolean
+{% property repo registered of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo refresh seconds of &lt;ips authority info&gt; : string
+{% property repo refresh seconds of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo name of &lt;ips authority info&gt; : string
+{% property repo name of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo legal uris of &lt;ips authority info&gt; : string
+{% property repo legal uris of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo description of &lt;ips authority info&gt; : string
+{% property repo description of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### repo collection type of &lt;ips authority info&gt; : string
+{% property repo collection type of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### proxied urls of &lt;ips authority info&gt; : string
+{% property proxied urls of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### prefix of &lt;ips authority info&gt; : string
+{% property prefix of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### origin of &lt;ips authority info&gt; : string
+{% property origin of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### name of &lt;ips authority info&gt; : string
+{% property name of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### mirrors of &lt;ips authority info&gt; : string
+{% property mirrors of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### intermediate certs of &lt;ips authority info&gt; : string
+{% property intermediate certs of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### disabled of &lt;ips authority info&gt; : boolean
+{% property disabled of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### approved ca cert of &lt;ips authority info&gt; : string
+{% property approved ca cert of <ips authority info> %}
 
 No documentation exists for this property.
 
-#### alias of &lt;ips authority info&gt; : string
+{% property alias of <ips authority info> %}
 
 No documentation exists for this property.
 
-## version with time
+{% type version with time%}
 
 No documentation exists for this type.
 
-#### &lt;version with time&gt; as string : string
+{% property <version with time> as string %}
 
 No documentation exists for this cast.
 

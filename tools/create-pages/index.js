@@ -23,7 +23,7 @@ function castsOf(type) {
     var property = language.properties[key];
 
     if (property.type === 'cast' && property.argType === type) {
-      body += '#### ' + escape(property.key) + ' : ' + property.resultType;
+      body += '{% property ' + property.key + ' %}';
       body += '\n';
       body += '\n';
 
@@ -48,7 +48,7 @@ function propertiesOf(type) {
     var property = language.properties[key];
 
     if (property.type === 'property' && property.directObjectType === type) {
-      body += '#### ' + escape(property.key) + ' : ' + property.resultType;
+      body += '{% property ' + property.key + ' %}';
       body += '\n';
       body += '\n';
 
@@ -66,8 +66,13 @@ function propertiesOf(type) {
   return body;
 }
 
-rimraf.sync(path.join(siteDir, 'reference'));
-fs.mkdirSync(path.join(siteDir, 'reference'));
+fs.readdirSync(path.join(siteDir, 'reference')).forEach(function(dir) {
+  if (dir.indexOf('index') !== -1) {
+    return;
+  }
+
+  rimraf.sync(path.join(siteDir, 'reference', dir));
+});
 
 Object.keys(categories).forEach(function(category) {
   fs.mkdirSync(path.join(siteDir, 'reference', category));
@@ -82,7 +87,7 @@ Object.keys(categories).forEach(function(category) {
     body += '\n';
 
     types.forEach(function(type) {
-      body += '## ' + escape(type);
+      body += '{% type ' + type + '%}';
       body += '\n';
       body += '\n';
 

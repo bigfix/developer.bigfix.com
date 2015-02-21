@@ -90,7 +90,12 @@ code {
   color: red;
 }
 
-.reference h4 {
+.property {
   font-family: monospace;
-  font-size: 2rem;
+  font-size: 1.25em;
+}
+
+.type {
+  font-family: monospace;
+  font-size: 1.25em;
 }

@@ -2,387 +2,387 @@
 title: content
 ---
 
-## site group
+{% type site group%}
 
 The &lt;site group&gt; inspectors return information on the automatic groups defined for a given site.
 
-#### member of &lt;site group&gt; : boolean
+{% property member of <site group> %}
 
 Returns TRUE if the current computer is a member of the specified group.
 
-#### id of &lt;site group&gt; : integer
+{% property id of <site group> %}
 
 Returns the numeric ID of the specified site group. This is the number assigned to an automatic group when it is first defined.
 
-## site
+{% type site%}
 
 A &lt;site&gt; object is provided to access properties of Fixlet sites. 
 
-#### version of &lt;site&gt; : integer
+{% property version of <site> %}
 
 Returns the version number of the site content.
 
-#### url of &lt;site&gt; : string
+{% property url of <site> %}
 
 Returns the Locator found in the masthead. A site locator is used to synchronize with the site. It normally contains the URL of a remote file system folder, or the URL of a cgi-bin program that provides a remote directory listing of the site.
 
-#### type of &lt;site&gt; : string
+{% property type of <site> %}
 
 Returns one of the following 4 literal strings:Master Action SiteOperator SiteCustom SiteFixlet Site.
 
-#### subscribe time of &lt;site&gt; : time
+{% property subscribe time of <site> %}
 
 Returns the time that the current machine began subscribing to the site.
 
-#### site version list of &lt;site&gt; : site version list
+{% property site version list of <site> %}
 
 Returns the last gathered site version list (manyversion) of the specified site.
 
-#### site tag of &lt;site&gt; : string
+{% property site tag of <site> %}
 
 Returns the last component of the specified site&#39;s url, eg. &#39;actionsite&#39;, &#39;enteprisesecurity&#39;, etcetera.
 
-#### setting of &lt;site&gt; : setting
+{% property setting of <site> %}
 
 Returns one or more settings from the site settings.
 
-#### setting &lt;string&gt; of &lt;site&gt; : setting
+{% property setting <string> of <site> %}
 
 Returns the setting whose name matches the string provided from the Fixlet site settings.
 
-#### relevant offer action of &lt;site&gt; : action
+{% property relevant offer action of <site> %}
 
 Returns the list of relevant actions that are offers for the specified site.  This inspector could be useful in a client UI dashboard listing the current set of relevant offers.
 
-#### relevant fixlet of &lt;site&gt; : fixlet
+{% property relevant fixlet of <site> %}
 
 Iterates through the Relevant Fixlet messages for the specified site.
 
-#### name of &lt;site&gt; : string
+{% property name of <site> %}
 
 The name of the site.
 
-#### masthead of &lt;site&gt; : file
+{% property masthead of <site> %}
 
 Each site has a masthead, and the masthead is saved into the site data folder upon successful creation. This property returns a file object that corresponds to the copy in the site data folder.
 
-#### last gather time of &lt;site&gt; : time
+{% property last gather time of <site> %}
 
 Returns the time of last successful gathering from the site.
 
-#### group &lt;integer&gt; of &lt;site&gt; : site group
+{% property group <integer> of <site> %}
 
 Returns an object corresponding to the numbered group of the specified site.
 
-#### gather schedule time interval of &lt;site&gt; : time interval
+{% property gather schedule time interval of <site> %}
 
 Returns the time interval between automatic gathering of site content.
 
-#### gather schedule authority of &lt;site&gt; : string
+{% property gather schedule authority of <site> %}
 
 Returns a string corresponding to the authority of the site schedule, for example: Publisher, Custom, Manual or Disabled.
 
-#### folder of &lt;site&gt; : folder
+{% property folder of <site> %}
 
 No documentation exists for this property.
 
-#### fixlet of &lt;site&gt; : fixlet
+{% property fixlet of <site> %}
 
 Iterates through the Fixlet messages of the specified site.
 
-#### client folder of &lt;site&gt; : folder
+{% property client folder of <site> %}
 
 The folder containing the site content on the client machine. Site content is gathered into this location.
 
-#### profile of &lt;site&gt; : site profile
+{% property profile of <site> %}
 
 No documentation exists for this property.
 
-#### evaluated of &lt;site&gt; : boolean
+{% property evaluated of <site> %}
 
 No documentation exists for this property.
 
-## fixlet_header
+{% type fixlet_header%}
 
 Fixlet headers are name:value pairs that can provide important information about the Fixlet messages at any site. These inspectors only work in the context of property evaluation, not Fixlet evaluation.
 
-#### value of &lt;fixlet_header&gt; : string
+{% property value of <fixlet_header> %}
 
 Headers are name:value pairs, separated by a colon. This inspector returns the value on the right hand side of the pair.Example: number of relevant fixlets whose (value of header &quot;x-fixlet-source-severity&quot; of it as lowercase = &quot;critical&quot;) of site &quot;enterprise security&quot;. - Returns the number of critical fixlets in the Enterprise Security site.
 
-#### name of &lt;fixlet_header&gt; : string
+{% property name of <fixlet_header> %}
 
 Headers are name:value pairs, separated by a colon. This inspector returns the name on the left hand side of the pair.
 
-## fixlet
+{% type fixlet%}
 
 The &lt;fixlet&gt; inspectors can provide important information about the Fixlet messages at any site. These inspectors only work in the context of property evaluation, not Fixlet evaluation.
 
-#### relevance of &lt;fixlet&gt; : boolean
+{% property relevance of <fixlet> %}
 
 Returns a boolean TRUE or False, depending on the Relevance of the specified Fixlet message.
 
-#### id of &lt;fixlet&gt; : integer
+{% property id of <fixlet> %}
 
 Returns the numeric ID number of the specified Fixlet message.
 
-#### header of &lt;fixlet&gt; : fixlet_header
+{% property header of <fixlet> %}
 
 Iterates over all the headers of the Fixlet message.
 
-#### header &lt;string&gt; of &lt;fixlet&gt; : fixlet_header
+{% property header <string> of <fixlet> %}
 
 Returns the named header (case insensitive) of the specified Fixlet message. Fixlet headers are name:value pairs.
 
-#### site of &lt;fixlet&gt; : site
+{% property site of <fixlet> %}
 
 Returns the site corresponding to the specified Fixlet message.
 
-## analysis
+{% type analysis%}
 
 No documentation exists for this type.
 
-#### last time of &lt;analysis&gt; : time
+{% property last time of <analysis> %}
 
 No documentation exists for this property.
 
-## action lock state
+{% type action lock state%}
 
 No documentation exists for this type.
 
-#### &lt;action lock state&gt; as string : string
+{% property <action lock state> as string %}
 
 No documentation exists for this cast.
 
-#### locked of &lt;action lock state&gt; : boolean
+{% property locked of <action lock state> %}
 
 No documentation exists for this property.
 
-#### lock string of &lt;action lock state&gt; : string
+{% property lock string of <action lock state> %}
 
 No documentation exists for this property.
 
-#### expiration date of &lt;action lock state&gt; : time
+{% property expiration date of <action lock state> %}
 
 No documentation exists for this property.
 
-#### effective date of &lt;action lock state&gt; : time
+{% property effective date of <action lock state> %}
 
 No documentation exists for this property.
 
-#### controller of &lt;action lock state&gt; : string
+{% property controller of <action lock state> %}
 
 No documentation exists for this property.
 
-## action
+{% type action%}
 
 The &lt;action&gt; objects are the keywords associated with properties available for inspection during the execution of BigFix Actions.
 
-#### &lt;action&gt; as string : string
+{% property <action> as string %}
 
 No documentation exists for this cast.
 
-#### waiting for download of &lt;action&gt; : boolean
+{% property waiting for download of <action> %}
 
 Returns TRUE if client is waiting for mirroring server to have downloads required by the action.
 
-#### system constraint of &lt;action&gt; : integer
+{% property system constraint of <action> %}
 
 No documentation exists for this property.
 
-#### status of &lt;action&gt; : string
+{% property status of <action> %}
 
 Returns one of the following strings: Running = when the action is currently active. Executed = no longer relevant and action has completed. Not Relevant = action was not relevant. Waiting = action is relevant, but waiting to run. Not Executed = action is relevant, unconstrained, but has not yet started. Failed = action is relevant, unconstrained, has completed, but is still relevant.
 
-#### persistent constraint of &lt;action&gt; : integer
+{% property persistent constraint of <action> %}
 
 No documentation exists for this property.
 
-#### pending time of &lt;action&gt; : time
+{% property pending time of <action> %}
 
 Returns the time the action became pending.
 
-#### pending restart of &lt;action&gt; : boolean
+{% property pending restart of <action> %}
 
 Returns TRUE if the specified action included an &#39;action requires restart&#39; command and a restart has not occurred since the action has run.
 
-#### pending of &lt;action&gt; : boolean
+{% property pending of <action> %}
 
 Returns TRUE if action is available to run.
 
-#### pending login of &lt;action&gt; : boolean
+{% property pending login of <action> %}
 
 Returns TRUE if the specified action included an &#39;action requires login&#39; command, and a login has not yet occurred since the action has run.
 
-#### parameter &lt;string&gt; of &lt;action&gt; : string
+{% property parameter <string> of <action> %}
 
 Returns the value of parameter &lt;string&gt; for the active Action. Parameters only live as long as the action is active. Among the inspectable parameters is the &#39;action issue date&#39; that is added to each Action by the BigFix Console at issue time.Example: parameter &quot;action issue date&quot; of action - This inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
 
-#### origin fixlet id of &lt;action&gt; : integer
+{% property origin fixlet id of <action> %}
 
 Returns the Fixlet id that contained the action.
 
-#### offer of &lt;action&gt; : boolean
+{% property offer of <action> %}
 
 Returns TRUE when the Action is presented as an offer (as indicated by the header &quot;x-offer: 1&quot;).
 
-#### offer accepted of &lt;action&gt; : boolean
+{% property offer accepted of <action> %}
 
 Returns TRUE when users indicated they want to run the action by accepting the offer presented by the BES Client UI. When an offer has been accepted, the Client evaluates its constraints and runs as soon as conditions allow.
 
-#### last change time of &lt;action&gt; : time
+{% property last change time of <action> %}
 
 Returns the time when the action state last changed.
 
-#### last active time of &lt;action&gt; : time
+{% property last active time of <action> %}
 
 No documentation exists for this property.
 
-#### last active line number of &lt;action&gt; : integer
+{% property last active line number of <action> %}
 
 No documentation exists for this property.
 
-#### id of &lt;action&gt; : integer
+{% property id of <action> %}
 
 Returns the numeric ID associated with the specified Action.
 
-#### group leader of &lt;action&gt; : boolean
+{% property group leader of <action> %}
 
 Returns TRUE if the action is a group action and the action component is the group leader. When you deploy a mult-action from the BES Console, it constructs a group action with a group leader to control the overall behavior of the action. This inspector is used internally to manage the progress of the group action.
 
-#### first active count of &lt;action&gt; : integer
+{% property first active count of <action> %}
 
 No documentation exists for this property.
 
-#### exit code of &lt;action&gt; : integer
+{% property exit code of <action> %}
 
 Returns an integer corresponding to the exit code of the specified action. This value will not exist if the action has not yet produced an exit code.
 
-#### download failure of &lt;action&gt; : integer
+{% property download failure of <action> %}
 
 No documentation exists for this property.
 
-#### constraint of &lt;action&gt; : integer
+{% property constraint of <action> %}
 
 No documentation exists for this property.
 
-#### constrained of &lt;action&gt; : boolean
+{% property constrained of <action> %}
 
 Returns TRUE if action is unable to run yet.
 
-#### complete time of &lt;action&gt; : time
+{% property complete time of <action> %}
 
 Returns the time the action completed.
 
-#### active start time of &lt;action&gt; : time
+{% property active start time of <action> %}
 
 Returns the time the action started.
 
-#### active of &lt;action&gt; : boolean
+{% property active of <action> %}
 
 Returns TRUE if the action is currently running (active).
 
-#### active line number of &lt;action&gt; : integer
+{% property active line number of <action> %}
 
 No documentation exists for this property.
 
-#### active count of &lt;action&gt; : integer
+{% property active count of <action> %}
 
 No documentation exists for this property.
 
-#### header of &lt;action&gt; : fixlet_header
+{% property header of <action> %}
 
 No documentation exists for this property.
 
-#### header &lt;string&gt; of &lt;action&gt; : fixlet_header
+{% property header <string> of <action> %}
 
 No documentation exists for this property.
 
-## site profile variable
+{% type site profile variable%}
 
 No documentation exists for this type.
 
-#### &lt;site profile variable&gt; as string : string
+{% property <site profile variable> as string %}
 
 No documentation exists for this cast.
 
-#### value of &lt;site profile variable&gt; : string
+{% property value of <site profile variable> %}
 
 No documentation exists for this property.
 
-#### name of &lt;site profile variable&gt; : string
+{% property name of <site profile variable> %}
 
 No documentation exists for this property.
 
-## site profile
+{% type site profile%}
 
 No documentation exists for this type.
 
-#### variable of &lt;site profile&gt; : site profile variable
+{% property variable of <site profile> %}
 
 No documentation exists for this property.
 
-#### variable &lt;string&gt; of &lt;site profile&gt; : site profile variable
+{% property variable <string> of <site profile> %}
 
 No documentation exists for this property.
 
-#### template file of &lt;site profile&gt; : file
+{% property template file of <site profile> %}
 
 No documentation exists for this property.
 
-#### data file of &lt;site profile&gt; : file
+{% property data file of <site profile> %}
 
 No documentation exists for this property.
 
-## manual group
+{% type manual group%}
 
 No documentation exists for this type.
 
-#### &lt;manual group&gt; as string : string
+{% property <manual group> as string %}
 
 No documentation exists for this cast.
 
-#### setting of &lt;manual group&gt; : setting
+{% property setting of <manual group> %}
 
 No documentation exists for this property.
 
-#### member of &lt;manual group&gt; : boolean
+{% property member of <manual group> %}
 
 No documentation exists for this property.
 
-## site version list with multiplicity
+{% type site version list with multiplicity%}
 
 The &lt;site version list with multiplicity&gt; inspectors deal with site-version-list arrays, allowing you to extract unique site-version-list values and count them. 
 
-#### multiplicity of &lt;site version list with multiplicity&gt; : integer
+{% property multiplicity of <site version list with multiplicity> %}
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;site version list&gt; types.
 
-## site version list
+{% type site version list%}
 
 The &lt;site version list&gt; inspectors examine the multidimensional version numbers (ManyVersions) that are used by the Database to reconcile reconnected sites after a DSA failback event.
 
-#### &lt;site version list&gt; as string : string
+{% property <site version list> as string %}
 
 Converts a site version list to a string.
 
-#### unique value of &lt;site version list&gt; : site version list with multiplicity
+{% property unique value of <site version list> %}
 
 Returns the unique values of a given list of &lt;site version list&gt; types, removing duplicates and sorting by value.
 
-#### minimum of &lt;site version list&gt; : site version list
+{% property minimum of <site version list> %}
 
 Returns the minimum value from a list of &lt;site version list&gt; types.
 
-#### maximum of &lt;site version list&gt; : site version list
+{% property maximum of <site version list> %}
 
 Returns the maximum value from a list of &lt;site version list&gt; types.
 
-#### extrema of &lt;site version list&gt; : ( site version list, site version list )
+{% property extrema of <site version list> %}
 
 Returns the minimum and maximum extreme values of the given list of &lt;site version list&gt; types.
 
-#### component &lt;integer&gt; of &lt;site version list&gt; : integer
+{% property component <integer> of <site version list> %}
 
 Returns the nth element (as specified by &lt;integer&gt;) of the given site version list.
 

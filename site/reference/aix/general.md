@@ -2,315 +2,315 @@
 title: general
 ---
 
-## fileset version requirement
+{% type fileset version requirement%}
 
 No documentation exists for this type.
 
-#### &lt;fileset version requirement&gt; as string : string
+{% property <fileset version requirement> as string %}
 
 Returns a string contain the LLP name and the version of a fileset separated by a space.
 
-#### &lt;fileset version requirement&gt; as fileset version requirement : fileset version requirement
+{% property <fileset version requirement> as fileset version requirement %}
 
 A self cast, used only for simplifying relevance.
 
-#### version record of &lt;fileset version requirement&gt; : fileset version record
+{% property version record of <fileset version requirement> %}
 
 Returns the version of the fileset requirement.
 
-#### satisfying fileset of &lt;fileset version requirement&gt; : fileset
+{% property satisfying fileset of <fileset version requirement> %}
 
 Returns the filesets that are installed with the same LPP name and a greater or equal version.
 
-#### lpp_name of &lt;fileset version requirement&gt; : string
+{% property lpp_name of <fileset version requirement> %}
 
 Returns a string with the LPP name of the fileset.
 
-#### latest installed fileset of &lt;fileset version requirement&gt; : fileset
+{% property latest installed fileset of <fileset version requirement> %}
 
 Returns the filesets that are installed with the same LPP name, regardless of version.
 
-## fileset version record with multiplicity
+{% type fileset version record with multiplicity%}
 
 No documentation exists for this type.
 
-#### multiplicity of &lt;fileset version record with multiplicity&gt; : integer
+{% property multiplicity of <fileset version record with multiplicity> %}
 
 Returns an the number of times a fileset version record occurs.
 
-## fileset version record
+{% type fileset version record%}
 
 No documentation exists for this type.
 
-#### &lt;fileset version record&gt; as string : string
+{% property <fileset version record> as string %}
 
 Returns a string containing the version of the fileset in the format &quot;ver.rel.mod.fix&quot;.
 
-#### &lt;fileset version record&gt; as fileset version record : fileset version record
+{% property <fileset version record> as fileset version record %}
 
 A self cast, used only for simplifying relevance.
 
-#### ver_part of &lt;fileset version record&gt; : integer
+{% property ver_part of <fileset version record> %}
 
 Returns the first component from a fileset version in the format &quot;(ver).rel.mod.fix&quot;.
 
-#### unique value of &lt;fileset version record&gt; : fileset version record with multiplicity
+{% property unique value of <fileset version record> %}
 
 Returns a list of all unique fileset version records along with their respective counts.
 
-#### rel_part of &lt;fileset version record&gt; : integer
+{% property rel_part of <fileset version record> %}
 
 Returns the second component from a fileset version in the format &quot;ver.(rel).mod.fix&quot;.
 
-#### mod_part of &lt;fileset version record&gt; : integer
+{% property mod_part of <fileset version record> %}
 
 Returns the third component from a fileset version in the format &quot;ver.rel.(mod).fix&quot;.
 
-#### minimum of &lt;fileset version record&gt; : fileset version record
+{% property minimum of <fileset version record> %}
 
 Returns the lowest fileset version record from a collection for fileset version records.
 
-#### maximum of &lt;fileset version record&gt; : fileset version record
+{% property maximum of <fileset version record> %}
 
 Returns the highest fileset version record from a collection for fileset version records.
 
-#### fix_part of &lt;fileset version record&gt; : integer
+{% property fix_part of <fileset version record> %}
 
 Returns the fourth component from a fileset version in the format &quot;ver.rel.mod.(fix)&quot;.
 
-#### extrema of &lt;fileset version record&gt; : ( fileset version record, fileset version record )
+{% property extrema of <fileset version record> %}
 
 Returns a tuple with the lowest and highest fileset version records from a collection for fileset version records.
 
-## fileset part
+{% type fileset part%}
 
 No documentation exists for this type.
 
-## apar
+{% type apar%}
 
 No documentation exists for this type.
 
-#### &lt;apar&gt; as string : string
+{% property <apar> as string %}
 
 Returns a string containing the APAR number.
 
-#### uninstalled fileset version requirement of &lt;apar&gt; : fileset version requirement
+{% property uninstalled fileset version requirement of <apar> %}
 
 Returns all the fileset version requirements for the APAR that are not installed.
 
-#### symptom of &lt;apar&gt; : string
+{% property symptom of <apar> %}
 
 Returns a string with the visible symptoms exhibited by the APAR. The string may be empty.
 
-#### name of &lt;apar&gt; : string
+{% property name of <apar> %}
 
 Returns a string containing the APAR number.
 
-#### installed unsatisfied fileset version requirement of &lt;apar&gt; : fileset version requirement
+{% property installed unsatisfied fileset version requirement of <apar> %}
 
 Returns all the fileset version requirements for the APAR that are installed but do not meet the version requirement.
 
-#### installed satisfied fileset version requirement of &lt;apar&gt; : fileset version requirement
+{% property installed satisfied fileset version requirement of <apar> %}
 
 Returns all the fileset version requirements for the APAR that are installed and meet the version requirement.
 
-#### fileset version requirement of &lt;apar&gt; : fileset version requirement
+{% property fileset version requirement of <apar> %}
 
 Returns all the required filesets version requirements for the APAR.
 
-#### fileset version requirement &lt;string&gt; of &lt;apar&gt; : fileset version requirement
+{% property fileset version requirement <string> of <apar> %}
 
 Returns the fileset version requirement for the APAR if a fileset with the LPP name that matches the string is a requirement for the APAR.
 
-#### abstract of &lt;apar&gt; : string
+{% property abstract of <apar> %}
 
 Returns a string containing a short description of the APAR.
 
-## kernel_extension
+{% type kernel_extension%}
 
 No documentation exists for this type.
 
-#### &lt;kernel_extension&gt; as string : string
+{% property <kernel_extension> as string %}
 
 No documentation exists for this cast.
 
-#### text address of &lt;kernel_extension&gt; : string
+{% property text address of <kernel_extension> %}
 
 No documentation exists for this property.
 
-#### size of &lt;kernel_extension&gt; : string
+{% property size of <kernel_extension> %}
 
 No documentation exists for this property.
 
-#### file of &lt;kernel_extension&gt; : string
+{% property file of <kernel_extension> %}
 
 No documentation exists for this property.
 
-## network_option
+{% type network_option%}
 
 No documentation exists for this type.
 
-#### &lt;network_option&gt; as string : string
+{% property <network_option> as string %}
 
 No documentation exists for this cast.
 
-#### value of &lt;network_option&gt; : string
+{% property value of <network_option> %}
 
 No documentation exists for this property.
 
-#### name of &lt;network_option&gt; : string
+{% property name of <network_option> %}
 
 No documentation exists for this property.
 
-## rpc_program
+{% type rpc_program%}
 
 No documentation exists for this type.
 
-#### &lt;rpc_program&gt; as string : string
+{% property <rpc_program> as string %}
 
 No documentation exists for this cast.
 
-#### version of &lt;rpc_program&gt; : string
+{% property version of <rpc_program> %}
 
 No documentation exists for this property.
 
-#### protocol of &lt;rpc_program&gt; : string
+{% property protocol of <rpc_program> %}
 
 No documentation exists for this property.
 
-#### program of &lt;rpc_program&gt; : string
+{% property program of <rpc_program> %}
 
 No documentation exists for this property.
 
-#### port of &lt;rpc_program&gt; : string
+{% property port of <rpc_program> %}
 
 No documentation exists for this property.
 
-## object repository
+{% type object repository%}
 
 No documentation exists for this type.
 
-#### product of &lt;object repository&gt; : product
+{% property product of <object repository> %}
 
 Returns all products. Each product may contain multiple filesets of differing versions.
 
-#### product &lt;string&gt; of &lt;object repository&gt; : product
+{% property product <string> of <object repository> %}
 
 Returns the product whose LPP name exactly matches the string.
 
-#### latest fileset &lt;string&gt; of &lt;object repository&gt; : fileset
+{% property latest fileset <string> of <object repository> %}
 
 Returns the fileset whose LPP name exactly matches the string and has the highest version record.
 
-#### fileset with name &lt;string&gt; of &lt;object repository&gt; : fileset
+{% property fileset with name <string> of <object repository> %}
 
 Returns all filesets whose LPP name exactly matches the string.
 
-#### fileset of &lt;object repository&gt; : fileset
+{% property fileset of <object repository> %}
 
 Returns all filesets. This may include multiple versions with the same LPP name.
 
-#### fileset matching &lt;string&gt; of &lt;object repository&gt; : fileset
+{% property fileset matching <string> of <object repository> %}
 
 Returns all filesets matching the supplied ODM query string.
 
-#### fileset &lt;string&gt; of &lt;object repository&gt; : fileset
+{% property fileset <string> of <object repository> %}
 
 Returns all filesets exactly matching the string in the format &quot;lpp_name ver.rel.mod.fix&quot;.
 
-## message_catalog_set
+{% type message_catalog_set%}
 
 No documentation exists for this type.
 
-#### message &lt;integer&gt; of &lt;message_catalog_set&gt; : string
+{% property message <integer> of <message_catalog_set> %}
 
 No documentation exists for this property.
 
-## message_catalog
+{% type message_catalog%}
 
 No documentation exists for this type.
 
-#### set &lt;integer&gt; of &lt;message_catalog&gt; : message_catalog_set
+{% property set <integer> of <message_catalog> %}
 
 No documentation exists for this property.
 
-## fileset
+{% type fileset%}
 
 The &lt;fileset&gt; objects represent the set of files required for installing a software package.
 
-#### &lt;fileset&gt; as string : string
+{% property <fileset> as string %}
 
 Casts a fileset as a string type.
 
-#### version of &lt;fileset&gt; : version
+{% property version of <fileset> %}
 
 Returns the version of the specified fileset.
 
-#### update of &lt;fileset&gt; : integer
+{% property update of <fileset> %}
 
 Returns the update number for the specified fileset.Example: updates of filesets matching &quot;lpp_name = &#39;bos.terminfo.rte&#39;&quot; of object repository - Returns the update numbers of the specified filesets.
 
-#### product of &lt;fileset&gt; : product
+{% property product of <fileset> %}
 
 Returns the product corresponding to the specified fileset.
 
-#### lpp_name of &lt;fileset&gt; : string
+{% property lpp_name of <fileset> %}
 
 Licensed Program Product(s) of the fileset.Example: (lpp_name of it &amp; &quot; ver = &quot; &amp; version of it as string) of filesets matching &quot;lpp_name = &#39;bos.terminfo.rte&#39;&quot; of object repository - Returns a formatted list of filesets with the specified Licensed Program Product name.
 
-#### description of &lt;fileset&gt; : string
+{% property description of <fileset> %}
 
 Returns a description of a set of installation files.
 
-#### version record of &lt;fileset&gt; : fileset version record
+{% property version record of <fileset> %}
 
 Returns the version record corresponding to the specified fileset as a fileset version record.
 
-#### usr part of &lt;fileset&gt; : fileset part
+{% property usr part of <fileset> %}
 
 Returns the machine-shareable portions of the specified fileset (the usr part), which contains the part of the product that can be shared among several machines with compatible hardware architectures. The usr part of the fileset contains files that reside in the /usr or /opt file system.
 
-#### share part of &lt;fileset&gt; : fileset part
+{% property share part of <fileset> %}
 
 Returns the share part of the specified fileset.
 
-#### root part of &lt;fileset&gt; : fileset part
+{% property root part of <fileset> %}
 
 Returns the machine-specific portions of the specified fileset (the root part), which contains the part of the product that cannot be shared among machines -- each client must have its own copy. For a standard system, files in the root part are stored in the root (/) file tree.
 
-## product
+{% type product%}
 
 The &lt;product&gt; object contains properties (such as vendor and revision) of the associated software product. On AIX, products are installed into an Object Repository.On HPUX products are installed in the Software Depot.
 
-#### &lt;product&gt; as string : string
+{% property <product> as string %}
 
 Brief text string identifying a product including the tag and version.Example: product &quot;BESAgent&quot; of software depot as string - Returns the full name of the product, such as &quot;BESAgent 4.0.3.7&quot;.
 
-#### vendor of &lt;product&gt; : string
+{% property vendor of <product> %}
 
 Text identifying the vendor of the installed software product.Example: vendor of product &quot;BESAgent&quot; of software depot - Returns a string such as &quot;BigFix&quot;.
 
-#### title of &lt;product&gt; : string
+{% property title of <product> %}
 
 Long identifying name of installed software product.Example: title of product &quot;OS-Core&quot; of software depot - Returns a string such as &quot;Core Operating System&quot;.
 
-#### tag of &lt;product&gt; : string
+{% property tag of <product> %}
 
 Short identifying name of installed software product. Tag is used as identifier in named product accessor.Example: tag of product whose (vendor of it = &quot;BigFix&quot;) of software depot - Returns a string such as &quot;BESAgent 4.0.3.7&quot;.
 
-#### revision of &lt;product&gt; : string
+{% property revision of <product> %}
 
 Version identifier of installed software product.Example: revision of product &quot;OS-Core&quot; of software depot - Returns a string such as &quot;B.11.00&quot;.
 
-#### bundle of &lt;product&gt; : bundle
+{% property bundle of <product> %}
 
 Returns the bundle to which the product belongs.
 
-#### name of &lt;product&gt; : string
+{% property name of <product> %}
 
 Returns the name of the specified product.
 
-#### fileset of &lt;product&gt; : fileset
+{% property fileset of <product> %}
 
 Returns a list of the filesets (installable software packages) in the specified product.
 

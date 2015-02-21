@@ -2,1767 +2,1767 @@
 title: direct-media-interface
 ---
 
-## dmi voltage_probe
+{% type dmi voltage_probe%}
 
 No documentation exists for this type.
 
-#### tolerance of &lt;dmi voltage_probe&gt; : integer
+{% property tolerance of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### resolution of &lt;dmi voltage_probe&gt; : integer
+{% property resolution of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### oem_defined of &lt;dmi voltage_probe&gt; : integer
+{% property oem_defined of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### nominal_value of &lt;dmi voltage_probe&gt; : integer
+{% property nominal_value of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### minimum_value of &lt;dmi voltage_probe&gt; : integer
+{% property minimum_value of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### maximum_value of &lt;dmi voltage_probe&gt; : integer
+{% property maximum_value of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### location_and_status of &lt;dmi voltage_probe&gt; : integer
+{% property location_and_status of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi voltage_probe&gt; : integer
+{% property length of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### description of &lt;dmi voltage_probe&gt; : string
+{% property description of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-#### accuracy of &lt;dmi voltage_probe&gt; : integer
+{% property accuracy of <dmi voltage_probe> %}
 
 No documentation exists for this property.
 
-## dmi temperature_probe
-
-No documentation exists for this type.
-
-#### tolerance of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### resolution of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### oem_defined of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### nominal_value of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### minimum_value of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### maximum_value of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### location_and_status of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### description of &lt;dmi temperature_probe&gt; : string
-
-No documentation exists for this property.
-
-#### accuracy of &lt;dmi temperature_probe&gt; : integer
-
-No documentation exists for this property.
-
-## dmi system_slots
+{% type dmi temperature_probe%}
 
 No documentation exists for this type.
 
-#### slot_type of &lt;dmi system_slots&gt; : integer
+{% property tolerance of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### slot_length of &lt;dmi system_slots&gt; : integer
+{% property resolution of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### slot_id of &lt;dmi system_slots&gt; : integer
+{% property oem_defined of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### slot_designation of &lt;dmi system_slots&gt; : string
+{% property nominal_value of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### slot_data_bus_width of &lt;dmi system_slots&gt; : integer
+{% property minimum_value of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### slot_characteristics_2 of &lt;dmi system_slots&gt; : integer
+{% property maximum_value of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### slot_characteristics_1 of &lt;dmi system_slots&gt; : integer
+{% property location_and_status of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### segment_group_number of &lt;dmi system_slots&gt; : integer
+{% property length of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi system_slots&gt; : integer
+{% property description of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### device_function_number of &lt;dmi system_slots&gt; : integer
+{% property accuracy of <dmi temperature_probe> %}
 
 No documentation exists for this property.
 
-#### current_usage of &lt;dmi system_slots&gt; : integer
-
-No documentation exists for this property.
-
-#### bus_number of &lt;dmi system_slots&gt; : integer
-
-No documentation exists for this property.
-
-## dmi system_reset
+{% type dmi system_slots%}
 
 No documentation exists for this type.
 
-#### timer_interval of &lt;dmi system_reset&gt; : integer
+{% property slot_type of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### timeout of &lt;dmi system_reset&gt; : integer
+{% property slot_length of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### reset_limit of &lt;dmi system_reset&gt; : integer
+{% property slot_id of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### reset_count of &lt;dmi system_reset&gt; : integer
+{% property slot_designation of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi system_reset&gt; : integer
+{% property slot_data_bus_width of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### capabilities of &lt;dmi system_reset&gt; : integer
+{% property slot_characteristics_2 of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-## dmi system_power_supply
-
-No documentation exists for this type.
-
-#### serial_number of &lt;dmi system_power_supply&gt; : string
+{% property slot_characteristics_1 of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### revision_level of &lt;dmi system_power_supply&gt; : string
+{% property segment_group_number of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### power_unit_group of &lt;dmi system_power_supply&gt; : integer
+{% property length of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### power_supply_characteristics of &lt;dmi system_power_supply&gt; : integer
+{% property device_function_number of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### model_part_number of &lt;dmi system_power_supply&gt; : string
+{% property current_usage of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### max_power_capacity of &lt;dmi system_power_supply&gt; : integer
+{% property bus_number of <dmi system_slots> %}
 
 No documentation exists for this property.
 
-#### manufacturer of &lt;dmi system_power_supply&gt; : string
-
-No documentation exists for this property.
-
-#### location of &lt;dmi system_power_supply&gt; : string
-
-No documentation exists for this property.
-
-#### length of &lt;dmi system_power_supply&gt; : integer
-
-No documentation exists for this property.
-
-#### input_voltage_probe_handle of &lt;dmi system_power_supply&gt; : integer
-
-No documentation exists for this property.
-
-#### input_current_probe_handle of &lt;dmi system_power_supply&gt; : integer
-
-No documentation exists for this property.
-
-#### device_name of &lt;dmi system_power_supply&gt; : string
-
-No documentation exists for this property.
-
-#### cooling_device_handle of &lt;dmi system_power_supply&gt; : integer
-
-No documentation exists for this property.
-
-#### asset_tag_number of &lt;dmi system_power_supply&gt; : string
-
-No documentation exists for this property.
-
-## dmi system_power_controls
+{% type dmi system_reset%}
 
 No documentation exists for this type.
 
-#### next_scheduled_power_on_second of &lt;dmi system_power_controls&gt; : integer
+{% property timer_interval of <dmi system_reset> %}
 
 No documentation exists for this property.
 
-#### next_scheduled_power_on_month of &lt;dmi system_power_controls&gt; : integer
+{% property timeout of <dmi system_reset> %}
 
 No documentation exists for this property.
 
-#### next_scheduled_power_on_minute of &lt;dmi system_power_controls&gt; : integer
+{% property reset_limit of <dmi system_reset> %}
 
 No documentation exists for this property.
 
-#### next_scheduled_power_on_hour of &lt;dmi system_power_controls&gt; : integer
+{% property reset_count of <dmi system_reset> %}
 
 No documentation exists for this property.
 
-#### next_scheduled_power_on_day_of_month of &lt;dmi system_power_controls&gt; : integer
+{% property length of <dmi system_reset> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi system_power_controls&gt; : integer
+{% property capabilities of <dmi system_reset> %}
 
 No documentation exists for this property.
 
-## dmi system_information
-
-No documentation exists for this type.
-
-#### wake_up_type of &lt;dmi system_information&gt; : integer
-
-No documentation exists for this property.
-
-#### version of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-#### uuid of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-#### sku_number of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-#### serial_number of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-#### product_name of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-#### manufacturer of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-#### length of &lt;dmi system_information&gt; : integer
-
-No documentation exists for this property.
-
-#### family of &lt;dmi system_information&gt; : string
-
-No documentation exists for this property.
-
-## dmi system_enclosure_or_chassis
+{% type dmi system_power_supply%}
 
 No documentation exists for this type.
 
-#### version of &lt;dmi system_enclosure_or_chassis&gt; : string
+{% property serial_number of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### type of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property revision_level of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### thermal_state of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property power_unit_group of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### serial_number of &lt;dmi system_enclosure_or_chassis&gt; : string
+{% property power_supply_characteristics of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### security_status of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property model_part_number of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### power_supply_state of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property max_power_capacity of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### oem_defined of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property manufacturer of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### number_of_power_cords of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property location of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### manufacturer of &lt;dmi system_enclosure_or_chassis&gt; : string
+{% property length of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property input_voltage_probe_handle of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### height of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property input_current_probe_handle of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### contained_element_record_length of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property device_name of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### contained_element_count of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property cooling_device_handle of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### bootup_state of &lt;dmi system_enclosure_or_chassis&gt; : integer
+{% property asset_tag_number of <dmi system_power_supply> %}
 
 No documentation exists for this property.
 
-#### asset_tag_number of &lt;dmi system_enclosure_or_chassis&gt; : string
-
-No documentation exists for this property.
-
-## dmi system_configuration_option
+{% type dmi system_power_controls%}
 
 No documentation exists for this type.
 
-## dmi system_boot_information
+{% property next_scheduled_power_on_second of <dmi system_power_controls> %}
+
+No documentation exists for this property.
+
+{% property next_scheduled_power_on_month of <dmi system_power_controls> %}
+
+No documentation exists for this property.
+
+{% property next_scheduled_power_on_minute of <dmi system_power_controls> %}
+
+No documentation exists for this property.
+
+{% property next_scheduled_power_on_hour of <dmi system_power_controls> %}
+
+No documentation exists for this property.
+
+{% property next_scheduled_power_on_day_of_month of <dmi system_power_controls> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi system_power_controls> %}
+
+No documentation exists for this property.
+
+{% type dmi system_information%}
 
 No documentation exists for this type.
 
-#### reserved of &lt;dmi system_boot_information&gt; : string
+{% property wake_up_type of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi system_boot_information&gt; : integer
+{% property version of <dmi system_information> %}
 
 No documentation exists for this property.
 
-## dmi processor_information
-
-No documentation exists for this type.
-
-#### voltage of &lt;dmi processor_information&gt; : integer
+{% property uuid of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### thread_count of &lt;dmi processor_information&gt; : integer
+{% property sku_number of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### status of &lt;dmi processor_information&gt; : integer
+{% property serial_number of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### socket_designation of &lt;dmi processor_information&gt; : string
+{% property product_name of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### serial_number of &lt;dmi processor_information&gt; : string
+{% property manufacturer of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### processor_version of &lt;dmi processor_information&gt; : string
+{% property length of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### processor_upgrade of &lt;dmi processor_information&gt; : integer
+{% property family of <dmi system_information> %}
 
 No documentation exists for this property.
 
-#### processor_type of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### processor_manufacturer of &lt;dmi processor_information&gt; : string
-
-No documentation exists for this property.
-
-#### processor_id of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### processor_family_2 of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### processor_family of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### processor_characteristics of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### part_number of &lt;dmi processor_information&gt; : string
-
-No documentation exists for this property.
-
-#### max_speed of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### l3_cache_handle of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### l2_cache_handle of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### l1_cache_handle of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### external_clock of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### current_speed of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### core_enabled of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### core_count of &lt;dmi processor_information&gt; : integer
-
-No documentation exists for this property.
-
-#### asset_tag of &lt;dmi processor_information&gt; : string
-
-No documentation exists for this property.
-
-## dmi portable_battery
+{% type dmi system_enclosure_or_chassis%}
 
 No documentation exists for this type.
 
-#### serial_number of &lt;dmi portable_battery&gt; : string
+{% property version of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### sbds_version_number of &lt;dmi portable_battery&gt; : string
+{% property type of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### sbds_serial_number of &lt;dmi portable_battery&gt; : integer
+{% property thermal_state of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### sbds_manufacture_date of &lt;dmi portable_battery&gt; : integer
+{% property serial_number of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### sbds_device_chemistry of &lt;dmi portable_battery&gt; : string
+{% property security_status of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### oem_specific of &lt;dmi portable_battery&gt; : integer
+{% property power_supply_state of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### maximum_error_in_battery_data of &lt;dmi portable_battery&gt; : integer
+{% property oem_defined of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### manufacturer of &lt;dmi portable_battery&gt; : string
+{% property number_of_power_cords of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### manufacture_date of &lt;dmi portable_battery&gt; : string
+{% property manufacturer of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### location of &lt;dmi portable_battery&gt; : string
+{% property length of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi portable_battery&gt; : integer
+{% property height of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### device_name of &lt;dmi portable_battery&gt; : string
+{% property contained_element_record_length of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### device_chemistry of &lt;dmi portable_battery&gt; : integer
+{% property contained_element_count of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### design_voltage of &lt;dmi portable_battery&gt; : integer
+{% property bootup_state of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### design_capacity_multiplier of &lt;dmi portable_battery&gt; : integer
+{% property asset_tag_number of <dmi system_enclosure_or_chassis> %}
 
 No documentation exists for this property.
 
-#### design_capacity of &lt;dmi portable_battery&gt; : integer
-
-No documentation exists for this property.
-
-## dmi port_connector_information
+{% type dmi system_configuration_option%}
 
 No documentation exists for this type.
 
-#### port_type of &lt;dmi port_connector_information&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi port_connector_information&gt; : integer
-
-No documentation exists for this property.
-
-#### internal_reference_designator of &lt;dmi port_connector_information&gt; : string
-
-No documentation exists for this property.
-
-#### internal_connector_type of &lt;dmi port_connector_information&gt; : integer
-
-No documentation exists for this property.
-
-#### external_reference_designator of &lt;dmi port_connector_information&gt; : string
-
-No documentation exists for this property.
-
-#### external_connector_type of &lt;dmi port_connector_information&gt; : integer
-
-No documentation exists for this property.
-
-## dmi physical_memory_array
+{% type dmi system_boot_information%}
 
 No documentation exists for this type.
 
-#### use of &lt;dmi physical_memory_array&gt; : integer
+{% property reserved of <dmi system_boot_information> %}
 
 No documentation exists for this property.
 
-#### number_of_memory_devices of &lt;dmi physical_memory_array&gt; : integer
+{% property length of <dmi system_boot_information> %}
 
 No documentation exists for this property.
 
-#### memory_error_information_handle of &lt;dmi physical_memory_array&gt; : integer
-
-No documentation exists for this property.
-
-#### memory_error_correction of &lt;dmi physical_memory_array&gt; : integer
-
-No documentation exists for this property.
-
-#### maximum_capacity of &lt;dmi physical_memory_array&gt; : integer
-
-No documentation exists for this property.
-
-#### location of &lt;dmi physical_memory_array&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi physical_memory_array&gt; : integer
-
-No documentation exists for this property.
-
-## dmi out_of_band_remote_access
+{% type dmi processor_information%}
 
 No documentation exists for this type.
 
-#### manufacturer_name of &lt;dmi out_of_band_remote_access&gt; : string
+{% property voltage of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi out_of_band_remote_access&gt; : integer
+{% property thread_count of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### connections of &lt;dmi out_of_band_remote_access&gt; : integer
+{% property status of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-## dmi onboard_devices_extended_information
-
-No documentation exists for this type.
-
-#### segment_group_number of &lt;dmi onboard_devices_extended_information&gt; : integer
+{% property socket_designation of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### reference_designation of &lt;dmi onboard_devices_extended_information&gt; : integer
+{% property serial_number of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi onboard_devices_extended_information&gt; : integer
+{% property processor_version of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### device_type_instance of &lt;dmi onboard_devices_extended_information&gt; : integer
+{% property processor_upgrade of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### device_function_number of &lt;dmi onboard_devices_extended_information&gt; : integer
+{% property processor_type of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### bus_number of &lt;dmi onboard_devices_extended_information&gt; : integer
+{% property processor_manufacturer of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-## dmi on_board_devices_information
-
-No documentation exists for this type.
-
-#### length of &lt;dmi on_board_devices_information&gt; : integer
+{% property processor_id of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### device_type of &lt;dmi on_board_devices_information&gt; : integer
+{% property processor_family_2 of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### device_type &lt;integer&gt; of &lt;dmi on_board_devices_information&gt; : integer
+{% property processor_family of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### device_description of &lt;dmi on_board_devices_information&gt; : string
+{% property processor_characteristics of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### device_description &lt;integer&gt; of &lt;dmi on_board_devices_information&gt; : string
+{% property part_number of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### description_string of &lt;dmi on_board_devices_information&gt; : string
+{% property max_speed of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-## dmi oem_strings
-
-No documentation exists for this type.
-
-## dmi memory_module_information
-
-No documentation exists for this type.
-
-#### socket_designation of &lt;dmi memory_module_information&gt; : string
+{% property length of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi memory_module_information&gt; : integer
+{% property l3_cache_handle of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### installed_size of &lt;dmi memory_module_information&gt; : integer
+{% property l2_cache_handle of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### error_status of &lt;dmi memory_module_information&gt; : integer
+{% property l1_cache_handle of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### enabled_size of &lt;dmi memory_module_information&gt; : integer
+{% property external_clock of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### current_speed of &lt;dmi memory_module_information&gt; : integer
+{% property current_speed of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### current_memory_type of &lt;dmi memory_module_information&gt; : integer
+{% property core_enabled of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-#### bank_connections of &lt;dmi memory_module_information&gt; : integer
+{% property core_count of <dmi processor_information> %}
 
 No documentation exists for this property.
 
-## dmi memory_device_mapped_address
+{% property asset_tag of <dmi processor_information> %}
+
+No documentation exists for this property.
+
+{% type dmi portable_battery%}
 
 No documentation exists for this type.
 
-#### starting_address of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property serial_number of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### partition_row_position of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property sbds_version_number of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### memory_device_handle of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property sbds_serial_number of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### memory_array_mapped_address_handle of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property sbds_manufacture_date of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property sbds_device_chemistry of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### interleaved_data_depth of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property oem_specific of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### interleave_position of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property maximum_error_in_battery_data of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### ending_address of &lt;dmi memory_device_mapped_address&gt; : integer
+{% property manufacturer of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-## dmi memory_device
-
-No documentation exists for this type.
-
-#### type_detail of &lt;dmi memory_device&gt; : integer
+{% property manufacture_date of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### total_width of &lt;dmi memory_device&gt; : integer
+{% property location of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### speed of &lt;dmi memory_device&gt; : integer
+{% property length of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### size of &lt;dmi memory_device&gt; : integer
+{% property device_name of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### serial_number of &lt;dmi memory_device&gt; : string
+{% property device_chemistry of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### part_number of &lt;dmi memory_device&gt; : string
+{% property design_voltage of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### memory_type of &lt;dmi memory_device&gt; : integer
+{% property design_capacity_multiplier of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### memory_error_information_handle of &lt;dmi memory_device&gt; : integer
+{% property design_capacity of <dmi portable_battery> %}
 
 No documentation exists for this property.
 
-#### memory_array_handle of &lt;dmi memory_device&gt; : integer
-
-No documentation exists for this property.
-
-#### manufacturer of &lt;dmi memory_device&gt; : string
-
-No documentation exists for this property.
-
-#### length of &lt;dmi memory_device&gt; : integer
-
-No documentation exists for this property.
-
-#### form_factor of &lt;dmi memory_device&gt; : integer
-
-No documentation exists for this property.
-
-#### device_set of &lt;dmi memory_device&gt; : integer
-
-No documentation exists for this property.
-
-#### device_locator of &lt;dmi memory_device&gt; : string
-
-No documentation exists for this property.
-
-#### data_width of &lt;dmi memory_device&gt; : integer
-
-No documentation exists for this property.
-
-#### bank_locator of &lt;dmi memory_device&gt; : string
-
-No documentation exists for this property.
-
-#### attributes of &lt;dmi memory_device&gt; : integer
-
-No documentation exists for this property.
-
-#### asset_tag of &lt;dmi memory_device&gt; : string
-
-No documentation exists for this property.
-
-## dmi memory_controller_information
+{% type dmi port_connector_information%}
 
 No documentation exists for this type.
 
-#### supported_speeds of &lt;dmi memory_controller_information&gt; : integer
+{% property port_type of <dmi port_connector_information> %}
 
 No documentation exists for this property.
 
-#### supported_memory_types of &lt;dmi memory_controller_information&gt; : integer
+{% property length of <dmi port_connector_information> %}
 
 No documentation exists for this property.
 
-#### supported_interleave of &lt;dmi memory_controller_information&gt; : integer
+{% property internal_reference_designator of <dmi port_connector_information> %}
 
 No documentation exists for this property.
 
-#### number_of_associated_memory_slots of &lt;dmi memory_controller_information&gt; : integer
+{% property internal_connector_type of <dmi port_connector_information> %}
 
 No documentation exists for this property.
 
-#### memory_module_voltage of &lt;dmi memory_controller_information&gt; : integer
+{% property external_reference_designator of <dmi port_connector_information> %}
 
 No documentation exists for this property.
 
-#### maximum_memory_module_size of &lt;dmi memory_controller_information&gt; : integer
+{% property external_connector_type of <dmi port_connector_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi memory_controller_information&gt; : integer
-
-No documentation exists for this property.
-
-#### error_detecting_method of &lt;dmi memory_controller_information&gt; : integer
-
-No documentation exists for this property.
-
-#### error_correcting_capability of &lt;dmi memory_controller_information&gt; : integer
-
-No documentation exists for this property.
-
-#### current_interleave of &lt;dmi memory_controller_information&gt; : integer
-
-No documentation exists for this property.
-
-## dmi memory_channel
+{% type dmi physical_memory_array%}
 
 No documentation exists for this type.
 
-#### memory_device_load of &lt;dmi memory_channel&gt; : integer
+{% property use of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-#### memory_device_handle of &lt;dmi memory_channel&gt; : integer
+{% property number_of_memory_devices of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-#### memory_device_count of &lt;dmi memory_channel&gt; : integer
+{% property memory_error_information_handle of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-#### maximum_channel_load of &lt;dmi memory_channel&gt; : integer
+{% property memory_error_correction of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi memory_channel&gt; : integer
+{% property maximum_capacity of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-#### channel_type of &lt;dmi memory_channel&gt; : integer
+{% property location of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-## dmi memory_array_mapped_address
-
-No documentation exists for this type.
-
-#### starting_address of &lt;dmi memory_array_mapped_address&gt; : integer
+{% property length of <dmi physical_memory_array> %}
 
 No documentation exists for this property.
 
-#### partition_width of &lt;dmi memory_array_mapped_address&gt; : integer
-
-No documentation exists for this property.
-
-#### memory_array_handle of &lt;dmi memory_array_mapped_address&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi memory_array_mapped_address&gt; : integer
-
-No documentation exists for this property.
-
-#### ending_address of &lt;dmi memory_array_mapped_address&gt; : integer
-
-No documentation exists for this property.
-
-## dmi management_device_threshold_data
+{% type dmi out_of_band_remote_access%}
 
 No documentation exists for this type.
 
-#### upper_threshold_non_recoverable of &lt;dmi management_device_threshold_data&gt; : integer
+{% property manufacturer_name of <dmi out_of_band_remote_access> %}
 
 No documentation exists for this property.
 
-#### upper_threshold_non_critical of &lt;dmi management_device_threshold_data&gt; : integer
+{% property length of <dmi out_of_band_remote_access> %}
 
 No documentation exists for this property.
 
-#### upper_threshold_critical of &lt;dmi management_device_threshold_data&gt; : integer
+{% property connections of <dmi out_of_band_remote_access> %}
 
 No documentation exists for this property.
 
-#### lower_threshold_non_recoverable of &lt;dmi management_device_threshold_data&gt; : integer
-
-No documentation exists for this property.
-
-#### lower_threshold_non_critical of &lt;dmi management_device_threshold_data&gt; : integer
-
-No documentation exists for this property.
-
-#### lower_threshold_critical of &lt;dmi management_device_threshold_data&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi management_device_threshold_data&gt; : integer
-
-No documentation exists for this property.
-
-## dmi management_device_component
+{% type dmi onboard_devices_extended_information%}
 
 No documentation exists for this type.
 
-#### threshold_handle of &lt;dmi management_device_component&gt; : integer
+{% property segment_group_number of <dmi onboard_devices_extended_information> %}
 
 No documentation exists for this property.
 
-#### management_device_handle of &lt;dmi management_device_component&gt; : integer
+{% property reference_designation of <dmi onboard_devices_extended_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi management_device_component&gt; : integer
+{% property length of <dmi onboard_devices_extended_information> %}
 
 No documentation exists for this property.
 
-#### description of &lt;dmi management_device_component&gt; : string
+{% property device_type_instance of <dmi onboard_devices_extended_information> %}
 
 No documentation exists for this property.
 
-#### component_handle of &lt;dmi management_device_component&gt; : integer
+{% property device_function_number of <dmi onboard_devices_extended_information> %}
 
 No documentation exists for this property.
 
-## dmi management_device
-
-No documentation exists for this type.
-
-#### type of &lt;dmi management_device&gt; : integer
+{% property bus_number of <dmi onboard_devices_extended_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi management_device&gt; : integer
-
-No documentation exists for this property.
-
-#### description of &lt;dmi management_device&gt; : string
-
-No documentation exists for this property.
-
-#### address_type of &lt;dmi management_device&gt; : integer
-
-No documentation exists for this property.
-
-#### address of &lt;dmi management_device&gt; : integer
-
-No documentation exists for this property.
-
-## dmi ipmi_device_information
+{% type dmi on_board_devices_information%}
 
 No documentation exists for this type.
 
-#### nv_storage_device_address of &lt;dmi ipmi_device_information&gt; : integer
+{% property length of <dmi on_board_devices_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi ipmi_device_information&gt; : integer
+{% property device_type of <dmi on_board_devices_information> %}
 
 No documentation exists for this property.
 
-#### ipmi_specification_revision of &lt;dmi ipmi_device_information&gt; : integer
+{% property device_type <integer> of <dmi on_board_devices_information> %}
 
 No documentation exists for this property.
 
-#### interface_type of &lt;dmi ipmi_device_information&gt; : integer
+{% property device_description of <dmi on_board_devices_information> %}
 
 No documentation exists for this property.
 
-#### i2c_slave_address of &lt;dmi ipmi_device_information&gt; : integer
+{% property device_description <integer> of <dmi on_board_devices_information> %}
 
 No documentation exists for this property.
 
-#### base_address of &lt;dmi ipmi_device_information&gt; : integer
+{% property description_string of <dmi on_board_devices_information> %}
 
 No documentation exists for this property.
 
-## dmi inactive
-
-No documentation exists for this type.
-
-#### length of &lt;dmi inactive&gt; : integer
-
-No documentation exists for this property.
-
-## dmi hardware_security
+{% type dmi oem_strings%}
 
 No documentation exists for this type.
 
-#### length of &lt;dmi hardware_security&gt; : integer
-
-No documentation exists for this property.
-
-#### hardware_security_settings of &lt;dmi hardware_security&gt; : integer
-
-No documentation exists for this property.
-
-## dmi group_associations
+{% type dmi memory_module_information%}
 
 No documentation exists for this type.
 
-#### length of &lt;dmi group_associations&gt; : integer
+{% property socket_designation of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-#### item_type of &lt;dmi group_associations&gt; : integer
+{% property length of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-#### item_handle of &lt;dmi group_associations&gt; : integer
+{% property installed_size of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-#### group_name of &lt;dmi group_associations&gt; : string
+{% property error_status of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-## dmi end_of_table
-
-No documentation exists for this type.
-
-#### length of &lt;dmi end_of_table&gt; : integer
+{% property enabled_size of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-## dmi electrical_current_probe
-
-No documentation exists for this type.
-
-#### tolerance of &lt;dmi electrical_current_probe&gt; : integer
+{% property current_speed of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-#### resolution of &lt;dmi electrical_current_probe&gt; : integer
+{% property current_memory_type of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-#### oem_defined of &lt;dmi electrical_current_probe&gt; : integer
+{% property bank_connections of <dmi memory_module_information> %}
 
 No documentation exists for this property.
 
-#### nominal_value of &lt;dmi electrical_current_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### minimum_value of &lt;dmi electrical_current_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### maximum_value of &lt;dmi electrical_current_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### location_and_status of &lt;dmi electrical_current_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi electrical_current_probe&gt; : integer
-
-No documentation exists for this property.
-
-#### description of &lt;dmi electrical_current_probe&gt; : string
-
-No documentation exists for this property.
-
-#### accuracy of &lt;dmi electrical_current_probe&gt; : integer
-
-No documentation exists for this property.
-
-## dmi cooling_device
+{% type dmi memory_device_mapped_address%}
 
 No documentation exists for this type.
 
-#### temperature_probe_handle of &lt;dmi cooling_device&gt; : integer
+{% property starting_address of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### oem_defined of &lt;dmi cooling_device&gt; : integer
+{% property partition_row_position of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### nominal_speed of &lt;dmi cooling_device&gt; : integer
+{% property memory_device_handle of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi cooling_device&gt; : integer
+{% property memory_array_mapped_address_handle of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### device_type_and_status of &lt;dmi cooling_device&gt; : integer
+{% property length of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### cooling_unit_group of &lt;dmi cooling_device&gt; : integer
+{% property interleaved_data_depth of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-## dmi cache_information
-
-No documentation exists for this type.
-
-#### system_cache_type of &lt;dmi cache_information&gt; : integer
+{% property interleave_position of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### supported_sram_type of &lt;dmi cache_information&gt; : integer
+{% property ending_address of <dmi memory_device_mapped_address> %}
 
 No documentation exists for this property.
 
-#### socket_designation of &lt;dmi cache_information&gt; : string
-
-No documentation exists for this property.
-
-#### maximum_cache_size of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### length of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### installed_size of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### error_correction_type of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### current_sram_type of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### cache_speed of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### cache_configuration of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-#### associativity of &lt;dmi cache_information&gt; : integer
-
-No documentation exists for this property.
-
-## dmi built_in_pointing_device
+{% type dmi memory_device%}
 
 No documentation exists for this type.
 
-#### type of &lt;dmi built_in_pointing_device&gt; : integer
+{% property type_detail of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### number_of_buttons of &lt;dmi built_in_pointing_device&gt; : integer
+{% property total_width of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi built_in_pointing_device&gt; : integer
+{% property speed of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### interface of &lt;dmi built_in_pointing_device&gt; : integer
+{% property size of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-## dmi bios_language_information
-
-No documentation exists for this type.
-
-#### reserved of &lt;dmi bios_language_information&gt; : string
+{% property serial_number of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi bios_language_information&gt; : integer
+{% property part_number of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### installable_languages of &lt;dmi bios_language_information&gt; : integer
+{% property memory_type of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### flags of &lt;dmi bios_language_information&gt; : integer
+{% property memory_error_information_handle of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### current_language of &lt;dmi bios_language_information&gt; : string
+{% property memory_array_handle of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-## dmi bios_information
-
-No documentation exists for this type.
-
-#### vendor of &lt;dmi bios_information&gt; : string
+{% property manufacturer of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### system_bios_minor_release of &lt;dmi bios_information&gt; : integer
+{% property length of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### system_bios_major_release of &lt;dmi bios_information&gt; : integer
+{% property form_factor of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi bios_information&gt; : integer
+{% property device_set of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### embedded_controller_firmware_minor_release of &lt;dmi bios_information&gt; : integer
+{% property device_locator of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### embedded_controller_firmware_major_release of &lt;dmi bios_information&gt; : integer
+{% property data_width of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### bios_version of &lt;dmi bios_information&gt; : string
+{% property bank_locator of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### bios_starting_address_segment of &lt;dmi bios_information&gt; : integer
+{% property attributes of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### bios_rom_size of &lt;dmi bios_information&gt; : integer
+{% property asset_tag of <dmi memory_device> %}
 
 No documentation exists for this property.
 
-#### bios_release_date of &lt;dmi bios_information&gt; : string
-
-No documentation exists for this property.
-
-#### bios_characteristics of &lt;dmi bios_information&gt; : integer
-
-No documentation exists for this property.
-
-## dmi base_board_information
+{% type dmi memory_controller_information%}
 
 No documentation exists for this type.
 
-#### version of &lt;dmi base_board_information&gt; : string
+{% property supported_speeds of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### serial_number of &lt;dmi base_board_information&gt; : string
+{% property supported_memory_types of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### product of &lt;dmi base_board_information&gt; : string
+{% property supported_interleave of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### number_of_contained_object_handles of &lt;dmi base_board_information&gt; : integer
+{% property number_of_associated_memory_slots of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### manufacturer of &lt;dmi base_board_information&gt; : string
+{% property memory_module_voltage of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### location_in_chassis of &lt;dmi base_board_information&gt; : string
+{% property maximum_memory_module_size of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi base_board_information&gt; : integer
+{% property length of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### feature_flags of &lt;dmi base_board_information&gt; : integer
+{% property error_detecting_method of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### chassis_handle of &lt;dmi base_board_information&gt; : integer
+{% property error_correcting_capability of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### board_type of &lt;dmi base_board_information&gt; : integer
+{% property current_interleave of <dmi memory_controller_information> %}
 
 No documentation exists for this property.
 
-#### asset_tag of &lt;dmi base_board_information&gt; : string
-
-No documentation exists for this property.
-
-## dmi b64_bit_memory_error_information
+{% type dmi memory_channel%}
 
 No documentation exists for this type.
 
-#### vendor_syndrome of &lt;dmi b64_bit_memory_error_information&gt; : integer
+{% property memory_device_load of <dmi memory_channel> %}
 
 No documentation exists for this property.
 
-#### memory_array_error_address of &lt;dmi b64_bit_memory_error_information&gt; : integer
+{% property memory_device_handle of <dmi memory_channel> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi b64_bit_memory_error_information&gt; : integer
+{% property memory_device_count of <dmi memory_channel> %}
 
 No documentation exists for this property.
 
-#### error_type of &lt;dmi b64_bit_memory_error_information&gt; : integer
+{% property maximum_channel_load of <dmi memory_channel> %}
 
 No documentation exists for this property.
 
-#### error_resolution of &lt;dmi b64_bit_memory_error_information&gt; : integer
+{% property length of <dmi memory_channel> %}
 
 No documentation exists for this property.
 
-#### error_operation of &lt;dmi b64_bit_memory_error_information&gt; : integer
+{% property channel_type of <dmi memory_channel> %}
 
 No documentation exists for this property.
 
-#### error_granularity of &lt;dmi b64_bit_memory_error_information&gt; : integer
-
-No documentation exists for this property.
-
-#### device_error_address of &lt;dmi b64_bit_memory_error_information&gt; : integer
-
-No documentation exists for this property.
-
-## dmi b32_bit_memory_error_information
+{% type dmi memory_array_mapped_address%}
 
 No documentation exists for this type.
 
-#### vendor_syndrome of &lt;dmi b32_bit_memory_error_information&gt; : integer
+{% property starting_address of <dmi memory_array_mapped_address> %}
 
 No documentation exists for this property.
 
-#### memory_array_error_address of &lt;dmi b32_bit_memory_error_information&gt; : integer
+{% property partition_width of <dmi memory_array_mapped_address> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi b32_bit_memory_error_information&gt; : integer
+{% property memory_array_handle of <dmi memory_array_mapped_address> %}
 
 No documentation exists for this property.
 
-#### error_type of &lt;dmi b32_bit_memory_error_information&gt; : integer
+{% property length of <dmi memory_array_mapped_address> %}
 
 No documentation exists for this property.
 
-#### error_resolution of &lt;dmi b32_bit_memory_error_information&gt; : integer
+{% property ending_address of <dmi memory_array_mapped_address> %}
 
 No documentation exists for this property.
 
-#### error_operation of &lt;dmi b32_bit_memory_error_information&gt; : integer
-
-No documentation exists for this property.
-
-#### error_granularity of &lt;dmi b32_bit_memory_error_information&gt; : integer
-
-No documentation exists for this property.
-
-#### device_error_address of &lt;dmi b32_bit_memory_error_information&gt; : integer
-
-No documentation exists for this property.
-
-## dmi additional_information
+{% type dmi management_device_threshold_data%}
 
 No documentation exists for this type.
 
-#### number_of_additional_information_entries of &lt;dmi additional_information&gt; : integer
+{% property upper_threshold_non_recoverable of <dmi management_device_threshold_data> %}
 
 No documentation exists for this property.
 
-#### length of &lt;dmi additional_information&gt; : integer
+{% property upper_threshold_non_critical of <dmi management_device_threshold_data> %}
 
 No documentation exists for this property.
 
-## dmi
+{% property upper_threshold_critical of <dmi management_device_threshold_data> %}
+
+No documentation exists for this property.
+
+{% property lower_threshold_non_recoverable of <dmi management_device_threshold_data> %}
+
+No documentation exists for this property.
+
+{% property lower_threshold_non_critical of <dmi management_device_threshold_data> %}
+
+No documentation exists for this property.
+
+{% property lower_threshold_critical of <dmi management_device_threshold_data> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi management_device_threshold_data> %}
+
+No documentation exists for this property.
+
+{% type dmi management_device_component%}
 
 No documentation exists for this type.
 
-#### voltage_probe of &lt;dmi&gt; : dmi voltage_probe
+{% property threshold_handle of <dmi management_device_component> %}
 
 No documentation exists for this property.
 
-#### voltage_probe &lt;integer&gt; of &lt;dmi&gt; : dmi voltage_probe
+{% property management_device_handle of <dmi management_device_component> %}
 
 No documentation exists for this property.
 
-#### temperature_probe of &lt;dmi&gt; : dmi temperature_probe
+{% property length of <dmi management_device_component> %}
 
 No documentation exists for this property.
 
-#### temperature_probe &lt;integer&gt; of &lt;dmi&gt; : dmi temperature_probe
+{% property description of <dmi management_device_component> %}
 
 No documentation exists for this property.
 
-#### system_slots of &lt;dmi&gt; : dmi system_slots
+{% property component_handle of <dmi management_device_component> %}
 
 No documentation exists for this property.
 
-#### system_slots &lt;integer&gt; of &lt;dmi&gt; : dmi system_slots
+{% type dmi management_device%}
 
+No documentation exists for this type.
+
+{% property type of <dmi management_device> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi management_device> %}
+
+No documentation exists for this property.
+
+{% property description of <dmi management_device> %}
+
+No documentation exists for this property.
+
+{% property address_type of <dmi management_device> %}
+
+No documentation exists for this property.
+
+{% property address of <dmi management_device> %}
+
+No documentation exists for this property.
+
+{% type dmi ipmi_device_information%}
+
+No documentation exists for this type.
+
+{% property nv_storage_device_address of <dmi ipmi_device_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi ipmi_device_information> %}
+
+No documentation exists for this property.
+
+{% property ipmi_specification_revision of <dmi ipmi_device_information> %}
+
+No documentation exists for this property.
+
+{% property interface_type of <dmi ipmi_device_information> %}
+
+No documentation exists for this property.
+
+{% property i2c_slave_address of <dmi ipmi_device_information> %}
+
+No documentation exists for this property.
+
+{% property base_address of <dmi ipmi_device_information> %}
+
+No documentation exists for this property.
+
+{% type dmi inactive%}
+
+No documentation exists for this type.
+
+{% property length of <dmi inactive> %}
+
+No documentation exists for this property.
+
+{% type dmi hardware_security%}
+
+No documentation exists for this type.
+
+{% property length of <dmi hardware_security> %}
+
+No documentation exists for this property.
+
+{% property hardware_security_settings of <dmi hardware_security> %}
+
+No documentation exists for this property.
+
+{% type dmi group_associations%}
+
+No documentation exists for this type.
+
+{% property length of <dmi group_associations> %}
+
+No documentation exists for this property.
+
+{% property item_type of <dmi group_associations> %}
+
+No documentation exists for this property.
+
+{% property item_handle of <dmi group_associations> %}
+
+No documentation exists for this property.
+
+{% property group_name of <dmi group_associations> %}
+
+No documentation exists for this property.
+
+{% type dmi end_of_table%}
+
+No documentation exists for this type.
+
+{% property length of <dmi end_of_table> %}
+
+No documentation exists for this property.
+
+{% type dmi electrical_current_probe%}
+
+No documentation exists for this type.
+
+{% property tolerance of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property resolution of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property oem_defined of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property nominal_value of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property minimum_value of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property maximum_value of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property location_and_status of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property description of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% property accuracy of <dmi electrical_current_probe> %}
+
+No documentation exists for this property.
+
+{% type dmi cooling_device%}
+
+No documentation exists for this type.
+
+{% property temperature_probe_handle of <dmi cooling_device> %}
+
+No documentation exists for this property.
+
+{% property oem_defined of <dmi cooling_device> %}
+
+No documentation exists for this property.
+
+{% property nominal_speed of <dmi cooling_device> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi cooling_device> %}
+
+No documentation exists for this property.
+
+{% property device_type_and_status of <dmi cooling_device> %}
+
+No documentation exists for this property.
+
+{% property cooling_unit_group of <dmi cooling_device> %}
+
+No documentation exists for this property.
+
+{% type dmi cache_information%}
+
+No documentation exists for this type.
+
+{% property system_cache_type of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property supported_sram_type of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property socket_designation of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property maximum_cache_size of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property installed_size of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property error_correction_type of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property current_sram_type of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property cache_speed of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property cache_configuration of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% property associativity of <dmi cache_information> %}
+
+No documentation exists for this property.
+
+{% type dmi built_in_pointing_device%}
+
+No documentation exists for this type.
+
+{% property type of <dmi built_in_pointing_device> %}
+
+No documentation exists for this property.
+
+{% property number_of_buttons of <dmi built_in_pointing_device> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi built_in_pointing_device> %}
+
+No documentation exists for this property.
+
+{% property interface of <dmi built_in_pointing_device> %}
+
+No documentation exists for this property.
+
+{% type dmi bios_language_information%}
+
+No documentation exists for this type.
+
+{% property reserved of <dmi bios_language_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi bios_language_information> %}
+
+No documentation exists for this property.
+
+{% property installable_languages of <dmi bios_language_information> %}
+
+No documentation exists for this property.
+
+{% property flags of <dmi bios_language_information> %}
+
+No documentation exists for this property.
+
+{% property current_language of <dmi bios_language_information> %}
+
+No documentation exists for this property.
+
+{% type dmi bios_information%}
+
+No documentation exists for this type.
+
+{% property vendor of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property system_bios_minor_release of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property system_bios_major_release of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property embedded_controller_firmware_minor_release of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property embedded_controller_firmware_major_release of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property bios_version of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property bios_starting_address_segment of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property bios_rom_size of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property bios_release_date of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% property bios_characteristics of <dmi bios_information> %}
+
+No documentation exists for this property.
+
+{% type dmi base_board_information%}
+
+No documentation exists for this type.
+
+{% property version of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property serial_number of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property product of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property number_of_contained_object_handles of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property manufacturer of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property location_in_chassis of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property feature_flags of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property chassis_handle of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property board_type of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% property asset_tag of <dmi base_board_information> %}
+
+No documentation exists for this property.
+
+{% type dmi b64_bit_memory_error_information%}
+
+No documentation exists for this type.
+
+{% property vendor_syndrome of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property memory_array_error_address of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_type of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_resolution of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_operation of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_granularity of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property device_error_address of <dmi b64_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% type dmi b32_bit_memory_error_information%}
+
+No documentation exists for this type.
+
+{% property vendor_syndrome of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property memory_array_error_address of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_type of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_resolution of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_operation of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property error_granularity of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% property device_error_address of <dmi b32_bit_memory_error_information> %}
+
+No documentation exists for this property.
+
+{% type dmi additional_information%}
+
+No documentation exists for this type.
+
+{% property number_of_additional_information_entries of <dmi additional_information> %}
+
+No documentation exists for this property.
+
+{% property length of <dmi additional_information> %}
+
+No documentation exists for this property.
+
+{% type dmi%}
+
+No documentation exists for this type.
+
+{% property voltage_probe of <dmi> %}
+
+No documentation exists for this property.
+
+{% property voltage_probe <integer> of <dmi> %}
+
+No documentation exists for this property.
+
+{% property temperature_probe of <dmi> %}
+
+No documentation exists for this property.
+
+{% property temperature_probe <integer> of <dmi> %}
+
+No documentation exists for this property.
+
+{% property system_slots of <dmi> %}
+
+No documentation exists for this property.
+
+{% property system_slots <integer> of <dmi> %}
+
 No documentation exists for this property.
 
-#### system_reset of &lt;dmi&gt; : dmi system_reset
+{% property system_reset of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_reset &lt;integer&gt; of &lt;dmi&gt; : dmi system_reset
+{% property system_reset <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_power_supply of &lt;dmi&gt; : dmi system_power_supply
+{% property system_power_supply of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_power_supply &lt;integer&gt; of &lt;dmi&gt; : dmi system_power_supply
+{% property system_power_supply <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_power_controls of &lt;dmi&gt; : dmi system_power_controls
+{% property system_power_controls of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_power_controls &lt;integer&gt; of &lt;dmi&gt; : dmi system_power_controls
+{% property system_power_controls <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_information of &lt;dmi&gt; : dmi system_information
+{% property system_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_information &lt;integer&gt; of &lt;dmi&gt; : dmi system_information
+{% property system_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_enclosure_or_chassis of &lt;dmi&gt; : dmi system_enclosure_or_chassis
+{% property system_enclosure_or_chassis of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_enclosure_or_chassis &lt;integer&gt; of &lt;dmi&gt; : dmi system_enclosure_or_chassis
+{% property system_enclosure_or_chassis <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_configuration_option of &lt;dmi&gt; : string
+{% property system_configuration_option of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_configuration_option &lt;integer&gt; of &lt;dmi&gt; : string
+{% property system_configuration_option <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_boot_information of &lt;dmi&gt; : dmi system_boot_information
+{% property system_boot_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### system_boot_information &lt;integer&gt; of &lt;dmi&gt; : dmi system_boot_information
+{% property system_boot_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### processor_information of &lt;dmi&gt; : dmi processor_information
+{% property processor_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### processor_information &lt;integer&gt; of &lt;dmi&gt; : dmi processor_information
+{% property processor_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### portable_battery of &lt;dmi&gt; : dmi portable_battery
+{% property portable_battery of <dmi> %}
 
 No documentation exists for this property.
 
-#### portable_battery &lt;integer&gt; of &lt;dmi&gt; : dmi portable_battery
+{% property portable_battery <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### port_connector_information of &lt;dmi&gt; : dmi port_connector_information
+{% property port_connector_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### port_connector_information &lt;integer&gt; of &lt;dmi&gt; : dmi port_connector_information
+{% property port_connector_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### physical_memory_array of &lt;dmi&gt; : dmi physical_memory_array
+{% property physical_memory_array of <dmi> %}
 
 No documentation exists for this property.
 
-#### physical_memory_array &lt;integer&gt; of &lt;dmi&gt; : dmi physical_memory_array
+{% property physical_memory_array <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### out_of_band_remote_access of &lt;dmi&gt; : dmi out_of_band_remote_access
+{% property out_of_band_remote_access of <dmi> %}
 
 No documentation exists for this property.
 
-#### out_of_band_remote_access &lt;integer&gt; of &lt;dmi&gt; : dmi out_of_band_remote_access
+{% property out_of_band_remote_access <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### onboard_devices_extended_information of &lt;dmi&gt; : dmi onboard_devices_extended_information
+{% property onboard_devices_extended_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### onboard_devices_extended_information &lt;integer&gt; of &lt;dmi&gt; : dmi onboard_devices_extended_information
+{% property onboard_devices_extended_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### on_board_devices_information of &lt;dmi&gt; : dmi on_board_devices_information
+{% property on_board_devices_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### on_board_devices_information &lt;integer&gt; of &lt;dmi&gt; : dmi on_board_devices_information
+{% property on_board_devices_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### oem_string of &lt;dmi&gt; : string
+{% property oem_string of <dmi> %}
 
 No documentation exists for this property.
 
-#### oem_string &lt;integer&gt; of &lt;dmi&gt; : string
+{% property oem_string <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_module_information of &lt;dmi&gt; : dmi memory_module_information
+{% property memory_module_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_module_information &lt;integer&gt; of &lt;dmi&gt; : dmi memory_module_information
+{% property memory_module_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_device_mapped_address of &lt;dmi&gt; : dmi memory_device_mapped_address
+{% property memory_device_mapped_address of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_device_mapped_address &lt;integer&gt; of &lt;dmi&gt; : dmi memory_device_mapped_address
+{% property memory_device_mapped_address <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_device of &lt;dmi&gt; : dmi memory_device
+{% property memory_device of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_device &lt;integer&gt; of &lt;dmi&gt; : dmi memory_device
+{% property memory_device <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_controller_information of &lt;dmi&gt; : dmi memory_controller_information
+{% property memory_controller_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_controller_information &lt;integer&gt; of &lt;dmi&gt; : dmi memory_controller_information
+{% property memory_controller_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_channel of &lt;dmi&gt; : dmi memory_channel
+{% property memory_channel of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_channel &lt;integer&gt; of &lt;dmi&gt; : dmi memory_channel
+{% property memory_channel <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_array_mapped_address of &lt;dmi&gt; : dmi memory_array_mapped_address
+{% property memory_array_mapped_address of <dmi> %}
 
 No documentation exists for this property.
 
-#### memory_array_mapped_address &lt;integer&gt; of &lt;dmi&gt; : dmi memory_array_mapped_address
+{% property memory_array_mapped_address <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### management_device_threshold_data of &lt;dmi&gt; : dmi management_device_threshold_data
+{% property management_device_threshold_data of <dmi> %}
 
 No documentation exists for this property.
 
-#### management_device_threshold_data &lt;integer&gt; of &lt;dmi&gt; : dmi management_device_threshold_data
+{% property management_device_threshold_data <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### management_device_component of &lt;dmi&gt; : dmi management_device_component
+{% property management_device_component of <dmi> %}
 
 No documentation exists for this property.
 
-#### management_device_component &lt;integer&gt; of &lt;dmi&gt; : dmi management_device_component
+{% property management_device_component <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### management_device of &lt;dmi&gt; : dmi management_device
+{% property management_device of <dmi> %}
 
 No documentation exists for this property.
 
-#### management_device &lt;integer&gt; of &lt;dmi&gt; : dmi management_device
+{% property management_device <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### ipmi_device_information of &lt;dmi&gt; : dmi ipmi_device_information
+{% property ipmi_device_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### ipmi_device_information &lt;integer&gt; of &lt;dmi&gt; : dmi ipmi_device_information
+{% property ipmi_device_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### inactive of &lt;dmi&gt; : dmi inactive
+{% property inactive of <dmi> %}
 
 No documentation exists for this property.
 
-#### inactive &lt;integer&gt; of &lt;dmi&gt; : dmi inactive
+{% property inactive <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### hardware_security of &lt;dmi&gt; : dmi hardware_security
+{% property hardware_security of <dmi> %}
 
 No documentation exists for this property.
 
-#### hardware_security &lt;integer&gt; of &lt;dmi&gt; : dmi hardware_security
+{% property hardware_security <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### group_associations of &lt;dmi&gt; : dmi group_associations
+{% property group_associations of <dmi> %}
 
 No documentation exists for this property.
 
-#### group_associations &lt;integer&gt; of &lt;dmi&gt; : dmi group_associations
+{% property group_associations <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### end_of_table of &lt;dmi&gt; : dmi end_of_table
+{% property end_of_table of <dmi> %}
 
 No documentation exists for this property.
 
-#### end_of_table &lt;integer&gt; of &lt;dmi&gt; : dmi end_of_table
+{% property end_of_table <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### electrical_current_probe of &lt;dmi&gt; : dmi electrical_current_probe
+{% property electrical_current_probe of <dmi> %}
 
 No documentation exists for this property.
 
-#### electrical_current_probe &lt;integer&gt; of &lt;dmi&gt; : dmi electrical_current_probe
+{% property electrical_current_probe <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### cooling_device of &lt;dmi&gt; : dmi cooling_device
+{% property cooling_device of <dmi> %}
 
 No documentation exists for this property.
 
-#### cooling_device &lt;integer&gt; of &lt;dmi&gt; : dmi cooling_device
+{% property cooling_device <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### cache_information of &lt;dmi&gt; : dmi cache_information
+{% property cache_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### cache_information &lt;integer&gt; of &lt;dmi&gt; : dmi cache_information
+{% property cache_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### built_in_pointing_device of &lt;dmi&gt; : dmi built_in_pointing_device
+{% property built_in_pointing_device of <dmi> %}
 
 No documentation exists for this property.
 
-#### built_in_pointing_device &lt;integer&gt; of &lt;dmi&gt; : dmi built_in_pointing_device
+{% property built_in_pointing_device <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### bios_language_information of &lt;dmi&gt; : dmi bios_language_information
+{% property bios_language_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### bios_language_information &lt;integer&gt; of &lt;dmi&gt; : dmi bios_language_information
+{% property bios_language_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### bios_information of &lt;dmi&gt; : dmi bios_information
+{% property bios_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### bios_information &lt;integer&gt; of &lt;dmi&gt; : dmi bios_information
+{% property bios_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### base_board_information of &lt;dmi&gt; : dmi base_board_information
+{% property base_board_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### base_board_information &lt;integer&gt; of &lt;dmi&gt; : dmi base_board_information
+{% property base_board_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### b64_bit_memory_error_information of &lt;dmi&gt; : dmi b64_bit_memory_error_information
+{% property b64_bit_memory_error_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### b64_bit_memory_error_information &lt;integer&gt; of &lt;dmi&gt; : dmi b64_bit_memory_error_information
+{% property b64_bit_memory_error_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### b32_bit_memory_error_information of &lt;dmi&gt; : dmi b32_bit_memory_error_information
+{% property b32_bit_memory_error_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### b32_bit_memory_error_information &lt;integer&gt; of &lt;dmi&gt; : dmi b32_bit_memory_error_information
+{% property b32_bit_memory_error_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 
-#### additional_information of &lt;dmi&gt; : dmi additional_information
+{% property additional_information of <dmi> %}
 
 No documentation exists for this property.
 
-#### additional_information &lt;integer&gt; of &lt;dmi&gt; : dmi additional_information
+{% property additional_information <integer> of <dmi> %}
 
 No documentation exists for this property.
 

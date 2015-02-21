@@ -2,71 +2,71 @@
 title: roles
 ---
 
-## bes role with multiplicity
+{% type bes role with multiplicity%}
 
 No documentation exists for this type.
 
-#### multiplicity of &lt;bes role with multiplicity&gt; : integer
+{% property multiplicity of <bes role with multiplicity> %}
 
 No documentation exists for this property.
 
-## bes role set
+{% type bes role set%}
 
 No documentation exists for this type.
 
-#### union of &lt;bes role set&gt; : bes role set
+{% property union of <bes role set> %}
 
 No documentation exists for this property.
 
-#### size of &lt;bes role set&gt; : integer
+{% property size of <bes role set> %}
 
 No documentation exists for this property.
 
-#### intersection of &lt;bes role set&gt; : bes role set
+{% property intersection of <bes role set> %}
 
 No documentation exists for this property.
 
-#### element of &lt;bes role set&gt; : bes role
+{% property element of <bes role set> %}
 
 No documentation exists for this property.
 
-## bes role
+{% type bes role%}
 
 No documentation exists for this type.
 
-#### user set of &lt;bes role&gt; : bes user set
+{% property user set of <bes role> %}
 
 No documentation exists for this property.
 
-#### user of &lt;bes role&gt; : bes user
+{% property user of <bes role> %}
 
 No documentation exists for this property.
 
-#### unmanagedasset privilege shownone flag of &lt;bes role&gt; : boolean
+{% property unmanagedasset privilege shownone flag of <bes role> %}
 
 No documentation exists for this property.
 
-#### unmanagedasset privilege showall flag of &lt;bes role&gt; : boolean
+{% property unmanagedasset privilege showall flag of <bes role> %}
 
 No documentation exists for this property.
 
-#### unmanagedasset privilege scanpoint flag of &lt;bes role&gt; : boolean
+{% property unmanagedasset privilege scanpoint flag of <bes role> %}
 
 No documentation exists for this property.
 
-#### unique value of &lt;bes role&gt; : bes role with multiplicity
+{% property unique value of <bes role> %}
 
 No documentation exists for this property.
 
-#### set of &lt;bes role&gt; : bes role set
+{% property set of <bes role> %}
 
 No documentation exists for this property.
 
-#### name of &lt;bes role&gt; : string
+{% property name of <bes role> %}
 
 No documentation exists for this property.
 
-#### master flag of &lt;bes role&gt; : boolean
+{% property master flag of <bes role> %}
 
 No documentation exists for this property.
 

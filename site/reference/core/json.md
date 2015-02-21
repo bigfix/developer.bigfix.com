@@ -2,63 +2,63 @@
 title: json
 ---
 
-## json value
+{% type json value%}
 
 No documentation exists for this type.
 
-#### &lt;json value&gt; as string : string
+{% property <json value> as string %}
 
 No documentation exists for this cast.
 
-#### &lt;json value&gt; as integer : integer
+{% property <json value> as integer %}
 
 No documentation exists for this cast.
 
-#### &lt;json value&gt; as float : floating point
+{% property <json value> as float %}
 
 No documentation exists for this cast.
 
-#### &lt;json value&gt; as boolean : boolean
+{% property <json value> as boolean %}
 
 No documentation exists for this cast.
 
-#### type of &lt;json value&gt; : string
+{% property type of <json value> %}
 
 No documentation exists for this property.
 
-#### path &lt;string&gt; of &lt;json value&gt; : json value
+{% property path <string> of <json value> %}
 
 No documentation exists for this property.
 
-#### key of &lt;json value&gt; : json key
+{% property key of <json value> %}
 
 No documentation exists for this property.
 
-#### key &lt;string&gt; of &lt;json value&gt; : json key
+{% property key <string> of <json value> %}
 
 No documentation exists for this property.
 
-#### element of &lt;json value&gt; : json value
+{% property element of <json value> %}
 
 No documentation exists for this property.
 
-#### element &lt;integer&gt; of &lt;json value&gt; : json value
+{% property element <integer> of <json value> %}
 
 No documentation exists for this property.
 
-## json key
+{% type json key%}
 
 No documentation exists for this type.
 
-#### &lt;json key&gt; as string : string
+{% property <json key> as string %}
 
 No documentation exists for this cast.
 
-#### value of &lt;json key&gt; : json value
+{% property value of <json key> %}
 
 No documentation exists for this property.
 
-#### name of &lt;json key&gt; : string
+{% property name of <json key> %}
 
 No documentation exists for this property.
 

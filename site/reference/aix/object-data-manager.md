@@ -2,267 +2,267 @@
 title: object-data-manager
 ---
 
-## odm
+{% type odm%}
 
 No documentation exists for this type.
 
-#### predefined device of &lt;odm&gt; : predefined_device
+{% property predefined device of <odm> %}
 
 No documentation exists for this property.
 
-#### predefined device &lt;string&gt; of &lt;odm&gt; : predefined_device
+{% property predefined device <string> of <odm> %}
 
 No documentation exists for this property.
 
-#### predefined attribute of &lt;odm&gt; : predefined_attribute
+{% property predefined attribute of <odm> %}
 
 No documentation exists for this property.
 
-#### predefined attribute &lt;string&gt; of &lt;odm&gt; : predefined_attribute
+{% property predefined attribute <string> of <odm> %}
 
 No documentation exists for this property.
 
-#### customized device of &lt;odm&gt; : customized_device
+{% property customized device of <odm> %}
 
 No documentation exists for this property.
 
-#### customized device &lt;string&gt; of &lt;odm&gt; : customized_device
+{% property customized device <string> of <odm> %}
 
 No documentation exists for this property.
 
-#### customized attribute of &lt;odm&gt; : customized_attribute
+{% property customized attribute of <odm> %}
 
 No documentation exists for this property.
 
-#### customized attribute &lt;string&gt; of &lt;odm&gt; : customized_attribute
+{% property customized attribute <string> of <odm> %}
 
 No documentation exists for this property.
 
-## customized_device
+{% type customized_device%}
 
 No documentation exists for this type.
 
-#### &lt;customized_device&gt; as string : string
+{% property <customized_device> as string %}
 
 No documentation exists for this cast.
 
-#### status of &lt;customized_device&gt; : string
+{% property status of <customized_device> %}
 
 No documentation exists for this property.
 
-#### parent of &lt;customized_device&gt; : string
+{% property parent of <customized_device> %}
 
 No documentation exists for this property.
 
-#### parent logical name of &lt;customized_device&gt; : string
+{% property parent logical name of <customized_device> %}
 
 No documentation exists for this property.
 
-#### name of &lt;customized_device&gt; : string
+{% property name of <customized_device> %}
 
 No documentation exists for this property.
 
-#### location of &lt;customized_device&gt; : string
+{% property location of <customized_device> %}
 
 No documentation exists for this property.
 
-#### device driver instance of &lt;customized_device&gt; : string
+{% property device driver instance of <customized_device> %}
 
 No documentation exists for this property.
 
-#### connwhere of &lt;customized_device&gt; : string
+{% property connwhere of <customized_device> %}
 
 No documentation exists for this property.
 
-#### change status of &lt;customized_device&gt; : string
+{% property change status of <customized_device> %}
 
 No documentation exists for this property.
 
-## customized_attribute
+{% type customized_attribute%}
 
 No documentation exists for this type.
 
-#### &lt;customized_attribute&gt; as string : string
+{% property <customized_attribute> as string %}
 
 No documentation exists for this cast.
 
-#### representation flag of &lt;customized_attribute&gt; : string
+{% property representation flag of <customized_attribute> %}
 
 No documentation exists for this property.
 
-#### nls index of &lt;customized_attribute&gt; : string
+{% property nls index of <customized_attribute> %}
 
 No documentation exists for this property.
 
-#### generic flag of &lt;customized_attribute&gt; : string
+{% property generic flag of <customized_attribute> %}
 
 No documentation exists for this property.
 
-#### device name of &lt;customized_attribute&gt; : string
+{% property device name of <customized_attribute> %}
 
 No documentation exists for this property.
 
-#### attribute value of &lt;customized_attribute&gt; : string
+{% property attribute value of <customized_attribute> %}
 
 No documentation exists for this property.
 
-#### attribute type of &lt;customized_attribute&gt; : string
+{% property attribute type of <customized_attribute> %}
 
 No documentation exists for this property.
 
-#### attribute name of &lt;customized_attribute&gt; : string
+{% property attribute name of <customized_attribute> %}
 
 No documentation exists for this property.
 
-## predefined_device
+{% type predefined_device%}
 
 No documentation exists for this type.
 
-#### &lt;predefined_device&gt; as string : string
+{% property <predefined_device> as string %}
 
 No documentation exists for this cast.
 
-#### vpd flag of &lt;predefined_device&gt; : string
+{% property vpd flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### unique type of &lt;predefined_device&gt; : string
+{% property unique type of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### undefine method of &lt;predefined_device&gt; : string
+{% property undefine method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### unconfigure method of &lt;predefined_device&gt; : string
+{% property unconfigure method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### type of &lt;predefined_device&gt; : string
+{% property type of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### subclass of &lt;predefined_device&gt; : string
+{% property subclass of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### stop method of &lt;predefined_device&gt; : string
+{% property stop method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### start method of &lt;predefined_device&gt; : string
+{% property start method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### set number of &lt;predefined_device&gt; : string
+{% property set number of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### prefix name of &lt;predefined_device&gt; : string
+{% property prefix name of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### msg number of &lt;predefined_device&gt; : string
+{% property msg number of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### led value of &lt;predefined_device&gt; : string
+{% property led value of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### inventory only flag of &lt;predefined_device&gt; : string
+{% property inventory only flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### id of &lt;predefined_device&gt; : string
+{% property id of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### fru flag of &lt;predefined_device&gt; : string
+{% property fru flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### device driver name of &lt;predefined_device&gt; : string
+{% property device driver name of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### detectable flag of &lt;predefined_device&gt; : string
+{% property detectable flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### define method of &lt;predefined_device&gt; : string
+{% property define method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### configure method of &lt;predefined_device&gt; : string
+{% property configure method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### class of &lt;predefined_device&gt; : string
+{% property class of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### change status flag of &lt;predefined_device&gt; : string
+{% property change status flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### change method of &lt;predefined_device&gt; : string
+{% property change method of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### catalog filename of &lt;predefined_device&gt; : string
+{% property catalog filename of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### bus extender flag of &lt;predefined_device&gt; : string
+{% property bus extender flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-#### base flag of &lt;predefined_device&gt; : string
+{% property base flag of <predefined_device> %}
 
 No documentation exists for this property.
 
-## predefined_attribute
+{% type predefined_attribute%}
 
 No documentation exists for this type.
 
-#### &lt;predefined_attribute&gt; as string : string
+{% property <predefined_attribute> as string %}
 
 No documentation exists for this cast.
 
-#### width of &lt;predefined_attribute&gt; : string
+{% property width of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### unique type of &lt;predefined_attribute&gt; : string
+{% property unique type of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### type of &lt;predefined_attribute&gt; : string
+{% property type of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### representation flag of &lt;predefined_attribute&gt; : string
+{% property representation flag of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### possible value of &lt;predefined_attribute&gt; : string
+{% property possible value of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### nls index of &lt;predefined_attribute&gt; : string
+{% property nls index of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### generic flag of &lt;predefined_attribute&gt; : string
+{% property generic flag of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### default value of &lt;predefined_attribute&gt; : string
+{% property default value of <predefined_attribute> %}
 
 No documentation exists for this property.
 
-#### attribute name of &lt;predefined_attribute&gt; : string
+{% property attribute name of <predefined_attribute> %}
 
 No documentation exists for this property.
 

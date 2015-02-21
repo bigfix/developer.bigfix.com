@@ -2,27 +2,27 @@
 title: mysql
 ---
 
-## local mssql database
+{% type local mssql database%}
 
 The &lt;local mssql database&gt; inspectors retrieve the properties of the MS SQL databases on the local machine.
 
-#### running of &lt;local mssql database&gt; : boolean
+{% property running of <local mssql database> %}
 
 Returns a boolean indicating if the MSSQL database is running.
 
-#### login mode of &lt;local mssql database&gt; : integer
+{% property login mode of <local mssql database> %}
 
 Returns the login mode of the MSSQL database.
 
-#### instance name of &lt;local mssql database&gt; : string
+{% property instance name of <local mssql database> %}
 
 Returns the name of the MSSQL database.
 
-#### has blank sa password of &lt;local mssql database&gt; : boolean
+{% property has blank sa password of <local mssql database> %}
 
 Returns TRUE if the MSSQL database sa account has a blank password.
 
-#### audit level of &lt;local mssql database&gt; : integer
+{% property audit level of <local mssql database> %}
 
 Returns the integer audit level of the MSSQL database.
 

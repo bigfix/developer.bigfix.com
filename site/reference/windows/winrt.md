@@ -2,87 +2,87 @@
 title: winrt
 ---
 
-## winrt package user information
+{% type winrt package user information%}
 
 No documentation exists for this type.
 
-#### &lt;winrt package user information&gt; as string : string
+{% property <winrt package user information> as string %}
 
 No documentation exists for this cast.
 
-#### sid of &lt;winrt package user information&gt; : security identifier
+{% property sid of <winrt package user information> %}
 
 No documentation exists for this property.
 
-#### install state of &lt;winrt package user information&gt; : winrt enumeration
+{% property install state of <winrt package user information> %}
 
 No documentation exists for this property.
 
-## winrt package id
+{% type winrt package id%}
 
 No documentation exists for this type.
 
-#### version of &lt;winrt package id&gt; : version
+{% property version of <winrt package id> %}
 
 No documentation exists for this property.
 
-#### publisher of &lt;winrt package id&gt; : string
+{% property publisher of <winrt package id> %}
 
 No documentation exists for this property.
 
-#### publisher id of &lt;winrt package id&gt; : string
+{% property publisher id of <winrt package id> %}
 
 No documentation exists for this property.
 
-#### name of &lt;winrt package id&gt; : string
+{% property name of <winrt package id> %}
 
 No documentation exists for this property.
 
-#### full name of &lt;winrt package id&gt; : string
+{% property full name of <winrt package id> %}
 
 No documentation exists for this property.
 
-#### family name of &lt;winrt package id&gt; : string
+{% property family name of <winrt package id> %}
 
 No documentation exists for this property.
 
-#### architecture of &lt;winrt package id&gt; : winrt enumeration
+{% property architecture of <winrt package id> %}
 
 No documentation exists for this property.
 
-## winrt package
+{% type winrt package%}
 
 No documentation exists for this type.
 
-#### &lt;winrt package&gt; as string : string
+{% property <winrt package> as string %}
 
 No documentation exists for this cast.
 
-#### winrt package user of &lt;winrt package&gt; : winrt package user information
+{% property winrt package user of <winrt package> %}
 
 No documentation exists for this property.
 
-#### installed path of &lt;winrt package&gt; : folder
+{% property installed path of <winrt package> %}
 
 No documentation exists for this property.
 
-#### id of &lt;winrt package&gt; : winrt package id
+{% property id of <winrt package> %}
 
 No documentation exists for this property.
 
-## winrt enumeration
+{% type winrt enumeration%}
 
 No documentation exists for this type.
 
-#### &lt;winrt enumeration&gt; as string : string
+{% property <winrt enumeration> as string %}
 
 No documentation exists for this cast.
 
-#### value of &lt;winrt enumeration&gt; : integer
+{% property value of <winrt enumeration> %}
 
 No documentation exists for this property.
 
-#### name of &lt;winrt enumeration&gt; : string
+{% property name of <winrt enumeration> %}
 
 No documentation exists for this property.
 
