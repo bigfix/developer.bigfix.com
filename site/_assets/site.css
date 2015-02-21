@@ -62,15 +62,16 @@ code {
 }
 
 .example pre {
-  border-bottom: 1px solid #e1e1e1;
   margin: 0;
   padding: 0;
 }
 
 .example code {
   border: none;
+  font-size: 90%;
+  line-height: normal;
   margin: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem .5rem 1.5rem;
 }
 
 .example ul {
@@ -78,7 +79,7 @@ code {
   font-size: 90%;
   list-style: none;
   line-height: normal;
-  margin: .5rem 0;
+  margin: 0 0 .5rem 0;
 }
 
 .example li {

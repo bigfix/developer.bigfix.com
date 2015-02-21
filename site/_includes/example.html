@@ -1,13 +1,9 @@
 {% assign example = include.example %}
 
 <div class="example">
-  <pre><code>{{ example.question }}</code></pre>
+  <pre><code>Q: {{ example.question }}</code></pre>
   <ul class="example-results">
-    {% for answer in example.answers %}
-    <li>{{ answer }}</li>
-    {% endfor %}
-    {% for error in example.errors %}
-    <li class="example-error">{{ error }}</li>
-    {% endfor %}
+    {% for answer in example.answers %}<li>A: {{ answer }}</li>{% endfor %}
+    {% for error in example.errors %}<li class="example-error">E: {{ error }}</li>{% endfor %}
   </ul>
 </div>
