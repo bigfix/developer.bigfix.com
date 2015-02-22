@@ -2,73 +2,33 @@
 title: winrt
 ---
 
-{% type winrt package user information%}
+{% type winrt enumeration %}
 
 No documentation exists for this type.
 
-#### Casts
+#### Properties of winrt enumeration
 
-{% property <winrt package user information> as string %}
+{% property name of <winrt enumeration> %}
+
+No documentation exists for this property.
+
+{% property value of <winrt enumeration> %}
+
+No documentation exists for this property.
+
+#### Casts of winrt enumeration
+
+{% cast <winrt enumeration> as string %}
 
 No documentation exists for this cast.
 
-#### Properties
-
-{% property sid of <winrt package user information> %}
-
-No documentation exists for this property.
-
-{% property install state of <winrt package user information> %}
-
-No documentation exists for this property.
-
-{% type winrt package id%}
+{% type winrt package %}
 
 No documentation exists for this type.
 
-#### Properties
+#### Properties of winrt package
 
-{% property version of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% property publisher of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% property publisher id of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% property name of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% property full name of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% property family name of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% property architecture of <winrt package id> %}
-
-No documentation exists for this property.
-
-{% type winrt package%}
-
-No documentation exists for this type.
-
-#### Casts
-
-{% property <winrt package> as string %}
-
-No documentation exists for this cast.
-
-#### Properties
-
-{% property winrt package user of <winrt package> %}
+{% property id of <winrt package> %}
 
 No documentation exists for this property.
 
@@ -76,27 +36,67 @@ No documentation exists for this property.
 
 No documentation exists for this property.
 
-{% property id of <winrt package> %}
+{% property winrt package user of <winrt package> %}
 
 No documentation exists for this property.
 
-{% type winrt enumeration%}
+#### Casts of winrt package
 
-No documentation exists for this type.
-
-#### Casts
-
-{% property <winrt enumeration> as string %}
+{% cast <winrt package> as string %}
 
 No documentation exists for this cast.
 
-#### Properties
+{% type winrt package id %}
 
-{% property value of <winrt enumeration> %}
+No documentation exists for this type.
+
+#### Properties of winrt package id
+
+{% property architecture of <winrt package id> %}
 
 No documentation exists for this property.
 
-{% property name of <winrt enumeration> %}
+{% property family name of <winrt package id> %}
 
 No documentation exists for this property.
+
+{% property full name of <winrt package id> %}
+
+No documentation exists for this property.
+
+{% property name of <winrt package id> %}
+
+No documentation exists for this property.
+
+{% property publisher id of <winrt package id> %}
+
+No documentation exists for this property.
+
+{% property publisher of <winrt package id> %}
+
+No documentation exists for this property.
+
+{% property version of <winrt package id> %}
+
+No documentation exists for this property.
+
+{% type winrt package user information %}
+
+No documentation exists for this type.
+
+#### Properties of winrt package user information
+
+{% property install state of <winrt package user information> %}
+
+No documentation exists for this property.
+
+{% property sid of <winrt package user information> %}
+
+No documentation exists for this property.
+
+#### Casts of winrt package user information
+
+{% cast <winrt package user information> as string %}
+
+No documentation exists for this cast.
 

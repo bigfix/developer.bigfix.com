@@ -1,644 +1,579 @@
-{
-  "core": {
-    "language": [
-      "binary operator",
-      "unary operator",
-      "undefined",
-      "type",
-      "property",
-      "cast",
-      "nothing",
-      "boolean",
-      "dummy type",
-      "dummy",
-      "bit set"
-    ],
-    "numbers": [
-      "integer with multiplicity",
-      "integer set",
-      "integer",
-      "floating point with multiplicity",
-      "floating point",
-      "integer range"
-    ],
-    "strings": [
-      "utf8 string",
-      "substring",
-      "string with multiplicity",
-      "string set",
-      "string position",
-      "string",
-      "rope",
-      "regular expression match",
-      "regular expression",
-      "format"
-    ],
-    "date-and-time": [
-      "year with multiplicity",
-      "year",
-      "time zone with multiplicity",
-      "time zone",
-      "time with multiplicity",
-      "time range with multiplicity",
-      "time range",
-      "time of day with time zone with multiplicity",
-      "time of day with time zone",
-      "time of day with multiplicity",
-      "time of day",
-      "time interval with multiplicity",
-      "time interval",
-      "time",
-      "number of months with multiplicity",
-      "number of months",
-      "month with multiplicity",
-      "month and year with multiplicity",
-      "month and year",
-      "month",
-      "day of year with multiplicity",
-      "day of year",
-      "day of week with multiplicity",
-      "day of week",
-      "day of month with multiplicity",
-      "day of month",
-      "date with multiplicity",
-      "date"
-    ],
-    "versions": [
-      "version with multiplicity",
-      "version",
-      "strverscmp version"
-    ],
-    "xml": [
-      "xml dom node",
-      "xml dom document"
-    ],
-    "json": [
-      "json value",
-      "json key"
-    ],
-    "sqlite": [
-      "sqlite table",
-      "sqlite statement",
-      "sqlite row",
-      "sqlite database",
-      "sqlite column type",
-      "sqlite column"
-    ],
-    "html": [
-      "html attribute list",
-      "html"
-    ],
-    "statistical": [
-      "statistical bin",
-      "statistic range",
-      "rate with multiplicity",
-      "rate",
-      "linear projection",
-      "exponential projection"
-    ]
-  },
-  "client": {
-    "configuration": [
-      "setting",
-      "selected server",
-      "download storage folder",
-      "download server",
-      "root server",
-      "registration server",
-      "x509 certificate",
-      "evaluation cycle",
-      "cryptography",
-      "license",
-      "client_cryptography",
-      "current relay",
-      "client",
-      "module",
-      "client process owner",
-      "administrative rights"
-    ],
-    "content": [
-      "site group",
-      "site",
-      "fixlet_header",
-      "fixlet",
-      "analysis",
-      "action lock state",
-      "action",
-      "site profile variable",
-      "site profile",
-      "manual group",
-      "site version list with multiplicity",
-      "site version list"
-    ]
-  },
-  "session": {
-    "general": [
-      "mime field",
-      "historical fixlet count",
-      "historical computer count",
-      "fixlet count pair",
-      "bes wakeonlan status",
-      "bes server",
-      "bes product",
-      "bes deployment option",
-      "bes comment"
-    ],
-    "wizards": [
-      "bes wizard with multiplicity",
-      "bes wizard variable",
-      "bes wizard set",
-      "bes wizard"
-    ],
-    "users": [
-      "bes user with multiplicity",
-      "bes user set",
-      "bes user"
-    ],
-    "unmanaged-assets": [
-      "bes unmanagedasset with multiplicity",
-      "bes unmanagedasset set",
-      "bes unmanagedasset field",
-      "bes unmanagedasset"
-    ],
-    "sites": [
-      "bes site with multiplicity",
-      "bes site set",
-      "bes site"
-    ],
-    "computers": [
-      "bes property with multiplicity",
-      "bes property set",
-      "bes property result",
-      "bes property",
-      "bes client setting",
-      "bes computer with multiplicity",
-      "bes computer set",
-      "bes computer group with multiplicity",
-      "bes computer group set",
-      "bes computer group",
-      "bes computer"
-    ],
-    "content": [
-      "bes fixlet with multiplicity",
-      "bes fixlet set",
-      "bes fixlet result",
-      "bes fixlet field value",
-      "bes fixlet field",
-      "bes fixlet action",
-      "bes fixlet",
-      "bes filter with multiplicity",
-      "bes filter set",
-      "bes filter",
-      "bes baseline component group",
-      "bes baseline component",
-      "bes activation"
-    ],
-    "domains": [
-      "bes domain with multiplicity",
-      "bes domain set",
-      "bes domain"
-    ],
-    "actions": [
-      "bes action with multiplicity",
-      "bes action status",
-      "bes action set",
-      "bes action result",
-      "bes action parameter",
-      "bes action"
-    ],
-    "files": [
-      "bes site file with multiplicity",
-      "bes site file set",
-      "bes site file"
-    ],
-    "roles": [
-      "bes role with multiplicity",
-      "bes role set",
-      "bes role"
-    ],
-    "ldap": [
-      "bes ldap directory with multiplicity",
-      "bes ldap directory set",
-      "bes ldap directory",
-      "bes ldap directory server"
-    ]
-  },
-  "network": {
-    "general": [
-      "ipv6 address with multiplicity",
-      "ipv6 address",
-      "ipv4or6 address with multiplicity",
-      "ipv4or6 address",
-      "ipv4 address with multiplicity",
-      "ipv4 address",
-      "ip version",
-      "network ip interface",
-      "network interface",
-      "network adapter interface",
-      "network adapter",
-      "network",
-      "socket file",
-      "wifi",
-      "network share",
-      "network address list",
-      "tcp state",
-      "socket",
-      "ipv4 routing table",
-      "ipv4 route",
-      "routing table",
-      "route",
-      "connection status",
-      "connection",
-      "media type",
-      "network link interface"
-    ],
-    "firewall": [
-      "firewall service type",
-      "firewall service restriction",
-      "firewall service",
-      "firewall scope",
-      "firewall rule",
-      "firewall remote admin settings",
-      "firewall profile type",
-      "firewall profile",
-      "firewall policy",
-      "firewall open port",
-      "firewall local policy modify state",
-      "firewall icmp settings",
-      "firewall authorized application",
-      "firewall action",
-      "firewall",
-      "port mapping",
-      "internet protocol",
-      "internet connection firewall"
-    ]
-  },
-  "system": {
-    "general": [
-      "computer",
-      "ram",
-      "primary language",
-      "operating system",
-      "operating system suite mask",
-      "operating system product type",
-      "technology level with multiplicity",
-      "technology level",
-      "service pack with multiplicity",
-      "service pack",
-      "language"
-    ],
-    "processor": [
-      "processor",
-      "cpupackage",
-      "hertz",
-      "hertz with multiplicity"
-    ],
-    "bios": [
-      "smbios value",
-      "smbios structure",
-      "smbios",
-      "bios"
-    ],
-    "devices": [
-      "scsidevice",
-      "scsibus",
-      "usb",
-      "active device"
-    ],
-    "direct-media-interface": [
-      "dmi voltage_probe",
-      "dmi temperature_probe",
-      "dmi system_slots",
-      "dmi system_reset",
-      "dmi system_power_supply",
-      "dmi system_power_controls",
-      "dmi system_information",
-      "dmi system_enclosure_or_chassis",
-      "dmi system_configuration_option",
-      "dmi system_boot_information",
-      "dmi processor_information",
-      "dmi portable_battery",
-      "dmi port_connector_information",
-      "dmi physical_memory_array",
-      "dmi out_of_band_remote_access",
-      "dmi onboard_devices_extended_information",
-      "dmi on_board_devices_information",
-      "dmi oem_strings",
-      "dmi memory_module_information",
-      "dmi memory_device_mapped_address",
-      "dmi memory_device",
-      "dmi memory_controller_information",
-      "dmi memory_channel",
-      "dmi memory_array_mapped_address",
-      "dmi management_device_threshold_data",
-      "dmi management_device_component",
-      "dmi management_device",
-      "dmi ipmi_device_information",
-      "dmi inactive",
-      "dmi hardware_security",
-      "dmi group_associations",
-      "dmi end_of_table",
-      "dmi electrical_current_probe",
-      "dmi cooling_device",
-      "dmi cache_information",
-      "dmi built_in_pointing_device",
-      "dmi bios_language_information",
-      "dmi bios_information",
-      "dmi base_board_information",
-      "dmi b64_bit_memory_error_information",
-      "dmi b32_bit_memory_error_information",
-      "dmi additional_information",
-      "dmi"
-    ],
-    "power": [
-      "power state",
-      "power history",
-      "system power interval",
-      "monitor power interval",
-      "power level"
-    ],
-    "grub": [
-      "grub module",
-      "grub kernel",
-      "grub image choice",
-      "grub file location",
-      "grub device",
-      "grub config file",
-      "grub color scheme",
-      "grub color pair",
-      "grub color",
-      "grub bootable image",
-      "grub block list"
-    ]
-  },
-  "windows": {
-    "access-control": [
-      "system access control list",
-      "security identifier",
-      "security descriptor",
-      "security database",
-      "security account",
-      "discretionary access control list",
-      "access control list",
-      "access control entry"
-    ],
-    "tasks": [
-      "daily task trigger",
-      "weekly task trigger",
-      "session state change task trigger",
-      "time task trigger",
-      "task trigger type",
-      "task trigger",
-      "task settings",
-      "task repetition pattern",
-      "task registration info",
-      "task principal",
-      "task network settings",
-      "task named value pair",
-      "task idle settings",
-      "task folder",
-      "task definition",
-      "task action type",
-      "task action",
-      "exec task action",
-      "event task trigger",
-      "email task action",
-      "scheduled task",
-      "running task",
-      "registration task trigger",
-      "show message task action",
-      "com handler task action",
-      "boot task trigger",
-      "monthlydow task trigger",
-      "monthly task trigger",
-      "logon task trigger",
-      "idle task trigger"
-    ],
-    "wmi": [
-      "wmi select",
-      "wmi object",
-      "wmi"
-    ],
-    "audit-policy": [
-      "audit policy subcategory",
-      "audit policy information",
-      "audit policy category",
-      "audit policy"
-    ],
-    "registry": [
-      "registry key value type",
-      "registry key value",
-      "registry key",
-      "registry"
-    ],
-    "event-log": [
-      "event log record",
-      "event log event type",
-      "event log"
-    ],
-    "winrt": [
-      "winrt package user information",
-      "winrt package id",
-      "winrt package",
-      "winrt enumeration"
-    ],
-    "metabase": [
-      "metabase value",
-      "metabase user type",
-      "metabase type",
-      "metabase key",
-      "metabase identifier",
-      "metabase"
-    ],
-    "mysql": [
-      "local mssql database"
-    ]
-  },
-  "packages": {
-    "debian": [
-      "debianpkg version",
-      "debianpkg verfile",
-      "debianpkg reverse dependencies",
-      "debianpkg dependency",
-      "debianpackagecache",
-      "debian versioned package",
-      "debian package version with multiplicity",
-      "debian package version revision with multiplicity",
-      "debian package version revision",
-      "debian package version epoch with multiplicity",
-      "debian package version epoch",
-      "debian package version",
-      "debian package upstream version with multiplicity",
-      "debian package upstream version",
-      "debian base package"
-    ],
-    "rpm": [
-      "short rpm package version record with multiplicity",
-      "short rpm package version record",
-      "rpmdatabase",
-      "rpm package version with multiplicity",
-      "rpm package version record with multiplicity",
-      "rpm package version record",
-      "rpm package version",
-      "rpm package release with multiplicity",
-      "rpm package release",
-      "package",
-      "capability"
-    ],
-    "hpux": [
-      "software_depot",
-      "bundle"
-    ]
-  },
-  "osx": {
-    "general": [
-      "country",
-      "preference",
-      "osxvalue",
-      "dictionaryentry",
-      "dictionary",
-      "component",
-      "array",
-      "stage"
-    ],
-    "registry": [
-      "registryroot",
-      "registrynode"
-    ]
-  },
-  "solaris": {
-    "service-management-facility": [
-      "smf value",
-      "smf time",
-      "smf snapshot part",
-      "smf snapshot",
-      "smf service",
-      "smf property group",
-      "smf property",
-      "smf instance",
-      "smf fmri",
-      "smf"
-    ],
-    "image-packaging-system": [
-      "ips version dependency",
-      "ips setting pieces",
-      "ips repo",
-      "ips partial matching fmri",
-      "ips package",
-      "ips image",
-      "ips fmri",
-      "ips component version",
-      "ips build version",
-      "ips branch version",
-      "ips authority info",
-      "version with time"
-    ],
-    "zones": [
-      "zone network interface",
-      "zone"
-    ],
-    "package": [
-      "uuid with multiplicity",
-      "uuid",
-      "pkginfo",
-      "pkgdb",
-      "patch"
-    ]
-  },
-  "aix": {
-    "general": [
-      "fileset version requirement",
-      "fileset version record with multiplicity",
-      "fileset version record",
-      "fileset part",
-      "apar",
-      "kernel_extension",
-      "network_option",
-      "rpc_program",
-      "object repository",
-      "message_catalog_set",
-      "message_catalog",
-      "fileset",
-      "product"
-    ],
-    "object-data-manager": [
-      "odm",
-      "customized_device",
-      "customized_attribute",
-      "predefined_device",
-      "predefined_attribute"
-    ]
-  },
-  "ldap-active-directory": {
-    "general": [
-      "distinguished name component",
-      "distinguished name",
-      "active directory server",
-      "active directory local computer",
-      "active directory local user",
-      "active directory group"
-    ]
-  },
-  "processes": {
-    "processes": [
-      "priority class",
-      "environment variable",
-      "environment",
-      "process"
-    ],
-    "applications": [
-      "bundle",
-      "application",
-      "execution",
-      "application usage summary instance",
-      "application usage summary"
-    ],
-    "services": [
-      "service",
-      "runlevel"
-    ]
-  },
-  "users": {
-    "general": [
-      "user",
-      "logged on user",
-      "local user",
-      "local group member",
-      "local group",
-      "user attribute",
-      "activity history"
-    ]
-  },
-  "files": {
-    "files": [
-      "symlink",
-      "folder",
-      "filesystem object",
-      "filesystem",
-      "file section",
-      "file line",
-      "file content",
-      "file",
-      "fifo file",
-      "device file",
-      "swap",
-      "file version block",
-      "file shortcut",
-      "mode_mask",
-      "mode",
-      "datafork",
-      "resfork",
-      "volume",
-      "file type",
-      "file signature",
-      "enableable_file",
-      "domain"
-    ],
-    "volumes": [
-      "drive",
-      "volume group",
-      "logical volume manager",
-      "logical volume"
-    ]
-  }
-}
+core:
+  boolean:
+    - boolean
+  integer:
+    - integer
+    - integer range
+    - integer set
+    - integer with multiplicity
+  floating-point:
+    - floating point
+    - floating point with multiplicity
+  string:
+    - string
+    - string position
+    - string set
+    - string with multiplicity
+    - substring
+    - utf8 string
+  regular-expression:
+    - regular expression
+    - regular expression match
+  date-and-time:
+    - date
+    - date with multiplicity
+    - day of month
+    - day of month with multiplicity
+    - day of week
+    - day of week with multiplicity
+    - day of year
+    - day of year with multiplicity
+    - month
+    - month and year
+    - month and year with multiplicity
+    - month with multiplicity
+    - number of months
+    - number of months with multiplicity
+    - time
+    - time interval
+    - time interval with multiplicity
+    - time of day
+    - time of day with multiplicity
+    - time of day with time zone
+    - time of day with time zone with multiplicity
+    - time range
+    - time range with multiplicity
+    - time with multiplicity
+    - time zone
+    - time zone with multiplicity
+    - year
+    - year with multiplicity
+  versions:
+    - strverscmp version
+    - version
+    - version with multiplicity
+  other:
+    - bit set
+    - format
+    - rope
+  xml:
+    - xml dom document
+    - xml dom node
+  json:
+    - json key
+    - json value
+  sqlite:
+    - sqlite column
+    - sqlite column type
+    - sqlite database
+    - sqlite row
+    - sqlite statement
+    - sqlite table
+  html:
+    - html
+    - html attribute list
+  special-types:
+    - dummy
+    - dummy type
+    - nothing
+    - undefined
+  introspectors:
+    - binary operator
+    - cast
+    - property
+    - type
+    - unary operator
+  statistical:
+    - exponential projection
+    - linear projection
+    - rate
+    - rate with multiplicity
+    - statistic range
+    - statistical bin
+client:
+  configuration:
+    - administrative rights
+    - client
+    - client process owner
+    - client_cryptography
+    - cryptography
+    - current relay
+    - download server
+    - download storage folder
+    - evaluation cycle
+    - license
+    - module
+    - registration server
+    - root server
+    - selected server
+    - setting
+    - x509 certificate
+  content:
+    - action
+    - action lock state
+    - analysis
+    - fixlet
+    - fixlet_header
+    - manual group
+    - site
+    - site group
+    - site profile
+    - site profile variable
+    - site version list
+    - site version list with multiplicity
+network:
+  ip-address:
+    - ipv4 address
+    - ipv4 address with multiplicity
+    - ipv4 route
+    - ipv4 routing table
+    - ipv4or6 address
+    - ipv4or6 address with multiplicity
+    - ipv6 address
+    - ipv6 address with multiplicity
+  adapters:
+    - network
+    - network adapter
+    - network adapter interface
+    - network address list
+    - network interface
+    - network ip interface
+    - network link interface
+    - wifi
+  sockets:
+    - socket
+    - socket file
+    - tcp state
+  general:
+    - connection
+    - connection status
+    - ip version
+    - media type
+    - network share
+    - route
+    - routing table
+  firewall:
+    - firewall
+    - firewall action
+    - firewall authorized application
+    - firewall icmp settings
+    - firewall local policy modify state
+    - firewall open port
+    - firewall policy
+    - firewall profile
+    - firewall profile type
+    - firewall remote admin settings
+    - firewall rule
+    - firewall scope
+    - firewall service
+    - firewall service restriction
+    - firewall service type
+    - internet connection firewall
+    - internet protocol
+    - port mapping
+system:
+  operating-system:
+    - operating system
+    - operating system product type
+    - operating system suite mask
+    - service pack
+    - service pack with multiplicity
+    - technology level
+    - technology level with multiplicity
+  memory:
+    - ram
+  general:
+    - computer
+    - language
+    - primary language
+  processor:
+    - cpupackage
+    - hertz
+    - hertz with multiplicity
+    - processor
+  bios:
+    - bios
+    - smbios
+    - smbios structure
+    - smbios value
+  devices:
+    - active device
+    - scsibus
+    - scsidevice
+    - usb
+  direct-media-interface:
+    - dmi
+    - dmi additional_information
+    - dmi b32_bit_memory_error_information
+    - dmi b64_bit_memory_error_information
+    - dmi base_board_information
+    - dmi bios_information
+    - dmi bios_language_information
+    - dmi built_in_pointing_device
+    - dmi cache_information
+    - dmi cooling_device
+    - dmi electrical_current_probe
+    - dmi end_of_table
+    - dmi group_associations
+    - dmi hardware_security
+    - dmi inactive
+    - dmi ipmi_device_information
+    - dmi management_device
+    - dmi management_device_component
+    - dmi management_device_threshold_data
+    - dmi memory_array_mapped_address
+    - dmi memory_channel
+    - dmi memory_controller_information
+    - dmi memory_device
+    - dmi memory_device_mapped_address
+    - dmi memory_module_information
+    - dmi oem_strings
+    - dmi on_board_devices_information
+    - dmi onboard_devices_extended_information
+    - dmi out_of_band_remote_access
+    - dmi physical_memory_array
+    - dmi port_connector_information
+    - dmi portable_battery
+    - dmi processor_information
+    - dmi system_boot_information
+    - dmi system_configuration_option
+    - dmi system_enclosure_or_chassis
+    - dmi system_information
+    - dmi system_power_controls
+    - dmi system_power_supply
+    - dmi system_reset
+    - dmi system_slots
+    - dmi temperature_probe
+    - dmi voltage_probe
+  power:
+    - monitor power interval
+    - power history
+    - power level
+    - power state
+    - system power interval
+ldap:
+  general:
+    - active directory group
+    - active directory local computer
+    - active directory local user
+    - active directory server
+    - distinguished name
+    - distinguished name component
+packages:
+  debian:
+    - debian base package
+    - debian package upstream version
+    - debian package upstream version with multiplicity
+    - debian package version
+    - debian package version epoch
+    - debian package version epoch with multiplicity
+    - debian package version revision
+    - debian package version revision with multiplicity
+    - debian package version with multiplicity
+    - debian versioned package
+    - debianpackagecache
+    - debianpkg dependency
+    - debianpkg reverse dependencies
+    - debianpkg verfile
+    - debianpkg version
+  rpm:
+    - capability
+    - package
+    - rpm package release
+    - rpm package release with multiplicity
+    - rpm package version
+    - rpm package version record
+    - rpm package version record with multiplicity
+    - rpm package version with multiplicity
+    - rpmdatabase
+    - short rpm package version record
+    - short rpm package version record with multiplicity
+  hpux:
+    - bundle
+    - software_depot
+linux:
+  grub:
+    - grub block list
+    - grub bootable image
+    - grub color
+    - grub color pair
+    - grub color scheme
+    - grub config file
+    - grub device
+    - grub file location
+    - grub image choice
+    - grub kernel
+    - grub module
+windows:
+  access-control:
+    - access control entry
+    - access control list
+    - discretionary access control list
+    - security account
+    - security database
+    - security descriptor
+    - security identifier
+    - system access control list
+  tasks:
+    - boot task trigger
+    - com handler task action
+    - daily task trigger
+    - email task action
+    - event task trigger
+    - exec task action
+    - idle task trigger
+    - logon task trigger
+    - monthly task trigger
+    - monthlydow task trigger
+    - registration task trigger
+    - running task
+    - scheduled task
+    - session state change task trigger
+    - show message task action
+    - task action
+    - task action type
+    - task definition
+    - task folder
+    - task idle settings
+    - task named value pair
+    - task network settings
+    - task principal
+    - task registration info
+    - task repetition pattern
+    - task settings
+    - task trigger
+    - task trigger type
+    - time task trigger
+    - weekly task trigger
+  wmi:
+    - wmi
+    - wmi object
+    - wmi select
+  audit-policy:
+    - audit policy
+    - audit policy category
+    - audit policy information
+    - audit policy subcategory
+  registry:
+    - registry
+    - registry key
+    - registry key value
+    - registry key value type
+  event-log:
+    - event log
+    - event log event type
+    - event log record
+  winrt:
+    - winrt enumeration
+    - winrt package
+    - winrt package id
+    - winrt package user information
+  metabase:
+    - metabase
+    - metabase identifier
+    - metabase key
+    - metabase type
+    - metabase user type
+    - metabase value
+  mysql:
+    - local mssql database
+osx:
+  general:
+    - array
+    - component
+    - country
+    - dictionary
+    - dictionaryentry
+    - osxvalue
+    - preference
+    - stage
+  registry:
+    - registrynode
+    - registryroot
+solaris:
+  service-management-facility:
+    - smf
+    - smf fmri
+    - smf instance
+    - smf property
+    - smf property group
+    - smf service
+    - smf snapshot
+    - smf snapshot part
+    - smf time
+    - smf value
+  image-packaging-system:
+    - ips authority info
+    - ips branch version
+    - ips build version
+    - ips component version
+    - ips fmri
+    - ips image
+    - ips package
+    - ips partial matching fmri
+    - ips repo
+    - ips setting pieces
+    - ips version dependency
+    - version with time
+  zones:
+    - zone
+    - zone network interface
+  package:
+    - patch
+    - pkgdb
+    - pkginfo
+    - uuid
+    - uuid with multiplicity
+aix:
+  general:
+    - apar
+    - fileset
+    - fileset part
+    - fileset version record
+    - fileset version record with multiplicity
+    - fileset version requirement
+    - kernel_extension
+    - message_catalog
+    - message_catalog_set
+    - network_option
+    - object repository
+    - product
+    - rpc_program
+  object-data-manager:
+    - customized_attribute
+    - customized_device
+    - odm
+    - predefined_attribute
+    - predefined_device
+processes:
+  processes:
+    - environment
+    - environment variable
+    - priority class
+    - process
+  applications:
+    - application
+    - application usage summary
+    - application usage summary instance
+    - bundle
+    - execution
+  services:
+    - runlevel
+    - service
+users:
+  general:
+    - activity history
+    - local group
+    - local group member
+    - local user
+    - logged on user
+    - user
+    - user attribute
+files:
+  files:
+    - datafork
+    - device file
+    - domain
+    - enableable_file
+    - fifo file
+    - file
+    - file content
+    - file line
+    - file section
+    - file shortcut
+    - file signature
+    - file type
+    - file version block
+    - filesystem
+    - filesystem object
+    - folder
+    - mode
+    - mode_mask
+    - resfork
+    - swap
+    - symlink
+    - volume
+  volumes:
+    - drive
+    - logical volume
+    - logical volume manager
+    - volume group
+session:
+  general:
+    - bes comment
+    - bes deployment option
+    - bes product
+    - bes server
+    - bes wakeonlan status
+    - fixlet count pair
+    - historical computer count
+    - historical fixlet count
+    - mime field
+  wizards:
+    - bes wizard
+    - bes wizard set
+    - bes wizard variable
+    - bes wizard with multiplicity
+  users:
+    - bes user
+    - bes user set
+    - bes user with multiplicity
+  unmanaged-assets:
+    - bes unmanagedasset
+    - bes unmanagedasset field
+    - bes unmanagedasset set
+    - bes unmanagedasset with multiplicity
+  sites:
+    - bes site
+    - bes site set
+    - bes site with multiplicity
+  computers:
+    - bes client setting
+    - bes computer
+    - bes computer group
+    - bes computer group set
+    - bes computer group with multiplicity
+    - bes computer set
+    - bes computer with multiplicity
+    - bes property
+    - bes property result
+    - bes property set
+    - bes property with multiplicity
+  content:
+    - bes activation
+    - bes baseline component
+    - bes baseline component group
+    - bes filter
+    - bes filter set
+    - bes filter with multiplicity
+    - bes fixlet
+    - bes fixlet action
+    - bes fixlet field
+    - bes fixlet field value
+    - bes fixlet result
+    - bes fixlet set
+    - bes fixlet with multiplicity
+  domains:
+    - bes domain
+    - bes domain set
+    - bes domain with multiplicity
+  actions:
+    - bes action
+    - bes action parameter
+    - bes action result
+    - bes action set
+    - bes action status
+    - bes action with multiplicity
+  files:
+    - bes site file
+    - bes site file set
+    - bes site file with multiplicity
+  roles:
+    - bes role
+    - bes role set
+    - bes role with multiplicity
+  ldap:
+    - bes ldap directory
+    - bes ldap directory server
+    - bes ldap directory set
+    - bes ldap directory with multiplicity

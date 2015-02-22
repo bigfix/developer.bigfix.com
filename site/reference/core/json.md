@@ -2,43 +2,33 @@
 title: json
 ---
 
-{% type json value%}
+{% type json key %}
 
 No documentation exists for this type.
 
-#### Casts
+#### Properties of json key
 
-{% property <json value> as string %}
-
-No documentation exists for this cast.
-
-{% property <json value> as integer %}
-
-No documentation exists for this cast.
-
-{% property <json value> as float %}
-
-No documentation exists for this cast.
-
-{% property <json value> as boolean %}
-
-No documentation exists for this cast.
-
-#### Properties
-
-{% property type of <json value> %}
+{% property name of <json key> %}
 
 No documentation exists for this property.
 
-{% property path <string> of <json value> %}
+{% property value of <json key> %}
 
 No documentation exists for this property.
 
-{% property key of <json value> %}
+#### Casts of json key
 
-No documentation exists for this property.
+{% cast <json key> as string %}
 
-{% property key <string> of <json value> %}
+No documentation exists for this cast.
+
+{% type json value %}
+
+No documentation exists for this type.
+
+#### Properties of json value
+
+{% property element <integer> of <json value> %}
 
 No documentation exists for this property.
 
@@ -46,27 +36,37 @@ No documentation exists for this property.
 
 No documentation exists for this property.
 
-{% property element <integer> of <json value> %}
+{% property key <string> of <json value> %}
 
 No documentation exists for this property.
 
-{% type json key%}
+{% property key of <json value> %}
 
-No documentation exists for this type.
+No documentation exists for this property.
 
-#### Casts
+{% property path <string> of <json value> %}
 
-{% property <json key> as string %}
+No documentation exists for this property.
+
+{% property type of <json value> %}
+
+No documentation exists for this property.
+
+#### Casts of json value
+
+{% cast <json value> as boolean %}
 
 No documentation exists for this cast.
 
-#### Properties
+{% cast <json value> as float %}
 
-{% property value of <json key> %}
+No documentation exists for this cast.
 
-No documentation exists for this property.
+{% cast <json value> as integer %}
 
-{% property name of <json key> %}
+No documentation exists for this cast.
 
-No documentation exists for this property.
+{% cast <json value> as string %}
+
+No documentation exists for this cast.
 

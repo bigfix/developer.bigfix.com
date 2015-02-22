@@ -1,3 +1,5 @@
+require_relative 'render_include'
+
 module Jekyll
   class ExampleBlock < Liquid::Block
     def initialize(name, params, tokens)
@@ -21,15 +23,8 @@ module Jekyll
     end
 
     def render(context)
-      dir = context.registers[:site].in_source_dir('_includes')
-      file = File.join(dir, 'example.html')
-
-      partial = Liquid::Template.parse(File.read(file))
-
-      context.stack do
-        context['include'] = { 'example' => @example }
-        partial.render!(context)
-      end
+      params = { 'example' => @example }
+      render_include context, 'example.html', params
     end
   end
 end

@@ -15,6 +15,20 @@ apt-get install -y ruby1.9.1-dev build-essential
 gem install jekyll --no-ri --no-rdoc
 gem install japr --no-ri --no-rdoc
 
-# Install the jekyll-serve script
-cp /vagrant/scripts/jekyll-serve /home/vagrant/jekyll-serve
-chmod +x /home/vagrant/jekyll-serve
+# Get and configure nginx
+apt-get install -y nginx
+
+cat > /etc/nginx/sites-enabled/jekyll <<EOF
+server {
+  listen 4000 default_server;
+  server_name localhost;
+
+  root /home/vagrant/site;
+
+  location / {
+    try_files \$uri \$uri/ =404;
+  }
+}
+EOF
+
+nginx -s reload

@@ -1,3 +1,5 @@
+require_relative 'render_include'
+
 class Type < Liquid::Tag
   def initialize(tag_name, type, tokens)
     @type = type.strip
@@ -5,15 +7,7 @@ class Type < Liquid::Tag
   end
 
   def render(context)
-    dir = context.registers[:site].in_source_dir('_includes')
-    file = File.join(dir, 'type.html')
-
-    partial = Liquid::Template.parse(File.read(file))
-
-    context.stack do
-      context['include'] = { 'type' => @type }
-      partial.render!(context)
-    end
+    render_include context, 'type.html', { 'type' => @type }
   end
 end
 

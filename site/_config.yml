@@ -1,8 +1,7 @@
 title: relevance.io
-description: >
-  Learn about the BigFix Relevance Language.
-baseurl: ""
-url: "https://relevance.io"
+description: Learn about the BigFix Relevance Language
+baseurl: ''
+url: 'https://relevance.io'
 markdown: kramdown
 kramdown:
   input: GFM
