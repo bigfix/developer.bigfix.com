@@ -18,26 +18,6 @@ var language = JSON.parse(fs.readFileSync(process.argv[3]));
 var docs = JSON.parse(fs.readFileSync(process.argv[4]));
 
 function makeFileName(name) {
-  var replacements = {
-    '\\-': ' minus ',
-    ' != ': ' not equal ',
-    ' >= ': ' greater equal ',
-    ' <= ': ' less equal ',
-    ' < ': ' less ',
-    ' > ': ' greater ',
-    ' = ': ' equal ',
-    ' \\+ ': ' plus ',
-    ' \\* ': ' times ',
-    ' / ': ' divide ',
-    ' & ': ' concat ',
-    '[<>(),]': ' ',
-    '\\s+': ' '
-  };
-
-  Object.keys(replacements).forEach(function(key) {
-    name = name.replace(new RegExp(key, 'g'), replacements[key]);
-  });
-
   return name.trim().replace(/ /g, '-');
 }
 
