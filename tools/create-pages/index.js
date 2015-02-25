@@ -112,7 +112,7 @@ function makeProperties(properties) {
 }
 
 function makeTypes(properties) {
-  var referenceDir = path.join(siteDir, 'reference');
+  var typesDir = path.join(siteDir, 'reference', 'types');
 
   Object.keys(language.types).forEach(function(type) {
     var entries = ['# ' + type + '\n\n' + docText(docs.types[type])];
@@ -128,7 +128,7 @@ function makeTypes(properties) {
     entries = entries.concat(makeProperties(castsOfType));
     
     var text = entries.join('\n\n') + '\n';
-    fs.writeFileSync(path.join(referenceDir, makeFileName(type) + '.md'), text);
+    fs.writeFileSync(path.join(typesDir, makeFileName(type) + '.md'), text);
   });
 }
 
@@ -178,6 +178,7 @@ function makeOperators(properties) {
 
 rimraf.sync(path.join(siteDir, 'reference'));
 fs.mkdirSync(path.join(siteDir, 'reference'));
+fs.mkdirSync(path.join(siteDir, 'reference', 'types'));
 
 var properties = [];
 Object.keys(language.properties).forEach(function(key) {
