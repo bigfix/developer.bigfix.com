@@ -61,14 +61,6 @@ function isCastOfType(property, type) {
   return property.type === 'cast' && property.argType === type;
 }
 
-function escapeKey(key) {
-  return key;
-    // .replace(/<([a-z])/g, '[$1')
-    // .replace(/([a-z])>/g, '$1]')
-    // .replace(/\( /g, '')
-    // .replace(/ \)/g, '');
-}
-
 function docText(originalText) {
   if (originalText) {
     return escape(originalText).trim();
@@ -81,7 +73,7 @@ function makeProperties(properties) {
   var entries = [];
 
   properties.forEach(function(property) {
-    var text = '# ' + escapeKey(property.key) + '\n\n' +
+    var text = '# ' + property.key + '\n\n' +
       docText(docs.properties[property.key]);
 
     entries.push(text);
@@ -133,7 +125,7 @@ function makeOperators(properties) {
   });
 
   binaryOperators.forEach(function(property) {
-    var text = '# ' + escapeKey(property.key) + '\n\n' +
+    var text = '# ' + property.key + '\n\n' +
       docText(docs.properties[property.key]);
 
     entries.push(text);
@@ -144,7 +136,7 @@ function makeOperators(properties) {
   });
 
   unaryOperators.forEach(function(property) {
-    var text = '# ' + escapeKey(property.key) + '\n\n' +
+    var text = '# ' + property.key + '\n\n' +
       docText(docs.properties[property.key]);
 
     entries.push(text);
