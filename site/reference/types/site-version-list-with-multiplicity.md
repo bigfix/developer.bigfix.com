@@ -2,6 +2,6 @@
 
 The &lt;site version list with multiplicity&gt; inspectors deal with site-version-list arrays, allowing you to extract unique site-version-list values and count them.
 
-# multiplicity of [site version list with multiplicity]
+# multiplicity of <site version list with multiplicity>
 
 Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;site version list&gt; types.

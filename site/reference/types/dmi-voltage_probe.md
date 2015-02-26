@@ -2,42 +2,42 @@
 
 No documentation exists.
 
-# accuracy of [dmi voltage_probe]
+# accuracy of <dmi voltage_probe>
 
 No documentation exists.
 
-# description of [dmi voltage_probe]
+# description of <dmi voltage_probe>
 
 No documentation exists.
 
-# length of [dmi voltage_probe]
+# length of <dmi voltage_probe>
 
 No documentation exists.
 
-# location_and_status of [dmi voltage_probe]
+# location_and_status of <dmi voltage_probe>
 
 No documentation exists.
 
-# maximum_value of [dmi voltage_probe]
+# maximum_value of <dmi voltage_probe>
 
 No documentation exists.
 
-# minimum_value of [dmi voltage_probe]
+# minimum_value of <dmi voltage_probe>
 
 No documentation exists.
 
-# nominal_value of [dmi voltage_probe]
+# nominal_value of <dmi voltage_probe>
 
 No documentation exists.
 
-# oem_defined of [dmi voltage_probe]
+# oem_defined of <dmi voltage_probe>
 
 No documentation exists.
 
-# resolution of [dmi voltage_probe]
+# resolution of <dmi voltage_probe>
 
 No documentation exists.
 
-# tolerance of [dmi voltage_probe]
+# tolerance of <dmi voltage_probe>
 
 No documentation exists.

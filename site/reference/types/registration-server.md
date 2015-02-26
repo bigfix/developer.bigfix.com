@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of [registration server]
+# name of <registration server>
 
 No documentation exists.
 
-# now of [registration server]
+# now of <registration server>
 
 No documentation exists.
 
-# version of [registration server]
+# version of <registration server>
 
 No documentation exists.

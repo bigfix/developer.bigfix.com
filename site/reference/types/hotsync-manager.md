@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# hotsync in progress of [hotsync manager]
+# hotsync in progress of <hotsync manager>
 
 No documentation exists.
 
-# user [integer] of [hotsync manager]
+# user <integer> of <hotsync manager>
 
 No documentation exists.
 
-# user [string] of [hotsync manager]
+# user <string> of <hotsync manager>
 
 No documentation exists.
 
-# user of [hotsync manager]
+# user of <hotsync manager>
 
 No documentation exists.

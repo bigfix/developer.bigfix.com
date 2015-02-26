@@ -62,11 +62,11 @@ function isCastOfType(property, type) {
 }
 
 function escapeKey(key) {
-  return key
-    .replace(/<([a-z])/g, '[$1')
-    .replace(/([a-z])>/g, '$1]')
-    .replace(/\( /g, '')
-    .replace(/ \)/g, '');
+  return key;
+    // .replace(/<([a-z])/g, '[$1')
+    // .replace(/([a-z])>/g, '$1]')
+    // .replace(/\( /g, '')
+    // .replace(/ \)/g, '');
 }
 
 function docText(originalText) {

@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# length of [dmi inactive]
+# length of <dmi inactive>
 
 No documentation exists.

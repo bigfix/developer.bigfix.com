@@ -2,46 +2,46 @@
 
 No documentation exists.
 
-# branch version of [ips fmri]
+# branch version of <ips fmri>
 
 No documentation exists.
 
-# build version of [ips fmri]
+# build version of <ips fmri>
 
 No documentation exists.
 
-# category of [ips fmri]
+# category of <ips fmri>
 
 No documentation exists.
 
-# component version of [ips fmri]
+# component version of <ips fmri>
 
 No documentation exists.
 
-# fmri of [ips fmri]
+# fmri of <ips fmri>
 
 No documentation exists.
 
-# full name of [ips fmri]
+# full name of <ips fmri>
 
 No documentation exists.
 
-# name of [ips fmri]
+# name of <ips fmri>
 
 No documentation exists.
 
-# publisher of [ips fmri]
+# publisher of <ips fmri>
 
 No documentation exists.
 
-# time stamp of [ips fmri]
+# time stamp of <ips fmri>
 
 No documentation exists.
 
-# version of [ips fmri]
+# version of <ips fmri>
 
 No documentation exists.
 
-# version with time of [ips fmri]
+# version with time of <ips fmri>
 
 No documentation exists.

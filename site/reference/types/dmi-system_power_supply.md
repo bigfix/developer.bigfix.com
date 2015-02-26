@@ -2,58 +2,58 @@
 
 No documentation exists.
 
-# asset_tag_number of [dmi system_power_supply]
+# asset_tag_number of <dmi system_power_supply>
 
 No documentation exists.
 
-# cooling_device_handle of [dmi system_power_supply]
+# cooling_device_handle of <dmi system_power_supply>
 
 No documentation exists.
 
-# device_name of [dmi system_power_supply]
+# device_name of <dmi system_power_supply>
 
 No documentation exists.
 
-# input_current_probe_handle of [dmi system_power_supply]
+# input_current_probe_handle of <dmi system_power_supply>
 
 No documentation exists.
 
-# input_voltage_probe_handle of [dmi system_power_supply]
+# input_voltage_probe_handle of <dmi system_power_supply>
 
 No documentation exists.
 
-# length of [dmi system_power_supply]
+# length of <dmi system_power_supply>
 
 No documentation exists.
 
-# location of [dmi system_power_supply]
+# location of <dmi system_power_supply>
 
 No documentation exists.
 
-# manufacturer of [dmi system_power_supply]
+# manufacturer of <dmi system_power_supply>
 
 No documentation exists.
 
-# max_power_capacity of [dmi system_power_supply]
+# max_power_capacity of <dmi system_power_supply>
 
 No documentation exists.
 
-# model_part_number of [dmi system_power_supply]
+# model_part_number of <dmi system_power_supply>
 
 No documentation exists.
 
-# power_supply_characteristics of [dmi system_power_supply]
+# power_supply_characteristics of <dmi system_power_supply>
 
 No documentation exists.
 
-# power_unit_group of [dmi system_power_supply]
+# power_unit_group of <dmi system_power_supply>
 
 No documentation exists.
 
-# revision_level of [dmi system_power_supply]
+# revision_level of <dmi system_power_supply>
 
 No documentation exists.
 
-# serial_number of [dmi system_power_supply]
+# serial_number of <dmi system_power_supply>
 
 No documentation exists.

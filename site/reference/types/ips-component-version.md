@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# [ips component version] as string
+# <ips component version> as string
 
 No documentation exists.

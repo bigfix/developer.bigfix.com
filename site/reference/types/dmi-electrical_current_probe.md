@@ -2,42 +2,42 @@
 
 No documentation exists.
 
-# accuracy of [dmi electrical_current_probe]
+# accuracy of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# description of [dmi electrical_current_probe]
+# description of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# length of [dmi electrical_current_probe]
+# length of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# location_and_status of [dmi electrical_current_probe]
+# location_and_status of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# maximum_value of [dmi electrical_current_probe]
+# maximum_value of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# minimum_value of [dmi electrical_current_probe]
+# minimum_value of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# nominal_value of [dmi electrical_current_probe]
+# nominal_value of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# oem_defined of [dmi electrical_current_probe]
+# oem_defined of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# resolution of [dmi electrical_current_probe]
+# resolution of <dmi electrical_current_probe>
 
 No documentation exists.
 
-# tolerance of [dmi electrical_current_probe]
+# tolerance of <dmi electrical_current_probe>
 
 No documentation exists.

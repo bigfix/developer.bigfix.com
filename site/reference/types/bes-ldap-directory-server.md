@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# host of [bes ldap directory server]
+# host of <bes ldap directory server>
 
 No documentation exists.
 
-# port of [bes ldap directory server]
+# port of <bes ldap directory server>
 
 No documentation exists.
 
-# priority of [bes ldap directory server]
+# priority of <bes ldap directory server>
 
 No documentation exists.

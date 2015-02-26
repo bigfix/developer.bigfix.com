@@ -2,14 +2,14 @@
 
 The &lt;historical computer count&gt; inspectors provide information about historical computer count objects.
 
-# count of [historical computer count]
+# count of <historical computer count>
 
 Returns the count when the specified historical computer count was last archived.
 
-# database id of [historical computer count]
+# database id of <historical computer count>
 
 In the Web Reports environment, this inspector returns the numeric ID of the database containing the specified historical computer count.
 
-# time of [historical computer count]
+# time of <historical computer count>
 
 Returns the time when the specified count was archived.

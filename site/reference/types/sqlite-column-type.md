@@ -2,34 +2,34 @@
 
 No documentation exists.
 
-# blob of [sqlite column type]
+# blob of <sqlite column type>
 
 No documentation exists.
 
-# float of [sqlite column type]
+# float of <sqlite column type>
 
 No documentation exists.
 
-# integer of [sqlite column type]
+# integer of <sqlite column type>
 
 No documentation exists.
 
-# name of [sqlite column type]
+# name of <sqlite column type>
 
 No documentation exists.
 
-# null of [sqlite column type]
+# null of <sqlite column type>
 
 No documentation exists.
 
-# text of [sqlite column type]
+# text of <sqlite column type>
 
 No documentation exists.
 
-# type of [sqlite column type]
+# type of <sqlite column type>
 
 No documentation exists.
 
-# [sqlite column type] as string
+# <sqlite column type> as string
 
 No documentation exists.

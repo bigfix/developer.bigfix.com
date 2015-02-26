@@ -2,26 +2,26 @@
 
 No documentation exists.
 
-# external_connector_type of [dmi port_connector_information]
+# external_connector_type of <dmi port_connector_information>
 
 No documentation exists.
 
-# external_reference_designator of [dmi port_connector_information]
+# external_reference_designator of <dmi port_connector_information>
 
 No documentation exists.
 
-# internal_connector_type of [dmi port_connector_information]
+# internal_connector_type of <dmi port_connector_information>
 
 No documentation exists.
 
-# internal_reference_designator of [dmi port_connector_information]
+# internal_reference_designator of <dmi port_connector_information>
 
 No documentation exists.
 
-# length of [dmi port_connector_information]
+# length of <dmi port_connector_information>
 
 No documentation exists.
 
-# port_type of [dmi port_connector_information]
+# port_type of <dmi port_connector_information>
 
 No documentation exists.

@@ -2,10 +2,10 @@
 
 The &lt;com handler task action&gt; inspectors deal with Windows COM Handler Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The COM Handler Action causes a handler to be fired. For more information, see COM Handler Action at the MSDN site.
 
-# class id of [com handler task action]
+# class id of <com handler task action>
 
 Returns a string containing the class ID of the specified &#39;com handler task action&#39;, corresponding to a task that activates a COM handler.
 
-# data of [com handler task action]
+# data of <com handler task action>
 
 Returns a string containing the data of the specified &#39;com handler task action&#39;, corresponding to a task that activates a COM handler.

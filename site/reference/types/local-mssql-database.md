@@ -2,22 +2,22 @@
 
 The &lt;local mssql database&gt; inspectors retrieve the properties of the MS SQL databases on the local machine.
 
-# audit level of [local mssql database]
+# audit level of <local mssql database>
 
 Returns the integer audit level of the MSSQL database.
 
-# has blank sa password of [local mssql database]
+# has blank sa password of <local mssql database>
 
 Returns `True` if the MSSQL database sa account has a blank password.
 
-# instance name of [local mssql database]
+# instance name of <local mssql database>
 
 Returns the name of the MSSQL database.
 
-# login mode of [local mssql database]
+# login mode of <local mssql database>
 
 Returns the login mode of the MSSQL database.
 
-# running of [local mssql database]
+# running of <local mssql database>
 
 Returns a boolean indicating if the MSSQL database is running.

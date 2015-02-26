@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# length of [dmi system_boot_information]
+# length of <dmi system_boot_information>
 
 No documentation exists.
 
-# reserved of [dmi system_boot_information]
+# reserved of <dmi system_boot_information>
 
 No documentation exists.

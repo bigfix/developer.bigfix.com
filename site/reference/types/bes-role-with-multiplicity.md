@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# multiplicity of [bes role with multiplicity]
+# multiplicity of <bes role with multiplicity>
 
 No documentation exists.

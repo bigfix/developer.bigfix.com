@@ -2,22 +2,22 @@
 
 No documentation exists.
 
-# address of [dmi management_device]
+# address of <dmi management_device>
 
 No documentation exists.
 
-# address_type of [dmi management_device]
+# address_type of <dmi management_device>
 
 No documentation exists.
 
-# description of [dmi management_device]
+# description of <dmi management_device>
 
 No documentation exists.
 
-# length of [dmi management_device]
+# length of <dmi management_device>
 
 No documentation exists.
 
-# type of [dmi management_device]
+# type of <dmi management_device>
 
 No documentation exists.

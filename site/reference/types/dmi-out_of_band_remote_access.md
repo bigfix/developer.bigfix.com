@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# connections of [dmi out_of_band_remote_access]
+# connections of <dmi out_of_band_remote_access>
 
 No documentation exists.
 
-# length of [dmi out_of_band_remote_access]
+# length of <dmi out_of_band_remote_access>
 
 No documentation exists.
 
-# manufacturer_name of [dmi out_of_band_remote_access]
+# manufacturer_name of <dmi out_of_band_remote_access>
 
 No documentation exists.

@@ -34,11 +34,11 @@ No documentation exists.
 
 Returns a power state constant signifying that the client system is active.
 
-# administrator <bes computer, bes user>
+# administrator <( bes computer, bes user )>
 
 Returns `True` if the specified user is an administrator of the given computers.
 
-# administrator <bes user, bes computer>
+# administrator <( bes user, bes computer )>
 
 Returns `True` if the specified user is an administrator of the given computers.
 
@@ -1002,23 +1002,23 @@ Returns a time interval corresponding to 1 hour.
 
 Creates a horizontal line tag &lt;hr/&gt;.
 
-# html tag <string, html attribute list, html>
-
-Returns an HTML snippet enclosed in a tag specified by the string, modified by the html attribute list and bracketing the html argument.
-
-# html tag <string, html attribute list, string>
-
-Returns an HTML snippet enclosed in a tag specified by the first string, modified by the html attribute list and bracketing the second string argument.
-
-# html tag <string, html attribute list>
-
-Returns an HTML snippet containing a HTML attribute list enclosed in an html tag specified by the string.
-
-# html tag <string, html>
+# html tag <( string, html )>
 
 Returns an HTML snippet containing the specified html enclosed in an html tag specified by string.
 
-# html tag <string, string>
+# html tag <( string, html attribute list )>
+
+Returns an HTML snippet containing a HTML attribute list enclosed in an html tag specified by the string.
+
+# html tag <( string, html attribute list, html )>
+
+Returns an HTML snippet enclosed in a tag specified by the string, modified by the html attribute list and bracketing the html argument.
+
+# html tag <( string, html attribute list, string )>
+
+Returns an HTML snippet enclosed in a tag specified by the first string, modified by the html attribute list and bracketing the second string argument.
+
+# html tag <( string, string )>
 
 Returns an HTML snippet containing the second string enclosed in an html tag specified by the first string.
 
@@ -1070,13 +1070,13 @@ Returns a value corresponding to the NET_FW_MODIFY_STATE enumerated type, which 
 
 Returns an object corresponding to an information event -- An informational event which is generally related to a successful action.
 
-# integer in <integer, integer, integer>
-
-Returns a list of the integers contained between the endpoints (inclusive) specified by the first two integers, with a step size specified by the third integer.
-
-# integer in <integer, integer>
+# integer in <( integer, integer )>
 
 Returns a list of the integers contained between the endpoints (inclusive). The order is preserved, from least to greatest or vice-versa.
+
+# integer in <( integer, integer, integer )>
+
+Returns a list of the integers contained between the endpoints (inclusive) specified by the first two integers, with a step size specified by the third integer.
 
 # interactive group
 
@@ -1578,7 +1578,7 @@ Retrieves the enumerated variable corresponding to private profile type. For mor
 
 Returns the private framework folder of the system domain
 
-# private variable <string, string>
+# private variable <( string, string )>
 
 This inspector returns a string containing the dashboard datastore private variable corresponding to the dashboard ID and name provided in the first and second items in the tuple.
 
@@ -1662,11 +1662,11 @@ Returns a registry object. Note: On a Macintosh, this returns a &lt;dummy type&g
 
 Returns a service object for the relay component of BES. Note: On a Macintosh, this returns &lt;nothing&gt;.
 
-# relevant <bes computer, bes fixlet>
+# relevant <( bes computer, bes fixlet )>
 
 Returns `True` if the given Fixlet message is relevant on the specified computer.
 
-# relevant <bes fixlet, bes computer>
+# relevant <( bes fixlet, bes computer )>
 
 Returns `True` if the given Fixlet message is relevant on the specified computer.
 
@@ -1678,27 +1678,27 @@ Returns the remote desktop firewall service type, corresponding to the Microsoft
 
 Refers to the group of users who log on using an RDP connection.
 
-# result <bes action, bes computer>
+# result <( bes action, bes computer )>
 
 Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
 
-# result <bes computer, bes action>
+# result <( bes computer, bes action )>
 
 Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
 
-# result <bes computer, bes fixlet>
+# result <( bes computer, bes fixlet )>
 
 Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&gt; of &lt;bes computer&gt;.
 
-# result <bes computer, bes property>
+# result <( bes computer, bes property )>
 
 Returns the result of the specified BES property and computer.
 
-# result <bes fixlet, bes computer>
+# result <( bes fixlet, bes computer )>
 
 Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&gt; of &lt;bes computer&gt;.
 
-# result <bes property, bes computer>
+# result <( bes property, bes computer )>
 
 Returns the result of the specified BES property and computer.
 
@@ -1806,7 +1806,7 @@ Returns the shared folder of the system domain
 
 Returns the shared libraries folder of the system domain
 
-# shared variable <string, string>
+# shared variable <( string, string )>
 
 This inspector returns strings containing the  variables shared across console users for the given dashboard ID and name provided in the first and second items in the tuple.
 
@@ -1862,11 +1862,11 @@ No documentation exists.
 
 Returns the startup items folder of the system domain
 
-# subscribed <bes computer, bes site>
+# subscribed <( bes computer, bes site )>
 
 Returns `True` if the given computer is subscribed to the given BES site.
 
-# subscribed <bes site, bes computer>
+# subscribed <( bes site, bes computer )>
 
 Returns `True` if the given computer is subscribed to the given BES site.
 

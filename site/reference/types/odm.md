@@ -2,34 +2,34 @@
 
 No documentation exists.
 
-# customized attribute [string] of [odm]
+# customized attribute <string> of <odm>
 
 No documentation exists.
 
-# customized attribute of [odm]
+# customized attribute of <odm>
 
 No documentation exists.
 
-# customized device [string] of [odm]
+# customized device <string> of <odm>
 
 No documentation exists.
 
-# customized device of [odm]
+# customized device of <odm>
 
 No documentation exists.
 
-# predefined attribute [string] of [odm]
+# predefined attribute <string> of <odm>
 
 No documentation exists.
 
-# predefined attribute of [odm]
+# predefined attribute of <odm>
 
 No documentation exists.
 
-# predefined device [string] of [odm]
+# predefined device <string> of <odm>
 
 No documentation exists.
 
-# predefined device of [odm]
+# predefined device of <odm>
 
 No documentation exists.

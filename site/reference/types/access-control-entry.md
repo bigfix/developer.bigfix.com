@@ -2,182 +2,182 @@
 
 An Access Control Entity, or ACE, is an entry in an access control list (ACL). An ACE contains a set of access rights and a security identifier (SID) that identifies a trustee for whom the rights are allowed, denied, or audited.
 
-# access mode of [access control entry]
+# access mode of <access control entry>
 
 For a discretionary ACL (DACL), this flag indicates whether the ACL allows (1) or denies (3) the specified access rights.
 
-# access system security permission of [access control entry]
+# access system security permission of <access control entry>
 
 No documentation exists.
 
-# ace flag of [access control entry]
+# ace flag of <access control entry>
 
 Returns the Access Control Entry (ACE) flag, an unsigned 8-bit integer containing a set of one-bit control flags related to inheritance and auditing. The values include:0x01 - OBJECT_INHERIT_ACE0x02 - CONTAINER_INHERIT_ACE0x04 - NO_PROPAGATE_INHERIT_ACE 0x08 - INHERIT_ONLY_ACE0x10 - INHERITED_ACE0x40 - SUCCESSFUL_ACCESS_ACE_FLAG  0x80 - FAILED_ACCESS_ACE_FLAG
 
-# ace type of [access control entry]
+# ace type of <access control entry>
 
 Returns the Access Control Entry (ACE) type, an unsigned 8-bit integer containing a set of types related to granting and denying access. For more information, see the MSDN article on ACE_HEADER.
 
-# append permission of [access control entry]
+# append permission of <access control entry>
 
 For a file ACE, returns `True` if the ACE grants or denies append permissions.
 
-# audit failure of [access control entry]
+# audit failure of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x80, indicating a failed access attempt.
 
-# audit success of [access control entry]
+# audit success of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x40, indicating a successful access attempt.
 
-# change notification permission of [access control entry]
+# change notification permission of <access control entry>
 
 For a registry key ACE, returns `True` if the ACE grants or denies change notification permissions.
 
-# container inherit of [access control entry]
+# container inherit of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x02, indicating that the OBJECT INHERITANCE is set.
 
-# create file permission of [access control entry]
+# create file permission of <access control entry>
 
 For a folder ACE, returns `True` if the ACE grants or denies create file permissions.
 
-# create folder permission of [access control entry]
+# create folder permission of <access control entry>
 
 For a folder ACE, returns `True` if the ACE grants or denies create folder permissions.
 
-# create link permission of [access control entry]
+# create link permission of <access control entry>
 
 For a registry key ACE, returns `True` if the ACE grants or denies create key link permissions.
 
-# create subkey permission of [access control entry]
+# create subkey permission of <access control entry>
 
 For a registry key ACE, returns `True` if the ACE grants or denies creation of subkey permissions.
 
-# delete child permission of [access control entry]
+# delete child permission of <access control entry>
 
 For a folder ACE, returns `True` if the ACE grants or denies child deletion permissions.
 
-# delete permission of [access control entry]
+# delete permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or generic delete permissions.
 
-# deny type of [access control entry]
+# deny type of <access control entry>
 
 Returns `True` if the ACE header type is ACCESS DENIED.
 
-# enumerate subkeys permission of [access control entry]
+# enumerate subkeys permission of <access control entry>
 
 For a registry key ACE, returns `True` if the ACE grants or enumerate subkey permissions.
 
-# execute permission of [access control entry]
+# execute permission of <access control entry>
 
 For a file ACE, returns `True` if the ACE grants or denies execute permissions.
 
-# generic all permission of [access control entry]
+# generic all permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies all generic permissions.
 
-# generic execute permission of [access control entry]
+# generic execute permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies generic execute permissions.
 
-# generic read permission of [access control entry]
+# generic read permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies generic read permissions.
 
-# generic write permission of [access control entry]
+# generic write permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies generic write permissions.
 
-# grant type of [access control entry]
+# grant type of <access control entry>
 
 Returns `True` if the ACE header type is ACCESS ALLOWED.
 
-# inherit only of [access control entry]
+# inherit only of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x08, indicating that the OBJECT INHERITANCE flag is set.
 
-# inheritance of [access control entry]
+# inheritance of <access control entry>
 
 A set of bit flags that determines whether other containers or objects can inherit the ACE from the primary object to which the ACL is attached. The actual values of the constants are:NO_INHERITANCE = 0SUB_OBJECTS_ONLY_INHERIT = 1SUB_CONTAINERS_ONLY_INHERIT = 2SUB_CONTAINERS_AND_OBJECTS_INHERIT = 3OJECT_INHERIT_ACE = 1CONTAINER_INHERIT_ACE = 2NO_PROPAGATE_INHERIT_ACE = 4INHERIT_ONLY_ACE = 8.
 
-# inherited of [access control entry]
+# inherited of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x10, indicating that the INHERITED flag is set.
 
-# list permission of [access control entry]
+# list permission of <access control entry>
 
 For a folder ACE, returns `True` if the ACE grants or denies list permissions.
 
-# maximum allowed permission of [access control entry]
+# maximum allowed permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies maximum allowed permissions.
 
-# no propagate inherit of [access control entry]
+# no propagate inherit of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x04, indicating that the NO PROPAGATE INHERIT flag is set.
 
-# object inherit of [access control entry]
+# object inherit of <access control entry>
 
 Returns `True` if the ACE header flag has the value 0x01, indicating that the OBJECT INHERIT flag is set.
 
-# query value permission of [access control entry]
+# query value permission of <access control entry>
 
 For a registry key ACE, returns `True` if the ACE grants or denies query value permissions.
 
-# read attributes permission of [access control entry]
+# read attributes permission of <access control entry>
 
 For a file or folder ACE, returns `True` if the ACE grants or denies read attributes permissions.
 
-# read control permission of [access control entry]
+# read control permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies reading access control permissions.
 
-# read extended attributes permission of [access control entry]
+# read extended attributes permission of <access control entry>
 
 For a file or folder ACE, returns `True` if the ACE grants or denies read extended attributes permissions.
 
-# read permission of [access control entry]
+# read permission of <access control entry>
 
 For a file ACE, returns `True` if the ACE grants or denies read permissions.
 
-# set value permission of [access control entry]
+# set value permission of <access control entry>
 
 For a registry key ACE, returns `True` if the ACE grants or denies set value permissions.
 
-# synchronize permission of [access control entry]
+# synchronize permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies synchronize permissions.
 
-# traverse permission of [access control entry]
+# traverse permission of <access control entry>
 
 For the specified folder ACE, returns `True` if it grants or denies traversefolder permission.
 
-# trustee of [access control entry]
+# trustee of <access control entry>
 
 Returns the trustee to whom the specified ACE applies.
 
-# trustee type of [access control entry]
+# trustee type of <access control entry>
 
 Returns the type of trustee to whom the specified ACE applies.
 
-# write attributes permission of [access control entry]
+# write attributes permission of <access control entry>
 
 For a file or folder ACE, returns `True` if the ACE grants or denies write attribute permissions.
 
-# write dac permission of [access control entry]
+# write dac permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies write DAC permissions.
 
-# write extended attributes permission of [access control entry]
+# write extended attributes permission of <access control entry>
 
 For a file or folder ACE, returns `True` if the ACE grants or denies write extended attribute permissions.
 
-# write owner permission of [access control entry]
+# write owner permission of <access control entry>
 
 For any ACE, returns `True` if the ACE grants or denies write owner permissions.
 
-# write permission of [access control entry]
+# write permission of <access control entry>
 
 For a file ACE, returns `True` if the ACE grants or denies write permissions.

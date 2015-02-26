@@ -2,46 +2,46 @@
 
 No documentation exists.
 
-# configuration version of [ips repo]
+# configuration version of <ips repo>
 
 No documentation exists.
 
-# description of [ips repo]
+# description of <ips repo>
 
 No documentation exists.
 
-# earliest package [string] of [ips repo]
+# earliest package <string> of <ips repo>
 
 No documentation exists.
 
-# earliest package of [ips repo]
+# earliest package of <ips repo>
 
 No documentation exists.
 
-# latest package [string] of [ips repo]
+# latest package <string> of <ips repo>
 
 No documentation exists.
 
-# latest package of [ips repo]
+# latest package of <ips repo>
 
 No documentation exists.
 
-# name of [ips repo]
+# name of <ips repo>
 
 No documentation exists.
 
-# ordered catalog of [ips repo]
+# ordered catalog of <ips repo>
 
 No documentation exists.
 
-# package [string] of [ips repo]
+# package <string> of <ips repo>
 
 No documentation exists.
 
-# package of [ips repo]
+# package of <ips repo>
 
 No documentation exists.
 
-# version of [ips repo]
+# version of <ips repo>
 
 No documentation exists.

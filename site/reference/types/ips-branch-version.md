@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# [ips branch version] as string
+# <ips branch version> as string
 
 No documentation exists.

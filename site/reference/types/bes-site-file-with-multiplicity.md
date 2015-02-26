@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# multiplicity of [bes site file with multiplicity]
+# multiplicity of <bes site file with multiplicity>
 
 No documentation exists.

@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# element of [bes ldap directory set]
+# element of <bes ldap directory set>
 
 No documentation exists.
 
-# intersection of [bes ldap directory set]
+# intersection of <bes ldap directory set>
 
 No documentation exists.
 
-# size of [bes ldap directory set]
+# size of <bes ldap directory set>
 
 No documentation exists.
 
-# union of [bes ldap directory set]
+# union of <bes ldap directory set>
 
 No documentation exists.
