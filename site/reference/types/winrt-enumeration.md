@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of <winrt enumeration>
+# name of &lt;winrt enumeration&gt;
 
 No documentation exists.
 
-# value of <winrt enumeration>
+# value of &lt;winrt enumeration&gt;
 
 No documentation exists.
 
-# <winrt enumeration> as string
+# &lt;winrt enumeration&gt; as string
 
 No documentation exists.

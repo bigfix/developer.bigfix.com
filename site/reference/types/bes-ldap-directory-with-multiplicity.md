@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# multiplicity of <bes ldap directory with multiplicity>
+# multiplicity of &lt;bes ldap directory with multiplicity&gt;
 
 No documentation exists.

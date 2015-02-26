@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# data file of <site profile>
+# data file of &lt;site profile&gt;
 
 No documentation exists.
 
-# template file of <site profile>
+# template file of &lt;site profile&gt;
 
 No documentation exists.
 
-# variable <string> of <site profile>
+# variable &lt;string&gt; of &lt;site profile&gt;
 
 No documentation exists.
 
-# variable of <site profile>
+# variable of &lt;site profile&gt;
 
 No documentation exists.

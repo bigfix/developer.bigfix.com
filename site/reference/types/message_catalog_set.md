@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# message <integer> of <message_catalog_set>
+# message &lt;integer&gt; of &lt;message_catalog_set&gt;
 
 No documentation exists.

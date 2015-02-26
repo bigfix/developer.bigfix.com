@@ -2,26 +2,26 @@
 
 The &lt;connection&gt; objects are used to query your connections. These are all properties of the Internet Connection Firewall, as returned in the NETCON_PROPERTIES structure.
 
-# device name of <connection>
+# device name of &lt;connection&gt;
 
 Returns the name of the device associated with the specified connection.
 
-# firewall of <connection>
+# firewall of &lt;connection&gt;
 
 Returns the internet connection firewall object corresponding to the specified connection.
 
-# guid of <connection>
+# guid of &lt;connection&gt;
 
 Returns the globally-unique identifier (GUID) for the specified connection.
 
-# media type of <connection>
+# media type of &lt;connection&gt;
 
 Returns the media type of for the specified connection.
 
-# name of <connection>
+# name of &lt;connection&gt;
 
 Returns the name of the specified connection.
 
-# status of <connection>
+# status of &lt;connection&gt;
 
 Returns the status of the specified connection.

@@ -2,86 +2,86 @@
 
 No documentation exists.
 
-# authority <string> of <ips image>
+# authority &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# authority of <ips image>
+# authority of &lt;ips image&gt;
 
 No documentation exists.
 
-# configuration version of <ips image>
+# configuration version of &lt;ips image&gt;
 
 No documentation exists.
 
-# earliest installed package <string> of <ips image>
+# earliest installed package &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# earliest installed package of <ips image>
+# earliest installed package of &lt;ips image&gt;
 
 No documentation exists.
 
-# earliest package <string> of <ips image>
+# earliest package &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# earliest package of <ips image>
+# earliest package of &lt;ips image&gt;
 
 No documentation exists.
 
-# facet of <ips image>
+# facet of &lt;ips image&gt;
 
 No documentation exists.
 
-# image version of <ips image>
+# image version of &lt;ips image&gt;
 
 No documentation exists.
 
-# installed package <string> of <ips image>
+# installed package &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# installed package of <ips image>
+# installed package of &lt;ips image&gt;
 
 No documentation exists.
 
-# latest installed package <string> of <ips image>
+# latest installed package &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# latest installed package of <ips image>
+# latest installed package of &lt;ips image&gt;
 
 No documentation exists.
 
-# latest package <string> of <ips image>
+# latest package &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# latest package of <ips image>
+# latest package of &lt;ips image&gt;
 
 No documentation exists.
 
-# ordered catalog of <ips image>
+# ordered catalog of &lt;ips image&gt;
 
 No documentation exists.
 
-# package <string> of <ips image>
+# package &lt;string&gt; of &lt;ips image&gt;
 
 No documentation exists.
 
-# package of <ips image>
+# package of &lt;ips image&gt;
 
 No documentation exists.
 
-# property of <ips image>
+# property of &lt;ips image&gt;
 
 No documentation exists.
 
-# setting of <ips image>
+# setting of &lt;ips image&gt;
 
 No documentation exists.
 
-# variant of <ips image>
+# variant of &lt;ips image&gt;
 
 No documentation exists.

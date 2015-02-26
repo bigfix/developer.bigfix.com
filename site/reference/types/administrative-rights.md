@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# enabled of <administrative rights>
+# enabled of &lt;administrative rights&gt;
 
 No documentation exists.

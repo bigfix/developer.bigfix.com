@@ -2,34 +2,34 @@
 
 No documentation exists.
 
-# device_error_address of <dmi b64_bit_memory_error_information>
+# device_error_address of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# error_granularity of <dmi b64_bit_memory_error_information>
+# error_granularity of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# error_operation of <dmi b64_bit_memory_error_information>
+# error_operation of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# error_resolution of <dmi b64_bit_memory_error_information>
+# error_resolution of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# error_type of <dmi b64_bit_memory_error_information>
+# error_type of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# length of <dmi b64_bit_memory_error_information>
+# length of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# memory_array_error_address of <dmi b64_bit_memory_error_information>
+# memory_array_error_address of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.
 
-# vendor_syndrome of <dmi b64_bit_memory_error_information>
+# vendor_syndrome of &lt;dmi b64_bit_memory_error_information&gt;
 
 No documentation exists.

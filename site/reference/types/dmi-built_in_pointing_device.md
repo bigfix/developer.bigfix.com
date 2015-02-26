@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# interface of <dmi built_in_pointing_device>
+# interface of &lt;dmi built_in_pointing_device&gt;
 
 No documentation exists.
 
-# length of <dmi built_in_pointing_device>
+# length of &lt;dmi built_in_pointing_device&gt;
 
 No documentation exists.
 
-# number_of_buttons of <dmi built_in_pointing_device>
+# number_of_buttons of &lt;dmi built_in_pointing_device&gt;
 
 No documentation exists.
 
-# type of <dmi built_in_pointing_device>
+# type of &lt;dmi built_in_pointing_device&gt;
 
 No documentation exists.

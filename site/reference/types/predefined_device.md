@@ -2,106 +2,106 @@
 
 No documentation exists.
 
-# base flag of <predefined_device>
+# base flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# bus extender flag of <predefined_device>
+# bus extender flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# catalog filename of <predefined_device>
+# catalog filename of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# change method of <predefined_device>
+# change method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# change status flag of <predefined_device>
+# change status flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# class of <predefined_device>
+# class of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# configure method of <predefined_device>
+# configure method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# define method of <predefined_device>
+# define method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# detectable flag of <predefined_device>
+# detectable flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# device driver name of <predefined_device>
+# device driver name of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# fru flag of <predefined_device>
+# fru flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# id of <predefined_device>
+# id of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# inventory only flag of <predefined_device>
+# inventory only flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# led value of <predefined_device>
+# led value of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# msg number of <predefined_device>
+# msg number of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# prefix name of <predefined_device>
+# prefix name of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# set number of <predefined_device>
+# set number of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# start method of <predefined_device>
+# start method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# stop method of <predefined_device>
+# stop method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# subclass of <predefined_device>
+# subclass of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# type of <predefined_device>
+# type of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# unconfigure method of <predefined_device>
+# unconfigure method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# undefine method of <predefined_device>
+# undefine method of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# unique type of <predefined_device>
+# unique type of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# vpd flag of <predefined_device>
+# vpd flag of &lt;predefined_device&gt;
 
 No documentation exists.
 
-# <predefined_device> as string
+# &lt;predefined_device&gt; as string
 
 No documentation exists.

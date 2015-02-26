@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of <site profile variable>
+# name of &lt;site profile variable&gt;
 
 No documentation exists.
 
-# value of <site profile variable>
+# value of &lt;site profile variable&gt;
 
 No documentation exists.
 
-# <site profile variable> as string
+# &lt;site profile variable&gt; as string
 
 No documentation exists.

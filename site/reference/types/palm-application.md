@@ -2,82 +2,82 @@
 
 No documentation exists.
 
-# appinfodirty of <palm application>
+# appinfodirty of &lt;palm application&gt;
 
 No documentation exists.
 
-# backup of <palm application>
+# backup of &lt;palm application&gt;
 
 No documentation exists.
 
-# copy prevention of <palm application>
+# copy prevention of &lt;palm application&gt;
 
 No documentation exists.
 
-# creation date of <palm application>
+# creation date of &lt;palm application&gt;
 
 No documentation exists.
 
-# creator id of <palm application>
+# creator id of &lt;palm application&gt;
 
 No documentation exists.
 
-# database name of <palm application>
+# database name of &lt;palm application&gt;
 
 No documentation exists.
 
-# hidden of <palm application>
+# hidden of &lt;palm application&gt;
 
 No documentation exists.
 
-# launchable of <palm application>
+# launchable of &lt;palm application&gt;
 
 No documentation exists.
 
-# launcher name of <palm application>
+# launcher name of &lt;palm application&gt;
 
 No documentation exists.
 
-# name of <palm application>
+# name of &lt;palm application&gt;
 
 No documentation exists.
 
-# oktoinstallnewer of <palm application>
+# oktoinstallnewer of &lt;palm application&gt;
 
 No documentation exists.
 
-# open of <palm application>
+# open of &lt;palm application&gt;
 
 No documentation exists.
 
-# readonly of <palm application>
+# readonly of &lt;palm application&gt;
 
 No documentation exists.
 
-# resetafterinstall of <palm application>
+# resetafterinstall of &lt;palm application&gt;
 
 No documentation exists.
 
-# resource of <palm application>
+# resource of &lt;palm application&gt;
 
 No documentation exists.
 
-# size of <palm application>
+# size of &lt;palm application&gt;
 
 No documentation exists.
 
-# stream of <palm application>
+# stream of &lt;palm application&gt;
 
 No documentation exists.
 
-# version of <palm application>
+# version of &lt;palm application&gt;
 
 No documentation exists.
 
-# version string of <palm application>
+# version string of &lt;palm application&gt;
 
 No documentation exists.
 
-# <palm application> as string
+# &lt;palm application&gt; as string
 
 No documentation exists.

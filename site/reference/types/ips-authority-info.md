@@ -2,106 +2,106 @@
 
 No documentation exists.
 
-# alias of <ips authority info>
+# alias of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# approved ca cert of <ips authority info>
+# approved ca cert of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# disabled of <ips authority info>
+# disabled of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# intermediate certs of <ips authority info>
+# intermediate certs of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# mirrors of <ips authority info>
+# mirrors of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# name of <ips authority info>
+# name of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# origin of <ips authority info>
+# origin of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# prefix of <ips authority info>
+# prefix of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# proxied urls of <ips authority info>
+# proxied urls of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo collection type of <ips authority info>
+# repo collection type of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo description of <ips authority info>
+# repo description of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo legal uris of <ips authority info>
+# repo legal uris of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo name of <ips authority info>
+# repo name of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo refresh seconds of <ips authority info>
+# repo refresh seconds of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo registered of <ips authority info>
+# repo registered of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo registration uri of <ips authority info>
+# repo registration uri of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo related uris of <ips authority info>
+# repo related uris of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# repo sort policy of <ips authority info>
+# repo sort policy of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# revoked ca certs of <ips authority info>
+# revoked ca certs of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# signature required names of <ips authority info>
+# signature required names of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# signing ca certs of <ips authority info>
+# signing ca certs of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# ssl cert of <ips authority info>
+# ssl cert of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# ssl key of <ips authority info>
+# ssl key of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# sticky of <ips authority info>
+# sticky of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# uuid of <ips authority info>
+# uuid of &lt;ips authority info&gt;
 
 No documentation exists.
 
-# <ips authority info> as string
+# &lt;ips authority info&gt; as string
 
 No documentation exists.

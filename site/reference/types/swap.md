@@ -2,18 +2,18 @@
 
 This object lets you inspect the properties of your swap space.
 
-# free amount of <swap>
+# free amount of &lt;swap&gt;
 
 Returns the amount of the swap partition currently unused, in bytes.
 
-# size of <swap>
+# size of &lt;swap&gt;
 
 Returns the size, in bytes, of the swap partition.
 
-# total amount of <swap>
+# total amount of &lt;swap&gt;
 
 Same as size of &lt;swap&gt;.
 
-# used amount of <swap>
+# used amount of &lt;swap&gt;
 
 Returns the amount of the swap partition currently in use, in bytes.

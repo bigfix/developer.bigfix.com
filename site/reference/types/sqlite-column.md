@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of <sqlite column>
+# name of &lt;sqlite column&gt;
 
 No documentation exists.
 
-# type of <sqlite column>
+# type of &lt;sqlite column&gt;
 
 No documentation exists.
 
-# <sqlite column> as string
+# &lt;sqlite column&gt; as string
 
 No documentation exists.

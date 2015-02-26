@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# folder of <hotsync user>
+# folder of &lt;hotsync user&gt;
 
 No documentation exists.
 
-# name of <hotsync user>
+# name of &lt;hotsync user&gt;
 
 No documentation exists.
 
-# palm device of <hotsync user>
+# palm device of &lt;hotsync user&gt;
 
 No documentation exists.

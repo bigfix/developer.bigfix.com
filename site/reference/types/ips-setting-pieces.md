@@ -2,22 +2,22 @@
 
 No documentation exists.
 
-# fullsetting of <ips setting pieces>
+# fullsetting of &lt;ips setting pieces&gt;
 
 No documentation exists.
 
-# name of <ips setting pieces>
+# name of &lt;ips setting pieces&gt;
 
 No documentation exists.
 
-# section of <ips setting pieces>
+# section of &lt;ips setting pieces&gt;
 
 No documentation exists.
 
-# value of <ips setting pieces>
+# value of &lt;ips setting pieces&gt;
 
 No documentation exists.
 
-# <ips setting pieces> as string
+# &lt;ips setting pieces&gt; as string
 
 No documentation exists.

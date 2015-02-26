@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# <dummy type> as string
+# &lt;dummy type&gt; as string
 
 No documentation exists.

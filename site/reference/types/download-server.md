@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# name of <download server>
+# name of &lt;download server&gt;
 
 No documentation exists.

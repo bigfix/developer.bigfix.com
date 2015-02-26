@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# length of <dmi end_of_table>
+# length of &lt;dmi end_of_table&gt;
 
 No documentation exists.

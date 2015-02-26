@@ -2,26 +2,26 @@
 
 No documentation exists.
 
-# base_address of <dmi ipmi_device_information>
+# base_address of &lt;dmi ipmi_device_information&gt;
 
 No documentation exists.
 
-# i2c_slave_address of <dmi ipmi_device_information>
+# i2c_slave_address of &lt;dmi ipmi_device_information&gt;
 
 No documentation exists.
 
-# interface_type of <dmi ipmi_device_information>
+# interface_type of &lt;dmi ipmi_device_information&gt;
 
 No documentation exists.
 
-# ipmi_specification_revision of <dmi ipmi_device_information>
+# ipmi_specification_revision of &lt;dmi ipmi_device_information&gt;
 
 No documentation exists.
 
-# length of <dmi ipmi_device_information>
+# length of &lt;dmi ipmi_device_information&gt;
 
 No documentation exists.
 
-# nv_storage_device_address of <dmi ipmi_device_information>
+# nv_storage_device_address of &lt;dmi ipmi_device_information&gt;
 
 No documentation exists.

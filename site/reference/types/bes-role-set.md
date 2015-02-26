@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# element of <bes role set>
+# element of &lt;bes role set&gt;
 
 No documentation exists.
 
-# intersection of <bes role set>
+# intersection of &lt;bes role set&gt;
 
 No documentation exists.
 
-# size of <bes role set>
+# size of &lt;bes role set&gt;
 
 No documentation exists.
 
-# union of <bes role set>
+# union of &lt;bes role set&gt;
 
 No documentation exists.

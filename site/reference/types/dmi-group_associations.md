@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# group_name of <dmi group_associations>
+# group_name of &lt;dmi group_associations&gt;
 
 No documentation exists.
 
-# item_handle of <dmi group_associations>
+# item_handle of &lt;dmi group_associations&gt;
 
 No documentation exists.
 
-# item_type of <dmi group_associations>
+# item_type of &lt;dmi group_associations&gt;
 
 No documentation exists.
 
-# length of <dmi group_associations>
+# length of &lt;dmi group_associations&gt;
 
 No documentation exists.

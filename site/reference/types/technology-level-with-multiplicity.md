@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# multiplicity of <technology level with multiplicity>
+# multiplicity of &lt;technology level with multiplicity&gt;
 
 Returns an the number of times a technology level occurs.

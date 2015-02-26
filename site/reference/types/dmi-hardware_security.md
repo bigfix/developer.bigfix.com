@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# hardware_security_settings of <dmi hardware_security>
+# hardware_security_settings of &lt;dmi hardware_security&gt;
 
 No documentation exists.
 
-# length of <dmi hardware_security>
+# length of &lt;dmi hardware_security&gt;
 
 No documentation exists.

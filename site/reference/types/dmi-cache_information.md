@@ -2,46 +2,46 @@
 
 No documentation exists.
 
-# associativity of <dmi cache_information>
+# associativity of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# cache_configuration of <dmi cache_information>
+# cache_configuration of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# cache_speed of <dmi cache_information>
+# cache_speed of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# current_sram_type of <dmi cache_information>
+# current_sram_type of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# error_correction_type of <dmi cache_information>
+# error_correction_type of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# installed_size of <dmi cache_information>
+# installed_size of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# length of <dmi cache_information>
+# length of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# maximum_cache_size of <dmi cache_information>
+# maximum_cache_size of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# socket_designation of <dmi cache_information>
+# socket_designation of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# supported_sram_type of <dmi cache_information>
+# supported_sram_type of &lt;dmi cache_information&gt;
 
 No documentation exists.
 
-# system_cache_type of <dmi cache_information>
+# system_cache_type of &lt;dmi cache_information&gt;
 
 No documentation exists.

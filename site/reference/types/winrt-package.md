@@ -2,18 +2,18 @@
 
 No documentation exists.
 
-# id of <winrt package>
+# id of &lt;winrt package&gt;
 
 No documentation exists.
 
-# installed path of <winrt package>
+# installed path of &lt;winrt package&gt;
 
 No documentation exists.
 
-# winrt package user of <winrt package>
+# winrt package user of &lt;winrt package&gt;
 
 No documentation exists.
 
-# <winrt package> as string
+# &lt;winrt package&gt; as string
 
 No documentation exists.

@@ -2,46 +2,46 @@
 
 No documentation exists.
 
-# branch version of <ips partial matching fmri>
+# branch version of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# build version of <ips partial matching fmri>
+# build version of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# category of <ips partial matching fmri>
+# category of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# component version of <ips partial matching fmri>
+# component version of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# fmri of <ips partial matching fmri>
+# fmri of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# full name of <ips partial matching fmri>
+# full name of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# name of <ips partial matching fmri>
+# name of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# publisher of <ips partial matching fmri>
+# publisher of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# time stamp of <ips partial matching fmri>
+# time stamp of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# version of <ips partial matching fmri>
+# version of &lt;ips partial matching fmri&gt;
 
 No documentation exists.
 
-# version with time of <ips partial matching fmri>
+# version with time of &lt;ips partial matching fmri&gt;
 
 No documentation exists.

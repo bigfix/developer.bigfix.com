@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# <grub device> as string
+# &lt;grub device&gt; as string
 
 String containing name of a device, such as (hd0,0).

@@ -2,66 +2,66 @@
 
 No documentation exists.
 
-# design_capacity of <dmi portable_battery>
+# design_capacity of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# design_capacity_multiplier of <dmi portable_battery>
+# design_capacity_multiplier of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# design_voltage of <dmi portable_battery>
+# design_voltage of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# device_chemistry of <dmi portable_battery>
+# device_chemistry of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# device_name of <dmi portable_battery>
+# device_name of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# length of <dmi portable_battery>
+# length of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# location of <dmi portable_battery>
+# location of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# manufacture_date of <dmi portable_battery>
+# manufacture_date of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# manufacturer of <dmi portable_battery>
+# manufacturer of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# maximum_error_in_battery_data of <dmi portable_battery>
+# maximum_error_in_battery_data of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# oem_specific of <dmi portable_battery>
+# oem_specific of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# sbds_device_chemistry of <dmi portable_battery>
+# sbds_device_chemistry of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# sbds_manufacture_date of <dmi portable_battery>
+# sbds_manufacture_date of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# sbds_serial_number of <dmi portable_battery>
+# sbds_serial_number of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# sbds_version_number of <dmi portable_battery>
+# sbds_version_number of &lt;dmi portable_battery&gt;
 
 No documentation exists.
 
-# serial_number of <dmi portable_battery>
+# serial_number of &lt;dmi portable_battery&gt;
 
 No documentation exists.

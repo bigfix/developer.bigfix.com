@@ -2,26 +2,26 @@
 
 No documentation exists.
 
-# channel_type of <dmi memory_channel>
+# channel_type of &lt;dmi memory_channel&gt;
 
 No documentation exists.
 
-# length of <dmi memory_channel>
+# length of &lt;dmi memory_channel&gt;
 
 No documentation exists.
 
-# maximum_channel_load of <dmi memory_channel>
+# maximum_channel_load of &lt;dmi memory_channel&gt;
 
 No documentation exists.
 
-# memory_device_count of <dmi memory_channel>
+# memory_device_count of &lt;dmi memory_channel&gt;
 
 No documentation exists.
 
-# memory_device_handle of <dmi memory_channel>
+# memory_device_handle of &lt;dmi memory_channel&gt;
 
 No documentation exists.
 
-# memory_device_load of <dmi memory_channel>
+# memory_device_load of &lt;dmi memory_channel&gt;
 
 No documentation exists.

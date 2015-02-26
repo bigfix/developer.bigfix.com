@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of <network_option>
+# name of &lt;network_option&gt;
 
 No documentation exists.
 
-# value of <network_option>
+# value of &lt;network_option&gt;
 
 No documentation exists.
 
-# <network_option> as string
+# &lt;network_option&gt; as string
 
 No documentation exists.

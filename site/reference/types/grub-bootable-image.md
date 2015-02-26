@@ -2,46 +2,46 @@
 
 No documentation exists.
 
-# chainloader of <grub bootable image>
+# chainloader of &lt;grub bootable image&gt;
 
 File pointed to by chainloader for a bootable image.
 
-# initrd of <grub bootable image>
+# initrd of &lt;grub bootable image&gt;
 
 File containing initial ram disk for bootable image.
 
-# kernel of <grub bootable image>
+# kernel of &lt;grub bootable image&gt;
 
 Kernel to be used for the bootable image.
 
-# module <integer> of <grub bootable image>
+# module &lt;integer&gt; of &lt;grub bootable image&gt;
 
 Module (at zero-based index) to be loaded with the bootable image.
 
-# module of <grub bootable image>
+# module of &lt;grub bootable image&gt;
 
 Returns the module of a grub bootable image
 
-# quiet of <grub bootable image>
+# quiet of &lt;grub bootable image&gt;
 
 True if bootable image has been designated as quiet, so as not to display verbose booting information.
 
-# root of <grub bootable image>
+# root of &lt;grub bootable image&gt;
 
 Root device that is associated with the bootable image.
 
-# rootnoverify of <grub bootable image>
+# rootnoverify of &lt;grub bootable image&gt;
 
 Root device, designated as &quot;no-verify,&quot; that is associated with the bootable image.
 
-# savedefault of <grub bootable image>
+# savedefault of &lt;grub bootable image&gt;
 
 True if bootable image has been designated as &quot;savedefault.&quot; This causes the bootable image to become the default after it has been booted.
 
-# title of <grub bootable image>
+# title of &lt;grub bootable image&gt;
 
 Title of bootable image.
 
-# <grub bootable image> as string
+# &lt;grub bootable image&gt; as string
 
 String containg title of bootable image.

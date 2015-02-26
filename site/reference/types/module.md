@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of <module>
+# name of &lt;module&gt;
 
 No documentation exists.
 
-# version of <module>
+# version of &lt;module&gt;
 
 No documentation exists.
 
-# version string <string> of <module>
+# version string &lt;string&gt; of &lt;module&gt;
 
 No documentation exists.

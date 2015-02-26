@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# <ips build version> as string
+# &lt;ips build version&gt; as string
 
 No documentation exists.

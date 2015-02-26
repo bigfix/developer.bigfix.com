@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# highlight of <grub color scheme>
+# highlight of &lt;grub color scheme&gt;
 
 Color pair used for highlighted text.
 
-# normal of <grub color scheme>
+# normal of &lt;grub color scheme&gt;
 
 Color pair used for normal text.

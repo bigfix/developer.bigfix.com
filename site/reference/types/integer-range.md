@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# lower bound of <integer range>
+# lower bound of &lt;integer range&gt;
 
 No documentation exists.
 
-# upper bound of <integer range>
+# upper bound of &lt;integer range&gt;
 
 No documentation exists.

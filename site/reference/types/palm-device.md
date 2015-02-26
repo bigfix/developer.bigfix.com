@@ -2,126 +2,126 @@
 
 No documentation exists.
 
-# application <string> of <palm device>
+# application &lt;string&gt; of &lt;palm device&gt;
 
 No documentation exists.
 
-# application of <palm device>
+# application of &lt;palm device&gt;
 
 No documentation exists.
 
-# backlight feature of <palm device>
+# backlight feature of &lt;palm device&gt;
 
 No documentation exists.
 
-# backup folder of <palm device>
+# backup folder of &lt;palm device&gt;
 
 No documentation exists.
 
-# battery percentage of <palm device>
+# battery percentage of &lt;palm device&gt;
 
 No documentation exists.
 
-# battery type of <palm device>
+# battery type of &lt;palm device&gt;
 
 No documentation exists.
 
-# battery voltage of <palm device>
+# battery voltage of &lt;palm device&gt;
 
 No documentation exists.
 
-# device hotsync time of <palm device>
+# device hotsync time of &lt;palm device&gt;
 
 No documentation exists.
 
-# directory of <palm device>
+# directory of &lt;palm device&gt;
 
 No documentation exists.
 
-# display depth of <palm device>
+# display depth of &lt;palm device&gt;
 
 No documentation exists.
 
-# encryption feature of <palm device>
+# encryption feature of &lt;palm device&gt;
 
 No documentation exists.
 
-# folder of <palm device>
+# folder of &lt;palm device&gt;
 
 No documentation exists.
 
-# free memory of <palm device>
+# free memory of &lt;palm device&gt;
 
 No documentation exists.
 
-# handspring version of <palm device>
+# handspring version of &lt;palm device&gt;
 
 No documentation exists.
 
-# hotsync time of <palm device>
+# hotsync time of &lt;palm device&gt;
 
 No documentation exists.
 
-# inspector set of <palm device>
+# inspector set of &lt;palm device&gt;
 
 No documentation exists.
 
-# install folder of <palm device>
+# install folder of &lt;palm device&gt;
 
 No documentation exists.
 
-# name of <palm device>
+# name of &lt;palm device&gt;
 
 No documentation exists.
 
-# notify version of <palm device>
+# notify version of &lt;palm device&gt;
 
 No documentation exists.
 
-# oemcompanyid of <palm device>
+# oemcompanyid of &lt;palm device&gt;
 
 No documentation exists.
 
-# oemdeviceid of <palm device>
+# oemdeviceid of &lt;palm device&gt;
 
 No documentation exists.
 
-# oemhalid of <palm device>
+# oemhalid of &lt;palm device&gt;
 
 No documentation exists.
 
-# os version of <palm device>
+# os version of &lt;palm device&gt;
 
 No documentation exists.
 
-# processor type of <palm device>
+# processor type of &lt;palm device&gt;
 
 No documentation exists.
 
-# serial number of <palm device>
+# serial number of &lt;palm device&gt;
 
 No documentation exists.
 
-# sleep timeout of <palm device>
+# sleep timeout of &lt;palm device&gt;
 
 No documentation exists.
 
-# total memory of <palm device>
+# total memory of &lt;palm device&gt;
 
 No documentation exists.
 
-# update folder of <palm device>
+# update folder of &lt;palm device&gt;
 
 No documentation exists.
 
-# used memory of <palm device>
+# used memory of &lt;palm device&gt;
 
 No documentation exists.
 
-# vendor id of <palm device>
+# vendor id of &lt;palm device&gt;
 
 No documentation exists.
 
-# <palm device> as string
+# &lt;palm device&gt; as string
 
 No documentation exists.

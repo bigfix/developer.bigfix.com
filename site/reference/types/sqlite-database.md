@@ -2,22 +2,22 @@
 
 No documentation exists.
 
-# encoding of <sqlite database>
+# encoding of &lt;sqlite database&gt;
 
 No documentation exists.
 
-# statement <string> of <sqlite database>
+# statement &lt;string&gt; of &lt;sqlite database&gt;
 
 No documentation exists.
 
-# table <string> of <sqlite database>
+# table &lt;string&gt; of &lt;sqlite database&gt;
 
 No documentation exists.
 
-# table of <sqlite database>
+# table of &lt;sqlite database&gt;
 
 No documentation exists.
 
-# <sqlite database> as string
+# &lt;sqlite database&gt; as string
 
 No documentation exists.

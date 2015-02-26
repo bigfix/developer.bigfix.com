@@ -2,30 +2,30 @@
 
 No documentation exists.
 
-# architecture of <winrt package id>
+# architecture of &lt;winrt package id&gt;
 
 No documentation exists.
 
-# family name of <winrt package id>
+# family name of &lt;winrt package id&gt;
 
 No documentation exists.
 
-# full name of <winrt package id>
+# full name of &lt;winrt package id&gt;
 
 No documentation exists.
 
-# name of <winrt package id>
+# name of &lt;winrt package id&gt;
 
 No documentation exists.
 
-# publisher id of <winrt package id>
+# publisher id of &lt;winrt package id&gt;
 
 No documentation exists.
 
-# publisher of <winrt package id>
+# publisher of &lt;winrt package id&gt;
 
 No documentation exists.
 
-# version of <winrt package id>
+# version of &lt;winrt package id&gt;
 
 No documentation exists.

@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# member of <manual group>
+# member of &lt;manual group&gt;
 
 No documentation exists.
 
-# setting of <manual group>
+# setting of &lt;manual group&gt;
 
 No documentation exists.
 
-# <manual group> as string
+# &lt;manual group&gt; as string
 
 No documentation exists.

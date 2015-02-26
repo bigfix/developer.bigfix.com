@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# nounzip of <grub module>
+# nounzip of &lt;grub module&gt;
 
 True if module is to be loaded without unzipping it
 
-# <grub module> as string
+# &lt;grub module&gt; as string
 
 String representing the name of the module module

@@ -2,30 +2,30 @@
 
 The &lt;hertz&gt; object is useful to measure clock cycles. It is used primarily to measure clock frequency by the speed of the processor inspector. Hertz objects have a resolution of 1 hertz and are stored internally as a 64 bit signed integer.
 
-# absolute value of <hertz>
+# absolute value of &lt;hertz&gt;
 
 Returns the positive value of the hertz object.
 
-# extrema of <hertz>
+# extrema of &lt;hertz&gt;
 
 Returns the minimum and maximum extreme values of the given list of &lt;hertz&gt; types.
 
-# maximum of <hertz>
+# maximum of &lt;hertz&gt;
 
 Returns the maximum value from a list of &lt;hertz&gt; types.
 
-# minimum of <hertz>
+# minimum of &lt;hertz&gt;
 
 Returns the minimum value from a list of &lt;hertz&gt; types.
 
-# significant digits <integer> of <hertz>
+# significant digits &lt;integer&gt; of &lt;hertz&gt;
 
 Returns the value of a hertz object with &lt;integer&gt; significant digits (for example. significant digits 3 of 1235569 = 1240000).
 
-# unique value of <hertz>
+# unique value of &lt;hertz&gt;
 
 Returns the unique values of a given list of &lt;hertz&gt; types, removing duplicates and sorting by value.
 
-# <hertz> as string
+# &lt;hertz&gt; as string
 
 Returns a string formatted &quot;##### hertz&quot;.

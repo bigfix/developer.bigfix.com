@@ -2,46 +2,46 @@
 
 No documentation exists.
 
-# asset_tag of <dmi base_board_information>
+# asset_tag of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# board_type of <dmi base_board_information>
+# board_type of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# chassis_handle of <dmi base_board_information>
+# chassis_handle of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# feature_flags of <dmi base_board_information>
+# feature_flags of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# length of <dmi base_board_information>
+# length of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# location_in_chassis of <dmi base_board_information>
+# location_in_chassis of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# manufacturer of <dmi base_board_information>
+# manufacturer of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# number_of_contained_object_handles of <dmi base_board_information>
+# number_of_contained_object_handles of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# product of <dmi base_board_information>
+# product of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# serial_number of <dmi base_board_information>
+# serial_number of &lt;dmi base_board_information&gt;
 
 No documentation exists.
 
-# version of <dmi base_board_information>
+# version of &lt;dmi base_board_information&gt;
 
 No documentation exists.

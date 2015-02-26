@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# name of <json key>
+# name of &lt;json key&gt;
 
 No documentation exists.
 
-# value of <json key>
+# value of &lt;json key&gt;
 
 No documentation exists.
 
-# <json key> as string
+# &lt;json key&gt; as string
 
 No documentation exists.

@@ -2,42 +2,42 @@
 
 No documentation exists.
 
-# attribute name of <predefined_attribute>
+# attribute name of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# default value of <predefined_attribute>
+# default value of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# generic flag of <predefined_attribute>
+# generic flag of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# nls index of <predefined_attribute>
+# nls index of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# possible value of <predefined_attribute>
+# possible value of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# representation flag of <predefined_attribute>
+# representation flag of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# type of <predefined_attribute>
+# type of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# unique type of <predefined_attribute>
+# unique type of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# width of <predefined_attribute>
+# width of &lt;predefined_attribute&gt;
 
 No documentation exists.
 
-# <predefined_attribute> as string
+# &lt;predefined_attribute&gt; as string
 
 No documentation exists.

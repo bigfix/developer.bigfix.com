@@ -2,22 +2,22 @@
 
 No documentation exists.
 
-# component_handle of <dmi management_device_component>
+# component_handle of &lt;dmi management_device_component&gt;
 
 No documentation exists.
 
-# description of <dmi management_device_component>
+# description of &lt;dmi management_device_component&gt;
 
 No documentation exists.
 
-# length of <dmi management_device_component>
+# length of &lt;dmi management_device_component&gt;
 
 No documentation exists.
 
-# management_device_handle of <dmi management_device_component>
+# management_device_handle of &lt;dmi management_device_component&gt;
 
 No documentation exists.
 
-# threshold_handle of <dmi management_device_component>
+# threshold_handle of &lt;dmi management_device_component&gt;
 
 No documentation exists.

@@ -2,38 +2,38 @@
 
 No documentation exists.
 
-# change status of <customized_device>
+# change status of &lt;customized_device&gt;
 
 No documentation exists.
 
-# connwhere of <customized_device>
+# connwhere of &lt;customized_device&gt;
 
 No documentation exists.
 
-# device driver instance of <customized_device>
+# device driver instance of &lt;customized_device&gt;
 
 No documentation exists.
 
-# location of <customized_device>
+# location of &lt;customized_device&gt;
 
 No documentation exists.
 
-# name of <customized_device>
+# name of &lt;customized_device&gt;
 
 No documentation exists.
 
-# parent logical name of <customized_device>
+# parent logical name of &lt;customized_device&gt;
 
 No documentation exists.
 
-# parent of <customized_device>
+# parent of &lt;customized_device&gt;
 
 No documentation exists.
 
-# status of <customized_device>
+# status of &lt;customized_device&gt;
 
 No documentation exists.
 
-# <customized_device> as string
+# &lt;customized_device&gt; as string
 
 No documentation exists.

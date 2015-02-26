@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# <version with time> as string
+# &lt;version with time&gt; as string
 
 No documentation exists.

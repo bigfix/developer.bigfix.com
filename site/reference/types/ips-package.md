@@ -2,162 +2,162 @@
 
 No documentation exists.
 
-# alt source of <ips package>
+# alt source of &lt;ips package&gt;
 
 No documentation exists.
 
-# branch version of <ips package>
+# branch version of &lt;ips package&gt;
 
 No documentation exists.
 
-# build version of <ips package>
+# build version of &lt;ips package&gt;
 
 No documentation exists.
 
-# category of <ips package>
+# category of &lt;ips package&gt;
 
 No documentation exists.
 
-# component version of <ips package>
+# component version of &lt;ips package&gt;
 
 No documentation exists.
 
-# conditional dependency of <ips package>
+# conditional dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# dependency of <ips package>
+# dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# description of <ips package>
+# description of &lt;ips package&gt;
 
 No documentation exists.
 
-# exclude dependency of <ips package>
+# exclude dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# fmri of <ips package>
+# fmri of &lt;ips package&gt;
 
 No documentation exists.
 
-# frozen of <ips package>
+# frozen of &lt;ips package&gt;
 
 No documentation exists.
 
-# full name of <ips package>
+# full name of &lt;ips package&gt;
 
 No documentation exists.
 
-# group dependency of <ips package>
+# group dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# incorporate dependency of <ips package>
+# incorporate dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# installed of <ips package>
+# installed of &lt;ips package&gt;
 
 No documentation exists.
 
-# known of <ips package>
+# known of &lt;ips package&gt;
 
 No documentation exists.
 
-# name of <ips package>
+# name of &lt;ips package&gt;
 
 No documentation exists.
 
-# obsolete of <ips package>
+# obsolete of &lt;ips package&gt;
 
 No documentation exists.
 
-# obsolete pkg of <ips package>
+# obsolete pkg of &lt;ips package&gt;
 
 No documentation exists.
 
-# optional dependency of <ips package>
+# optional dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# parent dependency of <ips package>
+# parent dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# publisher of <ips package>
+# publisher of &lt;ips package&gt;
 
 No documentation exists.
 
-# renamed of <ips package>
+# renamed of &lt;ips package&gt;
 
 No documentation exists.
 
-# renamed pkg of <ips package>
+# renamed pkg of &lt;ips package&gt;
 
 No documentation exists.
 
-# require dependency of <ips package>
+# require dependency of &lt;ips package&gt;
 
 No documentation exists.
 
-# setting of <ips package>
+# setting of &lt;ips package&gt;
 
 No documentation exists.
 
-# summary of <ips package>
+# summary of &lt;ips package&gt;
 
 No documentation exists.
 
-# time stamp of <ips package>
+# time stamp of &lt;ips package&gt;
 
 No documentation exists.
 
-# uninstalled of <ips package>
+# uninstalled of &lt;ips package&gt;
 
 No documentation exists.
 
-# unknown of <ips package>
+# unknown of &lt;ips package&gt;
 
 No documentation exists.
 
-# unsupported of <ips package>
+# unsupported of &lt;ips package&gt;
 
 No documentation exists.
 
-# upgradable of <ips package>
+# upgradable of &lt;ips package&gt;
 
 No documentation exists.
 
-# v0 of <ips package>
+# v0 of &lt;ips package&gt;
 
 No documentation exists.
 
-# v1 of <ips package>
+# v1 of &lt;ips package&gt;
 
 No documentation exists.
 
-# variant of <ips package>
+# variant of &lt;ips package&gt;
 
 No documentation exists.
 
-# version count of <ips package>
+# version count of &lt;ips package&gt;
 
 No documentation exists.
 
-# version of <ips package>
+# version of &lt;ips package&gt;
 
 No documentation exists.
 
-# version ordinal of <ips package>
+# version ordinal of &lt;ips package&gt;
 
 No documentation exists.
 
-# version with time of <ips package>
+# version with time of &lt;ips package&gt;
 
 No documentation exists.
 
-# <ips package> as string
+# &lt;ips package&gt; as string
 
 No documentation exists.

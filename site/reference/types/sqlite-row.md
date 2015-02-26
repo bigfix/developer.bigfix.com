@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# column <integer> of <sqlite row>
+# column &lt;integer&gt; of &lt;sqlite row&gt;
 
 No documentation exists.
 
-# column <string> of <sqlite row>
+# column &lt;string&gt; of &lt;sqlite row&gt;
 
 No documentation exists.
 
-# <sqlite row> as string
+# &lt;sqlite row&gt; as string
 
 No documentation exists.

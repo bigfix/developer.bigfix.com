@@ -73,7 +73,7 @@ function makeProperties(properties) {
   var entries = [];
 
   properties.forEach(function(property) {
-    var text = '# ' + property.key + '\n\n' +
+    var text = '# ' + escape(property.key) + '\n\n' +
       docText(docs.properties[property.key]);
 
     entries.push(text);
@@ -125,7 +125,7 @@ function makeOperators(properties) {
   });
 
   binaryOperators.forEach(function(property) {
-    var text = '# ' + property.key + '\n\n' +
+    var text = '# ' + escape(property.key) + '\n\n' +
       docText(docs.properties[property.key]);
 
     entries.push(text);
@@ -136,7 +136,7 @@ function makeOperators(properties) {
   });
 
   unaryOperators.forEach(function(property) {
-    var text = '# ' + property.key + '\n\n' +
+    var text = '# ' + escape(property.key) + '\n\n' +
       docText(docs.properties[property.key]);
 
     entries.push(text);

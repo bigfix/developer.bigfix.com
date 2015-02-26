@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# background of <grub color pair>
+# background of &lt;grub color pair&gt;
 
 Name of background color of the color pair.
 
-# foreground of <grub color pair>
+# foreground of &lt;grub color pair&gt;
 
 Name of foreground color of the color pair.
 
-# <grub color pair> as string
+# &lt;grub color pair&gt; as string
 
 String displaying color pair in form &quot;foreground-color/background-color

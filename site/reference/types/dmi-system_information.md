@@ -2,38 +2,38 @@
 
 No documentation exists.
 
-# family of <dmi system_information>
+# family of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# length of <dmi system_information>
+# length of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# manufacturer of <dmi system_information>
+# manufacturer of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# product_name of <dmi system_information>
+# product_name of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# serial_number of <dmi system_information>
+# serial_number of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# sku_number of <dmi system_information>
+# sku_number of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# uuid of <dmi system_information>
+# uuid of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# version of <dmi system_information>
+# version of &lt;dmi system_information&gt;
 
 No documentation exists.
 
-# wake_up_type of <dmi system_information>
+# wake_up_type of &lt;dmi system_information&gt;
 
 No documentation exists.

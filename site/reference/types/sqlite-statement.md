@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# row of <sqlite statement>
+# row of &lt;sqlite statement&gt;
 
 No documentation exists.

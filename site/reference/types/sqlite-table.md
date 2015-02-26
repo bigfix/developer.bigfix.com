@@ -2,30 +2,30 @@
 
 No documentation exists.
 
-# column type <integer> of <sqlite table>
+# column type &lt;integer&gt; of &lt;sqlite table&gt;
 
 No documentation exists.
 
-# column type <string> of <sqlite table>
+# column type &lt;string&gt; of &lt;sqlite table&gt;
 
 No documentation exists.
 
-# column type of <sqlite table>
+# column type of &lt;sqlite table&gt;
 
 No documentation exists.
 
-# index of <sqlite table>
+# index of &lt;sqlite table&gt;
 
 No documentation exists.
 
-# name of <sqlite table>
+# name of &lt;sqlite table&gt;
 
 No documentation exists.
 
-# schema of <sqlite table>
+# schema of &lt;sqlite table&gt;
 
 No documentation exists.
 
-# <sqlite table> as string
+# &lt;sqlite table&gt; as string
 
 No documentation exists.

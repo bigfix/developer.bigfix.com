@@ -2,34 +2,34 @@
 
 No documentation exists.
 
-# ending_address of <dmi memory_device_mapped_address>
+# ending_address of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# interleave_position of <dmi memory_device_mapped_address>
+# interleave_position of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# interleaved_data_depth of <dmi memory_device_mapped_address>
+# interleaved_data_depth of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# length of <dmi memory_device_mapped_address>
+# length of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# memory_array_mapped_address_handle of <dmi memory_device_mapped_address>
+# memory_array_mapped_address_handle of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# memory_device_handle of <dmi memory_device_mapped_address>
+# memory_device_handle of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# partition_row_position of <dmi memory_device_mapped_address>
+# partition_row_position of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
 
-# starting_address of <dmi memory_device_mapped_address>
+# starting_address of &lt;dmi memory_device_mapped_address&gt;
 
 No documentation exists.
