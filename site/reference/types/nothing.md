@@ -1,3 +1,0 @@
-# nothing
-
-No documentation exists.
