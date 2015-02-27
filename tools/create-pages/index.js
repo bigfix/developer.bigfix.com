@@ -61,6 +61,26 @@ function isCastOfType(property, type) {
   return property.type === 'cast' && property.argType === type;
 }
 
+function isOperatorOfType(property, type) {
+  if (property.type === 'unaryOp') {
+    return property.argType === type;
+  }
+
+  if (property.type === 'binaryOp') {
+    return property.leftType === type && property.rightType === type;
+  }
+
+  return false;
+}
+
+function isOperatorOfWorld(property) {
+  if (property.type !== 'binaryOp') {
+    return false;
+  }
+
+  return property.leftType !== property.rightType;
+}
+
 function docText(originalText) {
   if (originalText) {
     return escape(originalText).trim();
@@ -84,7 +104,7 @@ function makeProperties(properties) {
 }
 
 function makeTypes(properties) {
-  var typesDir = path.join(siteDir, 'docs', 'types');
+  var typesDir = path.join(siteDir, 'reference', 'types');
 
   Object.keys(language.types).forEach(function(type) {
     var entries = ['# type: ' + type + '\n\n' + docText(docs.types[type])];
@@ -98,59 +118,46 @@ function makeTypes(properties) {
       return isCastOfType(property, type);
     });
     entries = entries.concat(makeProperties(castsOfType));
+
+    var operatorsOfType = properties.filter(function(property) {
+      return isOperatorOfType(property, type);
+    });
+    entries = entries.concat(makeProperties(operatorsOfType));
     
     var text = entries.join('\n\n') + '\n';
     fs.writeFileSync(path.join(typesDir, makeFileName(type) + '.md'), text);
   });
 }
 
-function makeWorldType(properties) {
-  var docsDir = path.join(siteDir, 'docs');
+function makePropertiesOfWorld(properties) {
+  var docsDir = path.join(siteDir, 'reference');
+  var entries = [];
 
   var propertiesOfWorld = properties.filter(function(property) {
     return isPropertyOfWorld(property);
   });
-  var entries = makeProperties(propertiesOfWorld);
+  entries = entries.concat(makeProperties(propertiesOfWorld));
 
   var text = entries.join('\n\n') + '\n';
   fs.writeFileSync(path.join(docsDir, 'world.md'), text);
 }
 
-function makeOperators(properties) {
-  var docsDir = path.join(siteDir, 'docs');
+function makeOperatorsOfWorld(properties) {
+  var docsDir = path.join(siteDir, 'reference');
   var entries = [];
 
-  var binaryOperators = properties.filter(function(property) {
-    return property.type === 'binaryOp';
+  var operatorsOfWorld = properties.filter(function(property) {
+    return isOperatorOfWorld(property);
   });
-
-  binaryOperators.forEach(function(property) {
-    var text = '# ' + escape(property.key) + '\n\n' +
-      docText(docs.properties[property.key]);
-
-    entries.push(text);
-  });
-
-  var unaryOperators = properties.filter(function(property) {
-    return property.type === 'unaryOp';
-  });
-
-  unaryOperators.forEach(function(property) {
-    var text = '# ' + escape(property.key) + '\n\n' +
-      docText(docs.properties[property.key]);
-
-    entries.push(text);
-  });
-
-  entries.sort();
+  entries = entries.concat(makeProperties(operatorsOfWorld));
 
   var text = entries.join('\n\n') + '\n';
   fs.writeFileSync(path.join(docsDir, 'operators.md'), text);
 }
 
-rimraf.sync(path.join(siteDir, 'docs'));
-fs.mkdirSync(path.join(siteDir, 'docs'));
-fs.mkdirSync(path.join(siteDir, 'docs', 'types'));
+rimraf.sync(path.join(siteDir, 'reference'));
+fs.mkdirSync(path.join(siteDir, 'reference'));
+fs.mkdirSync(path.join(siteDir, 'reference', 'types'));
 
 var properties = [];
 Object.keys(language.properties).forEach(function(key) {
@@ -158,5 +165,5 @@ Object.keys(language.properties).forEach(function(key) {
 });
 
 makeTypes(properties);
-makeWorldType(properties);
-makeOperators(properties);
+makePropertiesOfWorld(properties);
+makeOperatorsOfWorld(properties);
