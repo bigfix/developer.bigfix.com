@@ -52,22 +52,6 @@ function compileTemplate(templatesDir, name) {
   return Hogan.compile(contents);
 }
 
-function createTextRenderer(templatesDir) {
-  var exampleTemplate = compileTemplate(templatesDir, 'example.html');
-
-  var exampleData = {
-    example: function() {
-      return function(text) {
-        return exampleTemplate.render(parseExample(text));
-      }
-    }
-  };
-
-  return function(text) {
-    marked(Hogan.compile(text).render(exampleData));
-  }
-}
-
 function renderProperty(property, template) {
   var data = {
     singularPhrase: property.singularPhrase,
