@@ -4,35 +4,29 @@ var escape = require('escape-html'),
   marked = require('marked'),
   path = require('path');
 
-function isTupleType(type) {
-  return type[0] === '(';
-}
-
 function typeAnchor(type) {
   var href = '/reference/types/' + type.replace(/ /g, '-') + '.html';
   return '<a href="' + href + '">' + escape(type) + '</a>';
 }
 
 function linkType(type) {
-   if (!isTupleType(type)) {
-     return typeAnchor(type);
-   }
+  var openParen = type.indexOf('(');
 
-   var links = type
-     .substr(2, type.length - 4)
-     .split(', ')
-     .map(typeAnchor)
-     .join(', ');
+  if (openParen === -1) {
+    return typeAnchor(type);
+  }
 
-   return '( ' + links + ' )';
- }
+  var links = type
+    .substring(openParen + 2, type.length - 2)
+    .split(', ')
+    .map(typeAnchor)
+    .join(', ');
+
+  return type.substr(0, openParen) + '( ' + links + ' )';
+}
 
 function parseExample(text) {
-  var example = {
-    question: '',
-    answers: [],
-    errors: []
-  };
+  var example = { question: '', answers: [], errors: [] };
 
   text.trim().split('\n').forEach(function(line) {
     if (line.indexOf('Q:') === 0) {
@@ -123,8 +117,7 @@ function renderDocs(templatesDir, language, docs) {
   }
 
   Object.keys(docs.types).forEach(function(key) {
-    docs.types[key] = templates.type.render(language.types[key]).trim() +
-      '\n\n' + renderText(docs.types[key]).trim();
+    docs.types[key] = renderText(docs.types[key]).trim();
   });
 
   Object.keys(docs.properties).forEach(function(key) {

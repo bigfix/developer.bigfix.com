@@ -1,1 +1,37 @@
-<h1 class="type">{{name}}</h1>
+<div class="row">
+  <div class="two columns">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#description">Description</a></li>
+        {{#creation}}<li><a href="#creation">Creation</a></li>{{/creation}}
+        {{#properties}}<li><a href="#properties">Properties</a></li>{{/properties}}
+        {{#casts}}<li><a href="#casts">Casts</a></li>{{/casts}}
+        {{#operators}}<li><a href="#operators">Operators</a></li>{{/operators}}
+      </ul>
+    </div>
+  </div>
+  <div class="ten columns">
+  <h1 id="description" class="type">{{name}}</h1>
+  {{{description}}}
+
+  {{#creation}}
+  <h2 id="creation">Creation</h2>
+  {{{creation}}}
+  {{/creation}}
+
+  {{#properties}}
+  <h2 id="properties">Properties of {{name}}</h2>
+  {{{properties}}}
+  {{/properties}}
+
+  {{#casts}}
+  <h2 id="casts">Casts of {{name}}</h2>
+  {{{casts}}}
+  {{/casts}}
+
+  {{#operators}}
+  <h2 id="operators">Operators of {{name}}</h2>
+  {{{operators}}}
+  {{/operators}}
+  </div>
+</div>
