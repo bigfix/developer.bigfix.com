@@ -96,9 +96,7 @@ function scrapeAll(pages, callback) {
       return callback(null, result);
     }
 
-    var page = pages[i];
-
-    get(page, function(err, $) {
+    get(pages[i], function(err, $) {
       if (err) {
         return callback(err);
       }

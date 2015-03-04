@@ -2,4 +2,4 @@ This tool scrapes all of the [existing inspector documentation](http://support.b
 
 The tool should be run like:
 
-    $ node scrape-docs
+    $ node scrape-old-docs
