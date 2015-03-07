@@ -1,0 +1,77 @@
+AIX:
+  - ppc64_aix61
+  - ppc_aix51
+  - ppc_aix53
+
+Debian:
+  - amd64_deb5
+  - amd64_deb6
+  - i386_deb5
+  - i386_deb5
+  - i386_deb6
+  - x86_64_deb5
+
+HP-UX:
+  - pa-risc_hpux11.0
+  - pa_risc_hpux110
+  - pa_risc_hpux1111
+
+Mac:
+  - mac
+  - mac_10_4
+  - mac_10_5
+  - mac_10_6
+
+RedHat:
+  - i386_rh80
+  - i386_rhe3
+  - i386_rhe4
+  - i386_rhe5
+  - i686_rhe5
+  - ppc64_rhe5
+  - s390x_rhe4
+  - s390x_rhe5
+  - x86_64_rhe3
+  - x86_64_rhe4
+  - x86_64_rhe5
+
+Session:
+  - Console_WebReports
+
+Solaris:
+  - sparc_sol10
+  - sparc_sol11
+  - sparc_sol9
+  - x86_sol10
+  - x86_sol11
+
+SUSE:
+  - i386_sle10
+  - i386_sle11
+  - i386_sle9
+  - i386_suse80
+  - i686_sle10
+  - i686_sle11
+  - i686_sle9
+  - ppc64_sle10
+  - s390x_sle10
+  - x86_64_sle11
+  - x86_64_sle9
+  - x86_64_sled11
+  - x86_64_sled11
+  - x86_64_sles9
+
+Ubuntu:
+  - amd64_ubu10
+  - amd64_ubu8
+  - i386_ubu10
+  - i386_ubu8
+  - x86_64_ubu10
+  - x86_64_ubu8
+
+Windows:
+  - windows.core.client.regexp
+  - windows.core.client
+  - windows.core.regexp
+  - windows.core
+  - windows

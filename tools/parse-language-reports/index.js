@@ -1,26 +1,50 @@
-var extend = require('util')._extend,
-  fs = require('fs'),
+var fs = require('fs'),
   parse = require('./parse'),
-  path = require('path');
+  path = require('path'),
+  yaml = require('js-yaml');
 
-function getPlatform(reportPath) {
-  var platform = path.basename(reportPath).match(/Language\.(.+)\.txt$/)[1];
+function isVersionLess(a, b) {
+  a = a.split('.').map(Number);
+  b = b.split('.').map(Number);
 
-  if (platform.indexOf('windows') !== -1) {
-    return 'windows';
+  for (var i = 0; i < 4; i++) {
+    if (a[i] != b[i]) {
+      return a[i] < b[i];
+    }
   }
 
-  if (platform === 'Console_WebReports') {
-    return 'session';
-  }
-
-  return platform;
+  return false;
 }
 
-function parseLanguageReports(languageReports) {
+function addPlatform(value, platform, version) {
+  if (!value.platforms) {
+    value.platforms = {};
+  }
+
+  if (value.platforms[platform]) {
+    if (isVersionLess(version, value.platforms[platform])) {
+      value.platforms[platform] = version;
+    }
+  } else {
+    value.platforms[platform] = version;
+  }
+}
+
+function getPlatform(reportPath, platformNames) {
+  var platform = path.basename(reportPath).match(/Language\.(.+)\.txt$/)[1];
+
+  if (!platformNames[platform]) {
+    throw new Error('Unknown platform: ' + platform);
+  }
+
+  return platformNames[platform];
+}
+
+function parseLanguageReports(languageReports, platformNames) {
   var combinedReport = {
     types: {},
-    properties: {}
+    properties: {},
+    platforms: {}
   };
 
   fs.readdirSync(languageReports).forEach(function(version) {
@@ -28,17 +52,48 @@ function parseLanguageReports(languageReports) {
 
     fs.readdirSync(versionPath).forEach(function(reportFile) {
       var reportPath = path.join(versionPath, reportFile);
-      var platform = getPlatform(reportPath);
+      var platform = getPlatform(reportPath, platformNames);
 
       console.error(version + ' - ' + platform);
 
+      addPlatform(combinedReport, platform, version);
+
       var report = parse(fs.readFileSync(reportPath));
-      extend(combinedReport.types, report.types);
-      extend(combinedReport.properties, report.properties);
+
+      Object.keys(report.types).forEach(function(key) {
+        if (!combinedReport.types[key]) {
+          combinedReport.types[key] = report.types[key];
+        }
+
+        addPlatform(combinedReport.types[key], platform, version);
+      });
+
+      Object.keys(report.properties).forEach(function(key) {
+        if (!combinedReport.properties[key]) {
+          combinedReport.properties[key] = report.properties[key];
+        }
+
+        addPlatform(combinedReport.properties[key], platform, version);
+      });
     });
   });
 
   return combinedReport;
+}
+
+function getPlatformNames() {
+  var platformToTargets =
+    yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'platforms.yml')));
+
+  var targetToPlatform = {};
+
+  Object.keys(platformToTargets).forEach(function(name) {
+    platformToTargets[name].forEach(function(target) {
+      targetToPlatform[target] = name;
+    })
+  });
+
+  return targetToPlatform;
 }
 
 function main() {
@@ -47,7 +102,11 @@ function main() {
     return process.exit(1);
   }
 
-  console.log(JSON.stringify(parseLanguageReports(process.argv[2])));
+  var platformNames = getPlatformNames();
+
+  var language = parseLanguageReports(process.argv[2], platformNames);
+
+  console.log(JSON.stringify(language));
 }
 
 if (require.main === module) {
