@@ -92,10 +92,17 @@ code {
 }
 
 .property {
-  font-family: monospace;
-  font-size: 1.25em;
+  /*font-family: monospace;*/
+  /*font-size: 1.75rem;*/
 }
 
 .type {
-  font-family: monospace;
+  /*font-family: monospace;*/
+}
+
+.property-container {
+  background-color: #f2f8ff;
+  cursor: pointer;
+  padding: .75rem;
+  margin-bottom: .5rem;
 }

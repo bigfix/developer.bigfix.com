@@ -14,23 +14,33 @@
   <h1 id="description" class="type">{{name}}</h1>
   {{{description}}}
 
+  {{#parentHtml}}
+  Parent: {{{parentHtml}}}
+  {{/parentHtml}}
+
+  Availability:
+
+  <dl>
+    {{#availability}}<dt>{{version}}</dt><dd>{{platforms}}</dd>{{/availability}}
+  </dl>
+
   {{#creation}}
   <h2 id="creation">Creation</h2>
   {{{creation}}}
   {{/creation}}
 
   {{#properties}}
-  <h2 id="properties">Properties of {{name}}</h2>
+  <h2 id="properties">Properties</h2>
   {{{properties}}}
   {{/properties}}
 
   {{#casts}}
-  <h2 id="casts">Casts of {{name}}</h2>
+  <h2 id="casts">Casts</h2>
   {{{casts}}}
   {{/casts}}
 
   {{#operators}}
-  <h2 id="operators">Operators of {{name}}</h2>
+  <h2 id="operators">Operators</h2>
   {{{operators}}}
   {{/operators}}
   </div>

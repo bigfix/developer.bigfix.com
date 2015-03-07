@@ -1,0 +1,15 @@
+<div class="entry-group">
+  <div class="entry-heading">{{{heading}}}</div>
+  <div class="entry-body">
+    {{{body}}}
+
+    {{#plural}}
+    Plural: {{plural}}
+    {{/plural}}
+
+    Availability:
+    <dl>
+      {{#availability}}<dt>{{version}}</dt><dd>{{platforms}}</dd>{{/availability}}
+    </dl>
+  </div>
+</div>

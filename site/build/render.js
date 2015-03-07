@@ -25,6 +25,19 @@ function linkType(type) {
   return type.substr(0, openParen) + '( ' + links + ' )';
 }
 
+function makeAvailability(value) {
+  var availability = [];
+
+  Object.keys(value.availability).forEach(function(version) {
+    availability.push({
+      version: version,
+      platforms: value.availability[version].join(', ')
+    });
+  });
+
+  return availability;
+}
+
 function parseExample(text) {
   var example = { question: '', answers: [], errors: [] };
 
@@ -39,11 +52,6 @@ function parseExample(text) {
   });
 
   return example;
-}
-
-function compileTemplate(templatesDir, name) {
-  var contents = fs.readFileSync(path.join(templatesDir, name)).toString()
-  return Hogan.compile(contents);
 }
 
 function renderProperty(property, template) {
@@ -94,16 +102,21 @@ function renderUnaryOp(property, template) {
   return template.render(data);
 }
 
-function renderDocs(templatesDir, language, docs) {
-  var templates = {
-    type: compileTemplate(templatesDir, 'type.html'),
-    property: compileTemplate(templatesDir, 'property.html'),
-    cast: compileTemplate(templatesDir, 'cast.html'),
-    binaryOp: compileTemplate(templatesDir, 'binaryop.html'),
-    unaryOp: compileTemplate(templatesDir, 'unaryop.html'),
-    example: compileTemplate(templatesDir, 'example.html')
+function renderEntry(heading, body, property, template) {
+  var data = {
+    heading: heading,
+    body: body,
+    availability: makeAvailability(property)
   };
 
+  if (property.pluralPhrase) {
+    data.plural = property.pluralPhrase;
+  }
+
+  return template.render(data);
+}
+
+function renderText(text, templates) {
   var exampleData = {
     example: function() {
       return function(text) {
@@ -112,30 +125,98 @@ function renderDocs(templatesDir, language, docs) {
     }
   };
 
-  function renderText(text) {
-    return marked(Hogan.compile(text).render(exampleData));
-  }
-
-  Object.keys(docs.types).forEach(function(key) {
-    docs.types[key] = renderText(docs.types[key]).trim();
-  });
-
-  Object.keys(docs.properties).forEach(function(key) {
-    var renderedProperty, property = language.properties[key];
-
-    if (property.type === 'property') {
-      renderedProperty = renderProperty(property, templates.property);
-    } else if (property.type === 'cast') {
-      renderedProperty = renderCast(property, templates.cast);
-    } else if (property.type === 'binaryOp') {
-      renderedProperty = renderBinaryOp(property, templates.binaryOp);
-    } else if (property.type === 'unaryOp') {
-      renderedProperty = renderUnaryOp(property, templates.unaryOp);
-    }
-
-    docs.properties[key] = renderedProperty.trim() + '\n\n' +
-      renderText(docs.properties[key]).trim();
-  });
+  return marked(Hogan.compile(text).render(exampleData));
 }
 
-module.exports = renderDocs;
+function renderProperties(language, docs, templates) {
+  var rendered = {};
+
+  Object.keys(docs.properties).forEach(function(key) {
+    var property = language.properties[key];
+
+    var heading;
+    if (property.type === 'property') {
+      heading = renderProperty(property, templates.properties.property);
+    } else if (property.type === 'cast') {
+      heading = renderCast(property, templates.properties.cast);
+    } else if (property.type === 'binaryOp') {
+      heading = renderBinaryOp(property, templates.properties.binary);
+    } else if (property.type === 'unaryOp') {
+      heading = renderUnaryOp(property, templates.properties.unary);
+    }
+
+    var body = renderText(docs.properties[key], templates);
+
+    rendered[key] = renderEntry(heading, body, property, templates.entry);
+  });
+
+  return rendered;
+}
+
+function renderType(type, text, renderedProperties, associations, templates) {
+  var creation = associations.creation[type.name];
+  var methods = associations.methods[type.name];
+
+  function getDoc(property) {
+    return renderedProperties[property];
+  }
+
+  var data = {
+    name: type.name,
+    description: renderText(text, templates),
+    parent: type.parent,
+    availability: makeAvailability(type)
+  };
+
+  var creationEntries = creation.properties.sort()
+    .concat(creation.casts.sort())
+    .concat(creation.operators.sort());
+
+  if (creationEntries.length !== 0) {
+    data.creation = creationEntries.map(getDoc).join('\n\n');
+  }
+
+  if (methods.properties.length !== 0) {
+    data.properties = methods.properties.sort().map(getDoc).join('\n\n');
+  }
+
+  if (methods.casts.length !== 0) {
+    data.casts = methods.casts.sort().map(getDoc).join('\n\n');
+  }
+
+  if (methods.operators.length !== 0) {
+    data.operators = methods.operators.sort().map(getDoc).join('\n\n');
+  }
+
+  return templates.type.render(data);
+}
+
+function render(language, docs, associations, templates) {
+  var pages = [];
+
+  var renderedProperties = renderProperties(language, docs, templates);
+
+  Object.keys(language.types).forEach(function(key) {
+    var type = language.types[key];
+    var text = docs.types[key];
+
+    var content =
+      renderType(type, text, renderedProperties, associations, templates);
+
+    var data = {
+      title: type.name,
+      content: content
+    };
+
+    var href =
+      path.join('reference', 'types', type.name.replace(/ /g, '-') + '.html');
+
+    var content = templates.page.render(data);
+
+    pages.push({ href: href, content: content });
+  });
+
+  return pages;
+}
+
+module.exports = render;
