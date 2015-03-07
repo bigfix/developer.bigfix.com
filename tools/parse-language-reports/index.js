@@ -43,6 +43,10 @@ function convertPlatformsToAvailability(value) {
     value.availability[version].push(platform);
   });
 
+  Object.keys(value.availability).forEach(function(version) {
+    value.availability[version].sort();
+  });
+
   delete value.platforms;
 }
 
