@@ -1,6 +1,6 @@
 This tool parses a bunch of "relevance language report" files. These are files
-produced internally by the platform build that lists all inspectors available on
-that platform.
+produced internally by the platform build, and they list all inspectors
+available on each platform.
 
 The tool should be run like:
 

@@ -3,29 +3,55 @@ var extend = require('util')._extend,
   parse = require('./parse'),
   path = require('path');
 
-if (process.argv.length !== 3) {
-  console.error('usage: parse-language-reports <folder>');
-  return process.exit(1);
+function getPlatform(reportPath) {
+  var platform = path.basename(reportPath).match(/Language\.(.+)\.txt$/)[1];
+
+  if (platform.indexOf('windows') !== -1) {
+    return 'windows';
+  }
+
+  if (platform === 'Console_WebReports') {
+    return 'session';
+  }
+
+  return platform;
 }
 
-var combinedReport = {
-  types: {},
-  properties: {}
-};
+function parseLanguageReports(languageReports) {
+  var combinedReport = {
+    types: {},
+    properties: {}
+  };
 
-var versionFolders = fs.readdirSync(process.argv[2]);
-versionFolders.forEach(function(folder) {
-  var versionPath = path.join(process.argv[2], folder);
+  fs.readdirSync(languageReports).forEach(function(version) {
+    var versionPath = path.join(languageReports, version);
 
-  var languageReports = fs.readdirSync(versionPath);
-  languageReports.forEach(function(reportFile) {
-    var reportPath = path.join(versionPath, reportFile);
-    console.error(reportPath);
+    fs.readdirSync(versionPath).forEach(function(reportFile) {
+      var reportPath = path.join(versionPath, reportFile);
+      var platform = getPlatform(reportPath);
 
-    var report = parse(fs.readFileSync(reportPath));
-    extend(combinedReport.types, report.types);
-    extend(combinedReport.properties, report.properties);
+      console.error(version + ' - ' + platform);
+
+      var report = parse(fs.readFileSync(reportPath));
+      extend(combinedReport.types, report.types);
+      extend(combinedReport.properties, report.properties);
+    });
   });
-});
 
-console.log(JSON.stringify(combinedReport));
+  return combinedReport;
+}
+
+function main() {
+  if (process.argv.length !== 3) {
+    console.error('usage: parse-language-reports <folder>');
+    return process.exit(1);
+  }
+
+  console.log(JSON.stringify(parseLanguageReports(process.argv[2])));
+}
+
+if (require.main === module) {
+  main();
+}
+
+module.exports = parseLanguageReports;
