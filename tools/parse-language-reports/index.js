@@ -30,6 +30,22 @@ function addPlatform(value, platform, version) {
   }
 }
 
+function convertPlatformsToAvailability(value) {
+  value.availability = {};
+
+  Object.keys(value.platforms).forEach(function(platform) {
+    var version = value.platforms[platform];
+
+    if (!value.availability[version]) {
+      value.availability[version] = [];
+    }
+
+    value.availability[version].push(platform);
+  });
+
+  delete value.platforms;
+}
+
 function getPlatform(reportPath, platformNames) {
   var platform = path.basename(reportPath).match(/Language\.(.+)\.txt$/)[1];
 
@@ -43,8 +59,7 @@ function getPlatform(reportPath, platformNames) {
 function parseLanguageReports(languageReports, platformNames) {
   var combinedReport = {
     types: {},
-    properties: {},
-    platforms: {}
+    properties: {}
   };
 
   fs.readdirSync(languageReports).forEach(function(version) {
@@ -55,8 +70,6 @@ function parseLanguageReports(languageReports, platformNames) {
       var platform = getPlatform(reportPath, platformNames);
 
       console.error(version + ' - ' + platform);
-
-      addPlatform(combinedReport, platform, version);
 
       var report = parse(fs.readFileSync(reportPath));
 
@@ -76,6 +89,14 @@ function parseLanguageReports(languageReports, platformNames) {
         addPlatform(combinedReport.properties[key], platform, version);
       });
     });
+  });
+
+  Object.keys(combinedReport.types).forEach(function(key) {
+    convertPlatformsToAvailability(combinedReport.types[key]);
+  });
+
+  Object.keys(combinedReport.properties).forEach(function(key) {
+    convertPlatformsToAvailability(combinedReport.properties[key]);
   });
 
   return combinedReport;
@@ -102,10 +123,7 @@ function main() {
     return process.exit(1);
   }
 
-  var platformNames = getPlatformNames();
-
-  var language = parseLanguageReports(process.argv[2], platformNames);
-
+  var language = parseLanguageReports(process.argv[2], getPlatformNames());
   console.log(JSON.stringify(language));
 }
 
