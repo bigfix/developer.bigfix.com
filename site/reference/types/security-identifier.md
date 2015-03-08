@@ -8,7 +8,13 @@ Retrieves the name of the account for this SID and the name of the first domain 
 
 # component string of &lt;security identifier&gt;
 
-This Windows-specific inspector returns a string formatted using the ConvertSidToStringSid windows API, discussed at: http://msdn2.microsoft.com/en-us/library/aa376399(VS.85).aspx.Example: component string of owner of security descriptor of windows folder - Returns a string of the form: S-1-5-32-544.
+This inspector returns a string formatted using the [ConvertSidToStringSid](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376399%28v=vs.85%29.aspx) function.
+
+{{#example}}
+Q: component string of owner of security descriptor of windows folder
+A: S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+I: singular string
+{{/example}}
 
 # domain name of &lt;security identifier&gt;
 
