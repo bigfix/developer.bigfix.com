@@ -44,7 +44,13 @@ Returns the filter with the specified ID. It is the same as &quot;bes filter who
 
 # bit &lt;integer&gt;
 
-Returns `True` or FALSE, corresponding to value of the bit specified by &lt;integer&gt;.
+Returns a `bit set` with the nth bit set.
+
+{{#example}}
+Q: bit 5
+A: 100000
+I: singular bit set
+{{/example}}
 
 # bit &lt;integer&gt; of &lt;integer&gt;
 
@@ -346,9 +352,21 @@ Returns the Nth (as specified by the integer) global Solaris zone.
 
 Returns the bits of the binary representation of the integer; bit zero is the least-significant bit.
 
+{{#example}}
+Q: 42 as bit set
+A: 101010
+I: singular bit set
+{{/example}}
+
 # &lt;integer&gt; as bits
 
 Returns the bits of the binary representation of the integer; bit zero is the least-significant bit.
+
+{{#example}}
+Q: 42 as bits
+A: 101010
+I: singular bit set
+{{/example}}
 
 # &lt;integer&gt; as day_of_month
 

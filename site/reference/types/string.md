@@ -124,6 +124,12 @@ Typically used in the plural, returns the various possible binary inspectors tha
 
 Returns the bits of the binary number given by the string.
 
+{{#example}}
+Q: bit set "1010"
+A: 1010
+I: singular bit set
+{{/example}}
+
 # blockquote &lt;string&gt; of &lt;string&gt;
 
 Returns an HTML snippet with the specified string enclosed in a &lt;blockquote&gt; tag modified by the first given string.
