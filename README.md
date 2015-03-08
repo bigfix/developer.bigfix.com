@@ -7,7 +7,8 @@ files in the `site` folder.
 
 ### Previewing your changes
 
-The site can be previewed using Vagrant. To do this run:
+The site can be previewed using [Vagrant](https://www.vagrantup.com/). To do
+this run:
 
     $ vagrant up
     $ vagrant ssh
