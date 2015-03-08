@@ -1,34 +1,34 @@
 # type: bes fixlet
 
-The &lt;bes fixlet&gt; inspectors allow you to iterate over the BES Fixlet messages to create lists of various Fixlet properties such as name, ID, site, and more.
+The &lt;bes fixlet&gt; inspectors allow you to iterate over the BES fixlets to create lists of various Fixlet properties such as name, ID, site, and more.
 
 # action &lt;integer&gt; of &lt;bes fixlet&gt;
 
-Returns an object representing the nth action for the specified Fixlet message.
+Returns an object representing the nth action for the specified fixlet.
 
 # action &lt;string&gt; of &lt;bes fixlet&gt;
 
-Returns an object representing the named action for the specified Fixlet message.
+Returns an object representing the named action for the specified fixlet.
 
 # action of &lt;bes fixlet&gt;
 
-Returns a list of all the Fixlet actions associated with the specified Fixlet message.
+Returns a list of all the Fixlet actions associated with the specified fixlet.
 
 # activation of &lt;bes fixlet&gt;
 
-If the specified Fixlet message is from an analysis, this inspector returns a list of all of its activations.
+If the specified fixlet is from an analysis, this inspector returns a list of all of its activations.
 
 # analysis flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified BES Fixlet message originates from an Analysis.
+Returns `True` if the specified BES fixlet originates from an Analysis.
 
 # applicable computer count of &lt;bes fixlet&gt;
 
-Returns the number of computers (regardless of locking) that have reported that the specified Fixlet message is relevant.
+Returns the number of computers (regardless of locking) that have reported that the specified fixlet is relevant.
 
 # applicable computer of &lt;bes fixlet&gt;
 
-Returns a list of all of the &lt;bes computer&gt; objects reporting that the specified Fixlet message is relevant.
+Returns a list of all of the &lt;bes computer&gt; objects reporting that the specified fixlet is relevant.
 
 # applicable computer set of &lt;bes fixlet&gt;
 
@@ -36,35 +36,35 @@ Returns the set of computers where the given Fixlet(s) is applicable, i.e., thos
 
 # baseline flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified BES Fixlet message originates from a Baseline.
+Returns `True` if the specified BES fixlet originates from a Baseline.
 
 # best activation of &lt;bes fixlet&gt;
 
-If the specified Fixlet message is from an analysis, then this inspector returns the activation which is most appropriate for the current console user.
+If the specified fixlet is from an analysis, then this inspector returns the activation which is most appropriate for the current console user.
 
 # body of &lt;bes fixlet&gt;
 
-Returns an HTML string containing the body of the Fixlet message.
+Returns an HTML string containing the body of the fixlet.
 
 # category of &lt;bes fixlet&gt;
 
-Returns the category of the given Fixlet message as a string value, such as &quot;Security Hotfix&quot;, &quot;Service Pack&quot;, &quot;Upgrade&quot;, and others.
+Returns the category of the given fixlet as a string value, such as &quot;Security Hotfix&quot;, &quot;Service Pack&quot;, &quot;Upgrade&quot;, and others.
 
 # charset of &lt;bes fixlet&gt;
 
-Returns the character set to be used when displaying the body or text of the specified Fixlet message.
+Returns the character set to be used when displaying the body or text of the specified fixlet.
 
 # comment of &lt;bes fixlet&gt;
 
-Returns the comments assigned to the specified BES Fixlet message.
+Returns the comments assigned to the specified BES fixlet.
 
 # component group of &lt;bes fixlet&gt;
 
-If the specified Fixlet message is a baseline, then this inspector iterates over the component groups.
+If the specified fixlet is a baseline, then this inspector iterates over the component groups.
 
 # components xml of &lt;bes fixlet&gt;
 
-If the specified Fixlet message is a baseline, then this inspector returned the XML representation of the baseline components. Use component groups of &lt;bes fixlet&gt; instead.
+If the specified fixlet is a baseline, then this inspector returned the XML representation of the baseline components. Use component groups of &lt;bes fixlet&gt; instead.
 
 # creation time of &lt;bes fixlet&gt;
 
@@ -72,27 +72,27 @@ Returns the time when the specified fixlet was created. This inspector is only v
 
 # custom flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified BES Fixlet message is custom.
+Returns `True` if the specified BES fixlet is custom.
 
 # custom site flag of &lt;bes fixlet&gt;
 
-Returns `True` if and only if the specified Fixlet message resides in a custom site.
+Returns `True` if and only if the specified fixlet resides in a custom site.
 
 # custom site of &lt;bes fixlet&gt;
 
-If the specified Fixlet message resides in a custom site, this inspector returns the corresponding site object.
+If the specified fixlet resides in a custom site, this inspector returns the corresponding site object.
 
 # cve id list of &lt;bes fixlet&gt;
 
-Returns a string containing the list of CVE (Common Vulnerabilities and Exposures) ID numbers associated with the specified Fixlet message.
+Returns a string containing the list of CVE (Common Vulnerabilities and Exposures) ID numbers associated with the specified fixlet.
 
 # default action of &lt;bes fixlet&gt;
 
-Returns an object representing the default action for the specified Fixlet message.
+Returns an object representing the default action for the specified fixlet.
 
 # digest file name of &lt;bes fixlet&gt;
 
-Returns the file name of the .fxf file that contains this Fixlet message, or the empty string if the Fixlet message does not come from a digest file (i.e., it is a custom Fixlet).
+Returns the file name of the .fxf file that contains this fixlet, or the empty string if the fixlet does not come from a digest file (i.e., it is a custom Fixlet).
 
 # display category of &lt;bes fixlet&gt;
 
@@ -120,11 +120,11 @@ Returns the source severity of the specified Fixlet. This inspector returns the 
 
 # domain of &lt;bes fixlet&gt;
 
-A domain is attached to a Fixlet message when it is created. This inspector returns the domain associated with the specified Fixlet.
+A domain is attached to a fixlet when it is created. This inspector returns the domain associated with the specified Fixlet.
 
 # download size of &lt;bes fixlet&gt;
 
-Returns the size of the download associated with this Fixlet message, in bytes.
+Returns the size of the download associated with this fixlet, in bytes.
 
 # field &lt;string&gt; of &lt;bes fixlet&gt;
 
@@ -136,19 +136,19 @@ Returns the fields associated with the specified BES Fixlet.
 
 # fixlet flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified BES Fixlet message originates from an ordinary Fixlet site.
+Returns `True` if the specified BES fixlet originates from an ordinary Fixlet site.
 
 # globally visible flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified Fixlet message is globally visible.
+Returns `True` if the specified fixlet is globally visible.
 
 # group flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified BES Fixlet message originates from a Group.
+Returns `True` if the specified BES fixlet originates from a Group.
 
 # id of &lt;bes fixlet&gt;
 
-Returns the numeric ID unique to the specified Fixlet message.
+Returns the numeric ID unique to the specified fixlet.
 
 # issuer of &lt;bes fixlet&gt;
 
@@ -172,15 +172,15 @@ Returns an HTML string containing an &lt;A&gt; tag that when clicked will open t
 
 # locally visible flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified Fixlet message is locally visible.Note: This is a Console-only inspector.
+Returns `True` if the specified fixlet is locally visible.Note: This is a Console-only inspector.
 
 # master site flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified Fixlet message is from the Master site.
+Returns `True` if the specified fixlet is from the Master site.
 
 # message of &lt;bes fixlet&gt;
 
-Returns an HTML string containing the text of the Fixlet message.
+Returns an HTML string containing the text of the fixlet.
 
 # mime field &lt;string&gt; of &lt;bes fixlet&gt;
 
@@ -200,11 +200,11 @@ Returns the name of the specified BES Fixlet.
 
 # open action count of &lt;bes fixlet&gt;
 
-Returns the number of open actions whose source is the specified Fixlet message.
+Returns the number of open actions whose source is the specified fixlet.
 
 # operator site flag of &lt;bes fixlet&gt;
 
-Returns `True` if and only if the specified Fixlet message resides in a non-master operator site.
+Returns `True` if and only if the specified fixlet resides in a non-master operator site.
 
 # parent relevance of &lt;bes fixlet&gt;
 
@@ -224,11 +224,11 @@ Iterates over all the individual relevances clauses in a Fixlet.  The related in
 
 # relevance of &lt;bes fixlet&gt;
 
-Returns the relevance expression used to determine if the specified Fixlet message is applicable on a client computer.
+Returns the relevance expression used to determine if the specified fixlet is applicable on a client computer.
 
 # relevant &lt;bes computer&gt; of &lt;bes fixlet&gt;
 
-Returns `True` if the given Fixlet message is relevant on the specified computer.
+Returns `True` if the given fixlet is relevant on the specified computer.
 
 # result from &lt;bes computer&gt; of &lt;bes fixlet&gt;
 
@@ -236,11 +236,11 @@ Returns a Fixlet result for the given computer and Fixlet.
 
 # result of &lt;bes fixlet&gt;
 
-Returns a list of all &lt;bes fixlet result&gt; objects for all computers that have reported on the specified Fixlet message.
+Returns a list of all &lt;bes fixlet result&gt; objects for all computers that have reported on the specified fixlet.
 
 # sans id list of &lt;bes fixlet&gt;
 
-Returns a string containing the list of SANS (SysAdmin, Audit, Network, Security) ID numbers associated with the specified Fixlet message.
+Returns a string containing the list of SANS (SysAdmin, Audit, Network, Security) ID numbers associated with the specified fixlet.
 
 # set of &lt;bes fixlet&gt;
 
@@ -252,19 +252,19 @@ Returns the &lt;bes site&gt; object which contains the specified fixlet.
 
 # source id of &lt;bes fixlet&gt;
 
-Returns the source ID of the given Fixlet message as a string value.
+Returns the source ID of the given fixlet as a string value.
 
 # source of &lt;bes fixlet&gt;
 
-Returns the source of the given Fixlet message as a string value.
+Returns the source of the given fixlet as a string value.
 
 # source release date of &lt;bes fixlet&gt;
 
-Returns the &lt;date&gt; object that represents the source release date of the specified Fixlet message.
+Returns the &lt;date&gt; object that represents the source release date of the specified fixlet.
 
 # source severity of &lt;bes fixlet&gt;
 
-Returns the source severity of the given Fixlet message as a string value.
+Returns the source severity of the given fixlet as a string value.
 
 # taken action of &lt;bes fixlet&gt;
 
@@ -276,11 +276,11 @@ This inspector Iterates over the Actions sourced from the given fixlet and retur
 
 # task flag of &lt;bes fixlet&gt;
 
-Returns `True` if the specified BES Fixlet message originates from a Task.
+Returns `True` if the specified BES fixlet originates from a Task.
 
 # type of &lt;bes fixlet&gt;
 
-Returns the type of the specified Fixlet message, which can have values such as &quot;Fixlet&quot;, &quot;Task&quot;, &quot;Analysis&quot;, &quot;ComputerGroup&quot; or &quot;Baseline&quot;.
+Returns the type of the specified fixlet, which can have values such as &quot;Fixlet&quot;, &quot;Task&quot;, &quot;Analysis&quot;, &quot;ComputerGroup&quot; or &quot;Baseline&quot;.
 
 # unique value of &lt;bes fixlet&gt;
 
@@ -288,7 +288,7 @@ Returns the unique values of a given list of &lt;bes fixlet&gt; types, removing 
 
 # unlocked computer count of &lt;bes fixlet&gt;
 
-Returns the number of computers that are not locked and that have reported that the specified Fixlet message is relevant.Note: This is a Console-only inspector.
+Returns the number of computers that are not locked and that have reported that the specified fixlet is relevant.Note: This is a Console-only inspector.
 
 # visible flag of &lt;bes fixlet&gt;
 
@@ -296,15 +296,15 @@ Returns `True` if the specified BES Fixlet is not globally or locally hidden.
 
 # wizard data of &lt;bes fixlet&gt;
 
-If the specified Fixlet message was created with a Wizard then this inspector returns the HTML string representing the DataStore element of that Wizard.Note: This is a Console-only inspector.
+If the specified fixlet was created with a Wizard then this inspector returns the HTML string representing the DataStore element of that Wizard.Note: This is a Console-only inspector.
 
 # wizard link of &lt;bes fixlet&gt;
 
-If the specified Fixlet message was created with a Wizard then this inspector returns the HTML string representing the link of that Wizard.Note: This is a Console-only inspector.
+If the specified fixlet was created with a Wizard then this inspector returns the HTML string representing the link of that Wizard.Note: This is a Console-only inspector.
 
 # wizard name of &lt;bes fixlet&gt;
 
-If the specified Fixlet message was created with a Wizard then this inspector returns the HTML string representing the name of that Wizard.Note: This is a Console-only inspector.
+If the specified fixlet was created with a Wizard then this inspector returns the HTML string representing the name of that Wizard.Note: This is a Console-only inspector.
 
 # &lt;bes fixlet&gt; as xml
 

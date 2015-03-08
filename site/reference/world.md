@@ -328,7 +328,7 @@ Returns a list of all the BES properties.
 
 # bes fixlet set
 
-Returns the current list of BES Fixlet messages in the form of a set, which can be arithmetically manipulated.
+Returns the current list of BES fixlets in the form of a set, which can be arithmetically manipulated.
 
 # bes language
 
@@ -616,7 +616,7 @@ Returns a &lt;bes server&gt; object corresponding to the BES Server currently co
 
 # current bes site
 
-Returns the site that is the source of the current relevance evaluation. Items in a site that can evaluate relevance include Fixlet messages, Tasks, Baselines, Analyses, Wizards and Dashboards.
+Returns the site that is the source of the current relevance evaluation. Items in a site that can evaluate relevance include fixlets, Tasks, Baselines, Analyses, Wizards and Dashboards.
 
 # current computer
 
@@ -644,7 +644,7 @@ Returns the current day of the year, in a Month Day format.
 
 # current domain
 
-Returns the domain that is the source of the current relevance evaluation. Items in the domain that can evaluate relevance include Fixlet messages, Tasks, Baselines, Analyses, Wizards and Dashboards and Domains.
+Returns the domain that is the source of the current relevance evaluation. Items in the domain that can evaluate relevance include fixlets, Tasks, Baselines, Analyses, Wizards and Dashboards and Domains.
 
 # current firewall profile type
 
@@ -652,7 +652,7 @@ Retrieves the type of firewall profile that is currently in effect.
 
 # current fixlet
 
-When this inspector is evaluated in the context of a Fixlet message, it returns the associated Fixlet object.Note: This is a Console-only inspector.
+When this inspector is evaluated in the context of a fixlet, it returns the associated Fixlet object.Note: This is a Console-only inspector.
 
 # current month
 
@@ -1664,11 +1664,11 @@ Returns a service object for the relay component of BES. Note: On a Macintosh, t
 
 # relevant &lt;( bes computer, bes fixlet )&gt;
 
-Returns `True` if the given Fixlet message is relevant on the specified computer.
+Returns `True` if the given fixlet is relevant on the specified computer.
 
 # relevant &lt;( bes fixlet, bes computer )&gt;
 
-Returns `True` if the given Fixlet message is relevant on the specified computer.
+Returns `True` if the given fixlet is relevant on the specified computer.
 
 # remote desktop firewall service type
 

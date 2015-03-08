@@ -1,6 +1,6 @@
 # type: bes fixlet result
 
-The &lt;bes fixlet result&gt; inspectors allow you to inspect the results of BES Fixlet messages, including relevance and affected computers.
+The &lt;bes fixlet result&gt; inspectors allow you to inspect the results of BES fixlets, including relevance and affected computers.
 
 # computer of &lt;bes fixlet result&gt;
 
@@ -12,11 +12,11 @@ Returns the time when the Fixlet result first became relevant.Note: This is a We
 
 # fixlet of &lt;bes fixlet result&gt;
 
-Returns the Fixlet message associated with the specified Fixlet result.
+Returns the fixlet associated with the specified Fixlet result.
 
 # last became nonrelevant of &lt;bes fixlet result&gt;
 
-Returns the time when the Fixlet result last became non-relevant. This may be tied to the successful completion of the Fixlet message.Note: This is a Web Reports-only inspector.
+Returns the time when the Fixlet result last became non-relevant. This may be tied to the successful completion of the fixlet.Note: This is a Web Reports-only inspector.
 
 # last became relevant of &lt;bes fixlet result&gt;
 

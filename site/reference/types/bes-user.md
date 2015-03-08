@@ -64,11 +64,11 @@ Returns all computer group sets issued by the specified user.
 
 # issued fixlet of &lt;bes user&gt;
 
-Returns all Fixlet messages issued by the specified user.
+Returns all fixlets issued by the specified user.
 
 # issued fixlet set of &lt;bes user&gt;
 
-Returns all Fixlet message sets issued by the specified user.
+Returns all fixlet sets issued by the specified user.
 
 # last login time of &lt;bes user&gt;
 

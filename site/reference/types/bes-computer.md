@@ -136,7 +136,7 @@ Returns the result of the &#39;Relay&#39; property of the specified computer.
 
 # relevant &lt;bes fixlet&gt; of &lt;bes computer&gt;
 
-Returns `True` if the given Fixlet message is relevant on the specified computer.
+Returns `True` if the given fixlet is relevant on the specified computer.
 
 # relevant fixlet of &lt;bes computer&gt;
 

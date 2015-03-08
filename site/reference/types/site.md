@@ -12,7 +12,7 @@ No documentation exists.
 
 # fixlet of &lt;site&gt;
 
-Iterates through the Fixlet messages of the specified site.
+Iterates through the fixlets of the specified site.
 
 # folder of &lt;site&gt;
 
@@ -48,7 +48,7 @@ No documentation exists.
 
 # relevant fixlet of &lt;site&gt;
 
-Iterates through the Relevant Fixlet messages for the specified site.
+Iterates through the Relevant fixlets for the specified site.
 
 # relevant offer action of &lt;site&gt;
 
