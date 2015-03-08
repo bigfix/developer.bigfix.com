@@ -6,6 +6,12 @@ Strings are typically core objects, but some string inspectors may be client-spe
 
 Returns an HTML snippet with the specified string enclosed in an &lt;abbr&gt; tag modified by the first given string.
 
+{{#example}}
+Q: abbr "title=%22BigFix%22" of "bf"
+A: <abbr title="BigFix">bf</abbr>
+I: singular html
+{{/example}}
+
 # abbr of &lt;string&gt;
 
 Returns an HTML snippet containing the specified string enclosed in an &lt;abbr&gt; tag.
@@ -72,11 +78,23 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;base&g
 
 # base64 decode &lt;string&gt;
 
-No documentation exists.
+Decode the string from [Base64](http://en.wikipedia.org/wiki/Base64).
+
+{{#example}}
+Q: base64 decode "SGVsbG8sIHdvcmxkIQ=="
+A: Hello, world!
+I: singular string
+{{/example}}
 
 # base64 encode &lt;string&gt;
 
-No documentation exists.
+Encode the string into [Base64](http://en.wikipedia.org/wiki/Base64).
+
+{{#example}}
+Q: base64 encode "Hello, world!"
+A: SGVsbG8sIHdvcmxkIQ==
+I: singular string
+{{/example}}
 
 # bes deployment option &lt;string&gt;
 
@@ -167,14 +185,24 @@ No documentation exists.
 Returns a string of length 1 made by taking the character identified by &lt;integer&gt; from the string. Numbering begins at zero.
 
 {{#example}}
-Q: character 1 of "hi" = "i"
-A: True
-I: singular boolean
+Q: character 1 of "hello"
+A: e
+I: singular substring
 {{/example}}
 
 # character of &lt;string&gt;
 
 Returns the characters from the string.
+
+{{#example}}
+Q: characters of "hello"
+A: h
+A: e
+A: l
+A: l
+A: o
+I: plural substring
+{{/example}}
 
 # cite &lt;string&gt; of &lt;string&gt;
 
@@ -216,9 +244,21 @@ This inspector concatenates the string items in the second argument with a separ
 
 This inspector concatenates the string items in the second argument with a separator defined by the string argument.
 
+{{#example}}
+Q: concatenation ", " of ("foo"; "bar"; "baz")
+A: foo, bar, baz
+I: singular string
+{{/example}}
+
 # concatenation of &lt;string&gt;
 
 Combines the supplied strings into a single string, end-to-end.
+
+{{#example}}
+Q: concatenation of ("foo"; "bar"; "baz")
+A: foobarbaz
+I: singular string
+{{/example}}
 
 # control panel &lt;string&gt;
 
@@ -235,6 +275,12 @@ Returns the date the custom site (specified by &lt;string&gt;) was last subscrib
 # date &lt;string&gt;
 
 Converts the given string into a date. The string should be of the form &#39;Day Month Year&#39; and the returned date will be of the form &#39;Day of week, Day Month Year&#39;.
+
+{{#example}}
+Q: date "11 Mar 1984"
+A: Sun, 11 Mar 1984
+I: singular date
+{{/example}}
 
 # day_of_month &lt;string&gt;
 
@@ -376,6 +422,11 @@ No documentation exists.
 
 This expression allows you to output your own user-defined error message, typically in the &#39;else&#39; clause of an &#39;if/then/else&#39; statement.
 
+{{#example}}
+Q: error "hodor!"
+E: User-defined error: hodor!
+{{/example}}
+
 # escape of &lt;string&gt;
 
 Returns a string containing a \\ for every \ character found. Useful for setting registry key values to strings in regset action commands.
@@ -390,11 +441,23 @@ No documentation exists.
 
 # expand environment string of &lt;string&gt;
 
-Uses the Windows ExpandEnvironmentStrings API to translate a string containing special Windows environment variables. For example, %windir%\my.dll might expand to c:\winnt\my.dll.
+Uses the Windows [ExpandEnvironmentStrings](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724265%28v=vs.85%29.aspx) API to translate a string containing special Windows environment variables.
+
+{{#example}}
+Q: expand environment string of "%25windir%25\my.dll"
+A: C:\Windows\my.dll
+I: singular string
+{{/example}}
 
 # expand x32 environment string of &lt;string&gt;
 
-Uses the Windows ExpandEnvironmentStrings API to translate a string containing special Windows environment variables from the 32 bit environment. For example, %windir%\my.dll might expand to c:\Windows\my.dll.
+Uses the Windows [ExpandEnvironmentStrings](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724265%28v=vs.85%29.aspx) API to translate a string containing special Windows environment variables.
+
+{{#example}}
+Q: expand x32 environment string of "%25windir%25\my.dll"
+A: C:\Windows\my.dll
+I: singular string
+{{/example}}
 
 # expand x64 environment string of &lt;string&gt;
 

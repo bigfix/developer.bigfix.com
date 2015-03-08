@@ -155,3 +155,15 @@ table.support td {
 .links a {
   margin-right: 1rem;
 }
+
+.hljs-keyword {
+  color: #0000ff;
+}
+
+.hljs-string {
+  color: #008080;
+}
+
+.hljs-number {
+  color: #800080;
+}

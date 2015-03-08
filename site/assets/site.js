@@ -24,6 +24,10 @@ function toggleShared() {
     return;
   }
 
+  if (!entry.classList.contains('entry')) {
+    return;
+  }
+
   var entryHeading = entry.firstElementChild;
   var entryExpand = entryHeading.firstElementChild;
 
