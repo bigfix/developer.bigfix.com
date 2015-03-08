@@ -12,6 +12,6 @@ git clone $GIT_DIR $TMP_DIR
 
 cd $TMP_DIR
 site/build
-rsync --archive --delete-excluded _site/ $SITE_DIR
+rsync --archive --delete-excluded output/ $SITE_DIR
 cd -
 rm -rf $TMP_DIR

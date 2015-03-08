@@ -3,7 +3,7 @@
 set -e
 
 SITE=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-OUTDIR=_site
+OUTDIR=output
 
 # Clear output directory
 rm -rf $OUTDIR
@@ -20,11 +20,11 @@ node $SITE/generate $SITE $OUTDIR
 # Make static directory
 mkdir -p $OUTDIR/static
 
-# Copy and minify css
-cleancss --skip-rebase -o $OUTDIR/static/site.css \
+# Copy css
+cat \
   $SITE/assets/Skeleton-2.0.4/css/{normalize.css,skeleton.css} \
   $SITE/assets/font-awesome-4.3.0/css/font-awesome.css \
-  $SITE/assets/site.css
+  $SITE/assets/site.css > $OUTDIR/static/site.css
 
 # Copy js
 cat $SITE/assets/site.js > $OUTDIR/static/site.js
