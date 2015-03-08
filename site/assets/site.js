@@ -11,3 +11,18 @@ function toggleEntry(element) {
 
   element.parentElement.nextElementSibling.classList.toggle('entry-hidden');
 }
+
+function toggleShared() {
+  if (!window.location.hash) {
+    return;
+  }
+
+  var id = window.location.hash.slice(1);
+  var entry = document.getElementById(id);
+  var entryHeading = entry.firstElementChild;
+  var entryExpand = entryHeading.firstElementChild;
+
+  entryExpand.click();
+}
+
+toggleShared();

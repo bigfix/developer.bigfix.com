@@ -121,12 +121,17 @@ body {
   border-top: 0;
 }
 
+.entry-body p {
+  margin-bottom: 1.5rem;
+}
+
 .entry-hidden {
   display: none;
 }
 
 .footnote {
   display: inline-block;
+  margin-bottom: 1rem;
   margin-right: 2rem;
 }
 
@@ -145,4 +150,12 @@ table.support td {
   border: 0;
   padding: .25rem 1.5rem 0 0;
   vertical-align: top;
+}
+
+.links {
+  /*float: right;*/
+}
+
+.links a {
+  margin-right: 1rem;
 }

@@ -25,6 +25,23 @@ function linkType(type) {
   return type.substr(0, openParen) + '( ' + links + ' )';
 }
 
+function escapeKey(key) {
+  return key
+    .replace(/ < /, ' less ')
+    .replace(/ > /, ' greater ')
+    .replace(/ <= /, ' lesseq ')
+    .replace(/ >= /, ' greatereq ')
+    .replace(/ = /, ' equals ')
+    .replace(/ \+ /, ' plus ')
+    .replace(/ - /, ' minus ')
+    .replace(/ \* /, ' times ')
+    .replace(/ \/ /, ' divide ')
+    .replace(/ & /, ' concat ')
+    .replace(/[<>]/g, '')
+    .replace(/[()]/g, '')
+    .replace(/\s+/g, '-');
+}
+
 function makeAvailability(value) {
   var availability = [];
 
@@ -104,9 +121,10 @@ function renderUnaryOp(property, template) {
 
 function renderEntry(heading, body, property, template) {
   var data = {
+    id: escapeKey(property.key),
     heading: heading,
     body: body,
-    availability: makeAvailability(property)
+    availability: makeAvailability(property),
   };
 
   if (property.pluralPhrase) {
