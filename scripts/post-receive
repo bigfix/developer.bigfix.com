@@ -9,6 +9,9 @@ SITE_DIR=/var/www/site
 
 rm -rf $TMP_DIR
 git clone $GIT_DIR $TMP_DIR
-jekyll build --source $TMP_DIR/site --destination $TMP_DIR/_site
-rsync --archive --delete-excluded $TMP_DIR/_site/ $SITE_DIR
+
+cd $TMP_DIR
+site/build
+rsync --archive --delete-excluded _site/ $SITE_DIR
+cd -
 rm -rf $TMP_DIR
