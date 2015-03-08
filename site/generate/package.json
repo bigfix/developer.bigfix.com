@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "escape-html": "^1.0.1",
+    "highlight.js": "^8.4.0",
     "hogan.js": "^3.0.2",
     "marked": "^0.3.3",
     "rimraf": "^2.2.8"

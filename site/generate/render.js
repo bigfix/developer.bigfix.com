@@ -1,8 +1,11 @@
 var escape = require('escape-html'),
   fs = require('fs'),
+  highlight = require('highlight.js'),
   Hogan = require('hogan.js'),
   marked = require('marked'),
   path = require('path');
+
+highlight.registerLanguage('bigfix-relevance', require('./relevance.js'));
 
 function typeAnchor(type) {
   var href = '/reference/types/' + type.replace(/ /g, '-') + '.html';
@@ -60,7 +63,8 @@ function parseExample(text) {
 
   text.trim().split('\n').forEach(function(line) {
     if (line.indexOf('Q:') === 0) {
-      example.question = line.substr(2).trim();
+      example.question =
+        highlight.highlight('bigfix-relevance', line.substr(2).trim()).value;
     } else if (line.indexOf('A:') === 0) {
       example.answers.push({text: line.substr(2).trim()});
     } else if (line.indexOf('E:') === 0) {
