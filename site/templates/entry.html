@@ -1,15 +1,25 @@
-<div class="entry-group">
-  <div class="entry-heading">{{{heading}}}</div>
-  <div class="entry-body">
+<div class="entry">
+  <div class="entry-heading" onclick="toggleEntry(this)">{{{heading}}}</div>
+  <div class="entry-body entry-hidden">
     {{{body}}}
 
     {{#plural}}
-    Plural: {{plural}}
+    <div class="footnote">
+      <h5>Plural</h5>
+      <span class="footnote-body">{{plural}}</span>
+    </div>
     {{/plural}}
 
-    Availability:
-    <dl>
-      {{#availability}}<dt>{{version}}</dt><dd>{{platforms}}</dd>{{/availability}}
-    </dl>
+    <div class="footnote">
+      <h5>Support</h5>
+      <table class="support footnote-body">
+        {{#availability}}
+        <tr>
+          <td>{{version}}</td>
+          <td>{{platforms}}</td>
+        </tr>
+        {{/availability}}
+      </table>
+    </div>
   </div>
 </div>

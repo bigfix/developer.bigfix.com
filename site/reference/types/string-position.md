@@ -8,4 +8,10 @@ Returns the substring following the position in the string. For example, followi
 
 # preceding text of &lt;string position&gt;
 
-Returns the substring preceding the position in the string. For example, preceding text of position 5 of &quot;0123456789&quot; = &quot;01234&quot;.
+Returns the substring preceding the position in the string.
+
+{{#example}}
+Q: preceding text of position 5 of "0123456789"
+A: 01234
+I: singular substring
+{{/example}}

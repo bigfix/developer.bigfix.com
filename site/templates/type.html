@@ -14,15 +14,25 @@
   <h1 id="description" class="type">{{name}}</h1>
   {{{description}}}
 
+
   {{#parentHtml}}
-  Parent: {{{parentHtml}}}
+  <div class="footnote">
+    <h5>Parent</h5>
+    <span class="footnote-body">{{{parentHtml}}}</span>
+  </div>
   {{/parentHtml}}
 
-  Availability:
-
-  <dl>
-    {{#availability}}<dt>{{version}}</dt><dd>{{platforms}}</dd>{{/availability}}
-  </dl>
+  <div class="footnote">
+    <h5>Support</h5>
+    <table class="support footnote-body">
+      {{#availability}}
+      <tr>
+        <td>{{version}}</td>
+        <td>{{platforms}}</td>
+      </tr>
+      {{/availability}}
+    </table>
+  </div>
 
   {{#creation}}
   <h2 id="creation">Creation</h2>

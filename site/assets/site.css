@@ -91,18 +91,44 @@ code {
   color: red;
 }
 
-.property {
-  /*font-family: monospace;*/
-  /*font-size: 1.75rem;*/
+body {
+  font-family: Roboto, Corbel, Avenir, 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
-.type {
-  /*font-family: monospace;*/
+.entry {
+  margin-bottom: 1rem;
 }
 
-.property-container {
+.entry-heading {
   background-color: #f2f8ff;
   cursor: pointer;
   padding: .75rem;
+}
+
+.entry-body {
+  padding: .75rem;
+  border: 1px solid #f1f1f1;
+  border-top: 0;
+}
+
+.entry-hidden {
+  display: none;
+}
+
+.footnote {
   margin-bottom: .5rem;
+}
+
+.footnote h5 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.footnote-body {
+  margin: 0 0 0 1rem;
+}
+
+table.support td {
+  padding: .25rem 1.5rem 0 0;
+  border: 0;
 }

@@ -43,11 +43,11 @@ function parseExample(text) {
 
   text.trim().split('\n').forEach(function(line) {
     if (line.indexOf('Q:') === 0) {
-      question = line.substr(2).trim();
+      example.question = line.substr(2).trim();
     } else if (line.indexOf('A:') === 0) {
-      answers.push({text: line.substr(2).trim()});
+      example.answers.push({text: line.substr(2).trim()});
     } else if (line.indexOf('E:') === 0) {
-      errors.push({text: line.substr(2).trim()});
+      example.errors.push({text: line.substr(2).trim()});
     }
   });
 
@@ -164,9 +164,12 @@ function renderType(type, text, renderedProperties, associations, templates) {
   var data = {
     name: type.name,
     description: renderText(text, templates),
-    parent: type.parent,
     availability: makeAvailability(type)
   };
+
+  if (type.parent) {
+    data.parentHtml = linkType(type.parent);
+  }
 
   var creationEntries = creation.properties.sort()
     .concat(creation.casts.sort())

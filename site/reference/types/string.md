@@ -164,7 +164,13 @@ No documentation exists.
 
 # character &lt;integer&gt; of &lt;string&gt;
 
-Returns a string of length 1 made by taking the character identified by &lt;integer&gt; from the string. Numbering begins at zero. Example, Character 1 of &quot;HI&quot; is &quot;I&quot;.
+Returns a string of length 1 made by taking the character identified by &lt;integer&gt; from the string. Numbering begins at zero.
+
+{{#example}}
+Q: character 1 of "hi" = "i"
+A: True
+I: singular boolean
+{{/example}}
 
 # character of &lt;string&gt;
 
