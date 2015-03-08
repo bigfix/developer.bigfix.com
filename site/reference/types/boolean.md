@@ -4,11 +4,35 @@ No documentation exists.
 
 # conjunction of &lt;boolean&gt;
 
-This inspector performs a serial AND on all its boolean arguments:conjunction of (true; true; true) -&gt; TRUEconjunction of (true; true; false) -&gt; FALSE.
+This inspector performs a serial `and` on all its boolean arguments.
+
+{{#example}}
+Q: conjunction of (true; true; true)
+A: True
+I: singular boolean
+{{/example}}
+
+{{#example}}
+Q: conjunction of (true; true; false)
+A: False
+I: singular boolean
+{{/example}}
 
 # disjunction of &lt;boolean&gt;
 
-This inspector performs a serial OR on all its boolean arguments:disjunction of (false; false; false) -&gt; FALSEdisjunction of (false; false; true) -&gt; TRUE.
+This inspector performs a serial `or` on all its boolean arguments.
+
+{{#example}}
+Q: disjunction of (false; false; false)
+A: False
+I: singular boolean
+{{/example}}
+
+{{#example}}
+Q: disjunction of (false; false; true)
+A: True
+I: singular boolean
+{{/example}}
 
 # javascript array &lt;string&gt; of &lt;boolean&gt;
 
@@ -16,12 +40,24 @@ No documentation exists.
 
 # &lt;boolean&gt; as boolean
 
-No documentation exists.
+A do-nothing cast that just returns the argument.
 
 # &lt;boolean&gt; as string
 
-Converts the boolean value to a string. The possible values returned are &quot;True&quot; and &quot;False&quot; with this exact case, for example:TRUE as string = &quot;True&quot;.
+Converts the boolean value to a string.
+
+{{#example}}
+Q: true as string
+A: True
+I: singular string
+{{/example}}
+
+{{#example}}
+Q: false as string
+A: False
+I: singular string
+{{/example}}
 
 # &lt;boolean&gt; = &lt;boolean&gt;
 
-No documentation exists.
+Returns whether the two boolean values are equal.
