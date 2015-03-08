@@ -169,6 +169,8 @@ function renderType(type, text, renderedProperties, associations, templates) {
 
   if (type.parent) {
     data.parentHtml = linkType(type.parent);
+  } else {
+    data.parentHtml = 'none';
   }
 
   var creationEntries = creation.properties.sort()
