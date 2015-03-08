@@ -10,20 +10,18 @@ apt-get update
 curl -sL https://deb.nodesource.com/setup | bash -
 apt-get -y install nodejs
 
-# Get jekyll
-apt-get install -y ruby1.9.1-dev build-essential
-gem install jekyll --no-ri --no-rdoc
-gem install japr --no-ri --no-rdoc
+# Get clean-css
+npm install -g clean-css
 
 # Get and configure nginx
 apt-get install -y nginx
 
-cat > /etc/nginx/sites-enabled/jekyll <<EOF
+cat > /etc/nginx/sites-enabled/relevance <<EOF
 server {
   listen 4000 default_server;
   server_name localhost;
 
-  root /home/vagrant/site;
+  root /home/vagrant/_site;
 
   location / {
     try_files \$uri \$uri/ =404;
