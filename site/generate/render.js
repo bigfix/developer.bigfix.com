@@ -124,7 +124,7 @@ function renderEntry(heading, body, property, template) {
     id: escapeKey(property.key),
     heading: heading,
     body: body,
-    availability: makeAvailability(property),
+    availability: makeAvailability(property)
   };
 
   if (property.pluralPhrase) {

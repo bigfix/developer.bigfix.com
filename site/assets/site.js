@@ -19,6 +19,11 @@ function toggleShared() {
 
   var id = window.location.hash.slice(1);
   var entry = document.getElementById(id);
+
+  if (!entry) {
+    return;
+  }
+
   var entryHeading = entry.firstElementChild;
   var entryExpand = entryHeading.firstElementChild;
 
