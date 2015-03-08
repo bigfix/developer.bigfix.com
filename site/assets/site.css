@@ -129,6 +129,7 @@ body {
 }
 
 table.support td {
-  padding: .25rem 1.5rem 0 0;
   border: 0;
+  padding: .25rem 1.5rem 0 0;
+  vertical-align: top;
 }
