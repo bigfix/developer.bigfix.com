@@ -4,16 +4,36 @@ A substring object is a part of a larger string and has all the properties of a 
 
 # end of &lt;substring&gt;
 
-Returns the position of the substring within its containing string. For example, end of first &quot;be&quot; of &quot;to be or not to be&quot; = 5.
+Returns the position of the substring within its containing string.
+
+{{#example}}
+Q: end of first "be" of "to be or not to be"
+A: 5
+{{/example}}
 
 # following text of &lt;substring&gt;
 
-Returns the string following the substring. For example, following text of last &quot;.&quot; of &quot;log.txt&quot; = &quot;txt&quot;.
+Returns the string following the substring.
+
+{{#example}}
+Q: following text of last "." of "log.txt"
+A: txt
+{{/example}}
 
 # preceding text of &lt;substring&gt;
 
-Returns the string preceding the substring. For example, preceding text of last &quot;.&quot; of &quot;log.txt&quot; = &quot;log&quot;.
+Returns the string preceding the substring.
+
+{{#example}}
+Q: preceding text of last "." of "log.txt"
+A: log
+{{/example}}
 
 # start of &lt;substring&gt;
 
-Returns the position within the string of the substring. For example, start of substring &quot;or&quot; of &quot;to be or not to be&quot; = 6.
+Returns the position within the string of the substring.
+
+{{#example}}
+Q: start of substring "or" of "to be or not to be"
+A: 6
+{{/example}}

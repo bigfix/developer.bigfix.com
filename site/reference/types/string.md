@@ -503,11 +503,21 @@ Returns the filesystem corresponding to the specified name. On a Macintosh, this
 
 # first &lt;integer&gt; of &lt;string&gt;
 
-Returns a substring containing the number of characters specified from the given string. For example, First 5 of &quot;To be or not to be&quot; is &quot;To be&quot;.
+Returns a substring containing the number of characters specified from the given string.
+
+{{#example}}
+Q: first 5 of "To be or not to be"
+A: To be
+{{/example}}
 
 # first &lt;string&gt; of &lt;string&gt;
 
-Returns a substring containing the first occurrence of the name provided. See substring.
+Returns a substring containing the first occurrence of the name provided.
+
+{{#example}}
+Q: preceding text of first "." of "access.log.1"
+A: access
+{{/example}}
 
 # first match &lt;regular expression&gt; of &lt;string&gt;
 
@@ -695,11 +705,19 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;kbd&gt
 
 # last &lt;integer&gt; of &lt;string&gt;
 
-Returns a substring containing the number of characters specified. For example, Last 5 of &quot;To be or not to be&quot; is &quot;to be&quot;.
+Returns a substring containing the number of characters specified.
+
+{{#example}}
+Q: last 5 of "Hello Kitty"
+A: Kitty
+{{/example}}
 
 # last &lt;string&gt; of &lt;string&gt;
 
-Returns a substring containing the last occurrence of the name provided.
+{{#example}}
+Q: following text of last "." of "hello.exe"
+A: exe
+{{/example}}
 
 # length of &lt;string&gt;
 
@@ -1060,6 +1078,18 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;sub&gt
 # substring &lt;( integer, integer )&gt; of &lt;string&gt;
 
 Returns a substring of the specified string as defined by the start and length. The first integer is the start and the second integer is the length.
+
+{{#example}}
+Q: substring (2, 2) of "abcdef"
+A: cd
+{{/example}}
+
+{{#example}}
+Q: substrings (integers in (0, length of it, 2), 2) of "abcdef"
+A: ab
+A: cd
+A: ef
+{{/example}}
 
 # substring &lt;string&gt; of &lt;string&gt;
 
