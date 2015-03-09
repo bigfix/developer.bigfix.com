@@ -6,73 +6,73 @@ title: System Information
 
 ## Mac
 
-{% example %}
+{{#example}}
 Q: name of operating system
 A: Mac OS X
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: version of operating system
 A: 10.9.5
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: (name of it, version of it) of operating system
 A: Mac OS X, 10.9.5
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: architecture of operating system
 A: x86_64
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: windows of operating system
 A: False
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: unix of operating system
 A: False
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: mac of operating system
 A: True
-{% endexample %}
+{{/example}}
 
 ## Windows
 
-{% example %}
+{{#example}}
 Q: name of operating system
 A: Win2008R2
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: version of operating system
 A: 6.1.7601
-{% endexample %}
+{{/example}}
 
 Sometimes service pack is tricky on windows, Windows XP x64 only goes to service
 pack 2 but not 1  or something like that if I remember correctly:
 
-{% example %}
+{{#example}}
 Q: service pack major version of operating system
 A: 1
-{% endexample %}
+{{/example}}
 
 ## How much disk space is free?
 
 On a Mac:
 
-{% example %}
+{{#example}}
 Q: free space of volume "Macintosh HD"
 A: 402534928384
-{% endexample %}
+{{/example}}
 
 On Windows:
 
-{% example %}
+{{#example}}
 Q: (free spaces of it, names of it) of drives
 A: 53851201536, C:
-{% endexample %}
+{{/example}}

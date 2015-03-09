@@ -2,19 +2,19 @@
 title: Users
 ---
 
-{% example %}
+{{#example}}
 Q: names of logged on users
 A: dex
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: name of current user
 A: dex
-{% endexample %}
+{{/example}}
 
 ## Remote users
 
-{% example %}
+{{#example}}
 Q: names of logged on users
 A: shuo_li
 A: bilgehan_sahin
@@ -23,9 +23,9 @@ A: bao_nhan
 A: yunfei_bai
 A: sylvia_yangbin
 A: chuxin_zhao
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: current user
 E: Singular expression refers to nonexistent object.
-{% endexample %}
+{{/example}}

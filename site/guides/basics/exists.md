@@ -8,15 +8,15 @@ test for existence before you test for a value and possibly incur an error. The
 keyword has two slightly different typical uses. The first is to determine
 whether a singular object specified by an inspector exists:
 
-{% example %}
+{{#example}}
 Q: exists drive "c:"
 A: True
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: exists drive "z:"
 A: False
-{% endexample %}
+{{/example}}
 
 The above examples test for the existence of the specified objects on the client
 computer. In these examples, you can see that the client has a drive `c:`, but
@@ -26,19 +26,19 @@ generate an error. If you aren’t sure about the existence of an object, use th
 
 The second usage is to determine whether a *plural* result contains any values: 
 
-{% example %}
+{{#example}}
 Q: exists (files of folder "c:")
 A: True
-{% endexample %}
+{{/example}}
 
 This expression returns `True`, since files exist on drive `c:`. Note that using
 the plural property `files` is a safe way to refer to something that may or may
 not exist. For instance:
 
-{% example %}
+{{#example}}
 Q: file of folder "z:"
 E: Singular expression refers to nonexistent object.
-{% endexample %}
+{{/example}}
 
 An error is generated here because there is no drive `z:` on the client
 computer. If you ask for a plural answer:
@@ -51,23 +51,23 @@ It doesn’t give you an answer, but it also doesn’t throw an error. Neverthel
 both of these constructs can be examined with the `exists` keyword without
 causing an error:
 
-{% example %}
+{{#example}}
 Q: exists file of folders "z:"
 A: False
-{% endexample %}
+{{/example}}
 
-{% example %}
+{{#example}}
 Q: exists files of folders "z:"
 A: False
-{% endexample %}
+{{/example}}
 
 You can use existence to determine if two directories have any files in common
 with an expression like this:
 
-{% example %}
+{{#example}}
 Q: exists file (names of files of folder "c:\") of folder "c:\old C"
 A: True
-{% endexample %}
+{{/example}}
 
 This expression creates inspector objects for each file in the `c:\` folder. It
 then looks for a file of the same name in the folder `c:\old C`. It returns true

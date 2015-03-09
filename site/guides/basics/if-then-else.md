@@ -19,26 +19,26 @@ inspectors on the branch not taken are ignored. This makes it safe to write
 cross-platform expressions without worrying about throwing errors for incorrect
 OS-specific Inspectors. For instance, you can write:
 
-{% example %}
+{{#example}}
 Q: if name of operating system contains "Win" then name of application "conf.exe" of registry else "conf.exe"
 A: conf.exe
-{% endexample %}
+{{/example}}
 
 On a non-Windows OS, this expression will execute the `else` expression and
 avoid an attempt to inspect a non-existent registry.
 
 If-statements can be useful for reporting user-defined errors:
 
-{% example %}
+{{#example}}
 Q: if (year of current date as integer < 2006) then "Still good" else error "Expired"
 E: User-defined error: Expired
-{% endexample %}
+{{/example}}
 
 This expression throws a user-defined error if the argument is false.
 
-{% example %}
+{{#example}}
 Q: if (name of operating system = "WinXP") then "wired" else if (name of operating system ="WinNT") then "tired" else "expired"
 A: wired
-{% endexample %}
+{{/example}}
 
 This expression does a three-way test of the operating system.

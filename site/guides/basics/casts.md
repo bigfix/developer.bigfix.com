@@ -5,24 +5,24 @@ title: Casts
 Values can be converted into other types, making it easy to create, concatenate
 and combine inspectors into complex expressions.
 
-{% example %}
+{{#example}}
 Q: "01 Apr 2020" as date
 A: Wed, 01 Apr 2020
-{% endexample %}
+{{/example}}
 
 Converts (casts) a string into a date type.
 
-{% example %}
+{{#example}}
 Q: 5 as month
 A: May
-{% endexample %}
+{{/example}}
 
 Converts an integer into the corresponding month type.
 
-{% example %}
+{{#example}}
 Q: january as three letters
 A: Jan
-{% endexample %}
+{{/example}}
 
 Converts the month January into a three-letter abbreviation.
 

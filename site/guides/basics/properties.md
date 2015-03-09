@@ -6,40 +6,40 @@ Properties of objects can be inspected and referenced. There are thousands of
 property inspectors available to cover the majority of software and hardware
 features of Windows, Mac, and Unix systems.
 
-{% example %}
+{{#example}}
 Q: day_of_week of current date
 A: Tuesday
-{% endexample %}
+{{/example}}
 
 Returns a reference to the day of the week from today's system date.
 
-{% example %}
+{{#example}}
 Q: year of current date
 A: 2006
-{% endexample %}
+{{/example}}
 
 Returns the year portion of today's date.
 
-{% example %}
+{{#example}}
 Q: number of processors
 A: 2
-{% endexample %}
+{{/example}}
 
 Returns the number of processors of the client computer.
 
-{% example %}
+{{#example}}
 Q: names of local groups
 A: Administrators
 A: Backup Operators
 A: Guests
-{% endexample %}
+{{/example}}
 
 Returns plural properties (names) as a list corresponding to the local group
 names.
 
-{% example %}
+{{#example}}
 Q: bit 0 of 5
 A: True
-{% endexample %}
+{{/example}}
 
 Returns the zero (low order) bit as `True` (1) or `False` (0).
