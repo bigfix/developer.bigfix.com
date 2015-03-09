@@ -47,7 +47,7 @@ A: javaw.exe
 Returns the remote address of the socket.
 
 {{#example}}
-Q: unique values of remote addresses of it of sockets of network
+Q: unique values of remote addresses of sockets of network
 A: 74.125.25.103
 A: 127.0.0.1
 {{/example}}
@@ -57,7 +57,7 @@ A: 127.0.0.1
 Returns the remote port number of the socket.
 
 {{#example}}
-Q: unique values of remote ports of it of sockets of network
+Q: unique values of remote ports of sockets of network
 A: 443
 A: 49707
 A: 49708
