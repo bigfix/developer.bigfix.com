@@ -2,7 +2,7 @@
 title: It Expressions
 ---
 
-There are two simple contexts in which `it` has a meaning:
+There are two contexts in which `it` has a meaning:
 
 1. `<expression> whose (it)`
 2. `(it) of <expression>`
