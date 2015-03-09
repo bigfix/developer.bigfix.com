@@ -4,7 +4,13 @@ Integers are represented internally as 64-bit signed values.
 
 # absolute value of &lt;integer&gt;
 
-Returns the positive value of the integer.
+Returns the absolute value of the integer.
+
+{{#example}}
+Q: absolute value of (-42)
+A: 42
+I: singular integer
+{{/example}}
 
 # action &lt;integer&gt;
 
@@ -12,27 +18,63 @@ Returns the action matching the &lt;integer&gt; id.
 
 # april &lt;integer&gt;
 
-Returns the nth day of april as a &#39;day of year&#39; type (month day).
+Returns the nth day of April.
+
+{{#example}}
+Q: april 1
+A: April 1
+I: singular day of year
+{{/example}}
 
 # april &lt;integer&gt; of &lt;integer&gt;
 
-Returns the nth day of April and the specified year as a date (day of week, month day year).
+Returns the nth day of April and the specified year as a date.
+
+{{#example}}
+Q: april 4 of 2015
+A: Sat, 04 Apr 2015
+I: singular date
+{{/example}}
 
 # april of &lt;integer&gt;
 
-Creates a date (in month year format) corresponding to April of the specified year (as an &lt;integer&gt;).
+Returns a date corresponding to April of the specified year.
+
+{{#example}}
+Q: april of 1984
+A: April 1984
+I: singular month and year
+{{/example}}
 
 # august &lt;integer&gt;
 
-Returns the nth day of August as a &#39;day of year&#39; type (month day).
+Returns the nth day of August.
+
+{{#example}}
+Q: august 31
+A: August 31
+I: singular day of year
+{{/example}}
 
 # august &lt;integer&gt; of &lt;integer&gt;
 
-Returns the nth day of August and the specified year as a date (day of week, month day year).
+Returns the nth day of August and the specified year as a date.
+
+{{#example}}
+Q: august 31 of 1984
+A: Fri, 31 Aug 1984
+I: singular date
+{{/example}}
 
 # august of &lt;integer&gt;
 
-Creates a date (in month year format) corresponding to August of the specified year (as an &lt;integer&gt;).
+Creates a date corresponding to August of the specified year.
+
+{{#example}}
+Q: august of 1975
+A: August 1975
+I: singular month and year
+{{/example}}
 
 # bes computer &lt;integer&gt;
 
@@ -44,7 +86,7 @@ Returns the filter with the specified ID. It is the same as &quot;bes filter who
 
 # bit &lt;integer&gt;
 
-Returns a `bit set` with the nth bit set.
+Returns a bit set with the nth bit set.
 
 {{#example}}
 Q: bit 5
@@ -54,11 +96,26 @@ I: singular bit set
 
 # bit &lt;integer&gt; of &lt;integer&gt;
 
-Returns `True` if the numbered bit is on. Bits are numbered starting at zero. Bit 0 is the least significant bit.Example: bit 0 of (least integer + 1) - Returns the least significant bit of the smallest possible integer, plus one.
+Returns `True` if the nth bit is set. Bits are numbered starting at zero. Bit 0 is the least significant bit.
+
+{{#example}}
+Q: bit 0 of 2
+A: False
+{{/example}}
+
+{{#example}}
+Q: bit 1 of 2
+A: True
+{{/example}}
 
 # character &lt;integer&gt;
 
-Returns a string containing a single ASCII character. For example, character 90 = &quot;Z&quot;.
+Returns a string containing a single ASCII character.
+
+{{#example}}
+Q: character 104 & character 105
+A: hi
+{{/example}}
 
 # connection status &lt;integer&gt;
 
@@ -66,23 +123,50 @@ Returns the connection status based on its integer value. This inspector is incl
 
 # csidl folder &lt;integer&gt;
 
-Returns the csidl folder corresponding to the specified integer. The windows SHGetSpecialFolderLocation API is used to look up paths to special folders, which are identified by passing the specified integer as the second argument of the API call. These values and their meaning are described in the windows ShlObj.h include file found in the development sdk.Note that some of these folders do not exist in the Local System context.
+Returns the [CSIDL](https://msdn.microsoft.com/en-us/library/windows/desktop/bb762494%28v=vs.85%29.aspx) folder corresponding to the specified integer. The [SHGetSpecialFolderLocation](https://msdn.microsoft.com/en-us/library/windows/desktop/bb762203%28v=vs.85%29.aspx) function is used to look up paths to special folders, which are identified by passing the specified integer as the second argument of the API call. These values and their meaning are described in the Windows `ShlObj.h` file found in the development SDK.
+
+Note that some of these folders do not exist in the Local System context.
+
+{{#example}}
+Q: csidl folder 35
+A: C:\ProgramData
+{{/example}}
 
 # day_of_month &lt;integer&gt;
 
-Converts the given integer to a day of month type.
+Converts the given integer to a day of month.
+
+{{#example}}
+Q: day_of_month 11 & march
+A: March 11
+{{/example}}
 
 # december &lt;integer&gt;
 
-Returns the nth day of December as a &#39;day of year&#39; type (month day).
+Returns the nth day of December.
+
+{{#example}}
+Q: december 25
+A: December 25
+{{/example}}
 
 # december &lt;integer&gt; of &lt;integer&gt;
 
-Returns the nth day of December and the specified year as a date (day of week, month day year).
+Returns the nth day of December and the specified year as a date.
+
+{{#example}}
+Q: december 19 of 2008
+A: Fri, 19 Dec 2008
+{{/example}}
 
 # december of &lt;integer&gt;
 
-Creates a date (in month year format) corresponding to December of the specified year (as an &lt;integer&gt;).
+Creates a date corresponding to December of the specified year.
+
+{{#example}}
+Q: december of 1993
+A: December 1993
+{{/example}}
 
 # drive &lt;integer&gt;
 
@@ -90,11 +174,29 @@ Returns the volume corresponding to the numbered drive.
 
 # event log event type &lt;integer&gt;
 
-Returns an event type object corresponding to the specified number. The enumerated types include:1: error event2: warning event4: information event8: audit success event16: audit failure event.
+Returns an event type object corresponding to the specified number. The enumerated types are:
+
+| value | meaning       |
+|-------|---------------|
+| 1     | error         |
+| 2     | warning       |
+| 4     | information   |
+| 8     | audit success |
+| 16    | audit failure |
+
+{{#example}}
+Q: event log event type 8 = audit success event log event type
+A: True
+{{/example}}
 
 # extrema of &lt;integer&gt;
 
-Returns the minimum and maximum extreme values of the given list of &lt;integer&gt; types.
+Returns the minimum and maximum extreme values of the given list of integers.
+
+{{#example}}
+Q: extrema of (1; 600; 2; -5; 23)
+A: -5, 600
+{{/example}}
 
 # february &lt;integer&gt;
 

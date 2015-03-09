@@ -125,6 +125,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.entry-body td, .entry-body th {
+  border: 0;
+  padding: .5rem;
+}
+
 .entry-hidden {
   display: none;
 }
