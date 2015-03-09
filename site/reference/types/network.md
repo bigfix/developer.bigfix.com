@@ -30,6 +30,11 @@ Returns a connection to the specified network. This inspector requires Windows X
 
 Returns a list of DNS servers used by the local computer.
 
+{{#example}}
+Q: addresses of dns servers of network
+A: 10.0.2.3
+{{/example}}
+
 # find adapter &lt;string&gt; of &lt;network&gt;
 
 This inspector lets you find a network adapter from the &quot;Friendly Name&quot;.

@@ -6,6 +6,11 @@ One or more network adapters may be inspected using this property of the network
 
 Returns the address list of the network adapter.
 
+{{#example}}
+Q: (address of it as string, cidr string of it) of address list of adapter 1 of network
+A: 10.0.2.15, 10.0.2.0/24
+{{/example}}
+
 # address of &lt;network adapter&gt;
 
 Returns the ip address of the network adapter (returns the first address if it is a list).
@@ -30,6 +35,11 @@ Returns the Classless Inter-Domain Routing value for the specified network adapt
 
 Returns the description of the network adapter.
 
+{{#example}}
+Q: description of adapter 1 of network
+A: Intel(R) PRO/1000 MT Desktop Adapter
+{{/example}}
+
 # dhcp enabled of &lt;network adapter&gt;
 
 Returns `True` if dhcp is enabled on the network adapter.
@@ -42,6 +52,11 @@ Returns the ip address of the dhcp server of the network adapter (returns the fi
 
 Returns a list of DNS servers used by the specified adapter.
 
+{{#example}}
+Q: address of dns server of adapter 1 of network
+A: 10.0.2.3
+{{/example}}
+
 # dns suffix of &lt;network adapter&gt;
 
 Returns the Domain Name System (DNS) suffix associated with the specified adapter.
@@ -53,6 +68,11 @@ Returns a user-friendly name for the adapter, for example &quot;Local Area Conne
 # gateway list of &lt;network adapter&gt;
 
 Returns the gateway network address list of the network adapter.
+
+{{#example}}
+Q: address of gateway list of adapter 1 of network
+A: 10.0.2.2
+{{/example}}
 
 # gateway of &lt;network adapter&gt;
 

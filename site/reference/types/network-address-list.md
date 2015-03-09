@@ -6,18 +6,44 @@ A network adapter may be configured to respond to a list of network addresses. T
 
 Returns the IP address of the address list.
 
+{{#example}}
+Q: address of adapter 1 of network
+A: 10.0.2.15
+{{/example}}
+
 # cidr address of &lt;network address list&gt;
 
-Returns the CIDR address of the address list as a string type, for example, 192.168.0.0/16 (IPv4) or 2001:db8::/32 (IPv6).
+Returns the [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) address of the address list.
+
+{{#example}}
+Q: (address of it, cidr address of it) of adapter 1 of network
+A: 10.0.2.15, 10.0.2.15/24
+{{/example}}
 
 # cidr string of &lt;network address list&gt;
 
-Returns the Classless Inter-Domain Routing value for the specified network address list as a string value.
+Returns the [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) value for the specified network address list as a string value.
+
+{{#example}}
+Q: (address of it, cidr string of it) of adapter 1 of network
+A: 10.0.2.15, 10.0.2.0/24
+{{/example}}
 
 # subnet address of &lt;network address list&gt;
 
 Returns the subnet address (IPv4) of the specified network address list.
 
+{{#example}}
+Q: (address of it, subnet address of it) of adapter 1 of network
+A: 10.0.2.15, 10.0.2.0
+{{/example}}
+
 # subnet mask of &lt;network address list&gt;
 
 Returns the subnet mask (IPv4) of the specified network address list.
+
+{{#example}}
+Q: (address of it, subnet mask of it) of adapter 1 of network
+A: 10.0.2.15, 255.255.255.0
+{{/example}}
+
