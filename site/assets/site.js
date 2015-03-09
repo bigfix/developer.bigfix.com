@@ -1,3 +1,6 @@
+/**
+ * Toggle an entry when someone clicks on the +/-.
+ */
 function toggleEntry(element) {
   var classList = element.firstElementChild.classList;
 
@@ -12,7 +15,10 @@ function toggleEntry(element) {
   element.parentElement.nextElementSibling.classList.toggle('entry-hidden');
 }
 
-function toggleShared() {
+/**
+ * Toggle an entry that's linked to when the page loads.
+ */
+function toggleOnLoad() {
   if (!window.location.hash) {
     return;
   }
@@ -20,11 +26,7 @@ function toggleShared() {
   var id = window.location.hash.slice(1);
   var entry = document.getElementById(id);
 
-  if (!entry) {
-    return;
-  }
-
-  if (!entry.classList.contains('entry')) {
+  if (!entry || !entry.classList.contains('entry')) {
     return;
   }
 
@@ -34,4 +36,4 @@ function toggleShared() {
   entryExpand.click();
 }
 
-toggleShared();
+toggleOnLoad();
