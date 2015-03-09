@@ -84,8 +84,13 @@ Returns the network link interface of the specified network.
 
 # socket of &lt;network&gt;
 
-Returns a &lt;socket&gt; type that is examinable for socket information.
+Returns all existing sockets.
 
 # winsock2 supported of &lt;network&gt;
 
 Indicates that winsock2 is supported by the network. If this returns `False`, many of the other properties of the interface are not available for inspection.
+
+{{#example}}
+Q: winsock2 supported of network
+A: True
+{{/example}}
