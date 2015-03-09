@@ -13,7 +13,7 @@ this run:
     $ vagrant up
     $ vagrant ssh
 
-To build your changes run:
+To build your changes, run this command inside the virtual machine:
 
     $ /vagrant/site/build
 
