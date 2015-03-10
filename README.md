@@ -7,14 +7,10 @@ files in the `site` folder.
 
 ### Previewing your changes
 
-The site can be previewed using [Vagrant](https://www.vagrantup.com/). To do
-this run:
+The site can be previewed using [Vagrant](https://www.vagrantup.com/).
 
-    $ vagrant up
-    $ vagrant ssh
+Start the box and build the changes by running:
 
-To build your changes, run this command inside the virtual machine:
-
-    $ /vagrant/site/build
+    $ make site
 
 The site will then be available at [localhost:4000](http://localhost:4000).
