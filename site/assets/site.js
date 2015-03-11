@@ -1,4 +1,19 @@
 /**
+ * Expand all entries on the page.
+ */
+function expandAll() {
+  var hiddenEntries = document.querySelectorAll('.entry-hidden');
+
+  for (var i = 0; i < hiddenEntries.length; i++) {
+    hiddenEntries[i]
+      .parentElement
+      .firstElementChild
+      .firstElementChild
+      .click();
+  }
+}
+
+/**
  * Toggle an entry when someone clicks on the +/-.
  */
 function toggleEntry(element) {
