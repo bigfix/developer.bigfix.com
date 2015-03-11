@@ -2,14 +2,29 @@
  * Expand all entries on the page.
  */
 function expandAll() {
-  var hiddenEntries = document.querySelectorAll('.entry-hidden');
+  var entries = document.querySelectorAll('.entry');
 
-  for (var i = 0; i < hiddenEntries.length; i++) {
-    hiddenEntries[i]
-      .parentElement
-      .firstElementChild
-      .firstElementChild
-      .click();
+  for (var i = 0; i < entries.length; i++) {
+    var element = entries[i].firstElementChild.firstElementChild;
+
+    if (element.firstElementChild.classList.contains('fa-plus-circle')) {
+      toggleEntry(element);
+    }
+  }
+}
+
+/**
+ * Collapse all entries on the page.
+ */
+function collapseAll() {
+  var entries = document.querySelectorAll('.entry');
+
+  for (var i = 0; i < entries.length; i++) {
+    var element = entries[i].firstElementChild.firstElementChild;
+
+    if (element.firstElementChild.classList.contains('fa-minus-circle')) {
+      toggleEntry(element);
+    }
   }
 }
 
