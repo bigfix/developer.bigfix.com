@@ -29,7 +29,7 @@ function linkType(type) {
 }
 
 function escapeKey(key) {
-  return key
+  var escaped = key
     .replace(/ < /, ' less ')
     .replace(/ > /, ' greater ')
     .replace(/ <= /, ' lesseq ')
@@ -40,9 +40,11 @@ function escapeKey(key) {
     .replace(/ \* /, ' times ')
     .replace(/ \/ /, ' divide ')
     .replace(/ & /, ' concat ')
+    .replace(/,/g, '')
     .replace(/[<>]/g, '')
-    .replace(/[()]/g, '')
-    .replace(/\s+/g, '-');
+    .replace(/[()]/g, '');
+
+  return escaped.trim().replace(/\s+/g, '-');
 }
 
 function makeAvailability(value) {
