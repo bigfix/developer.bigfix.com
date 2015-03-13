@@ -3,12 +3,7 @@ var associate = require('./associate'),
   Hogan = require('hogan.js'),
   parse = require('./parse'),
   path = require('path'),
-  render = require('./render'),
-  rimraf = require('rimraf');
-
-function logProgress(msg) {
-  console.error('reference - ' + msg);
-}
+  render = require('./render');
 
 function compileTemplate(entryPath) {
   try {
@@ -35,33 +30,29 @@ function compileTemplates(directory) {
   return templates;
 }
 
-function buildReference(siteDir, outDir) {
-  logProgress('resetting output');
-  rimraf.sync(outDir);
-  fs.mkdirSync(outDir);
+function buildReference(language, siteDir, outDir) {
+  console.log('compiling templates');
+  var templates = compileTemplates(path.join(siteDir, 'templates'));
+
+  console.log('parsing documentation');
+  var docs = parse(path.join(siteDir, 'reference'), language);
+
+  console.log('associating properties');
+  var associations = associate(language);
+
+  console.log('rendering pages');
+  var rendered = render(language, docs, associations, templates);
+
+  console.log('writing files');
+
   fs.mkdirSync(path.join(outDir, 'reference'));
   fs.mkdirSync(path.join(outDir, 'reference', 'types'));
 
-  logProgress('compiling templates');
-  var templates = compileTemplates(path.join(siteDir, 'templates'));
-
-  logProgress('parsing language.json');
-  var language =
-    JSON.parse(fs.readFileSync(path.join(siteDir, 'data', 'language.json')));
-
-  logProgress('parsing documentation');
-  var docs = parse(path.join(siteDir, 'reference'), language);
-
-  logProgress('associating properties');
-  var associations = associate(language);
-
-  logProgress('rendering pages');
-  var pages = render(language, docs, associations, templates);
-
-  logProgress('writing files');
-  pages.forEach(function(page) {
+  rendered.pages.forEach(function(page) {
     fs.writeFileSync(path.join(outDir, page.href), page.content);
   });
+
+  return rendered.properties;
 }
 
 module.exports = buildReference;

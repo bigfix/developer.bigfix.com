@@ -242,7 +242,7 @@ function render(language, docs, associations, templates) {
     pages.push({ href: href, content: templates.page.render(data) });
   });
 
-  return pages;
+  return { properties: renderedProperties, pages: pages };
 }
 
 module.exports = render;
