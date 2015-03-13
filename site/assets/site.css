@@ -95,6 +95,10 @@ body {
   font-family: Roboto, Corbel, Avenir, 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
+.expand-buttons button {
+  margin-right: 1rem;
+}
+
 .entry {
   margin-bottom: 1rem;
 }
