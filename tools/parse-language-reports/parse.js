@@ -104,15 +104,16 @@ function parseCast(key, resultType) {
  * finite of <floating point>, finites, Plain, <boolean>
  */
 function parseProperty(key, pluralPhrase, resultType) {
-  var match, singularPhrase, indexType, directObjectType, parts;
+  var singularPhrase, indexType, directObjectType;
 
-  parts = splitProperty(key, ' of ');
+  var parts = splitProperty(key, ' of ');
 
   if (parts.length !== 1 && parts.length !== 2) {
     throw new Error('Invalid property: ' + key);
   }
 
-  if (match = parts[0].match(/^([^<]*)( <([^>]*)>)?$/)) {
+  var match = parts[0].match(/^([^<]*)( <([^>]*)>)?$/);
+  if (match) {
     singularPhrase = match[1];
     indexType = match[3];
   } else {
@@ -120,7 +121,8 @@ function parseProperty(key, pluralPhrase, resultType) {
   }
 
   if (parts.length === 2) {
-    if (match = parts[1].match(/^<([^>]*)>$/)) {
+    match = parts[1].match(/^<([^>]*)>$/);
+    if (match) {
       directObjectType = match[1];
     } else {
       throw new Error('Invalid property: ' + key);
@@ -152,7 +154,7 @@ function parsePropertyOrOperator(line) {
     }
 
     if (form === 'Cast') {
-      return parseCast(parts[0].trim(), parts[3].trim())
+      return parseCast(parts[0].trim(), parts[3].trim());
     }
 
     return parseProperty(parts[0].trim(), parts[1].trim(), parts[3].trim());

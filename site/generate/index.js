@@ -2,7 +2,7 @@ var associate = require('./associate'),
   fs = require('fs'),
   Hogan = require('hogan.js'),
   parse = require('./parse'),
-  path = require('path');
+  path = require('path'),
   render = require('./render'),
   rimraf = require('rimraf');
 

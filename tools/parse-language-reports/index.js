@@ -115,7 +115,7 @@ function getPlatformNames() {
   Object.keys(platformToTargets).forEach(function(name) {
     platformToTargets[name].forEach(function(target) {
       targetToPlatform[target] = name;
-    })
+    });
   });
 
   return targetToPlatform;
