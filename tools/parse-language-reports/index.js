@@ -8,7 +8,7 @@ function isVersionLess(a, b) {
   b = b.split('.').map(Number);
 
   for (var i = 0; i < 4; i++) {
-    if (a[i] != b[i]) {
+    if (a[i] !== b[i]) {
       return a[i] < b[i];
     }
   }
