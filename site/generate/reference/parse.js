@@ -10,9 +10,9 @@ function unescape(key) {
 
 function processLines(file, lineNumber, key, lines, language, docs) {
   if (key.indexOf('# type:') === 0) {
-    var key = unescape(key.substr(7).trim());
-    var type = language.types[key];
+    key = unescape(key.substr(7).trim());
 
+    var type = language.types[key];
     if (!type) {
       throw new Error('In file ' + file + ' line ' + lineNumber +
         ': type "' + key + '" does not exist in the language.');
@@ -25,9 +25,9 @@ function processLines(file, lineNumber, key, lines, language, docs) {
 
     docs.types[key] = lines.join('\n');
   } else {
-    var key = unescape(key.substr(1).trim());
-    var property = language.properties[key];
+    key = unescape(key.substr(1).trim());
 
+    var property = language.properties[key];
     if (!property) {
       throw new Error('In file ' + file + ' line ' + lineNumber +
         ': property "' + key + '" does not exist in the language.');

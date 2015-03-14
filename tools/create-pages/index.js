@@ -1,9 +1,7 @@
 var fs = require('fs'),
   path = require('path'),
   rimraf = require('rimraf'),
-  escape = require('escape-html'),
-  yaml = require('js-yaml'),
-  mkdirp = require('mkdirp');
+  escape = require('escape-html');
 
 if (process.argv.length !== 5) {
   console.error(

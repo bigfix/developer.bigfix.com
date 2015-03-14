@@ -1,5 +1,4 @@
 var escape = require('escape-html'),
-  fs = require('fs'),
   highlight = require('highlight.js'),
   Hogan = require('hogan.js'),
   marked = require('marked'),
@@ -152,7 +151,7 @@ function renderText(text, templates) {
     example: function() {
       return function(text) {
         return templates.example.render(parseExample(text));
-      }
+      };
     }
   };
 
@@ -251,12 +250,10 @@ function render(language, docs, associations, templates) {
     var href =
       path.join('reference', 'types', type.name.replace(/ /g, '-') + '.html');
 
-    var content = templates.page.render(data);
-
-    pages.push({ href: href, content: content });
+    pages.push({ href: href, content: templates.page.render(data) });
   });
 
-  return pages;
+  return { properties: renderedProperties, pages: pages };
 }
 
 module.exports = render;

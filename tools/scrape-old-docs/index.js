@@ -1,5 +1,4 @@
 var cheerio = require('cheerio'),
-  fs = require('fs'),
   extend = require('util')._extend,
   request = require('request');
 
@@ -125,5 +124,5 @@ getPages(function(err, pages) {
     }
 
     console.log(JSON.stringify(result));
-  })
+  });
 });
