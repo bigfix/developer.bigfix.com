@@ -6,24 +6,25 @@ set -x
 # Update all the things
 apt-get update
 
-# Get node
+# Add node ppa
 curl -sL https://deb.nodesource.com/setup | bash -
-apt-get -y install nodejs
 
-# Get and configure nginx
-apt-get install -y nginx
+# Install all the things
+apt-get install -y git nginx nodejs
 
-cat > /etc/nginx/sites-enabled/relevance <<EOF
-server {
-  listen 4000 default_server;
-  server_name localhost;
+# Setup nginx
+mkdir -p /var/www/site
 
-  root /home/vagrant/output;
+rm -rf /etc/nginx/sites-enabled/*
+rm -rf /etc/nginx/sites-available/*
 
-  location / {
-    try_files \$uri \$uri/ =404;
-  }
-}
-EOF
+cp /vagrant/conf/nginx/dev.conf /etc/nginx/sites-available
+cp /vagrant/conf/nginx/prod.conf /etc/nginx/sites-available
+cp /vagrant/conf/nginx/shared.conf /etc/nginx
+
+ln -s /etc/nginx/sites-available/dev.conf /etc/nginx/sites-enabled/
 
 nginx -s reload
+
+# Add message for how to build the site
+echo 'It works!' > /var/www/site/index.html
