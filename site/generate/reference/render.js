@@ -11,6 +11,13 @@ function typeAnchor(type) {
   return '<a href="' + href + '">' + escape(type) + '</a>';
 }
 
+function typeContribute(repo, type) {
+  var href =
+    repo + '/tree/master/site/reference/types/'
+    + type.name.replace(/ /g, '-') + '.md';
+  return href;
+}
+
 function linkType(type) {
   var openParen = type.indexOf('(');
 
@@ -231,9 +238,13 @@ function render(language, docs, associations, templates) {
     var content =
       renderType(type, text, renderedProperties, associations, templates);
 
+    var contribute =
+      typeContribute('https://github.com/briangreenery/relevance.io', type);
+
     var data = {
       title: type.name,
-      content: content
+      content: content,
+      contribute: contribute
     };
 
     var href =

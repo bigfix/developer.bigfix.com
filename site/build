@@ -9,10 +9,8 @@ OUTDIR=output
 rm -rf $OUTDIR
 mkdir -p $OUTDIR
 
-# Install generator dependencies, if necessary
-if [ ! -d $SITE/generate/node_modules ]; then
-  ( cd $SITE/generate && npm install );
-fi
+# Install generator dependencies
+( cd $SITE/generate && npm install )
 
 # Use generator
 node $SITE/generate $SITE $OUTDIR
