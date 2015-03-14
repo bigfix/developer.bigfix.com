@@ -1,20 +1,13 @@
 {
   "name": "generate",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "private": true,
   "dependencies": {
     "escape-html": "^1.0.1",
     "highlight.js": "^8.4.0",
     "hogan.js": "^3.0.2",
     "marked": "^0.3.3",
-    "rimraf": "^2.2.8",
-    "sqlite3": "^3.0.5"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "rimraf": "^2.2.8"
+  }
 }

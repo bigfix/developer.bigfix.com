@@ -176,3 +176,11 @@ table.support td {
 .hljs-number {
   color: #800080;
 }
+
+#search-input {
+  width: 100%;
+}
+
+#search-form {
+  margin-bottom: 2rem;
+}

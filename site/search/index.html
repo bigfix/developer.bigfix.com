@@ -1,0 +1,107 @@
+<div class="row">
+  <div class="twelve columns">
+    <form id="search-form" onsubmit="return false;">
+      <input id="search-input" type="text" placeholder="Type to search for relevance properties">
+      <span id="search-status"></span>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div id="search-results" class="twelve columns"></div>
+</div>
+<script>
+function getJSON(url, callback) {
+  var request = new XMLHttpRequest();
+
+  request.onload = function() {
+    if (this.status !== 200) {
+      return callback(new Error('search failed with status ' + this.status));
+    }
+
+    var results;
+
+    try {
+      results = JSON.parse(this.response);
+    } catch (err) {
+      return callback(new Error('failed to parse search results'));
+    }
+
+    callback(null, results);
+  };
+
+  request.onerror = function() {
+    return callback(new Error('search failed'));
+  };
+
+  request.open('GET', url, true);
+  request.send();
+}
+
+function getSearchQuery() {
+  return document.getElementById('search-input').value;
+}
+
+function setSearchStatus(text) {
+  document.getElementById('search-status').textContent = text;
+}
+
+function setSearchResults(page) {
+  document.getElementById('search-results').innerHTML = page.join('\n');
+}
+
+function search() {
+  var query = getSearchQuery();
+
+  if (query.length === 0) {
+    setSearchStatus('');
+    setSearchResults([]);
+    return;
+  }
+
+  var url = '/api/search?query=' + encodeURIComponent(query);
+
+  getJSON(url, function(err, results) {
+    if (query != getSearchQuery()) {
+      // They typed something else before this returned.
+      return;
+    }
+
+    if (err) {
+      setSearchStatus(err.toString());
+      setSearchResults([]);
+      return;
+    }
+
+    if (results.page.length === 0) {
+      setSearchStatus('No results found.');      
+    } else {
+      setSearchStatus('Showing results 1 to ' + results.page.length + ' of ' +
+                      results.total + '.');
+    }
+
+    setSearchResults(results.page);
+  });
+}
+
+function onSearchLoad() {
+  var timer = null;
+
+  function onInput() {
+    if (timer) {
+      clearTimeout(timer);
+    }
+
+    timer = setTimeout(onTimeout, 200);
+  }
+
+  function onTimeout() {
+    timer = null;
+    search();
+  }
+
+  document.getElementById('search-input').oninput = onInput;
+  document.getElementById('search-input').focus();
+}
+
+onSearchLoad();
+</script>

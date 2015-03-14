@@ -4,11 +4,6 @@
   "private": true,
   "description": "This tool generates the pages of the reference.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "escape-html": "^1.0.1",
     "js-yaml": "^3.2.6",

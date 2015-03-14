@@ -1,0 +1,9 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "express": "^4.12.2",
+  }
+}
