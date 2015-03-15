@@ -13,6 +13,4 @@ curl -sL https://deb.nodesource.com/setup | bash -
 apt-get install -y git nginx nodejs
 
 # Setup nginx
-rm -rf /etc/nginx/sites-enabled/*
-rm -rf /etc/nginx/sites-available/*
 make -C /vagrant nginx-dev

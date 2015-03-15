@@ -32,22 +32,19 @@ function compileTemplates(directory) {
 
 function main() {
   if (process.argv.length !== 4) {
-    console.error('usage: build <siteDir> <outDir>');
+    console.error('usage: generate <siteDir> <outDir>');
     return process.exit(1);
   }
 
   var siteDir = process.argv[2];
   var outDir = process.argv[3];
 
-  console.log('cleaning output directory');
-  rimraf.sync(outDir);
-  fs.mkdirSync(outDir);
+  rimraf.sync(path.join(outDir, 'site', 'reference'));
+  rimraf.sync(path.join(outDir, 'site', 'search'));
 
-  console.log('parsing language.json');
   var language =
     JSON.parse(fs.readFileSync(path.join(siteDir, 'data', 'language.json')));
 
-  console.log('compiling templates');
   var templates = compileTemplates(path.join(siteDir, 'templates'));
 
   buildReference(language, templates, siteDir, outDir);
