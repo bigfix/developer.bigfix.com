@@ -13,18 +13,6 @@ curl -sL https://deb.nodesource.com/setup | bash -
 apt-get install -y git nginx nodejs
 
 # Setup nginx
-mkdir -p /var/www/site
-
 rm -rf /etc/nginx/sites-enabled/*
 rm -rf /etc/nginx/sites-available/*
-
-cp /vagrant/conf/nginx/dev.conf /etc/nginx/sites-available
-cp /vagrant/conf/nginx/prod.conf /etc/nginx/sites-available
-cp /vagrant/conf/nginx/shared.conf /etc/nginx
-
-ln -s /etc/nginx/sites-available/dev.conf /etc/nginx/sites-enabled/
-
-nginx -s reload
-
-# Add message for how to build the site
-echo 'It works!' > /var/www/site/index.html
+make -C /vagrant nginx-dev
