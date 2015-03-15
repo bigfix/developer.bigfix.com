@@ -39,10 +39,6 @@ function main() {
   var siteDir = process.argv[2];
   var outDir = process.argv[3];
 
-  console.log('cleaning output directory');
-  rimraf.sync(outDir);
-  fs.mkdirSync(outDir);
-
   console.log('parsing language.json');
   var language =
     JSON.parse(fs.readFileSync(path.join(siteDir, 'data', 'language.json')));

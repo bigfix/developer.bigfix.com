@@ -3,11 +3,10 @@
 set -e
 
 SITE=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-OUTDIR=output
+OUTDIR=/var/www/site
 
-# Clear output directory
-rm -rf $OUTDIR
-mkdir -p $OUTDIR
+# Clear output directory contents
+rm -rf $OUTDIR/*
 
 # Install generator dependencies, if necessary
 if [ ! -d $SITE/generate/node_modules ]; then

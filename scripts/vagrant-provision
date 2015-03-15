@@ -28,3 +28,6 @@ nginx -s reload
 
 # Add message for how to build the site
 echo 'It works!' > /var/www/site/index.html
+
+# Change ownership to vagrant
+chown -R vagrant:vagrant /var/www/site
