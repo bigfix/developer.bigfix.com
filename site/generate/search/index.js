@@ -5,7 +5,7 @@ var fs = require('fs'),
 function buildSearch(templates, siteDir, outDir) {
   console.log('rendering search page');
 
-  mkdirp(path.join(outDir, 'site', 'search'));
+  mkdirp.sync(path.join(outDir, 'site', 'search'));
 
   var page = templates.page.render({
     title: 'Search',
