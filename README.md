@@ -2,21 +2,24 @@ The source for [relevance.io](https://www.relevance.io).
 
 # Contributing
 
-The easiest way to contribute is to fork this repository and edit the markdown
-files in the `site` folder.
+The easiest way to contribute is to edit the markdown files in the `site`
+folder.
 
 ### Previewing your changes
 
 To preview the site, install both [Vagrant](https://www.vagrantup.com/) and
 [VirtualBox](https://www.virtualbox.org/).
 
-Start the virtual machine by running:
+Start the virtual machine and build the site by running:
 
     $ vagrant up
 
-Then to preview the changes, ssh to the virtual machine and build the site with:
+The site will then be available at [localhost:4000](http://localhost:4000).
+
+If you change something and want to preview the change, ssh to the machine with:
 
     $ vagrant ssh
-    $ make staging && sudo make deploy
 
-The site will then be available at [localhost:4000](http://localhost:4000).
+Then build the site with:
+
+    $ make

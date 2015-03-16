@@ -4,6 +4,7 @@ SOURCE ?= .
 STAGING ?= staging
 
 all: staging
+	sudo make deploy
 
 ################################################################################
 # assets
@@ -37,30 +38,31 @@ STAGING_TARGETS += $(STAGING)/site/static/fonts
 # pages
 ################################################################################
 
-$(STAGING)/generate/package.json: $(wildcard $(SOURCE)/site/generate/*)
+$(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/*)
 	mkdir -p $(STAGING)
 	rsync --archive --delete --exclude=node_modules \
-		$(SOURCE)/site/generate/ \
-		$(STAGING)/generate
-	cd $(STAGING)/generate && npm install
-	touch $(STAGING)/generate/package.json
+		$(SOURCE)/site/build/ \
+		$(STAGING)/build
+	cd $(STAGING)/build && npm install
+	touch $@
 
 PAGES_DEPS := \
-	$(STAGING)/generate/package.json \
+	$(STAGING)/build/package.json \
 	$(wildcard $(SOURCE)/site/data/*) \
 	$(wildcard $(SOURCE)/site/reference/*) \
 	$(wildcard $(SOURCE)/site/search/*) \
 	$(wildcard $(SOURCE)/site/templates/*)
 
 $(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
-	node $(STAGING)/generate $(SOURCE)/site $(STAGING)
-	touch $(STAGING)/site/index.html
+	node $(STAGING)/build $(SOURCE)/site $(STAGING)
+	touch $@
 
 STAGING_TARGETS += $(STAGING)/site/index.html
 
 /var/www/site/index.html: $(STAGING)/site/index.html
 	mkdir -p /var/www/site
 	rsync --archive --delete $(STAGING)/site/ /var/www/site
+	touch $@
 
 DEPLOY_TARGETS += /var/www/site/index.html
 
@@ -78,11 +80,14 @@ $(STAGING)/api/search/docs.json: $(STAGING)/docs.json
 
 $(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
 	mkdir -p $(STAGING)/api/search/
-	rsync --archive --delete --exclude=node_modules \
+	rsync --archive --delete \
+		--exclude=node_modules \
+		--exclude=language.json \
+		--exclude=docs.json \
 		$(SOURCE)/site/api/search/ \
 		$(STAGING)/api/search/
 	cd $(STAGING)/api/search/ && npm install
-	touch $(STAGING)/api/search/package.json
+	touch $@
 
 STAGING_TARGETS += $(STAGING)/api/search/language.json
 STAGING_TARGETS += $(STAGING)/api/search/docs.json
@@ -118,12 +123,12 @@ NGINX_DEPS := \
 
 /etc/nginx/sites-enabled/dev.conf: $(NGINX_DEPS)
 	rm -rf /etc/nginx/sites-enabled/*
-	cp /etc/nginx/sites-available/dev.conf /etc/nginx/sites-enabled/dev.conf
+	cp /etc/nginx/sites-available/dev.conf $@
 	nginx -s reload
 
 /etc/nginx/sites-enabled/prod.conf: $(NGINX_DEPS)
 	rm -rf /etc/nginx/sites-enabled/*
-	cp /etc/nginx/sites-available/prod.conf /etc/nginx/sites-enabled/prod.conf
+	cp /etc/nginx/sites-available/prod.conf $@
 	nginx -s reload
 
 /var/www/site:
@@ -144,4 +149,4 @@ NGINX_DEPS := \
 ################################################################################
 
 staging: $(STAGING_TARGETS)
-deploy: $(DEPLOY_TARGETS)
+deploy: staging $(DEPLOY_TARGETS)
