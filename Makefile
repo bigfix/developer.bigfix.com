@@ -6,12 +6,14 @@ STAGING ?= staging
 all: staging
 
 ################################################################################
-# static assets
+# assets
 ################################################################################
 
 $(STAGING)/site/static/fonts: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts
 	mkdir -p $(STAGING)/site/static
-	rsync --archive --delete $(SOURCE)/site/assets/font-awesome-4.3.0/fonts $(STAGING)/site/static
+	rsync --archive --delete \
+		$(SOURCE)/site/assets/font-awesome-4.3.0/fonts \
+		$(STAGING)/site/static
 
 CSS_FILES := \
 	$(SOURCE)/site/assets/Skeleton-2.0.4/css/normalize.css \
@@ -35,18 +37,20 @@ STAGING_TARGETS += $(STAGING)/site/static/fonts
 # pages
 ################################################################################
 
+$(STAGING)/generate/package.json: $(wildcard $(SOURCE)/site/generate/*)
+	mkdir -p $(STAGING)
+	rsync --archive --delete --exclude=node_modules \
+		$(SOURCE)/site/generate/ \
+		$(STAGING)/generate
+	cd $(STAGING)/generate && npm install
+	touch $(STAGING)/generate/package.json
+
 PAGES_DEPS := \
 	$(STAGING)/generate/package.json \
 	$(wildcard $(SOURCE)/site/data/*) \
 	$(wildcard $(SOURCE)/site/reference/*) \
 	$(wildcard $(SOURCE)/site/search/*) \
 	$(wildcard $(SOURCE)/site/templates/*)
-
-$(STAGING)/generate/package.json: $(wildcard $(SOURCE)/site/generate/*)
-	mkdir -p $(STAGING)
-	rsync --archive --delete --exclude=node_modules $(SOURCE)/site/generate/ $(STAGING)/generate
-	cd $(STAGING)/generate && npm install
-	touch $(STAGING)/generate/package.json
 
 $(STAGING)/site/index.html: $(PAGES_DEPS)
 	node $(STAGING)/generate $(SOURCE)/site $(STAGING)
@@ -60,7 +64,9 @@ STAGING_TARGETS += $(STAGING)/site/index.html
 
 $(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
 	mkdir -p $(STAGING)/api/search/
-	rsync --archive --delete --exclude=node_modules $(SOURCE)/site/api/search/ $(STAGING)/api/search/
+	rsync --archive --delete --exclude=node_modules \
+		$(SOURCE)/site/api/search/ \
+		$(STAGING)/api/search/
 	cd $(STAGING)/api/search/ && npm install
 	touch $(STAGING)/api/search/package.json
 
