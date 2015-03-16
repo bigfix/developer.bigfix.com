@@ -5,13 +5,10 @@ set -x
 
 GIT_DIR=/home/deploy/site.git
 TMP_DIR=/home/deploy/tmp
-SITE_DIR=/var/www/site
 
 rm -rf $TMP_DIR
 git clone $GIT_DIR $TMP_DIR
-
 cd $TMP_DIR
-site/build
-rsync --archive --delete-excluded output/ $SITE_DIR
+make staging && sudo make deploy
 cd -
 rm -rf $TMP_DIR
