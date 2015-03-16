@@ -1,4 +1,4 @@
-.PHONY: nginx-dev nginx-prod search staging all deploy
+.PHONY: nginx-dev nginx-prod staging deploy all
 
 SOURCE ?= .
 STAGING ?= staging
