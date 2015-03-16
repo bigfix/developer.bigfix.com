@@ -7,7 +7,8 @@ files in the `site` folder.
 
 ### Previewing your changes
 
-The site can be previewed using [Vagrant](https://www.vagrantup.com/).
+To preview the site install both [Vagrant](https://www.vagrantup.com/) and
+[VirtualBox](https://www.virtualbox.org/).
 
 Start the box and build the changes by running:
 
