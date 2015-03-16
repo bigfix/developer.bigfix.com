@@ -7,16 +7,16 @@ files in the `site` folder.
 
 ### Previewing your changes
 
-To preview the site install both [Vagrant](https://www.vagrantup.com/) and
+To preview the site, install both [Vagrant](https://www.vagrantup.com/) and
 [VirtualBox](https://www.virtualbox.org/).
 
-Start the box and build the changes by running:
+Start the virtual machine by running:
 
     $ vagrant up
+
+Then to preview the changes, ssh to the virtual machine and build the site with:
+
     $ vagrant ssh
-
-Then inside the virtual machine:
-
     $ make staging && sudo make deploy
 
 The site will then be available at [localhost:4000](http://localhost:4000).
