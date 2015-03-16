@@ -1,4 +1,4 @@
-.PHONY: nginx-dev nginx-prod search staging all
+.PHONY: nginx-dev nginx-prod search staging all deploy
 
 SOURCE ?= .
 STAGING ?= staging
@@ -52,15 +52,29 @@ PAGES_DEPS := \
 	$(wildcard $(SOURCE)/site/search/*) \
 	$(wildcard $(SOURCE)/site/templates/*)
 
-$(STAGING)/site/index.html: $(PAGES_DEPS)
+$(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
 	node $(STAGING)/generate $(SOURCE)/site $(STAGING)
 	touch $(STAGING)/site/index.html
 
 STAGING_TARGETS += $(STAGING)/site/index.html
 
+/var/www/site/index.html: $(STAGING)/site/index.html
+	mkdir -p /var/www/site
+	rsync --archive --delete $(STAGING)/site/ /var/www/site
+
+DEPLOY_TARGETS += /var/www/site/index.html
+
 ################################################################################
 # /api/search
 ################################################################################
+
+$(STAGING)/api/search/language.json: $(SOURCE)/site/data/language.json
+	mkdir -p $(STAGING)/api/search/
+	cp -f $< $@
+
+$(STAGING)/api/search/docs.json: $(STAGING)/docs.json
+	mkdir -p $(STAGING)/api/search/
+	cp -f $< $@
 
 $(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
 	mkdir -p $(STAGING)/api/search/
@@ -70,16 +84,24 @@ $(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
 	cd $(STAGING)/api/search/ && npm install
 	touch $(STAGING)/api/search/package.json
 
+STAGING_TARGETS += $(STAGING)/api/search/language.json
+STAGING_TARGETS += $(STAGING)/api/search/docs.json
 STAGING_TARGETS += $(STAGING)/api/search/package.json
 
-/etc/init/search.conf: $(SOURCE)/conf/upstart/search.conf $(STAGING)/api/search/package.json
+SEARCH_DEPS := \
+	$(SOURCE)/conf/upstart/search.conf \
+	$(STAGING)/api/search/package.json \
+	$(STAGING)/api/search/language.json \
+	$(STAGING)/api/search/docs.json
+
+/etc/init/search.conf: $(SEARCH_DEPS)
 	stop search || true
 	mkdir -p /var/www/api
 	rsync --archive --delete $(STAGING)/api/search/ /var/www/api/search
 	cp -f $(SOURCE)/conf/upstart/search.conf /etc/init/search.conf
 	start search
 
-search: /etc/init/search.conf
+DEPLOY_TARGETS += /etc/init/search.conf
 
 ################################################################################
 # Nginx
@@ -118,7 +140,8 @@ NGINX_DEPS := \
 	cp -f $< $@
 
 ################################################################################
-# Staging
+# Top level targets
 ################################################################################
 
 staging: $(STAGING_TARGETS)
+deploy: $(DEPLOY_TARGETS)

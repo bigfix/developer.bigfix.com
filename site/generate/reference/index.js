@@ -24,7 +24,7 @@ function buildReference(language, templates, siteDir, outDir) {
     fs.writeFileSync(path.join(outDir, 'site', page.href), page.content);
   });
 
-  fs.writeFileSync(path.join(outDir, 'site', 'reference', 'docs.json'),
+  fs.writeFileSync(path.join(outDir, 'docs.json'),
                    JSON.stringify(rendered.properties));
 }
 
