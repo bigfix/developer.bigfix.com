@@ -59,6 +59,19 @@ function makeAvailability(value) {
   return availability;
 }
 
+function makeContribute(source, id) {
+  var contribute = [];
+
+  if (source) {
+    var edit =
+      'https://github.com/briangreenery/relevance.io/tree/master/site/'
+      + 'reference/' + source.replace(/ /g, '-') + '.md';
+    contribute.push({ edit: edit, id: id });
+  }
+
+  return contribute;
+}
+
 function parseExample(text) {
   var example = { question: '', answers: [], errors: [] };
 
@@ -77,6 +90,8 @@ function parseExample(text) {
 }
 
 function renderProperty(property, template) {
+  var info = {};
+
   var data = {
     singularPhrase: property.singularPhrase,
     resultHtml: linkType(property.resultType)
@@ -88,9 +103,12 @@ function renderProperty(property, template) {
 
   if (property.directObjectType) {
     data.directObjectHtml = linkType(property.directObjectType);
+    info.source = 'types/' + property.directObjectType;
   }
 
-  return template.render(data);
+  info.heading = template.render(data);
+
+  return info;
 }
 
 function renderCast(property, template) {
@@ -100,7 +118,8 @@ function renderCast(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data);
+  return { heading: template.render(data),
+           source: 'types/' + property.argType };
 }
 
 function renderBinaryOp(property, template) {
@@ -111,7 +130,7 @@ function renderBinaryOp(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data); 
+  return { heading: template.render(data), source: 'operators' };
 }
 
 function renderUnaryOp(property, template) {
@@ -121,16 +140,18 @@ function renderUnaryOp(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data);
+  return { heading: template.render(data), source: 'operators' };
 }
 
-function renderEntry(heading, body, property, template) {
+function renderEntry(heading, body, property, source, template) {
   var data = {
     id: escapeKey(property.key),
     heading: heading,
     body: body,
-    availability: makeAvailability(property)
+    availability: makeAvailability(property),
+    contribute: makeContribute(source, escapeKey(property.key))
   };
+
 
   if (property.pluralPhrase) {
     data.plural = property.pluralPhrase;
@@ -157,20 +178,21 @@ function renderProperties(language, docs, templates) {
   Object.keys(docs.properties).forEach(function(key) {
     var property = language.properties[key];
 
-    var heading;
+    var info;
     if (property.type === 'property') {
-      heading = renderProperty(property, templates.properties.property);
+      info = renderProperty(property, templates.properties.property);
     } else if (property.type === 'cast') {
-      heading = renderCast(property, templates.properties.cast);
+      info = renderCast(property, templates.properties.cast);
     } else if (property.type === 'binaryOp') {
-      heading = renderBinaryOp(property, templates.properties.binary);
+      info = renderBinaryOp(property, templates.properties.binary);
     } else if (property.type === 'unaryOp') {
-      heading = renderUnaryOp(property, templates.properties.unary);
+      info = renderUnaryOp(property, templates.properties.unary);
     }
 
     var body = renderText(docs.properties[key], templates);
 
-    rendered[key] = renderEntry(heading, body, property, templates.entry);
+    rendered[key] =
+      renderEntry(info.heading, body, property, info.source, templates.entry);
   });
 
   return rendered;
