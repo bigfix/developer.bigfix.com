@@ -96,7 +96,11 @@ body {
 }
 
 .expand-buttons button {
-  margin-right: 1rem;
+  margin: 0 1rem 0 0;
+}
+
+#creation, #properties, #casts, #operators {
+  margin-top: 2rem;
 }
 
 .entry {
