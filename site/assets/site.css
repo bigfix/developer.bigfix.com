@@ -58,7 +58,7 @@ code {
 .example {
   border: 1px solid #e1e1e1;
   border-radius: 4px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .example pre {
@@ -71,7 +71,7 @@ code {
   font-size: 90%;
   line-height: normal;
   margin: 0;
-  padding: 1rem 1.5rem .5rem 1.5rem;
+  padding: 1rem 1rem .5rem 1rem;
 }
 
 .example ul {
@@ -84,7 +84,7 @@ code {
 
 .example li {
   margin: 0;
-  padding: .5rem 1.5rem;
+  padding: .5rem 1rem;
 }
 
 .example-error {
@@ -142,9 +142,15 @@ body {
   display: none;
 }
 
+.footnotes {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .footnote {
   display: inline-block;
-  margin-bottom: 1rem;
   margin-right: 2rem;
 }
 

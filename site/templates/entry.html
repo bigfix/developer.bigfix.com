@@ -8,23 +8,25 @@
   <div class="entry-body entry-hidden">
     {{{body}}}
 
-    {{#plural}}
-    <div class="footnote">
-      <h5>Plural</h5>
-      <span class="footnote-body">{{plural}}</span>
-    </div>
-    {{/plural}}
+    <div class="footnotes">
+      {{#plural}}
+      <div class="footnote">
+        <h5>Plural</h5>
+        <span class="footnote-body">{{plural}}</span>
+      </div>
+      {{/plural}}
 
-    <div class="footnote">
-      <h5>Support</h5>
-      <table class="support footnote-body">
-        {{#availability}}
-        <tr>
-          <td>{{version}}</td>
-          <td>{{platforms}}</td>
-        </tr>
-        {{/availability}}
-      </table>
+      <div class="footnote">
+        <h5>Support</h5>
+        <table class="support footnote-body">
+          {{#availability}}
+          <tr>
+            <td>{{version}}</td>
+            <td>{{platforms}}</td>
+          </tr>
+          {{/availability}}
+        </table>
+      </div>
     </div>
 
     <div class="links">
