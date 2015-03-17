@@ -3,7 +3,7 @@
 SOURCE ?= .
 STAGING ?= staging
 
-all: staging
+all:
 	sudo make deploy
 
 ################################################################################
