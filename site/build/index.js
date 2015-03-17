@@ -2,6 +2,7 @@ var buildReference = require('./reference'),
   buildSearch = require('./search'),
   fs = require('fs'),
   Hogan = require('hogan.js'),
+  marked = require('marked'),
   path = require('path'),
   rimraf = require('rimraf');
 
@@ -30,6 +31,18 @@ function compileTemplates(directory) {
   return templates;
 }
 
+function buildIndex(templates, siteDir, outDir) {
+  var indexPage = fs.readFileSync(path.join(siteDir, 'index.md')).toString();
+
+  var page = {
+    title: 'Home',
+    content: marked(indexPage)
+  };
+
+  fs.writeFileSync(path.join(outDir, 'site', 'index.html'),
+                   templates.page.render(page));
+}
+
 function main() {
   if (process.argv.length !== 4) {
     console.error('usage: generate <siteDir> <outDir>');
@@ -49,6 +62,7 @@ function main() {
 
   buildReference(language, templates, siteDir, outDir);
   buildSearch(templates, siteDir, outDir);
+  buildIndex(templates, siteDir, outDir);
 }
 
 if (require.main === module) {

@@ -48,6 +48,7 @@ $(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/*)
 
 PAGES_DEPS := \
 	$(STAGING)/build/package.json \
+	$(SOURCE)/site/index.md \
 	$(wildcard $(SOURCE)/site/data/*) \
 	$(wildcard $(SOURCE)/site/reference/*) \
 	$(wildcard $(SOURCE)/site/search/*) \
@@ -55,7 +56,6 @@ PAGES_DEPS := \
 
 $(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
 	node $(STAGING)/build $(SOURCE)/site $(STAGING)
-	touch $@
 
 STAGING_TARGETS += $(STAGING)/site/index.html
 
