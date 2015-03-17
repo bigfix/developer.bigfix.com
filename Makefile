@@ -59,7 +59,13 @@ $(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
 
 STAGING_TARGETS += $(STAGING)/site/index.html
 
-/var/www/site/index.html: $(STAGING)/site/index.html
+WWW_DEPS := \
+	$(STAGING)/site/static/site.css \
+	$(STAGING)/site/static/site.js \
+	$(STAGING)/site/static/fonts \
+	$(STAGING)/site/index.html
+
+/var/www/site/index.html: $(WWW_DEPS)
 	mkdir -p /var/www/site
 	rsync --archive --delete $(STAGING)/site/ /var/www/site
 	touch $@

@@ -19,12 +19,14 @@ Core:
   - substring
   - undefined
   - utf8 string
+  - html
+  - html attribute list
 
 Regular Expressions:
   - regular expression
   - regular expression match
 
-Date and Time:
+Date & Time:
   - date
   - date with multiplicity
   - day of month
@@ -75,10 +77,6 @@ SQLite:
   - sqlite statement
   - sqlite table
 
-HTML:
-  - html
-  - html attribute list
-
 Introspectors:
   - binary operator
   - cast
@@ -94,7 +92,7 @@ Statistical:
   - statistic range
   - statistical bin
 
-Client Configuration:
+Client:
   - administrative rights
   - client
   - client process owner
@@ -111,8 +109,6 @@ Client Configuration:
   - selected server
   - setting
   - x509 certificate
-
-Client Content:
   - action
   - action lock state
   - analysis
@@ -136,21 +132,6 @@ IP Address:
   - ipv6 address
   - ipv6 address with multiplicity
 
-Network Adapters:
-  - network
-  - network adapter
-  - network adapter interface
-  - network address list
-  - network interface
-  - network ip interface
-  - network link interface
-  - wifi
-
-Sockets:
-  - socket
-  - socket file
-  - tcp state
-
 Network:
   - connection
   - connection status
@@ -159,6 +140,17 @@ Network:
   - network share
   - route
   - routing table
+  - network
+  - network adapter
+  - network adapter interface
+  - network address list
+  - network interface
+  - network ip interface
+  - network link interface
+  - wifi
+  - socket
+  - socket file
+  - tcp state
 
 Firewall:
   - firewall
@@ -180,7 +172,7 @@ Firewall:
   - internet protocol
   - port mapping
 
-Operating System:
+System:
   - operating system
   - operating system product type
   - operating system suite mask
@@ -188,14 +180,14 @@ Operating System:
   - service pack with multiplicity
   - technology level
   - technology level with multiplicity
-
-Memory:
   - ram
-
-System:
   - computer
   - language
   - primary language
+  - bios
+  - smbios
+  - smbios structure
+  - smbios value
 
 Processor:
   - cpupackage
@@ -203,19 +195,13 @@ Processor:
   - hertz with multiplicity
   - processor
 
-BIOS:
-  - bios
-  - smbios
-  - smbios structure
-  - smbios value
+Deprecated:
+  - hotsync manager
+  - hotsync user
+  - palm application
+  - palm device
 
-Devices:
-  - active device
-  - scsibus
-  - scsidevice
-  - usb
-
-Direct Media Interface (DMI):
+DMI:
   - dmi
   - dmi additional_information
   - dmi b32_bit_memory_error_information
@@ -292,7 +278,7 @@ Debian Packages:
   - debianpkg verfile
   - debianpkg version
 
-RedHat Package Manager (RPM):
+RPM:
   - capability
   - package
   - rpm package release
@@ -306,7 +292,6 @@ RedHat Package Manager (RPM):
   - short rpm package version record with multiplicity
 
 HP-UX:
-  - bundle
   - software_depot
 
 GRUB:
@@ -322,7 +307,8 @@ GRUB:
   - grub kernel
   - grub module
 
-Windows Access Control:
+Windows:
+  - active device
   - access control entry
   - access control list
   - discretionary access control list
@@ -331,8 +317,6 @@ Windows Access Control:
   - security descriptor
   - security identifier
   - system access control list
-
-Windows Tasks:
   - boot task trigger
   - com handler task action
   - daily task trigger
@@ -363,47 +347,36 @@ Windows Tasks:
   - task trigger type
   - time task trigger
   - weekly task trigger
-
-Windows Management Instrumentation (WMI):
   - wmi
   - wmi object
   - wmi select
-
-Windows Audit Policy:
   - audit policy
   - audit policy category
   - audit policy information
   - audit policy subcategory
-
-Windows Registry:
   - registry
   - registry key
   - registry key value
   - registry key value type
-
-Windows Event Log:
   - event log
   - event log event type
   - event log record
-
-Windows Runtime (WinRT):
   - winrt enumeration
   - winrt package
   - winrt package id
   - winrt package user information
-
-IIS Metabase:
   - metabase
   - metabase identifier
   - metabase key
   - metabase type
   - metabase user type
   - metabase value
-
-Microsoft SQL Server:
   - local mssql database
 
-OSX:
+Mac:
+  - scsibus
+  - scsidevice
+  - usb
   - array
   - component
   - country
@@ -415,7 +388,7 @@ OSX:
   - registryroot
   - stage
 
-Solaris Service Management Facility (SMF):
+Solaris:
   - smf
   - smf fmri
   - smf instance
@@ -426,8 +399,6 @@ Solaris Service Management Facility (SMF):
   - smf snapshot part
   - smf time
   - smf value
-
-Solaris Image Packaging System (IPS):
   - ips authority info
   - ips branch version
   - ips build version
@@ -440,19 +411,15 @@ Solaris Image Packaging System (IPS):
   - ips setting pieces
   - ips version dependency
   - version with time
-
-Solaris Zones:
   - zone
   - zone network interface
-
-Solaris Packages:
   - patch
   - pkgdb
   - pkginfo
   - uuid
   - uuid with multiplicity
 
-AIX General:
+AIX:
   - apar
   - fileset
   - fileset part
@@ -464,10 +431,9 @@ AIX General:
   - message_catalog_set
   - network_option
   - object repository
+  - object_repository
   - product
   - rpc_program
-
-AIX Object Data Manager (ODM):
   - customized_attribute
   - customized_device
   - odm
@@ -480,14 +446,12 @@ Processes:
   - priority class
   - process
 
-Applications:
+Applications & Services:
   - application
   - application usage summary
   - application usage summary instance
   - bundle
   - execution
-
-Services:
   - runlevel
   - service
 
@@ -523,14 +487,12 @@ Files:
   - swap
   - symlink
   - volume
-
-Volumes:
   - drive
   - logical volume
   - logical volume manager
   - volume group
 
-Session General:
+Session:
   - bes comment
   - bes deployment option
   - bes product
@@ -540,30 +502,20 @@ Session General:
   - historical computer count
   - historical fixlet count
   - mime field
-
-Session Wizards:
   - bes wizard
   - bes wizard set
   - bes wizard variable
   - bes wizard with multiplicity
-
-Session Users:
   - bes user
   - bes user set
   - bes user with multiplicity
-
-Session Unmanaged Assets:
   - bes unmanagedasset
   - bes unmanagedasset field
   - bes unmanagedasset set
   - bes unmanagedasset with multiplicity
-
-Session Sites:
   - bes site
   - bes site set
   - bes site with multiplicity
-
-Session Computers:
   - bes client setting
   - bes computer
   - bes computer group
@@ -575,8 +527,6 @@ Session Computers:
   - bes property result
   - bes property set
   - bes property with multiplicity
-
-Session Fixlets:
   - bes activation
   - bes baseline component
   - bes baseline component group
@@ -590,31 +540,21 @@ Session Fixlets:
   - bes fixlet result
   - bes fixlet set
   - bes fixlet with multiplicity
-
-Session Domains:
   - bes domain
   - bes domain set
   - bes domain with multiplicity
-
-Session Actions:
   - bes action
   - bes action parameter
   - bes action result
   - bes action set
   - bes action status
   - bes action with multiplicity
-
-Session Files:
   - bes site file
   - bes site file set
   - bes site file with multiplicity
-
-Session Roles:
   - bes role
   - bes role set
   - bes role with multiplicity
-
-Session LDAP:
   - bes ldap directory
   - bes ldap directory server
   - bes ldap directory set

@@ -184,3 +184,19 @@ table.support td {
 #search-form {
   margin-bottom: 2rem;
 }
+
+.reference-types {
+  list-style: none;
+}
+
+.reference-types li {
+  display: inline;
+}
+
+.reference-types li:after {
+  content: ", ";
+}
+
+.reference-types li:last-child:after {
+  content: "";
+}

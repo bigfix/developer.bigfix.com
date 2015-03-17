@@ -1,0 +1,12 @@
+<div class="row">
+  <h1>Reference</h1>
+  <p>This is a list of all inspector types, roughly grouped according to category.</p>
+</div>
+{{#categories}}
+<div class="row reference-category">
+  <h5>{{name}}</h5>
+  <ul class="reference-types">
+    {{#types}}<li><a href="{{href}}">{{name}}</a></li>{{/types}}
+  </ul>
+</div>
+{{/categories}}
