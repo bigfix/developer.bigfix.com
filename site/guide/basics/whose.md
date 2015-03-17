@@ -1,6 +1,4 @@
----
-title: Whose
----
+# Whose
 
 The `whose` clause allows you to filter a result or set of results based on
 specified relevance criteria. It has the form:

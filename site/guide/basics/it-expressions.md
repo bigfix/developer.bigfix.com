@@ -1,6 +1,4 @@
----
-title: It Expressions
----
+# It Expressions
 
 There are two contexts in which `it` has a meaning:
 

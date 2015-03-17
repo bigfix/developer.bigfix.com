@@ -1,6 +1,4 @@
----
-title: Exists
----
+# Exists
 
 Exists is an important keyword that returns `True` or `False` based upon the
 existence of the specified object. This is an important technique that lets you

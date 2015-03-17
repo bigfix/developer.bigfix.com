@@ -1,6 +1,4 @@
----
-title: Event Log
----
+# Event Log
 
 Show me the events with this ID in the application log:
 

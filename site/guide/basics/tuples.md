@@ -1,6 +1,4 @@
----
-title: Tuples
----
+# Tuples
 
 Tuples add some useful properties to the language. A tuple is a compound type
 composed of two or more other types. It can be returned directly from an

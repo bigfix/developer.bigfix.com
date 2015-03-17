@@ -1,6 +1,4 @@
----
-title: Network
----
+# Network
 
 {{#example}}
 Q: addresses whose (it as string != "0.0.0.0") of ip interfaces of network as string =

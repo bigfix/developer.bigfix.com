@@ -1,6 +1,4 @@
----
-title: If, Then, Else
----
+# If, Then, Else
 
 If-then-else clauses have the form:
 

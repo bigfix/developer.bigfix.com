@@ -1,6 +1,4 @@
----
-title: WMI
----
+# WMI
 
 Serial number of computer, or serial number for a computer for a mac
 

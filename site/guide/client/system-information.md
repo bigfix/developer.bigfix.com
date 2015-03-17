@@ -1,6 +1,4 @@
----
-title: System Information
----
+# System Information
 
 # OS
 

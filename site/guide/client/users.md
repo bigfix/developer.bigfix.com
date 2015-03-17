@@ -1,6 +1,4 @@
----
-title: Users
----
+# Users
 
 {{#example}}
 Q: names of logged on users

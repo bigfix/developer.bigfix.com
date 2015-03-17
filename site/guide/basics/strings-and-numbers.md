@@ -1,6 +1,4 @@
----
-title: Strings and Numbers
----
+# Strings and Numbers
 
 The basic building blocks of the language are numbers, strings and expressions
 that combine them.

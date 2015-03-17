@@ -1,6 +1,4 @@
----
-title: Casts
----
+# Casts
 
 Values can be converted into other types, making it easy to create, concatenate
 and combine inspectors into complex expressions.

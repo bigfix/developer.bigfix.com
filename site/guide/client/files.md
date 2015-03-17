@@ -1,6 +1,4 @@
----
-title: Files
----
+# Files
 
 Does this file exist?
 

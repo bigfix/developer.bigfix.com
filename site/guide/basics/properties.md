@@ -1,6 +1,4 @@
----
-title: Properties
----
+# Properties
 
 Properties of objects can be inspected and referenced. There are thousands of
 property inspectors available to cover the majority of software and hardware

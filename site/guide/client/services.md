@@ -1,6 +1,4 @@
----
-title: Services
----
+# Services
 
 Are services running, do they exist
 

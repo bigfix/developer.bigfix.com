@@ -1,6 +1,4 @@
----
-title: Applications
----
+# Applications
 
 Reg apps (registered applications)
 
