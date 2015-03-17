@@ -3,7 +3,7 @@
 SOURCE ?= .
 STAGING ?= staging
 
-all:
+all: staging
 	sudo make deploy
 
 ################################################################################
@@ -155,4 +155,4 @@ NGINX_DEPS := \
 ################################################################################
 
 staging: $(STAGING_TARGETS)
-deploy: staging $(DEPLOY_TARGETS)
+deploy: $(DEPLOY_TARGETS)
