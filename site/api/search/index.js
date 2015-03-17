@@ -3,6 +3,8 @@ var express = require('express'),
 
 var app = express();
 
+app.set('x-powered-by', false);
+
 app.get('/api/search', function(req, res) {
   var query = req.query.query;
   var offset = Number(req.query.offset || 0);
