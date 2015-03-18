@@ -404,7 +404,7 @@ Creates a date (in month year format) corresponding to September of the specifie
 
 # set of &lt;integer&gt;
 
-Creates a set from the given list of semicolon-separated integers.
+Creates a set from the given list of integers.
 
 {{#example}}
 Q: elements of set of (1; 2; 2; 3)
