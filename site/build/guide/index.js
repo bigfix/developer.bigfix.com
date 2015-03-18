@@ -16,12 +16,11 @@ function buildGuide(templates, siteDir, outDir) {
 
     fs.readdirSync(sourceFolder).forEach(function(file) {
       var sourceFile = path.join(sourceFolder, file);
-      var data = {
-        title: 'Hodor',
-        content: renderText(fs.readFileSync(sourceFile).toString(), templates)
-      };
 
-      var destFile = path.join(destFolder, path.basename(file, '.md') + '.html');
+      var destFile =
+        path.join(destFolder, path.basename(file, '.md') + '.html');
+
+      var data = renderText(fs.readFileSync(sourceFile).toString(), templates);
       fs.writeFileSync(destFile, templates.page.render(data));
     });
   });

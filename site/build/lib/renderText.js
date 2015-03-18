@@ -30,7 +30,21 @@ function renderText(text, templates) {
     }
   };
 
-  return marked(Hogan.compile(text).render(exampleData));
+  var renderer = new marked.Renderer();
+  var title = '';
+
+  renderer.heading = function(text) {
+    if (title === '') {
+      title = text;
+    }
+
+    return marked.Renderer.prototype.heading.apply(this, arguments);
+  };
+
+  var content =
+    marked(Hogan.compile(text).render(exampleData), {renderer : renderer});
+
+  return { title: title, content: content };
 }
 
 module.exports = renderText;

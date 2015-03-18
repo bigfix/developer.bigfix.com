@@ -135,7 +135,7 @@ function renderProperties(language, docs, templates) {
       heading = renderUnaryOp(property, templates.properties.unary);
     }
 
-    var body = renderText(docs.properties[key], templates);
+    var body = renderText(docs.properties[key], templates).content;
 
     rendered[key] = renderEntry(heading, body, property, templates.entry);
   });
@@ -153,7 +153,7 @@ function renderType(type, text, renderedProperties, associations, templates) {
 
   var data = {
     name: type.name,
-    description: renderText(text, templates),
+    description: renderText(text, templates).content,
     availability: makeAvailability(type)
   };
 
