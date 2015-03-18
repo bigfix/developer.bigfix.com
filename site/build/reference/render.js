@@ -149,7 +149,7 @@ function renderProperties(language, docs, templates) {
     }
 
     var body = renderText(docs.properties[key], templates).content;
-    var source = docs.source[key];
+    var source = docs.source.properties[key];
 
     rendered[key] =
       renderEntry(heading, body, property, source, templates.entry);
