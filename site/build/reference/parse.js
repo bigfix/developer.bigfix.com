@@ -24,6 +24,7 @@ function processLines(file, lineNumber, key, lines, language, docs) {
     }
 
     docs.types[key] = lines.join('\n');
+    docs.source[key] = file.replace('/vagrant/', '');
   } else {
     key = unescape(key.substr(1).trim());
 
@@ -39,6 +40,7 @@ function processLines(file, lineNumber, key, lines, language, docs) {
     }
 
     docs.properties[key] = lines.join('\n').trim();
+    docs.source[key] = file.replace('/vagrant/', '');
   }
 }
 
@@ -83,7 +85,8 @@ function parseDir(folder, language, docs) {
 function parse(folder, language) {
   var docs = {
     types: {},
-    properties: {}
+    properties: {},
+    source: {}
   };
 
   parseDir(folder, language, docs);

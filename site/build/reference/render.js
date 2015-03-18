@@ -59,6 +59,18 @@ function makeAvailability(value) {
   return availability;
 }
 
+function makeContribute(source, id) {
+  var contribute = [];
+
+  if (source) {
+    var edit =
+      'https://github.com/briangreenery/relevance.io/tree/master/' + source;
+    contribute.push({ source: edit, id: id });
+  }
+
+  return contribute;
+}
+
 function parseExample(text) {
   var example = { question: '', answers: [], errors: [] };
 
@@ -124,12 +136,13 @@ function renderUnaryOp(property, template) {
   return template.render(data);
 }
 
-function renderEntry(heading, body, property, template) {
+function renderEntry(heading, body, property, source, template) {
   var data = {
     id: escapeKey(property.key),
     heading: heading,
     body: body,
-    availability: makeAvailability(property)
+    availability: makeAvailability(property),
+    contribute: makeContribute(source, escapeKey(property.key))
   };
 
   if (property.pluralPhrase) {
@@ -169,8 +182,10 @@ function renderProperties(language, docs, templates) {
     }
 
     var body = renderText(docs.properties[key], templates);
+    var source = docs.source[key];
 
-    rendered[key] = renderEntry(heading, body, property, templates.entry);
+    rendered[key] =
+      renderEntry(heading, body, property, source, templates.entry);
   });
 
   return rendered;
