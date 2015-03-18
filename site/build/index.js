@@ -1,4 +1,5 @@
-var buildReference = require('./reference'),
+var buildGuide = require('./guide'),
+  buildReference = require('./reference'),
   buildSearch = require('./search'),
   fs = require('fs'),
   Hogan = require('hogan.js'),
@@ -52,6 +53,7 @@ function main() {
   var siteDir = process.argv[2];
   var outDir = process.argv[3];
 
+  rimraf.sync(path.join(outDir, 'site', 'guide'));
   rimraf.sync(path.join(outDir, 'site', 'reference'));
   rimraf.sync(path.join(outDir, 'site', 'search'));
 
@@ -60,6 +62,7 @@ function main() {
 
   var templates = compileTemplates(path.join(siteDir, 'templates'));
 
+  buildGuide(templates, siteDir, outDir);
   buildReference(language, templates, siteDir, outDir);
   buildSearch(templates, siteDir, outDir);
   buildIndex(templates, siteDir, outDir);

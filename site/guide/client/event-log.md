@@ -20,7 +20,7 @@ When you have an example, you'll need to mod the event ID by 2^15 or 2^30 most l
 
 Windows ends up [throwing away](http://msdn.microsoft.com/en-us/library/aa363651.aspx) the highbits of stuff.
 
-Which means we end up with event ids different than event viewer typically, as [discussed in the forum](https://www.ibm.com/developerworks/community/forums/html/topic?id=77777777-0000-0000-0000-000014748770).
+Which means we end up with event ids different than event viewer typically, as [discussed in the forum](https://forum.bigfix.com/t/displaying-certain-eventlog-message/5463).
 
 So basically the event viewer in Windows throws away the "high bits" of the
 event, but the event ID inspector doesn't do this. According to the Microsoft

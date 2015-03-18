@@ -7,7 +7,7 @@ if <conditional-expression> then <expression1> else <expression2>
 ````
 
 Both `<expression1>` and `<expression2>` must have the same type, and
-`<conditional- expression>` must be a singular boolean.
+`<conditional-expression>` must be a singular boolean.
 
 If `<conditional-expression>` is true, then `<expression1>` is evaluated and
 returned; otherwise `<expression2>` is evaluated and returned.

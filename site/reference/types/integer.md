@@ -406,6 +406,13 @@ Creates a date (in month year format) corresponding to September of the specifie
 
 Creates a set from the given list of semicolon-separated integers.
 
+{{#example}}
+Q: elements of set of (1; 2; 2; 3)
+A: 1
+A: 2
+A: 3
+{{/example}}
+
 # significant digits &lt;integer&gt; of &lt;integer&gt;
 
 Returns a number with &lt;integer&gt; significant digits (for example, significant digits 3 of 1235569 = 1240000).
