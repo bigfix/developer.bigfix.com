@@ -268,7 +268,12 @@ Concatenates a string with an HTML file, returning a new HTML file.
 
 # &lt;integer set&gt; contains &lt;integer&gt;
 
-Returns `True` if the specified set contains the given integer.Example: set of (1;2;3) contains 2 - Returns `True`.
+Returns `True` if the specified set contains the given integer.
+
+{{#example}}
+Q: set of (1; 2; 3) contains 2
+A: True
+{{/example}}
 
 # &lt;integer&gt; &lt; &lt;floating point&gt;
 
