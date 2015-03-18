@@ -56,15 +56,10 @@ function makeAvailability(value) {
 }
 
 function makeContribute(source, id) {
-  var contribute = [];
+  var base =
+    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
 
-  if (source) {
-    var edit =
-      'https://github.com/briangreenery/relevance.io/tree/master/' + source;
-    contribute.push({ source: edit, id: id });
-  }
-
-  return contribute;
+  return { source: base + source, id: id };
 }
 
 function renderProperty(property, template) {

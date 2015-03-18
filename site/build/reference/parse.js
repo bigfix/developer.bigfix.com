@@ -8,7 +8,7 @@ function unescape(key) {
     .replace(/&amp;/g, '&');
 }
 
-function processLines(file, lineNumber, key, lines, language, docs) {
+function processLines(file, baseDir, lineNumber, key, lines, language, docs) {
   if (key.indexOf('# type:') === 0) {
     key = unescape(key.substr(7).trim());
 
@@ -24,7 +24,7 @@ function processLines(file, lineNumber, key, lines, language, docs) {
     }
 
     docs.types[key] = lines.join('\n');
-    docs.source.types[key] = file.replace('/vagrant/', '');
+    docs.source.types[key] = path.relative(baseDir, file);
   } else {
     key = unescape(key.substr(1).trim());
 
@@ -40,17 +40,17 @@ function processLines(file, lineNumber, key, lines, language, docs) {
     }
 
     docs.properties[key] = lines.join('\n').trim();
-    docs.source.properties[key] = file.replace('/vagrant/', '');
+    docs.source.properties[key] = path.relative(baseDir, file);
   }
 }
 
-function parseFile(file, language, docs) {
+function parseFile(file, baseDir, language, docs) {
   var lineNumber, key, lines;
 
   fs.readFileSync(file).toString().split('\n').forEach(function(line, index) {
     if (line[0] === '#') {
       if (key) {
-        processLines(file, lineNumber, key, lines, language, docs);
+        processLines(file, baseDir, lineNumber, key, lines, language, docs);
       }
 
       key = line;
@@ -62,11 +62,11 @@ function parseFile(file, language, docs) {
   });
 
   if (key) {
-    processLines(file, lineNumber, key, lines, language, docs);
+    processLines(file, baseDir, lineNumber, key, lines, language, docs);
   }
 }
 
-function parseDir(folder, language, docs) {
+function parseDir(folder, baseDir, language, docs) {
   var children = fs.readdirSync(folder).map(function(child) {
     return path.join(folder, child);
   });
@@ -75,9 +75,9 @@ function parseDir(folder, language, docs) {
     var stats = fs.statSync(child);
 
     if (stats.isFile()) {
-      parseFile(child, language, docs);
+      parseFile(child, baseDir, language, docs);
     } else if (stats.isDirectory()) {
-      parseDir(child, language, docs);
+      parseDir(child, baseDir, language, docs);
     }
   });
 }
@@ -93,7 +93,7 @@ function parse(folder, language) {
     properties: {}
   };
 
-  parseDir(folder, language, docs);
+  parseDir(folder, folder, language, docs);
   return docs;
 }
 
