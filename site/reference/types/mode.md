@@ -20,7 +20,7 @@ Returns `True` if setuid (the user ID flag) is set.
 
 # sticky of &lt;mode&gt;
 
-The `sticky&#39; bit (S_ISVTX) on a directory means that a file in that directory can be renamed or deleted only by the owner of the file, by the owner of the directory, and by root. This inspector returns `True` if the sticky bit of the given mode is on.
+The sticky bit `S_ISVTX` on a directory means that a file in that directory can be renamed or deleted only by the owner of the file, by the owner of the directory, and by root. This inspector returns `True` if the sticky bit of the given mode is on.
 
 # user mask of &lt;mode&gt;
 
