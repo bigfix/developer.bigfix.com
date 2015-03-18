@@ -5,7 +5,7 @@ composed of two or more other types. It can be returned directly from an
 inspector, like this:
 
 {{#example}}
-Q: (now & (1*hour)) * true
+Q: (now & (1 * hour)) * true
 A: ( Fri, 22 Sep 2006 15:25:43 -0400 to Fri, 22 Sep 2006 16:25:43 -0400 ), True
 {{/example}}
 

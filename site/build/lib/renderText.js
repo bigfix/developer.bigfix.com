@@ -21,11 +21,18 @@ function parseExample(text) {
   return example;
 }
 
+/**
+ * Escape any special markdown characters in the example.
+ */
+function escapeMarkdown(html) {
+  return html.replace(/\*/g, '&#42;').replace(/_/g, '&#95;');
+}
+
 function renderText(text, templates) {
   var exampleData = {
     example: function() {
       return function(text) {
-        return templates.example.render(parseExample(text));
+        return escapeMarkdown(templates.example.render(parseExample(text)));
       };
     }
   };
