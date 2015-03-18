@@ -1,10 +1,6 @@
 var escape = require('escape-html'),
-  highlight = require('highlight.js'),
-  Hogan = require('hogan.js'),
-  marked = require('marked'),
-  path = require('path');
-
-highlight.registerLanguage('bigfix-relevance', require('./relevance.js'));
+  path = require('path'),
+  renderText = require('../lib/renderText');
 
 function typeAnchor(type) {
   var href = '/reference/types/' + type.replace(/ /g, '-') + '.html';
@@ -57,23 +53,6 @@ function makeAvailability(value) {
   });
 
   return availability;
-}
-
-function parseExample(text) {
-  var example = { question: '', answers: [], errors: [] };
-
-  text.trim().split('\n').forEach(function(line) {
-    if (line.indexOf('Q:') === 0) {
-      example.question =
-        highlight.highlight('bigfix-relevance', line.substr(2).trim()).value;
-    } else if (line.indexOf('A:') === 0) {
-      example.answers.push({text: line.substr(2).trim()});
-    } else if (line.indexOf('E:') === 0) {
-      example.errors.push({text: line.substr(2).trim()});
-    }
-  });
-
-  return example;
 }
 
 function renderProperty(property, template) {
@@ -137,18 +116,6 @@ function renderEntry(heading, body, property, template) {
   }
 
   return template.render(data);
-}
-
-function renderText(text, templates) {
-  var exampleData = {
-    example: function() {
-      return function(text) {
-        return templates.example.render(parseExample(text));
-      };
-    }
-  };
-
-  return marked(Hogan.compile(text).render(exampleData));
 }
 
 function renderProperties(language, docs, templates) {
