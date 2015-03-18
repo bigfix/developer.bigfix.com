@@ -1,6 +1,6 @@
 # type: date
 
-The &lt;date&gt; objects are the various inspectors that access the date types.
+The `date` objects are the various inspectors that access the date types.
 
 # day_of_month of &lt;date&gt;
 

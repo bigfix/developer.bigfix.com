@@ -8,11 +8,21 @@ Returns the minimum and maximum extreme values of the given list of &lt;month an
 
 # first &lt;day of week&gt; of &lt;month and year&gt;
 
-Finds the specific date corresponding to the first day of the week (eg. Friday) for a given month and year.Example: first monday of april of 2020 - Returns the date of the first Monday in April 2020, which is Mon, 06 Apr 2020.
+Finds the specific date corresponding to the first day of the week (eg. Friday) for a given month and year.
+
+{{#example}}
+Q: first (monday) of april of 2020
+A: Mon, 06 Apr 2020
+{{/example}}
 
 # first friday of &lt;month and year&gt;
 
 Finds the date corresponding to the first Friday of any given month and year.
+
+{{#example}}
+Q: first friday of april of 2020
+A: Fri, 03 Apr 2020
+{{/example}}
 
 # first monday of &lt;month and year&gt;
 
@@ -40,7 +50,12 @@ Finds the date corresponding to the first Wednesday of any given month and year.
 
 # length of &lt;month and year&gt;
 
-Returns the number of days in the specified month.Example: length of (month &quot;February&quot; &amp; year &quot;2004&quot;) - Returns 29.
+Returns the number of days in the specified month.
+
+{{#example}}
+Q: length of (month "February" & year "2004")
+A: 29 days
+{{/example}}
 
 # maximum of &lt;month and year&gt;
 
@@ -76,7 +91,12 @@ No documentation exists.
 
 # &lt;month and year&gt; - &lt;month and year&gt;
 
-Subtracts two dates (in month year format), returning a number of months.Example: January of 2020 - current month_and_year - Returns a time interval measured to the nearest month, such as 13 years, 9 months.
+Subtracts two dates (in month year format), returning a number of months.
+
+{{#example}}
+Q: January of 2020 - current month_and_year
+A: 4 years, 10 months
+{{/example}}
 
 # &lt;month and year&gt; = &lt;month and year&gt;
 

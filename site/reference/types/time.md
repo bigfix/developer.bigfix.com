@@ -6,6 +6,11 @@ A &lt;time&gt; object is used to identify a point in time. Time objects are used
 
 Returns the date adjusted for the specified time zone.
 
+{{#example}}
+Q: date (universal time zone) of now
+A: Wed, 18 Mar 2015
+{{/example}}
+
 # extrema of &lt;time&gt;
 
 Returns the minimum and maximum extreme values of the given list of &lt;time&gt; types.

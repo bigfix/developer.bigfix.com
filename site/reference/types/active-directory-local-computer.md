@@ -8,7 +8,12 @@ Active Directory error if unable to get the distinguished name (this is for debu
 
 # distinguished name of &lt;active directory local computer&gt;
 
-Returns the computer&#39;s fully qualified active directory name in the distinguished name format, for instance, &#39;CN=ALBATROSS, CN=Computers, DC=bigfix, DC=com&#39;.Example: distinguished name of local computer of active directory - Returns CN=mymachinename,CN=Computers,DC=bigfix,DC=com.
+Returns the computer's fully qualified active directory name in the distinguished name format.
+
+{{#example}}
+Q: distinguished name of local computer of active directory
+A: CN=Winterfell,CN=Computers,DC=bigfix,DC=com
+{{/example}}
 
 # dns domainname of &lt;active directory local computer&gt;
 

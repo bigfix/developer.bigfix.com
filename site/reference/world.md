@@ -628,7 +628,12 @@ Returns a user object for the user currently logged into the BES Console.
 
 # current date
 
-Returns the current date in the format:Day of week, Day Month Year.
+Returns the current date.
+
+{{#example}}
+Q: current date
+A: Wed, 18 Mar 2015
+{{/example}}
 
 # current day_of_month
 
