@@ -10,33 +10,6 @@
   <div id="search-results" class="twelve columns"></div>
 </div>
 <script>
-function getJSON(url, callback) {
-  var request = new XMLHttpRequest();
-
-  request.onload = function() {
-    if (this.status !== 200) {
-      return callback(new Error('search failed with status ' + this.status));
-    }
-
-    var results;
-
-    try {
-      results = JSON.parse(this.response);
-    } catch (err) {
-      return callback(new Error('failed to parse search results'));
-    }
-
-    callback(null, results);
-  };
-
-  request.onerror = function() {
-    return callback(new Error('search failed'));
-  };
-
-  request.open('GET', url, true);
-  request.send();
-}
-
 function getSearchQuery() {
   return document.getElementById('search-input').value;
 }
@@ -60,7 +33,7 @@ function search() {
 
   var url = '/api/search?query=' + encodeURIComponent(query);
 
-  getJSON(url, function(err, results) {
+  requestJSON('GET', url, function(err, results) {
     if (query != getSearchQuery()) {
       // They typed something else before this returned.
       return;

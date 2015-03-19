@@ -211,3 +211,7 @@ table.support td {
 .reference-types li:last-child:after {
   content: "";
 }
+
+.evaluate textarea {
+  width: 100%;
+}

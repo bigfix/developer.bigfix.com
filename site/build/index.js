@@ -33,11 +33,11 @@ function compileTemplates(directory) {
 }
 
 function buildIndex(templates, siteDir, outDir) {
-  var indexPage = fs.readFileSync(path.join(siteDir, 'index.md')).toString();
+  var indexPage = fs.readFileSync(path.join(siteDir, 'index.html')).toString();
 
   var page = {
     title: 'Home',
-    content: marked(indexPage)
+    content: indexPage
   };
 
   fs.writeFileSync(path.join(outDir, 'site', 'index.html'),

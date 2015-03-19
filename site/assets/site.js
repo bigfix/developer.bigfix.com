@@ -1,4 +1,45 @@
 /**
+ * Make an HTTP request.
+ */
+function requestJSON(method, url, body, callback) {
+  var request = new XMLHttpRequest();
+
+  if (!callback) {
+    callback = body;
+    body = undefined;
+  }
+
+  request.onload = function() {
+    if (this.status !== 200) {
+      return callback(new Error('request failed with status ' + this.status));
+    }
+
+    var results;
+
+    try {
+      results = JSON.parse(this.response);
+    } catch (err) {
+      return callback(new Error('failed to parse request results'));
+    }
+
+    callback(null, results);
+  };
+
+  request.onerror = function() {
+    return callback(new Error('request failed'));
+  };
+
+  request.open(method, url, true);
+
+  if (body) {
+    request.setRequestHeader('Content-Type', 'application/json');
+    request.send(JSON.stringify(body));
+  } else {
+    request.send();
+  }
+}
+
+/**
  * Expand all entries on the page.
  */
 function expandAll() {

@@ -50,7 +50,7 @@ $(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/*)
 
 PAGES_DEPS := \
 	$(STAGING)/build/package.json \
-	$(SOURCE)/site/index.md \
+	$(SOURCE)/site/index.html \
 	$(wildcard $(SOURCE)/site/data/*) \
 	$(wildcard $(SOURCE)/site/guide/*) \
 	$(wildcard $(SOURCE)/site/reference/*) \
