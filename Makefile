@@ -3,8 +3,10 @@
 SOURCE ?= .
 STAGING ?= staging
 
-all: staging
-	sudo make deploy
+# The targets to deploy a dev build
+
+all: staging remote-staging
+	sudo make deploy remote-deploy
 
 ################################################################################
 # assets
@@ -116,6 +118,34 @@ SEARCH_DEPS := \
 DEPLOY_TARGETS += /etc/init/search.conf
 
 ################################################################################
+# /api/evaluate
+################################################################################
+
+$(STAGING)/api/evaluate/package.json: $(wildcard $(SOURCE)/site/api/evaluate/*)
+	mkdir -p $(STAGING)/api/evaluate/
+	rsync --archive --delete \
+		--exclude=node_modules \
+		$(SOURCE)/site/api/evaluate/ \
+		$(STAGING)/api/evaluate/
+	cd $(STAGING)/api/evaluate/ && npm install
+	touch $@
+
+REMOTE_STAGING_TARGETS += $(STAGING)/api/evaluate/package.json
+
+EVALUATE_DEPS := \
+	$(SOURCE)/conf/upstart/evaluate.conf \
+	$(STAGING)/api/evaluate/package.json
+
+/etc/init/evaluate.conf: $(EVALUATE_DEPS)
+	stop evaluate || true
+	mkdir -p /var/www/api
+	rsync --archive --delete $(STAGING)/api/evaluate/ /var/www/api/evaluate
+	cp -f $(SOURCE)/conf/upstart/evaluate.conf /etc/init/evaluate.conf
+	start evaluate
+
+REMOTE_DEPLOY_TARGETS += /etc/init/evaluate.conf
+
+################################################################################
 # nginx
 ################################################################################
 
@@ -155,5 +185,12 @@ NGINX_DEPS := \
 # top level targets
 ################################################################################
 
+# The targets to deploy the web server and web pages
+
 staging: $(STAGING_TARGETS)
 deploy: $(DEPLOY_TARGETS)
+
+# The targets to deploy the remote evaluate server
+
+remote-staging: $(REMOTE_STAGING_TARGETS)
+remote-deploy: $(REMOTE_DEPLOY_TARGETS)
