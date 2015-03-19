@@ -8,7 +8,7 @@ Q: "01 Apr 2020" as date
 A: Wed, 01 Apr 2020
 {{/example}}
 
-Converts (casts) a string into a date type.
+Converts a string into a date type.
 
 {{#example}}
 Q: 5 as month
