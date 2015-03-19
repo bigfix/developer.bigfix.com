@@ -3,7 +3,7 @@
 set -e
 set -x
 
-GIT_DIR=/home/deploy/site.git
+GIT_DIR=/home/deploy/evaluate.git
 TMP_DIR=/home/deploy/tmp
 
 rm -rf $TMP_DIR
