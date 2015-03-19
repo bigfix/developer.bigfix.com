@@ -1,4 +1,4 @@
 language: node_js
-script: make staging
+script: make staging remote-staging
 notifications:
   email: false

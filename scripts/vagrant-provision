@@ -20,5 +20,5 @@ echo 'include /vagrant/Makefile' >> /home/vagrant/Makefile
 make nginx-dev
 
 # Build the site
-sudo --user vagrant --set-home make staging
-make deploy
+sudo --user vagrant --set-home make staging remote-staging
+make deploy remote-deploy
