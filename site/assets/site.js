@@ -106,5 +106,3 @@ function toggleOnLoad() {
 
   entryExpand.click();
 }
-
-toggleOnLoad();
