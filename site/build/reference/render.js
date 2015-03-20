@@ -2,9 +2,12 @@ var escape = require('escape-html'),
   path = require('path'),
   renderText = require('../lib/renderText');
 
+function typeHref(type) {
+  return '/reference/types/' + type.replace(/ /g, '-') + '.html';
+}
+
 function typeAnchor(type) {
-  var href = '/reference/types/' + type.replace(/ /g, '-') + '.html';
-  return '<a href="' + href + '">' + escape(type) + '</a>';
+  return '<a href="' + typeHref(type) + '">' + escape(type) + '</a>';
 }
 
 function linkType(type) {
@@ -55,14 +58,14 @@ function makeAvailability(value) {
   return availability;
 }
 
-function makeContribute(source, id) {
-  var base =
-    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
-
+function makeLink(base, source, id) {
   return { source: base + source, id: id };
 }
 
 function renderProperty(property, template) {
+  var info = {};
+  var permalink = property.resultType;
+
   var data = {
     singularPhrase: property.singularPhrase,
     resultHtml: linkType(property.resultType)
@@ -74,9 +77,10 @@ function renderProperty(property, template) {
 
   if (property.directObjectType) {
     data.directObjectHtml = linkType(property.directObjectType);
+    permalink = property.directObjectType;
   }
 
-  return template.render(data);
+  return { heading: template.render(data), permalink: typeHref(permalink) };
 }
 
 function renderCast(property, template) {
@@ -86,7 +90,8 @@ function renderCast(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data);
+  return { heading: template.render(data),
+           permalink: typeHref(property.resultType) };
 }
 
 function renderBinaryOp(property, template) {
@@ -97,7 +102,7 @@ function renderBinaryOp(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data); 
+  return { heading: template.render(data), permalink: '' }; 
 }
 
 function renderUnaryOp(property, template) {
@@ -107,16 +112,21 @@ function renderUnaryOp(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data);
+  return { heading: template.render(data), permalink: '' };
 }
 
-function renderEntry(heading, body, property, source, template) {
+function renderEntry(heading, body, property, permalink, edit, template) {
+  var id = escapeKey(property.key);
+  var repo =
+    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
+
   var data = {
-    id: escapeKey(property.key),
+    id: id,
     heading: heading,
     body: body,
     availability: makeAvailability(property),
-    contribute: makeContribute(source, escapeKey(property.key))
+    permalink: makeLink('', permalink, escapeKey(property.key)),
+    contribute: makeLink(repo, edit, escapeKey(property.key))
   };
 
   if (property.pluralPhrase) {
@@ -132,22 +142,24 @@ function renderProperties(language, docs, templates) {
   Object.keys(docs.properties).forEach(function(key) {
     var property = language.properties[key];
 
-    var heading;
+    var info = {};
     if (property.type === 'property') {
-      heading = renderProperty(property, templates.properties.property);
+      info = renderProperty(property, templates.properties.property);
     } else if (property.type === 'cast') {
-      heading = renderCast(property, templates.properties.cast);
+      info = renderCast(property, templates.properties.cast);
     } else if (property.type === 'binaryOp') {
-      heading = renderBinaryOp(property, templates.properties.binary);
+      info = renderBinaryOp(property, templates.properties.binary);
     } else if (property.type === 'unaryOp') {
-      heading = renderUnaryOp(property, templates.properties.unary);
+      info = renderUnaryOp(property, templates.properties.unary);
     }
 
+    var heading = info.heading;
     var body = renderText(docs.properties[key], templates).content;
-    var source = docs.source.properties[key];
+    var permalink = info.permalink;
+    var edit = docs.source.properties[key];
 
     rendered[key] =
-      renderEntry(heading, body, property, source, templates.entry);
+      renderEntry(heading, body, property, permalink, edit, templates.entry);
   });
 
   return rendered;
