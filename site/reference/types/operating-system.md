@@ -82,7 +82,7 @@ A: True
 
 # mac of &lt;operating system&gt;
 
-Returns `True` if the client computer is a Macintosh.
+Returns `True` if the computer is a Macintosh.
 
 {{#example}}
 Q: mac of operating system
@@ -103,13 +103,13 @@ A: x86_64
 Returns the major version of the operating system.
 
 {{#example}}
-Q: name of operating system & " - " & (major version of operating system as string)
-A: Win8.1 - 6
+Q: name of operating system, version of operating system, major version of operating system
+A: Win8.1, 6.3.9600, 6
 {{/example}}
 
 {{#example}}
-Q: name of operating system & " - " & (major version of operating system as string)
-A: Linux Ubuntu 14.04.1 LTS - 14
+Q: name of operating system, version of operating system, major version of operating system
+A: Linux Ubuntu 14.04.1 LTS, 14.04, 14
 {{/example}}
 
 # metric &lt;integer&gt; of &lt;operating system&gt;
@@ -123,23 +123,58 @@ A: 0
 
 # minor version of &lt;operating system&gt;
 
-Numeric representation of the minor version of the operating system.
+Returns the minor version of the operating system.
+
+{{#example}}
+Q: name of operating system, version of operating system, minor version of operating system
+A: Win8.1, 6.3.9600, 3
+{{/example}}
+
+{{#example}}
+Q: name of operating system, version of operating system, minor version of operating system
+A: Linux Ubuntu 14.04.1 LTS, 14.04, 4
+{{/example}}
 
 # name of &lt;operating system&gt;
 
-Returns the name of the operating system as a string. Names might include Win98, WinNT, etcetera.
+Returns the name of the operating system as a string.
+
+{{#example}}
+Q: name of operating system
+A: Win8.1
+{{/example}}
+
+{{#example}}
+Q: name of operating system
+A: Linux Ubuntu 14.04.1 LTS
+{{/example}}
 
 # performance counter frequency of &lt;operating system&gt;
 
-The rate at which the performance counter is being incremented (per second).
+The rate at which the performance counter is being incremented per second. This value comes from the [QueryPerformanceFrequency](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644905%28v=vs.85%29.aspx) function.
+
+{{#example}}
+Q: performance counter frequency of operating system
+A: 2938672 hertz
+{{/example}}
 
 # performance counter of &lt;operating system&gt;
 
-Retrieves a 64-bit performance counter value.
+Retrieves the current 64-bit performance counter value. This value comes from the [QueryPerformanceCounter](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644904%28v=vs.85%29.aspx) function.
+
+{{#example}}
+Q: performance counter of operating system
+A: 11657096717
+{{/example}}
 
 # platform id of &lt;operating system&gt;
 
-Returns the dwPlatformId as returned by the GetVersionEx system call. Possible values are 1 (Win95/95) and 2 (WinNT).
+Returns the `dwPlatformId` as returned by the [GetVersionEx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724451%28v=vs.85%29.aspx) function. Possible values are 1 (Win9x) and 2 (WinNT).
+
+{{#example}}
+Q: platform id of operating system
+A: 2
+{{/example}}
 
 # product info numeric of &lt;operating system&gt;
 
