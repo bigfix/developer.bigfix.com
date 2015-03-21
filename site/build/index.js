@@ -46,7 +46,7 @@ function buildIndex(templates, siteDir, outDir) {
 
 function main() {
   if (process.argv.length !== 4) {
-    console.error('usage: generate <siteDir> <outDir>');
+    console.error('usage: build <siteDir> <outDir>');
     return process.exit(1);
   }
 
