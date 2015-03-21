@@ -40,7 +40,8 @@ function escapeQuery(query){
 }
 
 function search(query, limit, offset) {
-  var regex = new RegExp('\\b' + escapeQuery(query) + '\\b', 'i');
+  query = query.toLowerCase();
+  var regex = new RegExp('\\b' + escapeQuery(query) + '\\b');
 
   // Prefer exact matches of the singular phrase, plural phrase, or cast phrase.
   // If they search for 'unix', then the 'unix of <operating system>' property
