@@ -1,6 +1,6 @@
 # type: day of month
 
-The &lt;day of month&gt; inspectors provide tools for dealing and calculating with day-of-month types, which are numbers from 1-31.
+The `day of month` type represents a day of the month.
 
 # extrema of &lt;day of month&gt;
 

@@ -639,13 +639,28 @@ A: Wed, 18 Mar 2015
 
 Returns the current day of the month.
 
+{{#example}}
+Q: current day_of_month
+A: 21
+{{/example}}
+
 # current day_of_week
 
-Returns the current day of the week, eg. Monday, Tuesday, etcetera.
+Returns the current day of the week.
+
+{{#example}}
+Q: current day_of_week
+A: Saturday
+{{/example}}
 
 # current day_of_year
 
-Returns the current day of the year, in a Month Day format.
+Returns the current day of the year.
+
+{{#example}}
+Q: current day_of_year
+A: March 21
+{{/example}}
 
 # current domain
 
@@ -663,9 +678,19 @@ When this inspector is evaluated in the context of a fixlet, it returns the asso
 
 Returns the current month.
 
+{{#example}}
+Q: current month
+A: March
+{{/example}}
+
 # current month_and_year
 
-Returns the current date in month year format, eg. January 2012.
+Returns the current date in month year format.
+
+{{#example}}
+Q: current month_and_year
+A: March 2015
+{{/example}}
 
 # current relay
 
@@ -683,13 +708,23 @@ When this inspector is evaluated in the context of a Task, it returns the associ
 
 Returns the current time of day in the local time zone.
 
+{{#example}}
+Q: current time_of_day
+A: 10:58:08 -0700
+{{/example}}
+
 # current unmanagedasset
 
 Returns the unmanaged asset that is currently selected in the BES Console from the right-click context menu under the Unmanaged Assets tab. This inspector is designed to assist you in the creation of extended Context Menu applications.
 
 # current user
 
-Returns the active, console (local) user, if logged on. Otherwise does not exist.
+Returns the active, local user, if logged on. Otherwise does not exist.
+
+{{#example}}
+Q: name of current user
+A: greenb
+{{/example}}
 
 # current user folder
 
@@ -702,6 +737,11 @@ If this inspector is being evaluated in the context of a Wizard, then it returns
 # current year
 
 Returns the current year.
+
+{{#example}}
+Q: current year
+A: 2015
+{{/example}}
 
 # custom bes fixlet
 
@@ -726,6 +766,11 @@ No documentation exists.
 # day
 
 Returns a time interval corresponding to 1 day.
+
+{{#example}}
+Q: march 11 of 1984 + day
+A: Mon, 12 Mar 1984
+{{/example}}
 
 # debianpackage
 
@@ -909,7 +954,12 @@ Returns the extensions folder of the system domain
 
 # false
 
-Returns the boolean FALSE.
+Returns the boolean `False`.
+
+{{#example}}
+Q: if false then "What is going on?!" else "Looks false to me"
+A: Looks false to me
+{{/example}}
 
 # favorites folder
 
@@ -949,7 +999,12 @@ Returns Friday as a day of week object.
 
 # ghz
 
-Returns a Hertz object corresponding to 1 giga-hertz. See hertz.
+Returns a Hertz object corresponding to 1 giga-hertz.
+
+{{#example}}
+Q: speed of main processor / ghz
+A: 3
+{{/example}}
 
 # gp override firewall local policy modify state
 
@@ -957,15 +1012,30 @@ Returns a value corresponding to the NET_FW_MODIFY_STATE enumerated type, which 
 
 # greatest hz
 
-Returns the largest hertz object that can be represented on this machine. See hertz.
+Returns the largest hertz object that can be represented on this machine.
+
+{{#example}}
+Q: greatest hz
+A: 9223372036854775807 hertz
+{{/example}}
 
 # greatest integer
 
-Returns the largest integer that can be represented on this machine. See integer.
+Returns the largest signed 64-bit integer.
+
+{{#example}}
+Q: greatest integer
+A: 9223372036854775807
+{{/example}}
 
 # greatest time interval
 
-Returns the greatest time interval representable. The value corresponds to 106751991 days, 04:00:54.775807.
+Returns the greatest time interval representable.
+
+{{#example}}
+Q: greatest time interval
+A: 106751991 days, 04:00:54.775807
+{{/example}}
 
 # grub config file
 
@@ -989,11 +1059,16 @@ Returns a priority class object with &#39;high&#39; priority. These threads will
 
 # host name
 
-Returns the machine name (the same as the computer name or hostname on UNIX machines).
+Returns the machine name. This is the same as the computer name or hostname on UNIX machines.
 
 # hostname
 
-Returns the standard host name, usually for the computer&#39;s network.
+Returns the standard host name, usually for the computer's network.
+
+{{#example}}
+Q: hostname
+A: Hound
+{{/example}}
 
 # hotsync manager
 
@@ -1005,7 +1080,12 @@ Returns a time interval corresponding to 1 hour.
 
 # hr
 
-Creates a horizontal line tag &lt;hr/&gt;.
+Creates a horizontal line tag.
+
+{{#example}}
+Q: hr
+A: <hr/>
+{{/example}}
 
 # html tag &lt;( string, html )&gt;
 
@@ -1029,11 +1109,21 @@ Returns an HTML snippet containing the second string enclosed in an html tag spe
 
 # hyperthreading capable
 
-Returns a boolean TRUE if the agent is able to detect that the processor is capable of running with hyperthreading enabled.
+Returns `True` if the processor is capable of running with [hyperthreading](http://en.wikipedia.org/wiki/Hyper-threading) enabled.
+
+{{#example}}
+Q: hyperthreading capable
+A: True
+{{/example}}
 
 # hyperthreading enabled
 
-Returns `True` if the machine is running with hyperthreading enabled, a method in which each physical processor on the machine presents itself as multiple logical processors to the operating system.
+Returns `True` if the machine is running with [hyperthreading](http://en.wikipedia.org/wiki/Hyper-threading) enabled.
+
+{{#example}}
+Q: hyperthreading enabled
+A: False
+{{/example}}
 
 # hz
 
@@ -1053,19 +1143,19 @@ Creates a task trigger type corresponding to a idle trigger, which starts a task
 
 # in agent context
 
-No documentation exists.
+Returns `True` if this inspector is being evaluated in the BigFix Agent.
 
 # in console context
 
-Returns `True` if this inspector is being evaluated in the BES Console environment.
+Returns `True` if this inspector is being evaluated in the BigFix Console.
 
 # in proxy agent context
 
-No documentation exists.
+Returns `True` if this inspector is being evaluated in the BigFix Proxy Agent.
 
 # in web reports context
 
-Returns `True` if this inspector is being evaluated in the Web Reports environment.
+Returns `True` if this inspector is being evaluated in Web Reports.
 
 # inbound blocked firewall local policy modify state
 
@@ -1077,11 +1167,43 @@ Returns an object corresponding to an information event -- An informational even
 
 # integer in &lt;( integer, integer )&gt;
 
-Returns a list of the integers contained between the endpoints (inclusive). The order is preserved, from least to greatest or vice-versa.
+Returns a list of the integers contained between the endpoints.
+
+{{#example}}
+Q: integers in (1, 5)
+A: 1
+A: 2
+A: 3
+A: 4
+A: 5
+{{/example}}
+
+{{#example}}
+Q: integers in (5, 1)
+A: 5
+A: 4
+A: 3
+A: 2
+A: 1
+{{/example}}
 
 # integer in &lt;( integer, integer, integer )&gt;
 
-Returns a list of the integers contained between the endpoints (inclusive) specified by the first two integers, with a step size specified by the third integer.
+Returns a list of the integers contained between the endpoints specified by the first two integers, with a step size specified by the third integer.
+
+{{#example}}
+Q: integers in (1, 5, 2)
+A: 1
+A: 3
+A: 5
+{{/example}}
+
+{{#example}}
+Q: integers in (5, 1, -2)
+A: 5
+A: 3
+A: 1
+{{/example}}
 
 # interactive group
 
@@ -1159,13 +1281,28 @@ Returns the time when last relay selection took place.
 
 Returns the least hertz value that can be represented on this machine.
 
+{{#example}}
+Q: least hz
+A: -9223372036854775808 hertz
+{{/example}}
+
 # least integer
 
-Returns the least integer value that can be represented on this machine.
+Returns the least 64-bit integer value.
+
+{{#example}}
+Q: least integer
+A: -9223372036854775808
+{{/example}}
 
 # least time interval
 
-Returns the least time interval that can be represented on this machine. The value corresponds to -106751991 days, 04:00:54.775808.
+Returns the least time interval that can be represented on this machine.
+
+{{#example}}
+Q: least time interval
+A: -106751991 days, 04:00:54.775808
+{{/example}}
 
 # local administrator
 
