@@ -55,11 +55,11 @@ function makeAvailability(value) {
   return availability;
 }
 
-function makeContribute(source, id) {
+function makeContribute(source) {
   var base =
     'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
 
-  return { source: base + source, id: id };
+  return base + source;
 }
 
 function renderProperty(property, template) {
@@ -116,7 +116,7 @@ function renderEntry(heading, body, property, source, template) {
     heading: heading,
     body: body,
     availability: makeAvailability(property),
-    contribute: makeContribute(source, escapeKey(property.key))
+    source: makeContribute(source)
   };
 
   if (property.pluralPhrase) {
