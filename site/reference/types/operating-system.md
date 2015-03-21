@@ -64,27 +64,62 @@ No documentation exists.
 
 # ia64 of &lt;operating system&gt;
 
-Returns `True` iff the BES Client is running on Itanium.
+Returns `True` if the computer is running on [Itanium](http://en.wikipedia.org/wiki/Itanium).
+
+{{#example}}
+Q: ia64 of operating system
+A: False
+{{/example}}
 
 # little endian of &lt;operating system&gt;
 
-No documentation exists.
+Returns `True` if the computer is [little-endian](http://en.wikipedia.org/wiki/Endianness).
+
+{{#example}}
+Q: little endian of operating system
+A: True
+{{/example}}
 
 # mac of &lt;operating system&gt;
 
 Returns `True` if the client computer is a Macintosh.
 
+{{#example}}
+Q: mac of operating system
+A: False
+{{/example}}
+
 # machine of &lt;operating system&gt;
 
 Returns the architecture of the machine.
 
+{{#example}}
+Q: machine of operating system
+A: x86_64
+{{/example}}
+
 # major version of &lt;operating system&gt;
 
-Returns integer which is the dwMajorVersion returned by the GetVersionEx system call. Note that while the WinNT major version tracks the release (3 for 3.51, 4 for 4.0, and 5.0 for Windows 2000, 5.1 for Windows XP), the major version for Win95 and Win98 is always 4.
+Returns the major version of the operating system.
+
+{{#example}}
+Q: name of operating system & " - " & (major version of operating system as string)
+A: Win8.1 - 6
+{{/example}}
+
+{{#example}}
+Q: name of operating system & " - " & (major version of operating system as string)
+A: Linux Ubuntu 14.04.1 LTS - 14
+{{/example}}
 
 # metric &lt;integer&gt; of &lt;operating system&gt;
 
-This inspector uses the windows GetSystemMetrics API. The integer constants and their meaning are defined by Microsoft. For example, the integer 87 indicates that the operating system is a media center edition. The integer constants are defined in WinUser.h.
+This inspector uses the [GetSystemMetrics](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724385%28v=vs.85%29.aspx) function. The integer constants and their meaning are defined by Microsoft. For example, the integer 87 indicates that the operating system is a media center edition.
+
+{{#example}}
+Q: metric 87 of operating system
+A: 0
+{{/example}}
 
 # minor version of &lt;operating system&gt;
 
