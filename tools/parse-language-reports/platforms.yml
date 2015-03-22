@@ -22,7 +22,7 @@ Mac:
   - mac_10_5
   - mac_10_6
 
-RedHat:
+Red Hat:
   - i386_rh80
   - i386_rhe3
   - i386_rhe4
