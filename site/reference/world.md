@@ -1630,7 +1630,22 @@ Returns the OnSystemDisk domain.
 
 # operating system
 
-Returns the operating system object. See operating system.
+Returns the operating system object.
+
+{{#example}}
+Q: operating system
+A: Win8.1 6.3.9600
+{{/example}}
+
+{{#example}}
+Q: operating system
+A: Mac OS X 10.10.2
+{{/example}}
+
+{{#example}}
+Q: operating system
+A: Linux Ubuntu 14.04.1 LTS (3.13.0-33-generic)
+{{/example}}
 
 # palm device
 
