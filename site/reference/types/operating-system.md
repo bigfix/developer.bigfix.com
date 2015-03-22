@@ -1,6 +1,6 @@
 # type: operating system
 
-The `operating system` type provides access to information about the operating system and computer.
+The `operating system` type provides information about the operating system and computer.
 
 # android of &lt;operating system&gt;
 
