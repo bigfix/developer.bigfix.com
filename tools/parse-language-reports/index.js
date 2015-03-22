@@ -70,6 +70,11 @@ function parseLanguageReports(languageReports, platformNames) {
     var versionPath = path.join(languageReports, version);
 
     fs.readdirSync(versionPath).forEach(function(reportFile) {
+      console.log(reportFile);
+      if (reportFile.indexOf('Language') !== 0) {
+        return;
+      }
+
       var reportPath = path.join(versionPath, reportFile);
       var platform = getPlatform(reportPath, platformNames);
 
@@ -128,7 +133,7 @@ function main() {
   }
 
   var language = parseLanguageReports(process.argv[2], getPlatformNames());
-  console.log(JSON.stringify(language));
+  fs.writeFileSync('language.json', JSON.stringify(language, null, 2));
 }
 
 if (require.main === module) {
