@@ -80,7 +80,9 @@ function buildReference(language, templates, siteDir, outDir) {
   });
 
   fs.writeFileSync(path.join(outDir, 'docs.json'),
-                   JSON.stringify(rendered.properties));
+                   JSON.stringify(rendered.properties.docs));
+  fs.writeFileSync(path.join(outDir, 'docs.api.json'),
+                   JSON.stringify(rendered.properties.api));
 }
 
 module.exports = buildReference;
