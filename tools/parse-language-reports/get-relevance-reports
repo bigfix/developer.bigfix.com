@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+set -x
+
+git clone https://github.com/bigfix/relevance-language-reports.git
+mkdir -p LanguageReportFiles
+
+(cd relevance-language-reports && \
+git log --pretty=oneline | \
+awk -F ' ' '{ system("mkdir ../LanguageReportFiles/"$2" && cp -R *.txt .git ../LanguageReportFiles/"$2" && cd ../LanguageReportFiles/"$2" && git reset --hard "$1) }')
