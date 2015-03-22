@@ -57,7 +57,7 @@ PAGES_DEPS := \
 	$(wildcard $(SOURCE)/site/search/*) \
 	$(wildcard $(SOURCE)/site/templates/*)
 
-$(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
+$(STAGING)/site/index.html $(STAGING)/docs.json $(STAGING)/docs.api.json: $(PAGES_DEPS)
 	node $(STAGING)/build $(SOURCE)/site $(STAGING)
 
 STAGING_TARGETS += $(STAGING)/site/index.html
@@ -83,7 +83,7 @@ $(STAGING)/api/search/language.json: $(SOURCE)/site/data/language.json
 	mkdir -p $(STAGING)/api/search/
 	cp -f $< $@
 
-$(STAGING)/api/search/docs.json: $(STAGING)/docs.json
+$(STAGING)/api/search/docs.api.json: $(STAGING)/docs.api.json
 	mkdir -p $(STAGING)/api/search/
 	cp -f $< $@
 
@@ -93,20 +93,21 @@ $(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
 		--exclude=node_modules \
 		--exclude=language.json \
 		--exclude=docs.json \
+		--exclude=docs.api.json \
 		$(SOURCE)/site/api/search/ \
 		$(STAGING)/api/search/
 	cd $(STAGING)/api/search/ && npm install
 	touch $@
 
 STAGING_TARGETS += $(STAGING)/api/search/language.json
-STAGING_TARGETS += $(STAGING)/api/search/docs.json
+STAGING_TARGETS += $(STAGING)/api/search/docs.api.json
 STAGING_TARGETS += $(STAGING)/api/search/package.json
 
 SEARCH_DEPS := \
 	$(SOURCE)/conf/upstart/search.conf \
 	$(STAGING)/api/search/package.json \
 	$(STAGING)/api/search/language.json \
-	$(STAGING)/api/search/docs.json
+	$(STAGING)/api/search/docs.api.json
 
 /etc/init/search.conf: $(SEARCH_DEPS)
 	stop search || true

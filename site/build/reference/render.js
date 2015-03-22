@@ -2,9 +2,12 @@ var escape = require('escape-html'),
   path = require('path'),
   renderText = require('../lib/renderText');
 
+function typeHref(type) {
+  return '/reference/types/' + type.replace(/ /g, '-') + '.html';
+}
+
 function typeAnchor(type) {
-  var href = '/reference/types/' + type.replace(/ /g, '-') + '.html';
-  return '<a href="' + href + '">' + escape(type) + '</a>';
+  return '<a href="' + typeHref(type) + '">' + escape(type) + '</a>';
 }
 
 function linkType(type) {
@@ -55,14 +58,8 @@ function makeAvailability(value) {
   return availability;
 }
 
-function makeContribute(source) {
-  var base =
-    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
-
-  return base + source;
-}
-
 function renderProperty(property, template) {
+  var reference = property.resultType;
   var data = {
     singularPhrase: property.singularPhrase,
     resultHtml: linkType(property.resultType)
@@ -74,9 +71,10 @@ function renderProperty(property, template) {
 
   if (property.directObjectType) {
     data.directObjectHtml = linkType(property.directObjectType);
+    reference = property.directObjectType;
   }
 
-  return template.render(data);
+  return { heading: template.render(data), reference: typeHref(reference) };
 }
 
 function renderCast(property, template) {
@@ -86,7 +84,8 @@ function renderCast(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data);
+  return { heading: template.render(data), 
+           reference: typeHref(property.resultType) };
 }
 
 function renderBinaryOp(property, template) {
@@ -97,7 +96,7 @@ function renderBinaryOp(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data); 
+  return { heading: template.render(data), reference: '' }; 
 }
 
 function renderUnaryOp(property, template) {
@@ -107,16 +106,20 @@ function renderUnaryOp(property, template) {
     resultHtml: linkType(property.resultType)
   };
 
-  return template.render(data);
+  return { heading: template.render(data), reference: '' };
 }
 
-function renderEntry(heading, body, property, source, template) {
+function renderEntry(heading, body, property, reference, source, template) {
+  var repo =
+    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
+
   var data = {
     id: escapeKey(property.key),
     heading: heading,
     body: body,
     availability: makeAvailability(property),
-    source: makeContribute(source)
+    reference: reference,
+    source: repo + source
   };
 
   if (property.pluralPhrase) {
@@ -128,26 +131,32 @@ function renderEntry(heading, body, property, source, template) {
 
 function renderProperties(language, docs, templates) {
   var rendered = {};
+  rendered.docs = {};
+  rendered.api = {};
 
   Object.keys(docs.properties).forEach(function(key) {
     var property = language.properties[key];
 
-    var heading;
+    var info = {};
     if (property.type === 'property') {
-      heading = renderProperty(property, templates.properties.property);
+      info = renderProperty(property, templates.properties.property);
     } else if (property.type === 'cast') {
-      heading = renderCast(property, templates.properties.cast);
+      info = renderCast(property, templates.properties.cast);
     } else if (property.type === 'binaryOp') {
-      heading = renderBinaryOp(property, templates.properties.binary);
+      info = renderBinaryOp(property, templates.properties.binary);
     } else if (property.type === 'unaryOp') {
-      heading = renderUnaryOp(property, templates.properties.unary);
+      info = renderUnaryOp(property, templates.properties.unary);
     }
 
+    var heading = info.heading;
     var body = renderText(docs.properties[key], templates).content;
+    var reference = info.reference;
     var source = docs.source.properties[key];
 
-    rendered[key] =
-      renderEntry(heading, body, property, source, templates.entry);
+    rendered.docs[key] =
+      renderEntry(heading, body, property, '', source, templates.entry);
+    rendered.api[key] =
+      renderEntry(heading, body, property, reference, source, templates.entry);
   });
 
   return rendered;
@@ -206,7 +215,7 @@ function render(language, docs, associations, templates) {
     var text = docs.types[key];
 
     var content =
-      renderType(type, text, renderedProperties, associations, templates);
+      renderType(type, text, renderedProperties.docs, associations, templates);
 
     var data = {
       title: type.name,
