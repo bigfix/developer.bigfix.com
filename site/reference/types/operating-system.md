@@ -326,17 +326,22 @@ Returns a time interval that represents the elapsed time since the operating sys
 
 Returns the version of the operating system.
 
+{{#example}}
+Q: (version of it, name of it) of operating system
+A: 10.10.2, Mac OS X
+{{/example}}
+
 # windows of &lt;operating system&gt;
 
-Returns `True` if the local computer is a Windows system.
+Returns `True` if the computer is running Windows.
 
 # x32 of &lt;operating system&gt;
 
-No documentation exists.
+Returns `True` if the operating system is 32-bit.
 
 # x64 of &lt;operating system&gt;
 
-Returns `True` if the current operating system is 64-bit.
+Returns `True` if the operating system is 64-bit.
 
 # &lt;operating system&gt; as string
 
