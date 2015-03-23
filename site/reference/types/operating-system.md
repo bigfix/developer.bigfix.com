@@ -146,12 +146,17 @@ Returns `True` if the computer is a Macintosh.
 
 {{#example}}
 Q: (mac of it, name of it) of operating system
+A: True, Mac OS X
+{{/example}}
+
+{{#example}}
+Q: (mac of it, name of it) of operating system
 A: False, Win8.1
 {{/example}}
 
 {{#example}}
 Q: (mac of it, name of it) of operating system
-A: True, Mac OS X
+A: False, Linux Ubuntu 14.04.2 LTS
 {{/example}}
 
 # machine of &lt;operating system&gt;
@@ -290,9 +295,19 @@ Returns the service pack that matches the string in the format &quot;base-tl-sp-
 
 Returns the major version number of the current service pack of the specified OS.
 
+{{#example}}
+Q: (service pack major version of it, name of it) of operating system
+A: 0, Win8.1
+{{/example}}
+
 # service pack minor version of &lt;operating system&gt;
 
 Returns the minor version number of the current service pack of the specified OS.
+
+{{#example}}
+Q: (service pack minor version of it, name of it) of operating system
+A: 0, Win8.1
+{{/example}}
 
 # service pack of &lt;operating system&gt;
 
@@ -314,13 +329,40 @@ Returns all technology levels.
 
 Returns `True` if the local computer is a UNIX system.
 
+{{#example}}
+Q: (unix of it, name of it) of operating system
+A: True, Linux Ubuntu 14.04.2 LTS
+{{/example}}
+
+{{#example}}
+Q: (unix of it, name of it) of operating system
+A: False, Mac OS X
+{{/example}}
+
+{{#example}}
+Q: (unix of it, name of it) of operating system
+A: False, Win8.1
+{{/example}}
+
 # update level of &lt;operating system&gt;
 
-No documentation exists.
+Returns the minor version of the operating system.
+
+{{#example}}
+Q: (update level of it, name of it) of operating system
+A: 4, Linux Ubuntu 14.04.2 LTS
+{{/example}}
 
 # uptime of &lt;operating system&gt;
 
-Returns a time interval that represents the elapsed time since the operating system was last booted. Note: Depending on the notebook, this interval may not include time spent in hibernation.
+Returns a time interval that represents the elapsed time since the operating system was last booted.
+
+**Note:** Depending on the computer, this may not include time spent in hibernation.
+
+{{#example}}
+Q: uptime of operating system
+A: 12 days, 18:10:01.642793
+{{/example}}
 
 # version of &lt;operating system&gt;
 
@@ -335,14 +377,44 @@ A: 10.10.2, Mac OS X
 
 Returns `True` if the computer is running Windows.
 
+{{#example}}
+Q: (windows of it, name of it) of operating system
+A: True, Win8.1
+{{/example}}
+
+{{#example}}
+Q: (windows of it, name of it) of operating system
+A: False, Mac OS X
+{{/example}}
+
+{{#example}}
+Q: (windows of it, name of it) of operating system
+A: False, Linux Ubuntu 14.04.2 LTS
+{{/example}}
+
 # x32 of &lt;operating system&gt;
 
 Returns `True` if the operating system is 32-bit.
+
+{{#example}}
+Q: x32 of operating system
+A: False
+{{/example}}
 
 # x64 of &lt;operating system&gt;
 
 Returns `True` if the operating system is 64-bit.
 
+{{#example}}
+Q: x64 of operating system
+A: True
+{{/example}}
+
 # &lt;operating system&gt; as string
 
 Returns a string containing the name of the operating system concatenated with the release.
+
+{{#example}}
+Q: operating system as string
+A: Mac OS X 10.10.2
+{{/example}}
