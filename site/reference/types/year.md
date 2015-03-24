@@ -1,6 +1,6 @@
 # type: year
 
-The &lt;year&gt; inspectors provide tools for dealing and calculating with year types, which are of the form YYYY, as in 2008.
+The `year` type represents a calendar year.
 
 # extrema of &lt;year&gt;
 
@@ -8,11 +8,21 @@ Returns the minimum and maximum extreme values of the given list of &lt;year&gt;
 
 # leap of &lt;year&gt;
 
-Returns a flag indicating whether or not the specified year is a leap year.
+Returns `True` if the year was a leap year.
+
+{{#example}}
+Q: leap of year 1984
+A: True
+{{/example}}
 
 # length of &lt;year&gt;
 
-Returns the number of day in the specified year. Leap years have 366 days.Example: length of year &quot;2008&quot; - Returns 366.
+Returns the number of days in the year.
+
+{{#example}}
+Q: length of year 1984
+A: 366 days
+{{/example}}
 
 # maximum of &lt;year&gt;
 
@@ -44,7 +54,12 @@ No documentation exists.
 
 # &lt;year&gt; - &lt;year&gt;
 
-Subtracts two years and produces a time interval marked in months and years.Example: year 2020 - year 2008 - Returns 12 years.
+Returns the difference between the two years.
+
+{{#example}}
+Q: year 2015 - year 1984
+A: 31 years
+{{/example}}
 
 # &lt;year&gt; = &lt;year&gt;
 
