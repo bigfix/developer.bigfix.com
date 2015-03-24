@@ -104,7 +104,6 @@ function associateProperty(property, creation, methods) {
     return;
   }
 
-  assertNotTuple(property.resultType);
   creation[property.resultType].properties.push(property.key);
 }
 
