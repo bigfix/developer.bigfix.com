@@ -87,6 +87,8 @@ function associateProperty(property, creation, methods) {
       assertNotTuple(type);
       methods[type].properties.push(property.key);
     });
+  } else {
+    assertNotTuple(property.resultType);
   }
 
   if (isTupleType(property.resultType)) {
