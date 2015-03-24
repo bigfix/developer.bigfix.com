@@ -1,6 +1,8 @@
 # type: floating point
 
-The &lt;floating point&gt; type holds a floating-point number, with precision dependent on the computer. It also keeps track of the IEEE floating-point exceptions raised in a calculation and an estimate of the significance with which the number should be expressed when it is converted to a string. All arithmetic operations are carried out to the full precision of the computer; only conversions to string are affected by the estimated significance.
+The `floating point` type holds a floating-point number, with precision dependent on the computer. It also keeps track of the IEEE floating-point exceptions raised in a calculation and an estimate of the significance with which the number should be expressed when it is converted to a string.
+
+All arithmetic operations are carried out to the full precision of the computer; only conversions to string are affected by the estimated significance.
 
 # divided by zero of &lt;floating point&gt;
 
@@ -8,15 +10,35 @@ Returns `True` if the calculation raised the divide-by-zero exception; that is, 
 
 # extrema of &lt;floating point&gt;
 
-Returns the minimum and maximum extreme values of the given list of &lt;floating point&gt; types.
+Returns the minimum and maximum extreme values of the list of numbers.
+
+{{#example}}
+Q: extrema of floating points ("3.1415926"; "-1.06"; "2.7")
+A: -1.06, 3.1415926
+{{/example}}
 
 # finite of &lt;floating point&gt;
 
-Returns `True` if the floating point number is finite.Example: finite of (floating point &quot;1&quot;/ 0) - Returns `False`.
+Returns `True` if the floating point number is finite.
+
+{{#example}}
+Q: (it, finite of it) of (floating point "1" / 2)
+A: 0.5, True
+{{/example}}
+
+{{#example}}
+Q: (it, finite of it) of (floating point "1" / 0)
+A: +infinity, False
+{{/example}}
 
 # floating point &lt;floating point&gt;
 
 Creates a floating point type object from the specified floating point number.
+
+{{#example}}
+Q: floating point "3.14159265358"
+A: 3.14159265358
+{{/example}}
 
 # inexact of &lt;floating point&gt;
 
@@ -28,11 +50,31 @@ Returns `True` if the floating point number is infinite.Example: infinite of (fl
 
 # integer ceiling of &lt;floating point&gt;
 
-Returns the smallest integer not less than the floating point number. For example, ceiling of 2.1 = 3, ceiling of 2 = 2 and ceiling of -2.3 = -2.Example: integer ceiling of (15/8 as floating point) - Returns 2.
+Returns the smallest integer not less than the floating point number.
+
+{{#example}}
+Q: integer ceiling of floating point "3.14159265358"
+A: 4
+{{/example}}
+
+{{#example}}
+Q: integer ceiling of floating point "-3.14159265358"
+A: -3
+{{/example}}
 
 # integer floor of &lt;floating point&gt;
 
-Returns the largest integer less than or equal to the floating point number. For example, floor of 2.8 = 2, floor of -2 = -2 and floor of -2.1 = -3. For nonnegative x, this is the same as the integer part of x.Example:  integer floor of (&quot;-2.1&quot; as floating point) - Returns -3.
+Returns the largest integer less than or equal to the floating point number.
+
+{{#example}}
+Q: integer floor of floating point "3.14159265358"
+A: 3
+{{/example}}
+
+{{#example}}
+Q: integer floor of floating point "-3.14159265358"
+A: -4
+{{/example}}
 
 # invalid of &lt;floating point&gt;
 

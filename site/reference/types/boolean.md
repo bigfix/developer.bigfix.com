@@ -1,6 +1,6 @@
 # type: boolean
 
-No documentation exists.
+The `boolean` type represents a `True` or `False` value.
 
 # conjunction of &lt;boolean&gt;
 

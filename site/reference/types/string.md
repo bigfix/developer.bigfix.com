@@ -366,7 +366,12 @@ No documentation exists.
 
 # distinguished name &lt;string&gt;
 
-Interprets a distinguishedname in the textual format described by RFC 2253 and used by LDAP/Active Directory.
+Interprets a distinguished name in the textual format described by [RFC 2253](https://www.ietf.org/rfc/rfc2253.txt) and used by LDAP/Active Directory.
+
+{{#example}}
+Q: distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
+A: CN=bearmo,OU=bears,DC=example,DC=com
+{{/example}}
 
 # div &lt;string&gt; of &lt;string&gt;
 

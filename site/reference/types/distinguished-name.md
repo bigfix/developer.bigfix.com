@@ -1,11 +1,24 @@
 # type: distinguished name
 
-The &lt;distinguished name&gt; inspectors refer to the distinguished name (DN) as defined by the Microsoft Active Directory service. See the core inspector guide for a list of properties of a distinguished name object.
+The `distinguished name` type represents an Active Directory or LDAP distinguished name.
 
 # component &lt;integer&gt; of &lt;distinguished name&gt;
 
-Returns the component (as specified by &lt;integer&gt;) of the distinguished name.
+Returns the nth component of the distinguished name.
+
+{{#example}}
+Q: component 1 of distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
+A: OU=bears
+{{/example}}
 
 # component of &lt;distinguished name&gt;
 
-Used as a plural, returns a list of the components of the given distinguished name.
+Returns a list of the components of the distinguished name.
+
+{{#example}}
+Q: components of distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
+A: CN=bearmo
+A: OU=bears
+A: DC=example
+A: DC=com
+{{/example}}
