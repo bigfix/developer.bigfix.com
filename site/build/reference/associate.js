@@ -1,13 +1,24 @@
+/**
+ * Returns whether the type is a tuple type.
+ * Tuple types always contains parentheses.
+ */
 function isTupleType(type) {
   return type.indexOf('(') !== -1;
 }
 
+/**
+ * Return the unique elements of the array.
+ */
 function unique(array) {
   return array.filter(function(value, index) {
     return array.indexOf(value) === index;
   });
 }
 
+/**
+ * Return all types that make up the tuple type. If 'type' is not a tuple,
+ * returns a one element array with that type.
+ */
 function types(type) {
   var openParen = type.indexOf('(');
 
@@ -18,6 +29,9 @@ function types(type) {
   return type.substring(openParen + 2, type.length - 2).split(', ');
 }
 
+/**
+ * Assert that 'type' is not a tuple type.
+ */
 function assertNotTuple(type) {
   if (isTupleType(type)) {
     throw new Error('Unexpected tuple type: ' + type);
@@ -92,6 +106,12 @@ function associateProperty(property, creation, methods) {
   creation[property.resultType].properties.push(property.key);
 }
 
+/**
+ * Select the pages each property will appear on.
+ *
+ * Note: 'Creation' properties are properties where the resultType is *not* one
+ *       of the argument types.
+ */
 function associate(language) {
   var creation = {}, methods = {};
 
