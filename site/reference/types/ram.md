@@ -1,6 +1,6 @@
 # type: ram
 
-The &amp;lt;ram&amp;gt; object is used to inspect properties of the computer&amp;#39;s random access memory.
+The &lt;ram&lt; object is used to inspect properties of the computer&#39;s random access memory.
 
 # available amount of &lt;ram&gt; : integer
 
@@ -28,7 +28,7 @@ Returns the number of bytes of random access memory on the current machine.
 
 # total amount of &lt;ram&gt; : integer
 
-Same as size of &amp;lt;ram&amp;gt;.
+Same as size of &lt;ram&lt;.
 
 # unavailable amount of &lt;ram&gt; : integer
 

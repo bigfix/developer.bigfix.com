@@ -1,6 +1,6 @@
 # type: active directory group
 
-The &amp;lt;active directory group&amp;gt; inspectors constitute the base types that allow access to the AD group information, such as distinguished name.
+The &lt;active directory group&lt; inspectors constitute the base types that allow access to the AD group information, such as distinguished name.
 
 # distinguished name error message of &lt;active directory group&gt; : string
 

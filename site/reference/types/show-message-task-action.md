@@ -1,6 +1,6 @@
 # type: show message task action
 
-The &amp;lt;show message task action&amp;gt; inspectors deal with Windows Show Message Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Show Message Action causes a a message box to be displayed. For more information, see Show Message Action at the MSDN site.
+The &lt;show message task action&lt; inspectors deal with Windows Show Message Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Show Message Action causes a a message box to be displayed. For more information, see Show Message Action at the MSDN site.
 
 # message body of &lt;show message task action&gt; : string
 

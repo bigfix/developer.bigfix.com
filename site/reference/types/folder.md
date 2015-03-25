@@ -4,7 +4,7 @@ For every folder that exists in the file system, you can create a folder object.
 
 # application &lt;string&gt; of &lt;folder&gt; : application
 
-Returns an application object for the named file located in the folder. See application.Example: exists application &amp;quot;notepad.exe&amp;quot; of the windows folder - Using the application of folder creation method, this example locates the notepad application provided it exists in the Windows folder.
+Returns an application object for the named file located in the folder. See application.Example: exists application "notepad.exe" of the windows folder - Using the application of folder creation method, this example locates the notepad application provided it exists in the Windows folder.
 
 # application of &lt;folder&gt; : application
 
@@ -12,7 +12,7 @@ No documentation exists.
 
 # application of &lt;folder&gt; : filesystem object
 
-Recursively finds executables in the supplied folder, returning a list of &amp;quot;application&amp;quot; objects, which are basically  filesystem_objects.Example: applications of folder &amp;quot;/Users/fizzle/bin&amp;quot; - Returns a list of applications in the specified directory, such as /Users/fizzle/bin/p4, /Users/fizzle/bin/mylocaltool.
+Recursively finds executables in the supplied folder, returning a list of "application" objects, which are basically  filesystem_objects.Example: applications of folder "/Users/fizzle/bin" - Returns a list of applications in the specified directory, such as /Users/fizzle/bin/p4, /Users/fizzle/bin/mylocaltool.
 
 # bundle of &lt;folder&gt; : bundle
 
@@ -24,7 +24,7 @@ Returns the version of the folder corresponding to the CFBundleVersion string, a
 
 # descendant folder of &lt;folder&gt; : folder
 
-Returns the descendant folders, recursively, of the given folder. The folder equivalent of &amp;quot;descendants of &amp;lt;folder&amp;gt;&amp;quot;.
+Returns the descendant folders, recursively, of the given folder. The folder equivalent of "descendants of &lt;folder&lt;".
 
 # descendant of &lt;folder&gt; : file
 
@@ -40,7 +40,7 @@ Returns the device files that exist in the specified folder.
 
 # drive of &lt;folder&gt; : filesystem
 
-Returns the drive associated with the specified folder.On Macintosh computers, this returns a &amp;lt;volume&amp;gt; object.On  *nix computers, this returns a &amp;lt;filesystem&amp;gt; object.
+Returns the drive associated with the specified folder.On Macintosh computers, this returns a &lt;volume&lt; object.On  *nix computers, this returns a &lt;filesystem&lt; object.
 
 # drive of &lt;folder&gt; : volume
 
@@ -56,11 +56,11 @@ Returns the list of FIFO file in the given folder.
 
 # file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns a file object for the named file located in the folder.Example: exists file whose (name of it contains &amp;quot;.pdf&amp;quot;) of folder &amp;quot;name&amp;quot; - Returns `True` if some file in the folder has a name including the string &amp;quot;.pdf&amp;quot;.
+Returns a file object for the named file located in the folder.Example: exists file whose (name of it contains ".pdf") of folder "name" - Returns `True` if some file in the folder has a name including the string ".pdf".
 
 # file ending in &lt;string&gt; of &lt;folder&gt; : file
 
-Returns a list of files ending in &amp;quot;xxxx&amp;quot;. Typically used to identify a dotted extension. Equivalent to a wildcard search for &amp;quot;*xxxx&amp;quot;.Example: files ending in &amp;quot;.a&amp;quot; of folder &amp;quot;/usr/lib&amp;quot;  - Returns a list of files with the specified ending, such as: /usr/lib/libcpp_kext.a, /usr/lib/libfl.a, /usr/lib/libioabc.a, and others.
+Returns a list of files ending in "xxxx". Typically used to identify a dotted extension. Equivalent to a wildcard search for "*xxxx".Example: files ending in ".a" of folder "/usr/lib"  - Returns a list of files with the specified ending, such as: /usr/lib/libcpp_kext.a, /usr/lib/libfl.a, /usr/lib/libioabc.a, and others.
 
 # file of &lt;folder&gt; : file
 
@@ -68,7 +68,7 @@ Iterates through the files of a folder returning file objects. When combined wit
 
 # filesystem of &lt;folder&gt; : filesystem
 
-Returns the filesystem on which the folder resides. On a Macintosh, this inspector returns a &amp;lt;volume&amp;gt; object.
+Returns the filesystem on which the folder resides. On a Macintosh, this inspector returns a &lt;volume&lt; object.
 
 # filesystem of &lt;folder&gt; : volume
 
@@ -76,7 +76,7 @@ No documentation exists.
 
 # find file &lt;string&gt; of &lt;folder&gt; : file
 
-Iterates through the files of a folder returning file objects whose name matches the wildcard string provided in the name parameter.  A wildcard string uses an asterisk to stand for any number of characters (incuding zero), and a question mark to stand for exactly one character. Thus A??.txt would match All.txt and AXE.txt but not all.txt or a.txt. See example below.Example: Number of find files &amp;quot;siteico*.bmp&amp;quot; of client folder of current site = 3 - Returns `True` if there are 3 files matching the wildcard pattern siteico*.bmp.Example: names of find files &amp;quot;*.exe&amp;quot; of windows folder - Returns a list of the names of all the executable programs in the Windows folder.
+Iterates through the files of a folder returning file objects whose name matches the wildcard string provided in the name parameter.  A wildcard string uses an asterisk to stand for any number of characters (incuding zero), and a question mark to stand for exactly one character. Thus A??.txt would match All.txt and AXE.txt but not all.txt or a.txt. See example below.Example: Number of find files "siteico*.bmp" of client folder of current site = 3 - Returns `True` if there are 3 files matching the wildcard pattern siteico*.bmp.Example: names of find files "*.exe" of windows folder - Returns a list of the names of all the executable programs in the Windows folder.
 
 # find folder &lt;string&gt; of &lt;folder&gt; : folder
 
@@ -84,7 +84,7 @@ Finds the folder with the given wildcard name inside another folder. A wildcard 
 
 # find item &lt;string&gt; of &lt;folder&gt; : filesystem object
 
-Returns the filesystem objects matching the item wildcard string of the given folder. Macintosh &amp;#39;items&amp;#39; are analogous to files and folders on other systems. A wildcard string uses an asterisk to stand for any number of characters (incuding zero), and a question mark to stand for exactly one character. Thus A??.txt would match All.txt and AXE.txt but not all.txt or a.txt.
+Returns the filesystem objects matching the item wildcard string of the given folder. Macintosh &#39;items&#39; are analogous to files and folders on other systems. A wildcard string uses an asterisk to stand for any number of characters (incuding zero), and a question mark to stand for exactly one character. Thus A??.txt would match All.txt and AXE.txt but not all.txt or a.txt.
 
 # folder &lt;string&gt; of &lt;folder&gt; : folder
 
@@ -92,7 +92,7 @@ Returns a folder object for the named sub-folder. Trailing slashes should be omi
 
 # folder ending in &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns a list of folders ending in &amp;quot;xxxx&amp;quot;. Typically used to identify a dotted extension. Equivalent to a wildcard search for &amp;quot;*xxxx&amp;quot;.
+Returns a list of folders ending in "xxxx". Typically used to identify a dotted extension. Equivalent to a wildcard search for "*xxxx".
 
 # folder of &lt;folder&gt; : folder
 
@@ -108,7 +108,7 @@ Returns the named item (file or folder) from the specified folder.
 
 # item ending in &lt;string&gt; of &lt;folder&gt; : filesystem object
 
-Returns a list of items (files/folders) ending in &amp;quot;xxxx&amp;quot;. Typically used to identify a dotted extension. Equivalent to a wildcard search for &amp;quot;*xxxx&amp;quot;.
+Returns a list of items (files/folders) ending in "xxxx". Typically used to identify a dotted extension. Equivalent to a wildcard search for "*xxxx".
 
 # item of &lt;folder&gt; : filesystem object
 
@@ -120,19 +120,19 @@ Returns a filesystem object with the given relative item name from the specified
 
 # relative file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the file with the path specified by &amp;lt;string&amp;gt; relative to the given &amp;lt;folder&amp;gt;.Example: relative file &amp;quot;Safari.app/Contents/MacOS/Safari&amp;quot; of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
+Returns the file with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.Example: relative file "Safari.app/Contents/MacOS/Safari" of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
 
 # relative folder &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns the folder with the path specified by &amp;lt;string&amp;gt; relative to the given &amp;lt;folder&amp;gt;.
+Returns the folder with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
 
 # relative hfs file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the HFS file with the path specified by &amp;lt;string&amp;gt; relative to the given &amp;lt;folder&amp;gt;.
+Returns the HFS file with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
 
 # relative hfs folder &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns the HFS folder with the path specified by &amp;lt;string&amp;gt; relative to the given &amp;lt;folder&amp;gt;.
+Returns the HFS folder with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
 
 # relative item &lt;string&gt; of &lt;folder&gt; : filesystem object
 
@@ -140,11 +140,11 @@ Returns a filesystem object with the given relative item name from the specified
 
 # relative posix file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the POSIX file with the path specified by &amp;lt;string&amp;gt; relative to the given &amp;lt;folder&amp;gt;.
+Returns the POSIX file with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
 
 # relative posix folder &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns the POSIX folder with the path specified by &amp;lt;string&amp;gt; relative to the given &amp;lt;folder&amp;gt;.
+Returns the POSIX folder with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
 
 # security descriptor of &lt;folder&gt; : security descriptor
 
@@ -164,7 +164,7 @@ Returns the named symlink from the specified folder.
 
 # symlink of &lt;folder&gt; : symlink
 
-Returns the symlink(s) in the specified folder, whether or not they are broken. Note: This behavior differs from looking for files in a folder. Although that returns links along with the files, it doesn&amp;#39;t return broken links.
+Returns the symlink(s) in the specified folder, whether or not they are broken. Note: This behavior differs from looking for files in a folder. Although that returns links along with the files, it doesn&#39;t return broken links.
 
 # version of &lt;folder&gt; : version
 

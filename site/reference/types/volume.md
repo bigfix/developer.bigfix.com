@@ -1,6 +1,6 @@
 # type: volume
 
-The &amp;lt;volume&amp;gt; inspectors refer to the mounted drive volumes.
+The &lt;volume&lt; inspectors refer to the mounted drive volumes.
 
 # allocation block count of &lt;volume&gt; : integer
 
@@ -16,7 +16,7 @@ The number of files on the volume.
 
 # flag of &lt;volume&gt; : integer
 
-Returns the Mac-specific volume flags.More info on these flags can be found at the Apple developer site, under Carbon &amp;gt; Reference &amp;gt; File Manager.
+Returns the Mac-specific volume flags.More info on these flags can be found at the Apple developer site, under Carbon &lt; Reference &lt; File Manager.
 
 # free percent of &lt;volume&gt; : integer
 
@@ -48,7 +48,7 @@ The total amount of space, used and free, on the volume.
 
 # type of &lt;volume&gt; : string
 
-This Mac inspector returns the drive type as a string, such as &amp;#39;DRIVE_FIXED&amp;#39;.
+This Mac inspector returns the drive type as a string, such as &#39;DRIVE_FIXED&#39;.
 
 # used percent of &lt;volume&gt; : integer
 

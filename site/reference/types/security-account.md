@@ -1,6 +1,6 @@
 # type: security account
 
-The &amp;lt;security account&amp;gt; type serves as a base type for the &amp;quot;user&amp;quot; and &amp;quot;local group&amp;quot; types and for properties common to users and groups.
+The &lt;security account&lt; type serves as a base type for the "user" and "local group" types and for properties common to users and groups.
 
 # privilege of &lt;security account&gt; : string
 

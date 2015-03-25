@@ -13,7 +13,7 @@ Returns `True` if the calculation raised the divide-by-zero exception; that is, 
 Returns the minimum and maximum extreme values of the list of numbers.
 
 {{#example}}
-Q: extrema of floating points (&quot;3.1415926&quot;; &quot;-1.06&quot;; &quot;2.7&quot;)
+Q: extrema of floating points ("3.1415926"; "-1.06"; "2.7")
 A: -1.06, 3.1415926
 {{/example}}
 
@@ -22,12 +22,12 @@ A: -1.06, 3.1415926
 Returns `True` if the floating point number is finite.
 
 {{#example}}
-Q: (it, finite of it) of (floating point &quot;1&quot; / 2)
+Q: (it, finite of it) of (floating point "1" / 2)
 A: 0.5, True
 {{/example}}
 
 {{#example}}
-Q: (it, finite of it) of (floating point &quot;1&quot; / 0)
+Q: (it, finite of it) of (floating point "1" / 0)
 A: +infinity, False
 {{/example}}
 
@@ -36,7 +36,7 @@ A: +infinity, False
 Creates a floating point type object from the specified floating point number.
 
 {{#example}}
-Q: floating point &quot;3.14159265358&quot;
+Q: floating point "3.14159265358"
 A: 3.14159265358
 {{/example}}
 
@@ -46,19 +46,19 @@ Returns `True` if the calculation raised the inexact exception; that is, if some
 
 # infinite of &lt;floating point&gt; : boolean
 
-Returns `True` if the floating point number is infinite.Example: infinite of (floating point &amp;quot;1&amp;quot;/ 0) - Returns `True`.
+Returns `True` if the floating point number is infinite.Example: infinite of (floating point "1"/ 0) - Returns `True`.
 
 # integer ceiling of &lt;floating point&gt; : integer
 
 Returns the smallest integer not less than the floating point number.
 
 {{#example}}
-Q: integer ceiling of floating point &quot;3.14159265358&quot;
+Q: integer ceiling of floating point "3.14159265358"
 A: 4
 {{/example}}
 
 {{#example}}
-Q: integer ceiling of floating point &quot;-3.14159265358&quot;
+Q: integer ceiling of floating point "-3.14159265358"
 A: -3
 {{/example}}
 
@@ -67,12 +67,12 @@ A: -3
 Returns the largest integer less than or equal to the floating point number.
 
 {{#example}}
-Q: integer floor of floating point &quot;3.14159265358&quot;
+Q: integer floor of floating point "3.14159265358"
 A: 3
 {{/example}}
 
 {{#example}}
-Q: integer floor of floating point &quot;-3.14159265358&quot;
+Q: integer floor of floating point "-3.14159265358"
 A: -4
 {{/example}}
 
@@ -82,11 +82,11 @@ Returns `True` if the calculation raised the invalid exception; that is, if some
 
 # less significance &lt;integer&gt; of &lt;floating point&gt; : floating point
 
-Removes &amp;lt;integer&amp;gt; number of digits of significance from the floating point value.
+Removes &lt;integer&lt; number of digits of significance from the floating point value.
 
 # maximum of &lt;floating point&gt; : floating point
 
-Returns the maximum value from a list of &amp;lt;floating point&amp;gt; types.
+Returns the maximum value from a list of &lt;floating point&lt; types.
 
 # mean of &lt;floating point&gt; : floating point
 
@@ -94,15 +94,15 @@ The mean of the floating point number(s).
 
 # minimum of &lt;floating point&gt; : floating point
 
-Returns the minimum value from a list of &amp;lt;floating point&amp;gt; types.
+Returns the minimum value from a list of &lt;floating point&lt; types.
 
 # more significance &lt;integer&gt; of &lt;floating point&gt; : floating point
 
-Adds &amp;lt;integer&amp;gt; number of digits of significance to the floating point value.
+Adds &lt;integer&lt; number of digits of significance to the floating point value.
 
 # nan of &lt;floating point&gt; : boolean
 
-Returns `True` if the value is not a number.Example: nan of (floating point &amp;quot;1.e-99999&amp;quot; * floating point &amp;quot;1.e999999&amp;quot;) - Returns `True`.
+Returns `True` if the value is not a number.Example: nan of (floating point "1.e-99999" * floating point "1.e999999") - Returns `True`.
 
 # normal of &lt;floating point&gt; : boolean
 
@@ -110,7 +110,7 @@ Returns `True` if the value is a valid floating point number.
 
 # overflow of &lt;floating point&gt; : boolean
 
-Returns `True` if the calculation raised the overflow exception; that is, if some intermediate result was too large to be represented, but not an exact infinity.Example: overflow of (floating point &amp;quot;1.0e50000&amp;quot;) - Returns `True`, since the number is too big to represent in floating point.
+Returns `True` if the calculation raised the overflow exception; that is, if some intermediate result was too large to be represented, but not an exact infinity.Example: overflow of (floating point "1.0e50000") - Returns `True`, since the number is too big to represent in floating point.
 
 # product of &lt;floating point&gt; : floating point
 
@@ -154,7 +154,7 @@ Returns `True` if the calculation raised the underflow exception; that is, if so
 
 # unique value of &lt;floating point&gt; : floating point with multiplicity
 
-Returns the unique values of a given list of &amp;lt;floating point&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;floating point&lt; types, removing duplicates and sorting by value.
 
 # &lt;floating point&gt; as floating point : floating point
 

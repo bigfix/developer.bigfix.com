@@ -1,10 +1,10 @@
 # type: local group
 
-The &amp;lt;local group&amp;gt; inspectors return information on local groups as defined on the local BES Client computer using the windows NetLocalGroupEnum API, one of Windows Network Management Functions. Local groups have names, comments, members and security IDs.
+The &lt;local group&lt; inspectors return information on local groups as defined on the local BES Client computer using the windows NetLocalGroupEnum API, one of Windows Network Management Functions. Local groups have names, comments, members and security IDs.
 
 # comment of &lt;local group&gt; : string
 
-Returns a string containing a comment associated with the specfied local group (Administrator, Guest, Users).Example: comment of local group &amp;quot;Administrators&amp;quot; - Returns the string &amp;quot;Administrators have complete and unrestricted access to the computer/domain&amp;quot;.
+Returns a string containing a comment associated with the specfied local group (Administrator, Guest, Users).Example: comment of local group "Administrators" - Returns the string "Administrators have complete and unrestricted access to the computer/domain".
 
 # member of &lt;local group&gt; : local group member
 

@@ -1,6 +1,6 @@
 # type: domain
 
-Mac OS X defines several file system domains to control access to system resources on multi-user systems. These include the User, Local, Network, Classic and System domains. The domain for a given resource or folder determines its accessibility to the user. For example, while a user-installed font is only available to that user, an administrator-installed font is available to all network users. These inspectors allow folder access to be parceled out according to domain.Note: The &amp;quot;user domain&amp;quot; refers to the root user, not the currently logged in user.
+Mac OS X defines several file system domains to control access to system resources on multi-user systems. These include the User, Local, Network, Classic and System domains. The domain for a given resource or folder determines its accessibility to the user. For example, while a user-installed font is only available to that user, an administrator-installed font is available to all network users. These inspectors allow folder access to be parceled out according to domain.Note: The "user domain" refers to the root user, not the currently logged in user.
 
 # apple extras folder of &lt;domain&gt; : folder
 
@@ -140,7 +140,7 @@ Returns the font folder of the specified OS X domain, typically /System/Library/
 
 # framework &lt;string&gt; of &lt;domain&gt; : folder
 
-Returns a folder of the form &amp;quot;/System/Library/Frameworks/&amp;lt;string&amp;gt;.framework&amp;quot;.Note: This inspector appends .framework for you, so don&amp;#39;t provide it. The framework inspector needs a domain, and without it defaults to the system domain.Example: framework &amp;quot;MyPrivate&amp;quot; of local domain - Returns /Library/Frameworks/MyPrivate.framework.
+Returns a folder of the form "/System/Library/Frameworks/&lt;string&lt;.framework".Note: This inspector appends .framework for you, so don&#39;t provide it. The framework inspector needs a domain, and without it defaults to the system domain.Example: framework "MyPrivate" of local domain - Returns /Library/Frameworks/MyPrivate.framework.
 
 # framework folder of &lt;domain&gt; : folder
 

@@ -1,6 +1,6 @@
 # type: debian package version revision with multiplicity
 
-The &amp;lt;debian package version revision with multiplicity&amp;gt; inspectors deal with arrays of Debian package  allowing you to extract unique version revisions and count them.
+The &lt;debian package version revision with multiplicity&lt; inspectors deal with arrays of Debian package  allowing you to extract unique version revisions and count them.
 
 # multiplicity of &lt;debian package version revision with multiplicity&gt; : integer
 

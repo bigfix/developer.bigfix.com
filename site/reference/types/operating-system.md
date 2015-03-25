@@ -115,7 +115,7 @@ Returns the current service pack, or no such object if none have been applied at
 
 # current technology level of &lt;operating system&gt; : technology level
 
-Returns the current technology level. This also includes the base level information, similar to &amp;#39;oslevel -r&amp;#39;.
+Returns the current technology level. This also includes the base level information, similar to &#39;oslevel -r&#39;.
 
 # embedded of &lt;operating system&gt; : boolean
 
@@ -289,7 +289,7 @@ Returns the product type of the operating system, which includes Workstations, D
 
 # release of &lt;operating system&gt; : string
 
-Information about the release of the operating system, formatted as a &amp;lt;version&amp;gt; on the Macintosh, but a &amp;lt;string&amp;gt; on UNIX and Windows.
+Information about the release of the operating system, formatted as a &lt;version&lt; on the Macintosh, but a &lt;string&lt; on UNIX and Windows.
 
 # release of &lt;operating system&gt; : version
 
@@ -297,7 +297,7 @@ No documentation exists.
 
 # service pack &lt;string&gt; of &lt;operating system&gt; : service pack
 
-Returns the service pack that matches the string in the format &amp;quot;base-tl-sp-date&amp;quot;. For example, AIX 5.3 at technology level 6 and service pack 3, which was released on the 32nd week of 2007, would be &amp;quot;5300-06-03-0732&amp;quot;. Note: older service packs may not have a date portion, and the final service pack at a particular technology level has a SP value of &amp;#39;CSP&amp;#39;.
+Returns the service pack that matches the string in the format "base-tl-sp-date". For example, AIX 5.3 at technology level 6 and service pack 3, which was released on the 32nd week of 2007, would be "5300-06-03-0732". Note: older service packs may not have a date portion, and the final service pack at a particular technology level has a SP value of &#39;CSP&#39;.
 
 # service pack major version of &lt;operating system&gt; : integer
 
@@ -327,7 +327,7 @@ Returns the bit-mapped suite mask for the operating system, which contains furth
 
 # technology level &lt;string&gt; of &lt;operating system&gt; : technology level
 
-Returns the technology level that matches the string in the format &amp;quot;base-tl&amp;quot;. For example, AIX 5.3 at technology level 6 is &amp;quot;5300-06&amp;quot;.
+Returns the technology level that matches the string in the format "base-tl". For example, AIX 5.3 at technology level 6 is "5300-06".
 
 # technology level of &lt;operating system&gt; : technology level
 

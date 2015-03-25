@@ -12,11 +12,11 @@ The creator 4-letter code of the bundle (for example, FNDR for Finder).
 
 # global dictionary of &lt;bundle&gt; : dictionary
 
-The bundle&amp;#39;s information dictionary.
+The bundle&#39;s information dictionary.
 
 # local dictionary of &lt;bundle&gt; : dictionary
 
-The bundle&amp;#39;s localized information dictionary.
+The bundle&#39;s localized information dictionary.
 
 # product of &lt;bundle&gt; : product
 

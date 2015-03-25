@@ -1,6 +1,6 @@
 # type: bes action
 
-The &amp;lt;bes action&amp;gt; inspectors are used to access information about the actions which have been issued by the BES Operators. You can iterate over the actions to create lists. Each action may have several properties that can be examined.
+The &lt;bes action&lt; inspectors are used to access information about the actions which have been issued by the BES Operators. You can iterate over the actions to create lists. Each action may have several properties that can be examined.
 
 # action dependency of &lt;bes action&gt; : bes action
 
@@ -28,19 +28,19 @@ Returns `True` if the specified action is a computer group action.
 
 # constrain by property name of &lt;bes action&gt; : string
 
-Returns the &amp;#39;constrain by property name&amp;#39; setting, one of the property constraints of the action.
+Returns the &#39;constrain by property name&#39; setting, one of the property constraints of the action.
 
 # constrain by property relation of &lt;bes action&gt; : string
 
-Returns the &amp;#39;constrain by property relation&amp;#39; setting, one of the property constraints of the action.
+Returns the &#39;constrain by property relation&#39; setting, one of the property constraints of the action.
 
 # constrain by property value of &lt;bes action&gt; : string
 
-Returns the &amp;#39;constrain by property value&amp;#39; setting, one of the property constraints of the action.
+Returns the &#39;constrain by property value&#39; setting, one of the property constraints of the action.
 
 # continue on errors flag of &lt;bes action&gt; : boolean
 
-For a multiple action group, there is a checkbox in the Take Action &amp;gt; Execution tab that controls whether the Action group should fail as soon as any member Actions fail, or continue to run the subsequent Actions in the group. This inspector returns `True` if the flag is set to continue.
+For a multiple action group, there is a checkbox in the Take Action &lt; Execution tab that controls whether the Action group should fail as soon as any member Actions fail, or continue to run the subsequent Actions in the group. This inspector returns `True` if the flag is set to continue.
 
 # custom success relevance of &lt;bes action&gt; : string
 
@@ -72,7 +72,7 @@ A domain is attached to an Action when it is created. This inspector returns the
 
 # end date of &lt;bes action&gt; : date
 
-Returns the ending &amp;lt;date&amp;gt; for the specified action. Along with the start date, this defines the allowed time range for execution of the action.
+Returns the ending &lt;date&lt; for the specified action. Along with the start date, this defines the allowed time range for execution of the action.
 
 # end flag of &lt;bes action&gt; : boolean
 
@@ -80,7 +80,7 @@ Returns `True` if the specified action is an end action.
 
 # end time_of_day of &lt;bes action&gt; : time of day
 
-Returns the ending &amp;lt;time of day&amp;gt; for the specified action. Along with the start time of day, this defines the allowed time range for execution of the action.
+Returns the ending &lt;time of day&lt; for the specified action. Along with the start time of day, this defines the allowed time range for execution of the action.
 
 # expiration flag of &lt;bes action&gt; : boolean
 
@@ -88,7 +88,7 @@ No documentation exists.
 
 # expiration time of &lt;bes action&gt; : time
 
-This inspector was deprecated after version 5.0 and now only returns `False`. For a workaround, see the &amp;#39;end date&amp;#39; and &amp;#39;end time_of_day&amp;#39; properties.
+This inspector was deprecated after version 5.0 and now only returns `False`. For a workaround, see the &#39;end date&#39; and &#39;end time_of_day&#39; properties.
 
 # group member flag of &lt;bes action&gt; : boolean
 
@@ -108,19 +108,19 @@ Returns the BES user object corresponding to the issuer of the specified action.
 
 # link &lt;html&gt; of &lt;bes action&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied HTML description that, when clicked, will open the given action&amp;#39;s document (in the BES Console) or description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied HTML description that, when clicked, will open the given action&#39;s document (in the BES Console) or description page (in Web Reports).
 
 # link &lt;string&gt; of &lt;bes action&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied descriptive string that, when clicked, will open the given action&amp;#39;s document (in the BES Console) or description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied descriptive string that, when clicked, will open the given action&#39;s document (in the BES Console) or description page (in Web Reports).
 
 # link href of &lt;bes action&gt; : string
 
-Returns a &amp;lt;string&amp;gt; that can be embedded into an &amp;lt;A&amp;gt; tag that, when clicked, will open the given action&amp;#39;s document (in the BES Console) or description page (in Web Reports). Note that link href returns a normal string, not an HTML string.
+Returns a &lt;string&lt; that can be embedded into an &lt;A&lt; tag that, when clicked, will open the given action&#39;s document (in the BES Console) or description page (in Web Reports). Note that link href returns a normal string, not an HTML string.
 
 # link of &lt;bes action&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag that, when clicked, will open the given action&amp;#39;s document (in the BES Console) or description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag that, when clicked, will open the given action&#39;s document (in the BES Console) or description page (in Web Reports).
 
 # management rights flag of &lt;bes action&gt; : boolean
 
@@ -128,11 +128,11 @@ Returns `True` if the specified action is a management rights action.
 
 # member action of &lt;bes action&gt; : bes action
 
-Returns the individual member actions for the specified multiple action group parent, &amp;lt;bes action&amp;gt;.
+Returns the individual member actions for the specified multiple action group parent, &lt;bes action&lt;.
 
 # member action set of &lt;bes action&gt; : bes action set
 
-Returns the individual member actions for the specified multiple action group parent, &amp;lt;bes action&amp;gt;.
+Returns the individual member actions for the specified multiple action group parent, &lt;bes action&lt;.
 
 # message action button flag of &lt;bes action&gt; : boolean
 
@@ -152,7 +152,7 @@ Returns the value of the message text flag, one of the settings that control the
 
 # message timeout delay of &lt;bes action&gt; : time interval
 
-Returns the timeout delay assigned to the action message: &amp;#39;Automatically close message box and run action after...&amp;#39;. The time can vary from 1 minute to 30 days.
+Returns the timeout delay assigned to the action message: &#39;Automatically close message box and run action after...&#39;. The time can vary from 1 minute to 30 days.
 
 # message title of &lt;bes action&gt; : string
 
@@ -160,7 +160,7 @@ Returns the value of the message title flag, one of the settings that control th
 
 # middle action of &lt;bes action&gt; : bes action
 
-For a start action this iterates over the list of &amp;lt;action&amp;gt; objects that make up the group.
+For a start action this iterates over the list of &lt;action&lt; objects that make up the group.
 
 # mime field &lt;string&gt; of &lt;bes action&gt; : string
 
@@ -172,7 +172,7 @@ No documentation exists.
 
 # multiple flag of &lt;bes action&gt; : boolean
 
-Returns `True` if the specified action is a multiple action (see single flag of &amp;lt;bes action&amp;gt;).
+Returns `True` if the specified action is a multiple action (see single flag of &lt;bes action&lt;).
 
 # name of &lt;bes action&gt; : string
 
@@ -192,11 +192,11 @@ Returns the offer flag of the specified bes action as a boolean TRUE/FALSE. TRUE
 
 # operator site flag of &lt;bes action&gt; : boolean
 
-Returns `True` if the action is propagated from a non-master operator&amp;#39;s site.
+Returns `True` if the action is propagated from a non-master operator&#39;s site.
 
 # parameter &lt;string&gt; of &lt;bes action&gt; : string
 
-Some Fixlets allow the Console Operator to customize the Action. When they are triggered, the BES Console displays a dialog prompting the user for certain Action parameters. For a given Action, this inspector returns value of the parameter specified by &amp;lt;string&amp;gt;.
+Some Fixlets allow the Console Operator to customize the Action. When they are triggered, the BES Console displays a dialog prompting the user for certain Action parameters. For a given Action, this inspector returns value of the parameter specified by &lt;string&lt;.
 
 # parameter of &lt;bes action&gt; : bes action parameter
 
@@ -228,7 +228,7 @@ Returns the value of the postpone delay flag, one of the settings that control t
 
 # precache flag of &lt;bes action&gt; : boolean
 
-In the Take Action&amp;gt; Execution tab, there is an option that allows the client to start Action downloads before all the constraints are met.  This inspector returns `True` if that option is selected.
+In the Take Action&lt; Execution tab, there is an option that allows the client to start Action downloads before all the constraints are met.  This inspector returns `True` if that option is selected.
 
 # reapplication interval of &lt;bes action&gt; : time interval
 
@@ -236,7 +236,7 @@ Returns the time period specified between applications of the given BES Action.
 
 # reapplication limit of &lt;bes action&gt; : integer
 
-Returns the maximum number of times the action will be reapplied. If the action is not set to be reapplied, then this will return a &amp;quot;non-existent&amp;quot; error.
+Returns the maximum number of times the action will be reapplied. If the action is not set to be reapplied, then this will return a "non-existent" error.
 
 # reapply flag of &lt;bes action&gt; : boolean
 
@@ -260,7 +260,7 @@ Returns the value of the reset flag, one of the settings that control the post-a
 
 # result from &lt;bes computer&gt; of &lt;bes action&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result &amp;lt;( bes action, bes computer )&amp;gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result &lt;( bes action, bes computer )&lt;.
 
 # result of &lt;bes action&gt; : bes action result
 
@@ -268,11 +268,11 @@ Returns a bes action result object for each computer which has reported on the s
 
 # retry delay of &lt;bes action&gt; : time interval
 
-Returns the &amp;lt;time interval&amp;gt; object that represents the amount of time to wait before retrying after a failure. If the action is not set to delay for a time interval before retrying then this will return a &amp;quot;non-existent&amp;quot; error.
+Returns the &lt;time interval&lt; object that represents the amount of time to wait before retrying after a failure. If the action is not set to delay for a time interval before retrying then this will return a "non-existent" error.
 
 # retry limit of &lt;bes action&gt; : integer
 
-Returns the maximum number of times the action will be retried after failure. If the action is not set to be retried, then this will return a &amp;quot;non-existent&amp;quot; error.
+Returns the maximum number of times the action will be retried after failure. If the action is not set to be retried, then this will return a "non-existent" error.
 
 # retry wait for reboot flag of &lt;bes action&gt; : boolean
 
@@ -316,11 +316,11 @@ Returns the value of the shutdown flag, one of the settings that control the pos
 
 # single flag of &lt;bes action&gt; : boolean
 
-Returns `True` if the specified action is a single action (see multiple flag of &amp;lt;bes action&amp;gt;).
+Returns `True` if the specified action is a single action (see multiple flag of &lt;bes action&lt;).
 
 # source fixlet of &lt;bes action&gt; : bes fixlet
 
-Returns the &amp;lt;bes fixlet&amp;gt; object that was the source of the specified action.
+Returns the &lt;bes fixlet&lt; object that was the source of the specified action.
 
 # source relevance of &lt;bes action&gt; : string
 
@@ -328,7 +328,7 @@ Returns the original relevance expression for this action.
 
 # start date of &lt;bes action&gt; : date
 
-Returns the starting &amp;lt;date&amp;gt; for the specified action. Along with the end date, this defines the allowed time range for execution of the action.
+Returns the starting &lt;date&lt; for the specified action. Along with the end date, this defines the allowed time range for execution of the action.
 
 # start flag of &lt;bes action&gt; : boolean
 
@@ -336,7 +336,7 @@ Returns `True` if the specified action is a start action.
 
 # start time_of_day of &lt;bes action&gt; : time of day
 
-Returns the starting &amp;lt;time of day&amp;gt; for the specified action. Along with the end time of day, this defines the allowed time range for execution of the action.
+Returns the starting &lt;time of day&lt; for the specified action. Along with the end time of day, this defines the allowed time range for execution of the action.
 
 # state of &lt;bes action&gt; : string
 
@@ -392,7 +392,7 @@ If the specified action is targeted by list, then this returns the relevant BES 
 
 # targeting method of &lt;bes action&gt; : string
 
-Returns one of the strings &amp;quot;By Property&amp;quot;, &amp;quot;By Computer ID&amp;quot;, &amp;quot;By List&amp;quot;, or &amp;quot;Untargeted&amp;quot;.
+Returns one of the strings "By Property", "By Computer ID", "By List", or "Untargeted".
 
 # targeting relevance of &lt;bes action&gt; : string
 
@@ -400,7 +400,7 @@ Returns the relevance string that is being used to target the action.
 
 # temporal distribution of &lt;bes action&gt; : time interval
 
-Returns the &amp;lt;time interval&amp;gt; over which the execution (and file downloads) of this action will be distributed.
+Returns the &lt;time interval&lt; over which the execution (and file downloads) of this action will be distributed.
 
 # time issued of &lt;bes action&gt; : time
 
@@ -408,11 +408,11 @@ Returns the time when the action was issued.
 
 # time range end of &lt;bes action&gt; : time of day
 
-Returns the ending &amp;lt;time of day&amp;gt; for the specified action. Along with the starting time of day, this defines the allowed time range for execution of the action.
+Returns the ending &lt;time of day&lt; for the specified action. Along with the starting time of day, this defines the allowed time range for execution of the action.
 
 # time range start of &lt;bes action&gt; : time of day
 
-Returns the starting &amp;lt;time of day&amp;gt; for the specified action. Along with the ending time of day, this defines the allowed time range for execution of the action.
+Returns the starting &lt;time of day&lt; for the specified action. Along with the ending time of day, this defines the allowed time range for execution of the action.
 
 # time stopped of &lt;bes action&gt; : time
 
@@ -424,7 +424,7 @@ Returns `True` if the Action is a single Action or the group Action for a multip
 
 # unique value of &lt;bes action&gt; : bes action with multiplicity
 
-Returns the unique values of a given list of &amp;lt;bes action&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes action&lt; types, removing duplicates and sorting by value.
 
 # untargeted flag of &lt;bes action&gt; : boolean
 
@@ -436,7 +436,7 @@ Returns `True` if the specified action is marked urgent, which means that it wil
 
 # utc time flag of &lt;bes action&gt; : boolean
 
-The Take Action &amp;gt; Execution tab provides an option to specify the time constraints for the Action as UTC instead of as Client local time. This inspector returns `True` if that flag is set for the given Action.
+The Take Action &lt; Execution tab provides an option to specify the time constraints for the Action as UTC instead of as Client local time. This inspector returns `True` if that flag is set for the given Action.
 
 # &lt;bes action&gt; as xml : utf8 string
 

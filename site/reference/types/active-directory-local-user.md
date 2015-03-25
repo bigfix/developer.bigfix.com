@@ -1,6 +1,6 @@
 # type: active directory local user
 
-The &amp;lt;active directory local user&amp;gt; objects are the inspectors for the AD local users. They include the distinguished name and groups.
+The &lt;active directory local user&lt; objects are the inspectors for the AD local users. They include the distinguished name and groups.
 
 # distinguished name error message of &lt;active directory local user&gt; : string
 

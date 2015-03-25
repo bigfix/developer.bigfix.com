@@ -4,7 +4,7 @@ No documentation exists.
 
 # fmri of &lt;smf property group&gt; : smf fmri
 
-Returns an smf fmri object representing the &amp;#39;Fault Management Resource Identifier&amp;#39; of a property group. The FMRI is used to identify a specific property group for administrative use.
+Returns an smf fmri object representing the &#39;Fault Management Resource Identifier&#39; of a property group. The FMRI is used to identify a specific property group for administrative use.
 
 # name of &lt;smf property group&gt; : string
 
@@ -24,7 +24,7 @@ Returns the service to which this property group belongs.
 
 # parent snapshot part of &lt;smf property group&gt; : smf snapshot part
 
-Returns an object that represents a part of an smf snapshot. Each snapshot has two parts: a &amp;#39;service part&amp;#39; and an &amp;#39;instance part&amp;#39;.
+Returns an object that represents a part of an smf snapshot. Each snapshot has two parts: a &#39;service part&#39; and an &#39;instance part&#39;.
 
 # property &lt;string&gt; of &lt;smf property group&gt; : smf property
 

@@ -1,6 +1,6 @@
 # type: exponential projection
 
-The &amp;lt;exponential projection&amp;gt; inspectors return statistical correlation information about the logarithms of the aggregated properties.
+The &lt;exponential projection&lt; inspectors return statistical correlation information about the logarithms of the aggregated properties.
 
 # correlation coefficient of &lt;exponential projection&gt; : floating point
 

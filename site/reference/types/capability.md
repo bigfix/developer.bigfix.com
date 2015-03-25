@@ -8,16 +8,16 @@ Returns the name of this capability object.
 
 # relation of &lt;capability&gt; : string
 
-If this capability object has version information, the relation is returned.Example: relation of capability &amp;quot;sh &amp;lt;= 4.1&amp;quot; - Returns &amp;quot;&amp;lt;=&amp;quot;, the &amp;quot;less than or equal&amp;quot; relation.
+If this capability object has version information, the relation is returned.Example: relation of capability "sh &lt;= 4.1" - Returns "&lt;=", the "less than or equal" relation.
 
 # version of &lt;capability&gt; : string
 
-If this capability object has version information, the version is returned.Example: version of capability &amp;quot;sh &amp;lt;= 4.1&amp;quot; - Returns &amp;quot;4.1&amp;quot;, the version of the specified capability.
+If this capability object has version information, the version is returned.Example: version of capability "sh &lt;= 4.1" - Returns "4.1", the version of the specified capability.
 
 # &lt;capability&gt; as string : string
 
-Creates a string containing the capability&amp;#39;s name, relation and version.Example: capability &amp;quot;libxml2 &amp;gt;= 2.4.7&amp;quot; - Casts the capability as a string, returning &amp;quot;libxml2 &amp;gt;= 2.4.7&amp;quot;.
+Creates a string containing the capability&#39;s name, relation and version.Example: capability "libxml2 &lt;= 2.4.7" - Casts the capability as a string, returning "libxml2 &lt;= 2.4.7".
 
 # &lt;capability&gt; contains &lt;capability&gt; : boolean
 
-Returns a boolean TRUE if the first capability satisfies the dependency specified by the second capability. A capability without version information is interpreted as a capability over all versions. If a package requires a capability not contained in the RPM database, then the rpm command will not allow that package to be installed.Example: capability &amp;quot;x&amp;quot; contains capability &amp;quot;x = 1.0&amp;quot; - Returns `True`. Having &amp;quot;x&amp;quot; at any version satisfies a requirement to have &amp;quot;x&amp;quot; at version 1.0.Example: capability &amp;quot;x = 1.0&amp;quot; contains capability &amp;quot;x&amp;quot; - Returns `True`. Having &amp;quot;x&amp;quot; at version 1.0 satisfies a requirement to have &amp;quot;x&amp;quot; at any version.Example: capability &amp;quot;x = 1.0&amp;quot; contains capability &amp;quot;x &amp;gt; 1.0&amp;quot; - Returns `False`. Having x = version 1.0 will not satisfy a requirement to have x &amp;gt; version 1.0.Example: capability &amp;quot;x = 1.0&amp;quot; contains capability &amp;quot;x &amp;lt; 2.0&amp;quot;  - Returns `True`. Having x = version 1.0 will satisfy a requirement to have x &amp;lt; version 2.0.Example: capability &amp;quot;x&amp;quot; contains capability &amp;quot;y&amp;quot; - Returns `False`. A capability can only be contained/satisfied by a capability with the same name.
+Returns a boolean TRUE if the first capability satisfies the dependency specified by the second capability. A capability without version information is interpreted as a capability over all versions. If a package requires a capability not contained in the RPM database, then the rpm command will not allow that package to be installed.Example: capability "x" contains capability "x = 1.0" - Returns `True`. Having "x" at any version satisfies a requirement to have "x" at version 1.0.Example: capability "x = 1.0" contains capability "x" - Returns `True`. Having "x" at version 1.0 satisfies a requirement to have "x" at any version.Example: capability "x = 1.0" contains capability "x &lt; 1.0" - Returns `False`. Having x = version 1.0 will not satisfy a requirement to have x &lt; version 1.0.Example: capability "x = 1.0" contains capability "x &lt; 2.0"  - Returns `True`. Having x = version 1.0 will satisfy a requirement to have x &lt; version 2.0.Example: capability "x" contains capability "y" - Returns `False`. A capability can only be contained/satisfied by a capability with the same name.

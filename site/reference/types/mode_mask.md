@@ -1,6 +1,6 @@
 # type: mode_mask
 
-The &amp;lt;mode_mask&amp;gt; inspector is a differently formatted version of the mode, created by shifting the key information down to the low three bits.
+The &lt;mode_mask&lt; inspector is a differently formatted version of the mode, created by shifting the key information down to the low three bits.
 
 # execute of &lt;mode_mask&gt; : boolean
 
@@ -20,4 +20,4 @@ Converts the mode mask to an integer, 1-4.
 
 # &lt;mode_mask&gt; as string : string
 
-Converts the mode mask to a string, for example &amp;quot;rwx&amp;quot;.
+Converts the mode mask to a string, for example "rwx".

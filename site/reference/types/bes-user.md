@@ -1,14 +1,14 @@
 # type: bes user
 
-The &amp;lt;bes user&amp;gt; inspectors let you keep track of the users authorized to use the BES Console. You can iterate over the users, producing lists containing information such as the name and authorization level.
+The &lt;bes user&lt; inspectors let you keep track of the users authorized to use the BES Console. You can iterate over the users, producing lists containing information such as the name and authorization level.
 
 # action site of &lt;bes user&gt; : bes site
 
-If the user is a master operator, this inspector returns the Master Action site.  Otherwise, it returns the operator site of the user.  For example, &amp;quot;number of subscribed computers of action site of current console user&amp;quot;.Example: number of subscribed computers of action site of current console user - Returns the number of computers currently subscribed to the specified user&amp;#39;s Action site.
+If the user is a master operator, this inspector returns the Master Action site.  Otherwise, it returns the operator site of the user.  For example, "number of subscribed computers of action site of current console user".Example: number of subscribed computers of action site of current console user - Returns the number of computers currently subscribed to the specified user&#39;s Action site.
 
 # administered computer of &lt;bes user&gt; : bes computer
 
-Iterates and returns a list of the computers that are administered by the specified BES user.Example: names of administered computers of bes user whose (name of it is &amp;quot;Joe&amp;quot;) - Returns the list of computers currently administered by the BES User named Joe.
+Iterates and returns a list of the computers that are administered by the specified BES user.Example: names of administered computers of bes user whose (name of it is "Joe") - Returns the list of computers currently administered by the BES User named Joe.
 
 # administered computer set of &lt;bes user&gt; : bes computer set
 
@@ -72,7 +72,7 @@ Returns all fixlet sets issued by the specified user.
 
 # last login time of &lt;bes user&gt; : time
 
-Returns the time of the specified user&amp;#39;s most recent database login.
+Returns the time of the specified user&#39;s most recent database login.
 
 # ldap directory of &lt;bes user&gt; : bes ldap directory
 
@@ -80,19 +80,19 @@ No documentation exists.
 
 # link &lt;html&gt; of &lt;bes user&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied HTML description that, when clicked, will open the specified user document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied HTML description that, when clicked, will open the specified user document (in the BES Console) or its description page (in Web Reports).
 
 # link &lt;string&gt; of &lt;bes user&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied descriptive string that, when clicked, will open the given user document (in the BES Console) or description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied descriptive string that, when clicked, will open the given user document (in the BES Console) or description page (in Web Reports).
 
 # link href of &lt;bes user&gt; : string
 
-The link href property does not return an &amp;lt;A&amp;gt; tag but rather returns the value of the href attribute of the &amp;lt;A&amp;gt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &amp;lt;bes user&amp;gt;). Note that link href returns a normal string, not an HTML string.
+The link href property does not return an &lt;A&lt; tag but rather returns the value of the href attribute of the &lt;A&lt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &lt;bes user&lt;). Note that link href returns a normal string, not an HTML string.
 
 # link of &lt;bes user&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag that when clicked will open the specified user document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag that when clicked will open the specified user document (in the BES Console) or its description page (in Web Reports).
 
 # master flag of &lt;bes user&gt; : boolean
 
@@ -152,11 +152,11 @@ No documentation exists.
 
 # unique value of &lt;bes user&gt; : bes user with multiplicity
 
-Returns the unique values and counts of a given list of &amp;lt;bes user&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values and counts of a given list of &lt;bes user&lt; types, removing duplicates and sorting by value.
 
 # unmanagedasset privilege scanpoint flag of &lt;bes user&gt; : boolean
 
-When you create or edit a user, you specify whether they can see all unmanaged assets, none, or only those that were scanned by a computer which the user manages. This inspector returns `True` if the &amp;quot;scanpoint only&amp;quot; option is set for the specified user.
+When you create or edit a user, you specify whether they can see all unmanaged assets, none, or only those that were scanned by a computer which the user manages. This inspector returns `True` if the "scanpoint only" option is set for the specified user.
 
 # unmanagedasset privilege showall flag of &lt;bes user&gt; : boolean
 

@@ -1,6 +1,6 @@
 # type: debianpkg dependency
 
-A package may depend on the previous installation of other software packages. The &amp;lt;debianpkg dependency&amp;gt; inspectors detail those dependencies. A Debian package may replace another package, conflict with it or depend on it. For more information, see the Debian.org site.
+A package may depend on the previous installation of other software packages. The &lt;debianpkg dependency&lt; inspectors detail those dependencies. A Debian package may replace another package, conflict with it or depend on it. For more information, see the Debian.org site.
 
 # compare_op of &lt;debianpkg dependency&gt; : string
 

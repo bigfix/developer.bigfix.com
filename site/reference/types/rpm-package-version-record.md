@@ -1,6 +1,6 @@
 # type: rpm package version record
 
-The &amp;lt;rpm package version record&amp;gt; inspectors provide version-related information, such as Epoch, Version and Release, for an RPM package. inspectors of this type are sorted according to an RPM-specific ordering mechanism defined by the rpmVersionCompare() function of the RPM library.Note: Requires the presence of the RPM library and librpminfo (an open source library created by BigFix containing modified RPM library code) on the client machine. librpminfo is installed on the client as part of the normal BES client RPM installation procedure.
+The &lt;rpm package version record&lt; inspectors provide version-related information, such as Epoch, Version and Release, for an RPM package. inspectors of this type are sorted according to an RPM-specific ordering mechanism defined by the rpmVersionCompare() function of the RPM library.Note: Requires the presence of the RPM library and librpminfo (an open source library created by BigFix containing modified RPM library code) on the client machine. librpminfo is installed on the client as part of the normal BES client RPM installation procedure.
 
 # epoch of &lt;rpm package version record&gt; : integer
 
@@ -12,11 +12,11 @@ Returns the minimum and maximum extreme values of the given list of RPM package 
 
 # maximum of &lt;rpm package version record&gt; : rpm package version record
 
-Returns the maximum value from a list of &amp;lt;rpm package version record&amp;gt; types.
+Returns the maximum value from a list of &lt;rpm package version record&lt; types.
 
 # minimum of &lt;rpm package version record&gt; : rpm package version record
 
-Returns the minimum value from a list of &amp;lt;rpm package version record&amp;gt; types.
+Returns the minimum value from a list of &lt;rpm package version record&lt; types.
 
 # no epoch of &lt;rpm package version record&gt; : rpm package version record
 
@@ -40,7 +40,7 @@ Iterates throught the specified RPM package version record objects, stripping th
 
 # unique value of &lt;rpm package version record&gt; : rpm package version record with multiplicity
 
-Returns the unique values of a given list of &amp;lt;rpm package version record&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;rpm package version record&lt; types, removing duplicates and sorting by value.
 
 # version of &lt;rpm package version record&gt; : rpm package version
 

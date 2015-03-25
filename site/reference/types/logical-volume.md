@@ -1,14 +1,14 @@
 # type: logical volume
 
-A logical volume consists of an array of identically sized logical partitions. The partition size of a logical volume is determined by the volume group that contains it, and is the same as the volume group&amp;#39;s physical partition size. Contiguous logical partitions within a logical volume may map to discontiguous physical partitions, possibly distributed across multiple physical volumes. A logical volume may be configured so that its logical partitions are mirrored to protect data from hardware failures. Mirroring may be configured so that each logical partition maps to either 2 or 3 physical partition mirrors.
+A logical volume consists of an array of identically sized logical partitions. The partition size of a logical volume is determined by the volume group that contains it, and is the same as the volume group&#39;s physical partition size. Contiguous logical partitions within a logical volume may map to discontiguous physical partitions, possibly distributed across multiple physical volumes. A logical volume may be configured so that its logical partitions are mirrored to protect data from hardware failures. Mirroring may be configured so that each logical partition maps to either 2 or 3 physical partition mirrors.
 
 # label of &lt;logical volume&gt; : string
 
-Returns the label of the specified logical volume. If the logical volume contains a filesystem, then then this will be the full pathname of the mount point of the file system, eg. &amp;quot;/home&amp;quot;.Example: label of logical volume &amp;quot;splat&amp;quot; of volume group &amp;quot;dave&amp;quot; of logical volume manager - Returns the label associated with the specified logical volume, such as &amp;quot;/splat_mount_point&amp;quot;.
+Returns the label of the specified logical volume. If the logical volume contains a filesystem, then then this will be the full pathname of the mount point of the file system, eg. "/home".Example: label of logical volume "splat" of volume group "dave" of logical volume manager - Returns the label associated with the specified logical volume, such as "/splat_mount_point".
 
 # maximum partition count of &lt;logical volume&gt; : integer
 
-Returns the maximum number of logical partitions that the specified logical volume contains. A system administrator may set this value to prevent a logical volume from growing beyond a given size.Example: maximum partition count of logical volume &amp;quot;splat&amp;quot; of volume group &amp;quot;dave&amp;quot; of logical volume manager - Returns the maximum partition count that has been set for the specified volume.
+Returns the maximum number of logical partitions that the specified logical volume contains. A system administrator may set this value to prevent a logical volume from growing beyond a given size.Example: maximum partition count of logical volume "splat" of volume group "dave" of logical volume manager - Returns the maximum partition count that has been set for the specified volume.
 
 # minor number of &lt;logical volume&gt; : integer
 
@@ -16,15 +16,15 @@ Returns the minor number of the specified volume group. Each logical volume is r
 
 # mirror count of &lt;logical volume&gt; : integer
 
-Returns the number of mirrors that the logical volume has (a value between 1 and 3).Example: mirror count of logical volume &amp;quot;splat&amp;quot; of volume group &amp;quot;dave&amp;quot; of logical volume manager - Returns the number of mirrors set up for the specified volume.
+Returns the number of mirrors that the logical volume has (a value between 1 and 3).Example: mirror count of logical volume "splat" of volume group "dave" of logical volume manager - Returns the number of mirrors set up for the specified volume.
 
 # name of &lt;logical volume&gt; : string
 
-On an AIX system, returns the name of the logical volume, eg. &amp;quot;hd1&amp;quot;.
+On an AIX system, returns the name of the logical volume, eg. "hd1".
 
 # partition count of &lt;logical volume&gt; : integer
 
-Returns the number of partitions in the specified logical volume. If mirroring is not enabled for the logical volume, then each logical partition maps to a physical partition within the logical volume&amp;#39;s volume group. If the logical volume is mirrored, then each logical partition maps to multiple physical partitions within the logical volume group. In this case, the total number of physical partitions occupied by the logical volume will be the product of the partition count and the mirror count.Example: partition count of logical volume &amp;quot;splat&amp;quot; of volume group &amp;quot;dave&amp;quot; of logical volume manager - Returns the number of partitions existing on the specified logical volume.
+Returns the number of partitions in the specified logical volume. If mirroring is not enabled for the logical volume, then each logical partition maps to a physical partition within the logical volume&#39;s volume group. If the logical volume is mirrored, then each logical partition maps to multiple physical partitions within the logical volume group. In this case, the total number of physical partitions occupied by the logical volume will be the product of the partition count and the mirror count.Example: partition count of logical volume "splat" of volume group "dave" of logical volume manager - Returns the number of partitions existing on the specified logical volume.
 
 # volume group of &lt;logical volume&gt; : volume group
 

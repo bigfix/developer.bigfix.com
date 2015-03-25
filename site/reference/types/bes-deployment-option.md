@@ -16,4 +16,4 @@ Returns the name of the specified BES deployment option.
 
 # value of &lt;bes deployment option&gt; : string
 
-Returns the &amp;lt;string&amp;gt; value reported by this computer for the specified BES deployment option(s).
+Returns the &lt;string&lt; value reported by this computer for the specified BES deployment option(s).

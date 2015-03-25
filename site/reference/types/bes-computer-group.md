@@ -1,10 +1,10 @@
 # type: bes computer group
 
-The &amp;lt;bes computer group&amp;gt; inspectors return an iterated list of computer groups, as defined in the BES Console.
+The &lt;bes computer group&lt; inspectors return an iterated list of computer groups, as defined in the BES Console.
 
 # automatic flag of &lt;bes computer group&gt; : boolean
 
-Returns the value of the &amp;#39;Automatic&amp;#39; flag corresponding to the specified BES Computer Group. Groups can be manual, automatic or ad-hoc.
+Returns the value of the &#39;Automatic&#39; flag corresponding to the specified BES Computer Group. Groups can be manual, automatic or ad-hoc.
 
 # client evaluated flag of &lt;bes computer group&gt; : boolean
 
@@ -28,11 +28,11 @@ Returns the numeric ID corresponding to the specified BES Computer Group.
 
 # issuer of &lt;bes computer group&gt; : bes user
 
-Returns the &amp;lt;bes user&amp;gt; object corresponding to the bes computer group that issued the specified activation.
+Returns the &lt;bes user&lt; object corresponding to the bes computer group that issued the specified activation.
 
 # manual flag of &lt;bes computer group&gt; : boolean
 
-Returns the value of the &amp;#39;Manual&amp;#39; flag corresponding to the specified BES Computer Group. Groups can be manual, automatic or ad-hoc.
+Returns the value of the &#39;Manual&#39; flag corresponding to the specified BES Computer Group. Groups can be manual, automatic or ad-hoc.
 
 # member of &lt;bes computer group&gt; : bes computer
 
@@ -56,7 +56,7 @@ Returns the site corresponding to the specified BES Computer Group.
 
 # unique value of &lt;bes computer group&gt; : bes computer group with multiplicity
 
-Returns the unique values of a given list of &amp;lt;bes computer group&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes computer group&lt; types, removing duplicates and sorting by value.
 
 # &lt;bes computer group&gt; as xml : utf8 string
 

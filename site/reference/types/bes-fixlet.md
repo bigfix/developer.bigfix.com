@@ -1,6 +1,6 @@
 # type: bes fixlet
 
-The &amp;lt;bes fixlet&amp;gt; inspectors allow you to iterate over the BES fixlets to create lists of various Fixlet properties such as name, ID, site, and more.
+The &lt;bes fixlet&lt; inspectors allow you to iterate over the BES fixlets to create lists of various Fixlet properties such as name, ID, site, and more.
 
 # action &lt;integer&gt; of &lt;bes fixlet&gt; : bes fixlet action
 
@@ -28,11 +28,11 @@ Returns the number of computers (regardless of locking) that have reported that 
 
 # applicable computer of &lt;bes fixlet&gt; : bes computer
 
-Returns a list of all of the &amp;lt;bes computer&amp;gt; objects reporting that the specified fixlet is relevant.
+Returns a list of all of the &lt;bes computer&lt; objects reporting that the specified fixlet is relevant.
 
 # applicable computer set of &lt;bes fixlet&gt; : bes computer set
 
-Returns the set of computers where the given Fixlet(s) is applicable, i.e., those computers where the Fixlet is relevant.Example: size of union of applicable computer sets of bes fixlets whose ((source severity of it is &amp;quot;Critical&amp;quot;) and (current date - source release date of it &amp;gt; 7 * day)) as floating point / size of bes computer set as floating point - Computes the ratio of computers which have at least one relevant critical fixlet released more than 1 week ago.
+Returns the set of computers where the given Fixlet(s) is applicable, i.e., those computers where the Fixlet is relevant.Example: size of union of applicable computer sets of bes fixlets whose ((source severity of it is "Critical") and (current date - source release date of it &lt; 7 * day)) as floating point / size of bes computer set as floating point - Computes the ratio of computers which have at least one relevant critical fixlet released more than 1 week ago.
 
 # baseline flag of &lt;bes fixlet&gt; : boolean
 
@@ -48,7 +48,7 @@ Returns an HTML string containing the body of the fixlet.
 
 # category of &lt;bes fixlet&gt; : string
 
-Returns the category of the given fixlet as a string value, such as &amp;quot;Security Hotfix&amp;quot;, &amp;quot;Service Pack&amp;quot;, &amp;quot;Upgrade&amp;quot;, and others.
+Returns the category of the given fixlet as a string value, such as "Security Hotfix", "Service Pack", "Upgrade", and others.
 
 # charset of &lt;bes fixlet&gt; : string
 
@@ -64,7 +64,7 @@ If the specified fixlet is a baseline, then this inspector iterates over the com
 
 # components xml of &lt;bes fixlet&gt; : string
 
-If the specified fixlet is a baseline, then this inspector returned the XML representation of the baseline components. Use component groups of &amp;lt;bes fixlet&amp;gt; instead.
+If the specified fixlet is a baseline, then this inspector returned the XML representation of the baseline components. Use component groups of &lt;bes fixlet&lt; instead.
 
 # creation time of &lt;bes fixlet&gt; : time
 
@@ -152,23 +152,23 @@ Returns the numeric ID unique to the specified fixlet.
 
 # issuer of &lt;bes fixlet&gt; : bes user
 
-Returns the &amp;lt;bes user&amp;gt; object corresponding to the author of the specified fixlet.
+Returns the &lt;bes user&lt; object corresponding to the author of the specified fixlet.
 
 # link &lt;html&gt; of &lt;bes fixlet&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied HTML description that, when clicked, will open the specified Fixlet document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied HTML description that, when clicked, will open the specified Fixlet document (in the BES Console) or its description page (in Web Reports).
 
 # link &lt;string&gt; of &lt;bes fixlet&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied descriptive string that, when clicked, will open the specified Fixlet document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied descriptive string that, when clicked, will open the specified Fixlet document (in the BES Console) or its description page (in Web Reports).
 
 # link href of &lt;bes fixlet&gt; : string
 
-The link href property does not return an &amp;lt;A&amp;gt; tag but rather returns the value of the href attribute of the &amp;lt;A&amp;gt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &amp;lt;bes fixlet&amp;gt;). Note that link href returns a normal string, not an HTML string.
+The link href property does not return an &lt;A&lt; tag but rather returns the value of the href attribute of the &lt;A&lt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &lt;bes fixlet&lt;). Note that link href returns a normal string, not an HTML string.
 
 # link of &lt;bes fixlet&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag that when clicked will open the specified Fixlet document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag that when clicked will open the specified Fixlet document (in the BES Console) or its description page (in Web Reports).
 
 # locally visible flag of &lt;bes fixlet&gt; : boolean
 
@@ -184,7 +184,7 @@ Returns an HTML string containing the text of the fixlet.
 
 # mime field &lt;string&gt; of &lt;bes fixlet&gt; : string
 
-External fixlet authors can add custom fields to their Fixlets. This inspector returns the mime field labeled by &amp;lt;string&amp;gt; from the specified Fixlet.
+External fixlet authors can add custom fields to their Fixlets. This inspector returns the mime field labeled by &lt;string&lt; from the specified Fixlet.
 
 # mime field of &lt;bes fixlet&gt; : mime field
 
@@ -212,15 +212,15 @@ No documentation exists.
 
 # property &lt;integer&gt; of &lt;bes fixlet&gt; : bes property
 
-If the specified Fixlet is from an analysis, this inspector returns the property with the ID given by &amp;lt;integer&amp;gt;.
+If the specified Fixlet is from an analysis, this inspector returns the property with the ID given by &lt;integer&lt;.
 
 # property of &lt;bes fixlet&gt; : bes property
 
-If the specified Fixlet is from an analysis, this inspector returns a list of all of the &amp;lt;bes property&amp;gt; objects associated with it.
+If the specified Fixlet is from an analysis, this inspector returns a list of all of the &lt;bes property&lt; objects associated with it.
 
 # relevance clause of &lt;bes fixlet&gt; : string
 
-Iterates over all the individual relevances clauses in a Fixlet.  The related inspector &amp;#39;relevance of &amp;lt;bes fixlet&amp;gt;&amp;#39; returns a single clause that ANDs together all the individual clauses.
+Iterates over all the individual relevances clauses in a Fixlet.  The related inspector &#39;relevance of &lt;bes fixlet&lt;&#39; returns a single clause that ANDs together all the individual clauses.
 
 # relevance of &lt;bes fixlet&gt; : string
 
@@ -236,7 +236,7 @@ Returns a Fixlet result for the given computer and Fixlet.
 
 # result of &lt;bes fixlet&gt; : bes fixlet result
 
-Returns a list of all &amp;lt;bes fixlet result&amp;gt; objects for all computers that have reported on the specified fixlet.
+Returns a list of all &lt;bes fixlet result&lt; objects for all computers that have reported on the specified fixlet.
 
 # sans id list of &lt;bes fixlet&gt; : string
 
@@ -248,7 +248,7 @@ Converts the specified BES Fixlet list to a set that can be arithmetically manip
 
 # site of &lt;bes fixlet&gt; : bes site
 
-Returns the &amp;lt;bes site&amp;gt; object which contains the specified fixlet.
+Returns the &lt;bes site&lt; object which contains the specified fixlet.
 
 # source id of &lt;bes fixlet&gt; : string
 
@@ -260,7 +260,7 @@ Returns the source of the given fixlet as a string value.
 
 # source release date of &lt;bes fixlet&gt; : date
 
-Returns the &amp;lt;date&amp;gt; object that represents the source release date of the specified fixlet.
+Returns the &lt;date&lt; object that represents the source release date of the specified fixlet.
 
 # source severity of &lt;bes fixlet&gt; : string
 
@@ -280,11 +280,11 @@ Returns `True` if the specified BES fixlet originates from a Task.
 
 # type of &lt;bes fixlet&gt; : string
 
-Returns the type of the specified fixlet, which can have values such as &amp;quot;Fixlet&amp;quot;, &amp;quot;Task&amp;quot;, &amp;quot;Analysis&amp;quot;, &amp;quot;ComputerGroup&amp;quot; or &amp;quot;Baseline&amp;quot;.
+Returns the type of the specified fixlet, which can have values such as "Fixlet", "Task", "Analysis", "ComputerGroup" or "Baseline".
 
 # unique value of &lt;bes fixlet&gt; : bes fixlet with multiplicity
 
-Returns the unique values of a given list of &amp;lt;bes fixlet&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes fixlet&lt; types, removing duplicates and sorting by value.
 
 # unlocked computer count of &lt;bes fixlet&gt; : integer
 

@@ -12,7 +12,7 @@ Returns all ancestor folders (recursive parent folders) of the given symlink.
 
 # change time of &lt;symlink&gt; : time
 
-Returns the last time the specified symlink was &amp;#39;changed&amp;#39; by either writing it or setting its inode information.
+Returns the last time the specified symlink was &#39;changed&#39; by either writing it or setting its inode information.
 
 # device file &lt;symlink&gt; : device file
 
@@ -20,7 +20,7 @@ Returns the device file specified by the supplied symbolic link.
 
 # drive of &lt;symlink&gt; : filesystem
 
-Returns the drive associated with the specified symlink as a &amp;lt;filesystem&amp;gt; object.
+Returns the drive associated with the specified symlink as a &lt;filesystem&lt; object.
 
 # fifo file &lt;symlink&gt; : fifo file
 
@@ -28,7 +28,7 @@ Returns the FIFO file (named pipe) described by the specified symbolic link (sym
 
 # file &lt;symlink&gt; : file
 
-Returns the file pointed to by the specified symlink. If the file doesn&amp;#39;t exist, this inspector will throw a &amp;#39;non-existent object&amp;#39; error.
+Returns the file pointed to by the specified symlink. If the file doesn&#39;t exist, this inspector will throw a &#39;non-existent object&#39; error.
 
 # filesystem of &lt;symlink&gt; : filesystem
 
@@ -56,7 +56,7 @@ Returns a string corresponding to the directory in which the symlink is located.
 
 # modification time of &lt;symlink&gt; : time
 
-Returns the time corresponding to the modification time of the specified symlink, not the file it points to.Example: modification time of symlink &amp;quot;/example/link&amp;quot; - Returns the time corresponding to the modification time of the given symlink, not the file it points to.Example: modification time of file &amp;quot;/example/link&amp;quot; - Returns the time corresponding to the file object that the symlink is pointing to.
+Returns the time corresponding to the modification time of the specified symlink, not the file it points to.Example: modification time of symlink "/example/link" - Returns the time corresponding to the modification time of the given symlink, not the file it points to.Example: modification time of file "/example/link" - Returns the time corresponding to the file object that the symlink is pointing to.
 
 # name of &lt;symlink&gt; : string
 
@@ -84,7 +84,7 @@ The user ID of the user who owns this symlink.
 
 # user name of &lt;symlink&gt; : string
 
-Returns the symlink owner&amp;#39;s (user&amp;#39;s) name.
+Returns the symlink owner&#39;s (user&#39;s) name.
 
 # value accessible of &lt;symlink&gt; : boolean
 

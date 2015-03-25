@@ -1,6 +1,6 @@
 # type: xml dom node
 
-The &amp;lt;xml dom node&amp;gt; objects are the inspectors for the XML Document Object Module (DOM) nodes. The console uses MSXML 6.0 if it is available. Otherwise it falls back to 4.0. The console requires at least 4.0 since 3.0 does not provide XML schema validation.
+The &lt;xml dom node&lt; objects are the inspectors for the XML Document Object Module (DOM) nodes. The console uses MSXML 6.0 if it is available. Otherwise it falls back to 4.0. The console requires at least 4.0 since 3.0 does not provide XML schema validation.
 
 # attribute &lt;integer&gt; of &lt;xml dom node&gt; : xml dom node
 
@@ -36,15 +36,15 @@ Returns the next child node after the current one.
 
 # node name of &lt;xml dom node&gt; : string
 
-Returns the name of the specified XML DOM node as a string.Example: node names of child nodes of xml document of file &amp;quot;C:\WINDOWS\system32\icsxml\cmnicfg.xml&amp;quot; - Returns a list of the names of each node in the specified XML document.
+Returns the name of the specified XML DOM node as a string.Example: node names of child nodes of xml document of file "C:\WINDOWS\system32\icsxml\cmnicfg.xml" - Returns a list of the names of each node in the specified XML document.
 
 # node type of &lt;xml dom node&gt; : integer
 
-Returns the numeric node type of the specified Document Object Module (DOM) node, 1-12 as shown in the creation inspector.Example: node types of child nodes of xml document of file &amp;quot;icsxml\cmnicfg.xml&amp;quot; of system folder - Returns a list of numeric types for each of the nodes in the specified XML document.
+Returns the numeric node type of the specified Document Object Module (DOM) node, 1-12 as shown in the creation inspector.Example: node types of child nodes of xml document of file "icsxml\cmnicfg.xml" of system folder - Returns a list of numeric types for each of the nodes in the specified XML document.
 
 # node value of &lt;xml dom node&gt; : string
 
-Returns the node value, which varies depending on the node type. If the standard interface produces a null type, the inspector throws NoSuchObject.Example: node value of first child of xml document of file &amp;quot;icsxml\cmnicfg.xml&amp;quot; of system folder - Returns the value of the first node in the specified file. If the first statement of the file is &amp;lt;xml version=&amp;quot;1.0&amp;quot;&amp;gt;, for instance, the name would be &amp;quot;xml&amp;quot; and the value would be version=&amp;quot;1.0&amp;quot;.
+Returns the node value, which varies depending on the node type. If the standard interface produces a null type, the inspector throws NoSuchObject.Example: node value of first child of xml document of file "icsxml\cmnicfg.xml" of system folder - Returns the value of the first node in the specified file. If the first statement of the file is &lt;xml version="1.0"&lt;, for instance, the name would be "xml" and the value would be version="1.0".
 
 # owner document of &lt;xml dom node&gt; : xml dom document
 
@@ -60,15 +60,15 @@ Returns the child node before the one specified.
 
 # select &lt;string&gt; of &lt;xml dom node&gt; : xml dom node
 
-Uses an Xpath string to specify an XML DOM node. For instance, to select all elements BBB which are children of the root element AAA, use:selects &amp;quot;/AAA/BBB&amp;quot; of xml dom document &amp;lt;string&amp;gt;.
+Uses an Xpath string to specify an XML DOM node. For instance, to select all elements BBB which are children of the root element AAA, use:selects "/AAA/BBB" of xml dom document &lt;string&lt;.
 
 # xpath &lt;( string, string )&gt; of &lt;xml dom node&gt; : xml dom node
 
-The iterated named property xpaths (&amp;lt;namespace&amp;gt;, &amp;lt;query&amp;gt;) provides a way of specifying the namespaces for the query. If the XML document you are querying over uses namespaces, you must use them in the query and use this property.
+The iterated named property xpaths (&lt;namespace&lt;, &lt;query&lt;) provides a way of specifying the namespaces for the query. If the XML document you are querying over uses namespaces, you must use them in the query and use this property.
 
 # xpath &lt;string&gt; of &lt;xml dom node&gt; : xml dom node
 
-Returns an iterated list of matching xml dom nodes, given the xpath query specified by &amp;lt;string&amp;gt;.
+Returns an iterated list of matching xml dom nodes, given the xpath query specified by &lt;string&lt;.
 
 # &lt;xml dom node&gt; as text : string
 

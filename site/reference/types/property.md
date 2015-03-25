@@ -4,15 +4,15 @@ Some inspectors look at the Relevance language itself, inspecting the inspectors
 
 # dependency known of &lt;property&gt; : boolean
 
-This introspector returns `True` if a property&amp;#39;s dependency is known. If it isn&amp;#39;t, then properties containing the expression can&amp;#39;t be fingerprinted, an optimization that exempts expressions from re-evaluation if their dependencies haven&amp;#39;t changed.
+This introspector returns `True` if a property&#39;s dependency is known. If it isn&#39;t, then properties containing the expression can&#39;t be fingerprinted, an optimization that exempts expressions from re-evaluation if their dependencies haven&#39;t changed.
 
 # direct object type of &lt;property&gt; : type
 
-The type (if any) required after the keyword &amp;quot;of&amp;quot; in an expression using the property.
+The type (if any) required after the keyword "of" in an expression using the property.
 
 # index type of &lt;property&gt; : type
 
-The type (if any) required before or without the keyword &amp;quot;of&amp;quot; in an expression using the property.
+The type (if any) required before or without the keyword "of" in an expression using the property.
 
 # multivalued of &lt;property&gt; : boolean
 
@@ -32,7 +32,7 @@ The name of the property, in the singular.
 
 # usual name of &lt;property&gt; : string
 
-Returns the usual name of the specified property.Example: usual name of property &amp;quot;booleans&amp;quot; - Returns &amp;quot;boolean&amp;quot;.
+Returns the usual name of the specified property.Example: usual name of property "booleans" - Returns "boolean".
 
 # &lt;property&gt; as string : string
 

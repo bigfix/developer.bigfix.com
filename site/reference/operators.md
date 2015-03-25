@@ -232,7 +232,7 @@ Takes a date and embeds it into the format specification.
 
 # &lt;format&gt; + &lt;day of week&gt; : format
 
-Takes a &amp;#39;day of week&amp;#39; and embeds it into the format specification.
+Takes a &#39;day of week&#39; and embeds it into the format specification.
 
 # &lt;format&gt; + &lt;integer&gt; : format
 
@@ -252,7 +252,7 @@ Takes a time of day and embeds it into the format specification.
 
 # &lt;format&gt; + &lt;time&gt; : format
 
-Takes a time and embeds it into the format specification.Example: format &amp;quot;Today&amp;#39;s date is {0}.&amp;quot; + now - Returns:  Today&amp;#39;s date is 9/27/2010 3:40:27 PM.
+Takes a time and embeds it into the format specification.Example: format "Today&#39;s date is {0}." + now - Returns:  Today&#39;s date is 9/27/2010 3:40:27 PM.
 
 # &lt;hertz&gt; * &lt;integer&gt; : hertz
 
@@ -309,7 +309,7 @@ No documentation exists.
 
 # &lt;integer&gt; * &lt;number of months&gt; : number of months
 
-Multiply a number of months by an integer, producing a new number of months. This is a typical technique to create a value of this type.Example: (July-current month) &amp;lt; 2*month - Returns `True` when the current date is between June and July.
+Multiply a number of months by an integer, producing a new number of months. This is a typical technique to create a value of this type.Example: (July-current month) &lt; 2*month - Returns `True` when the current date is between June and July.
 
 # &lt;integer&gt; * &lt;time interval&gt; : time interval
 
@@ -493,7 +493,7 @@ No documentation exists.
 
 # &lt;rate&gt; * &lt;time interval&gt; : floating point
 
-Multiplies a &amp;lt;rate&amp;gt; by a &amp;lt;time interval&amp;gt;, producing a floating point number.
+Multiplies a &lt;rate&lt; by a &lt;time interval&lt;, producing a floating point number.
 
 # &lt;rate&gt; / &lt;floating point&gt; : rate
 
@@ -549,7 +549,7 @@ No documentation exists.
 
 # &lt;regular expression&gt; = &lt;string&gt; : boolean
 
-Returns `True` if the regular expression is equal to the specified string.Example: regex &amp;quot;.+match.+&amp;quot; = &amp;quot;We will win the match tonight&amp;quot; - Returns `True`.Example: regex &amp;quot;.*PATH.*&amp;quot; = line 1 of file &amp;quot;/etc/profile&amp;quot; - Returns `True` if the word &amp;quot;PATH&amp;quot; exists in line 1 of the given file.
+Returns `True` if the regular expression is equal to the specified string.Example: regex ".+match.+" = "We will win the match tonight" - Returns `True`.Example: regex ".*PATH.*" = line 1 of file "/etc/profile" - Returns `True` if the word "PATH" exists in line 1 of the given file.
 
 # &lt;rope&gt; &amp; &lt;string&gt; : rope
 
@@ -633,7 +633,7 @@ No documentation exists.
 
 # &lt;string set&gt; contains &lt;string&gt; : boolean
 
-Returns `True` if the specified set of strings contains the given string.Example: set of (&amp;quot;foo&amp;quot;;&amp;quot;bar&amp;quot;) contains &amp;quot;foo&amp;quot; - Returns `True`.
+Returns `True` if the specified set of strings contains the given string.Example: set of ("foo";"bar") contains "foo" - Returns `True`.
 
 # &lt;string&gt; &amp; &lt;html&gt; : html
 
@@ -961,7 +961,7 @@ No documentation exists.
 
 # &lt;time interval&gt; &amp; &lt;time&gt; : time range
 
-Concatenates a time interval with a time, returning a time range of the form time1 to time2.Example: time interval &amp;quot;01:00:00&amp;quot; &amp;amp; now - Returns a one-hour time range ending now, eg. Fri, 07 Apr 2006 12:36:10 -0400 to Fri, 07 Apr 2006 13:36:10 -0400.
+Concatenates a time interval with a time, returning a time range of the form time1 to time2.Example: time interval "01:00:00" &amp; now - Returns a one-hour time range ending now, eg. Fri, 07 Apr 2006 12:36:10 -0400 to Fri, 07 Apr 2006 13:36:10 -0400.
 
 # &lt;time interval&gt; * &lt;integer&gt; : time interval
 
@@ -969,11 +969,11 @@ No documentation exists.
 
 # &lt;time interval&gt; * &lt;rate&gt; : floating point
 
-Multiplies a &amp;lt;time interval&amp;gt; by a &amp;lt;rate&amp;gt;, producing a floating point number.
+Multiplies a &lt;time interval&lt; by a &lt;rate&lt;, producing a floating point number.
 
 # &lt;time interval&gt; + &lt;date&gt; : date
 
-Adds a time interval (days, hours, minutes, seconds) to a date to create a new date.Example: current date + time interval &amp;quot;7 days&amp;quot; - Returns the date a week from now.
+Adds a time interval (days, hours, minutes, seconds) to a date to create a new date.Example: current date + time interval "7 days" - Returns the date a week from now.
 
 # &lt;time interval&gt; + &lt;day of month&gt; : day of month
 
@@ -1001,7 +1001,7 @@ No documentation exists.
 
 # &lt;time interval&gt; + &lt;time&gt; : time
 
-Adds the specified time interval to the &amp;lt;time&amp;gt;
+Adds the specified time interval to the &lt;time&lt;
 
 # &lt;time interval&gt; / &lt;integer&gt; : time interval
 
@@ -1009,11 +1009,11 @@ No documentation exists.
 
 # &lt;time of day with time zone&gt; &amp; &lt;date&gt; : time
 
-Concatenates a &amp;#39;time of day with time zone&amp;#39; object with a date object to produce a time object.
+Concatenates a &#39;time of day with time zone&#39; object with a date object to produce a time object.
 
 # &lt;time of day with time zone&gt; &amp; &lt;time zone&gt; : time of day with time zone
 
-Concatenates a &amp;#39;time of day with a time zone&amp;#39; and another time zone. The &amp;#39;time of day with time zone&amp;#39; object that is produced is adjusted to fit the appended time zone.
+Concatenates a &#39;time of day with a time zone&#39; and another time zone. The &#39;time of day with time zone&#39; object that is produced is adjusted to fit the appended time zone.
 
 # &lt;time of day with time zone&gt; + &lt;time interval&gt; : time of day with time zone
 
@@ -1037,7 +1037,7 @@ No documentation exists.
 
 # &lt;time range&gt; &amp; &lt;time&gt; : time range
 
-Concatenates a time with a time range, producing a new time range, in the form of:&amp;lt;time - time range&amp;gt; to &amp;lt;time&amp;gt;.
+Concatenates a time with a time range, producing a new time range, in the form of:&lt;time - time range&lt; to &lt;time&lt;.
 
 # &lt;time range&gt; * &lt;boolean&gt; : timed( time range, boolean )
 
@@ -1053,7 +1053,7 @@ No documentation exists.
 
 # &lt;time zone&gt; &amp; &lt;time of day with time zone&gt; : time of day with time zone
 
-Converts a &amp;#39;time of day with time zone&amp;#39; to the time in the specified time zone.Example: time zone &amp;quot;+0000&amp;quot; &amp;amp; time (universal time zone) of now - Returns the time in Greenwich, England.
+Converts a &#39;time of day with time zone&#39; to the time in the specified time zone.Example: time zone "+0000" &amp; time (universal time zone) of now - Returns the time in Greenwich, England.
 
 # &lt;time zone&gt; &amp; &lt;time of day&gt; : time of day with time zone
 
@@ -1073,7 +1073,7 @@ Concatenates a time and a time interval, producing a time range object.
 
 # &lt;time&gt; &amp; &lt;time range&gt; : time range
 
-Concatenates a time and a time range, producing a new time range, in the form of:&amp;lt;time&amp;gt; to &amp;lt;time + time range&amp;gt;.
+Concatenates a time and a time range, producing a new time range, in the form of:&lt;time&lt; to &lt;time + time range&lt;.
 
 # &lt;time&gt; + &lt;time interval&gt; : time
 

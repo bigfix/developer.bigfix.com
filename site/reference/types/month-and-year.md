@@ -1,10 +1,10 @@
 # type: month and year
 
-The &amp;lt;month and year&amp;gt; inspectors provide tools for dealing and calculating with month-and-year types, which are of the form month of year, eg., January of 2007.
+The &lt;month and year&lt; inspectors provide tools for dealing and calculating with month-and-year types, which are of the form month of year, eg., January of 2007.
 
 # extrema of &lt;month and year&gt; : ( month and year, month and year )
 
-Returns the minimum and maximum extreme values of the given list of &amp;lt;month and year&amp;gt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;month and year&lt; types.
 
 # first &lt;day of week&gt; of &lt;month and year&gt; : date
 
@@ -53,25 +53,25 @@ Finds the date corresponding to the first Wednesday of any given month and year.
 Returns the number of days in the specified month.
 
 {{#example}}
-Q: length of (month &quot;February&quot; &amp; year &quot;2004&quot;)
+Q: length of (month "February" & year "2004")
 A: 29 days
 {{/example}}
 
 # maximum of &lt;month and year&gt; : month and year
 
-Returns the maximum value from a list of &amp;lt;month and year&amp;gt; types.
+Returns the maximum value from a list of &lt;month and year&lt; types.
 
 # minimum of &lt;month and year&gt; : month and year
 
-Returns the minimum value from a list of &amp;lt;month and year&amp;gt; types.
+Returns the minimum value from a list of &lt;month and year&lt; types.
 
 # month of &lt;month and year&gt; : month
 
-Returns the name of the month corresponding to the given date.Example: month of date &amp;quot;Sun, 02 Apr 2006&amp;quot; + 2*month - Returns June.
+Returns the name of the month corresponding to the given date.Example: month of date "Sun, 02 Apr 2006" + 2*month - Returns June.
 
 # unique value of &lt;month and year&gt; : month and year with multiplicity
 
-Returns the unique values of a given list of &amp;lt;month and year&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;month and year&lt; types, removing duplicates and sorting by value.
 
 # year of &lt;month and year&gt; : year
 

@@ -12,7 +12,7 @@ Returns the count of physical cpu packages packages (the number of sockets or ph
 
 # smt capable of &lt;cpupackage&gt; : boolean
 
-If detectable, returns `True` if the cpupackage is capable of SMT threads (Simultaneous multithreading, called &amp;quot;Hyper-Threading&amp;quot; on some platforms)
+If detectable, returns `True` if the cpupackage is capable of SMT threads (Simultaneous multithreading, called "Hyper-Threading" on some platforms)
 
 # smt enabled of &lt;cpupackage&gt; : boolean
 

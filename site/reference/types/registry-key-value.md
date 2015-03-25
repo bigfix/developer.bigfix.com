@@ -1,10 +1,10 @@
 # type: registry key value
 
-The &amp;lt;registry key value&amp;gt; inspectors are used to access values stored within a registry key. All values have sizes and types. All of the values of a registry key have names except one, and it is called the &amp;#39;default value&amp;#39;. The type of the data stored in the value determines what casting operations are allowed. We have implemented several casting inspectors that you can use to extract values from the registry.
+The &lt;registry key value&lt; inspectors are used to access values stored within a registry key. All values have sizes and types. All of the values of a registry key have names except one, and it is called the &#39;default value&#39;. The type of the data stored in the value determines what casting operations are allowed. We have implemented several casting inspectors that you can use to extract values from the registry.
 
 # name of &lt;registry key value&gt; : string
 
-Returns the name of the value as a string. (see escape of &amp;lt;string&amp;gt; for more information).
+Returns the name of the value as a string. (see escape of &lt;string&lt; for more information).
 
 # parent key of &lt;registry key value&gt; : registry key
 

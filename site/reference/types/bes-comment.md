@@ -1,6 +1,6 @@
 # type: bes comment
 
-The &amp;lt;bes comment&amp;gt; inspectors return the text, timestamp and author of BES Comments.
+The &lt;bes comment&lt; inspectors return the text, timestamp and author of BES Comments.
 
 # author of &lt;bes comment&gt; : bes user
 

@@ -1,18 +1,18 @@
 # type: time of day with time zone
 
-The &amp;lt;time of day with time zone&amp;gt; inspectors provide tools for dealing and calculating with time-of-day-with-time-zone types, which are of the form HH:MM:SS +ZZZZ, as in 12:59:59 -0400.
+The &lt;time of day with time zone&lt; inspectors provide tools for dealing and calculating with time-of-day-with-time-zone types, which are of the form HH:MM:SS +ZZZZ, as in 12:59:59 -0400.
 
 # hour_of_day of &lt;time of day with time zone&gt; : integer
 
-Returns the hour section of the &amp;#39;time of day with time zone&amp;#39; object.Example: hour_of_day of time (universal time zone) of now - Returns the hour of day in Greenwich, England.
+Returns the hour section of the &#39;time of day with time zone&#39; object.Example: hour_of_day of time (universal time zone) of now - Returns the hour of day in Greenwich, England.
 
 # minute_of_hour of &lt;time of day with time zone&gt; : integer
 
-Returns the &amp;#39;minutes after the hour&amp;#39; section of the &amp;#39;time of day with time zone&amp;#39; object.Example: minute_of_hour of time (local time zone) of now - Returns the current minute past the hour.
+Returns the &#39;minutes after the hour&#39; section of the &#39;time of day with time zone&#39; object.Example: minute_of_hour of time (local time zone) of now - Returns the current minute past the hour.
 
 # second_of_minute of &lt;time of day with time zone&gt; : integer
 
-Returns the &amp;#39;seconds after the minute&amp;#39; section of the &amp;#39;time of day with time zone&amp;#39; object.
+Returns the &#39;seconds after the minute&#39; section of the &#39;time of day with time zone&#39; object.
 
 # time of &lt;time of day with time zone&gt; : time of day
 
@@ -32,7 +32,7 @@ Returns the second of the zoned time of day as text, with values less than 10 ha
 
 # unique value of &lt;time of day with time zone&gt; : time of day with time zone with multiplicity
 
-Returns the unique values of a given list of &amp;lt;time of day with time zone&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time of day with time zone&lt; types, removing duplicates and sorting by value.
 
 # zone of &lt;time of day with time zone&gt; : time zone
 
@@ -40,7 +40,7 @@ Returns the zone associated with the specified time.
 
 # &lt;time of day with time zone&gt; as string : string
 
-Converts a &amp;#39;time of day with time zone&amp;#39; object into a string.
+Converts a &#39;time of day with time zone&#39; object into a string.
 
 # &lt;time of day with time zone&gt; &lt; &lt;time of day with time zone&gt; : boolean
 

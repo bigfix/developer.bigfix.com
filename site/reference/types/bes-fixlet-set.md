@@ -1,10 +1,10 @@
 # type: bes fixlet set
 
-The &amp;lt;bes fixlet set&amp;gt; inspectors iterate over the current set of BES Fixlets and package them as a mathematical set, suitable for further set manipulation.
+The &lt;bes fixlet set&lt; inspectors iterate over the current set of BES Fixlets and package them as a mathematical set, suitable for further set manipulation.
 
 # element of &lt;bes fixlet set&gt; : bes fixlet
 
-Returns the unique elements of the specified &amp;lt;bes fixlet set&amp;gt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes fixlet set&lt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes fixlet set&gt; : bes fixlet set
 

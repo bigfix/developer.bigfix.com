@@ -1,6 +1,6 @@
 # type: bes activation
 
-The &amp;lt;bes activation&amp;gt; inspectors examine the various Analyses that have been activated on the networked BES Clients.
+The &lt;bes activation&lt; inspectors examine the various Analyses that have been activated on the networked BES Clients.
 
 # active flag of &lt;bes activation&gt; : boolean
 
@@ -24,7 +24,7 @@ Returns the numeric ID of the BES activation object.
 
 # issuer of &lt;bes activation&gt; : bes user
 
-Returns the &amp;lt;bes user&amp;gt; object corresponding to the user who issued the specified activation.
+Returns the &lt;bes user&lt; object corresponding to the user who issued the specified activation.
 
 # modification time of &lt;bes activation&gt; : time
 

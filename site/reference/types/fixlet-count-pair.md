@@ -1,6 +1,6 @@
 # type: fixlet count pair
 
-The &amp;lt;fixlet count pair&amp;gt; inspectors return information about the Fixlet count pair objects for each severity level.
+The &lt;fixlet count pair&lt; inspectors return information about the Fixlet count pair objects for each severity level.
 
 # count of &lt;fixlet count pair&gt; : integer
 

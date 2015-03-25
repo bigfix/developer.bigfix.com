@@ -28,11 +28,11 @@ Returns the Classless Inter-Domain Routing value for the specified network ip in
 
 # loopback of &lt;network ip interface&gt; : boolean
 
-Indicates that the particular network ip interface is a loopback interface.Example: address of ip interface whose (loopback of it = false) of network = &amp;quot;192.168.127.127&amp;quot; - Returns `True` if the given IP address doesn&amp;#39;t have loopback.
+Indicates that the particular network ip interface is a loopback interface.Example: address of ip interface whose (loopback of it = false) of network = "192.168.127.127" - Returns `True` if the given IP address doesn&#39;t have loopback.
 
 # mac address of &lt;network ip interface&gt; : string
 
-Returns the MAC address (AKA hardware address) of the network ip interface object. The mac address is formatted as a string of lower case hex digits separated by &amp;#39;-&amp;#39;.Example:  mac address whose (it = &amp;quot;00-61-b1-d1-7d-29&amp;quot;) of ip interfaces of network - Returns the mac address of the specified network ip interface object.
+Returns the MAC address (AKA hardware address) of the network ip interface object. The mac address is formatted as a string of lower case hex digits separated by &#39;-&#39;.Example:  mac address whose (it = "00-61-b1-d1-7d-29") of ip interfaces of network - Returns the mac address of the specified network ip interface object.
 
 # multicast support of &lt;network ip interface&gt; : boolean
 
@@ -52,7 +52,7 @@ Returns the subnet address (IPv4) to which the specified interface belongs.
 
 # subnet mask of &lt;network ip interface&gt; : ipv4 address
 
-Returns the subnet mask (IPv4) of the specified network ip interface.As of version 8.0, this inspector type is derived from an &amp;lt;ipv4or6 address&amp;gt; type.
+Returns the subnet mask (IPv4) of the specified network ip interface.As of version 8.0, this inspector type is derived from an &lt;ipv4or6 address&lt; type.
 
 # up of &lt;network ip interface&gt; : boolean
 

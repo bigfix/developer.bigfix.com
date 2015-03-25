@@ -1,10 +1,10 @@
 # type: event log
 
-The &amp;lt;event log&amp;gt; inspectors return information about the specified Windows Event logs, including the System, Security and the Application log.
+The &lt;event log&lt; inspectors return information about the specified Windows Event logs, including the System, Security and the Application log.
 
 # oldest record number of &lt;event log&gt; : integer
 
-Returns an integer corresponding to the oldest record number on the Client computer&amp;#39;s event log.
+Returns an integer corresponding to the oldest record number on the Client computer&#39;s event log.
 
 # record &lt;integer&gt; of &lt;event log&gt; : event log record
 

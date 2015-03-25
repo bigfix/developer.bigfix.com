@@ -12,4 +12,4 @@ Name of foreground color of the color pair.
 
 # &lt;grub color pair&gt; as string : string
 
-String displaying color pair in form &amp;quot;foreground-color/background-color
+String displaying color pair in form "foreground-color/background-color

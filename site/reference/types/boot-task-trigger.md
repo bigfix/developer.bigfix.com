@@ -1,6 +1,6 @@
 # type: boot task trigger
 
-The &amp;lt;boot task trigger&amp;gt; inspectors deal with tasks that are triggered when the system is booted up. More information about this subset of task triggers can be found by searching for Boot Trigger at the MSDN site.
+The &lt;boot task trigger&lt; inspectors deal with tasks that are triggered when the system is booted up. More information about this subset of task triggers can be found by searching for Boot Trigger at the MSDN site.
 
 # delay of &lt;boot task trigger&gt; : time interval
 

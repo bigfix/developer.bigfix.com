@@ -1,6 +1,6 @@
 # type: security identifier
 
-A Security Identifier, or SID, is a data structure that identifies user, group, and computer accounts. Every account on a network is issued a unique SID when the account is first created. Internal processes in Windows refer to an account&amp;#39;s SID rather than the account&amp;#39;s user or group name.
+A Security Identifier, or SID, is a data structure that identifies user, group, and computer accounts. Every account on a network is issued a unique SID when the account is first created. Internal processes in Windows refer to an account&#39;s SID rather than the account&#39;s user or group name.
 
 # account name of &lt;security identifier&gt; : string
 
@@ -22,7 +22,7 @@ Returns the domain name of the first domain on which the specified SID is found.
 
 # rsop user wmi &lt;security identifier&gt; : wmi
 
-Each user has its own RSoP (Resultant Set of Policy) namespace based on the user&amp;#39;s Security Identifier (SID). This inspector returns the namespace specified by the &amp;lt;security identifier&amp;gt;.
+Each user has its own RSoP (Resultant Set of Policy) namespace based on the user&#39;s Security Identifier (SID). This inspector returns the namespace specified by the &lt;security identifier&lt;.
 
 # user of &lt;security identifier&gt; : user
 
@@ -34,4 +34,4 @@ Returns the security identifier in string format.
 
 # &lt;security identifier&gt; = &lt;security identifier&gt; : boolean
 
-Tests two &amp;lt;security identifier&amp;gt; (SID) values for equality using EqualSid.
+Tests two &lt;security identifier&lt; (SID) values for equality using EqualSid.

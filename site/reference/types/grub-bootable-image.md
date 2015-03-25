@@ -32,11 +32,11 @@ Root device that is associated with the bootable image.
 
 # rootnoverify of &lt;grub bootable image&gt; : grub device
 
-Root device, designated as &amp;quot;no-verify,&amp;quot; that is associated with the bootable image.
+Root device, designated as "no-verify," that is associated with the bootable image.
 
 # savedefault of &lt;grub bootable image&gt; : boolean
 
-True if bootable image has been designated as &amp;quot;savedefault.&amp;quot; This causes the bootable image to become the default after it has been booted.
+True if bootable image has been designated as "savedefault." This causes the bootable image to become the default after it has been booted.
 
 # title of &lt;grub bootable image&gt; : string
 

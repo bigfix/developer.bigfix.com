@@ -24,7 +24,7 @@ See port mapping at MSDN.
 
 # protocol of &lt;port mapping&gt; : string
 
-Returns a string like &amp;quot;tcp&amp;quot; or &amp;quot;udp&amp;quot;, corresponding to the protocol of the specified port mapping.
+Returns a string like "tcp" or "udp", corresponding to the protocol of the specified port mapping.
 
 # target ip address of &lt;port mapping&gt; : ipv4 address
 

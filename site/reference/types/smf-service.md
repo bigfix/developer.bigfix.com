@@ -4,15 +4,15 @@ No documentation exists.
 
 # fmri of &lt;smf service&gt; : smf fmri
 
-Returns an smf fmri object representing the &amp;#39;Fault Management Resource Identifier&amp;#39; of a service. The FMRI is used to identify a service for administrative use.
+Returns an smf fmri object representing the &#39;Fault Management Resource Identifier&#39; of a service. The FMRI is used to identify a service for administrative use.
 
 # instance &lt;string&gt; of &lt;smf service&gt; : smf instance
 
-Returns the specified instance of an smf service. An smf instance represents a particular piece of server software (such as &amp;#39;Apache&amp;#39;).
+Returns the specified instance of an smf service. An smf instance represents a particular piece of server software (such as &#39;Apache&#39;).
 
 # instance of &lt;smf service&gt; : smf instance
 
-Iterates over the instances of a service. An smf instance represents a particular piece of server software (such as &amp;#39;Apache&amp;#39;).
+Iterates over the instances of a service. An smf instance represents a particular piece of server software (such as &#39;Apache&#39;).
 
 # name of &lt;smf service&gt; : string
 

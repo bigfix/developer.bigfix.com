@@ -4,7 +4,7 @@ No documentation exists.
 
 # fmri of &lt;smf property&gt; : smf fmri
 
-Returns an smf fmri object representing the &amp;#39;Fault Management Resource Identifier&amp;#39; of an smf property. The FMRI is used to identify a specific instance for administrative use.
+Returns an smf fmri object representing the &#39;Fault Management Resource Identifier&#39; of an smf property. The FMRI is used to identify a specific instance for administrative use.
 
 # name of &lt;smf property&gt; : string
 

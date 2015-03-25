@@ -1,6 +1,6 @@
 # type: logon task trigger
 
-The &amp;lt;logon task trigger&amp;gt; inspectors deal with tasks that are triggered when a user logs on to the computer. More information about this subset of task triggers can be found by searching for Logon Trigger at the MSDN site.
+The &lt;logon task trigger&lt; inspectors deal with tasks that are triggered when a user logs on to the computer. More information about this subset of task triggers can be found by searching for Logon Trigger at the MSDN site.
 
 # delay of &lt;logon task trigger&gt; : time interval
 

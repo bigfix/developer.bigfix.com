@@ -12,7 +12,7 @@ Returns the offset position relative to the start of the given smbios value in i
 
 # structure of &lt;smbios value&gt; : smbios structure
 
-Returns the parent smbios structure(s) containing the specified value.Example: names of structures of values &amp;quot;bios_version&amp;quot; of structures of smbios - Returns the names of the smbios structures that contain the specified value, in this case the named value &amp;#39;bios version&amp;#39;.
+Returns the parent smbios structure(s) containing the specified value.Example: names of structures of values "bios_version" of structures of smbios - Returns the names of the smbios structures that contain the specified value, in this case the named value &#39;bios version&#39;.
 
 # type of &lt;smbios value&gt; : string
 

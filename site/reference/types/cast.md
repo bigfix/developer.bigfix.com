@@ -4,11 +4,11 @@ Some inspectors look at the Relevance language itself, inspecting the inspectors
 
 # name of &lt;cast&gt; : string
 
-The phrase used after the keyword &amp;quot;as&amp;quot; in an expression using the cast.
+The phrase used after the keyword "as" in an expression using the cast.
 
 # operand type of &lt;cast&gt; : type
 
-The type required before the keyword &amp;quot;as&amp;quot; in an expression using the cast.
+The type required before the keyword "as" in an expression using the cast.
 
 # result type of &lt;cast&gt; : type
 

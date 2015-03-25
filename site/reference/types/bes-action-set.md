@@ -1,10 +1,10 @@
 # type: bes action set
 
-The &amp;lt;bes action set&amp;gt; inspectors return the iterated list of BES Actions, converted into a set to make it easy to do set arithmetic with the list.
+The &lt;bes action set&lt; inspectors return the iterated list of BES Actions, converted into a set to make it easy to do set arithmetic with the list.
 
 # element of &lt;bes action set&gt; : bes action
 
-Returns the unique elements of the specified &amp;lt;bes action set&amp;gt;, removing duplicates and sorting by value.Example: names of elements of bes action set - Returns the names of all the BES Actions.
+Returns the unique elements of the specified &lt;bes action set&lt;, removing duplicates and sorting by value.Example: names of elements of bes action set - Returns the names of all the BES Actions.
 
 # intersection of &lt;bes action set&gt; : bes action set
 
@@ -20,7 +20,7 @@ Returns the union of multiple BES User sets. The arguments to this inspector are
 
 # &lt;bes action set&gt; as xml : utf8 string
 
-Casts a BES Action set as an XML document, for submission to to the ImportXML API in the Console. It can only be used in the Console using the EvaluateRelevance API, not the &amp;lt;?relevance ?&amp;gt; interface.
+Casts a BES Action set as an XML document, for submission to to the ImportXML API in the Console. It can only be used in the Console using the EvaluateRelevance API, not the &lt;?relevance ?&lt; interface.
 
 # &lt;bes action set&gt; * &lt;bes action set&gt; : bes action set
 

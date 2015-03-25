@@ -1,6 +1,6 @@
 # type: email task action
 
-The &amp;lt;email task action&amp;gt; inspectors deal with Windows Email Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Email Action causes an email to be sent. For more information, see Email Action at the MSDN site.
+The &lt;email task action&lt; inspectors deal with Windows Email Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Email Action causes an email to be sent. For more information, see Email Action at the MSDN site.
 
 # attachment of &lt;email task action&gt; : string
 
@@ -20,7 +20,7 @@ Returns the email address(es) that you want to Bcc in the email referenced by th
 
 # from of &lt;email task action&gt; : string
 
-Returns the &amp;#39;from&amp;#39; email address for the email referenced by the specified email task action.
+Returns the &#39;from&#39; email address for the email referenced by the specified email task action.
 
 # header field of &lt;email task action&gt; : task named value pair
 
@@ -40,4 +40,4 @@ Returns the subject line for the email referenced by the specified email task ac
 
 # to of &lt;email task action&gt; : string
 
-Returns the address(es) for the &amp;#39;to&amp;#39; line of the email referenced by the specified email task action.
+Returns the address(es) for the &#39;to&#39; line of the email referenced by the specified email task action.

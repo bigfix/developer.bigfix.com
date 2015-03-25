@@ -1,10 +1,10 @@
 # type: bes computer group set
 
-The &amp;lt;bes computer group set&amp;gt; inspectors convert an iterated list of computer groups into a set, which allows you to perform intersections, unions and other mathematical operations on them.
+The &lt;bes computer group set&lt; inspectors convert an iterated list of computer groups into a set, which allows you to perform intersections, unions and other mathematical operations on them.
 
 # element of &lt;bes computer group set&gt; : bes computer group
 
-Returns the unique elements of the specified &amp;lt;bes computer group set&amp;gt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes computer group set&lt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes computer group set&gt; : bes computer group set
 

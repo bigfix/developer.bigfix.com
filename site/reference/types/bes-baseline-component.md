@@ -1,6 +1,6 @@
 # type: bes baseline component
 
-The &amp;lt;bes baseline component&amp;gt; inspectors return the individual components of a Baseline, such as Fixlets, Tasks or other Baselines.
+The &lt;bes baseline component&lt; inspectors return the individual components of a Baseline, such as Fixlets, Tasks or other Baselines.
 
 # action of &lt;bes baseline component&gt; : bes fixlet action
 
@@ -20,7 +20,7 @@ Returns the numeric ID of the specified BES Baseline component.
 
 # include in relevance flag of &lt;bes baseline component&gt; : boolean
 
-When you define a Baseline by adding components, the default is to OR the relevance from each baseline component with the overall Baseline relevance. Thus, the multiple Action group will be relevant on machines where any of the components are relevant. If you add a component that is always relevant (such as &amp;quot;true&amp;quot;), you might want to uncheck the &amp;quot;Baseline will be relevant on applicable computers where this component is relevant&amp;quot; checkbox (click the + next to the component name to see it). This inspector returns `True` if this box is checked for the specified component.
+When you define a Baseline by adding components, the default is to OR the relevance from each baseline component with the overall Baseline relevance. Thus, the multiple Action group will be relevant on machines where any of the components are relevant. If you add a component that is always relevant (such as "true"), you might want to uncheck the "Baseline will be relevant on applicable computers where this component is relevant" checkbox (click the + next to the component name to see it). This inspector returns `True` if this box is checked for the specified component.
 
 # name of &lt;bes baseline component&gt; : string
 

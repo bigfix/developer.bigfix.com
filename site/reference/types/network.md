@@ -1,6 +1,6 @@
 # type: network
 
-The &amp;lt;network&amp;gt; objects are the keywords used to query the local network configuration.
+The &lt;network&lt; objects are the keywords used to query the local network configuration.
 
 # adapter &lt;integer&gt; of &lt;network&gt; : network adapter
 
@@ -20,7 +20,7 @@ No documentation exists.
 
 # any adapter of &lt;network&gt; : network adapter
 
-This inspector returns the same as &amp;#39;adapter of &amp;lt;network&amp;gt;&amp;#39;, but it includes loopback and tunnels.
+This inspector returns the same as &#39;adapter of &lt;network&lt;&#39;, but it includes loopback and tunnels.
 
 # connection of &lt;network&gt; : connection
 
@@ -37,7 +37,7 @@ A: 10.0.2.3
 
 # find adapter &lt;string&gt; of &lt;network&gt; : network adapter
 
-This inspector lets you find a network adapter from the &amp;quot;Friendly Name&amp;quot;.
+This inspector lets you find a network adapter from the "Friendly Name".
 
 # interface &lt;integer&gt; of &lt;network&gt; : network interface
 

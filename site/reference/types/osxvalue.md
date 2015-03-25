@@ -1,6 +1,6 @@
 # type: osxvalue
 
-The &amp;lt;osxvalue&amp;gt; inspectors provide access to the elements of a dictionary.
+The &lt;osxvalue&lt; inspectors provide access to the elements of a dictionary.
 
 # array of &lt;osxvalue&gt; : array
 

@@ -1,10 +1,10 @@
 # type: bes filter set
 
-The &amp;lt;bes filter set&amp;gt; inspectors return the iterated list of BES Filters, converted into a set to make it easy to do set arithmetic with the list.
+The &lt;bes filter set&lt; inspectors return the iterated list of BES Filters, converted into a set to make it easy to do set arithmetic with the list.
 
 # element of &lt;bes filter set&gt; : bes filter
 
-Returns the unique elements of the specified &amp;lt;bes filter set&amp;gt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes filter set&lt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes filter set&gt; : bes filter set
 

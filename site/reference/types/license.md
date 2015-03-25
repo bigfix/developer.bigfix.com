@@ -1,10 +1,10 @@
 # type: license
 
-The &amp;lt;license&amp;gt; inspectors are available to inspect the properties of the deployment license.
+The &lt;license&lt; inspectors are available to inspect the properties of the deployment license.
 
 # allow unmentioned site of &lt;license&gt; : boolean
 
-If this property is TRUE, then the deployment is allowed to use sites that aren&amp;#39;t mentioned in the license of any BES products. If FALSE, those sites will not be usable.
+If this property is TRUE, then the deployment is allowed to use sites that aren&#39;t mentioned in the license of any BES products. If FALSE, those sites will not be usable.
 
 # common name of &lt;license&gt; : string
 
@@ -44,7 +44,7 @@ Returns date when license will expire.
 
 # expiration state of &lt;license&gt; : string
 
-Returns a string, one of &amp;quot;Unrestricted&amp;quot;, &amp;quot;Grace&amp;quot; or &amp;quot;Restricted&amp;quot;.
+Returns a string, one of "Unrestricted", "Grace" or "Restricted".
 
 # fips mode of &lt;license&gt; : boolean
 
@@ -52,7 +52,7 @@ Returns `True` if the BES Action masthead specifies that applications (the clien
 
 # gather url of &lt;license&gt; : string
 
-Returns the gather URL for the deployment&amp;#39;s main Action site as specified in the deployment masthead.
+Returns the gather URL for the deployment&#39;s main Action site as specified in the deployment masthead.
 
 # maximum seat count of &lt;license&gt; : integer
 
@@ -72,7 +72,7 @@ A unique number assigned to the issuer of the Action Site certificate.
 
 # seat count state of &lt;license&gt; : string
 
-Returns one of &amp;quot;Unrestricted&amp;quot;, &amp;quot;Grace&amp;quot; or &amp;quot;Restricted&amp;quot;.
+Returns one of "Unrestricted", "Grace" or "Restricted".
 
 # seat of &lt;license&gt; : integer
 

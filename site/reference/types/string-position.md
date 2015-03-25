@@ -7,7 +7,7 @@ String position works in combination with the string and substring data types. A
 Returns the substring following the position in the string.
 
 {{#example}}
-Q: following text of position 5 of &quot;0123456789&quot;
+Q: following text of position 5 of "0123456789"
 A: 56789
 {{/example}}
 
@@ -16,6 +16,6 @@ A: 56789
 Returns the substring preceding the position in the string.
 
 {{#example}}
-Q: preceding text of position 5 of &quot;0123456789&quot;
+Q: preceding text of position 5 of "0123456789"
 A: 01234
 {{/example}}

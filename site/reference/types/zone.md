@@ -1,6 +1,6 @@
 # type: zone
 
-The Solaris OS allows you to set up zones, which provide a virtual view of the runtime environment that is segregated from other zones. Solaris Zones act as completely isolated virtual servers within a single operating system instance. These inspectors allow you to monitor the user&amp;#39;s zone configurations.
+The Solaris OS allows you to set up zones, which provide a virtual view of the runtime environment that is segregated from other zones. Solaris Zones act as completely isolated virtual servers within a single operating system instance. These inspectors allow you to monitor the user&#39;s zone configurations.
 
 # autoboot value of &lt;zone&gt; : boolean
 
@@ -16,7 +16,7 @@ Returns a list of the boot arguments of the specified Solaris zone.
 
 # brand of &lt;zone&gt; : string
 
-Returns the brand of the selected Solaris Zone as a string, such as &amp;#39;native&amp;#39;, &amp;#39;cluster&amp;#39; or &amp;#39;solaris9&amp;#39;.
+Returns the brand of the selected Solaris Zone as a string, such as &#39;native&#39;, &#39;cluster&#39; or &#39;solaris9&#39;.
 
 # comment of &lt;zone&gt; : string
 
@@ -32,7 +32,7 @@ Returns `True` if the Exclusive IP flag is set for the specified Solaris Zone. T
 
 # execution state of &lt;zone&gt; : string
 
-Returns the Execution State of the specified Solaris Zone as a string, such as &amp;#39;Active&amp;#39;, &amp;#39;Running&amp;#39;, &amp;#39;Stopped&amp;#39;, etcetera.
+Returns the Execution State of the specified Solaris Zone as a string, such as &#39;Active&#39;, &#39;Running&#39;, &#39;Stopped&#39;, etcetera.
 
 # id of &lt;zone&gt; : integer
 
@@ -44,7 +44,7 @@ Returns the inherited package directories of the specified Solaris Zone (if any 
 
 # init process of &lt;zone&gt; : process
 
-Returns the init process of the specified Solaris Zone. An attempt to get the init process of an inactive zone will result in &amp;#39;Singular expression refers to nonexistent object&amp;#39;. See the Solaris documentation for more information.
+Returns the init process of the specified Solaris Zone. An attempt to get the init process of an inactive zone will result in &#39;Singular expression refers to nonexistent object&#39;. See the Solaris documentation for more information.
 
 # name of &lt;zone&gt; : string
 
@@ -64,7 +64,7 @@ Returns the path of the given Solaris Zone as a string.
 
 # physical memory cap of &lt;zone&gt; : integer
 
-Returns the physical memory cap of the specified Solaris Zone (if one exists). An attempt to get the physical memory cap of an zone when none exists will result in &amp;#39;Singular expression refers to nonexistent object&amp;#39;.  See the Solaris documentation for more information.
+Returns the physical memory cap of the specified Solaris Zone (if one exists). An attempt to get the physical memory cap of an zone when none exists will result in &#39;Singular expression refers to nonexistent object&#39;.  See the Solaris documentation for more information.
 
 # scheduling class of &lt;zone&gt; : string
 

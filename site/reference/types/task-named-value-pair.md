@@ -1,6 +1,6 @@
 # type: task named value pair
 
-The &amp;lt;task named value pair&amp;gt; inspectors return name-value pairs associated with various aspects of a scheduled task.
+The &lt;task named value pair&lt; inspectors return name-value pairs associated with various aspects of a scheduled task.
 
 # name of &lt;task named value pair&gt; : string
 

@@ -1,6 +1,6 @@
 # type: task folder
 
-The &amp;lt;task folder&amp;gt; objects provide the methods that are used to retrieve tasks from the folder, as well as from its subfolders. Task folders are specified by name, path and include scheduled tasks.
+The &lt;task folder&lt; objects provide the methods that are used to retrieve tasks from the folder, as well as from its subfolders. Task folders are specified by name, path and include scheduled tasks.
 
 # descendant of &lt;task folder&gt; : scheduled task
 
@@ -20,7 +20,7 @@ Returns the named scheduled task in the specified task folder.
 
 # scheduled task of &lt;task folder&gt; : scheduled task
 
-Returns a list of the scheduled tasks of the specified task folder.Example: scheduled tasks of task folder &amp;quot;\&amp;quot; - Returns the 2.0 interface list of scheduled tasks from the specified folder.
+Returns a list of the scheduled tasks of the specified task folder.Example: scheduled tasks of task folder "\" - Returns the 2.0 interface list of scheduled tasks from the specified folder.
 
 # security descriptor of &lt;task folder&gt; : security descriptor
 

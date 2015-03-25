@@ -8,7 +8,7 @@ Returns the metabase identifier of the specified value.
 
 # inherit attribute of &lt;metabase value&gt; : boolean
 
-Returns `True` if the specified metabase value has the inherit attribute set.Example: inherit attributes of values of key &amp;quot;/Schema&amp;quot; of metabase - Returns a boolean True or False depending on the inherit attributes of each sub-key in the specified key of the metabase.
+Returns `True` if the specified metabase value has the inherit attribute set.Example: inherit attributes of values of key "/Schema" of metabase - Returns a boolean True or False depending on the inherit attributes of each sub-key in the specified key of the metabase.
 
 # insert path attribute of &lt;metabase value&gt; : boolean
 
@@ -32,7 +32,7 @@ Returns the user type of the specified metabase value.
 
 # volatile attribute of &lt;metabase value&gt; : boolean
 
-Returns `True` if the specified metabase value has the volatile attribute set.Example: volatile attributes of values of key &amp;quot;/LM&amp;quot; of metabase - Returns a boolean True or False depending on the volatile attributes of each sub-key in the specified key of the metabase.
+Returns `True` if the specified metabase value has the volatile attribute set.Example: volatile attributes of values of key "/LM" of metabase - Returns a boolean True or False depending on the volatile attributes of each sub-key in the specified key of the metabase.
 
 # &lt;metabase value&gt; as integer : integer
 

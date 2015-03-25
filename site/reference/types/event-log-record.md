@@ -1,6 +1,6 @@
 # type: event log record
 
-The &amp;lt;event log record&amp;gt; inspectors return individual records from the Windows Event logs, which record information about operating system events.
+The &lt;event log record&lt; inspectors return individual records from the Windows Event logs, which record information about operating system events.
 
 # category of &lt;event log record&gt; : integer
 
@@ -16,7 +16,7 @@ Returns a human-readable description of the specified event log record.
 
 # event id of &lt;event log record&gt; : integer
 
-Returns an integer corresponding to the ID of the specified record in the Client computer&amp;#39;s event log.
+Returns an integer corresponding to the ID of the specified record in the Client computer&#39;s event log.
 
 # event type of &lt;event log record&gt; : event log event type
 

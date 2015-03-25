@@ -8,7 +8,7 @@ Returns a list of binary operators that return the specified type.
 
 # cast from of &lt;type&gt; : cast
 
-Returns the casts that can be created from the specified &amp;lt;type&amp;gt;.
+Returns the casts that can be created from the specified &lt;type&lt;.
 
 # cast returning &lt;type&gt; : cast
 
@@ -32,11 +32,11 @@ Returns the inspector property of the specified type. Typically there is more th
 
 # property returning &lt;type&gt; : property
 
-Produces a list of the inspector properties that return the specified &amp;lt;type&amp;gt;.
+Produces a list of the inspector properties that return the specified &lt;type&lt;.
 
 # property returning &lt;type&gt; of &lt;type&gt; : property
 
-Returns inspectors of the form &amp;lt;type&amp;gt; of &amp;lt;type&amp;gt;. Typically there is more than one property, so this is often used in the plural.
+Returns inspectors of the form &lt;type&lt; of &lt;type&lt;. Typically there is more than one property, so this is often used in the plural.
 
 # size of &lt;type&gt; : integer
 

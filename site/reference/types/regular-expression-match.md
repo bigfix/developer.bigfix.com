@@ -1,10 +1,10 @@
 # type: regular expression match
 
-The &amp;lt;regular expression match&amp;gt; inspectors let you match regular expressions (or regexes) in relevance statements. They use the boost library implementation of the &amp;#39;POSIX-Extended&amp;#39; regular expression syntax, as documented at Wikipedia using the search term &amp;quot;posix-extended regex&amp;quot;.
+The &lt;regular expression match&lt; inspectors let you match regular expressions (or regexes) in relevance statements. They use the boost library implementation of the &#39;POSIX-Extended&#39; regular expression syntax, as documented at Wikipedia using the search term "posix-extended regex".
 
 # parenthesized part &lt;integer&gt; of &lt;regular expression match&gt; : substring
 
-Returns the nth parenthetical (given by &amp;lt;integer&amp;gt;) in the specified regular expression match.
+Returns the nth parenthetical (given by &lt;integer&lt;) in the specified regular expression match.
 
 # parenthesized part of &lt;regular expression match&gt; : substring
 

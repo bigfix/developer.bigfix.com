@@ -12,7 +12,7 @@ No documentation exists.
 
 # name of &lt;audit policy subcategory&gt; : string
 
-Returns the name of the specified audit policy subcategory.Example: names of subcategories of category whose (name of it is &amp;quot;System&amp;quot;) of audit policy - Returns the names of the subcategories of the &amp;#39;System&amp;#39; audit policy category. These include Security State Change, Security System Extension, System Integrity, Ipsec Driver and Other System Events.
+Returns the name of the specified audit policy subcategory.Example: names of subcategories of category whose (name of it is "System") of audit policy - Returns the names of the subcategories of the &#39;System&#39; audit policy category. These include Security State Change, Security System Extension, System Integrity, Ipsec Driver and Other System Events.
 
 # per user policy &lt;security account&gt; of &lt;audit policy subcategory&gt; : audit policy information
 

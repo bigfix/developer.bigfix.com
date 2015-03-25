@@ -1,6 +1,6 @@
 # type: firewall policy
 
-The &amp;lt;firewall policy&amp;gt; inspectors provide access to the local, current, domain and standard firewall policies. These properties correspond to the INetFwPolicy interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &amp;#39;Windows Firewall API&amp;#39; at the msdn site (http://msdn.microsoft.com/library/).
+The &lt;firewall policy&lt; inspectors provide access to the local, current, domain and standard firewall policies. These properties correspond to the INetFwPolicy interface in the Windows Firewall API. The Windows Firewall is supported on Windows XP SP2. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
 
 # current profile of &lt;firewall policy&gt; : firewall profile
 
@@ -8,7 +8,7 @@ Returns the profile currently in effect for the specified firewall policy.
 
 # domain profile of &lt;firewall policy&gt; : firewall profile
 
-Returns the domain profile of the specified firewall policy. The domain profile settings are used when a computer is connected to a network that contains the organization&amp;#39;s domain controllers. For more information, see the MSDN Library entry for NET_FW_PROFILE_TYPE2.
+Returns the domain profile of the specified firewall policy. The domain profile settings are used when a computer is connected to a network that contains the organization&#39;s domain controllers. For more information, see the MSDN Library entry for NET_FW_PROFILE_TYPE2.
 
 # private profile of &lt;firewall policy&gt; : firewall profile
 
@@ -24,4 +24,4 @@ Retrieves the public profile type from the specified firewall policy. For more i
 
 # standard profile of &lt;firewall policy&gt; : firewall profile
 
-Returns the standard profile of the specified firewall policy. The standard profile settings are used when a computer is connected to a network that does not contain the organization&amp;#39;s domain controllers. This inspector corresponds to the Microsoft Windows Firewall enumerated type NET_FW_PROFILE_STANDARD.
+Returns the standard profile of the specified firewall policy. The standard profile settings are used when a computer is connected to a network that does not contain the organization&#39;s domain controllers. This inspector corresponds to the Microsoft Windows Firewall enumerated type NET_FW_PROFILE_STANDARD.

@@ -1,6 +1,6 @@
 # type: short rpm package version record
 
-This is the same as an RPM package version record, except that the epoch (if one exists) is not shown when converted to a string. However, even though it isn&amp;#39;t displayed, the epoch is still retained. If you need to remove the epoch, use one of the &amp;#39;no epoch&amp;#39; inspectors.
+This is the same as an RPM package version record, except that the epoch (if one exists) is not shown when converted to a string. However, even though it isn&#39;t displayed, the epoch is still retained. If you need to remove the epoch, use one of the &#39;no epoch&#39; inspectors.
 
 # epoch of &lt;short rpm package version record&gt; : integer
 
@@ -16,11 +16,11 @@ Returns an ROM Package Version record from the short version of the same.
 
 # maximum of &lt;short rpm package version record&gt; : short rpm package version record
 
-Returns the maximum value from a list of &amp;lt;short rpm package version record&amp;gt; types.
+Returns the maximum value from a list of &lt;short rpm package version record&lt; types.
 
 # minimum of &lt;short rpm package version record&gt; : short rpm package version record
 
-Returns the minimum value from a list of &amp;lt;short rpm package version record&amp;gt; types.
+Returns the minimum value from a list of &lt;short rpm package version record&lt; types.
 
 # no epoch of &lt;short rpm package version record&gt; : short rpm package version record
 
@@ -40,7 +40,7 @@ Iterates throught the specified short RPM package version record objects.
 
 # unique value of &lt;short rpm package version record&gt; : short rpm package version record with multiplicity
 
-Returns the unique values of a given list of &amp;lt;short rpm package version record&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;short rpm package version record&lt; types, removing duplicates and sorting by value.
 
 # version of &lt;short rpm package version record&gt; : rpm package version
 

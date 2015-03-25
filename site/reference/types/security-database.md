@@ -1,6 +1,6 @@
 # type: security database
 
-The &amp;lt;security database&amp;gt; inspectors retrieve information from the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory. The Security database and its properties expose the NetUserModalsGet API, levels 0 and 3. For more information, see the NetUserModalsGet Function at the MSDN site: http://msdn.microsoft.com.
+The &lt;security database&lt; inspectors retrieve information from the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory. The Security database and its properties expose the NetUserModalsGet API, levels 0 and 3. For more information, see the NetUserModalsGet Function at the MSDN site: http://msdn.microsoft.com.
 
 # account lockout duration of &lt;security database&gt; : time interval
 
@@ -12,7 +12,7 @@ Returns a time interval corresponding to the maximum time that can elapse betwee
 
 # account lockout threshold of &lt;security database&gt; : integer
 
-Returns an integer corresponding to the number of invalid password authentications that can occur before an account is marked &amp;#39;locked out.&amp;#39; For more information, see the MSDN article on NetUserModalsGet.
+Returns an integer corresponding to the number of invalid password authentications that can occur before an account is marked &#39;locked out.&#39; For more information, see the MSDN article on NetUserModalsGet.
 
 # force logoff interval of &lt;security database&gt; : time interval
 

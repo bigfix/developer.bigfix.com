@@ -1,6 +1,6 @@
 # type: power history
 
-The &amp;lt;power history&amp;gt; inspectors retrieve information about your client computers and their displays within a tracking window (defaulting to 14 days). The information is in the form of a list of &amp;lt;interval, state&amp;gt; tuples for the system (computer) and &amp;lt;interval, state, monitor count&amp;gt; for monitors (attached displays). The first element of the list is the current state of the system. These inspectors allow you to track computer usage for power management applications. The event lists are fetched from the client whenever &amp;#39;power history&amp;#39; is referenced, and referencing &amp;#39;system intervals of &amp;lt;power history&amp;gt;&amp;#39; simply iterates over the built list of intervals. Avoid referencing &amp;#39;power history&amp;#39; multiple times in relevance as it rebuilds the list each time (increasing overhead) and may introduce inconsistency if the window slides between references.
+The &lt;power history&lt; inspectors retrieve information about your client computers and their displays within a tracking window (defaulting to 14 days). The information is in the form of a list of &lt;interval, state&lt; tuples for the system (computer) and &lt;interval, state, monitor count&lt; for monitors (attached displays). The first element of the list is the current state of the system. These inspectors allow you to track computer usage for power management applications. The event lists are fetched from the client whenever &#39;power history&#39; is referenced, and referencing &#39;system intervals of &lt;power history&lt;&#39; simply iterates over the built list of intervals. Avoid referencing &#39;power history&#39; multiple times in relevance as it rebuilds the list each time (increasing overhead) and may introduce inconsistency if the window slides between references.
 
 # current monitor interval of &lt;power history&gt; : monitor power interval
 
@@ -48,7 +48,7 @@ Returns the interval corresponding to the last standby state of the computer sys
 
 # monitor interval of &lt;power history&gt; : monitor power interval
 
-Returns the interval corresponding to the &amp;#39;monitor power&amp;#39; entry in the specified power history.
+Returns the interval corresponding to the &#39;monitor power&#39; entry in the specified power history.
 
 # system interval of &lt;power history&gt; : system power interval
 

@@ -1,6 +1,6 @@
 # type: bes unmanagedasset
 
-The &amp;lt;bes unmanagedasset&amp;gt; inspectors provide access to externally sourced data, such as that resulting from Nmap scans on client computers. The results, such as OS, Device Type, Network Card Vendor, and Open Ports, are uploaded to the BES Server for storage and analysis. These inspectors provide a way to monitor and report on mobile or hand-held devices that are not traditional BES Clients, but instead use &amp;quot;microAgents&amp;quot; to report their status. For more information on currently supported devices, consult the BigFix support pages.
+The &lt;bes unmanagedasset&lt; inspectors provide access to externally sourced data, such as that resulting from Nmap scans on client computers. The results, such as OS, Device Type, Network Card Vendor, and Open Ports, are uploaded to the BES Server for storage and analysis. These inspectors provide a way to monitor and report on mobile or hand-held devices that are not traditional BES Clients, but instead use "microAgents" to report their status. For more information on currently supported devices, consult the BigFix support pages.
 
 # client installed flag of &lt;bes unmanagedasset&gt; : boolean
 
@@ -16,19 +16,19 @@ Returns the unique numeric ID of the given unmanaged asset.
 
 # link &lt;html&gt; of &lt;bes unmanagedasset&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied HTML description that, when clicked, will open the specified unmanaged asset (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied HTML description that, when clicked, will open the specified unmanaged asset (in the BES Console) or its description page (in Web Reports).
 
 # link &lt;string&gt; of &lt;bes unmanagedasset&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag including the supplied descriptive string that, when clicked, will open the specified unmanaged asset (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag including the supplied descriptive string that, when clicked, will open the specified unmanaged asset (in the BES Console) or its description page (in Web Reports).
 
 # link href of &lt;bes unmanagedasset&gt; : string
 
-The link href property does not return an &amp;lt;A&amp;gt; tag but rather returns the value of the href attribute of the &amp;lt;A&amp;gt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &amp;lt;bes unmanaged asset&amp;gt;). Note that link href returns a normal string, not an HTML string.
+The link href property does not return an &lt;A&lt; tag but rather returns the value of the href attribute of the &lt;A&lt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &lt;bes unmanaged asset&lt;). Note that link href returns a normal string, not an HTML string.
 
 # link of &lt;bes unmanagedasset&gt; : html
 
-Returns an HTML string containing an &amp;lt;A&amp;gt; tag that when clicked will open the specified BES unmanaged asset document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&lt; tag that when clicked will open the specified BES unmanaged asset document (in the BES Console) or its description page (in Web Reports).
 
 # set of &lt;bes unmanagedasset&gt; : bes unmanagedasset set
 

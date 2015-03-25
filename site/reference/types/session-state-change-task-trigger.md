@@ -1,6 +1,6 @@
 # type: session state change task trigger
 
-The &amp;lt;session state change task trigger&amp;gt; inspectors return information about Windows actions that are triggered by changes in Terminal Server session states, such as switching users or logging in remotely.
+The &lt;session state change task trigger&lt; inspectors return information about Windows actions that are triggered by changes in Terminal Server session states, such as switching users or logging in remotely.
 
 # console connect of &lt;session state change task trigger&gt; : boolean
 

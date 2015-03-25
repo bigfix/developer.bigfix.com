@@ -1,6 +1,6 @@
 # type: fileset
 
-The &amp;lt;fileset&amp;gt; objects represent the set of files required for installing a software package.
+The &lt;fileset&lt; objects represent the set of files required for installing a software package.
 
 # description of &lt;fileset&gt; : string
 
@@ -8,7 +8,7 @@ Returns a description of a set of installation files.
 
 # lpp_name of &lt;fileset&gt; : string
 
-Licensed Program Product(s) of the fileset.Example: (lpp_name of it &amp;amp; &amp;quot; ver = &amp;quot; &amp;amp; version of it as string) of filesets matching &amp;quot;lpp_name = &amp;#39;bos.terminfo.rte&amp;#39;&amp;quot; of object repository - Returns a formatted list of filesets with the specified Licensed Program Product name.
+Licensed Program Product(s) of the fileset.Example: (lpp_name of it &amp; " ver = " &amp; version of it as string) of filesets matching "lpp_name = &#39;bos.terminfo.rte&#39;" of object repository - Returns a formatted list of filesets with the specified Licensed Program Product name.
 
 # product of &lt;fileset&gt; : product
 
@@ -24,7 +24,7 @@ Returns the share part of the specified fileset.
 
 # update of &lt;fileset&gt; : integer
 
-Returns the update number for the specified fileset.Example: updates of filesets matching &amp;quot;lpp_name = &amp;#39;bos.terminfo.rte&amp;#39;&amp;quot; of object repository - Returns the update numbers of the specified filesets.
+Returns the update number for the specified fileset.Example: updates of filesets matching "lpp_name = &#39;bos.terminfo.rte&#39;" of object repository - Returns the update numbers of the specified filesets.
 
 # usr part of &lt;fileset&gt; : fileset part
 

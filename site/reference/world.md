@@ -4,7 +4,7 @@ A priority class constant signifying above normal priority.
 
 # account with privileges : security account
 
-Returns a security account constant corresponding to an &amp;#39;account with privileges&amp;#39;.
+Returns a security account constant corresponding to an &#39;account with privileges&#39;.
 
 # action : action
 
@@ -48,7 +48,7 @@ This iterative inspector returns a list of all external, master, operator, and c
 
 # all computer count : historical computer count
 
-Returns a list of all &amp;lt;historical_computer_count&amp;gt; objects.
+Returns a list of all &lt;historical_computer_count&lt; objects.
 
 # all firewall scope : firewall scope
 
@@ -88,7 +88,7 @@ Returns a type corresponding to the Microsoft enumerated value NET_FW_IP_VERSION
 
 # apparent registration server time : time
 
-Shorthand for &amp;#39;now of registration server&amp;#39;. When the client registers with the server, the server passes its current time back to the client. The client starts a stop watch at that time. The apparent registration server time is the time the server passed back to the client, plus the elapsed time on the stop watch.
+Shorthand for &#39;now of registration server&#39;. When the client registers with the server, the server passes its current time back to the client. The client starts a stop watch at that time. The apparent registration server time is the time the server passed back to the client, plus the elapsed time on the stop watch.
 
 # apple extras folder : folder
 
@@ -160,7 +160,7 @@ This refers to a group including all users who have logged on through a batch qu
 
 # below normal priority : priority class
 
-Returns a priority class object with &amp;#39;below normal&amp;#39; priority. This applies to threads that can wait for other threads to complete before running. Threads with this status are in between idle and normal priority.
+Returns a priority class object with &#39;below normal&#39; priority. This applies to threads that can wait for other threads to complete before running. Threads with this status are in between idle and normal priority.
 
 # bes action : bes action
 
@@ -172,7 +172,7 @@ Returns the current list of BES Actions in the form of a set, which can be arith
 
 # bes action status constrained : bes action status
 
-Returns the BES Action status corresponding to constraints. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to constraints. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status disk free limited : bes action status
 
@@ -184,27 +184,27 @@ No documentation exists.
 
 # bes action status download failed : bes action status
 
-Returns the BES Action status corresponding to failed downloads. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to failed downloads. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status error : bes action status
 
-Returns the BES Action status corresponding to errors. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to errors. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status evaluating : bes action status
 
-Returns the BES Action status corresponding to evaluation. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to evaluation. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status expired : bes action status
 
-Returns the BES Action status corresponding to expiration. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to expiration. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status failed : bes action status
 
-Returns the BES Action status corresponding to failure. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to failure. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status fixed : bes action status
 
-Returns the BES Action status corresponding to successful fixes. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to successful fixes. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status hash mismatch : bes action status
 
@@ -212,79 +212,79 @@ No documentation exists.
 
 # bes action status invalid signature : bes action status
 
-Returns the BES Action status corresponding to invalid signatures. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to invalid signatures. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status irrelevant : bes action status
 
-Returns the BES Action status corresponding to irrelevance This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to irrelevance This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status locked : bes action status
 
-Returns the BES Action status corresponding to locking. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to locking. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status offers disabled : bes action status
 
-Returns the BES Action status corresponding to disabled offers. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to disabled offers. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status pending downloads : bes action status
 
-Returns the BES Action status corresponding to pending downloads. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending downloads. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status pending login : bes action status
 
-Returns the BES Action status corresponding to pending logins. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending logins. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status pending message : bes action status
 
-Returns the BES Action status corresponding to pending messages. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending messages. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status pending offer : bes action status
 
-Returns the BES Action status corresponding to pending offers. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending offers. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status pending restart : bes action status
 
-Returns the BES Action status corresponding to pending restarts. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending restarts. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status postponed : bes action status
 
-Returns the BES Action status corresponding to postponements. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to postponements. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status running : bes action status
 
-Returns the BES Action status corresponding to whether or not it is running. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to whether or not it is running. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status unreported : bes action status
 
-Returns a constant representing an action status of &amp;#39;not reported&amp;#39;.
+Returns a constant representing an action status of &#39;not reported&#39;.
 
 # bes action status user cancelled : bes action status
 
-Returns the BES Action status corresponding to user cancelation. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to user cancelation. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes action status waiting : bes action status
 
-Returns the BES Action status corresponding to waiting. This result can be cast to a &amp;lt;string&amp;gt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to waiting. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
 
 # bes analysis : bes fixlet
 
-This inspector iterates over all of the Analysis objects. This is equivalent to &amp;quot;bes fixlets whose ( analysis flag of it )&amp;quot;.
+This inspector iterates over all of the Analysis objects. This is equivalent to "bes fixlets whose ( analysis flag of it )".
 
 # bes analysis set : bes fixlet set
 
-This inspector returns all of the Analysis objects as a set. This is equivalent to &amp;quot;bes fixlets whose ( analysis flag of it )&amp;quot;.
+This inspector returns all of the Analysis objects as a set. This is equivalent to "bes fixlets whose ( analysis flag of it )".
 
 # bes baseline : bes fixlet
 
-This inspector iterates over all of the Baseline objects. This is equivalent to &amp;quot;bes fixlets whose ( baseline flag of it )&amp;quot;.
+This inspector iterates over all of the Baseline objects. This is equivalent to "bes fixlets whose ( baseline flag of it )".
 
 # bes baseline set : bes fixlet set
 
-This inspector returns all of the Baseline objects as a set. This is equivalent to &amp;quot;bes fixlets whose ( baseline flag of it )&amp;quot;.
+This inspector returns all of the Baseline objects as a set. This is equivalent to "bes fixlets whose ( baseline flag of it )".
 
 # bes brand : string
 
-As of version 7.2, the BES Console can be branded by third parties who want to use the engine to deliver specific content. This inspector returns a string that identifies any branding associated with the BES Console. The unbranded Console returns &amp;#39;bigfix&amp;#39;, but other third-party brands may result.
+As of version 7.2, the BES Console can be branded by third parties who want to use the engine to deliver specific content. This inspector returns a string that identifies any branding associated with the BES Console. The unbranded Console returns &#39;bigfix&#39;, but other third-party brands may result.
 
 # bes computer : bes computer
 
@@ -304,7 +304,7 @@ Returns the current list of BES computers in the form of a set, which can be ari
 
 # bes custom site : bes site
 
-Returns a list of all custom sites. Deprecated as of version 7.0; instead use &amp;quot;all bes sites whose (custom site flag of it)&amp;quot;.
+Returns a list of all custom sites. Deprecated as of version 7.0; instead use "all bes sites whose (custom site flag of it)".
 
 # bes deployment option : bes deployment option
 
@@ -348,7 +348,7 @@ No documentation exists.
 
 # bes license : license
 
-Synonym for &amp;#39;client license&amp;#39;.
+Synonym for &#39;client license&#39;.
 
 # bes property : bes property
 
@@ -372,11 +372,11 @@ Returns a list of all the BES sites.
 
 # bes task : bes fixlet
 
-This inspector returns all of the tasks objects. This is equivalent to &amp;quot;bes fixlets whose ( task flag of it )&amp;quot;.
+This inspector returns all of the tasks objects. This is equivalent to "bes fixlets whose ( task flag of it )".
 
 # bes task set : bes fixlet set
 
-This inspector returns all of the tasks objects as a set. This is equivalent to &amp;quot;bes fixlets whose ( task flag of it )&amp;quot;.
+This inspector returns all of the tasks objects as a set. This is equivalent to "bes fixlets whose ( task flag of it )".
 
 # bes unmanagedasset : bes unmanagedasset
 
@@ -424,7 +424,7 @@ Creates a task trigger type corresponding to a boot trigger, which starts a task
 
 # br : html
 
-Creates an HTML &amp;lt;br/&amp;gt; tag to output a line break.
+Creates an HTML &lt;br/&lt; tag to output a line break.
 
 # builtin administrators group : security account
 
@@ -436,7 +436,7 @@ This refers to a built-in group which, by default, has no members. Backup Operat
 
 # builtin guests group : security account
 
-This refers to a built-in group which, by default, only contains the Guest account. This group allows otherwise unauthorized users to log on with limited privileges to a computer&amp;#39;s built-in Guest account.
+This refers to a built-in group which, by default, only contains the Guest account. This group allows otherwise unauthorized users to log on with limited privileges to a computer&#39;s built-in Guest account.
 
 # builtin network configuration operators group : security account
 
@@ -488,7 +488,7 @@ Returns the client object corresponding to the BigFix application evaluating the
 
 # client cryptography : client_cryptography
 
-This inspector is similar to the core cryptography object except that it returns properties exclusive to the client (whereas &amp;lt;cryptography&amp;gt; is also available in the Console/Web Reports contexts).
+This inspector is similar to the core cryptography object except that it returns properties exclusive to the client (whereas &lt;cryptography&lt; is also available in the Console/Web Reports contexts).
 
 # client license : license
 
@@ -504,11 +504,11 @@ Returns the colorsync folder folder of the system domain
 
 # com handler task action type : task action type
 
-Returns a &amp;#39;task action type&amp;#39; corresponding to a task that activates a COM handler.
+Returns a &#39;task action type&#39; corresponding to a task that activates a COM handler.
 
 # component : component
 
-Is an iterated property. The MacOS supports software &amp;quot;components&amp;quot;, for example QuickTime codecs. This iterator can examine the components that are available.
+Is an iterated property. The MacOS supports software "components", for example QuickTime codecs. This iterator can examine the components that are available.
 
 # component folder : folder
 
@@ -600,11 +600,11 @@ No documentation exists.
 
 # creator group group : security account
 
-This refers to a placeholder in an inheritable access control entry (ACE). When the ACE is inherited, the system replaces the SID with the one from the primary group of the object&amp;#39;s current owner. The primary group is used only by the POSIX subsystem.
+This refers to a placeholder in an inheritable access control entry (ACE). When the ACE is inherited, the system replaces the SID with the one from the primary group of the object&#39;s current owner. The primary group is used only by the POSIX subsystem.
 
 # creator owner group : security account
 
-This refers to a placeholder in an inheritable access control entry (ACE). When the ACE is inherited, the system replaces this SID with the one from the object&amp;#39;s current owner.
+This refers to a placeholder in an inheritable access control entry (ACE). When the ACE is inherited, the system replaces this SID with the one from the object&#39;s current owner.
 
 # cryptography : cryptography
 
@@ -612,7 +612,7 @@ A global object that implements the FIPS 140-2 standard for secure signing and a
 
 # current analysis : bes fixlet
 
-This Client inspector is used to locate the site corresponding to the current analysis in order to look at certain related files.  This is helpful for SCM content that resides in Fixlet sites and can be copied to custom sites.  The value of &amp;#39;current analysis&amp;#39; will move with the copy. In the Client context, this inspector has global scope and returns a Fixlet.Note: When used in a session context, this inspector has a scope limited to the BES Fixlet.
+This Client inspector is used to locate the site corresponding to the current analysis in order to look at certain related files.  This is helpful for SCM content that resides in Fixlet sites and can be copied to custom sites.  The value of &#39;current analysis&#39; will move with the copy. In the Client context, this inspector has global scope and returns a Fixlet.Note: When used in a session context, this inspector has a scope limited to the BES Fixlet.
 
 # current analysis : fixlet
 
@@ -620,7 +620,7 @@ No documentation exists.
 
 # current bes server : bes server
 
-Returns a &amp;lt;bes server&amp;gt; object corresponding to the BES Server currently connected to the Console or Web Reports applications. The current bes server inspectors allow dashboards to access files hosted on the current BES Server.
+Returns a &lt;bes server&lt; object corresponding to the BES Server currently connected to the Console or Web Reports applications. The current bes server inspectors allow dashboards to access files hosted on the current BES Server.
 
 # current bes site : bes site
 
@@ -744,7 +744,7 @@ Returns the current user folder of the system domain
 
 # current wizard : bes wizard
 
-If this inspector is being evaluated in the context of a Wizard, then it returns the corresponding &amp;lt;bes wizard&amp;gt; object.
+If this inspector is being evaluated in the context of a Wizard, then it returns the corresponding &lt;bes wizard&lt; object.
 
 # current year : year
 
@@ -757,11 +757,11 @@ A: 2015
 
 # custom bes fixlet : bes fixlet
 
-This inspector iterates over all of the fixlet objects, only returning fixlets where &amp;quot;custom flag&amp;quot; is TRUE.
+This inspector iterates over all of the fixlet objects, only returning fixlets where "custom flag" is TRUE.
 
 # custom bes fixlet set : bes fixlet set
 
-This inspector iterates over all of the fixlet objects, only returning sets of fixlets where &amp;quot;custom flag&amp;quot; is TRUE.
+This inspector iterates over all of the fixlet objects, only returning sets of fixlets where "custom flag" is TRUE.
 
 # custom firewall scope : firewall scope
 
@@ -918,7 +918,7 @@ No documentation exists.
 
 # drive : filesystem
 
-Iterates through all valid drives on the system. Typically used to return a list of the drives (volumes, filesystems) on the client computer. On Windows computers, this returns a &amp;lt;drive&amp;gt; object.On *nix computers, this returns a &amp;lt;filesystem&amp;gt; object.Drives, volumes and filesystems are treated the same on the Macintosh and return a &amp;lt;volume&amp;gt; type.
+Iterates through all valid drives on the system. Typically used to return a list of the drives (volumes, filesystems) on the client computer. On Windows computers, this returns a &lt;drive&lt; object.On *nix computers, this returns a &lt;filesystem&lt; object.Drives, volumes and filesystems are treated the same on the Macintosh and return a &lt;volume&lt; type.
 
 # drive : volume
 
@@ -934,7 +934,7 @@ Returns a list of all Windows 32 system drivers.
 
 # email task action type : task action type
 
-Returns a &amp;#39;task action type&amp;#39; corresponding to a task that sends an email.
+Returns a &#39;task action type&#39; corresponding to a task that sends an email.
 
 # enabled control panel : enableable_file
 
@@ -970,7 +970,7 @@ This refers to a group including all users, even anonymous users and guests. Mem
 
 # exec task action type : task action type
 
-Returns a &amp;#39;task action type&amp;#39; corresponding to a task that runs a program.
+Returns a &#39;task action type&#39; corresponding to a task that runs a program.
 
 # extension : enableable_file
 
@@ -985,7 +985,7 @@ Returns the extensions folder of the system domain
 Returns the boolean `False`.
 
 {{#example}}
-Q: if false then &quot;What is going on?!&quot; else &quot;Looks false to me&quot;
+Q: if false then "What is going on?!" else "Looks false to me"
 A: Looks false to me
 {{/example}}
 
@@ -1003,7 +1003,7 @@ Returns the global service type for file and print sharing, corresponding to the
 
 # filesystem : filesystem
 
-Returns the volume corresponding to the filesystem. Typically used to return a list of the filesystems (drives, volumes) on the client computer. Drives, volumes and filesystems are treated the same on the Macintosh and return a &amp;lt;volume&amp;gt; type.
+Returns the volume corresponding to the filesystem. Typically used to return a list of the filesystems (drives, volumes) on the client computer. Drives, volumes and filesystems are treated the same on the Macintosh and return a &lt;volume&lt; type.
 
 # filesystem : volume
 
@@ -1071,7 +1071,7 @@ A: 106751991 days, 04:00:54.775807
 
 # grub config file : grub config file
 
-Returns the grub config file from the default location, either &amp;quot;/boot/grub/menu.lst&amp;quot; or &amp;quot;/boot/grub/grub.conf&amp;quot;.
+Returns the grub config file from the default location, either "/boot/grub/menu.lst" or "/boot/grub/grub.conf".
 
 # help folder : folder
 
@@ -1087,7 +1087,7 @@ Retrieves the set (iterated list) of hidden BES Actions.
 
 # high priority : priority class
 
-Returns a priority class object with &amp;#39;high&amp;#39; priority. These threads will steal processor time from other threads and should be used very carefully. Typically, they are used strictly for responding to time-critical events.
+Returns a priority class object with &#39;high&#39; priority. These threads will steal processor time from other threads and should be used very carefully. Typically, they are used strictly for responding to time-critical events.
 
 # host name : string
 
@@ -1163,7 +1163,7 @@ Returns a hertz object corresponding to 1 hertz.
 
 # idle priority : priority class
 
-Returns a priority class object with &amp;#39;idle&amp;#39; priority. Processes that monitor the Client, such as screen savers, typically use this priority to keep them from interrupting higher priority threads.
+Returns a priority class object with &#39;idle&#39; priority. Processes that monitor the Client, such as screen savers, typically use this priority to keep them from interrupting higher priority threads.
 
 # idle state : power state
 
@@ -1263,7 +1263,7 @@ Provides a comparison value for a firewall or other ip version inspector.
 
 # ipv4 routing table : ipv4 routing table
 
-Returns the ipv4 routing table. Use &amp;#39;routes of ipv4 routing table&amp;#39; or &amp;#39;all routes of ipv4 routing table&amp;#39; to get more information.
+Returns the ipv4 routing table. Use &#39;routes of ipv4 routing table&#39; or &#39;all routes of ipv4 routing table&#39; to get more information.
 
 # ipv4 routing table : routing table
 
@@ -1279,7 +1279,7 @@ No documentation exists.
 
 # iss download folder : folder
 
-The Macintosh download folder. This inspector was previously labeled &amp;quot;download,&amp;quot; which now refers to a world object that performs dynamic downloading.
+The Macintosh download folder. This inspector was previously labeled "download," which now refers to a world object that performs dynamic downloading.
 
 # january : month
 
@@ -1358,7 +1358,7 @@ Returns local MSSQL database objects.
 
 # local service group : security account
 
-Returns a security account constant corresponding to a &amp;#39;local service group&amp;#39;.
+Returns a security account constant corresponding to a &#39;local service group&#39;.
 
 # local subnet firewall scope : firewall scope
 
@@ -1402,7 +1402,7 @@ Returns zero or more users logged on to this computer. This inspector iterates t
 
 # logical processor count : integer
 
-Returns the number of logical processors available per physical processor. This can be interpreted as the number of hyperthreads that could be enabled on the machine. On a machine with 2 physical processors, each with 2 possible hyperthreads per processor, the &amp;#39;physical processor count&amp;#39; and the &amp;#39;logical processor count&amp;#39; would both return 2, while the &amp;#39;number of processors&amp;#39; would return 4, since there are a total of 4 logical processors available for work. With hyperthreading turned off, the &amp;#39;number of processors&amp;#39;, &amp;#39;logical processor count&amp;#39; and &amp;#39;physical processor count&amp;#39; would all be 2. Disabling one of those processors will then give &amp;#39;number of processors&amp;#39;=1, &amp;#39;logical processor count&amp;#39;=2, and &amp;#39;physical processor count&amp;#39;=1. If the number of processors / physical processor count != logical processor count, you can turn on hyperthreading.
+Returns the number of logical processors available per physical processor. This can be interpreted as the number of hyperthreads that could be enabled on the machine. On a machine with 2 physical processors, each with 2 possible hyperthreads per processor, the &#39;physical processor count&#39; and the &#39;logical processor count&#39; would both return 2, while the &#39;number of processors&#39; would return 4, since there are a total of 4 logical processors available for work. With hyperthreading turned off, the &#39;number of processors&#39;, &#39;logical processor count&#39; and &#39;physical processor count&#39; would all be 2. Disabling one of those processors will then give &#39;number of processors&#39;=1, &#39;logical processor count&#39;=2, and &#39;physical processor count&#39;=1. If the number of processors / physical processor count != logical processor count, you can turn on hyperthreading.
 
 # logical ram : integer
 
@@ -1418,7 +1418,7 @@ Creates a task trigger type corresponding to a logon trigger, which starts a tas
 
 # machine name : string
 
-Returns the machine name. The value is from a long enumeration of all Mac platforms. See the header file Gestalt.h or Apple&amp;#39;s web site.
+Returns the machine name. The value is from a long enumeration of all Mac platforms. See the header file Gestalt.h or Apple&#39;s web site.
 
 # machine type : integer
 
@@ -1434,7 +1434,7 @@ No documentation exists.
 
 # main gather service : service
 
-Returns a service object for the main gathering service, typically located on the main server.Note: On a Macintosh, returns &amp;lt;nothing&amp;gt;. Included for compatibility.
+Returns a service object for the main gathering service, typically located on the main server.Note: On a Macintosh, returns &lt;nothing&lt;. Included for compatibility.
 
 # main palm device : palm device
 
@@ -1590,7 +1590,7 @@ No documentation exists.
 
 # network service group : security account
 
-Returns a security account constant corresponding to a &amp;#39;network service group&amp;#39;.
+Returns a security account constant corresponding to a &#39;network service group&#39;.
 
 # network share : network share
 
@@ -1610,7 +1610,7 @@ Returns 12:00:00 as a time of day object.
 
 # normal priority : priority class
 
-Returns a priority class object with &amp;#39;normal&amp;#39; priority. This is the default priority class of a process.
+Returns a priority class object with &#39;normal&#39; priority. This is the default priority class of a process.
 
 # november : month
 
@@ -1646,7 +1646,7 @@ No documentation exists.
 
 # object repository : object_repository
 
-Returns the object repository. Use &amp;#39;filesets of object repository&amp;#39; or &amp;#39;products of object repository&amp;#39; for more information.
+Returns the object repository. Use &#39;filesets of object repository&#39; or &#39;products of object repository&#39; for more information.
 
 # october : month
 
@@ -1701,7 +1701,7 @@ No documentation exists.
 
 # pending license update : boolean
 
-Returns `True` if the license update is currently pending. This means that the license has been updated in the database, but has not yet been put into a masthead and pushed down to clients.  It is used by the license overview to tell you that you have an updated license, but your clients may still be in restricted mode because they aren&amp;#39;t aware of the new license parameters.
+Returns `True` if the license update is currently pending. This means that the license has been updated in the database, but has not yet been put into a masthead and pushed down to clients.  It is used by the license overview to tell you that you have an updated license, but your clients may still be in restricted mode because they aren&#39;t aware of the new license parameters.
 
 # pending login : boolean
 
@@ -1717,7 +1717,7 @@ This iterated inspector returns the names of currently pending restarts.
 
 # physical processor count : integer
 
-Returns the number of physical processors on the machine. Note that &amp;#39;number of processors&amp;#39; returns the number of logical processors. To determine the number of logical processors per physical processor, use &amp;#39;number of processors / physical processor count&amp;#39;.
+Returns the number of physical processors on the machine. Note that &#39;number of processors&#39; returns the number of logical processors. To determine the number of logical processors per physical processor, use &#39;number of processors / physical processor count&#39;.
 
 # physical ram : integer
 
@@ -1729,11 +1729,11 @@ A top-level object containing a list of all the installed packages, in the form 
 
 # plain bes fixlet : bes fixlet
 
-This inspector returns all of the plain fixlet objects. This is equivalent to &amp;quot;bes fixlets whose ( fixlet flag of it )&amp;quot;.
+This inspector returns all of the plain fixlet objects. This is equivalent to "bes fixlets whose ( fixlet flag of it )".
 
 # plain bes fixlet set : bes fixlet set
 
-This inspector returns all of the plain fixlet objects as a set. This is equivalent to &amp;quot;bes fixlets whose ( fixlet flag of it )&amp;quot;.
+This inspector returns all of the plain fixlet objects as a set. This is equivalent to "bes fixlets whose ( fixlet flag of it )".
 
 # power history : power history
 
@@ -1837,7 +1837,7 @@ Same as above.
 
 # realtime priority : priority class
 
-Returns a priority class object with &amp;#39;realtime&amp;#39; priority. These threads should be sparingly used, since they may interrupt user input and some disk operations. They are typically used for short, time-sensitive communication with low level hardware.
+Returns a priority class object with &#39;realtime&#39; priority. These threads should be sparingly used, since they may interrupt user input and some disk operations. They are typically used for short, time-sensitive communication with low level hardware.
 
 # receipts folder : folder
 
@@ -1853,7 +1853,7 @@ No documentation exists.
 
 # regapp : filesystem object
 
-This inspector returns the applications available to the Client. On Windows systems, this inspector returns all the application objects defined under the &amp;#39;App Paths&amp;#39; key of the registry. On a Macintosh, it recursively finds all applications (bundles) and executables under the /Applications directory, as well as all of those under the Applications directories of all local users of the machine. It returns a &amp;lt;filesystem object&amp;gt;. This inspector is the same as application, and is included for compatibility with Windows.
+This inspector returns the applications available to the Client. On Windows systems, this inspector returns all the application objects defined under the &#39;App Paths&#39; key of the registry. On a Macintosh, it recursively finds all applications (bundles) and executables under the /Applications directory, as well as all of those under the Applications directories of all local users of the machine. It returns a &lt;filesystem object&lt;. This inspector is the same as application, and is included for compatibility with Windows.
 
 # registration server : registration server
 
@@ -1865,7 +1865,7 @@ Creates a task trigger type corresponding to a registration trigger, which start
 
 # registry : dummy type
 
-Returns a registry object. Note: On a Macintosh, this returns a &amp;lt;dummy type&amp;gt; object.
+Returns a registry object. Note: On a Macintosh, this returns a &lt;dummy type&lt; object.
 
 # registry : registry
 
@@ -1877,7 +1877,7 @@ No documentation exists.
 
 # relay service : service
 
-Returns a service object for the relay component of BES. Note: On a Macintosh, this returns &amp;lt;nothing&amp;gt;.
+Returns a service object for the relay component of BES. Note: On a Macintosh, this returns &lt;nothing&lt;.
 
 # relevant &lt;( bes computer, bes fixlet )&gt; : boolean
 
@@ -1897,15 +1897,15 @@ Refers to the group of users who log on using an RDP connection.
 
 # result &lt;( bes action, bes computer )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &amp;lt;bes action&amp;gt; of &amp;lt;bes computer&amp;gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&lt; of &lt;bes computer&lt;.
 
 # result &lt;( bes computer, bes action )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &amp;lt;bes action&amp;gt; of &amp;lt;bes computer&amp;gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&lt; of &lt;bes computer&lt;.
 
 # result &lt;( bes computer, bes fixlet )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &amp;lt;bes fixlet&amp;gt; of &amp;lt;bes computer&amp;gt;.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&lt; of &lt;bes computer&lt;.
 
 # result &lt;( bes computer, bes property )&gt; : bes property result
 
@@ -1913,7 +1913,7 @@ Returns the result of the specified BES property and computer.
 
 # result &lt;( bes fixlet, bes computer )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &amp;lt;bes fixlet&amp;gt; of &amp;lt;bes computer&amp;gt;.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&lt; of &lt;bes computer&lt;.
 
 # result &lt;( bes property, bes computer )&gt; : bes property result
 
@@ -1925,7 +1925,7 @@ Returns the version of the system ROM.
 
 # root folder : folder
 
-Returns the folder corresponding to &amp;#39;/&amp;#39;.
+Returns the folder corresponding to &#39;/&#39;.
 
 # root server : root server
 
@@ -1997,7 +1997,7 @@ Returns a security event log, which records global or local group policy events.
 
 # selected server : selected server
 
-The BES Server or BES Relay to which the agent reports. Returned as the &amp;quot;selected server&amp;quot; type.
+The BES Server or BES Relay to which the agent reports. Returned as the "selected server" type.
 
 # september : month
 
@@ -2029,7 +2029,7 @@ This inspector returns strings containing the  variables shared across console u
 
 # show message task action type : task action type
 
-Returns a &amp;#39;task action type&amp;#39; corresponding to a task that creates a message that will pop up on the desktop.
+Returns a &#39;task action type&#39; corresponding to a task that creates a message that will pop up on the desktop.
 
 # shutdown item : enableable_file
 
@@ -2049,7 +2049,7 @@ Returns a basic smbios object, a function formerly served by the Desktop Managem
 
 # smf : smf
 
-Returns the smf object. Use &amp;#39;services of smf&amp;#39; for more information.
+Returns the smf object. Use &#39;services of smf&#39; for more information.
 
 # software depot : software_depot
 
@@ -2105,11 +2105,11 @@ Returns a system event log, which records OS or component events, such as the fa
 
 # system folder : folder
 
-Windows systems, returns the 32 bit &amp;quot;System32&amp;quot; folder. eg: C:\Windows\System32 or C:\Windows\SysWow64. Platforms other than Windows this is a synonym for &amp;lt;root folder&amp;gt;
+Windows systems, returns the 32 bit "System32" folder. eg: C:\Windows\System32 or C:\Windows\SysWow64. Platforms other than Windows this is a synonym for &lt;root folder&lt;
 
 # system group : security account
 
-Returns a security account constant corresponding to a &amp;#39;system group&amp;#39;.
+Returns a security account constant corresponding to a &#39;system group&#39;.
 
 # system ini device file : file
 
@@ -2133,7 +2133,7 @@ Returns the version of MacOS.
 
 # system wow64 folder : folder
 
-Returns a filesystem object corresponding to a &amp;quot;Windows On Windows 64&amp;quot; system folder, which does not exist on 32-bit Windows. You can find out more about the WOW64 system folder at the Microsoft site: http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sysinfo/base/getsystemwow64directory.asp.
+Returns a filesystem object corresponding to a "Windows On Windows 64" system folder, which does not exist on 32-bit Windows. You can find out more about the WOW64 system folder at the Microsoft site: http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sysinfo/base/getsystemwow64directory.asp.
 
 # system x32 folder : folder
 
@@ -2221,7 +2221,7 @@ Returns objects for all users of the computer, logged in or not.
 
 # user domain : domain
 
-Returns a user domain object.Note: The &amp;quot;user domain&amp;quot; refers to the root user, not the currently logged in user.
+Returns a user domain object.Note: The "user domain" refers to the root user, not the currently logged in user.
 
 # user language : string
 
@@ -2285,11 +2285,11 @@ Creates a task trigger type corresponding to a weekly trigger, which starts a ta
 
 # win32 running service : service
 
-A synonym for &amp;#39;running service&amp;#39;. This can be any running service from atapi to the BESRelay.
+A synonym for &#39;running service&#39;. This can be any running service from atapi to the BESRelay.
 
 # win32 service : service
 
-A synonym for &amp;#39;service&amp;#39;. This can be anything from atapi to the BESRelay.
+A synonym for &#39;service&#39;. This can be anything from atapi to the BESRelay.
 
 # windows folder : folder
 
@@ -2301,7 +2301,7 @@ No documentation exists.
 
 # wmi : wmi
 
-Returns the wmi object corresponding to the &amp;quot;root\cimv2&amp;quot; namespace.
+Returns the wmi object corresponding to the "root\cimv2" namespace.
 
 # x32 registry : registry
 
@@ -2309,11 +2309,11 @@ Returns a 32-bit registry object. This inspector is equivalent to the ordinary r
 
 # x64 registry : registry
 
-Returns a 64-bit registry object. This inspector is for 64-bit computers only; there is no 64-bit registry on a 32-bit computer. Note that &amp;quot;x64 registry&amp;quot; and &amp;quot;native registry&amp;quot; on 64-bit machines do NOT provide the same view as the 64-bit version of regedit (the &amp;quot;physical&amp;quot; view). If you try to access the physical location of the 32-bit view keys using a 64-bit view, it will be mapped back to the equivalent location in the 64-bit view.
+Returns a 64-bit registry object. This inspector is for 64-bit computers only; there is no 64-bit registry on a 32-bit computer. Note that "x64 registry" and "native registry" on 64-bit machines do NOT provide the same view as the 64-bit version of regedit (the "physical" view). If you try to access the physical location of the 32-bit view keys using a 64-bit view, it will be mapped back to the equivalent location in the 64-bit view.
 
 # year : number of months
 
-Returns the specified number of years as a &amp;lt;number of months&amp;gt; type.
+Returns the specified number of years as a &lt;number of months&lt; type.
 
 # zone : zone
 

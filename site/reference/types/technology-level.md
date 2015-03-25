@@ -4,7 +4,7 @@ No documentation exists.
 
 # abstract of &lt;technology level&gt; : string
 
-Returns a string in the format &amp;quot;AIX base-tl Update&amp;quot;.
+Returns a string in the format "AIX base-tl Update".
 
 # extrema of &lt;technology level&gt; : ( technology level, technology level )
 
@@ -36,7 +36,7 @@ Returns the lowest technology level.
 
 # name of &lt;technology level&gt; : string
 
-Returns a string that uniquely identifies a technolgoy level in the format &amp;quot;base-tl&amp;quot;. For example, AIX 5.3 at technology level 6 would be &amp;quot;5300-06&amp;quot;.
+Returns a string that uniquely identifies a technolgoy level in the format "base-tl". For example, AIX 5.3 at technology level 6 would be "5300-06".
 
 # uninstalled fileset version requirement of &lt;technology level&gt; : fileset version requirement
 
@@ -48,7 +48,7 @@ Returns a list of all unique technology levels along with their respective count
 
 # &lt;technology level&gt; as string : string
 
-Returns a string that uniquely identifies a technolgoy level in the format &amp;quot;base-tl&amp;quot;. For example, AIX 5.3 at technology level 6 would be &amp;quot;5300-06&amp;quot;.
+Returns a string that uniquely identifies a technolgoy level in the format "base-tl". For example, AIX 5.3 at technology level 6 would be "5300-06".
 
 # &lt;technology level&gt; &lt; &lt;technology level&gt; : boolean
 

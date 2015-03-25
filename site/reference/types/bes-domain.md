@@ -36,7 +36,7 @@ Returns all the custom sites (as a set) that have been created in the specified 
 
 # display name of &lt;bes domain&gt; : string
 
-Returns the name of the specified BES Domain, as translated into the target language. If you want to get the Japanese name of the specified domain, use this inspector instead of the &amp;#39;name&amp;#39; inspector.
+Returns the name of the specified BES Domain, as translated into the target language. If you want to get the Japanese name of the specified domain, use this inspector instead of the &#39;name&#39; inspector.
 
 # filter of &lt;bes domain&gt; : bes filter
 
@@ -76,7 +76,7 @@ Returns a set composed of the specified list of BES domains.
 
 # unique value of &lt;bes domain&gt; : bes domain with multiplicity
 
-Returns the unique values of a given list of &amp;lt;bes domain&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes domain&lt; types, removing duplicates and sorting by value.
 
 # &lt;bes domain&gt; = &lt;bes domain&gt; : boolean
 

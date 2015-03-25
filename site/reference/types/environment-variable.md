@@ -12,4 +12,4 @@ Returns the value of the variable.
 
 # &lt;environment variable&gt; as string : string
 
-Casting the variable as a string yields a string containing the variable name and the value of the variable separated by &amp;#39; = &amp;#39;.
+Casting the variable as a string yields a string containing the variable name and the value of the variable separated by &#39; = &#39;.

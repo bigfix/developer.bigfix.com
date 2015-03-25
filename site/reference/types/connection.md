@@ -1,6 +1,6 @@
 # type: connection
 
-The &amp;lt;connection&amp;gt; objects are used to query your connections. These are all properties of the Internet Connection Firewall, as returned in the NETCON_PROPERTIES structure.
+The &lt;connection&lt; objects are used to query your connections. These are all properties of the Internet Connection Firewall, as returned in the NETCON_PROPERTIES structure.
 
 # device name of &lt;connection&gt; : string
 

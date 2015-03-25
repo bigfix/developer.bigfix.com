@@ -1,6 +1,6 @@
 # type: bes fixlet field value
 
-The &amp;lt;bes fixlet field value&amp;gt; inspectors provide access to the values of informational fields that are included with some fixlets and Tasks. For more Information, see the BES Fixlet field inspectors.
+The &lt;bes fixlet field value&lt; inspectors provide access to the values of informational fields that are included with some fixlets and Tasks. For more Information, see the BES Fixlet field inspectors.
 
 # display value of &lt;bes fixlet field value&gt; : string
 

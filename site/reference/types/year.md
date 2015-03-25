@@ -4,7 +4,7 @@ The `year` type represents a calendar year.
 
 # extrema of &lt;year&gt; : ( year, year )
 
-Returns the minimum and maximum extreme values of the given list of &amp;lt;year&amp;gt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;year&lt; types.
 
 # leap of &lt;year&gt; : boolean
 
@@ -26,15 +26,15 @@ A: 366 days
 
 # maximum of &lt;year&gt; : year
 
-Returns the maximum value from a list of &amp;lt;year&amp;gt; types.
+Returns the maximum value from a list of &lt;year&lt; types.
 
 # minimum of &lt;year&gt; : year
 
-Returns the minimum value from a list of &amp;lt;year&amp;gt; types.
+Returns the minimum value from a list of &lt;year&lt; types.
 
 # unique value of &lt;year&gt; : year with multiplicity
 
-Returns the unique values of a given list of &amp;lt;year&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;year&lt; types, removing duplicates and sorting by value.
 
 # &lt;year&gt; as integer : integer
 

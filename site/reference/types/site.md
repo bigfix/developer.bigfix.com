@@ -1,6 +1,6 @@
 # type: site
 
-A &amp;lt;site&amp;gt; object is provided to access properties of Fixlet sites.
+A &lt;site&lt; object is provided to access properties of Fixlet sites.
 
 # client folder of &lt;site&gt; : folder
 
@@ -64,7 +64,7 @@ Returns one or more settings from the site settings.
 
 # site tag of &lt;site&gt; : string
 
-Returns the last component of the specified site&amp;#39;s url, eg. &amp;#39;actionsite&amp;#39;, &amp;#39;enteprisesecurity&amp;#39;, etcetera.
+Returns the last component of the specified site&#39;s url, eg. &#39;actionsite&#39;, &#39;enteprisesecurity&#39;, etcetera.
 
 # site version list of &lt;site&gt; : site version list
 

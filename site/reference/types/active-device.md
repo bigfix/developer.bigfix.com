@@ -1,6 +1,6 @@
 # type: active device
 
-On Windows NT systems (including XP and 2K), the &amp;lt;active device&amp;gt; inspectors returns a set of objects corresponding to the active devices on the machine, for example: modems, graphics cards, printers, and more.
+On Windows NT systems (including XP and 2K), the &lt;active device&lt; inspectors returns a set of objects corresponding to the active devices on the machine, for example: modems, graphics cards, printers, and more.
 
 # class of &lt;active device&gt; : string
 
@@ -12,7 +12,7 @@ Returns the description of the active device provided.
 
 # driver key of &lt;active device&gt; : registry key
 
-The key identified by adding the value of &amp;#39;driver key value name of active device&amp;#39; to HKLM\System\CurrentControlSet\Control\Class\.
+The key identified by adding the value of &#39;driver key value name of active device&#39; to HKLM\System\CurrentControlSet\Control\Class\.
 
 # driver key value name of &lt;active device&gt; : string
 

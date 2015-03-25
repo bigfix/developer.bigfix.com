@@ -32,7 +32,7 @@ Returns a boolean specifying if the route is going through a gateway.
 
 # gateway of &lt;ipv4 route&gt; : ipv4 address
 
-Returns the ipv4 address of the route&amp;#39;s gateway if the gateway flag is set, otherwise &amp;quot;0.0.0.0&amp;quot;.
+Returns the ipv4 address of the route&#39;s gateway if the gateway flag is set, otherwise "0.0.0.0".
 
 # host flag of &lt;ipv4 route&gt; : boolean
 
@@ -56,7 +56,7 @@ Returns a boolean specifying if the route is the loopback route.
 
 # mask of &lt;ipv4 route&gt; : ipv4 address
 
-Returns an ipv4 address containing the netmask of the route in the format &amp;quot;255.255.255.0&amp;quot;.
+Returns an ipv4 address containing the netmask of the route in the format "255.255.255.0".
 
 # metric of &lt;ipv4 route&gt; : integer
 

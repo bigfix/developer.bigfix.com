@@ -7,7 +7,7 @@ This is an [IPv4](http://en.wikipedia.org/wiki/IPv4) adddress. IPv4 addresses ar
 Returns the minimum and maximum from a list of addresses.
 
 {{#example}}
-Q: extrema of ipv4 addresses (&quot;24.22.64.0&quot;; &quot;192.168.56.3&quot;; &quot;9.22.100.0&quot;)
+Q: extrema of ipv4 addresses ("24.22.64.0"; "192.168.56.3"; "9.22.100.0")
 A: 9.22.100.0, 192.168.56.3
 {{/example}}
 
@@ -16,7 +16,7 @@ A: 9.22.100.0, 192.168.56.3
 Returns the maximum value from a list of addresses.
 
 {{#example}}
-Q: maximum of ipv4 addresses (&quot;24.22.64.0&quot;; &quot;192.168.56.3&quot;; &quot;9.22.100.0&quot;)
+Q: maximum of ipv4 addresses ("24.22.64.0"; "192.168.56.3"; "9.22.100.0")
 A: 192.168.56.3
 {{/example}}
 
@@ -25,7 +25,7 @@ A: 192.168.56.3
 Returns the minimum value from a list of addresses.
 
 {{#example}}
-Q: minimum of ipv4 addresses (&quot;24.22.64.0&quot;; &quot;192.168.56.3&quot;; &quot;9.22.100.0&quot;)
+Q: minimum of ipv4 addresses ("24.22.64.0"; "192.168.56.3"; "9.22.100.0")
 A: 9.22.100.0
 {{/example}}
 
@@ -34,7 +34,7 @@ A: 9.22.100.0
 Returns the unique values from a list of addresses.
 
 {{#example}}
-Q: unique values of ipv4 addresses (&quot;192.168.56.3&quot;; &quot;9.22.100.0&quot;; &quot;9.22.100.0&quot;)
+Q: unique values of ipv4 addresses ("192.168.56.3"; "9.22.100.0"; "9.22.100.0")
 A: 9.22.100.0
 A: 192.168.56.3
 {{/example}}
@@ -44,7 +44,7 @@ A: 192.168.56.3
 Converts an IPv4 address into the more inclusive ipv4or6 type.
 
 {{#example}}
-Q: ipv4 address &quot;192.168.56.3&quot; as ipv4or6 address
+Q: ipv4 address "192.168.56.3" as ipv4or6 address
 A: 0:0:0:0:0:ffff:c0a8:3803
 {{/example}}
 
@@ -53,7 +53,7 @@ A: 0:0:0:0:0:ffff:c0a8:3803
 Returns the specified IPv4 address embedded in a IPv6 address as defined by [RFC 4291 section 2.5.5](https://tools.ietf.org/html/rfc4291#section-2.5.5). In this scheme the lowest 32 bits of the IPv6 address contain the IPv4 address, the next higher 16 bits are all `1` and the remaining bits are all `0`.
 
 {{#example}}
-Q: ipv4 address &quot;192.168.56.3&quot; as ipv6 address
+Q: ipv4 address "192.168.56.3" as ipv6 address
 A: 0:0:0:0:0:ffff:c0a8:3803
 {{/example}}
 
@@ -62,7 +62,7 @@ A: 0:0:0:0:0:ffff:c0a8:3803
 Converts the ipv4 address to a string.
 
 {{#example}}
-Q: ipv4 address &quot;192.168.56.3&quot; as string
+Q: ipv4 address "192.168.56.3" as string
 A: 192.168.56.3
 {{/example}}
 
@@ -71,7 +71,7 @@ A: 192.168.56.3
 Compare the two addresses.
 
 {{#example}}
-Q: ipv4 address &quot;192.168.56.3&quot; &lt; ipv4 address &quot;200.10.0.1&quot;
+Q: ipv4 address "192.168.56.3" &lt; ipv4 address "200.10.0.1"
 A: True
 {{/example}}
 
@@ -80,7 +80,7 @@ A: True
 Compare the two addresses.
 
 {{#example}}
-Q: ipv4 address &quot;192.168.56.3&quot; &lt;= ipv4 address &quot;192.168.56.3&quot;
+Q: ipv4 address "192.168.56.3" &lt;= ipv4 address "192.168.56.3"
 A: True
 {{/example}}
 
@@ -89,6 +89,6 @@ A: True
 Compare the two addresses.
 
 {{#example}}
-Q: ipv4 address &quot;192.168.56.3&quot; = ipv4 address &quot;192.168.56.3&quot;
+Q: ipv4 address "192.168.56.3" = ipv4 address "192.168.56.3"
 A: True
 {{/example}}

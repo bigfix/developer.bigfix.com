@@ -8,7 +8,7 @@ Returns the bin in the specified statistical range which brackets the given time
 
 # bin of &lt;statistic range&gt; : statistical bin
 
-Returns a list of the individual bins in the specified range. Primarily useful after downsampling (see total &amp;lt;time interval&amp;gt; of &amp;lt;statistic range&amp;gt;).
+Returns a list of the individual bins in the specified range. Primarily useful after downsampling (see total &lt;time interval&lt; of &lt;statistic range&lt;).
 
 # end of &lt;statistic range&gt; : time
 

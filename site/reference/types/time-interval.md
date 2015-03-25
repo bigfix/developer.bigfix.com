@@ -8,7 +8,7 @@ Returns positive value of the time interval.
 
 # extrema of &lt;time interval&gt; : ( time interval, time interval )
 
-Returns the minimum and maximum extreme values of the given list of &amp;lt;time interval&amp;gt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;time interval&lt; types.
 
 # maximum of &lt;time interval&gt; : time interval
 
@@ -24,11 +24,11 @@ Returns the sum of the supplied time intervals.
 
 # unique value of &lt;time interval&gt; : time interval with multiplicity
 
-Returns the unique values of a given list of &amp;lt;time interval&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time interval&lt; types, removing duplicates and sorting by value.
 
 # &lt;time interval&gt; as string : string
 
-Returns a string formatted as ddd days, HH:MM:SS.mmmmmmFor example, millisecond as string = &amp;quot; 00:00:00.001&amp;quot;.
+Returns a string formatted as ddd days, HH:MM:SS.mmmmmmFor example, millisecond as string = " 00:00:00.001".
 
 # &lt;time interval&gt; &lt; &lt;time interval&gt; : boolean
 

@@ -16,7 +16,7 @@ Returns the length of the smbios structure as defined in the SMBIOS specificatio
 
 # name of &lt;smbios structure&gt; : string
 
-Returns a string containing the name of the specified smbios structure as derived from the &amp;#39;Type&amp;#39; entry in the SMBIOS specification. To create a valid Relevance keyword, some rules are applied to the name: Spaces are replaced with underscoresParenthesized sections are deletedLeading and trailing whitespace is removedUppercase is transformed to lowercaseKeywords beginning with a number have a &amp;#39;b&amp;#39; prepended.
+Returns a string containing the name of the specified smbios structure as derived from the &#39;Type&#39; entry in the SMBIOS specification. To create a valid Relevance keyword, some rules are applied to the name: Spaces are replaced with underscoresParenthesized sections are deletedLeading and trailing whitespace is removedUppercase is transformed to lowercaseKeywords beginning with a number have a &#39;b&#39; prepended.
 
 # string &lt;string&gt; of &lt;smbios structure&gt; : string
 

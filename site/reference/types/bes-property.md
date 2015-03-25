@@ -1,6 +1,6 @@
 # type: bes property
 
-The &amp;lt;bes property&amp;gt; inspectors return information about the properties of BES Client computers. Properties -- along with their names, IDs and definitions -- can be iterated to produce property lists of all your networked BES computers.
+The &lt;bes property&lt; inspectors return information about the properties of BES Client computers. Properties -- along with their names, IDs and definitions -- can be iterated to produce property lists of all your networked BES computers.
 
 # analysis flag of &lt;bes property&gt; : boolean
 
@@ -44,7 +44,7 @@ Returns the simple name of the specified BES property. This inspector returns th
 
 # evaluation period of &lt;bes property&gt; : time interval
 
-Returns the &amp;lt;time interval&amp;gt; that controls how frequently clients will submit reports for the specified property.
+Returns the &lt;time interval&lt; that controls how frequently clients will submit reports for the specified property.
 
 # id of &lt;bes property&gt; : ( integer, integer, integer )
 
@@ -88,7 +88,7 @@ Returns the non-category portion of the property name.
 
 # source analysis of &lt;bes property&gt; : bes fixlet
 
-Returns the &amp;lt;bes fixlet&amp;gt; object corresponding to the analysis that defines the specified property.
+Returns the &lt;bes fixlet&lt; object corresponding to the analysis that defines the specified property.
 
 # source evaluation period of &lt;bes property&gt; : time interval
 
@@ -108,7 +108,7 @@ Returns the range of statistical bins associated with the given property. The pr
 
 # unique value of &lt;bes property&gt; : bes property with multiplicity
 
-Returns the unique values of a given list of &amp;lt;bes property&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes property&lt; types, removing duplicates and sorting by value.
 
 # &lt;bes property&gt; as xml : utf8 string
 

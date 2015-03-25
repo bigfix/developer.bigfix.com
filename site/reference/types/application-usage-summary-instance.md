@@ -1,6 +1,6 @@
 # type: application usage summary instance
 
-The &amp;lt;application usage summary instance&amp;gt; inspectors return information about the multiple instances of specific applications.
+The &lt;application usage summary instance&lt; inspectors return information about the multiple instances of specific applications.
 
 # first start time of &lt;application usage summary instance&gt; : time
 

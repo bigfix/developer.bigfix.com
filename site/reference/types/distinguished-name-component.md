@@ -7,7 +7,7 @@ The `distinguished name component` type represents one component of a distinguis
 Returns the type of distinguished name component.
 
 {{#example}}
-Q: type of component 1 of distinguished name &quot;CN=bearmo,OU=bears,DC=example,DC=com&quot;
+Q: type of component 1 of distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
 A: OU
 {{/example}}
 
@@ -16,6 +16,6 @@ A: OU
 Returns the value of the distinguished name component.
 
 {{#example}}
-Q: value of component 1 of distinguished name &quot;CN=bearmo,OU=bears,DC=example,DC=com&quot;
+Q: value of component 1 of distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
 A: bears
 {{/example}}

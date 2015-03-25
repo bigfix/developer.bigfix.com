@@ -1,6 +1,6 @@
 # type: power state
 
-The &amp;lt;power state&amp;gt; inspectors return the state of a device, encapsulating the enumerated types used by the Client. There are two categories, system and monitor. System (computer) states include active, idle, logged off,  standby, off and invalid. Monitor (display) states include on, off and invalid.
+The &lt;power state&lt; inspectors return the state of a device, encapsulating the enumerated types used by the Client. There are two categories, system and monitor. System (computer) states include active, idle, logged off,  standby, off and invalid. Monitor (display) states include on, off and invalid.
 
 # &lt;power state&gt; as string : string
 

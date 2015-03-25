@@ -28,7 +28,7 @@ Returns a string specifying the name of the specified shared resource.
 
 # password of &lt;network share&gt; : string
 
-A string that specifies the share&amp;#39;s password (when the server is running with share-level security). Note that the Windows Server 2003 family, Windows XP, Windows 2000, and Windows NT do not support share-level security.
+A string that specifies the share&#39;s password (when the server is running with share-level security). Note that the Windows Server 2003 family, Windows XP, Windows 2000, and Windows NT do not support share-level security.
 
 # path of &lt;network share&gt; : string
 

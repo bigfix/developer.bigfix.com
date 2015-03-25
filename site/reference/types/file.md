@@ -20,7 +20,7 @@ This inspector creates an OSXArray from the specified XML Data file.
 
 # byte &lt;integer&gt; of &lt;file&gt; : integer
 
-Returns the numeric value of the byte located at the offset specified by number within the file. Byte 0 of the file is the first byte.Example: byte 0 of file &amp;quot;C:\test.txt&amp;quot; - Returns the first byte in the specified file.
+Returns the numeric value of the byte located at the offset specified by number within the file. Byte 0 of the file is the first byte.Example: byte 0 of file "C:\test.txt" - Returns the first byte in the specified file.
 
 # content of &lt;file&gt; : file content
 
@@ -40,7 +40,7 @@ Returns the dictionary object for the specified file.
 
 # drive of &lt;file&gt; : filesystem
 
-Returns the drive associated with the specified file. On Macintosh computers, this returns a &amp;lt;volume&amp;gt; object.On  *nix computers, this returns a &amp;lt;filesystem&amp;gt; object.
+Returns the drive associated with the specified file. On Macintosh computers, this returns a &lt;volume&lt; object.On  *nix computers, this returns a &lt;filesystem&lt; object.
 
 # drive of &lt;file&gt; : volume
 
@@ -48,15 +48,15 @@ No documentation exists.
 
 # executable file format of &lt;file&gt; : string
 
-Returns a four-byte string containing the format specifier for the specified file.Example: executable file format of client - Returns a string like &amp;quot;PE%00%00&amp;quot;.
+Returns a four-byte string containing the format specifier for the specified file.Example: executable file format of client - Returns a string like "PE%00%00".
 
 # file version of &lt;file&gt; : version
 
-Returns the file version extracted from the file&amp;#39;s resource block. See version.
+Returns the file version extracted from the file&#39;s resource block. See version.
 
 # filesystem of &lt;file&gt; : filesystem
 
-Returns the UNIX filesystem flag for the given file. On a Macintosh, this returns a &amp;lt;volume&amp;gt; object.
+Returns the UNIX filesystem flag for the given file. On a Macintosh, this returns a &lt;volume&lt; object.
 
 # filesystem of &lt;file&gt; : volume
 
@@ -72,15 +72,15 @@ No documentation exists.
 
 # key &lt;string&gt; of &lt;file&gt; : string
 
-Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &amp;lt;string&amp;gt;) followed by an = or : character. When searching, white space is ignored.
+Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &lt;string&lt;) followed by an = or : character. When searching, white space is ignored.
 
 # length of &lt;file&gt; : integer
 
-The total length of the data and resource forks.Example: Length of data fork of file &amp;quot;Microsoft Word&amp;quot; of folder &amp;quot;Microsoft Office X&amp;quot; of Applications folder is greater than 100000 - Returns `True` if the data fork of the system file is greater than the specified amount.
+The total length of the data and resource forks.Example: Length of data fork of file "Microsoft Word" of folder "Microsoft Office X" of Applications folder is greater than 100000 - Returns `True` if the data fork of the system file is greater than the specified amount.
 
 # line &lt;integer&gt; of &lt;file&gt; : file line
 
-Returns the nth line (specified by &amp;lt;integer&amp;gt;) from the given file.
+Returns the nth line (specified by &lt;integer&lt;) from the given file.
 
 # line containing &lt;string&gt; of &lt;file&gt; : file line
 
@@ -92,11 +92,11 @@ Iterates over all the lines of the specified file. Note that the lines are trunc
 
 # line starting with &lt;string&gt; of &lt;file&gt; : file line
 
-Same as line &amp;lt;string&amp;gt; of &amp;lt;file&amp;gt;, returns the lines of the given file that start with the specified string.
+Same as line &lt;string&lt; of &lt;file&lt;, returns the lines of the given file that start with the specified string.
 
 # locked of &lt;file&gt; : boolean
 
-Returns `True` if the file is locked.Example: locked of file &amp;quot;this file&amp;quot; of folder &amp;quot;this folder&amp;quot; - Returns `True` if the specified file is locked.
+Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
 
 # md5 of &lt;file&gt; : string
 
@@ -108,7 +108,7 @@ Returns the only version block directly from a PE file.
 
 # only version block of &lt;file&gt; : file version block
 
-Most files only have 1 version block. This property allows language independent access when there is only one version block present. The result is the same as &amp;#39;version block 1&amp;#39;.
+Most files only have 1 version block. This property allows language independent access when there is only one version block present. The result is the same as &#39;version block 1&#39;.
 
 # pem encoded certificate of &lt;file&gt; : x509 certificate
 
@@ -116,7 +116,7 @@ Reads and returns the certificate from a file in the PEM format. This can be use
 
 # product version of &lt;file&gt; : version
 
-Returns the product version extracted from the file&amp;#39;s resource block. See version.
+Returns the product version extracted from the file&#39;s resource block. See version.
 
 # raw file version of &lt;file&gt; : version
 
@@ -148,7 +148,7 @@ Returns information about the resource fork of the file.
 
 # section &lt;string&gt; of &lt;file&gt; : file section
 
-Returns a named section of a file. Useful for locating sections of &amp;#39;ini&amp;#39; files. Section names are delimited by square bracket characters &amp;#39;[section name]&amp;#39;. See examples below.
+Returns a named section of a file. Useful for locating sections of &#39;ini&#39; files. Section names are delimited by square bracket characters &#39;[section name]&#39;. See examples below.
 
 # security descriptor of &lt;file&gt; : security descriptor
 
@@ -216,7 +216,7 @@ Returns the names of variables contained in an INF style file, in the format [se
 
 # version &lt;integer&gt; of &lt;file&gt; : version
 
-Returns the nth version information from the &amp;quot;vers&amp;quot; resource of the given file. Typically n=1, but other information may be stored in &amp;quot;vers&amp;quot; resources greater than 1.
+Returns the nth version information from the "vers" resource of the given file. Typically n=1, but other information may be stored in "vers" resources greater than 1.
 
 # version block &lt;integer&gt; of &lt;file&gt; : file version block
 
@@ -232,7 +232,7 @@ Iterates through the version blocks of a file.
 
 # version of &lt;file&gt; : version
 
-Synonym for file version of &amp;lt;file&amp;gt;.
+Synonym for file version of &lt;file&lt;.
 
 # visible of &lt;file&gt; : boolean
 
@@ -252,4 +252,4 @@ Returns an XML Document Object Model (DOM) for the specified file.
 
 # &lt;file&gt; as string : string
 
-Creates a string containing the full pathname of the specified file. See &amp;lt;file&amp;gt;.
+Creates a string containing the full pathname of the specified file. See &lt;file&lt;.

@@ -1,6 +1,6 @@
 # type: task settings
 
-The &amp;lt;task settings&amp;gt; inspectors examine the settings used by the Task Scheduler service to perform the task. These settings include dealing with starts, restarts and stops, how to manage hidden or multiple tasks, and more.
+The &lt;task settings&lt; inspectors examine the settings used by the Task Scheduler service to perform the task. These settings include dealing with starts, restarts and stops, how to manage hidden or multiple tasks, and more.
 
 # allow demand start of &lt;task settings&gt; : boolean
 
@@ -44,7 +44,7 @@ Returns `True` if the MultipleInstances task setting is TASK_INSTANCES_IGNORE_NE
 
 # network setting of &lt;task settings&gt; : task network settings
 
-Returns a task network settings object containing a network profile ID and name. If this setting exists and the &amp;#39;run only when network available&amp;#39; property is TRUE, the task will wait to execute until the specified network profile is available.
+Returns a task network settings object containing a network profile ID and name. If this setting exists and the &#39;run only when network available&#39; property is TRUE, the task will wait to execute until the specified network profile is available.
 
 # parallel instance of &lt;task settings&gt; : boolean
 
@@ -72,7 +72,7 @@ Returns `True` if the Task Scheduler is set to run the associated task only from
 
 # run only when network available of &lt;task settings&gt; : boolean
 
-Returns `True` if the Task Scheduler is set to run the task only when a network is available. If the &amp;#39;network setting&amp;#39; exists, the task will be launched only when that network becomes available.
+Returns `True` if the Task Scheduler is set to run the task only when a network is available. If the &#39;network setting&#39; exists, the task will be launched only when that network becomes available.
 
 # start when available of &lt;task settings&gt; : boolean
 
@@ -96,7 +96,7 @@ Returns `True` if the specified task setting is compatible with version 2.0 of t
 
 # wake to run of &lt;task settings&gt; : boolean
 
-Returns `True` if the Task Scheduler should wake the computer whenever it&amp;#39;s time to start the task.
+Returns `True` if the Task Scheduler should wake the computer whenever it&#39;s time to start the task.
 
 # xml of &lt;task settings&gt; : string
 

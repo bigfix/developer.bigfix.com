@@ -7,7 +7,7 @@ The `distinguished name` type represents an Active Directory or LDAP distinguish
 Returns the nth component of the distinguished name.
 
 {{#example}}
-Q: component 1 of distinguished name &quot;CN=bearmo,OU=bears,DC=example,DC=com&quot;
+Q: component 1 of distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
 A: OU=bears
 {{/example}}
 
@@ -16,7 +16,7 @@ A: OU=bears
 Returns a list of the components of the distinguished name.
 
 {{#example}}
-Q: components of distinguished name &quot;CN=bearmo,OU=bears,DC=example,DC=com&quot;
+Q: components of distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
 A: CN=bearmo
 A: OU=bears
 A: DC=example

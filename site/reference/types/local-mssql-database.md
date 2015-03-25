@@ -1,6 +1,6 @@
 # type: local mssql database
 
-The &amp;lt;local mssql database&amp;gt; inspectors retrieve the properties of the MS SQL databases on the local machine.
+The &lt;local mssql database&lt; inspectors retrieve the properties of the MS SQL databases on the local machine.
 
 # audit level of &lt;local mssql database&gt; : integer
 

@@ -8,4 +8,4 @@ Headers are name:value pairs, separated by a colon. This inspector returns the n
 
 # value of &lt;fixlet_header&gt; : string
 
-Headers are name:value pairs, separated by a colon. This inspector returns the value on the right hand side of the pair.Example: number of relevant fixlets whose (value of header &amp;quot;x-fixlet-source-severity&amp;quot; of it as lowercase = &amp;quot;critical&amp;quot;) of site &amp;quot;enterprise security&amp;quot;. - Returns the number of critical fixlets in the Enterprise Security site.
+Headers are name:value pairs, separated by a colon. This inspector returns the value on the right hand side of the pair.Example: number of relevant fixlets whose (value of header "x-fixlet-source-severity" of it as lowercase = "critical") of site "enterprise security". - Returns the number of critical fixlets in the Enterprise Security site.

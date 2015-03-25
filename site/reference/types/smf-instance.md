@@ -4,11 +4,11 @@ No documentation exists.
 
 # fmri of &lt;smf instance&gt; : smf fmri
 
-Returns an smf fmri object representing the &amp;#39;Fault Management Resource Identifier&amp;#39; of a service instance. The FMRI is used to identify a specific instance of a service for administrative use.
+Returns an smf fmri object representing the &#39;Fault Management Resource Identifier&#39; of a service instance. The FMRI is used to identify a specific instance of a service for administrative use.
 
 # name of &lt;smf instance&gt; : string
 
-Returns the name of the smf instance object. This is the same as the end component of the FMRI (&amp;#39;Fault Management Resource Identifier&amp;#39;) of the instance.
+Returns the name of the smf instance object. This is the same as the end component of the FMRI (&#39;Fault Management Resource Identifier&#39;) of the instance.
 
 # parent service of &lt;smf instance&gt; : smf service
 
@@ -24,12 +24,12 @@ Iterates over property groups of a service instance. An smf property group is a 
 
 # snapshot &lt;string&gt; of &lt;smf instance&gt; : smf snapshot
 
-Returns the specified smf snapshot of a service instance. A snapshot is an unchanging picture of the full set of  property  groups  associated  with  an  instance. Snapshots are automatically created and managed by the Service Management Facility. A snapshot consists of a set of snaplevels, each of which holds copies of the property groups associated with an instance or service in the resolution path of the base instance. Typically, there is one snaplevel for the instance and one for the instance&amp;#39;s parent service.
+Returns the specified smf snapshot of a service instance. A snapshot is an unchanging picture of the full set of  property  groups  associated  with  an  instance. Snapshots are automatically created and managed by the Service Management Facility. A snapshot consists of a set of snaplevels, each of which holds copies of the property groups associated with an instance or service in the resolution path of the base instance. Typically, there is one snaplevel for the instance and one for the instance&#39;s parent service.
 
 # snapshot of &lt;smf instance&gt; : smf snapshot
 
-Iterates over the snapshots of a service instance. A snapshot is an unchanging picture of the full set of  property  groups  associated  with  an  instance. Snapshots are automatically created and managed by the Service Management Facility. A snapshot consists of a set of snaplevels, each of which holds copies of the property groups associated with an instance or service in the resolution path of the base instance. Typically, there is one snaplevel for the instance and one for the instance&amp;#39;s parent service.
+Iterates over the snapshots of a service instance. A snapshot is an unchanging picture of the full set of  property  groups  associated  with  an  instance. Snapshots are automatically created and managed by the Service Management Facility. A snapshot consists of a set of snaplevels, each of which holds copies of the property groups associated with an instance or service in the resolution path of the base instance. Typically, there is one snaplevel for the instance and one for the instance&#39;s parent service.
 
 # &lt;smf instance&gt; as string : string
 
-Returns a string representation of the smf instance object. This is the same as the end component of the FMRI (&amp;#39;Fault Management Resource Identifier&amp;#39;) of the instance, and the same as the name of the instance.
+Returns a string representation of the smf instance object. This is the same as the end component of the FMRI (&#39;Fault Management Resource Identifier&#39;) of the instance, and the same as the name of the instance.

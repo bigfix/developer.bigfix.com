@@ -1,10 +1,10 @@
 # type: system power interval
 
-The &amp;lt;system power interval&amp;gt; inspectors return an interval or a list of intervals that contain information about the client computer. Each system interval is composed of a time range and a power state, which can include on, off, standby or hibernate.
+The &lt;system power interval&lt; inspectors return an interval or a list of intervals that contain information about the client computer. Each system interval is composed of a time range and a power state, which can include on, off, standby or hibernate.
 
 # range of &lt;system power interval&gt; : time range
 
-Returns the time range associated with the specified &amp;#39;system power&amp;#39; interval. This will provide you with the start and stop time for any particular state of the BES Client system.
+Returns the time range associated with the specified &#39;system power&#39; interval. This will provide you with the start and stop time for any particular state of the BES Client system.
 
 # state of &lt;system power interval&gt; : power state
 

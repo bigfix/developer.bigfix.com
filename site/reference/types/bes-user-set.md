@@ -1,10 +1,10 @@
 # type: bes user set
 
-The &amp;lt;bes user set&amp;gt; inspectors iterate over the current set of BES users and package them as a mathematical set, suitable for further set manipulation.
+The &lt;bes user set&lt; inspectors iterate over the current set of BES users and package them as a mathematical set, suitable for further set manipulation.
 
 # element of &lt;bes user set&gt; : bes user
 
-Returns the unique elements of the specified &amp;lt;bes user set&amp;gt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes user set&lt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes user set&gt; : bes user set
 

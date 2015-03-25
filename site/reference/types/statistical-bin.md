@@ -24,7 +24,7 @@ Produces a section of JavaScript which initializes the named array of objects, o
 
 # kurtosis of &lt;statistical bin&gt; : floating point
 
-Returns the kurtosis (a measure of the &amp;quot;narrowness&amp;quot; of the distribution) of the specified statistical bin.
+Returns the kurtosis (a measure of the "narrowness" of the distribution) of the specified statistical bin.
 
 # length of &lt;statistical bin&gt; : time interval
 
@@ -72,11 +72,11 @@ The integral over time of the sum of the logarithms of the absolute values of al
 
 # mean nonzero value count of &lt;statistical bin&gt; : floating point
 
-Provides a measure of nonzero values, which is useful in interpreting the logarithmic results, which ignore zero values. The logarithmic results generally aren&amp;#39;t interesting for any property that can be zero, so this inspector can be used to validate property statistics.
+Provides a measure of nonzero values, which is useful in interpreting the logarithmic results, which ignore zero values. The logarithmic results generally aren&#39;t interesting for any property that can be zero, so this inspector can be used to validate property statistics.
 
 # mean of &lt;statistical bin&gt; : floating point
 
-The integral over time of the sum of all reported values, divided by the integral over time of the number of reported values. The variance, standard deviation, skewness, and kurtosis inspectors have this same domain. In particular, computers that fail and computers that report no values don&amp;#39;t affect these statistics.
+The integral over time of the sum of all reported values, divided by the integral over time of the number of reported values. The variance, standard deviation, skewness, and kurtosis inspectors have this same domain. In particular, computers that fail and computers that report no values don&#39;t affect these statistics.
 
 # mean sample interval of &lt;statistical bin&gt; : time interval
 
@@ -100,11 +100,11 @@ This is the integral over time of the number of values reported divided by the i
 
 # mean zero value count of &lt;statistical bin&gt; : floating point
 
-Provides a measure of zero values, which is useful in interpreting the logarithmic results, which ignore zero values. The logarithmic results generally aren&amp;#39;t interesting for any property that can be zero, so this inspector can be used to test for that issue.
+Provides a measure of zero values, which is useful in interpreting the logarithmic results, which ignore zero values. The logarithmic results generally aren&#39;t interesting for any property that can be zero, so this inspector can be used to test for that issue.
 
 # minimum single computer total of &lt;statistical bin&gt; : floating point
 
-The minimum over time and computers of the total of simultaneous values. (Thus, for a singular property, the same as &amp;quot;minimum value.&amp;quot;).
+The minimum over time and computers of the total of simultaneous values. (Thus, for a singular property, the same as "minimum value.").
 
 # minimum value of &lt;statistical bin&gt; : floating point
 

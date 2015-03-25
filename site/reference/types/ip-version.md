@@ -1,6 +1,6 @@
 # type: ip version
 
-The &amp;lt;ip version&amp;gt; inspectors distinguish between ipv6 and ipv4. The integer representations of these are chosen to meet existing standards.
+The &lt;ip version&lt; inspectors distinguish between ipv6 and ipv4. The integer representations of these are chosen to meet existing standards.
 
 # &lt;ip version&gt; as string : string
 

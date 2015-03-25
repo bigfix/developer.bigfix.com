@@ -1,6 +1,6 @@
 # type: daily task trigger
 
-The &amp;lt;daily task trigger&amp;gt; inspectors deal with tasks that are triggered on a daily basis. For example, a task might start at 9:00 AM every day or every other day. More information about this subset of task triggers can be found by searching for Daily Trigger at the MSDN site.
+The &lt;daily task trigger&lt; inspectors deal with tasks that are triggered on a daily basis. For example, a task might start at 9:00 AM every day or every other day. More information about this subset of task triggers can be found by searching for Daily Trigger at the MSDN site.
 
 # days interval of &lt;daily task trigger&gt; : time interval
 

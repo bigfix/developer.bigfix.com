@@ -44,7 +44,7 @@ Returns the integer ID of the specified process.
 
 # image file of &lt;process&gt; : file
 
-Returns a file object representing the image file used to launch the process. In some cases, this subproperty may not exist. For example, the &amp;quot;System&amp;quot; process does not have an image file.
+Returns a file object representing the image file used to launch the process. In some cases, this subproperty may not exist. For example, the "System" process does not have an image file.
 
 # io other count of &lt;process&gt; : integer
 
@@ -128,7 +128,7 @@ No documentation exists.
 
 # session id of &lt;process&gt; : integer
 
-Returns the ID of the session under which the process is running. This requires Win2000 or later and corresponds to the &amp;#39;Session ID&amp;#39; column in Task Manager.
+Returns the ID of the session under which the process is running. This requires Win2000 or later and corresponds to the &#39;Session ID&#39; column in Task Manager.
 
 # user object count of &lt;process&gt; : integer
 
@@ -136,7 +136,7 @@ Returns the count of USER objects associated with the specified process as an in
 
 # user of &lt;process&gt; : security identifier
 
-Returns a security identifier associated with the user of specified process. This inspector requires Terminal Services or Win2000+, and may not be available if the inspector application does not have sufficient permissions. This object corresponds to the &amp;#39;User Name&amp;#39; column in Task Manager.
+Returns a security identifier associated with the user of specified process. This inspector requires Terminal Services or Win2000+, and may not be available if the inspector application does not have sufficient permissions. This object corresponds to the &#39;User Name&#39; column in Task Manager.
 
 # user of &lt;process&gt; : user
 

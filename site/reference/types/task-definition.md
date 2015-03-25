@@ -1,6 +1,6 @@
 # type: task definition
 
-The &amp;lt;task definition&amp;gt; inspectors give access to the components of a task, such as the settings, triggers, actions and registration information.
+The &lt;task definition&lt; inspectors give access to the components of a task, such as the settings, triggers, actions and registration information.
 
 # action of &lt;task definition&gt; : task action
 
@@ -16,7 +16,7 @@ Returns the principle for the task that provides the security credentials for th
 
 # registration info of &lt;task definition&gt; : task registration info
 
-Returns data such as the author &amp;amp; date of registration associated with the specified task definition.
+Returns data such as the author &amp; date of registration associated with the specified task definition.
 
 # setting of &lt;task definition&gt; : task settings
 

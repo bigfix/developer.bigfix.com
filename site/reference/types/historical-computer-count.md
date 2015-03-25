@@ -1,6 +1,6 @@
 # type: historical computer count
 
-The &amp;lt;historical computer count&amp;gt; inspectors provide information about historical computer count objects.
+The &lt;historical computer count&lt; inspectors provide information about historical computer count objects.
 
 # count of &lt;historical computer count&gt; : integer
 

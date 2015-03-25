@@ -1,6 +1,6 @@
 # type: processor
 
-The &amp;lt;processor&amp;gt; object is used to identify the number and properties of processors in the system. You can identify the manufacturer of the CPU as well as the speed and other features. Many operating systems provide for multiple processors. You can inspect any one of them by their ordinal number.For more information on Windows processors, see the Resource section at the end of this guide.
+The &lt;processor&lt; object is used to identify the number and properties of processors in the system. You can identify the manufacturer of the CPU as well as the speed and other features. Many operating systems provide for multiple processors. You can inspect any one of them by their ordinal number.For more information on Windows processors, see the Resource section at the end of this guide.
 
 # adjustment &lt;integer&gt; of &lt;processor&gt; : integer
 
@@ -96,7 +96,7 @@ Returns the feature flags from the CPUID instruction. The feature mask contains 
 
 # flag list of &lt;processor&gt; : string
 
-Returns a string containing the processor flags. To check if a processor has a particular flag, use the &amp;#39;contains&amp;#39; operator.
+Returns a string containing the processor flags. To check if a processor has a particular flag, use the &#39;contains&#39; operator.
 
 # fpu exception of &lt;processor&gt; : boolean
 
@@ -228,7 +228,7 @@ Returns the speed of the processor in Hertz.
 
 # state of &lt;processor&gt; : string
 
-Returns the current processor state, which can be &amp;quot;online&amp;quot;, &amp;quot;offline&amp;quot;, &amp;quot;poweroff&amp;quot;, or &amp;quot;unknown&amp;quot;.
+Returns the current processor state, which can be "online", "offline", "poweroff", or "unknown".
 
 # stepping of &lt;processor&gt; : integer
 
@@ -240,7 +240,7 @@ No documentation exists.
 
 # type of &lt;processor&gt; : string
 
-Numeric type of the CPU. Values include: 0 - standard1 - overdrive2 - dual CPU capable3 - reservedNote: this inspector returns an &amp;lt;integer&amp;gt; type as on Windows platforms.
+Numeric type of the CPU. Values include: 0 - standard1 - overdrive2 - dual CPU capable3 - reservedNote: this inspector returns an &lt;integer&lt; type as on Windows platforms.
 
 # vendor name of &lt;processor&gt; : string
 

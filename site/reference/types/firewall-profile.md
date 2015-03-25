@@ -1,6 +1,6 @@
 # type: firewall profile
 
-The &amp;lt;firewall profile&amp;gt; inspectors provide access to the firewall profile. These properties correspond to the INetFwProfile interface in the Windows Firewall API. For more information, search for &amp;#39;Windows Firewall API&amp;#39; at the msdn site (http://msdn.microsoft.com/library/).
+The &lt;firewall profile&lt; inspectors provide access to the firewall profile. These properties correspond to the INetFwProfile interface in the Windows Firewall API. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
 
 # authorized application of &lt;firewall profile&gt; : firewall authorized application
 
@@ -12,7 +12,7 @@ Returns the property that indicates whether exceptions should be allowed by the 
 
 # excluded interface of &lt;firewall profile&gt; : string
 
-Gets the value of the ExcludedInterfaces property from the specified firewall profile. This property contains the list of interfaces excluded from a the profile&amp;#39;s firewall rules. For more information, see the MSDN Library entry for INetFwPolicy2.
+Gets the value of the ExcludedInterfaces property from the specified firewall profile. This property contains the list of interfaces excluded from a the profile&#39;s firewall rules. For more information, see the MSDN Library entry for INetFwPolicy2.
 
 # firewall enabled of &lt;firewall profile&gt; : boolean
 

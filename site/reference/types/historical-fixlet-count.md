@@ -1,10 +1,10 @@
 # type: historical fixlet count
 
-The &amp;lt;historical fixlet count&amp;gt; objects provide historical information about the number of Fixlets at different severity levels.
+The &lt;historical fixlet count&lt; objects provide historical information about the number of Fixlets at different severity levels.
 
 # count map of &lt;historical fixlet count&gt; : fixlet count pair
 
-Returns all of the &amp;lt;fixlet count pair&amp;gt; objects (one for each severity level) that were saved with the specified historical Fixlet count.
+Returns all of the &lt;fixlet count pair&lt; objects (one for each severity level) that were saved with the specified historical Fixlet count.
 
 # database id of &lt;historical fixlet count&gt; : integer
 

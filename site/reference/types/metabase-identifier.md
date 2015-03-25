@@ -1,6 +1,6 @@
 # type: metabase identifier
 
-The &amp;lt;metabase identifier&amp;gt; objects are unique numerical identifiers which IIS recognizes internally.
+The &lt;metabase identifier&lt; objects are unique numerical identifiers which IIS recognizes internally.
 
 # &lt;metabase identifier&gt; as integer : integer
 
@@ -8,7 +8,7 @@ The integer value of the specified identifier. Use the Microsoft MetaEdit utilit
 
 # &lt;metabase identifier&gt; as string : string
 
-This is a Casting Operator that takes a &amp;lt;metabase identifier&amp;gt; type and returns a &amp;lt;string&amp;gt; type
+This is a Casting Operator that takes a &lt;metabase identifier&lt; type and returns a &lt;string&lt; type
 
 # &lt;metabase identifier&gt; = &lt;metabase identifier&gt; : boolean
 

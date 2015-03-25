@@ -4,7 +4,7 @@ No documentation exists.
 
 # fileset &lt;string&gt; of &lt;object repository&gt; : fileset
 
-Returns all filesets exactly matching the string in the format &amp;quot;lpp_name ver.rel.mod.fix&amp;quot;.
+Returns all filesets exactly matching the string in the format "lpp_name ver.rel.mod.fix".
 
 # fileset matching &lt;string&gt; of &lt;object repository&gt; : fileset
 

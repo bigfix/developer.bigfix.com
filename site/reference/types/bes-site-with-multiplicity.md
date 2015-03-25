@@ -1,6 +1,6 @@
 # type: bes site with multiplicity
 
-The &amp;lt;bes site with multiplicity&amp;gt; inspectors deal with arrays of BES sites, allowing you to extract unique properties and count them.
+The &lt;bes site with multiplicity&lt; inspectors deal with arrays of BES sites, allowing you to extract unique properties and count them.
 
 # multiplicity of &lt;bes site with multiplicity&gt; : integer
 

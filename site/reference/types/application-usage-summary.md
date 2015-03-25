@@ -1,6 +1,6 @@
 # type: application usage summary
 
-To enable the `application usage summary` inspectors, you first need to create the client setting `_BESClient_UsageManager_EnableAppUsageSummary` and initialize it to `&quot;1&quot;`. You must also configure the set of applications to monitor by creating the client setting `_BESClient_UsageManager_EnableAppUsageSummaryApps` and initializing it to a list of applications to include or exclude.
+To enable the `application usage summary` inspectors, you first need to create the client setting `_BESClient_UsageManager_EnableAppUsageSummary` and initialize it to `"1"`. You must also configure the set of applications to monitor by creating the client setting `_BESClient_UsageManager_EnableAppUsageSummaryApps` and initializing it to a list of applications to include or exclude.
 
 The value of this setting should look like `+:app1:app2:app3:` to add applications to the scope, and `-:app1:app2:` to exclude applications. The case is ignored. For instance, to only track summary usage on the Word application, use the value `+:winword.exe:`.
 
@@ -14,7 +14,7 @@ Returns a list of all the instances of a specified application usage summary.
 
 # last start time of &lt;application usage summary&gt; : time
 
-Returns the last time this specified application was started.Example: last start time of application usage summary &amp;quot;winword.exe&amp;quot; - Returns the date and time Word was last started.
+Returns the last time this specified application was started.Example: last start time of application usage summary "winword.exe" - Returns the date and time Word was last started.
 
 # last time seen of &lt;application usage summary&gt; : time
 

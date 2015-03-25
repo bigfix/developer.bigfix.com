@@ -4,19 +4,19 @@ The `day of month` type represents a day of the month.
 
 # extrema of &lt;day of month&gt; : ( day of month, day of month )
 
-Returns the minimum and maximum extreme values of the given list of &amp;lt;day of month&amp;gt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;day of month&lt; types.
 
 # maximum of &lt;day of month&gt; : day of month
 
-Returns the maximum value from a list of &amp;lt;day of month&amp;gt; types.
+Returns the maximum value from a list of &lt;day of month&lt; types.
 
 # minimum of &lt;day of month&gt; : day of month
 
-Returns the minimum value from a list of &amp;lt;day of month&amp;gt; types.
+Returns the minimum value from a list of &lt;day of month&lt; types.
 
 # unique value of &lt;day of month&gt; : day of month with multiplicity
 
-Returns the unique values of a given list of &amp;lt;day of month&amp;gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;day of month&lt; types, removing duplicates and sorting by value.
 
 # &lt;day of month&gt; as integer : integer
 

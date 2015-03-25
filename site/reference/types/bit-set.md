@@ -7,13 +7,13 @@ A small, numbered collection of bits that can be examined and manipulated.
 Returns the value of the bit at the nth position in the set.
 
 {{#example}}
-Q: bit 0 of bit set &quot;10&quot;
+Q: bit 0 of bit set "10"
 A: False
 I: singular boolean
 {{/example}}
 
 {{#example}}
-Q: bit 1 of bit set &quot;10&quot;
+Q: bit 1 of bit set "10"
 A: True
 I: singular boolean
 {{/example}}
@@ -23,7 +23,7 @@ I: singular boolean
 Returns the least n such that bit n of the set is `1`.
 
 {{#example}}
-Q: least significant one bit of bit set &quot;1111100&quot;
+Q: least significant one bit of bit set "1111100"
 A: 2
 I: singular integer
 {{/example}}
@@ -33,7 +33,7 @@ I: singular integer
 Shift the bit set left n times.
 
 {{#example}}
-Q: left shift 2 of bit set &quot;10101&quot;
+Q: left shift 2 of bit set "10101"
 A: 1010100
 I: singular bit set
 {{/example}}
@@ -43,7 +43,7 @@ I: singular bit set
 Returns the greatest n such that bit n of the set is `1`.
 
 {{#example}}
-Q: most significant one bit of bit set &quot;1111100&quot;
+Q: most significant one bit of bit set "1111100"
 A: 6
 I: singular integer
 {{/example}}
@@ -53,7 +53,7 @@ I: singular integer
 Returns the numbers n for which bit n of the set is `1`.
 
 {{#example}}
-Q: one bits of bit set &quot;10101&quot;
+Q: one bits of bit set "10101"
 A: 0
 A: 2
 A: 4
@@ -65,7 +65,7 @@ I: plural integer
 Returns a string with the bit set padded to 64-bits.
 
 {{#example}}
-Q: padded string of bit set &quot;10101&quot;
+Q: padded string of bit set "10101"
 A: 0000000000000000000000000000000000000000000000000000000000010101
 I: singular string
 {{/example}}
@@ -75,7 +75,7 @@ I: singular string
 Shift the bit set right n times.
 
 {{#example}}
-Q: right shift 2 of bit set &quot;10101&quot;
+Q: right shift 2 of bit set "10101"
 A: 101
 I: singular bit set
 {{/example}}
@@ -85,7 +85,7 @@ I: singular bit set
 Returns the integer whose binary representation matches the bit set.
 
 {{#example}}
-Q: bit set &quot;10101&quot; as integer
+Q: bit set "10101" as integer
 A: 21
 I: singular integer
 {{/example}}
@@ -105,7 +105,7 @@ I: singular string
 Returns the intersection of the two bit sets.
 
 {{#example}}
-Q: bit set &quot;10011&quot; * bit set &quot;10101&quot;
+Q: bit set "10011" * bit set "10101"
 A: 10001
 I: singular bit set
 {{/example}}
@@ -115,7 +115,7 @@ I: singular bit set
 Returns the union of the two sets.
 
 {{#example}}
-Q: bit set &quot;10011&quot; + bit set &quot;10101&quot;
+Q: bit set "10011" + bit set "10101"
 A: 10111
 I: singular bit set
 {{/example}}
@@ -125,7 +125,7 @@ I: singular bit set
 Returns the bits that are `1` in the left bit set and `0` in the right bit set.
 
 {{#example}}
-Q: bit set &quot;10011&quot; - bit set &quot;10101&quot;
+Q: bit set "10011" - bit set "10101"
 A: 10
 I: singular bit set
 {{/example}}

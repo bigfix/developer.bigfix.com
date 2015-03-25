@@ -1,6 +1,6 @@
 # type: linear projection
 
-The &amp;lt;linear projection&amp;gt; inspectors return statistical correlation information about the linearity of specific aggregated properties.
+The &lt;linear projection&lt; inspectors return statistical correlation information about the linearity of specific aggregated properties.
 
 # correlation coefficient of &lt;linear projection&gt; : floating point
 

@@ -8,7 +8,7 @@ Bootable image at zero-based-indexed entry in grub config file.
 
 # bootable image &lt;string&gt; of &lt;grub config file&gt; : grub bootable image
 
-Bootable image at specified by the string containing an entry&amp;#39;s title.
+Bootable image at specified by the string containing an entry&#39;s title.
 
 # bootable image of &lt;grub config file&gt; : grub bootable image
 

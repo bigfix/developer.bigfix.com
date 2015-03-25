@@ -1,6 +1,6 @@
 # type: zone network interface
 
-The &amp;lt;zone network interface&amp;gt; objects allow you to inspect the network interfaces (IP layers) installed when booting a Solaris Zone.
+The &lt;zone network interface&lt; objects allow you to inspect the network interfaces (IP layers) installed when booting a Solaris Zone.
 
 # address of &lt;zone network interface&gt; : string
 

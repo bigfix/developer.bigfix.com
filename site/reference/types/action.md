@@ -1,6 +1,6 @@
 # type: action
 
-The &amp;lt;action&amp;gt; objects are the keywords associated with properties available for inspection during the execution of BigFix Actions.
+The &lt;action&lt; objects are the keywords associated with properties available for inspection during the execution of BigFix Actions.
 
 # active count of &lt;action&gt; : integer
 
@@ -76,7 +76,7 @@ Returns `True` when users indicated they want to run the action by accepting the
 
 # offer of &lt;action&gt; : boolean
 
-Returns `True` when the Action is presented as an offer (as indicated by the header &amp;quot;x-offer: 1&amp;quot;).
+Returns `True` when the Action is presented as an offer (as indicated by the header "x-offer: 1").
 
 # origin fixlet id of &lt;action&gt; : integer
 
@@ -84,11 +84,11 @@ Returns the Fixlet id that contained the action.
 
 # parameter &lt;string&gt; of &lt;action&gt; : string
 
-Returns the value of parameter &amp;lt;string&amp;gt; for the active Action. Parameters only live as long as the action is active. Among the inspectable parameters is the &amp;#39;action issue date&amp;#39; that is added to each Action by the BigFix Console at issue time.Example: parameter &amp;quot;action issue date&amp;quot; of action - This inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
+Returns the value of parameter &lt;string&lt; for the active Action. Parameters only live as long as the action is active. Among the inspectable parameters is the &#39;action issue date&#39; that is added to each Action by the BigFix Console at issue time.Example: parameter "action issue date" of action - This inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
 
 # pending login of &lt;action&gt; : boolean
 
-Returns `True` if the specified action included an &amp;#39;action requires login&amp;#39; command, and a login has not yet occurred since the action has run.
+Returns `True` if the specified action included an &#39;action requires login&#39; command, and a login has not yet occurred since the action has run.
 
 # pending of &lt;action&gt; : boolean
 
@@ -96,7 +96,7 @@ Returns `True` if action is available to run.
 
 # pending restart of &lt;action&gt; : boolean
 
-Returns `True` if the specified action included an &amp;#39;action requires restart&amp;#39; command and a restart has not occurred since the action has run.
+Returns `True` if the specified action included an &#39;action requires restart&#39; command and a restart has not occurred since the action has run.
 
 # pending time of &lt;action&gt; : time
 

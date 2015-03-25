@@ -4,7 +4,7 @@ These inspectors expose the WiFi adapters available on an endpoint.
 
 # encryption of &lt;wifi&gt; : string
 
-Returns a string of the encryption type of the WiFi connection. eg: &amp;quot;WEP&amp;quot;, &amp;quot;WPA2-PSK&amp;quot;
+Returns a string of the encryption type of the WiFi connection. eg: "WEP", "WPA2-PSK"
 
 # secured of &lt;wifi&gt; : boolean
 

@@ -1,7 +1,7 @@
 # type: version with multiplicity
 
-The &amp;lt;version with multiplicity&amp;gt; inspectors deal with version arrays, allowing you to extract unique version values and count them.
+The &lt;version with multiplicity&lt; inspectors deal with version arrays, allowing you to extract unique version values and count them.
 
 # multiplicity of &lt;version with multiplicity&gt; : integer
 
-Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &amp;lt;version&amp;gt; types.
+Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;version&lt; types.

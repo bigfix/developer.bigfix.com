@@ -1,6 +1,6 @@
 # type: ipv4or6 address
 
-The &amp;lt;ipv4or6 address&amp;gt; inspectors allow you to represent IPv4 and IPv6 addresses as a common type. From these inclusive inspectors, you can derive the corresponding v4 and v6 IP addresses.
+The &lt;ipv4or6 address&lt; inspectors allow you to represent IPv4 and IPv6 addresses as a common type. From these inclusive inspectors, you can derive the corresponding v4 and v6 IP addresses.
 
 # extrema of &lt;ipv4or6 address&gt; : ( ipv4or6 address, ipv4or6 address )
 
@@ -8,7 +8,7 @@ Returns the minimum and maximum of the specified list of ipv4or6 addresses.
 
 # hexadecet &lt;integer&gt; of &lt;ipv4or6 address&gt; : integer
 
-Returns one of the eight 16-bit parts (hexadecets) of an ipv4or6 address specified by &amp;lt;integer&amp;gt;. Here zero refers to the highest hexadecet (network or big-endian order). Thus hexadecet 0 refers to the most-significant 16-bits of the 128 bit ipv4or6 address.
+Returns one of the eight 16-bit parts (hexadecets) of an ipv4or6 address specified by &lt;integer&lt;. Here zero refers to the highest hexadecet (network or big-endian order). Thus hexadecet 0 refers to the most-significant 16-bits of the 128 bit ipv4or6 address.
 
 # ip version of &lt;ipv4or6 address&gt; : ip version
 
@@ -20,11 +20,11 @@ Returns the lowest 32-bits of the IPv4or6 address as an IPv4 address.
 
 # maximum of &lt;ipv4or6 address&gt; : ipv4or6 address
 
-Returns the maximum of the specified list of &amp;lt;ipv4or6 address&amp;gt; types.
+Returns the maximum of the specified list of &lt;ipv4or6 address&lt; types.
 
 # minimum of &lt;ipv4or6 address&gt; : ipv4or6 address
 
-Returns the minimum of the specified list of &amp;lt;ipv4or6 address&amp;gt; types.
+Returns the minimum of the specified list of &lt;ipv4or6 address&lt; types.
 
 # unique value of &lt;ipv4or6 address&gt; : ipv4or6 address with multiplicity
 
@@ -32,11 +32,11 @@ Returns the unique values of a given list of addresses (ipv4or6), removing dupli
 
 # &lt;ipv4or6 address&gt; as compressed string : string
 
-Compresses the IP address, using double colons to stand in for repeated zeroes in the address.Example: (&amp;quot;0:0:0:0:0:ffff:c0a8:16a&amp;quot; as ipv4or6 address) as compressed string - Returns &amp;quot;::ffff:c0a8:16a&amp;quot;, a compressed string with a double colon standing in for leading zeroes.
+Compresses the IP address, using double colons to stand in for repeated zeroes in the address.Example: ("0:0:0:0:0:ffff:c0a8:16a" as ipv4or6 address) as compressed string - Returns "::ffff:c0a8:16a", a compressed string with a double colon standing in for leading zeroes.
 
 # &lt;ipv4or6 address&gt; as compressed string with ipv4 : string
 
-Similar to casting to a string, but with both colon-compression and standard IPv4 representation for the low 32-bits.Example: (&amp;quot;0:0:0:0:0:ffff:c0a8:16a&amp;quot; as ipv4or6 address) as compressed string with ipv4 - Returns &amp;quot;::ffff:192.168.1.106&amp;quot;, a compressed string (leading zeroes collapsed to ::) with a four-byte IPv4 address as the lower 32 bits.
+Similar to casting to a string, but with both colon-compression and standard IPv4 representation for the low 32-bits.Example: ("0:0:0:0:0:ffff:c0a8:16a" as ipv4or6 address) as compressed string with ipv4 - Returns "::ffff:192.168.1.106", a compressed string (leading zeroes collapsed to ::) with a four-byte IPv4 address as the lower 32 bits.
 
 # &lt;ipv4or6 address&gt; as compressed string with ipv4 with zone index : string
 

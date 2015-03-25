@@ -8,7 +8,7 @@ No documentation exists.
 
 # administrator &lt;string&gt; of &lt;client&gt; : setting
 
-If the administrator named in the &amp;lt;string&amp;gt; is enabled on the given &amp;lt;client&amp;gt; computer, this property returns a setting with the given name and the value &amp;#39;allow.&amp;#39; For instance, if the name of the administrator is joe_admin, then the client would return a setting object with the name &amp;#39;joe_admin&amp;#39; and a value of &amp;#39;allow&amp;#39;. Casting this as a string would return &amp;#39;joe_admin=allow&amp;#39;.
+If the administrator named in the &lt;string&lt; is enabled on the given &lt;client&lt; computer, this property returns a setting with the given name and the value &#39;allow.&#39; For instance, if the name of the administrator is joe_admin, then the client would return a setting object with the name &#39;joe_admin&#39; and a value of &#39;allow&#39;. Casting this as a string would return &#39;joe_admin=allow&#39;.
 
 # administrator of &lt;client&gt; : setting
 
@@ -88,7 +88,7 @@ The name of the owner of the BigFix client.
 
 # registration address of &lt;client&gt; : ipv4or6 address
 
-This inspector returns the IP address (as an &amp;lt;ipv4or6 address&amp;gt; type) that the specified BigFix client registered with.
+This inspector returns the IP address (as an &lt;ipv4or6 address&lt; type) that the specified BigFix client registered with.
 
 # registration cidr address of &lt;client&gt; : string
 
@@ -100,7 +100,7 @@ This inspector returns the MAC address that the specified BigFix client register
 
 # registration subnet address of &lt;client&gt; : ipv4or6 address
 
-This inspector returns the subnet address (as an &amp;lt;ipv4or6 address&amp;gt; type) from the adapter that the specified BigFix client registered with.
+This inspector returns the subnet address (as an &lt;ipv4or6 address&lt; type) from the adapter that the specified BigFix client registered with.
 
 # report character set of &lt;client&gt; : string
 
@@ -120,8 +120,8 @@ No documentation exists.
 
 # upload progress of &lt;client&gt; : string
 
-Returns a status message string indicating No Progress, Errors or a string like the following to indicate the upload progress:&amp;lt;filename&amp;gt;: x of &amp;lt;filesize&amp;gt; bytes in &amp;lt;number&amp;gt; seconds.
+Returns a status message string indicating No Progress, Errors or a string like the following to indicate the upload progress:&lt;filename&lt;: x of &lt;filesize&lt; bytes in &lt;number&lt; seconds.
 
 # version of &lt;client&gt; : version
 
-The product version of the BES application (BESClient or QnA).Note: On the Macintosh only, this inspector returns a &amp;lt;string&amp;gt;.Example: version of client as string - Returns a string like &amp;quot;4.0.3.7&amp;quot;.
+The product version of the BES application (BESClient or QnA).Note: On the Macintosh only, this inspector returns a &lt;string&lt;.Example: version of client as string - Returns a string like "4.0.3.7".

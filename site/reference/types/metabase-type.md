@@ -8,7 +8,7 @@ Meanings same as registry types:1 = DWORD2 = STRING3 = BINARY4 = EXPANDSZ5 = MUL
 
 # &lt;metabase type&gt; as string : string
 
-Returns metabase types as strings:&amp;quot;DWord&amp;quot;&amp;quot;String&amp;quot;&amp;quot;Binary&amp;quot;&amp;quot;ExpandSz&amp;quot;&amp;quot;MultiSz&amp;quot;.
+Returns metabase types as strings:"DWord""String""Binary""ExpandSz""MultiSz".
 
 # &lt;metabase type&gt; = &lt;metabase type&gt; : boolean
 

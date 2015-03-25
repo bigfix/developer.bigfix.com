@@ -1,6 +1,6 @@
 # type: bes action status
 
-The &amp;lt;bes action status&amp;gt; inspectors return information about the status of BES Actions, such as whether it is running, evaluating, expired, and more.
+The &lt;bes action status&lt; inspectors return information about the status of BES Actions, such as whether it is running, evaluating, expired, and more.
 
 # &lt;bes action status&gt; as string : string
 

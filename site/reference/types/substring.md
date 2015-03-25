@@ -7,7 +7,7 @@ A substring object is a part of a larger string and has all the properties of a 
 Returns the position of the substring within its containing string.
 
 {{#example}}
-Q: end of first &quot;be&quot; of &quot;to be or not to be&quot;
+Q: end of first "be" of "to be or not to be"
 A: 5
 {{/example}}
 
@@ -16,7 +16,7 @@ A: 5
 Returns the string following the substring.
 
 {{#example}}
-Q: following text of last &quot;.&quot; of &quot;log.txt&quot;
+Q: following text of last "." of "log.txt"
 A: txt
 {{/example}}
 
@@ -25,7 +25,7 @@ A: txt
 Returns the string preceding the substring.
 
 {{#example}}
-Q: preceding text of last &quot;.&quot; of &quot;log.txt&quot;
+Q: preceding text of last "." of "log.txt"
 A: log
 {{/example}}
 
@@ -34,6 +34,6 @@ A: log
 Returns the position within the string of the substring.
 
 {{#example}}
-Q: start of substring &quot;or&quot; of &quot;to be or not to be&quot;
+Q: start of substring "or" of "to be or not to be"
 A: 6
 {{/example}}

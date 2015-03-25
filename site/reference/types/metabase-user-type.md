@@ -8,7 +8,7 @@ Returns the metabase user type as an integer:2 = Server2 = File100 = WAM200 = AS
 
 # &lt;metabase user type&gt; as string : string
 
-Returns the metabase user type as a string:&amp;quot;Server&amp;quot;&amp;quot;File&amp;quot;&amp;quot;WAM&amp;quot;&amp;quot;ASP App&amp;quot;&amp;quot;(Other)&amp;quot;.
+Returns the metabase user type as a string:"Server""File""WAM""ASP App""(Other)".
 
 # &lt;metabase user type&gt; = &lt;metabase user type&gt; : boolean
 

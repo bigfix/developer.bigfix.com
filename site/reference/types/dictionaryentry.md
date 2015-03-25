@@ -1,6 +1,6 @@
 # type: dictionaryentry
 
-The &amp;lt;dictionaryentry&amp;gt; inspectors provide access to the entries of a dictionary.
+The &lt;dictionaryentry&lt; inspectors provide access to the entries of a dictionary.
 
 # key of &lt;dictionaryentry&gt; : string
 

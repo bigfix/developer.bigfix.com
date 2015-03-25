@@ -1,6 +1,6 @@
 # type: filesystem object
 
-The &amp;lt;filesystem object&amp;gt; inspectors provide handles for the various objects available in the file system.
+The &lt;filesystem object&lt; inspectors provide handles for the various objects available in the file system.
 
 # accessed time of &lt;filesystem object&gt; : time
 
@@ -16,7 +16,7 @@ Returns `True` if the Archive bit is turned on for the specified file or folder 
 
 # backup time of &lt;filesystem object&gt; : time
 
-The date of the last backup of the specified filesystem object (such as a file or folder). This corresponds to what is shown in the &amp;quot;Get Info&amp;quot; box for this object.
+The date of the last backup of the specified filesystem object (such as a file or folder). This corresponds to what is shown in the "Get Info" box for this object.
 
 # bundle version of &lt;filesystem object&gt; : version
 
@@ -32,7 +32,7 @@ Returns `True` if the file or folder (filesystem object) has been compressed.
 
 # creation time of &lt;filesystem object&gt; : time
 
-The date and time of creation of the specified file or folder. This corresponds to what is shown in the &amp;quot;Get Info&amp;quot; box.Example: creation time of file &amp;quot;System&amp;quot; of System Folder &amp;gt; time &amp;quot;3 jan 1998 00:00+0000&amp;quot; - Returns `True` if the creation time of the system file is newer than the specified date.
+The date and time of creation of the specified file or folder. This corresponds to what is shown in the "Get Info" box.Example: creation time of file "System" of System Folder &lt; time "3 jan 1998 00:00+0000" - Returns `True` if the creation time of the system file is newer than the specified date.
 
 # device file &lt;filesystem object&gt; : device file
 
@@ -96,7 +96,7 @@ Returns the permissions mode for the given filesystem object.
 
 # modification time of &lt;filesystem object&gt; : time
 
-The date and time of latest modification of the file. This corresponds to what is shown in the &amp;quot;Get Info&amp;quot; box.Example: name of object &amp;quot;iChat.app&amp;quot; of applications folder - Returns iChat.app.
+The date and time of latest modification of the file. This corresponds to what is shown in the "Get Info" box.Example: name of object "iChat.app" of applications folder - Returns iChat.app.
 
 # name of &lt;filesystem object&gt; : string
 
@@ -104,11 +104,11 @@ This returns the name of the file or folder.
 
 # normal of &lt;filesystem object&gt; : boolean
 
-Returns `True` if the file or folder (filesystem object) is &amp;#39;normal&amp;#39;.
+Returns `True` if the file or folder (filesystem object) is &#39;normal&#39;.
 
 # offline of &lt;filesystem object&gt; : boolean
 
-Returns `True` if the file or folder (the filesystem object) is marked as &amp;#39;offline&amp;#39;.
+Returns `True` if the file or folder (the filesystem object) is marked as &#39;offline&#39;.
 
 # other execute of &lt;filesystem object&gt; : boolean
 
@@ -204,7 +204,7 @@ Returns the owner (user) write permissions for the specified filesystem object.
 
 # version of &lt;filesystem object&gt; : version
 
-This returns the version information from &amp;quot;vers&amp;quot; resource 1 of the file. It is usually present in applications, and may exist in data files as well. It corresponds to what appears in the &amp;quot;Get Info&amp;quot; box for the specified filesystem object.
+This returns the version information from "vers" resource 1 of the file. It is usually present in applications, and may exist in data files as well. It corresponds to what appears in the "Get Info" box for the specified filesystem object.
 
 # &lt;filesystem object&gt; as device file : device file
 
