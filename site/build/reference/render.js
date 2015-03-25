@@ -3,8 +3,7 @@ var escape = require('escape-html'),
   renderText = require('../lib/renderText');
 
 function typeAnchor(type) {
-  var href = '/reference/types/' + type.replace(/ /g, '-') + '.html';
-  return '<a href="' + href + '">' + escape(type) + '</a>';
+  return '<a href="' + makeHref(type) + '">' + escape(type) + '</a>';
 }
 
 function linkType(type) {
@@ -56,7 +55,11 @@ function makeAvailability(value) {
   return availability;
 }
 
-function makeContribute(source, key) {
+function makeHref(type) {
+  return '/reference/types/' + type.replace(/ /g, '-') + '.html';
+}
+
+function makeContribute(source) {
   var base =
     'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
 
@@ -111,12 +114,13 @@ function renderUnaryOp(property, template) {
   return template.render(data);
 }
 
-function renderEntry(id, heading, body, property, source, template) {
+function renderEntry(id, heading, body, property, reference, source, template) {
   var data = {
     id: id,
     heading: heading,
     body: body,
     availability: makeAvailability(property),
+    reference: reference,
     source: makeContribute(source)
   };
 
@@ -127,9 +131,8 @@ function renderEntry(id, heading, body, property, source, template) {
   return template.render(data);
 }
 
-function renderProperties(language, docs, templates) {
-  var rendered = {};
-  var uniqueIDs = {};
+function renderProperties(language, docs, references, templates) {
+  var uniqueIDs = {}, pages = {}, api = {};
 
   Object.keys(docs.properties).forEach(function(key) {
     var property = language.properties[key];
@@ -148,18 +151,27 @@ function renderProperties(language, docs, templates) {
     var body = renderText(docs.properties[key], templates).content;
     var source = docs.source.properties[key];
     var id = escapeKey(property.key);
+    var template = templates.entry;
 
     if (uniqueIDs[id]) {
-      throw new Error('Duplicate html id for key: ' + property.key + ' and ' +
+      throw new Error('Duplicate html id for key: ' + property.key + 'and' +
                       uniqueIDs[id]);
     }
     uniqueIDs[id] = property.key;
 
-    rendered[key] =
-      renderEntry(id, heading, body, property, source, templates.entry);
+    if (references.hasOwnProperty(key)) {
+      reference = makeHref(references[key]);
+    } else {
+      reference = '';
+    }
+
+    pages[key] = 
+      renderEntry(id, heading, body, property, '', source, template);
+    api[key] =
+      renderEntry(id, heading, body, property, reference, source, template);
   });
 
-  return rendered;
+  return { pages: pages, api: api }
 }
 
 function renderType(type, text, renderedProperties, associations, templates) {
@@ -208,14 +220,15 @@ function renderType(type, text, renderedProperties, associations, templates) {
 function render(language, docs, associations, templates) {
   var pages = [];
 
-  var renderedProperties = renderProperties(language, docs, templates);
+  var renderedProperties =
+    renderProperties(language, docs, associations.references, templates);
 
   Object.keys(language.types).forEach(function(key) {
     var type = language.types[key];
     var text = docs.types[key];
 
     var content =
-      renderType(type, text, renderedProperties, associations, templates);
+      renderType(type, text, renderedProperties.pages, associations, templates);
 
     var data = {
       title: type.name,
@@ -228,7 +241,7 @@ function render(language, docs, associations, templates) {
     pages.push({ href: href, content: templates.page.render(data) });
   });
 
-  return { properties: renderedProperties, pages: pages };
+  return { properties: renderedProperties.api, pages: pages };
 }
 
 module.exports = render;
