@@ -8,7 +8,32 @@ function unescape(key) {
     .replace(/&amp;/g, '&');
 }
 
-function processLines(file, baseDir, lineNumber, key, lines, language, docs) {
+/**
+ * Escape a html id in the same way that github does it...probably.
+ */
+function githubEscapeKey(key) {
+  return key.replace(/[()<>=+*\/&:,]/g, '').replace(/\s/g, '-');
+}
+
+/**
+ * Make a relative link to this key within the markdown document on GitHub.
+ */
+function getGitHubSource(key, githubIDs) {
+  var escaped = githubEscapeKey(key);
+  var source = escaped;
+  var num = 1;
+
+  while (githubIDs[source]) {
+    source = escaped + '-' + num;
+    num++;
+  }
+
+  githubIDs[source] = true;
+  return source;
+}
+
+function processLines(file, baseDir, githubIDs, lineNumber, key, lines,
+                      language, docs) {
   if (key.indexOf('# type:') === 0) {
     key = unescape(key.substr(7).trim());
 
@@ -24,7 +49,8 @@ function processLines(file, baseDir, lineNumber, key, lines, language, docs) {
     }
 
     docs.types[key] = lines.join('\n');
-    docs.source.types[key] = path.relative(baseDir, file);
+    docs.source.types[key] =
+      path.relative(baseDir, file) + '#' + getGitHubSource(key, githubIDs);
   } else {
     key = unescape(key.substr(1).trim());
 
@@ -40,17 +66,20 @@ function processLines(file, baseDir, lineNumber, key, lines, language, docs) {
     }
 
     docs.properties[key] = lines.join('\n').trim();
-    docs.source.properties[key] = path.relative(baseDir, file);
+    docs.source.properties[key] =
+      path.relative(baseDir, file) + '#' + getGitHubSource(key, githubIDs);
   }
 }
 
 function parseFile(file, baseDir, language, docs) {
   var lineNumber, key, lines;
+  var githubIDs = {};
 
   fs.readFileSync(file).toString().split('\n').forEach(function(line, index) {
     if (line[0] === '#') {
       if (key) {
-        processLines(file, baseDir, lineNumber, key, lines, language, docs);
+        processLines(file, baseDir, githubIDs, lineNumber, key, lines, language,
+                     docs);
       }
 
       key = line;
@@ -62,7 +91,8 @@ function parseFile(file, baseDir, language, docs) {
   });
 
   if (key) {
-    processLines(file, baseDir, lineNumber, key, lines, language, docs);
+    processLines(file, baseDir, githubIDs, lineNumber, key, lines, language,
+                 docs);
   }
 }
 

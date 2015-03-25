@@ -56,7 +56,7 @@ function makeAvailability(value) {
   return availability;
 }
 
-function makeContribute(source) {
+function makeContribute(source, key) {
   var base =
     'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
 
