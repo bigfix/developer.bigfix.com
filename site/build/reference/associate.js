@@ -85,12 +85,11 @@ function associateProperty(property, creation, methods, references) {
     methods[property.directObjectType].properties.push(property.key);
     references[property.key] = property.directObjectType;
   } else if (property.indexType) {
-    unique(types(property.indexType)).forEach(function(type, i) {
+    var indexTypes = unique(types(property.indexType));
+    references[property.key] = indexTypes[0];
+    indexTypes.forEach(function(type, i) {
       assertNotTuple(type);
       methods[type].properties.push(property.key);
-      if ( i === 0 ) {
-        references[property.key] = type;
-      }
     });
   } else {
     assertNotTuple(property.resultType);

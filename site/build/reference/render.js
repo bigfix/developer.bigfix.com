@@ -152,6 +152,7 @@ function renderProperties(language, docs, references, templates) {
     var source = docs.source.properties[key];
     var id = escapeKey(property.key);
     var template = templates.entry;
+    var reference = references[key] ? makeHref(references[key]) : '';
 
     if (uniqueIDs[id]) {
       throw new Error('Duplicate html id for key: ' + property.key + 'and' +
@@ -159,19 +160,13 @@ function renderProperties(language, docs, references, templates) {
     }
     uniqueIDs[id] = property.key;
 
-    if (references.hasOwnProperty(key)) {
-      reference = makeHref(references[key]);
-    } else {
-      reference = '';
-    }
-
     pages[key] = 
       renderEntry(id, heading, body, property, '', source, template);
     api[key] =
       renderEntry(id, heading, body, property, reference, source, template);
   });
 
-  return { pages: pages, api: api }
+  return { pages: pages, api: api };
 }
 
 function renderType(type, text, renderedProperties, associations, templates) {
