@@ -66,16 +66,16 @@ A: 9600, 6.3.9600, Win8.1
 
 # build number of &lt;operating system&gt; : integer
 
-No documentation exists.
-
-# build number of &lt;operating system&gt; : string
-
 Returns the integer build number of the operating system.
 
 {{#example}}
 Q: (build number of it, version of it, name of it) of operating system
 A: 9600, 6.3.9600, Win8.1
 {{/example}}
+
+# build number of &lt;operating system&gt; : string
+
+No documentation exists.
 
 # build of &lt;operating system&gt; : string
 
