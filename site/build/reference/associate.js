@@ -68,9 +68,10 @@ function associateBinaryOp(property, creation, methods) {
   }
 }
 
-function associateCast(property, creation, methods) {
+function associateCast(property, creation, methods, references) {
   assertNotTuple(property.argType);
   methods[property.argType].casts.push(property.key);
+  references[property.key] = property.argType;
 
   if (property.argType !== property.resultType) {
     assertNotTuple(property.resultType);
@@ -78,17 +79,22 @@ function associateCast(property, creation, methods) {
   }
 }
 
-function associateProperty(property, creation, methods) {
+function associateProperty(property, creation, methods, references) {
   if (property.directObjectType) {
     assertNotTuple(property.directObjectType);
     methods[property.directObjectType].properties.push(property.key);
+    references[property.key] = property.directObjectType;
   } else if (property.indexType) {
-    unique(types(property.indexType)).forEach(function(type) {
+    unique(types(property.indexType)).forEach(function(type, i) {
       assertNotTuple(type);
       methods[type].properties.push(property.key);
+      if ( i === 0 ) {
+        references[property.key] = type;
+      }
     });
   } else {
     assertNotTuple(property.resultType);
+    references[property.key] = property.resultType;
   }
 
   if (isTupleType(property.resultType)) {
@@ -114,7 +120,7 @@ function associateProperty(property, creation, methods) {
  *       of the argument types.
  */
 function associate(language) {
-  var creation = {}, methods = {};
+  var creation = {}, methods = {}, references = {};
 
   Object.keys(language.types).forEach(function(type) {
     creation[type] = { properties: [], casts: [], operators: [] };
@@ -129,13 +135,13 @@ function associate(language) {
     } else if (property.type === 'binaryOp') {
       associateBinaryOp(property, creation, methods);
     } else if (property.type === 'cast') {
-      associateCast(property, creation, methods);
+      associateCast(property, creation, methods, references);
     } else if (property.type === 'property') {
-      associateProperty(property, creation, methods);
+      associateProperty(property, creation, methods, references);
     }
   });
 
-  return { creation: creation, methods: methods };
+  return { creation: creation, methods: methods, references: references };
 }
 
 module.exports = associate;
