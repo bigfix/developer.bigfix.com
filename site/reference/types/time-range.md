@@ -1,6 +1,6 @@
 # type: time range
 
-The &lt;time range&lt; inspectors provide tools for dealing and calculating with time-range types, which are of the form &#39;time to time&#39;, such as Tue, 18 Apr 2006 16:46:07 -0400 to Wed, 19 Apr 2006 16:46:07 -0400
+The &lt;time range&gt; inspectors provide tools for dealing and calculating with time-range types, which are of the form &#39;time to time&#39;, such as Tue, 18 Apr 2006 16:46:07 -0400 to Wed, 19 Apr 2006 16:46:07 -0400
 
 # end of &lt;time range&gt; : time
 
@@ -32,7 +32,7 @@ Returns the starting date of a time range.
 
 # unique value of &lt;time range&gt; : time range with multiplicity
 
-Returns the unique values of a given list of &lt;time range&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time range&gt; types, removing duplicates and sorting by value.
 
 # &lt;time range&gt; as string : string
 
@@ -40,7 +40,7 @@ Casts a time range as a string.
 
 # &lt;time range&gt; &amp; &lt;time range&gt; : time range
 
-Returns the smallest range that contains both ot the specified ranges (same as &lt;time range&lt; + &lt;time range&lt;).
+Returns the smallest range that contains both ot the specified ranges (same as &lt;time range&gt; + &lt;time range&gt;).
 
 # &lt;time range&gt; * &lt;time range&gt; : time range
 
@@ -48,7 +48,7 @@ Returns the intersection of the two specified time ranges, if one exists.Example
 
 # &lt;time range&gt; + &lt;time range&gt; : time range
 
-Returns the smallest range that contains both ot the specified ranges (same as &lt;time range&lt; &amp; &lt;time range&lt;).Example: (week &amp; now) + (day &amp; now) - Returns a one-week time range (from a week ago to today).
+Returns the smallest range that contains both ot the specified ranges (same as &lt;time range&gt; &amp; &lt;time range&gt;).Example: (week &amp; now) + (day &amp; now) - Returns a one-week time range (from a week ago to today).
 
 # &lt;time range&gt; = &lt;time range&gt; : boolean
 

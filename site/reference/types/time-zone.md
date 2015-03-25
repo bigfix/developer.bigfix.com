@@ -8,7 +8,7 @@ Returns the current time of day in the specified time zone.
 
 # unique value of &lt;time zone&gt; : time zone with multiplicity
 
-Returns the unique values of a given list of &lt;time zone&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time zone&gt; types, removing duplicates and sorting by value.
 
 # &lt;time zone&gt; as string : string
 

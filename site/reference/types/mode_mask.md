@@ -1,6 +1,6 @@
 # type: mode_mask
 
-The &lt;mode_mask&lt; inspector is a differently formatted version of the mode, created by shifting the key information down to the low three bits.
+The &lt;mode_mask&gt; inspector is a differently formatted version of the mode, created by shifting the key information down to the low three bits.
 
 # execute of &lt;mode_mask&gt; : boolean
 

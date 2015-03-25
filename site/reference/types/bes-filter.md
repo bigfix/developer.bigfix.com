@@ -1,6 +1,6 @@
 # type: bes filter
 
-The &lt;bes filter&lt; inspectors return the filters, which represent the criteria used by the Find command (Ctrl-F in the BES Console). The filters are specific to computers, computer groups, Actions, Analyses, Baselines, Unmanaged Assets, Users, Tasks or Fixlets, and are appropriately flagged.
+The &lt;bes filter&gt; inspectors return the filters, which represent the criteria used by the Find command (Ctrl-F in the BES Console). The filters are specific to computers, computer groups, Actions, Analyses, Baselines, Unmanaged Assets, Users, Tasks or Fixlets, and are appropriately flagged.
 
 # action flag of &lt;bes filter&gt; : boolean
 
@@ -84,7 +84,7 @@ Returns a filtered set of Tasks. Given a Task filter that specifies "Visibility 
 
 # unique value of &lt;bes filter&gt; : bes filter with multiplicity
 
-Returns the unique values of a given list of &lt;bes filter&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes filter&gt; types, removing duplicates and sorting by value.
 
 # unmanagedasset flag of &lt;bes filter&gt; : boolean
 

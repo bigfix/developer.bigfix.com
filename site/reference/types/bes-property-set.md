@@ -1,10 +1,10 @@
 # type: bes property set
 
-The &lt;bes property set&lt; inspectors iterate over the current set of BES properties and package them as a mathematical set, suitable for further set manipulation.
+The &lt;bes property set&gt; inspectors iterate over the current set of BES properties and package them as a mathematical set, suitable for further set manipulation.
 
 # element of &lt;bes property set&gt; : bes property
 
-Returns the unique elements of the specified &lt;bes property set&lt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes property set&gt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes property set&gt; : bes property set
 

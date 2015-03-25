@@ -1,6 +1,6 @@
 # type: bes fixlet action
 
-The &lt;bes fixlet action&lt; inspectors let you examine BES Actions that are attached to fixlets.
+The &lt;bes fixlet action&gt; inspectors let you examine BES Actions that are attached to fixlets.
 
 # content id of &lt;bes fixlet action&gt; : string
 

@@ -140,7 +140,7 @@ Returns the font folder of the specified OS X domain, typically /System/Library/
 
 # framework &lt;string&gt; of &lt;domain&gt; : folder
 
-Returns a folder of the form "/System/Library/Frameworks/&lt;string&lt;.framework".Note: This inspector appends .framework for you, so don&#39;t provide it. The framework inspector needs a domain, and without it defaults to the system domain.Example: framework "MyPrivate" of local domain - Returns /Library/Frameworks/MyPrivate.framework.
+Returns a folder of the form "/System/Library/Frameworks/&lt;string&gt;.framework".Note: This inspector appends .framework for you, so don&#39;t provide it. The framework inspector needs a domain, and without it defaults to the system domain.Example: framework "MyPrivate" of local domain - Returns /Library/Frameworks/MyPrivate.framework.
 
 # framework folder of &lt;domain&gt; : folder
 

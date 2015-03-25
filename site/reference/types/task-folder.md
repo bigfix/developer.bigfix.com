@@ -1,6 +1,6 @@
 # type: task folder
 
-The &lt;task folder&lt; objects provide the methods that are used to retrieve tasks from the folder, as well as from its subfolders. Task folders are specified by name, path and include scheduled tasks.
+The &lt;task folder&gt; objects provide the methods that are used to retrieve tasks from the folder, as well as from its subfolders. Task folders are specified by name, path and include scheduled tasks.
 
 # descendant of &lt;task folder&gt; : scheduled task
 

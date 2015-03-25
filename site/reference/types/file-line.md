@@ -1,6 +1,6 @@
 # type: file line
 
-A &lt;file line&lt; object produces strings from a text file.
+A &lt;file line&gt; object produces strings from a text file.
 
 # line number of &lt;file line&gt; : integer
 
@@ -12,4 +12,4 @@ Returns the line after the specified line in a file (provided that it is not the
 
 # previous line of &lt;file line&gt; : file line
 
-Returns the line before the nth line in a file, provided n&lt;1. You may repeat this command up to three times.
+Returns the line before the nth line in a file, provided n&gt;1. You may repeat this command up to three times.

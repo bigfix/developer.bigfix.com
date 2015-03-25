@@ -1,6 +1,6 @@
 # type: runlevel
 
-The &lt;runlevel&lt; inspectors refer to a mode of operation in various Unix systems. Typically, when a computer enters runlevel zero, it halts and when it enters runlevel six, it reboots. The intermediate runlevels differ widely among operating systems.
+The &lt;runlevel&gt; inspectors refer to a mode of operation in various Unix systems. Typically, when a computer enters runlevel zero, it halts and when it enters runlevel six, it reboots. The intermediate runlevels differ widely among operating systems.
 
 # effective time of &lt;runlevel&gt; : time
 

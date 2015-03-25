@@ -1,6 +1,6 @@
 # type: local group
 
-The &lt;local group&lt; inspectors return information on local groups as defined on the local BES Client computer using the windows NetLocalGroupEnum API, one of Windows Network Management Functions. Local groups have names, comments, members and security IDs.
+The &lt;local group&gt; inspectors return information on local groups as defined on the local BES Client computer using the windows NetLocalGroupEnum API, one of Windows Network Management Functions. Local groups have names, comments, members and security IDs.
 
 # comment of &lt;local group&gt; : string
 

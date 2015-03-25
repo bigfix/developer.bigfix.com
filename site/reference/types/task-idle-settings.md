@@ -1,6 +1,6 @@
 # type: task idle settings
 
-The &lt;task idle settings&lt; objects specify how the Task Scheduler performs tasks when the computer is in an idle condition. These settings concern the duration, restart, stop and wait conditions for the specified idle settings. For more information about idle conditions, see &#39;Task Idle Conditions&#39; at MSDN.
+The &lt;task idle settings&gt; objects specify how the Task Scheduler performs tasks when the computer is in an idle condition. These settings concern the duration, restart, stop and wait conditions for the specified idle settings. For more information about idle conditions, see &#39;Task Idle Conditions&#39; at MSDN.
 
 # idle duration of &lt;task idle settings&gt; : time interval
 

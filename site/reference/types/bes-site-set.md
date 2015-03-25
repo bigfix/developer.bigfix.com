@@ -1,6 +1,6 @@
 # type: bes site set
 
-The &lt;bes site set&lt; inspectors iterate over the BES sites and return a set of such sites.
+The &lt;bes site set&gt; inspectors iterate over the BES sites and return a set of such sites.
 
 # element of &lt;bes site set&gt; : bes site
 

@@ -1,6 +1,6 @@
 # type: event log
 
-The &lt;event log&lt; inspectors return information about the specified Windows Event logs, including the System, Security and the Application log.
+The &lt;event log&gt; inspectors return information about the specified Windows Event logs, including the System, Security and the Application log.
 
 # oldest record number of &lt;event log&gt; : integer
 

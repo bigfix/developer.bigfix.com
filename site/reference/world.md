@@ -48,7 +48,7 @@ This iterative inspector returns a list of all external, master, operator, and c
 
 # all computer count : historical computer count
 
-Returns a list of all &lt;historical_computer_count&lt; objects.
+Returns a list of all &lt;historical_computer_count&gt; objects.
 
 # all firewall scope : firewall scope
 
@@ -172,7 +172,7 @@ Returns the current list of BES Actions in the form of a set, which can be arith
 
 # bes action status constrained : bes action status
 
-Returns the BES Action status corresponding to constraints. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to constraints. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status disk free limited : bes action status
 
@@ -184,27 +184,27 @@ No documentation exists.
 
 # bes action status download failed : bes action status
 
-Returns the BES Action status corresponding to failed downloads. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to failed downloads. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status error : bes action status
 
-Returns the BES Action status corresponding to errors. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to errors. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status evaluating : bes action status
 
-Returns the BES Action status corresponding to evaluation. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to evaluation. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status expired : bes action status
 
-Returns the BES Action status corresponding to expiration. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to expiration. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status failed : bes action status
 
-Returns the BES Action status corresponding to failure. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to failure. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status fixed : bes action status
 
-Returns the BES Action status corresponding to successful fixes. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to successful fixes. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status hash mismatch : bes action status
 
@@ -212,47 +212,47 @@ No documentation exists.
 
 # bes action status invalid signature : bes action status
 
-Returns the BES Action status corresponding to invalid signatures. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to invalid signatures. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status irrelevant : bes action status
 
-Returns the BES Action status corresponding to irrelevance This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to irrelevance This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status locked : bes action status
 
-Returns the BES Action status corresponding to locking. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to locking. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status offers disabled : bes action status
 
-Returns the BES Action status corresponding to disabled offers. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to disabled offers. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status pending downloads : bes action status
 
-Returns the BES Action status corresponding to pending downloads. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending downloads. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status pending login : bes action status
 
-Returns the BES Action status corresponding to pending logins. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending logins. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status pending message : bes action status
 
-Returns the BES Action status corresponding to pending messages. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending messages. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status pending offer : bes action status
 
-Returns the BES Action status corresponding to pending offers. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending offers. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status pending restart : bes action status
 
-Returns the BES Action status corresponding to pending restarts. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to pending restarts. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status postponed : bes action status
 
-Returns the BES Action status corresponding to postponements. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to postponements. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status running : bes action status
 
-Returns the BES Action status corresponding to whether or not it is running. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to whether or not it is running. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status unreported : bes action status
 
@@ -260,11 +260,11 @@ Returns a constant representing an action status of &#39;not reported&#39;.
 
 # bes action status user cancelled : bes action status
 
-Returns the BES Action status corresponding to user cancelation. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to user cancelation. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes action status waiting : bes action status
 
-Returns the BES Action status corresponding to waiting. This result can be cast to a &lt;string&lt; format to give the text as shown in the console.
+Returns the BES Action status corresponding to waiting. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
 # bes analysis : bes fixlet
 
@@ -424,7 +424,7 @@ Creates a task trigger type corresponding to a boot trigger, which starts a task
 
 # br : html
 
-Creates an HTML &lt;br/&lt; tag to output a line break.
+Creates an HTML &lt;br/&gt; tag to output a line break.
 
 # builtin administrators group : security account
 
@@ -488,7 +488,7 @@ Returns the client object corresponding to the BigFix application evaluating the
 
 # client cryptography : client_cryptography
 
-This inspector is similar to the core cryptography object except that it returns properties exclusive to the client (whereas &lt;cryptography&lt; is also available in the Console/Web Reports contexts).
+This inspector is similar to the core cryptography object except that it returns properties exclusive to the client (whereas &lt;cryptography&gt; is also available in the Console/Web Reports contexts).
 
 # client license : license
 
@@ -620,7 +620,7 @@ No documentation exists.
 
 # current bes server : bes server
 
-Returns a &lt;bes server&lt; object corresponding to the BES Server currently connected to the Console or Web Reports applications. The current bes server inspectors allow dashboards to access files hosted on the current BES Server.
+Returns a &lt;bes server&gt; object corresponding to the BES Server currently connected to the Console or Web Reports applications. The current bes server inspectors allow dashboards to access files hosted on the current BES Server.
 
 # current bes site : bes site
 
@@ -744,7 +744,7 @@ Returns the current user folder of the system domain
 
 # current wizard : bes wizard
 
-If this inspector is being evaluated in the context of a Wizard, then it returns the corresponding &lt;bes wizard&lt; object.
+If this inspector is being evaluated in the context of a Wizard, then it returns the corresponding &lt;bes wizard&gt; object.
 
 # current year : year
 
@@ -918,7 +918,7 @@ No documentation exists.
 
 # drive : filesystem
 
-Iterates through all valid drives on the system. Typically used to return a list of the drives (volumes, filesystems) on the client computer. On Windows computers, this returns a &lt;drive&lt; object.On *nix computers, this returns a &lt;filesystem&lt; object.Drives, volumes and filesystems are treated the same on the Macintosh and return a &lt;volume&lt; type.
+Iterates through all valid drives on the system. Typically used to return a list of the drives (volumes, filesystems) on the client computer. On Windows computers, this returns a &lt;drive&gt; object.On *nix computers, this returns a &lt;filesystem&gt; object.Drives, volumes and filesystems are treated the same on the Macintosh and return a &lt;volume&gt; type.
 
 # drive : volume
 
@@ -1003,7 +1003,7 @@ Returns the global service type for file and print sharing, corresponding to the
 
 # filesystem : filesystem
 
-Returns the volume corresponding to the filesystem. Typically used to return a list of the filesystems (drives, volumes) on the client computer. Drives, volumes and filesystems are treated the same on the Macintosh and return a &lt;volume&lt; type.
+Returns the volume corresponding to the filesystem. Typically used to return a list of the filesystems (drives, volumes) on the client computer. Drives, volumes and filesystems are treated the same on the Macintosh and return a &lt;volume&gt; type.
 
 # filesystem : volume
 
@@ -1434,7 +1434,7 @@ No documentation exists.
 
 # main gather service : service
 
-Returns a service object for the main gathering service, typically located on the main server.Note: On a Macintosh, returns &lt;nothing&lt;. Included for compatibility.
+Returns a service object for the main gathering service, typically located on the main server.Note: On a Macintosh, returns &lt;nothing&gt;. Included for compatibility.
 
 # main palm device : palm device
 
@@ -1853,7 +1853,7 @@ No documentation exists.
 
 # regapp : filesystem object
 
-This inspector returns the applications available to the Client. On Windows systems, this inspector returns all the application objects defined under the &#39;App Paths&#39; key of the registry. On a Macintosh, it recursively finds all applications (bundles) and executables under the /Applications directory, as well as all of those under the Applications directories of all local users of the machine. It returns a &lt;filesystem object&lt;. This inspector is the same as application, and is included for compatibility with Windows.
+This inspector returns the applications available to the Client. On Windows systems, this inspector returns all the application objects defined under the &#39;App Paths&#39; key of the registry. On a Macintosh, it recursively finds all applications (bundles) and executables under the /Applications directory, as well as all of those under the Applications directories of all local users of the machine. It returns a &lt;filesystem object&gt;. This inspector is the same as application, and is included for compatibility with Windows.
 
 # registration server : registration server
 
@@ -1865,7 +1865,7 @@ Creates a task trigger type corresponding to a registration trigger, which start
 
 # registry : dummy type
 
-Returns a registry object. Note: On a Macintosh, this returns a &lt;dummy type&lt; object.
+Returns a registry object. Note: On a Macintosh, this returns a &lt;dummy type&gt; object.
 
 # registry : registry
 
@@ -1877,7 +1877,7 @@ No documentation exists.
 
 # relay service : service
 
-Returns a service object for the relay component of BES. Note: On a Macintosh, this returns &lt;nothing&lt;.
+Returns a service object for the relay component of BES. Note: On a Macintosh, this returns &lt;nothing&gt;.
 
 # relevant &lt;( bes computer, bes fixlet )&gt; : boolean
 
@@ -1897,15 +1897,15 @@ Refers to the group of users who log on using an RDP connection.
 
 # result &lt;( bes action, bes computer )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&lt; of &lt;bes computer&lt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
 
 # result &lt;( bes computer, bes action )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&lt; of &lt;bes computer&lt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
 
 # result &lt;( bes computer, bes fixlet )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&lt; of &lt;bes computer&lt;.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&gt; of &lt;bes computer&gt;.
 
 # result &lt;( bes computer, bes property )&gt; : bes property result
 
@@ -1913,7 +1913,7 @@ Returns the result of the specified BES property and computer.
 
 # result &lt;( bes fixlet, bes computer )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&lt; of &lt;bes computer&lt;.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&gt; of &lt;bes computer&gt;.
 
 # result &lt;( bes property, bes computer )&gt; : bes property result
 
@@ -2105,7 +2105,7 @@ Returns a system event log, which records OS or component events, such as the fa
 
 # system folder : folder
 
-Windows systems, returns the 32 bit "System32" folder. eg: C:\Windows\System32 or C:\Windows\SysWow64. Platforms other than Windows this is a synonym for &lt;root folder&lt;
+Windows systems, returns the 32 bit "System32" folder. eg: C:\Windows\System32 or C:\Windows\SysWow64. Platforms other than Windows this is a synonym for &lt;root folder&gt;
 
 # system group : security account
 
@@ -2313,7 +2313,7 @@ Returns a 64-bit registry object. This inspector is for 64-bit computers only; t
 
 # year : number of months
 
-Returns the specified number of years as a &lt;number of months&lt; type.
+Returns the specified number of years as a &lt;number of months&gt; type.
 
 # zone : zone
 

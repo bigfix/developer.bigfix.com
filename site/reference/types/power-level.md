@@ -1,6 +1,6 @@
 # type: power level
 
-The &lt;power level&lt; inspectors provide exposure to the underlying batter and power information used by low-power modes. On Windows, this uses the GetSystemPowerStatus system call, and on OSX, it uses the IOPSCopyPowerSourcesList functionality.
+The &lt;power level&gt; inspectors provide exposure to the underlying batter and power information used by low-power modes. On Windows, this uses the GetSystemPowerStatus system call, and on OSX, it uses the IOPSCopyPowerSourcesList functionality.
 
 # full of &lt;power level&gt; : boolean
 

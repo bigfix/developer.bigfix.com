@@ -8,7 +8,7 @@ A reflexive typing of the specified debian package version revision.
 
 # extrema of &lt;debian package version revision&gt; : ( debian package version revision, debian package version revision )
 
-Returns the minimum and maximum extreme values of the given list of &lt;debian package version revision&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;debian package version revision&gt; types.
 
 # maximum of &lt;debian package version revision&gt; : debian package version revision
 
@@ -20,7 +20,7 @@ Returns the minimum value from the specified list of Debian package version revi
 
 # unique value of &lt;debian package version revision&gt; : debian package version revision with multiplicity
 
-Returns the unique values and counts of a given list of &lt;debian package version revision&lt; types, removing duplicates and sorting by value.
+Returns the unique values and counts of a given list of &lt;debian package version revision&gt; types, removing duplicates and sorting by value.
 
 # &lt;debian package version revision&gt; as debian package version revision : debian package version revision
 

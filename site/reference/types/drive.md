@@ -1,6 +1,6 @@
 # type: drive
 
-The &lt;drive&lt; object is available to inspect these aspects of the file system.
+The &lt;drive&gt; object is available to inspect these aspects of the file system.
 
 # file system type of &lt;drive&gt; : string
 
@@ -72,7 +72,7 @@ Returns the folder corresponding to the root of the drive.
 
 # total space of &lt;drive&gt; : integer
 
-Returns the size in bytes of the drive. (Only available for fixed disks).Example: total space of drive "c:" &lt; 2000000000 - Returns `True` when the drive is capable of holding more than 2 billion bytes.
+Returns the size in bytes of the drive. (Only available for fixed disks).Example: total space of drive "c:" &gt; 2000000000 - Returns `True` when the drive is capable of holding more than 2 billion bytes.
 
 # type of &lt;drive&gt; : string
 

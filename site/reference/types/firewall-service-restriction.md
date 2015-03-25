@@ -1,6 +1,6 @@
 # type: firewall service restriction
 
-The &lt;firewall service restriction&lt; inspectors provide a wrapper for the Windows Firewall Service Restriction. They are Vista-only. On a non-Vista machine, they return no results. For more information see the MSDN Library reference to INetFwServiceRestriction at http://msdn.microsoft.com/library/.
+The &lt;firewall service restriction&gt; inspectors provide a wrapper for the Windows Firewall Service Restriction. They are Vista-only. On a non-Vista machine, they return no results. For more information see the MSDN Library reference to INetFwServiceRestriction at http://msdn.microsoft.com/library/.
 
 # rule of &lt;firewall service restriction&gt; : firewall rule
 

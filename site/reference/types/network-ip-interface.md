@@ -52,7 +52,7 @@ Returns the subnet address (IPv4) to which the specified interface belongs.
 
 # subnet mask of &lt;network ip interface&gt; : ipv4 address
 
-Returns the subnet mask (IPv4) of the specified network ip interface.As of version 8.0, this inspector type is derived from an &lt;ipv4or6 address&lt; type.
+Returns the subnet mask (IPv4) of the specified network ip interface.As of version 8.0, this inspector type is derived from an &lt;ipv4or6 address&gt; type.
 
 # up of &lt;network ip interface&gt; : boolean
 

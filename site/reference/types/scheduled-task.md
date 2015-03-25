@@ -1,6 +1,6 @@
 # type: scheduled task
 
-The &lt;scheduled task&lt; inspectors are built on top of the Windows Task Scheduler (see the MSDN reference). There are two versions: the 1.0 interface (Win 2000, XP &amp; Server 2003) and the 2.0 interface (Win 7, Vista and Server 2008) which is favored when available. The Task Scheduler inspector set reflects the 2.0 interface layout which in turn maps back to the 1.0 interface. Features of the 1.0 interface are available in the 2.0 interface, but not vice-versa. If the 2.0 interface isn&#39;t available, you may encounter undefined objects. Each of these inspectors works with both 1.0 and 2.0 unless explicitly Noted.
+The &lt;scheduled task&gt; inspectors are built on top of the Windows Task Scheduler (see the MSDN reference). There are two versions: the 1.0 interface (Win 2000, XP &amp; Server 2003) and the 2.0 interface (Win 7, Vista and Server 2008) which is favored when available. The Task Scheduler inspector set reflects the 2.0 interface layout which in turn maps back to the 1.0 interface. Features of the 1.0 interface are available in the 2.0 interface, but not vice-versa. If the 2.0 interface isn&#39;t available, you may encounter undefined objects. Each of these inspectors works with both 1.0 and 2.0 unless explicitly Noted.
 
 # definition of &lt;scheduled task&gt; : task definition
 

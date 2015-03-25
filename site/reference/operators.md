@@ -493,7 +493,7 @@ No documentation exists.
 
 # &lt;rate&gt; * &lt;time interval&gt; : floating point
 
-Multiplies a &lt;rate&lt; by a &lt;time interval&lt;, producing a floating point number.
+Multiplies a &lt;rate&gt; by a &lt;time interval&gt;, producing a floating point number.
 
 # &lt;rate&gt; / &lt;floating point&gt; : rate
 
@@ -969,7 +969,7 @@ No documentation exists.
 
 # &lt;time interval&gt; * &lt;rate&gt; : floating point
 
-Multiplies a &lt;time interval&lt; by a &lt;rate&lt;, producing a floating point number.
+Multiplies a &lt;time interval&gt; by a &lt;rate&gt;, producing a floating point number.
 
 # &lt;time interval&gt; + &lt;date&gt; : date
 
@@ -1001,7 +1001,7 @@ No documentation exists.
 
 # &lt;time interval&gt; + &lt;time&gt; : time
 
-Adds the specified time interval to the &lt;time&lt;
+Adds the specified time interval to the &lt;time&gt;
 
 # &lt;time interval&gt; / &lt;integer&gt; : time interval
 
@@ -1037,7 +1037,7 @@ No documentation exists.
 
 # &lt;time range&gt; &amp; &lt;time&gt; : time range
 
-Concatenates a time with a time range, producing a new time range, in the form of:&lt;time - time range&lt; to &lt;time&lt;.
+Concatenates a time with a time range, producing a new time range, in the form of:&lt;time - time range&gt; to &lt;time&gt;.
 
 # &lt;time range&gt; * &lt;boolean&gt; : timed( time range, boolean )
 
@@ -1073,7 +1073,7 @@ Concatenates a time and a time interval, producing a time range object.
 
 # &lt;time&gt; &amp; &lt;time range&gt; : time range
 
-Concatenates a time and a time range, producing a new time range, in the form of:&lt;time&lt; to &lt;time + time range&lt;.
+Concatenates a time and a time range, producing a new time range, in the form of:&lt;time&gt; to &lt;time + time range&gt;.
 
 # &lt;time&gt; + &lt;time interval&gt; : time
 

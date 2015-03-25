@@ -1,6 +1,6 @@
 # type: bes computer group
 
-The &lt;bes computer group&lt; inspectors return an iterated list of computer groups, as defined in the BES Console.
+The &lt;bes computer group&gt; inspectors return an iterated list of computer groups, as defined in the BES Console.
 
 # automatic flag of &lt;bes computer group&gt; : boolean
 
@@ -28,7 +28,7 @@ Returns the numeric ID corresponding to the specified BES Computer Group.
 
 # issuer of &lt;bes computer group&gt; : bes user
 
-Returns the &lt;bes user&lt; object corresponding to the bes computer group that issued the specified activation.
+Returns the &lt;bes user&gt; object corresponding to the bes computer group that issued the specified activation.
 
 # manual flag of &lt;bes computer group&gt; : boolean
 
@@ -56,7 +56,7 @@ Returns the site corresponding to the specified BES Computer Group.
 
 # unique value of &lt;bes computer group&gt; : bes computer group with multiplicity
 
-Returns the unique values of a given list of &lt;bes computer group&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes computer group&gt; types, removing duplicates and sorting by value.
 
 # &lt;bes computer group&gt; as xml : utf8 string
 

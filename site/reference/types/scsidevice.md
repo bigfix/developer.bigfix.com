@@ -1,6 +1,6 @@
 # type: scsidevice
 
-The &lt;scsidevice&lt; inspectors refer to the Small Computer System Interface devices connected to the Client computer.
+The &lt;scsidevice&gt; inspectors refer to the Small Computer System Interface devices connected to the Client computer.
 
 # product of &lt;scsidevice&gt; : string
 

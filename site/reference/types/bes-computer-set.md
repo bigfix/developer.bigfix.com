@@ -1,10 +1,10 @@
 # type: bes computer set
 
-The &lt;bes computer set&lt; inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions and other mathematical operations on them.
+The &lt;bes computer set&gt; inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions and other mathematical operations on them.
 
 # element of &lt;bes computer set&gt; : bes computer
 
-Returns the unique elements of the specified &lt;bes computer set&lt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes computer set&gt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes computer set&gt; : bes computer set
 

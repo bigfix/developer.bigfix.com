@@ -1,6 +1,6 @@
 # type: setting
 
-A &lt;setting&lt; is a simple object with name and value properties. It is a property of a client, or a property of a site. Settings of a site have a site scope. Settings of the client have a client scope.  See the  setting&#39; commands in the action guide for more details.
+A &lt;setting&gt; is a simple object with name and value properties. It is a property of a client, or a property of a site. Settings of a site have a site scope. Settings of the client have a client scope.  See the  setting&#39; commands in the action guide for more details.
 
 # effective date of &lt;setting&gt; : time
 
@@ -24,4 +24,4 @@ Returns the value of the setting.
 
 # &lt;setting&gt; as string : string
 
-Returns a string formatted as &lt;name&lt;=&lt;value&lt; for the setting.
+Returns a string formatted as &lt;name&gt;=&lt;value&gt; for the setting.

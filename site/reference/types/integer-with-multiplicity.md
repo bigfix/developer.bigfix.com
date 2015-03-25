@@ -1,6 +1,6 @@
 # type: integer with multiplicity
 
-The &lt;integer with multiplicity&lt; inspectors deal with arrays of integers, allowing you to extract unique numbers and count them.
+The &lt;integer with multiplicity&gt; inspectors deal with arrays of integers, allowing you to extract unique numbers and count them.
 
 # multiplicity of &lt;integer with multiplicity&gt; : integer
 

@@ -1,6 +1,6 @@
 # type: task settings
 
-The &lt;task settings&lt; inspectors examine the settings used by the Task Scheduler service to perform the task. These settings include dealing with starts, restarts and stops, how to manage hidden or multiple tasks, and more.
+The &lt;task settings&gt; inspectors examine the settings used by the Task Scheduler service to perform the task. These settings include dealing with starts, restarts and stops, how to manage hidden or multiple tasks, and more.
 
 # allow demand start of &lt;task settings&gt; : boolean
 

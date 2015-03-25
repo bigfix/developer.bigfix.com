@@ -1,6 +1,6 @@
 # type: task repetition pattern
 
-The &lt;task repetition pattern&lt; inspectors define how often a scheduled task should be run and determine how long the repetition pattern will be repeated after the task is initiated.
+The &lt;task repetition pattern&gt; inspectors define how often a scheduled task should be run and determine how long the repetition pattern will be repeated after the task is initiated.
 
 # duration of &lt;task repetition pattern&gt; : time interval
 

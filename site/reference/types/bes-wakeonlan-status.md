@@ -1,6 +1,6 @@
 # type: bes wakeonlan status
 
-The &lt;bes wakeonlan status&lt; objects are Windows inspectors that return the status of the BES WakeOnLan feature.
+The &lt;bes wakeonlan status&gt; objects are Windows inspectors that return the status of the BES WakeOnLan feature.
 
 # database id of &lt;bes wakeonlan status&gt; : integer
 

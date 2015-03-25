@@ -1,6 +1,6 @@
 # type: action
 
-The &lt;action&lt; objects are the keywords associated with properties available for inspection during the execution of BigFix Actions.
+The &lt;action&gt; objects are the keywords associated with properties available for inspection during the execution of BigFix Actions.
 
 # active count of &lt;action&gt; : integer
 
@@ -84,7 +84,7 @@ Returns the Fixlet id that contained the action.
 
 # parameter &lt;string&gt; of &lt;action&gt; : string
 
-Returns the value of parameter &lt;string&lt; for the active Action. Parameters only live as long as the action is active. Among the inspectable parameters is the &#39;action issue date&#39; that is added to each Action by the BigFix Console at issue time.Example: parameter "action issue date" of action - This inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
+Returns the value of parameter &lt;string&gt; for the active Action. Parameters only live as long as the action is active. Among the inspectable parameters is the &#39;action issue date&#39; that is added to each Action by the BigFix Console at issue time.Example: parameter "action issue date" of action - This inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
 
 # pending login of &lt;action&gt; : boolean
 

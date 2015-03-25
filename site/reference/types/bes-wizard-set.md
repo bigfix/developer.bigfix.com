@@ -1,6 +1,6 @@
 # type: bes wizard set
 
-The &lt;bes wizard set&lt; inspectors iterate over the BES Wizards and return a set of such wizards.
+The &lt;bes wizard set&gt; inspectors iterate over the BES Wizards and return a set of such wizards.
 
 # element of &lt;bes wizard set&gt; : bes wizard
 

@@ -1,6 +1,6 @@
 # type: usb
 
-The &lt;usb&lt; objects are the Universal Serial Bus inspectors.
+The &lt;usb&gt; objects are the Universal Serial Bus inspectors.
 
 # isochronous of &lt;usb&gt; : boolean
 

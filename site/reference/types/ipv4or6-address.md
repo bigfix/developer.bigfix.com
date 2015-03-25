@@ -1,6 +1,6 @@
 # type: ipv4or6 address
 
-The &lt;ipv4or6 address&lt; inspectors allow you to represent IPv4 and IPv6 addresses as a common type. From these inclusive inspectors, you can derive the corresponding v4 and v6 IP addresses.
+The &lt;ipv4or6 address&gt; inspectors allow you to represent IPv4 and IPv6 addresses as a common type. From these inclusive inspectors, you can derive the corresponding v4 and v6 IP addresses.
 
 # extrema of &lt;ipv4or6 address&gt; : ( ipv4or6 address, ipv4or6 address )
 
@@ -8,7 +8,7 @@ Returns the minimum and maximum of the specified list of ipv4or6 addresses.
 
 # hexadecet &lt;integer&gt; of &lt;ipv4or6 address&gt; : integer
 
-Returns one of the eight 16-bit parts (hexadecets) of an ipv4or6 address specified by &lt;integer&lt;. Here zero refers to the highest hexadecet (network or big-endian order). Thus hexadecet 0 refers to the most-significant 16-bits of the 128 bit ipv4or6 address.
+Returns one of the eight 16-bit parts (hexadecets) of an ipv4or6 address specified by &lt;integer&gt;. Here zero refers to the highest hexadecet (network or big-endian order). Thus hexadecet 0 refers to the most-significant 16-bits of the 128 bit ipv4or6 address.
 
 # ip version of &lt;ipv4or6 address&gt; : ip version
 
@@ -20,11 +20,11 @@ Returns the lowest 32-bits of the IPv4or6 address as an IPv4 address.
 
 # maximum of &lt;ipv4or6 address&gt; : ipv4or6 address
 
-Returns the maximum of the specified list of &lt;ipv4or6 address&lt; types.
+Returns the maximum of the specified list of &lt;ipv4or6 address&gt; types.
 
 # minimum of &lt;ipv4or6 address&gt; : ipv4or6 address
 
-Returns the minimum of the specified list of &lt;ipv4or6 address&lt; types.
+Returns the minimum of the specified list of &lt;ipv4or6 address&gt; types.
 
 # unique value of &lt;ipv4or6 address&gt; : ipv4or6 address with multiplicity
 

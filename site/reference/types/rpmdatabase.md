@@ -1,6 +1,6 @@
 # type: rpmdatabase
 
-The &lt;rpmdatabase&lt; objects are the Linux RPM Package Manager inspectors. The RPM database contains entries for all the installed programs on this computer.
+The &lt;rpmdatabase&gt; objects are the Linux RPM Package Manager inspectors. The RPM database contains entries for all the installed programs on this computer.
 
 # capability &lt;string&gt; of &lt;rpmdatabase&gt; : capability
 

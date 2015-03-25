@@ -1,6 +1,6 @@
 # type: event task trigger
 
-The &lt;event task trigger&lt; inspectors deal with tasks that are triggered by a specific event, such as a system start, logon or idle. More information about event task triggers can be found by searching for Task Triggers at the MSDN site.
+The &lt;event task trigger&gt; inspectors deal with tasks that are triggered by a specific event, such as a system start, logon or idle. More information about event task triggers can be found by searching for Task Triggers at the MSDN site.
 
 # delay of &lt;event task trigger&gt; : time interval
 

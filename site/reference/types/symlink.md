@@ -20,7 +20,7 @@ Returns the device file specified by the supplied symbolic link.
 
 # drive of &lt;symlink&gt; : filesystem
 
-Returns the drive associated with the specified symlink as a &lt;filesystem&lt; object.
+Returns the drive associated with the specified symlink as a &lt;filesystem&gt; object.
 
 # fifo file &lt;symlink&gt; : fifo file
 

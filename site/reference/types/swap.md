@@ -12,7 +12,7 @@ Returns the size, in bytes, of the swap partition.
 
 # total amount of &lt;swap&gt; : integer
 
-Same as size of &lt;swap&lt;.
+Same as size of &lt;swap&gt;.
 
 # used amount of &lt;swap&gt; : integer
 

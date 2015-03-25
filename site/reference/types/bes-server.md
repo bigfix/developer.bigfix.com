@@ -1,6 +1,6 @@
 # type: bes server
 
-The &lt;bes server&lt; inspectors return information about the BES Server, allowing Dashboards and Web Reports to access files and other information from the BES database.
+The &lt;bes server&gt; inspectors return information about the BES Server, allowing Dashboards and Web Reports to access files and other information from the BES database.
 
 # database id of &lt;bes server&gt; : integer
 
@@ -8,7 +8,7 @@ Returns the integer database ID corresponding to the specified BES Server.
 
 # database name of &lt;bes server&gt; : string
 
-Returns the database name (as a &lt;string&lt;) corresponding to the specified BES Server.
+Returns the database name (as a &lt;string&gt;) corresponding to the specified BES Server.
 
 # url of &lt;bes server&gt; : string
 

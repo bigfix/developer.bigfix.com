@@ -1,6 +1,6 @@
 # type: current relay
 
-The &lt;current relay&lt; inspectors refer to the BES Server or Relay that the client last registered with.
+The &lt;current relay&gt; inspectors refer to the BES Server or Relay that the client last registered with.
 
 # authenticating of &lt;current relay&gt; : boolean
 

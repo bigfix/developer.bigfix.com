@@ -1,6 +1,6 @@
 # type: fixlet
 
-The &lt;fixlet&lt; inspectors can provide important information about the fixlets at any site. These inspectors only work in the context of property evaluation, not Fixlet evaluation.
+The &lt;fixlet&gt; inspectors can provide important information about the fixlets at any site. These inspectors only work in the context of property evaluation, not Fixlet evaluation.
 
 # header &lt;string&gt; of &lt;fixlet&gt; : fixlet_header
 

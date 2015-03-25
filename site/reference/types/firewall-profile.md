@@ -1,6 +1,6 @@
 # type: firewall profile
 
-The &lt;firewall profile&lt; inspectors provide access to the firewall profile. These properties correspond to the INetFwProfile interface in the Windows Firewall API. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
+The &lt;firewall profile&gt; inspectors provide access to the firewall profile. These properties correspond to the INetFwProfile interface in the Windows Firewall API. For more information, search for &#39;Windows Firewall API&#39; at the msdn site (http://msdn.microsoft.com/library/).
 
 # authorized application of &lt;firewall profile&gt; : firewall authorized application
 

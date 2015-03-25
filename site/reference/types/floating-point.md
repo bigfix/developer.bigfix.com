@@ -82,11 +82,11 @@ Returns `True` if the calculation raised the invalid exception; that is, if some
 
 # less significance &lt;integer&gt; of &lt;floating point&gt; : floating point
 
-Removes &lt;integer&lt; number of digits of significance from the floating point value.
+Removes &lt;integer&gt; number of digits of significance from the floating point value.
 
 # maximum of &lt;floating point&gt; : floating point
 
-Returns the maximum value from a list of &lt;floating point&lt; types.
+Returns the maximum value from a list of &lt;floating point&gt; types.
 
 # mean of &lt;floating point&gt; : floating point
 
@@ -94,11 +94,11 @@ The mean of the floating point number(s).
 
 # minimum of &lt;floating point&gt; : floating point
 
-Returns the minimum value from a list of &lt;floating point&lt; types.
+Returns the minimum value from a list of &lt;floating point&gt; types.
 
 # more significance &lt;integer&gt; of &lt;floating point&gt; : floating point
 
-Adds &lt;integer&lt; number of digits of significance to the floating point value.
+Adds &lt;integer&gt; number of digits of significance to the floating point value.
 
 # nan of &lt;floating point&gt; : boolean
 
@@ -154,7 +154,7 @@ Returns `True` if the calculation raised the underflow exception; that is, if so
 
 # unique value of &lt;floating point&gt; : floating point with multiplicity
 
-Returns the unique values of a given list of &lt;floating point&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;floating point&gt; types, removing duplicates and sorting by value.
 
 # &lt;floating point&gt; as floating point : floating point
 

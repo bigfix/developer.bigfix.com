@@ -12,7 +12,7 @@ Returns the epoch component of the specified debian package version. This is pri
 
 # extrema of &lt;debian package version&gt; : ( debian package version, debian package version )
 
-Returns the minimum and maximum extreme values of the given list of &lt;debian package version&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;debian package version&gt; types.
 
 # maximum of &lt;debian package version&gt; : debian package version
 
@@ -28,7 +28,7 @@ Returns the Debian revision from the specified package version.
 
 # unique value of &lt;debian package version&gt; : debian package version with multiplicity
 
-Returns the unique values and counts of a given list of &lt;debian package version&lt; types, removing duplicates and sorting by value.
+Returns the unique values and counts of a given list of &lt;debian package version&gt; types, removing duplicates and sorting by value.
 
 # upstream of &lt;debian package version&gt; : debian package upstream version
 

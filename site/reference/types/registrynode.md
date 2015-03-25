@@ -1,6 +1,6 @@
 # type: registrynode
 
-The &lt;registrynode&lt; inspectors provide access to the nodes of the IOKit Registry.
+The &lt;registrynode&gt; inspectors provide access to the nodes of the IOKit Registry.
 
 # classname of &lt;registrynode&gt; : string
 

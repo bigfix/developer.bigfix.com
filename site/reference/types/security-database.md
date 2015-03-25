@@ -1,6 +1,6 @@
 # type: security database
 
-The &lt;security database&lt; inspectors retrieve information from the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory. The Security database and its properties expose the NetUserModalsGet API, levels 0 and 3. For more information, see the NetUserModalsGet Function at the MSDN site: http://msdn.microsoft.com.
+The &lt;security database&gt; inspectors retrieve information from the security accounts manager (SAM) database or, in the case of domain controllers, the Active Directory. The Security database and its properties expose the NetUserModalsGet API, levels 0 and 3. For more information, see the NetUserModalsGet Function at the MSDN site: http://msdn.microsoft.com.
 
 # account lockout duration of &lt;security database&gt; : time interval
 

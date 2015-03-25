@@ -1,6 +1,6 @@
 # type: selected server
 
-The &lt;selected server&lt; inspectors return information about the BES Server or BES Relay to which the BigFix agent reports.
+The &lt;selected server&gt; inspectors return information about the BES Server or BES Relay to which the BigFix agent reports.
 
 # competition size of &lt;selected server&gt; : integer
 
@@ -20,15 +20,15 @@ During relay selection, a traceroute-like list of the hops between the client an
 
 # gateway address &lt;integer&gt; of &lt;selected server&gt; : ipv4or6 address
 
-During relay selection, a traceroute-like list of the hops between the client and its relay (the selected server) is recorded.  The elements of that list is accessible through this inspector.Prior to version 8.0, this inspector returned an &lt;ipv4 address&lt; type.
+During relay selection, a traceroute-like list of the hops between the client and its relay (the selected server) is recorded.  The elements of that list is accessible through this inspector.Prior to version 8.0, this inspector returned an &lt;ipv4 address&gt; type.
 
 # gateway address of &lt;selected server&gt; : ipv4or6 address
 
-During relay selection, a traceroute-like list of the hops between the client and its relay (the selected server) is recorded.  That list is accessible through this inspector. However, this inspector ignores hops that don&#39;t reply. If you need the full list, use the &#39;full gateway address&#39; inspector.Prior to version 8.0, this inspector returned an &lt;ipv4 address&lt; type.
+During relay selection, a traceroute-like list of the hops between the client and its relay (the selected server) is recorded.  That list is accessible through this inspector. However, this inspector ignores hops that don&#39;t reply. If you need the full list, use the &#39;full gateway address&#39; inspector.Prior to version 8.0, this inspector returned an &lt;ipv4 address&gt; type.
 
 # ip address of &lt;selected server&gt; : ipv4or6 address
 
-The ipv4or6 address to which reports are sent.Prior to version 8.0, this inspector returned an &lt;ipv4 address&lt; type.
+The ipv4or6 address to which reports are sent.Prior to version 8.0, this inspector returned an &lt;ipv4 address&gt; type.
 
 # name of &lt;selected server&gt; : string
 

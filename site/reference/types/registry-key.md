@@ -1,6 +1,6 @@
 # type: registry key
 
-The &lt;registry key&lt; objects represent Windows registry keys whose existence and properties can be inspected. Keys can be identified by name. There are several inspectors that return keys from parts of the registry that store file associations and active device drivers.
+The &lt;registry key&gt; objects represent Windows registry keys whose existence and properties can be inspected. Keys can be identified by name. There are several inspectors that return keys from parts of the registry that store file associations and active device drivers.
 
 # application &lt;string&gt; of &lt;registry key&gt; : application
 
@@ -24,7 +24,7 @@ Returns the unnamed value associated with a key as a string. It does not necessa
 
 # driver key of &lt;registry key&gt; : registry key
 
-Normally used as a property of a device key. Looks up the value of "Driver" of the key provided to indirectly return another key corresponding to HKEY_LOCAL_MACHINE\System\CurrentControlSet\ Services\Class\&lt;value of Driver&lt;.
+Normally used as a property of a device key. Looks up the value of "Driver" of the key provided to indirectly return another key corresponding to HKEY_LOCAL_MACHINE\System\CurrentControlSet\ Services\Class\&lt;value of Driver&gt;.
 
 # key &lt;string&gt; of &lt;registry key&gt; : registry key
 

@@ -289,7 +289,7 @@ Returns the product type of the operating system, which includes Workstations, D
 
 # release of &lt;operating system&gt; : string
 
-Information about the release of the operating system, formatted as a &lt;version&lt; on the Macintosh, but a &lt;string&lt; on UNIX and Windows.
+Information about the release of the operating system, formatted as a &lt;version&gt; on the Macintosh, but a &lt;string&gt; on UNIX and Windows.
 
 # release of &lt;operating system&gt; : version
 

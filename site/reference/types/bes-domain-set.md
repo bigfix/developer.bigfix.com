@@ -1,10 +1,10 @@
 # type: bes domain set
 
-The &lt;bes domain set&lt; inspectors return the current collection of BES Domains as a set, which can be manipulated by intersection, union, and more.
+The &lt;bes domain set&gt; inspectors return the current collection of BES Domains as a set, which can be manipulated by intersection, union, and more.
 
 # element of &lt;bes domain set&gt; : bes domain
 
-Returns the unique elements of the specified &lt;bes domain set&lt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &lt;bes domain set&gt;, removing duplicates and sorting by value.
 
 # intersection of &lt;bes domain set&gt; : bes domain set
 

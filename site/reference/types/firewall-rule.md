@@ -1,6 +1,6 @@
 # type: firewall rule
 
-The &lt;firewall rule&lt; inspectors provide a wrapper for the Windows Firewall Rule. They are Vista-only. On a non-Vista machine, they return no results. For more information, see the MSDN library for INetFwRule at http://msdn.microsoft.com/library/.
+The &lt;firewall rule&gt; inspectors provide a wrapper for the Windows Firewall Rule. They are Vista-only. On a non-Vista machine, they return no results. For more information, see the MSDN library for INetFwRule at http://msdn.microsoft.com/library/.
 
 # action of &lt;firewall rule&gt; : firewall action
 

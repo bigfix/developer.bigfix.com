@@ -1,6 +1,6 @@
 # type: product
 
-The &lt;product&lt; object contains properties (such as vendor and revision) of the associated software product. On AIX, products are installed into an Object Repository.On HPUX products are installed in the Software Depot.
+The &lt;product&gt; object contains properties (such as vendor and revision) of the associated software product. On AIX, products are installed into an Object Repository.On HPUX products are installed in the Software Depot.
 
 # bundle of &lt;product&gt; : bundle
 

@@ -1,30 +1,30 @@
 # type: ipv6 address
 
-The &lt;ipv6 address&lt; inspectors deal with the Internet Protocol addressing scheme, version 6. Note: Prior to version 8.0 of BigFix, this was not a derived type.
+The &lt;ipv6 address&gt; inspectors deal with the Internet Protocol addressing scheme, version 6. Note: Prior to version 8.0 of BigFix, this was not a derived type.
 
 # extrema of &lt;ipv6 address&gt; : ( ipv6 address, ipv6 address )
 
-Returns the minimum and maximum extreme values of the given list of &lt;ipv6 address&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;ipv6 address&gt; types.
 
 # hexadecet &lt;integer&gt; of &lt;ipv6 address&gt; : integer
 
-Returns one of the eight 16-bit parts (hexadecets) of an IPv6 address specified by &lt;integer&lt;. Here zero refers to the highest hexadecet (network or big-endian order). Thus hexadecet 0 refers to the most-significant 16-bits of the 128 bit IPv6 address.
+Returns one of the eight 16-bit parts (hexadecets) of an IPv6 address specified by &lt;integer&gt;. Here zero refers to the highest hexadecet (network or big-endian order). Thus hexadecet 0 refers to the most-significant 16-bits of the 128 bit IPv6 address.
 
 # ipv4 part of &lt;ipv6 address&gt; : ipv4 address
 
-Returns the lowest 32-bits of the IPv6 address as an IPv4 address.As of version 8.0, this inspector type is derived from an &lt;ipv4or6 address&lt; type.
+Returns the lowest 32-bits of the IPv6 address as an IPv4 address.As of version 8.0, this inspector type is derived from an &lt;ipv4or6 address&gt; type.
 
 # maximum of &lt;ipv6 address&gt; : ipv6 address
 
-Returns the maximum value from a list of &lt;ipv6 address&lt; types.
+Returns the maximum value from a list of &lt;ipv6 address&gt; types.
 
 # minimum of &lt;ipv6 address&gt; : ipv6 address
 
-Returns the minimum value from a list of &lt;ipv6 address&lt; types.
+Returns the minimum value from a list of &lt;ipv6 address&gt; types.
 
 # unique value of &lt;ipv6 address&gt; : ipv6 address with multiplicity
 
-Returns the unique values of a given list of &lt;ipv6 address&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;ipv6 address&gt; types, removing duplicates and sorting by value.
 
 # &lt;ipv6 address&gt; as compressed string : string
 

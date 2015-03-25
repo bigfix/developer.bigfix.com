@@ -1,6 +1,6 @@
 # type: bes computer
 
-The &lt;bes computer&lt; inspectors return lists of the computers currently visible through the BES Console.
+The &lt;bes computer&gt; inspectors return lists of the computers currently visible through the BES Console.
 
 # action result of &lt;bes computer&gt; : bes action result
 
@@ -84,19 +84,19 @@ Returns the license type of the specified BES Client.  This is a result of a res
 
 # link &lt;html&gt; of &lt;bes computer&gt; : html
 
-Returns an HTML string containing an &lt;A&lt; tag including the supplied HTML description that, when clicked, will open the given computer&#39;s document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&gt; tag including the supplied HTML description that, when clicked, will open the given computer&#39;s document (in the BES Console) or its description page (in Web Reports).
 
 # link &lt;string&gt; of &lt;bes computer&gt; : html
 
-Returns an HTML string containing an &lt;A&lt; tag including the supplied descriptive string that, when clicked, will open the given computer&#39;s document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&gt; tag including the supplied descriptive string that, when clicked, will open the given computer&#39;s document (in the BES Console) or its description page (in Web Reports).
 
 # link href of &lt;bes computer&gt; : string
 
-The link href property does not return an &lt;A&lt; tag but rather returns the value of the href attribute of the &lt;A&lt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &lt;bes computer&lt;). Note that link href returns a string, not an HTML string.
+The link href property does not return an &lt;A&gt; tag but rather returns the value of the href attribute of the &lt;A&gt; tag that would be constructed by the other link inspectors. This allows you to create more flexible linking formats. (See link of &lt;bes computer&gt;). Note that link href returns a string, not an HTML string.
 
 # link of &lt;bes computer&gt; : html
 
-Returns an HTML string containing an &lt;A&lt; tag that when clicked will open the given computer&#39;s document (in the BES Console) or its description page (in Web Reports).
+Returns an HTML string containing an &lt;A&gt; tag that when clicked will open the given computer&#39;s document (in the BES Console) or its description page (in Web Reports).
 
 # locked flag of &lt;bes computer&gt; : boolean
 
@@ -112,7 +112,7 @@ Returns the result of the &#39;OS&#39; Property for the specified computer.
 
 # property result of &lt;bes computer&gt; : bes property result
 
-Returns a list of all of the &lt;bes property result&lt; objects that the specified BES computer has reported.
+Returns a list of all of the &lt;bes property result&gt; objects that the specified BES computer has reported.
 
 # relay distance of &lt;bes computer&gt; : integer
 
@@ -140,11 +140,11 @@ Returns `True` if the given fixlet is relevant on the specified computer.
 
 # relevant fixlet of &lt;bes computer&gt; : bes fixlet
 
-Returns a list of all the &lt;bes fixlet&lt; objects that the specified computer has reported are relevant.
+Returns a list of all the &lt;bes fixlet&gt; objects that the specified computer has reported are relevant.
 
 # relevant fixlet set of &lt;bes computer&gt; : bes fixlet set
 
-Returns a list of all the &lt;bes fixlet&lt; objects that the specified computer has reported are relevant. The list is formatted as a mathematical set.
+Returns a list of all the &lt;bes fixlet&gt; objects that the specified computer has reported are relevant. The list is formatted as a mathematical set.
 
 # reported action set of &lt;bes computer&gt; : bes action set
 
@@ -156,7 +156,7 @@ Returns a list of all the BES properties that have reported on the specified com
 
 # result from &lt;bes action&gt; of &lt;bes computer&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result &lt;( bes action, bes computer )&lt;.Example: detailed status of result from (bes action whose (id of it is 1234)) of (bes computer whose (id of it is 1234567)) - Returns the detailed status of the specified action on the given computer.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result &lt;( bes action, bes computer )&gt;.Example: detailed status of result from (bes action whose (id of it is 1234)) of (bes computer whose (id of it is 1234567)) - Returns the detailed status of the specified action on the given computer.
 
 # result from &lt;bes fixlet&gt; of &lt;bes computer&gt; : bes fixlet result
 
@@ -192,7 +192,7 @@ Returns a list of the BES sites subscribed to by the specified BES computer, org
 
 # unique value of &lt;bes computer&gt; : bes computer with multiplicity
 
-Returns the unique values of a given list of &lt;bes computer&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes computer&gt; types, removing duplicates and sorting by value.
 
 # &lt;bes computer&gt; = &lt;bes computer&gt; : boolean
 

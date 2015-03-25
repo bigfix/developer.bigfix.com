@@ -1,6 +1,6 @@
 # type: system power interval
 
-The &lt;system power interval&lt; inspectors return an interval or a list of intervals that contain information about the client computer. Each system interval is composed of a time range and a power state, which can include on, off, standby or hibernate.
+The &lt;system power interval&gt; inspectors return an interval or a list of intervals that contain information about the client computer. Each system interval is composed of a time range and a power state, which can include on, off, standby or hibernate.
 
 # range of &lt;system power interval&gt; : time range
 

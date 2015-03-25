@@ -1,6 +1,6 @@
 # type: array
 
-The &lt;array&lt; inspectors return a list of values in a dictionary array.
+The &lt;array&gt; inspectors return a list of values in a dictionary array.
 
 # array &lt;integer&gt; of &lt;array&gt; : array
 

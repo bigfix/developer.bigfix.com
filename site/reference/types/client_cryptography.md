@@ -1,6 +1,6 @@
 # type: client_cryptography
 
-The &lt;client_cryptography&lt; inspectors expose cryptographic properties exclusive to the client.
+The &lt;client_cryptography&gt; inspectors expose cryptographic properties exclusive to the client.
 
 # desired encrypt report of &lt;client_cryptography&gt; : boolean
 

@@ -1,6 +1,6 @@
 # type: scsibus
 
-The &lt;scsibus&lt; inspectors refer to the Small Computer System Interface bus components.
+The &lt;scsibus&gt; inspectors refer to the Small Computer System Interface bus components.
 
 # fast scsi of &lt;scsibus&gt; : boolean
 

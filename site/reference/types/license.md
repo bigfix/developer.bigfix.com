@@ -1,6 +1,6 @@
 # type: license
 
-The &lt;license&lt; inspectors are available to inspect the properties of the deployment license.
+The &lt;license&gt; inspectors are available to inspect the properties of the deployment license.
 
 # allow unmentioned site of &lt;license&gt; : boolean
 

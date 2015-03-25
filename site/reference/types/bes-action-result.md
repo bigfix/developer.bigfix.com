@@ -1,6 +1,6 @@
 # type: bes action result
 
-The &lt;bes action result&lt; inspectors examine the results of BES Actions, which can be used to make reports.
+The &lt;bes action result&gt; inspectors examine the results of BES Actions, which can be used to make reports.
 
 # action of &lt;bes action result&gt; : bes action
 
@@ -28,4 +28,4 @@ Returns the number of times (as an integer) that the specified BES Action result
 
 # status of &lt;bes action result&gt; : bes action status
 
-Returns the &lt;bes action state&lt; object corresponding to the specified action result on the client computer.
+Returns the &lt;bes action state&gt; object corresponding to the specified action result on the client computer.

@@ -1,6 +1,6 @@
 # type: processor
 
-The &lt;processor&lt; object is used to identify the number and properties of processors in the system. You can identify the manufacturer of the CPU as well as the speed and other features. Many operating systems provide for multiple processors. You can inspect any one of them by their ordinal number.For more information on Windows processors, see the Resource section at the end of this guide.
+The &lt;processor&gt; object is used to identify the number and properties of processors in the system. You can identify the manufacturer of the CPU as well as the speed and other features. Many operating systems provide for multiple processors. You can inspect any one of them by their ordinal number.For more information on Windows processors, see the Resource section at the end of this guide.
 
 # adjustment &lt;integer&gt; of &lt;processor&gt; : integer
 
@@ -240,7 +240,7 @@ No documentation exists.
 
 # type of &lt;processor&gt; : string
 
-Numeric type of the CPU. Values include: 0 - standard1 - overdrive2 - dual CPU capable3 - reservedNote: this inspector returns an &lt;integer&lt; type as on Windows platforms.
+Numeric type of the CPU. Values include: 0 - standard1 - overdrive2 - dual CPU capable3 - reservedNote: this inspector returns an &lt;integer&gt; type as on Windows platforms.
 
 # vendor name of &lt;processor&gt; : string
 

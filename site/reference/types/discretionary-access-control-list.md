@@ -1,6 +1,6 @@
 # type: discretionary access control list
 
-The &lt;discretionary access control list&lt; inspectors retrieve information from the access control list that is monitored by the owner of the object and specifies what kinds of access particular users or groups can have to the specified object.
+The &lt;discretionary access control list&gt; inspectors retrieve information from the access control list that is monitored by the owner of the object and specifies what kinds of access particular users or groups can have to the specified object.
 
 # &lt;discretionary access control list&gt; as string : string
 

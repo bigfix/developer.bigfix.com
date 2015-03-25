@@ -1,6 +1,6 @@
 # type: active device
 
-On Windows NT systems (including XP and 2K), the &lt;active device&lt; inspectors returns a set of objects corresponding to the active devices on the machine, for example: modems, graphics cards, printers, and more.
+On Windows NT systems (including XP and 2K), the &lt;active device&gt; inspectors returns a set of objects corresponding to the active devices on the machine, for example: modems, graphics cards, printers, and more.
 
 # class of &lt;active device&gt; : string
 

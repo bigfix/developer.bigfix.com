@@ -76,7 +76,7 @@ Returns a set composed of the specified list of BES domains.
 
 # unique value of &lt;bes domain&gt; : bes domain with multiplicity
 
-Returns the unique values of a given list of &lt;bes domain&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;bes domain&gt; types, removing duplicates and sorting by value.
 
 # &lt;bes domain&gt; = &lt;bes domain&gt; : boolean
 

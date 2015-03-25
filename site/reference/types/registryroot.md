@@ -1,6 +1,6 @@
 # type: registryroot
 
-The &lt;registryroot&lt; objects are the inspectors for the planes of the IOKit Registry
+The &lt;registryroot&gt; objects are the inspectors for the planes of the IOKit Registry
 
 # audio plane of &lt;registryroot&gt; : registrynode
 

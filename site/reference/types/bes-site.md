@@ -12,11 +12,11 @@ No documentation exists.
 
 # creation date of &lt;bes site&gt; : time
 
-Depending on the type of the BES site, this inspector returns the creation date:External and Master sites: Does not exist (added in version 7.0). Operator sites: The &lt;moment&lt; when the operator was created (added in version 7.0). Custom sites: The &lt;moment&lt; when the site was created.
+Depending on the type of the BES site, this inspector returns the creation date:External and Master sites: Does not exist (added in version 7.0). Operator sites: The &lt;moment&gt; when the operator was created (added in version 7.0). Custom sites: The &lt;moment&gt; when the site was created.
 
 # creator of &lt;bes site&gt; : bes user
 
-Returns the &lt;bes user&lt; who created the specified custom site. Does not exist for External, Master or Operator sites.
+Returns the &lt;bes user&gt; who created the specified custom site. Does not exist for External, Master or Operator sites.
 
 # custom site flag of &lt;bes site&gt; : boolean
 
@@ -28,7 +28,7 @@ For a custom site, this is the description of the site that was specified by the
 
 # display name of &lt;bes site&gt; : string
 
-Beginning with version 7.1, a custom site can specify a display name that&#39;s different from the site name in the masthead. This inspector returns the display name; for the masthead name, use name of &lt;bes site&lt;.
+Beginning with version 7.1, a custom site can specify a display name that&#39;s different from the site name in the masthead. This inspector returns the display name; for the masthead name, use name of &lt;bes site&gt;.
 
 # domain of &lt;bes site&gt; : bes domain
 
@@ -104,7 +104,7 @@ Returns `True` if and only if the specified site is an operator site.
 
 # owner flag &lt;bes user&gt; of &lt;bes site&gt; : boolean
 
-This inspector is deprecated as of Version 7.0. Instead use "exists owner of &lt;bes site&lt; whose (it = &lt;bes user&lt;)".
+This inspector is deprecated as of Version 7.0. Instead use "exists owner of &lt;bes site&gt; whose (it = &lt;bes user&gt;)".
 
 # owner of &lt;bes site&gt; : bes user
 
@@ -160,7 +160,7 @@ The site tag is used as an identifier for sites and is used to build the site&#3
 
 # unique value of &lt;bes site&gt; : bes site with multiplicity
 
-Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes site&lt; types.
+Sorts the list and returns the multiplicity, or count, of each unique element in the specified list of multiple &lt;bes site&gt; types.
 
 # url of &lt;bes site&gt; : string
 

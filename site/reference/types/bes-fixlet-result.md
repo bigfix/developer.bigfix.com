@@ -1,6 +1,6 @@
 # type: bes fixlet result
 
-The &lt;bes fixlet result&lt; inspectors allow you to inspect the results of BES fixlets, including relevance and affected computers.
+The &lt;bes fixlet result&gt; inspectors allow you to inspect the results of BES fixlets, including relevance and affected computers.
 
 # computer of &lt;bes fixlet result&gt; : bes computer
 

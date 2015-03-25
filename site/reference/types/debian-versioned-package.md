@@ -1,6 +1,6 @@
 # type: debian versioned package
 
-The &lt;debian versioned package&lt; inspectors return all the versions of the Debian package that are available for the base package.
+The &lt;debian versioned package&gt; inspectors return all the versions of the Debian package that are available for the base package.
 
 # architecture of &lt;debian versioned package&gt; : string
 

@@ -1,10 +1,10 @@
 # type: month and year
 
-The &lt;month and year&lt; inspectors provide tools for dealing and calculating with month-and-year types, which are of the form month of year, eg., January of 2007.
+The &lt;month and year&gt; inspectors provide tools for dealing and calculating with month-and-year types, which are of the form month of year, eg., January of 2007.
 
 # extrema of &lt;month and year&gt; : ( month and year, month and year )
 
-Returns the minimum and maximum extreme values of the given list of &lt;month and year&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;month and year&gt; types.
 
 # first &lt;day of week&gt; of &lt;month and year&gt; : date
 
@@ -59,11 +59,11 @@ A: 29 days
 
 # maximum of &lt;month and year&gt; : month and year
 
-Returns the maximum value from a list of &lt;month and year&lt; types.
+Returns the maximum value from a list of &lt;month and year&gt; types.
 
 # minimum of &lt;month and year&gt; : month and year
 
-Returns the minimum value from a list of &lt;month and year&lt; types.
+Returns the minimum value from a list of &lt;month and year&gt; types.
 
 # month of &lt;month and year&gt; : month
 
@@ -71,7 +71,7 @@ Returns the name of the month corresponding to the given date.Example: month of 
 
 # unique value of &lt;month and year&gt; : month and year with multiplicity
 
-Returns the unique values of a given list of &lt;month and year&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;month and year&gt; types, removing duplicates and sorting by value.
 
 # year of &lt;month and year&gt; : year
 

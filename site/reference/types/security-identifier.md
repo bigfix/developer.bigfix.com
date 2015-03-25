@@ -22,7 +22,7 @@ Returns the domain name of the first domain on which the specified SID is found.
 
 # rsop user wmi &lt;security identifier&gt; : wmi
 
-Each user has its own RSoP (Resultant Set of Policy) namespace based on the user&#39;s Security Identifier (SID). This inspector returns the namespace specified by the &lt;security identifier&lt;.
+Each user has its own RSoP (Resultant Set of Policy) namespace based on the user&#39;s Security Identifier (SID). This inspector returns the namespace specified by the &lt;security identifier&gt;.
 
 # user of &lt;security identifier&gt; : user
 
@@ -34,4 +34,4 @@ Returns the security identifier in string format.
 
 # &lt;security identifier&gt; = &lt;security identifier&gt; : boolean
 
-Tests two &lt;security identifier&lt; (SID) values for equality using EqualSid.
+Tests two &lt;security identifier&gt; (SID) values for equality using EqualSid.

@@ -1,6 +1,6 @@
 # type: filesystem object
 
-The &lt;filesystem object&lt; inspectors provide handles for the various objects available in the file system.
+The &lt;filesystem object&gt; inspectors provide handles for the various objects available in the file system.
 
 # accessed time of &lt;filesystem object&gt; : time
 
@@ -32,7 +32,7 @@ Returns `True` if the file or folder (filesystem object) has been compressed.
 
 # creation time of &lt;filesystem object&gt; : time
 
-The date and time of creation of the specified file or folder. This corresponds to what is shown in the "Get Info" box.Example: creation time of file "System" of System Folder &lt; time "3 jan 1998 00:00+0000" - Returns `True` if the creation time of the system file is newer than the specified date.
+The date and time of creation of the specified file or folder. This corresponds to what is shown in the "Get Info" box.Example: creation time of file "System" of System Folder &gt; time "3 jan 1998 00:00+0000" - Returns `True` if the creation time of the system file is newer than the specified date.
 
 # device file &lt;filesystem object&gt; : device file
 

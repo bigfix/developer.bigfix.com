@@ -1,22 +1,22 @@
 # type: month
 
-The &lt;month&lt; inspectors provide tools for dealing and calculating with month types, which are of the form January, February, and more. This set of inspectors includes each month as a self-named object.
+The &lt;month&gt; inspectors provide tools for dealing and calculating with month types, which are of the form January, February, and more. This set of inspectors includes each month as a self-named object.
 
 # extrema of &lt;month&gt; : ( month, month )
 
-Returns the minimum and maximum extreme values of the given list of &lt;month&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;month&gt; types.
 
 # maximum of &lt;month&gt; : month
 
-Returns the maximum value from a list of &lt;month&lt; types.
+Returns the maximum value from a list of &lt;month&gt; types.
 
 # minimum of &lt;month&gt; : month
 
-Returns the minimum value from a list of &lt;month&lt; types.
+Returns the minimum value from a list of &lt;month&gt; types.
 
 # unique value of &lt;month&gt; : month with multiplicity
 
-Returns the unique values of a given list of &lt;month&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;month&gt; types, removing duplicates and sorting by value.
 
 # &lt;month&gt; as integer : integer
 

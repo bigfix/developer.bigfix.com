@@ -1,6 +1,6 @@
 # type: string with multiplicity
 
-The &lt;string with multiplicity&lt; inspectors deal with arrays of strings, allowing you to extract unique strings and count them.
+The &lt;string with multiplicity&gt; inspectors deal with arrays of strings, allowing you to extract unique strings and count them.
 
 # multiplicity of &lt;string with multiplicity&gt; : integer
 

@@ -1,6 +1,6 @@
 # type: preference
 
-The &lt;preference&lt; inspectors provide access to application preference files.
+The &lt;preference&gt; inspectors provide access to application preference files.
 
 # array &lt;string&gt; of &lt;preference&gt; : array
 

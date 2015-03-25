@@ -52,4 +52,4 @@ Returns `True` if the state represented is TIME_WAIT
 
 # &lt;tcp state&gt; as string : string
 
-Cast a &lt;tcp state&lt; to a string representation
+Cast a &lt;tcp state&gt; to a string representation

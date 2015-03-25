@@ -8,7 +8,7 @@ Returns an integer corresponding to the access mode for the trustee specified by
 
 # effective access mode for &lt;string&gt; of &lt;access control list&gt; : integer
 
-Returns an integer corresponding to the access mode for the trustee specified by &lt;string&lt; of the given access control list.Example: effective access mode for "Administrators" of dacls of security descriptors of system folder as hexadecimal - Returns a hex value corresponding to the access mode of the system folder for users logged in as Administrators.
+Returns an integer corresponding to the access mode for the trustee specified by &lt;string&gt; of the given access control list.Example: effective access mode for "Administrators" of dacls of security descriptors of system folder as hexadecimal - Returns a hex value corresponding to the access mode of the system folder for users logged in as Administrators.
 
 # effective access system security permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -16,7 +16,7 @@ Returns `True` if the trustee specified by the security account has access syste
 
 # effective access system security permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has access system security permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has access system security permissions on the given access control list.
 
 # effective append permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -24,7 +24,7 @@ Returns `True` if the trustee specified by the security account has append permi
 
 # effective append permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has append permissions on the given access control list.Example: effective append permission for "Power Users" of dacls of security descriptors of windows folder - Returns `True` if Power Users have append permissions on the system folder.
+Returns `True` if the trustee specified by &lt;string&gt; has append permissions on the given access control list.Example: effective append permission for "Power Users" of dacls of security descriptors of windows folder - Returns `True` if Power Users have append permissions on the system folder.
 
 # effective change notification permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -32,7 +32,7 @@ Returns `True` if the trustee specified by the security account has change notif
 
 # effective change notification permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has change notification permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has change notification permissions on the given access control list.
 
 # effective create file permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -40,7 +40,7 @@ Returns `True` if the trustee specified by the security account has file creatio
 
 # effective create file permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has file creation permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has file creation permissions on the given access control list.
 
 # effective create folder permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -48,7 +48,7 @@ Returns `True` if the trustee specified by the security account has folder creat
 
 # effective create folder permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has folder creation permissions on the given access control list.Example: effective create folder permissions for "Administrators" of dacls of security descriptors of folders of folder "c:\" - Returns a list of TRUE/FALSE values corresponding to the ability of the Administrator to create new folders in each of the existing folders of the c: drive.
+Returns `True` if the trustee specified by &lt;string&gt; has folder creation permissions on the given access control list.Example: effective create folder permissions for "Administrators" of dacls of security descriptors of folders of folder "c:\" - Returns a list of TRUE/FALSE values corresponding to the ability of the Administrator to create new folders in each of the existing folders of the c: drive.
 
 # effective create link permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -56,7 +56,7 @@ Returns `True` if the trustee specified by the security account has link creatio
 
 # effective create link permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has link creation permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has link creation permissions on the given access control list.
 
 # effective create subkey permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -64,7 +64,7 @@ Returns `True` if the trustee specified by the security account has subkey creat
 
 # effective create subkey permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has subkey creation permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has subkey creation permissions on the given access control list.
 
 # effective delete child permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -72,7 +72,7 @@ Returns `True` if the trustee specified by the security account has child deleti
 
 # effective delete child permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has child deletion permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has child deletion permissions on the given access control list.
 
 # effective delete permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -80,7 +80,7 @@ Returns `True` if the trustee specified by the security account has delete permi
 
 # effective delete permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has delete permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has delete permissions on the given access control list.
 
 # effective enumerate subkeys permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -88,7 +88,7 @@ Returns `True` if the specified security account provides the right to list the 
 
 # effective enumerate subkeys permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has subkey enumeration permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has subkey enumeration permissions on the given access control list.
 
 # effective execute permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -96,7 +96,7 @@ Returns `True` if the trustee specified by the security account has execution pe
 
 # effective execute permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has execution permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has execution permissions on the given access control list.
 
 # effective generic all permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -104,7 +104,7 @@ Returns `True` if the trustee specified by the security account has all generic 
 
 # effective generic all permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has all generic permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has all generic permissions on the given access control list.
 
 # effective generic execute permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -136,7 +136,7 @@ Returns `True` if the trustee specified by the security account has list permiss
 
 # effective list permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has list permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has list permissions on the given access control list.
 
 # effective maximum allowed permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -152,7 +152,7 @@ Returns `True` if the trustee specified by the security account has query value 
 
 # effective query value permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has query value permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has query value permissions on the given access control list.
 
 # effective read attributes permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -160,7 +160,7 @@ Returns `True` if the trustee specified by the security account has read attribu
 
 # effective read attributes permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has read attribute permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has read attribute permissions on the given access control list.
 
 # effective read control permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -168,7 +168,7 @@ Returns `True` if the trustee specified by the security account has read control
 
 # effective read control permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has read control permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has read control permissions on the given access control list.
 
 # effective read extended attributes permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -176,7 +176,7 @@ Returns `True` if the trustee specified by the security account has extended rea
 
 # effective read extended attributes permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has extended read attribute permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has extended read attribute permissions on the given access control list.
 
 # effective read permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -184,7 +184,7 @@ Returns `True` if the trustee specified by the security account has read permiss
 
 # effective read permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has read permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has read permissions on the given access control list.
 
 # effective set value permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -192,7 +192,7 @@ Returns `True` if the trustee specified by the security account has value settin
 
 # effective set value permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has value setting permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has value setting permissions on the given access control list.
 
 # effective synchronize permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -200,7 +200,7 @@ Returns `True` if the trustee specified by the security account has synchronizat
 
 # effective synchronize permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has synchronization permissions on the given access control list.Example: effective synchronize permission for "Administrators" of dacls of security descriptors of system folder - Returns `True` if the Administrator has permission to syncrhonize with the system folder.
+Returns `True` if the trustee specified by &lt;string&gt; has synchronization permissions on the given access control list.Example: effective synchronize permission for "Administrators" of dacls of security descriptors of system folder - Returns `True` if the Administrator has permission to syncrhonize with the system folder.
 
 # effective traverse permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -208,7 +208,7 @@ Returns `True` if the trustee specified by the security account has traverse per
 
 # effective traverse permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has traverse permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has traverse permissions on the given access control list.
 
 # effective write attributes permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -216,7 +216,7 @@ Returns `True` if the trustee specified by the security account has attribute wr
 
 # effective write attributes permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has attribute writing permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has attribute writing permissions on the given access control list.
 
 # effective write dac permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -224,7 +224,7 @@ Returns `True` if the trustee specified by the security account has dac writing 
 
 # effective write dac permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has dac writing permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has dac writing permissions on the given access control list.
 
 # effective write extended attributes permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -232,7 +232,7 @@ Returns `True` if the trustee specified by the security account has extended att
 
 # effective write extended attributes permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has extended attribute writing permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has extended attribute writing permissions on the given access control list.
 
 # effective write owner permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -240,7 +240,7 @@ Returns `True` if the trustee specified by the security account has write owner 
 
 # effective write owner permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has write owner permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has write owner permissions on the given access control list.
 
 # effective write permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
@@ -248,7 +248,7 @@ Returns `True` if the trustee specified by the security account has write permis
 
 # effective write permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
-Returns `True` if the trustee specified by &lt;string&lt; has write permissions on the given access control list.
+Returns `True` if the trustee specified by &lt;string&gt; has write permissions on the given access control list.
 
 # entry of &lt;access control list&gt; : access control entry
 

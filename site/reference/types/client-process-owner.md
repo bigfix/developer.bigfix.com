@@ -1,6 +1,6 @@
 # type: client process owner
 
-The &lt;client process owner&lt; inspectors tell what user context the client is running in.
+The &lt;client process owner&gt; inspectors tell what user context the client is running in.
 
 # long name of &lt;client process owner&gt; : string
 

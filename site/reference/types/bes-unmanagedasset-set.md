@@ -1,6 +1,6 @@
 # type: bes unmanagedasset set
 
-The &lt;bes unmanagedasset set&lt; inspectors iterate over the BES unmanaged assets and return a set of such assets.
+The &lt;bes unmanagedasset set&gt; inspectors iterate over the BES unmanaged assets and return a set of such assets.
 
 # element of &lt;bes unmanagedasset set&gt; : bes unmanagedasset
 

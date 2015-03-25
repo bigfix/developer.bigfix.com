@@ -12,19 +12,19 @@ Returns the final component of a version (Major.Minor.RevisionStageBuild).Exampl
 
 # extrema of &lt;version&gt; : ( version, version )
 
-Returns the minimum and maximum extreme values of the given list of &lt;version&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;version&gt; types.
 
 # major revision of &lt;version&gt; : integer
 
-The number before the first period in the version string.Example: major revision of version of file "name" &lt; 4 - Returns `True` if the major revision number is greater than the specified number.
+The number before the first period in the version string.Example: major revision of version of file "name" &gt; 4 - Returns `True` if the major revision number is greater than the specified number.
 
 # maximum of &lt;version&gt; : version
 
-Returns the maximum value from a list of &lt;version&lt; types.
+Returns the maximum value from a list of &lt;version&gt; types.
 
 # minimum of &lt;version&gt; : version
 
-Returns the minimum value from a list of &lt;version&lt; types.
+Returns the minimum value from a list of &lt;version&gt; types.
 
 # minor revision of &lt;version&gt; : integer
 
@@ -40,7 +40,7 @@ The stage is represented by the letter in the version string. It may be &#39;a&#
 
 # unique value of &lt;version&gt; : version with multiplicity
 
-Returns the unique values of a given list of &lt;version&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;version&gt; types, removing duplicates and sorting by value.
 
 # &lt;version&gt; as string : string
 

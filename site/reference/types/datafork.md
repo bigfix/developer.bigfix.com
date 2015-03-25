@@ -1,6 +1,6 @@
 # type: datafork
 
-The &lt;datafork&lt; inspectors refer to the data fork of a filesystem object.
+The &lt;datafork&gt; inspectors refer to the data fork of a filesystem object.
 
 # length of &lt;datafork&gt; : integer
 

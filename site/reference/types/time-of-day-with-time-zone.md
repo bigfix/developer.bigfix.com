@@ -1,6 +1,6 @@
 # type: time of day with time zone
 
-The &lt;time of day with time zone&lt; inspectors provide tools for dealing and calculating with time-of-day-with-time-zone types, which are of the form HH:MM:SS +ZZZZ, as in 12:59:59 -0400.
+The &lt;time of day with time zone&gt; inspectors provide tools for dealing and calculating with time-of-day-with-time-zone types, which are of the form HH:MM:SS +ZZZZ, as in 12:59:59 -0400.
 
 # hour_of_day of &lt;time of day with time zone&gt; : integer
 
@@ -32,7 +32,7 @@ Returns the second of the zoned time of day as text, with values less than 10 ha
 
 # unique value of &lt;time of day with time zone&gt; : time of day with time zone with multiplicity
 
-Returns the unique values of a given list of &lt;time of day with time zone&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time of day with time zone&gt; types, removing duplicates and sorting by value.
 
 # zone of &lt;time of day with time zone&gt; : time zone
 

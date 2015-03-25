@@ -1,6 +1,6 @@
 # type: volume
 
-The &lt;volume&lt; inspectors refer to the mounted drive volumes.
+The &lt;volume&gt; inspectors refer to the mounted drive volumes.
 
 # allocation block count of &lt;volume&gt; : integer
 
@@ -16,7 +16,7 @@ The number of files on the volume.
 
 # flag of &lt;volume&gt; : integer
 
-Returns the Mac-specific volume flags.More info on these flags can be found at the Apple developer site, under Carbon &lt; Reference &lt; File Manager.
+Returns the Mac-specific volume flags.More info on these flags can be found at the Apple developer site, under Carbon &gt; Reference &gt; File Manager.
 
 # free percent of &lt;volume&gt; : integer
 

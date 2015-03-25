@@ -16,7 +16,7 @@ Returns the name of the package from the specified pkginfo object.
 
 # param &lt;string&gt; of &lt;pkginfo&gt; : string
 
-Returns the value of the named parameter (specified by &lt;string&lt;) from the pkginfo object.Example: param "INSTDATE" of pkginfo "SPROhtws" of pkgdb - Returns the install date as a string like "Jul 24 2003 09:45".
+Returns the value of the named parameter (specified by &lt;string&gt;) from the pkginfo object.Example: param "INSTDATE" of pkginfo "SPROhtws" of pkgdb - Returns the install date as a string like "Jul 24 2003 09:45".
 
 # patch &lt;string&gt; of &lt;pkginfo&gt; : patch
 

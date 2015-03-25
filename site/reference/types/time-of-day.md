@@ -1,10 +1,10 @@
 # type: time of day
 
-The &lt;time of day&lt; inspectors provide tools for dealing and calculating with time-of-day types, which are of the form HH:MM:SS, as in 12:59:59.
+The &lt;time of day&gt; inspectors provide tools for dealing and calculating with time-of-day types, which are of the form HH:MM:SS, as in 12:59:59.
 
 # extrema of &lt;time of day&gt; : ( time of day, time of day )
 
-Returns the minimum and maximum extreme values of the given list of &lt;time of day&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;time of day&gt; types.
 
 # hour_of_day of &lt;time of day&gt; : integer
 
@@ -12,11 +12,11 @@ Returns the hour section of the &#39;time of day&#39; object.
 
 # maximum of &lt;time of day&gt; : time of day
 
-Returns the maximum value from a list of &lt;time of day&lt; types.
+Returns the maximum value from a list of &lt;time of day&gt; types.
 
 # minimum of &lt;time of day&gt; : time of day
 
-Returns the minimum value from a list of &lt;time of day&lt; types.
+Returns the minimum value from a list of &lt;time of day&gt; types.
 
 # minute_of_hour of &lt;time of day&gt; : integer
 
@@ -40,7 +40,7 @@ Extracts the 2-digit second from the time of day.
 
 # unique value of &lt;time of day&gt; : time of day with multiplicity
 
-Returns the unique values of a given list of &lt;time of day&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time of day&gt; types, removing duplicates and sorting by value.
 
 # &lt;time of day&gt; as string : string
 

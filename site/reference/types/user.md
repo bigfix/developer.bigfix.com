@@ -1,6 +1,6 @@
 # type: user
 
-The &lt;user&lt; inspectors allow you to list properties of all users, whether they are logged in or not.
+The &lt;user&gt; inspectors allow you to list properties of all users, whether they are logged in or not.
 
 # account disabled flag of &lt;user&gt; : boolean
 
@@ -16,7 +16,7 @@ Returns `True` if this user has the accounts operator privilege.
 
 # active directory user of &lt;user&gt; : active directory local user
 
-Returns an &lt;active directory local user&lt; object from the specified logged-on user object. This bridges the gaps between user types when using Active Directory inspectors. It retains the domain information of the logged-on user within the user object where other user types might not.
+Returns an &lt;active directory local user&gt; object from the specified logged-on user object. This bridges the gaps between user types when using Active Directory inspectors. It retains the domain information of the logged-on user within the user object where other user types might not.
 
 # admin privilege of &lt;user&gt; : boolean
 

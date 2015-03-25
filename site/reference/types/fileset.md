@@ -1,6 +1,6 @@
 # type: fileset
 
-The &lt;fileset&lt; objects represent the set of files required for installing a software package.
+The &lt;fileset&gt; objects represent the set of files required for installing a software package.
 
 # description of &lt;fileset&gt; : string
 

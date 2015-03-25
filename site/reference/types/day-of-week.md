@@ -1,10 +1,10 @@
 # type: day of week
 
-The &lt;day of week&lt; inspectors provide tools for dealing and calculating with day-of-week types, which include Monday, Tuesday, and more. This set of inspectors includes each day as a self-named object.
+The &lt;day of week&gt; inspectors provide tools for dealing and calculating with day-of-week types, which include Monday, Tuesday, and more. This set of inspectors includes each day as a self-named object.
 
 # unique value of &lt;day of week&gt; : day of week with multiplicity
 
-Returns the unique values of a given list of &lt;day of week&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;day of week&gt; types, removing duplicates and sorting by value.
 
 # &lt;day of week&gt; as string : string
 

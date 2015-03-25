@@ -1,6 +1,6 @@
 # type: task principal
 
-The &lt;task principal&lt; inspectors provide information about the scheduled task principal, which incapsulates the security credentials. The principal object includes a display name, a logon type, a run level and a set of IDs.
+The &lt;task principal&gt; inspectors provide information about the scheduled task principal, which incapsulates the security credentials. The principal object includes a display name, a logon type, a run level and a set of IDs.
 
 # display name of &lt;task principal&gt; : string
 

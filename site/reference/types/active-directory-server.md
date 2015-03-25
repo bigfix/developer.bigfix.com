@@ -1,6 +1,6 @@
 # type: active directory server
 
-The &lt;active directory server&lt; objects are the base types that allows access to the AD objects such as local machine and local user.
+The &lt;active directory server&gt; objects are the base types that allows access to the AD objects such as local machine and local user.
 
 # local computer of &lt;active directory server&gt; : active directory local computer
 

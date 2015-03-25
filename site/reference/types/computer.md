@@ -1,6 +1,6 @@
 # type: computer
 
-The &lt;computer&lt; inspectors provide access to the name of the computer.
+The &lt;computer&gt; inspectors provide access to the name of the computer.
 
 # name of &lt;computer&gt; : string
 

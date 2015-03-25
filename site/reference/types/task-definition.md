@@ -1,6 +1,6 @@
 # type: task definition
 
-The &lt;task definition&lt; inspectors give access to the components of a task, such as the settings, triggers, actions and registration information.
+The &lt;task definition&gt; inspectors give access to the components of a task, such as the settings, triggers, actions and registration information.
 
 # action of &lt;task definition&gt; : task action
 

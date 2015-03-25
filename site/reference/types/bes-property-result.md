@@ -1,6 +1,6 @@
 # type: bes property result
 
-The &lt;bes property result&lt; inspectors return the results returned by the given properties of the specified BES Client computers.
+The &lt;bes property result&gt; inspectors return the results returned by the given properties of the specified BES Client computers.
 
 # computer of &lt;bes property result&gt; : bes computer
 
@@ -28,4 +28,4 @@ Returns the number of values reported by this computer for the specified propert
 
 # value of &lt;bes property result&gt; : string
 
-Returns a list of the &lt;string&lt; values reported by this computer for the specified property result.
+Returns a list of the &lt;string&gt; values reported by this computer for the specified property result.

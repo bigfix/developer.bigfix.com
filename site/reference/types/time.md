@@ -1,6 +1,6 @@
 # type: time
 
-A &lt;time&lt; object is used to identify a point in time. Time objects are used to represent important properties of objects such as the modification time of a file. You can create time objects from literal strings. The format of the string is defined by the MIME standard. The difference between two Time objects may be calculated by subtracting them and yields time intervals. Time intervals may be added or subtracted from time objects to obtain time objects.
+A &lt;time&gt; object is used to identify a point in time. Time objects are used to represent important properties of objects such as the modification time of a file. You can create time objects from literal strings. The format of the string is defined by the MIME standard. The difference between two Time objects may be calculated by subtracting them and yields time intervals. Time intervals may be added or subtracted from time objects to obtain time objects.
 
 # date &lt;time zone&gt; of &lt;time&gt; : date
 
@@ -13,7 +13,7 @@ A: Wed, 18 Mar 2015
 
 # extrema of &lt;time&gt; : ( time, time )
 
-Returns the minimum and maximum extreme values of the given list of &lt;time&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;time&gt; types.
 
 # maximum of &lt;time&gt; : time
 
@@ -29,7 +29,7 @@ Adjusts the specified time to the given time zone.
 
 # unique value of &lt;time&gt; : time with multiplicity
 
-Returns the unique values of a given list of &lt;time&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time&gt; types, removing duplicates and sorting by value.
 
 # &lt;time&gt; as local string : string
 

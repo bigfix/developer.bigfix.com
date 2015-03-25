@@ -1,6 +1,6 @@
 # type: dictionary
 
-The &lt;dictionary&lt; inspectors provide access to an XML dictionary as used in .plist (property list) files.
+The &lt;dictionary&gt; inspectors provide access to an XML dictionary as used in .plist (property list) files.
 
 # array &lt;string&gt; of &lt;dictionary&gt; : array
 

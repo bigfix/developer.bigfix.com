@@ -24,7 +24,7 @@ Returns the version of the folder corresponding to the CFBundleVersion string, a
 
 # descendant folder of &lt;folder&gt; : folder
 
-Returns the descendant folders, recursively, of the given folder. The folder equivalent of "descendants of &lt;folder&lt;".
+Returns the descendant folders, recursively, of the given folder. The folder equivalent of "descendants of &lt;folder&gt;".
 
 # descendant of &lt;folder&gt; : file
 
@@ -40,7 +40,7 @@ Returns the device files that exist in the specified folder.
 
 # drive of &lt;folder&gt; : filesystem
 
-Returns the drive associated with the specified folder.On Macintosh computers, this returns a &lt;volume&lt; object.On  *nix computers, this returns a &lt;filesystem&lt; object.
+Returns the drive associated with the specified folder.On Macintosh computers, this returns a &lt;volume&gt; object.On  *nix computers, this returns a &lt;filesystem&gt; object.
 
 # drive of &lt;folder&gt; : volume
 
@@ -68,7 +68,7 @@ Iterates through the files of a folder returning file objects. When combined wit
 
 # filesystem of &lt;folder&gt; : filesystem
 
-Returns the filesystem on which the folder resides. On a Macintosh, this inspector returns a &lt;volume&lt; object.
+Returns the filesystem on which the folder resides. On a Macintosh, this inspector returns a &lt;volume&gt; object.
 
 # filesystem of &lt;folder&gt; : volume
 
@@ -120,19 +120,19 @@ Returns a filesystem object with the given relative item name from the specified
 
 # relative file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the file with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.Example: relative file "Safari.app/Contents/MacOS/Safari" of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
+Returns the file with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.Example: relative file "Safari.app/Contents/MacOS/Safari" of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
 
 # relative folder &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns the folder with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
+Returns the folder with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.
 
 # relative hfs file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the HFS file with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
+Returns the HFS file with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.
 
 # relative hfs folder &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns the HFS folder with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
+Returns the HFS folder with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.
 
 # relative item &lt;string&gt; of &lt;folder&gt; : filesystem object
 
@@ -140,11 +140,11 @@ Returns a filesystem object with the given relative item name from the specified
 
 # relative posix file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the POSIX file with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
+Returns the POSIX file with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.
 
 # relative posix folder &lt;string&gt; of &lt;folder&gt; : folder
 
-Returns the POSIX folder with the path specified by &lt;string&lt; relative to the given &lt;folder&lt;.
+Returns the POSIX folder with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.
 
 # security descriptor of &lt;folder&gt; : security descriptor
 

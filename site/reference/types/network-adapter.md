@@ -17,7 +17,7 @@ Returns the ip address of the network adapter (returns the first address if it i
 
 # broadcast address of &lt;network adapter&gt; : ipv4 address
 
-Returns the broadcast address of the specified network adapter as an &lt;ipv4 address&lt;.
+Returns the broadcast address of the specified network adapter as an &lt;ipv4 address&gt;.
 
 # broadcast support of &lt;network adapter&gt; : boolean
 
@@ -96,7 +96,7 @@ No documentation exists.
 
 # ipv4 interface of &lt;network adapter&gt; : network adapter interface
 
-Returns the IPv4 interface of the specified network adapter as a &lt;network adapter ip interface&lt; type.
+Returns the IPv4 interface of the specified network adapter as a &lt;network adapter ip interface&gt; type.
 
 # ipv4or6 dns server of &lt;network adapter&gt; : ipv4or6 address
 
@@ -172,7 +172,7 @@ Returns the IPv4 address of the primary wins server of the specified network ada
 
 # secondary wins server of &lt;network adapter&gt; : ipv4 address
 
-Returns the IPv4 address of the secondary wins server of the specified network adapter.As of version 8.0 of BES, this inspector type is derived from an &lt;ipv4or6 address&lt; type.
+Returns the IPv4 address of the secondary wins server of the specified network adapter.As of version 8.0 of BES, this inspector type is derived from an &lt;ipv4or6 address&gt; type.
 
 # status of &lt;network adapter&gt; : integer
 
@@ -204,7 +204,7 @@ Returns `True` if the specified network adapter is configured to react to Wake-O
 
 # wifi of &lt;network adapter&gt; : wifi
 
-Filters the network adapter object by WiFi type and creates the &lt;wifi&lt; object(s)
+Filters the network adapter object by WiFi type and creates the &lt;wifi&gt; object(s)
 
 # wins enabled of &lt;network adapter&gt; : boolean
 

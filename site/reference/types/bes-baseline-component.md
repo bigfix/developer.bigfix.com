@@ -1,6 +1,6 @@
 # type: bes baseline component
 
-The &lt;bes baseline component&lt; inspectors return the individual components of a Baseline, such as Fixlets, Tasks or other Baselines.
+The &lt;bes baseline component&gt; inspectors return the individual components of a Baseline, such as Fixlets, Tasks or other Baselines.
 
 # action of &lt;bes baseline component&gt; : bes fixlet action
 

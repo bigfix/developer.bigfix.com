@@ -1,6 +1,6 @@
 # type: stage
 
-The &lt;stage&lt; objects are for inspecting the stage portion of version numbers, which is the penultimate section of a version string: Major.Minor.ReleaseStageBuild.
+The &lt;stage&gt; objects are for inspecting the stage portion of version numbers, which is the penultimate section of a version string: Major.Minor.ReleaseStageBuild.
 
 # &lt;stage&gt; as string : string
 

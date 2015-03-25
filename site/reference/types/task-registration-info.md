@@ -1,6 +1,6 @@
 # type: task registration info
 
-The &lt;task registration info&lt; objects provide the administrative information used to describe a scheduled task. This information includes details such as a description, the name of the author, the date the task was registered, and the security descriptor.
+The &lt;task registration info&gt; objects provide the administrative information used to describe a scheduled task. This information includes details such as a description, the name of the author, the date the task was registered, and the security descriptor.
 
 # author of &lt;task registration info&gt; : string
 

@@ -1,6 +1,6 @@
 # type: root server
 
-The &lt;root server&lt; inspectors refer to the root server that the Bes Client is currently connected to.
+The &lt;root server&gt; inspectors refer to the root server that the Bes Client is currently connected to.
 
 # host name of &lt;root server&gt; : string
 

@@ -14,7 +14,7 @@ I: singular integer
 
 # action &lt;integer&gt; : action
 
-Returns the action matching the &lt;integer&lt; id.
+Returns the action matching the &lt;integer&gt; id.
 
 # april &lt;integer&gt; : day of year
 
@@ -82,7 +82,7 @@ No documentation exists.
 
 # bes filter &lt;integer&gt; : bes filter
 
-Returns the filter with the specified ID. It is the same as "bes filter whose (id of it is &lt;integer&lt;)".
+Returns the filter with the specified ID. It is the same as "bes filter whose (id of it is &lt;integer&gt;)".
 
 # bit &lt;integer&gt; : bit set
 
@@ -208,7 +208,7 @@ Returns the nth day of February and the specified year as a date (day of week, m
 
 # february of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to February of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to February of the specified year (as an &lt;integer&gt;).
 
 # filesystem &lt;integer&gt; : volume
 
@@ -220,7 +220,7 @@ Returns the Nth enumerated type from the Firewall Action interface. This provide
 
 # firewall local policy modify state &lt;integer&gt; : firewall local policy modify state
 
-Returns a value corresponding to the NET_FW_MODIFY_STATE enumerated type, which specifies the effect of modifications to the current policy. The &lt;integer&lt; specifies the zero-based enumeration, and provides an alternative access method. For more information, see the MSDN Library entry for NET_FW_MODIFY_STATE.
+Returns a value corresponding to the NET_FW_MODIFY_STATE enumerated type, which specifies the effect of modifications to the current policy. The &lt;integer&gt; specifies the zero-based enumeration, and provides an alternative access method. For more information, see the MSDN Library entry for NET_FW_MODIFY_STATE.
 
 # firewall profile type &lt;integer&gt; : firewall profile type
 
@@ -232,7 +232,7 @@ Returns the scope of addresses from which a port can listen.
 
 # firewall service type &lt;integer&gt; : firewall service type
 
-Returns the firewall service type specified by &lt;integer&lt;.
+Returns the firewall service type specified by &lt;integer&gt;.
 
 # install folder &lt;integer&gt; : folder
 
@@ -252,7 +252,7 @@ Returns the firewall internet protocol specified by the given integer. These cor
 
 # ip version &lt;integer&gt; : ip version
 
-Returns the the IP version for the &lt;integer&lt; port corresponding to the Microsoft enumerated types:0: NET_FW_IP_VERSION_V41: NET_FW_IP_VERSION_V62: NET_FW_IP_VERSION_ANY3: NET_FW_IP_VERSION_MAX.
+Returns the the IP version for the &lt;integer&gt; port corresponding to the Microsoft enumerated types:0: NET_FW_IP_VERSION_V41: NET_FW_IP_VERSION_V62: NET_FW_IP_VERSION_ANY3: NET_FW_IP_VERSION_MAX.
 
 # january &lt;integer&gt; : day of year
 
@@ -264,7 +264,7 @@ Returns the nth day of January and the specified year as a date (day of week, mo
 
 # january of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to January of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to January of the specified year (as an &lt;integer&gt;).
 
 # javascript array &lt;string&gt; of &lt;integer&gt; : html
 
@@ -280,7 +280,7 @@ Returns the nth day of July and the specified year as a date (day of week, month
 
 # july of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to July of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to July of the specified year (as an &lt;integer&gt;).
 
 # june &lt;integer&gt; : day of year
 
@@ -292,7 +292,7 @@ Returns the nth day of June and the specified year as a date (day of week, month
 
 # june of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to June of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to June of the specified year (as an &lt;integer&gt;).
 
 # march &lt;integer&gt; : day of year
 
@@ -304,7 +304,7 @@ Returns the nth day of March and the specified year as a date (day of week, mont
 
 # march of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to March of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to March of the specified year (as an &lt;integer&gt;).
 
 # maximum of &lt;integer&gt; : integer
 
@@ -320,7 +320,7 @@ Returns the nth day of May and the specified year as a date (day of week, month 
 
 # may of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to May of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to May of the specified year (as an &lt;integer&gt;).
 
 # mean of &lt;integer&gt; : floating point
 
@@ -336,7 +336,7 @@ Returns the minimum of a list of integers.
 
 # month &lt;integer&gt; : month
 
-Returns the month type corresponding to the given &lt;integer&lt;.
+Returns the month type corresponding to the given &lt;integer&gt;.
 
 # november &lt;integer&gt; : day of year
 
@@ -348,7 +348,7 @@ Returns the nth day of November and the specified year as a date (day of week, m
 
 # november of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to November of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to November of the specified year (as an &lt;integer&gt;).
 
 # october &lt;integer&gt; : day of year
 
@@ -360,7 +360,7 @@ Returns the nth day of October and the specified year as a date (day of week, mo
 
 # october of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to October of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to October of the specified year (as an &lt;integer&gt;).
 
 # operating system product type &lt;integer&gt; : operating system product type
 
@@ -400,7 +400,7 @@ Returns the nth day of September and the specified year as a date (day of week, 
 
 # september of &lt;integer&gt; : month and year
 
-Creates a date (in month year format) corresponding to September of the specified year (as an &lt;integer&lt;).
+Creates a date (in month year format) corresponding to September of the specified year (as an &lt;integer&gt;).
 
 # set of &lt;integer&gt; : integer set
 
@@ -415,7 +415,7 @@ A: 3
 
 # significant digits &lt;integer&gt; of &lt;integer&gt; : integer
 
-Returns a number with &lt;integer&lt; significant digits (for example, significant digits 3 of 1235569 = 1240000).
+Returns a number with &lt;integer&gt; significant digits (for example, significant digits 3 of 1235569 = 1240000).
 
 # sqrt of &lt;integer&gt; : floating point
 
@@ -439,7 +439,7 @@ Creates a task trigger type corresponding to the given integer.
 
 # unique value of &lt;integer&gt; : integer with multiplicity
 
-Returns the unique values of a given list of &lt;integer&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;integer&gt; types, removing duplicates and sorting by value.
 
 # volume &lt;integer&gt; : volume
 

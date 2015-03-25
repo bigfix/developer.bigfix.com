@@ -1,6 +1,6 @@
 # type: resfork
 
-The &lt;resfork&lt; inspectors refer to the resource fork of a filesystem object.
+The &lt;resfork&gt; inspectors refer to the resource fork of a filesystem object.
 
 # length of &lt;resfork&gt; : integer
 

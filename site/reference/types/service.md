@@ -1,6 +1,6 @@
 # type: service
 
-The &lt;service&lt; inspectors provide access to all services configured on Windows NT, 2K and XP systems. On a non-Windows system, expressions using these objects will fail gracefully instead of generating an error.
+The &lt;service&gt; inspectors provide access to all services configured on Windows NT, 2K and XP systems. On a non-Windows system, expressions using these objects will fail gracefully instead of generating an error.
 
 # can interact with desktop of &lt;service&gt; : boolean
 
@@ -20,7 +20,7 @@ Returns `True` if the specified service is a driver type.
 
 # file of &lt;service&gt; : file
 
-Returns a file object corresponding to the specified &lt;service&lt;.
+Returns a file object corresponding to the specified &lt;service&gt;.
 
 # image path of &lt;service&gt; : string
 

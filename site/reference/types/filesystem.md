@@ -52,4 +52,4 @@ Returns the number of bytes on this filesystem currently in use.
 
 # volume of &lt;filesystem&gt; : string
 
-This is a &lt;Plain&lt; property inspector that takes a &lt;filesystem&lt; type and returns a &lt;volume&lt; type.
+This is a &lt;Plain&gt; property inspector that takes a &lt;filesystem&gt; type and returns a &lt;volume&gt; type.

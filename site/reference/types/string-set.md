@@ -1,10 +1,10 @@
 # type: string set
 
-The &lt;string set&lt; inspectors deal with sets of strings, which are essentially lists or arrays with string elements. Think of them as mathematical sets: you can compare them, subtract them from other sets and form the union and intersection of multiple sets.Note: These inspectors are not available on SUSE Linux systems.
+The &lt;string set&gt; inspectors deal with sets of strings, which are essentially lists or arrays with string elements. Think of them as mathematical sets: you can compare them, subtract them from other sets and form the union and intersection of multiple sets.Note: These inspectors are not available on SUSE Linux systems.
 
 # element of &lt;string set&gt; : string
 
-Returns the unique elements of the specified &lt;string set&lt;, removing duplicates and sorting by value.Example: elements of set of ("beta";"beta";"alpha";"gamma";"beta") - Returns the strings alpha, beta, gamma.
+Returns the unique elements of the specified &lt;string set&gt;, removing duplicates and sorting by value.Example: elements of set of ("beta";"beta";"alpha";"gamma";"beta") - Returns the strings alpha, beta, gamma.
 
 # intersection of &lt;string set&gt; : string set
 

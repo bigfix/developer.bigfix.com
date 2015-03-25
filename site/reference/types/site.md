@@ -1,6 +1,6 @@
 # type: site
 
-A &lt;site&lt; object is provided to access properties of Fixlet sites.
+A &lt;site&gt; object is provided to access properties of Fixlet sites.
 
 # client folder of &lt;site&gt; : folder
 

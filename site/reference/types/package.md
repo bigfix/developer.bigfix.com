@@ -36,7 +36,7 @@ Returns the RPM version records of the specified package.
 
 # unique name of &lt;package&gt; : string
 
-Returns the unique values of a given list of &lt;package&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;package&gt; types, removing duplicates and sorting by value.
 
 # version of &lt;package&gt; : version
 

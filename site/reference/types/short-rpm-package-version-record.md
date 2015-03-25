@@ -16,11 +16,11 @@ Returns an ROM Package Version record from the short version of the same.
 
 # maximum of &lt;short rpm package version record&gt; : short rpm package version record
 
-Returns the maximum value from a list of &lt;short rpm package version record&lt; types.
+Returns the maximum value from a list of &lt;short rpm package version record&gt; types.
 
 # minimum of &lt;short rpm package version record&gt; : short rpm package version record
 
-Returns the minimum value from a list of &lt;short rpm package version record&lt; types.
+Returns the minimum value from a list of &lt;short rpm package version record&gt; types.
 
 # no epoch of &lt;short rpm package version record&gt; : short rpm package version record
 
@@ -40,7 +40,7 @@ Iterates throught the specified short RPM package version record objects.
 
 # unique value of &lt;short rpm package version record&gt; : short rpm package version record with multiplicity
 
-Returns the unique values of a given list of &lt;short rpm package version record&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;short rpm package version record&gt; types, removing duplicates and sorting by value.
 
 # version of &lt;short rpm package version record&gt; : rpm package version
 

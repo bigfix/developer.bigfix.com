@@ -40,7 +40,7 @@ Returns the dictionary object for the specified file.
 
 # drive of &lt;file&gt; : filesystem
 
-Returns the drive associated with the specified file. On Macintosh computers, this returns a &lt;volume&lt; object.On  *nix computers, this returns a &lt;filesystem&lt; object.
+Returns the drive associated with the specified file. On Macintosh computers, this returns a &lt;volume&gt; object.On  *nix computers, this returns a &lt;filesystem&gt; object.
 
 # drive of &lt;file&gt; : volume
 
@@ -56,7 +56,7 @@ Returns the file version extracted from the file&#39;s resource block. See versi
 
 # filesystem of &lt;file&gt; : filesystem
 
-Returns the UNIX filesystem flag for the given file. On a Macintosh, this returns a &lt;volume&lt; object.
+Returns the UNIX filesystem flag for the given file. On a Macintosh, this returns a &lt;volume&gt; object.
 
 # filesystem of &lt;file&gt; : volume
 
@@ -72,7 +72,7 @@ No documentation exists.
 
 # key &lt;string&gt; of &lt;file&gt; : string
 
-Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &lt;string&lt;) followed by an = or : character. When searching, white space is ignored.
+Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &lt;string&gt;) followed by an = or : character. When searching, white space is ignored.
 
 # length of &lt;file&gt; : integer
 
@@ -80,7 +80,7 @@ The total length of the data and resource forks.Example: Length of data fork of 
 
 # line &lt;integer&gt; of &lt;file&gt; : file line
 
-Returns the nth line (specified by &lt;integer&lt;) from the given file.
+Returns the nth line (specified by &lt;integer&gt;) from the given file.
 
 # line containing &lt;string&gt; of &lt;file&gt; : file line
 
@@ -92,7 +92,7 @@ Iterates over all the lines of the specified file. Note that the lines are trunc
 
 # line starting with &lt;string&gt; of &lt;file&gt; : file line
 
-Same as line &lt;string&lt; of &lt;file&lt;, returns the lines of the given file that start with the specified string.
+Same as line &lt;string&gt; of &lt;file&gt;, returns the lines of the given file that start with the specified string.
 
 # locked of &lt;file&gt; : boolean
 
@@ -232,7 +232,7 @@ Iterates through the version blocks of a file.
 
 # version of &lt;file&gt; : version
 
-Synonym for file version of &lt;file&lt;.
+Synonym for file version of &lt;file&gt;.
 
 # visible of &lt;file&gt; : boolean
 
@@ -252,4 +252,4 @@ Returns an XML Document Object Model (DOM) for the specified file.
 
 # &lt;file&gt; as string : string
 
-Creates a string containing the full pathname of the specified file. See &lt;file&lt;.
+Creates a string containing the full pathname of the specified file. See &lt;file&gt;.

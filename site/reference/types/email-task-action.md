@@ -1,6 +1,6 @@
 # type: email task action
 
-The &lt;email task action&lt; inspectors deal with Windows Email Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Email Action causes an email to be sent. For more information, see Email Action at the MSDN site.
+The &lt;email task action&gt; inspectors deal with Windows Email Actions, which are specified by tasks triggered by various events like computer state changes or scheduled times. The Email Action causes an email to be sent. For more information, see Email Action at the MSDN site.
 
 # attachment of &lt;email task action&gt; : string
 

@@ -8,7 +8,7 @@ Returns positive value of the time interval.
 
 # extrema of &lt;time interval&gt; : ( time interval, time interval )
 
-Returns the minimum and maximum extreme values of the given list of &lt;time interval&lt; types.
+Returns the minimum and maximum extreme values of the given list of &lt;time interval&gt; types.
 
 # maximum of &lt;time interval&gt; : time interval
 
@@ -24,7 +24,7 @@ Returns the sum of the supplied time intervals.
 
 # unique value of &lt;time interval&gt; : time interval with multiplicity
 
-Returns the unique values of a given list of &lt;time interval&lt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &lt;time interval&gt; types, removing duplicates and sorting by value.
 
 # &lt;time interval&gt; as string : string
 
