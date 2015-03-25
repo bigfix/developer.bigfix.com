@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# route of &lt;routing table&gt;
+# route of &lt;routing table&gt; : route
 
 No documentation exists.

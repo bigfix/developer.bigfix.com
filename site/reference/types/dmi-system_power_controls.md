@@ -2,26 +2,26 @@
 
 No documentation exists.
 
-# length of &lt;dmi system_power_controls&gt;
+# length of &lt;dmi system_power_controls&gt; : integer
 
 No documentation exists.
 
-# next_scheduled_power_on_day_of_month of &lt;dmi system_power_controls&gt;
+# next_scheduled_power_on_day_of_month of &lt;dmi system_power_controls&gt; : integer
 
 No documentation exists.
 
-# next_scheduled_power_on_hour of &lt;dmi system_power_controls&gt;
+# next_scheduled_power_on_hour of &lt;dmi system_power_controls&gt; : integer
 
 No documentation exists.
 
-# next_scheduled_power_on_minute of &lt;dmi system_power_controls&gt;
+# next_scheduled_power_on_minute of &lt;dmi system_power_controls&gt; : integer
 
 No documentation exists.
 
-# next_scheduled_power_on_month of &lt;dmi system_power_controls&gt;
+# next_scheduled_power_on_month of &lt;dmi system_power_controls&gt; : integer
 
 No documentation exists.
 
-# next_scheduled_power_on_second of &lt;dmi system_power_controls&gt;
+# next_scheduled_power_on_second of &lt;dmi system_power_controls&gt; : integer
 
 No documentation exists.

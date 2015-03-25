@@ -2,22 +2,22 @@
 
 No documentation exists.
 
-# component_handle of &lt;dmi management_device_component&gt;
+# component_handle of &lt;dmi management_device_component&gt; : integer
 
 No documentation exists.
 
-# description of &lt;dmi management_device_component&gt;
+# description of &lt;dmi management_device_component&gt; : string
 
 No documentation exists.
 
-# length of &lt;dmi management_device_component&gt;
+# length of &lt;dmi management_device_component&gt; : integer
 
 No documentation exists.
 
-# management_device_handle of &lt;dmi management_device_component&gt;
+# management_device_handle of &lt;dmi management_device_component&gt; : integer
 
 No documentation exists.
 
-# threshold_handle of &lt;dmi management_device_component&gt;
+# threshold_handle of &lt;dmi management_device_component&gt; : integer
 
 No documentation exists.

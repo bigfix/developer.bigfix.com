@@ -2,106 +2,106 @@
 
 No documentation exists.
 
-# alias of &lt;ips authority info&gt;
+# alias of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# approved ca cert of &lt;ips authority info&gt;
+# approved ca cert of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# disabled of &lt;ips authority info&gt;
+# disabled of &lt;ips authority info&gt; : boolean
 
 No documentation exists.
 
-# intermediate certs of &lt;ips authority info&gt;
+# intermediate certs of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# mirrors of &lt;ips authority info&gt;
+# mirrors of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# name of &lt;ips authority info&gt;
+# name of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# origin of &lt;ips authority info&gt;
+# origin of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# prefix of &lt;ips authority info&gt;
+# prefix of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# proxied urls of &lt;ips authority info&gt;
+# proxied urls of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo collection type of &lt;ips authority info&gt;
+# repo collection type of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo description of &lt;ips authority info&gt;
+# repo description of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo legal uris of &lt;ips authority info&gt;
+# repo legal uris of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo name of &lt;ips authority info&gt;
+# repo name of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo refresh seconds of &lt;ips authority info&gt;
+# repo refresh seconds of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo registered of &lt;ips authority info&gt;
+# repo registered of &lt;ips authority info&gt; : boolean
 
 No documentation exists.
 
-# repo registration uri of &lt;ips authority info&gt;
+# repo registration uri of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo related uris of &lt;ips authority info&gt;
+# repo related uris of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# repo sort policy of &lt;ips authority info&gt;
+# repo sort policy of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# revoked ca certs of &lt;ips authority info&gt;
+# revoked ca certs of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# signature required names of &lt;ips authority info&gt;
+# signature required names of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# signing ca certs of &lt;ips authority info&gt;
+# signing ca certs of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# ssl cert of &lt;ips authority info&gt;
+# ssl cert of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# ssl key of &lt;ips authority info&gt;
+# ssl key of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# sticky of &lt;ips authority info&gt;
+# sticky of &lt;ips authority info&gt; : boolean
 
 No documentation exists.
 
-# uuid of &lt;ips authority info&gt;
+# uuid of &lt;ips authority info&gt; : string
 
 No documentation exists.
 
-# &lt;ips authority info&gt; as string
+# &lt;ips authority info&gt; as string : string
 
 No documentation exists.

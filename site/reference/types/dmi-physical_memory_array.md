@@ -2,30 +2,30 @@
 
 No documentation exists.
 
-# length of &lt;dmi physical_memory_array&gt;
+# length of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.
 
-# location of &lt;dmi physical_memory_array&gt;
+# location of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.
 
-# maximum_capacity of &lt;dmi physical_memory_array&gt;
+# maximum_capacity of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.
 
-# memory_error_correction of &lt;dmi physical_memory_array&gt;
+# memory_error_correction of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.
 
-# memory_error_information_handle of &lt;dmi physical_memory_array&gt;
+# memory_error_information_handle of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.
 
-# number_of_memory_devices of &lt;dmi physical_memory_array&gt;
+# number_of_memory_devices of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.
 
-# use of &lt;dmi physical_memory_array&gt;
+# use of &lt;dmi physical_memory_array&gt; : integer
 
 No documentation exists.

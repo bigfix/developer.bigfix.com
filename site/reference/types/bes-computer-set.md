@@ -1,39 +1,39 @@
 # type: bes computer set
 
-The &lt;bes computer set&gt; inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions and other mathematical operations on them.
+The &amp;lt;bes computer set&amp;gt; inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions and other mathematical operations on them.
 
-# element of &lt;bes computer set&gt;
+# element of &lt;bes computer set&gt; : bes computer
 
-Returns the unique elements of the specified &lt;bes computer set&gt;, removing duplicates and sorting by value.
+Returns the unique elements of the specified &amp;lt;bes computer set&amp;gt;, removing duplicates and sorting by value.
 
-# intersection of &lt;bes computer set&gt;
+# intersection of &lt;bes computer set&gt; : bes computer set
 
 Returns the intersection of multiple BES computer sets. The arguments to this inspector are typically plural values or iterations, but you can also compose such a set by separating singlet values with semicolons.
 
-# size of &lt;bes computer set&gt;
+# size of &lt;bes computer set&gt; : integer
 
 Returns the number of unique BES Computers in the specified set.
 
-# union of &lt;bes computer set&gt;
+# union of &lt;bes computer set&gt; : bes computer set
 
 Returns the union of multiple BES computer sets. The arguments to this inspector are typically plural values or iterations, but you can also compose such a set by separating singlet values with semicolons.
 
-# &lt;bes computer set&gt; * &lt;bes computer set&gt;
+# &lt;bes computer set&gt; * &lt;bes computer set&gt; : bes computer set
 
 No documentation exists.
 
-# &lt;bes computer set&gt; + &lt;bes computer set&gt;
+# &lt;bes computer set&gt; + &lt;bes computer set&gt; : bes computer set
 
 No documentation exists.
 
-# &lt;bes computer set&gt; - &lt;bes computer set&gt;
+# &lt;bes computer set&gt; - &lt;bes computer set&gt; : bes computer set
 
 No documentation exists.
 
-# &lt;bes computer set&gt; = &lt;bes computer set&gt;
+# &lt;bes computer set&gt; = &lt;bes computer set&gt; : boolean
 
 Compares two sets of BES computers for equivalence.
 
-# &lt;bes computer set&gt; contains &lt;bes computer set&gt;
+# &lt;bes computer set&gt; contains &lt;bes computer set&gt; : boolean
 
 No documentation exists.

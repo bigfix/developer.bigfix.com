@@ -2,30 +2,30 @@
 
 On HPUX platforms, a bundle object is derived from a product type and used to inspect software installations as managed by the Software Depot. On Macintosh platforms, a bundle refers to a core foundation folder hierarchy derived from CFBundle.
 
-# bundle version of &lt;bundle&gt;
+# bundle version of &lt;bundle&gt; : version
 
 Returns the version of the bundle corresponding to the CFBundleVersion string, as distinct from the CFBundleShortVersionString.
 
-# creator of &lt;bundle&gt;
+# creator of &lt;bundle&gt; : file signature
 
 The creator 4-letter code of the bundle (for example, FNDR for Finder).
 
-# global dictionary of &lt;bundle&gt;
+# global dictionary of &lt;bundle&gt; : dictionary
 
-The bundle&#39;s information dictionary.
+The bundle&amp;#39;s information dictionary.
 
-# local dictionary of &lt;bundle&gt;
+# local dictionary of &lt;bundle&gt; : dictionary
 
-The bundle&#39;s localized information dictionary.
+The bundle&amp;#39;s localized information dictionary.
 
-# product of &lt;bundle&gt;
+# product of &lt;bundle&gt; : product
 
 Returns the product and/or products contained in the bundle.
 
-# type of &lt;bundle&gt;
+# type of &lt;bundle&gt; : file type
 
 Returns the file type of the bundle. Can be used only to compare equality between file types.
 
-# version of &lt;bundle&gt;
+# version of &lt;bundle&gt; : version
 
 Version of the given bundle.

@@ -1,207 +1,211 @@
 # type: string
 
-Strings are typically core objects, but some string inspectors may be client-specific. Note: A string literal is written within double quotes. Special characters must be inserted by using the percent sign followed by 2 hex digits. Special characters include those characters with ASCII codes less than the &#39;space&#39; character (hex 20) or greater than &#39;tilde&#39; character (hex 7f) as well as the percent character itself (25 hex). For example, to create a string containing a null character and a percent character use &quot;a null is %00, the percent itself is %25&quot;. Conversion to upper and lower case is also provided. String works in combination with the string position and substring data types. A string position is a point within a string. It can be compared to an integer, but it also acts as a pointer within a string so that the preceding and following text can be extracted. A substring is a part of a larger string. All operations allowed on a string can be performed on a substring. There are two substrings &quot;be&quot; in the string &quot;To be or not to be&quot;. The substrings only differ in their positions within the string.
+Strings are typically core objects, but some string inspectors may be client-specific. Note: A string literal is written within double quotes. Special characters must be inserted by using the percent sign followed by 2 hex digits. Special characters include those characters with ASCII codes less than the &amp;#39;space&amp;#39; character (hex 20) or greater than &amp;#39;tilde&amp;#39; character (hex 7f) as well as the percent character itself (25 hex). For example, to create a string containing a null character and a percent character use &amp;quot;a null is %00, the percent itself is %25&amp;quot;. Conversion to upper and lower case is also provided. String works in combination with the string position and substring data types. A string position is a point within a string. It can be compared to an integer, but it also acts as a pointer within a string so that the preceding and following text can be extracted. A substring is a part of a larger string. All operations allowed on a string can be performed on a substring. There are two substrings &amp;quot;be&amp;quot; in the string &amp;quot;To be or not to be&amp;quot;. The substrings only differ in their positions within the string.
 
-# abbr &lt;string&gt; of &lt;string&gt;
+# abbr &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;abbr&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;abbr&amp;gt; tag modified by the first given string.
 
 {{#example}}
-Q: abbr "title=%22BigFix%22" of "bf"
-A: <abbr title="BigFix">bf</abbr>
+Q: abbr &quot;title=%22BigFix%22&quot; of &quot;bf&quot;
+A: &lt;abbr title=&quot;BigFix&quot;&gt;bf&lt;/abbr&gt;
 I: singular html
 {{/example}}
 
-# abbr of &lt;string&gt;
+# abbr of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;abbr&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;abbr&amp;gt; tag.
 
-# account with privilege &lt;string&gt;
+# account with privilege &lt;string&gt; : security account
 
 Returns a security account constant corresponding to an account with the privilege specified in the string.
 
-# acronym &lt;string&gt; of &lt;string&gt;
+# acronym &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;acronym&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;acronym&amp;gt; tag modified by the first given string.
 
-# acronym of &lt;string&gt;
+# acronym of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;acronym&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;acronym&amp;gt; tag.
 
-# active device file &lt;string&gt;
+# active device file &lt;string&gt; : file
 
 Under Windows NT, returns a file object corresponding to the name provided. See file.
 
-# address &lt;string&gt; of &lt;string&gt;
+# address &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;address&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;address&amp;gt; tag modified by the first given string.
 
-# address of &lt;string&gt;
+# address of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;address&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;address&amp;gt; tag.
 
-# anchor &lt;string&gt; of &lt;string&gt;
+# anchor &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;a&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;a&amp;gt; tag modified by the first given string.
 
-# anchor of &lt;string&gt;
+# anchor of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;a&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;a&amp;gt; tag.
 
-# application &lt;string&gt;
+# application &lt;string&gt; : application
 
 Returns the named applications (bundles) and executables as filesystem objects.
 
-# application usage &lt;string&gt;
+# application &lt;string&gt; : filesystem object
 
 No documentation exists.
 
-# application usage summary &lt;string&gt;
+# application usage &lt;string&gt; : timed( time range, integer )
 
-Returns the usage summary for the application specified in &lt;string&gt;.
+No documentation exists.
 
-# b &lt;string&gt; of &lt;string&gt;
+# application usage summary &lt;string&gt; : application usage summary
 
-Returns an HTML snippet with the specified string enclosed in a &lt;b&gt; tag modified by the first given string.
+Returns the usage summary for the application specified in &amp;lt;string&amp;gt;.
 
-# b of &lt;string&gt;
+# b &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;b&gt; tag.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;b&amp;gt; tag modified by the first given string.
 
-# base &lt;string&gt; of &lt;string&gt;
+# b of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;base&gt; tag modified by the first given string.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;b&amp;gt; tag.
 
-# base of &lt;string&gt;
+# base &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;base&gt; tag.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;base&amp;gt; tag modified by the first given string.
 
-# base64 decode &lt;string&gt;
+# base of &lt;string&gt; : html
+
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;base&amp;gt; tag.
+
+# base64 decode &lt;string&gt; : string
 
 Decode the string from [Base64](http://en.wikipedia.org/wiki/Base64).
 
 {{#example}}
-Q: base64 decode "SGVsbG8sIHdvcmxkIQ=="
+Q: base64 decode &quot;SGVsbG8sIHdvcmxkIQ==&quot;
 A: Hello, world!
 I: singular string
 {{/example}}
 
-# base64 encode &lt;string&gt;
+# base64 encode &lt;string&gt; : string
 
 Encode the string into [Base64](http://en.wikipedia.org/wiki/Base64).
 
 {{#example}}
-Q: base64 encode "Hello, world!"
+Q: base64 encode &quot;Hello, world!&quot;
 A: SGVsbG8sIHdvcmxkIQ==
 I: singular string
 {{/example}}
 
-# bes deployment option &lt;string&gt;
+# bes deployment option &lt;string&gt; : bes deployment option
 
-Returns the value associated with the deployment option named by the &lt;string&gt;.
+Returns the value associated with the deployment option named by the &amp;lt;string&amp;gt;.
 
-# bes domain &lt;string&gt;
+# bes domain &lt;string&gt; : bes domain
 
 Returns the first BES Domain whose title matches the specified name.
 
-# bes property &lt;string&gt;
+# bes property &lt;string&gt; : bes property
 
 Returns the first property whose name matches the given string. Note that it is not safe to assume that there is only one property with a given name.
 
-# big &lt;string&gt; of &lt;string&gt;
+# big &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;big&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;big&amp;gt; tag modified by the first given string.
 
-# big of &lt;string&gt;
+# big of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;big&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;big&amp;gt; tag.
 
-# binary operator &lt;string&gt;
+# binary operator &lt;string&gt; : binary operator
 
 Typically used in the plural, returns the various possible binary inspectors that use the specified operators.
 
-# bit set &lt;string&gt;
+# bit set &lt;string&gt; : bit set
 
 Returns the bits of the binary number given by the string.
 
 {{#example}}
-Q: bit set "1010"
+Q: bit set &quot;1010&quot;
 A: 1010
 I: singular bit set
 {{/example}}
 
-# blockquote &lt;string&gt; of &lt;string&gt;
+# blockquote &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;blockquote&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;blockquote&amp;gt; tag modified by the first given string.
 
-# blockquote of &lt;string&gt;
+# blockquote of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;blockquote&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;blockquote&amp;gt; tag.
 
-# body &lt;string&gt; of &lt;string&gt;
+# body &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;body&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;body&amp;gt; tag modified by the first given string.
 
-# body of &lt;string&gt;
+# body of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;body&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;body&amp;gt; tag.
 
-# boolean &lt;string&gt;
+# boolean &lt;string&gt; : boolean
 
-Returns a boolean. For example, boolean &quot;TRUE&quot;.
+Returns a boolean. For example, boolean &amp;quot;TRUE&amp;quot;.
 
-# br &lt;string&gt;
+# br &lt;string&gt; : html
 
-Creates an HTML &lt;br/&gt; tag with an included modifier, such as class.
+Creates an HTML &amp;lt;br/&amp;gt; tag with an included modifier, such as class.
 
-# bundle &lt;string&gt;
+# bundle &lt;string&gt; : bundle
 
 Returns a bundle (CFBundle) by name.
 
-# capability &lt;string&gt;
+# capability &lt;string&gt; : capability
 
-Converts a string to a capability object for rpm dependency version comparisons. Strings with version information take the form capability relation version, where relation is one of {&lt;,&gt;,&gt;=,&lt;=,=}. If a relation and version are not specified, then comparisons will assume a capability at any version number.
+Converts a string to a capability object for rpm dependency version comparisons. Strings with version information take the form capability relation version, where relation is one of {&amp;lt;,&amp;gt;,&amp;gt;=,&amp;lt;=,=}. If a relation and version are not specified, then comparisons will assume a capability at any version number.
 
-# caption &lt;string&gt; of &lt;string&gt;
+# caption &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;caption&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;caption&amp;gt; tag modified by the first given string.
 
-# caption of &lt;string&gt;
+# caption of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;caption&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;caption&amp;gt; tag.
 
-# case insensitive regex &lt;string&gt;
+# case insensitive regex &lt;string&gt; : regular expression
 
 Returns a case-insensitive regular expression from the supplied string.
 
-# case insensitive regular expression &lt;string&gt;
+# case insensitive regular expression &lt;string&gt; : regular expression
 
-Same as case insensitive regex &lt;string&gt;.
+Same as case insensitive regex &amp;lt;string&amp;gt;.
 
-# cast &lt;string&gt;
+# cast &lt;string&gt; : cast
 
-Returns a list of the objects that can be cast into the type specified by &lt;string&gt;.
+Returns a list of the objects that can be cast into the type specified by &amp;lt;string&amp;gt;.
 
-# catalog &lt;string&gt;
+# catalog &lt;string&gt; : message_catalog
 
 No documentation exists.
 
-# character &lt;integer&gt; of &lt;string&gt;
+# character &lt;integer&gt; of &lt;string&gt; : substring
 
-Returns a string of length 1 made by taking the character identified by &lt;integer&gt; from the string. Numbering begins at zero.
+Returns a string of length 1 made by taking the character identified by &amp;lt;integer&amp;gt; from the string. Numbering begins at zero.
 
 {{#example}}
-Q: character 1 of "hello"
+Q: character 1 of &quot;hello&quot;
 A: e
 I: singular substring
 {{/example}}
 
-# character of &lt;string&gt;
+# character of &lt;string&gt; : substring
 
 Returns the characters from the string.
 
 {{#example}}
-Q: characters of "hello"
+Q: characters of &quot;hello&quot;
 A: h
 A: e
 A: l
@@ -210,1300 +214,1324 @@ A: o
 I: plural substring
 {{/example}}
 
-# cite &lt;string&gt; of &lt;string&gt;
+# cite &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;cite&gt; (citation) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;cite&amp;gt; (citation) tag modified by the first given string.
 
-# cite of &lt;string&gt;
+# cite of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;cite&gt; (citation) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;cite&amp;gt; (citation) tag.
 
-# code &lt;string&gt; of &lt;string&gt;
+# code &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;code&gt; (fixed-width font) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;code&amp;gt; (fixed-width font) tag modified by the first given string.
 
-# code of &lt;string&gt;
+# code of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;code&gt; (fixed-width font) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;code&amp;gt; (fixed-width font) tag.
 
-# col &lt;string&gt; of &lt;string&gt;
+# col &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;col&gt; (column) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;col&amp;gt; (column) tag modified by the first given string.
 
-# col of &lt;string&gt;
+# col of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;col&gt; (column) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;col&amp;gt; (column) tag.
 
-# colgroup &lt;string&gt; of &lt;string&gt;
+# colgroup &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;colgroup&gt; (column group) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;colgroup&amp;gt; (column group) tag modified by the first given string.
 
-# colgroup of &lt;string&gt;
+# colgroup of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;colgroup&gt; (column group) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;colgroup&amp;gt; (column group) tag.
 
-# concatenation &lt;html&gt; of &lt;string&gt;
+# concatenation &lt;html&gt; of &lt;string&gt; : html
 
 This inspector concatenates the string items in the second argument with a separator defined by the first argument.
 
-# concatenation &lt;string&gt; of &lt;string&gt;
+# concatenation &lt;string&gt; of &lt;string&gt; : string
 
 This inspector concatenates the string items in the second argument with a separator defined by the string argument.
 
 {{#example}}
-Q: concatenation ", " of ("foo"; "bar"; "baz")
+Q: concatenation &quot;, &quot; of (&quot;foo&quot;; &quot;bar&quot;; &quot;baz&quot;)
 A: foo, bar, baz
 I: singular string
 {{/example}}
 
-# concatenation of &lt;string&gt;
+# concatenation of &lt;string&gt; : string
 
 Combines the supplied strings into a single string, end-to-end.
 
 {{#example}}
-Q: concatenation of ("foo"; "bar"; "baz")
+Q: concatenation of (&quot;foo&quot;; &quot;bar&quot;; &quot;baz&quot;)
 A: foobarbaz
 I: singular string
 {{/example}}
 
-# control panel &lt;string&gt;
+# control panel &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# country &lt;string&gt;
+# country &lt;string&gt; : country
 
 Maps a country script string (for example verAfrikaans) to its region code.
 
-# custom site subscription effective date &lt;string&gt;
+# custom site subscription effective date &lt;string&gt; : time
 
-Returns the date the custom site (specified by &lt;string&gt;) was last subscribed or unsubscribed. It is used internally by BES to manage custom site subscriptions.
+Returns the date the custom site (specified by &amp;lt;string&amp;gt;) was last subscribed or unsubscribed. It is used internally by BES to manage custom site subscriptions.
 
-# date &lt;string&gt;
+# date &lt;string&gt; : date
 
-Converts the given string into a date. The string should be of the form &#39;Day Month Year&#39; and the returned date will be of the form &#39;Day of week, Day Month Year&#39;.
+Converts the given string into a date. The string should be of the form &amp;#39;Day Month Year&amp;#39; and the returned date will be of the form &amp;#39;Day of week, Day Month Year&amp;#39;.
 
 {{#example}}
-Q: date "11 Mar 1984"
+Q: date &quot;11 Mar 1984&quot;
 A: Sun, 11 Mar 1984
 I: singular date
 {{/example}}
 
-# day_of_month &lt;string&gt;
+# day_of_month &lt;string&gt; : day of month
 
 Converts the given string value (must be an integer from 1-31) to a day of month type.
 
-# day_of_week &lt;string&gt;
+# day_of_week &lt;string&gt; : day of week
 
 Converts the given string value to a day of week type, eg. Monday, Tuesday, etcetera.
 
-# dd &lt;string&gt; of &lt;string&gt;
+# dd &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;dd&gt; (definition) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;dd&amp;gt; (definition) tag modified by the first given string.
 
-# dd of &lt;string&gt;
+# dd of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;dd&gt; (definition) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;dd&amp;gt; (definition) tag.
 
-# debian package version &lt;string&gt;
+# debian package version &lt;string&gt; : debian package version
 
 Returns a Debian package version object from the given string.
 
-# debian package version epoch &lt;string&gt;
+# debian package version epoch &lt;string&gt; : debian package version epoch
 
-Returns a Debian package version &#39;epoch&#39; object from the given string.
+Returns a Debian package version &amp;#39;epoch&amp;#39; object from the given string.
 
-# debian package version revision &lt;string&gt;
+# debian package version revision &lt;string&gt; : debian package version revision
 
 Returns a Debian package version revision object from the given string.
 
-# debian package version upstream &lt;string&gt;
+# debian package version upstream &lt;string&gt; : debian package upstream version
 
 Returns a Debian package upstream_version object from the supplied string.
 
-# definition list &lt;string&gt; of &lt;string&gt;
+# definition list &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;dl&gt; (definition) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;dl&amp;gt; (definition) tag modified by the first given string.
 
-# definition list of &lt;string&gt;
+# definition list of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;dl&gt; (definition) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;dl&amp;gt; (definition) tag.
 
-# del &lt;string&gt; of &lt;string&gt;
+# del &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;del&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;del&amp;gt; tag modified by the first given string.
 
-# del of &lt;string&gt;
+# del of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;del&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;del&amp;gt; tag.
 
-# device file &lt;string&gt;
+# device file &lt;string&gt; : device file
 
 Returns the device file with the specified name.
 
-# dfn &lt;string&gt; of &lt;string&gt;
+# dfn &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;dfn&gt; (definition) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;dfn&amp;gt; (definition) tag modified by the first given string.
 
-# dfn of &lt;string&gt;
+# dfn of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;dfn&gt; (definition) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;dfn&amp;gt; (definition) tag.
 
-# disabled control panel &lt;string&gt;
-
-No documentation exists.
-
-# disabled extension &lt;string&gt;
+# disabled control panel &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# disabled shutdown item &lt;string&gt;
+# disabled extension &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# disabled startup item &lt;string&gt;
+# disabled shutdown item &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# distinguished name &lt;string&gt;
+# disabled startup item &lt;string&gt; : enableable_file
+
+No documentation exists.
+
+# distinguished name &lt;string&gt; : distinguished name
 
 Interprets a distinguished name in the textual format described by [RFC 2253](https://www.ietf.org/rfc/rfc2253.txt) and used by LDAP/Active Directory.
 
 {{#example}}
-Q: distinguished name "CN=bearmo,OU=bears,DC=example,DC=com"
+Q: distinguished name &quot;CN=bearmo,OU=bears,DC=example,DC=com&quot;
 A: CN=bearmo,OU=bears,DC=example,DC=com
 {{/example}}
 
-# div &lt;string&gt; of &lt;string&gt;
+# div &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;div&gt; (division or section) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;div&amp;gt; (division or section) tag modified by the first given string.
 
-# div of &lt;string&gt;
+# div of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;div&gt; (division or section) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;div&amp;gt; (division or section) tag.
 
-# domain user &lt;string&gt;
+# domain user &lt;string&gt; : local user
 
 Returns the user object corresponding to the specified name.
 
-# download file &lt;string&gt;
+# domain user &lt;string&gt; : user
 
-This inspector is available in relevance subsitution action processing. It returns a file object with the given name from the named folder or the download folder. This is equivalent to &#39;file &quot;name&quot; of download folder&#39;. The file should exist or the result will not exist.
+No documentation exists.
 
-# download path &lt;string&gt;
+# download file &lt;string&gt; : file
 
-This inspector is available in relevance subsitution action processing. It returns a string corresponding to the download path of the specified file. This inspector (along with download folder and download file) is designed to be used during the prefetch process of action execution. This is equivalent to &#39;(pathname of download folder) &amp; pathseparator &amp; &quot;myfile&quot;&#39;.
+This inspector is available in relevance subsitution action processing. It returns a file object with the given name from the named folder or the download folder. This is equivalent to &amp;#39;file &amp;quot;name&amp;quot; of download folder&amp;#39;. The file should exist or the result will not exist.
 
-# drive &lt;string&gt;
+# download path &lt;string&gt; : string
+
+This inspector is available in relevance subsitution action processing. It returns a string corresponding to the download path of the specified file. This inspector (along with download folder and download file) is designed to be used during the prefetch process of action execution. This is equivalent to &amp;#39;(pathname of download folder) &amp;amp; pathseparator &amp;amp; &amp;quot;myfile&amp;quot;&amp;#39;.
+
+# drive &lt;string&gt; : drive
+
+No documentation exists.
+
+# drive &lt;string&gt; : filesystem
 
 Returns the volume corresponding to the named drive.
 
-# dt &lt;string&gt; of &lt;string&gt;
-
-Returns an HTML snippet with the specified string enclosed in a &lt;dt&gt; (definition) tag modified by the first given string.
-
-# dt of &lt;string&gt;
-
-Returns an HTML snippet containing the specified string enclosed in a &lt;dt&gt; (definition) tag.
-
-# em &lt;string&gt; of &lt;string&gt;
-
-Emphasize the specified string inside an &lt;em string&gt;&lt;/em&gt; tag.
-
-# em of &lt;string&gt;
-
-Emphasize the specified string inside an &lt;em&gt;&lt;/em&gt; tag.
-
-# enabled control panel &lt;string&gt;
+# drive &lt;string&gt; : volume
 
 No documentation exists.
 
-# enabled extension &lt;string&gt;
+# dt &lt;string&gt; of &lt;string&gt; : html
+
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;dt&amp;gt; (definition) tag modified by the first given string.
+
+# dt of &lt;string&gt; : html
+
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;dt&amp;gt; (definition) tag.
+
+# em &lt;string&gt; of &lt;string&gt; : html
+
+Emphasize the specified string inside an &amp;lt;em string&amp;gt;&amp;lt;/em&amp;gt; tag.
+
+# em of &lt;string&gt; : html
+
+Emphasize the specified string inside an &amp;lt;em&amp;gt;&amp;lt;/em&amp;gt; tag.
+
+# enabled control panel &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# enabled shutdown item &lt;string&gt;
+# enabled extension &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# enabled startup item &lt;string&gt;
+# enabled shutdown item &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# error &lt;string&gt;
+# enabled startup item &lt;string&gt; : enableable_file
 
-This expression allows you to output your own user-defined error message, typically in the &#39;else&#39; clause of an &#39;if/then/else&#39; statement.
+No documentation exists.
+
+# error &lt;string&gt; : undefined
+
+This expression allows you to output your own user-defined error message, typically in the &amp;#39;else&amp;#39; clause of an &amp;#39;if/then/else&amp;#39; statement.
 
 {{#example}}
-Q: error "hodor!"
+Q: error &quot;hodor!&quot;
 E: User-defined error: hodor!
 {{/example}}
 
-# escape of &lt;string&gt;
+# escape of &lt;string&gt; : string
 
 Returns a string containing a \\ for every \ character found. Useful for setting registry key values to strings in regset action commands.
 
-# event log &lt;string&gt;
+# event log &lt;string&gt; : event log
 
 Returns the named event log, which contains historical information that help to track down system and security problems. There are several distinct logs that you can specify, including:Application log: records application eventsSecurity log: recirds global or local policy audit eventsSystem log: records OS events.
 
-# execution &lt;string&gt;
+# execution &lt;string&gt; : execution
 
 No documentation exists.
 
-# expand environment string of &lt;string&gt;
+# expand environment string of &lt;string&gt; : string
 
 Uses the Windows [ExpandEnvironmentStrings](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724265%28v=vs.85%29.aspx) API to translate a string containing special Windows environment variables.
 
 {{#example}}
-Q: expand environment string of "%25windir%25\my.dll"
+Q: expand environment string of &quot;%25windir%25\my.dll&quot;
 A: C:\Windows\my.dll
 I: singular string
 {{/example}}
 
-# expand x32 environment string of &lt;string&gt;
+# expand x32 environment string of &lt;string&gt; : string
 
 Uses the Windows [ExpandEnvironmentStrings](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724265%28v=vs.85%29.aspx) API to translate a string containing special Windows environment variables.
 
 {{#example}}
-Q: expand x32 environment string of "%25windir%25\my.dll"
+Q: expand x32 environment string of &quot;%25windir%25\my.dll&quot;
 A: C:\Windows\my.dll
 I: singular string
 {{/example}}
 
-# expand x64 environment string of &lt;string&gt;
+# expand x64 environment string of &lt;string&gt; : string
 
-Given an environment string such as %ProgramFiles%, this inspector expands it to &#39;C:\Program Files (x86)&#39;. Although similar to &#39;expand environment string of &lt;string&gt;&#39;, this inspector works on 64-bit Windows systems only. On a 32-bit system, it returns &#39;No Such Object&#39;.
+Given an environment string such as %ProgramFiles%, this inspector expands it to &amp;#39;C:\Program Files (x86)&amp;#39;. Although similar to &amp;#39;expand environment string of &amp;lt;string&amp;gt;&amp;#39;, this inspector works on 64-bit Windows systems only. On a 32-bit system, it returns &amp;#39;No Such Object&amp;#39;.
 
-# extension &lt;string&gt;
+# extension &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# fifo file &lt;string&gt;
+# fifo file &lt;string&gt; : fifo file
 
 Returns the FIFO file (named pipe) with the given name.
 
-# file &lt;string&gt;
+# file &lt;string&gt; : file
 
-Returns a filesystem object corresponding to the full pathname provided in &lt;string&gt;.
+Returns a filesystem object corresponding to the full pathname provided in &amp;lt;string&amp;gt;.
 
-# file signature &lt;string&gt;
+# file signature &lt;string&gt; : file signature
 
 Turn a string into a file signature (four letters, for example FNDR).
 
-# file type &lt;string&gt;
+# file type &lt;string&gt; : file type
 
-The phrase &#39;file type&#39; can be used to create a file type object from a string.
+The phrase &amp;#39;file type&amp;#39; can be used to create a file type object from a string.
 
-# fileset version record &lt;string&gt;
+# fileset version record &lt;string&gt; : fileset version record
 
-Returns a fileset version record specified by the string in the format &quot;ver.rel.mod.fix&quot;.
+Returns a fileset version record specified by the string in the format &amp;quot;ver.rel.mod.fix&amp;quot;.
 
-# fileset version requirement &lt;string&gt;
+# fileset version requirement &lt;string&gt; : fileset version requirement
 
-Returns a fileset version requirement specified by the string in the format &quot;lpp_name ver.rel.mod.fix&quot;.
+Returns a fileset version requirement specified by the string in the format &amp;quot;lpp_name ver.rel.mod.fix&amp;quot;.
 
-# filesystem &lt;string&gt;
+# filesystem &lt;string&gt; : filesystem
 
-Returns the filesystem corresponding to the specified name. On a Macintosh, this inspector returns a &lt;volume&gt; object.
+Returns the filesystem corresponding to the specified name. On a Macintosh, this inspector returns a &amp;lt;volume&amp;gt; object.
 
-# first &lt;integer&gt; of &lt;string&gt;
+# filesystem &lt;string&gt; : volume
+
+No documentation exists.
+
+# first &lt;integer&gt; of &lt;string&gt; : substring
 
 Returns a substring containing the number of characters specified from the given string.
 
 {{#example}}
-Q: first 5 of "To be or not to be"
+Q: first 5 of &quot;To be or not to be&quot;
 A: To be
 {{/example}}
 
-# first &lt;string&gt; of &lt;string&gt;
+# first &lt;string&gt; of &lt;string&gt; : substring
 
 Returns a substring containing the first occurrence of the name provided.
 
 {{#example}}
-Q: preceding text of first "." of "access.log.1"
+Q: preceding text of first &quot;.&quot; of &quot;access.log.1&quot;
 A: access
 {{/example}}
 
-# first match &lt;regular expression&gt; of &lt;string&gt;
+# first match &lt;regular expression&gt; of &lt;string&gt; : regular expression match
 
 Creates an object containing the first match to the regular expression in the given string
 
-# floating point &lt;string&gt;
+# floating point &lt;string&gt; : floating point
 
 Creates a floating point number from the provided string.
 
-# folder &lt;string&gt;
+# folder &lt;string&gt; : folder
 
 Returns a folder object for the name provided. See drive.
 
-# format &lt;string&gt;
+# format &lt;string&gt; : format
 
 Returns the specified string into a format type which can be used to print formatted variables.
 
-# framework &lt;string&gt;
+# framework &lt;string&gt; : folder
 
 No documentation exists.
 
-# full wmi &lt;string&gt;
+# full wmi &lt;string&gt; : wmi
 
 Returns a wmi object which can retrieve all values, including system values.
 
-# gestalt &lt;string&gt;
+# gestalt &lt;string&gt; : integer
 
 This reads a 32 bit integer from the MacOS. The selector name is the four character OSType that chooses which item is being inspected. The interpretation of the result depends on the selector. It might represent an integer or a version, for instance.
 
-# grub config file &lt;string&gt;
+# grub config file &lt;string&gt; : grub config file
 
 Returns the grub config file at the path specified by the string.
 
-# h1 &lt;string&gt; of &lt;string&gt;
+# h1 &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;h1&gt; (header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;h1&amp;gt; (header) tag modified by the first given string.
 
-# h1 of &lt;string&gt;
+# h1 of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;h1&gt; (header) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;h1&amp;gt; (header) tag.
 
-# h2 &lt;string&gt; of &lt;string&gt;
+# h2 &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;h2&gt; (header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;h2&amp;gt; (header) tag modified by the first given string.
 
-# h2 of &lt;string&gt;
+# h2 of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;h2&gt; (header) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;h2&amp;gt; (header) tag.
 
-# h3 &lt;string&gt; of &lt;string&gt;
+# h3 &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;h3&gt; (header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;h3&amp;gt; (header) tag modified by the first given string.
 
-# h3 of &lt;string&gt;
+# h3 of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;h3&gt; (header) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;h3&amp;gt; (header) tag.
 
-# h4 &lt;string&gt; of &lt;string&gt;
+# h4 &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;h4&gt; (header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;h4&amp;gt; (header) tag modified by the first given string.
 
-# h4 of &lt;string&gt;
+# h4 of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;h4&gt; (header) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;h4&amp;gt; (header) tag.
 
-# h5 &lt;string&gt; of &lt;string&gt;
+# h5 &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;h5&gt; (header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;h5&amp;gt; (header) tag modified by the first given string.
 
-# h5 of &lt;string&gt;
+# h5 of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;h5&gt; (header) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;h5&amp;gt; (header) tag.
 
-# h6 &lt;string&gt; of &lt;string&gt;
+# h6 &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;h6&gt; (header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;h6&amp;gt; (header) tag modified by the first given string.
 
-# h6 of &lt;string&gt;
+# h6 of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;h6&gt; (header) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;h6&amp;gt; (header) tag.
 
-# head &lt;string&gt; of &lt;string&gt;
+# head &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;head&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;head&amp;gt; tag modified by the first given string.
 
-# head of &lt;string&gt;
+# head of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;head&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;head&amp;gt; tag.
 
-# hexadecimal integer &lt;string&gt;
+# hexadecimal integer &lt;string&gt; : integer
 
 Creates an integer from the provided hexadecimal value.
 
-# hexadecimal string &lt;string&gt;
+# hexadecimal string &lt;string&gt; : string
 
 Creates a string from the given hexadecimal value.
 
-# hfs file &lt;string&gt;
+# hfs file &lt;string&gt; : file
 
-Returns the hierachical file system (HFS) file specified by &lt;string&gt;.
+Returns the hierachical file system (HFS) file specified by &amp;lt;string&amp;gt;.
 
-# hfs folder &lt;string&gt;
+# hfs folder &lt;string&gt; : folder
 
-Returns the hierachical file system (HFS) folder specified by &lt;string&gt;.
+Returns the hierachical file system (HFS) folder specified by &amp;lt;string&amp;gt;.
 
-# hfs item &lt;string&gt;
+# hfs item &lt;string&gt; : filesystem object
 
-Returns a filesystem object with the specified item name. The Macintosh has two different path types it can output. HFS (Hierarchical File System) was an OS9 format where the path separator was &#39;:&#39; and there were multiple roots (each volume). POSIX has superseded HFS and is single rooted with &#39;/&#39; as a separator.  All of the Macintosh inspectors that are not otherwise specified default to the POSIX version.
+Returns a filesystem object with the specified item name. The Macintosh has two different path types it can output. HFS (Hierarchical File System) was an OS9 format where the path separator was &amp;#39;:&amp;#39; and there were multiple roots (each volume). POSIX has superseded HFS and is single rooted with &amp;#39;/&amp;#39; as a separator.  All of the Macintosh inspectors that are not otherwise specified default to the POSIX version.
 
-# hr &lt;string&gt;
+# hr &lt;string&gt; : html
 
-Creates a horizontal line tag with an option specfied by the string &lt;hr string/&gt;.
+Creates a horizontal line tag with an option specfied by the string &amp;lt;hr string/&amp;gt;.
 
-# html &lt;string&gt;
+# html &lt;string&gt; : html
 
-Embeds the specified string between &lt;html&gt;&lt;/html&gt; tags.
+Embeds the specified string between &amp;lt;html&amp;gt;&amp;lt;/html&amp;gt; tags.
 
-# html &lt;string&gt; of &lt;string&gt;
+# html &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;html&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;html&amp;gt; tag modified by the first given string.
 
-# html of &lt;string&gt;
+# html of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;html&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;html&amp;gt; tag.
 
-# html tag &lt;string&gt; of &lt;string&gt;
+# html tag &lt;string&gt; of &lt;string&gt; : html
 
 Returns an HTML snippet with the second string enclosed in a tag specified by the first string.
 
-# ins &lt;string&gt; of &lt;string&gt;
+# ins &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;ins&gt; (insert) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;ins&amp;gt; (insert) tag modified by the first given string.
 
-# ins of &lt;string&gt;
+# ins of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;ins&gt; (insert) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;ins&amp;gt; (insert) tag.
 
-# integer &lt;string&gt;
+# integer &lt;string&gt; : integer
 
 Returns integer for name provided.
 
-# ips repo &lt;string&gt;
+# ips repo &lt;string&gt; : ips repo
 
 No documentation exists.
 
-# ipv4 address &lt;string&gt;
+# ipv4 address &lt;string&gt; : ipv4 address
 
 Returns an ipv4 address for the string provided.
 
-# ipv4or6 address &lt;string&gt;
+# ipv4or6 address &lt;string&gt; : ipv4or6 address
 
 Returns an ipv4or6 address object as described by the given string.
 
-# ipv6 address &lt;string&gt;
+# ipv6 address &lt;string&gt; : ipv6 address
 
 Converts a string representations of an IPv6 address (with colons and/or dots) into an IPv6 address type.
 
-# italic &lt;string&gt; of &lt;string&gt;
+# italic &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;i&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;i&amp;gt; tag modified by the first given string.
 
-# italic of &lt;string&gt;
+# italic of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;i&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;i&amp;gt; tag.
 
-# item &lt;string&gt;
+# item &lt;string&gt; : filesystem object
 
 Returns a filesystem object with the given name, either a file or a folder.
 
-# javascript array &lt;string&gt; of &lt;string&gt;
+# javascript array &lt;string&gt; of &lt;string&gt; : html
 
 No documentation exists.
 
-# json of &lt;string&gt;
+# json of &lt;string&gt; : json value
 
 No documentation exists.
 
-# kbd &lt;string&gt; of &lt;string&gt;
+# kbd &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;kbd&gt; (keyboard entry) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;kbd&amp;gt; (keyboard entry) tag modified by the first given string.
 
-# kbd of &lt;string&gt;
+# kbd of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;kbd&gt; (keyboard entry) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;kbd&amp;gt; (keyboard entry) tag.
 
-# last &lt;integer&gt; of &lt;string&gt;
+# last &lt;integer&gt; of &lt;string&gt; : substring
 
 Returns a substring containing the number of characters specified.
 
 {{#example}}
-Q: last 5 of "Hello Kitty"
+Q: last 5 of &quot;Hello Kitty&quot;
 A: Kitty
 {{/example}}
 
-# last &lt;string&gt; of &lt;string&gt;
+# last &lt;string&gt; of &lt;string&gt; : substring
 
 {{#example}}
-Q: following text of last "." of "hello.exe"
+Q: following text of last &quot;.&quot; of &quot;hello.exe&quot;
 A: exe
 {{/example}}
 
-# length of &lt;string&gt;
+# length of &lt;string&gt; : integer
 
 Returns the number of characters in the string.
 
-# li &lt;string&gt; of &lt;string&gt;
+# li &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;li&gt; (list) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;li&amp;gt; (list) tag modified by the first given string.
 
-# li of &lt;string&gt;
+# li of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;li&gt; (list) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;li&amp;gt; (list) tag.
 
-# link &lt;string&gt; of &lt;string&gt;
+# link &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;link&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;link&amp;gt; tag modified by the first given string.
 
-# link of &lt;string&gt;
+# link of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;link&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;link&amp;gt; tag.
 
-# local group &lt;string&gt;
+# local group &lt;string&gt; : local group
 
-Returns a local group corresponding to the given name, such as Adminstrator, Guests, and others. For backward compatibility, the &#39;as string&#39; cast of this inspector only returns the user name, not the other components of the sid. For all parts, use &#39;component string&#39; instead.
+Returns a local group corresponding to the given name, such as Adminstrator, Guests, and others. For backward compatibility, the &amp;#39;as string&amp;#39; cast of this inspector only returns the user name, not the other components of the sid. For all parts, use &amp;#39;component string&amp;#39; instead.
 
-# local mssql database &lt;string&gt;
+# local mssql database &lt;string&gt; : local mssql database
 
 Returns the local Microsoft SQL (MSSQL) database object identified by the name provided.
 
-# local time &lt;string&gt;
+# local time &lt;string&gt; : time
 
 Returns a time object for the name provided. See time.
 
-# local user &lt;string&gt;
+# local user &lt;string&gt; : local user
 
 Returns the Active Directory local user object for the specified local user. This allows inspection of AD properties for that user, whether cached or currently logged in.
 
-# match &lt;regular expression&gt; of &lt;string&gt;
+# local user &lt;string&gt; : user
+
+No documentation exists.
+
+# match &lt;regular expression&gt; of &lt;string&gt; : regular expression match
 
 Creates an object containing all the matches to the regular expression in the given string.
 
-# md5 of &lt;string&gt;
+# md5 of &lt;string&gt; : string
 
 Returns the md5 of the string, hex encoded as a string. Not available in FIPS mode.
 
-# meta &lt;string&gt; of &lt;string&gt;
+# meta &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;meta&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;meta&amp;gt; tag modified by the first given string.
 
-# meta of &lt;string&gt;
+# meta of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;meta&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;meta&amp;gt; tag.
 
-# module &lt;string&gt;
+# module &lt;string&gt; : module
 
 For BigFix internal use only.
 
-# month &lt;string&gt;
+# month &lt;string&gt; : month
 
-Returns a month type corresponding to the given &lt;string&gt;.
+Returns a month type corresponding to the given &amp;lt;string&amp;gt;.
 
-# native application &lt;string&gt;
-
-No documentation exists.
-
-# native file &lt;string&gt;
+# native application &lt;string&gt; : application
 
 No documentation exists.
 
-# native folder &lt;string&gt;
+# native file &lt;string&gt; : file
 
 No documentation exists.
 
-# network option &lt;string&gt;
+# native folder &lt;string&gt; : folder
 
 No documentation exists.
 
-# network share &lt;string&gt;
+# network option &lt;string&gt; : network_option
+
+No documentation exists.
+
+# network share &lt;string&gt; : network share
 
 Creates a named network shared object.
 
-# numeric value of &lt;string&gt;
+# numeric value of &lt;string&gt; : integer
 
-Returns an integer for the first numeric value in the string.Example: numeric value of &quot;string 123 xyz 45&quot; = 123 - Returns `True`.
+Returns an integer for the first numeric value in the string.Example: numeric value of &amp;quot;string 123 xyz 45&amp;quot; = 123 - Returns `True`.
 
-# ol &lt;string&gt; of &lt;string&gt;
+# ol &lt;string&gt; of &lt;string&gt; : html
 
-Creates an ordered list out of &lt;string2&gt; with an optional style specified by &lt;string1&gt;.
+Creates an ordered list out of &amp;lt;string2&amp;gt; with an optional style specified by &amp;lt;string1&amp;gt;.
 
-# ol of &lt;string&gt;
+# ol of &lt;string&gt; : html
 
-Creates an ordered list out of the &lt;string&gt;.
+Creates an ordered list out of the &amp;lt;string&amp;gt;.
 
-# ordered list &lt;string&gt; of &lt;string&gt;
+# ordered list &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;ol&gt;&lt;li&gt; tag, where the &lt;ol&gt; tag is modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;ol&amp;gt;&amp;lt;li&amp;gt; tag, where the &amp;lt;ol&amp;gt; tag is modified by the first given string.
 
-# ordered list of &lt;string&gt;
+# ordered list of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;ol&gt;&lt;li&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;ol&amp;gt;&amp;lt;li&amp;gt; tag.
 
-# p &lt;string&gt; of &lt;string&gt;
+# p &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;p&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;p&amp;gt; tag modified by the first given string.
 
-# p of &lt;string&gt;
+# p of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;p&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;p&amp;gt; tag.
 
-# palm device &lt;string&gt;
-
-No documentation exists.
-
-# parameter &lt;string&gt;
-
-This inspector is a synonym for the parameter &lt;string&gt; of &lt;action&gt;. It looks up the value of the action parameter specified by &lt;string&gt;. This is used in conjunction with the parameter set command.
-
-# pending restart &lt;string&gt;
-
-Immediately after issuing a command like &#39;Action requires restart &quot;PatchGroupX&quot;&#39;, the expression &#39;Pending restart &quot;PatchGroupX&quot;&#39; will be true until the next restart.
-
-# percent decode &lt;string&gt;
+# palm device &lt;string&gt; : palm device
 
 No documentation exists.
 
-# percent encode &lt;string&gt;
+# parameter &lt;string&gt; : string
+
+This inspector is a synonym for the parameter &amp;lt;string&amp;gt; of &amp;lt;action&amp;gt;. It looks up the value of the action parameter specified by &amp;lt;string&amp;gt;. This is used in conjunction with the parameter set command.
+
+# pending restart &lt;string&gt; : boolean
+
+Immediately after issuing a command like &amp;#39;Action requires restart &amp;quot;PatchGroupX&amp;quot;&amp;#39;, the expression &amp;#39;Pending restart &amp;quot;PatchGroupX&amp;quot;&amp;#39; will be true until the next restart.
+
+# percent decode &lt;string&gt; : string
 
 No documentation exists.
 
-# position &lt;integer&gt; of &lt;string&gt;
+# percent encode &lt;string&gt; : string
+
+No documentation exists.
+
+# position &lt;integer&gt; of &lt;string&gt; : string position
 
 Returns a string position pointing to the character position specified. The first character is at position 0.
 
-# position of &lt;string&gt;
+# position of &lt;string&gt; : string position
 
 Returns the positions of the string.
 
-# posix file &lt;string&gt;
+# posix file &lt;string&gt; : file
 
-Returns the POSIX file specified by &lt;string&gt;.
+Returns the POSIX file specified by &amp;lt;string&amp;gt;.
 
-# posix folder &lt;string&gt;
+# posix folder &lt;string&gt; : folder
 
-Returns the POSIX folder specified by &lt;string&gt;.
+Returns the POSIX folder specified by &amp;lt;string&amp;gt;.
 
-# posix item &lt;string&gt;
+# posix item &lt;string&gt; : filesystem object
 
 Returns a filesystem object with the given name, either a file or a folder, using POSIX formatting.
 
-# pre &lt;string&gt; of &lt;string&gt;
+# pre &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in an &lt;pre&gt; (preformatted) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in an &amp;lt;pre&amp;gt; (preformatted) tag modified by the first given string.
 
-# pre of &lt;string&gt;
+# pre of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in an &lt;pre&gt; (preformatted) tag.
+Returns an HTML snippet containing the specified string enclosed in an &amp;lt;pre&amp;gt; (preformatted) tag.
 
-# preference &lt;string&gt;
+# preference &lt;string&gt; : preference
 
 The named set of preferences.
 
-# process &lt;string&gt;
+# process &lt;string&gt; : process
 
-Returns the process object corresponding to the name specified by &lt;string&gt;.
+Returns the process object corresponding to the name specified by &amp;lt;string&amp;gt;.
 
-# property &lt;string&gt;
+# property &lt;string&gt; : property
 
-Typically used in the plural, returns the &quot;line&quot; inspector properties.
+Typically used in the plural, returns the &amp;quot;line&amp;quot; inspector properties.
 
-# q &lt;string&gt; of &lt;string&gt;
+# q &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;q&gt; (quotation) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;q&amp;gt; (quotation) tag modified by the first given string.
 
-# q of &lt;string&gt;
+# q of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;q&gt; (quotation) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;q&amp;gt; (quotation) tag.
 
-# recent application &lt;string&gt;
+# recent application &lt;string&gt; : application
 
 Returns an application for the name provided it has recently executed. The name is assumed to be the last part of an executable file name.
 
-# regapp &lt;string&gt;
+# regapp &lt;string&gt; : application
 
 Returns an application object for the name provided. See application and regapp.
 
-# regex &lt;string&gt;
+# regex &lt;string&gt; : regular expression
 
 Creates a regex object from the given string.
 
-# regex escape of &lt;string&gt;
+# regex escape of &lt;string&gt; : string
 
 Creates a new string that escapes the special characters .[]{}()\*+?|^$,-.
 
-# regular expression &lt;string&gt;
+# regular expression &lt;string&gt; : regular expression
 
-Same as regex &lt;string&gt;.
+Same as regex &amp;lt;string&amp;gt;.
 
-# rope &lt;string&gt;
+# rope &lt;string&gt; : rope
 
 Creates a rope object from the given string.
 
-# rpm &lt;string&gt;
+# rpm &lt;string&gt; : rpmdatabase
 
-Returns an object corresponding to the database named by &lt;string&gt;.
+Returns an object corresponding to the database named by &amp;lt;string&amp;gt;.
 
-# rpm package release &lt;string&gt;
+# rpm package release &lt;string&gt; : rpm package release
 
 Returns the named RPM package release.
 
-# rpm package version &lt;string&gt;
+# rpm package version &lt;string&gt; : rpm package version
 
 Returns the named RPM package version.
 
-# rpm package version record &lt;string&gt;
+# rpm package version record &lt;string&gt; : rpm package version record
 
 Returns the named RPM package version record.
 
-# running application &lt;string&gt;
+# running application &lt;string&gt; : application
 
 Returns an application for the name provided it is currently executing. The name is assumed to be the last part of an executable file name.
 
-# running service &lt;string&gt;
+# running service &lt;string&gt; : service
 
 Returns the running service object matching the name provided.
 
-# samp &lt;string&gt; of &lt;string&gt;
+# samp &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;samp&gt; (sample) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;samp&amp;gt; (sample) tag modified by the first given string.
 
-# samp of &lt;string&gt;
+# samp of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;samp&gt; (sample) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;samp&amp;gt; (sample) tag.
 
-# scheduled task &lt;string&gt;
+# scheduled task &lt;string&gt; : scheduled task
 
 Returns a scheduled task with the specified name. It attempts to use the 2.0 interface if available, otherwise it uses the 1.0 interface. This method only looks in the root folder for 2.0 tasks, whch include hidden tasks.
 
-# security account &lt;string&gt;
+# security account &lt;string&gt; : security account
 
 This is a named inspector that uses the LookupAccountName API function to return an object representing a user or group.
 
-# security descriptor &lt;string&gt;
+# security descriptor &lt;string&gt; : security descriptor
 
 No documentation exists.
 
-# service &lt;string&gt;
+# service &lt;string&gt; : dummy
 
-Returns the service object matching the name provided, regardless of its running state.On a Macintosh, returns a &lt;dummy&gt; type.
+No documentation exists.
 
-# set of &lt;string&gt;
+# service &lt;string&gt; : service
+
+Returns the service object matching the name provided, regardless of its running state.On a Macintosh, returns a &amp;lt;dummy&amp;gt; type.
+
+# set of &lt;string&gt; : string set
 
 Creates a set from the given list of semicolon-separated strings.
 
-# sha1 of &lt;string&gt;
+# sha1 of &lt;string&gt; : string
 
 No documentation exists.
 
-# sha224 of &lt;string&gt;
+# sha224 of &lt;string&gt; : string
 
 No documentation exists.
 
-# sha256 of &lt;string&gt;
+# sha256 of &lt;string&gt; : string
 
 No documentation exists.
 
-# sha2_224 of &lt;string&gt;
+# sha2_224 of &lt;string&gt; : string
 
 Returns the sha2-224 of the string, hex encoded as a string
 
-# sha2_256 of &lt;string&gt;
+# sha2_256 of &lt;string&gt; : string
 
 Returns the sha2-256 of the string, hex encoded as a string
 
-# sha2_384 of &lt;string&gt;
+# sha2_384 of &lt;string&gt; : string
 
 Returns the sha2-384 of the string, hex encoded as a string
 
-# sha2_512 of &lt;string&gt;
+# sha2_512 of &lt;string&gt; : string
 
 Returns the sha2-512 of the string, hex encoded as a string
 
-# sha384 of &lt;string&gt;
+# sha384 of &lt;string&gt; : string
 
 No documentation exists.
 
-# sha512 of &lt;string&gt;
+# sha512 of &lt;string&gt; : string
 
 No documentation exists.
 
-# shutdown item &lt;string&gt;
+# shutdown item &lt;string&gt; : enableable_file
 
 No documentation exists.
 
-# sid &lt;string&gt;
+# sid &lt;string&gt; : security identifier
 
 No documentation exists.
 
-# site &lt;string&gt;
+# site &lt;string&gt; : site
 
 Returns a site object for the name provided. The name is the URL of the site location. See site.
 
-# site version list &lt;string&gt;
+# site version list &lt;string&gt; : site version list
 
-Returns a textual representation of a site version list (&quot;manyversion&quot;).
+Returns a textual representation of a site version list (&amp;quot;manyversion&amp;quot;).
 
-# small &lt;string&gt; of &lt;string&gt;
+# small &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;small&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;small&amp;gt; tag modified by the first given string.
 
-# small of &lt;string&gt;
+# small of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;small&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;small&amp;gt; tag.
 
-# socket file &lt;string&gt;
+# socket file &lt;string&gt; : socket file
 
 Returns the named socket file.
 
-# span &lt;string&gt; of &lt;string&gt;
+# span &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;span&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;span&amp;gt; tag modified by the first given string.
 
-# span of &lt;string&gt;
+# span of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;span&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;span&amp;gt; tag.
 
-# stage &lt;string&gt;
-
-No documentation exists.
-
-# startup item &lt;string&gt;
+# stage &lt;string&gt; : stage
 
 No documentation exists.
 
-# string &lt;string&gt;
+# startup item &lt;string&gt; : enableable_file
 
-Returns a string for the name provided. The keyword string is optional. For example, string &quot;hi&quot; = &quot;hi&quot;.
+No documentation exists.
 
-# strong &lt;string&gt; of &lt;string&gt;
+# string &lt;string&gt; : string
 
-Returns an HTML snippet with the specified string enclosed in a &lt;strong&gt; tag modified by the first given string.
+Returns a string for the name provided. The keyword string is optional. For example, string &amp;quot;hi&amp;quot; = &amp;quot;hi&amp;quot;.
 
-# strong of &lt;string&gt;
+# strong &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;strong&gt; tag.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;strong&amp;gt; tag modified by the first given string.
 
-# strverscmp version &lt;string&gt;
+# strong of &lt;string&gt; : html
+
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;strong&amp;gt; tag.
+
+# strverscmp version &lt;string&gt; : strverscmp version
 
 Creates a strverscmp version, which is compared to other versions using the OS supplied strverscmp function.
 
-# sub &lt;string&gt; of &lt;string&gt;
+# sub &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;sub&gt; (subscript) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;sub&amp;gt; (subscript) tag modified by the first given string.
 
-# sub of &lt;string&gt;
+# sub of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;sub&gt; (subscript) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;sub&amp;gt; (subscript) tag.
 
-# substring &lt;( integer, integer )&gt; of &lt;string&gt;
+# substring &lt;( integer, integer )&gt; of &lt;string&gt; : substring
 
 Returns a substring of the specified string as defined by the start and length. The first integer is the start and the second integer is the length.
 
 {{#example}}
-Q: substring (2, 2) of "abcdef"
+Q: substring (2, 2) of &quot;abcdef&quot;
 A: cd
 {{/example}}
 
 {{#example}}
-Q: substrings (integers in (0, length of it, 2), 2) of "abcdef"
+Q: substrings (integers in (0, length of it, 2), 2) of &quot;abcdef&quot;
 A: ab
 A: cd
 A: ef
 {{/example}}
 
-# substring &lt;string&gt; of &lt;string&gt;
+# substring &lt;string&gt; of &lt;string&gt; : substring
 
-Iterates through the string returning all the substrings matching the name given. For example, number of substrings &quot;be&quot; of &quot;to be or not to be&quot; = 2.
+Iterates through the string returning all the substrings matching the name given. For example, number of substrings &amp;quot;be&amp;quot; of &amp;quot;to be or not to be&amp;quot; = 2.
 
-# substring after &lt;string&gt; of &lt;string&gt;
+# substring after &lt;string&gt; of &lt;string&gt; : substring
 
 Returns the substrings that come after the first string delimiter.
 
-# substring before &lt;string&gt; of &lt;string&gt;
+# substring before &lt;string&gt; of &lt;string&gt; : substring
 
 Returns the substrings that come before the first string delimiter.
 
-# substring between &lt;string&gt; of &lt;string&gt;
+# substring between &lt;string&gt; of &lt;string&gt; : substring
 
 Returns the substring in the second string found between two instances of the first string.
 
-# substring separated by &lt;string&gt; of &lt;string&gt;
+# substring separated by &lt;string&gt; of &lt;string&gt; : substring
 
 Returns a substring (or set of substrings) delimited by the first string.
 
-# sup &lt;string&gt; of &lt;string&gt;
+# sup &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;sup&gt; (superscript) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;sup&amp;gt; (superscript) tag modified by the first given string.
 
-# sup of &lt;string&gt;
+# sup of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;sup&gt; (superscript) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;sup&amp;gt; (superscript) tag.
 
-# symlink &lt;string&gt;
+# symlink &lt;string&gt; : symlink
 
 Returns a symlink from the specified string.
 
-# system file &lt;string&gt;
+# system file &lt;string&gt; : file
 
 Returns a file object corresponding to the relative pathname provided.
 
-# system ini device file &lt;string&gt;
+# system ini device file &lt;string&gt; : file
 
 Returns a file object corresponding to a device file loaded as a result of a device= line of the system.ini file.
 
-# system x32 file &lt;string&gt;
+# system x32 file &lt;string&gt; : file
 
 No documentation exists.
 
-# system x64 file &lt;string&gt;
+# system x64 file &lt;string&gt; : file
 
 No documentation exists.
 
-# table &lt;string&gt; of &lt;string&gt;
+# table &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;table&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;table&amp;gt; tag modified by the first given string.
 
-# table of &lt;string&gt;
+# table of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;table&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;table&amp;gt; tag.
 
-# task folder &lt;string&gt;
+# task folder &lt;string&gt; : task folder
 
 Gets the task folder with the given string name.
 
-# tbody &lt;string&gt; of &lt;string&gt;
+# tbody &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;tbody&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;tbody&amp;gt; tag modified by the first given string.
 
-# tbody of &lt;string&gt;
+# tbody of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;tbody&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;tbody&amp;gt; tag.
 
-# td &lt;string&gt; of &lt;string&gt;
+# td &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;td&gt; (table cell) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;td&amp;gt; (table cell) tag modified by the first given string.
 
-# td of &lt;string&gt;
+# td of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;td&gt; (table cell) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;td&amp;gt; (table cell) tag.
 
-# tfoot &lt;string&gt; of &lt;string&gt;
+# tfoot &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;tfoot&gt; (table foot) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;tfoot&amp;gt; (table foot) tag modified by the first given string.
 
-# tfoot of &lt;string&gt;
+# tfoot of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;tfoot&gt; (table foot) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;tfoot&amp;gt; (table foot) tag.
 
-# th &lt;string&gt; of &lt;string&gt;
+# th &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;th&gt; (table header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;th&amp;gt; (table header) tag modified by the first given string.
 
-# th of &lt;string&gt;
+# th of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;th&gt; (table header) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;th&amp;gt; (table header) tag.
 
-# thead &lt;string&gt; of &lt;string&gt;
+# thead &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;thead&gt; (table header) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;thead&amp;gt; (table header) tag modified by the first given string.
 
-# thead of &lt;string&gt;
+# thead of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;thead&gt; (table header) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;thead&amp;gt; (table header) tag.
 
-# time &lt;string&gt;
+# time &lt;string&gt; : time
 
 Returns a time object for the name provided. See time.
 
-# time interval &lt;string&gt;
+# time interval &lt;string&gt; : time interval
 
 Creates a time interval from the string.
 
-# time zone &lt;string&gt;
+# time zone &lt;string&gt; : time zone
 
 Returns a time zone object for the name provided.
 
-# time_of_day &lt;string&gt;
+# time_of_day &lt;string&gt; : time of day
 
 Creates a time of day object out of the given string.
 
-# title &lt;string&gt; of &lt;string&gt;
+# title &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;title&gt; tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;title&amp;gt; tag modified by the first given string.
 
-# title of &lt;string&gt;
+# title of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;title&gt; tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;title&amp;gt; tag.
 
-# tr &lt;string&gt; of &lt;string&gt;
+# tr &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;tr&gt; (table row) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;tr&amp;gt; (table row) tag modified by the first given string.
 
-# tr of &lt;string&gt;
+# tr of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;tr&gt; (table row) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;tr&amp;gt; (table row) tag.
 
-# tt &lt;string&gt; of &lt;string&gt;
+# tt &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;tt&gt; (teletype font) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;tt&amp;gt; (teletype font) tag modified by the first given string.
 
-# tt of &lt;string&gt;
+# tt of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;tt&gt; (teletype font) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;tt&amp;gt; (teletype font) tag.
 
-# tuple string item &lt;integer&gt; of &lt;string&gt;
+# tuple string item &lt;integer&gt; of &lt;string&gt; : string
 
 Parses the given string as if it were a tuple result string and returns the string which is the nth item of the tuple. The tuple inspectors used to be session-only, but as of version 8.0, they are core inspectors, available to all platforms at all times.
 
-# tuple string item of &lt;string&gt;
+# tuple string item of &lt;string&gt; : string
 
-Parses the given string as if it were a tuple result string and iterates over the &lt;string&gt; objects that make up the tuple. The tuple inspectors used to be session-only, but as of version 8.0, they are core inspectors, available to all platforms at all times.
+Parses the given string as if it were a tuple result string and iterates over the &amp;lt;string&amp;gt; objects that make up the tuple. The tuple inspectors used to be session-only, but as of version 8.0, they are core inspectors, available to all platforms at all times.
 
-# type &lt;string&gt;
+# type &lt;string&gt; : type
 
 No documentation exists.
 
-# ul &lt;string&gt; of &lt;string&gt;
+# ul &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;ul&gt; (unordered list) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;ul&amp;gt; (unordered list) tag modified by the first given string.
 
-# ul of &lt;string&gt;
+# ul of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;ul&gt; (unordered list) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;ul&amp;gt; (unordered list) tag.
 
-# unary operator &lt;string&gt;
+# unary operator &lt;string&gt; : unary operator
 
 Typically used in the plural, this inspector returns a list of objects that use the specified operator.
 
-# unique value of &lt;string&gt;
+# unique value of &lt;string&gt; : string with multiplicity
 
-Returns the unique values of a given list of &lt;string&gt; types, removing duplicates and sorting by value. As of version 6.0 of BES, this inspector returns a &lt;string with multiplicity&gt;.
+Returns the unique values of a given list of &amp;lt;string&amp;gt; types, removing duplicates and sorting by value. As of version 6.0 of BES, this inspector returns a &amp;lt;string with multiplicity&amp;gt;.
 
-# universal time &lt;string&gt;
+# universal time &lt;string&gt; : time
 
 Returns a time object for the name provided. See time.
 
-# unordered list &lt;string&gt; of &lt;string&gt;
+# unordered list &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;ul&gt;&lt;li&gt; (unordered list item) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt; (unordered list item) tag modified by the first given string.
 
-# unordered list of &lt;string&gt;
+# unordered list of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;ul&gt;&lt;li&gt; (unordered list item) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt; (unordered list item) tag.
 
-# user &lt;string&gt;
+# user &lt;string&gt; : user
 
-Returns the user specified by &lt;string&gt;.
+Returns the user specified by &amp;lt;string&amp;gt;.
 
-# uuid &lt;string&gt;
+# uuid &lt;string&gt; : uuid
 
 Returns the named UUID (Universally Unique ID).
 
-# var &lt;string&gt; of &lt;string&gt;
+# var &lt;string&gt; of &lt;string&gt; : html
 
-Returns an HTML snippet with the specified string enclosed in a &lt;var&gt; (variable type) tag modified by the first given string.
+Returns an HTML snippet with the specified string enclosed in a &amp;lt;var&amp;gt; (variable type) tag modified by the first given string.
 
-# var of &lt;string&gt;
+# var of &lt;string&gt; : html
 
-Returns an HTML snippet containing the specified string enclosed in a &lt;var&gt; (variable type) tag.
+Returns an HTML snippet containing the specified string enclosed in a &amp;lt;var&amp;gt; (variable type) tag.
 
-# version &lt;string&gt;
+# version &lt;string&gt; : version
 
-Short hand for &#39;file version&#39;.
+Short hand for &amp;#39;file version&amp;#39;.
 
-# volume &lt;string&gt;
+# volume &lt;string&gt; : volume
 
 A numbered property returning the specified volume.
 
-# windows display time &lt;string&gt;
+# windows display time &lt;string&gt; : time
 
 Returns a string that may match the time shown in the Windows file system.
 
-# windows file &lt;string&gt;
+# windows file &lt;string&gt; : file
 
 Returns a file object corresponding to the relative pathname (within the Windows folder) provided. See file.
 
-# winrt package &lt;string&gt;
+# winrt package &lt;string&gt; : winrt package
 
 No documentation exists.
 
-# wmi &lt;string&gt;
+# wmi &lt;string&gt; : wmi
 
 Returns the wmi object corresponding to the namespace string provided.
 
-# x32 application &lt;string&gt;
+# x32 application &lt;string&gt; : application
 
-Returns an object corresponding to the 32-bit application specified by &lt;string&gt;.
+Returns an object corresponding to the 32-bit application specified by &amp;lt;string&amp;gt;.
 
-# x32 file &lt;string&gt;
+# x32 file &lt;string&gt; : file
 
-Returns an object corresponding to a 32 bit file with name specified by &lt;string&gt;.
+Returns an object corresponding to a 32 bit file with name specified by &amp;lt;string&amp;gt;.
 
-# x32 folder &lt;string&gt;
+# x32 folder &lt;string&gt; : folder
 
 Returns a filesystem object corresponding to a 32-bit folder.
 
-# x64 application &lt;string&gt;
+# x64 application &lt;string&gt; : application
 
-Returns an object corresponding to the 64-bit application specified by &lt;string&gt;. On a 32-bit computer, this is equivalent to a normal application inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled.
+Returns an object corresponding to the 64-bit application specified by &amp;lt;string&amp;gt;. On a 32-bit computer, this is equivalent to a normal application inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled.
 
-# x64 file &lt;string&gt;
+# x64 file &lt;string&gt; : file
 
-Returns an object corresponding to a 64 bit file with pathname specified by &lt;string&gt;. On a 32-bit computer, this is equivalent to a normal file inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled.
+Returns an object corresponding to a 64 bit file with pathname specified by &amp;lt;string&amp;gt;. On a 32-bit computer, this is equivalent to a normal file inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled.
 
-# x64 folder &lt;string&gt;
+# x64 folder &lt;string&gt; : folder
 
-Returns a filesystem object corresponding to a 64-bit folder with the given pathname. On a 32-bit computer, this is equivalent to a normal folder inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled. This action is transitive: any resulting filesystem objects will also have redirection disabled. For example, &quot;pathnames of files of x64 folder &lt;path&gt;&quot; will disable redirection when locating the folder, iterating over the files in the folder and calculating pathnames.
+Returns a filesystem object corresponding to a 64-bit folder with the given pathname. On a 32-bit computer, this is equivalent to a normal folder inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled. This action is transitive: any resulting filesystem objects will also have redirection disabled. For example, &amp;quot;pathnames of files of x64 folder &amp;lt;path&amp;gt;&amp;quot; will disable redirection when locating the folder, iterating over the files in the folder and calculating pathnames.
 
-# xml document of &lt;string&gt;
+# xml document of &lt;string&gt; : xml dom document
 
 No documentation exists.
 
-# year &lt;string&gt;
+# year &lt;string&gt; : year
 
 Creates a year object from the specified string.
 
-# zone &lt;string&gt;
+# zone &lt;string&gt; : zone
 
 Returns the named global Solaris zone.
 
-# zoned time_of_day &lt;string&gt;
+# zoned time_of_day &lt;string&gt; : time of day with time zone
 
-Returns a &#39;time of day with time zone&#39; object from the specified string.
+Returns a &amp;#39;time of day with time zone&amp;#39; object from the specified string.
 
-# &lt;string&gt; as boolean
+# &lt;string&gt; as boolean : boolean
 
-Returns a boolean value for the string. All possible capitalization&#39;s of &quot;TRUE&quot; and &quot;FALSE&quot; will convert successfully.
+Returns a boolean value for the string. All possible capitalization&amp;#39;s of &amp;quot;TRUE&amp;quot; and &amp;quot;FALSE&amp;quot; will convert successfully.
 
-# &lt;string&gt; as date
+# &lt;string&gt; as date : date
 
 Casts a string as a date type.
 
-# &lt;string&gt; as day_of_month
+# &lt;string&gt; as day_of_month : day of month
 
 Casts a string as a day of the month (eg. 28).
 
-# &lt;string&gt; as day_of_week
+# &lt;string&gt; as day_of_week : day of week
 
 Casts a string as a day of the week.
 
-# &lt;string&gt; as floating point
+# &lt;string&gt; as floating point : floating point
 
-Converts the contents of a string into a floating point number.Example: &quot;4.5&quot; as floating point - Returns 4.5.
+Converts the contents of a string into a floating point number.Example: &amp;quot;4.5&amp;quot; as floating point - Returns 4.5.
 
-# &lt;string&gt; as hexadecimal
+# &lt;string&gt; as hexadecimal : string
 
 Converts a string to a hexadecimal number.
 
-# &lt;string&gt; as html
+# &lt;string&gt; as html : html
 
 Casts a string into html.
 
-# &lt;string&gt; as integer
+# &lt;string&gt; as integer : integer
 
 Returns an integer value for the string provided. If the string contains anything but ASCII digits, the conversion will fail. Use numeric value for more liberal parsing rules.
 
-# &lt;string&gt; as ipv4or6 address
+# &lt;string&gt; as ipv4or6 address : ipv4or6 address
 
 Converts a string version of an IP address into the flexible ipv4or6 address format.
 
-# &lt;string&gt; as ipv6 address
+# &lt;string&gt; as ipv6 address : ipv6 address
 
 Converts a string representations of an IPv6 address (with colons and/or dots) as an IPv6 address type.
 
-# &lt;string&gt; as left trimmed string
+# &lt;string&gt; as left trimmed string : string
 
 Trims the leading spaces from a string.
 
-# &lt;string&gt; as local time
+# &lt;string&gt; as local time : time
 
-Returns a local time object from a properly formatted string. See &lt;time&gt;.
+Returns a local time object from a properly formatted string. See &amp;lt;time&amp;gt;.
 
-# &lt;string&gt; as local zoned time_of_day
+# &lt;string&gt; as local zoned time_of_day : time of day with time zone
 
 Converts a string to a time of day with local time zone.
 
-# &lt;string&gt; as lowercase
+# &lt;string&gt; as lowercase : string
 
 Returns a lowercase version of the string provided.
 
-# &lt;string&gt; as month
+# &lt;string&gt; as month : month
 
 Converts a string into a month.
 
-# &lt;string&gt; as right trimmed string
+# &lt;string&gt; as right trimmed string : string
 
 Trims the trailing spaces from a string.
 
-# &lt;string&gt; as site version list
+# &lt;string&gt; as site version list : site version list
 
 Converts a string into a site version list.
 
-# &lt;string&gt; as string
+# &lt;string&gt; as string : string
 
 Returns the string provided.
 
-# &lt;string&gt; as strverscmp version
+# &lt;string&gt; as strverscmp version : strverscmp version
 
 Converts a string to strverscmp version, which is compared to other versions using the OS supplied strverscmp function.
 
-# &lt;string&gt; as time
+# &lt;string&gt; as time : time
 
-Returns a time object from a properly formatted string. See &lt;time&gt;.
+Returns a time object from a properly formatted string. See &amp;lt;time&amp;gt;.
 
-# &lt;string&gt; as time interval
+# &lt;string&gt; as time interval : time interval
 
 Returns a time interval object from a properly formatted string. Expects strings formatted as ddd days, HH:MM:SS.mmmmmm.
 
-# &lt;string&gt; as time zone
+# &lt;string&gt; as time zone : time zone
 
-Returns a time zone object from a properly formatted string. See &lt;time zone&gt;.
+Returns a time zone object from a properly formatted string. See &amp;lt;time zone&amp;gt;.
 
-# &lt;string&gt; as time_of_day
+# &lt;string&gt; as time_of_day : time of day
 
 Converts a string to a time_of_day type.
 
-# &lt;string&gt; as trimmed string
+# &lt;string&gt; as trimmed string : string
 
 Trims the leading and trailing spaces off of the specified string.
 
-# &lt;string&gt; as universal time
+# &lt;string&gt; as universal time : time
 
 Returns a universal time object from a properly formatted string.
 
-# &lt;string&gt; as universal zoned time_of_day
+# &lt;string&gt; as universal zoned time_of_day : time of day with time zone
 
 Converts a string into a universal zoned time of day.
 
-# &lt;string&gt; as uppercase
+# &lt;string&gt; as uppercase : string
 
 Returns an uppercase version of the string provided.
 
-# &lt;string&gt; as version
+# &lt;string&gt; as version : version
 
 Returns a version if the string can be parsed as a version. The first numeric set of characters delimited with period, comma or comma-space is returned.
 
-# &lt;string&gt; as windows display time
+# &lt;string&gt; as windows display time : time
 
-Returns a Windows display time object from a properly formatted string. See &lt;Time&gt;.
+Returns a Windows display time object from a properly formatted string. See &amp;lt;Time&amp;gt;.
 
-# &lt;string&gt; as year
+# &lt;string&gt; as year : year
 
 Converts a string into a year.
 
-# &lt;string&gt; as zoned time_of_day
+# &lt;string&gt; as zoned time_of_day : time of day with time zone
 
 Converts a string into a zoned time of day.
 
-# &lt;string&gt; &amp; &lt;string&gt;
+# &lt;string&gt; &amp; &lt;string&gt; : string
 
 Concatenates two strings, producing a new string.
 
-# &lt;string&gt; &lt; &lt;string&gt;
+# &lt;string&gt; &lt; &lt;string&gt; : boolean
 
 No documentation exists.
 
-# &lt;string&gt; &lt;= &lt;string&gt;
+# &lt;string&gt; &lt;= &lt;string&gt; : boolean
 
 No documentation exists.
 
-# &lt;string&gt; = &lt;string&gt;
+# &lt;string&gt; = &lt;string&gt; : boolean
 
 No documentation exists.
 
-# &lt;string&gt; contains &lt;string&gt;
+# &lt;string&gt; contains &lt;string&gt; : boolean
 
 Returns a boolean TRUE if the first string contains the second string.
 
-# &lt;string&gt; ends with &lt;string&gt;
+# &lt;string&gt; ends with &lt;string&gt; : boolean
 
 Returns a boolean TRUE if the first string ends with the second string.
 
-# &lt;string&gt; starts with &lt;string&gt;
+# &lt;string&gt; starts with &lt;string&gt; : boolean
 
 Returns a boolean TRUE if the first string starts with the second string.

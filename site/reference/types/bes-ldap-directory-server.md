@@ -2,14 +2,14 @@
 
 No documentation exists.
 
-# host of &lt;bes ldap directory server&gt;
+# host of &lt;bes ldap directory server&gt; : string
 
 No documentation exists.
 
-# port of &lt;bes ldap directory server&gt;
+# port of &lt;bes ldap directory server&gt; : integer
 
 No documentation exists.
 
-# priority of &lt;bes ldap directory server&gt;
+# priority of &lt;bes ldap directory server&gt; : integer
 
 No documentation exists.

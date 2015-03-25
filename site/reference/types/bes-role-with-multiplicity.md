@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# multiplicity of &lt;bes role with multiplicity&gt;
+# multiplicity of &lt;bes role with multiplicity&gt; : integer
 
 No documentation exists.

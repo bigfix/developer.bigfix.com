@@ -1,35 +1,35 @@
 # type: security descriptor
 
-The &lt;security descriptor&gt; objects are structures and associated data that contain the security information for a securable object. A security descriptor identifies the object&#39;s owner and primary group. It can also contain a DACL that controls access to the object, and a SACL that controls the logging of attempts to access the object.
+The &amp;lt;security descriptor&amp;gt; objects are structures and associated data that contain the security information for a securable object. A security descriptor identifies the object&amp;#39;s owner and primary group. It can also contain a DACL that controls access to the object, and a SACL that controls the logging of attempts to access the object.
 
-# control of &lt;security descriptor&gt;
+# control of &lt;security descriptor&gt; : integer
 
 Returns the integer property obtained by using the Microsoft Windows GetSecurityDescriptorControl API. This integer contains bits that indicate DACL behaviors as well as default behaviors. See the MSDN documentation of SECURITY_DESCRIPTOR_CONTROL for more information.
 
-# dacl of &lt;security descriptor&gt;
+# dacl of &lt;security descriptor&gt; : discretionary access control list
 
 Returns the discretionary access control list (DACL) that identifies the users and groups who are allowed or denied access to the specified security descriptor.
 
-# group of &lt;security descriptor&gt;
+# group of &lt;security descriptor&gt; : security identifier
 
 Returns the security identifier of the group of the specified security descriptor.
 
-# null dacl of &lt;security descriptor&gt;
+# null dacl of &lt;security descriptor&gt; : boolean
 
 No documentation exists.
 
-# null sacl of &lt;security descriptor&gt;
+# null sacl of &lt;security descriptor&gt; : boolean
 
 No documentation exists.
 
-# owner of &lt;security descriptor&gt;
+# owner of &lt;security descriptor&gt; : security identifier
 
 Returns the security identifier of the owner of the specified security descriptor.
 
-# sacl of &lt;security descriptor&gt;
+# sacl of &lt;security descriptor&gt; : system access control list
 
 Returns the system access control list (SACL), an ACL that controls the generation of audit messages for attempts to access a securable object.
 
-# &lt;security descriptor&gt; as string
+# &lt;security descriptor&gt; as string : string
 
 Returns the security descriptor in string format.

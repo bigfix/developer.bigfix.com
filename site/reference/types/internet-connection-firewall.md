@@ -1,11 +1,11 @@
 # type: internet connection firewall
 
-The &lt;internet connection firewall&gt; inspectors provide access to the settings of the Internet Connection Firewall introduced in Windows XP. The Internet Connection Firewall helps to protect a computer that is directly connected to the Internet, or a home network, from network attacks.
+The &amp;lt;internet connection firewall&amp;gt; inspectors provide access to the settings of the Internet Connection Firewall introduced in Windows XP. The Internet Connection Firewall helps to protect a computer that is directly connected to the Internet, or a home network, from network attacks.
 
-# enabled of &lt;internet connection firewall&gt;
+# enabled of &lt;internet connection firewall&gt; : boolean
 
 Returns `True` if the local computer has the Windows XP built-in firewall enabled.
 
-# port mapping of &lt;internet connection firewall&gt;
+# port mapping of &lt;internet connection firewall&gt; : port mapping
 
 Creates a port mapping object for the built-in firewall.

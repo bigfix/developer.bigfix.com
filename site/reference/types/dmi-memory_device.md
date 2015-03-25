@@ -2,74 +2,74 @@
 
 No documentation exists.
 
-# asset_tag of &lt;dmi memory_device&gt;
+# asset_tag of &lt;dmi memory_device&gt; : string
 
 No documentation exists.
 
-# attributes of &lt;dmi memory_device&gt;
+# attributes of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# bank_locator of &lt;dmi memory_device&gt;
+# bank_locator of &lt;dmi memory_device&gt; : string
 
 No documentation exists.
 
-# data_width of &lt;dmi memory_device&gt;
+# data_width of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# device_locator of &lt;dmi memory_device&gt;
+# device_locator of &lt;dmi memory_device&gt; : string
 
 No documentation exists.
 
-# device_set of &lt;dmi memory_device&gt;
+# device_set of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# form_factor of &lt;dmi memory_device&gt;
+# form_factor of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# length of &lt;dmi memory_device&gt;
+# length of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# manufacturer of &lt;dmi memory_device&gt;
+# manufacturer of &lt;dmi memory_device&gt; : string
 
 No documentation exists.
 
-# memory_array_handle of &lt;dmi memory_device&gt;
+# memory_array_handle of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# memory_error_information_handle of &lt;dmi memory_device&gt;
+# memory_error_information_handle of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# memory_type of &lt;dmi memory_device&gt;
+# memory_type of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# part_number of &lt;dmi memory_device&gt;
+# part_number of &lt;dmi memory_device&gt; : string
 
 No documentation exists.
 
-# serial_number of &lt;dmi memory_device&gt;
+# serial_number of &lt;dmi memory_device&gt; : string
 
 No documentation exists.
 
-# size of &lt;dmi memory_device&gt;
+# size of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# speed of &lt;dmi memory_device&gt;
+# speed of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# total_width of &lt;dmi memory_device&gt;
+# total_width of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.
 
-# type_detail of &lt;dmi memory_device&gt;
+# type_detail of &lt;dmi memory_device&gt; : integer
 
 No documentation exists.

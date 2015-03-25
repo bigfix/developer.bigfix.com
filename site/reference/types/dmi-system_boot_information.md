@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# length of &lt;dmi system_boot_information&gt;
+# length of &lt;dmi system_boot_information&gt; : integer
 
 No documentation exists.
 
-# reserved of &lt;dmi system_boot_information&gt;
+# reserved of &lt;dmi system_boot_information&gt; : string
 
 No documentation exists.

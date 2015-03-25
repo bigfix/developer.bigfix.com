@@ -2,162 +2,162 @@
 
 No documentation exists.
 
-# alt source of &lt;ips package&gt;
+# alt source of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# branch version of &lt;ips package&gt;
+# branch version of &lt;ips package&gt; : ips branch version
 
 No documentation exists.
 
-# build version of &lt;ips package&gt;
+# build version of &lt;ips package&gt; : ips build version
 
 No documentation exists.
 
-# category of &lt;ips package&gt;
+# category of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# component version of &lt;ips package&gt;
+# component version of &lt;ips package&gt; : ips component version
 
 No documentation exists.
 
-# conditional dependency of &lt;ips package&gt;
+# conditional dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# dependency of &lt;ips package&gt;
+# dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# description of &lt;ips package&gt;
+# description of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# exclude dependency of &lt;ips package&gt;
+# exclude dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# fmri of &lt;ips package&gt;
+# fmri of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# frozen of &lt;ips package&gt;
+# frozen of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# full name of &lt;ips package&gt;
+# full name of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# group dependency of &lt;ips package&gt;
+# group dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# incorporate dependency of &lt;ips package&gt;
+# incorporate dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# installed of &lt;ips package&gt;
+# installed of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# known of &lt;ips package&gt;
+# known of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# name of &lt;ips package&gt;
+# name of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# obsolete of &lt;ips package&gt;
+# obsolete of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# obsolete pkg of &lt;ips package&gt;
+# obsolete pkg of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# optional dependency of &lt;ips package&gt;
+# optional dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# parent dependency of &lt;ips package&gt;
+# parent dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# publisher of &lt;ips package&gt;
+# publisher of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# renamed of &lt;ips package&gt;
+# renamed of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# renamed pkg of &lt;ips package&gt;
+# renamed pkg of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# require dependency of &lt;ips package&gt;
+# require dependency of &lt;ips package&gt; : ips version dependency
 
 No documentation exists.
 
-# setting of &lt;ips package&gt;
+# setting of &lt;ips package&gt; : ips setting pieces
 
 No documentation exists.
 
-# summary of &lt;ips package&gt;
+# summary of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# time stamp of &lt;ips package&gt;
+# time stamp of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# uninstalled of &lt;ips package&gt;
+# uninstalled of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# unknown of &lt;ips package&gt;
+# unknown of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# unsupported of &lt;ips package&gt;
+# unsupported of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# upgradable of &lt;ips package&gt;
+# upgradable of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# v0 of &lt;ips package&gt;
+# v0 of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# v1 of &lt;ips package&gt;
+# v1 of &lt;ips package&gt; : boolean
 
 No documentation exists.
 
-# variant of &lt;ips package&gt;
+# variant of &lt;ips package&gt; : ips setting pieces
 
 No documentation exists.
 
-# version count of &lt;ips package&gt;
+# version count of &lt;ips package&gt; : integer
 
 No documentation exists.
 
-# version of &lt;ips package&gt;
+# version of &lt;ips package&gt; : string
 
 No documentation exists.
 
-# version ordinal of &lt;ips package&gt;
+# version ordinal of &lt;ips package&gt; : integer
 
 No documentation exists.
 
-# version with time of &lt;ips package&gt;
+# version with time of &lt;ips package&gt; : version with time
 
 No documentation exists.
 
-# &lt;ips package&gt; as string
+# &lt;ips package&gt; as string : string
 
 No documentation exists.

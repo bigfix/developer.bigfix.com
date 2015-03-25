@@ -2,22 +2,22 @@
 
 Information about the SMBIOS (System Management BIOS) is contained in a set of data values stored in collections of individual smbios structures.
 
-# name of &lt;smbios value&gt;
+# name of &lt;smbios value&gt; : string
 
 Returns the name(s) of the specified smbios values, typically as derived from a smbios structure.
 
-# offset of &lt;smbios value&gt;
+# offset of &lt;smbios value&gt; : integer
 
 Returns the offset position relative to the start of the given smbios value in its smbios structure. For more information about these offsets, see the SMBIOS specification.
 
-# structure of &lt;smbios value&gt;
+# structure of &lt;smbios value&gt; : smbios structure
 
-Returns the parent smbios structure(s) containing the specified value.Example: names of structures of values &quot;bios_version&quot; of structures of smbios - Returns the names of the smbios structures that contain the specified value, in this case the named value &#39;bios version&#39;.
+Returns the parent smbios structure(s) containing the specified value.Example: names of structures of values &amp;quot;bios_version&amp;quot; of structures of smbios - Returns the names of the smbios structures that contain the specified value, in this case the named value &amp;#39;bios version&amp;#39;.
 
-# type of &lt;smbios value&gt;
+# type of &lt;smbios value&gt; : string
 
 Returns the data type of the specified smbios value. This can be one of:ByteWordDwordQwordStringBinaryStringMultipleString.
 
-# &lt;smbios value&gt; as string
+# &lt;smbios value&gt; as string : string
 
 Casts a smbios value as a string type.

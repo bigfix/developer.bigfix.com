@@ -1,43 +1,43 @@
 # type: debian versioned package
 
-The &lt;debian versioned package&gt; inspectors return all the versions of the Debian package that are available for the base package.
+The &amp;lt;debian versioned package&amp;gt; inspectors return all the versions of the Debian package that are available for the base package.
 
-# architecture of &lt;debian versioned package&gt;
+# architecture of &lt;debian versioned package&gt; : string
 
 Returns a string representing the architecture (such as i386) of a Debian versioned package.
 
-# currently installed of &lt;debian versioned package&gt;
+# currently installed of &lt;debian versioned package&gt; : boolean
 
 Returns `True` if the specified Debian versioned package is currently installed.
 
-# dependency of &lt;debian versioned package&gt;
+# dependency of &lt;debian versioned package&gt; : debianpkg dependency
 
 Returns the dependencies, if any, for the specified Debian versioned package.
 
-# name of &lt;debian versioned package&gt;
+# name of &lt;debian versioned package&gt; : string
 
 Strips out the version information and returns the name of the specified debian versioned package as a string.
 
-# release of &lt;debian versioned package&gt;
+# release of &lt;debian versioned package&gt; : string
 
 Returns a string representing the release of the specified Debian versioned package.
 
-# reverse dependency of &lt;debian versioned package&gt;
+# reverse dependency of &lt;debian versioned package&gt; : debianpkg reverse dependencies
 
 Returns a list of Debian packages that are dependent on the specified Debian versioned package.
 
-# section of &lt;debian versioned package&gt;
+# section of &lt;debian versioned package&gt; : string
 
 Returns a string corresponding to the directory (section) of the FTP site where Debian packages are stored.
 
-# verfile of &lt;debian versioned package&gt;
+# verfile of &lt;debian versioned package&gt; : debianpkg verfile
 
 Returns the Debian Pkg verfile from the specified versioned package. This contains names derived from the APT system.
 
-# version of &lt;debian versioned package&gt;
+# version of &lt;debian versioned package&gt; : debian package version
 
 Returns the Debian package version from the given versioned package.
 
-# &lt;debian versioned package&gt; as string
+# &lt;debian versioned package&gt; as string : string
 
 Converts a Debian versioned package into a string.

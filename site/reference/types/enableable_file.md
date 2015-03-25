@@ -2,10 +2,10 @@
 
 No documentation exists.
 
-# disabled of &lt;enableable_file&gt;
+# disabled of &lt;enableable_file&gt; : boolean
 
 No documentation exists.
 
-# enabled of &lt;enableable_file&gt;
+# enabled of &lt;enableable_file&gt; : boolean
 
 No documentation exists.

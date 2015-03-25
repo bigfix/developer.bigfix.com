@@ -1,19 +1,19 @@
 # type: runlevel
 
-The &lt;runlevel&gt; inspectors refer to a mode of operation in various Unix systems. Typically, when a computer enters runlevel zero, it halts and when it enters runlevel six, it reboots. The intermediate runlevels differ widely among operating systems.
+The &amp;lt;runlevel&amp;gt; inspectors refer to a mode of operation in various Unix systems. Typically, when a computer enters runlevel zero, it halts and when it enters runlevel six, it reboots. The intermediate runlevels differ widely among operating systems.
 
-# effective time of &lt;runlevel&gt;
+# effective time of &lt;runlevel&gt; : time
 
 Returns the time at which the runlevel was set to its current value.
 
-# previous value of &lt;runlevel&gt;
+# previous value of &lt;runlevel&gt; : string
 
 Returns the previous value of the runlevel. In the case where the runlevel has not changed since the system booted, this property evaluates to the empty string.
 
-# value of &lt;runlevel&gt;
+# value of &lt;runlevel&gt; : string
 
-Returns the current runlevel. It evaluates to a platform-dependent string indicating the current runlevel. For instance, on Linux the value &#39;3&#39; indicates runlevel 3 and &#39;S&#39; indicates single user mode.
+Returns the current runlevel. It evaluates to a platform-dependent string indicating the current runlevel. For instance, on Linux the value &amp;#39;3&amp;#39; indicates runlevel 3 and &amp;#39;S&amp;#39; indicates single user mode.
 
-# &lt;runlevel&gt; as string
+# &lt;runlevel&gt; as string : string
 
 Casts a runlevel object as a string.

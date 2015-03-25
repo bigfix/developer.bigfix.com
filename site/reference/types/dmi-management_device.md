@@ -2,22 +2,22 @@
 
 No documentation exists.
 
-# address of &lt;dmi management_device&gt;
+# address of &lt;dmi management_device&gt; : integer
 
 No documentation exists.
 
-# address_type of &lt;dmi management_device&gt;
+# address_type of &lt;dmi management_device&gt; : integer
 
 No documentation exists.
 
-# description of &lt;dmi management_device&gt;
+# description of &lt;dmi management_device&gt; : string
 
 No documentation exists.
 
-# length of &lt;dmi management_device&gt;
+# length of &lt;dmi management_device&gt; : integer
 
 No documentation exists.
 
-# type of &lt;dmi management_device&gt;
+# type of &lt;dmi management_device&gt; : integer
 
 No documentation exists.

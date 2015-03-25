@@ -2,46 +2,46 @@
 
 Rates are floating point numbers divided by time intervals. These inspectors let you examine and convert rate objects.
 
-# extrema of &lt;rate&gt;
+# extrema of &lt;rate&gt; : ( rate, rate )
 
-Returns the minimum and maximum extreme values of the given list of &lt;rate&gt; types.
+Returns the minimum and maximum extreme values of the given list of &amp;lt;rate&amp;gt; types.
 
-# maximum of &lt;rate&gt;
+# maximum of &lt;rate&gt; : rate
 
-Returns the maximum value from a list of &lt;rate&gt; types.
+Returns the maximum value from a list of &amp;lt;rate&amp;gt; types.
 
-# minimum of &lt;rate&gt;
+# minimum of &lt;rate&gt; : rate
 
-Returns the minimum value from a list of &lt;rate&gt; types.
+Returns the minimum value from a list of &amp;lt;rate&amp;gt; types.
 
-# unique value of &lt;rate&gt;
+# unique value of &lt;rate&gt; : rate with multiplicity
 
-Returns the unique values of a given list of &lt;rate&gt; types, removing duplicates and sorting by value.
+Returns the unique values of a given list of &amp;lt;rate&amp;gt; types, removing duplicates and sorting by value.
 
-# &lt;rate&gt; as string
+# &lt;rate&gt; as string : string
 
 Casts a rate as a string.
 
-# &lt;rate&gt; &lt; &lt;rate&gt;
+# &lt;rate&gt; &lt; &lt;rate&gt; : boolean
 
 No documentation exists.
 
-# &lt;rate&gt; &lt;= &lt;rate&gt;
+# &lt;rate&gt; &lt;= &lt;rate&gt; : boolean
 
 No documentation exists.
 
-# &lt;rate&gt; + &lt;rate&gt;
+# &lt;rate&gt; + &lt;rate&gt; : rate
 
 No documentation exists.
 
-# &lt;rate&gt; - &lt;rate&gt;
+# &lt;rate&gt; - &lt;rate&gt; : rate
 
 No documentation exists.
 
-# &lt;rate&gt; = &lt;rate&gt;
+# &lt;rate&gt; = &lt;rate&gt; : boolean
 
 No documentation exists.
 
-# - &lt;rate&gt;
+# - &lt;rate&gt; : rate
 
 Returns the negative of the given rate.

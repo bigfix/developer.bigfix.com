@@ -2,26 +2,26 @@
 
 No documentation exists.
 
-# bus_number of &lt;dmi onboard_devices_extended_information&gt;
+# bus_number of &lt;dmi onboard_devices_extended_information&gt; : integer
 
 No documentation exists.
 
-# device_function_number of &lt;dmi onboard_devices_extended_information&gt;
+# device_function_number of &lt;dmi onboard_devices_extended_information&gt; : integer
 
 No documentation exists.
 
-# device_type_instance of &lt;dmi onboard_devices_extended_information&gt;
+# device_type_instance of &lt;dmi onboard_devices_extended_information&gt; : integer
 
 No documentation exists.
 
-# length of &lt;dmi onboard_devices_extended_information&gt;
+# length of &lt;dmi onboard_devices_extended_information&gt; : integer
 
 No documentation exists.
 
-# reference_designation of &lt;dmi onboard_devices_extended_information&gt;
+# reference_designation of &lt;dmi onboard_devices_extended_information&gt; : integer
 
 No documentation exists.
 
-# segment_group_number of &lt;dmi onboard_devices_extended_information&gt;
+# segment_group_number of &lt;dmi onboard_devices_extended_information&gt; : integer
 
 No documentation exists.

@@ -2,58 +2,58 @@
 
 No documentation exists.
 
-# extrema of &lt;fileset version record&gt;
+# extrema of &lt;fileset version record&gt; : ( fileset version record, fileset version record )
 
 Returns a tuple with the lowest and highest fileset version records from a collection for fileset version records.
 
-# fileset version record &lt;fileset version record&gt;
+# fileset version record &lt;fileset version record&gt; : fileset version record
 
 A self cast, used only for simplifying relevance.
 
-# fix_part of &lt;fileset version record&gt;
+# fix_part of &lt;fileset version record&gt; : integer
 
-Returns the fourth component from a fileset version in the format &quot;ver.rel.mod.(fix)&quot;.
+Returns the fourth component from a fileset version in the format &amp;quot;ver.rel.mod.(fix)&amp;quot;.
 
-# maximum of &lt;fileset version record&gt;
+# maximum of &lt;fileset version record&gt; : fileset version record
 
 Returns the highest fileset version record from a collection for fileset version records.
 
-# minimum of &lt;fileset version record&gt;
+# minimum of &lt;fileset version record&gt; : fileset version record
 
 Returns the lowest fileset version record from a collection for fileset version records.
 
-# mod_part of &lt;fileset version record&gt;
+# mod_part of &lt;fileset version record&gt; : integer
 
-Returns the third component from a fileset version in the format &quot;ver.rel.(mod).fix&quot;.
+Returns the third component from a fileset version in the format &amp;quot;ver.rel.(mod).fix&amp;quot;.
 
-# rel_part of &lt;fileset version record&gt;
+# rel_part of &lt;fileset version record&gt; : integer
 
-Returns the second component from a fileset version in the format &quot;ver.(rel).mod.fix&quot;.
+Returns the second component from a fileset version in the format &amp;quot;ver.(rel).mod.fix&amp;quot;.
 
-# unique value of &lt;fileset version record&gt;
+# unique value of &lt;fileset version record&gt; : fileset version record with multiplicity
 
 Returns a list of all unique fileset version records along with their respective counts.
 
-# ver_part of &lt;fileset version record&gt;
+# ver_part of &lt;fileset version record&gt; : integer
 
-Returns the first component from a fileset version in the format &quot;(ver).rel.mod.fix&quot;.
+Returns the first component from a fileset version in the format &amp;quot;(ver).rel.mod.fix&amp;quot;.
 
-# &lt;fileset version record&gt; as fileset version record
+# &lt;fileset version record&gt; as fileset version record : fileset version record
 
 A self cast, used only for simplifying relevance.
 
-# &lt;fileset version record&gt; as string
+# &lt;fileset version record&gt; as string : string
 
-Returns a string containing the version of the fileset in the format &quot;ver.rel.mod.fix&quot;.
+Returns a string containing the version of the fileset in the format &amp;quot;ver.rel.mod.fix&amp;quot;.
 
-# &lt;fileset version record&gt; &lt; &lt;fileset version record&gt;
-
-No documentation exists.
-
-# &lt;fileset version record&gt; &lt;= &lt;fileset version record&gt;
+# &lt;fileset version record&gt; &lt; &lt;fileset version record&gt; : boolean
 
 No documentation exists.
 
-# &lt;fileset version record&gt; = &lt;fileset version record&gt;
+# &lt;fileset version record&gt; &lt;= &lt;fileset version record&gt; : boolean
+
+No documentation exists.
+
+# &lt;fileset version record&gt; = &lt;fileset version record&gt; : boolean
 
 No documentation exists.

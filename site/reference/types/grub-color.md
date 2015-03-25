@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# &lt;grub color&gt; as string
+# &lt;grub color&gt; as string : string
 
 String containing the name of one of the colors in a color pair.

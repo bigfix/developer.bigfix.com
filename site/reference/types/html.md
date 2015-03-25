@@ -2,502 +2,502 @@
 
 This type helps you to author HTML commands to create customized content for the BigFix Console and Web Reports. They allow construction of HTML snippets that can be used to display BigFix data elements in a browser.
 
-# abbr &lt;string&gt; of &lt;html&gt;
+# abbr &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;abbr&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;abbr&amp;gt; tag and attributes supplied by the given string.
 
-# abbr of &lt;html&gt;
+# abbr of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;abbr&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;abbr&amp;gt; tag.
 
-# acronym &lt;string&gt; of &lt;html&gt;
+# acronym &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;acronym&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;acronym&amp;gt; tag and attributes supplied by the given string.
 
-# acronym of &lt;html&gt;
+# acronym of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;acronym&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;acronym&amp;gt; tag.
 
-# address &lt;string&gt; of &lt;html&gt;
+# address &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;address&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;address&amp;gt; tag and attributes supplied by the given string.
 
-# address of &lt;html&gt;
+# address of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;address&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;address&amp;gt; tag.
 
-# anchor &lt;string&gt; of &lt;html&gt;
+# anchor &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;a&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;a&amp;gt; tag and attributes supplied by the given string.
 
-# anchor of &lt;html&gt;
+# anchor of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;a&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;a&amp;gt; tag.
 
-# b &lt;string&gt; of &lt;html&gt;
+# b &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;b&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;b&amp;gt; tag and attributes supplied by the given string.
 
-# b of &lt;html&gt;
+# b of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;b&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;b&amp;gt; tag.
 
-# base &lt;string&gt; of &lt;html&gt;
+# base &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;base&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;base&amp;gt; tag and attributes supplied by the given string.
 
-# base of &lt;html&gt;
+# base of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;base&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;base&amp;gt; tag.
 
-# big &lt;string&gt; of &lt;html&gt;
+# big &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;big&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;big&amp;gt; tag and attributes supplied by the given string.
 
-# big of &lt;html&gt;
+# big of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;big&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;big&amp;gt; tag.
 
-# blockquote &lt;string&gt; of &lt;html&gt;
+# blockquote &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;blockquote&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;blockquote&amp;gt; tag and attributes supplied by the given string.
 
-# blockquote of &lt;html&gt;
+# blockquote of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;blockquote&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;blockquote&amp;gt; tag.
 
-# body &lt;string&gt; of &lt;html&gt;
+# body &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;body&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;body&amp;gt; tag and attributes supplied by the given string.
 
-# body of &lt;html&gt;
+# body of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;body&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;body&amp;gt; tag.
 
-# caption &lt;string&gt; of &lt;html&gt;
+# caption &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;caption&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;caption&amp;gt; tag and attributes supplied by the given string.
 
-# caption of &lt;html&gt;
+# caption of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;caption&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;caption&amp;gt; tag.
 
-# cite &lt;string&gt; of &lt;html&gt;
+# cite &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;cite&gt; (citation) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;cite&amp;gt; (citation) tag and attributes supplied by the given string.
 
-# cite of &lt;html&gt;
+# cite of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;cite&gt; (citation) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;cite&amp;gt; (citation) tag.
 
-# code &lt;string&gt; of &lt;html&gt;
+# code &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;code&gt; (fixed-width font) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;code&amp;gt; (fixed-width font) tag and attributes supplied by the given string.
 
-# code of &lt;html&gt;
+# code of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;code&gt; (fixed-width font) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;code&amp;gt; (fixed-width font) tag.
 
-# col &lt;string&gt; of &lt;html&gt;
+# col &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;col&gt; (column) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;col&amp;gt; (column) tag and attributes supplied by the given string.
 
-# col of &lt;html&gt;
+# col of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;col&gt; (column) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;col&amp;gt; (column) tag.
 
-# colgroup &lt;string&gt; of &lt;html&gt;
+# colgroup &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;colgroup&gt; (column group) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;colgroup&amp;gt; (column group) tag and attributes supplied by the given string.
 
-# colgroup of &lt;html&gt;
+# colgroup of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;colgroup&gt; (column group) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;colgroup&amp;gt; (column group) tag.
 
-# concatenation &lt;html&gt; of &lt;html&gt;
+# concatenation &lt;html&gt; of &lt;html&gt; : html
 
 This inspector concatenates the html items in the second argument with a separator defined by the first argument.
 
-# concatenation &lt;string&gt; of &lt;html&gt;
+# concatenation &lt;string&gt; of &lt;html&gt; : html
 
 This inspector concatenates the html items in the second argument with a separator defined by the string argument.
 
-# concatenation of &lt;html&gt;
+# concatenation of &lt;html&gt; : html
 
 Concatenates the items in the specified HTML string, end-to-end.
 
-# dd &lt;string&gt; of &lt;html&gt;
+# dd &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;dd&gt; (definition) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;dd&amp;gt; (definition) tag and attributes supplied by the given string.
 
-# dd of &lt;html&gt;
+# dd of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;dd&gt; (definition) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;dd&amp;gt; (definition) tag.
 
-# definition list &lt;string&gt; of &lt;html&gt;
+# definition list &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;dl&gt; (definition) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;dl&amp;gt; (definition) tag and attributes supplied by the given string.
 
-# definition list of &lt;html&gt;
+# definition list of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;dl&gt; (definition) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;dl&amp;gt; (definition) tag.
 
-# del &lt;string&gt; of &lt;html&gt;
+# del &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;del&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;del&amp;gt; tag and attributes supplied by the given string.
 
-# del of &lt;html&gt;
+# del of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;del&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;del&amp;gt; tag.
 
-# dfn &lt;string&gt; of &lt;html&gt;
+# dfn &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;dfn&gt; (definition) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;dfn&amp;gt; (definition) tag and attributes supplied by the given string.
 
-# dfn of &lt;html&gt;
+# dfn of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;dfn&gt; (definition) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;dfn&amp;gt; (definition) tag.
 
-# div &lt;string&gt; of &lt;html&gt;
+# div &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;div&gt; (division or section) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;div&amp;gt; (division or section) tag and attributes supplied by the given string.
 
-# div of &lt;html&gt;
+# div of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;div&gt; (division or section) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;div&amp;gt; (division or section) tag.
 
-# dt &lt;string&gt; of &lt;html&gt;
+# dt &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;dt&gt; (definition) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;dt&amp;gt; (definition) tag and attributes supplied by the given string.
 
-# dt of &lt;html&gt;
+# dt of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;dt&gt; (definition) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;dt&amp;gt; (definition) tag.
 
-# em &lt;string&gt; of &lt;html&gt;
+# em &lt;string&gt; of &lt;html&gt; : html
 
-Emphasize the specified HTML code inside an &lt;em string&gt;&lt;/em&gt; tag.
+Emphasize the specified HTML code inside an &amp;lt;em string&amp;gt;&amp;lt;/em&amp;gt; tag.
 
-# em of &lt;html&gt;
+# em of &lt;html&gt; : html
 
-Emphasize the specified HTML code inside an &lt;em&gt;&lt;/em&gt; tag.
+Emphasize the specified HTML code inside an &amp;lt;em&amp;gt;&amp;lt;/em&amp;gt; tag.
 
-# h1 &lt;string&gt; of &lt;html&gt;
+# h1 &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;h1&gt; (header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;h1&amp;gt; (header) tag and attributes supplied by the given string.
 
-# h1 of &lt;html&gt;
+# h1 of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;h1&gt; (header) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;h1&amp;gt; (header) tag.
 
-# h2 &lt;string&gt; of &lt;html&gt;
+# h2 &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;h2&gt; (header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;h2&amp;gt; (header) tag and attributes supplied by the given string.
 
-# h2 of &lt;html&gt;
+# h2 of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;h2&gt; (header) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;h2&amp;gt; (header) tag.
 
-# h3 &lt;string&gt; of &lt;html&gt;
+# h3 &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;h3&gt; (header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;h3&amp;gt; (header) tag and attributes supplied by the given string.
 
-# h3 of &lt;html&gt;
+# h3 of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;h3&gt; (header) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;h3&amp;gt; (header) tag.
 
-# h4 &lt;string&gt; of &lt;html&gt;
+# h4 &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;h4&gt; (header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;h4&amp;gt; (header) tag and attributes supplied by the given string.
 
-# h4 of &lt;html&gt;
+# h4 of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;h4&gt; (header) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;h4&amp;gt; (header) tag.
 
-# h5 &lt;string&gt; of &lt;html&gt;
+# h5 &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;h5&gt; (header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;h5&amp;gt; (header) tag and attributes supplied by the given string.
 
-# h5 of &lt;html&gt;
+# h5 of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;h5&gt; (header) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;h5&amp;gt; (header) tag.
 
-# h6 &lt;string&gt; of &lt;html&gt;
+# h6 &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;h6&gt; (header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;h6&amp;gt; (header) tag and attributes supplied by the given string.
 
-# h6 of &lt;html&gt;
+# h6 of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;h6&gt; (header) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;h6&amp;gt; (header) tag.
 
-# head &lt;string&gt; of &lt;html&gt;
+# head &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;head&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;head&amp;gt; tag and attributes supplied by the given string.
 
-# head of &lt;html&gt;
+# head of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;head&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;head&amp;gt; tag.
 
-# html &lt;string&gt; of &lt;html&gt;
+# html &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;html&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;html&amp;gt; tag and attributes supplied by the given string.
 
-# html concatenation &lt;string&gt; of &lt;html&gt;
+# html concatenation &lt;string&gt; of &lt;html&gt; : html
 
-Returns an html-formatted concatenation of the specified html segments, embedded in &lt;html attr&gt;&lt;/html&gt; tags, where the html attribute is specified by the &lt;string&gt;.
+Returns an html-formatted concatenation of the specified html segments, embedded in &amp;lt;html attr&amp;gt;&amp;lt;/html&amp;gt; tags, where the html attribute is specified by the &amp;lt;string&amp;gt;.
 
-# html concatenation of &lt;html&gt;
+# html concatenation of &lt;html&gt; : html
 
 Returns an html-formatted concatenation of the specified html segments.
 
-# html of &lt;html&gt;
+# html of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;html&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;html&amp;gt; tag.
 
-# html tag &lt;string&gt; of &lt;html&gt;
+# html tag &lt;string&gt; of &lt;html&gt; : html
 
 Returns an HTML snippet with the specified html enclosed in a tag specified by the given string.
 
-# ins &lt;string&gt; of &lt;html&gt;
+# ins &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;ins&gt; (insert) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;ins&amp;gt; (insert) tag and attributes supplied by the given string.
 
-# ins of &lt;html&gt;
+# ins of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;ins&gt; (insert) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;ins&amp;gt; (insert) tag.
 
-# italic &lt;string&gt; of &lt;html&gt;
+# italic &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;i&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;i&amp;gt; tag and attributes supplied by the given string.
 
-# italic of &lt;html&gt;
+# italic of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;i&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;i&amp;gt; tag.
 
-# kbd &lt;string&gt; of &lt;html&gt;
+# kbd &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;kbd&gt; (keyboard entry) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;kbd&amp;gt; (keyboard entry) tag and attributes supplied by the given string.
 
-# kbd of &lt;html&gt;
+# kbd of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;kbd&gt; (keyboard entry) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;kbd&amp;gt; (keyboard entry) tag.
 
-# li &lt;string&gt; of &lt;html&gt;
+# li &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;li&gt; (list) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;li&amp;gt; (list) tag and attributes supplied by the given string.
 
-# li of &lt;html&gt;
+# li of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;li&gt; (list) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;li&amp;gt; (list) tag.
 
-# link &lt;string&gt; of &lt;html&gt;
+# link &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;link&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;link&amp;gt; tag and attributes supplied by the given string.
 
-# link of &lt;html&gt;
+# link of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;link&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;link&amp;gt; tag.
 
-# meta &lt;string&gt; of &lt;html&gt;
+# meta &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;meta&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;meta&amp;gt; tag and attributes supplied by the given string.
 
-# meta of &lt;html&gt;
+# meta of &lt;html&gt; : html
 
-Encloses the specified html in a &lt;meta&gt; tag.
+Encloses the specified html in a &amp;lt;meta&amp;gt; tag.
 
-# ol &lt;string&gt; of &lt;html&gt;
+# ol &lt;string&gt; of &lt;html&gt; : html
 
-Creates an ordered list out of the &lt;html&gt; with an optional style specified by &lt;string&gt;.
+Creates an ordered list out of the &amp;lt;html&amp;gt; with an optional style specified by &amp;lt;string&amp;gt;.
 
-# ol of &lt;html&gt;
+# ol of &lt;html&gt; : html
 
-Creates an ordered list out of the &lt;html&gt; content.
+Creates an ordered list out of the &amp;lt;html&amp;gt; content.
 
-# ordered list &lt;string&gt; of &lt;html&gt;
+# ordered list &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;ol&gt;&lt;li&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;ol&amp;gt;&amp;lt;li&amp;gt; tag and attributes supplied by the given string.
 
-# ordered list of &lt;html&gt;
+# ordered list of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;ol&gt;&lt;li&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;ol&amp;gt;&amp;lt;li&amp;gt; tag.
 
-# p &lt;string&gt; of &lt;html&gt;
+# p &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;p&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;p&amp;gt; tag and attributes supplied by the given string.
 
-# p of &lt;html&gt;
+# p of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;p&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;p&amp;gt; tag.
 
-# pre &lt;string&gt; of &lt;html&gt;
+# pre &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in an &lt;pre&gt; (preformatted) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in an &amp;lt;pre&amp;gt; (preformatted) tag and attributes supplied by the given string.
 
-# pre of &lt;html&gt;
+# pre of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in an &lt;pre&gt; (preformatted) tag.
+Returns an HTML snippet containing the specified html enclosed in an &amp;lt;pre&amp;gt; (preformatted) tag.
 
-# q &lt;string&gt; of &lt;html&gt;
+# q &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;q&gt; (quotation) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;q&amp;gt; (quotation) tag and attributes supplied by the given string.
 
-# q of &lt;html&gt;
+# q of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;q&gt; (quotation) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;q&amp;gt; (quotation) tag.
 
-# samp &lt;string&gt; of &lt;html&gt;
+# samp &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;samp&gt; (sample) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;samp&amp;gt; (sample) tag and attributes supplied by the given string.
 
-# samp of &lt;html&gt;
+# samp of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;samp&gt; (sample) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;samp&amp;gt; (sample) tag.
 
-# small &lt;string&gt; of &lt;html&gt;
+# small &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;small&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;small&amp;gt; tag and attributes supplied by the given string.
 
-# small of &lt;html&gt;
+# small of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;small&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;small&amp;gt; tag.
 
-# span &lt;string&gt; of &lt;html&gt;
+# span &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;span&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;span&amp;gt; tag and attributes supplied by the given string.
 
-# span of &lt;html&gt;
+# span of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;span&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;span&amp;gt; tag.
 
-# strong &lt;string&gt; of &lt;html&gt;
+# strong &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;strong&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;strong&amp;gt; tag and attributes supplied by the given string.
 
-# strong of &lt;html&gt;
+# strong of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;strong&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;strong&amp;gt; tag.
 
-# sub &lt;string&gt; of &lt;html&gt;
+# sub &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;sub&gt; (subscript) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;sub&amp;gt; (subscript) tag and attributes supplied by the given string.
 
-# sub of &lt;html&gt;
+# sub of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;sub&gt; (subscript) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;sub&amp;gt; (subscript) tag.
 
-# sup &lt;string&gt; of &lt;html&gt;
+# sup &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;sup&gt; (superscript) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;sup&amp;gt; (superscript) tag and attributes supplied by the given string.
 
-# sup of &lt;html&gt;
+# sup of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;sup&gt; (superscript) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;sup&amp;gt; (superscript) tag.
 
-# table &lt;string&gt; of &lt;html&gt;
+# table &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;table&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;table&amp;gt; tag and attributes supplied by the given string.
 
-# table of &lt;html&gt;
+# table of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;table&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;table&amp;gt; tag.
 
-# tbody &lt;string&gt; of &lt;html&gt;
+# tbody &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;tbody&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;tbody&amp;gt; tag and attributes supplied by the given string.
 
-# tbody of &lt;html&gt;
+# tbody of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;tbody&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;tbody&amp;gt; tag.
 
-# td &lt;string&gt; of &lt;html&gt;
+# td &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;td&gt; (table cell) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;td&amp;gt; (table cell) tag and attributes supplied by the given string.
 
-# td of &lt;html&gt;
+# td of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;td&gt; (table cell) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;td&amp;gt; (table cell) tag.
 
-# tfoot &lt;string&gt; of &lt;html&gt;
+# tfoot &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;tfoot&gt; (table foot) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;tfoot&amp;gt; (table foot) tag and attributes supplied by the given string.
 
-# tfoot of &lt;html&gt;
+# tfoot of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;tfoot&gt; (table foot) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;tfoot&amp;gt; (table foot) tag.
 
-# th &lt;string&gt; of &lt;html&gt;
+# th &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;th&gt; (table header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;th&amp;gt; (table header) tag and attributes supplied by the given string.
 
-# th of &lt;html&gt;
+# th of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;th&gt; (table header) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;th&amp;gt; (table header) tag.
 
-# thead &lt;string&gt; of &lt;html&gt;
+# thead &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;thead&gt; (table header) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;thead&amp;gt; (table header) tag and attributes supplied by the given string.
 
-# thead of &lt;html&gt;
+# thead of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;thead&gt; (table header) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;thead&amp;gt; (table header) tag.
 
-# title &lt;string&gt; of &lt;html&gt;
+# title &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;title&gt; tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;title&amp;gt; tag and attributes supplied by the given string.
 
-# title of &lt;html&gt;
+# title of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;title&gt; tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;title&amp;gt; tag.
 
-# tr &lt;string&gt; of &lt;html&gt;
+# tr &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;tr&gt; (table row) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;tr&amp;gt; (table row) tag and attributes supplied by the given string.
 
-# tr of &lt;html&gt;
+# tr of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;tr&gt; (table row) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;tr&amp;gt; (table row) tag.
 
-# tt &lt;string&gt; of &lt;html&gt;
+# tt &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;tt&gt; (teletype font) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;tt&amp;gt; (teletype font) tag and attributes supplied by the given string.
 
-# tt of &lt;html&gt;
+# tt of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;tt&gt; (teletype font) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;tt&amp;gt; (teletype font) tag.
 
-# ul &lt;string&gt; of &lt;html&gt;
+# ul &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;ul&gt; (unordered list) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;ul&amp;gt; (unordered list) tag and attributes supplied by the given string.
 
-# ul of &lt;html&gt;
+# ul of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;ul&gt; (unordered list) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;ul&amp;gt; (unordered list) tag.
 
-# unordered list &lt;string&gt; of &lt;html&gt;
+# unordered list &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;ul&gt;&lt;li&gt; (unordered list item) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt; (unordered list item) tag and attributes supplied by the given string.
 
-# unordered list of &lt;html&gt;
+# unordered list of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;ul&gt;&lt;li&gt; (unordered list item) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt; (unordered list item) tag.
 
-# var &lt;string&gt; of &lt;html&gt;
+# var &lt;string&gt; of &lt;html&gt; : html
 
-Returns an HTML snippet with the specified html enclosed in a &lt;var&gt; (variable type) tag and attributes supplied by the given string.
+Returns an HTML snippet with the specified html enclosed in a &amp;lt;var&amp;gt; (variable type) tag and attributes supplied by the given string.
 
-# var of &lt;html&gt;
+# var of &lt;html&gt; : html
 
-Returns an HTML snippet containing the specified html enclosed in a &lt;var&gt; (variable type) tag.
+Returns an HTML snippet containing the specified html enclosed in a &amp;lt;var&amp;gt; (variable type) tag.
 
-# &lt;html&gt; as html
+# &lt;html&gt; as html : html
 
 Casts an html string into an html type.
 
-# &lt;html&gt; as string
+# &lt;html&gt; as string : string
 
 Casts an html string into a string type.
 
-# &lt;html&gt; &amp; &lt;html&gt;
+# &lt;html&gt; &amp; &lt;html&gt; : html
 
 Concatenates two HTML files into a new one.

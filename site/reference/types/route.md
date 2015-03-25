@@ -2,194 +2,194 @@
 
 No documentation exists.
 
-# blackhole flag of &lt;route&gt;
+# blackhole flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# broadcast flag of &lt;route&gt;
+# broadcast flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# cloned of &lt;route&gt;
+# cloned of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# cloning flag of &lt;route&gt;
+# cloning flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# condemned flag of &lt;route&gt;
+# condemned flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# default of &lt;route&gt;
+# default of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# delclone flag of &lt;route&gt;
+# delclone flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# destination of &lt;route&gt;
+# destination of &lt;route&gt; : ipv4or6 address
 
 No documentation exists.
 
-# destination string of &lt;route&gt;
+# destination string of &lt;route&gt; : string
 
 No documentation exists.
 
-# destination type of &lt;route&gt;
+# destination type of &lt;route&gt; : string
 
 No documentation exists.
 
-# done flag of &lt;route&gt;
+# done flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# dynamic flag of &lt;route&gt;
+# dynamic flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# expiration time of &lt;route&gt;
+# expiration time of &lt;route&gt; : time
 
 No documentation exists.
 
-# flags string of &lt;route&gt;
+# flags string of &lt;route&gt; : string
 
 No documentation exists.
 
-# gateway flag of &lt;route&gt;
+# gateway flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# gateway of &lt;route&gt;
+# gateway of &lt;route&gt; : ipv4or6 address
 
 No documentation exists.
 
-# gateway string of &lt;route&gt;
+# gateway string of &lt;route&gt; : string
 
 No documentation exists.
 
-# gateway type of &lt;route&gt;
+# gateway type of &lt;route&gt; : string
 
 No documentation exists.
 
-# host flag of &lt;route&gt;
+# host flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# ifref flag of &lt;route&gt;
+# ifref flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# ifscope flag of &lt;route&gt;
+# ifscope flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# interface of &lt;route&gt;
+# interface of &lt;route&gt; : string
 
 No documentation exists.
 
-# ip family of &lt;route&gt;
+# ip family of &lt;route&gt; : string
 
 No documentation exists.
 
-# irtt of &lt;route&gt;
+# irtt of &lt;route&gt; : integer
 
 No documentation exists.
 
-# llinfo flag of &lt;route&gt;
+# llinfo flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# local flag of &lt;route&gt;
+# local flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# mask of &lt;route&gt;
+# mask of &lt;route&gt; : ipv4or6 address
 
 No documentation exists.
 
-# metric of &lt;route&gt;
+# metric of &lt;route&gt; : integer
 
 No documentation exists.
 
-# modified flag of &lt;route&gt;
+# modified flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# mtu of &lt;route&gt;
+# mtu of &lt;route&gt; : integer
 
 No documentation exists.
 
-# multicast flag of &lt;route&gt;
+# multicast flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# netstat flag of &lt;route&gt;
+# netstat flag of &lt;route&gt; : string
 
 No documentation exists.
 
-# pinned flag of &lt;route&gt;
+# pinned flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# prcloning flag of &lt;route&gt;
+# prcloning flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# proto1 flag of &lt;route&gt;
+# proto1 flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# proto2 flag of &lt;route&gt;
+# proto2 flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# proto3 flag of &lt;route&gt;
+# proto3 flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# proxy flag of &lt;route&gt;
+# proxy flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# reference of &lt;route&gt;
+# reference of &lt;route&gt; : integer
 
 No documentation exists.
 
-# reject flag of &lt;route&gt;
+# reject flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# router flag of &lt;route&gt;
+# router flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# seconds to expiration of &lt;route&gt;
+# seconds to expiration of &lt;route&gt; : integer
 
 No documentation exists.
 
-# sent packet count of &lt;route&gt;
+# sent packet count of &lt;route&gt; : integer
 
 No documentation exists.
 
-# static flag of &lt;route&gt;
+# static flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# up flag of &lt;route&gt;
+# up flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# wascloned flag of &lt;route&gt;
+# wascloned flag of &lt;route&gt; : boolean
 
 No documentation exists.
 
-# window of &lt;route&gt;
+# window of &lt;route&gt; : integer
 
 No documentation exists.
 
-# xresolve flag of &lt;route&gt;
+# xresolve flag of &lt;route&gt; : boolean
 
 No documentation exists.

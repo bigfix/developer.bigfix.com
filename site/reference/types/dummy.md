@@ -1,7 +1,7 @@
 # type: dummy
 
-The &lt;dummy&gt; inspectors are place holders for compatability with Windows clients
+The &amp;lt;dummy&amp;gt; inspectors are place holders for compatability with Windows clients
 
-# state of &lt;dummy&gt;
+# state of &lt;dummy&gt; : string
 
 A dummy inspector to provide compatibility with other operating systems.

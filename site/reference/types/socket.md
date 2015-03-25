@@ -2,7 +2,7 @@
 
 These inspectors expose the sockets opened on the network on the endpoint.
 
-# local address of &lt;socket&gt;
+# local address of &lt;socket&gt; : ipv4or6 address
 
 Returns the local address of the socket.
 
@@ -17,7 +17,7 @@ A: fe80:0:0:0:3422:3b00:e7f8:c486
 A: fe80:0:0:0:3c5b:1dd4:2963:510e
 {{/example}}
 
-# local port of &lt;socket&gt;
+# local port of &lt;socket&gt; : integer
 
 Returns the local port number of the socket.
 
@@ -31,7 +31,7 @@ A: 445
 A: 546
 {{/example}}
 
-# process of &lt;socket&gt;
+# process of &lt;socket&gt; : process
 
 Returns the process that owns the socket.
 
@@ -42,7 +42,7 @@ A: chrome.exe
 A: javaw.exe
 {{/example}}
 
-# remote address of &lt;socket&gt;
+# remote address of &lt;socket&gt; : ipv4or6 address
 
 Returns the remote address of the socket.
 
@@ -52,7 +52,7 @@ A: 74.125.25.103
 A: 127.0.0.1
 {{/example}}
 
-# remote port of &lt;socket&gt;
+# remote port of &lt;socket&gt; : integer
 
 Returns the remote port number of the socket.
 
@@ -63,7 +63,7 @@ A: 49707
 A: 49708
 {{/example}}
 
-# tcp of &lt;socket&gt;
+# tcp of &lt;socket&gt; : boolean
 
 Returns `True` if the socket is a TCP socket.
 
@@ -75,7 +75,7 @@ A: 49707
 A: 49708
 {{/example}}
 
-# tcp state of &lt;socket&gt;
+# tcp state of &lt;socket&gt; : tcp state
 
 Returns the tcp state of the socket.
 
@@ -88,7 +88,7 @@ A: 49708, ESTABLISHED
 A: 49707, ESTABLISHED
 {{/example}}
 
-# udp of &lt;socket&gt;
+# udp of &lt;socket&gt; : boolean
 
 Returns `True` if the socket is a UDP socket.
 

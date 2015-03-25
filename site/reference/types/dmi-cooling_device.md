@@ -2,26 +2,26 @@
 
 No documentation exists.
 
-# cooling_unit_group of &lt;dmi cooling_device&gt;
+# cooling_unit_group of &lt;dmi cooling_device&gt; : integer
 
 No documentation exists.
 
-# device_type_and_status of &lt;dmi cooling_device&gt;
+# device_type_and_status of &lt;dmi cooling_device&gt; : integer
 
 No documentation exists.
 
-# length of &lt;dmi cooling_device&gt;
+# length of &lt;dmi cooling_device&gt; : integer
 
 No documentation exists.
 
-# nominal_speed of &lt;dmi cooling_device&gt;
+# nominal_speed of &lt;dmi cooling_device&gt; : integer
 
 No documentation exists.
 
-# oem_defined of &lt;dmi cooling_device&gt;
+# oem_defined of &lt;dmi cooling_device&gt; : integer
 
 No documentation exists.
 
-# temperature_probe_handle of &lt;dmi cooling_device&gt;
+# temperature_probe_handle of &lt;dmi cooling_device&gt; : integer
 
 No documentation exists.

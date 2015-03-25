@@ -2,7 +2,7 @@
 
 The `boolean` type represents a `True` or `False` value.
 
-# conjunction of &lt;boolean&gt;
+# conjunction of &lt;boolean&gt; : boolean
 
 This inspector performs a serial `and` on all its boolean arguments.
 
@@ -18,7 +18,7 @@ A: False
 I: singular boolean
 {{/example}}
 
-# disjunction of &lt;boolean&gt;
+# disjunction of &lt;boolean&gt; : boolean
 
 This inspector performs a serial `or` on all its boolean arguments.
 
@@ -34,15 +34,15 @@ A: True
 I: singular boolean
 {{/example}}
 
-# javascript array &lt;string&gt; of &lt;boolean&gt;
+# javascript array &lt;string&gt; of &lt;boolean&gt; : html
 
 No documentation exists.
 
-# &lt;boolean&gt; as boolean
+# &lt;boolean&gt; as boolean : boolean
 
 A do-nothing cast that just returns the argument.
 
-# &lt;boolean&gt; as string
+# &lt;boolean&gt; as string : string
 
 Converts the boolean value to a string.
 
@@ -58,6 +58,6 @@ A: False
 I: singular string
 {{/example}}
 
-# &lt;boolean&gt; = &lt;boolean&gt;
+# &lt;boolean&gt; = &lt;boolean&gt; : boolean
 
 Returns whether the two boolean values are equal.

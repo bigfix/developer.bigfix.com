@@ -2,6 +2,6 @@
 
 No documentation exists.
 
-# length of &lt;dmi inactive&gt;
+# length of &lt;dmi inactive&gt; : integer
 
 No documentation exists.
