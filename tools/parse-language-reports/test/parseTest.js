@@ -26,8 +26,8 @@ test('parse report', function(t) {
       }
     },
     properties: {
-      'following text of <string position>': {
-        key: 'following text of <string position>',
+      'following text of <string position> : substring': {
+        key: 'following text of <string position> : substring',
         type: 'property',
         singularPhrase: 'following text',
         pluralPhrase: 'following texts',
@@ -35,8 +35,8 @@ test('parse report', function(t) {
         directObjectType: 'string position',
         resultType: 'substring'
       },
-      'preceding text of <string position>': {
-        key: 'preceding text of <string position>',
+      'preceding text of <string position> : substring': {
+        key: 'preceding text of <string position> : substring',
         type: 'property',
         singularPhrase: 'preceding text',
         pluralPhrase: 'preceding texts',
@@ -44,23 +44,23 @@ test('parse report', function(t) {
         directObjectType: 'string position',
         resultType: 'substring'
       },
-      '<day of month> & <month and year>': {
-        key: '<day of month> & <month and year>',
+      '<day of month> & <month and year> : date': {
+        key: '<day of month> & <month and year> : date',
         type: 'binaryOp',
         leftType: 'day of month',
         op: '&',
         rightType: 'month and year',
         resultType: 'date'
       },
-      '<day of month> as string': {
-        key: '<day of month> as string',
+      '<day of month> as string : string': {
+        key: '<day of month> as string : string',
         type: 'cast',
         argType: 'day of month',
         phrase: 'string',
         resultType: 'string'
       },
-      'extrema of <day of month>': {
-        key: 'extrema of <day of month>',
+      'extrema of <day of month> : ( day of month, day of month )': {
+        key: 'extrema of <day of month> : ( day of month, day of month )',
         type: 'property',
         singularPhrase: 'extrema',
         pluralPhrase: 'extremas',
@@ -68,15 +68,15 @@ test('parse report', function(t) {
         directObjectType: 'day of month',
         resultType: '( day of month, day of month )'
       },
-      '<symlink> as device file': {
-        key: '<symlink> as device file',
+      '<symlink> as device file : device file': {
+        key: '<symlink> as device file : device file',
         type: 'cast',
         argType: 'symlink',
         phrase: 'device file',
         resultType: 'device file'
       },
-      'current day_of_month': {
-        key: 'current day_of_month',
+      'current day_of_month : day of month': {
+        key: 'current day_of_month : day of month',
         type: 'property',
         singularPhrase: 'current day_of_month',
         pluralPhrase: 'current days_of_month',

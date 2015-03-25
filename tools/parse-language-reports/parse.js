@@ -51,10 +51,12 @@ function parseUnaryOperator(key, mangledResultType) {
     throw new Error('Invalid unary operator result: ' + resultMatch);
   }
 
+  var resultType = resultMatch[1];
+
   return {
-    key: key,
+    key: key + ' : ' + resultType,
     type: 'unaryOp',
-    resultType: resultMatch[1],
+    resultType: resultType,
     argType: keyMatch[2],
     op: keyMatch[1]
   };
@@ -70,10 +72,12 @@ function parseBinaryOperator(key, resultType) {
     throw new Error('Invalid binary operator: ' + key);
   }
 
+  resultType = trimType(resultType);
+
   return {
-    key: key,
+    key: key + ' : ' + resultType,
     type: 'binaryOp',
-    resultType: trimType(resultType),
+    resultType: resultType,
     leftType: match[1],
     op: match[2],
     rightType: match[3]
@@ -90,10 +94,12 @@ function parseCast(key, resultType) {
     throw new Error('Invalid cast: ' + key);
   }
 
+  resultType = trimType(resultType);
+
   return {
-    key: key,
+    key: key + ' : ' + resultType,
     type: 'cast',
-    resultType: trimType(resultType),
+    resultType: resultType,
     argType: match[1],
     phrase: match[2]
   };
@@ -129,10 +135,12 @@ function parseProperty(key, pluralPhrase, resultType) {
     }
   }
 
+  resultType = trimType(resultType);
+
   return {
-    key: key,
+    key: key + ' : ' + resultType,
     type: 'property',
-    resultType: trimType(resultType),
+    resultType: resultType,
     singularPhrase: singularPhrase,
     pluralPhrase: pluralPhrase,
     indexType: indexType,
