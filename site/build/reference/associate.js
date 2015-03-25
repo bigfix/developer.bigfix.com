@@ -87,7 +87,7 @@ function associateProperty(property, creation, methods, references) {
   } else if (property.indexType) {
     var indexTypes = unique(types(property.indexType));
     references[property.key] = indexTypes[0];
-    indexTypes.forEach(function(type, i) {
+    indexTypes.forEach(function(type) {
       assertNotTuple(type);
       methods[type].properties.push(property.key);
     });
