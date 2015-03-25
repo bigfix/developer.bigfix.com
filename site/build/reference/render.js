@@ -35,6 +35,7 @@ function escapeKey(key) {
     .replace(/ \* /, ' times ')
     .replace(/ \/ /, ' divide ')
     .replace(/ & /, ' concat ')
+    .replace(/:/g, '')
     .replace(/,/g, '')
     .replace(/[<>]/g, '')
     .replace(/[()]/g, '');
@@ -110,9 +111,9 @@ function renderUnaryOp(property, template) {
   return template.render(data);
 }
 
-function renderEntry(heading, body, property, source, template) {
+function renderEntry(id, heading, body, property, source, template) {
   var data = {
-    id: escapeKey(property.key),
+    id: id,
     heading: heading,
     body: body,
     availability: makeAvailability(property),
@@ -128,6 +129,7 @@ function renderEntry(heading, body, property, source, template) {
 
 function renderProperties(language, docs, templates) {
   var rendered = {};
+  var uniqueIDs = {};
 
   Object.keys(docs.properties).forEach(function(key) {
     var property = language.properties[key];
@@ -145,9 +147,16 @@ function renderProperties(language, docs, templates) {
 
     var body = renderText(docs.properties[key], templates).content;
     var source = docs.source.properties[key];
+    var id = escapeKey(property.key);
+
+    if (uniqueIDs[id]) {
+      throw new Error('Duplicate html id for key: ' + property.key + ' and ' +
+                      uniqueIDs[id]);
+    }
+    uniqueIDs[id] = property.key;
 
     rendered[key] =
-      renderEntry(heading, body, property, source, templates.entry);
+      renderEntry(id, heading, body, property, source, templates.entry);
   });
 
   return rendered;
