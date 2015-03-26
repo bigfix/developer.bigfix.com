@@ -215,3 +215,10 @@ table.support td {
 .evaluate textarea {
   width: 100%;
 }
+
+.deprecated {
+  background-color: #fcf8e3;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}

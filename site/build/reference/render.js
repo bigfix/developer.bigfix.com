@@ -114,56 +114,48 @@ function renderUnaryOp(property, template) {
   return template.render(data);
 }
 
-function renderEntry(id, heading, body, property, reference, source, template) {
-  var data = {
-    id: id,
-    heading: heading,
-    body: body,
-    availability: makeAvailability(property),
-    reference: reference,
-    source: makeContribute(source)
-  };
-
-  if (property.pluralPhrase) {
-    data.plural = property.pluralPhrase;
-  }
-
-  return template.render(data);
-}
-
 function renderProperties(language, docs, references, templates) {
   var uniqueIDs = {}, pages = {}, api = {};
 
   Object.keys(docs.properties).forEach(function(key) {
     var property = language.properties[key];
+    var data = {};
 
-    var heading;
     if (property.type === 'property') {
-      heading = renderProperty(property, templates.properties.property);
+      data.heading = renderProperty(property, templates.properties.property);
     } else if (property.type === 'cast') {
-      heading = renderCast(property, templates.properties.cast);
+      data.heading = renderCast(property, templates.properties.cast);
     } else if (property.type === 'binaryOp') {
-      heading = renderBinaryOp(property, templates.properties.binary);
+      data.heading = renderBinaryOp(property, templates.properties.binary);
     } else if (property.type === 'unaryOp') {
-      heading = renderUnaryOp(property, templates.properties.unary);
+      data.heading = renderUnaryOp(property, templates.properties.unary);
     }
 
-    var body = renderText(docs.properties[key], templates).content;
-    var source = docs.source.properties[key];
-    var id = escapeKey(property.key);
-    var template = templates.entry;
-    var reference = references[key] ? makeHref(references[key]) : '';
+    data.id = escapeKey(property.key);
+    data.body = renderText(docs.properties[key], templates).content;
+    data.source = makeContribute(docs.source.properties[key]);
+    data.availability = makeAvailability(property);
 
-    if (uniqueIDs[id]) {
+    if (property.pluralPhrase) {
+      data.plural = property.pluralPhrase;
+    }
+
+    if (property.deprecated) {
+      data.deprecated = property.deprecated;
+    }
+
+    if (uniqueIDs[data.id]) {
       throw new Error('Duplicate html id for key: ' + property.key + 'and' +
-                      uniqueIDs[id]);
+                      uniqueIDs[data.id]);
     }
-    uniqueIDs[id] = property.key;
+    uniqueIDs[data.id] = property.key;
 
-    pages[key] = 
-      renderEntry(id, heading, body, property, '', source, template);
-    api[key] =
-      renderEntry(id, heading, body, property, reference, source, template);
+    pages[key] = templates.entry.render(data);
+
+    if (property.type === 'property' || property.type === 'cast') {
+      data.reference = makeHref(references[key]);
+      api[key] = templates.entry.render(data);
+    }
   });
 
   return { pages: pages, api: api };
@@ -182,6 +174,10 @@ function renderType(type, text, renderedProperties, associations, templates) {
     description: renderText(text, templates).content,
     availability: makeAvailability(type)
   };
+
+  if (type.deprecated) {
+    data.deprecated = type.deprecated;
+  }
 
   if (type.parent) {
     data.parentHtml = linkType(type.parent);

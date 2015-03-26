@@ -8,6 +8,12 @@
   <div class="entry-body entry-hidden">
     {{{body}}}
 
+    {{#deprecated}}
+    <div class="deprecated">
+      <b>Deprecated:</b> This property was removed in version {{deprecated}}.
+    </div>
+    {{/deprecated}}
+
     <div class="footnotes">
       {{#plural}}
       <div class="footnote">

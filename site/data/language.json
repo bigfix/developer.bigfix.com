@@ -4019,7 +4019,8 @@
         "8.0.584.0": [
           "AIX"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "volume group": {
       "name": "volume group",
@@ -4403,7 +4404,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "hotsync user": {
       "name": "hotsync user",
@@ -4411,7 +4413,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "idle task trigger": {
       "name": "idle task trigger",
@@ -4471,7 +4474,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "logon task trigger": {
       "name": "logon task trigger",
@@ -4606,7 +4610,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "palm device": {
       "name": "palm device",
@@ -4614,7 +4619,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "port mapping": {
       "name": "port mapping",
@@ -61101,7 +61107,8 @@
           "Debian",
           "Ubuntu"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "custom site subscription effective date <string> : time": {
       "key": "custom site subscription effective date <string> : time",
@@ -64898,7 +64905,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "bundle of <folder> : bundle": {
       "key": "bundle of <folder> : bundle",
@@ -65244,7 +65252,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "adapter <integer> of <network> : network adapter": {
       "key": "adapter <integer> of <network> : network adapter",
@@ -65445,7 +65454,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "8.2.1445.0"
     },
     "release of <operating system> : version": {
       "key": "release of <operating system> : version",
@@ -66490,7 +66500,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "application support folder : folder": {
       "key": "application support folder : folder",
@@ -66514,7 +66525,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "applications folder : folder": {
       "key": "applications folder : folder",
@@ -67918,7 +67930,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "registry : dummy type": {
       "key": "registry : dummy type",
@@ -68803,7 +68816,8 @@
         "8.0.584.0": [
           "AIX"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "product <string> of <object_repository> : product": {
       "key": "product <string> of <object_repository> : product",
@@ -68817,7 +68831,8 @@
         "8.0.584.0": [
           "AIX"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "product of <object_repository> : product": {
       "key": "product of <object_repository> : product",
@@ -68830,7 +68845,8 @@
         "8.0.584.0": [
           "AIX"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "family of <processor> : string": {
       "key": "family of <processor> : string",
@@ -68999,7 +69015,8 @@
         "8.0.584.0": [
           "AIX"
         ]
-      }
+      },
+      "deprecated": "8.1.653.0"
     },
     "base of <patch> : string": {
       "key": "base of <patch> : string",
@@ -71352,7 +71369,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "9.0.586.0"
     },
     "account logon category of <audit policy> : audit policy category": {
       "key": "account logon category of <audit policy> : audit policy category",
@@ -74083,7 +74101,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "user <integer> of <hotsync manager> : hotsync user": {
       "key": "user <integer> of <hotsync manager> : hotsync user",
@@ -74097,7 +74116,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "user <string> of <hotsync manager> : hotsync user": {
       "key": "user <string> of <hotsync manager> : hotsync user",
@@ -74111,7 +74131,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "user of <hotsync manager> : hotsync user": {
       "key": "user of <hotsync manager> : hotsync user",
@@ -74124,7 +74145,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "folder of <hotsync user> : folder": {
       "key": "folder of <hotsync user> : folder",
@@ -74137,7 +74159,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "name of <hotsync user> : string": {
       "key": "name of <hotsync user> : string",
@@ -74150,7 +74173,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "palm device of <hotsync user> : palm device": {
       "key": "palm device of <hotsync user> : palm device",
@@ -74163,7 +74187,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "<integer> < <registry key value type> : boolean": {
       "key": "<integer> < <registry key value type> : boolean",
@@ -74487,7 +74512,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "account expiration of <local user> : time": {
       "key": "account expiration of <local user> : time",
@@ -74500,7 +74526,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "accounts operator flag of <local user> : boolean": {
       "key": "accounts operator flag of <local user> : boolean",
@@ -74513,7 +74540,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "admin privilege of <local user> : boolean": {
       "key": "admin privilege of <local user> : boolean",
@@ -74526,7 +74554,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "allowed workstations string of <local user> : string": {
       "key": "allowed workstations string of <local user> : string",
@@ -74539,7 +74568,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "application parameter string of <local user> : string": {
       "key": "application parameter string of <local user> : string",
@@ -74552,7 +74582,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "bad password count of <local user> : integer": {
       "key": "bad password count of <local user> : integer",
@@ -74565,7 +74596,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "code page of <local user> : integer": {
       "key": "code page of <local user> : integer",
@@ -74578,7 +74610,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "comment of <local user> : string": {
       "key": "comment of <local user> : string",
@@ -74591,7 +74624,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "communications operator flag of <local user> : boolean": {
       "key": "communications operator flag of <local user> : boolean",
@@ -74604,7 +74638,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "country code of <local user> : integer": {
       "key": "country code of <local user> : integer",
@@ -74617,7 +74652,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "full name of <local user> : string": {
       "key": "full name of <local user> : string",
@@ -74630,7 +74666,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "guest privilege of <local user> : boolean": {
       "key": "guest privilege of <local user> : boolean",
@@ -74643,7 +74680,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "home directory drive of <local user> : string": {
       "key": "home directory drive of <local user> : string",
@@ -74656,7 +74694,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "home directory of <local user> : string": {
       "key": "home directory of <local user> : string",
@@ -74669,7 +74708,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "home directory required flag of <local user> : boolean": {
       "key": "home directory required flag of <local user> : boolean",
@@ -74682,7 +74722,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "interdomain trust account flag of <local user> : boolean": {
       "key": "interdomain trust account flag of <local user> : boolean",
@@ -74695,7 +74736,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "last logoff of <local user> : time": {
       "key": "last logoff of <local user> : time",
@@ -74708,7 +74750,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "last logon of <local user> : time": {
       "key": "last logon of <local user> : time",
@@ -74721,7 +74764,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "locked out flag of <local user> : boolean": {
       "key": "locked out flag of <local user> : boolean",
@@ -74734,7 +74778,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "logon count of <local user> : integer": {
       "key": "logon count of <local user> : integer",
@@ -74747,7 +74792,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "logon script of <local user> : string": {
       "key": "logon script of <local user> : string",
@@ -74760,7 +74806,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "logon server of <local user> : string": {
       "key": "logon server of <local user> : string",
@@ -74773,7 +74820,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "maximum storage of <local user> : integer": {
       "key": "maximum storage of <local user> : integer",
@@ -74786,7 +74834,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "name of <local user> : string": {
       "key": "name of <local user> : string",
@@ -74799,7 +74848,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "no password required flag of <local user> : boolean": {
       "key": "no password required flag of <local user> : boolean",
@@ -74812,7 +74862,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "normal account flag of <local user> : boolean": {
       "key": "normal account flag of <local user> : boolean",
@@ -74825,7 +74876,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "password age of <local user> : time interval": {
       "key": "password age of <local user> : time interval",
@@ -74838,7 +74890,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "password change disabled flag of <local user> : boolean": {
       "key": "password change disabled flag of <local user> : boolean",
@@ -74851,7 +74904,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "password expiration disabled flag of <local user> : boolean": {
       "key": "password expiration disabled flag of <local user> : boolean",
@@ -74864,7 +74918,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "password expired of <local user> : boolean": {
       "key": "password expired of <local user> : boolean",
@@ -74877,7 +74932,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "primary group id of <local user> : integer": {
       "key": "primary group id of <local user> : integer",
@@ -74890,7 +74946,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "print operator flag of <local user> : boolean": {
       "key": "print operator flag of <local user> : boolean",
@@ -74903,7 +74960,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "profile folder of <local user> : string": {
       "key": "profile folder of <local user> : string",
@@ -74916,7 +74974,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "script flag of <local user> : boolean": {
       "key": "script flag of <local user> : boolean",
@@ -74929,7 +74988,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "server operator flag of <local user> : boolean": {
       "key": "server operator flag of <local user> : boolean",
@@ -74942,7 +75002,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "server trust account flag of <local user> : boolean": {
       "key": "server trust account flag of <local user> : boolean",
@@ -74955,7 +75016,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "temporary duplicate account flag of <local user> : boolean": {
       "key": "temporary duplicate account flag of <local user> : boolean",
@@ -74968,7 +75030,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "user comment of <local user> : string": {
       "key": "user comment of <local user> : string",
@@ -74981,7 +75044,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "user id of <local user> : integer": {
       "key": "user id of <local user> : integer",
@@ -74994,7 +75058,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "user privilege of <local user> : boolean": {
       "key": "user privilege of <local user> : boolean",
@@ -75007,7 +75072,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "workstation trust account flag of <local user> : boolean": {
       "key": "workstation trust account flag of <local user> : boolean",
@@ -75020,7 +75086,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "activity history of <logged on user> : activity history": {
       "key": "activity history of <logged on user> : activity history",
@@ -76564,7 +76631,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "appinfodirty of <palm application> : boolean": {
       "key": "appinfodirty of <palm application> : boolean",
@@ -76577,7 +76645,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "backup of <palm application> : boolean": {
       "key": "backup of <palm application> : boolean",
@@ -76590,7 +76659,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "copy prevention of <palm application> : boolean": {
       "key": "copy prevention of <palm application> : boolean",
@@ -76603,7 +76673,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "creation date of <palm application> : time": {
       "key": "creation date of <palm application> : time",
@@ -76616,7 +76687,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "creator id of <palm application> : string": {
       "key": "creator id of <palm application> : string",
@@ -76629,7 +76701,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "database name of <palm application> : string": {
       "key": "database name of <palm application> : string",
@@ -76642,7 +76715,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "hidden of <palm application> : boolean": {
       "key": "hidden of <palm application> : boolean",
@@ -76655,7 +76729,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "launchable of <palm application> : boolean": {
       "key": "launchable of <palm application> : boolean",
@@ -76668,7 +76743,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "launcher name of <palm application> : string": {
       "key": "launcher name of <palm application> : string",
@@ -76681,7 +76757,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "name of <palm application> : string": {
       "key": "name of <palm application> : string",
@@ -76694,7 +76771,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "oktoinstallnewer of <palm application> : boolean": {
       "key": "oktoinstallnewer of <palm application> : boolean",
@@ -76707,7 +76785,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "open of <palm application> : boolean": {
       "key": "open of <palm application> : boolean",
@@ -76720,7 +76799,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "readonly of <palm application> : boolean": {
       "key": "readonly of <palm application> : boolean",
@@ -76733,7 +76813,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "resetafterinstall of <palm application> : boolean": {
       "key": "resetafterinstall of <palm application> : boolean",
@@ -76746,7 +76827,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "resource of <palm application> : boolean": {
       "key": "resource of <palm application> : boolean",
@@ -76759,7 +76841,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "size of <palm application> : integer": {
       "key": "size of <palm application> : integer",
@@ -76772,7 +76855,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "stream of <palm application> : boolean": {
       "key": "stream of <palm application> : boolean",
@@ -76785,7 +76869,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "version of <palm application> : string": {
       "key": "version of <palm application> : string",
@@ -76798,7 +76883,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "version string of <palm application> : string": {
       "key": "version string of <palm application> : string",
@@ -76811,7 +76897,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "<palm device> as string : string": {
       "key": "<palm device> as string : string",
@@ -76823,7 +76910,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "application <string> of <palm device> : palm application": {
       "key": "application <string> of <palm device> : palm application",
@@ -76837,7 +76925,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "application of <palm device> : palm application": {
       "key": "application of <palm device> : palm application",
@@ -76850,7 +76939,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "backlight feature of <palm device> : integer": {
       "key": "backlight feature of <palm device> : integer",
@@ -76863,7 +76953,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "backup folder of <palm device> : folder": {
       "key": "backup folder of <palm device> : folder",
@@ -76876,7 +76967,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "battery percentage of <palm device> : integer": {
       "key": "battery percentage of <palm device> : integer",
@@ -76889,7 +76981,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "battery type of <palm device> : string": {
       "key": "battery type of <palm device> : string",
@@ -76902,7 +76995,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "battery voltage of <palm device> : integer": {
       "key": "battery voltage of <palm device> : integer",
@@ -76915,7 +77009,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "device hotsync time of <palm device> : time": {
       "key": "device hotsync time of <palm device> : time",
@@ -76928,7 +77023,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "directory of <palm device> : string": {
       "key": "directory of <palm device> : string",
@@ -76941,7 +77037,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "display depth of <palm device> : integer": {
       "key": "display depth of <palm device> : integer",
@@ -76954,7 +77051,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "encryption feature of <palm device> : integer": {
       "key": "encryption feature of <palm device> : integer",
@@ -76967,7 +77065,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "folder of <palm device> : folder": {
       "key": "folder of <palm device> : folder",
@@ -76980,7 +77079,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "free memory of <palm device> : integer": {
       "key": "free memory of <palm device> : integer",
@@ -76993,7 +77093,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "handspring version of <palm device> : integer": {
       "key": "handspring version of <palm device> : integer",
@@ -77006,7 +77107,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "hotsync time of <palm device> : time": {
       "key": "hotsync time of <palm device> : time",
@@ -77019,7 +77121,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "inspector set of <palm device> : integer": {
       "key": "inspector set of <palm device> : integer",
@@ -77032,7 +77135,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "install folder of <palm device> : folder": {
       "key": "install folder of <palm device> : folder",
@@ -77045,7 +77149,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "name of <palm device> : string": {
       "key": "name of <palm device> : string",
@@ -77058,7 +77163,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "notify version of <palm device> : integer": {
       "key": "notify version of <palm device> : integer",
@@ -77071,7 +77177,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "oemcompanyid of <palm device> : integer": {
       "key": "oemcompanyid of <palm device> : integer",
@@ -77084,7 +77191,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "oemdeviceid of <palm device> : integer": {
       "key": "oemdeviceid of <palm device> : integer",
@@ -77097,7 +77205,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "oemhalid of <palm device> : integer": {
       "key": "oemhalid of <palm device> : integer",
@@ -77110,7 +77219,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "os version of <palm device> : string": {
       "key": "os version of <palm device> : string",
@@ -77123,7 +77233,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "processor type of <palm device> : string": {
       "key": "processor type of <palm device> : string",
@@ -77136,7 +77247,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "serial number of <palm device> : string": {
       "key": "serial number of <palm device> : string",
@@ -77149,7 +77261,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "sleep timeout of <palm device> : integer": {
       "key": "sleep timeout of <palm device> : integer",
@@ -77162,7 +77275,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "total memory of <palm device> : integer": {
       "key": "total memory of <palm device> : integer",
@@ -77175,7 +77289,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "update folder of <palm device> : folder": {
       "key": "update folder of <palm device> : folder",
@@ -77188,7 +77303,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "used memory of <palm device> : integer": {
       "key": "used memory of <palm device> : integer",
@@ -77201,7 +77317,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "vendor id of <palm device> : integer": {
       "key": "vendor id of <palm device> : integer",
@@ -77214,7 +77331,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "enabled of <port mapping> : boolean": {
       "key": "enabled of <port mapping> : boolean",
@@ -77966,7 +78084,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1175.0"
     },
     "device key of <registry> : registry key": {
       "key": "device key of <registry> : registry key",
@@ -77979,7 +78098,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1175.0"
     },
     "file extension <string> of <registry> : registry key": {
       "key": "file extension <string> of <registry> : registry key",
@@ -81846,7 +81966,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "domain user : local user": {
       "key": "domain user : local user",
@@ -81858,7 +81979,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "drive <string> : drive": {
       "key": "drive <string> : drive",
@@ -82158,7 +82280,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "hyperthreading capable : boolean": {
       "key": "hyperthreading capable : boolean",
@@ -82397,7 +82520,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "local user : local user": {
       "key": "local user : local user",
@@ -82409,7 +82533,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.1.535.0"
     },
     "logged off state : power state": {
       "key": "logged off state : power state",
@@ -82460,7 +82585,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "media type <integer> : media type": {
       "key": "media type <integer> : media type",
@@ -82863,7 +82989,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "palm device <string> : palm device": {
       "key": "palm device <string> : palm device",
@@ -82876,7 +83003,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "palm device : palm device": {
       "key": "palm device : palm device",
@@ -82888,7 +83016,8 @@
         "8.0.584.0": [
           "Windows"
         ]
-      }
+      },
+      "deprecated": "8.2.1310.0"
     },
     "personal bit <operating system suite mask> : boolean": {
       "key": "personal bit <operating system suite mask> : boolean",
@@ -87183,7 +87312,8 @@
         "8.2.1078.0": [
           "Session"
         ]
-      }
+      },
+      "deprecated": "9.0.586.0"
     },
     "rvu count of <bes product> : integer": {
       "key": "rvu count of <bes product> : integer",
@@ -88932,7 +89062,8 @@
           "SUSE",
           "Ubuntu"
         ]
-      }
+      },
+      "deprecated": "9.1.1065.0"
     },
     "mask of <ipv4 route> : ipv4 address": {
       "key": "mask of <ipv4 route> : ipv4 address",
@@ -88965,7 +89096,8 @@
           "SUSE",
           "Ubuntu"
         ]
-      }
+      },
+      "deprecated": "9.1.1065.0"
     },
     "mtu of <ipv4 route> : integer": {
       "key": "mtu of <ipv4 route> : integer",
@@ -88981,7 +89113,8 @@
           "SUSE",
           "Ubuntu"
         ]
-      }
+      },
+      "deprecated": "9.1.1065.0"
     },
     "reject flag of <ipv4 route> : boolean": {
       "key": "reject flag of <ipv4 route> : boolean",
@@ -89031,7 +89164,8 @@
           "SUSE",
           "Ubuntu"
         ]
-      }
+      },
+      "deprecated": "9.1.1065.0"
     },
     "route of <ipv4 routing table> : ipv4 route": {
       "key": "route of <ipv4 routing table> : ipv4 route",
@@ -94477,7 +94611,8 @@
           "Ubuntu",
           "Windows"
         ]
-      }
+      },
+      "deprecated": "9.1.1134.0"
     },
     "character set <client> : string": {
       "key": "character set <client> : string",
@@ -94498,7 +94633,8 @@
           "Ubuntu",
           "Windows"
         ]
-      }
+      },
+      "deprecated": "9.1.1134.0"
     },
     "proxy agent service : service": {
       "key": "proxy agent service : service",
