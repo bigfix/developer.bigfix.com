@@ -93,7 +93,7 @@ code {
 }
 
 body {
-  font-family: Roboto, Corbel, Avenir, 'Lucida Grande', 'Lucida Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 .expand-buttons button {
