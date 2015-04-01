@@ -98,7 +98,7 @@ will return the same error due to the nonsensical use of the reserved words 'of'
 ## A Boolean Expression is Required
 This error message is produced when a statement needs a boolean value to evaluate, but insted the expression returns a different return type.  A boolean value is required after 'if' and 'whose'. For example, the parenthetical statement after the 'whose' in the whose/it cluase does not return a boolean value.  For example:
 ````
-names of files whose (version of it) of system folder
+Names of files whose (version of it) of system folder
 ````
 The parenthetical statement, *(version of it)*, after whose must return a boolean value for the expression to make sense.  Since the relevance interpreter is expecting a Boolean value and instead finds a version, it returns the error **A boolean expression is required**. Instead the statement shoudl be something like:
 ````
@@ -112,3 +112,51 @@ This will error because a boolen expression is required after the 'if'.  Instead
 ````
 If exists regapp "besclient.exe" then version of regapp "besclient.exe" as string else "N/A"
 ````
+
+## Singular Expression Refers to Non-Unique Object
+This error message arises when you try to query a singular property of multiple objects.  For example:
+````
+Version of files of system folder
+````
+Will return the version of the first file it finds and then the error message **Singular expression refers to non-existent object**.  If you want to output a list of all the properties of a list, make sure to make the queries plual.  For example:
+````
+Versions of files of system folder
+````
+will return a list of all the versions.  If you want a single return value, you have to make sure to just query one object.  If you want to return a list of properties, the inspector must be plural.
+
+## Incompatible Types
+There are certain inspectors that look for return values of the same type.  If different types are returned, the relevance interpreter returns **Incompatible Types**.  The first example is the if/then/else statement.  An if/then/else statement will either return the expression after 'then' or after 'else'.  Both of these expressions must return the same object.  For example:
+````
+If exists regapp "Besonsole.exe" then version of regapp "Besconsole.exe" else "Not Installed"
+````
+retruns **Incompatible Types**.  This is because the 'then' expression returns a version, while the 'else' expression returns a string.  Instead you need to make sure that both statements return the same type by converting the version to a string.
+````
+If exists regapp "Besconsole.exe" then version of regapp "Besconsole.exe" as string else "Not Installed"
+````
+The same issue exists when you create a list with semicolons:
+````
+Running applications; names of recent applications
+````
+returns **Incompatible Types** because it is trying to creaet a list made up of running applications and strings.
+
+## This Expression Contained a Character Which is Not Allowed
+This error message is often given when the relevance interpreter finds a character that it does not recognise.  You can use any character you want in a string except (*), but outside of a string a random character will break the relevance statement.  For example:
+````
+{Pathname of regapp "besclient.exe"}
+````
+will return **This expression contained a character which is not allowed** because curly braces are not valid in the relevance languge. (Although they do signify relevance substitution in an action script).
+
+## No Inpsector Context
+Certain inspectors can oly be evaulated by the Endpoint Manager Client and therefore will not work in QNA.  If you try to evaluate one of these in QNA, you will recieve **No inspector context**.  A common example is:
+````
+Pending Restart
+````
+In general, in order to evaulate statements that return **No inspector context** you must define them as retrieved properties in the Console.
+
+## A String Constant Had No Ending Quotation Mark
+This message is fairly self-explanatory.  It simply means that there was an unenven number of quotation marks in the expression.  Here is an example:
+````
+Version of file "msh.dll of system folder.
+````
+
+
