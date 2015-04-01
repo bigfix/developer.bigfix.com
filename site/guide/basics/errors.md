@@ -43,7 +43,7 @@ You can insert characters into a string by entering a percent sign and then the 
 ````
 "I'm telling the %22truth%22"
 ````
-returns ***I'm telling the "truth"** 
+returns **I'm telling the "truth"** 
 
 A string with a percent sign in it will return **A string constant had an improper % sequence** if any of the following conditions are true:
 
