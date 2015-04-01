@@ -118,7 +118,7 @@ This error message arises when you try to query a singular property of multiple 
 ````
 Version of files of system folder
 ````
-Will return the version of the first file it finds and then the error message **Singular expression refers to non-existent object**.  If you want to output a list of all the properties of a list, make sure to make the queries plual.  For example:
+will return the version of the first file it finds and then the error message **Singular expression refers to non-unique object**.  If you want to output a list of all the properties of a list, make sure to make the queries plual.  For example:
 ````
 Versions of files of system folder
 ````
@@ -127,9 +127,9 @@ will return a list of all the versions.  If you want a single return value, you 
 ## Incompatible Types
 There are certain inspectors that look for return values of the same type.  If different types are returned, the relevance interpreter returns **Incompatible Types**.  The first example is the if/then/else statement.  An if/then/else statement will either return the expression after 'then' or after 'else'.  Both of these expressions must return the same object.  For example:
 ````
-If exists regapp "Besonsole.exe" then version of regapp "Besconsole.exe" else "Not Installed"
+If exists regapp "Besconsole.exe" then version of regapp "Besconsole.exe" else "Not Installed"
 ````
-retruns **Incompatible Types**.  This is because the 'then' expression returns a version, while the 'else' expression returns a string.  Instead you need to make sure that both statements return the same type by converting the version to a string.
+returns **Incompatible types**.  This is because the 'then' expression returns a version, while the 'else' expression returns a string.  Instead you need to make sure that both statements return the same type by converting the version to a string.
 ````
 If exists regapp "Besconsole.exe" then version of regapp "Besconsole.exe" as string else "Not Installed"
 ````
@@ -137,7 +137,7 @@ The same issue exists when you create a list with semicolons:
 ````
 Running applications; names of recent applications
 ````
-returns **Incompatible Types** because it is trying to creaet a list made up of running applications and strings.
+returns **Incompatible types** because it is trying to create a list made up of running applications and strings.
 
 ## This Expression Contained a Character Which is Not Allowed
 This error message is often given when the relevance interpreter finds a character that it does not recognise.  You can use any character you want in a string except (*), but outside of a string a random character will break the relevance statement.  For example:
@@ -147,7 +147,7 @@ This error message is often given when the relevance interpreter finds a charact
 will return **This expression contained a character which is not allowed** because curly braces are not valid in the relevance languge. (Although they do signify relevance substitution in an action script).
 
 ## No Inpsector Context
-Certain inspectors can oly be evaulated by the Endpoint Manager Client and therefore will not work in QNA.  If you try to evaluate one of these in QNA, you will recieve **No inspector context**.  A common example is:
+Certain inspectors can only be evaulated by the Endpoint Manager Client and therefore will not work in QNA.  If you try to evaluate one of these in QNA, you will recieve **No inspector context**.  A common example is:
 ````
 Pending Restart
 ````
@@ -156,7 +156,7 @@ In general, in order to evaulate statements that return **No inspector context**
 ## A String Constant Had No Ending Quotation Mark
 This message is fairly self-explanatory.  It simply means that there was an unenven number of quotation marks in the expression.  Here is an example:
 ````
-Version of file "msh.dll of system folder.
+Version of file "msh.dll of system folder
 ````
 
 
