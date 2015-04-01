@@ -193,7 +193,7 @@ This error message is often given when the relevance interpreter finds a charact
 
 will return **This expression contained a character which is not allowed** because curly braces are not valid in the relevance languge. (Although they do signify relevance substitution in an action script).
 
-## No Inpsector Context
+## No Inspector Context
 Certain inspectors can only be evaulated by the Endpoint Manager Client and therefore will not work in QNA.  If you try to evaluate one of these in QNA, you will recieve **No inspector context**.  A common example is:
 
 ```relevance
