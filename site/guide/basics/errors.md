@@ -156,7 +156,7 @@ In general, in order to evaulate statements that return **No inspector context**
 ## A String Constant Had No Ending Quotation Mark
 This message is fairly self-explanatory.  It simply means that there was an unenven number of quotation marks in the expression.  Here is an example:
 ````
-Version of file "msh.dll of system folder
+Version of file "msh.dll" of system folder
 ````
 
 
