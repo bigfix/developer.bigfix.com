@@ -90,17 +90,17 @@ will return **Hello said %9dgsn** as, although `%9d` isn't an ASCII hex value, b
 
 You will receive this message if you use a word that the relevance interpreter does not recoginse, or if you use invalid commands on an object.  Here's some examples:
 
-```relevance
+{{#example}}
 Q: exists executable "file_name.exe" of system folder
 E: The operator "executable" is not defined.
-```
+{{/example}}
 
 This will return **The operator "exectuable" is not defined** because the word 'executable' is not a valid command in the relevance language.
 
-```relevance
+{{#example}}
 Q: version of key "HLKM/Software" of registry
 E: The operator "version" is not defined.
-```
+{{/example}}
 
 This will return **The operator "version" is not defined** because, although the relevance language knows the word 'version', it does not recognize it as a valid property of registry key.
 
