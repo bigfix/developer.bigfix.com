@@ -40,15 +40,19 @@ p {
   margin-bottom: 1.5rem;
 }
 
+pre {
+  margin-bottom: 1.5rem;
+}
+
 pre > code {
   padding: 1rem;
+  font-size: 100%;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
 code {
   background-color: #fff;
-  font-size: 100%;
 }
 
 .navbar {

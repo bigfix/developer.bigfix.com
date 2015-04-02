@@ -109,19 +109,22 @@ This will return **The operator "version" is not defined** because, although the
 
 The is a very common error message that indicates you are trying to return an object that has no default return value.  In order to fix it you just need to query a property of that object.  For exmaple:
 
-```relevance
-key "HKEY_LOCAL_MACHINE\SOFTWARE\BigFix\EnterpriseClient" of registry
-```
+{{#example}}
+Q: registry
+E: Operator "string" is not defined.
+{{/example}}
 
-will return **Operator "string" is not defined**.  Although the statement above correcly defines an object that does exist, the relevance language just doesn't know what you want to know about that object.  Instead you have to either ask its existence or query a property of the object, for example:
+will return **Operator "string" is not defined**.  Although the statement above correctly defines an object that does exist, the relevance language just doesn't know what you want to know about that object.  Instead you have to either ask its existence or query a property of the object, for example:
 
-```relevance
-exists key "HKEY_LOCAL_MACHINE\SOFTWARE\BigFix\EnterpriseClient" of registry
-```
+{{#example}}
+Q: exists registry
+A: True
+{{/example}}
 
-```relevance
-value "version" of key "HKEY_LOCAL_MACHINE\SOFTWARE\BigFix\EnterpriseClient" of registry
-```
+{{#example}}
+Q: value "version" of key "HKEY_LOCAL_MACHINE\SOFTWARE\BigFix\EnterpriseClient" of registry
+A: 9.2.1.48
+{{/example}}
 
 ## This Expression Could Not Be Parsed
 
@@ -153,7 +156,7 @@ E: A boolean expression is required.
 The parenthetical statement, `(version of it)`, after whose must return a boolean value for the expression to make sense.  Since the relevance interpreter is expecting a boolean value and instead finds a version, it returns the error **A boolean expression is required**. Instead the statement should be something like:
 
 {{#example}}
-Q: Names of files whose (version of it = "5") of system folder
+Q: names of files whose (version of it = "5") of system folder
 A: atmfd.dll
 A: atmlib.dll
 A: charmap.exe
