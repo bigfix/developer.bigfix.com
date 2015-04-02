@@ -39,7 +39,7 @@ gives the same error because you can't compare a list to a single value.  You wi
 
 ## It Used Outside of Whose Clause
 
-This is an especially confusing error message because it is perfectly legal to use `it` without a `whose` clause as long as you form the syntax correcly.  This message just means that the interpreter does not know what `it` refers to, meaning that there is some systax error related to the word `it`.  For example:
+This is an especially confusing error message because it is perfectly legal to use `it` without a `whose` clause as long as you form the syntax correctly.  This message just means that the interpreter does not know what `it` refers to, meaning that there is some systax error related to the word `it`.  For example:
 
 {{#example}}
 Q: system folder (name of it & pathname of it)
