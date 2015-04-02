@@ -68,7 +68,6 @@ code {
 
 .example code {
   border: none;
-  font-size: 90%;
   line-height: normal;
   margin: 0;
   padding: 1rem 1rem .5rem 1rem;
@@ -76,7 +75,6 @@ code {
 
 .example ul {
   font-family: monospace, monospace;
-  font-size: 90%;
   list-style: none;
   line-height: normal;
   margin: 0 0 .5rem 0;
@@ -93,7 +91,9 @@ code {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #222;
 }
 
 .expand-buttons button {
