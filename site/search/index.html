@@ -10,9 +10,46 @@
 <div class="row">
   <div id="search-results" class="twelve columns"></div>
 </div>
+<div class="row">
+  <button id="search-prev" class="search-hidden button-primary u-pull-left">Previous Page</button>
+  <button id="search-next" class="search-hidden button-primary u-pull-right">Next Page</button>
+</div>
 <script>
+(function() {
+
+var state = {
+  query: '',
+  page: 0
+};
+
 function getSearchQuery() {
-  return document.getElementById('search-input').value;
+  var query = 'query=' + encodeURIComponent(state.query);
+
+  if (state.page !== 0) {
+    query += '&page=' + encodeURIComponent(state.page);
+  }
+
+  return query;
+}
+
+function pushState() {
+  window.history.pushState(state, '', '#' + getSearchQuery());
+}
+
+function replaceState() {
+  window.history.replaceState(state, '', '#' + getSearchQuery());
+}
+
+function searchInput() {
+  return document.getElementById('search-input');
+}
+
+function nextPageButton() {
+  return document.getElementById('search-next');
+}
+
+function prevPageButton() {
+  return document.getElementById('search-prev');
 }
 
 function setSearchStatus(text) {
@@ -24,18 +61,18 @@ function setSearchResults(page) {
 }
 
 function search() {
-  var query = getSearchQuery();
-
-  if (query.length === 0) {
+  if (state.query.length === 0) {
     setSearchStatus('');
     setSearchResults([]);
+    prevPageButton().classList.add('search-hidden');
+    nextPageButton().classList.add('search-hidden');
     return;
   }
 
-  var url = '/api/search?query=' + encodeURIComponent(query);
+  var requestQuery = getSearchQuery();
 
-  requestJSON('GET', url, function(err, results) {
-    if (query != getSearchQuery()) {
+  requestJSON('GET', '/api/search?' + requestQuery, function(err, results) {
+    if (requestQuery !== getSearchQuery()) {
       // They typed something else before this returned.
       return;
     }
@@ -43,39 +80,95 @@ function search() {
     if (err) {
       setSearchStatus(err.toString());
       setSearchResults([]);
+      prevPageButton().classList.add('search-hidden');
+      nextPageButton().classList.add('search-hidden');
       return;
     }
 
     if (results.page.length === 0) {
       setSearchStatus('No results found.');      
     } else {
-      setSearchStatus('Showing results 1 to ' + results.page.length + ' of ' +
+      setSearchStatus('Showing results ' + (results.offset + 1) + ' to ' +
+                      (results.offset + results.page.length) + ' of ' +
                       results.total + '.');
+    }
+
+    if (results.offset !== 0) {
+      prevPageButton().classList.remove('search-hidden');
+    } else {
+      prevPageButton().classList.add('search-hidden');
+    }
+
+    if (results.offset + results.page.length !== results.total) {
+      nextPageButton().classList.remove('search-hidden');
+    } else {
+      nextPageButton().classList.add('search-hidden');
     }
 
     setSearchResults(results.page);
   });
 }
 
-function onSearchLoad() {
-  var timer = null;
+var timer = null;
 
-  function onInput() {
-    if (timer) {
-      clearTimeout(timer);
-    }
-
-    timer = setTimeout(onTimeout, 200);
-  }
-
-  function onTimeout() {
+function stopTimer() {
+  if (timer) {
+    clearTimeout(timer);
     timer = null;
-    search();
   }
-
-  document.getElementById('search-input').oninput = onInput;
-  document.getElementById('search-input').focus();
 }
 
-onSearchLoad();
+function onInput() {
+  stopTimer();
+  timer = setTimeout(onInputTimeout, 200);
+}
+
+function onInputTimeout() {
+  stopTimer();
+  state.query = searchInput().value;
+
+  if (state.page !== 0) {
+    state.page = 0;
+    pushState();
+  } else {
+    replaceState();
+  }
+
+  search();
+}
+
+function onNextPage() {
+  stopTimer();
+  state.page++;
+  pushState();
+  search();
+}
+
+function onPrevPage() {
+  stopTimer();
+  state.page--;
+  pushState();
+  search();
+}
+
+function onPopState(event) {
+  stopTimer();
+  state = event.state;
+  search();
+}
+
+if (history.state) {
+  state = history.state;
+  search();
+}
+
+searchInput().oninput = onInput;
+searchInput().focus();
+
+nextPageButton().onclick = onNextPage;
+prevPageButton().onclick = onPrevPage;
+
+window.onpopstate = onPopState;
+
+})();
 </script>

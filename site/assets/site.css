@@ -231,6 +231,10 @@ table.support td {
   margin-bottom: 2rem;
 }
 
+.search-hidden {
+  display: none;
+}
+
 .reference-types {
   list-style: none;
 }
