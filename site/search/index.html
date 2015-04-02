@@ -44,7 +44,7 @@ function parseSearchQuery(query) {
 
   return {
     query: parts.query,
-    page: parseInt(parts.page, 10)
+    page: parts.page ? parseInt(parts.page, 10) : 1,
   };
 }
 
