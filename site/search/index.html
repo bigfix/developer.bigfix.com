@@ -152,9 +152,11 @@ function onPrevPage() {
 }
 
 function onPopState(event) {
-  stopTimer();
-  state = event.state;
-  search();
+  if (event && event.state) {
+    stopTimer();
+    state = event.state;
+    search();
+  }
 }
 
 if (history.state) {
