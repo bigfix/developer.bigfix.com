@@ -19,13 +19,13 @@
 
 var state = {
   query: '',
-  page: 0
+  page: 1
 };
 
 function getSearchQuery() {
   var query = 'query=' + encodeURIComponent(state.query);
 
-  if (state.page !== 0) {
+  if (state.page !== 1) {
     query += '&page=' + encodeURIComponent(state.page);
   }
 
@@ -147,8 +147,8 @@ function onInputTimeout() {
   stopTimer();
   state.query = searchInput().value;
 
-  if (state.page !== 0) {
-    state.page = 0;
+  if (state.page !== 1) {
+    state.page = 1;
     pushState();
   } else {
     replaceState();
