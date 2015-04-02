@@ -32,6 +32,22 @@ function getSearchQuery() {
   return query;
 }
 
+function parseSearchQuery(query) {
+  var parts = {};
+
+  query.split('&').forEach(function(part) {
+    var nameValue = part.split('=');
+    if (nameValue.length === 2) {
+      parts[nameValue[0]] = nameValue[1];
+    }
+  });
+
+  return {
+    query: parts.query,
+    page: parseInt(parts.page, 10)
+  };
+}
+
 function pushState() {
   window.history.pushState(state, '', '#' + getSearchQuery());
 }
@@ -159,12 +175,18 @@ function onPopState(event) {
   if (event && event.state) {
     stopTimer();
     state = event.state;
+    searchInput().value = state.query;
     search();
   }
 }
 
 if (history.state) {
   state = history.state;
+  searchInput().value = state.query;
+  search();
+} else if (window.location.hash) {
+  state = parseSearchQuery(window.location.hash.substr(1));
+  searchInput().value = state.query;
   search();
 }
 
