@@ -230,7 +230,7 @@ Q: {pathname of regapp "besclient.exe"}
 E: This expression contained a character which is not allowed.
 {{/example}}
 
-will return **This expression contained a character which is not allowed** because curly braces are not valid in the relevance languge. (Although they do signify relevance substitution in an action script).
+will return **This expression contained a character which is not allowed** because curly braces are not valid in the relevance language. (Although they do signify relevance substitution in an action script).
 
 ## No Inspector Context
 
