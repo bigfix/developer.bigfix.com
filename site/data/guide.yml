@@ -9,6 +9,7 @@
   - if-then-else
   - casts
   - tuples
+  - errors
   - plurals-and-errors
 
 - title: Client
