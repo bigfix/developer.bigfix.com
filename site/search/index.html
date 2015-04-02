@@ -60,7 +60,7 @@ function setSearchResults(page) {
   document.getElementById('search-results').innerHTML = page.join('\n');
 }
 
-function search() {
+function search(options) {
   if (state.query.length === 0) {
     setSearchStatus('');
     setSearchResults([]);
@@ -106,7 +106,10 @@ function search() {
     }
 
     setSearchResults(results.page);
-    window.scrollTo(0, 0);
+
+    if (options && options.scrollTop) {
+      window.scrollTo(0, 0);
+    }
   });
 }
 
@@ -142,14 +145,14 @@ function onNextPage() {
   stopTimer();
   state.page++;
   pushState();
-  search();
+  search({scrollTop: true});
 }
 
 function onPrevPage() {
   stopTimer();
   state.page--;
   pushState();
-  search();
+  search({scrollTop: true});
 }
 
 function onPopState(event) {
