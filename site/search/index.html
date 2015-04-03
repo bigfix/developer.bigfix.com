@@ -102,12 +102,16 @@ function search(options) {
     }
 
     if (results.page.length === 0) {
-      setSearchStatus('No results found.');      
-    } else {
-      setSearchStatus('Showing results ' + (results.offset + 1) + ' to ' +
-                      (results.offset + results.page.length) + ' of ' +
-                      results.total + '.');
+      setSearchStatus('No results found.');
+      setSearchResults([]);
+      prevPageButton().classList.add('search-hidden');
+      nextPageButton().classList.add('search-hidden');
+      return;
     }
+
+    setSearchStatus('Showing results ' + (results.offset + 1) + ' to ' +
+                    (results.offset + results.page.length) + ' of ' +
+                    results.total + '.');
 
     if (results.offset !== 0) {
       prevPageButton().classList.remove('search-hidden');
