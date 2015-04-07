@@ -87,7 +87,7 @@ A: Hello said %9dgsn
 
 will return **Hello said %9dgsn** as, although `%9d` isn't an ASCII hex value, both characters are letters and numbers.
 
-## The Operator "\<command\>" is Not defined
+## The Operator "\<bad_command\>" is Not Defined
 
 You will receive this message if you use a word that the relevance interpreter does not recognize, or if you use invalid commands on an object.  Here's some examples:
 
