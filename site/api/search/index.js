@@ -7,24 +7,17 @@ app.set('x-powered-by', false);
 
 app.get('/api/search', function(req, res) {
   var query = req.query.query;
-  var offset = Number(req.query.offset || 0);
-  var limit = Number(req.query.limit || 25);
+  var page = parseInt(req.query.page || '0', 10);
 
-  if (!query || Number.isNaN(offset) || Number.isNaN(limit)) {
+  if (!query || Number.isNaN(page)) {
     return res.status(400).end('invalid search query');
   }
 
-  if (offset < 0) {
-    offset = 0;
+  if (page < 1) {
+    page = 1;
   }
 
-  if (limit < 0) {
-    limit = 0;
-  } else if (limit > 50) {
-    limit = 50;
-  }
-
-  res.json(search(query, limit, offset));
+  res.json(search(query, 25, (page - 1) * 25));
 });
 
 app.listen(process.env.PORT);
