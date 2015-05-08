@@ -1,0 +1,16 @@
+[Unit]
+Description=relevance evaluate service
+After=network.target
+
+[Service]
+User=nobody
+Group=nobody
+Environment= \
+  PORT=5002 \
+  NODE_ENV=production
+WorkingDirectory=/var/www/api/evaluate
+ExecStart=/usr/bin/node /var/www/api/evaluate
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

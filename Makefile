@@ -108,14 +108,18 @@ SEARCH_DEPS := \
 	$(STAGING)/api/search/language.json \
 	$(STAGING)/api/search/docs.json
 
-/etc/init/search.conf: $(SEARCH_DEPS)
-	stop search || true
+/usr/lib/systemd/system/relevance-search.service: $(SEARCH_DEPS)
+	systemctl stop relevance-search || true
+	systemctl disable relevance-search || true
 	mkdir -p /var/www/api
 	rsync --archive --delete $(STAGING)/api/search/ /var/www/api/search
-	cp -f $(SOURCE)/conf/upstart/search.conf /etc/init/search.conf
-	start search
+	cp -f $(SOURCE)/conf/systemd/relevance-search.service \
+		/usr/lib/systemd/system/relevance-search.service
+	systemctl daemon-reload
+	systemctl enable relevance-search
+	systemctl start relevance-search
 
-DEPLOY_TARGETS += /etc/init/search.conf
+DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-search.service
 
 ################################################################################
 # /api/evaluate
@@ -136,49 +140,44 @@ EVALUATE_DEPS := \
 	$(SOURCE)/conf/upstart/evaluate.conf \
 	$(STAGING)/api/evaluate/package.json
 
-/etc/init/evaluate.conf: $(EVALUATE_DEPS)
-	stop evaluate || true
+/usr/lib/systemd/system/relevance-evaluate.service: $(EVALUATE_DEPS)
+	systemctl stop relevance-evaluate || true
+	systemctl disable relevance-evaluate || true
 	mkdir -p /var/www/api
 	rsync --archive --delete $(STAGING)/api/evaluate/ /var/www/api/evaluate
-	cp -f $(SOURCE)/conf/upstart/evaluate.conf /etc/init/evaluate.conf
-	start evaluate
+	cp -f $(SOURCE)/conf/systemd/relevance-evaluate.service \
+		/usr/lib/systemd/system/relevance-evaluate.service
+	systemctl daemon-reload
+	systemctl enable relevance-evaluate
+	systemctl start relevance-evaluate
 
-REMOTE_DEPLOY_TARGETS += /etc/init/evaluate.conf
+REMOTE_DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-evaluate.service
 
 ################################################################################
 # nginx
 ################################################################################
 
-nginx-dev: /etc/nginx/sites-enabled/dev.conf
-nginx-prod: /etc/nginx/sites-enabled/prod.conf
+nginx-dev: /etc/nginx/conf.d/dev.conf
+nginx-prod: /etc/nginx/conf.d/prod.conf
 
 NGINX_DEPS := \
-	/var/www/site \
-	/etc/nginx/sites-available/dev.conf \
-	/etc/nginx/sites-available/prod.conf \
-	/etc/nginx/shared.conf
+	/etc/nginx/shared.conf \
+	/etc/nginx/nginx.conf
 
-/etc/nginx/sites-enabled/dev.conf: $(NGINX_DEPS)
-	rm -rf /etc/nginx/sites-enabled/*
-	cp /etc/nginx/sites-available/dev.conf $@
-	nginx -s reload
+/etc/nginx/conf.d/dev.conf: $(NGINX_DEPS)
+	rm -rf /etc/nginx/conf.d/*
+	cp $(SOURCE)/conf/nginx/dev.conf $@
+	systemctl reload nginx
 
-/etc/nginx/sites-enabled/prod.conf: $(NGINX_DEPS)
-	rm -rf /etc/nginx/sites-enabled/*
-	cp /etc/nginx/sites-available/prod.conf $@
-	nginx -s reload
-
-/var/www/site:
-	mkdir -p /var/www/site
-	echo It works > /var/www/site/index.html
-
-/etc/nginx/sites-available/dev.conf: $(SOURCE)/conf/nginx/dev.conf
-	cp -f $< $@
-
-/etc/nginx/sites-available/prod.conf: $(SOURCE)/conf/nginx/prod.conf
-	cp -f $< $@
+/etc/nginx/conf.d/prod.conf: $(NGINX_DEPS)
+	rm -rf /etc/nginx/conf.d/*
+	cp $(SOURCE)/conf/nginx/prod.conf $@
+	systemctl reload nginx
 
 /etc/nginx/shared.conf: $(SOURCE)/conf/nginx/shared.conf
+	cp -f $< $@
+
+/etc/nginx/nginx.conf: $(SOURCE)/conf/nginx/nginx.conf
 	cp -f $< $@
 
 ################################################################################

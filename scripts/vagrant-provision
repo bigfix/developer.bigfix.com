@@ -3,22 +3,26 @@
 set -e
 set -x
 
-# Update all the things
-apt-get update
+# Add node yum repo
+curl -sL https://rpm.nodesource.com/setup | bash -
 
-# Add node ppa
-curl -sL https://deb.nodesource.com/setup | bash -
+# Add epel for nginx
+yum install -y epel-release
 
 # Install all the things
-apt-get install -y git nginx nodejs
+yum install -y nginx nodejs rsync
 
 # Setup Makefile that points to the Makefile in the source directory
 echo 'SOURCE=/vagrant' >> /home/vagrant/Makefile
 echo 'include /vagrant/Makefile' >> /home/vagrant/Makefile
 
+# Start nginx now and forever
+systemctl enable nginx.service
+systemctl start nginx.service
+
 # Setup nginx
 make nginx-dev
 
 # Build the site
-sudo --user vagrant --set-home make staging remote-staging
+sudo -H -u vagrant make staging remote-staging
 make deploy remote-deploy
