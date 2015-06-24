@@ -21,6 +21,7 @@ systemctl enable nginx.service
 systemctl start nginx.service
 
 # Setup nginx
+rm /etc/nginx/nginx.conf
 make nginx-dev
 
 # Build the site

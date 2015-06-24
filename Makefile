@@ -103,7 +103,7 @@ STAGING_TARGETS += $(STAGING)/api/search/docs.json
 STAGING_TARGETS += $(STAGING)/api/search/package.json
 
 SEARCH_DEPS := \
-	$(SOURCE)/conf/upstart/search.conf \
+	$(SOURCE)/conf/systemd/relevance-search.service \
 	$(STAGING)/api/search/package.json \
 	$(STAGING)/api/search/language.json \
 	$(STAGING)/api/search/docs.json
@@ -137,7 +137,7 @@ $(STAGING)/api/evaluate/package.json: $(wildcard $(SOURCE)/site/api/evaluate/*)
 REMOTE_STAGING_TARGETS += $(STAGING)/api/evaluate/package.json
 
 EVALUATE_DEPS := \
-	$(SOURCE)/conf/upstart/evaluate.conf \
+	$(SOURCE)/conf/systemd/relevance-evaluate.service \
 	$(STAGING)/api/evaluate/package.json
 
 /usr/lib/systemd/system/relevance-evaluate.service: $(EVALUATE_DEPS)
