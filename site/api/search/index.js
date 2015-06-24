@@ -11,7 +11,7 @@ var schema = Joi.object({
   page: Joi.number().positive().integer().min(1).max(10000).default(1)
 });
 
-app.get('/api/search', function(req, res) {
+app.get('/api/relevance/search', function(req, res) {
   Joi.validate(req.query, schema, function(err, value) {
     if (err) {
       return res.status(400).end('invalid search query');

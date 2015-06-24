@@ -86,8 +86,9 @@ function search(options) {
   }
 
   var requestQuery = getSearchQuery();
+  var requestURL = '/api/relevance/search?' + requestQuery;
 
-  requestJSON('GET', '/api/search?' + requestQuery, function(err, results) {
+  requestJSON('GET', requestURL, function(err, results) {
     if (requestQuery !== getSearchQuery()) {
       // They typed something else before this returned.
       return;

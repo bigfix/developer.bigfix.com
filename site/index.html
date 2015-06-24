@@ -18,7 +18,7 @@ function setResults(results) {
 function evaluateRelevance() {
   var body = { relevance: getRelevance() };
 
-  requestJSON('POST', '/api/evaluate', body, function(err, results) {
+  requestJSON('POST', '/api/relevance/evaluate', body, function(err, results) {
     if (body.relevance != getRelevance()) {
       return;
     }

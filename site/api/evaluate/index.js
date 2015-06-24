@@ -91,7 +91,7 @@ function qna(relevance, callback) {
   child.stdin.end(cleanRelevance);
 }
 
-app.post('/api/evaluate', function(req, res) {
+app.post('/api/relevance/evaluate', function(req, res) {
   var relevance = req.body.relevance;
 
   if (!relevance) {

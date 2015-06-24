@@ -76,43 +76,45 @@ WWW_DEPS := \
 DEPLOY_TARGETS += /var/www/site/index.html
 
 ################################################################################
-# /api/search
+# /api/relevance/search
 ################################################################################
 
-$(STAGING)/api/search/language.json: $(SOURCE)/site/data/language.json
-	mkdir -p $(STAGING)/api/search/
+$(STAGING)/api/relevance/search/language.json: $(SOURCE)/site/data/language.json
+	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 
-$(STAGING)/api/search/docs.json: $(STAGING)/docs.json
-	mkdir -p $(STAGING)/api/search/
+$(STAGING)/api/relevance/search/docs.json: $(STAGING)/docs.json
+	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 
-$(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
-	mkdir -p $(STAGING)/api/search/
+$(STAGING)/api/relevance/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
+	mkdir -p $(STAGING)/api/relevance/search/
 	rsync --archive --delete \
 		--exclude=node_modules \
 		--exclude=language.json \
 		--exclude=docs.json \
 		$(SOURCE)/site/api/search/ \
-		$(STAGING)/api/search/
-	cd $(STAGING)/api/search/ && npm install
+		$(STAGING)/api/relevance/search/
+	cd $(STAGING)/api/relevance/search/ && npm install
 	touch $@
 
-STAGING_TARGETS += $(STAGING)/api/search/language.json
-STAGING_TARGETS += $(STAGING)/api/search/docs.json
-STAGING_TARGETS += $(STAGING)/api/search/package.json
+STAGING_TARGETS += $(STAGING)/api/relevance/search/language.json
+STAGING_TARGETS += $(STAGING)/api/relevance/search/docs.json
+STAGING_TARGETS += $(STAGING)/api/relevance/search/package.json
 
 SEARCH_DEPS := \
 	$(SOURCE)/conf/systemd/relevance-search.service \
-	$(STAGING)/api/search/package.json \
-	$(STAGING)/api/search/language.json \
-	$(STAGING)/api/search/docs.json
+	$(STAGING)/api/relevance/search/package.json \
+	$(STAGING)/api/relevance/search/language.json \
+	$(STAGING)/api/relevance/search/docs.json
 
 /usr/lib/systemd/system/relevance-search.service: $(SEARCH_DEPS)
 	systemctl stop relevance-search || true
 	systemctl disable relevance-search || true
-	mkdir -p /var/www/api
-	rsync --archive --delete $(STAGING)/api/search/ /var/www/api/search
+	mkdir -p /var/www/api/relevance
+	rsync --archive --delete \
+		$(STAGING)/api/relevance/search/ \
+		/var/www/api/relevance/search
 	cp -f $(SOURCE)/conf/systemd/relevance-search.service \
 		/usr/lib/systemd/system/relevance-search.service
 	systemctl daemon-reload
@@ -122,29 +124,31 @@ SEARCH_DEPS := \
 DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-search.service
 
 ################################################################################
-# /api/evaluate
+# /api/relevance/evaluate
 ################################################################################
 
-$(STAGING)/api/evaluate/package.json: $(wildcard $(SOURCE)/site/api/evaluate/*)
-	mkdir -p $(STAGING)/api/evaluate/
+$(STAGING)/api/relevance/evaluate/package.json: $(wildcard $(SOURCE)/site/api/evaluate/*)
+	mkdir -p $(STAGING)/api/relevance/evaluate/
 	rsync --archive --delete \
 		--exclude=node_modules \
 		$(SOURCE)/site/api/evaluate/ \
-		$(STAGING)/api/evaluate/
-	cd $(STAGING)/api/evaluate/ && npm install
+		$(STAGING)/api/relevance/evaluate/
+	cd $(STAGING)/api/relevance/evaluate/ && npm install
 	touch $@
 
-REMOTE_STAGING_TARGETS += $(STAGING)/api/evaluate/package.json
+REMOTE_STAGING_TARGETS += $(STAGING)/api/relevance/evaluate/package.json
 
 EVALUATE_DEPS := \
 	$(SOURCE)/conf/systemd/relevance-evaluate.service \
-	$(STAGING)/api/evaluate/package.json
+	$(STAGING)/api/relevance/evaluate/package.json
 
 /usr/lib/systemd/system/relevance-evaluate.service: $(EVALUATE_DEPS)
 	systemctl stop relevance-evaluate || true
 	systemctl disable relevance-evaluate || true
 	mkdir -p /var/www/api
-	rsync --archive --delete $(STAGING)/api/evaluate/ /var/www/api/evaluate
+	rsync --archive --delete \
+		$(STAGING)/api/relevance/evaluate/ \
+		/var/www/api/relevance/evaluate
 	cp -f $(SOURCE)/conf/systemd/relevance-evaluate.service \
 		/usr/lib/systemd/system/relevance-evaluate.service
 	systemctl daemon-reload

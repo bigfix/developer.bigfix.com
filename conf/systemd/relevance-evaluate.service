@@ -8,8 +8,8 @@ Group=nobody
 Environment= \
   PORT=5002 \
   NODE_ENV=production
-WorkingDirectory=/var/www/api/evaluate
-ExecStart=/usr/bin/node /var/www/api/evaluate
+WorkingDirectory=/var/www/api/relevance/evaluate
+ExecStart=/usr/bin/node /var/www/api/relevance/evaluate
 Restart=always
 
 [Install]
