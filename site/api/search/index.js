@@ -1,23 +1,24 @@
 var express = require('express'),
+  Joi = require('joi'),
   search = require('./search');
 
 var app = express();
 
 app.set('x-powered-by', false);
 
+var schema = Joi.object({
+  query: Joi.string().required(),
+  page: Joi.number().positive().integer().min(1).max(10000).default(1)
+});
+
 app.get('/api/search', function(req, res) {
-  var query = req.query.query;
-  var page = parseInt(req.query.page || '0', 10);
+  Joi.validate(req.query, schema, function(err, value) {
+    if (err) {
+      return res.status(400).end('invalid search query');
+    }
 
-  if (!query || Number.isNaN(page)) {
-    return res.status(400).end('invalid search query');
-  }
-
-  if (page < 1) {
-    page = 1;
-  }
-
-  res.json(search(query, 25, (page - 1) * 25));
+    res.json(search(value.query, 25, (value.page - 1) * 25));
+  });
 });
 
 app.listen(process.env.PORT);
