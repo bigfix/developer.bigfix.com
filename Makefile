@@ -87,13 +87,13 @@ $(STAGING)/api/relevance/search/docs.json: $(STAGING)/docs.json
 	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 
-$(STAGING)/api/relevance/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
+$(STAGING)/api/relevance/search/package.json: $(wildcard $(SOURCE)/site/api/relevance-search/*)
 	mkdir -p $(STAGING)/api/relevance/search/
 	rsync --archive --delete \
 		--exclude=node_modules \
 		--exclude=language.json \
 		--exclude=docs.json \
-		$(SOURCE)/site/api/search/ \
+		$(SOURCE)/site/api/relevance-search/ \
 		$(STAGING)/api/relevance/search/
 	cd $(STAGING)/api/relevance/search/ && npm install
 	touch $@
@@ -127,11 +127,11 @@ DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-search.service
 # /api/relevance/evaluate
 ################################################################################
 
-$(STAGING)/api/relevance/evaluate/package.json: $(wildcard $(SOURCE)/site/api/evaluate/*)
+$(STAGING)/api/relevance/evaluate/package.json: $(wildcard $(SOURCE)/site/api/relevance-evaluate/*)
 	mkdir -p $(STAGING)/api/relevance/evaluate/
 	rsync --archive --delete \
 		--exclude=node_modules \
-		$(SOURCE)/site/api/evaluate/ \
+		$(SOURCE)/site/api/relevance-evaluate/ \
 		$(STAGING)/api/relevance/evaluate/
 	cd $(STAGING)/api/relevance/evaluate/ && npm install
 	touch $@
