@@ -1,7 +1,7 @@
 # Network
 
 {{#example}}
-Q: addresses whose (it as string != "0.0.0.0") of ip interfaces of network as string =
+Q: addresses whose (it as string != "0.0.0.0") of ip interfaces of network as string
 A: 127.0.0.1
 A: 192.168.1.102
 A: 9.80.109.49
