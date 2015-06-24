@@ -3,7 +3,6 @@ var buildGuide = require('./guide'),
   buildSearch = require('./search'),
   fs = require('fs'),
   Hogan = require('hogan.js'),
-  marked = require('marked'),
   path = require('path'),
   rimraf = require('rimraf');
 
