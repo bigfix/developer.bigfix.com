@@ -60,8 +60,8 @@ function makeHref(type) {
 }
 
 function makeContribute(source) {
-  var base =
-    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
+  var repo = 'https://github.com/bigfix/developer.bigfix.com';
+  var base = repo + '/tree/master/site/reference/';
 
   return base + source;
 }
