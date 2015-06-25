@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/briangreenery/relevance.io.svg?branch=master)](https://travis-ci.org/briangreenery/relevance.io)
 
-The source for [relevance.io](https://www.relevance.io).
+The source for [developer.bigfix.com](https://developer.bigfix.com).
 
 # Contributing
 
