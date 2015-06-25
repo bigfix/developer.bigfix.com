@@ -56,7 +56,7 @@ function makeAvailability(value) {
 }
 
 function makeHref(type) {
-  return '/reference/' + type.replace(/ /g, '-') + '.html';
+  return '/relevance/reference/' + type.replace(/ /g, '-') + '.html';
 }
 
 function makeContribute(source) {
@@ -226,7 +226,8 @@ function render(language, docs, associations, templates) {
       content: content
     };
 
-    var href = path.join('reference', type.name.replace(/ /g, '-') + '.html');
+    var pageName = type.name.replace(/ /g, '-') + '.html';
+    var href = path.join('relevance', 'reference', pageName);
 
     pages.push({ href: href, content: templates.page.render(data) });
   });

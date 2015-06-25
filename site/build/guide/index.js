@@ -7,13 +7,13 @@ var fs = require('fs'),
 function buildPages(templates, siteDir, outDir) {
   var guideDir = path.join(siteDir, 'guide');
 
-  mkdirp.sync(path.join(outDir, 'site', 'guide'));
+  mkdirp.sync(path.join(outDir, 'site', 'relevance', 'guide'));
 
   var guide = {};
 
   fs.readdirSync(guideDir).forEach(function(folder) {
     var sourceFolder = path.join(guideDir, folder);
-    var destFolder = path.join(outDir, 'site', 'guide', folder);
+    var destFolder = path.join(outDir, 'site', 'relevance', 'guide', folder);
 
     guide[folder] = {};
     mkdirp.sync(destFolder);
@@ -28,7 +28,7 @@ function buildPages(templates, siteDir, outDir) {
 
       guide[folder][basename] = {
         title: data.title,
-        href: '/guide/' + folder + '/' + basename + '.html'
+        href: '/relevance/guide/' + folder + '/' + basename + '.html'
       };
     });
   });
@@ -70,8 +70,9 @@ function buildGuide(templates, siteDir, outDir) {
     content: templates.guide.render(data)
   };
 
-  fs.writeFileSync(path.join(outDir, 'site', 'guide', 'index.html'),
-                   templates.page.render(index));
+  fs.writeFileSync(
+    path.join(outDir, 'site', 'relevance', 'guide', 'index.html'),
+    templates.page.render(index));
 }
 
 module.exports = buildGuide;
