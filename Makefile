@@ -40,7 +40,7 @@ STAGING_TARGETS += $(STAGING)/site/static/fonts
 # pages
 ################################################################################
 
-$(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/*)
+$(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/**/*)
 	mkdir -p $(STAGING)
 	rsync --archive --delete --exclude=node_modules \
 		$(SOURCE)/site/build/ \
