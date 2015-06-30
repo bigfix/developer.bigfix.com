@@ -69,6 +69,7 @@ WWW_DEPS := \
 	$(STAGING)/site/index.html
 
 /var/www/site/index.html: $(WWW_DEPS)
+	chmod -R a+rX $(STAGING)
 	chcon -R -t httpd_sys_content_t $(STAGING)
 	mkdir -p /var/www/site
 	rsync --acls --xattrs --archive --delete $(STAGING)/site/ /var/www/site
@@ -112,6 +113,7 @@ SEARCH_DEPS := \
 /usr/lib/systemd/system/relevance-search.service: $(SEARCH_DEPS)
 	systemctl stop relevance-search || true
 	systemctl disable relevance-search || true
+	chmod -R a+rX $(STAGING)
 	mkdir -p /var/www/api/relevance
 	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/relevance/search/ \
@@ -146,6 +148,7 @@ EVALUATE_DEPS := \
 /usr/lib/systemd/system/relevance-evaluate.service: $(EVALUATE_DEPS)
 	systemctl stop relevance-evaluate || true
 	systemctl disable relevance-evaluate || true
+	chmod -R a+rX $(STAGING)
 	mkdir -p /var/www/api
 	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/relevance/evaluate/ \
