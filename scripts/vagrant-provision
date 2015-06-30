@@ -3,6 +3,10 @@
 set -e
 set -x
 
+# Turn on selinux to be more like production
+sed -i 's/SELINUX=permissive/SELINUX=enforcing/' /etc/selinux/config
+setenforce 1
+
 # Add node yum repo
 curl -sL https://rpm.nodesource.com/setup | bash -
 
