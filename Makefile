@@ -14,7 +14,7 @@ all: staging remote-staging
 
 $(STAGING)/site/static/fonts: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts
 	mkdir -p $(STAGING)/site/static
-	rsync --archive --delete \
+	rsync --acls --xattrs --archive --delete \
 		$(SOURCE)/site/assets/font-awesome-4.3.0/fonts \
 		$(STAGING)/site/static
 
@@ -42,7 +42,7 @@ STAGING_TARGETS += $(STAGING)/site/static/fonts
 
 $(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/**/*)
 	mkdir -p $(STAGING)
-	rsync --archive --delete --exclude=node_modules \
+	rsync --acls --xattrs --archive --delete --exclude=node_modules \
 		$(SOURCE)/site/build/ \
 		$(STAGING)/build
 	cd $(STAGING)/build && npm install
@@ -69,8 +69,9 @@ WWW_DEPS := \
 	$(STAGING)/site/index.html
 
 /var/www/site/index.html: $(WWW_DEPS)
+	chcon -R -t httpd_sys_content_t $(STAGING)
 	mkdir -p /var/www/site
-	rsync --archive --delete $(STAGING)/site/ /var/www/site
+	rsync --acls --xattrs --archive --delete $(STAGING)/site/ /var/www/site
 	touch $@
 
 DEPLOY_TARGETS += /var/www/site/index.html
@@ -89,7 +90,7 @@ $(STAGING)/api/relevance/search/docs.json: $(STAGING)/docs.json
 
 $(STAGING)/api/relevance/search/package.json: $(wildcard $(SOURCE)/site/api/relevance-search/*)
 	mkdir -p $(STAGING)/api/relevance/search/
-	rsync --archive --delete \
+	rsync --acls --xattrs --archive --delete \
 		--exclude=node_modules \
 		--exclude=language.json \
 		--exclude=docs.json \
@@ -112,7 +113,7 @@ SEARCH_DEPS := \
 	systemctl stop relevance-search || true
 	systemctl disable relevance-search || true
 	mkdir -p /var/www/api/relevance
-	rsync --archive --delete \
+	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/relevance/search/ \
 		/var/www/api/relevance/search
 	cp -f $(SOURCE)/conf/systemd/relevance-search.service \
@@ -129,7 +130,7 @@ DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-search.service
 
 $(STAGING)/api/relevance/evaluate/package.json: $(wildcard $(SOURCE)/site/api/relevance-evaluate/*)
 	mkdir -p $(STAGING)/api/relevance/evaluate/
-	rsync --archive --delete \
+	rsync --acls --xattrs --archive --delete \
 		--exclude=node_modules \
 		$(SOURCE)/site/api/relevance-evaluate/ \
 		$(STAGING)/api/relevance/evaluate/
@@ -146,7 +147,7 @@ EVALUATE_DEPS := \
 	systemctl stop relevance-evaluate || true
 	systemctl disable relevance-evaluate || true
 	mkdir -p /var/www/api
-	rsync --archive --delete \
+	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/relevance/evaluate/ \
 		/var/www/api/relevance/evaluate
 	cp -f $(SOURCE)/conf/systemd/relevance-evaluate.service \
