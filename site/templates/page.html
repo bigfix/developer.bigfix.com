@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{title}} | BigFix Developer</title>
     <meta name="description" content="Learn how to customize your BigFix deployment.">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/static/site.css" type="text/css">
     <script src="/static/site.js"></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="row navbar">
-        <div class="two columns">
-          <ul class="navbar-list">
-            <li class="navbar-item"><a href="/">Home</a></li>
-          </ul>
-        </div>
-        <div class="ten columns">
-          <ul class="navbar-list">
-            <li class="navbar-item"><a href="/relevance/guide/">Guide</a></li>
-            <li class="navbar-item"><a href="/relevance/reference/">Reference</a></li>
-            <li class="navbar-item"><a href="/relevance/search/">Search</a></li>
-            <li class="navbar-item"><a href="https://github.com/bigfix/developer.bigfix.com"><i class="fa fa-github-alt"></i>Contribute</a></li>
-          </ul>
-        </div>
-      </nav>
+    <div id="header">
+      <div class="container">
+        <nav class="row">
+          <div class="three columns">
+            <a href="/">BigFix <strong>Developer</strong></a>
+          </div>
+          <div class="nine columns">
+            <ul>
+              <li><a href="/relevance/guide/">Guide</a></li>
+              <li><a href="/relevance/reference/">Reference</a></li>
+              <li><a href="/relevance/search/">Search</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="main" class="container">
       {{{content}}}
     </div>
   </body>

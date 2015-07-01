@@ -19,10 +19,10 @@ $(STAGING)/site/static/fonts: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts
 		$(STAGING)/site/static
 
 CSS_FILES := \
-	$(SOURCE)/site/assets/Skeleton-2.0.4/css/normalize.css \
-	$(SOURCE)/site/assets/Skeleton-2.0.4/css/skeleton.css \
+	$(SOURCE)/site/assets/css/normalize.css \
+	$(SOURCE)/site/assets/css/skeleton.css \
 	$(SOURCE)/site/assets/font-awesome-4.3.0/css/font-awesome.css \
-	$(SOURCE)/site/assets/site.css
+	$(SOURCE)/site/assets/css/site.css
 
 $(STAGING)/site/static/site.css: $(CSS_FILES)
 	mkdir -p $(STAGING)/site/static
