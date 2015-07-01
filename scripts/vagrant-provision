@@ -8,6 +8,9 @@ sed -i 's/SELINUX=permissive/SELINUX=enforcing/' /etc/selinux/config
 setenforce 1
 setsebool -P httpd_can_network_connect 1
 
+# Add host entry for sandbox.bigfix.com
+echo 127.0.0.1 sandbox.bigfix.com >> /etc/hosts
+
 # Add node yum repo
 curl -sL https://rpm.nodesource.com/setup | bash -
 
