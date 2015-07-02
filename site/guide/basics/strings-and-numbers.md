@@ -22,7 +22,7 @@ A: 6000
 {{/example}}
 
 ## Simple Operators
-The normal operators you'd expect to be able to use with numbers work in the Relevance Language. Plus and Times are valid operations for integars so this works.
+The normal operators you'd expect to be able to use with numbers work in the Relevance Language. Addition and multiplication are valid operations for integers so this works.
 
 {{#example}}
 Q: (8+3)*6
