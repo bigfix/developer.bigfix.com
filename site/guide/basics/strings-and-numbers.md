@@ -3,11 +3,11 @@
 The basic building blocks of the relevance language are numbers, strings and the expressions
 that combine them.
 
-The "Q:" is the relevance query that is being run and the, "A:" is the answer to our query. We will discover that queries can be complex and the answers to a query can be of any type, but more on that soon!
+The "Q:" is the relevance query that is being run and the "A:" is the answer to our query. We will discover that queries can be complex and the answers to a query can be of any type, but more on that soon!
 
 ## Strings and Integers
 
-Strings are a set of characters (a-z,0-9,!@#$) that are surrounded by quotes. To start, we will write a relevance string that outputs, "hello world"
+Strings are sets of characters (a-z,0-9,!@#$) that are surrounded by quotes. To start, we will write a relevance string that outputs, "hello world"
 {{#example}}
 Q: "hello world"
 A: hello world
@@ -44,7 +44,7 @@ Q: "8" + "3"
 E: The operator "plus" is not defined.
 {{/example}}
 
-The answer is because combining strings isn't adding them, it's concatenating and the operator is, "&"
+The answer is that combining strings is not called, "adding", it's "concatenating" and the operator is, "&"
 {{#example}}
 Q: "6000" & "60"
 A: 600060
