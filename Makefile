@@ -62,17 +62,36 @@ $(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
 
 STAGING_TARGETS += $(STAGING)/site/index.html
 
-WWW_DEPS := \
+################################################################################
+# cache busting
+################################################################################
+
+CACHE_BUST_DEPS := \
 	$(STAGING)/site/static/site.css \
 	$(STAGING)/site/static/site.js \
 	$(STAGING)/site/static/fonts \
 	$(STAGING)/site/index.html
 
-/var/www/site/index.html: $(WWW_DEPS)
+$(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
+	mkdir -p $(STAGING)/cache-bust-site
+	rsync --archive --delete $(STAGING)/site/ $(STAGING)/cache-bust-site
+	$(SOURCE)/scripts/cache-bust \
+		$(STAGING)/cache-bust-site/static/site.css \
+		$(STAGING)/cache-bust-site
+	$(SOURCE)/scripts/cache-bust \
+		$(STAGING)/cache-bust-site/static/site.js \
+		$(STAGING)/cache-bust-site
+	touch $@
+
+STAGING_TARGETS += $(STAGING)/cache-bust-site/index.html
+
+/var/www/site/index.html: $(STAGING)/cache-bust-site/index.html
 	chmod -R a+rX $(STAGING)
 	chcon -R -t httpd_sys_content_t $(STAGING)
 	mkdir -p /var/www/site
-	rsync --acls --xattrs --archive --delete $(STAGING)/site/ /var/www/site
+	rsync --acls --xattrs --archive --delete \
+		$(STAGING)/cache-bust-site/ \
+		/var/www/site
 	touch $@
 
 DEPLOY_TARGETS += /var/www/site/index.html
