@@ -1,8 +1,8 @@
 # Introduction
 
-The guides relevance guides on this site exist to provide self-lead training on the relevance language.
+The relevance guides on this site exist to provide self-lead training on the relevance language.
 
-To follow along with these guides you will need to obtain and utilize either the Fixlet Debugger or QnA.
+To follow along with these guides you will need to obtain and utilize either the Fixlet Debugger for Windows or QnA for other platforms.
 
 ## Fixlet Debugger
 
