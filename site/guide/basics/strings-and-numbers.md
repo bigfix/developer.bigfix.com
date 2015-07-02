@@ -29,11 +29,11 @@ Q: (8+3)*6
 A: 66
 {{/example}}
 
-However, plus and times are not valid operations for integars so this does not work.
+However, plus and times are not valid operations for strings so this does not work.
 
 The other thing we will notice right away is that you can't mix strings and integers:
 {{#example}}
-Q: ("8" + "3") * "6"
+Q: ("8" + "3") * 6
 E: The operator "times" is not defined.
 {{/example}}
 
@@ -46,8 +46,8 @@ E: The operator "plus" is not defined.
 
 The answer is that combining strings is not called, "adding", it's "concatenating" and the operator is, "&"
 {{#example}}
-Q: "6000" & "60"
-A: 600060
+Q: "8" & "3"
+A: 83
 {{/example}}
 
 
