@@ -1,32 +1,57 @@
 # Strings and Numbers
 
-The basic building blocks of the language are numbers, strings and expressions
+The basic building blocks of the relevance language are numbers, strings and the expressions
 that combine them.
 
+The "Q:" is the relevance query that is being run and the, "A:" is the answer to our query. We will discover that queries can be complex and the answers to a query can be of any type, but more on that soon!
+
+## Strings and Integers
+
+Strings are a set of characters (a-z,0-9,!@#$) that are surrounded by quotes. To start, we will write a relevance string that outputs, "hello world"
 {{#example}}
 Q: "hello world"
 A: hello world
 {{/example}}
 
-This example outputs a string of characters.
-
 Strings aren’t the only primitives:
 
+Integers are numbers (0-9) without a decimal place. Integers are not wrapped in quotes. We can write a relevance query whose answer is a number
 {{#example}}
 Q: 6000
 A: 6000
 {{/example}}
 
-This above example demonstrates an integer. You can also do math:
+## Simple Operators
+The normal operators you'd expect to be able to use with numbers work in the Relevance Language. Plus and Times are valid operations for integars so this works.
 
 {{#example}}
 Q: (8+3)*6
 A: 66
 {{/example}}
 
-Primary elements include parenthetical expressions like `(8+3)` above. These
-primary elements can be teased apart as well:
+However, plus and times are not valid operations for integars so this does not work.
 
+The other thing we will notice right away is that you can't mix strings and integers:
+{{#example}}
+Q: ("8" + "3") * "6"
+E: The operator "times" is not defined.
+{{/example}}
+
+Besides, how would you multiply two strings together anyway?! You might be asking, why can't I add strings together?
+
+{{#example}}
+Q: "8" + "3"
+E: The operator "plus" is not defined.
+{{/example}}
+
+The answer is because combining strings isn't adding them, it's concatenating and the operator is, "&"
+{{#example}}
+Q: "6000" & "60"
+A: 600060
+{{/example}}
+
+
+## String Operations
 {{#example}}
 Q: substrings separated by "-" of "an-over-hyphenated-string"
 A: an
