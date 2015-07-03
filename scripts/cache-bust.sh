@@ -10,7 +10,7 @@ ASSET_PATH=$1
 
 # The file name of the file: site.css
 ASSET_FILE=$(basename $1)
-
+  
 # The asset extension: css
 ASSET_EXT="${ASSET_FILE##*.}"
 

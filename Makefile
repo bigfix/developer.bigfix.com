@@ -75,10 +75,11 @@ CACHE_BUST_DEPS := \
 $(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
 	mkdir -p $(STAGING)/cache-bust-site
 	rsync --archive --delete $(STAGING)/site/ $(STAGING)/cache-bust-site
-	$(SOURCE)/scripts/cache-bust \
+	chmod +x $(SOURCE)/scripts/cache-bust.sh
+	sh $(SOURCE)/scripts/cache-bust.sh \
 		$(STAGING)/cache-bust-site/static/site.css \
 		$(STAGING)/cache-bust-site
-	$(SOURCE)/scripts/cache-bust \
+	sh $(SOURCE)/scripts/cache-bust.sh \
 		$(STAGING)/cache-bust-site/static/site.js \
 		$(STAGING)/cache-bust-site
 	touch $@
