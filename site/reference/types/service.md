@@ -36,7 +36,14 @@ No documentation exists.
 
 # runlevel of &lt;service&gt; : string
 
-No documentation exists.
+Returns the list of runlevels for which the service is active.
+
+Note: On RedHat 7, this also lists the targets of systemd services.
+
+{{#example}}
+Q: (it as string, runlevels of it) of services whose (it as string contains "ssh")
+A: "sshd.service" "sshd" "Stopped", multi-user.target
+{{/example}}
 
 # running of &lt;service&gt; : boolean
 

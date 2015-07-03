@@ -1,23 +1,23 @@
 # type: rpc_program
 
-No documentation exists.
+The `rpc_program` type corresponds to the output of the `rpcinfo` command.
 
 # port of &lt;rpc_program&gt; : string
 
-No documentation exists.
+Returns the port of the specified rpc program object.
 
 # program of &lt;rpc_program&gt; : string
 
-No documentation exists.
+Returns the program of the specified rpc program object.
 
 # protocol of &lt;rpc_program&gt; : string
 
-No documentation exists.
+Returns the protocol of the specified rpc program object.
 
 # version of &lt;rpc_program&gt; : string
 
-No documentation exists.
+Returns the version of the specified rpc program object.
 
 # &lt;rpc_program&gt; as string : string
 
-No documentation exists.
+Returns the program, version, protocol, and port of the rpc program object.

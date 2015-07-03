@@ -1295,7 +1295,7 @@ Returns June as an object of type month.
 
 # kernel extension : kernel_extension
 
-No documentation exists.
+Returns all the kernel extensions objects.
 
 # kernel extensions folder : folder
 
@@ -1586,7 +1586,7 @@ This refers to a group implicitly including all users who are logged on through 
 
 # network option : network_option
 
-No documentation exists.
+Returns all network parameter objects.
 
 # network service group : security account
 
@@ -1654,7 +1654,7 @@ Returns October as an object of type month.
 
 # odm : odm
 
-No documentation exists.
+Returns the odm base object.
 
 # oem code page : integer
 
@@ -1937,7 +1937,7 @@ No documentation exists.
 
 # rpc program : rpc_program
 
-No documentation exists.
+Returns a list of the current Remote Procedure Call (RPC) program-to-port mappings on localhost.
 
 # rpm : rpmdatabase
 
