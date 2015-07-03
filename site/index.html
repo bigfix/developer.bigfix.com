@@ -4,7 +4,7 @@
     <button class="button-primary" type="submit">Evaluate</button>
   </form>
 </div>
-<div id="evaluate-answers" class="row"></div>
+<pre><div id="evaluate-answers" class="row"></div></pre>
 <script>
 function getRelevance() {
   return document.getElementById('evaluate-question').value;
@@ -12,7 +12,16 @@ function getRelevance() {
 
 function setResults(results) {
   var element = document.getElementById('evaluate-answers');
-  element.textContent = JSON.stringify(results);
+  element.innerHTML = "Q: " + getRelevance()  + "<br>";
+  
+  if (results.answers.length > 0) {
+	element.innerHTML = element.innerHTML + '<div class = "row evaluatea"><ol><li>' + results.answers.join("</li><li>") + '</li></ol></div>';
+  }
+  if (results.errors.length > 0) {
+	element.innerHTML = element.innerHTML + '<div class = "row evaluatee"><ol><li>' + results.errors.join('</li><li>') + ' <a href="/relevance/guide/">See the Errors guide.</a> </li></ol></div>';
+  }
+  element.innerHTML = element.innerHTML + '<div class="row">T: ' + results.time / 1000 + " ms</div><br>";
+  element.innerHTML = element.innerHTML + '<div class="row">I: ' + results.type + "</div><br>";
 }
 
 function evaluateRelevance() {
