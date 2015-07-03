@@ -14,7 +14,7 @@ echo 127.0.0.1 sandbox.bigfix.com >> /etc/hosts
 # Add node yum repo
 curl -sL https://rpm.nodesource.com/setup | bash -
 
-# Add epel for nginx 
+# Add epel for nginx
 yum install -y epel-release
 
 # Install all the things

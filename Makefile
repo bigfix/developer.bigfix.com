@@ -75,7 +75,6 @@ CACHE_BUST_DEPS := \
 $(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
 	mkdir -p $(STAGING)/cache-bust-site
 	rsync --archive --delete $(STAGING)/site/ $(STAGING)/cache-bust-site
-	chmod +x $(SOURCE)/scripts/cache-bust.sh
 	sh $(SOURCE)/scripts/cache-bust.sh \
 		$(STAGING)/cache-bust-site/static/site.css \
 		$(STAGING)/cache-bust-site
