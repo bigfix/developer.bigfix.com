@@ -293,6 +293,24 @@ h1.type-description {
   display: none;
 }
 
+.evaluatea ol {
+  list-style-type: none;
+  list-style:none;
+    padding-left:0;
+}
+.evaluatea ol li:before {
+  content: "A: ";
+}
+
+.evaluatee ol {
+  list-style-type: none;
+  list-style:none;
+    padding-left:0;
+}
+.evaluatee ol li:before {
+  content: "E: ";
+}
+
 .evaluate textarea {
   width: 100%;
   border: 2px solid #e0e0e0;
