@@ -5,3 +5,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 80, host: 4000
   config.vm.provision "shell", path: "scripts/vagrant-provision.sh"
 end
+ 
