@@ -1789,7 +1789,7 @@ This inspector returns a string containing the dashboard datastore private varia
 
 # process : process
 
-Returns all process objects currently running.
+Returns all process objects currently running. On AIX, returns the name of the executable files spawning the processes.
 
 # processor : processor
 
