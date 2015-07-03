@@ -124,7 +124,7 @@ Returns the peak quota amount of paged pool usage for the specified process.
 
 # selinux context of &lt;process&gt; : string
 
-No documentation exists.
+Returns any security context for the specified process.
 
 # session id of &lt;process&gt; : integer
 
