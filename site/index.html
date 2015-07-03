@@ -12,16 +12,32 @@ function getRelevance() {
 
 function setResults(results) {
   var element = document.getElementById('evaluate-answers');
-  element.innerHTML = "Q: " + getRelevance()  + "<br>";
-  
+  element.innerHTML = '<span class="row">';
+  element.appendChild(document.createTextNode("Q: " + getRelevance()));
+  element.innerHTML = element.innerHTML + "</span><br><br>";
+
   if (results.answers.length > 0) {
-	element.innerHTML = element.innerHTML + '<div class = "row evaluatea"><ol><li>' + results.answers.join("</li><li>") + '</li></ol></div>';
+    element.innerHTML = element.innerHTML + '<div class="row">';
+	results.answers.forEach(
+	   function appendSanitized(string) {
+	   element.appendChild(document.createTextNode("A: " + string));
+	   element.innerHTML = element.innerHTML + "<br>";
+	   }
+	)
+	element.innerHTML = element.innerHTML + ' </div><br>';
   }
+  
   if (results.errors.length > 0) {
-	element.innerHTML = element.innerHTML + '<div class = "row evaluatee"><ol><li>' + results.errors.join('</li><li>') + ' <a href="/relevance/guide/">See the Errors guide.</a> </li></ol></div>';
+    element.innerHTML = element.innerHTML + '<span class="row">';
+	results.errors.forEach(
+	   function appendSanitized(string) {
+	   element.appendChild(document.createTextNode("E: " + string));
+	   }
+	)
+	element.innerHTML = element.innerHTML + ' <a href="/relevance/guide/">See the Errors guide.</a></span><br><br>';
   }
-  element.innerHTML = element.innerHTML + '<div class="row">T: ' + results.time / 1000 + " ms</div><br>";
-  element.innerHTML = element.innerHTML + '<div class="row">I: ' + results.type + "</div><br>";
+  element.innerHTML = element.innerHTML + '<span class="row">T: ' + results.time / 1000 + " ms</span><br>";
+  element.innerHTML = element.innerHTML + '<span class="row">I: ' + results.type + "</span><br>";
 }
 
 function evaluateRelevance() {
