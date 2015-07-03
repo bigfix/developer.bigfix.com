@@ -168,7 +168,7 @@ EVALUATE_DEPS := \
 	systemctl stop relevance-evaluate || true
 	systemctl disable relevance-evaluate || true
 	chmod -R a+rX $(STAGING)
-	mkdir -p /var/www/api
+	mkdir -p /var/www/api/relevance
 	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/relevance/evaluate/ \
 		/var/www/api/relevance/evaluate
