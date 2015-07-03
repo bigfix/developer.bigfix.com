@@ -16,7 +16,7 @@ Returns the name of the setting.Example: names of settings of site "actionsite" 
 
 # sha256 of &lt;setting&gt; : string
 
-No documentation exists.
+Returns the sha256 of the string value of the setting.
 
 # value of &lt;setting&gt; : string
 

@@ -75,10 +75,10 @@ CACHE_BUST_DEPS := \
 $(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
 	mkdir -p $(STAGING)/cache-bust-site
 	rsync --archive --delete $(STAGING)/site/ $(STAGING)/cache-bust-site
-	$(SOURCE)/scripts/cache-bust \
+	sh $(SOURCE)/scripts/cache-bust.sh \
 		$(STAGING)/cache-bust-site/static/site.css \
 		$(STAGING)/cache-bust-site
-	$(SOURCE)/scripts/cache-bust \
+	sh $(SOURCE)/scripts/cache-bust.sh \
 		$(STAGING)/cache-bust-site/static/site.js \
 		$(STAGING)/cache-bust-site
 	touch $@
@@ -168,7 +168,7 @@ EVALUATE_DEPS := \
 	systemctl stop relevance-evaluate || true
 	systemctl disable relevance-evaluate || true
 	chmod -R a+rX $(STAGING)
-	mkdir -p /var/www/api
+	mkdir -p /var/www/api/relevance
 	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/relevance/evaluate/ \
 		/var/www/api/relevance/evaluate

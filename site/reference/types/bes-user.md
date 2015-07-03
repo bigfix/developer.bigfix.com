@@ -24,15 +24,15 @@ No documentation exists.
 
 # can create actions flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to create actions on computers.
 
 # can lock flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to lock computers.
 
 # can send multiple refresh flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to send refreshes to computers.
 
 # creation time of &lt;bes user&gt; : time
 
@@ -112,27 +112,27 @@ This inspector returns the BES site object for the given (non-master) user. If t
 
 # restartandshutdown actionscript privilege allowboth flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to restart or shutdown computers in action script.
 
 # restartandshutdown actionscript privilege allowrestartonly flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to restart computers in action script.
 
 # restartandshutdown actionscript privilege none flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user does not have the privilege to restart or shutdown computers in action script.
 
 # restartandshutdown postaction privilege allowboth flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to restart or shutdown computers using post action settings.
 
 # restartandshutdown postaction privilege allowrestartonly flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to restart computers using post action settings.
 
 # restartandshutdown postaction privilege none flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user does not have the privilege to restart or shutdown computers using post action settings.
 
 # role of &lt;bes user&gt; : bes role
 

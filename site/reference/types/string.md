@@ -188,7 +188,7 @@ Returns a list of the objects that can be cast into the type specified by &lt;st
 
 # catalog &lt;string&gt; : message_catalog
 
-No documentation exists.
+Returns the named catalog.
 
 # character &lt;integer&gt; of &lt;string&gt; : substring
 
@@ -822,7 +822,7 @@ No documentation exists.
 
 # network option &lt;string&gt; : network_option
 
-No documentation exists.
+Returns the network parameter object corresponding to the specified string.
 
 # network share &lt;string&gt; : network share
 
