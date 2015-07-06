@@ -299,3 +299,23 @@ h1.type-description {
   border: 2px solid #e0e0e0;
   outline: 0;
 }
+
+#relevance-guide-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#relevance-guide-nav ul ul {
+  font-size: 90%;
+  margin-bottom: 1rem;
+}
+
+#relevance-guide-nav ul ul li {
+  padding-left: 1rem;
+  margin-top: .5rem;
+}
+
+#relevance-guide-content h1:first-child {
+  margin-top: 0;
+}
