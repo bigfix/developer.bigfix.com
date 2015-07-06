@@ -16,6 +16,12 @@ code {
   white-space: nowrap;
 }
 
+pre > code {
+  display: block;
+  padding: .75rem 1rem;
+  margin: 0;
+}
+
 a {
   color: #4178BE;
   text-decoration: none;
@@ -199,6 +205,7 @@ input[type="button"].button-primary:hover {
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
+  padding-bottom: .25rem;
 }
 
 .footnote-body {
@@ -293,8 +300,46 @@ h1.type-description {
   display: none;
 }
 
+.evaluatea ol {
+  list-style-type: none;
+  list-style:none;
+    padding-left:0;
+}
+.evaluatea ol li:before {
+  content: "A: ";
+}
+
+.evaluatee ol {
+  list-style-type: none;
+  list-style:none;
+    padding-left:0;
+}
+.evaluatee ol li:before {
+  content: "E: ";
+}
+
 .evaluate textarea {
   width: 100%;
   border: 2px solid #e0e0e0;
   outline: 0;
+}
+
+#relevance-guide-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#relevance-guide-nav ul ul {
+  font-size: 90%;
+  margin-bottom: 1rem;
+}
+
+#relevance-guide-nav ul ul li {
+  padding-left: 1rem;
+  margin-top: .5rem;
+}
+
+#relevance-guide-content h1:first-child {
+  margin-top: 0;
 }

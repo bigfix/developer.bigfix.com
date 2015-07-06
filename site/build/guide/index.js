@@ -4,19 +4,15 @@ var fs = require('fs'),
   renderText = require('../lib/renderText'),
   yaml = require('js-yaml');
 
-function buildPages(templates, siteDir, outDir) {
+function getGuideContent(templates, siteDir, outDir) {
   var guideDir = path.join(siteDir, 'guide');
-
-  mkdirp.sync(path.join(outDir, 'site', 'relevance', 'guide'));
-
-  var guide = {};
+  var guideContent = {};
 
   fs.readdirSync(guideDir).forEach(function(folder) {
     var sourceFolder = path.join(guideDir, folder);
     var destFolder = path.join(outDir, 'site', 'relevance', 'guide', folder);
 
-    guide[folder] = {};
-    mkdirp.sync(destFolder);
+    guideContent[folder] = {};
 
     fs.readdirSync(sourceFolder).forEach(function(file) {
       var sourceFile = path.join(sourceFolder, file);
@@ -24,55 +20,82 @@ function buildPages(templates, siteDir, outDir) {
       var destFile = path.join(destFolder, basename + '.html');
 
       var data = renderText(fs.readFileSync(sourceFile).toString(), templates);
-      fs.writeFileSync(destFile, templates.page.render(data));
 
-      guide[folder][basename] = {
+      guideContent[folder][basename] = {
         title: data.title,
-        href: '/relevance/guide/' + folder + '/' + basename + '.html'
+        content: data.content,
+        href: '/relevance/guide/' + folder + '/' + basename + '.html',
+        destFile: destFile
       };
     });
   });
 
-  return guide;
+  return guideContent;
 }
 
-function buildGuide(templates, siteDir, outDir) {
-  var guide = buildPages(templates, siteDir, outDir);
+function getGuideNavigation(siteDir, guideContent) {
   var organization = yaml.safeLoad(
     fs.readFileSync(path.join(siteDir, 'data', 'guide.yml')).toString());
 
-  var data = {
+  var guideNavigation = {
     sections: []
   };
 
   organization.forEach(function(section) {
     var folder = section.title.toLowerCase();
 
-    if (!guide[folder]) {
+    if (!guideContent[folder]) {
       throw new Error('Section ' + section + ' in guide.yml does not exist');
     }
 
     var docs = [];
 
     section.docs.forEach(function(page) {
-      if (!guide[folder][page]) {
+      var pageContent = guideContent[folder][page];
+
+      if (!pageContent) {
         throw new Error('Page ' + page + ' in guide.yml does not exist');
       }
 
-      docs.push(guide[folder][page]);
+      docs.push({
+        title: pageContent.title,
+        href: pageContent.href
+      });
     });
 
-    data.sections.push({ title: section.title, docs: docs});
+    guideNavigation.sections.push({ title: section.title, docs: docs});
   });
 
-  var index = {
-    title: 'Guide',
-    content: templates.guide.render(data)
-  };
+  return guideNavigation;
+}
 
-  fs.writeFileSync(
-    path.join(outDir, 'site', 'relevance', 'guide', 'index.html'),
-    templates.page.render(index));
+function buildGuide(templates, siteDir, outDir) {
+  var guideContent = getGuideContent(templates, siteDir, outDir);
+  var guideNavigation = getGuideNavigation(siteDir, guideContent);
+
+  mkdirp.sync(path.join(outDir, 'site', 'relevance', 'guide'));
+
+  Object.keys(guideContent).forEach(function(folder) {
+    var docs = guideContent[folder];
+
+    mkdirp.sync(path.join(outDir, 'site', 'relevance', 'guide', folder));
+
+    Object.keys(docs).forEach(function(name) {
+      var doc = docs[name];
+
+      var content = templates.guide.render({
+        nav: guideNavigation,
+        content: doc.content
+      });
+
+      var page = templates.page.render({
+        title: doc.title,
+        content: content
+      });
+
+      fs.writeFileSync(doc.destFile, page);
+    });
+  });
 }
 
 module.exports = buildGuide;

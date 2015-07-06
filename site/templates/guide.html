@@ -1,10 +1,18 @@
-<h1>Guide</h1>
-
-{{#sections}}
 <div class="row">
-  <h2>{{title}}</h2>
-  <ul>
-    {{#docs}}<li><a href="{{href}}">{{title}}</a></li>{{/docs}}
-  </ul>
+  <div id="relevance-guide-nav" class="three columns">
+    {{#nav}}
+    <ul>
+    {{#sections}}
+    <li>{{title}}
+      <ul>
+        {{#docs}}<li><a href="{{href}}">{{title}}</a></li>{{/docs}}
+      </ul>
+    </li>
+    {{/sections}}
+    </ul>
+    {{/nav}}
+  </div>
+  <div id="relevance-guide-content" class="nine columns">
+    {{{content}}}
+  </div>
 </div>
-{{/sections}}
