@@ -132,6 +132,7 @@ input[type="button"].button-primary:hover {
 .example {
   background-color: #f8f8f8;
   font-family: monospace;
+  word-wrap: break-word;
 }
 
 .example ul {
@@ -153,6 +154,10 @@ input[type="button"].button-primary:hover {
 
 .hljs-string {
   color: #008571;
+}
+
+.hljs-number {
+  color: #734098;
 }
 
 .reference-category {
