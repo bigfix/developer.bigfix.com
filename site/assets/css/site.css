@@ -1,10 +1,12 @@
 body {
   font-family: HelveticaNeue, Helvetica, Arial, Roboto, sans-serif;
   font-size: 16px;
+  color: #323232;
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: 400;
+  margin-top: 3rem;
 }
 
 code {
@@ -29,6 +31,10 @@ a {
 
 a:hover, a:active {
   text-decoration: underline;
+}
+
+p {
+  line-height: 24px;
 }
 
 .button,
@@ -119,9 +125,14 @@ input[type="button"].button-primary:hover {
   margin-top: 2rem;
 }
 
+#main h1:first-child {
+  margin-top: 0;
+}
+
 .example {
   background-color: #f8f8f8;
   font-family: monospace;
+  word-wrap: break-word;
 }
 
 .example ul {
@@ -145,6 +156,10 @@ input[type="button"].button-primary:hover {
   color: #008571;
 }
 
+.hljs-number {
+  color: #734098;
+}
+
 .reference-category {
   margin-top: 3rem;
 }
@@ -158,6 +173,7 @@ input[type="button"].button-primary:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  line-height: 24px;
 }
 
 .reference-types li {
