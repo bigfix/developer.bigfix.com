@@ -40,9 +40,9 @@ function guessGitHubHtmlId(key, githubIDs) {
  */
 function getSource(file, baseDir, key, githubIDs) {
   var repo = 'https://github.com/bigfix/developer.bigfix.com';
-  var referenceDir = '/tree/master/site/pages/relevance/_reference/';
+  var docsDir = '/tree/master/site/pages/relevance/_reference/docs/';
 
-  return repo + referenceDir + path.relative(baseDir, file) +
+  return repo + docsDir + path.relative(baseDir, file) +
     '#' + guessGitHubHtmlId(key, githubIDs);
 }
 
