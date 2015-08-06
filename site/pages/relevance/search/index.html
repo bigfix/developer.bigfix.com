@@ -1,0 +1,213 @@
+---
+title: Inspector Search
+---
+
+<div class="row">
+  <h1>Search</h1>
+  <div class="twelve columns">
+    <form id="search-form" onsubmit="return false;">
+      <div id="search-box">
+        <input id="search-input" type="text" placeholder="Type to search for relevance properties">
+      </div>
+      <span id="search-status"></span>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div id="search-results" class="twelve columns"></div>
+</div>
+<div class="row">
+  <button id="search-prev" class="search-hidden button-primary u-pull-left">Previous Page</button>
+  <button id="search-next" class="search-hidden button-primary u-pull-right">Next Page</button>
+</div>
+<script>
+(function() {
+
+var state = {
+  query: '',
+  page: 1
+};
+
+function getSearchQuery() {
+  var query = 'query=' + encodeURIComponent(state.query);
+
+  if (state.page !== 1) {
+    query += '&page=' + encodeURIComponent(state.page);
+  }
+
+  return query;
+}
+
+function parseSearchQuery(query) {
+  var parts = {};
+
+  query.split('&').forEach(function(part) {
+    var nameValue = part.split('=');
+    if (nameValue.length === 2) {
+      parts[nameValue[0]] = nameValue[1];
+    }
+  });
+
+  return {
+    query: parts.query || '',
+    page: parts.page ? parseInt(parts.page, 10) : 1,
+  };
+}
+
+function pushState() {
+  window.history.pushState(state, '', '?' + getSearchQuery());
+}
+
+function replaceState() {
+  window.history.replaceState(state, '', '?' + getSearchQuery());
+}
+
+function searchInput() {
+  return document.getElementById('search-input');
+}
+
+function nextPageButton() {
+  return document.getElementById('search-next');
+}
+
+function prevPageButton() {
+  return document.getElementById('search-prev');
+}
+
+function setSearchStatus(text) {
+  document.getElementById('search-status').textContent = text;
+}
+
+function setSearchResults(page) {
+  document.getElementById('search-results').innerHTML = page.join('\n');
+}
+
+function search(options) {
+  if (state.query.length === 0) {
+    setSearchStatus('');
+    setSearchResults([]);
+    prevPageButton().classList.add('search-hidden');
+    nextPageButton().classList.add('search-hidden');
+    return;
+  }
+
+  var requestQuery = getSearchQuery();
+  var requestURL = '/api/relevance/search?' + requestQuery;
+
+  requestJSON('GET', requestURL, function(err, results) {
+    if (requestQuery !== getSearchQuery()) {
+      // They typed something else before this returned.
+      return;
+    }
+
+    if (err) {
+      setSearchStatus(err.toString());
+      setSearchResults([]);
+      prevPageButton().classList.add('search-hidden');
+      nextPageButton().classList.add('search-hidden');
+      return;
+    }
+
+    if (results.page.length === 0) {
+      setSearchStatus('No results found.');
+      setSearchResults([]);
+      prevPageButton().classList.add('search-hidden');
+      nextPageButton().classList.add('search-hidden');
+      return;
+    }
+
+    setSearchStatus('Showing results ' + (results.offset + 1) + ' to ' +
+                    (results.offset + results.page.length) + ' of ' +
+                    results.total + '.');
+
+    if (results.offset !== 0) {
+      prevPageButton().classList.remove('search-hidden');
+    } else {
+      prevPageButton().classList.add('search-hidden');
+    }
+
+    if (results.offset + results.page.length !== results.total) {
+      nextPageButton().classList.remove('search-hidden');
+    } else {
+      nextPageButton().classList.add('search-hidden');
+    }
+
+    setSearchResults(results.page);
+
+    if (options && options.scrollTop) {
+      window.scrollTo(0, 0);
+    }
+  });
+}
+
+var timer = null;
+
+function stopTimer() {
+  if (timer) {
+    clearTimeout(timer);
+    timer = null;
+  }
+}
+
+function onInput() {
+  stopTimer();
+  timer = setTimeout(onInputTimeout, 200);
+}
+
+function onInputTimeout() {
+  stopTimer();
+  state.query = searchInput().value;
+
+  if (state.page !== 1) {
+    state.page = 1;
+    pushState();
+  } else {
+    replaceState();
+  }
+
+  search();
+}
+
+function onNextPage() {
+  stopTimer();
+  state.page++;
+  pushState();
+  search({scrollTop: true});
+}
+
+function onPrevPage() {
+  stopTimer();
+  state.page--;
+  pushState();
+  search({scrollTop: true});
+}
+
+function onPopState(event) {
+  if (event && event.state) {
+    stopTimer();
+    state = event.state;
+    searchInput().value = state.query;
+    search();
+  }
+}
+
+if (history.state) {
+  state = history.state;
+  searchInput().value = state.query;
+  search();
+} else if (window.location.search) {
+  state = parseSearchQuery(window.location.search.substr(1));
+  searchInput().value = state.query;
+  search();
+}
+
+searchInput().oninput = onInput;
+searchInput().focus();
+
+nextPageButton().onclick = onNextPage;
+prevPageButton().onclick = onPrevPage;
+
+window.onpopstate = onPopState;
+
+})();
+</script>

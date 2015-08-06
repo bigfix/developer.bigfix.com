@@ -1,70 +1,68 @@
-var buildGuide = require('./guide'),
-  buildReference = require('./reference'),
-  buildSearch = require('./search'),
-  fs = require('fs'),
-  Hogan = require('hogan.js'),
+var fs = require('fs'),
   path = require('path'),
-  rimraf = require('rimraf');
+  rimraf = require('rimraf'),
+  mkdirp = require('mkdirp'),
+  readDefaults = require('./lib/defaults'),
+  createRenderer = require('./lib/renderer'),
+  createPageWriter = require('./lib/writer'),
+  renderRelevanceReference = require('./relevance-reference');
 
-function compileTemplate(entryPath) {
-  try {
-    return Hogan.compile(fs.readFileSync(entryPath).toString());
-  } catch (err) {
-    throw new Error('Failed to compile ' + entryPath + ': ' + err.toString());
+/**
+ * Recursively render every pages.
+ */
+function renderPages(pagesDir, renderer, writer) {
+  var pages = {};
+
+  function renderDirectory(directory) {
+    console.log(path.relative(path.dirname(pagesDir), directory));
+
+    var contents = fs.readdirSync(directory);
+    var defaults = readDefaults(pagesDir, directory);
+
+    contents.forEach(function(item) {
+      if (item[0] === '_') {
+        return;
+      }
+
+      var sourcePath = path.join(directory, item);
+
+      if (fs.statSync(sourcePath).isDirectory()) {
+        renderDirectory(sourcePath, defaults);
+      } else if (renderer.canRenderFile(sourcePath)) {
+
+        var outPath = path.relative(
+          pagesDir,
+          path.join(directory,
+                    path.basename(item, path.extname(item)) + '.html'));
+
+        writer(outPath, renderer.renderFile(sourcePath, defaults));
+      }
+    });
   }
-}
 
-function compileTemplates(directory) {
-  var templates = {};
-
-  fs.readdirSync(directory).forEach(function(name) {
-    var entryPath = path.join(directory, name);
-
-    var stats = fs.statSync(entryPath);
-    if (stats.isFile() && name.indexOf('.html') !== -1) {
-      templates[path.basename(name, '.html')] = compileTemplate(entryPath);
-    } else if (stats.isDirectory()) {
-      templates[path.basename(name)] = compileTemplates(entryPath);
-    }
-  });
-
-  return templates;
-}
-
-function buildIndex(templates, siteDir, outDir) {
-  var indexPage = fs.readFileSync(path.join(siteDir, 'index.html')).toString();
-
-  var page = {
-    title: 'Home',
-    content: indexPage
-  };
-
-  fs.writeFileSync(path.join(outDir, 'site', 'index.html'),
-                   templates.page.render(page));
+  renderDirectory(pagesDir);
+  return pages;
 }
 
 function main() {
   if (process.argv.length !== 4) {
-    console.error('usage: build <siteDir> <outDir>');
+    console.error('usage: build <siteDir> <stagingDir>');
     return process.exit(1);
   }
 
   var siteDir = process.argv[2];
-  var outDir = process.argv[3];
+  var stagingDir = process.argv[3];
 
-  rimraf.sync(path.join(outDir, 'site', 'guide'));
-  rimraf.sync(path.join(outDir, 'site', 'reference'));
-  rimraf.sync(path.join(outDir, 'site', 'search'));
+  var renderer = createRenderer(path.join(siteDir, 'templates'));
+  var writer = createPageWriter(path.join(stagingDir, 'site'));
 
-  var language =
-    JSON.parse(fs.readFileSync(path.join(siteDir, 'data', 'language.json')));
+  mkdirp.sync(stagingDir);
 
-  var templates = compileTemplates(path.join(siteDir, 'templates'));
+  renderPages(path.join(siteDir, 'pages'), renderer, writer);
 
-  buildGuide(templates, siteDir, outDir);
-  buildReference(language, templates, siteDir, outDir);
-  buildSearch(templates, siteDir, outDir);
-  buildIndex(templates, siteDir, outDir);
+  var relevanceDocs = renderRelevanceReference(siteDir, renderer, writer);
+  fs.writeFileSync(path.join(stagingDir, 'relevance-docs.json'),
+                   JSON.stringify(relevanceDocs));
 }
 
 if (require.main === module) {

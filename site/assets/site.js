@@ -43,7 +43,7 @@ function requestJSON(method, url, body, callback) {
  * Expand all entries on the page.
  */
 function expandAll() {
-  var entries = document.querySelectorAll('.entry');
+  var entries = document.querySelectorAll('.relevance-property');
 
   for (var i = 0; i < entries.length; i++) {
     var element = entries[i].firstElementChild.firstElementChild;
@@ -58,7 +58,7 @@ function expandAll() {
  * Collapse all entries on the page.
  */
 function collapseAll() {
-  var entries = document.querySelectorAll('.entry');
+  var entries = document.querySelectorAll('.relevance-property');
 
   for (var i = 0; i < entries.length; i++) {
     var element = entries[i].firstElementChild.firstElementChild;
@@ -83,7 +83,7 @@ function toggleEntry(element) {
     classList.add('fa-plus-circle');
   }
 
-  element.parentElement.nextElementSibling.classList.toggle('entry-hidden');
+  element.parentElement.nextElementSibling.classList.toggle('hidden');
 }
 
 /**

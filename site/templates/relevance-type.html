@@ -1,0 +1,73 @@
+<div class="row relevance-type">
+  <h1 class="relevance-type-description">{{name}}</h1>
+  {{description | safe}}
+
+  <div class="relevance-type-contents">
+    {% if creation %}<a href="#creation">Creation</a>{% endif %}
+    {% if properties %}<a href="#properties">Properties</a>{% endif %}
+    {% if casts %}<a href="#casts">Casts</a>{% endif %}
+    {% if operators %}<a href="#operators">Operators</a>{% endif %}
+  </div>
+
+  {% if deprecated %}
+  <div class="deprecated">
+    <b>Deprecated:</b> This type was removed in version {{deprecated}}.
+  </div>
+  {% endif %}
+
+  <div class="footnotes">
+    {% if parent %}
+    <div class="footnote">
+      <h5>Parent</h5>
+      <span class="footnote-body">{{parent | safe}}</span>
+    </div>
+    {% endif %}
+
+    <div class="footnote">
+        <h5>Support</h5>
+        <table class="relevance-property-availability footnote-body">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Platforms</th>
+            </tr>
+          </thead>
+          {% for version, platforms in availability %}
+          <tbody>
+            <tr>
+              <td>{{version}}</td>
+              <td>{{platforms | join(', ')}}</td>
+            </tr>
+          </tbody>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="relevance-type-expand-buttons u-cf">
+    <button class="button-primary" onclick="expandAll()">Expand all</button>
+    <button class="button-primary" onclick="collapseAll()">Collapse all</button>
+  </div>
+
+  {% if creation %}
+  <h2 id="creation">Creation</h2>
+  {{creation | safe}}
+  {% endif %}
+
+  {% if properties %}
+  <h2 id="properties">Properties</h2>
+  {{properties | safe}}
+  {% endif %}
+
+  {% if casts %}
+  <h2 id="casts">Casts</h2>
+  {{casts | safe}}
+  {% endif %}
+
+  {% if operators %}
+  <h2 id="operators">Operators</h2>
+  {{operators | safe}}
+  {% endif %}
+  </div>
+</div>

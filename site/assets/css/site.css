@@ -6,7 +6,19 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-weight: 400;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 31.25px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 code {
@@ -88,58 +100,92 @@ input[type="button"].button-primary:hover {
   background-color: #5596E6;
   border-color: #5596E6; }
 
-#header {
-  background-color: #2d3737;
+header.nav-header {
+  height: 64px;
+
+  font-size: 20px;
+  line-height: 64px;
+
+  background-color: #2e2e2e;
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
-#header a {
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-decoration: none;
-}
-
-#header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#header li {
-  display: inline-block;
-  margin-bottom: 0;
-  margin-right: 4rem;
-  position: relative;
-}
-
-#header:after {
+header.nav-header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-#main {
-  margin-top: 2rem;
+header.nav-header a {
+  height: 64px;
+  box-sizing: border-box;
+
+  color: #fff;
+  text-decoration: none;
 }
 
-#main h1:first-child {
+nav.nav-header-links {
+  float: right;
+}
+
+nav.nav-header-links a {
+  display: block;
+  float: left;
+  margin: 0 .5rem;
+  padding: 0 1rem;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .61;
+}
+
+nav.nav-header-links a:hover {
+  opacity: 1.0;
+}
+
+nav.nav-relevance a.nav-relevance,
+nav.nav-action-script a.nav-action-script,
+nav.nav-rest-api a.nav-rest-api,
+nav.nav-client-compliance a.nav-client-compliance {
+  border-bottom: 3px solid #6EEDD8;
+  opacity: 1.0;
+}
+
+.main {
+  margin-top: 1rem;
+}
+
+.side-nav-group {
+  margin-bottom: 2rem;
+}
+
+.side-nav-header,
+.side-nav-item {
+  display: block;
+  padding: 4px 0;
+}
+
+.side-nav-header {
+  margin-bottom: .5rem;
+  color: #5a5a5a;
+}
+
+.article h1:first-child {
   margin-top: 0;
 }
 
-.example {
+.qna {
   background-color: #f8f8f8;
   font-family: monospace;
   word-wrap: break-word;
 }
 
-.example ul {
+.qna ul {
   padding: .5rem 1rem .5rem 1rem;
 }
 
-.example li {
+.qna li {
   font-size: 90%;
   list-style: none;
   margin: 0;
@@ -160,102 +206,52 @@ input[type="button"].button-primary:hover {
   color: #734098;
 }
 
-.reference-category {
-  margin-top: 3rem;
+.relevance-reference-category {
+  margin-top: 2rem;
 }
 
-.reference-category h2 {
+.relevance-reference-category h2 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.reference-types {
-  list-style: none;
+.relevance-reference-types {
   margin: 0;
   padding: 0;
   line-height: 24px;
+
+  list-style: none;
 }
 
-.reference-types li {
+.relevance-reference-types li {
   display: inline;
 }
 
-.reference-types li:after {
+.relevance-reference-types li:after {
   content: ", ";
 }
 
-.reference-types li:last-child:after {
+.relevance-reference-types li:last-child:after {
   content: "";
 }
 
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar li {
-  list-style: none;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-}
-
-#description {
-  margin-top: 0;
-}
-
-.footnotes {
-  background-color: #f8f8f8;
-  padding: .5rem 1rem .5rem 1rem;
-  font-size: 90%;
-}
-
-.footnote {
-  display: inline-block;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-right: 2rem;
-}
-
-.footnote h5 {
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin: 0;
-  padding-bottom: .25rem;
-}
-
-.footnote-body {
-  margin: 0;
-  display: table;
-}
-
-table.support td {
-  border: 0;
-  padding: 0 1rem .25rem 0;
-  vertical-align: top;
-}
-
-h1.type-description {
-  margin-top: 0;
-}
-
-.entry {
+.relevance-property {
   margin-bottom: 1rem;
 }
 
-.entry p {
+.relevance-property p {
   margin-top: 0;
 }
 
-.entry-heading {
+.relevance-property-header {
   background-color: #f2f8ff;
 }
 
-.entry-key {
+.relevance-property-key {
   padding: .75rem .75rem .75rem 0;
 }
 
-.entry-expand {
+.relevance-property-expand {
   cursor: pointer;
   display: inline-block;
   height: 100%;
@@ -263,22 +259,22 @@ h1.type-description {
   width: 1.5em;
 }
 
-.entry-hidden {
+.hidden {
   display: none;
 }
 
-.entry-body {
+.relevance-property-body {
   padding: .75rem;
   border: 1px solid #f1f1f1;
   border-top: 0;
 }
 
-.entry-body td, .entry-body th {
+.relevance-property-body td, .relevance-property-body th {
   border: 0;
   padding: .5rem;
 }
 
-.expand-buttons button {
+.relevance-type-expand-buttons button {
   margin: 1rem 1rem 0 0;
 }
 
@@ -352,7 +348,6 @@ h1.type-description {
 }
 
 #relevance-guide-nav ul ul li {
-  padding-left: 1rem;
   margin-top: .5rem;
 }
 

@@ -50,14 +50,11 @@ $(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/**/*)
 
 PAGES_DEPS := \
 	$(STAGING)/build/package.json \
-	$(SOURCE)/site/index.html \
 	$(wildcard $(SOURCE)/site/data/*) \
-	$(wildcard $(SOURCE)/site/guide/**/*) \
-	$(wildcard $(SOURCE)/site/reference/**/*) \
-	$(wildcard $(SOURCE)/site/search/*) \
+	$(shell find $(SOURCE)/site/pages -type f) \
 	$(wildcard $(SOURCE)/site/templates/*)
 
-$(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
+$(STAGING)/site/index.html: $(PAGES_DEPS)
 	node $(STAGING)/build $(SOURCE)/site $(STAGING)
 
 STAGING_TARGETS += $(STAGING)/site/index.html
@@ -100,11 +97,11 @@ DEPLOY_TARGETS += /var/www/site/index.html
 # /api/relevance/search
 ################################################################################
 
-$(STAGING)/api/relevance/search/language.json: $(SOURCE)/site/data/language.json
+$(STAGING)/api/relevance/search/language.json: $(SOURCE)/site/data/relevance-language.json
 	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 
-$(STAGING)/api/relevance/search/docs.json: $(STAGING)/docs.json
+$(STAGING)/api/relevance/search/docs.json: $(STAGING)/relevance-docs.json
 	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 

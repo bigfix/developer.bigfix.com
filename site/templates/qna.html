@@ -1,0 +1,7 @@
+<div class="qna">
+  <ul>
+    <li class="qna-q">Q: {{question | safe}}</li>
+    {% for answer in answers %}<li class="qna-a">A: {{answer}}</li>{% endfor %}
+    {% for error in errors %}<li class="qna-e">E: {{error}}</li>{% endfor %}
+  </ul>
+</div>

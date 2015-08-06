@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{title}} | BigFix Developer</title>
-    <meta name="description" content="Learn how to customize your BigFix deployment.">
-    <link rel="stylesheet" href="/static/site.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to customize your IBM BigFix deployment.">
+    <link rel="stylesheet" href="/static/site.css">
     <script src="/static/site.js"></script>
+    <title>{{title}} | BigFix Developer</title>
   </head>
   <body>
-    <div id="header">
+    <header class="nav-header">
       <div class="container">
-        <nav class="row">
+        <div class="row">
           <div class="three columns">
             <a href="/">BigFix <strong>Developer</strong></a>
           </div>
           <div class="nine columns">
-            <ul>
-              <li><a href="/relevance/guide/basics/introduction.html">Guide</a></li>
-              <li><a href="/relevance/reference/">Reference</a></li>
-              <li><a href="/relevance/search/">Search</a></li>
-            </ul>
+            <nav class="nav-header-links nav-{{section}}">
+              <a class="nav-relevance" href="/relevance/">Relevance</a>
+              <a class="nav-action-script" href="/action-script/">Action Script</a>
+              <a class="nav-rest-api" href="/rest-api/">REST-API</a>
+              <a class="nav-client-compliance" href="/client-compliance/">Client Compliance</a>
+            </nav>
           </div>
-        </nav>
+        </div>
       </div>
-    </div>
-    <div id="main" class="container">
-      {{{content}}}
-    </div>
+    </header>
+    <main class="main container">
+      {% block content %}
+      {{content | safe}}
+      {% endblock %}
+    </main>
   </body>
-  <script>toggleOnLoad();</script>
 </html>

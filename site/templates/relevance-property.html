@@ -1,0 +1,51 @@
+<div id="{{id}}" class="row relevance-property">
+  <div class="relevance-property-header">
+    <div class="relevance-property-expand" onclick="toggleEntry(this)">
+      <i class="fa fa-plus-circle"></i>
+    </div>
+    <span class="relevance-property-key">{{key | safe}}</span>
+  </div>
+  <div class="relevance-property-body hidden">
+    {{body | safe}}
+
+    {% if deprecated %}
+    <div class="relevance-property-deprecated">
+      <b>Deprecated:</b> This property was removed in version {{deprecated}}.
+    </div>
+    {% endif %}
+
+    <div class="relevance-property-footnotes">
+      {% if plural %}
+      <div class="footnote">
+        <h5>Plural</h5>
+        <span class="footnote-body">{{plural}}</span>
+      </div>
+      {% endif %}
+
+      <div class="footnote">
+        <h5>Support</h5>
+        <table class="relevance-property-availability footnote-body">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Platforms</th>
+            </tr>
+          </thead>
+          {% for version, platforms in availability %}
+          <tbody>
+            <tr>
+              <td>{{version}}</td>
+              <td>{{platforms | join(', ')}}</td>
+            </tr>
+          </tbody>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+
+    <div class="relevance-property-links">
+      <a href="{{reference}}#{{id}}">permalink</a>
+      <a href="{{source}}">source</a>
+    </div>
+  </div>
+</div>

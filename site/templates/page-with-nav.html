@@ -1,0 +1,21 @@
+{% extends "page.html" %}
+
+{% block content %}
+  <div class="three columns">
+    <nav class="side-nav">
+      {% for name, links in nav %}
+      <div class="side-nav-group">
+        <span class="side-nav-header">{{name}}</span>
+        {% for link in links %}
+        <a class="side-nav-item" href="{{link.href}}">{{link.name}}</a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="nine columns">
+    <div class="article">
+      {{content | safe}}
+    </div>
+  </div>
+{% endblock %}
