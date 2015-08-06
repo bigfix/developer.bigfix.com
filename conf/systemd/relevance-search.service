@@ -1,0 +1,18 @@
+[Unit]
+Description=relevance search service
+After=network.target
+
+[Service]
+User=nobody
+Group=nobody
+Environment= \
+  PORT=5001 \
+  NODE_ENV=production \
+  LANGUAGE_FILE=/var/www/api/relevance/search/language.json \
+  DOCS_FILE=/var/www/api/relevance/search/docs.json
+WorkingDirectory=/var/www/api/relevance/search
+ExecStart=/usr/bin/node /var/www/api/relevance/search
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -7,7 +7,7 @@ var associate = require('./associate'),
   yaml = require('js-yaml');
 
 function linkify(type) {
-  return '/reference/types/' + type.replace(/ /g, '-') + '.html';
+  return '/relevance/reference/' + type.replace(/ /g, '-') + '.html';
 }
 
 function renderIndex(language, templates, siteDir) {
@@ -71,10 +71,12 @@ function buildReference(language, templates, siteDir, outDir) {
 
   console.log('writing files');
 
-  mkdirp.sync(path.join(outDir, 'site', 'reference'));
-  fs.writeFileSync(path.join(outDir, 'site', 'reference', 'index.html'), index);
+  mkdirp.sync(path.join(outDir, 'site', 'relevance', 'reference'));
 
-  mkdirp.sync(path.join(outDir, 'site', 'reference', 'types'));
+  fs.writeFileSync(
+    path.join(outDir, 'site', 'relevance', 'reference', 'index.html'), index);
+
+  mkdirp.sync(path.join(outDir, 'site', 'relevance', 'reference'));
   rendered.pages.forEach(function(page) {
     fs.writeFileSync(path.join(outDir, 'site', page.href), page.content);
   });

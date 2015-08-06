@@ -56,12 +56,12 @@ function makeAvailability(value) {
 }
 
 function makeHref(type) {
-  return '/reference/types/' + type.replace(/ /g, '-') + '.html';
+  return '/relevance/reference/' + type.replace(/ /g, '-') + '.html';
 }
 
 function makeContribute(source) {
-  var base =
-    'https://github.com/briangreenery/relevance.io/tree/master/site/reference/';
+  var repo = 'https://github.com/bigfix/developer.bigfix.com';
+  var base = repo + '/tree/master/site/reference/';
 
   return base + source;
 }
@@ -226,8 +226,8 @@ function render(language, docs, associations, templates) {
       content: content
     };
 
-    var href =
-      path.join('reference', 'types', type.name.replace(/ /g, '-') + '.html');
+    var pageName = type.name.replace(/ /g, '-') + '.html';
+    var href = path.join('relevance', 'reference', pageName);
 
     pages.push({ href: href, content: templates.page.render(data) });
   });

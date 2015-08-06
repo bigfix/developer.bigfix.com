@@ -4,7 +4,7 @@
     <button class="button-primary" type="submit">Evaluate</button>
   </form>
 </div>
-<div id="evaluate-answers" class="row"></div>
+<pre><div id="evaluate-answers" class="row"></div></pre>
 <script>
 function getRelevance() {
   return document.getElementById('evaluate-question').value;
@@ -12,13 +12,38 @@ function getRelevance() {
 
 function setResults(results) {
   var element = document.getElementById('evaluate-answers');
-  element.textContent = JSON.stringify(results);
+  element.innerHTML = '<span class="row">';
+  element.appendChild(document.createTextNode("Q: " + getRelevance()));
+  element.innerHTML = element.innerHTML + "</span><br><br>";
+
+  if (results.answers.length > 0) {
+    element.innerHTML = element.innerHTML + '<div class="row">';
+	results.answers.forEach(
+	   function appendSanitized(string) {
+	   element.appendChild(document.createTextNode("A: " + string));
+	   element.innerHTML = element.innerHTML + "<br>";
+	   }
+	)
+	element.innerHTML = element.innerHTML + ' </div><br>';
+  }
+  
+  if (results.errors.length > 0) {
+    element.innerHTML = element.innerHTML + '<span class="row">';
+	results.errors.forEach(
+	   function appendSanitized(string) {
+	   element.appendChild(document.createTextNode("E: " + string));
+	   }
+	)
+	element.innerHTML = element.innerHTML + ' <a href="/relevance/guide/basics/errors.html">See the Errors guide.</a></span><br><br>';
+  }
+  element.innerHTML = element.innerHTML + '<span class="row">T: ' + results.time / 1000 + " ms</span><br>";
+  element.innerHTML = element.innerHTML + '<span class="row">I: ' + results.type + "</span><br>";
 }
 
 function evaluateRelevance() {
   var body = { relevance: getRelevance() };
 
-  requestJSON('POST', '/api/evaluate', body, function(err, results) {
+  requestJSON('POST', '/api/relevance/evaluate', body, function(err, results) {
     if (body.relevance != getRelevance()) {
       return;
     }

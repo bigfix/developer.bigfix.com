@@ -14,15 +14,15 @@ all: staging remote-staging
 
 $(STAGING)/site/static/fonts: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts
 	mkdir -p $(STAGING)/site/static
-	rsync --archive --delete \
+	rsync --acls --xattrs --archive --delete \
 		$(SOURCE)/site/assets/font-awesome-4.3.0/fonts \
 		$(STAGING)/site/static
 
 CSS_FILES := \
-	$(SOURCE)/site/assets/Skeleton-2.0.4/css/normalize.css \
-	$(SOURCE)/site/assets/Skeleton-2.0.4/css/skeleton.css \
+	$(SOURCE)/site/assets/css/normalize.css \
+	$(SOURCE)/site/assets/css/skeleton.css \
 	$(SOURCE)/site/assets/font-awesome-4.3.0/css/font-awesome.css \
-	$(SOURCE)/site/assets/site.css
+	$(SOURCE)/site/assets/css/site.css
 
 $(STAGING)/site/static/site.css: $(CSS_FILES)
 	mkdir -p $(STAGING)/site/static
@@ -40,9 +40,9 @@ STAGING_TARGETS += $(STAGING)/site/static/fonts
 # pages
 ################################################################################
 
-$(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/*)
+$(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/**/*)
 	mkdir -p $(STAGING)
-	rsync --archive --delete --exclude=node_modules \
+	rsync --acls --xattrs --archive --delete --exclude=node_modules \
 		$(SOURCE)/site/build/ \
 		$(STAGING)/build
 	cd $(STAGING)/build && npm install
@@ -62,123 +62,149 @@ $(STAGING)/site/index.html $(STAGING)/docs.json: $(PAGES_DEPS)
 
 STAGING_TARGETS += $(STAGING)/site/index.html
 
-WWW_DEPS := \
+################################################################################
+# cache busting
+################################################################################
+
+CACHE_BUST_DEPS := \
 	$(STAGING)/site/static/site.css \
 	$(STAGING)/site/static/site.js \
 	$(STAGING)/site/static/fonts \
 	$(STAGING)/site/index.html
 
-/var/www/site/index.html: $(WWW_DEPS)
+$(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
+	mkdir -p $(STAGING)/cache-bust-site
+	rsync --archive --delete $(STAGING)/site/ $(STAGING)/cache-bust-site
+	sh $(SOURCE)/scripts/cache-bust.sh \
+		$(STAGING)/cache-bust-site/static/site.css \
+		$(STAGING)/cache-bust-site
+	sh $(SOURCE)/scripts/cache-bust.sh \
+		$(STAGING)/cache-bust-site/static/site.js \
+		$(STAGING)/cache-bust-site
+	touch $@
+
+STAGING_TARGETS += $(STAGING)/cache-bust-site/index.html
+
+/var/www/site/index.html: $(STAGING)/cache-bust-site/index.html
+	chmod -R a+rX $(STAGING)
+	chcon -R -t httpd_sys_content_t $(STAGING)
 	mkdir -p /var/www/site
-	rsync --archive --delete $(STAGING)/site/ /var/www/site
+	rsync --acls --xattrs --archive --delete \
+		$(STAGING)/cache-bust-site/ \
+		/var/www/site
 	touch $@
 
 DEPLOY_TARGETS += /var/www/site/index.html
 
 ################################################################################
-# /api/search
+# /api/relevance/search
 ################################################################################
 
-$(STAGING)/api/search/language.json: $(SOURCE)/site/data/language.json
-	mkdir -p $(STAGING)/api/search/
+$(STAGING)/api/relevance/search/language.json: $(SOURCE)/site/data/language.json
+	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 
-$(STAGING)/api/search/docs.json: $(STAGING)/docs.json
-	mkdir -p $(STAGING)/api/search/
+$(STAGING)/api/relevance/search/docs.json: $(STAGING)/docs.json
+	mkdir -p $(STAGING)/api/relevance/search/
 	cp -f $< $@
 
-$(STAGING)/api/search/package.json: $(wildcard $(SOURCE)/site/api/search/*)
-	mkdir -p $(STAGING)/api/search/
-	rsync --archive --delete \
+$(STAGING)/api/relevance/search/package.json: $(wildcard $(SOURCE)/site/api/relevance-search/*)
+	mkdir -p $(STAGING)/api/relevance/search/
+	rsync --acls --xattrs --archive --delete \
 		--exclude=node_modules \
 		--exclude=language.json \
 		--exclude=docs.json \
-		$(SOURCE)/site/api/search/ \
-		$(STAGING)/api/search/
-	cd $(STAGING)/api/search/ && npm install
+		$(SOURCE)/site/api/relevance-search/ \
+		$(STAGING)/api/relevance/search/
+	cd $(STAGING)/api/relevance/search/ && npm install
 	touch $@
 
-STAGING_TARGETS += $(STAGING)/api/search/language.json
-STAGING_TARGETS += $(STAGING)/api/search/docs.json
-STAGING_TARGETS += $(STAGING)/api/search/package.json
+STAGING_TARGETS += $(STAGING)/api/relevance/search/language.json
+STAGING_TARGETS += $(STAGING)/api/relevance/search/docs.json
+STAGING_TARGETS += $(STAGING)/api/relevance/search/package.json
 
 SEARCH_DEPS := \
-	$(SOURCE)/conf/upstart/search.conf \
-	$(STAGING)/api/search/package.json \
-	$(STAGING)/api/search/language.json \
-	$(STAGING)/api/search/docs.json
+	$(SOURCE)/conf/systemd/relevance-search.service \
+	$(STAGING)/api/relevance/search/package.json \
+	$(STAGING)/api/relevance/search/language.json \
+	$(STAGING)/api/relevance/search/docs.json
 
-/etc/init/search.conf: $(SEARCH_DEPS)
-	stop search || true
-	mkdir -p /var/www/api
-	rsync --archive --delete $(STAGING)/api/search/ /var/www/api/search
-	cp -f $(SOURCE)/conf/upstart/search.conf /etc/init/search.conf
-	start search
+/usr/lib/systemd/system/relevance-search.service: $(SEARCH_DEPS)
+	systemctl stop relevance-search || true
+	systemctl disable relevance-search || true
+	chmod -R a+rX $(STAGING)
+	mkdir -p /var/www/api/relevance
+	rsync --acls --xattrs --archive --delete \
+		$(STAGING)/api/relevance/search/ \
+		/var/www/api/relevance/search
+	cp -f $(SOURCE)/conf/systemd/relevance-search.service \
+		/usr/lib/systemd/system/relevance-search.service
+	systemctl daemon-reload
+	systemctl enable relevance-search
+	systemctl start relevance-search
 
-DEPLOY_TARGETS += /etc/init/search.conf
+DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-search.service
 
 ################################################################################
-# /api/evaluate
+# /api/relevance/evaluate
 ################################################################################
 
-$(STAGING)/api/evaluate/package.json: $(wildcard $(SOURCE)/site/api/evaluate/*)
-	mkdir -p $(STAGING)/api/evaluate/
-	rsync --archive --delete \
+$(STAGING)/api/relevance/evaluate/package.json: $(wildcard $(SOURCE)/site/api/relevance-evaluate/*)
+	mkdir -p $(STAGING)/api/relevance/evaluate/
+	rsync --acls --xattrs --archive --delete \
 		--exclude=node_modules \
-		$(SOURCE)/site/api/evaluate/ \
-		$(STAGING)/api/evaluate/
-	cd $(STAGING)/api/evaluate/ && npm install
+		$(SOURCE)/site/api/relevance-evaluate/ \
+		$(STAGING)/api/relevance/evaluate/
+	cd $(STAGING)/api/relevance/evaluate/ && npm install
 	touch $@
 
-REMOTE_STAGING_TARGETS += $(STAGING)/api/evaluate/package.json
+REMOTE_STAGING_TARGETS += $(STAGING)/api/relevance/evaluate/package.json
 
 EVALUATE_DEPS := \
-	$(SOURCE)/conf/upstart/evaluate.conf \
-	$(STAGING)/api/evaluate/package.json
+	$(SOURCE)/conf/systemd/relevance-evaluate.service \
+	$(STAGING)/api/relevance/evaluate/package.json
 
-/etc/init/evaluate.conf: $(EVALUATE_DEPS)
-	stop evaluate || true
-	mkdir -p /var/www/api
-	rsync --archive --delete $(STAGING)/api/evaluate/ /var/www/api/evaluate
-	cp -f $(SOURCE)/conf/upstart/evaluate.conf /etc/init/evaluate.conf
-	start evaluate
+/usr/lib/systemd/system/relevance-evaluate.service: $(EVALUATE_DEPS)
+	systemctl stop relevance-evaluate || true
+	systemctl disable relevance-evaluate || true
+	chmod -R a+rX $(STAGING)
+	mkdir -p /var/www/api/relevance
+	rsync --acls --xattrs --archive --delete \
+		$(STAGING)/api/relevance/evaluate/ \
+		/var/www/api/relevance/evaluate
+	cp -f $(SOURCE)/conf/systemd/relevance-evaluate.service \
+		/usr/lib/systemd/system/relevance-evaluate.service
+	systemctl daemon-reload
+	systemctl enable relevance-evaluate
+	systemctl start relevance-evaluate
 
-REMOTE_DEPLOY_TARGETS += /etc/init/evaluate.conf
+REMOTE_DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-evaluate.service
 
 ################################################################################
 # nginx
 ################################################################################
 
-nginx-dev: /etc/nginx/sites-enabled/dev.conf
-nginx-prod: /etc/nginx/sites-enabled/prod.conf
+nginx-dev: /etc/nginx/conf.d/dev.conf
+nginx-prod: /etc/nginx/conf.d/prod.conf
 
 NGINX_DEPS := \
-	/var/www/site \
-	/etc/nginx/sites-available/dev.conf \
-	/etc/nginx/sites-available/prod.conf \
-	/etc/nginx/shared.conf
+	/etc/nginx/shared.conf \
+	/etc/nginx/nginx.conf
 
-/etc/nginx/sites-enabled/dev.conf: $(NGINX_DEPS)
-	rm -rf /etc/nginx/sites-enabled/*
-	cp /etc/nginx/sites-available/dev.conf $@
-	nginx -s reload
+/etc/nginx/conf.d/dev.conf: $(NGINX_DEPS)
+	rm -rf /etc/nginx/conf.d/*
+	cp $(SOURCE)/conf/nginx/dev.conf $@
+	systemctl reload nginx
 
-/etc/nginx/sites-enabled/prod.conf: $(NGINX_DEPS)
-	rm -rf /etc/nginx/sites-enabled/*
-	cp /etc/nginx/sites-available/prod.conf $@
-	nginx -s reload
-
-/var/www/site:
-	mkdir -p /var/www/site
-	echo It works > /var/www/site/index.html
-
-/etc/nginx/sites-available/dev.conf: $(SOURCE)/conf/nginx/dev.conf
-	cp -f $< $@
-
-/etc/nginx/sites-available/prod.conf: $(SOURCE)/conf/nginx/prod.conf
-	cp -f $< $@
+/etc/nginx/conf.d/prod.conf: $(NGINX_DEPS)
+	rm -rf /etc/nginx/conf.d/*
+	cp $(SOURCE)/conf/nginx/prod.conf $@
+	systemctl reload nginx
 
 /etc/nginx/shared.conf: $(SOURCE)/conf/nginx/shared.conf
+	cp -f $< $@
+
+/etc/nginx/nginx.conf: $(SOURCE)/conf/nginx/nginx.conf
 	cp -f $< $@
 
 ################################################################################
