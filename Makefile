@@ -36,10 +36,15 @@ $(STAGING)/site/favicon.ico: $(SOURCE)/site/assets/favicon.ico
 	mkdir -p $(STAGING)/site
 	cp -f $^ $@
 
+$(STAGING)/site/apple-touch-icon.png: $(SOURCE)/site/assets/apple-touch-icon.png
+	mkdir -p $(STAGING)/site
+	cp -f $^ $@
+
 STAGING_TARGETS += $(STAGING)/site/static/site.css
 STAGING_TARGETS += $(STAGING)/site/static/site.js
 STAGING_TARGETS += $(STAGING)/site/static/fonts
 STAGING_TARGETS += $(STAGING)/site/favicon.ico
+STAGING_TARGETS += $(STAGING)/site/apple-touch-icon.png
 
 ################################################################################
 # pages
