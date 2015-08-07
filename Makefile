@@ -34,7 +34,7 @@ $(STAGING)/site/static/site.js: $(SOURCE)/site/assets/site.js
 
 $(STAGING)/site/favicon.ico: $(SOURCE)/site/assets/favicon.ico
 	mkdir -p $(STAGING)/site
-	cp $^ > $@
+	cp -f $^ $@
 
 STAGING_TARGETS += $(STAGING)/site/static/site.css
 STAGING_TARGETS += $(STAGING)/site/static/site.js
