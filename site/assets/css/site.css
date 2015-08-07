@@ -101,7 +101,7 @@ input[type="button"].button-primary:hover {
   border-color: #5596E6; }
 
 .bigfix-logo {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 header.nav-header {
