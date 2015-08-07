@@ -32,9 +32,14 @@ $(STAGING)/site/static/site.js: $(SOURCE)/site/assets/site.js
 	mkdir -p $(STAGING)/site/static
 	cat $^ > $@
 
+$(STAGING)/site/favicon.ico: $(SOURCE)/site/assets/favicon.ico
+	mkdir -p $(STAGING)/site
+	cp $^ > $@
+
 STAGING_TARGETS += $(STAGING)/site/static/site.css
 STAGING_TARGETS += $(STAGING)/site/static/site.js
 STAGING_TARGETS += $(STAGING)/site/static/fonts
+STAGING_TARGETS += $(STAGING)/site/favicon.ico
 
 ################################################################################
 # pages
