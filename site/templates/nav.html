@@ -1,0 +1,8 @@
+<ul class="side-nav-list">
+  {% for item in items %}
+  <li class="side-nav-item">
+    <a class="side-nav-link {{item.selected}}" href="{{item.href}}">{{item.name}}</a>
+    {{item.children | safe}}
+  </li>
+  {% endfor %}
+</ul>

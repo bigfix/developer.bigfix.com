@@ -160,19 +160,23 @@ nav.nav-client-compliance a.nav-client-compliance {
   margin-top: 1rem;
 }
 
-.side-nav-group {
-  margin-bottom: 2rem;
+ul.side-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.side-nav-header,
+ul.side-nav-list ul {
+  padding-left: 1.5rem;
+}
+
 .side-nav-item {
-  display: block;
-  padding: 4px 0;
+  margin: 6px 0;
 }
 
-.side-nav-header {
-  margin-bottom: .5rem;
-  color: #5a5a5a;
+.side-nav-link.selected {
+  color: #323232;
+  font-weight: 700;
 }
 
 .article h1:first-child {

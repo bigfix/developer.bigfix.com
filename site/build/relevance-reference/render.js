@@ -238,6 +238,8 @@ function render(language, docs, associations, defaults, renderer) {
   var renderedProperties =
     renderProperties(language, docs, associations.references, renderer);
 
+  var sideNav = renderer.renderSideNav('relevance/reference/', defaults);
+
   Object.keys(language.types).forEach(function(key) {
     var type = language.types[key];
     var text = docs.types[key].text;
@@ -248,6 +250,8 @@ function render(language, docs, associations, defaults, renderer) {
 
     data.content = renderType(type, text, renderedProperties.pages,
                               associations, renderer);
+
+    data.sideNav = sideNav;
 
     var pageName = type.name.replace(/ /g, '-') + '.html';
     var href = path.join('relevance', 'reference', pageName);

@@ -134,30 +134,102 @@ function getFileData(sourcePath, defaults) {
   return data;
 }
 
+/**
+ * Return whether the document 'location' matches the nav 'href'.
+ */
+function locationMatches(location, href) {
+  if (location === href) {
+    return true;
+  }
+
+  return (location.indexOf(href) === 0) && (location[href.length - 1] === '/');
+}
+
+/**
+ * Render the side navigation for 'location'.
+ */
+function renderSideNav(nav, location, templateEnv) {
+  var items = [];
+  
+  nav.forEach(function(child) {
+    var item = {
+      name: child.name,
+      href: child.href
+    };
+
+    if (locationMatches(location, child.href)) {
+      if (child.children) {
+        item.children = renderSideNav(child.children, location, templateEnv);
+      }
+
+      if (location === child.href) {
+        item.selected = 'selected';
+      }
+    }
+
+    items.push(item);
+  });
+
+  return templateEnv.render('nav.html', { items: items });
+}
+
+/**
+ * Normalize the file location.
+ */
+function normalizeLocation(location) {
+  // Add leading slash
+  if (location[0] !== '/') {
+    location = '/' + location;
+  }
+
+  // Strip trailing 'index.html'
+  var match = location.match(/(.*\/)index.html$/);
+  if (match) {
+    location = match[1];
+  }
+
+  return location;
+}
+
 module.exports = function(templatesDir) {
   var renderMarkdown = createMarkdownRenderer();
   var templateEnv = createTemplateEnv(templatesDir);
 
   var formats = {};
 
-  formats['.md'] = function(sourcePath, defaults) {
+  formats['.md'] = function(location, sourcePath, defaults) {
     var fileData = getFileData(sourcePath, defaults);
 
     fileData.content = templateEnv.renderString(fileData.content, fileData);
     fileData.content = renderMarkdown(fileData.content);
 
+    if (fileData.nav) {
+      fileData.sideNav =
+        renderSideNav(fileData.nav, normalizeLocation(location), templateEnv);
+    }
+
     return templateEnv.render(fileData.layout + '.html', fileData);
   };
 
-  formats['.html'] = function(sourcePath, defaults) {
+  formats['.html'] = function(location, sourcePath, defaults) {
     var fileData = getFileData(sourcePath, defaults);
 
     fileData.content = templateEnv.renderString(fileData.content, fileData);
+
+    if (fileData.nav) {
+      fileData.sideNav =
+        renderSideNav(fileData.nav, normalizeLocation(location), templateEnv);
+    }
 
     return templateEnv.render(fileData.layout + '.html', fileData);
   };
 
   var renderer = {};
+
+  renderer.renderSideNav = function(location, fileData) {
+    return renderSideNav(fileData.nav, normalizeLocation(location),
+                         templateEnv);
+  };
 
   renderer.renderMarkdown = function(text) {
     return renderMarkdown(templateEnv.renderString(text));
@@ -167,7 +239,7 @@ module.exports = function(templatesDir) {
     return templateEnv.render(template + '.html', data);
   };
 
-  renderer.renderFile = function(sourcePath, defaults) {
+  renderer.renderFile = function(location, sourcePath, defaults) {
     var extension = path.extname(sourcePath);
 
     var renderer = formats[extension];
@@ -175,7 +247,7 @@ module.exports = function(templatesDir) {
       throw new Error('Cannot render file of type ' + extension);
     }
 
-    return renderer(sourcePath, defaults);
+    return renderer(location, sourcePath, defaults);
   };
 
   renderer.canRenderFile = function(sourcePath) {

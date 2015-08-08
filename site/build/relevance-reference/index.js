@@ -48,8 +48,10 @@ function renderIndex(pagesDir, language, renderer, writer) {
 
   checkComplete(categories, language);
 
-  writer('relevance/reference/index.html',
-         renderer.renderFile(sourcePath, readDefaults(pagesDir, referenceDir)));
+  var outPath = 'relevance/reference/index.html';
+
+  writer(outPath, renderer.renderFile(outPath, sourcePath,
+                                      readDefaults(pagesDir, referenceDir)));
 }
 
 /**

@@ -1,6 +1,5 @@
 var fs = require('fs'),
   path = require('path'),
-  rimraf = require('rimraf'),
   mkdirp = require('mkdirp'),
   readDefaults = require('./lib/defaults'),
   createRenderer = require('./lib/renderer'),
@@ -35,7 +34,7 @@ function renderPages(pagesDir, renderer, writer) {
           path.join(directory,
                     path.basename(item, path.extname(item)) + '.html'));
 
-        writer(outPath, renderer.renderFile(sourcePath, defaults));
+        writer(outPath, renderer.renderFile(outPath, sourcePath, defaults));
       }
     });
   }

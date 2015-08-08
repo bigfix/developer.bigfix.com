@@ -1,77 +1,86 @@
 section: relevance
 layout: page-with-nav
 nav:
-  Relevance:
-    - name: Home
-      href: /relevance/
+  - name: Home
+    href: /relevance/
 
-    - name: Reference
-      href: /relevance/reference/
+  - name: Guides
+    href: /relevance/guide/
+    children:
 
-    - name: Inspector Search
-      href: /relevance/search/
+      - name: Basics
+        href: /relevance/guide/basics/
+        children:
 
-    - name: Online Evaluator
-      href: /relevance/evaluate/
+          - name: Numbers
+            href: /relevance/guide/basics/numbers.html
 
-  Basic Guides:
-    - name: Numbers
-      href: /relevance/guide/basics/numbers.html
+          - name: Strings
+            href: /relevance/guide/basics/strings.html
 
-    - name: Strings
-      href: /relevance/guide/basics/strings.html
+          - name: Casts
+            href: /relevance/guide/basics/casts.html
 
-    - name: Casts
-      href: /relevance/guide/basics/casts.html
+          - name: Errors
+            href: /relevance/guide/basics/errors.html
 
-    - name: Errors
-      href: /relevance/guide/basics/errors.html
+          - name: Exists
+            href: /relevance/guide/basics/exists.html
 
-    - name: Exists
-      href: /relevance/guide/basics/exists.html
+          - name: 'If, Then, Else'
+            href: /relevance/guide/basics/if-then-else.html
 
-    - name: 'If, Then, Else'
-      href: /relevance/guide/basics/if-then-else.html
+          - name: It Expressions
+            href: /relevance/guide/basics/it-expressions.html
 
-    - name: It Expressions
-      href: /relevance/guide/basics/it-expressions.html
+          - name: Properties
+            href: /relevance/guide/basics/properties.html
 
-    - name: Properties
-      href: /relevance/guide/basics/properties.html
+          - name: Singular and Plural
+            href: /relevance/guide/basics/singular-and-plural.html
 
-    - name: Singular and Plural
-      href: /relevance/guide/basics/singular-and-plural.html
+          - name: Tuples
+            href: /relevance/guide/basics/tuples.html
 
-    - name: Tuples
-      href: /relevance/guide/basics/tuples.html
+          - name: Whose
+            href: /relevance/guide/basics/whose.html
 
-    - name: Whose
-      href: /relevance/guide/basics/whose.html
+      - name: Client
+        href: /relevance/guide/client/
+        children:
 
-  Client Guides:
-    - name: System Information
-      href: /relevance/guide/client/system-information.html
+          - name: System Information
+            href: /relevance/guide/client/system-information.html
 
-    - name: Files
-      href: /relevance/guide/client/files.html
+          - name: Files
+            href: /relevance/guide/client/files.html
 
-    - name: Registry
-      href: /relevance/guide/client/registry.html
+          - name: Registry
+            href: /relevance/guide/client/registry.html
 
-    - name: Network
-      href: /relevance/guide/client/network.html
+          - name: Network
+            href: /relevance/guide/client/network.html
 
-    - name: Applications
-      href: /relevance/guide/client/applications.html
+          - name: Applications
+            href: /relevance/guide/client/applications.html
 
-    - name: Services
-      href: /relevance/guide/client/services.html
+          - name: Services
+            href: /relevance/guide/client/services.html
 
-    - name: Users
-      href: /relevance/guide/client/users.html
+          - name: Users
+            href: /relevance/guide/client/users.html
 
-    - name: Event Log
-      href: /relevance/guide/client/event-log.html
+          - name: Event Log
+            href: /relevance/guide/client/event-log.html
 
-    - name: WMI
-      href: /relevance/guide/client/wmi.html
+          - name: WMI
+            href: /relevance/guide/client/wmi.html
+
+  - name: Reference
+    href: /relevance/reference/
+
+  - name: Inspector Search
+    href: /relevance/search/
+
+  - name: Online Evaluator
+    href: /relevance/evaluate/
