@@ -1,5 +1,5 @@
 ---
-title: plurals
+title: Plurals
 ---
 
 # Plurals and Errors
