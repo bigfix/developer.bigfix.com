@@ -1,51 +1,52 @@
 <div class="row relevance-type">
-  <h1 class="relevance-type-description">{{name}}</h1>
-  {{description | safe}}
 
-  <div class="relevance-type-contents">
-    {% if creation %}<a href="#creation">Creation</a>{% endif %}
-    {% if properties %}<a href="#properties">Properties</a>{% endif %}
-    {% if casts %}<a href="#casts">Casts</a>{% endif %}
-    {% if operators %}<a href="#operators">Operators</a>{% endif %}
+  <h1 class="relevance-type-description">{{name}}</h1>
+
+  <div class="relevance-type-block">
+    {{description | safe}}
+  </div>
+
+  <div class="relevance-type-block">
+    <ul class="relevance-type-sections">
+      {% if creation %}<li><a href="#creation">Creation</a></li>{% endif %}
+      {% if properties %}<li><a href="#properties">Properties</a></li>{% endif %}
+      {% if casts %}<li><a href="#casts">Casts</a></li>{% endif %}
+      {% if operators %}<li><a href="#operators">Operators</a></li>{% endif %}
+    </ul>
   </div>
 
   {% if deprecated %}
-  <div class="deprecated">
+  <div class="relevance-type-block deprecated">
     <b>Deprecated:</b> This type was removed in version {{deprecated}}.
   </div>
   {% endif %}
 
-  <div class="footnotes">
+  <div class="relevance-type-block">
     {% if parent %}
-    <div class="footnote">
-      <h5>Parent</h5>
-      <span class="footnote-body">{{parent | safe}}</span>
-    </div>
+    <strong>Parent:</strong> {{parent | safe}}
     {% endif %}
-
-    <div class="footnote">
-        <h5>Support</h5>
-        <table class="relevance-property-availability footnote-body">
-          <thead>
-            <tr>
-              <th>Version</th>
-              <th>Platforms</th>
-            </tr>
-          </thead>
-          {% for version, platforms in availability %}
-          <tbody>
-            <tr>
-              <td>{{version}}</td>
-              <td>{{platforms | join(', ')}}</td>
-            </tr>
-          </tbody>
-          {% endfor %}
-        </table>
-      </div>
-    </div>
   </div>
 
-  <div class="relevance-type-expand-buttons u-cf">
+  <div class="relevance-type-block">
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Platforms</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for version, platforms in availability %}
+        <tr>
+          <td>{{version}}</td>
+          <td>{{platforms | join(', ')}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="relevance-type-block relevance-type-buttons">
     <button class="button-primary" onclick="expandAll()">Expand all</button>
     <button class="button-primary" onclick="collapseAll()">Collapse all</button>
   </div>

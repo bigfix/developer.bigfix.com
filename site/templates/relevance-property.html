@@ -6,44 +6,42 @@
     <span class="relevance-property-key">{{key | safe}}</span>
   </div>
   <div class="relevance-property-body hidden">
+    <div class="relevance-property-block">
     {{body | safe}}
+    </div>
 
     {% if deprecated %}
-    <div class="relevance-property-deprecated">
+    <div class="relevance-property-block deprecated">
       <b>Deprecated:</b> This property was removed in version {{deprecated}}.
     </div>
     {% endif %}
 
-    <div class="relevance-property-footnotes">
+    <div class="relevance-property-block">
       {% if plural %}
-      <div class="footnote">
-        <h5>Plural</h5>
-        <span class="footnote-body">{{plural}}</span>
-      </div>
+      <strong>Plural:</strong> {{plural}}
       {% endif %}
-
-      <div class="footnote">
-        <h5>Support</h5>
-        <table class="relevance-property-availability footnote-body">
-          <thead>
-            <tr>
-              <th>Version</th>
-              <th>Platforms</th>
-            </tr>
-          </thead>
-          {% for version, platforms in availability %}
-          <tbody>
-            <tr>
-              <td>{{version}}</td>
-              <td>{{platforms | join(', ')}}</td>
-            </tr>
-          </tbody>
-          {% endfor %}
-        </table>
-      </div>
     </div>
 
-    <div class="relevance-property-links">
+    <div class="relevance-property-block">
+      <table>
+        <thead>
+          <tr>
+            <th>Version</th>
+            <th>Platforms</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for version, platforms in availability %}
+          <tr>
+            <td>{{version}}</td>
+            <td>{{platforms | join(', ')}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="relevance-property-block relevance-property-links">
       <a href="{{reference}}#{{id}}">permalink</a>
       <a href="{{source}}">source</a>
     </div>
