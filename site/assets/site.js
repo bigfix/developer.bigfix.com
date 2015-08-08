@@ -97,7 +97,7 @@ function toggleOnLoad() {
   var id = window.location.hash.slice(1);
   var entry = document.getElementById(id);
 
-  if (!entry || !entry.classList.contains('entry')) {
+  if (!entry || !entry.classList.contains('relevance-property')) {
     return;
   }
 
