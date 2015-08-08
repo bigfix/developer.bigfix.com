@@ -105,8 +105,6 @@ input[type="button"].button-primary:hover {
 }
 
 header.nav-header {
-  height: 64px;
-
   font-size: 20px;
   line-height: 64px;
 
@@ -126,6 +124,11 @@ header.nav-header a {
 
   color: #fff;
   text-decoration: none;
+}
+
+.nav-header-logo {
+  height: 64px;
+  float: left;
 }
 
 nav.nav-header-links {

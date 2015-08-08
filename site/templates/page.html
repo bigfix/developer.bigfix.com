@@ -13,32 +13,28 @@
   <body>
     <header class="nav-header">
       <div class="container">
-        <div class="row">
-          <div class="three columns">
-            <a href="/">
-              <svg class="bigfix-logo" width="32" height="64" viewBox="0 0 256 256">
-                <defs>
-                  <mask id="inner-b">
-                    <circle fill="#fff" cx="128" cy="128" r="128"/>
-                    <circle fill="#000" cx="128" cy="128" r="72"/>
-                    <circle fill="#fff" cx="128" cy="128" r="32"/>
-                    <rect fill="#000" x="56" y="0" width="40" height="128"/>
-                  </mask>
-                </defs>
-                <rect fill="#fff" x="0" y="0" width="256" height="256" mask="url(#inner-b)"/>
-              </svg>
-              <span>BigFix <strong>Developer</strong></span>
-            </a>
-          </div>
-          <div class="nine columns">
-            <nav class="nav-header-links nav-{{section}}">
-              <a class="nav-relevance" href="/relevance/">Relevance</a>
-              <a class="nav-action-script" href="/action-script/">Action Script</a>
-              <a class="nav-rest-api" href="/rest-api/">REST-API</a>
-              <a class="nav-client-compliance" href="/client-compliance/">Client Compliance</a>
-            </nav>
-          </div>
+        <div class="nav-header-logo">
+          <a href="/">
+            <svg class="bigfix-logo" width="32" height="64" viewBox="0 0 256 256">
+              <defs>
+                <mask id="inner-b">
+                  <circle fill="#fff" cx="128" cy="128" r="128"/>
+                  <circle fill="#000" cx="128" cy="128" r="72"/>
+                  <circle fill="#fff" cx="128" cy="128" r="32"/>
+                  <rect fill="#000" x="56" y="0" width="40" height="128"/>
+                </mask>
+              </defs>
+              <rect fill="#fff" x="0" y="0" width="256" height="256" mask="url(#inner-b)"/>
+            </svg>
+            <span>BigFix <strong>Developer</strong></span>
+          </a>
         </div>
+        <nav class="nav-header-links nav-{{section}}">
+          <a class="nav-relevance" href="/relevance/">Relevance</a>
+          <a class="nav-action-script" href="/action-script/">Action Script</a>
+          <a class="nav-rest-api" href="/rest-api/">REST-API</a>
+          <a class="nav-client-compliance" href="/client-compliance/">Client Compliance</a>
+        </nav>
       </div>
     </header>
     <main class="main container">
