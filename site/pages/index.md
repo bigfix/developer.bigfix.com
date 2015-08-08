@@ -41,8 +41,6 @@ To complete your 360-degree view of the IBM BigFix development world:
 
 [11]: https://help.github.com/articles/using-pull-requests/
 [12]: https://developer.bigfix.com/relevance/guide/basics/introduction.html
-[13]: http://www.bigfix.me
-[14]: http://forum.bigfix.com
+[13]: https://forum.bigfix.com
+[14]: https://www.bigfix.me
 [15]: https://github.com/bigfix
-
-
