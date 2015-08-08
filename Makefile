@@ -93,12 +93,18 @@ $(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
 STAGING_TARGETS += $(STAGING)/cache-bust-site/index.html
 
 /var/www/site/index.html: $(STAGING)/cache-bust-site/index.html
+	# Preserve any google site verification file
+	cp /var/www/site/google* $(STAGING)/cache-bust-site/ 2>/dev/null || true
+	# Set file permissions so nginx can read it.
 	chmod -R a+rX $(STAGING)
+	# Tag the files so that selinux allows nginx to read it.
 	chcon -R -t httpd_sys_content_t $(STAGING)
+	# Rsync the files to the production directory
 	mkdir -p /var/www/site
 	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/cache-bust-site/ \
 		/var/www/site
+	# Ensure modification time is bumped for make dependency tracking.
 	touch $@
 
 DEPLOY_TARGETS += /var/www/site/index.html
