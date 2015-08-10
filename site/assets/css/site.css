@@ -182,7 +182,13 @@ ul.side-nav-list ul {
   font-weight: 700;
 }
 
-.article h1:first-child {
+/* Remove top margins from the first content on the page */
+.main > h1:first-child,
+.side-nav > .side-nav-list > .side-nav-item:first-child,
+.article > h1:first-child,
+.article > .row > h1:first-child,
+.article > p:first-child,
+h1.relevance-type-description {
   margin-top: 0;
 }
 
