@@ -1144,6 +1144,13 @@ Returns the substring in the second string found between two instances of the fi
 
 Returns a substring (or set of substrings) delimited by the first string.
 
+{% qna %}
+Q: substrings separated by "," of "1,2,3"
+A: 1
+A: 2
+A: 3
+{% endqna %}
+
 # sup &lt;string&gt; of &lt;string&gt; : html
 
 Returns an HTML snippet with the specified string enclosed in a &lt;sup&gt; (superscript) tag modified by the first given string.
