@@ -45,6 +45,9 @@ nav:
           - name: Whose
             href: /relevance/guide/basics/whose.html
 
+          - name: Parent Types
+            href: /relevance/guide/basics/parent-types.html
+
       - name: Client
         href: /relevance/guide/client/
         children:

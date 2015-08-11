@@ -109,6 +109,15 @@ function createNoteExtension(templateEnv) {
 }
 
 /**
+ * The linkType filter: {{ 'foo' | linkType }}
+ */
+function linkType(typeName) {
+  var href ='/relevance/reference/' + typeName.replace(/ /g, '-') + '.html';
+  var link = '<a href="' + href + '">' + typeName + '</a>';
+  return new nunjucks.runtime.SafeString(link);
+}
+
+/**
  * Create the nunjucks environment and add our extensions.
  */
 function createTemplateEnv(templatesDir) {
@@ -118,6 +127,8 @@ function createTemplateEnv(templatesDir) {
 
   templateEnv.addExtension('QNAExtension', createQNAExtension(templateEnv));
   templateEnv.addExtension('NoteExtension', createNoteExtension(templateEnv));
+
+  templateEnv.addFilter('linkType', linkType);
 
   return templateEnv;
 }
