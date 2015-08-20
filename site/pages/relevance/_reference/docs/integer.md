@@ -1,6 +1,6 @@
 # type: integer
 
-Integers are represented internally as 64-bit signed values.
+An `integer` is a signed 64-bit value.
 
 # absolute value of &lt;integer&gt; : integer
 

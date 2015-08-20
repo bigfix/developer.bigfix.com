@@ -1829,11 +1829,11 @@ Returns the quicktime folder of the system domain
 
 # ram : ram
 
-Returns a ram object for inspecting the properties of Random Access Memory installed on the machine. See ram.
+Returns a ram object for inspecting the properties of random access memory installed on the machine.
 
 # random access memory : ram
 
-Same as above.
+Returns a ram object for inspecting the properties of random access memory installed on the machine.
 
 # realtime priority : priority class
 
