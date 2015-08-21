@@ -18,7 +18,11 @@ Start the virtual machine and build the site by running:
 
 The site will then be available at [localhost:4000](http://localhost:4000).
 
-If you change something and want to preview the change, ssh to the machine with:
+If you change something and want to preview the change, navigate to the bulid
+page at [localhost:4000/dev](http://localhost:4000/dev), and click the "Build"
+button.
+
+Alternatively, you can ssh to the machine with:
 
     $ vagrant ssh
 
