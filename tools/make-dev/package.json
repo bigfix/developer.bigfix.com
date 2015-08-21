@@ -1,0 +1,10 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "event-stream": "^3.3.1",
+    "express": "^4.13.3"
+  }
+}

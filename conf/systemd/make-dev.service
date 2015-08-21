@@ -1,0 +1,13 @@
+[Unit]
+Description=website build service
+After=network.target
+
+[Service]
+User=vagrant
+Group=vagrant
+WorkingDirectory=/var/www/make-dev
+ExecStart=/var/www/make-dev/node /var/www/make-dev
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

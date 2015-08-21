@@ -1,0 +1,79 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#build {
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 1px solid #5ca941;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  background-color: #60b044;
+  background-image: linear-gradient(#8add6d, #60b044);
+}
+
+#build:hover {
+  background-color: #569e3d;
+  background-image: linear-gradient(#79d858, #569e3d);
+  border-color: #4a993e;
+  cursor: pointer;
+}
+
+#build:active {
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  background-color: #569e3d;
+  background-image: none;
+  border-color: #418737;
+}
+
+#build:focus {
+  text-decoration: none;
+  border-color: #51a7e8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(81,167,232,0.5);
+}
+
+#build:disabled {
+  color: #fefefe;
+  background-color: #add39f;
+  background-image: linear-gradient(#c3ecb4, #add39f);
+  border-color: #b9dcac #b9dcac #a7c89b;
+}
+
+#output {
+  height: 500px;
+  padding: 10px;
+
+  overflow-y: auto;
+  white-space: pre-wrap;
+
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+  color: #F1F1F1;
+  background-color: #2a2a2a;
+
+  border-radius: 3px;
+}
+
+#command {
+  font-weight: bold;
+}
+
+.build-success {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.build-failure {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+#spinny {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
