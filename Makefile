@@ -12,11 +12,12 @@ all: staging remote-staging
 # assets
 ################################################################################
 
-$(STAGING)/site/static/fonts: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts
+$(STAGING)/fonts.target: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts/*
 	mkdir -p $(STAGING)/site/static
 	rsync --acls --xattrs --archive --delete \
 		$(SOURCE)/site/assets/font-awesome-4.3.0/fonts \
 		$(STAGING)/site/static
+	touch $(STAGING)/fonts.target
 
 CSS_FILES := \
 	$(SOURCE)/site/assets/css/normalize.css \
@@ -42,7 +43,7 @@ $(STAGING)/site/apple-touch-icon.png: $(SOURCE)/site/assets/apple-touch-icon.png
 
 STAGING_TARGETS += $(STAGING)/site/static/site.css
 STAGING_TARGETS += $(STAGING)/site/static/site.js
-STAGING_TARGETS += $(STAGING)/site/static/fonts
+STAGING_TARGETS += $(STAGING)/fonts.target
 STAGING_TARGETS += $(STAGING)/site/favicon.ico
 STAGING_TARGETS += $(STAGING)/site/apple-touch-icon.png
 
