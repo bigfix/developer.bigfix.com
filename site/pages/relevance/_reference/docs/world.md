@@ -2185,7 +2185,12 @@ Returns an integer corresponding to the total number of processor cores.
 
 # true : boolean
 
-Returns the boolean TRUE.
+Returns the boolean `True`.
+
+{% qna %}
+Q: if true then 1 else 0
+A: 1
+{% endqna %}
 
 # tuesday : day of week
 
@@ -2193,7 +2198,16 @@ Returns Tuesday as a day of week object.
 
 # type : type
 
-No documentation exists.
+Returns a list of all types in the relevance language.
+
+{% qna %}
+Q: names of types
+A: 
+A: action
+A: action lock state
+A: administrative rights
+A: ...
+{% endqna %}
 
 # udp : internet protocol
 
