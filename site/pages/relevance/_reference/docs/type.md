@@ -146,6 +146,6 @@ A: boolean
 Returns `True` if both expressions denote the same type.
 
 {% qna %}
-Q: type "boolean"  = type "string"
+Q: type "boolean" = type "string"
 A: False
 {% endqna %}
