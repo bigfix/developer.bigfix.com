@@ -408,7 +408,25 @@ Returns a set of all BES Wizards.
 
 # binary operator : binary operator
 
-No documentation exists.
+Returns all available binary operators.
+
+{% qna %}
+Q: binary operators
+A: <rpm package version record> = <rpm package version record>: boolean
+A: <rpm package version record> < <rpm package version record>: boolean
+A: <rpm package version record> <= <rpm package version record>: boolean
+A: <rpm package version record> = <string>: boolean
+A: ...
+{% endqna %}
+
+This inspector can be used with `whose` to find binary operators that work on a specfic type.
+
+{% qna %}
+Q: binary operators whose (it as string contains "ipv6")
+A: <ipv6 address> = <ipv6 address>: boolean
+A: <ipv6 address> < <ipv6 address>: boolean
+A: <ipv6 address> <= <ipv6 address>: boolean
+{% endqna %}
 
 # bios : bios
 

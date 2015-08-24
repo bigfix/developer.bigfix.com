@@ -122,7 +122,13 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;big&gt
 
 # binary operator &lt;string&gt; : binary operator
 
-Typically used in the plural, returns the various possible binary inspectors that use the specified operators.
+Returns the various possible binary inspectors that use the specified operators.
+
+{% qna %}
+Q: binary operators "starts with"
+A: <string> starts with <regular expression>: boolean
+A: <string> starts with <string>: boolean
+{% endqna %}
 
 # bit set &lt;string&gt; : bit set
 

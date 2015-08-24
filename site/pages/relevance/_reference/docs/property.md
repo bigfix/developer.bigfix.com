@@ -1,6 +1,6 @@
 # type: property
 
-The `property` type represents an inspector property in the Relevance Language.  This is a form of [reflection](https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29) that allows you to see what inspectors are available and how to use them.
+The `property` type represents an inspector property in the Relevance Language. This is a form of [reflection](https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29) that allows you to see what inspectors are available and how to use them.
 
 # dependency known of &lt;property&gt; : boolean
 
