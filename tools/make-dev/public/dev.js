@@ -70,7 +70,7 @@ function startBuild() {
   exitCode = null;
   addOutput([]);
 
-  request('POST', '/dev/build', function(err) {
+  request('POST', '/build/start', function(err) {
     if (err) {
       endBuild();
       return addOutput(['Failed to request build: ' + err.toString()]);
@@ -81,7 +81,7 @@ function startBuild() {
 }
 
 function watchBuild() {
-  request('GET', '/dev/build?start=' + lines.length, function(err, result) {
+  request('GET', '/build/status?start=' + lines.length, function(err, result) {
     if (err) {
       endBuild();
       return addOutput(['Failed to watch build: ' + err.toString()]);      

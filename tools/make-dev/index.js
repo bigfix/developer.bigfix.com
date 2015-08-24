@@ -63,12 +63,12 @@ function startBuild() {
 /**
  * Serve the files for the web page.
  */
-app.use('/dev', express.static(path.join(__dirname, 'public')));
+app.use('/build', express.static(path.join(__dirname, 'public')));
 
 /**
  * Start a build.
  */
-app.post('/dev/build', function(req, res) {
+app.post('/build/start', function(req, res) {
   if (build && build.running) {
     return res.status(400).json({ msg: 'a build is already in progress' });
   }
@@ -80,7 +80,7 @@ app.post('/dev/build', function(req, res) {
 /**
  * Get the build status.
  */
-app.get('/dev/build', function(req, res) {
+app.get('/build/status', function(req, res) {
   if (!build) {
     return res.status(400).json({ msg: 'no build is running' });
   }
