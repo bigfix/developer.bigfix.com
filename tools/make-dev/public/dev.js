@@ -1,5 +1,10 @@
+/* exported startBuild */
+
 'use strict';
 
+/**
+ * Make an HTTP request and parse the response as JSON.
+ */
 function request(method, url, callback) {
   var xhr = new XMLHttpRequest();
 
@@ -27,14 +32,23 @@ function request(method, url, callback) {
   xhr.send();
 }
 
+// The lines of the build output.
 var lines = [];
+
+// The exit code of the build.
 var exitCode = null;
 
+/**
+ * Reset the spinny.gif and enable the build button.
+ */
 function endBuild() {
   document.getElementById('spinny').style.display = 'none';
   document.getElementById('build').disabled = false;
 }
 
+/**
+ * Add build output to the document.
+ */
 function addOutput(addedLines) {
   lines = lines.concat(addedLines);
 
@@ -61,6 +75,9 @@ function addOutput(addedLines) {
   outputElement.scrollTop = outputElement.scrollHeight;
 }
 
+/**
+ * Start a build.
+ */
 function startBuild() {
   document.getElementById('spinny').style.display = '';
   document.getElementById('build').disabled = true;
@@ -72,19 +89,24 @@ function startBuild() {
 
   request('POST', '/build/start', function(err) {
     if (err) {
-      endBuild();
-      return addOutput(['Failed to request build: ' + err.toString()]);
+      exitCode = -1;
+      addOutput(['Failed to request build: ' + err.toString()]);
+      return endBuild();
     }
 
     watchBuild();
   });
 }
 
+/**
+ * Continuously poll for new build output while the build is running.
+ */
 function watchBuild() {
   request('GET', '/build/status?start=' + lines.length, function(err, result) {
     if (err) {
-      endBuild();
-      return addOutput(['Failed to watch build: ' + err.toString()]);      
+      exitCode = -1;
+      addOutput(['Failed to watch build: ' + err.toString()]);
+      return endBuild();
     }
 
     exitCode = result.exitCode;
