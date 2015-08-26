@@ -1,10 +1,15 @@
 # type: time interval
 
-Time intervals are used in conjunction with the time object. Time intervals have a resolution of 1 microsecond.
+The `time interval` type represents an interval of time. They have a resolution of 1 microsecond.
 
 # absolute value of &lt;time interval&gt; : time interval
 
-Returns positive value of the time interval.
+Returns absolute value of the time interval.
+
+{% qna %}
+Q: absolute value of (-5 * second)
+A: 00:00:05
+{% endqna %}
 
 # extrema of &lt;time interval&gt; : ( time interval, time interval )
 
