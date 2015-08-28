@@ -7,11 +7,6 @@ title: Files
 Does this file exist?
 
 {% qna %}
-Q: name of operating system
-A: Win2008R2
-{% endqna %}
-
-{% qna %}
 Q: exists file "C:\windows\system32\drivers\etc\hosts"
 A: True
 {% endqna %}
