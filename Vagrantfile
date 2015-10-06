@@ -1,7 +1,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "chef/centos-7.0"
+  config.vm.box = "boxcutter/centos71"
   config.vm.network "forwarded_port", guest: 80, host: 4000
 
   # Synchronize the guest clock to the host clock more aggressively
