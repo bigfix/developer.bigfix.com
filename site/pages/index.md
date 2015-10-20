@@ -3,44 +3,89 @@ title: Home
 section: home
 ---
 
-Welcome to the IBM BigFix Development site!
-===================
+<div class="container-left">
+  <article class="article">
+    <h1>BigFix Developer</h1>
 
-Developer.bigfix.com is the official IBM repository of information for developing IBM BigFix content, and is tailored to satisfy the needs of both beginner and expert content developers.
- 
-This site provides you with information about action scripts, REST API, other APIs, and inspectors, together with an interactive sandbox for relevance experimentation.
+    <section>
+      <p>This is the official IBM repository of information for developing IBM BigFix content, and it is tailored to satisfy the needs of both beginner and expert content developers.</p>
 
-> Developer.bigfix.com is a live and collaborative repository based on GitHub open source technology. You are welcome to contribute with your input to enhance the content of this site by using  [pull requests][11].
+      <p>If you are new to BigFix customization, start your navigation by clicking Get started.</p>
+    </section>
 
-Depending on your skill level, choose one of these two paths:
+    <section>
+      <p>Navigate the entries in the main toolbar to access all the available documentation and media about:</p>
 
-**Are you new to IBM BigFix content development?**
+      <ul>
+        <li>The <a href="/relevance/"><strong>Relevance language</strong></a> for retrieving and manipulating information defined on clients or collected in the database.</li>
 
-> It's time to start writing your own custom content for IBM BigFix!
-> First click **Introduction** to learn what you can customize and how. 
-> Then access the **Guide** subsections under each of the languages and APIs to learn how to use them. Each topic contains examples, video tutorials, and exercises.
+        <li>The <a href="/action-script/"><strong>Action script language</strong></a> for running configuration activities on clients and remediating lack of compliance.</li>
 
-**Are you already familiar with developing IBM BigFix custom content and you know which language or API to use?**
+        <li>The <a href="/rest-api/"><strong>REST API</strong></a> for running operations available on the BigFix console from outside the console.</li>
 
-> Navigate the specific language or API section and click:
-> **Reference**, to see the syntax and structure of all expressions and commands.  
-> **Search**, to find the syntax and the usage of known keys and properties (available for relevance language).
+        <li>The <a href="/client-compliance/"><strong>Client compliance API</strong></a> for using inspected data as input for external application installed on the client.</li>
 
-Are you ready to test the relevance expressions that you developed?
-Access the **Evaluator** subsection to access the live, interactive sandbox.
+        <li><a href="/other/"><strong>Other APIs</strong></a> for creating custom dashboards, interrogating the database and implementing your reporting solution.</li>
+      </ul>
+    </section>
 
-If an expression or command fails, check the **Troubleshooting** subsection to see the list of known errors and limitations with possible workarounds.  
+    <section>
+      <p>Learn how to implement these use case scenarios and which languages or API to use to:</p>
 
-Navigate the **Examples** to see real user scenarios implemented using relevance and action script languages and APIs.
+      <ul>
+        <li><strong>Manage custom content</strong>
+          <ul>
+            <li>Display client custom settings on the console and define an automatic computer group</li>
+            <li>Enforce custom policies</li>
+            <li>Run custom commands or configuration activities on clients</li>
+            <li>Show it in a dashboard</li>
+            <li>List it in a report on Web Reports</li>
+          </ul>
+        </li>
 
-To complete your 360-degree view of the IBM BigFix development world:
 
- - Connect to the BigFix developers community and go through a topic-based list of Q&As in the [forum][13].
- - Share your custom content with other users and download available expressions and structures from [bigfix.me][14].
- - Access the available development tools on [github.com/bigfix][15].
+        <li><strong>Customize interfaces to... </strong>
+          <ul>
+            <li>Create my custom dashboard to view from the console</li>
+            <li>Create my custom reporting in textual and graphical format against BigFix collected data</li>
+          </ul>
+        </li>
 
-[11]: https://help.github.com/articles/using-pull-requests/
-[12]: https://developer.bigfix.com/relevance/guide/basics/introduction.html
-[13]: https://forum.bigfix.com
-[14]: https://www.bigfix.me
-[15]: https://github.com/bigfix
+        <li><strong>Customize integrations to... </strong>
+          <ul>
+            <li>aggregate data contained in different BigFix environment into web reports</li>
+            <li>use data inspected on the client as input for a local proprietary application.</li>
+            <li>run operations available on the BigFix console from outside the console and automate tasks</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>You can access the list of available scenarios from any page in this site by clicking <a href="/use-cases/"><strong>use case scenarios</strong></a> in the main toolbar.</p>
+    </section>
+
+    
+    <p>Do not forget to read carefully the <a href="/get-started/best-practices.html"><strong>known best practices</strong></a>. They can help you to create your custom solution in a simpler and safer way by following a consolidated path.</p>
+  </article>
+</div>
+
+<div class="container-right">
+  <aside class="side-nav">
+    
+  
+    <h3>This site is hosted on GitHub. Feel free to contribute your input using <a href="https://help.github.com/articles/using-pull-requests/"><strong>pull requests</strong></a>.</h3>
+  
+    <h3>Complete your 360-degree view of the BigFix development world!</h3>
+
+    <dl>
+      <dt><a href="https://forum.bigfix.com">Forum</a></dt>
+      <dd>Connect to the BigFix developers community and go through a topic-based list of Q&amp;As.</dd>
+
+      <dt><a href="https://www.bigfix.me">bigfix.me</a></dt>
+      <dd>Share your custom content with other users and download available expressions and structures.</dd>
+
+      <dt><a href="https://github.com/bigfix">GitHub</a></dt>
+      <dd>Access the available development tools.</dd>
+    </dl>
+  
+  </aside>
+</div>

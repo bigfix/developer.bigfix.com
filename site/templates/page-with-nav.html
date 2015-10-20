@@ -1,14 +1,15 @@
 {% extends "page.html" %}
 
 {% block content %}
-  <div class="three columns">
-    <nav class="side-nav">
-      {{sideNav | safe}}
-    </nav>
-  </div>
-  <div class="nine columns">
-    <div class="article">
+  <div class="container-left">
+    <article class="article">
       {{content | safe}}
-    </div>
+    </article>
+  </div>
+  <div class="container-right">
+    <aside class="side-nav">
+      <h2 class="contents">Contents:</h2>
+      {{sideNav | safe}}
+    </aside>
   </div>
 {% endblock %}

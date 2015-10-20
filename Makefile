@@ -21,7 +21,6 @@ $(STAGING)/fonts.target: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts/*
 
 CSS_FILES := \
 	$(SOURCE)/site/assets/css/normalize.css \
-	$(SOURCE)/site/assets/css/skeleton.css \
 	$(SOURCE)/site/assets/font-awesome-4.3.0/css/font-awesome.css \
 	$(SOURCE)/site/assets/css/site.css
 
@@ -41,11 +40,19 @@ $(STAGING)/site/apple-touch-icon.png: $(SOURCE)/site/assets/apple-touch-icon.png
 	mkdir -p $(STAGING)/site
 	cp -f $^ $@
 
+$(STAGING)/img.target: $(SOURCE)/site/img $(SOURCE)/site/img/*
+	mkdir -p $(STAGING)/site/static/img
+	rsync --acls --xattrs --archive --delete \
+		$(SOURCE)/site/img \
+		$(STAGING)/site/static
+	touch $(STAGING)/img.target
+
 STAGING_TARGETS += $(STAGING)/site/static/site.css
 STAGING_TARGETS += $(STAGING)/site/static/site.js
 STAGING_TARGETS += $(STAGING)/fonts.target
 STAGING_TARGETS += $(STAGING)/site/favicon.ico
 STAGING_TARGETS += $(STAGING)/site/apple-touch-icon.png
+STAGING_TARGETS += $(STAGING)/img.target
 
 ################################################################################
 # pages
@@ -78,7 +85,8 @@ CACHE_BUST_DEPS := \
 	$(STAGING)/site/static/site.css \
 	$(STAGING)/site/static/site.js \
 	$(STAGING)/site/static/fonts \
-	$(STAGING)/site/index.html
+	$(STAGING)/site/index.html \
+	$(STAGING)/img.target
 
 $(STAGING)/cache-bust-site/index.html: $(CACHE_BUST_DEPS)
 	mkdir -p $(STAGING)/cache-bust-site

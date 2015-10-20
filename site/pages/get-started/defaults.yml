@@ -1,0 +1,33 @@
+section: get-started
+layout: page-with-nav
+nav:
+  - name: Home
+    href: /get-started/
+
+  - name: Manage custom content
+    href: /get-started/custom-content/
+    children:
+
+    - name: Fixlet structure
+      href: /get-started/custom-content/fixlet-structure.html
+
+    - name: Task structure
+      href: /get-started/custom-content/task-structure.html
+
+    - name: Analysis structure
+      href: /get-started/custom-content/analysis-structure.html
+
+    - name: Baseline structure
+      href: /get-started/custom-content/baseline-structure.html
+
+  - name: Customize user interfaces
+    href: /get-started/customize-user-interfaces.html
+
+  - name: Integrate with external applications
+    href: /get-started/integrate-external-applications.html
+
+  - name: Who can manage custom content
+    href: /get-started/who-can-manage.html
+
+  - name: Known best practices
+    href: /get-started/best-practices.html

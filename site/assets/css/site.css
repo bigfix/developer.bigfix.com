@@ -1,7 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: HelveticaNeue, Helvetica, Arial, Roboto, sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   color: #323232;
+  line-height: 1.5rem;
+}
+
+section {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+dl, dd {
+  margin: 0.2em 0 1.2em;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,6 +38,19 @@ h2 {
 
 h3 {
   font-size: 20px;
+}
+
+th, td {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+th:first-child, td:first-child {
+  padding-left: 0;
+}
+
+th:last-child, td:last-child {
+  padding-right: 0;
 }
 
 code {
@@ -45,8 +77,58 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
-p {
-  line-height: 24px;
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  background-color: #f8f8f8;
+}
+
+.container-left {
+  min-height: 700px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.container-right {
+  padding: 20px;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 90%;
+    padding: 0;
+  }
+
+  .container-right {
+    float: left;
+    width: 30%;
+    padding: 2rem 5%;
+  }
+
+  .container-left {
+    float: left;
+    width: 70%;
+    padding: 2rem 5%;
+  }
+}
+
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .button,
@@ -57,7 +139,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 1rem;
-  color: #555;
+  color: #000;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -68,6 +150,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border: 1px solid #bbb;
+  border-radius: 3px;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -83,22 +166,20 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0; }
+
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #4178BE;
-  border-color: #4178BE; }
+}
+
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover {
-  color: #FFF;
-  background-color: #5596E6;
-  border-color: #5596E6; }
+  background-color: #f8f8f8; }
 
 .bigfix-logo {
   vertical-align: bottom;
@@ -108,7 +189,7 @@ header.nav-header {
   font-size: 20px;
   line-height: 64px;
 
-  background-color: #2e2e2e;
+  background-color: #1976d2;
   color: #fff;
 }
 
@@ -139,28 +220,39 @@ nav.nav-header-links a {
   display: block;
   float: left;
   margin: 0 .5rem;
-  padding: 0 1rem;
+  padding: 0 .5rem;
 
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  opacity: .61;
+  opacity: .6;
 }
 
 nav.nav-header-links a:hover {
   opacity: 1.0;
 }
 
+nav.nav-get-started a.nav-get-started,
 nav.nav-relevance a.nav-relevance,
 nav.nav-action-script a.nav-action-script,
 nav.nav-rest-api a.nav-rest-api,
+nav.nav-other a.nav-other,
 nav.nav-client-compliance a.nav-client-compliance {
-  border-bottom: 3px solid #6EEDD8;
   opacity: 1.0;
 }
 
-.main {
-  margin-top: 1rem;
+h2.contents {
+  margin-top: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #9E9E9E;
+}
+
+.side-nav li li {
+  list-style-type: disc;
+}
+
+.side-nav li li li {
+  list-style-type: circle;
 }
 
 ul.side-nav-list {
@@ -193,6 +285,7 @@ h1.relevance-type-description {
 }
 
 .qna {
+  border-radius: 3px;
   background-color: #f8f8f8;
   font-family: monospace;
   word-wrap: break-word;
@@ -261,19 +354,15 @@ h1.relevance-type-description {
 }
 
 .relevance-property-header {
-  background-color: #f2f8ff;
-}
-
-.relevance-property-key {
-  padding: .75rem .75rem .75rem 0;
+  background-color: #E3F2FD;
 }
 
 .relevance-property-expand {
   cursor: pointer;
   display: inline-block;
   height: 100%;
-  padding: .75rem 0 .75rem .75rem;
-  width: 1.5em;
+  padding: .75rem;
+  width: 2rem;
 }
 
 .hidden {
@@ -366,4 +455,29 @@ h1.relevance-type-description {
   width: 100%;
   border: 2px solid #e0e0e0;
   outline: 0;
+}
+
+.note {
+  position: relative;
+  padding: 1.5rem;
+  padding-left: 4rem;
+
+  border-radius: 3px;
+  background-color: #E1F5FE;
+}
+
+.note p:first-child {
+  margin-top: 0;
+}
+
+.note .fa-info-circle {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+
+  font-size: 30px;
+}
+
+.note ul {
+  padding-left: 1rem;
 }

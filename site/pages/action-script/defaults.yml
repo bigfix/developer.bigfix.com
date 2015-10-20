@@ -1,1 +1,5 @@
 section: action-script
+layout: page-with-nav
+nav:
+  - name: Home
+    href: /action-script/

@@ -1,5 +1,5 @@
-section: rest-api
+section: other
 layout: page-with-nav
 nav:
   - name: Home
-    href: /rest-api/
+    href: /other/

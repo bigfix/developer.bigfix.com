@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn how to customize your IBM BigFix deployment.">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic'>
     <link rel="stylesheet" href="/static/site.css">
     <script src="/static/site.js"></script>
     <title>{{title}} | BigFix Developer</title>
@@ -30,14 +31,16 @@
           </a>
         </div>
         <nav class="nav-header-links nav-{{section}}">
+          <a class="nav-get-started" href="/get-started/">Get Started</a>
           <a class="nav-relevance" href="/relevance/">Relevance</a>
           <a class="nav-action-script" href="/action-script/">Action Script</a>
           <a class="nav-rest-api" href="/rest-api/">REST-API</a>
           <a class="nav-client-compliance" href="/client-compliance/">Client Compliance</a>
+          <a class="nav-other" href="/other/">Other APIs</a>
         </nav>
       </div>
     </header>
-    <main class="main container">
+    <main class="main">
       {% block content %}
       {{content | safe}}
       {% endblock %}

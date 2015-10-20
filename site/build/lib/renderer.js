@@ -104,7 +104,20 @@ function createQNAExtension(templateEnv) {
  */
 function createNoteExtension(templateEnv) {
   return createExtension('note', function(text) {
-    return escapeMarkdown(templateEnv.render('note.html', { content: text }));
+    return escapeMarkdown(templateEnv.render('note.html', {
+      content: marked(text)
+    }));
+  });
+}
+
+/**
+ * Create the {% section %} extension.
+ */
+function createSectionExtension(templateEnv) {
+  return createExtension('section', function(text) {
+    return escapeMarkdown(templateEnv.render('section.html', {
+      content : marked(text)
+    }));
   });
 }
 
@@ -127,6 +140,8 @@ function createTemplateEnv(templatesDir) {
 
   templateEnv.addExtension('QNAExtension', createQNAExtension(templateEnv));
   templateEnv.addExtension('NoteExtension', createNoteExtension(templateEnv));
+  templateEnv.addExtension('SectionExtension',
+                           createSectionExtension(templateEnv));
 
   templateEnv.addFilter('linkType', linkType);
 
