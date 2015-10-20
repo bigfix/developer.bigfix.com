@@ -13,7 +13,7 @@ To help you implementing these costumizations, BigFix provides you with querying
 Using these languages and APIs you can:
 
 <dl>
-  <dt>**[Manage custom content defined on clients](/get-started/manage-custom-content.html)**</dt>
+  <dt>**[Manage custom content defined on clients](/get-started/custom-content/)**</dt>
   <dd>To enforce custom policies, run commands to manage personalized content, collect custom data and display it on the console or in the Web Reports.</dd>
 
   <dt>**[Customize user interfaces](/get-started/customize-user-interfaces.html)**</dt>

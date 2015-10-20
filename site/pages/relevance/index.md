@@ -22,7 +22,7 @@ There are two different types of relevance language:
 Navigate this subtree to access the following resources and information:
 
 <dl>
-  <dt>**[Guides](/relevance/guides/)**</dt>
+  <dt>**[Guides](/relevance/guide/)**</dt>
   <dd>Where you find an overview of the relevance language and the user's guides that you can navigate.</dd>
 
   <dt>**[Reference](/relevance/reference/)**</dt>
