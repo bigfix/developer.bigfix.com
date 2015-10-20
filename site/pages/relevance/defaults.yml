@@ -13,11 +13,14 @@ nav:
         href: /relevance/guide/basics/
         children:
 
-          - name: Numbers
-            href: /relevance/guide/basics/numbers.html
-
           - name: Strings
             href: /relevance/guide/basics/strings.html
+
+          - name: Properties
+            href: /relevance/guide/basics/properties.html
+
+          - name: Numbers
+            href: /relevance/guide/basics/numbers.html
 
           - name: Casts
             href: /relevance/guide/basics/casts.html
@@ -33,9 +36,6 @@ nav:
 
           - name: It Expressions
             href: /relevance/guide/basics/it-expressions.html
-
-          - name: Properties
-            href: /relevance/guide/basics/properties.html
 
           - name: Singular and Plural
             href: /relevance/guide/basics/singular-and-plural.html
