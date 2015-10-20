@@ -14,7 +14,7 @@ We'll start with processor information:
 Q: vendor names of processors
 A: GenuineIntel
 A: GenuineIntel
-...
+A: GenuineIntel
 A: GenuineIntel
 {% endqna %}
 
@@ -26,7 +26,6 @@ Continuing, we can reference the speed of the processors:
 Q: speeds of processors
 A: 2600000000 hertz
 A: 2600000000 hertz
-...
 A: 2600000000 hertz
 A: 2600000000 hertz
 {% endqna %}
@@ -37,7 +36,6 @@ And the name:
 Q: family names of processors
 A: Core i7-3720QM
 A: Core i7-3720QM
-....
 A: Core i7-3720QM
 A: Core i7-3720QM
 {% endqna %}
