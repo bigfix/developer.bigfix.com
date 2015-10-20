@@ -2,8 +2,6 @@
 title: Task Structure
 ---
 
-# Task Structure
-
 A task is a document that contains instructions that BigFix agents use on target systems to run locally maintenance commands or configuration activities.
 
 This graphic shows the parts of the task that you can customize.

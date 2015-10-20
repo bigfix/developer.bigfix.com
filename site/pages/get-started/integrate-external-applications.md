@@ -2,8 +2,6 @@
 title: Integrate with External Applications
 ---
 
-# Integrate with External Applications
-
 The following graphic shows sample customizations that you can do to integrate BigFix with external applications and resources,  
 the language and API involved.
 

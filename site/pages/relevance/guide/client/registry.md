@@ -2,8 +2,6 @@
 title: Registry
 ---
 
-# Registry
-
 Does this registry key exist
 
 {% qna %}

@@ -2,8 +2,6 @@
 title: Best Practices
 ---
 
-# Best Practices
-
 Before personalizing your BigFix implementation, scan this list of known best practices and, when feasible, apply them:
 
 <dl>

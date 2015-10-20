@@ -2,8 +2,6 @@
 title: Plurals
 ---
 
-# Plurals and Errors
-
 As you saw in the preceding section, plurals of inspectors are easy to create,
 typically by adding an 's' to the end of the name. For example, `substring` is
 singular, `substrings` is plural:

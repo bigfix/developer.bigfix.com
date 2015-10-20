@@ -2,8 +2,6 @@
 title: REST-API
 ---
 
-# REST-API
-
 This API allows you to implement and run the tasks available on the console from outside the console or to automate tasks. The server part of the REST API is available on the BigFix server. Use your own REST API client to interrogate the server part through HTML calls.
 
 {% note %}

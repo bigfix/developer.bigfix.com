@@ -2,8 +2,6 @@
 title: Action Script
 ---
 
-# Action Script
-
 The scope of this language is to issue commands to remediate target clients from within Fixlets and tasks. It can incorporate relevance language expressions to implement variables. The script is run locally on relevant clients when the console operator clicks **Take action** in the Fixlet or task entry on the console.
 
 The information about the action script language is divide into the following areas:

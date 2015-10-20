@@ -2,8 +2,6 @@
 title: Network
 ---
 
-# Network
-
 ## Addressing
 
 We can easily grab the IP Addresses assigned to adapters on the system

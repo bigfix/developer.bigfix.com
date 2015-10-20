@@ -2,8 +2,6 @@
 title: Manage Custom Content
 ---
 
-# Manage Custom Content
-
 The following graphic shows sample customizations that you can do to interact with personalized data 
 available on the client system, the BigFix object to use to implement them and the languages involved.
 

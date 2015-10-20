@@ -2,8 +2,6 @@
 title: Guides
 ---
 
-# Guides
-
 {% section %}
 
 The relevance guides on this site provide you with self-lead training on the relevance language.

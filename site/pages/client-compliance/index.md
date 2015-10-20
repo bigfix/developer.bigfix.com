@@ -2,8 +2,6 @@
 title: Client Compliance
 ---
 
-# Client Compliance
-
 This API allows you to reuse the results of BigFix agent inspections as input for a 3rd-party application running on the same client.
 
 {% note %}

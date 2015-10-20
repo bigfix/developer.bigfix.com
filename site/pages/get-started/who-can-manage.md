@@ -2,8 +2,6 @@
 title: Who Can Manage Custom Content
 ---
 
-# Who Can Manage Custom Content
-
 {% section %}
 
 The generic term **content** can represent:

@@ -2,8 +2,6 @@
 title: Get started
 ---
 
-# Get Started
-
 IBM BigFix is a system-management suite of products that allows you to manage heterogeneous environments.
 
 Such environments can be already personalized and can include proprietary data that are not known to the default BigFix solution or external applications that BigFix must interact with. In this case you must let BigFix know that these custom resources exist and instruct BigFix to interact with them.

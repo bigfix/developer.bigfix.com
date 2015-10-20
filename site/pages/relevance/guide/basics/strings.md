@@ -2,8 +2,6 @@
 title: Strings
 ---
 
-# Strings
-
 The basic building blocks of the relevance language are numbers, strings and the expressions
 that combine them.
 

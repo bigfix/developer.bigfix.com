@@ -2,8 +2,6 @@
 title: Services
 ---
 
-# Services
-
 Are services running, do they exist
 
 I think service stuff is only for windows

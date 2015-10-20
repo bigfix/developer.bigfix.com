@@ -2,8 +2,6 @@
 title: Relevance
 ---
 
-<h1>Relevance</h1>
-
 {% section %}
 This language is one of the bases of the BigFix product and its scope is to retrieve information.
 

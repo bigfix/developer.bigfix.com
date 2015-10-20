@@ -2,8 +2,6 @@
 title: Users
 ---
 
-# Users
-
 {% qna %}
 Q: names of logged on users
 A: dex

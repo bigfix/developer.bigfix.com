@@ -2,8 +2,6 @@
 title: Applications
 ---
 
-# Applications
-
 There are a number of inspectors that are particularly useful for inspecting installed applications on the system. 
 
 The first inspector we will look at is the Registered Applications inspector. The Registered Applications inspector is called by using regapps and returns a list of installed applications on the system.

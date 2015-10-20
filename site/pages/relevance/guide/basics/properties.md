@@ -2,8 +2,6 @@
 title: Properties
 ---
 
-# Properties
-
 All objects have properties and those properties can be inspected and referenced. An example of a property of an object might be its size or length. There are thousands of property inspectors available to cover the majority of software and hardware features of Windows, Mac, and Unix systems.
 
 We can view all of the properties of an object using an introspector called "properties of type"

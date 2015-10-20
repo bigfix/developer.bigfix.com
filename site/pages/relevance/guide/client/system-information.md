@@ -2,8 +2,6 @@
 title: System Information
 ---
 
-# System Information
-
 The system information inspectors are particularly useful for identifying attributes of the running operating system. 
 
 ## Hardware

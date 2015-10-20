@@ -2,8 +2,6 @@
 title: Parent Types
 ---
 
-# Parent Types
-
 Objects can have a parent object.  The child object inherits the [properties](./properties.html) of its parent. This is very useful because it gives us access to a lot more inspectors.  For example, the parent of {{'file line' | linkType}} is {{'string' | linkType}}.  So we can make use of all the {{'string' | linkType}} inspectors with a {{'file line' | linkType}} object.
 
 In this example we use the [substring separated by](/relevance/reference/string.html#substring-separated-by-string-of-string-substring) inspector of the {{'string' | linkType}} object on a {{'file line' | linkType}} object:

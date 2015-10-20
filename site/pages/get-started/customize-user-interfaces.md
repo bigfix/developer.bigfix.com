@@ -2,8 +2,6 @@
 title: Customize User Interfaces
 ---
 
-# Customize User Interfaces
-
 The following graphic shows sample customizations that you can do to implement your custom user interface,  
 the language and API involved.
 

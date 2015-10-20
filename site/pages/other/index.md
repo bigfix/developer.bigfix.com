@@ -2,8 +2,6 @@
 title: Other APIs
 ---
 
-# Other APIs
-
 This section contains the available documentation and media for APIs other than REST and Client Compliance APIs.
 
 {% note %}
