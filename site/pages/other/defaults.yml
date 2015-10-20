@@ -1,4 +1,5 @@
 section: other
+sectionName: Other APIs
 layout: page-with-nav
 nav:
   - name: Home

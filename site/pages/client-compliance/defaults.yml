@@ -1,4 +1,5 @@
 section: client-compliance
+sectionName: Client Compliance
 layout: page-with-nav
 nav:
   - name: Home

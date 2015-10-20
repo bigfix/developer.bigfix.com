@@ -1,4 +1,5 @@
 section: action-script
+sectionName: Action Script
 layout: page-with-nav
 nav:
   - name: Home

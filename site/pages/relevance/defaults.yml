@@ -1,4 +1,5 @@
 section: relevance
+sectionName: Relevance
 layout: page-with-nav
 nav:
   - name: Home

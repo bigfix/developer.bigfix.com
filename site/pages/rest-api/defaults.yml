@@ -1,4 +1,5 @@
 section: rest-api
+sectionName: REST-API
 layout: page-with-nav
 nav:
   - name: Home
