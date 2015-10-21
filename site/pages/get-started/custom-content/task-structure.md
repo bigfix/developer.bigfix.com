@@ -11,4 +11,4 @@ For each part in the task structure, you see:
 * On the right, an explanation of its role within the logic of the task.
 * On the left, the language to use to create or modify that part. You can access the available information about that specific language by clicking the box or selecting the corresponding entry in the main toolbar.
 
-![Structure of a Task](/static/img/task-structure.png "Structure of a Task")
+<img src="/static/img/task-structure.png" width="100%" title="Structure of a Task">

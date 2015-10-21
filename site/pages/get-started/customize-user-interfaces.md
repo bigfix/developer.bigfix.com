@@ -5,7 +5,7 @@ title: Customize User Interfaces
 The following graphic shows sample customizations that you can do to implement your custom user interface,  
 the language and API involved.
 
-![Customize Interfaces](/static/img/customize-interfaces.png "Customize Interfaces")
+<img src="/static/img/customize-interfaces.png" width="100%" title="Customize Interfaces">
 
 The language highlighted in the graphic operates on data collected on the clients and stored in the BigFix database.
 
