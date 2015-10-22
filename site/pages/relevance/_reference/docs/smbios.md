@@ -9,3 +9,7 @@ Returns the smbios structure corresponding to the specified string as defined in
 # structure of &lt;smbios&gt; : smbios structure
 
 A property containing information pertaining to an instance of a given smbios structure as defined in the &#39;Type&#39; entries in the SMBIOS specification. This is implemented as a named iterated property.
+
+## Examples
+
+- https://bigfix.me/analysis/details/2994751
