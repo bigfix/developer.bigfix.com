@@ -22,7 +22,7 @@ This project is implemented in stages. You can find the documentation and media 
 
 * **Command line Interface tool**
 
-  Comprises of a lightweight command-line tool that wraps authentication and HTTP layer request packaging for the REST API. A request initiated by the CLI will be sent to the REST API for processing.
+  Comprises of a lightweight command-line tool that wraps authentication and HTTP layer request packaging for the REST-API. A request initiated by the CLI will be sent to the REST-API for processing.
 
   [Documentation](http://www-01.ibm.com/support/knowledgecenter/SS63NW_9.1.0/com.ibm.tivoli.tem.doc_9.1/Platform/Config/c_iem_cli_overview.html)  | [Examples](http://www-01.ibm.com/support/knowledgecenter/SS63NW_9.1.0/com.ibm.tivoli.tem.doc_9.1/Platform/Config/c_iem_examples.html)
 
