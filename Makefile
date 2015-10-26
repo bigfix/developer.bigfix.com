@@ -40,6 +40,10 @@ $(STAGING)/site/apple-touch-icon.png: $(SOURCE)/site/assets/apple-touch-icon.png
 	mkdir -p $(STAGING)/site
 	cp -f $^ $@
 
+$(STAGING)/site/robots.txt: $(SOURCE)/site/assets/robots.txt
+	mkdir -p $(STAGING)/site
+	cp -f $^ $@
+
 $(STAGING)/img.target: $(SOURCE)/site/img $(SOURCE)/site/img/*
 	mkdir -p $(STAGING)/site/static/img
 	rsync --acls --xattrs --archive --delete \
@@ -52,6 +56,7 @@ STAGING_TARGETS += $(STAGING)/site/static/site.js
 STAGING_TARGETS += $(STAGING)/fonts.target
 STAGING_TARGETS += $(STAGING)/site/favicon.ico
 STAGING_TARGETS += $(STAGING)/site/apple-touch-icon.png
+STAGING_TARGETS += $(STAGING)/site/robots.txt
 STAGING_TARGETS += $(STAGING)/img.target
 
 ################################################################################
