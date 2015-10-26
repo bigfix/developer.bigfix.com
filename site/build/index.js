@@ -7,7 +7,7 @@ var fs = require('fs'),
   renderRelevanceReference = require('./relevance-reference');
 
 /**
- * Recursively render every pages.
+ * Recursively render every page.
  */
 function renderPages(pagesDir, renderer, writer) {
   var pages = {};
