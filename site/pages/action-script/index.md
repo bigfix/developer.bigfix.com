@@ -9,10 +9,8 @@ The information about the action script language is divide into the following ar
 <dl>
   <dt>**Guides**</dt>
   <dd>Where you find an overview of the action script language and the user's guide that you can navigate.</dd>
-  <dt>**Reference**</dt>
+  <dt>**[Reference](./reference/)**</dt>
   <dd>Which contains the information about all the available statements.</dd>
-  <dt>**Online evaluator**</dt>
-  <dd>From where you can access an interactive sandbox where you can test your action script.</dd>
 </dl>
 
 {% note %}
