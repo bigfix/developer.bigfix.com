@@ -18,6 +18,13 @@ categories:
       - wait
       - waitdetached
       - waithidden
+  - title: File Commands
+    section: file
+    description: The [file commands](./file/) allow you copy, move, and delete files.
+    commands:
+      - copy
+      - move
+      - delete
 ---
 
 {% for category in categories %}

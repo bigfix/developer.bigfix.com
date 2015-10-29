@@ -51,3 +51,16 @@ nav:
 
           - name: waithidden
             href: /action-script/reference/execution/waithidden.html
+
+      - name: File Commands
+        href: /action-script/reference/file/
+        children:
+
+          - name: copy
+            href: /action-script/reference/file/copy.html
+
+          - name: move
+            href: /action-script/reference/file/move.html
+
+          - name: delete
+            href: /action-script/reference/file/delete.html
