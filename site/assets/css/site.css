@@ -59,7 +59,6 @@ code {
   font-family: monospace;
   padding: .25rem .25rem;
   margin: .25rem .25rem;
-  white-space: nowrap;
 }
 
 pre > code {
@@ -301,6 +300,10 @@ h1.relevance-type-description {
   padding-top: .25rem;
   padding-bottom: .25rem; 
   white-space: pre-wrap;
+}
+
+.qna code {
+  white-space: nowrap;
 }
 
 .hljs-keyword {

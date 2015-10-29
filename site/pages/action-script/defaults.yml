@@ -4,3 +4,47 @@ layout: page-with-nav
 nav:
   - name: Home
     href: /action-script/
+
+  - name: Reference
+    href: /action-script/reference/
+    children:
+
+      - name: Execution Commands
+        href: /action-script/reference/execution/
+        children:
+
+          - name: action launch preference low-priority
+            href: /action-script/reference/execution/action-launch-preference-low-priority.html
+
+          - name: action launch preference normal-priority
+            href: /action-script/reference/execution/action-launch-preference-normal-priority.html
+
+          - name: dos
+            href: /action-script/reference/execution/dos.html
+
+          - name: notify client
+            href: /action-script/reference/execution/notify-client.html
+
+          - name: override
+            href: /action-script/reference/execution/override.html
+
+          - name: run
+            href: /action-script/reference/execution/run.html
+
+          - name: rundetached
+            href: /action-script/reference/execution/rundetached.html
+
+          - name: runhidden
+            href: /action-script/reference/execution/runhidden.html
+
+          - name: script
+            href: /action-script/reference/execution/script.html
+
+          - name: wait
+            href: /action-script/reference/execution/wait.html
+
+          - name: waitdetached
+            href: /action-script/reference/execution/waitdetached.html
+
+          - name: waithidden
+            href: /action-script/reference/execution/waithidden.html
