@@ -22,6 +22,7 @@ categories:
     section: file
     description: The [file commands](./file/) allow you copy, move, and delete files.
     commands:
+      - appendfile
       - copy
       - move
       - delete

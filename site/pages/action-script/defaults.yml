@@ -56,6 +56,9 @@ nav:
         href: /action-script/reference/file/
         children:
 
+          - name: appendfile
+            href: /action-script/reference/file/appendfile.html
+
           - name: copy
             href: /action-script/reference/file/copy.html
 
