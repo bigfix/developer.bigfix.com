@@ -26,7 +26,7 @@ If duplicate keywords are listed, the last value will be used. The entire comman
 <dl>
 
   <dt>**Completion**</dt>
-  <dd>
+  <dd>Default value: `none` for run, `process` for wait.
     <ul>
       <li>`Completion=none` acts the same as the current run command variants.</li>
       <li>`Completion=process` acts the same as the current wait command variants.</li>
@@ -35,7 +35,7 @@ If duplicate keywords are listed, the last value will be used. The entire comman
   </dd>
 
   <dt>**Priority (Windows Only)**</dt>
-  <dd>
+  <dd>Default value: `normal`
     <ul>
       <li>`Priority=normal` acts the same as the [action launch preference normal-priority](./action-launch-preference-normal-priority.html) command.</li>
       <li>`Priority=low` acts the same as the [action launch preference low-priority](./action-launch-preference-low-priority.html) command.</li>
@@ -43,7 +43,7 @@ If duplicate keywords are listed, the last value will be used. The entire comman
   </dd>
 
   <dt>**Hidden (Windows Only)**</dt>
-  <dd>
+  <dd>Default value: `false`
     <ul>
       <li>`Hidden=true` applies the `SW_HIDE` attribute to the process as is done with the [runhidden](./runhidden.html) and [waithidden](./waithidden.html) commands.</li>
       <li>`Hidden=false` removes the `SW_HIDE` attribute from the process.</li>
@@ -51,7 +51,7 @@ If duplicate keywords are listed, the last value will be used. The entire comman
   </dd>
 
   <dt>**Detached (Windows Only)**</dt>
-  <dd>
+  <dd>Default value: `false`
     <ul>
       <li>`Detached=true` creates the process using the detach method as is done in the [rundetached](./rundetached.html) and [waitdetached](./waitdetached.html) commands.</li>
       <li>`Detached=false` creates the process using the normal method.</li>
@@ -59,7 +59,7 @@ If duplicate keywords are listed, the last value will be used. The entire comman
   </dd>
 
   <dt>**RunAs**</dt>
-  <dd>
+  <dd>Default value: `agent`
     <ul>
       <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands.</li>
       <li><p>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken.</p>
