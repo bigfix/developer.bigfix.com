@@ -24,6 +24,7 @@ categories:
     commands:
       - appendfile
       - copy
+      - createfile until
       - move
       - delete
 ---

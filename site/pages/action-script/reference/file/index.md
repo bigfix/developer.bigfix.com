@@ -12,6 +12,9 @@ These commands allow you to copy, move, and delete files.
   <dt>[**copy**](./copy.html)</dt>
   <dd>Copy a file.</dd>
 
+  <dt>[**createfile until**](./createfile-until.html)</dt>
+  <dd>Append text to a special file in a more convenient way.</dd>
+
   <dt>[**move**](./move.html)</dt>
   <dd>Move or rename a file.</dd>
 
