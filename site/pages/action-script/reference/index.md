@@ -14,6 +14,7 @@ categories:
       - rundetached
       - runhidden
       - script
+      - script64
       - wait
       - waitdetached
       - waithidden

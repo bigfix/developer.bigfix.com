@@ -40,6 +40,9 @@ nav:
           - name: script
             href: /action-script/reference/execution/script.html
 
+          - name: script64
+            href: /action-script/reference/execution/script64.html
+
           - name: wait
             href: /action-script/reference/execution/wait.html
 

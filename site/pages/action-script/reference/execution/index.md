@@ -33,6 +33,9 @@ These commands allow you to run external commands, and to change the behavior of
   <dt>[**script**](./script.html)</dt>
   <dd>Run an JavaScript or Visual Basic script.</dd>
 
+  <dt>[**script64**](./script64.html)</dt>
+  <dd>Run an JavaScript or Visual Basic script in 64-bit mode.</dd>
+
   <dt>[**wait**](./wait.html)</dt>
   <dd>Run an external command and wait for it to complete.</dd>
 
