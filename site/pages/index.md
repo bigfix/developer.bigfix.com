@@ -23,8 +23,6 @@ section: home
 
         <li>The <a href="/rest-api/">REST-API</a> for running operations available on the BigFix console from outside the console.</li>
 
-        <li>The <a href="/client-compliance/">Client Compliance API</a> for using inspected data as input for external application installed on the client.</li>
-
         <li><a href="/other/">Other APIs</a> for creating custom dashboards, interrogating the database and implementing your reporting solution.</li>
       </ul>
     </section>
@@ -60,7 +58,7 @@ section: home
         </li>
       </ul>
 
-      <p>You can access the list of available scenarios from any page in this site by clicking <a href="/use-cases/">use case scenarios</a> in the main toolbar.</p>
+      <p>You can access the list of available scenarios from any page in this site by clicking <a href="/examples/">Examples</a> in the main toolbar.</p>
     </section>
 
     
