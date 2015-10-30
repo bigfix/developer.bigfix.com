@@ -2,7 +2,9 @@
 title: Baseline Structure
 ---
 
-A baseline is a deployment container of Fixlets and tasks. You can use it to apply a set of contents at the same time to one or more targets. The contents are applied according to the sequence specified in the baseline description.
+A baseline is a deployment container of Fixlets and tasks. You can use it to
+apply a set of contents at the same time to one or more targets. The contents
+are applied according to the sequence specified in the baseline description.
 
 This graphic shows the parts of the baseline that you can customize.
 

@@ -2,7 +2,9 @@
 title: Analysis Structure
 ---
 
-An analysis is a collection of property expressions that allows an operator to view and summarize on the console various properties of BigFix client computers across a network.
+An analysis is a collection of property expressions that allows an operator to
+view and summarize on the console various properties of BigFix client computers
+across a network.
 
 This graphic shows the parts of the analysis that you can customize.
 
