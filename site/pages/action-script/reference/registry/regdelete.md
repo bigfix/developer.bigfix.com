@@ -7,10 +7,10 @@ currently exists or not.
 
 ## Syntax
 
-    regdelete <key> <name>
+    regdelete <key> <value-name>
 
-Where `key` is the name of the key and `name` is the name of the value in the
-registry key you wish to delete.
+Where `key` is the name of the key and `value-name` is the name of the value in
+the registry key you wish to delete.
 
 ## Examples
 
@@ -44,3 +44,5 @@ When this action is executed, the key named `removethisandbelow`, along with all
 its sub-keys, is deleted. You can use the [appendfile](../file/appendfile.html)
 or [createfile until](../file/createfile-until.html) commands to build this
 `.reg` file.
+
+If the specified key doesn't already exist, it will be created by this command.
