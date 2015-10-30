@@ -1,6 +1,11 @@
 ---
 title: Reference
 categories:
+  - title: Download Commands
+    section: download
+    description: The [download commands](./download/) allow you to download files to the client machine
+    commands:
+      - download
   - title: Execution Commands
     section: execution
     description: The [execution commands](./execution/) allow you to run external commands and control their behavior.
