@@ -32,4 +32,4 @@ regdelete64 "[HKEY_CLASSES_ROOT\ShellScrap]" "NeverShowExt"
 This command is Windows-only. It will cause an action script to terminate on a
 Unix agent.
 
-If the specified key doesn't already exist, it will be created by this command. 
+If the specified key doesn't already exist, it will be created by this command.
