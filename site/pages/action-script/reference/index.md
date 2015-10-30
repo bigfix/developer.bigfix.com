@@ -34,8 +34,9 @@ categories:
     section: registry
     description: The [registry commands](./registry/) allow you edit the Windows Registry.
     commands:
-      - regset
       - regdelete
+      - regset
+      - regset64
 ---
 
 {% for category in categories %}

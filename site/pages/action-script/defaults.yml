@@ -84,8 +84,11 @@ nav:
         href: /action-script/reference/registry/
         children:
 
+          - name: regdelete
+            href: /action-script/reference/registry/regdelete.html
+
           - name: regset
             href: /action-script/reference/registry/regset.html
 
-          - name: regdelete
-            href: /action-script/reference/registry/regdelete.html
+          - name: regset64
+            href: /action-script/reference/registry/regset64.html
