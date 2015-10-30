@@ -9,6 +9,9 @@ These commands allow you to copy, move, and delete files.
   <dt>[**appendfile**](./appendfile.html)</dt>
   <dd>Append text to a special file.</dd>
 
+  <dt>[**archive now**](./archive-now.html)</dt>
+  <dd>Send a file from the client to the server.</dd>
+
   <dt>[**copy**](./copy.html)</dt>
   <dd>Copy a file.</dd>
 

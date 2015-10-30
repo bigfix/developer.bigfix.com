@@ -59,6 +59,9 @@ nav:
           - name: appendfile
             href: /action-script/reference/file/appendfile.html
 
+          - name: archive now
+            href: /action-script/reference/file/archive-now.html
+
           - name: copy
             href: /action-script/reference/file/copy.html
 
