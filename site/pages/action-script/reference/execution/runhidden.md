@@ -2,7 +2,7 @@
 title: runhidden
 ---
 
-This command uses [CreateProcess](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682425%28v=vs.85%29.aspx) to launch a command in a hidden window. It hides the window by setting the [STARTUPINFO](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686331%28v=vs.85%29.aspx) `dwFlag` to `STARTF_USESHOWWINDOW` and setting `wShowWindow` to `SW_HIDE`. The process that is created may modify that flag to subsequently show the window again.
+This command uses [CreateProcess](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682425%28v=vs.85%29.aspx) to launch a command in a hidden window. It hides the window by setting the [STARTUPINFO](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686331%28v=vs.85%29.aspx) `dwFlags` to `STARTF_USESHOWWINDOW` and setting `wShowWindow` to `SW_HIDE`. The process that is created may modify that flag to subsequently show the window again.
 
 After launching, the following action command line is immediately executed. To wait for the launch to complete before continuing the action, use the [waithidden](./waithidden.html) command.
 
