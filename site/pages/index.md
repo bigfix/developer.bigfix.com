@@ -31,29 +31,27 @@ section: home
       <p>Learn how to implement these use case scenarios and which languages or API to use to:</p>
 
       <ul>
-        <li><strong>Manage custom content</strong>
+        <li><strong>Manage custom content on clients</strong>
           <ul>
-            <li><a href="/examples/custom-computer-group.html">Use Relevance to create a computer group</a></li>
-            <li>Enforce custom policies</li>
-            <li>Run custom commands or configuration activities on clients</li>
-            <li>Show it in a dashboard</li>
-            <li>List it in a report on Web Reports</li>
+            <li><a href="https://developer.bigfix.com/examples/custom-computer-group.html">Use Relevance to create a computer group</a></li>
+            <li>Retrieve client custom settings and display them on the console.</li>
+            <li>Enforce a custom policy.</li>
+            <li>Run custom commands or configuration activities on clients.</li>
           </ul>
         </li>
 
-
-        <li><strong>Customize interfaces to... </strong>
+        <li><strong>Customize interfaces</strong>
           <ul>
-            <li>Create my custom dashboard to view from the console</li>
-            <li>Create my custom reporting in textual and graphical format against BigFix collected data</li>
+            <li>Create my custom dashboard to view from the console.</li>
+            <li>Create my custom reporting in textual and graphical format against BigFix collected data.</li>
           </ul>
         </li>
 
-        <li><strong>Customize integrations to... </strong>
+        <li><strong>Customize integrations</strong>
           <ul>
-            <li>aggregate data contained in different BigFix environment into web reports</li>
-            <li>use data inspected on the client as input for a local proprietary application.</li>
-            <li>run operations available on the BigFix console from outside the console and automate tasks</li>
+            <li>Aggregate data contained in different BigFix environment into web reports.</li>
+            <li>Use data inspected on the client as input for a local proprietary application.</li>
+            <li>Run operations available on the BigFix console from outside the console and automate tasks.</li>
           </ul>
         </li>
       </ul>
