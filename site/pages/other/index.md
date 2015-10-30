@@ -8,6 +8,13 @@ This section contains the available documentation and media for APIs other than 
 
 This project is implemented in stages. You can find the documentation and media that will be included in the next steps at the following links:
 
+* **Client Compliance API**
+
+  This API allows you to reuse the results of BigFix agent inspections as input
+  for a 3rd-party application running on the same client.
+
+  [Documentation](http://www-01.ibm.com/support/knowledgecenter/SS6MER_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/API_Reference/ClientAPI/ClientIntro.html) | [Wiki](http://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Client%20Compliance%20API)
+
 * **Web Reports API**
 
   Runs queries using session relevance to extract data from the Web Reports DB.
