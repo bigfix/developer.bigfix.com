@@ -79,3 +79,10 @@ nav:
 
           - name: utility
             href: /action-script/reference/file/utility.html
+
+      - name: Registry Commands
+        href: /action-script/reference/registry/
+        children:
+
+          - name: regset
+            href: /action-script/reference/registry/regset.html

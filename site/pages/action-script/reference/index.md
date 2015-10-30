@@ -30,6 +30,11 @@ categories:
       - extract
       - move
       - utility
+  - title: Registry Commands
+    section: registry
+    description: The [registry commands](./registry/) allow you edit the Windows Registry.
+    commands:
+      - regset
 ---
 
 {% for category in categories %}
