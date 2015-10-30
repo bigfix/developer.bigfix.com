@@ -48,3 +48,11 @@ and sha1 are correct.
 download as patch1 http://www.download.windowsupdate.com/some-update.exe
 continue if {(size of it = 813160 and sha1 of it ="92c643875dda80022b3ce3f1ad580f62704b754f") of file "patch1" of folder "__Download"}
 ```
+
+## Notes
+
+Relevance substitution is **not** performed on the download action command
+lines. This is because these actions are scanned by other components that
+deliver the downloads, and these other components run on different machines
+which do not share those client's evaluation context. This restriction, however,
+allows BigFix to prefetch downloads through a relay hierarchy to the clients.
