@@ -33,7 +33,7 @@ section: home
       <ul>
         <li><strong>Manage custom content</strong>
           <ul>
-            <li>Display client custom settings on the console and define an automatic computer group</li>
+            <li><a href="/examples/custom-computer-group.html">Use Relevance to create a computer group</a></li>
             <li>Enforce custom policies</li>
             <li>Run custom commands or configuration activities on clients</li>
             <li>Show it in a dashboard</li>
