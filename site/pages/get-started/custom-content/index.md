@@ -5,7 +5,7 @@ title: Manage Custom Content
 The following graphic shows sample customizations that you can do to interact with personalized data 
 available on the client system, the BigFix object to use to implement them and the languages involved.
 
-<img src="/static/img/manage-custom-content.png" width="100%" title="Manage Custom Content">
+![Manage Custom Content](/static/img/manage-custom-content.png)
 
 The languages highlighted in the graphic operate real time on the client machine and their scope is to inspect 
 data, for the client relevance language, and to run commands, for the action script language.

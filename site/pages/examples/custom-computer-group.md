@@ -17,7 +17,7 @@ Relevance.
 <li>In the left window, expand the **By Site** node.</li>
 <li>Click the **BES Support** site.</li>
 <li>In the right window, scroll down and click the **BES Relay Installed Status** property.
-  <p><img src="/static/img/example-group-1.png" max-width="100%" title="Manage Properties Dialog"></p>
+  <p>![Manage Properties Dialog](/static/img/example-group-1.png)</p>
 </li>
 <li>In the Relevance window, select the Relevance statement (CTRL+A) and copy it.</li>
 <li>Click **Cancel** to close the Manage Properties window.</li>
@@ -30,7 +30,7 @@ Q: if exists relay service then "Yes - " & state of service "BESRelay" else if e
 {% endqna %}
 </li>
 <li>Evaluate the query. You should see the response *Main BES Server* displayed.
-  <p><img src="/static/img/example-group-2.png" max-width="100%" title="Fixlet Debugger Dialog"></p>
+  <p>![Fixlet Debugger Dialog](/static/img/example-group-2.png)</p>
   <p>To create a group, you need to develop a Relevance query that evaluates to `True`. The following steps take you through this process.</p>
 </li>
 
@@ -60,7 +60,7 @@ Q: (exists relay service) OR (exists main gather service)
 The OR expression checks to see whether the Main Gather service is installed. This service is installed on the BigFix server, meaning that you are now checking to see whether the endpoint is either a BigFix relay or a server.</li>
 
 <li>Evaluate the query. The query should respond with `True`.
-<p><img src="/static/img/example-group-3.png" max-width="100%" title="Fixlet Debugger Dialog"></p>
+<p>![Fixlet Debugger Dialog](/static/img/example-group-3.png)</p>
 </li>
 
 <li>Copy the entire statement.
@@ -68,17 +68,17 @@ The OR expression checks to see whether the Main Gather service is installed. Th
 
 <li>Switch to the BigFix console.</li>
 <li>From the menu, select **Tools > Create New Automatic Computer Group**. The create New Automatic Computer Group window is displayed.
-<p><img src="/static/img/example-group-4.png" max-width="100%" title="Create Group Dialog"></p>
+<p>![Create Group Dialog](/static/img/example-group-4.png)</p>
 </li>
 
 <li>Enter **Infrastructure Systems** for the **Group name** field.</li>
 <li>Leave the **Create in site** and **Create in Domain fields** at the default value. For the bottom drop-down box, change the value from **Computer Name** to **Relevance Expression**.
-<p><img src="/static/img/example-group-5.png" max-width="100%" title="Create Group Dialog"></p>
+<p>![Create Group Dialog](/static/img/example-group-5.png)</p>
 </li>
 
 <li>Click **Edit Relevance**. The Edit Relevance window is displayed.</li>
 <li>In the Edit Relevance window, remove any current Relevance and paste the Relevance expression that you created in Step 18 to this window.
-<p><img src="/static/img/example-group-6.png" max-width="100%" title="Edit Relevance Dialog"></p>
+<p>![Edit Relevance Dialog](/static/img/example-group-6.png)</p>
 </li>
 
 <li>Click **OK** to save the Relevance and close this window.</li>
