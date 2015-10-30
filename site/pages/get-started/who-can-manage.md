@@ -52,7 +52,6 @@ makes sense, save it to the domain in which that custom content will be used.
 
 {% endsection %}
 
-
 # Who can access my custom content?
 
 The list of operators that can access a custom content depends on the site where
