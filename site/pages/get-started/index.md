@@ -2,11 +2,17 @@
 title: Get started
 ---
 
-IBM BigFix is a system-management suite of products that allows you to manage heterogeneous environments.
+IBM BigFix is a system-management suite of products that allows you to manage
+heterogeneous environments.
 
-Such environments can be already personalized and can include proprietary data that are not known to the default BigFix solution or external applications that BigFix must interact with. In this case you must let BigFix know that these custom resources exist and instruct BigFix to interact with them.
+Such environments can be already personalized and can include proprietary data
+that are not known to the default BigFix solution or external applications that
+BigFix must interact with. In this case you must let BigFix know that these
+custom resources exist and instruct BigFix to interact with them.
 
-To help you implementing these costumizations, BigFix provides you with querying and scripting proprietary languages that are platform independent, to a certain extent, and with APIs.
+To help you implement these costumizations, BigFix provides you with querying
+and scripting proprietary languages that are platform independent, to a certain
+extent, and with APIs.
 
 Using these languages and APIs you can:
 
