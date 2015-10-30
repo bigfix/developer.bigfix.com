@@ -7,6 +7,9 @@ These commands allow you to edit the [Windows Registry](https://en.wikipedia.org
 <dl>
 
   <dt>[**regset**](./regset.html)</dt>
-  <dd>Set a regisry key value.</dd>
+  <dd>Set a registry key value.</dd>
+
+  <dt>[**regdelete**](./regdelete.html)</dt>
+  <dd>Delete a registry key value.</dd>
 
 </dl>

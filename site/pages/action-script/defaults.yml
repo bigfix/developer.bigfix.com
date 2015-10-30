@@ -86,3 +86,6 @@ nav:
 
           - name: regset
             href: /action-script/reference/registry/regset.html
+
+          - name: regdelete
+            href: /action-script/reference/registry/regdelete.html

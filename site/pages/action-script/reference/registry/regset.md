@@ -23,7 +23,7 @@ hexadecimal with leading zeroes as shown below.
 Set the `Level` value of the specified registry key to the `DWORD` 2:
 
 ```actionscript
-regset "[HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Word\Security]" "Level"=dword:00000002
+regset "[HKCU\Software\Microsoft\Office\9.0\Word\Security]" "Level"=dword:00000002
 ```
 
 Set the `testString` value of the specified registry key to `bob`.
