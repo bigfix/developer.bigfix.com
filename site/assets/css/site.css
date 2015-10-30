@@ -70,6 +70,7 @@ pre > code {
   display: block;
   padding: .75rem 1rem;
   margin: 0;
+  white-space: pre-wrap;
 }
 
 a {
