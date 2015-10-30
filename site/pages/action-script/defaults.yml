@@ -65,11 +65,14 @@ nav:
           - name: createfile until
             href: /action-script/reference/file/createfile-until.html
 
+          - name: delete
+            href: /action-script/reference/file/delete.html
+
           - name: extract
             href: /action-script/reference/file/extract.html
 
           - name: move
             href: /action-script/reference/file/move.html
 
-          - name: delete
-            href: /action-script/reference/file/delete.html
+          - name: utility
+            href: /action-script/reference/file/utility.html

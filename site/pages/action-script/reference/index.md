@@ -25,9 +25,10 @@ categories:
       - appendfile
       - copy
       - createfile until
+      - delete
       - extract
       - move
-      - delete
+      - utility
 ---
 
 {% for category in categories %}
