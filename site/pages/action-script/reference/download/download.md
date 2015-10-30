@@ -2,9 +2,9 @@
 title: download
 ---
 
-This command downloads a file indicated from a URL. After downloading, the file
-is saved in a folder named `__Download` relative to the local folder of the site
-that issued the download command.
+This command downloads a file from a URL. After downloading, the file is saved
+in a folder named `__Download` relative to the local folder of the site that
+issued the download command.
 
 If the download fails, the action script terminates.
 

@@ -16,6 +16,9 @@ nav:
           - name: download
             href: /action-script/reference/download/download.html
 
+          - name: download as
+            href: /action-script/reference/download/download-as.html
+
       - name: Execution Commands
         href: /action-script/reference/execution/
         children:
