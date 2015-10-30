@@ -9,7 +9,7 @@ This allows you to issue a native 64-bit script command, bypassing Windows
 
 This command executes an external script with the given name. This can be used to run a script created for a scripting language like [JavaScript](https://en.wikipedia.org/wiki/JavaScript) or [Visual Basic](https://en.wikipedia.org/wiki/Visual_Basic).
 
-The action containing the `script` keyword will terminate if the appropriate scripting engine is not installed or if the script cannot be executed. The next line of the action is not executed until the specified script terminates.
+The action containing the `script64` keyword will terminate if the appropriate scripting engine is not installed or if the script cannot be executed. The next line of the action is not executed until the specified script terminates.
 
 ## Syntax
 
