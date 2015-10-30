@@ -1,0 +1,9 @@
+section: examples
+sectionName: Examples
+layout: page-with-nav
+nav:
+  - name: Home
+    href: /examples/
+
+  - name: Create a Computer Group
+    href: /examples/custom-computer-group.html
