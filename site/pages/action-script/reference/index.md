@@ -25,6 +25,7 @@ categories:
       - appendfile
       - copy
       - createfile until
+      - extract
       - move
       - delete
 ---

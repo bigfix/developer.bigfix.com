@@ -65,6 +65,9 @@ nav:
           - name: createfile until
             href: /action-script/reference/file/createfile-until.html
 
+          - name: extract
+            href: /action-script/reference/file/extract.html
+
           - name: move
             href: /action-script/reference/file/move.html
 

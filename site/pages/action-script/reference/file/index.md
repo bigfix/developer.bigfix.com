@@ -15,6 +15,9 @@ These commands allow you to copy, move, and delete files.
   <dt>[**createfile until**](./createfile-until.html)</dt>
   <dd>Append text to a special file in a more convenient way.</dd>
 
+  <dt>[**extract**](./extract.html)</dt>
+  <dd>Extract a BigFix archive file.</dd>
+
   <dt>[**move**](./move.html)</dt>
   <dd>Move or rename a file.</dd>
 
