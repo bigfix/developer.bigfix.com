@@ -37,7 +37,6 @@ mkdir -p /var/www
 rsync -a /vagrant/tools/make-dev /var/www
 (cd /var/www/make-dev && npm install)
 cp /usr/bin/node /var/www/make-dev/node
-chcon -t unconfined_exec_t /var/www/make-dev/node
 cp -f /vagrant/conf/systemd/make-dev.service /usr/lib/systemd/system
 systemctl daemon-reload
 systemctl enable make-dev
