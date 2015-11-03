@@ -9,7 +9,7 @@ local folder of the site that issued the `download as` command.
 For instance, consider the command:
 
 ```actionscript
-download as intro.txt ftp://ftp.microsoft.com/deskapps/readme.txt
+download as intro.txt ftp://ftp.microsoft.com/deskapps/readme.txt
 ```
 
 The example downloads the `readme.txt` file from the Microsoft site and saves it
@@ -38,14 +38,14 @@ saves the downloaded file to the action site `__Download` folder and renames
 it to `myprog.exe`.
 
 ```actionscript
-download as myprog.exe http://www.website.com/update/prog555.exe
+download as myprog.exe http://www.website.com/update/prog555.exe
 ```
 
 Downloads the specified file, renames it `patch1` and continues only if the size
 and sha1 are correct.
 
 ```actionscript
-download as patch1 http://www.download.windowsupdate.com/some-update.exe
+download as patch1 http://www.download.windowsupdate.com/some-update.exe
 continue if {(size of it = 813160 and sha1 of it ="92c643875dda80022b3ce3f1ad580f62704b754f") of file "patch1" of folder "__Download"}
 ```
 

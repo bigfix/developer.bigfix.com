@@ -52,14 +52,14 @@ Download `bfxxxx.exe` from the BigFix site, and save the downloaded file in the
 default site `__Download` folder.
 
 ```actionscript
-download http://download.bigfix.com/update/bfxxxx.exe
+download http://download.bigfix.com/update/bfxxxx.exe
 ```
 
 Download and save `bfxxxx.exe` to the default site `__Download` folder and
 executes the program once the download completes.
 
 ```actionscript
-download open http://download.bigfix.com/update/bfxxxx.exe
+download open http://download.bigfix.com/update/bfxxxx.exe
 ```
 
 Downloads `bfxxxx.exe` from the BigFix site as soon as the command is executed.
@@ -75,7 +75,7 @@ it. The site directory is the working directory for all commands and the
 `__Download` directory is located there.
 
 ```actionscript
-download "http://download.microsoft.com/download/prog.exe"
+download "http://download.microsoft.com/download/prog.exe"
 run "__Download\prog.exe"
 ```
 
