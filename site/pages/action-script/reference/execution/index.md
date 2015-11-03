@@ -15,9 +15,6 @@ These commands allow you to run external commands, and to change the behavior of
   <dt>[**dos**](./dos.html)</dt>
   <dd>Runs a Windows command.</dd>
 
-  <dt>[**notify client**](./notify-client.html)</dt>
-  <dd>Make a client send a full refresh.</dd>
-
   <dt>[**override**](./override.html)</dt>
   <dd>Run an external command with a variety of different options to control its behavior.</dd>
 

@@ -1,9 +1,26 @@
 ---
 title: Reference
 categories:
+  - title: Client Commands
+    section: client
+    description: The [client commands](./client/) allow you to control the behavior of the BigFix client.
+    commands:
+      - notify client
+      - administrator add
+      - administrator delete
+      - notify client
+      - relay select
+      - restart
+      - set clock
+      - setting
+      - setting delete
+      - shutdown
+      - site force evaluation
+      - subscribe
+      - unsubscribe
   - title: Download Commands
     section: download
-    description: The [download commands](./download/) allow you to download files to the client machine
+    description: The [download commands](./download/) allow you to download files to the client machine.
     commands:
       - download
       - download as
@@ -14,7 +31,6 @@ categories:
       - action launch preference low-priority
       - action launch preference normal-priority
       - dos
-      - notify client
       - override
       - run
       - rundetached

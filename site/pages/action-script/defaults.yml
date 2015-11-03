@@ -9,6 +9,46 @@ nav:
     href: /action-script/reference/
     children:
 
+      - name: Client Commands
+        href: /action-script/reference/client/
+        children:
+
+          - name: administrator add
+            href: /action-script/reference/client/administrator-add.html
+
+          - name: administrator delete
+            href: /action-script/reference/client/administrator-delete.html
+
+          - name: notify client
+            href: /action-script/reference/client/notify-client.html
+
+          - name: relay select
+            href: /action-script/reference/client/relay-select.html
+
+          - name: restart
+            href: /action-script/reference/client/restart.html
+
+          - name: set clock
+            href: /action-script/reference/client/set-clock.html
+
+          - name: setting
+            href: /action-script/reference/client/setting.html
+
+          - name: setting delete
+            href: /action-script/reference/client/setting-delete.html
+
+          - name: shutdown
+            href: /action-script/reference/client/shutdown.html
+
+          - name: site force evaluation
+            href: /action-script/reference/client/site-force-evaluation.html
+
+          - name: subscribe
+            href: /action-script/reference/client/subscribe.html
+
+          - name: unsubscribe
+            href: /action-script/reference/client/unsubscribe.html
+
       - name: Download Commands
         href: /action-script/reference/download/
         children:
@@ -31,9 +71,6 @@ nav:
 
           - name: dos
             href: /action-script/reference/execution/dos.html
-
-          - name: notify client
-            href: /action-script/reference/execution/notify-client.html
 
           - name: override
             href: /action-script/reference/execution/override.html
