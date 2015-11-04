@@ -23,8 +23,10 @@ categories:
     description: The [download commands](./download/) allow you to download files to the client machine.
     commands:
       - add prefetch item
+      - begin prefetch block
       - download
       - download as
+      - end prefetch block
       - execute prefetch plug-in
   - title: Execution Commands
     section: execution

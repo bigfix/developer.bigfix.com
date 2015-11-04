@@ -56,11 +56,17 @@ nav:
           - name: add prefetch item
             href: /action-script/reference/download/add-prefetch-item.html
 
+          - name: begin prefetch block
+            href: /action-script/reference/download/begin-prefetch-block.html
+
           - name: download
             href: /action-script/reference/download/download.html
 
           - name: download as
             href: /action-script/reference/download/download-as.html
+
+          - name: end prefetch block
+            href: /action-script/reference/download/end-prefetch-block.html
 
           - name: execute prefetch plug-in
             href: /action-script/reference/download/execute-prefetch-plug-in.html

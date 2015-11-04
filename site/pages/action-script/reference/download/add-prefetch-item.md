@@ -13,14 +13,15 @@ multiple downloads separated by semicolons.
 
 Where:
 
-* `name` is an optional name limited to alphanumeric, dashes, underscores, and non-leading period characters. If no name is specified, the name will be derived from the final component of the URL (the part following the last slash).
+* `name` is an optional name to download the file as. If no name is specified, it will be automatically determined from the URL.
 * `sha1` is an optional [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
 * `sha256` is an optional [SHA-256](https://en.wikipedia.org/wiki/SHA-2) of the file.
 * `size` is the size of the file in bytes.
 * `url` is the URL of the file.
 
-At least one of `sha1` or `sha256` must be present. To specify a download
-without specifying a hash, use the [add nohash prefetch item](./add-nohash-prefetch-item.html) command.
+At least one of `sha1` or `sha256` must be present. To download a file without
+specifying a hash, use the [add nohash prefetch item](./add-nohash-prefetch-
+item.html) command.
 
 The arguments may be in any order, and unrecognized arguments will be ignored.
 
