@@ -22,6 +22,7 @@ categories:
     section: download
     description: The [download commands](./download/) allow you to download files to the client machine.
     commands:
+      - add prefetch item
       - download
       - download as
       - execute prefetch plug-in

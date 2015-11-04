@@ -6,6 +6,9 @@ These commands allow you to download files to the client machine.
 
 <dl>
 
+  <dt>[**add prefetch item**](./add-prefetch-item.html)</dt>
+  <dd>Add a file to be downloaded in a prefetch block, verifying the file hash.</dd>
+
   <dt>[**download**](./download.html)</dt>
   <dd>Download a file from a URL.</dd>
 

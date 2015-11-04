@@ -53,6 +53,9 @@ nav:
         href: /action-script/reference/download/
         children:
 
+          - name: add prefetch item
+            href: /action-script/reference/download/add-prefetch-item.html
+
           - name: download
             href: /action-script/reference/download/download.html
 
