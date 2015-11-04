@@ -59,6 +59,9 @@ nav:
           - name: download as
             href: /action-script/reference/download/download-as.html
 
+          - name: execute prefetch plug-in
+            href: /action-script/reference/download/execute-prefetch-plug-in.html
+
       - name: Execution Commands
         href: /action-script/reference/execution/
         children:

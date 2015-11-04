@@ -24,6 +24,7 @@ categories:
     commands:
       - download
       - download as
+      - execute prefetch plug-in
   - title: Execution Commands
     section: execution
     description: The [execution commands](./execution/) allow you to run external commands and control their behavior.
