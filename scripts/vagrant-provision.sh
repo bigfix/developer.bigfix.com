@@ -12,13 +12,13 @@ setsebool -P httpd_can_network_connect 1
 echo 127.0.0.1 sandbox.bigfix.com >> /etc/hosts
 
 # Add node yum repo
-curl -sL https://rpm.nodesource.com/setup | bash -
+curl -sL https://rpm.nodesource.com/setup_5.x | bash -
 
 # Add epel for nginx
 yum install -y epel-release
 
 # Install all the things
-yum install -y nginx nodejs rsync
+yum install -y nginx nodejs rsync gcc-c++
 
 # Setup Makefile that points to the Makefile in the source directory
 echo 'SOURCE=/vagrant' >> /home/vagrant/Makefile
