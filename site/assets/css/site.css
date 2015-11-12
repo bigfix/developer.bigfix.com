@@ -313,7 +313,7 @@ h1.relevance-type-description {
 }
 
 .qna-prefix {
-  color: rgb(255,0,0);
+  font-weight: 700;
 }
 
 .hljs-keyword {
