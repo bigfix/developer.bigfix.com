@@ -4,7 +4,7 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "express": "^4.12.2",
-    "joi": "^6.4.3"
+    "express": "^4.13.3",
+    "joi": "^7.0.0"
   }
 }

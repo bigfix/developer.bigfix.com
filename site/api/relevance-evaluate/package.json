@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "body-parser": "^1.12.2",
-    "event-stream": "^3.3.0",
-    "express": "^4.12.3"
+    "body-parser": "^1.14.1",
+    "event-stream": "^3.3.2",
+    "express": "^4.13.3"
   }
 }

@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "event-stream": "^3.3.1",
+    "event-stream": "^3.3.2",
     "express": "^4.13.3"
   }
 }
