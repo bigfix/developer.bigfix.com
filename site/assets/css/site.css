@@ -312,6 +312,10 @@ h1.relevance-type-description {
   white-space: nowrap;
 }
 
+.qna-prefix {
+  color: rgb(255,0,0);
+}
+
 .hljs-keyword {
   color: #4178BE;
 }

@@ -1,7 +1,7 @@
 <div class="qna">
   <ul>
-                               <li class="qna-q"><font color="red">Q:</font> {{question | safe}}</li>
-    {% for answer in answers %}<li class="qna-a"><font color="red">A:</font> {{answer}}</li>{% endfor %}
-    {% for error in errors %}  <li class="qna-e"><font color="red">E:</font> {{error}}</li>{% endfor %}
+                               <li class="qna-q"><span class="qna-prefix">Q:</span> {{question | safe}}</li>
+    {% for answer in answers %}<li class="qna-a"><span class="qna-prefix">A:</span> {{answer}}</li>{% endfor %}
+    {% for error in errors %}  <li class="qna-e"><span class="qna-prefix">E:</span> {{error}}</li>{% endfor %}
   </ul>
 </div>
