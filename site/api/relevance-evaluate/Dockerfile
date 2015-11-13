@@ -4,6 +4,10 @@ FROM centos:7
 RUN curl -sL https://rpm.nodesource.com/setup_5.x | bash -
 RUN yum install -y nodejs gcc-c++ make
 
+# The qna binary requires the __BESData directory to exist for the rpm inspector
+# to work.
+RUN mkdir -p /var/opt/BESClient/__BESData/__Global/
+
 # Copy the app to the container
 RUN mkdir -p /var/www/relevance/evaluate
 COPY . /var/www/relevance/evaluate
