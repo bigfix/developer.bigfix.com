@@ -24,6 +24,9 @@ These commands allow you to copy, move, and delete files.
   <dt>[**extract**](./extract.html)</dt>
   <dd>Extract a BigFix archive file.</dd>
 
+  <dt>[**folder create**](./folder-create.html)</dt>
+  <dd>Create a directory.</dd>
+
   <dt>[**move**](./move.html)</dt>
   <dd>Move or rename a file.</dd>
 

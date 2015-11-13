@@ -124,6 +124,9 @@ nav:
           - name: extract
             href: /action-script/reference/file/extract.html
 
+          - name: folder create
+            href: /action-script/reference/file/folder-create.html
+
           - name: move
             href: /action-script/reference/file/move.html
 

@@ -51,6 +51,7 @@ categories:
       - createfile until
       - delete
       - extract
+      - folder create
       - move
       - utility
   - title: Registry Commands
