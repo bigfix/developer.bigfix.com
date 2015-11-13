@@ -20,6 +20,14 @@ yum install -y epel-release
 # Install all the things
 yum install -y nginx nodejs rsync gcc-c++
 
+# Install and start docker
+curl -sL https://get.docker.com | bash -
+systemctl enable docker
+systemctl start docker
+
+# Add the 'vagrant' user to the docker group so that docker doesn't require sudo
+usermod -aG docker vagrant
+
 # Setup Makefile that points to the Makefile in the source directory
 echo 'SOURCE=/vagrant' >> /home/vagrant/Makefile
 echo 'include /vagrant/Makefile' >> /home/vagrant/Makefile

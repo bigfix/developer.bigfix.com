@@ -176,36 +176,19 @@ DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-search.service
 # /api/relevance/evaluate
 ################################################################################
 
-$(STAGING)/api/relevance/evaluate/package.json: $(wildcard $(SOURCE)/site/api/relevance-evaluate/*)
-	mkdir -p $(STAGING)/api/relevance/evaluate/
-	rsync --acls --xattrs --archive --delete \
-		--exclude=node_modules \
-		$(SOURCE)/site/api/relevance-evaluate/ \
-		$(STAGING)/api/relevance/evaluate/
-	cd $(STAGING)/api/relevance/evaluate/ && npm install
+$(STAGING)/evaluate.target: $(wildcard $(SOURCE)/site/api/relevance-evaluate/*)
+	mkdir -p $(STAGING)
+	docker build -t relevance/evaluate $(SOURCE)/site/api/relevance-evaluate
 	touch $@
 
-REMOTE_STAGING_TARGETS += $(STAGING)/api/relevance/evaluate/package.json
+REMOTE_STAGING_TARGETS += $(STAGING)/evaluate.target
 
-EVALUATE_DEPS := \
-	$(SOURCE)/conf/systemd/relevance-evaluate.service \
-	$(STAGING)/api/relevance/evaluate/package.json
+$(STAGING)/evaluate-deploy.target: $(STAGING)/evaluate.target
+	docker ps -q | xargs -r docker kill
+	docker run -d -p 5002:5002 --restart=always relevance/evaluate
+	touch $@
 
-/usr/lib/systemd/system/relevance-evaluate.service: $(EVALUATE_DEPS)
-	systemctl stop relevance-evaluate || true
-	systemctl disable relevance-evaluate || true
-	chmod -R a+rX $(STAGING)
-	mkdir -p /var/www/api/relevance
-	rsync --acls --xattrs --archive --delete \
-		$(STAGING)/api/relevance/evaluate/ \
-		/var/www/api/relevance/evaluate
-	cp -f $(SOURCE)/conf/systemd/relevance-evaluate.service \
-		/usr/lib/systemd/system/relevance-evaluate.service
-	systemctl daemon-reload
-	systemctl enable relevance-evaluate
-	systemctl start relevance-evaluate
-
-REMOTE_DEPLOY_TARGETS += /usr/lib/systemd/system/relevance-evaluate.service
+REMOTE_DEPLOY_TARGETS += $(STAGING)/evaluate-deploy.target
 
 ################################################################################
 # nginx
