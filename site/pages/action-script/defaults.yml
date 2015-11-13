@@ -106,6 +106,9 @@ nav:
         href: /action-script/reference/flow-control/
         children:
 
+          - name: action may require restart
+            href: /action-script/reference/flow-control/action-may-require-restart.html
+
           - name: continue if
             href: /action-script/reference/flow-control/continue-if.html
 
