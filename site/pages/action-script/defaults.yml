@@ -40,15 +40,6 @@ nav:
           - name: shutdown
             href: /action-script/reference/client/shutdown.html
 
-          - name: site force evaluation
-            href: /action-script/reference/client/site-force-evaluation.html
-
-          - name: subscribe
-            href: /action-script/reference/client/subscribe.html
-
-          - name: unsubscribe
-            href: /action-script/reference/client/unsubscribe.html
-
       - name: Download Commands
         href: /action-script/reference/download/
         children:
@@ -154,3 +145,16 @@ nav:
 
           - name: regset64
             href: /action-script/reference/registry/regset64.html
+
+      - name: Site Commands
+        href: /action-script/reference/site/
+        children:
+
+          - name: site force evaluation
+            href: /action-script/reference/site/site-force-evaluation.html
+
+          - name: subscribe
+            href: /action-script/reference/site/subscribe.html
+
+          - name: unsubscribe
+            href: /action-script/reference/site/unsubscribe.html

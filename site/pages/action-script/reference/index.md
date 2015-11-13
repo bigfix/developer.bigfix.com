@@ -15,9 +15,6 @@ categories:
       - setting
       - setting delete
       - shutdown
-      - site force evaluation
-      - subscribe
-      - unsubscribe
   - title: Download Commands
     section: download
     description: The [download commands](./download/) allow you to download files to the client machine.
@@ -64,6 +61,13 @@ categories:
       - regdelete64
       - regset
       - regset64
+  - title: Site Commands
+    section: site
+    description: The [site commands](./site/) allow you to manage site subscriptions.
+    commands:
+      - site force evaluation
+      - subscribe
+      - unsubscribe
 ---
 
 {% for category in categories %}
