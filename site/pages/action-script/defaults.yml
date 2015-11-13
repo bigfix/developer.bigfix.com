@@ -127,6 +127,9 @@ nav:
           - name: folder create
             href: /action-script/reference/file/folder-create.html
 
+          - name: folder delete
+            href: /action-script/reference/file/folder-delete.html
+
           - name: move
             href: /action-script/reference/file/move.html
 

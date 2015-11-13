@@ -52,6 +52,7 @@ categories:
       - delete
       - extract
       - folder create
+      - folder delete
       - move
       - utility
   - title: Registry Commands

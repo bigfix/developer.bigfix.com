@@ -27,6 +27,9 @@ These commands allow you to copy, move, and delete files.
   <dt>[**folder create**](./folder-create.html)</dt>
   <dd>Create a directory.</dd>
 
+  <dt>[**folder delete**](./folder-delete.html)</dt>
+  <dd>Delete a directory.</dd>
+
   <dt>[**move**](./move.html)</dt>
   <dd>Move or rename a file.</dd>
 
