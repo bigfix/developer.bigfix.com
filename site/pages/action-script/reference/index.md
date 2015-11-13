@@ -59,6 +59,7 @@ categories:
     section: flow-control
     description: The [flow control commands](./flow-control/) allow you to use conditional logic in your action script.
     commands:
+      - continue if
       - pause while
   - title: Registry Commands
     section: registry

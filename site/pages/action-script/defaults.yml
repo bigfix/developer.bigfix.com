@@ -106,6 +106,9 @@ nav:
         href: /action-script/reference/flow-control/
         children:
 
+          - name: continue if
+            href: /action-script/reference/flow-control/continue-if.html
+
           - name: pause while
             href: /action-script/reference/flow-control/pause-while.html
 
