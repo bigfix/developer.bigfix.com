@@ -102,6 +102,13 @@ nav:
           - name: waithidden
             href: /action-script/reference/execution/waithidden.html
 
+      - name: Flow Control Commands
+        href: /action-script/reference/flow-control/
+        children:
+
+          - name: pause while
+            href: /action-script/reference/flow-control/pause-while.html
+
       - name: File Commands
         href: /action-script/reference/file/
         children:

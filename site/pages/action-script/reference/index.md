@@ -55,6 +55,11 @@ categories:
       - folder delete
       - move
       - utility
+  - title: Flow Control Commands
+    section: flow-control
+    description: The [flow control commands](./flow-control/) allow you to use conditional logic in your action script.
+    commands:
+      - pause while
   - title: Registry Commands
     section: registry
     description: The [registry commands](./registry/) allow you edit the Windows Registry.
