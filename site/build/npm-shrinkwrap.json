@@ -731,7 +731,7 @@
       "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.2.tgz"
     },
     "highlight-bigfix-actionscript": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "from": "highlight-bigfix-actionscript@>=1.0.2 <2.0.0"
     },
     "highlight.js": {
@@ -740,9 +740,8 @@
       "resolved": "https://registry.npmjs.org/highlight.js/-/highlight.js-8.9.1.tgz"
     },
     "hljs-bigfix-relevance": {
-      "version": "1.0.0",
-      "from": "hljs-bigfix-relevance@>=1.0.0 <2.0.0",
-      "resolved": "https://registry.npmjs.org/hljs-bigfix-relevance/-/hljs-bigfix-relevance-1.0.0.tgz"
+      "version": "1.0.1",
+      "from": "hljs-bigfix-relevance@>=1.0.0 <2.0.0"
     },
     "inflight": {
       "version": "1.0.4",
