@@ -45,9 +45,7 @@ Prefetch a file, save the file to the utility cache as `patch.exe`, and run the
 command `patch.exe`.
 
 ```actionscript
-prefetch patch.exe sha1:92c643875dda80022b3ce3f1ad580f62704b754f__size:813160
-http://www.download.windowsupdate.com/msdownload/update/v3-
-__19990518/cabpool/q307869_f323efa52f460ea1e5f4201b011c071ea5b95110.exe
+prefetch patch.exe sha1:92c643875dda80022b3ce3f1ad580f62704b754f size:813160 http://example.com/foo.exe
 utility __Download\patch.exe
 wait __Download\patch.exe
 ```
