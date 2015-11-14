@@ -731,8 +731,8 @@
       "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.1.2.tgz"
     },
     "highlight-bigfix-actionscript": {
-      "version": "1.0.0",
-      "from": "highlight-bigfix-actionscript@>=1.0.0 <2.0.0"
+      "version": "1.0.1",
+      "from": "highlight-bigfix-actionscript@>=1.0.1 <2.0.0"
     },
     "highlight.js": {
       "version": "8.9.1",
