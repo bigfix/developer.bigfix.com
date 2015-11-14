@@ -316,6 +316,15 @@ h1.relevance-type-description {
   font-weight: 700;
 }
 
+.bf-actionscript-command {
+  font-weight: 700;
+  color: #4178BE;
+}
+
+.bf-actionscript-comment {
+  color: #777;
+}
+
 .hljs-keyword {
   color: #4178BE;
 }

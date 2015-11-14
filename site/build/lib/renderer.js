@@ -2,6 +2,7 @@ var extend = require('util-extend'),
   frontMatter = require('front-matter'),
   fs = require('fs'),
   hljs = require('highlight.js'),
+  highlightActionScript = require('highlight-bigfix-actionscript'),
   nunjucks = require('nunjucks'),
   marked = require('marked'),
   path = require('path');
@@ -52,6 +53,10 @@ function createMarkdownRenderer() {
   renderer.code = function(code, language) {
     if (language === 'relevance') {
       return '<pre><code>' + highlightRelevance(code) + '</code></pre>';
+    }
+
+    if (language === 'actionscript') {
+      return '<pre><code>' + highlightActionScript(code) + '</code></pre>';
     }
 
     return marked.Renderer.prototype.code.apply(this, arguments);
