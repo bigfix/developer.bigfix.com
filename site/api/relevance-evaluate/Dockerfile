@@ -13,6 +13,10 @@ RUN mkdir -p /var/www/relevance/evaluate
 COPY . /var/www/relevance/evaluate
 RUN cd /var/www/relevance/evaluate && npm install
 
+# Make the RPM inspector work. It needs to run 'qna' as 'nobody'.
+RUN chmod a+rx /var/www/relevance/evaluate/bin && \
+  chmod a+rx /var/www/relevance/evaluate/bin/qna
+
 # Run the app
 WORKDIR /var/www/relevance/evaluate
 ENV PORT=5002
