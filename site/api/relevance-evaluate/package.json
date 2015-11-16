@@ -2,9 +2,16 @@
   "name": "evaluate",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "test": "tape test/*.test.js | faucet"
+  },
   "dependencies": {
     "body-parser": "^1.14.1",
-    "event-stream": "^3.3.2",
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "rewire": "^2.5.0",
+    "tape": "^4.2.2"
   }
 }

@@ -17,7 +17,7 @@ CMD ["node", "."]
 
 # Copy the app to the container
 COPY . /var/www/api/relevance/evaluate
-RUN cd /var/www/api/relevance/evaluate && npm install
+RUN cd /var/www/api/relevance/evaluate && npm install --production
 
 # Make the RPM inspector work. It needs to run 'qna' as 'nobody'.
 RUN chmod a+rx /var/www/api/relevance/evaluate/bin && \
