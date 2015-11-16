@@ -56,7 +56,9 @@ function qna(relevance, callback) {
     }
 
     aborted = true;
-    callback(err);
+
+    console.error(err.toString());
+    callback(new Error('Failed to launch qna process'));
   });
 
   child.stdout.pipe(es.wait(function(err, body) {
@@ -82,10 +84,10 @@ function qna(relevance, callback) {
     aborted = true;
     timer = null;
     child.kill();
-    callback(new Error('Relevance evaluation timed out.'));
+    callback(new Error('Relevance evaluation timed out'));
   }
 
-  timer = setTimeout(onTimeout, 30 * 1000);
+  timer = setTimeout(onTimeout, 5 * 1000);
 
   // Add a fake question to the front to avoid the engine startup cost being
   // included in the evaluation time.
