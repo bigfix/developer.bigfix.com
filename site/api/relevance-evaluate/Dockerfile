@@ -8,17 +8,17 @@ RUN yum install -y nodejs gcc-c++ make
 # to work.
 RUN mkdir -p /var/opt/BESClient/__BESData/__Global/
 
-# Copy the app to the container
+# Run the app
 RUN mkdir -p /var/www/api/relevance/evaluate
+WORKDIR /var/www/api/relevance/evaluate
+ENV PORT=5002
+EXPOSE 5002
+CMD ["node", "."]
+
+# Copy the app to the container
 COPY . /var/www/api/relevance/evaluate
 RUN cd /var/www/api/relevance/evaluate && npm install
 
 # Make the RPM inspector work. It needs to run 'qna' as 'nobody'.
 RUN chmod a+rx /var/www/api/relevance/evaluate/bin && \
   chmod a+rx /var/www/api/relevance/evaluate/bin/qna
-
-# Run the app
-WORKDIR /var/www/api/relevance/evaluate
-ENV PORT=5002
-EXPOSE 5002
-CMD ["node", "."]
