@@ -6,6 +6,8 @@ var bodyParser = require('body-parser'),
 
 var app = express();
 
+app.set('x-powered-by', false);
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
