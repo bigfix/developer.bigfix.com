@@ -7,6 +7,7 @@ categories:
     commands:
       - action lock indefinite
       - action lock until
+      - action log command
       - action unlock
       - administrator add
       - administrator delete
