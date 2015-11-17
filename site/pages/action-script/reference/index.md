@@ -64,6 +64,7 @@ categories:
     description: The [flow control commands](./flow-control/) allow you to use conditional logic in your action script.
     commands:
       - action may require restart
+      - action requires login
       - action requires restart
       - continue if
       - pause while

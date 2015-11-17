@@ -124,6 +124,9 @@ nav:
           - name: action may require restart
             href: /action-script/reference/flow-control/action-may-require-restart.html
 
+          - name: action requires login
+            href: /action-script/reference/flow-control/action-requires-login.html
+
           - name: action requires restart
             href: /action-script/reference/flow-control/action-requires-restart.html
 
