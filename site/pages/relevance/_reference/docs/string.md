@@ -872,7 +872,7 @@ This inspector is a synonym for the parameter &lt;string&gt; of &lt;action&gt;. 
 
 # pending restart &lt;string&gt; : boolean
 
-Immediately after issuing a command like:
+Immediately after running an [action requires restart](/action-script/reference/flow-control/action-requires-restart.html) command like:
 
 ```actionscript
 action requires restart "PatchGroupX"
