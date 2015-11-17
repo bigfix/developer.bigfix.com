@@ -101,7 +101,7 @@ function search(options) {
     }
 
     if (err) {
-      setSearchStatus(err.toString());
+      setSearchStatus('Search failed.');
       setSearchResults([]);
       prevPageButton().classList.add('search-hidden');
       nextPageButton().classList.add('search-hidden');

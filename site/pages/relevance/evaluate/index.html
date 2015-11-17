@@ -44,6 +44,22 @@ function setResults(results) {
   element.innerHTML = element.innerHTML + '<span class="row">I: ' + results.type + "</span><br>";
 }
 
+function setError(err) {
+  var message = 'Relevance evaluation failed.';
+
+  if (err.reason === 'status') {
+    if (err.status === 502) {
+      message = 'Online evaluator is not available (502).';
+    } else {
+      message = err.response;
+    }
+  } else if (err.reason === 'parsing') {
+    message = 'Failed to parse answers.';
+  }
+
+  document.getElementById('evaluate-answers').textContent = message;
+}
+
 function evaluateRelevance() {
   var body = { relevance: getRelevance() };
 
@@ -53,11 +69,10 @@ function evaluateRelevance() {
     }
 
     if (err) {
-      document.getElementById('evaluate-answers').textContent = err.toString();
-      return;
+      setError(err);
+    } else {
+      setResults(results);
     }
-
-    setResults(results);
   });
 
   return false;

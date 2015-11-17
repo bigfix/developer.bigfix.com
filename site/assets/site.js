@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Make an HTTP request.
  */
@@ -11,7 +13,11 @@ function requestJSON(method, url, body, callback) {
 
   request.onload = function() {
     if (this.status !== 200) {
-      return callback(new Error('request failed with status ' + this.status));
+      return callback({
+        reason: 'status',
+        response: this.response,
+        status: this.status
+      });
     }
 
     var results;
@@ -19,14 +25,19 @@ function requestJSON(method, url, body, callback) {
     try {
       results = JSON.parse(this.response);
     } catch (err) {
-      return callback(new Error('failed to parse request results'));
+      return callback({
+        reason: 'parsing',
+        response: this.response
+      });
     }
 
     callback(null, results);
   };
 
   request.onerror = function() {
-    return callback(new Error('request failed'));
+    return callback({
+      reason: 'request'
+    });
   };
 
   request.open(method, url, true);
