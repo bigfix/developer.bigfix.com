@@ -6,6 +6,7 @@ categories:
     description: The [client commands](./client/) allow you to control the behavior of the BigFix client.
     commands:
       - action lock indefinite
+      - action lock until
       - administrator add
       - administrator delete
       - notify client
