@@ -19,6 +19,9 @@ nav:
           - name: action lock until
             href: /action-script/reference/client/action-lock-until.html
 
+          - name: action log all
+            href: /action-script/reference/client/action-log-all.html
+
           - name: action log command
             href: /action-script/reference/client/action-log-command.html
 
