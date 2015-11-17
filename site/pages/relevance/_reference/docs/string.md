@@ -872,7 +872,17 @@ This inspector is a synonym for the parameter &lt;string&gt; of &lt;action&gt;. 
 
 # pending restart &lt;string&gt; : boolean
 
-Immediately after issuing a command like &#39;Action requires restart "PatchGroupX"&#39;, the expression &#39;Pending restart "PatchGroupX"&#39; will be true until the next restart.
+Immediately after issuing a command like:
+
+```actionscript
+action requires restart "PatchGroupX"
+```
+
+The following expression will be true until the next restart:
+
+```relevance
+pending restart "PatchGroupX"
+```
 
 # percent decode &lt;string&gt; : string
 
