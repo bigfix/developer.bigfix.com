@@ -12,6 +12,9 @@ These commands can be used to control the behavior of the BigFix client.
   <dt>[**action lock until**](./action-lock-until.html)</dt>
   <dd>Lock the client until a specified date.</dd>
 
+  <dt>[**action unlock**](./action-unlock.html)</dt>
+  <dd>Unlock the client.</dd>
+
   <dt>[**administrator add**](./administrator-add.html)</dt>
   <dd>Add a BigFix user as an administrator of the computer.</dd>
 

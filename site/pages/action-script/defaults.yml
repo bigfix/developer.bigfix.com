@@ -19,6 +19,9 @@ nav:
           - name: action lock until
             href: /action-script/reference/client/action-lock-until.html
 
+          - name: action unlock
+            href: /action-script/reference/client/action-unlock.html
+
           - name: administrator add
             href: /action-script/reference/client/administrator-add.html
 
