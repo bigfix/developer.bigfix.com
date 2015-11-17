@@ -6,6 +6,9 @@ These commands can be used to control the behavior of the BigFix client.
 
 <dl>
 
+  <dt>[**action lock indefinite**](./action-lock-indefinite.html)</dt>
+  <dd>Lock the client.</dd>
+
   <dt>[**administrator add**](./administrator-add.html)</dt>
   <dd>Add a BigFix user as an administrator of the computer.</dd>
 
