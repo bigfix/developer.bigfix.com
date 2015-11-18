@@ -11,6 +11,7 @@ RUN mkdir -p /var/opt/BESClient/__BESData/__Global/
 # Run the app
 RUN mkdir -p /var/www/api/relevance/evaluate
 WORKDIR /var/www/api/relevance/evaluate
+ENV NODE_ENV=production
 ENV PORT=5002
 EXPOSE 5002
 CMD ["node", "."]
