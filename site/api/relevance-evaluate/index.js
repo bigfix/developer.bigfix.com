@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.post('/api/relevance/evaluate', function(req, res) {
   var relevance = req.body.relevance;
 
-  if (!relevance) {
-    return res.status(400).end('Missing request relevance');
+  if (typeof relevance !== 'string') {
+    return res.status(400).end('Missing or invalid request relevance');
   }
 
   var options = {
