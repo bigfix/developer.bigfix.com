@@ -44,7 +44,7 @@ function parseSearchQuery(query) {
   query.split('&').forEach(function(part) {
     var nameValue = part.split('=');
     if (nameValue.length === 2) {
-      parts[nameValue[0]] = nameValue[1];
+      parts[nameValue[0]] = decodeURIComponent(nameValue[1]);
     }
   });
 
