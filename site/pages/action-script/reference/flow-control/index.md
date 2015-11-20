@@ -9,6 +9,9 @@ These commands allow you to add conditional logic to your action script.
   <dt>[**action may require restart**](./action-may-require-restart.html)</dt>
   <dd>Place the action in *Pending Restart* if a restart is required.</dd>
 
+  <dt>[**action parameter query**](./action-parameter-query.html)</dt>
+  <dd>Prompt the user that creates the action for a parameter.</dd>
+
   <dt>[**action requires login**](./action-requires-login.html)</dt>
   <dd>Place the action in *Pending Login* until a user logs in.</dd>
 
