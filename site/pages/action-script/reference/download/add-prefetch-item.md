@@ -13,7 +13,7 @@ multiple downloads separated by semicolons.
 
 Where:
 
-* `name` is an optional name to download the file as. If no name is specified, it will be automatically determined from the URL.
+* `name` is an optional file name for the download. If no name is specified, it will be automatically determined from the URL.
 * `sha1` is an optional [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
 * `sha256` is an optional [SHA-256](https://en.wikipedia.org/wiki/SHA-2) of the file.
 * `size` is the size of the file in bytes.

@@ -23,6 +23,7 @@ categories:
     section: download
     description: The [download commands](./download/) allow you to download files to the client machine.
     commands:
+      - add nohash prefetch item
       - add prefetch item
       - begin prefetch block
       - collect prefetch items

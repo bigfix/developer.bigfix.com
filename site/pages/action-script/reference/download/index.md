@@ -6,8 +6,11 @@ These commands allow you to download files to the client machine.
 
 <dl>
 
+  <dt>[**add nohash prefetch item**](./add-nohash-prefetch-item.html)</dt>
+  <dd>Add a file to be downloaded in a prefetch block without verifying the file hash.</dd>
+
   <dt>[**add prefetch item**](./add-prefetch-item.html)</dt>
-  <dd>Add a file to be downloaded in a prefetch block, verifying the file hash.</dd>
+  <dd>Add a file to be downloaded in a prefetch block verifying the file hash.</dd>
 
   <dt>[**begin prefetch block**](./begin-prefetch-block.html)</dt>
   <dd>Starts a set of commands to download files.</dd>

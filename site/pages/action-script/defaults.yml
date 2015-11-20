@@ -59,6 +59,9 @@ nav:
         href: /action-script/reference/download/
         children:
 
+          - name: add nohash prefetch item
+            href: /action-script/reference/download/add-nohash-prefetch-item.html
+
           - name: add prefetch item
             href: /action-script/reference/download/add-prefetch-item.html
 
