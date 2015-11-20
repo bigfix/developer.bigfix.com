@@ -401,11 +401,23 @@ No documentation exists.
 
 # download file &lt;string&gt; : file
 
-This inspector is available in relevance subsitution action processing. It returns a file object with the given name from the named folder or the download folder. This is equivalent to &#39;file "name" of download folder&#39;. The file should exist or the result will not exist.
+This inspector is available in relevance subsitution action processing. It returns a file object with the given name from the client's download folder.
+
+This is equivalent to:
+
+```relevance
+file "name" of download folder
+```
 
 # download path &lt;string&gt; : string
 
-This inspector is available in relevance subsitution action processing. It returns a string corresponding to the download path of the specified file. This inspector (along with download folder and download file) is designed to be used during the prefetch process of action execution. This is equivalent to &#39;(pathname of download folder) &amp; pathseparator &amp; "myfile"&#39;.
+This inspector is available in relevance subsitution action processing. It returns a string corresponding to the download path of the specified file. This inspector, along with [download folder](/relevance/reference/folder.html#download-folder-folder) and [download file](/relevance/reference/string.html#download-file-string-file), is designed to be used during the prefetch process of action execution.
+
+This is equivalent to something like:
+
+```relevance
+(pathname of download folder) & "\myfile".
+```
 
 # drive &lt;string&gt; : drive
 

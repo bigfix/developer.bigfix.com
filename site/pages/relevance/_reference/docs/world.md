@@ -920,7 +920,7 @@ Same as domain name.
 
 # download folder : folder
 
-This inspector is available in relevance subsitution action processing. When the action is active, this inspector returns a folder object of __Download\, otherwise it returns a folder object of __Global\sitename\actionid\named. This inspector is designed for the prefetch process of action execution. Macintosh Note: Prior to version 7.2, this inspector referred to the system download folder on the Macintosh. That inspector is referred to as ISS Download as of version 7.2.
+This inspector is available in relevance subsitution action processing. When the action is active, this inspector returns a folder object for `__Download`, otherwise it returns a folder object for `__Global\sitename\actionid\named`. This inspector is designed for the prefetch process of action execution.
 
 # download server : download server
 
