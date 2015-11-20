@@ -1,5 +1,5 @@
 ---
-title: Downloads Commands
+title: Download Commands
 ---
 
 These commands allow you to download files to the client machine.
