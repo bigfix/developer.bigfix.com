@@ -65,6 +65,9 @@ nav:
           - name: begin prefetch block
             href: /action-script/reference/download/begin-prefetch-block.html
 
+          - name: collect prefetch items
+            href: /action-script/reference/download/collect-prefetch-items.html
+
           - name: download
             href: /action-script/reference/download/download.html
 

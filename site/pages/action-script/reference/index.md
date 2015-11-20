@@ -25,6 +25,7 @@ categories:
     commands:
       - add prefetch item
       - begin prefetch block
+      - collect prefetch items
       - download
       - download as
       - end prefetch block

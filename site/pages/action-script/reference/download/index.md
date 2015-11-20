@@ -12,6 +12,9 @@ These commands allow you to download files to the client machine.
   <dt>[**begin prefetch block**](./begin-prefetch-block.html)</dt>
   <dd>Starts a set of commands to download files.</dd>
 
+  <dt>[**collect prefetch items**](./collect-prefetch-items.html)</dt>
+  <dd>Download the files listed in a prefetch block.</dd>
+
   <dt>[**download**](./download.html)</dt>
   <dd>Download a file from a URL.</dd>
 
