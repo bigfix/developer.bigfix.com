@@ -30,4 +30,7 @@ These commands allow you to download files to the client machine.
   <dt>[**execute prefetch plug-in**](./execute-prefetch-plug-in.html)</dt>
   <dd>Run an external binary to prefetch a download manifest.</dd>
 
+  <dt>[**prefetch**](./prefetch.html)</dt>
+  <dd>Download a file before the action begins.</dd>
+
 </dl>

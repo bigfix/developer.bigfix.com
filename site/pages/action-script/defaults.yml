@@ -83,6 +83,9 @@ nav:
           - name: execute prefetch plug-in
             href: /action-script/reference/download/execute-prefetch-plug-in.html
 
+          - name: prefetch
+            href: /action-script/reference/download/prefetch.html
+
       - name: Execution Commands
         href: /action-script/reference/execution/
         children:
