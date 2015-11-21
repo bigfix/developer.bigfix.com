@@ -142,6 +142,9 @@ nav:
           - name: continue if
             href: /action-script/reference/flow-control/continue-if.html
 
+          - name: exit
+            href: /action-script/reference/flow-control/exit.html
+
           - name: pause while
             href: /action-script/reference/flow-control/pause-while.html
 

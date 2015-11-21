@@ -70,6 +70,7 @@ categories:
       - action requires login
       - action requires restart
       - continue if
+      - exit
       - pause while
   - title: Registry Commands
     section: registry
