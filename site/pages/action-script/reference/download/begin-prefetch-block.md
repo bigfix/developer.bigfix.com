@@ -41,7 +41,7 @@ These commands are allowed within the prefetch block:
 These commands are *only* allowed within the prefetch block. They are not
 allowed outside of it:
 
-* [add prefetch item](./add-prefetch-item.hmtl)
+* [add prefetch item](./add-prefetch-item.html)
 * [add nohash prefetch item](./add-nohash-prefetch-item.html)
 * [collect prefetch items](./collect-prefetch-items.html)
 * [execute prefetch plug-in](./execute-prefetch-plug-in.html)
