@@ -145,6 +145,9 @@ nav:
           - name: exit
             href: /action-script/reference/flow-control/exit.html
 
+          - name: parameter
+            href: /action-script/reference/flow-control/parameter.html
+
           - name: pause while
             href: /action-script/reference/flow-control/pause-while.html
 

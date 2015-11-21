@@ -24,6 +24,9 @@ These commands allow you to add conditional logic to your action script.
   <dt>[**exit**](./exit.html)</dt>
   <dd>Abort the script and set the exit code.</dd>
 
+  <dt>[**parameter**](./parameter.html)</dt>
+  <dd>Set the value of a variable.</dd>
+
   <dt>[**pause while**](./pause-while.html)</dt>
   <dd>Pause action script evaluation while a relevance expression is true.</dd>
 

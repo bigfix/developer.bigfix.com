@@ -71,6 +71,7 @@ categories:
       - action requires restart
       - continue if
       - exit
+      - parameter
       - pause while
   - title: Registry Commands
     section: registry
