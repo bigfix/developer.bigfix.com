@@ -24,6 +24,12 @@ These commands allow you to download files to the client machine.
   <dt>[**download as**](./download-as.html)</dt>
   <dd>Download a file from a URL and specify the file name to save it.</dd>
 
+  <dt>[**download now**](./download-now.html)</dt>
+  <dd>Download a file from a URL without using the relay hierarchy.</dd>
+
+  <dt>[**download open**](./download-open.html)</dt>
+  <dd>Download a file from a URL and run [ShellExecute](https://msdn.microsoft.com/en-us/library/windows/desktop/bb762153%28v=vs.85%29.aspx) on it.</dd>
+
   <dt>[**end prefetch block**](./end-prefetch-block.html)</dt>
   <dd>Ends a set of commands to download files.</dd>
 

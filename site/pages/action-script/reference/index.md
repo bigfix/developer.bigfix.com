@@ -29,6 +29,8 @@ categories:
       - collect prefetch items
       - download
       - download as
+      - download now
+      - download open
       - end prefetch block
       - execute prefetch plug-in
       - prefetch

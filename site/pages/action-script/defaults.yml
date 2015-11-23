@@ -77,6 +77,12 @@ nav:
           - name: download as
             href: /action-script/reference/download/download-as.html
 
+          - name: download now
+            href: /action-script/reference/download/download-now.html
+
+          - name: download open
+            href: /action-script/reference/download/download-open.html
+
           - name: end prefetch block
             href: /action-script/reference/download/end-prefetch-block.html
 
