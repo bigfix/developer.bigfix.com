@@ -3,9 +3,9 @@ title: add prefetch item
 ---
 
 This command adds a download item to the prefetch queue. This command must
-reside between a [begin prefetch block](./begin-prefetch-block.html) and an [end
-prefetch block ](./end-prefetch-block) command. This command can specify
-multiple downloads separated by semicolons.
+reside between a [begin prefetch block](./begin-prefetch-block.html) and an
+[end prefetch block ](./end-prefetch-block.html) command. This command can
+specify multiple downloads separated by semicolons.
 
 ## Syntax
 
