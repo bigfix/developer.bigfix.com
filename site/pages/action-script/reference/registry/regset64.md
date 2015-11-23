@@ -65,9 +65,9 @@ regset64 "[HKEY_LOCAL_MACHINE\Example]" "SourcePath2"={escape of "c:\I386"}
 ```
 
 In situations where you need to issue many `regset64` commands, you might
-consider using the [appendfile](../file/appendfile.html) or [createfile
-until](../file /createfile-until.html) commands to build a properly formatted
-regedit file, and then run `regedit` silently:
+consider using the [appendfile](../file/appendfile.html) or
+[createfile until](../file/createfile-until.html) commands to build a properly
+formatted regedit file, and then run `regedit` silently:
 
 ```actionscript
 createfile until end-reg-edit-commands
