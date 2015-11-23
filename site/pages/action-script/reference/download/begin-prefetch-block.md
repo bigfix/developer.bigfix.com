@@ -31,10 +31,7 @@ allowed, but it must be used after the prefetch block.
 
 These commands are allowed within the prefetch block:
 
-* [if](../flow-control/if.html)
-* [elseif](../flow-control/elseif.html)
-* [else](../flow-control/else.html)
-* [endif](../flow-control/endif.html)
+* [if, elseif, else, endif](../flow-control/if-elseif-else-endif.html)
 * [parameter](../flow-control/parameter.html)
 * [action parameter query](../flow-control/action-parameter-query.html)
 

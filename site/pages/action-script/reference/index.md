@@ -74,6 +74,7 @@ categories:
       - action requires restart
       - continue if
       - exit
+      - if, elseif, else, endif
       - parameter
       - pause while
   - title: Registry Commands
@@ -99,7 +100,7 @@ categories:
   {{category.description}}
   <ul>
     {% for command in category.commands %}
-    <li><a href="/action-script/reference/{{category.section}}/{{command | replace(' ', '-')}}.html">{{command}}</a></li>
+    <li><a href="/action-script/reference/{{category.section}}/{{command | replace(' ', '-') | replace(',', '') }}.html">{{command}}</a></li>
     {% endfor %}
   </ul>
 </div>

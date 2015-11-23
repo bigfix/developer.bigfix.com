@@ -24,6 +24,9 @@ These commands allow you to add conditional logic to your action script.
   <dt>[**exit**](./exit.html)</dt>
   <dd>Abort the script and set the exit code.</dd>
 
+  <dt>[**if, elseif, else, endif**](./if-elseif-else-endif.html)</dt>
+  <dd>Conditionally run commands in a script.</dd>
+
   <dt>[**parameter**](./parameter.html)</dt>
   <dd>Set the value of a variable.</dd>
 
