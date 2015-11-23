@@ -16,8 +16,9 @@ The example downloads the `readme.txt` file from the Microsoft site and saves it
 in the local `__Download` folder as `intro.txt`. If the download fails, the
 action script terminates.
 
-This command, when accompanied by a [continue if](.../flow/continue-if.html)
-with a sha1 value, allows the file to be pre-fetched.
+This command, when accompanied by a
+[continue if](../flow-control/continue-if.html) with a sha1 value, allows the
+file to be pre-fetched.
 
 ## Syntax
 
