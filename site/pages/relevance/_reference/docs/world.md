@@ -2135,7 +2135,27 @@ Returns a list of file objects corresponding to all the device files loaded as a
 
 # system language : string
 
-Returns the language of the system as a string. It is identified using the GetSystemDefaultLangID() system call. See the language keyword of the application object for a list of possible language value.
+Returns the language of the system as a string.
+
+On Windows, this is identified using the [GetSystemDefaultLangID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd318120%28v=vs.85%29.aspx) function and corresponds to the default locale of the system.
+
+{% qna %}
+Q: system language
+A: English (United States)
+{% endqna %}
+
+On Unix, this is identified using:
+
+* The [setlocale](http://man7.org/linux/man-pages/man3/setlocale.3.html) function.
+* The `LANG` environment variable.
+* The `LC_CTYPE` environment variable.
+
+{% qna %}
+Q: system language
+A: English
+{% endqna %}
+
+See also [system ui language](/relevance/reference/language.html#system-ui-language-language) and [user ui language](/relevance/reference/language.html#user-ui-language-language).
 
 # system locale : language
 
@@ -2143,7 +2163,12 @@ Determines which bitmap fonts, and OEM, ANSI, and MAC code pages are defaults fo
 
 # system ui language : language
 
-Determines the default language of menus and dialogs, messages and help files.
+Returns the default language of menus, dialogs, messages and help files. This is identified using the [GetSystemDefaultUILanguage](https://msdn.microsoft.com/en-us/library/windows/desktop/dd318123%28v=vs.85%29.aspx) function.
+
+{% qna %}
+Q: system ui language
+A: English (United States)
+{% endqna %}
 
 # system version : version
 
@@ -2257,7 +2282,14 @@ Returns a user domain object.Note: The "user domain" refers to the root user, no
 
 # user language : string
 
-Returns the language of the system as a string. It is identified by using the GetUserDefaultLangId() system call. See the language keyword of the application object for a list of possible language value.
+Returns the default locale of the `SYSTEM` user as a string. It is identified by using the [GetUserDefaultLangID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd318134%28v=vs.85%29.aspx) function.
+
+{% qna %}
+Q: user language
+A: English (United States)
+{% endqna %}
+
+See also [system ui language](/relevance/reference/language.html#system-ui-language-language) and [user ui language](/relevance/reference/language.html#user-ui-language-language).
 
 # user locale : language
 
@@ -2269,7 +2301,12 @@ Returns the user temp folder of the system domain
 
 # user ui language : language
 
-Non-MUI: Same as system UI Language.MUI: Determines the language of menus and dialogs, messages, and help files.
+Returns the language of menus, dialogs, messages, and help files for the `SYSTEM` user. This is identified using the [GetUserDefaultUILanguage](https://msdn.microsoft.com/en-us/library/windows/desktop/dd318137%28v=vs.85%29.aspx) function.
+
+{% qna %}
+Q: user ui language
+A: English (United States)
+{% endqna %}
 
 # users folder : folder
 

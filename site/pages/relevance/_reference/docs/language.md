@@ -4,7 +4,12 @@ A language is composed of a primary language (for example, Swiss) and a sub-lang
 
 # platform id of &lt;language&gt; : string
 
-Returns the string resulting from a call to setlocale(LC_TYPE, ""). This call examines the system environment and returns a string representing the language and character set for any text-related system function. The string is of the form "en_US.UTF-8".
+Returns the the language identifier of the system language. The string is of the form `en_US.UTF-8`.
+
+{% qna %}
+Q: platform id of system locale
+A: en
+{% endqna %}
 
 # primary codeset of &lt;language&gt; : string
 
