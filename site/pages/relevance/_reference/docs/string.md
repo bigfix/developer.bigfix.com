@@ -1204,19 +1204,46 @@ A: ef
 
 # substring &lt;string&gt; of &lt;string&gt; : substring
 
-Iterates through the string returning all the substrings matching the name given. For example, number of substrings "be" of "to be or not to be" = 2.
+Iterates through the string returning all the substrings matching the name given.
+
+{% qna %}
+Q: number of substrings "be" of "to be or not to be"
+A: 2
+{% endqna %}
+
+{% qna %}
+Q: preceding texts of substrings "be" of "to be or not to be"
+A: to 
+A: to be or not to 
+{% endqna %}
 
 # substring after &lt;string&gt; of &lt;string&gt; : substring
 
 Returns the substrings that come after the first string delimiter.
 
+{% qna %}
+Q: substring after "=" of "name=value"
+A: value
+{% endqna %}
+
 # substring before &lt;string&gt; of &lt;string&gt; : substring
 
 Returns the substrings that come before the first string delimiter.
 
+{% qna %}
+Q: substring before "=" of "name=value"
+A: name
+{% endqna %}
+
 # substring between &lt;string&gt; of &lt;string&gt; : substring
 
 Returns the substring in the second string found between two instances of the first string.
+
+{% qna %}
+Q: substrings between "." of "abc.def.hij.klm"
+A: def
+A: hij
+{% endqna %}
 
 # substring separated by &lt;string&gt; of &lt;string&gt; : substring
 
