@@ -32,7 +32,12 @@ Returns the branding ID of a client computer. BigFix is the norm, but there are 
 
 # build target of &lt;client&gt; : string
 
-No documentation exists.
+Returns the platform that the client was built on.
+
+{% qna %}
+Q: build target of client
+A: RedHat 5 x86_64
+{% endqna %}
 
 # certificate of &lt;client&gt; : x509 certificate
 
