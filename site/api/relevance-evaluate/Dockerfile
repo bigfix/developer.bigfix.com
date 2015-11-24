@@ -16,9 +16,14 @@ ENV PORT=5002
 EXPOSE 5002
 CMD ["node", "."]
 
-# Copy the app to the container
+# Copy the app to the container.
 COPY . /var/www/api/relevance/evaluate
-RUN cd /var/www/api/relevance/evaluate && npm install --production
+
+# 1. run npm install
+# 2. unzip the example database
+RUN cd /var/www/api/relevance/evaluate && \
+  npm install --production && \
+  gunzip bin/chinook.db
 
 # Make the RPM inspector work. It needs to run 'qna' as 'nobody'.
 RUN chmod a+rx /var/www/api/relevance/evaluate/bin && \
