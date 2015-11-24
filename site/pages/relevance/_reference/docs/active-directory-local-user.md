@@ -12,7 +12,12 @@ Returns the distinguished name (as a string) of the specified active directory l
 
 # dns domainname of &lt;active directory local user&gt; : string
 
-No documentation exists.
+Returns the name of the domain of the user.
+
+{% qna %}
+Q: dns domainname of local users of active directory
+A: winterfell.local
+{% endqna %}
 
 # domain of &lt;active directory local user&gt; : string
 
@@ -40,7 +45,12 @@ Returns the name (as a string) of the specified Active Directory local user for 
 
 # netbios domainname of &lt;active directory local user&gt; : string
 
-No documentation exists.
+Returns the name of the domain of the user in NETBIOS form.
+
+{% qna %}
+Q: netbios domainname of local users of active directory
+A: WINTERFELL
+{% endqna %}
 
 # sample time of &lt;active directory local user&gt; : time
 

@@ -1,6 +1,6 @@
 # type: active directory local computer
 
-The &lt;active directory local computer&gt; objects are the Active Directory inspectors for the local computer. Caching (using XML files to represent the last data update) limits how often the client refreshes the AD data, reducing network traffic. These inspectors require network access to work. If no network connection is available and the information is not cached, then the inspectors will return NoSuchObject. AD user requests are limited to users that are either cached or have a local profile on the specified machine.
+The `active directory local computer` objects are the Active Directory inspectors for the local computer. Caching (using XML files to represent the last data update) limits how often the client refreshes the AD data, reducing network traffic. These inspectors require network access to work. If no network connection is available and the information is not cached, then the inspectors will return NoSuchObject. AD user requests are limited to users that are either cached or have a local profile on the specified machine.
 
 # distinguished name error message of &lt;active directory local computer&gt; : string
 
@@ -8,7 +8,7 @@ Active Directory error if unable to get the distinguished name (this is for debu
 
 # distinguished name of &lt;active directory local computer&gt; : string
 
-Returns the computer&#39;s fully qualified active directory name in the distinguished name format.
+Returns the computer's fully qualified active directory name in the distinguished name format.
 
 {% qna %}
 Q: distinguished name of local computer of active directory
@@ -17,7 +17,12 @@ A: CN=Winterfell,CN=Computers,DC=bigfix,DC=com
 
 # dns domainname of &lt;active directory local computer&gt; : string
 
-No documentation exists.
+Returns the name of the domain of the computer.
+
+{% qna %}
+Q: dns domainname of local computer of active directory
+A: winterfell.local
+{% endqna %}
 
 # group &lt;string&gt; of &lt;active directory local computer&gt; : active directory group
 
@@ -33,7 +38,12 @@ Returns the error message (if any) received when trying to get the groups for th
 
 # netbios domainname of &lt;active directory local computer&gt; : string
 
-No documentation exists.
+Returns the name of the domain of the computer in NETBIOS form.
+
+{% qna %}
+Q: netbios domainname of local computer of active directory
+A: WINTERFELL
+{% endqna %}
 
 # sample time of &lt;active directory local computer&gt; : time
 
