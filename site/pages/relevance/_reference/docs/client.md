@@ -64,7 +64,12 @@ No documentation exists.
 
 # last command time of &lt;client&gt; : time
 
-No documentation exists.
+Returns the last time the client received a UDP command.
+
+{% qna %}
+Q: last command time of client
+A: 
+{% endqna %}
 
 # last report time of &lt;client&gt; : time
 
