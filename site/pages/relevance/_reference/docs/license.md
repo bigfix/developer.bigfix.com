@@ -80,7 +80,7 @@ The license number assigned to the client.
 
 # sha256 download of &lt;license&gt; : boolean
 
-No documentation exists.
+Returns whether only sha256 downloads are allowed. If this inspector returns `True`, then sha1 downloads are disabled.
 
 # signature hash algorithm of &lt;license&gt; : string
 

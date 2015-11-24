@@ -1038,35 +1038,75 @@ No documentation exists.
 
 # sha224 of &lt;string&gt; : string
 
-No documentation exists.
+Returns the sha2-224 of the string.
+
+{% qna %}
+Q: sha224 of "bigfix"
+A: b6396d1e9b44898da4d9823b5230ea462b4112c88b4a8dbfe66c6fe9
+{% endqna %}
 
 # sha256 of &lt;string&gt; : string
 
-No documentation exists.
+Returns the sha2-256 of the string.
+
+{% qna %}
+Q: sha256 of "bigfix"
+A: d71451abd87cc3fe47d90616fc7498f89d41bbf7e760d50897950d6b59a65b5b
+{% endqna %}
 
 # sha2_224 of &lt;string&gt; : string
 
-Returns the sha2-224 of the string, hex encoded as a string
+Returns the sha2-224 of the string.
+
+{% qna %}
+Q: sha2_224 of "bigfix"
+A: b6396d1e9b44898da4d9823b5230ea462b4112c88b4a8dbfe66c6fe9
+{% endqna %}
 
 # sha2_256 of &lt;string&gt; : string
 
-Returns the sha2-256 of the string, hex encoded as a string
+Returns the sha2-256 of the string.
+
+{% qna %}
+Q: sha2_256 of "bigfix"
+A: d71451abd87cc3fe47d90616fc7498f89d41bbf7e760d50897950d6b59a65b5b
+{% endqna %}
 
 # sha2_384 of &lt;string&gt; : string
 
-Returns the sha2-384 of the string, hex encoded as a string
+Returns the sha2-384 of the string.
 
+{% qna %}
+Q: sha2_384 of "bigfix"
+A: 073f25784413df63213f501404737ddb37c9d796d4e43c5d0877dd190b2d5da0761fc28d91e799b12748fe6b1320f869
+{% endqna %}
+ 
 # sha2_512 of &lt;string&gt; : string
 
-Returns the sha2-512 of the string, hex encoded as a string
+Returns the sha2-512 of the string.
+
+{% qna %}
+Q: sha2_512 of "bigfix"
+A: 2d142f89401703e3227bd27d77f6e24dabac79e50dd4b4388e8d2d712e68c2b307a1661d647b24538f796428696e7a8a6c5a051a6b4c50a605c61001ff29c96d
+{% endqna %}
 
 # sha384 of &lt;string&gt; : string
 
-No documentation exists.
+Returns the sha2-384 of the string.
+
+{% qna %}
+Q: sha2_384 of "bigfix"
+A: 073f25784413df63213f501404737ddb37c9d796d4e43c5d0877dd190b2d5da0761fc28d91e799b12748fe6b1320f869
+{% endqna %}
 
 # sha512 of &lt;string&gt; : string
 
-No documentation exists.
+Returns the sha2-512 of the string.
+
+{% qna %}
+Q: sha512 of "bigfix"
+A: 2d142f89401703e3227bd27d77f6e24dabac79e50dd4b4388e8d2d712e68c2b307a1661d647b24538f796428696e7a8a6c5a051a6b4c50a605c61001ff29c96d
+{% endqna %}
 
 # shutdown item &lt;string&gt; : enableable_file
 

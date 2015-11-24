@@ -160,35 +160,75 @@ Returns the sha1 checksum of the file hex encoded as a 40 character long string.
 
 # sha224 of &lt;file&gt; : string
 
-No documentation exists.
+Returns the sha2-224 of the file.
+
+{% qna %}
+Q: sha224 of file "/etc/passwd"
+A: d92e6a1ed28b714be2e6da94fbd0a89bf115110346289321deec0a8c
+{% endqna %}
 
 # sha256 of &lt;file&gt; : string
 
-No documentation exists.
+Returns the sha2-256 of the file.
+
+{% qna %}
+Q: sha256 of file "/etc/passwd"
+A: da48b9f08e861546a980206889b7282fccda236f83a25e1b58de6fc5f1f361bd
+{% endqna %}
 
 # sha2_224 of &lt;file&gt; : string
 
-Returns the sha2-224 of the file, hex encoded as a string
+Returns the sha2-224 of the file.
+
+{% qna %}
+Q: sha2_224 of file "/etc/passwd"
+A: d92e6a1ed28b714be2e6da94fbd0a89bf115110346289321deec0a8c
+{% endqna %}
 
 # sha2_256 of &lt;file&gt; : string
 
-Returns the sha2-256 of the file, hex encoded as a string
+Returns the sha2-256 of the file.
+
+{% qna %}
+Q: sha2_256 of file "/etc/passwd"
+A: da48b9f08e861546a980206889b7282fccda236f83a25e1b58de6fc5f1f361bd
+{% endqna %}
 
 # sha2_384 of &lt;file&gt; : string
 
-Returns the sha2-384 of the file, hex encoded as a string
+Returns the sha2-384 of the file.
+
+{% qna %}
+Q: sha2_384 of file "/etc/passwd"
+A: 8bdadbaff533a5b10d2da7929783a76cc9d9ad9a53825aade38776dba07821996c96db90d20e7b6fb502ddd2462701d4
+{% endqna %}
 
 # sha2_512 of &lt;file&gt; : string
 
-Returns the sha2-512 of the file, hex encoded as a string
+Returns the sha2-512 of the file.
+
+{% qna %}
+Q: sha2_512 of file "/etc/passwd"
+A: ed80a58904b3e73b4b70a11d387f5c18df016fe9c42c36c3f7b265a4e9304d7cd5f040900df25db971846167ba06cfc82c210dc2305c98dab76b09b08f7d6f1f
+{% endqna %}
 
 # sha384 of &lt;file&gt; : string
 
-No documentation exists.
+Returns the sha2-384 of the file.
+
+{% qna %}
+Q: sha384 of file "/etc/passwd"
+A: 8bdadbaff533a5b10d2da7929783a76cc9d9ad9a53825aade38776dba07821996c96db90d20e7b6fb502ddd2462701d4
+{% endqna %}
 
 # sha512 of &lt;file&gt; : string
 
-No documentation exists.
+Returns the sha2-512 of the file.
+
+{% qna %}
+Q: sha512 of file "/etc/passwd"
+A: ed80a58904b3e73b4b70a11d387f5c18df016fe9c42c36c3f7b265a4e9304d7cd5f040900df25db971846167ba06cfc82c210dc2305c98dab76b09b08f7d6f1f
+{% endqna %}
 
 # shortcut of &lt;file&gt; : file shortcut
 
