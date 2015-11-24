@@ -808,7 +808,12 @@ Creates an object containing all the matches to the regular expression in the gi
 
 # md5 of &lt;string&gt; : string
 
-Returns the md5 of the string, hex encoded as a string. Not available in FIPS mode.
+Returns the md5 of the string. This inspector is not available in FIPS mode.
+
+{% qna %}
+Q: md5 of "bigfix"
+A: 19ef736567bdec67fdca33c30f6e280f
+{% endqna %}
 
 # meta &lt;string&gt; of &lt;string&gt; : html
 

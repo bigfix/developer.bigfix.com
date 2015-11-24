@@ -100,7 +100,12 @@ Returns `True` if the file is locked.Example: locked of file "this file" of fold
 
 # md5 of &lt;file&gt; : string
 
-Returns the md5 of the file, hex encoded as a string
+Returns the md5 of the file. This inspector is not available in FIPS mode.
+
+{% qna %}
+Q: md5 of file "/etc/passwd"
+A: 8a056052d5b944f5f2ffe3e93c8bd235
+{% endqna %}
 
 # only raw version block of &lt;file&gt; : file version block
 
