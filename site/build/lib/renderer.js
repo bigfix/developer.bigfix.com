@@ -43,6 +43,14 @@ function escapeMarkdown(html) {
 }
 
 /**
+ * Wrap the text in a <pre><code> block. The text is assumed to already be HTML
+ * escaped.
+ */
+function wrapCodeBlock(text) {
+  return '<pre><code>' + text + '</code></pre>';
+}
+
+/**
  * Create markdown renderer.
  */
 function createMarkdownRenderer() {
@@ -52,11 +60,15 @@ function createMarkdownRenderer() {
 
   renderer.code = function(code, language) {
     if (language === 'relevance') {
-      return '<pre><code>' + highlightRelevance(code) + '</code></pre>';
+      return wrapCodeBlock(highlightRelevance(code));
     }
 
     if (language === 'actionscript') {
-      return '<pre><code>' + highlightActionScript(code) + '</code></pre>';
+      return wrapCodeBlock(highlightActionScript(code));
+    }
+
+    if (language === 'sql') {
+      return wrapCodeBlock(hljs.highlight('sql', code).value);
     }
 
     return marked.Renderer.prototype.code.apply(this, arguments);
