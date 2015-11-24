@@ -156,7 +156,12 @@ Specifies the security descriptor associated with the specified file.
 
 # sha1 of &lt;file&gt; : string
 
-Returns the sha1 checksum of the file hex encoded as a 40 character long string.
+Returns the sha1 of the file.
+
+{% qna %}
+Q: sha1 of file "/etc/passwd"
+A: 4c62340ccf62b292ac66697ff8eb64aded4d957c
+{% endqna %}
 
 # sha224 of &lt;file&gt; : string
 

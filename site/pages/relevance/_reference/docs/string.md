@@ -1034,7 +1034,12 @@ Creates a set from the given list of semicolon-separated strings.
 
 # sha1 of &lt;string&gt; : string
 
-No documentation exists.
+Returns the sha1 of the string.
+
+{% qna %}
+Q: sha1 of "bigfix"
+A: 43af5f9db6b65e1bc3dd7048808d1fce1038ffbc
+{% endqna %}
 
 # sha224 of &lt;string&gt; : string
 
