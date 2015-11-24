@@ -250,7 +250,12 @@ Returns the size in bytes of a file.
 
 # sqlite database of &lt;file&gt; : sqlite database
 
-No documentation exists.
+Opens the file as a sqlite database.
+
+{% qna %}
+Q: rows of statement "select count(*) from Artist" of sqlite database of file "chinook.db"
+A: 275
+{% endqna %}
 
 # stationery of &lt;file&gt; : boolean
 
