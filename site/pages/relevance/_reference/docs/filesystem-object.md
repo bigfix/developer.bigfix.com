@@ -8,7 +8,18 @@ When the filesystem object (file or folder) was last accessed. Some file systems
 
 # ancestor of &lt;filesystem object&gt; : folder
 
-Returns all ancestor folders (recursive parent folders) of the given filesystem object (file or folder).
+Returns all ancestor folders (recursive parent folders) of the given filesystem object.
+
+{% qna %}
+Q: ancestors of file "/var/www/api/relevance/evaluate/bin/qna"
+A: /var/www/api/relevance/evaluate/bin
+A: /var/www/api/relevance/evaluate
+A: /var/www/api/relevance
+A: /var/www/api
+A: /var/www
+A: /var
+A: /
+{% endqna %}
 
 # archive of &lt;filesystem object&gt; : boolean
 
@@ -50,25 +61,55 @@ Returns the FIFO file (named pipe) described by the specified filesytem object.
 
 Returns the group ID of the given filesystem object.
 
+{% qna %}
+Q: gid of file "/etc/passwd"
+A: 0
+{% endqna %}
+
 # group execute of &lt;filesystem object&gt; : boolean
 
 Returns `True` if the group execute flag is set for the given filesystem object.
+
+{% qna %}
+Q: group execute of file "/etc/passwd"
+A: False
+{% endqna %}
 
 # group mask of &lt;filesystem object&gt; : integer
 
 Returns the group permission mask of the given filesystem object.
 
+{% qna %}
+Q: group mask of file "/etc/passwd"
+A: 4
+{% endqna %}
+
 # group name of &lt;filesystem object&gt; : string
 
 Returns the group name of the given filesystem object.
+
+{% qna %}
+Q: group name of file "/etc/passwd"
+A: root
+{% endqna %}
 
 # group read of &lt;filesystem object&gt; : boolean
 
 Returns `True` if the group read flag is set for the given filesystem object.
 
+{% qna %}
+Q: group read of file "/etc/passwd"
+A: True
+{% endqna %}
+
 # group write of &lt;filesystem object&gt; : boolean
 
 Returns `True` if the group write flag is set for the given filesystem object.
+
+{% qna %}
+Q: group write of file "/etc/passwd"
+A: False
+{% endqna %}
 
 # hfs path of &lt;filesystem object&gt; : string
 
@@ -82,25 +123,50 @@ Returns `True` if the file or folder (filesystem object) is marked as hidden.
 
 Returns an integer corresponding to the number of hard links attached to the specified filesystem object.
 
+{% qna %}
+Q: link count of file "/etc/passwd"
+A: 1
+{% endqna %}
+
 # location of &lt;filesystem object&gt; : folder
 
 No documentation exists.
 
 # location of &lt;filesystem object&gt; : string
 
-Returns the name of the directory in which the file or folder (filesystem object) is located.
+Returns the name of the directory in which the file or folder is located.
+
+{% qna %}
+Q: location of file "/etc/passwd"
+A: /etc
+{% endqna %}
 
 # mode of &lt;filesystem object&gt; : mode
 
 Returns the permissions mode for the given filesystem object.
 
+{% qna %}
+Q: mode of file "/etc/passwd"
+A: rw-r--r--
+{% endqna %}
+
 # modification time of &lt;filesystem object&gt; : time
 
-The date and time of latest modification of the file. This corresponds to what is shown in the "Get Info" box.Example: name of object "iChat.app" of applications folder - Returns iChat.app.
+Returns the date and time of latest modification of the file.
+
+{% qna %}
+Q: modification time of file "/etc/passwd"
+A: Fri, 14 Aug 2015 21:04:58 +0000
+{% endqna %}
 
 # name of &lt;filesystem object&gt; : string
 
-This returns the name of the file or folder.
+Returns the name of the file or folder.
+
+{% qna %}
+Q: name of file "/etc/passwd"
+A: passwd
+{% endqna %}
 
 # normal of &lt;filesystem object&gt; : boolean
 
@@ -112,27 +178,57 @@ Returns `True` if the file or folder (the filesystem object) is marked as &#39;o
 
 # other execute of &lt;filesystem object&gt; : boolean
 
-Returns `True` if others (not in the group) have execute permissions on the given filesystem object.
+Returns `True` if others have execute permissions on the given filesystem object.
+
+{% qna %}
+Q: other execute of file "/etc/passwd"
+A: False
+{% endqna %}
 
 # other mask of &lt;filesystem object&gt; : integer
 
-Returns the other (not in the group) mask as a 3-bit integer corresponding to rwx permissions for the specified filesystem object.
+Returns the other mask as a 3-bit integer corresponding to rwx permissions for the specified filesystem object.
+
+{% qna %}
+Q: other mask of file "/etc/passwd"
+A: 4
+{% endqna %}
 
 # other read of &lt;filesystem object&gt; : boolean
 
-Returns `True` if others (not in the group) have read permissions on the given filesystem object.
+Returns `True` if others have read permissions on the given filesystem object.
+
+{% qna %}
+Q: other read of file "/etc/passwd"
+A: True
+{% endqna %}
 
 # other write of &lt;filesystem object&gt; : boolean
 
-Returns `True` if others (not in the group) have write permissions on the given filesystem object.
+Returns `True` if others have write permissions on the given filesystem object.
+
+{% qna %}
+Q: other write of file "/etc/passwd"
+A: False
+{% endqna %}
 
 # parent folder of &lt;filesystem object&gt; : folder
 
 The folder containing the specified file or folder.
 
+{% qna %}
+Q: parent folder of file "/etc/passwd"
+A: /etc
+{% endqna %}
+
 # pathname of &lt;filesystem object&gt; : string
 
-Returns the full pathname of the specified file or folder (filesystem object) as a string.
+Returns the full pathname of the specified file or folder as a string.
+
+{% qna %}
+Q: pathname of file "/etc/passwd"
+A: /etc/passwd
+{% endqna %}
 
 # posix path of &lt;filesystem object&gt; : string
 
@@ -144,11 +240,21 @@ Returns `True` if the file or folder (the filesystem object) is marked as read-o
 
 # setgid of &lt;filesystem object&gt; : boolean
 
-Returns `True` if the setgid (group ID) bit is set for the specified filesystem object.
+Returns `True` if the [setgid](https://en.wikipedia.org/wiki/Setuid) bit is set for the specified filesystem object.
+
+{% qna %}
+Q: setgid of file "/etc/passwd"
+A: False
+{% endqna %}
 
 # setuid of &lt;filesystem object&gt; : boolean
 
-Returns `True` if the setuid (user ID) bit is set for the specified filesystem object.
+Returns `True` if the [setuid](https://en.wikipedia.org/wiki/Setuid) bit is set for the specified filesystem object.
+
+{% qna %}
+Q: setuid of file "/etc/passwd"
+A: False
+{% endqna %}
 
 # sibling file &lt;string&gt; of &lt;filesystem object&gt; : file
 
@@ -182,25 +288,55 @@ Returns `True` if the file or folder (the filesystem object) is marked as a temp
 
 The user ID of the user who owns this filesystem object.
 
+{% qna %}
+Q: uid of file "/etc/passwd"
+A: 0
+{% endqna %}
+
 # user execute of &lt;filesystem object&gt; : boolean
 
-Returns `True` if the owner (user) has execute permissions on the given filesystem object.
+Returns `True` if the owner has execute permissions on the given filesystem object.
+
+{% qna %}
+Q: user execute of file "/bin/bash"
+A: True
+{% endqna %}
 
 # user mask of &lt;filesystem object&gt; : integer
 
-Integer representing user permissions (3 bit mask, RWX) on the specified filesystem object.
+Returns an integer representing the owner permissions on the specified filesystem object.
+
+{% qna %}
+Q: user mask of file "/etc/passwd"
+A: 6
+{% endqna %}
 
 # user name of &lt;filesystem object&gt; : string
 
-Returns the owner (user) name of the specified filesystem object.
+Returns the owner name of the specified filesystem object.
+
+{% qna %}
+Q: user name of file "/etc/passwd"
+A: root
+{% endqna %}
 
 # user read of &lt;filesystem object&gt; : boolean
 
-Returns the owner (user) read permissions for the specified filesystem object.
+Returns the owner read permissions for the specified filesystem object.
+
+{% qna %}
+Q: user read of file "/etc/passwd"
+A: True
+{% endqna %}
 
 # user write of &lt;filesystem object&gt; : boolean
 
-Returns the owner (user) write permissions for the specified filesystem object.
+Returns the owner write permissions for the specified filesystem object.
+
+{% qna %}
+Q: user write of file "/etc/passwd"
+A: True
+{% endqna %}
 
 # version of &lt;filesystem object&gt; : version
 
