@@ -68,7 +68,12 @@ Returns the first version block directly from a PE file. If the first block is s
 
 # json of &lt;file&gt; : json value
 
-No documentation exists.
+Returns a JSON value for the content of the file.
+
+{% qna %}
+Q: path "$.dependencies.express" of json of file "package.json"
+A: ^4.13.3
+{% endqna %}
 
 # key &lt;string&gt; of &lt;file&gt; : string
 

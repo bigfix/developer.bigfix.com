@@ -736,7 +736,12 @@ No documentation exists.
 
 # json of &lt;string&gt; : json value
 
-No documentation exists.
+Returns a [JSON](https://en.wikipedia.org/wiki/JSON) object for the string.
+
+{% qna %}
+Q: json of "[1, 2, 3]"
+A: [1,2,3]
+{% endqna %}
 
 # kbd &lt;string&gt; of &lt;string&gt; : html
 
