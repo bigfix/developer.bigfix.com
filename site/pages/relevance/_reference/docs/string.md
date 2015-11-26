@@ -948,7 +948,12 @@ The named set of preferences.
 
 # process &lt;string&gt; : process
 
-Returns the process object corresponding to the name specified by &lt;string&gt;.
+Returns the process object corresponding to the specified name.
+
+{% qna %}
+Q: pid of process "node"
+A: 1
+{% endqna %}
 
 # property &lt;string&gt; : property
 

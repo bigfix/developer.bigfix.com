@@ -372,7 +372,12 @@ No documentation exists.
 
 # process &lt;integer&gt; : process
 
-Returns the process object corresponding to the given integer pid.
+Returns the process object corresponding to the given integer process ID.
+
+{% qna %}
+Q: name of process 1
+A: node
+{% endqna %}
 
 # processor &lt;integer&gt; : processor
 
