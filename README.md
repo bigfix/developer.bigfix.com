@@ -68,7 +68,8 @@ Currently the site can only be deployed by Brian Green. The actual deploy proces
 
 If the set of relevance inspectors changes, then some work needs to be done to
 update the site to include the new information. First, follow the instructions
-in `tools/parse-language-reports` to import the new relevance information.
+in [tools/parse-language-reports](./tools/parse-language-reports) to import the
+new relevance information.
 
 Next, try to run a build. If the documentation for any inspectors is missing,
 you'll see something like:
@@ -86,8 +87,8 @@ you'll see something like:
     Error: Documentation is incomplete
 
 To fix this, you need to run the the build script with an argument for it to
-create stubs for the missing documentation. To do this, go to the `site/build`
-directory and run:
+create stubs for the missing documentation. To do this, go to the
+[site/build](./site/build) directory and run:
 
     $ npm install
     $ node . --create-missing ..
@@ -98,5 +99,5 @@ this build fails, you'll probably see an error like:
     Error: Type bes webui app is missing from the relevance reference
 
 This means that you need to update the
-`site/pages/relevance/_reference/index.html` file to list the missing inspector
-type.
+[site/pages/relevance/_reference/index.html](./site/pages/relevance/_reference/index.html)
+file to list the missing inspector type.
