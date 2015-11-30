@@ -398,6 +398,14 @@ Returns the current list of BES Users in the form of a set, which can be arithme
 
 Returns the current BES WakeOnLan status.
 
+# bes webui app : bes webui app
+
+No documentation exists.
+
+# bes webui app set : bes webui app set
+
+No documentation exists.
+
 # bes wizard : bes wizard
 
 Returns a list of all the available BES Wizards.Note: This is a Console-only inspector.
@@ -2345,6 +2353,10 @@ Returns the subnet the client is in for Wake on Lan (WoL) purposes. The client s
 # warning event log event type : event log event type
 
 Returns an object corresponding to a warning in the event log. Warnings can be used to prevent future system problems.
+
+# webui enabled : boolean
+
+No documentation exists.
 
 # wednesday : day of week
 

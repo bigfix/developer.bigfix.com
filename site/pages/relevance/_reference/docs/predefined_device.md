@@ -1,6 +1,6 @@
 # type: predefined_device
 
-The `predefined_device` objects contain entries for all device types currently on the system. This is the content of the `PdDv` object class in ODM. 
+The `predefined_device` objects contain entries for all device types currently on the system. This is the content of the `PdDv` object class in ODM.
 
 # base flag of &lt;predefined_device&gt; : string
 

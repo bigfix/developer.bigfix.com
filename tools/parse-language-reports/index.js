@@ -221,7 +221,8 @@ function main() {
   }
 
   var language = parseLanguageReports(process.argv[2], getPlatformNames());
-  fs.writeFileSync('language.json', JSON.stringify(language, null, 2));
+  fs.writeFileSync('relevance-language.json',
+                   JSON.stringify(language, null, 2));
 }
 
 if (require.main === module) {

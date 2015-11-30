@@ -63,3 +63,40 @@ The [site/build](./site/build) script knows how to render every page in the site
 ### Deploy
 
 Currently the site can only be deployed by Brian Green. The actual deploy process uses a [git post-receive hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
+
+### Updating Relevance Inspectors
+
+If the set of relevance inspectors changes, then some work needs to be done to
+update the site to include the new information. First, follow the instructions
+in `tools/parse-language-reports` to import the new relevance information.
+
+Next, try to run a build. If the documentation for any inspectors is missing,
+you'll see something like:
+
+    No documentation found for type: bes webui app
+    No documentation found for property: <bes webui app> = <bes webui app> : boolean
+    No documentation found for property: globally allowed flag of <bes webui app> : boolean
+    No documentation found for property: name of <bes webui app> : string
+    No documentation found for property: set of <bes webui app> : bes webui app set
+    No documentation found for property: unique value of <bes webui app> : bes webui app with multiplicity
+    /home/vagrant/staging/build/relevance-reference/index.js:62
+        throw new Error('Documentation is incomplete');
+        ^
+    
+    Error: Documentation is incomplete
+
+To fix this, you need to run the the build script with an argument for it to
+create stubs for the missing documentation. To do this, go to the `site/build`
+directory and run:
+
+    $ npm install
+    $ node . --create-missing ..
+
+This will create stubs for any missing inspectors. Then, try another build. If
+this build fails, you'll probably see an error like:
+
+    Error: Type bes webui app is missing from the relevance reference
+
+This means that you need to update the
+`site/pages/relevance/_reference/index.html` file to list the missing inspector
+type.

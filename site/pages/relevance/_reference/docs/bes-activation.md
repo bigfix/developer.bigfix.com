@@ -33,3 +33,7 @@ Returns the time when the given BES Analysis activation was last modified.
 # name of &lt;bes activation&gt; : string
 
 Returns the name of the specified BES activation as a string.
+
+# status of &lt;bes activation&gt; : string
+
+No documentation exists.

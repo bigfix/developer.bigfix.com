@@ -5950,6 +5950,31 @@
           "Solaris"
         ]
       }
+    },
+    "bes webui app": {
+      "name": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "bes webui app set": {
+      "name": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "bes webui app with multiplicity": {
+      "name": "bes webui app with multiplicity",
+      "parent": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
     }
   },
   "properties": {
@@ -101318,6 +101343,263 @@
       "availability": {
         "9.2.0.363": [
           "Solaris"
+        ]
+      }
+    },
+    "status of <bes activation> : string": {
+      "key": "status of <bes activation> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "status",
+      "pluralPhrase": "statuses",
+      "directObjectType": "bes activation",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app set> contains <bes webui app> : boolean": {
+      "key": "<bes webui app set> contains <bes webui app> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes webui app set",
+      "op": "contains",
+      "rightType": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app> = <bes webui app> : boolean": {
+      "key": "<bes webui app> = <bes webui app> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes webui app",
+      "op": "=",
+      "rightType": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "globally allowed flag of <bes webui app> : boolean": {
+      "key": "globally allowed flag of <bes webui app> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "globally allowed flag",
+      "pluralPhrase": "globally allowed flags",
+      "directObjectType": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "name of <bes webui app> : string": {
+      "key": "name of <bes webui app> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "set of <bes webui app> : bes webui app set": {
+      "key": "set of <bes webui app> : bes webui app set",
+      "type": "property",
+      "resultType": "bes webui app set",
+      "singularPhrase": "set",
+      "pluralPhrase": "sets",
+      "directObjectType": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "unique value of <bes webui app> : bes webui app with multiplicity": {
+      "key": "unique value of <bes webui app> : bes webui app with multiplicity",
+      "type": "property",
+      "resultType": "bes webui app with multiplicity",
+      "singularPhrase": "unique value",
+      "pluralPhrase": "unique values",
+      "directObjectType": "bes webui app",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app set> * <bes webui app set> : bes webui app set": {
+      "key": "<bes webui app set> * <bes webui app set> : bes webui app set",
+      "type": "binaryOp",
+      "resultType": "bes webui app set",
+      "leftType": "bes webui app set",
+      "op": "*",
+      "rightType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app set> + <bes webui app set> : bes webui app set": {
+      "key": "<bes webui app set> + <bes webui app set> : bes webui app set",
+      "type": "binaryOp",
+      "resultType": "bes webui app set",
+      "leftType": "bes webui app set",
+      "op": "+",
+      "rightType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app set> - <bes webui app set> : bes webui app set": {
+      "key": "<bes webui app set> - <bes webui app set> : bes webui app set",
+      "type": "binaryOp",
+      "resultType": "bes webui app set",
+      "leftType": "bes webui app set",
+      "op": "-",
+      "rightType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app set> = <bes webui app set> : boolean": {
+      "key": "<bes webui app set> = <bes webui app set> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes webui app set",
+      "op": "=",
+      "rightType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "<bes webui app set> contains <bes webui app set> : boolean": {
+      "key": "<bes webui app set> contains <bes webui app set> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes webui app set",
+      "op": "contains",
+      "rightType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "element of <bes webui app set> : bes webui app": {
+      "key": "element of <bes webui app set> : bes webui app",
+      "type": "property",
+      "resultType": "bes webui app",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "directObjectType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "intersection of <bes webui app set> : bes webui app set": {
+      "key": "intersection of <bes webui app set> : bes webui app set",
+      "type": "property",
+      "resultType": "bes webui app set",
+      "singularPhrase": "intersection",
+      "pluralPhrase": "intersections",
+      "directObjectType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "size of <bes webui app set> : integer": {
+      "key": "size of <bes webui app set> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "size",
+      "pluralPhrase": "sizes",
+      "directObjectType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "union of <bes webui app set> : bes webui app set": {
+      "key": "union of <bes webui app set> : bes webui app set",
+      "type": "property",
+      "resultType": "bes webui app set",
+      "singularPhrase": "union",
+      "pluralPhrase": "unions",
+      "directObjectType": "bes webui app set",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "multiplicity of <bes webui app with multiplicity> : integer": {
+      "key": "multiplicity of <bes webui app with multiplicity> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "multiplicity",
+      "pluralPhrase": "multiplicities",
+      "directObjectType": "bes webui app with multiplicity",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "bes webui app set : bes webui app set": {
+      "key": "bes webui app set : bes webui app set",
+      "type": "property",
+      "resultType": "bes webui app set",
+      "singularPhrase": "bes webui app set",
+      "pluralPhrase": "bes webui app sets",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "bes webui app : bes webui app": {
+      "key": "bes webui app : bes webui app",
+      "type": "property",
+      "resultType": "bes webui app",
+      "singularPhrase": "bes webui app",
+      "pluralPhrase": "bes webui apps",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
+        ]
+      }
+    },
+    "webui enabled : boolean": {
+      "key": "webui enabled : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "webui enabled",
+      "pluralPhrase": "webuis enabled",
+      "availability": {
+        "9.2.5.130": [
+          "Session"
         ]
       }
     }

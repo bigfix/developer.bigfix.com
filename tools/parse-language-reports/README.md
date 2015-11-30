@@ -1,26 +1,44 @@
+# Parse Language Reports
+
 This tool parses a bunch of "relevance language report" files. These are files
 produced internally by the platform build, and they list all inspectors
 available on each platform.
 
-The tool should be run like:
+The output of this tool is the `relevance-language.json` file. This file is used
+to know exactly what inspectors exist, what platforms they work on, and in which
+version they were introduced or deprecated.
 
-    $ node parse-language-reports LanguageReportFiles
+### Importing new language reports
 
-The folder structure of `LanguageReportFiles` is expected to look like:
+To import new relevance language reports, first update the
+[relevance-language-reports](https://github.com/bigfix/relevance-language-reports)
+repository with the new reports. Then, run `get-relevance-reports` to extract
+the information in that repository.
 
-    8.0.584.0/
-      Language.Console_WebReports.txt
-      Language.i386_rhe3.txt
-      Language.sparc_sol9.txt
-      Language.windows.txt
-      ...
-    8.0.627.0/
-      Language.Console_WebReports.txt
-      Language.i386_suse80.txt
-      Language.ppc_aix51.txt
-      Language.x86_64_rhe5.txt
-      Language.x86_64_sles9.txt
-      ...
+    $ ./get-relevance-reports
 
-If all of the language reports are parsed successfully, a JSON object
-representing the combined types and properties in all of the files is output.
+This should create the folder `LanguageReportFiles` with one directory per
+version. Next, the npm dependencies need to be installed with:
+
+    $ npm install
+
+After that, this tool can be run with:
+
+    $ node . LanguageReportFiles
+
+Once the tool finishes running, it should output the new
+`relevance-language.json` file.
+
+Once you have updated this file, you probably need to go to the `site/build`
+directory and run:
+
+    $ npm install
+    $ node . -- create-missing ..
+
+This will add stub entries to the documentation for any new inspectors.
+
+### Changing the platform names
+
+The platform names are determined by the `platforms.yml` file. To add a new
+platform or to change the name of an existing platform, edit that file and
+re-run this tool.

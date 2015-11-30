@@ -135,38 +135,12 @@ function parseDir(docsDir, language, docs) {
 }
 
 /**
- * Check that every type and property is listed in the documentation.
- */
-function checkComplete(docs, language) {
-  var complete = true;
-
-  Object.keys(language.types).forEach(function(type) {
-    if (!docs.types[type]) {
-      console.error('No documentation found for type: ' + type);
-      complete = false;
-    }
-  });
-
-  Object.keys(language.properties).forEach(function(key) {
-    if (!docs.properties[key]) {
-      console.error('No documentation found for property: ' + key);
-      complete = false;
-    }
-  });
-
-  if (!complete) {
-    throw new Error('Documentation is incomplete');
-  }
-}
-
-/**
  * Parse the documentation files so that we can build the reference.
  */
 function parse(docsDir, language) {
   var docs = { types: {}, properties: {} };
 
   parseDir(docsDir, language, docs);
-  checkComplete(docs, language);
   return docs;
 }
 

@@ -50,6 +50,10 @@ No documentation exists.
 
 No documentation exists.
 
+# &lt;bes webui app set&gt; contains &lt;bes webui app&gt; : boolean
+
+No documentation exists.
+
 # &lt;bes wizard set&gt; contains &lt;bes wizard&gt; : boolean
 
 Returns `True` if the specified set of BES Wizards contains all of the following wizard.
