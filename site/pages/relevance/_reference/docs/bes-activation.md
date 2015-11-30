@@ -36,4 +36,8 @@ Returns the name of the specified BES activation as a string.
 
 # status of &lt;bes activation&gt; : string
 
-No documentation exists.
+Returns the status of the activation. This will return one of the following strings:
+
+* `Activated Locally` - The analysis was activated by a non-master operator.
+* `Activated Globally` - The analysis was activated by a master operator.
+* `Not Activated` - The analysis is not activated
