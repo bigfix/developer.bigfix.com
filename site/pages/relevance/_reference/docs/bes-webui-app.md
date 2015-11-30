@@ -1,23 +1,23 @@
 # type: bes webui app
 
-No documentation exists.
+The `bes webui app` type represents a WebUI application.
 
 # globally allowed flag of &lt;bes webui app&gt; : boolean
 
-No documentation exists.
+Returns `True` if all users are allowed to use the WebUI application.
 
 # name of &lt;bes webui app&gt; : string
 
-No documentation exists.
+Returns the name of the application.
 
 # set of &lt;bes webui app&gt; : bes webui app set
 
-No documentation exists.
+Creates a set from the applications.
 
 # unique value of &lt;bes webui app&gt; : bes webui app with multiplicity
 
-No documentation exists.
+Returns the unique values from a collection of applications.
 
 # &lt;bes webui app&gt; = &lt;bes webui app&gt; : boolean
 
-No documentation exists.
+Returns `True` if the WebUI applications are equal.

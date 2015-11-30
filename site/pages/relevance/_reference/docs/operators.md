@@ -52,7 +52,7 @@ No documentation exists.
 
 # &lt;bes webui app set&gt; contains &lt;bes webui app&gt; : boolean
 
-No documentation exists.
+Returns whether the set contains the application.
 
 # &lt;bes wizard set&gt; contains &lt;bes wizard&gt; : boolean
 

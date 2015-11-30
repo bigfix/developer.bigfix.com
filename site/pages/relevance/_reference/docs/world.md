@@ -400,11 +400,11 @@ Returns the current BES WakeOnLan status.
 
 # bes webui app : bes webui app
 
-No documentation exists.
+Returns all WebUI applications.
 
 # bes webui app set : bes webui app set
 
-No documentation exists.
+Returns all WebUI applications as a set.
 
 # bes wizard : bes wizard
 
@@ -2356,7 +2356,7 @@ Returns an object corresponding to a warning in the event log. Warnings can be u
 
 # webui enabled : boolean
 
-No documentation exists.
+Returns `True` if the WebUI is enabled.
 
 # wednesday : day of week
 

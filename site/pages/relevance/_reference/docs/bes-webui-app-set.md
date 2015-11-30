@@ -1,39 +1,39 @@
 # type: bes webui app set
 
-No documentation exists.
+The `bes webui app set` type represents a set of WebUI applications.
 
 # element of &lt;bes webui app set&gt; : bes webui app
 
-No documentation exists.
+Return the elements of the set.
 
 # intersection of &lt;bes webui app set&gt; : bes webui app set
 
-No documentation exists.
+Returns the intersection of the two sets.
 
 # size of &lt;bes webui app set&gt; : integer
 
-No documentation exists.
+Returns the number of elements in the set.
 
 # union of &lt;bes webui app set&gt; : bes webui app set
 
-No documentation exists.
+Returns the union of the two sets.
 
 # &lt;bes webui app set&gt; * &lt;bes webui app set&gt; : bes webui app set
 
-No documentation exists.
+Returns the intersection of the two sets.
 
 # &lt;bes webui app set&gt; + &lt;bes webui app set&gt; : bes webui app set
 
-No documentation exists.
+Returns the union of the two sets.
 
 # &lt;bes webui app set&gt; - &lt;bes webui app set&gt; : bes webui app set
 
-No documentation exists.
+Returns the set difference of the two sets.
 
 # &lt;bes webui app set&gt; = &lt;bes webui app set&gt; : boolean
 
-No documentation exists.
+Returns whether the two sets are equal.
 
 # &lt;bes webui app set&gt; contains &lt;bes webui app set&gt; : boolean
 
-No documentation exists.
+Returns whether the left set contains every element of the right set.
