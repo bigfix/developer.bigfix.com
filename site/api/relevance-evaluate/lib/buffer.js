@@ -41,7 +41,11 @@ module.exports = function(stream, limit, callback) {
   function tooBig() {
     cleanup();
     debug('Error reading qna response: too big');
-    callback(new Error('Answer is too large'));
+
+    var err = new Error('Answer is too large');
+    err.partialResult = Buffer.concat(buffers, length);
+
+    callback(err);
   }
 
   function cleanup() {

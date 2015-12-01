@@ -112,13 +112,19 @@ test('qna result too big test', function(t) {
   };
 
   qna('now', options, function(err, result) {
-    t.equal(err.message, 'Answer is too large');
-    t.equal(result, undefined);
+    t.equal(err, null);
+    t.deepEqual(result, {
+      answers: ['hi'],
+      errors: ['Answer truncated because it is too large'],
+      time: 0,
+      type: ''
+    });
+
     t.ok(fake.killed, 'qna should be killed');
   });
 
   process.nextTick(function() {
-    fake.stdout.push('hi');
+    sendResult(fake, 'A: hi');
   });
 });
 

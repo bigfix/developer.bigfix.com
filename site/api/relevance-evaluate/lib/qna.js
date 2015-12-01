@@ -77,7 +77,15 @@ module.exports = function(relevance, options, callback) {
 
     if (err) {
       killIfRunning();
-      callback(err);
+
+      if (err.partialResult) {
+        var parsed = parseResults(err.partialResult.toString());
+        parsed.errors.push('Answer truncated because it is too large');
+
+        callback(null, parsed);
+      } else {
+        callback(err);
+      }
     } else {
       callback(null, parseResults(output.toString()));
     }
