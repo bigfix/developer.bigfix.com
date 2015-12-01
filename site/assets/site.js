@@ -117,3 +117,30 @@ function toggleOnLoad() {
 
   entryExpand.click();
 }
+
+/**
+ * Escape HTML.
+ */
+function escapeHTML(text) {
+  return text.replace(/[<&>"']/g, function(match) {
+    if (match === '<') {
+      return '&lt;';
+    }
+
+    if (match === '&') {
+      return '&amp;';
+    }
+
+    if (match === '>') {
+      return '&gt;';
+    }
+
+    if (match === '"') {
+      return '&quot;';
+    }
+
+    if (match === '\'') {
+      return '&#39';
+    }
+  });
+}

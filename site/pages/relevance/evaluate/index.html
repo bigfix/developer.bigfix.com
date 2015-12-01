@@ -15,33 +15,27 @@ function getRelevance() {
 }
 
 function setResults(results) {
-  var element = document.getElementById('evaluate-answers');
-  element.innerHTML = '<span class="row">';
-  element.appendChild(document.createTextNode("Q: " + getRelevance()));
-  element.innerHTML = element.innerHTML + "</span><br><br>";
+  var html = '';
 
-  if (results.answers.length > 0) {
-    element.innerHTML = element.innerHTML + '<div class="row">';
-	results.answers.forEach(
-	   function appendSanitized(string) {
-	   element.appendChild(document.createTextNode("A: " + string));
-	   element.innerHTML = element.innerHTML + "<br>";
-	   }
-	)
-	element.innerHTML = element.innerHTML + ' </div><br>';
+  html += '<div>Q: ' + escapeHTML(getRelevance()) + '</div>';
+
+  results.answers.forEach(function(answer) {
+    html += '<div>A: ' + escapeHTML(answer) + '</div>';
+  });
+
+  results.errors.forEach(function(error) {
+    html += '<div>E: ' + escapeHTML(error) + '</div>';
+  });
+
+  if (results.time) {
+    html += '<div>T: ' + (results.time / 1000) + ' ms</div>';
   }
-  
-  if (results.errors.length > 0) {
-    element.innerHTML = element.innerHTML + '<span class="row">';
-	results.errors.forEach(
-	   function appendSanitized(string) {
-	   element.appendChild(document.createTextNode("E: " + string));
-	   }
-	)
-	element.innerHTML = element.innerHTML + ' <a href="/relevance/guide/basics/errors.html">See the Errors guide.</a></span><br><br>';
+
+  if (results.type) {
+    html += '<div>I: ' + escapeHTML(results.type) + ' ms</div>';
   }
-  element.innerHTML = element.innerHTML + '<span class="row">T: ' + results.time / 1000 + " ms</span><br>";
-  element.innerHTML = element.innerHTML + '<span class="row">I: ' + results.type + "</span><br>";
+
+ document.getElementById('evaluate-answers').innerHTML = html;
 }
 
 function setError(err) {
