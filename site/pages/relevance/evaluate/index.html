@@ -10,6 +10,12 @@ title: Evaluate Relevance
 </div>
 <pre><div id="evaluate-answers" class="row"></div></pre>
 <script>
+
+function typeHref(type) {
+  return '/relevance/reference/' +
+    escapeHTML(type).trim().replace(/\s+/g, '-') + '.html';
+}
+
 function getRelevance() {
   return document.getElementById('evaluate-question').value;
 }
@@ -32,7 +38,8 @@ function setResults(results) {
   }
 
   if (results.type) {
-    html += '<div>I: ' + escapeHTML(results.type) + '</div>';
+    html += '<div>I: <a href="' + typeHref(results.type) + '">' +
+      escapeHTML(results.type) + '</a></div>';
   }
 
   document.getElementById('evaluate-answers').innerHTML = html;
