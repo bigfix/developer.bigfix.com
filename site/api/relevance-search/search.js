@@ -39,9 +39,8 @@ function escapeQuery(query){
     .trim();
 }
 
-function search(query, limit, offset) {
-  query = query.toLowerCase();
-  var regex = new RegExp('\\b' + escapeQuery(query) + '\\b');
+function searchForWord(word) {
+  var regex = new RegExp('\\b' + escapeQuery(word) + '\\b');
 
   // Prefer exact matches of the singular phrase, plural phrase, or cast phrase.
   // If they search for 'unix', then the 'unix of <operating system>' property
@@ -64,7 +63,7 @@ function search(query, limit, offset) {
 
   properties.forEach(function(property) {
     if (regex.test(property.singularPhrase)) {
-      if (property.singularPhrase.length === query.length) {
+      if (property.singularPhrase.length === word.length) {
         equalName.push(property.key);
       } else {
         matchName.push(property.key);
@@ -74,7 +73,7 @@ function search(query, limit, offset) {
     }
     
     if (regex.test(property.pluralPhrase)) {
-      if (property.pluralPhrase.length === query.length) {
+      if (property.pluralPhrase.length === word.length) {
         equalName.push(property.key);
       } else {
         matchName.push(property.key);
@@ -89,21 +88,21 @@ function search(query, limit, offset) {
       return matchType.push(property.key);
     }
 
-    if (property.singularPhrase.indexOf(query) !== -1 ||
-        property.pluralPhrase.indexOf(query) !== -1) {
+    if (property.singularPhrase.indexOf(word) !== -1 ||
+        property.pluralPhrase.indexOf(word) !== -1) {
       return containsName.push(property.key);
     }
 
-    if (property.indexType.indexOf(query) !== -1 ||
-        property.directObjectType.indexOf(query) !== -1 ||
-        property.resultType.indexOf(query) !== -1) {
+    if (property.indexType.indexOf(word) !== -1 ||
+        property.directObjectType.indexOf(word) !== -1 ||
+        property.resultType.indexOf(word) !== -1) {
       return matchType.push(property.key);
     }
   });
 
   casts.forEach(function(cast) {
     if (regex.test(cast.phrase)) {
-      if (cast.phrase.length === query.length) {
+      if (cast.phrase.length === word.length) {
         equalName.push(cast.key);
       } else {
         matchName.push(cast.key);
@@ -116,18 +115,44 @@ function search(query, limit, offset) {
       return matchType.push(cast.key);
     }
 
-    if (cast.phrase.indexOf(query) !== -1) {
+    if (cast.phrase.indexOf(word) !== -1) {
       return containsName.push(cast.key);
     }
 
-    if (cast.argType.indexOf(query) !== -1 ||
-        cast.resultType.indexOf(query) !== -1) {
+    if (cast.argType.indexOf(word) !== -1 ||
+        cast.resultType.indexOf(word) !== -1) {
       return containsType.push(cast.key);
     }
   });
 
-  var results =
-    [].concat(equalName, matchName, matchType, containsName, containsType);
+  return [].concat(equalName, matchName, matchType, containsName, containsType);
+}
+
+function intersect(results) {
+  return results.reduce(function(a, b) {
+    var set = {};
+    var combined = [];
+
+    a.forEach(function(key) {
+      set[key] = true;
+    });
+
+    b.forEach(function(key) {
+      if (set[key]) {
+        combined.push(key);
+      }
+    });
+
+    return combined;
+  });
+}
+
+function search(query, limit, offset) {
+  var words = query.trim().toLowerCase().split(/\s+/);
+
+  var results = intersect(words.map(function(word) {
+    return searchForWord(word);
+  }));
 
   var page = results.slice(offset, Math.min(results.length, offset + limit));
 
