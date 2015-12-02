@@ -191,6 +191,42 @@ $(STAGING)/evaluate-deploy.target: $(STAGING)/evaluate.target
 REMOTE_DEPLOY_TARGETS += $(STAGING)/evaluate-deploy.target
 
 ################################################################################
+# /api/stash
+################################################################################
+
+$(STAGING)/api/stash/package.json: $(wildcard $(SOURCE)/site/api/stash/*)
+	mkdir -p $(STAGING)/api/stash
+	rsync --acls --xattrs --archive --delete --exclude=node_modules \
+		$(SOURCE)/site/api/stash/ \
+		$(STAGING)/api/stash/
+	cd $(STAGING)/api/stash/ && npm install
+	touch $@
+
+STAGING_TARGETS += $(STAGING)/api/stash/package.json
+
+STASH_DEPS := \
+	$(SOURCE)/conf/systemd/stash.service \
+	$(STAGING)/api/stash/package.json
+
+/usr/lib/systemd/system/stash.service: $(STASH_DEPS)
+	systemctl stop stash || true
+	systemctl disable stash || true
+	chmod -R a+rX $(STAGING)
+	mkdir -p /var/www/api/stash
+	mkdir -p /var/www/stashes
+	chmod o+w /var/www/stashes
+	rsync --acls --xattrs --archive --delete \
+		$(STAGING)/api/stash/ \
+		/var/www/api/stash
+	cp -f $(SOURCE)/conf/systemd/stash.service \
+		/usr/lib/systemd/system/stash.service
+	systemctl daemon-reload
+	systemctl enable stash
+	systemctl start stash
+
+DEPLOY_TARGETS += /usr/lib/systemd/system/stash.service
+
+################################################################################
 # nginx
 ################################################################################
 

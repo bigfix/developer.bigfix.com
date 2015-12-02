@@ -1,0 +1,275 @@
+{
+  "name": "stash",
+  "version": "1.0.0",
+  "dependencies": {
+    "accepts": {
+      "version": "1.2.13",
+      "from": "accepts@>=1.2.12 <1.3.0",
+      "resolved": "http://npm.sfolab.ibm.com/accepts/-/accepts-1.2.13.tgz"
+    },
+    "array-flatten": {
+      "version": "1.1.1",
+      "from": "array-flatten@1.1.1",
+      "resolved": "http://npm.sfolab.ibm.com/array-flatten/-/array-flatten-1.1.1.tgz"
+    },
+    "body-parser": {
+      "version": "1.14.1",
+      "from": "body-parser@*",
+      "resolved": "http://npm.sfolab.ibm.com/body-parser/-/body-parser-1.14.1.tgz",
+      "dependencies": {
+        "depd": {
+          "version": "1.1.0",
+          "from": "depd@>=1.1.0 <1.2.0",
+          "resolved": "http://npm.sfolab.ibm.com/depd/-/depd-1.1.0.tgz"
+        },
+        "qs": {
+          "version": "5.1.0",
+          "from": "qs@5.1.0",
+          "resolved": "http://npm.sfolab.ibm.com/qs/-/qs-5.1.0.tgz"
+        }
+      }
+    },
+    "bytes": {
+      "version": "2.1.0",
+      "from": "bytes@2.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/bytes/-/bytes-2.1.0.tgz"
+    },
+    "content-disposition": {
+      "version": "0.5.0",
+      "from": "content-disposition@0.5.0",
+      "resolved": "http://npm.sfolab.ibm.com/content-disposition/-/content-disposition-0.5.0.tgz"
+    },
+    "content-type": {
+      "version": "1.0.1",
+      "from": "content-type@>=1.0.1 <1.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/content-type/-/content-type-1.0.1.tgz"
+    },
+    "cookie": {
+      "version": "0.1.3",
+      "from": "cookie@0.1.3",
+      "resolved": "http://npm.sfolab.ibm.com/cookie/-/cookie-0.1.3.tgz"
+    },
+    "cookie-signature": {
+      "version": "1.0.6",
+      "from": "cookie-signature@1.0.6",
+      "resolved": "http://npm.sfolab.ibm.com/cookie-signature/-/cookie-signature-1.0.6.tgz"
+    },
+    "debug": {
+      "version": "2.2.0",
+      "from": "debug@>=2.2.0 <2.3.0",
+      "resolved": "http://npm.sfolab.ibm.com/debug/-/debug-2.2.0.tgz"
+    },
+    "depd": {
+      "version": "1.0.1",
+      "from": "depd@>=1.0.1 <1.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/depd/-/depd-1.0.1.tgz"
+    },
+    "destroy": {
+      "version": "1.0.3",
+      "from": "destroy@1.0.3",
+      "resolved": "http://npm.sfolab.ibm.com/destroy/-/destroy-1.0.3.tgz"
+    },
+    "ee-first": {
+      "version": "1.1.1",
+      "from": "ee-first@1.1.1",
+      "resolved": "http://npm.sfolab.ibm.com/ee-first/-/ee-first-1.1.1.tgz"
+    },
+    "escape-html": {
+      "version": "1.0.2",
+      "from": "escape-html@1.0.2",
+      "resolved": "http://npm.sfolab.ibm.com/escape-html/-/escape-html-1.0.2.tgz"
+    },
+    "etag": {
+      "version": "1.7.0",
+      "from": "etag@>=1.7.0 <1.8.0",
+      "resolved": "http://npm.sfolab.ibm.com/etag/-/etag-1.7.0.tgz"
+    },
+    "express": {
+      "version": "4.13.3",
+      "from": "express@*",
+      "resolved": "http://npm.sfolab.ibm.com/express/-/express-4.13.3.tgz"
+    },
+    "finalhandler": {
+      "version": "0.4.0",
+      "from": "finalhandler@0.4.0",
+      "resolved": "http://npm.sfolab.ibm.com/finalhandler/-/finalhandler-0.4.0.tgz"
+    },
+    "forwarded": {
+      "version": "0.1.0",
+      "from": "forwarded@>=0.1.0 <0.2.0",
+      "resolved": "http://npm.sfolab.ibm.com/forwarded/-/forwarded-0.1.0.tgz"
+    },
+    "fresh": {
+      "version": "0.3.0",
+      "from": "fresh@0.3.0",
+      "resolved": "http://npm.sfolab.ibm.com/fresh/-/fresh-0.3.0.tgz"
+    },
+    "hoek": {
+      "version": "3.0.4",
+      "from": "hoek@>=3.0.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/hoek/-/hoek-3.0.4.tgz"
+    },
+    "http-errors": {
+      "version": "1.3.1",
+      "from": "http-errors@>=1.3.1 <1.4.0",
+      "resolved": "http://npm.sfolab.ibm.com/http-errors/-/http-errors-1.3.1.tgz"
+    },
+    "iconv-lite": {
+      "version": "0.4.12",
+      "from": "iconv-lite@0.4.12",
+      "resolved": "http://npm.sfolab.ibm.com/iconv-lite/-/iconv-lite-0.4.12.tgz"
+    },
+    "inherits": {
+      "version": "2.0.1",
+      "from": "inherits@>=2.0.1 <2.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/inherits/-/inherits-2.0.1.tgz"
+    },
+    "ipaddr.js": {
+      "version": "1.0.4",
+      "from": "ipaddr.js@1.0.4",
+      "resolved": "http://npm.sfolab.ibm.com/ipaddr.js/-/ipaddr.js-1.0.4.tgz"
+    },
+    "isemail": {
+      "version": "2.1.0",
+      "from": "isemail@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/isemail/-/isemail-2.1.0.tgz"
+    },
+    "joi": {
+      "version": "7.0.1",
+      "from": "joi@*",
+      "resolved": "https://registry.npmjs.org/joi/-/joi-7.0.1.tgz"
+    },
+    "media-typer": {
+      "version": "0.3.0",
+      "from": "media-typer@0.3.0",
+      "resolved": "http://npm.sfolab.ibm.com/media-typer/-/media-typer-0.3.0.tgz"
+    },
+    "merge-descriptors": {
+      "version": "1.0.0",
+      "from": "merge-descriptors@1.0.0",
+      "resolved": "http://npm.sfolab.ibm.com/merge-descriptors/-/merge-descriptors-1.0.0.tgz"
+    },
+    "methods": {
+      "version": "1.1.1",
+      "from": "methods@>=1.1.1 <1.2.0",
+      "resolved": "http://npm.sfolab.ibm.com/methods/-/methods-1.1.1.tgz"
+    },
+    "mime": {
+      "version": "1.3.4",
+      "from": "mime@1.3.4",
+      "resolved": "http://npm.sfolab.ibm.com/mime/-/mime-1.3.4.tgz"
+    },
+    "mime-db": {
+      "version": "1.20.0",
+      "from": "mime-db@>=1.20.0 <1.21.0",
+      "resolved": "http://npm.sfolab.ibm.com/mime-db/-/mime-db-1.20.0.tgz"
+    },
+    "mime-types": {
+      "version": "2.1.8",
+      "from": "mime-types@>=2.1.6 <2.2.0",
+      "resolved": "http://npm.sfolab.ibm.com/mime-types/-/mime-types-2.1.8.tgz"
+    },
+    "moment": {
+      "version": "2.10.6",
+      "from": "moment@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/moment/-/moment-2.10.6.tgz"
+    },
+    "ms": {
+      "version": "0.7.1",
+      "from": "ms@0.7.1",
+      "resolved": "http://npm.sfolab.ibm.com/ms/-/ms-0.7.1.tgz"
+    },
+    "negotiator": {
+      "version": "0.5.3",
+      "from": "negotiator@0.5.3",
+      "resolved": "http://npm.sfolab.ibm.com/negotiator/-/negotiator-0.5.3.tgz"
+    },
+    "on-finished": {
+      "version": "2.3.0",
+      "from": "on-finished@>=2.3.0 <2.4.0",
+      "resolved": "http://npm.sfolab.ibm.com/on-finished/-/on-finished-2.3.0.tgz"
+    },
+    "parseurl": {
+      "version": "1.3.0",
+      "from": "parseurl@>=1.3.0 <1.4.0",
+      "resolved": "http://npm.sfolab.ibm.com/parseurl/-/parseurl-1.3.0.tgz"
+    },
+    "path-to-regexp": {
+      "version": "0.1.7",
+      "from": "path-to-regexp@0.1.7",
+      "resolved": "http://npm.sfolab.ibm.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz"
+    },
+    "proxy-addr": {
+      "version": "1.0.9",
+      "from": "proxy-addr@>=1.0.8 <1.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/proxy-addr/-/proxy-addr-1.0.9.tgz"
+    },
+    "qs": {
+      "version": "4.0.0",
+      "from": "qs@4.0.0",
+      "resolved": "http://npm.sfolab.ibm.com/qs/-/qs-4.0.0.tgz"
+    },
+    "range-parser": {
+      "version": "1.0.3",
+      "from": "range-parser@>=1.0.2 <1.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/range-parser/-/range-parser-1.0.3.tgz"
+    },
+    "raw-body": {
+      "version": "2.1.5",
+      "from": "raw-body@>=2.1.4 <2.2.0",
+      "resolved": "http://npm.sfolab.ibm.com/raw-body/-/raw-body-2.1.5.tgz",
+      "dependencies": {
+        "bytes": {
+          "version": "2.2.0",
+          "from": "bytes@2.2.0",
+          "resolved": "http://npm.sfolab.ibm.com/bytes/-/bytes-2.2.0.tgz"
+        },
+        "iconv-lite": {
+          "version": "0.4.13",
+          "from": "iconv-lite@0.4.13",
+          "resolved": "http://npm.sfolab.ibm.com/iconv-lite/-/iconv-lite-0.4.13.tgz"
+        }
+      }
+    },
+    "send": {
+      "version": "0.13.0",
+      "from": "send@0.13.0",
+      "resolved": "http://npm.sfolab.ibm.com/send/-/send-0.13.0.tgz"
+    },
+    "serve-static": {
+      "version": "1.10.0",
+      "from": "serve-static@>=1.10.0 <1.11.0",
+      "resolved": "http://npm.sfolab.ibm.com/serve-static/-/serve-static-1.10.0.tgz"
+    },
+    "statuses": {
+      "version": "1.2.1",
+      "from": "statuses@>=1.2.1 <1.3.0",
+      "resolved": "http://npm.sfolab.ibm.com/statuses/-/statuses-1.2.1.tgz"
+    },
+    "topo": {
+      "version": "2.0.0",
+      "from": "topo@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/topo/-/topo-2.0.0.tgz"
+    },
+    "type-is": {
+      "version": "1.6.10",
+      "from": "type-is@>=1.6.6 <1.7.0",
+      "resolved": "http://npm.sfolab.ibm.com/type-is/-/type-is-1.6.10.tgz"
+    },
+    "unpipe": {
+      "version": "1.0.0",
+      "from": "unpipe@>=1.0.0 <1.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/unpipe/-/unpipe-1.0.0.tgz"
+    },
+    "utils-merge": {
+      "version": "1.0.0",
+      "from": "utils-merge@1.0.0",
+      "resolved": "http://npm.sfolab.ibm.com/utils-merge/-/utils-merge-1.0.0.tgz"
+    },
+    "vary": {
+      "version": "1.0.1",
+      "from": "vary@>=1.0.1 <1.1.0",
+      "resolved": "http://npm.sfolab.ibm.com/vary/-/vary-1.0.1.tgz"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "stash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "joi": "^7.0.1"
+  }
+}
