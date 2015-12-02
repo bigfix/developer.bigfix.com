@@ -72,7 +72,12 @@ No documentation exists.
 
 # &lt;date&gt; + &lt;time interval&gt; : date
 
-No documentation exists.
+Add the time interval to the date.
+
+{% qna %}
+Q: current date + day
+A: Thu, 03 Dec 2015
+{% endqna %}
 
 # &lt;date&gt; - &lt;number of months&gt; : date
 
@@ -80,7 +85,12 @@ No documentation exists.
 
 # &lt;date&gt; - &lt;time interval&gt; : date
 
-No documentation exists.
+Subtract the time interval from the date.
+
+{% qna %}
+Q: current date - 30*day
+A: Mon, 02 Nov 2015
+{% endqna %}
 
 # &lt;day of month&gt; &amp; &lt;month and year&gt; : date
 
