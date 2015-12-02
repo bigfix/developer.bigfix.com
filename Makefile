@@ -6,7 +6,7 @@ STAGING ?= staging
 # The targets to deploy a dev build
 
 all: staging remote-staging
-	sudo make deploy remote-deploy
+	sudo make deploy remote-deploy nginx-dev
 
 ################################################################################
 # assets
