@@ -172,7 +172,7 @@ Returns an HTML string containing an &lt;A&gt; tag that when clicked will open t
 
 # locally visible flag of &lt;bes fixlet&gt; : boolean
 
-Returns `True` if the specified fixlet is locally visible.Note: This is a Console-only inspector.
+Returns `True` if the specified fixlet is locally visible.
 
 # master site flag of &lt;bes fixlet&gt; : boolean
 
@@ -292,7 +292,7 @@ Returns the number of computers that are not locked and that have reported that 
 
 # visible flag of &lt;bes fixlet&gt; : boolean
 
-Returns `True` if the specified BES Fixlet is not globally or locally hidden.
+Returns `True` if the specified fixlet is not globally or locally hidden.
 
 # wizard data of &lt;bes fixlet&gt; : html
 
