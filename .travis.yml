@@ -3,7 +3,7 @@ node_js: ["5.0"]
 script:
   - make staging
   - "cd site/api/relevance-evaluate && npm i && npm test"
-  - "cd site/api/stash && npm i && npm test"
+  - "cd ../stash && npm i && npm test"
 sudo: false
 notifications:
   email: false
