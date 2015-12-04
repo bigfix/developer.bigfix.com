@@ -214,7 +214,7 @@ STASH_DEPS := \
 	chmod -R a+rX $(STAGING)
 	mkdir -p /var/www/api/stash
 	mkdir -p /var/www/stashes
-	chmod o+w /var/www/stashes
+	chmod a+rwX /var/www/stashes
 	rsync --acls --xattrs --archive --delete \
 		$(STAGING)/api/stash/ \
 		/var/www/api/stash
