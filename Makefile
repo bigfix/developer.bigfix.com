@@ -143,7 +143,7 @@ $(STAGING)/api/relevance/search/package.json: $(wildcard $(SOURCE)/site/api/rele
 		--exclude=docs.json \
 		$(SOURCE)/site/api/relevance-search/ \
 		$(STAGING)/api/relevance/search/
-	cd $(STAGING)/api/relevance/search/ && npm install
+	cd $(STAGING)/api/relevance/search/ && npm install --production
 	touch $@
 
 STAGING_TARGETS += $(STAGING)/api/relevance/search/language.json
@@ -199,7 +199,7 @@ $(STAGING)/api/stash/package.json: $(wildcard $(SOURCE)/site/api/stash/*)
 	rsync --acls --xattrs --archive --delete --exclude=node_modules \
 		$(SOURCE)/site/api/stash/ \
 		$(STAGING)/api/stash/
-	cd $(STAGING)/api/stash/ && npm install
+	cd $(STAGING)/api/stash/ && npm install --production
 	touch $@
 
 STAGING_TARGETS += $(STAGING)/api/stash/package.json
