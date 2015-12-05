@@ -2,7 +2,7 @@ FROM centos:7
 
 # Install node.js
 RUN curl -sL https://rpm.nodesource.com/setup_5.x | bash -
-RUN yum install -y nodejs gcc-c++ make
+RUN yum install -y nodejs gcc-c++ make # 2015-12-04
 
 # The qna binary requires the __BESData directory to exist for the rpm inspector
 # to work.
