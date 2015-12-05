@@ -11,9 +11,23 @@ title: Evaluate Relevance
 <pre><div id="evaluate-answers" class="row"></div></pre>
 <script>
 
-function typeHref(type) {
-  return '/relevance/reference/' +
-    escapeHTML(type).trim().replace(/\s+/g, '-') + '.html';
+function typeLink(type) {
+  var href = '/relevance/reference/' + type.replace(/ /g, '-') + '.html';
+  return '<a href="' + href + '">' + escapeHTML(type) + '</a>';
+}
+
+function linkify(type) {
+  var openParen = type.indexOf('(');
+
+  if (openParen === -1) {
+    return typeLink(type);
+  }
+
+  var links = type
+    .substring(openParen + 2, type.length - 2)
+    .replace(/[a-z]+/g, linkify);
+
+  return type.substr(0, openParen) + '( ' + links + ' )';
 }
 
 function getRelevance() {
@@ -22,7 +36,7 @@ function getRelevance() {
 
 function setResults(results) {
   var html = '';
-
+  
   html += '<div>Q: ' + escapeHTML(getRelevance()) + '</div>';
 
   results.answers.forEach(function(answer) {
@@ -38,8 +52,7 @@ function setResults(results) {
   }
 
   if (results.type) {
-    html += '<div>I: <a href="' + typeHref(results.type) + '">' +
-      escapeHTML(results.type) + '</a></div>';
+    html += '<div>I: ' + linkify(results.type) + '</div';
   }
 
   document.getElementById('evaluate-answers').innerHTML = html;
