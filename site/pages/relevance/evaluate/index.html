@@ -99,5 +99,20 @@ function evaluateRelevance() {
   return false;
 }
 
+var keyPressed = false;
+
+document.getElementById('evaluate-question').addEventListener('keydown', function(e) {
+    if ((e.which === 13) && e.ctrlKey ) {
+        if (!keyPressed) {
+            evaluateRelevance();
+        }
+        keyPressed = true;
+    }
+});
+
+document.getElementById('evaluate-question').addEventListener('keyup', function(e) {
+    keyPressed = false;
+});
+
 document.getElementById('evaluate-form').onsubmit = evaluateRelevance;
 </script>
