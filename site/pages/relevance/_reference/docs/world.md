@@ -753,7 +753,7 @@ Returns the unmanaged asset that is currently selected in the BES Console from t
 
 # current user : logged on user
 
-No documentation exists.
+Returns the active console (local) user, if logged on, otherwise returns "Does not exist". For all users that are logged on remotely, for instance through RDP, telnet, ssh, VNC, putty and so on, this inspector returns "Does not exist".
 
 # current user : user
 
