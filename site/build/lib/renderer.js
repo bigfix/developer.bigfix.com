@@ -143,7 +143,7 @@ function createSectionExtension(templateEnv) {
  */
 function linkType(typeName) {
   var href ='/relevance/reference/' + typeName.replace(/ /g, '-') + '.html';
-  var link = '<a href="' + href + '">' + typeName + '</a>';
+  var link = '<a href="' + href + '" target="_blank">' + typeName + '</a>';
   return new nunjucks.runtime.SafeString(link);
 }
 
