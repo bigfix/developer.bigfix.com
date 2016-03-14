@@ -11,6 +11,20 @@ title: Evaluate Relevance
 <pre><div id="evaluate-answers" class="row"></div></pre>
 <script>
 
+var editor = CodeMirror.fromTextArea(document.getElementById("evaluate-question"), {
+    mode: {name: "relevance", htmlMode: true},
+    theme: "bigfix",
+    lineWrapping: true,
+    matchBrackets: true,
+    viewportMargin: Infinity
+});
+
+editor.setOption("extraKeys", {
+  "Ctrl-Enter": function(cm) {
+    evaluateRelevance();
+  }
+});
+
 function formatType(type) {
   var openParen = type.indexOf('(');
 
@@ -38,7 +52,7 @@ function formatTime(time) {
 }
 
 function getRelevance() {
-  return document.getElementById('evaluate-question').value;
+  return editor.getValue();
 }
 
 function setResults(results) {
@@ -99,35 +113,6 @@ function evaluateRelevance() {
   return false;
 }
 
-var keyPressed = false;
-
-document.getElementById('evaluate-question').addEventListener('keydown', function(e) {
-    if ((e.which === 13) && e.ctrlKey ) {
-        if (!keyPressed) {
-            evaluateRelevance();
-        }
-        keyPressed = true;
-    }
-});
-
-document.getElementById('evaluate-question').addEventListener('keyup', function(e) {
-    keyPressed = false;
-});
-
 document.getElementById('evaluate-form').onsubmit = evaluateRelevance;
-
-var editor = CodeMirror.fromTextArea(document.getElementById("evaluate-question"), {
-    mode: {name: "relevance", htmlMode: true},
-    theme: "bigfix",
-    lineWrapping: true,
-    matchBrackets: true,
-    viewportMargin: Infinity
-});
-
-editor.setOption("extraKeys", {
-  "Ctrl-Enter": function(cm) {
-    evaluateRelevance();
-  }
-});
 
 </script>
