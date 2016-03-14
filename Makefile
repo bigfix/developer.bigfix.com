@@ -22,13 +22,21 @@ $(STAGING)/fonts.target: $(SOURCE)/site/assets/font-awesome-4.3.0/fonts/*
 CSS_FILES := \
 	$(SOURCE)/site/assets/css/normalize.css \
 	$(SOURCE)/site/assets/font-awesome-4.3.0/css/font-awesome.css \
+	$(SOURCE)/site/assets/codemirror/codemirror.css \
+    $(SOURCE)/site/assets/codemirror/bigfix.css \
 	$(SOURCE)/site/assets/css/site.css
+
+JS_FILES := \
+    $(SOURCE)/site/assets/site.js \
+    $(SOURCE)/site/assets/codemirror/codemirror.js \
+    $(SOURCE)/site/assets/codemirror/relevance.js \
+    $(SOURCE)/site/assets/codemirror/matchbrackets.js
 
 $(STAGING)/site/static/site.css: $(CSS_FILES)
 	mkdir -p $(STAGING)/site/static
 	cat $^ > $@
 
-$(STAGING)/site/static/site.js: $(SOURCE)/site/assets/site.js
+$(STAGING)/site/static/site.js: $(JS_FILES)
 	mkdir -p $(STAGING)/site/static
 	cat $^ > $@
 

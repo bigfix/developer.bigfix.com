@@ -502,3 +502,7 @@ h1.relevance-type-description {
 .note ul {
   padding-left: 1rem;
 }
+
+.evaluator {
+    margin-bottom: 10px;
+}
