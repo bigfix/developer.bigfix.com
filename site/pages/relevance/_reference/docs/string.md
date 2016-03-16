@@ -805,7 +805,7 @@ Returns the Active Directory local user object for the specified local user. Thi
 
 # local user &lt;string&gt; : user
 
-Returns the local user object specified name &lt;string&gt;.
+Returns the local user object specified by the name &lt;string&gt;.
 
 On Unix/Linux platform with Bigfix client version below 9.5, this returns only logged-on users. Since 9.5, this returns all local users, logged in or not.
 
