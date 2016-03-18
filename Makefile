@@ -28,6 +28,7 @@ CSS_FILES := \
 
 JS_FILES := \
     $(SOURCE)/site/assets/site.js \
+    $(SOURCE)/site/assets/evaluator.js \
     $(SOURCE)/site/assets/codemirror/codemirror.js \
     $(SOURCE)/site/assets/codemirror/relevance.js \
     $(SOURCE)/site/assets/codemirror/matchbrackets.js

@@ -503,6 +503,6 @@ h1.relevance-type-description {
   padding-left: 1rem;
 }
 
-.evaluator {
-    margin-bottom: 10px;
+.evaluator .evaluate-button {
+    margin-top: 10px;
 }
