@@ -522,6 +522,10 @@ h1.relevance-type-description {
   box-shadow: inset 0 0 1px rgba(0,0,0,0.5);
 }
 
+.CodeMirror.CodeMirror-focused {
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.5), 0 0 3px rgba(81,167,232,0.5);
+}
+
 .evaluator .evaluate-button {
     margin-top: 10px;
 }
