@@ -574,6 +574,10 @@ h1.relevance-type-description {
   border-bottom: none;
 }
 
+.evaluator .a .empty {
+  color: #aaa;
+}
+
 .evaluator .loading {
   height: 1px;
   background-image: url('/static/img/loading-line.gif');

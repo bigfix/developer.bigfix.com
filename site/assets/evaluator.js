@@ -69,11 +69,14 @@ function initEvaluator(ele) {
   };
 
   var setResults = function(results) {
-    if (results.answers.length) {
+    if (results.answers.length || results.type) {
       $(ele).find('.a').removeClass('hidden');
       $(ele).find('.a .evaluate-answers').html(
         results.answers.map(function(error) { return '<div>' + escapeHTML(error) + '</div>'; }).join("")
       );
+      if (results.answers.length == 0) {
+        $(ele).find('.a .evaluate-answers').html('<div class="empty">&lt;empty result&gt;</div>');
+      }
     }
     if (results.errors.length) {
       $(ele).find('.e').removeClass('hidden');
