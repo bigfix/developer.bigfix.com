@@ -18,4 +18,13 @@
 .cm-s-bigfix span.cm-error { color: #f00; }
 
 .cm-s-bigfix .CodeMirror-activeline-background { background: #e8f2ff; }
-.cm-s-bigfix .CodeMirror-matchingbracket { outline:1px solid grey;color:black !important;background:yellow; }
+
+.cm-s-bigfix .CodeMirror-matchingbracket {
+    color: #000 !important;
+    background: #FFCC8D;
+}
+
+.cm-s-bigfix .CodeMirror-nonmatchingbracket {
+    color: #FFFFFF !important;
+    background: #FF5454;
+}
