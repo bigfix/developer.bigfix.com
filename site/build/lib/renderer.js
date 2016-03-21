@@ -133,7 +133,15 @@ function createNoteExtension(templateEnv) {
 function createSectionExtension(templateEnv) {
   return createExtension('section', function(text) {
     return escapeMarkdown(templateEnv.render('section.html', {
-      content : marked(text)
+      content: marked(text)
+    }));
+  });
+}
+
+function createEvaluatorExtension(templateEnv) {
+  return createExtension('evaluator', function(text) {
+    return escapeMarkdown(templateEnv.render('evaluator.html', {
+      content: text
     }));
   });
 }
@@ -159,6 +167,7 @@ function createTemplateEnv(templatesDir) {
   templateEnv.addExtension('NoteExtension', createNoteExtension(templateEnv));
   templateEnv.addExtension('SectionExtension',
                            createSectionExtension(templateEnv));
+  templateEnv.addExtension('EvaluatorExtension', createEvaluatorExtension(templateEnv));
 
   templateEnv.addFilter('linkType', linkType);
 

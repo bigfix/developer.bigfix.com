@@ -1,0 +1,21 @@
+<div class="qna-evaluator">
+    <div class="evaluator">
+        <div class="q">
+            <div class="left">Q</div>
+            <textarea class="evaluate-question">{{content | trim | safe}}</textarea>
+        </div>
+        <div class="loading hidden"></div>
+        <div class="a hidden">
+            <div class="left">A</div>
+            <pre><div class="evaluate-answers" class="row"></div></pre>
+        </div>
+        <div class="e hidden">
+            <div class="left">E</div>
+            <pre><div class="evaluate-errors" class="row"></div></pre>
+        </div>
+        <div class="toolbar">
+            <div class="buttons"><button class="button-primary evaluate-button">Evaluate</button></div>
+            <div class="status"></div>
+        </div>
+    </div>
+</div>

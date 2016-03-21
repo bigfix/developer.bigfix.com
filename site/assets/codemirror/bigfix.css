@@ -19,8 +19,3 @@
 
 .cm-s-bigfix .CodeMirror-activeline-background { background: #e8f2ff; }
 .cm-s-bigfix .CodeMirror-matchingbracket { outline:1px solid grey;color:black !important;background:yellow; }
-
-.CodeMirror {
-  border: 1px solid #eee;
-  height: auto;
-}
