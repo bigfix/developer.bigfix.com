@@ -43,7 +43,8 @@ function formatTime(time) {
 function initEvaluator(ele) {
   var qnInput = ele.querySelector('.evaluate-question'),
     ansEle = ele.querySelector('.evaluate-answers'),
-    loadingEle = ele.querySelector('.loading');
+    loadingEle = ele.querySelector('.loading'),
+    selectionEval = false;
 
   var editor = CodeMirror.fromTextArea(qnInput, {
     mode: {name: "relevance", htmlMode: true},
@@ -55,6 +56,11 @@ function initEvaluator(ele) {
   });
 
   var getRelevance = function() {
+    if (editor.getSelection()) {
+      selectionEval = true;
+      return editor.getSelection();
+    }
+    selectionEval = false;
     return editor.getValue();
   };
 
@@ -85,6 +91,9 @@ function initEvaluator(ele) {
       );
     }
     var status = "";
+    if (selectionEval) {
+      status += '<div>Current Selection Evaluation</div>';
+    }
     if (results.time) {
       status += '<div>Evaluation Time: ' + formatTime(results.time) + '</div>';
     }
