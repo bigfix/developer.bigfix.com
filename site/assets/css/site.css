@@ -90,6 +90,12 @@ a:hover, a:active {
   float: right;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -571,7 +577,6 @@ h1.relevance-type-description {
 
 .evaluator .toolbar {
   display: block;
-  height: 35px;
   padding: 4px;
   border: 1px solid #eee;
 }
