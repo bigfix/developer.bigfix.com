@@ -38,45 +38,60 @@ function formatTime(time) {
 
 /**
  * Set up the relevance evaluator elements
- * @param id
+ * @param ele {HTMLElement}
  */
-function initEvaluator(id) {
-  var ele = document.getElementById(id),
-    qnInput = ele.querySelector('.evaluate-question'),
+function initEvaluator(ele) {
+  var qnInput = ele.querySelector('.evaluate-question'),
     ansEle = ele.querySelector('.evaluate-answers'),
-    btnEle = ele.querySelector('.evaluate-button');
+    loadingEle = ele.querySelector('.loading');
 
   var editor = CodeMirror.fromTextArea(qnInput, {
     mode: {name: "relevance", htmlMode: true},
     theme: "bigfix",
     lineWrapping: true,
     matchBrackets: true,
-    viewportMargin: Infinity
+    viewportMargin: Infinity,
+    autofocus: true
   });
 
   var getRelevance = function() {
     return editor.getValue();
   };
 
-  var setResults = function(results) {
-    var html = '';
-    html += '<div>Q: ' + escapeHTML(getRelevance()) + '</div>';
-    results.answers.forEach(function(answer) {
-      html += '<div>A: ' + escapeHTML(answer) + '</div>';
-    });
-    results.errors.forEach(function(error) {
-      html += '<div>E: ' + escapeHTML(error) + '</div>';
-    });
-    if (results.time) {
-      html += '<div>T: ' + formatTime(results.time) + '</div>';
-    }
-    if (results.type) {
-      html += '<div>I: ' + typeLink(results.type) + '</div';
-    }
-    ansEle.innerHTML = html;
+  var showLoading = function() {
+    $(loadingEle).removeClass('hidden');
+    $(ele).find('.a').addClass('hidden');
+    $(ele).find('.e').addClass('hidden');
   };
 
-  function setError(err) {
+  var hideLoading = function() {
+    $(loadingEle).addClass('hidden');
+  };
+
+  var setResults = function(results) {
+    if (results.answers.length) {
+      $(ele).find('.a').removeClass('hidden');
+      $(ele).find('.a .evaluate-answers').html(
+        results.answers.map(function(error) { return '<div>' + escapeHTML(error) + '</div>'; }).join("")
+      );
+    }
+    if (results.errors.length) {
+      $(ele).find('.e').removeClass('hidden');
+      $(ele).find('.e .evaluate-errors').html(
+        results.errors.map(function(error) { return '<div>' + escapeHTML(error) + '</div>'; }).join("")
+      );
+    }
+    var status = "";
+    if (results.time) {
+      status += '<div>Evaluation Time: ' + formatTime(results.time) + '</div>';
+    }
+    if (results.type) {
+      status += '<div>Returned Type: ' + typeLink(results.type) + '</div>';
+    }
+    $(ele).find('.toolbar .status').html(status);
+  };
+
+  var setError = function(err) {
     var message = 'Relevance evaluation failed.';
     if (err.reason === 'status') {
       if (err.status === 502) {
@@ -88,23 +103,22 @@ function initEvaluator(id) {
       message = 'Failed to parse answers.';
     }
     ansEle.textContent = message;
-  }
+  };
 
   var evaluateRelevance = function() {
     var body = { relevance: getRelevance() };
-
+    showLoading();
     requestJSON('POST', '/api/relevance/evaluate', body, function(err, results) {
+      hideLoading();
       if (body.relevance != getRelevance()) {
         return;
       }
-
       if (err) {
         setError(err);
       } else {
         setResults(results);
       }
     });
-
     return false;
   };
 
@@ -114,7 +128,7 @@ function initEvaluator(id) {
     }
   });
 
-  btnEle.onclick = evaluateRelevance;
+  $(ele).find('.evaluate-button').click(evaluateRelevance);
 
   return editor;
 }

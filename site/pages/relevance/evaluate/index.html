@@ -3,10 +3,21 @@ title: Evaluate Relevance
 ---
 
 <div id="evaluator" class="evaluator">
-  <textarea class="evaluate-question">name of operating system</textarea>
-  <button class="button-primary evaluate-button" type="button">Evaluate</button>
-  <pre><div class="evaluate-answers" class="row"></div></pre>
+  <div class="q">
+    <div class="left">Q</div>
+    <textarea class="evaluate-question">name of operating system</textarea>
+  </div>
+  <div class="loading hidden"></div>
+  <div class="a hidden">
+    <div class="left">A</div>
+    <pre><div class="evaluate-answers" class="row"></div></pre>
+  </div>
+  <div class="e hidden">
+    <div class="left">E</div>
+    <pre><div class="evaluate-errors" class="row"></div></pre>
+  </div>
+  <div class="toolbar">
+    <div class="status"></div>
+    <div class="buttons"><button class="button-primary evaluate-button">Evaluate</button></div>
+  </div>
 </div>
-<script>
-initEvaluator("evaluator");
-</script>

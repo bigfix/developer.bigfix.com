@@ -390,6 +390,10 @@ h1.relevance-type-description {
   display: none;
 }
 
+.hint {
+  color: #aaa;
+}
+
 .relevance-property-body {
   padding: 1rem 1rem 0 1rem;
   border: 1px solid #f1f1f1;
@@ -482,7 +486,6 @@ h1.relevance-type-description {
   position: relative;
   padding: 1.5rem;
   padding-left: 4rem;
-
   border-radius: 3px;
   background-color: #E1F5FE;
 }
@@ -505,4 +508,80 @@ h1.relevance-type-description {
 
 .evaluator .evaluate-button {
     margin-top: 10px;
+}
+
+.evaluator .left {
+  width: 20px;
+  float: left;
+  padding: 5px;
+  color: #888;
+  text-shadow: -1px -1px #fff;
+}
+
+.evaluator .q {
+  background: #eee;
+}
+
+.evaluator .a {
+  background: #eee;
+  padding: 1px;
+}
+
+.evaluator .e {
+  background: #E86C6C;
+  padding: 1px;
+}
+
+.evaluator .e .left {
+  color: #fff;
+  text-shadow: 1px 1px #888;
+}
+
+.evaluator .a pre, .evaluator .e pre {
+  background: #fff;
+  padding: 5px;
+  margin: 0;
+  min-height: 35px;
+  max-height: 200px;
+}
+
+.evaluator .a pre div, .evaluator .e pre div {
+  border-bottom: 1px #ddd dashed;
+}
+
+.evaluator .a pre div:last-child, .evaluator .e pre div:last-child {
+  border-bottom: none;
+}
+
+.evaluator .loading {
+  height: 1px;
+  background-image: url('/static/img/loading-line.gif');
+}
+
+.evaluator .toolbar {
+  display: block;
+  height: 35px;
+  padding: 4px;
+  border: 1px solid #eee;
+}
+
+.evaluator .toolbar .status {
+  float: left;
+}
+
+.evaluator .toolbar .status div {
+  float: left;
+  margin-right: 40px;
+  padding: 1px;
+  color: #666;
+}
+
+.evaluator .toolbar .buttons {
+  float: right;
+}
+
+.evaluator .toolbar .buttons .button-primary {
+  height: 26px;
+  line-height: 0;
+  margin: 0;
 }

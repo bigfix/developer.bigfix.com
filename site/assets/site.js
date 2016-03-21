@@ -144,3 +144,10 @@ function escapeHTML(text) {
     }
   });
 }
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('evaluator');
+  for (var i = 0; i < elements.length; i++) {
+    initEvaluator(elements[i]);
+  }
+};
