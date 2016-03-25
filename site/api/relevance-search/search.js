@@ -1,10 +1,12 @@
 var fs = require('fs');
 
 // The language.json file.
-var language = JSON.parse(fs.readFileSync(process.env.LANGUAGE_FILE));
+var languageFile = process.env.LANGUAGE_FILE || "../../data/relevance-language.json";
+var language = JSON.parse(fs.readFileSync(languageFile));
 
 // The rendered property documentation.
-var docs = JSON.parse(fs.readFileSync(process.env.DOCS_FILE));
+var docsFile = process.env.DOCS_FILE || "../../../relevance-docs.json";
+var docs = JSON.parse(fs.readFileSync(docsFile));
 
 var properties = [];
 var casts = [];

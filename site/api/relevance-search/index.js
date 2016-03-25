@@ -16,9 +16,8 @@ app.get('/api/relevance/search', function(req, res) {
     if (err) {
       return res.status(400).end('invalid search query');
     }
-
     res.json(search(value.query, 25, (value.page - 1) * 25));
   });
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 8000);
