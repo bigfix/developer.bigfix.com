@@ -12,6 +12,11 @@
       "from": "array-flatten@1.1.1",
       "resolved": "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz"
     },
+    "compare-version": {
+      "version": "0.1.2",
+      "from": "compare-version@latest",
+      "resolved": "https://registry.npmjs.org/compare-version/-/compare-version-0.1.2.tgz"
+    },
     "content-disposition": {
       "version": "0.5.0",
       "from": "content-disposition@0.5.0",
@@ -186,6 +191,11 @@
       "version": "1.0.3",
       "from": "range-parser@>=1.0.2 <1.1.0",
       "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.0.3.tgz"
+    },
+    "semver": {
+      "version": "5.1.0",
+      "from": "semver@latest",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-5.1.0.tgz"
     },
     "send": {
       "version": "0.13.0",

@@ -4,6 +4,7 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
+    "compare-version": "^0.1.2",
     "express": "^4.13.3",
     "joi": "^7.0.0"
   }

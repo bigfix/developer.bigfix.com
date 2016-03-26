@@ -1,4 +1,5 @@
-var fs = require('fs');
+var fs = require('fs'),
+  compareVersion = require('compare-version');
 
 // The language.json file.
 var languageFile = process.env.LANGUAGE_FILE || "../../data/relevance-language.json";
@@ -21,14 +22,16 @@ Object.keys(language.properties).forEach(function(key) {
       pluralPhrase: property.pluralPhrase,
       indexType: property.indexType || '',
       directObjectType: property.directObjectType || '',
-      resultType: property.resultType
+      resultType: property.resultType,
+      availability: property.availability
     });
   } else if (property.type === 'cast') {
     casts.push({
       key: key,
       phrase: property.phrase,
       argType: property.argType,
-      resultType: property.resultType
+      resultType: property.resultType,
+      availability: property.availability
     });
   }
 });
@@ -41,7 +44,26 @@ function escapeQuery(query){
     .trim();
 }
 
-function searchForWord(word) {
+function includeVersion(availability, platforms, minVersion) {
+  for (var version in availability) {
+    if (minVersion && (compareVersion(version, minVersion) == 1)) {
+      continue;
+    }
+    if (platforms && platforms.length) {
+      var versionAvail = availability[version];
+      for (var i = 0; i < versionAvail.length; i++) {
+        if (platforms.indexOf(versionAvail[i].toLowerCase().replace(' ', '')) > -1) {
+          return true;
+        }
+      }
+    } else {
+      return true;
+    }
+  }
+  return false;
+}
+
+function searchForWord(word, opts) {
   var regex = new RegExp('\\b' + escapeQuery(word) + '\\b');
 
   // Prefer exact matches of the singular phrase, plural phrase, or cast phrase.
@@ -62,8 +84,16 @@ function searchForWord(word) {
 
   // Last is properties where one of the types contains the query,
   var containsType = [];
+  
+  // To filter the results based on target platforms and minimum version
+  var platforms = opts['platform'];
+  var minVersion = opts['version'];
 
   properties.forEach(function(property) {
+    if (!includeVersion(property.availability, platforms, minVersion)) {
+      return;
+    }
+    
     if (regex.test(property.singularPhrase)) {
       if (property.singularPhrase.length === word.length) {
         equalName.push(property.key);
@@ -103,6 +133,9 @@ function searchForWord(word) {
   });
 
   casts.forEach(function(cast) {
+    if (!includeVersion(cast.availability, platforms, minVersion)) {
+      return;
+    }
     if (regex.test(cast.phrase)) {
       if (cast.phrase.length === word.length) {
         equalName.push(cast.key);
@@ -149,11 +182,11 @@ function intersect(results) {
   });
 }
 
-function search(query, limit, offset) {
+function search(query, limit, offset, opts) {
   var words = query.trim().toLowerCase().split(/\s+/);
 
   var results = intersect(words.map(function(word) {
-    return searchForWord(word);
+    return searchForWord(word, opts);
   }));
 
   var page = results.slice(offset, Math.min(results.length, offset + limit));
