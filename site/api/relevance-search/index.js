@@ -1,6 +1,7 @@
 var express = require('express'),
   Joi = require('joi'),
-  search = require('./search');
+  platforms = require('./search').platforms,
+  search = require('./search').search;
 
 var app = express();
 
@@ -27,6 +28,10 @@ app.get('/api/relevance/search', function(req, res) {
     }
     res.json(search(value.query, 25, (value.page - 1) * 25, opts));
   });
+});
+
+app.get('/api/relevance/search/platforms', function (req, res) {
+  res.json(platforms);
 });
 
 app.listen(process.env.PORT || 8000);

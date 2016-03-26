@@ -11,6 +11,7 @@ var docs = JSON.parse(fs.readFileSync(docsFile));
 
 var properties = [];
 var casts = [];
+var platforms = {};
 
 Object.keys(language.properties).forEach(function(key) {
   var property = language.properties[key];
@@ -25,6 +26,7 @@ Object.keys(language.properties).forEach(function(key) {
       resultType: property.resultType,
       availability: property.availability
     });
+    collectPlatforms(property.availability);
   } else if (property.type === 'cast') {
     casts.push({
       key: key,
@@ -33,6 +35,7 @@ Object.keys(language.properties).forEach(function(key) {
       resultType: property.resultType,
       availability: property.availability
     });
+    collectPlatforms(property.availability);
   }
 });
 
@@ -42,6 +45,15 @@ function escapeQuery(query){
     .replace(/[^a-zA-Z0-9_\-]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function collectPlatforms(availability) {
+  for (var version in availability) {
+    var versionAvail = availability[version];
+    for (var i = 0; i < versionAvail.length; i++) {
+      platforms[versionAvail[i].toLowerCase().replace(' ', '')] = versionAvail[i];
+    }
+  }
 }
 
 function includeVersion(availability, platforms, minVersion) {
@@ -202,4 +214,7 @@ function search(query, limit, offset, opts) {
   };
 }
 
-module.exports = search;
+module.exports = {
+  platforms: platforms,
+  search: search
+};
