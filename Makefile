@@ -27,6 +27,7 @@ CSS_FILES := \
 	$(SOURCE)/site/assets/css/site.css
 
 JS_FILES := \
+    $(SOURCE)/site/assets/underscore.js \
     $(SOURCE)/site/assets/site.js \
     $(SOURCE)/site/assets/evaluator.js \
     $(SOURCE)/site/assets/codemirror/codemirror.js \
