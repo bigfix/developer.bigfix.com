@@ -609,3 +609,19 @@ h1.relevance-type-description {
   line-height: 0;
   margin: 0;
 }
+
+.search-filters {
+  border: 1px solid #ddd;
+}
+
+.search-filters .platform-section {
+  
+}
+
+.search-filters .platform-section .client-platforms {
+  padding-left: 15px;
+}
+
+.search-filters .platform-section label {
+  margin-left: 15px;
+}

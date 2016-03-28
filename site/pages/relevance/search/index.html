@@ -9,6 +9,16 @@ title: Inspector Search
         <input id="search-input" type="text" placeholder="Type to search for properties">
         <i class="search-icon fa fa-search"></i>
       </div>
+      <div class="search-filters">
+        <p>Target Platforms:</p>
+        <div class="platform-section">
+          <label><input type="checkbox" name="platforms" value="session" onchange="platformSelectionChanged(event)"> Session Relevance</label>
+        </div>
+        <div class="platform-section">
+          <label><input type="checkbox" id="select-client" value="client" onchange="clientSelectionChanged(event)"> Client Relevance</label>
+          <div class="client-platforms" id="client-platforms"></div>
+        </div>
+      </div>
       <span id="search-status"></span>
     </form>
   </div>
@@ -25,14 +35,76 @@ title: Inspector Search
 
 var state = {
   query: '',
-  page: 1
+  page: 1,
+  platforms: []
 };
+
+var platforms = [];
+initPlatforms();
+
+function initPlatforms() {
+  $.get( "/api/relevance/search/platforms", function(data) {
+    _.each(data, function(name, key) {
+      if (key !== "session")
+        platforms.push({id: key, name: name});
+    });
+    var content = _.map(platforms, function(p, i) {
+      return '<label><input type="checkbox" name="platforms" class="client-platform" onchange="platformSelectionChanged(event)" value="' + p.id + '" id="select-' + p.id + '"> ' + _.escape(p.name) + '</label>';
+    }).join('');
+    $('#client-platforms').html(content);
+    refreshSelection();
+  });
+}
+
+function getSelectedPlatforms() {
+  var selectedPlatforms = [];
+  $('input[name="platforms"]').each(function(i, e) {
+    e.checked && selectedPlatforms.push(e.value);
+  });
+  return selectedPlatforms;
+}
+
+window.platformSelectionChanged = function(event) {
+  state.platforms = getSelectedPlatforms();
+  pushState();
+  refreshSelection();
+  search();
+}
+
+window.clientSelectionChanged = function(event) {
+  if (event.target.checked) {
+    var allClients = _.map(platforms, function(p) {return p.id});
+    if (state.platforms.indexOf('session') > -1) {
+      allClients.push('session');
+    }
+    state.platforms = allClients;
+  } else {
+    state.platforms = _.reject(state.platforms, function(p) {return (p !== 'session')});
+  }
+  pushState();
+  refreshSelection();
+  search();
+}
+
+function refreshSelection() {
+  var anyClientSelected = false;
+  $('input[name="platforms"]').prop('checked', false);
+  _.each(state.platforms, function(p) {
+    $('input[name="platforms"][value="' + p + '"]').prop('checked', true);
+    anyClientSelected = anyClientSelected || (p !== 'session');
+  });
+  $('#select-client').prop('checked', anyClientSelected);
+}
 
 function getSearchQuery() {
   var query = 'query=' + encodeURIComponent(state.query);
 
   if (state.page !== 1) {
     query += '&page=' + encodeURIComponent(state.page);
+  }
+  
+  if (state.platforms.length) {
+    query += '&platform=' + encodeURIComponent(state.platforms.join(','));
   }
 
   return query;
@@ -51,6 +123,7 @@ function parseSearchQuery(query) {
   return {
     query: parts.query || '',
     page: parts.page ? parseInt(parts.page, 10) : 1,
+    platforms: parts.platform ? parts.platform.split(',') : []
   };
 }
 
@@ -187,6 +260,7 @@ function onPopState(event) {
     stopTimer();
     state = event.state;
     searchInput().value = state.query;
+    refreshSelection();
     search();
   }
 }
