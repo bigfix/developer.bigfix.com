@@ -52,6 +52,9 @@ function initPlatforms() {
       return '<label><input type="checkbox" name="platforms" class="client-platform" onchange="platformSelectionChanged(event)" value="' + p.id + '" id="select-' + p.id + '"> ' + _.escape(p.name) + '</label>';
     }).join('');
     $('#client-platforms').html(content);
+    if (state.platforms.length == 0) {
+      state.platforms = getAllPlatforms();
+    }
     refreshSelection();
   });
 }
@@ -62,6 +65,12 @@ function getSelectedPlatforms() {
     e.checked && selectedPlatforms.push(e.value);
   });
   return selectedPlatforms;
+}
+
+function getAllPlatforms() {
+  var allPlatforms = _.map(platforms, function(p) {return p.id})
+  allPlatforms.push('session');
+  return allPlatforms;
 }
 
 window.platformSelectionChanged = function(event) {
@@ -103,7 +112,7 @@ function getSearchQuery() {
     query += '&page=' + encodeURIComponent(state.page);
   }
   
-  if (state.platforms.length) {
+  if (state.platforms.length && (state.platforms.length < platforms.length + 1)) {
     query += '&platform=' + encodeURIComponent(state.platforms.join(','));
   }
 
