@@ -37,3 +37,11 @@ Returns the position within the string of the substring.
 Q: start of substring "or" of "to be or not to be"
 A: 6
 {% endqna %}
+
+# &lt;substring&gt; as string : string
+
+No documentation exists.
+
+# &lt;substring&gt; as substring : substring
+
+No documentation exists.

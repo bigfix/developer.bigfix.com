@@ -295,6 +295,10 @@ Information about the release of the operating system, formatted as a &lt;versio
 
 No documentation exists.
 
+# releaseid of &lt;operating system&gt; : string
+
+No documentation exists.
+
 # service pack &lt;string&gt; of &lt;operating system&gt; : service pack
 
 Returns the service pack that matches the string in the format "base-tl-sp-date". For example, AIX 5.3 at technology level 6 and service pack 3, which was released on the 32nd week of 2007, would be "5300-06-03-0732". Note: older service packs may not have a date portion, and the final service pack at a particular technology level has a SP value of &#39;CSP&#39;.

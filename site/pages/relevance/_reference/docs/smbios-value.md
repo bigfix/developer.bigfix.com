@@ -2,6 +2,10 @@
 
 Information about the SMBIOS (System Management BIOS) is contained in a set of data values stored in collections of individual smbios structures.
 
+# hexadecimal of &lt;smbios value&gt; : string
+
+No documentation exists.
+
 # name of &lt;smbios value&gt; : string
 
 Returns the name(s) of the specified smbios values, typically as derived from a smbios structure.

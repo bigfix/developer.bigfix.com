@@ -2033,6 +2033,10 @@ Returns a security event log, which records global or local group policy events.
 
 The BES Server or BES Relay to which the agent reports. Returned as the "selected server" type.
 
+# selinux boolean : SELinux Boolean
+
+No documentation exists.
+
 # september : month
 
 Returns September as an object of type month.
@@ -2096,6 +2100,10 @@ Returns the sound folder of the system domain
 # speech folder : folder
 
 Returns the speech folder of the system domain
+
+# sqlite version : version
+
+No documentation exists.
 
 # standard firewall profile type : firewall profile type
 
@@ -2399,6 +2407,10 @@ Returns a 32-bit registry object. This inspector is equivalent to the ordinary r
 # x64 registry : registry
 
 Returns a 64-bit registry object. This inspector is for 64-bit computers only; there is no 64-bit registry on a 32-bit computer. Note that "x64 registry" and "native registry" on 64-bit machines do NOT provide the same view as the 64-bit version of regedit (the "physical" view). If you try to access the physical location of the 32-bit view keys using a 64-bit view, it will be mapped back to the equivalent location in the 64-bit view.
+
+# xinetd service : Xinetd Service
+
+No documentation exists.
 
 # year : number of months
 

@@ -586,6 +586,14 @@ No documentation exists.
 
 Returns a wmi object which can retrieve all values, including system values.
 
+# fxf encoding concatenation &lt;string&gt; of &lt;string&gt; : string
+
+No documentation exists.
+
+# fxf encoding concatenation of &lt;string&gt; : string
+
+No documentation exists.
+
 # gestalt &lt;string&gt; : integer
 
 This reads a 32 bit integer from the MacOS. The selector name is the four character OSType that chooses which item is being inspected. The interpretation of the result depends on the selector. It might represent an integer or a version, for instance.
@@ -786,6 +794,14 @@ Returns an HTML snippet with the specified string enclosed in a &lt;link&gt; tag
 # link of &lt;string&gt; : html
 
 Returns an HTML snippet containing the specified string enclosed in a &lt;link&gt; tag.
+
+# local encoding concatenation &lt;string&gt; of &lt;string&gt; : string
+
+No documentation exists.
+
+# local encoding concatenation of &lt;string&gt; : string
+
+No documentation exists.
 
 # local group &lt;string&gt; : local group
 
@@ -1034,6 +1050,10 @@ Returns a scheduled task with the specified name. It attempts to use the 2.0 int
 This is a named inspector that uses the LookupAccountName API function to return an object representing a user or group.
 
 # security descriptor &lt;string&gt; : security descriptor
+
+No documentation exists.
+
+# selinux boolean &lt;string&gt; : SELinux Boolean
 
 No documentation exists.
 
@@ -1491,6 +1511,10 @@ Returns an object corresponding to a 64 bit file with pathname specified by &lt;
 # x64 folder &lt;string&gt; : folder
 
 Returns a filesystem object corresponding to a 64-bit folder with the given pathname. On a 32-bit computer, this is equivalent to a normal folder inspector, but on a 64-bit machine, this inspector returns an object that has filesystem redirection disabled. This action is transitive: any resulting filesystem objects will also have redirection disabled. For example, "pathnames of files of x64 folder &lt;path&gt;" will disable redirection when locating the folder, iterating over the files in the folder and calculating pathnames.
+
+# xinetd service &lt;string&gt; : Xinetd Service
+
+No documentation exists.
 
 # xml document of &lt;string&gt; : xml dom document
 

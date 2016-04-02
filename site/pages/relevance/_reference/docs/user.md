@@ -74,6 +74,10 @@ Returns `True` if the specified user has a privilege level of &#39;guest&#39;.
 
 Returns the name of the drive assigned to the specified user&#39;s home directory.
 
+# home directory folder of &lt;user&gt; : folder
+
+No documentation exists.
+
 # home directory of &lt;user&gt; : folder
 
 On a Mac, this inspector returns the dsAttrTypeStandard:NFSHomeDirectory attribute of the specified user as a folder. Note: On a Windows system, this inspector has a different interpretation: it returns the directory (as a string) where the user files are stored for the specified user.

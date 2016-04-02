@@ -31,6 +31,10 @@ Adjusts the specified time to the given time zone.
 
 Returns the unique values of a given list of &lt;time&gt; types, removing duplicates and sorting by value.
 
+# &lt;time&gt; as local date : date
+
+No documentation exists.
+
 # &lt;time&gt; as local string : string
 
 Returns a string in MIME format of the given time object. The format is: ddd, DD mmm YYYY HH:MM:SS sZZZZ. The string is formatted using the local time zone.
@@ -38,6 +42,10 @@ Returns a string in MIME format of the given time object. The format is: ddd, DD
 # &lt;time&gt; as string : string
 
 Same as above.
+
+# &lt;time&gt; as universal date : date
+
+No documentation exists.
 
 # &lt;time&gt; as universal string : string
 

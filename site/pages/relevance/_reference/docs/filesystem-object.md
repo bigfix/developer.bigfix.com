@@ -111,6 +111,10 @@ Q: group write of file "/etc/passwd"
 A: False
 {% endqna %}
 
+# has extended acl of &lt;filesystem object&gt; : boolean
+
+No documentation exists.
+
 # hfs path of &lt;filesystem object&gt; : string
 
 Returns the path to a filesystem object in HFS terms (colons as delimiters).

@@ -490,6 +490,10 @@ Returns an HTML snippet with the specified html enclosed in a &lt;var&gt; (varia
 
 Returns an HTML snippet containing the specified html enclosed in a &lt;var&gt; (variable type) tag.
 
+# &lt;html&gt; as decoded string : string
+
+No documentation exists.
+
 # &lt;html&gt; as html : html
 
 Casts an html string into an html type.

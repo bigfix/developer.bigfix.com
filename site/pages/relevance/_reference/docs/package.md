@@ -34,6 +34,10 @@ Returns capability objects for each capability that this package requires.
 
 Returns the RPM version records of the specified package.
 
+# signature keyid of &lt;package&gt; : string
+
+No documentation exists.
+
 # unique name of &lt;package&gt; : string
 
 Returns the unique values of a given list of &lt;package&gt; types, removing duplicates and sorting by value.

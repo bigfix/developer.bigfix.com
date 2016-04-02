@@ -10,6 +10,10 @@ Returns the integer database ID corresponding to the specified BES Server.
 
 Returns the database name (as a &lt;string&gt;) corresponding to the specified BES Server.
 
+# fxf character set of &lt;bes server&gt; : string
+
+No documentation exists.
+
 # url of &lt;bes server&gt; : string
 
 Returns the URL of the specified BES Server, providing access to any files hosted on that server.

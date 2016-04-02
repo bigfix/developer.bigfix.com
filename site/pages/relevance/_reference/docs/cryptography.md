@@ -13,3 +13,7 @@ Returns the error message returned by the cryptographic library if the applicati
 # fips mode of &lt;cryptography&gt; : boolean
 
 Returns `True` if the application (the client, console, or web reports, depending on the context) is operating in FIPS 140-2 mode (the mode provided by openssl). FIPS mode limits the set of ciphers and SSL protocols that can be used in the cryptographic library.
+
+# version of &lt;cryptography&gt; : string
+
+No documentation exists.

@@ -2,9 +2,21 @@
 
 The filesystem object can be used to inspect various aspects of mounted file systems, including the format of the file system. Here are some of the possible format types:affsext, ext2, ext2_oldhpfsisominix, minix_30, minix2, minix2_30 msdos ncpnfsprocsmbxenixsysv4, sysv2cohufsxia
 
+# block size of &lt;filesystem&gt; : integer
+
+No documentation exists.
+
+# device name of &lt;filesystem&gt; : string
+
+No documentation exists.
+
 # file count of &lt;filesystem&gt; : integer
 
 Returns the total number of files that may be saved on this filesystem.
+
+# filesystem type of &lt;filesystem&gt; : string
+
+No documentation exists.
 
 # free file count of &lt;filesystem&gt; : integer
 
@@ -18,9 +30,21 @@ Returns the percentage of the file system currently available.
 
 Returns the number of bytes on this filesystem.
 
+# fstype of &lt;filesystem&gt; : string
+
+No documentation exists.
+
 # logical volume of &lt;filesystem&gt; : logical volume
 
 On an AIX system, returns the logical volume corresponding to the given filesystem.
+
+# mount option of &lt;filesystem&gt; : string
+
+No documentation exists.
+
+# mount point of &lt;filesystem&gt; : string
+
+No documentation exists.
 
 # name of &lt;filesystem&gt; : string
 
@@ -49,6 +73,10 @@ Returns the percentage of the file system currently in use.
 # used space of &lt;filesystem&gt; : integer
 
 Returns the number of bytes on this filesystem currently in use.
+
+# uuid of &lt;filesystem&gt; : string
+
+No documentation exists.
 
 # volume of &lt;filesystem&gt; : string
 

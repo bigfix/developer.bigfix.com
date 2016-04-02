@@ -56,6 +56,10 @@ Q: name of effective user of process "qna"
 A: root
 {% endqna %}
 
+# elapsed time of &lt;process&gt; : time interval
+
+No documentation exists.
+
 # environment of &lt;process&gt; : environment
 
 Returns the environment of the process.
@@ -67,6 +71,14 @@ A: HOSTNAME = 7381cb903c1d
 A: PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 A: PORT = 5002
 {% endqna %}
+
+# exec shield of &lt;process&gt; : boolean
+
+No documentation exists.
+
+# exec time of &lt;process&gt; : time interval
+
+No documentation exists.
 
 # gdi object count of &lt;process&gt; : integer
 
@@ -167,6 +179,10 @@ Q: kernel time of process "FixletDebugger.exe"
 A: 00:00:02.234375
 {% endqna %}
 
+# loginuid of &lt;process&gt; : integer
+
+No documentation exists.
+
 # name of &lt;process&gt; : string
 
 Returns the name of the process.
@@ -175,6 +191,10 @@ Returns the name of the process.
 Q: name of process 1
 A: node
 {% endqna %}
+
+# nx bit of &lt;process&gt; : boolean
+
+No documentation exists.
 
 # page fault count of &lt;process&gt; : integer
 
@@ -221,6 +241,14 @@ Q: pid of process "FixletDebugger.exe"
 A: 3800
 {% endqna %}
 
+# policy of &lt;process&gt; : string
+
+No documentation exists.
+
+# posix capability of &lt;process&gt; : integer
+
+No documentation exists.
+
 # ppid of &lt;process&gt; : integer
 
 Returns the PPID of the process.
@@ -229,6 +257,10 @@ Returns the PPID of the process.
 Q: (id of it, ppid of it) of process "qna"
 A: 37, 1
 {% endqna %}
+
+# priority of &lt;process&gt; : integer
+
+No documentation exists.
 
 # process id of &lt;process&gt; : integer
 
@@ -275,6 +307,10 @@ Q: quota peak paged pool usage of process "FixletDebugger.exe"
 A: 277416
 {% endqna %}
 
+# schedule class of &lt;process&gt; : string
+
+No documentation exists.
+
 # selinux context of &lt;process&gt; : string
 
 Returns any security context for the specified process.
@@ -284,6 +320,10 @@ Q: selinux context of process "qna"
 A: system_u:system_r:spc_t:s0
 {% endqna %}
 
+# selinux domain of &lt;process&gt; : string
+
+No documentation exists.
+
 # session id of &lt;process&gt; : integer
 
 Returns the ID of the session under which the process is running.
@@ -292,6 +332,18 @@ Returns the ID of the session under which the process is running.
 Q: session id of process "FixletDebugger.exe"
 A: 1
 {% endqna %}
+
+# session of &lt;process&gt; : integer
+
+No documentation exists.
+
+# start time of &lt;process&gt; : time
+
+No documentation exists.
+
+# tty of &lt;process&gt; : string
+
+No documentation exists.
 
 # user object count of &lt;process&gt; : integer
 
