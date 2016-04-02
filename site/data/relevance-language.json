@@ -1877,6 +1877,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -1886,6 +1892,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -5973,6 +5985,28 @@
       "availability": {
         "9.2.5.130": [
           "Session"
+        ]
+      }
+    },
+    "SELinux Boolean": {
+      "name": "SELinux Boolean",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "Xinetd Service": {
+      "name": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     }
@@ -33784,6 +33818,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37261,6 +37301,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37274,6 +37320,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37289,6 +37341,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37304,6 +37362,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37318,6 +37382,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37333,6 +37403,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37347,6 +37423,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37361,6 +37443,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37375,6 +37463,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37389,6 +37483,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37403,6 +37503,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37417,6 +37523,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37431,6 +37543,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37445,6 +37563,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37459,6 +37583,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37473,6 +37603,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37503,6 +37639,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -37518,6 +37660,12 @@
         "8.0.584.0": [
           "Session",
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -72768,6 +72916,12 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
         ]
       }
     },
@@ -85936,6 +86090,14 @@
         "8.1.535.0": [
           "Mac",
           "Windows"
+        ],
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -86604,6 +86766,9 @@
       "availability": {
         "8.1.535.0": [
           "Windows"
+        ],
+        "9.5.0.311": [
+          "Mac"
         ]
       }
     },
@@ -86828,6 +86993,9 @@
       "availability": {
         "8.1.535.0": [
           "Windows"
+        ],
+        "9.5.0.311": [
+          "Mac"
         ]
       }
     },
@@ -86932,6 +87100,15 @@
       "availability": {
         "8.1.535.0": [
           "Windows"
+        ],
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -93990,6 +94167,9 @@
           "Solaris",
           "Ubuntu",
           "Windows"
+        ],
+        "9.5.0.311": [
+          "Mac"
         ]
       }
     },
@@ -94614,6 +94794,10 @@
           "SUSE",
           "Solaris",
           "Ubuntu"
+        ],
+        "9.5.0.311": [
+          "Mac",
+          "Windows"
         ]
       }
     },
@@ -97568,6 +97752,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97584,6 +97771,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97600,6 +97790,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97616,6 +97809,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97632,6 +97828,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97648,6 +97847,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97664,6 +97866,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97680,6 +97885,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97696,6 +97904,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97712,6 +97923,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97728,6 +97942,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -97744,6 +97961,9 @@
         ],
         "9.2.0.363": [
           "SUSE"
+        ],
+        "9.5.0.311": [
+          "Ubuntu"
         ]
       }
     },
@@ -101600,6 +101820,1017 @@
       "availability": {
         "9.2.5.130": [
           "Session"
+        ]
+      }
+    },
+    "current status of <SELinux Boolean> : boolean": {
+      "key": "current status of <SELinux Boolean> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "current status",
+      "pluralPhrase": "current statuses",
+      "directObjectType": "SELinux Boolean",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "name of <SELinux Boolean> : string": {
+      "key": "name of <SELinux Boolean> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "SELinux Boolean",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "pending status of <SELinux Boolean> : boolean": {
+      "key": "pending status of <SELinux Boolean> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "pending status",
+      "pluralPhrase": "pending statuses",
+      "directObjectType": "SELinux Boolean",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "disabled of <Xinetd Service> : boolean": {
+      "key": "disabled of <Xinetd Service> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "disabled",
+      "pluralPhrase": "disableds",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "flag of <Xinetd Service> : string": {
+      "key": "flag of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "flag",
+      "pluralPhrase": "flags",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "id of <Xinetd Service> : string": {
+      "key": "id of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "name of <Xinetd Service> : string": {
+      "key": "name of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "no access of <Xinetd Service> : string": {
+      "key": "no access of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "no access",
+      "pluralPhrase": "no accesses",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "only from of <Xinetd Service> : string": {
+      "key": "only from of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "only from",
+      "pluralPhrase": "only froms",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "port of <Xinetd Service> : integer": {
+      "key": "port of <Xinetd Service> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "port",
+      "pluralPhrase": "ports",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "protocol of <Xinetd Service> : string": {
+      "key": "protocol of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "protocol",
+      "pluralPhrase": "protocols",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "server arg of <Xinetd Service> : string": {
+      "key": "server arg of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "server arg",
+      "pluralPhrase": "server args",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "server of <Xinetd Service> : string": {
+      "key": "server of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "server",
+      "pluralPhrase": "servers",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "socket type of <Xinetd Service> : string": {
+      "key": "socket type of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "socket type",
+      "pluralPhrase": "socket types",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "type of <Xinetd Service> : string": {
+      "key": "type of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "type",
+      "pluralPhrase": "types",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "user of <Xinetd Service> : string": {
+      "key": "user of <Xinetd Service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "user",
+      "pluralPhrase": "users",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "wait of <Xinetd Service> : boolean": {
+      "key": "wait of <Xinetd Service> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "wait",
+      "pluralPhrase": "waits",
+      "directObjectType": "Xinetd Service",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "block size of <filesystem> : integer": {
+      "key": "block size of <filesystem> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "block size",
+      "pluralPhrase": "block sizes",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "device name of <filesystem> : string": {
+      "key": "device name of <filesystem> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "device name",
+      "pluralPhrase": "device names",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "filesystem type of <filesystem> : string": {
+      "key": "filesystem type of <filesystem> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "filesystem type",
+      "pluralPhrase": "filesystem types",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "fstype of <filesystem> : string": {
+      "key": "fstype of <filesystem> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "fstype",
+      "pluralPhrase": "fstypes",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "mount option of <filesystem> : string": {
+      "key": "mount option of <filesystem> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "mount option",
+      "pluralPhrase": "mount options",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "mount point of <filesystem> : string": {
+      "key": "mount point of <filesystem> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "mount point",
+      "pluralPhrase": "mount points",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "uuid of <filesystem> : string": {
+      "key": "uuid of <filesystem> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "uuid",
+      "pluralPhrase": "uuids",
+      "directObjectType": "filesystem",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "has extended acl of <filesystem object> : boolean": {
+      "key": "has extended acl of <filesystem object> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "has extended acl",
+      "pluralPhrase": "has extended acls",
+      "directObjectType": "filesystem object",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "elapsed time of <process> : time interval": {
+      "key": "elapsed time of <process> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "elapsed time",
+      "pluralPhrase": "elapsed times",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "exec shield of <process> : boolean": {
+      "key": "exec shield of <process> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "exec shield",
+      "pluralPhrase": "exec shields",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "exec time of <process> : time interval": {
+      "key": "exec time of <process> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "exec time",
+      "pluralPhrase": "exec times",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "loginuid of <process> : integer": {
+      "key": "loginuid of <process> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "loginuid",
+      "pluralPhrase": "loginuids",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "nx bit of <process> : boolean": {
+      "key": "nx bit of <process> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "nx bit",
+      "pluralPhrase": "nx bits",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "policy of <process> : string": {
+      "key": "policy of <process> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "policy",
+      "pluralPhrase": "policies",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "posix capability of <process> : integer": {
+      "key": "posix capability of <process> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "posix capability",
+      "pluralPhrase": "posix capabilities",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "priority of <process> : integer": {
+      "key": "priority of <process> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "priority",
+      "pluralPhrase": "priorities",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "schedule class of <process> : string": {
+      "key": "schedule class of <process> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "schedule class",
+      "pluralPhrase": "schedule classes",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "selinux domain of <process> : string": {
+      "key": "selinux domain of <process> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "selinux domain",
+      "pluralPhrase": "selinux domains",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "session of <process> : integer": {
+      "key": "session of <process> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "session",
+      "pluralPhrase": "sessions",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "start time of <process> : time": {
+      "key": "start time of <process> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "start time",
+      "pluralPhrase": "start times",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "tty of <process> : string": {
+      "key": "tty of <process> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "tty",
+      "pluralPhrase": "ttys",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "selinux boolean <string> : SELinux Boolean": {
+      "key": "selinux boolean <string> : SELinux Boolean",
+      "type": "property",
+      "resultType": "SELinux Boolean",
+      "singularPhrase": "selinux boolean",
+      "pluralPhrase": "selinux booleans",
+      "indexType": "string",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "selinux boolean : SELinux Boolean": {
+      "key": "selinux boolean : SELinux Boolean",
+      "type": "property",
+      "resultType": "SELinux Boolean",
+      "singularPhrase": "selinux boolean",
+      "pluralPhrase": "selinux booleans",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "xinetd service <string> : Xinetd Service": {
+      "key": "xinetd service <string> : Xinetd Service",
+      "type": "property",
+      "resultType": "Xinetd Service",
+      "singularPhrase": "xinetd service",
+      "pluralPhrase": "xinetd services",
+      "indexType": "string",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "xinetd service : Xinetd Service": {
+      "key": "xinetd service : Xinetd Service",
+      "type": "property",
+      "resultType": "Xinetd Service",
+      "singularPhrase": "xinetd service",
+      "pluralPhrase": "xinetd services",
+      "availability": {
+        "9.2.7.53": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "signature keyid of <package> : string": {
+      "key": "signature keyid of <package> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "signature keyid",
+      "pluralPhrase": "signature keyids",
+      "directObjectType": "package",
+      "availability": {
+        "9.2.7.53": [
+          "AIX",
+          "Red Hat",
+          "SUSE"
+        ]
+      }
+    },
+    "fxf character set of <bes server> : string": {
+      "key": "fxf character set of <bes server> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "fxf character set",
+      "pluralPhrase": "fxf character sets",
+      "directObjectType": "bes server",
+      "availability": {
+        "9.5.0.311": [
+          "Session"
+        ]
+      }
+    },
+    "version of <cryptography> : string": {
+      "key": "version of <cryptography> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "version",
+      "pluralPhrase": "versions",
+      "directObjectType": "cryptography",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<html> as decoded string : string": {
+      "key": "<html> as decoded string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "html",
+      "phrase": "decoded string",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "fxf encoding concatenation <string> of <string> : string": {
+      "key": "fxf encoding concatenation <string> of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "fxf encoding concatenation",
+      "pluralPhrase": "fxf encoding concatenations",
+      "indexType": "string",
+      "directObjectType": "string",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "fxf encoding concatenation of <string> : string": {
+      "key": "fxf encoding concatenation of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "fxf encoding concatenation",
+      "pluralPhrase": "fxf encoding concatenations",
+      "directObjectType": "string",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "local encoding concatenation <string> of <string> : string": {
+      "key": "local encoding concatenation <string> of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "local encoding concatenation",
+      "pluralPhrase": "local encoding concatenations",
+      "indexType": "string",
+      "directObjectType": "string",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "local encoding concatenation of <string> : string": {
+      "key": "local encoding concatenation of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "local encoding concatenation",
+      "pluralPhrase": "local encoding concatenations",
+      "directObjectType": "string",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<substring> as string : string": {
+      "key": "<substring> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "substring",
+      "phrase": "string",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<substring> as substring : substring": {
+      "key": "<substring> as substring : substring",
+      "type": "cast",
+      "resultType": "substring",
+      "argType": "substring",
+      "phrase": "substring",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<time> as local date : date": {
+      "key": "<time> as local date : date",
+      "type": "cast",
+      "resultType": "date",
+      "argType": "time",
+      "phrase": "local date",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<time> as universal date : date": {
+      "key": "<time> as universal date : date",
+      "type": "cast",
+      "resultType": "date",
+      "argType": "time",
+      "phrase": "universal date",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "hexadecimal <string> of <smbios structure> : string": {
+      "key": "hexadecimal <string> of <smbios structure> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "hexadecimal",
+      "pluralPhrase": "hexadecimals",
+      "indexType": "string",
+      "directObjectType": "smbios structure",
+      "availability": {
+        "9.5.0.311": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "hexadecimal of <smbios value> : string": {
+      "key": "hexadecimal of <smbios value> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "hexadecimal",
+      "pluralPhrase": "hexadecimals",
+      "directObjectType": "smbios value",
+      "availability": {
+        "9.5.0.311": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sqlite version : version": {
+      "key": "sqlite version : version",
+      "type": "property",
+      "resultType": "version",
+      "singularPhrase": "sqlite version",
+      "pluralPhrase": "sqlite versions",
+      "availability": {
+        "9.5.0.311": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "home directory folder of <user> : folder": {
+      "key": "home directory folder of <user> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "home directory folder",
+      "pluralPhrase": "home directory folders",
+      "directObjectType": "user",
+      "availability": {
+        "9.5.0.311": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "releaseid of <operating system> : string": {
+      "key": "releaseid of <operating system> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "releaseid",
+      "pluralPhrase": "releaseids",
+      "directObjectType": "operating system",
+      "availability": {
+        "9.5.0.311": [
+          "Windows"
         ]
       }
     }
