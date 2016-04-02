@@ -33,7 +33,7 @@ Once you have updated this file, you probably need to go to the `site/build`
 directory and run:
 
     $ npm install
-    $ node . -- create-missing ..
+    $ node . --create-missing ..
 
 This will add stub entries to the documentation for any new inspectors.
 
