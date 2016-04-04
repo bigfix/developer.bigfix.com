@@ -4,12 +4,12 @@ No documentation exists.
 
 # current status of &lt;SELinux Boolean&gt; : boolean
 
-No documentation exists.
+Returns the current status value.
 
 # name of &lt;SELinux Boolean&gt; : string
 
-No documentation exists.
+Returns the name of the boolean value.
 
 # pending status of &lt;SELinux Boolean&gt; : boolean
 
-No documentation exists.
+Returns the pending status value.

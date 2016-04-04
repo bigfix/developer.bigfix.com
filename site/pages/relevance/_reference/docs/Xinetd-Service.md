@@ -4,56 +4,56 @@ No documentation exists.
 
 # disabled of &lt;Xinetd Service&gt; : boolean
 
-No documentation exists.
+Returns `True` if the service is disabled.
 
 # flag of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the flags for the service.
 
 # id of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the id of the service.
 
 # name of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the name of the service.
 
 # no access of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the 'no_access' blacklist of hosts that are not allowed to use this service.
 
 # only from of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the 'only_from' whitelist of hosts that are allowed to use this service.
 
 # port of &lt;Xinetd Service&gt; : integer
 
-No documentation exists.
+Returns the port number that this service uses.
 
 # protocol of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the protocol that this service uses.
 
 # server arg of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the list of server arguments passed to this service.
 
 # server of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the program used to execute this service.
 
 # socket type of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the type of socket this service uses.
 
 # type of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the type for this service.
 
 # user of &lt;Xinetd Service&gt; : string
 
-No documentation exists.
+Returns the user this service runs as.
 
 # wait of &lt;Xinetd Service&gt; : boolean
 
-No documentation exists.
+Returns `True` if the service is single-threaded and uses the server to accept connections. `False` if the service is multi-threaded and uses xinetd to accept connections.

@@ -58,7 +58,7 @@ A: root
 
 # elapsed time of &lt;process&gt; : time interval
 
-No documentation exists.
+Returns the amount of time the process has been running.
 
 # environment of &lt;process&gt; : environment
 
@@ -74,11 +74,11 @@ A: PORT = 5002
 
 # exec shield of &lt;process&gt; : boolean
 
-No documentation exists.
+Returns `True` if exec shield (NX bit protection) is enabled for the process.
 
 # exec time of &lt;process&gt; : time interval
 
-No documentation exists.
+Returns the amount of the time the process was actively using the cpu.
 
 # gdi object count of &lt;process&gt; : integer
 
@@ -181,7 +181,7 @@ A: 00:00:02.234375
 
 # loginuid of &lt;process&gt; : integer
 
-No documentation exists.
+Returns the loginuid of the process.
 
 # name of &lt;process&gt; : string
 
@@ -194,7 +194,7 @@ A: node
 
 # nx bit of &lt;process&gt; : boolean
 
-No documentation exists.
+Returns `True` if NX bit protection is enabled for the process.
 
 # page fault count of &lt;process&gt; : integer
 
@@ -243,11 +243,11 @@ A: 3800
 
 # policy of &lt;process&gt; : string
 
-No documentation exists.
+Returns the policy (scheduling class) for the process.
 
 # posix capability of &lt;process&gt; : integer
 
-No documentation exists.
+Returns the posix capability of the process. Originally a hexadecimal value.
 
 # ppid of &lt;process&gt; : integer
 
@@ -260,7 +260,7 @@ A: 37, 1
 
 # priority of &lt;process&gt; : integer
 
-No documentation exists.
+Returns the scheduling priority value for the process. (Matches `ps -o pri`)
 
 # process id of &lt;process&gt; : integer
 
@@ -309,7 +309,7 @@ A: 277416
 
 # schedule class of &lt;process&gt; : string
 
-No documentation exists.
+Returns the scheduling class (policy) of the process.
 
 # selinux context of &lt;process&gt; : string
 
@@ -322,7 +322,7 @@ A: system_u:system_r:spc_t:s0
 
 # selinux domain of &lt;process&gt; : string
 
-No documentation exists.
+Returns any security context for the specified process. (Same as 'selinux context')
 
 # session id of &lt;process&gt; : integer
 
@@ -335,15 +335,15 @@ A: 1
 
 # session of &lt;process&gt; : integer
 
-No documentation exists.
+Returns the session id of the process.
 
 # start time of &lt;process&gt; : time
 
-No documentation exists.
+Returns the time at which the process started.
 
 # tty of &lt;process&gt; : string
 
-No documentation exists.
+Returns which tty (terminal) the process is running inside of.
 
 # user object count of &lt;process&gt; : integer
 
