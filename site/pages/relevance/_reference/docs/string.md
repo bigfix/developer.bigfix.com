@@ -1055,7 +1055,7 @@ No documentation exists.
 
 # selinux boolean &lt;string&gt; : SELinux Boolean
 
-No documentation exists.
+Returns the SELinux Boolean matching the name provided.
 
 # service &lt;string&gt; : dummy
 
@@ -1514,11 +1514,11 @@ Returns a filesystem object corresponding to a 64-bit folder with the given path
 
 # xinetd service &lt;string&gt; : Xinetd Service
 
-No documentation exists.
+Retrurns the xinetd service corresponding to the name provided.
 
 # xml document of &lt;string&gt; : xml dom document
 
-No documentation exists.
+Converts the provided string to an xml dom document object.
 
 # year &lt;string&gt; : year
 

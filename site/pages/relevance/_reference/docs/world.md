@@ -2035,7 +2035,7 @@ The BES Server or BES Relay to which the agent reports. Returned as the "selecte
 
 # selinux boolean : SELinux Boolean
 
-No documentation exists.
+Returns all SELinux Booleans. 
 
 # september : month
 
@@ -2410,7 +2410,7 @@ Returns a 64-bit registry object. This inspector is for 64-bit computers only; t
 
 # xinetd service : Xinetd Service
 
-No documentation exists.
+Returns all xinetd services.
 
 # year : number of months
 
