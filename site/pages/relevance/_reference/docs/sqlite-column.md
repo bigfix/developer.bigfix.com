@@ -17,7 +17,12 @@ A: ArtistId
 
 # type of &lt;sqlite column&gt; : sqlite column type
 
-Returns the column type.
+Returns one of the five sqlite datat types in a string form. The five types are as follows:
+- `SQLITE_INTEGER`
+- `SQLITE_FLOAT`
+- `SQLITE_TEXT`
+- `SQLITE_BLOB`
+- `SQLITE_NULL`
 
 {% qna %}
 Q: types of columns 0 of rows of statement "select ArtistId, Name from Artist limit 5" of sqlite database of file "chinook.db"
