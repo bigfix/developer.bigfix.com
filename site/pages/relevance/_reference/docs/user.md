@@ -60,7 +60,7 @@ Returns the country code of the user&#39;s preferred language.
 
 # domain of &lt;user&gt; : string
 
-No documentation exists.
+Returns the domain of the specified user.
 
 # full name of &lt;user&gt; : string
 
@@ -76,15 +76,15 @@ Returns the name of the drive assigned to the specified user&#39;s home director
 
 # home directory folder of &lt;user&gt; : folder
 
-No documentation exists.
+Returns the home directory of the user as a folder.
 
 # home directory of &lt;user&gt; : folder
 
-On a Mac, this inspector returns the dsAttrTypeStandard:NFSHomeDirectory attribute of the specified user as a folder. Note: On a Windows system, this inspector has a different interpretation: it returns the directory (as a string) where the user files are stored for the specified user.
+Returns the dsAttrTypeStandard:NFSHomeDirectory attribute of the specified user as a folder.
 
 # home directory of &lt;user&gt; : string
 
-No documentation exists.
+Returns the home directory of the user as a string.
 
 # home directory required flag of &lt;user&gt; : boolean
 
@@ -164,11 +164,11 @@ Returns `True` if the specified user&#39;s password has expired.
 
 # primary group id of &lt;user&gt; : integer
 
-No documentation exists.
+Returns primary group id as an integer.
 
 # primary group id of &lt;user&gt; : string
 
-On a Mac, this inspector returns the dsAttrTypeStandard:PrimaryGroupID attribute for the specified user.Note: On a Windows computer, this inspector returns the gid as an integer, not a string.
+Returns the dsAttrTypeStandard:PrimaryGroupID attribute for the specified user.
 
 # print operator flag of &lt;user&gt; : boolean
 

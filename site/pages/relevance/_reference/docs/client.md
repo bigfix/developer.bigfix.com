@@ -65,7 +65,7 @@ Returns an object corresponding to the time it takes to evaluate the content set
 
 # fxf character set of &lt;client&gt; : string
 
-No documentation exists.
+Returns the FXF Encoding IANA name of the encoding for your deployment. This encoding represents all FXF files that the server generates.
 
 # last command time of &lt;client&gt; : time
 

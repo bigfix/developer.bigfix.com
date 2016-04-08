@@ -588,11 +588,11 @@ Returns a wmi object which can retrieve all values, including system values.
 
 # fxf encoding concatenation &lt;string&gt; of &lt;string&gt; : string
 
-No documentation exists.
+Returns the same output as [concatenation &lt;string&gt; of &lt;string&gt; : string](/relevance/reference/string.html#concatenation-string-of-string-string), but input values are filtered to the current fxf encoding.
 
 # fxf encoding concatenation of &lt;string&gt; : string
 
-No documentation exists.
+Returns the same output as [concatenation of &lt;string&gt; : string](/relevance/reference/string.html#concatenation-of-string-string), but input values are filtered to the current fxf encoding.
 
 # gestalt &lt;string&gt; : integer
 
@@ -797,11 +797,11 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;link&g
 
 # local encoding concatenation &lt;string&gt; of &lt;string&gt; : string
 
-No documentation exists.
+Returns the same output as [concatenation &lt;string&gt; of &lt;string&gt; : string](/relevance/reference/string.html#concatenation-string-of-string-string), but the input values are filtered to the current local encoding.
 
 # local encoding concatenation of &lt;string&gt; : string
 
-No documentation exists.
+Returns the same output as [concatenation of &lt;string&gt; : string](/relevance/reference/string.html#concatenation-of-string-string), but the input values are filtered to the current local encoding.
 
 # local group &lt;string&gt; : local group
 

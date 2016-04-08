@@ -33,7 +33,7 @@ Returns the unique values of a given list of &lt;time&gt; types, removing duplic
 
 # &lt;time&gt; as local date : date
 
-No documentation exists.
+Converts to date object using the local time zone.
 
 # &lt;time&gt; as local string : string
 
@@ -45,7 +45,7 @@ Same as above.
 
 # &lt;time&gt; as universal date : date
 
-No documentation exists.
+Converts to date object using the universal time zone.
 
 # &lt;time&gt; as universal string : string
 

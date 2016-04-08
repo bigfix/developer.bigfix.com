@@ -492,7 +492,7 @@ Returns an HTML snippet containing the specified html enclosed in a &lt;var&gt; 
 
 # &lt;html&gt; as decoded string : string
 
-No documentation exists.
+Decodes the &lt;html&gt; per the numerical reference in markup rules (https://en.wikipedia.org/wiki/Numeric_character_reference).
 
 # &lt;html&gt; as html : html
 

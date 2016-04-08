@@ -40,8 +40,8 @@ A: 6
 
 # &lt;substring&gt; as string : string
 
-No documentation exists.
+Converts &lt;substring&gt; to string.
 
 # &lt;substring&gt; as substring : substring
 
-No documentation exists.
+Returns the same object.

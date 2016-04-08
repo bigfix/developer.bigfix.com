@@ -293,11 +293,11 @@ Information about the release of the operating system, formatted as a &lt;versio
 
 # release of &lt;operating system&gt; : version
 
-No documentation exists.
+Returns the release version of operating system.
 
 # releaseid of &lt;operating system&gt; : string
 
-No documentation exists.
+Returns the "ReleaseId" of the Windows operating system which indicates the update level. This is also included in the base string representation of the &lt;operating system&gt; inspector.
 
 # service pack &lt;string&gt; of &lt;operating system&gt; : service pack
 

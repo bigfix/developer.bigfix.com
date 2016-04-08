@@ -12,7 +12,7 @@ Returns the database name (as a &lt;string&gt;) corresponding to the specified B
 
 # fxf character set of &lt;bes server&gt; : string
 
-No documentation exists.
+Returns the FXF Encoding IANA name of the encoding for your deployment. This encoding represents all FXF files that the server generates.
 
 # url of &lt;bes server&gt; : string
 

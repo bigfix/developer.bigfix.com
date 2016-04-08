@@ -16,4 +16,9 @@ Returns `True` if the application (the client, console, or web reports, dependin
 
 # version of &lt;cryptography&gt; : string
 
-No documentation exists.
+Returns the version string of the OpenSSL library in use.
+
+{% qna %}
+Q: version of cryptography
+A: OpenSSL 1.0.1q-fips 3 Dec 2015
+{% endqna %}
