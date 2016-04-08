@@ -1,7 +1,8 @@
 var fs = require('fs'),
   parse = require('./parse'),
   path = require('path'),
-  yaml = require('js-yaml');
+  yaml = require('js-yaml'),
+  compareVersion = require('compare-version');
 
 /**
  * Compare two versions that look like 'a.b.c.d'.
@@ -102,6 +103,9 @@ function getSupport(platformToVersion) {
   return versionToPlatforms;
 }
 
+var deprecatedPlatforms =
+  yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'deprecated.yml')));
+
 /**
  * Parse 'target' out of 'Language.target.txt', and return the pretty name for
  * it specified in platforms.yml.
@@ -126,7 +130,7 @@ function parseLanguageReports(languageReports, platformNames) {
   fs.readdirSync(languageReports).forEach(function(version) {
     var versionPath = path.join(languageReports, version);
     versions.push(version);
-
+    
     fs.readdirSync(versionPath).forEach(function(reportFile) {
       console.log(reportFile);
       if (reportFile.indexOf('Language') !== 0) {
@@ -134,8 +138,15 @@ function parseLanguageReports(languageReports, platformNames) {
       }
 
       var reportPath = path.join(versionPath, reportFile);
+      var filenamePlatform = path.basename(reportPath).match(/Language\.(.+)\.txt$/)[1];
       var platform = getPlatform(reportPath, platformNames);
-
+      
+      if (deprecatedPlatforms[filenamePlatform] && 
+          (compareVersion(version, deprecatedPlatforms[filenamePlatform]) >= 0)) {
+        console.log("ignored");
+        return;
+      }
+      
       console.error(version + ' - ' + platform);
 
       if (isVersionLess(maxVersion, version)) {

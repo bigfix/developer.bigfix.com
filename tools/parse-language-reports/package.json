@@ -11,6 +11,7 @@
     "tape": "^3.5.0"
   },
   "dependencies": {
-    "js-yaml": "^3.2.7"
+    "js-yaml": "^3.2.7",
+    "compare-version": "^0.1.2"
   }
 }

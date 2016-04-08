@@ -66312,7 +66312,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "id of <user> : string": {
       "key": "id of <user> : string",
@@ -66325,7 +66326,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "primary group id of <user> : string": {
       "key": "primary group id of <user> : string",
@@ -66338,7 +66340,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "<user attribute> as string : string": {
       "key": "<user attribute> as string : string",
@@ -92323,7 +92326,8 @@
         "8.2.1310.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "application : application": {
       "key": "application : application",
