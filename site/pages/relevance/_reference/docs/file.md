@@ -257,8 +257,10 @@ Returns the size in bytes of a file.
 
 Opens the file as a sqlite database. This is a ``read-only`` SQLite connection. If the connection is successful, the path name of the database is displayed.
 
-## Multiple Processes and Multiple Connections
-SQLite allows multiple processes to have the database file open at once, and for multiple processes to read the database at once. However, when any process wants to write, it must lock the entire database file for the duration of its update (usually a few milliseconds).
+<strong>Multiple Processes and Multiple Connections</strong>
+
+SQLite allows multiple processes to have the database file open at once, and for multiple processes to read the database at once. 
+However, when any process wants to write, it must lock the entire database file for the duration of its update (usually a few milliseconds).
 
 {% qna %}
 Q: rows of statement "select count(*) from Artist" of sqlite database of file "chinook.db"
