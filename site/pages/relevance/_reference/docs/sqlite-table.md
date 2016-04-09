@@ -22,7 +22,10 @@ A: Title: SQLITE_TEXT
 
 # column type of &lt;sqlite table&gt; : sqlite column type
 
-Returns the types of each column in the table.
+Returns the name and type of all the columns of table.
+
+## Warning
+This property only inspects the first row of a "SELECT *" from the current table. Although the column name aspect will alwyas be accurate, the data type may show `SQLITE_NULL` instead of another data type depending on whether the first row contains or does not contain null values. This is due to the fact that the SQLite API must manually inspect a single cell to obtain the SQLite data type. The creator of the table may not have inserted any values to the cell, leaving it `SQLITE_NULL`.
 
 {% qna %}
 Q: column types of table "Album" of sqlite database of file "chinook.db"
