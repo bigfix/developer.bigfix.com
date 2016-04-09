@@ -4,7 +4,8 @@ The `sqlite database` type represents a [SQLite](https://sqlite.org/) database.
 
 # encoding of &lt;sqlite database&gt; : string
 
-Returns the encoding of the database. This is determined using [PRAGMA encoding](https://www.sqlite.org/pragma.html#pragma_encoding). One of `UTF-8`, `UTF-16le` (little-endian UTF-16 encoding) or `UTF-16be` (big-endian UTF-16 encoding).
+Returns the encoding of the database. This is determined using [PRAGMA encoding](https://www.sqlite.org/pragma.html#pragma_encoding). 
+The returned string can be either `UTF-8`, `UTF-16le` (little-endian UTF-16 encoding) or `UTF-16be` (big-endian UTF-16 encoding).
 
 {% qna %}
 Q: encoding of sqlite database of file "test.db"
@@ -13,11 +14,15 @@ A: UTF-8
 
 # statement &lt;string&gt; of &lt;sqlite database&gt; : sqlite statement
 
-Called on a database object and allows for user to type in SQL syntax. This property will error if 1. a syntax error exists, or 2. if the SQL statement modifies the database in anyway. This includes some PRAGMA statments as well. If both are avoided, SQLite has compiled the SQL query into byte code and is ready to display the output. This property does not have a display format; on a success, "This expression evaluates to an unrepresentable object of type sqlite statement" will be shown.
+Returns a sqlite statement object that can be used to retrieve the results. This property will return error if:
+ - A syntax error exists, or
+ - The SQL statement modifies the database in any way. This includes some PRAGMA statments as well. 
 
-## SQL and SQLite Syntax
+If successful, SQLite compiles the SQL statement into byte code and is ready to retrieve the results. 
+This property does not have a display format. "This expression evaluates to an unrepresentable object of type sqlite statement" will be shown instead.
 
-SQLite understands most of the standard SQL language. However it does omit some features as well as adding a few features of its owen. Fore more details, visit the [SQLite documentation](http://www.sqlite.org/lang.html) on this subject.
+SQLite understands most of the standard SQL language. However it does omit some features as well as adding a few features of its own. 
+Fore more details, visit the [SQLite documentation](http://www.sqlite.org/lang.html) on this subject.
 
 {% qna %}
 Q: rows of statement "select * from Artist where ArtistId = 147" of sqlite database of file "chinook.db"
