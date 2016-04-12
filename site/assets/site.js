@@ -145,9 +145,18 @@ function escapeHTML(text) {
   });
 }
 
-window.onload = function() {
+$(function() {
   var elements = document.getElementsByClassName('evaluator');
   for (var i = 0; i < elements.length; i++) {
     initEvaluator(elements[i]);
   }
-};
+  
+  $('.ui-collapsible').each(function(i, e) {
+    $title = $(e).find('.title');
+    $content = $(e).find('.content');
+    $title.find('span').click(function() {
+      $title.slideUp();
+      $content.slideDown();
+    });
+  });
+});

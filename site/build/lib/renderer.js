@@ -93,13 +93,14 @@ function createExtension(tag, renderFunction) {
 
   extension.parse = function(parser) {
     var tok = parser.nextToken();
+    var args = parser.parseSignature(null, true);
     parser.advanceAfterBlockEnd(tok.value);
 
     var nodeList = parser.parseUntilBlocks('end' + tag);
     parser.advanceAfterBlockEnd();
 
     var templateData = nodeList.children[0].children[0];
-    templateData.value = renderFunction(templateData.value);
+    templateData.value = renderFunction(templateData.value, args);
 
     return nodeList;
   };
@@ -138,10 +139,29 @@ function createSectionExtension(templateEnv) {
   });
 }
 
+/**
+ * Create the {% evaluator %} extension.
+ */
 function createEvaluatorExtension(templateEnv) {
   return createExtension('evaluator', function(text) {
     return escapeMarkdown(templateEnv.render('evaluator.html', {
       content: text
+    }));
+  });
+}
+
+/**
+ * Create the {% collapse %} extension.
+ */
+function createCollapseExtension(templateEnv) {
+  return createExtension('collapse', function(text, args) {
+    var title = "";
+    if (args.children && args.children.length) {
+      title = args.children[0].value;
+    }
+    return escapeMarkdown(templateEnv.render('collapse.html', {
+      content: text,
+      title: title
     }));
   });
 }
@@ -165,9 +185,9 @@ function createTemplateEnv(templatesDir) {
 
   templateEnv.addExtension('QNAExtension', createQNAExtension(templateEnv));
   templateEnv.addExtension('NoteExtension', createNoteExtension(templateEnv));
-  templateEnv.addExtension('SectionExtension',
-                           createSectionExtension(templateEnv));
+  templateEnv.addExtension('SectionExtension', createSectionExtension(templateEnv));
   templateEnv.addExtension('EvaluatorExtension', createEvaluatorExtension(templateEnv));
+  templateEnv.addExtension('CollapseExtension', createCollapseExtension(templateEnv));
 
   templateEnv.addFilter('linkType', linkType);
 
