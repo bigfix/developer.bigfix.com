@@ -51,8 +51,7 @@ function initEvaluator(ele) {
     theme: "bigfix",
     lineWrapping: true,
     matchBrackets: true,
-    viewportMargin: Infinity,
-    autofocus: true
+    viewportMargin: Infinity
   });
 
   var getRelevance = function() {
