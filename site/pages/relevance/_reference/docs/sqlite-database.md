@@ -22,7 +22,7 @@ If successful, SQLite compiles the SQL statement into byte code and is ready to 
 This property does not have a display format. "This expression evaluates to an unrepresentable object of type sqlite statement" will be shown instead.
 
 SQLite understands most of the standard SQL language. However it does omit some features as well as adding a few features of its own. 
-Fore more details, visit the [SQLite documentation](http://www.sqlite.org/lang.html) on this subject.
+For more details, visit the [SQLite documentation](http://www.sqlite.org/lang.html) on this subject.
 
 {% qna %}
 Q: rows of statement "select * from Artist where ArtistId = 147" of sqlite database of file "chinook.db"
