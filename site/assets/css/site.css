@@ -40,6 +40,11 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -636,6 +641,7 @@ h1.relevance-type-description {
 
 .ui-collapsible .content {
   display: none;
+  color: #0071E2;
 }
 
 .ui-collapsible .title span {

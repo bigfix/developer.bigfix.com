@@ -152,8 +152,8 @@ $(function() {
   }
   
   $('.ui-collapsible').each(function(i, e) {
-    $title = $(e).find('.title');
-    $content = $(e).find('.content');
+    var $title = $(e).find('.title');
+    var $content = $(e).find('.content');
     $title.find('span').click(function() {
       $title.slideUp();
       $content.slideDown();
