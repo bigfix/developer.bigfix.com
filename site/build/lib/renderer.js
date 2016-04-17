@@ -29,6 +29,8 @@ function parseQNA(text) {
       qna.answers.push(line.substr(2).trim());
     } else if (line.indexOf('E:') === 0) {
       qna.errors.push(line.substr(2).trim());
+    }else if (line.indexOf('T:') === 0) {
+      qna.type = line.substr(2).trim();
     }
   });
 

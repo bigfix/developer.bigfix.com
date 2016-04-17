@@ -3,5 +3,6 @@
     <li class="qna-q"><span class="qna-prefix">Q:</span> {{question | safe}}</li>
     {% for answer in answers %}<li class="qna-a"><span class="qna-prefix">A:</span> {{answer}}</li>{% endfor %}
     {% for error in errors %}  <li class="qna-e"><span class="qna-prefix">E:</span> {{error}}</li>{% endfor %}
+    {% if type %}  <li class="qna-t"><span class="qna-prefix">T:</span> {{type | linkType}}</li>{% endif %}
   </ul>
 </div>
