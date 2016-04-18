@@ -109,6 +109,8 @@ a:hover, a:active {
 
 .main {
   background-color: #f8f8f8;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .container-left {
