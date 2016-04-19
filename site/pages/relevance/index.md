@@ -23,6 +23,9 @@ Navigate this subtree to access the following resources and information:
   <dt>**[Guides](/relevance/guide/)**</dt>
   <dd>Where you find an overview of the relevance language and the user's guides that you can navigate.</dd>
 
+  <dt>**[Tutorials](/relevance/tutorial/)**</dt>
+  <dd>Which contains quick tutorials and hands-on practice on writing Relevance queries.</dd>
+  
   <dt>**[Reference](/relevance/reference/)**</dt>
   <dd>Which contains the information about all the available inspectors with their creation methods and properties (aka Inspectors Reference).</dd>
 

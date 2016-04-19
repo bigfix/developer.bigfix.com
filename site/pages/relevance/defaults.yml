@@ -5,6 +5,13 @@ nav:
   - name: Home
     href: /relevance/
 
+  - name: Tutorials
+    href: /relevance/tutorial/
+    children:
+
+      - name: Introduction to Relevance language
+        href: /relevance/tutorial/client/
+
   - name: Guides
     href: /relevance/guide/
     children:
