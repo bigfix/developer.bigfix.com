@@ -1,1 +1,14 @@
 layout: page
+rootNav:
+  - name: Get Started
+    folder: get-started
+  - name: Examples
+    folder: examples
+  - name: Relevance
+    folder: relevance
+  - name: Action Script
+    folder: action-script
+  - name: REST API
+    folder: rest-api
+  - name: Other APIs
+    folder: other

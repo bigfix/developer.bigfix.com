@@ -140,6 +140,10 @@ a:hover, a:active {
     width: 70%;
     padding: 2rem 5%;
   }
+
+  header.nav-header ul li:hover > ul {
+    display:block
+  }
 }
 
 .main:after {
@@ -222,6 +226,45 @@ header.nav-header a {
 
   color: #fff;
   text-decoration: none;
+}
+
+header.nav-header ul {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header.nav-header ul li {
+  float: left;
+  position: relative;
+}
+
+header.nav-header ul ul {
+	display:none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2E84DA;
+  padding: 0;
+  min-width: 150px;
+  z-index: 10000;
+}
+
+header.nav-header ul ul li {
+  float: none;
+  display: table-row;
+}
+
+header.nav-header ul ul li a {
+  height: 43px;
+  padding-top: 13px;
+  margin-top: 0;
+  line-height: 100%;
+  text-transform: none;
+  font-weight: normal;
+  opacity: .8;
+  white-space: nowrap;
 }
 
 .nav-header-logo {
