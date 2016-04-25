@@ -18,7 +18,14 @@ A: GenuineIntel
 A: GenuineIntel
 {% endqna %}
 
-You'll notice quickly that this will return a bunch of entries even on single processor systems. That is because each CPU core is referenced as its own processor. 
+You'll notice quickly that this will return a bunch of identical entries even on single processor systems. That is because each CPU core is referenced as its own processor. 
+
+You can collapse these identical results into a single one using the `unique values` inspector, like this:
+
+{% qna %}
+Q: unique values of vendor names of processors
+A: GenuineIntel
+{% endqna %}
 
 Continuing, we can reference the speed of the processors:
 
