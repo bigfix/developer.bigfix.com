@@ -8,7 +8,7 @@ implement variables. The script is run locally on relevant clients when the
 console operator clicks **Take action** in the Fixlet or task entry on the
 console.
 
-The information about the action script language is divide into the following areas:
+The information about the action script language is divided into the following areas:
 
 <dl>
   <dt>**Guides**</dt>
