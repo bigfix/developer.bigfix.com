@@ -73,6 +73,10 @@ function createMarkdownRenderer() {
       return wrapCodeBlock(hljs.highlight('sql', code).value);
     }
 
+    if (language === 'python') {
+      return wrapCodeBlock(hljs.highlight('python', code).value);
+    }
+
     return marked.Renderer.prototype.code.apply(this, arguments);
   };
 
