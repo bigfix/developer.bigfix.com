@@ -4,3 +4,10 @@ layout: page-with-nav
 nav:
   - name: Home
     href: /rest-api/
+
+  - name: Examples
+    href: /rest-api/examples/
+    children:
+
+      - name: Create Action
+        href: /rest-api/examples/create-action.html
