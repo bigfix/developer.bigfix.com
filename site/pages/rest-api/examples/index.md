@@ -6,6 +6,9 @@ Learn how to implement common use cases with the REST API.
 
 The examples have been implemented for the following tools. See section for usage information:
 - [cURL](#cURL)
+- [python](#python)
+
+In order for these tools to establish a secure connection to the server, you must install a [custom HTTPS certificate](http://www-01.ibm.com/support/docview.wss?uid=swg21505848). Alternatively, you can provide a *disable HTTPS connection* opton to the tool you are using. This is documented for every tool below.
 
 For the following examples to work successfully:
 * `username` must be your username.
@@ -15,6 +18,20 @@ For the following examples to work successfully:
 
 ## [cURL](http://curl.haxx.se) Usage
 ### Security
-In order for curl to secure the conecito to the server, you must install a [custom HTTPS certificate](http://www-01.ibm.com/support/docview.wss?uid=swg21505848) and use the `--cacert` option.
+Use the `--cacert` option to specify the custom HTTPS certificate. To disable SSL verification, use the `--insecure` option.
 
-Alternatively, you can use the `--insecure` option to disable HTTPS certificate verification.
+## [python](https://www.python.org/)
+Examples have been written using the python [Request Package](http://requests.readthedocs.io/en/master/) which can be installed with [pip](https://pip.pypa.io/) using the following command:
+```
+$ pip install requests
+```
+
+### Security
+Requests [verifies SSL certifiates](https://requests.readthedocs.io/en/latest/user/advanced/#ssl-cert-verification) for HTTPS requests. This is enabled by default, and it will throw a SSL error if it's unable to verify the certificate. You can pass `verify` the path to a CA certificate or a custom one. To ignore verifying SSL, set `verify` to False.
+
+```
+>>> requests.get('https://bigfix.server:52311/api/help', verify=False)
+<Response [200]>
+```
+
+
