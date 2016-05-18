@@ -17,16 +17,16 @@ For the following examples to work successfully:
 * `port` must be the port of your root server. By default this is **52311**.
 
 ## [cURL](http://curl.haxx.se) Usage
-### Security
+#### Security
 Use the `--cacert` option to specify the custom HTTPS certificate. To disable SSL verification, use the `--insecure` option.
 
-## [python](https://www.python.org/)
+## [python](https://www.python.org/) Usage
 Examples have been written using the python [Request Package](http://requests.readthedocs.io/en/master/) which can be installed with [pip](https://pip.pypa.io/) using the following command:
 ```
 $ pip install requests
 ```
 
-### Security
+#### Security
 Requests [verifies SSL certifiates](https://requests.readthedocs.io/en/latest/user/advanced/#ssl-cert-verification) for HTTPS requests. This is enabled by default, and it will throw a SSL error if it's unable to verify the certificate. You can pass `verify` the path to a CA certificate or a custom one. To ignore verifying SSL, set `verify` to False.
 
 ```
