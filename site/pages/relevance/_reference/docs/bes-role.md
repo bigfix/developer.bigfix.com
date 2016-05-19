@@ -4,7 +4,7 @@ No documentation exists.
 
 # can submit queries flag of &lt;bes role&gt; : boolean
 
-No documentation exists.
+Returns `True` if the role has been granted the privilege to use BigFix Query.
 
 # master flag of &lt;bes role&gt; : boolean
 

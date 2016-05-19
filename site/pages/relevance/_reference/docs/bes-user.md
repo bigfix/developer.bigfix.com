@@ -36,7 +36,7 @@ Returns `True` if the user has been granted the privilege to send refreshes to c
 
 # can submit queries flag of &lt;bes user&gt; : boolean
 
-No documentation exists.
+Returns `True` if the user has been granted the privilege to use BigFix Query.
 
 # creation time of &lt;bes user&gt; : time
 
