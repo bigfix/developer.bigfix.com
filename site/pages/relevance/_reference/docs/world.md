@@ -842,6 +842,10 @@ Returns the developer folder of the system domain
 
 Returns the developer help folder of the system domain
 
+# device type : string
+
+No documentation exists.
+
 # dialup group : security account
 
 This refers to a group implicitly including all users who logged in to the system through a dial-up connection. Membership is controlled by the operating system.
@@ -2035,7 +2039,7 @@ The BES Server or BES Relay to which the agent reports. Returned as the "selecte
 
 # selinux boolean : SELinux Boolean
 
-Returns all SELinux Booleans. 
+Returns all SELinux Booleans.
 
 # september : month
 

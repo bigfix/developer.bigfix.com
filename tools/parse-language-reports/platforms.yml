@@ -63,6 +63,7 @@ SUSE:
   - x86_64_sled11
   - x86_64_sles9
   - x86_64_sle10
+  - ppc64le_sle12
 
 Ubuntu:
   - amd64_ubu10

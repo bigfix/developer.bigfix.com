@@ -34,6 +34,10 @@ Returns `True` if the user has been granted the privilege to lock computers.
 
 Returns `True` if the user has been granted the privilege to send refreshes to computers.
 
+# can submit queries flag of &lt;bes user&gt; : boolean
+
+No documentation exists.
+
 # creation time of &lt;bes user&gt; : time
 
 Returns the time when the specified user was created.

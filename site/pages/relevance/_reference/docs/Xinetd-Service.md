@@ -1,6 +1,6 @@
 # type: Xinetd Service
 
-&lt;Xinetd Service&gt; objects represent Unix xinetd (extended Internet daemon) services. 
+&lt;Xinetd Service&gt; objects represent Unix xinetd (extended Internet daemon) services.
 
 # disabled of &lt;Xinetd Service&gt; : boolean
 

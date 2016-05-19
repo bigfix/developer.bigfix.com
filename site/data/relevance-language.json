@@ -3999,7 +3999,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "fileset": {
       "name": "fileset",
@@ -68560,7 +68561,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "model of <processor> : string": {
       "key": "model of <processor> : string",
@@ -68602,7 +68604,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "<product> as string : string": {
       "key": "<product> as string : string",
@@ -68628,7 +68631,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "revision of <product> : string": {
       "key": "revision of <product> : string",
@@ -68641,7 +68645,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "tag of <product> : string": {
       "key": "tag of <product> : string",
@@ -68654,7 +68659,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "title of <product> : string": {
       "key": "title of <product> : string",
@@ -68667,7 +68673,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "vendor of <product> : string": {
       "key": "vendor of <product> : string",
@@ -68680,7 +68687,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "bundle <string> of <software_depot> : bundle": {
       "key": "bundle <string> of <software_depot> : bundle",
@@ -68694,7 +68702,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "bundle of <software_depot> : bundle": {
       "key": "bundle of <software_depot> : bundle",
@@ -68707,7 +68716,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "product <string> of <software_depot> : product": {
       "key": "product <string> of <software_depot> : product",
@@ -68721,7 +68731,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "product of <software_depot> : product": {
       "key": "product of <software_depot> : product",
@@ -68734,7 +68745,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "model : string": {
       "key": "model : string",
@@ -68746,7 +68758,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "software depot : software_depot": {
       "key": "software depot : software_depot",
@@ -68758,7 +68771,8 @@
         "8.0.584.0": [
           "HP-UX"
         ]
-      }
+      },
+      "deprecated": "9.5.0.311"
     },
     "<fileset> as string : string": {
       "key": "<fileset> as string : string",
@@ -102834,6 +102848,44 @@
       "directObjectType": "operating system",
       "availability": {
         "9.5.0.311": [
+          "Windows"
+        ]
+      }
+    },
+    "can submit queries flag of <bes role> : boolean": {
+      "key": "can submit queries flag of <bes role> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "can submit queries flag",
+      "pluralPhrase": "can submit queries flags",
+      "directObjectType": "bes role",
+      "availability": {
+        "9.5.2.56": [
+          "Session"
+        ]
+      }
+    },
+    "can submit queries flag of <bes user> : boolean": {
+      "key": "can submit queries flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "can submit queries flag",
+      "pluralPhrase": "can submit queries flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "9.5.2.56": [
+          "Session"
+        ]
+      }
+    },
+    "device type : string": {
+      "key": "device type : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "device type",
+      "pluralPhrase": "device types",
+      "availability": {
+        "9.5.2.56": [
           "Windows"
         ]
       }

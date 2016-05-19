@@ -2,6 +2,10 @@
 
 No documentation exists.
 
+# can submit queries flag of &lt;bes role&gt; : boolean
+
+No documentation exists.
+
 # master flag of &lt;bes role&gt; : boolean
 
 No documentation exists.
