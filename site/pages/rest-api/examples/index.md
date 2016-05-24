@@ -8,7 +8,7 @@ The examples have been implemented for the following tools. See section for usag
 - [cURL](#cURL)
 - [python](#python)
 
-In order for these tools to establish a secure connection to the server, you must install a [custom HTTPS certificate](http://www-01.ibm.com/support/docview.wss?uid=swg21505848). Alternatively, you can provide a *disable HTTPS connection* opton to the tool you are using. This is documented for every tool below.
+In order for these tools to establish a secure connection to the server, you must install a [custom HTTPS certificate](http://www-01.ibm.com/support/docview.wss?uid=swg21505848). Alternatively, you can provide a *disable HTTPS connection* option to the tool you are using. This is documented for every tool below.
 
 For the following examples to work successfully:
 * `username` must be your username.
