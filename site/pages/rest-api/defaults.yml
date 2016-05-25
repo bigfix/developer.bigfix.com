@@ -18,11 +18,11 @@ nav:
       - name: Update Fixlet
         href: /rest-api/examples/update-fixlet.html
 
-      - name: List Analyses
-        href: /rest-api/examples/list-analyses.html
-
       - name: Create Analysis
         href: /rest-api/examples/create-analysis.html
+
+      - name: Get Analyses
+        href: /rest-api/examples/get-analyses.html
 
       - name: Update Analysis
         href: /rest-api/examples/update-analysis.html

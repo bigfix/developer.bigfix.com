@@ -1,8 +1,8 @@
 ---
-title: List Analyses
+title: Get Analyses
 ---
 
-List a site's available analyses.
+Get a site's available analyses.
 
 # cURL
 

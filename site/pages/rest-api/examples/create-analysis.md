@@ -2,7 +2,7 @@
 title: Create Analysis
 ---
 
-Create a new Analysis for a site.
+Create a new analysis for a site.
 
 # cURL
 
@@ -14,8 +14,8 @@ curl -X POST --data-binary @analysis.xml --user {username}:{password} https://{s
 
 ```python
 import requests
-with open('analysis.xml', 'rb') as f:
-  r = requests.post('https://{server}:{port}/api/analyses/{site}', auth=('{username}', '{password}'), data=f)
+with open('analysis.xml', 'rb') as xml:
+  r = requests.post('https://{server}:{port}/api/analyses/{site}', auth=('{username}', '{password}'), data=xml)
   print(r.text)
 ```
 

@@ -2,7 +2,7 @@
 title: Update Analysis
 ---
 
-Update a previously created Analysis.
+Update a previously created analysis.
 
 # cURL
 
@@ -14,8 +14,8 @@ curl -X PUT --data-binary @analysis.xml --user {username}:{password} https://{se
 
 ```python
 import requests
-with open('analysis.xml', 'rb') as f:
-  r = requests.put('https://{server}:{port}/api/analysis/{site}/{analysis id}', auth=('{username}', '{password}'), data=f)
+with open('analysis.xml', 'rb') as xml:
+  r = requests.put('https://{server}:{port}/api/analysis/{site}/{analysis id}', auth=('{username}', '{password}'), data=xml)
   print(r.text)
 ```
 
