@@ -4,8 +4,6 @@ title: Create Role
 
 This command will POST the file `role.xml` to the server to create a new role.
 
-[Sample Role XML File](./role.xml)
-
 # python
 ```python
 import requests
