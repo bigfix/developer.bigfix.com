@@ -12,17 +12,26 @@ nav:
       - name: Create Action
         href: /rest-api/examples/create-action.html
 
+      - name: Create Analysis
+        href: /rest-api/examples/create-analysis.html
+
       - name: Create Role
         href: /rest-api/examples/create-role.html
 
       - name: Create Site
         href: /rest-api/examples/create-site.html
 
+      - name: Get Analyses
+        href: /rest-api/examples/get-analyses.html
+
       - name: Get Sites
         href: /rest-api/examples/get-sites.html
 
       - name: Update Fixlet
         href: /rest-api/examples/update-fixlet.html
+
+      - name: Update Analysis
+        href: /rest-api/examples/update-analysis.html
 
       - name: Update Site
         href: /rest-api/examples/update-site.html
