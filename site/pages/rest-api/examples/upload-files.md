@@ -15,8 +15,8 @@ curl -X POST -F file=@file.xml --user {username}:{password} https://{server}:{po
 # python
 ```python
 import requests
-with open('file.xml', 'rb') as f:
-    r = requests.post('https://{server}:{port}/api/upload', auth=('{username}', '{password}'), file=f)
+with open('file.xml', 'rb') as xml:
+    r = requests.post('https://{server}:{port}/api/upload', auth=('{username}', '{password}'), file=xml)
     print(r.text)
 ```
 

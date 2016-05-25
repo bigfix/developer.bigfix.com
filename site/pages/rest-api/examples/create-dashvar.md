@@ -15,9 +15,8 @@ curl -X POST --data-binary @dashvar.xml --user {username}:{password} https://{se
 # python
 ```python
 import requests
-with open('site.xml') as xml:
-    xmldata = ''.join(xml.readlines())
-    r = requests.post('https://{server}:{port}/api/dashboardvariables/{dashboard ID}', auth=('{username}', '{password}'), data=xmldata)
+with open('site.xml', 'rb') as xml:
+    r = requests.post('https://{server}:{port}/api/dashboardvariables/{dashboard ID}', auth=('{username}', '{password}'), data=xml)
     print(r.text)
 ```
 
