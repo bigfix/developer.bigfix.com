@@ -21,5 +21,8 @@ nav:
       - name: Get Sites
         href: /rest-api/examples/get-sites.html
 
+      - name: Update Fixlet
+        href: /rest-api/examples/update-fixlet.html
+
       - name: Update Site
         href: /rest-api/examples/update-site.html

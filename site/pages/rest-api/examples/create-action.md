@@ -4,8 +4,6 @@ title: Create Action
 
 This command will POST the file `action.xml` to the server to create and execute the new action contained in `action.xml`.
 
-[Sample Action XML File](./action.xml)
-
 # cURL
 ```
 curl -X POST --data-binary @action.xml --user username:password https://server:port/api/actions
@@ -15,7 +13,7 @@ curl -X POST --data-binary @action.xml --user username:password https://server:p
 ```python
 import requests
 with open('action.xml') as xml:
-	r = requests.post('https://server:port/api/actions', auth=('user', 'password'), data=xml)
+	r = requests.post('https://{server}:{port}/api/actions', auth=('{username}', '{password}'), data=xml)
 	print(r.text)
 ```
 
