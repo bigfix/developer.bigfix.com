@@ -14,3 +14,6 @@ nav:
 
       - name: Create Role
         href: /rest-api/examples/create-role.html
+
+      - name: Update Role
+        href: /rest-api/examples/update-role.html
