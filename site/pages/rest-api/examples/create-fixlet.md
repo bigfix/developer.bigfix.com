@@ -11,10 +11,15 @@ This command will genereate a POST request to create a fixlet specified by `new.
 
 Fixlet's XML schema can be found [here](https://www.ibm.com/support/knowledgecenter/?lang=en#!/SS6MCG_9.5.0/com.ibm.bigfix.doc/Platform/API_Reference/c_fixlet_or_task.html).
 
+# cURL
+```
+curl -X POST --data-binary @new.xml --user {username}:{password} https://{server}:{port}/api/fixlets/{site type}/{site name}
+```
+
 # python
 ```python
 import requests
-with open('new.xml') as xml:
+with open('new.xml', 'rb') as xml:
 	r = requests.post('https://{server}:{port}/api/fixlets/{site type}/{site name}', auth=('{username}', '{password}'), data=xml)
 print(r.text)
 ```
@@ -31,9 +36,6 @@ print(r.text)
 		<Source>Internal</Source>
 		<SourceID></SourceID>
 		<SourceReleaseDate>2016-05-21</SourceReleaseDate>
-		<SourceSeverity></SourceSeverity>
-	    <Action>folder create "C:\Programs Files\Test"</Action>
-		<Domain>BESC</Domain>
 	</Fixlet>
 </BES>
 ```
