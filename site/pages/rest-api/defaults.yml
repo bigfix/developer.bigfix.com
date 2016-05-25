@@ -18,5 +18,8 @@ nav:
       - name: Create Site
         href: /rest-api/examples/create-site.html
 
+      - name: Get Sites
+        href: /rest-api/examples/get-sites.html
+
       - name: Update Site
         href: /rest-api/examples/update-site.html

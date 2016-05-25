@@ -2,23 +2,9 @@
 title: Update Site
 ---
 
-Updates an existing site on the server with the contents of `site.xml`.
+Updates an existing site on the server with the contents of `site.xml`. 
 
-You can get the list of sites with the following commands:
-
-# cURL
-```
-curl -X GET --user {username}:{password} https://{server}:{port}/api/sites
-```
-
-# python
-```python
-import requests
-r = requests.get('https://{server}:{port}/api/sites)
-print(r.text)
-```
-
-Then, run update on the desired site:
+[Get](./get-sites.html) the list of sites, then run update on the desired site:
 
 * `site type` is type of the site (Master Action, External, Custom, Operator)
 * `site name` is the name of the site to be updated
