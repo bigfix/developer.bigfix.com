@@ -14,3 +14,7 @@ nav:
 
       - name: Create Role
         href: /rest-api/examples/create-role.html
+      
+      - name: Update Fixlet
+        href: /rest-api/examples/update-fixlet.html
+
