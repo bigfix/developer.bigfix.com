@@ -13,7 +13,7 @@ curl -X POST --data-binary @action.xml --user username:password https://server:p
 ```python
 import requests
 with open('action.xml') as xml:
-	r = requests.post('https://server:port/api/actions', auth=('user', 'password'), data=xml)
+	r = requests.post('https://{server}:{port}/api/actions', auth=('{username}', '{password}'), data=xml)
 	print(r.text)
 ```
 
