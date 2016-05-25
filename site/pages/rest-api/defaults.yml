@@ -27,8 +27,8 @@ nav:
       - name: Update Site
         href: /rest-api/examples/update-site.html
 
-      - name: Get Computers
-        href: /rest-api/examples/get-computers.html
-
       - name: Get Computer
         href: /rest-api/examples/get-computer.html
+
+      - name: Get Computers
+        href: /rest-api/examples/get-computers.html
