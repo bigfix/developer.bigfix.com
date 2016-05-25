@@ -9,6 +9,7 @@ This command will genereate a POST request to create a fixlet specified by `new.
 
 `site type` and `site name` can be inpsected via GET `/api/sites`
 
+Fixlet's XML schema can be found [here](https://www.ibm.com/support/knowledgecenter/?lang=en#!/SS6MCG_9.5.0/com.ibm.bigfix.doc/Platform/API_Reference/c_fixlet_or_task.html).
 
 # python
 ```python
@@ -23,15 +24,15 @@ print(r.text)
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
-		<Title>New Fixlet</Title>
-		<Relevance>exists folder "C:\Programs Files"</Relevance>
+	    <Title>New Fixlet</Title>
+	    <Description> This is the example new fixlet to be created </Description>
+	    <Relevance>exists folder "C:\Programs Files"</Relevance>
 		<Category></Category>
 		<Source>Internal</Source>
 		<SourceID></SourceID>
 		<SourceReleaseDate>2016-05-21</SourceReleaseDate>
 		<SourceSeverity></SourceSeverity>
-		<CVENames></CVENames>
-		<SANSID></SANSID>
+	    <Action>folder create "C:\Programs Files\Test"</Action>
 		<Domain>BESC</Domain>
 	</Fixlet>
 </BES>
