@@ -14,6 +14,9 @@ nav:
 
       - name: Create Analysis
         href: /rest-api/examples/create-analysis.html
+        
+      - name: Create Dashboard Variable
+        href: /rest-api/examples/create-dashvar.html
 
       - name: Create Role
         href: /rest-api/examples/create-role.html
@@ -44,3 +47,6 @@ nav:
 
       - name: Update Site
         href: /rest-api/examples/update-site.html
+
+      - name: Upload Files
+        href: /rest-api/examples/upload-files.html
