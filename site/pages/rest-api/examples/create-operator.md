@@ -12,7 +12,7 @@ curl -X POST --data-binary @operator.xml --user {username}:{password} https://{s
 # python
 ```python
 import requests
-with open('site.xml', 'rb') as xml:
+with open('operator.xml', 'rb') as xml:
     r = requests.post('https://{server}:{port}/api/operators', auth=('{username}', '{password}'), data=xml)
     print(r.text)
 ```
