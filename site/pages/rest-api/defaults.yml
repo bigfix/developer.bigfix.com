@@ -18,6 +18,9 @@ nav:
       - name: Create Dashboard Variable
         href: /rest-api/examples/create-dashvar.html
 
+      - name: Create Operator
+        href: /rest-api/examples/create-operator.html
+
       - name: Create Role
         href: /rest-api/examples/create-role.html
 

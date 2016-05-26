@@ -4,7 +4,7 @@ title: Update Site
 
 Updates an existing site on the server with the contents of `site.xml`. 
 
-[Get](./get-sites.html) the list of sites, then run update on the desired site:
+[Get](./get-site.html) the list of sites, then run update on the desired site:
 
 * `site type` is type of the site (Master Action, External, Custom, Operator)
 * `site name` is the name of the site to be updated
@@ -17,9 +17,8 @@ curl -X PUT --data-binary @site.xml --user {username}:{password} https://{server
 # python
 ```python
 import requests
-with open('site.xml') as xml:
-    xmldata = ''.join(xml.readlines())
-    r = requests.put('https://{server}:{port}/api/site/{site type}/{site name}', auth=('{username}', '{password}'), data=xmldata)
+with open('site.xml', 'rb') as xml:
+    r = requests.put('https://{server}:{port}/api/site/{site type}/{site name}', auth=('{username}', '{password}'), data=xml)
     print(r.text)
 ```
 
