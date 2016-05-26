@@ -24,6 +24,15 @@ nav:
       - name: Get Analyses
         href: /rest-api/examples/get-analyses.html
 
+      - name: Create Fixlet
+        href: /rest-api/examples/create-fixlet.html
+
+      - name: Get Computer
+        href: /rest-api/examples/get-computer.html
+
+      - name: Get Computers
+        href: /rest-api/examples/get-computers.html
+
       - name: Get Sites
         href: /rest-api/examples/get-sites.html
 
@@ -35,9 +44,3 @@ nav:
 
       - name: Update Site
         href: /rest-api/examples/update-site.html
-
-      - name: Get Computer
-        href: /rest-api/examples/get-computer.html
-
-      - name: Get Computers
-        href: /rest-api/examples/get-computers.html
