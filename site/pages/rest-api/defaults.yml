@@ -18,6 +18,9 @@ nav:
       - name: Create Dashboard Variable
         href: /rest-api/examples/create-dashvar.html
 
+      - name: Create Fixlet
+        href: /rest-api/examples/create-fixlet.html
+
       - name: Create Operator
         href: /rest-api/examples/create-operator.html
 
@@ -30,9 +33,6 @@ nav:
       - name: Get Analyses
         href: /rest-api/examples/get-analyses.html
 
-      - name: Create Fixlet
-        href: /rest-api/examples/create-fixlet.html
-
       - name: Get Computer
         href: /rest-api/examples/get-computer.html
 
@@ -42,11 +42,11 @@ nav:
       - name: Get Sites
         href: /rest-api/examples/get-sites.html
 
-      - name: Update Fixlet
-        href: /rest-api/examples/update-fixlet.html
-
       - name: Update Analysis
         href: /rest-api/examples/update-analysis.html
+
+      - name: Update Fixlet
+        href: /rest-api/examples/update-fixlet.html
 
       - name: Update Site
         href: /rest-api/examples/update-site.html
