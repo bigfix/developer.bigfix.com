@@ -4,8 +4,8 @@ title: Create Fixlet
 
 This command will genereate a POST request to create a fixlet specified by `new.xml` in the site `site type/site name`. 
 
-* `site name` is the the name of the site under which the fixlet will be created
-* `site type` is the type of the site
+* `site name` is the the name of the site under which the fixlet will be created.
+* `site type` is the type of the site.
 
 `site type` and `site name` can be inpsected via GET `/api/sites`
 

@@ -12,7 +12,7 @@ curl -X POST --data-binary @site.xml --user {username}:{password} https://{serve
 # python
 ```python
 import requests
-with open('site.xml') as xml:
+with open('site.xml', 'rb') as xml:
     xmldata = ''.join(xml.readlines())
     r = requests.post('https://{server}:{port}/api/sites', auth=('{username}', '{password}'), data=xmldata)
     print(r.text)

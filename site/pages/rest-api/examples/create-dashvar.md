@@ -4,8 +4,8 @@ title: Create Dashboard Variable
 
 Creates a new dashboard variable with the contents of `dashvar.xml`. Adds the variable to the specified dashboard ID if the ID already exists, otherwise creates a dashboard ID with the specified dashboard variable.
 
-* `dashboard ID` is the ID of the dashboard to which this variable belongs
-* `variable name` is the name of the variable to be created
+* `dashboard ID` is the ID of the dashboard to which this variable belongs.
+* `variable name` is the name of the variable to be created.
 
 # cURL
 ```

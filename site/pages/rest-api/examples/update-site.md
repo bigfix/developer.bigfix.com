@@ -4,7 +4,7 @@ title: Update Site
 
 Updates an existing site on the server with the contents of `site.xml`. 
 
-[Get](./get-site.html) the list of sites, then run update on the desired site:
+A list of sites to be updated can be inspected by via [GET `/api/sites`](./get-sites.html). 
 
 * `site type` is type of the site (Master Action, External, Custom, Operator)
 * `site name` is the name of the site to be updated
