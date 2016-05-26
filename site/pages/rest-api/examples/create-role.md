@@ -4,13 +4,11 @@ title: Create Role
 
 This command will POST the file `role.xml` to the server to create a new role.
 
-[Sample Role XML File](./role.xml)
-
 # python
 ```python
 import requests
 with open('role.xml') as xml:
-	r = requests.post('https://server:port/api/roles', auth=('user', 'password'), data=xml)
+	r = requests.post('https://server:port/api/roles', auth=('username', 'password'), data=xml)
 	print(r.text)
 ```
 
