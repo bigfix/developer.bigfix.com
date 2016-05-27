@@ -48,6 +48,9 @@ nav:
       - name: Update Fixlet
         href: /rest-api/examples/update-fixlet.html
 
+      - name: Update Role
+        href: /rest-api/examples/update-role.html
+
       - name: Update Site
         href: /rest-api/examples/update-site.html
 
