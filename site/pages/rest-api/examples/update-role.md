@@ -5,11 +5,10 @@ title: Update Role
 This command will POST the file `role.xml` (can be a partial XML) to the server to update an existing role.
 
 # python
-Must specify the id of the role you are trying to update
 ```python
 import requests
-with open('role.xml') as xml:
-	r = requests.put('https://server:port/api/role/id', auth=('username', 'password'), data=xml)
+with open('role.xml', 'rb') as xml:
+	r = requests.put('https://{server}:{port}/api/role/{role id}', auth=('{username}', '{password}'), data=xml)
 	print(r.text)
 ```
 

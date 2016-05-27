@@ -2,7 +2,8 @@
 title: Update Operator
 ---
 
-Updates an existing operator with the contents of `operator.xml` (can be a partial XML). This operation requires master operator privileges.
+Updates an existing operator with the contents of `operator.xml`. This operation requires master operator privileges.
+'operator.xml' can be a partial XML.
 
 # python
 ```python
@@ -12,6 +13,7 @@ with open('operator.xml', 'rb') as xml:
     print(r.text)
 ```
 (If replacing the entire operator with a complete XML file, can use POST instead of PUT)
+
 # Input
 ## operator.xml
 ```xml
