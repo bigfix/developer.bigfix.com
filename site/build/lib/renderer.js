@@ -77,6 +77,10 @@ function createMarkdownRenderer() {
       return wrapCodeBlock(hljs.highlight('python', code).value);
     }
 
+    if (language === 'xml') {
+      return wrapCodeBlock(hljs.highlight('xml', code).value);
+    }
+
     return marked.Renderer.prototype.code.apply(this, arguments);
   };
 

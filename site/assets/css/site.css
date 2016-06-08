@@ -188,13 +188,6 @@ input[type="button"]:focus {
   border-color: #888;
   outline: 0; }
 
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-}
-
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -390,6 +383,18 @@ h1.relevance-type-description {
 }
 
 .hljs-number {
+  color: #734098;
+}
+
+.hljs-tag {
+  color: #4178BE;
+}
+
+.hljs-title {
+  color: #008571;
+}
+
+.hljs-value {
   color: #734098;
 }
 
