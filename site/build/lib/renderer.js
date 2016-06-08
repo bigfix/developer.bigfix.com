@@ -177,6 +177,28 @@ function createCollapseExtension(templateEnv) {
 }
 
 /**
+ * Create the {% collapse %} extension.
+ */
+function createRestApiExtension(templateEnv) {
+  return createExtension('restapi', function(text, args) {
+    var url = "";
+    if (args.children && (args.children.length == 3)) {
+      url = args.children[0].value;
+      method = args.children[1].value;
+      title = args.children[2].value;
+    } else {
+      throw new Error("Invalid number of arguments for restapi template. Excepting 3 arguments.")
+    }
+    return escapeMarkdown(templateEnv.render('restapi.html', {
+      content: marked(text),
+      url: url,
+      method: method,
+      title: title
+    }));
+  });
+}
+
+/**
  * The linkType filter: {{ 'foo' | linkType }}
  */
 function linkType(typeName) {
@@ -198,6 +220,7 @@ function createTemplateEnv(templatesDir) {
   templateEnv.addExtension('SectionExtension', createSectionExtension(templateEnv));
   templateEnv.addExtension('EvaluatorExtension', createEvaluatorExtension(templateEnv));
   templateEnv.addExtension('CollapseExtension', createCollapseExtension(templateEnv));
+  templateEnv.addExtension('RESTAPIExtension', createRestApiExtension(templateEnv));
 
   templateEnv.addFilter('linkType', linkType);
 

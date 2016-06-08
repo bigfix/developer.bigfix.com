@@ -159,4 +159,16 @@ $(function() {
       $content.slideDown();
     });
   });
+  
+  $('.restapi-resource').each(function(i, e) {
+    var $header = $(e).find('.header');
+    var $content = $(e).find('.content');
+    $header.click(function() {
+      if ($content.is(':visible')) {
+        $content.slideUp();
+      } else {
+        $content.slideDown();
+      }
+    });
+  });
 });

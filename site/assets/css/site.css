@@ -698,3 +698,96 @@ h1.relevance-type-description {
   color: rgb(65, 120, 190);
   cursor: pointer;
 }
+
+.restapi-resource {
+  margin-bottom: 10px;
+  background: #E7F0F7;
+}
+
+.restapi-resource .header {
+  border: 1px solid #C3D9EC;
+  cursor: pointer;
+}
+
+.restapi-resource .header .method {
+  float: left;
+  background: #0F6AB4;
+  width: 50px;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.restapi-resource .header .url {
+  float: left;
+  padding-left: 10px;
+}
+
+.restapi-resource .header .title {
+  float: right;
+  padding-right: 10px;
+  color: #666;
+}
+
+.restapi-resource .content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #C3D9EC;
+  border-top: none;
+}
+
+.restapi-resource .content p {
+  margin: 0;
+}
+
+.restapi-resource.POST {
+  background: #E7F6EC;
+}
+
+.restapi-resource.POST .header {
+  border: 1px solid #C3E8D1;
+}
+
+.restapi-resource.POST .header .method {
+  background: #10AF4A;
+}
+
+.restapi-resource.POST .content {
+  border: 1px solid #C3E8D1;
+  border-top: none;
+}
+
+.restapi-resource.PUT {
+  background: #F9F2E9;
+}
+
+.restapi-resource.PUT .header {
+  border: 1px solid #F0E0CA;
+}
+
+.restapi-resource.PUT .header .method {
+  background: #C5862B;
+}
+
+.restapi-resource.PUT .content {
+  border: 1px solid #F0E0CA;
+  border-top: none;
+}
+
+.restapi-resource.DELETE {
+  background: #F5E8E8;
+}
+
+.restapi-resource.DELETE .header {
+  border: 1px solid #E8C6C7;
+}
+
+.restapi-resource.DELETE .header .method {
+  background: #A41E22;
+}
+
+.restapi-resource.DELETE .content {
+  border: 1px solid #E8C6C7;
+  border-top: none;
+}
