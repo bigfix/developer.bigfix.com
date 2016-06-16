@@ -844,11 +844,11 @@ Returns the developer help folder of the system domain
 
 # device type : string
 
-No documentation exists.
+Returns the type of the device (desktop, laptop or server, in case of VMWare virtual systems). The evaluation is determined by the hardware installed, not by the operating system definitions. The result is returned by the WMI, if it is active on the device, otherwise it is determined by the type of battery installed on the device. 
 
 # dialup group : security account
 
-This refers to a group implicitly including all users who logged in to the system through a dial-up connection. Membership is controlled by the operating system.
+Refers to a group implicitly including all users who logged in to the system through a dial-up connection. Membership is controlled by the operating system.
 
 # disabled control panel : enableable_file
 
