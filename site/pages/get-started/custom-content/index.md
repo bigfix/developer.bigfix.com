@@ -12,10 +12,15 @@ The languages highlighted in the graphic operate real time on the client machine
 and their scope is to inspect  data, for the client relevance language, and to
 run commands, for the action script language.
 
-Click [Relevance Language](/relevance/) and [Action Script Language](/action-
-script/) to access the guides, the  references and tools, such as the Fixlet
-Debugger and the interactive sandbox that you can use to develop and test your
-custom solution.
+Click [Relevance](/relevance/) and [Action Script](/action-script/) to access 
+the languages guides, the  references and the tools, such as the Fixlet
+Debugger and the interactive sandbox, the [Online Evaluator] (/evaluate/), that 
+you can use to develop and test your custom solution.
 
-Select [Use Case Scenarios](/use-cases/) in the main toolbar and then the name
+If you own an IBM BigFix Lifecycle or an IBM BigFix Compliance version 9.5 Patch 2 
+or later license, you can exercise your Client Relevance Language queries on the 
+target clients also directly from the IBM WebUI using the IBM BigFix Query 
+Application. For more information, click [IBM BigFix Query](https://www.ibm.com/support/knowledgecenter/SSTK87_9.5.0/com.ibm.bigfix.webui.doc/WebUI/Users_Guide/c_bigfix_query.html). 
+
+Select [Examples](/examples/) in the main toolbar and then the name
 of the scenario listed in the graphic to  see the steps to run to implement it.
