@@ -1,5 +1,5 @@
 ---
-title: Fixlet: how to customize it  
+title: Customizing Fixlets  
 ---
 
 A Fixlet is a document that contains instructions that the BigFix agents use on
