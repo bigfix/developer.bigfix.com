@@ -1,5 +1,5 @@
 ---
-title: Get started
+title: Getting started
 ---
 
 IBM BigFix is a system-management suite of products that allows you to manage
