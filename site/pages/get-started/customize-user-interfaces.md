@@ -1,17 +1,22 @@
 ---
-title: Customize User Interfaces
+title: Customizing user interfaces
 ---
 
 The following graphic shows sample customizations that you can do to implement
-your custom user interface, the language and API involved.
+your custom user interface, and the language and APIs involved.
 
 ![Customize Interfaces](/static/img/customize-interfaces.png)
 
-The language highlighted in the graphic, the Session Relevance Language, operates on data previously collected on the
-clients and currently stored in the BigFix database.
+The language highlighted in the graphic, the Session Relevance Language, extracts 
+data previously collected on the clients and currently stored in the BigFix database.
+The APIs use and manipulate the data extracted by the Session Relevance queries.
 
-Click [Session Relevance Language](/relevance/session/) to access the language guide and reference.
-Click [Presentation Debugger](https://www-01.ibm.com/support/knowledgecenter/SS63NW_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/Relevance/c_using_the_presentation_debugge.html) to access a tool useful to develop and test your custom solution.
+Click [Relevance](/relevance/) to access the information about the relevance 
+language and navigate the content about Session Relevance Language and Core 
+Inspectors.
+
+Click [Presentation Debugger](/relevance/tools/presentation_debugger.html) to access 
+a tool useful to develop and test your session relevance queries.
 
 Click [Other APIs](/other/) to access the documentation about the dashboard API and the Web Reports API.
 
