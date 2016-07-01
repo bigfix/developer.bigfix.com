@@ -1,5 +1,5 @@
 ---
-title: Analysis Structure
+title: Customizing analyses 
 ---
 
 An analysis is a collection of property expressions that allows an operator to
@@ -8,9 +8,12 @@ across a network.
 
 This graphic shows the parts of the analysis that you can customize.
 
-For each part in the analysis structure, you see:
-
-* On the right, an explanation of its role within the logic of the analysis.
-* On the left, the language to use to create or modify that part. You can access the available information about that specific language by clicking the box or selecting the corresponding entry in the main toolbar.
-
 ![Structure of an Analysis](/static/img/analysis-structure.png)
+
+Click [Relevance](/relevance/) to access the information about the relevance 
+language and navigate the content about Client Relevance Language and Core 
+Inspectors.
+
+**Note:** You can either create your analysis from scratch or make a copy of 
+an existing analysis document and modify the copy. Do not edit analysis documents 
+gathered from external sites to avoid misalignements.
