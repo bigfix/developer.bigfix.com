@@ -1,5 +1,5 @@
 ---
-title: Fixlet Structure
+title: Customizing Fixlets  
 ---
 
 A Fixlet is a document that contains instructions that the BigFix agents use on
@@ -9,9 +9,17 @@ actions to resolve the issue.
 
 This graphic shows the parts of the Fixlet that you can customize.
 
-For each part in the Fixlet structure, you see:
-
-* On the right, an explanation of its role within the logic of the Fixlet.
-* On the left, the language to use to create or modify that part. You can access the available information about that specific language by clicking the box or selecting the corresponding entry in the main toolbar.
 
 ![Structure of a Fixlet](/static/img/fixlet-structure.png)
+
+
+Click [Relevance](/relevance/) to access the information about the relevance 
+language and navigate the content about Client Relevance Language and Core 
+Inspectors.
+
+Click [Action Script](/action-script/) to access the information about the
+Action Script Language.
+
+**Note:** You can either create your Fixlet from scratch or make a copy of 
+an existing Fixlet document and modify the copy. Do not edit Fixlet documents 
+gathered from external sites to avoid misalignements.
