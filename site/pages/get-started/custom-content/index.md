@@ -1,5 +1,5 @@
 ---
-title: Manage Custom Content
+title: Managing custom content
 ---
 
 The following graphic shows sample customizations that you can do to interact
