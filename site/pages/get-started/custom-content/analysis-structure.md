@@ -15,5 +15,4 @@ language and navigate the content about Client Relevance Language and Core
 Inspectors.
 
 **Note:** You can either create your analysis from scratch or make a copy of 
-an existing analysis document and modify the copy. Do not edit analysis documents 
-gathered from external sites to avoid misalignements.
+an existing analysis document and modify the copy.
