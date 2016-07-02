@@ -17,5 +17,4 @@ language and navigate the content about Client Relevance Language and Core
 Inspectors.
 
 **Note:** You can either create your baseline from scratch or make a copy of 
-an existing baseline document and modify the copy. Do not edit baseline documents 
-gathered from external sites to avoid misalignements.
+an existing baseline document and modify the copy.
