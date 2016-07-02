@@ -19,5 +19,4 @@ Click [Action Script](/action-script/) to access the information about the
 Action Script Language.
 
 **Note:** You can either create your task from scratch or make a copy of 
-an existing task document and modify the copy. Do not edit task documents 
-gathered from external sites to avoid misalignements.
+an existing task document and modify the copy.
