@@ -15,8 +15,8 @@ Click [Relevance](/relevance/) to access the information about the relevance
 language and navigate the content about Session Relevance Language and Core 
 Inspectors.
 
-Click [Presentation Debugger](/relevance/tools/presentation_debugger.html) to access 
-a tool useful to develop and test your session relevance queries.
+<!--Click [Presentation Debugger](/relevance/tools/presentation_debugger.html) to access 
+a tool useful --> Use the Presentation Debugger to develop and test your session relevance queries.
 
 Click [Other APIs](/other/) to access the documentation about the dashboard API and the Web Reports API.
 
