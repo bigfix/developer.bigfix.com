@@ -33,23 +33,21 @@ Both types of relevance language share the same basic syntax and constructs, nam
 **Note:** If you are new to this language, first watch the introductory video [Exploring the Relevance Language](https://www.youtube.com/watch?v=vRoZhvShPeY) and run the [Tutorial](/relevance/tutorial/) to learn the basics.
 <!---It is based on **Inspectors** which are sets of keys, properties, and creation methods used to map local resources into objects manageable by BigFix. --->
 
-
-
-<!--- Navigate the Relevance subtree on the right to access: 
+<!--- Navigate the Relevance subtree on the right to access:
 <dl>
   <dt>**[Tutorial](/relevance/tutorial/)**</dt>
   <dd>A quick tutorial explaining how to build expressions using the most common inspectors.</dd>
-  
+
   <dt>**[Guide](/relevance/guide/)**</dt>
   <dd>Contains the User's Guide and the reference material for all the available inspectors and constructs. It includes the list of error messages and their explanations as well.</dd>
-  
+
   <dt>**[Inspectors search](/relevance/search/)**</dt>
   <dd>Where you can search for information about specific inspectors and properties (known as Inspectors Reference Library).</dd>
 
   <dt>**[Online evaluator](/relevance/evaluate/)**</dt>
   <dd>Where you can test your relevance expression in a Linux CentOS virtual sandbox.</dd>
-  
+
   <dt>**[Additional Resources](/relevance/usefulresources/)**</dt>
   <dd>Contains the links to tools and videos that are useful to grow your experience.</dd>
-  
+
 </dl> --->
