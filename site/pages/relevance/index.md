@@ -1,58 +1,54 @@
 ---
-title: Relevance
+title: The Relevance Language
 ---
 
 {% section %}
-This language is one of the bases of the BigFix product and its scope is to retrieve information.
-
-There are two different types of relevance language:
+The scope of the Relevance Language is to retrieve and manipulate information. 
+<p>There are two types of relevance language:
 
 <dl>
-  <dt>**The client relevance language**</dt>
-  <dd>Whose scope is to interrogate the local system to retrieve information. This information can be used to get the value of a specific property for running analysis and to manage variables substitution in action scripts, or combined and correlated with other information in a Boolean expression to determine applicability relevance, success criteria, and to generate automatic computer groups.</dd>
-
-  <dt>**The session relevance language**</dt>
-
-  <dd>Whose scope is to interrogate the BigFix database to retrieve information. This information can be displayed in dashboards, web reports or in customized user interfaces, or used to implement integration with external applications.</dd>
+  <dt>The [Client Relevance Language](/relevance/documentation/guide/client)</dt>
+  <dd>Whose scope is to interrogate locally the client system to retrieve information. This information can be used to get the value of a specific property for running analysis and to manage variables substitution in action scripts, or combined and correlated with other information in a Boolean expression to determine applicability relevance, success criteria, and to generate automatic computer groups.
+<!---  Use this language to:
+  <ul>
+  <li>Get the value of a specific property for running analysis or generating automatic computer groups.</li>
+  <li>Manage variable substitution in action scripts when running Fixlets or tasks.</li>
+  <li>Determine applicability relevance and success criteria.</li>
+  </ul> --->
+  </dd>
+  
+  <dt>The [Session Relevance Language](/relevance/guide/session)</dt>
+  <dd>Whose scope is to retrieve information from the BigFix database. This information can be displayed in dashboards, web reports or in customized user interfaces, or used to implement integration with external applications.
+<!---  Use this language to:
+  <ul>
+  <li>Get values to display in custom dashboards or web reports.</li> 
+  <li>Implement integrations with external applications.</li>
+  </ul> --->
+  </dd>
 </dl>
+
+Both types of relevance language share the same basic syntax and constructs, named **[Core Inspectors](/relevance/documentation/guide/basics**, when building the expressions.</p>
 {% endsection %}
+**Note:** If you are new to this language, first watch the introductory video [Exploring the Relevance Language](https://www.youtube.com/watch?v=vRoZhvShPeY) and run the [Tutorial](/relevance/tutorial/) to learn the basics.
+<!---It is based on **Inspectors** which are sets of keys, properties, and creation methods used to map local resources into objects manageable by BigFix. --->
 
-Navigate this subtree to access the following resources and information:
 
+
+<!--- Navigate the Relevance subtree on the right to access: 
 <dl>
-  <dt>**[Guides](/relevance/guide/)**</dt>
-  <dd>Where you find an overview of the relevance language and the user's guides that you can navigate.</dd>
-
-  <dt>**[Reference](/relevance/reference/)**</dt>
-  <dd>Which contains the information about all the available inspectors with their creation methods and properties (aka Inspectors Reference).</dd>
-
-  <dt>**[Inspector search](/relevance/search/)**</dt>
-  <dd>Where you can search for the information about a specific inspector.</dd>
+  <dt>**[Tutorial](/relevance/tutorial/)**</dt>
+  <dd>A quick tutorial explaining how to build expressions using the most common inspectors.</dd>
+  
+  <dt>**[Guide](/relevance/guide/)**</dt>
+  <dd>Contains the User's Guide and the reference material for all the available inspectors and constructs. It includes the list of error messages and their explanations as well.</dd>
+  
+  <dt>**[Inspectors search](/relevance/search/)**</dt>
+  <dd>Where you can search for information about specific inspectors and properties (known as Inspectors Reference Library).</dd>
 
   <dt>**[Online evaluator](/relevance/evaluate/)**</dt>
-  <dd>From where you can access an interactive sandbox where you can test your relevance expression.</dd>
-</dl>
-
-{% note %}
-
-This project is implemented in stages. You can find the documentation and media that will be included in the next 
-steps at the following links:
-
-* **Useful videos:**
- [Exploring the Relevance Language](https://www.youtube.com/watch?v=vRoZhvShPeY) |
- [The Fixlet debugger](https://www.youtube.com/watch?v=sujEc4HqXew) | 
- [If-Then-Else construct](https://www.youtube.com/watch?v=vRoZhvShPeY) |
- [Whose-it construct](https://www.youtube.com/watch?v=LwQADuUzhDY) |
- [It-without-Whose construct](https://www.youtube.com/watch?v=yz0V4Si849E) |
- [String Manipulation](https://www.youtube.com/watch?v=is8juNOlArY)
-
-* **Additional documentation:**
- [Defining properties to retrieve](http://www-01.ibm.com/support/docview.wss?uid=swg21505783) | 
- [Retrieved properties examples](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Property%20%26%20Relevance%20Examples?section=app) |
- [Additional tips](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Relevance%20Tips) |
- [Debugging: Relevance Builder](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/Client%20Compliance%20API)
-
-* **Knowledge Center:**
- [Relevance Language User's Guide](http://www-01.ibm.com/support/knowledgecenter/SS6MER_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/Relevance/c_relevance_overview.html)
-
-{% endnote %}
+  <dd>Where you can test your relevance expression in a Linux CentOS virtual sandbox.</dd>
+  
+  <dt>**[Additional Resources](/relevance/usefulresources/)**</dt>
+  <dd>Contains the links to tools and videos that are useful to grow your experience.</dd>
+  
+</dl> --->
