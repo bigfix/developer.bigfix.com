@@ -15,6 +15,6 @@ Learn how to implement these use case scenarios and which languages or API to us
   * Create my custom reporting in textual and graphical format against BigFix collected data.
 
 * **Customize integrations**
-  * Aggregate data contained in different BigFix environment into web reports.
+  * Aggregate data from different BigFix environments into web reports.
   * Use data inspected on the client as input for a local proprietary application.
   * Run operations available on the BigFix console from outside the console and automate tasks.
