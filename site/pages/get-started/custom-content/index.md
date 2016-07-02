@@ -14,8 +14,8 @@ run commands, for the action script language.
 
 Click [Relevance](/relevance/) and [Action Script](/action-script/) to access 
 the languages guides and the  references, and useful tools to create and test your 
-custom queries and scripts locally [on the target client](/relevance/tools/fixlet_debugger.html) 
-or using a [Linux CentOS interactive sandbox](/evaluate/).
+custom queries and scripts locally with the Fixlet Debugger <!-- [on the target client](/relevance/tools/fixlet_debugger.html) --> 
+or using a [Linux CentOS interactive sandbox](/relevance/evaluate/).
 <!-- , such as the Fixlet
 Debugger and the interactive sandbox, the [Online Evaluator] (/evaluate/), that 
 you can use to develop and test your custom solution. -->
