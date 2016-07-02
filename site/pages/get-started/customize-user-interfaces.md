@@ -9,7 +9,7 @@ your custom user interface, and the language and APIs involved.
 
 The language highlighted in the graphic, the Session Relevance Language, extracts 
 data previously collected on the clients and currently stored in the BigFix database.
-The APIs use and manipulate the data extracted by the Session Relevance queries.
+The APIs use the data extracted by the Session Relevance queries.
 
 Click [Relevance](/relevance/) to access the information about the relevance 
 language and navigate the content about Session Relevance Language and Core 
