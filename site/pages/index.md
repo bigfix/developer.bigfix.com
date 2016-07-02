@@ -17,17 +17,17 @@ section: home
       <p>Navigate the entries in the main toolbar to access all the available documentation and media about:</p>
 
       <ul>
-        <li>The <a href="/relevance/">Relevance Language</a> for retrieving and manipulating information defined on clients or collected in the database.</li>
+        <li>The <a href="/relevance/">Relevance Language</a> for retrieving and manipulating information defined on clients or collected and stored in the BigFix database.</li>
 
         <li>The <a href="/action-script/">Action Script Language</a> for running configuration activities on clients and remediating lack of compliance.</li>
 
         <li>The <a href="/rest-api/">REST-API</a> for running operations available on the BigFix console from outside the console.</li>
 
-        <li><a href="/other/">Other APIs</a> for creating custom dashboards, interrogating the database and implementing your reporting solution.</li>
+        <li><a href="/other/">Other APIs</a> for creating custom dashboards, implementing your reporting solution, and integrating with external applications on client systems.</li>
       </ul>
     </section>
 
-    <section>
+  <!---  <section>
       <p>Learn how to implement these use case scenarios and which languages or API to use to:</p>
 
       <ul>
@@ -58,7 +58,7 @@ section: home
 
       <p>You can access the list of available scenarios from any page in this site by clicking <a href="/examples/">Examples</a> in the main toolbar.</p>
     </section>
-
+  --->
     
     <p>Do not forget to read carefully the <a href="/get-started/best-practices.html">known best practices</a>. They can help you to create your custom solution in a simpler and safer way by following a consolidated path.</p>
   </article>
@@ -68,7 +68,7 @@ section: home
   <aside class="side-nav">
     
   
-    <h3>This site is hosted on GitHub. Feel free to contribute your input using <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a>.</h3>
+    <!--- <h3>This site is hosted on GitHub. Feel free to contribute your input using <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a>.</h3> --->
   
     <h3>Complete your 360-degree view of the BigFix development world!</h3>
 
