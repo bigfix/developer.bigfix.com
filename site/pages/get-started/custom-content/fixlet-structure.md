@@ -21,5 +21,4 @@ Click [Action Script](/action-script/) to access the information about the
 Action Script Language.
 
 **Note:** You can either create your Fixlet from scratch or make a copy of 
-an existing Fixlet document and modify the copy. Do not edit Fixlet documents 
-gathered from external sites to avoid misalignements.
+an existing Fixlet document and modify the copy.
