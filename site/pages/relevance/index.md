@@ -27,8 +27,9 @@ The scope of the Relevance Language is to retrieve and manipulate information.
   </dd>
 </dl>
 
-Both types of relevance language share the same basic syntax and constructs, named **[Core Inspectors](/relevance/documentation/guide/basics**, when building the expressions.</p>
+Both types of relevance language share the same basic syntax and constructs, named **[Core Inspectors](/relevance/guide/basics/)**, when building the expressions.</p>
 {% endsection %}
+
 **Note:** If you are new to this language, first watch the introductory video [Exploring the Relevance Language](https://www.youtube.com/watch?v=vRoZhvShPeY) and run the [Tutorial](/relevance/tutorial/) to learn the basics.
 <!---It is based on **Inspectors** which are sets of keys, properties, and creation methods used to map local resources into objects manageable by BigFix. --->
 
