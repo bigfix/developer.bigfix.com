@@ -2,14 +2,13 @@
 title: Dynamic Download
 ---
 
-Dynamic downloads add the ability to use relevance clauses to what to download and how specify and customize downloads.
-The commands to run and customize download must be embedded in a **prefetch block** structure with the following characteristics:
-- Is located as first entry in the action script.
-- Starts with a **begin prefetch block** statement.
-- Ends with the **end prefetch block** statement.
-This structure ensures that the file is successfully downloaded before the action script runs.
+Dynamic downloads add the ability to use relevance clauses to specify downloads. 
+These new commands must be embedded in a special segment of action code called a [prefetch block](./prefetch_block.html).
+The prefetch block structure ensures that the file is successfully downloaded before the action script runs.
 
 **Note:** Only one prefetch block is allowed per action.
+
+
 Following you find some examples of using the **prefetch block** to run dynamic downloads.
 
 ---
@@ -24,7 +23,7 @@ name=update.exe sha1=123 sha256=678 size=456 url=http://site.com/download/patch.
 You can access the patch referenced in the download.spec file by using the relevance 
 substitution in the prefetch block of the action script:
 
-```actionscript
+```
 begin prefetch block
       // Creates a variable named downloadFile that points to a file in the AV site.
       parameter "downloadFile"="{pathname of file "download.spec" of client folder
@@ -54,7 +53,7 @@ name=patch3.exe sha1=345 sha256=368 size=678 url=http://site.com/download/patch3
 You can download these patches with a prefetch block that pulls these files from the manifest, 
 for example:
 
-```actionscript
+```
 begin prefetch block
       parameter "manifest"="{pathname of file "manifest.spec" of client folder
         of site "AV"}"
@@ -67,7 +66,7 @@ end prefetch block
 You can also use the **execute prefetch plug-in** command to use small executable to process 
 files into a fresh manifest, for example:
 
-```actionscript
+```
 begin prefetch block
       // Adds the plugin to the prefetch queue 
 	  add prefetch item name=myPlugIn.exe sha1=123 size=456
@@ -125,7 +124,7 @@ A white-list entry of ".*" (dot star) allows any URL to be downloaded.
 
 Prefetch blocks allow conditional statements:
 
-```actionscript
+```
 begin prefetch block
                   if {name of operating system = "Windows 2000"}
 add prefetch item name=up.exe sha1=123 size=456
@@ -138,8 +137,32 @@ end prefetch block
 wait "{download path "up.exe"}"
 ```
 
-Only those files actually needed by clients are fetched to
-the server and relay in the first place. 
+This action script branches on the existence of Win2K, but the downloads in this 
+example are described statically (as literal text). Although the clients will only 
+download the particular items they need, all the static files are downloaded to servers 
+and relays as soon as they are requested. 
+
+
+Dynamic downloads can improve on this situation because only those files actually 
+needed by clients are fetched to the server and relay in the first place. 
+Here's an example using dynamic downloading:
+
+```
+begin prefetch block
+                  if {name of operating system = "Windows 2000"}
+add prefetch item {"name=up.exe sha1=123 size=456 
+    url=http://site.com/patch2k.exe"} sha2=567
+                  else
+add prefetch item {"name=up.exe sha1=123 size=456 
+    url=http://site.com/patch.exe"} sha2=567
+      endif
+end prefetch block
+wait "{download path "up.exe"}"
+```
+
+By using relevance substitution in the prefetch block, with a properly configured white list 
+file on the server, this code only fetches the necessary file, potentially improving bandwidth 
+requirements and efficiency.
 
 ---
 
@@ -160,7 +183,7 @@ of the patch file.
 You can then use relevance substitution to extract these variables with
 an expression such as:
 
-```actionscript
+```
 parameter "ver"="{key "version" of file "{download path "manifest.txt"}"}"
 parameter "filename"={key "download" of file "{download path "manifest.txt"}"}
 ```
@@ -178,10 +201,21 @@ in a prefetch folder. While the action is running, they reside in the __Download
 
 These Inspectors can be used to locate the files before or while the action runs:
 * **download folder:** During the prefetch parsing, this Inspector returns a folder
-object from the `__Global\<sitename>\<actionid>\named` folder.
+object from the __Global\<sitename>\<actionid>\named folder.
 * **download path "pathname":** This Inspector returns a string containing the full
 pathname to the specified file, whether it exists or not. The download filename
-is equivalent to `(pathname of download folder) & <pathseparator> & filename`.
+is equivalent to (pathname of download folder) & <pathseparator> & filename.
 * **download file "filename":** This Inspector returns a file object from the download
-folder or another named folder. The download filename is equivalent to `file
-'filename' of download folder`. 
+folder or another named folder. The download filename is equivalent to "file
+'filename' of download folder". 
+
+---
+
+It is up to the action script author to protect users of these actions and ensure 
+that downloads and their checksums have not been compromised. An end-to-end authentication 
+mechanism resistant to man-in-the-middle attacks is the best defense. When authoring 
+a dynamic download action it is critical to craft the action so that it authenticates 
+information before using it, typically by using a plug-in as described above. 
+It is also wise to explicitly identify those steps in the action script that perform 
+this authentication so that users of your action can audit the mechanism before deciding 
+to trust it.
