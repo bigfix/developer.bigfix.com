@@ -4,24 +4,23 @@ title: The Action Script Language
 
 {% section %}
 
-The scope of the Action Script language is to issue commands to remediate target clients from
-within Fixlets and tasks.
+The scope of the Action Script language is to issue commands, named **actions**, from within Fixlets 
+and tasks on relevant clients to fix the problem identified by the Applicability Relevance clause.
 
-<p>An Action Script is made by a set of actions that a Fixlet author can include in a Fixlet message 
-and that are run in sequence to fix a given problem identified by the Fixlet relevance clause. 
-If an error occurs in one line of an action script, the script terminates immediately and the 
-rest of the lines will not run. 
-Because of this, it’s very important to use error prevention methods in action scripts.</p> 
+<p>In a Fixlet or in a task message you can specify an *action script* including one or more actions. 
+These actions will be run in sequence on relevant clients when the console operator clicks 
+**Take action** in the Fixlet or in the task entry on the BigFix console.
+If an action fails running, the subsequent actions will not run and the processing will stop.
+ 
+For this reason, it is very important to use error prevention methods in action scripts.</p> 
 
-<p>While the Fixlet relevance is evaluated immediately on each target to determine whether it is 
-relevant, the action script, instead, runs locally on relevant clients when the console operator 
-clicks **Take action** in the Fixlet or task entry on the console.</p>
 
-<p>Since a problem is typically discovered by examining a client machine with BigFix Inspectors, you might 
-need to use the same relevance expressions, or part of them, within the action script to drive to the solution. 
-In [Using Substitution](/action-script/guide/substitution.html) you will learn how to incude inspectors in the action script.</p> 
+<p>One of the biggests strength of the Action Script language is the ability to use relevance language 
+expressions to implement variables within actions. This ability, named [substitution](/action-script/guide/substitution.html), 
+allows you to customize an action for each specific agent where the action runs, for example by resolving the local 
+installation path of a proprietary application.</p>
 
-<p>Information about the action script language is divided into the following areas:
+<p>The information about the Action Script Language is divided into the following areas:
 
 <dl>
   <dt>**[Guide](./guide/)**</dt>
