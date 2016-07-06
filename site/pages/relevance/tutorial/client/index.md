@@ -10,7 +10,7 @@ relevance clauses, all of which must return True for it to become ***relevant***
 lead to a Fixlet message becoming relevant if it successfully evaluates to True.
 
 This quick tutorial introduces the most common Relevance features. Use the embedded online Relevance evaluator to practice writing 
-Relevance queries. You can use the [QNA program](/relevance/tools/qna.html) or the [Online Evaluator](/relevance/evaluate) as well 
+Relevance queries. You can use the [QNA program](/relevance/guide/#qna) or the [Online Evaluator](/relevance/evaluate/) as well 
 to run your queries. The tutorial also guides you to navigate through other resources found in this website. 
 
 After completing the tutorial, you should be able to read and write common Relevance queries, and make use of available resources 
@@ -281,13 +281,13 @@ Modify the previous query to return the package version if the package is availa
 if (exists packages "libxml2" of rpm) then (version of it as string) of packages "libxml2" of rpm else "No package"
 {% endcollapse %}
 
-**Hint:** You muight need to use the type casting to have the same object type for both `<expression1>` and `<expression2>`.
+**Hint:** You might need to use the type casting to have the same object type for both `<expression1>` and `<expression2>`.
 
 
 Congratulations! You have practiced with most of Relevance language features. 
 
 To learn more about each feature, read their detailed [Guides](/relevance/guide/). To further explore the Relevance object types, 
-use the [Reference](/reference/), the [Inspector Search](/relevance/search/), and the [Online Evaluator](/relevance/evaluate/). 
+use the [Reference](/relevance/reference/), the [Inspector Search](/relevance/search/), and the [Online Evaluator](/relevance/evaluate/). 
 If you encounter any error, look up this [Errors](/relevance/guide/basics/errors.html) guide. 
 
 For other questions, join our [Bigfix forum](https://forum.bigfix.com) and post your questions under the 
