@@ -1,8 +1,8 @@
 ---
-title: Creating Action Scripts
+title: Creating a Custom Action
 ---
 
-You can create custom actions to fix problems or address issues across your
+You can create custom actions to fix specific problems or address issues across your
 network that are not covered by the standard content.
 
 To create a custom action:
@@ -37,4 +37,6 @@ Your custom action will be distributed to all the computers that have been selec
 The actions will be applied using whatever constraints and schedules that you have specified.
 
 You can also create actions when you Create Tasks or Create Fixlets.
+
+**Note:** The original action included in the Fixlet or in the task is not overwritten by your custom action.
 
