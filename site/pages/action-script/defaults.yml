@@ -5,6 +5,25 @@ nav:
   - name: Home
     href: /action-script/
 
+  - name: Guide
+    href: /action-script/guide/
+    children:
+
+      - name: Running a custom action
+        href: /action-script/guide/running_c_action.html
+        
+      - name: Using relevance in actions
+        href: /action-script/guide/substitution.html
+ 
+      - name: Static Download
+        href: /action-script/guide/static_download.html
+        
+      - name: Dynamic Download
+        href: /action-script/guide/dynamic_download.html
+
+      - name: Prefetch Block
+        href: /action-script/guide/prefetch_block.html				
+
   - name: Reference
     href: /action-script/reference/
     children:
@@ -203,7 +222,7 @@ nav:
 
           - name: regdelete
             href: /action-script/reference/registry/regdelete.html
-
+            
           - name: regdelete64
             href: /action-script/reference/registry/regdelete64.html
 
