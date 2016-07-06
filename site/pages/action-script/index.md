@@ -24,9 +24,9 @@ In [Using Substitution](/action-script/guide/substitution.html) you will learn h
 <p>Information about the action script language is divided into the following areas:
 
 <dl>
-  <dt>[Guide](./guide/)</dt>
+  <dt>**[Guide](./guide/)**</dt>
   <dd>Where you find the generic concepts that apply to the action script language.</dd>
-  <dt>[Reference](./reference/)</dt>
+  <dt>**[Reference](./reference/)**</dt>
   <dd>Which contains information about all the available statements.</dd>
 </dl>
 
