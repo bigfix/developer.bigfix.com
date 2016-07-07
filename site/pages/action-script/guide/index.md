@@ -1,21 +1,23 @@
 ---
-title: Action Script
+title: Guide
 ---
 
-The scope of this language is to issue commands to remediate target clients from
-within Fixlets and tasks. 
-After a Fixlet identifies a potential problem on a computer, it offers to fix it with
-an IBM BigFix shell command, called an `action script`. The most powerful method to create
-an action script is the IBM BigFix Action Language because it integrates tightly with the
-relevance engine. 
+Here you find the main concepts to understand how to use the Action Script Language.
 
+Conceptually this guide can be divided into five main blocks: 
 
-Many action commands allow or require parameters. Those parameters can either be hardcoded 
-values or relevance expressions, named **substitution variables**, that are evaluated 
-at runtime on relevant agents when the console operator clicks **Take action** in the Fixlet 
-or task entry on the console.
-
-
-By using substitution variables you can create scripts that are finely targeted and highly 
-flexible. The exact relevance expression that triggered the action can be used in your action
-script, ensuring a perfect match between the problem and the correction.
+<dl>
+  <dt>**[Creating a Custom Action](./running_c_action.html)**</dt>
+  <dd>That explains how to create and trigger custom actions from the BigFix console.</dd>
+  <dt>**[Using Substitution Variables](./substitution.html)**</dt>
+  <dd>That explains how to take advantage of the relevance language within the action script 
+  to create scripts that are finely targeted and highly flexible.</dd>
+  <dt>**[The Prefetch Block Structure](./prefetch_block.html)**</dt>
+  <dd>That describes the structure that you must use to define the download required for running successfully an action.</dd>
+  <dt>**[Static](./static_download.html) and [Dynamic](./dynamic_download.html) Downloads**</dt>
+  <dd>That explain the different methods for downloading to targets the data necessary to run 
+  the actions and successfully run the Fixlet or the task.</dd>
+  <dt>**[Action Status Messages](./action_statuses.html)**</dt>
+  <dd>That lists the action statuses that each agent running the action might send back to the 
+  server while processing the action.</dd>
+</dl>
