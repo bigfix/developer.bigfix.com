@@ -9,20 +9,23 @@ nav:
     href: /action-script/guide/
     children:
 
-      - name: Running a custom action
+      - name: Creating a Custom Action
         href: /action-script/guide/running_c_action.html
         
-      - name: Using relevance in actions
+      - name: Using Substitution Variables
         href: /action-script/guide/substitution.html
- 
+
+      - name: The Prefetch Block Structure
+        href: /action-script/guide/prefetch_block.html	
+
       - name: Static Download
         href: /action-script/guide/static_download.html
-        
+      
       - name: Dynamic Download
         href: /action-script/guide/dynamic_download.html
 
-      - name: Prefetch Block
-        href: /action-script/guide/prefetch_block.html				
+      - name: Action Status Messages
+        href: /action-script/guide/action_statuses.html				
 
   - name: Reference
     href: /action-script/reference/
