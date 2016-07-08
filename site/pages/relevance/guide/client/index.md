@@ -1,5 +1,5 @@
 ---
-title: Client Guides
+title: Client Relevance Guide
 ---
 
 Learn how to get information about the clients in your deployment.
