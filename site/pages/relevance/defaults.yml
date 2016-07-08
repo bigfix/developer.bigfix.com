@@ -16,7 +16,7 @@ nav:
     href: /relevance/guide/
     children:
 
-      - name: Basics
+      - name: Core Inspectors
         href: /relevance/guide/basics/
         children:
 
@@ -56,7 +56,7 @@ nav:
           - name: Parent Types
             href: /relevance/guide/basics/parent-types.html
 
-      - name: Client
+      - name: Client Relevance
         href: /relevance/guide/client/
         children:
 
