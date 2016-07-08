@@ -8,9 +8,9 @@ The relevance guides on this site provide you with self-lead training on the rel
 
 It is divided in three different parts:
 
-* Click [Basics](/relevance/guide/basics/) to access the part describing the syntaxes and the constructs that are common to both languages.
-* Click [Client](/relevance/guide/client/) to access the part dedicated to the client relevance language.
-* Click **Session** to access the part dedicated to the session relevance language.
+* Click [Core Inspectors](/relevance/guide/basics/) to access the part describing the syntaxes and the constructs that are common to both languages.
+* Click [Client Relevance](/relevance/guide/client/) to access the part dedicated to the client relevance language.
+* Click [Session Relevance](/relevance/guide/session/) to access the part dedicated to the Session Relevance language.
 
 **Note:** If you are new to the relevance language, first view the following video [Exploring the Relevance Language](https://www.youtube.com/watch?v=vRoZhvShPeY).
 
