@@ -1,5 +1,5 @@
 ---
-title: Basic Guides
+title: Core Inspectors
 ---
 
 Begin learning about the Relevance language.
