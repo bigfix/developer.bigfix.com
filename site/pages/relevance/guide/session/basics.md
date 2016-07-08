@@ -22,7 +22,7 @@ There are three main categories of Session Inspectors:
 - **[Set Inspectors](./setinspectors.html)**, that allow you to treat lists of objects as mathematical sets;
 - **[HTML Inspectors](./htmlinspectors.html)**, that help you to format your presentations using hypertext markup.
 
-Click on the links to know more about each category.
+Click the links to know more about each category.
 
 <!--
 ---
