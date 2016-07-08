@@ -16,7 +16,7 @@ nav:
     href: /relevance/guide/
     children:
 
-      - name: Basics
+      - name: Core Inspectors
         href: /relevance/guide/basics/
         children:
 
@@ -56,7 +56,7 @@ nav:
           - name: Parent Types
             href: /relevance/guide/basics/parent-types.html
 
-      - name: Client
+      - name: Client Relevance
         href: /relevance/guide/client/
         children:
 
@@ -86,6 +86,85 @@ nav:
 
           - name: WMI
             href: /relevance/guide/client/wmi.html
+            
+      - name: Session Relevance
+        href: /relevance/guide/session/
+        children:
+
+          - name: Basic concepts
+            href: /relevance/guide/session/basics.html
+
+          - name: Running the Presentation Debugger
+            href: /relevance/guide/session/presentationdebugger.html
+
+          - name: Linking to other documents
+            href: /relevance/guide/session/linkingdocs.html
+
+          - name: Adding Relevance to Presentations
+            href: /relevance/guide/session/presentationrelevance.html	
+
+          - name: Refreshing Relevance
+            href: /relevance/guide/session/refreshingrelevance.html		
+
+          - name: BES Action
+            href: /relevance/guide/session/actioninspectors.html
+
+          - name: BES Activation
+            href: /relevance/guide/session/activationinspectors.html
+
+          - name: BES Baseline
+            href: /relevance/guide/session/baselineinspectors.html
+
+          - name: BES Comment
+            href: /relevance/guide/session/commentinspectors.html	
+
+          - name: BES Deployment
+            href: /relevance/guide/session/deploymentinspectors.html
+
+          - name: BES Domain
+            href: /relevance/guide/session/domaininspectors.html
+
+          - name: BES Filter
+            href: /relevance/guide/session/filterinspectors.html
+
+          - name: BES Fixlet
+            href: /relevance/guide/session/fixletinspectors.html
+
+          - name: Networking Inspectors
+            href: /relevance/guide/session/networkinginspectors.html
+
+          - name: BES Property
+            href: /relevance/guide/session/propertyinspectors.html
+
+          - name: BES Server
+            href: /relevance/guide/session/serverinspectors.html
+
+          - name: BES Site
+            href: /relevance/guide/session/siteinspectors.html
+
+          - name: BES Unmanagedasset
+            href: /relevance/guide/session/unmanagedassetinspectors.html
+
+          - name: BES User
+            href: /relevance/guide/session/userinspectors.html
+
+          - name: Wake-on-lan Inspectors
+            href: /relevance/guide/session/wakeonlaninspectors.html
+
+          - name: BES Wizard
+            href: /relevance/guide/session/wizardinspectors.html
+
+          - name: World Inspectors 
+            href: /relevance/guide/session/worldinspectors.html
+
+          - name: HTML Inspectors
+            href: /relevance/guide/session/htmlinspectors.html
+
+          - name: Statistical Aggregation
+            href: /relevance/guide/session/stataggregation.html
+
+          - name: Statistics Inspectors 
+            href: /relevance/guide/session/statisticsinspectors.html  
 
   - name: Reference
     href: /relevance/reference/
