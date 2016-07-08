@@ -11,7 +11,7 @@ Use these Inspectors to query and manage the properties of the actions issued by
 Each action may have several properties that can be examined using these Inspectors.
 You can iterate over the actions to create lists.
 
-Click [here](/relevance/reference/bes-action.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-action.html) to access the page describing these inspectors.
 
 **Examples**
 
@@ -78,7 +78,7 @@ Returns the current number of BES Actions.
 
 These Inspectors return the iterated list of BES Actions, converted into a set to make it easy to do set arithmetic with the list.
 
-Click [here](/relevance/reference/bes-action-set.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-action-set.html) to access the page describing these inspectors.
 
 **Examples**
 
@@ -102,7 +102,7 @@ Returns the names of all the BES Actions.
 These Inspectors deal with arrays of BES actions, allowing you to extract unique actions and count them.
 This object type is derived from the `<bes action>` type and therefore shares the same properties as that type.
 
-Click [here](/relevance/reference/bes-action-with-multiplicity.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-action-with-multiplicity.html) to access the page describing these inspectors.
 
 ---
 
@@ -130,7 +130,7 @@ The status returned from a BES Action can be cast into a string format to give t
 - bes action status not relevant 
 - bes action status not reported
 
-Click [here](/relevance/reference/bes-action-status.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-action-status.html) to access the page describing these inspectors.
 
 ---
 
@@ -142,7 +142,7 @@ For example, a Fixlet Action might need to start a Windows service specified by 
 When the the Action is taken, the Console would prompt for the name of the service. 
 That value would then be passed down to the BES Client and substituted into the local Action script upon execution.
 
-Click [here](/relevance/reference/bes-action-parameter.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-action-parameter.html) to access the page describing these inspectors.
 
 **Examples**
 
@@ -158,7 +158,7 @@ Returns the parameter names of bes actions with `"Download"` in the name.
 
 These Inspectors examine the results of BES Actions, which can be used to make reports.
 
-Click [here](/relevance/reference/bes-action-result.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-action-result.html) to access the page describing these inspectors.
 
 **Examples**
 
