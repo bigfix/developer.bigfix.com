@@ -8,13 +8,13 @@ In the Console, clicking the link will open the MDI document for the given objec
 
 There are a few different forms of the link Inspector:
 
-```
+```relevance
 link of bes fixlet whose (id of it is 1)
 ```
 
 returns an anchor tag of the form: 
 
-```
+```xml
 <A href="linkid:openfixlet(2,1)">IBM BigFix Clients in Seat Count Grace Mode</A>
 ```
 
@@ -23,13 +23,13 @@ message, that, when clicked, brings up the Fixlet with ID=1 in the Console.
 
 These are other examples:
 
-```
+```relevance
 link "Click Here" of bes fixlet whose (id of it is 1)
 ```
 
 returns `<A href="linkid:openfixlet(2,1)">Click Here</A>`
 
-```
+```relevance
 link (b of "Click Here") of bes fixlet whose (id of it is 1)
 ```
 

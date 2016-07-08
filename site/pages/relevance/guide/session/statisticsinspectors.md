@@ -27,6 +27,7 @@ Click [here](/relevance/reference/historical-computer-count.html) to access the 
 These provide historical information about the number of Fixlets at different severity levels.
 
 Click [here](/relevance/reference/historical-fixlet-count.html) to access the page describing to these inspectors.
+
 ---
 
 ## Statistic Range
@@ -37,7 +38,7 @@ Click [here](/relevance/reference/statistic-range.html) to access the page descr
 
 **Example**
 
-```
+```relevance
 mean of total of range ((now - day) & now) of statistics of property 1 of current analysis
 ```
 
@@ -54,7 +55,7 @@ Click [here](/relevance/reference/statistical-bin.html) to access the page descr
 
 **Example**
 
-```
+```relevance
 javascript array "statistics" of totals (6*hour) of statistics of property 1 of current analysis
 ```
 
@@ -74,7 +75,7 @@ Rates are floating point numbers divided by time intervals. These Inspectors let
 ## Rate with Multiplicity
 
 These Inspectors deal with rate arrays, allowing you to extract unique rate values and count them.
-This object type is derived from the <rate> type and therefore shares the same properties as that type.
+This object type is derived from the `<rate>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/rate.html) to access the page describing to these inspectors.
 

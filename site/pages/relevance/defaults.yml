@@ -97,14 +97,14 @@ nav:
           - name: Running the Presentation Debugger
             href: /relevance/guide/session/presentationdebugger.html
 
-          - name: Linking to other documents
-            href: /relevance/guide/session/linkingdocs.html
-
           - name: Adding Relevance to Presentations
-            href: /relevance/guide/session/presentationrelevance.html	
+            href: /relevance/guide/session/presentationrelevance.html
 
           - name: Refreshing Relevance
-            href: /relevance/guide/session/refreshingrelevance.html		
+            href: /relevance/guide/session/refreshingrelevance.html
+
+          - name: Linking to other documents
+            href: /relevance/guide/session/linkingdocs.html
 
           - name: BES Action
             href: /relevance/guide/session/actioninspectors.html

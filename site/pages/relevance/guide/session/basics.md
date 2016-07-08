@@ -13,7 +13,7 @@ in console context
 in Web Reports context
 ```
 
-These Inspectors will return TRUE or FALSE, depending on which environment is currently active.
+These Inspectors will return `TRUE` or `FALSE`, depending on which environment is currently active.
 
 ---
 
@@ -24,6 +24,7 @@ There are three main categories of Session Inspectors:
 
 Click on the links to know more about each category.
 
+<!--
 ---
 
 ## Shortcuts and Predefined commands
@@ -127,3 +128,4 @@ of it) of key "HKEY_USERS" of registry
 A: S-1-5-21-1214450339-2025729265-839522115-1013
 {% endqna %}
 
+-->

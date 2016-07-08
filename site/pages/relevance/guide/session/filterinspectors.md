@@ -15,25 +15,25 @@ Click [here](/relevance/reference/bes-filter.html) to access the page describing
 
 **Examples**
 
-```
+```relevance
 names of bes filters 
 ```
 
 Returns a list of the currently defined BES Filters used in the Find (ctrl-F) commands.
 
-```
+```relevance
 name of bes filter 2 
 ```
 
 Returns the name of the second BES Filter (a saved Find command).
 
-```
+```relevance
 size of (action set of bes filters) 
 ```
 
 Returns the number of BES Filters that were designed for finding Actions.
 
-```
+```relevance
 size of (set of bes filters)
 ```
 
@@ -53,6 +53,6 @@ Click [here](/relevance/reference/bes-filter-set.html) to access the page descri
 ## BES Filter with Multiplicity
 
 These Inspectors deal with arrays of BES filters, allowing you to extract unique filters and count them.
-This object type is derived from the <bes filter> type and therefore shares the same properties as that type.
+This object type is derived from the `<bes filter>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-filter-with-multiplicity.html) to access the page describing to these inspectors.

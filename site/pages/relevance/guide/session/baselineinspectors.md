@@ -4,7 +4,7 @@ title: Baseline Inspectors
 
 Use these Inspectors to retrieve information about deployed baselines.
 
-Click [here](/relevance/reference/bes-baseline.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet.html) to access the page describing to these inspectors.
 
 ---
 

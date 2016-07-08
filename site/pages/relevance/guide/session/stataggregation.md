@@ -20,7 +20,7 @@ The property of interest must return an integer, floating point or Boolean type 
 ## Accessing Statistics
 To access the aggregated statistics for a specific property, use the statistic range Inspector:
 
-```
+```relevance
 statistic range of <property>
 ```
 
@@ -28,36 +28,36 @@ This returns the range of statistical bins associated with the specified propert
 
 ## Inspecting Statistical Ranges
 
-Inspecting Statistical Ranges
 You have several tools to examine statistical ranges:
-```
+
+```relevance
 start of <statistic range>
 ```
-```
+```relevance
 end of <statistic range>
 ```
 
 These return the starting and ending times of the specified range.
 
-```
+```relevance
 range <time range> of <statistic range>
 ```
 
 For time range = (t0, t1), returns a sub-range of bins beginning with the earliest bin containing t0 and ending with the bin just before the one containing t1. If either of these bins does not exist, it throws NoSuchObject.
 
-```
+```relevance
 bin at <time> of <statistic range>
 ```
 
 Returns the bin in the statistical range which starts before and ends after the specified time range. If no such bin exists, it throws NoSuchObject.
 
-```
+```relevance
 total of <statistic range>
 ```
 
 Statistically totals the bins in the specified range, producing a single bin covering the same range. Primarily useful after constraining the range.
 
-```
+```relevance
 totals <time interval> of <statistic range>
 ```
 
@@ -66,19 +66,19 @@ Used for downsampling (condensing) bins. Totals over the specified range, produc
 ## Using Linear Projections
 A bin represents two-dimensional data: values collected over a range of time. When the time range for a bin is large, we can look for trends in the way the values change over time. The "linear fit of <statistical bin>" Inspector uses the least-squares method to fit a line through the data in the bin. The linear projection it returns has the following floating-point properties:
 
-```
+```relevance
 correlation coefficient of <linear projection>
 ```
 
 This provides a measure of how well the projection fits the data. The value ranges from -1 to 1, where -1 represents a perfect inverse correlation, 1 is a perfect direct correlation, and 0 represents no correlation at all.
 
-```
+```relevance
 extrapolation (<time>) of <linear projection>
 ```
 
 This is the projected value at a given time.
 
-```
+```relevance
 rate of <linear projection>
 ```
 
@@ -86,21 +86,21 @@ This represents the slope of the line. Multiply this by a time interval to compu
 
 ## Using Exponential Projections
 
-The "exponential fit of <statistical bin>" function is similar to the linear projection. It uses the least-squares method to fit a line through the logarithms of the values in the bin. It is therefore only useful for positive data. The exponential projection it returns has the following floating-point properties:
+The "exponential fit of `<statistical bin>`" function is similar to the linear projection. It uses the least-squares method to fit a line through the logarithms of the values in the bin. It is therefore only useful for positive data. The exponential projection it returns has the following floating-point properties:
 
-```
+```relevance
 correlation coefficient of <exponential projection>
 ```
 
 This provides a measure of how well the projection fits the data. The value ranges from -1 to 1, where -1 represents a perfect inverse correlation, 1 is a perfect direct correlation, and 0 represents no correlation at all. Remember this is a correlation to the logs, not the values themselves.
 
-```
+```relevance
 extrapolation (<time>) of <exponential projection>
 ```
 
 This is the projected value at a given time.
 
-```
+```relevance
 rate (<time interval>) of <exponential projection>
 ```
 

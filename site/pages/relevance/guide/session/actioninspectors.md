@@ -15,55 +15,59 @@ Click [here](/relevance/reference/bes-action.html) to access the page describing
 
 **Examples**
 
-```
+```relevance
 names of hidden bes actions 
 ```
 
 Returns the list of currently hidden BES Actions.
 
-```
+```relevance
 links (h1 of name of it) of bes actions 
 ```
 Creates clickable links listing all the current BES Actions, displaying the Action names in headline format.
 
-```
+```relevance
 links (name of it & "(" & id of it as string & ")")) of bes actions 
 ```
 
 Creates clickable links listing all the current BES Actions, formated as name and ID.
 
-```
+```relevance
 (br & html "Click <A href='" & link href of it & html "'>here</A> to open action " & id of it as string) of bes actions 
 ```
 
 Creates clickable links listing all the current BES Actions, formated with a descriptive prompt and an embedded link, such as: 
-* Click here to open action 123456.
 
-```
+<pre>
+Click <a>here</a> to open action 123456
+Click <a>here</a> to open action 123457
+</pre>
+
+```relevance
 links of bes actions 
 ```
 
 Returns a set of `<A>` tags enclosing all the BES Actions in html format, creating a series of clickable Action links.
 
-```
+```relevance
 parameter "action issue date" of action 
 ```
 
 This Inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
 
-```
+```relevance
 detailed status of result from (bes computer whose (id of it is 1234567)) of (bes action whose (id of it is 1234)) 
 ```
 
 Returns the detailed status of the specified action on the given computer.
 
-```
+```relevance
 detailed statuses of results of (bes action whose (id of it is 1234)) 
 ```
 
 Returns a detailed status list containing the results of bes actions with the specified id.
 
-```
+```relevance
 size of (set of bes actions) 
 ```
 Returns the current number of BES Actions.
@@ -78,13 +82,13 @@ Click [here](/relevance/reference/bes-action-set.html) to access the page descri
 
 **Examples**
 
-```
+```relevance
 names of elements of (set of bes actions)
 ```
 
 Returns a list of names of each of the current BES Actions.
 
-```
+```relevance
 names of elements of bes action set
 ```
 
@@ -96,7 +100,7 @@ Returns the names of all the BES Actions.
 ## BES Action with Multiplicity
 
 These Inspectors deal with arrays of BES actions, allowing you to extract unique actions and count them.
-This object type is derived from the <bes action> type and therefore shares the same properties as that type.
+This object type is derived from the `<bes action>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-action-with-multiplicity.html) to access the page describing to these inspectors.
 
@@ -142,7 +146,7 @@ Click [here](/relevance/reference/bes-action-parameter.html) to access the page 
 
 **Examples**
 
-```
+```relevance
 names of parameters of bes action whose (name of it contains "Download")
 ```
 
@@ -158,13 +162,13 @@ Click [here](/relevance/reference/bes-action-result.html) to access the page des
 
 **Examples**
 
-```
+```relevance
 detailed status of result from (bes computer whose (id of it is 1234567)) of (bes action whose (id of it is 1234))
 ```
 
 Returns the detailed status of the specified action on the given computer.
 
-```
+```relevance
 detailed statuses of results of (bes action whose (id of it is 34))
 ```
 

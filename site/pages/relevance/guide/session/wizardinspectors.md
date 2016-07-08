@@ -14,19 +14,19 @@ Click [here](/relevance/reference/bes-wizard.html) to access the page describing
 
 **Examples**
 
-```
+```relevance
 links (h1 of name of it) of bes wizards
 ```
 
 Returns a list of HTML strings, each with an HTML link named for the Wizard and formatted as a header (h1).
 
-```
+```relevance
 links (name of it & "(" & dialog flag of it as string & ")")) of bes wizards 
 ```
 
 Returns an HTML string that will print the name and dialog flag of the Wizard inside a clickable `<A>` tag.
 
-```
+```relevance
 (br & html "Click <A href='" & link href of it & html "'>here</A> to open wizard " & name of it as string) of bes wizards
 ```
 
@@ -54,7 +54,7 @@ Click [here](/relevance/reference/bes-wizard-set.html) to access the page descri
 ## BES Wizard with Multiplicity
 
 These Inspectors deal with arrays of BES Wizards, allowing you to extract unique properties and count them.
-This object type is derived from the <bes wizard> type and therefore shares the same properties as that type.
+This object type is derived from the `<bes wizard>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-wizard-with-multiplicity.html) to access the page describing to these inspectors.
 

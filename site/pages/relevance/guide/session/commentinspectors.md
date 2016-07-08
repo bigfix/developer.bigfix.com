@@ -14,7 +14,7 @@ Click [here](/relevance/reference/bes-comment.html) to access the page describin
 
 **Examples**
 
-```
+```relevance
 (name of author of it, text of it) of comments of bes fixlets
 ```
 

@@ -16,7 +16,7 @@ Click [here](/relevance/reference/bes-site.html) to access the page describing t
 
 **Examples**
 
-```
+```relevance
 display name of bes site whose (name of it = "Enterprise Security")
 ``` 
 
@@ -35,7 +35,7 @@ Click [here](/relevance/reference/bes-site-set.html) to access the page describi
 ## BES Site with Multiplicity
 
 These Inspectors deal with arrays of BES sites, allowing you to extract unique properties and count them.
-This object type is derived from the <bes site> type and therefore shares the same properties as that type.
+This object type is derived from the `<bes site>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-site-with-multiplicity.html) to access the page describing to these inspectors.
 

@@ -15,13 +15,13 @@ Click [here](/relevance/reference/bes-property.html) to access the page describi
 
 **Examples**
 
-```
+```relevance
 names of bes properties whose (disk usage of it > 0) 
 ```
 
 Returns a list of the BES Properties than are currently using disk space.
 
-```
+```relevance
 size of (set of bes properties)
 ```
 
@@ -41,7 +41,7 @@ Click [here](/relevance/reference/bes-property-set.html) to access the page desc
 ## BES Property with Multiplicity
 
 These Inspectors deal with arrays of BES properties, allowing you to extract unique properties and count them.
-This object type is derived from the <bes property> type and therefore shares the same properties as that type.
+This object type is derived from the `<bes property>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-property-with-multiplicity.html) to access the page describing to these inspectors.
 

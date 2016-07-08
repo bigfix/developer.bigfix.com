@@ -26,7 +26,7 @@ Click [here](/relevance/reference/bes-fixlet-field-value.html) to access the pag
 
 ---
 
-## Mime Field
+## MIME Field
 
 These Inspectors deal with the MIME fields that constitute a Fixlet file.
 
@@ -34,7 +34,7 @@ Click [here](/relevance/reference/mime-field.html) to access the page describing
 
 These fields typically start with 'x-fixlet'. For example, to return the value of a specific MIME field, you might use:
 
-```
+```relevance
 mime fields "x-fixlet-cve" of bes fixlets
 ```
 
@@ -48,43 +48,43 @@ Click [here](/relevance/reference/bes-fixlet.html) to access the page describing
 
 **Examples**
 
-```
+```relevance
 links (h1 of name of it) of bes fixlets 
 ```
 
 Returns a list of HTML strings, each with an HTML link named after the Fixlet message and formatted as a header (h1).
 
-```
+```relevance
 links (name of it & "(" & id of it as string & ")")) of bes fixlets
 ```
 
 Returns an HTML string that will print the name and ID of the Fixlet message inside a clickable `<A>` tag.
 
-```
+```relevance
 (br & html "Click <A href='" & link href of it & html "'>here</A> to open fixlet " & id of it as string) of bes fixlets 
 ```
 
 Returns an html string such as 'Click here to open fixlet 12345' message that, when clicked, will open the corresponding BES Fixlet document.
 
-```
+```relevance
 links of bes fixlets 
 ```
 
 Returns a list of all the BES Fixlets formated as links in an HTML string.
 
-```
+```relevance
 (id of it, mime fields "x-fixlet-sans" of it) of bes fixlets
 ```
 
 Returns a list of the Fixlet IDs and the values of the mime SANS fields (if they exist) of each.
 
-```
+```relevance
 size of (set of bes fixlets)
 ```
 
 Returns the current number of BES Fixlet messages.
 
-```
+```relevance
 names of bes fixlets whose (source severity of it is "Critical") 
 ```
 

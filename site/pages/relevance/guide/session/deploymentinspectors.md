@@ -15,7 +15,7 @@ Click [here](/relevance/reference/bes-deployment-option.html) to access the page
 
 **Examples**
 
-```
+```relevance
 (name of it, value of it) of bes deployment options 
 ```
 

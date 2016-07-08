@@ -14,7 +14,7 @@ Click [here](/relevance/reference/bes-wakeonlan-status.html) to access the page 
 
 **Examples**
 
-```
+```relevance
 (database id of it, enabled of it) of bes wakeonlan statuses
 ```
 

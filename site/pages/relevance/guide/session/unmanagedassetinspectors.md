@@ -14,77 +14,6 @@ The results, such as OS, Device Type, Network Card Vendor, and Open Ports, are u
 
 Click [here](/relevance/reference/bes-unmanagedasset.html) to access the page describing to these inspectors.
 
-**Examples**
-
-```
-names of hidden bes actions 
-```
-
-Returns the list of currently hidden BES Actions.
-
-```
-links (h1 of name of it) of bes actions 
-```
-
-Creates clickable links listing all the current BES Actions, displaying the Action names in headline format.
-
-```
-links (name of it & "(" & id of it as string & ")")) of bes actions 
-```
-
-Creates clickable links listing all the current BES Actions, formated as name and ID.
-
-```
-(br & html "Click <A href='" & link href of it & html "'>here</A> to open action " & id of it as string) of bes actions 
-```
-Creates clickable links listing all the current BES Actions, formated with a descriptive prompt and an embedded link, such as: 
-* Click here to open action 123456.
-
-```
-links of bes actions 
-```
-
-Returns a set of `<A>` tags enclosing all the BES Actions in html format, creating a series of clickable Action links.
-
-```
-parameter "action issue date" of action 
-```
-
-This Inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
-
-```
-detailed status of result from (bes computer whose (id of it is 1234567)) of (bes action whose (id of it is 1234)) 
-```
-
-Returns the detailed status of the specified action on the given computer.
-
-```
-detailed statuses of results of (bes action whose (id of it is 1234)) 
-```
-
-Returns a detailed status list containing the results of bes actions with the specified id.
-
-```
-size of (set of bes actions) 
-```
-Returns the current number of BES Actions.
-
-<!-- ---
-
-## BES Unmanagedasset Field
-
-These Inspectors return the iterated list of BES Actions, converted into a set to make it easy to do set arithmetic with the list.
-
-**Example**
-
-``C
-(values of fields whose (name of it is "Hostname")) of bes unmanagedassets whose (not client installed flag of it)
-```
-
-Returns the hostnames of all devices that are running windows but are not running the BES Client.
--->
----
-
 ## BES Unmanagedasset Field
 
 These Inspectors provide authors with access to the individual fields of various unmanaged assets. 
@@ -97,7 +26,7 @@ Click [here](/relevance/reference/bes-unmanagedasset-field.html) to access the p
 
 **Example**
 
-```
+```relevance
 (name of it & " - " & value of it) of fields of bes unmanagedasset whose (id of it is 55)
 ```
 
@@ -118,6 +47,6 @@ Click [here](/relevance/reference/bes-unmanagedasset-set.html) to access the pag
 ## BES Unmanagedasset with Multiplicity
 
 These Inspectors deal with arrays of BES unmanaged assets, allowing you to extract unique properties and count them.
-This object type is derived from the <bes unmanagedasset> type and therefore shares the same properties as that type.
+This object type is derived from the `<bes unmanagedasset>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-unmanagedasset-with-multiplicity.html) to access the page describing to these inspectors.
