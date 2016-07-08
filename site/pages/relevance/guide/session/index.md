@@ -18,14 +18,15 @@ Refer also to the [Core Inspectors](/relevance/guide/basics/), which define the 
   <dt>**[Running the Presentation Debugger](./presentationdebugger.html)**</dt>
   <dd>Describes how to develop and test your Session Relevance expressions .</dd>
 
-  <dt>**[Linking to other documents](./linkingdocs.html)**</dt>
-  <dd>Explains how to create hyperlinks to specific pages in the Console or in the Web Reports.</dd>
-
   <dt>**[Adding Relevance to Presentations](./presentationrelevance.html)**</dt>
   <dd>Shows how to evaluate relevance in presentations.</dd>
 
   <dt>**[Refreshing Relevance](./refreshingrelevance.html)**</dt>
   <dd>Describes how to request to refresh the retrieved data.</dd>
+  
+  <dt>**[Linking to other documents](./linkingdocs.html)**</dt>
+  <dd>Explains how to create hyperlinks to specific pages in the Console or in the Web Reports.</dd>
+  
 
 </dl>
 
