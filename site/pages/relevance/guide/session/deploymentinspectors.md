@@ -11,7 +11,7 @@ Use these Inspectors to manage the deployment options set in BigFix Administrato
 These Inspectors allow you to customize the behavior of your BES deployment. 
 These options are set by the system administrator in the BigFix Administrators Tool, under the Advanced Options tab.
 
-Click [here](/relevance/reference/bes-deployment-option.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-deployment-option.html) to access the page describing these inspectors.
 
 **Examples**
 
