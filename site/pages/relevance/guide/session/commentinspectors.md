@@ -10,7 +10,7 @@ Use these Inspectors to query information about BES Comments.
 
 These Inspectors return the text, timestamp and author of BES Comments.
 
-Click [here](/relevance/reference/bes-comment.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-comment.html) to access the page describing these inspectors.
 
 **Examples**
 
