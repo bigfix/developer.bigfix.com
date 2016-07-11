@@ -12,7 +12,7 @@ In the BES Console, domains are represented as the high-level buttons on the lef
 Listing the domains for the Console yields all the currently loaded domains. 
 In Web Reports, only those domains with at least one visible report are listed.
 
-Click [here](/relevance/reference/bes-domain.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-domain.html) to access the page describing these inspectors.
 
 ---
 
@@ -20,7 +20,7 @@ Click [here](/relevance/reference/bes-domain.html) to access the page describing
 
 These Inspectors return the current collection of BES Domains as a set, which can be manipulated by intersection, union, and more.
 
-Click [here](/relevance/reference/bes-domain-set.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-domain-set.html) to access the page describing these inspectors.
 
 ---
 
@@ -29,5 +29,5 @@ Click [here](/relevance/reference/bes-domain-set.html) to access the page descri
 These Inspectors deal with sets of BES Domains, allowing you to extract unique domains and count them.
 This object type is derived from the <bes domain> type and therefore shares the same properties as that type.
 
-Click [here](/relevance/reference/bes-domain-with-multiplicity.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-domain-with-multiplicity.html) to access the page describing these inspectors.
 
