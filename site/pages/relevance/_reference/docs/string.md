@@ -395,6 +395,8 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;div&gt
 
 Returns the user object corresponding to the specified name.
 
+Since version 8.1.535.0, "domain user &lt;string&gt;" returns &lt;{{'user' | linkType}}> type. See [domain user &lt;string&gt; : user](/relevance/reference/user.html#domain-user-string-user).
+
 # domain user &lt;string&gt; : user
 
 No documentation exists.
@@ -818,6 +820,8 @@ Returns a time object for the name provided. See time.
 # local user &lt;string&gt; : local user
 
 Returns the Active Directory local user object for the specified local user. This allows inspection of AD properties for that user, whether cached or currently logged in.
+
+Since version 8.1.535.0, "local user &lt;string&gt;" returns &lt;{{'user' | linkType}}> type. See [local user &lt;string&gt; : user](/relevance/reference/user.html#local-user-string-user).
 
 # local user &lt;string&gt; : user
 

@@ -922,9 +922,11 @@ Returns the domain top folder of the system domain
 
 Returns all of the users that are members of the domain for which the machine is a user.
 
+Since version 8.1.535.0, "domain user" creation returns &lt;{{'user' | linkType}}> type. See [domain user : user](/relevance/reference/user.html#domain-user-user).
+
 # domain user : user
 
-No documentation exists.
+Returns all of the users that are members of the domain for which the machine is a user.
 
 # domainname : string
 
@@ -1402,9 +1404,11 @@ Returns a time zone object corresponding to the local time zone.
 
 Itererates of all cached Active Directory local users. This inspector only works in the client context when caching is enabled.
 
+Since version 8.1.535.0, "local user" creation returns &lt;{{'user' | linkType}}> type. See [local user : user](/relevance/reference/user.html#local-user-user).
+
 # local user : user
 
-Returns the local user object specified by the name &lt;string&gt;.
+Returns all local user objects.
 
 On Unix/Linux platform with Bigfix client version below 9.5, this returns only logged-on users. Since 9.5, this returns all local users, logged in or not.
 

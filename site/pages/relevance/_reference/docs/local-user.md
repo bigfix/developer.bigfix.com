@@ -1,6 +1,7 @@
 # type: local user
 
-No documentation exists.
+The &lt;{{'local user' | linkType}}> type represents users under Windows systems. This 
+type has been deprecated by &lt;{{'user' | linkType}}> type since version 8.0.584.0.
 
 # account disabled flag of &lt;local user&gt; : boolean
 
