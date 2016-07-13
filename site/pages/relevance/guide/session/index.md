@@ -50,6 +50,15 @@ They allow you to access information in the BigFix databases and display it in t
   <dt>**[Comment Inspectors](./commentinspectors.html)**</dt>
   <dd>To query information about issued comments.</dd> 
 
+  <dt>**[Computer Inspectors](./computerinspectors.html)**</dt>
+  <dd>To query and manage the computers that can be listed on the BigFix Console.</dd> 
+  
+  <dt>**[Client Inspectors](./clientinspectors.html)**</dt>
+  <dd>To return the name, value and scope of BES Client settings.</dd> 
+  
+  <dt>**[Utf8 String](./utf8string.html)**</dt>
+  <dd>8-bit Unicode Transformation Format inspectors used by the EvaluateRelevance API.</dd> 
+
   <dt>**[Deployment Options Inspectors](./deploymentinspectors.html)**</dt>
   <dd>To manage the advanced deployment options set in BigFix Administrators Tool.</dd>
   
