@@ -34,7 +34,7 @@ nav:
           - name: Relations
             href: /relevance/guide/basics/relations.html
 
-          - name: Castings
+          - name: Cast
             href: /relevance/guide/basics/casts.html
 
           - name: Errors
