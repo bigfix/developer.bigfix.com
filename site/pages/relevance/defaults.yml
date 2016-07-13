@@ -5,16 +5,12 @@ nav:
   - name: Home
     href: /relevance/
 
-  - name: Tutorials
+  - name: Tutorial
     href: /relevance/tutorial/
     children:
 
       - name: Introduction to Relevance language
         href: /relevance/tutorial/client/
-
-  - name: Guides
-    href: /relevance/guide/
-    children:
 
       - name: Core Inspectors
         href: /relevance/guide/basics/
@@ -23,13 +19,22 @@ nav:
           - name: Strings
             href: /relevance/guide/basics/strings.html
 
+          - name: Introspectors
+            href: /relevance/guide/basics/introspectors.html
+
           - name: Properties
             href: /relevance/guide/basics/properties.html
 
-          - name: Numbers
+          - name: Arithmetic Operations
             href: /relevance/guide/basics/numbers.html
 
-          - name: Casts
+          - name: Concatenations
+            href: /relevance/guide/basics/concatenations.html
+
+          - name: Relations
+            href: /relevance/guide/basics/relations.html
+
+          - name: Castings
             href: /relevance/guide/basics/casts.html
 
           - name: Errors
@@ -38,13 +43,22 @@ nav:
           - name: Exists
             href: /relevance/guide/basics/exists.html
 
-          - name: 'If, Then, Else'
+          - name: 'If...Then...Else'
             href: /relevance/guide/basics/if-then-else.html
 
-          - name: It Expressions
+          - name: It
             href: /relevance/guide/basics/it-expressions.html
 
-          - name: Singular and Plural
+          - name: Sets
+            href: /relevance/guide/basics/sets.html
+
+          - name: Indexing
+            href: /relevance/guide/basics/indexing.html
+
+          - name: ANDs and ORs
+            href: /relevance/guide/basics/andsandors.html
+
+          - name: Plural
             href: /relevance/guide/basics/singular-and-plural.html
 
           - name: Tuples
@@ -63,7 +77,7 @@ nav:
           - name: System Information
             href: /relevance/guide/client/system-information.html
 
-          - name: Files
+          - name: Folders and Files
             href: /relevance/guide/client/files.html
 
           - name: Registry
@@ -86,25 +100,25 @@ nav:
 
           - name: WMI
             href: /relevance/guide/client/wmi.html
-            
+			
       - name: Session Relevance
         href: /relevance/guide/session/
         children:
 
-          - name: Basic concepts
+          - name: Basics
             href: /relevance/guide/session/basics.html
 
           - name: Running the Presentation Debugger
             href: /relevance/guide/session/presentationdebugger.html
 
-          - name: Adding Relevance to Presentations
-            href: /relevance/guide/session/presentationrelevance.html
-
-          - name: Refreshing Relevance
-            href: /relevance/guide/session/refreshingrelevance.html
-
           - name: Linking to other documents
             href: /relevance/guide/session/linkingdocs.html
+
+          - name: Adding Relevance to Presentations
+            href: /relevance/guide/session/presentationrelevance.html	
+
+          - name: Refreshing Relevance
+            href: /relevance/guide/session/refreshingrelevance.html		
 
           - name: BES Action
             href: /relevance/guide/session/actioninspectors.html
@@ -114,7 +128,7 @@ nav:
 
           - name: BES Baseline
             href: /relevance/guide/session/baselineinspectors.html
-
+			
           - name: BES Comment
             href: /relevance/guide/session/commentinspectors.html	
 
@@ -126,10 +140,10 @@ nav:
 
           - name: BES Filter
             href: /relevance/guide/session/filterinspectors.html
-
+			
           - name: BES Fixlet
             href: /relevance/guide/session/fixletinspectors.html
-
+			
           - name: Networking Inspectors
             href: /relevance/guide/session/networkinginspectors.html
 
@@ -156,7 +170,7 @@ nav:
 
           - name: World Inspectors 
             href: /relevance/guide/session/worldinspectors.html
-
+			
           - name: HTML Inspectors
             href: /relevance/guide/session/htmlinspectors.html
 
