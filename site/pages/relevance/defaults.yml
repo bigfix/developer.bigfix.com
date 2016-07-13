@@ -130,7 +130,16 @@ nav:
             href: /relevance/guide/session/baselineinspectors.html
 			
           - name: BES Comment
-            href: /relevance/guide/session/commentinspectors.html	
+            href: /relevance/guide/session/commentinspectors.html
+            
+          - name: BES Computer
+            href: /relevance/guide/session/computerinspectors.html
+
+          - name: BES Client
+            href: /relevance/guide/session/clientinspectors.html
+
+          - name: Utf8 String
+            href: /relevance/guide/session/utf8string.html
 
           - name: BES Deployment
             href: /relevance/guide/session/deploymentinspectors.html
