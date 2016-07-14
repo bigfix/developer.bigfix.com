@@ -10,7 +10,7 @@ section: home
     <section>
       <p>This is the official IBM repository of information for developing IBM BigFix content, and it is tailored to satisfy the needs of both beginner and expert content developers.</p>
 
-      <p>If you are new to BigFix customization, start your navigation by clicking <a href="/get-started/">Get started.</a></p>
+      <p>If you are new to BigFix customization, start your navigation by clicking <a href="/get-started/">Getting started.</a></p>
     </section>
 
     <section>
