@@ -15,7 +15,7 @@ Application. For more information, click [IBM BigFix Query](https://www.ibm.com/
   <dt>[**System Information**](./system-information.html)</dt>
   <dd>To query basic information about clients.</dd>
 
-  <dt>[**Files**](./files.html)</dt>
+  <dt>[**Folders and Files**](./files.html)</dt>
   <dd>To get information about what files and folders exist, and the contents of those files.</dd>
 
   <dt>[**Registry**](./registry.html)</dt>
