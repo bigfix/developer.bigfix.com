@@ -1,5 +1,5 @@
 ﻿---
-title: Utf8 String Inspectors
+title: UTF-8 String Inspectors
 ---
 
 UTF-8 (8-bit Unicode Transformation Format) is a variable-length character encoding format. 

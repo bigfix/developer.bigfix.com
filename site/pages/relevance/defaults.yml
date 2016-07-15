@@ -142,7 +142,7 @@ nav:
           - name: BES Client
             href: /relevance/guide/session/clientinspectors.html
 
-          - name: Utf8 String
+          - name: UTF-8 String
             href: /relevance/guide/session/utf8string.html
 
           - name: BES Deployment
