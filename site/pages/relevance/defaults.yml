@@ -12,6 +12,10 @@ nav:
       - name: Introduction to Relevance language
         href: /relevance/tutorial/client/
 
+  - name: Guides
+    href: /relevance/guide/
+    children:
+
       - name: Core Inspectors
         href: /relevance/guide/basics/
         children:
