@@ -35,6 +35,9 @@ nav:
           - name: Concatenations
             href: /relevance/guide/basics/concatenations.html
 
+          - name: Relations
+            href: /relevance/guide/basics/relations.html
+
           - name: Cast
             href: /relevance/guide/basics/casts.html
 
@@ -49,6 +52,9 @@ nav:
 
           - name: It
             href: /relevance/guide/basics/it-expressions.html
+
+          - name: Sets
+            href: /relevance/guide/basics/sets.html
 
           - name: Indexing
             href: /relevance/guide/basics/indexing.html
