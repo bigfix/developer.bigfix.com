@@ -56,7 +56,7 @@ They allow you to access information in the BigFix databases and display it in t
   <dt>**[Client Inspectors](./clientinspectors.html)**</dt>
   <dd>To return the name, value and scope of BES Client settings.</dd> 
   
-  <dt>**[Utf8 String](./utf8string.html)**</dt>
+  <dt>**[UTF-8 String Inspectors](./utf8string.html)**</dt>
   <dd>8-bit Unicode Transformation Format inspectors used by the EvaluateRelevance API.</dd> 
 
   <dt>**[Deployment Options Inspectors](./deploymentinspectors.html)**</dt>

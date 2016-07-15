@@ -95,8 +95,10 @@ If you want you can use the following shortcuts for registry keys:
     </tr>
 </table>
 
-You can use predefined commands to query at runtime the list of reistered applications (`regapps`), the list of application currently running (`running applications`) and the list of most recently accessed applications 
+You can use predefined commands to query at runtime the list of reistered applications (`regapps`), the 
+list of application currently running (`running applications`) and the list of most recently accessed applications 
 (`recent applications`).
+
 **Note:**If you are using the QnA tool to test your relevance queries, you might need to close and re-open the program to get an updated list of running applications.
 
 ## Current user keys
@@ -104,10 +106,7 @@ You can use predefined commands to query at runtime the list of reistered applic
 On target systems BigFix runs as LOCAL SYSTEM. To get the logged in user’s HKEY_CURRENT_USER value, you can search through the Logon keys for the name of the current user: 
 
 {% qna %}
-Q: name of key whose ((it = name of current user as lowercase OR it starts with 
-name of current user as lowercase & "@") of (it as string as lowercase) of value 
-"Logon User Name" of key "Software\Microsoft\Windows\CurrentVersion\Explorer" 
-of it) of key "HKEY_USERS" of registry
+Q: name of key whose ((it = name of current user as lowercase OR it starts with name of current user as lowercase & "@") of (it as string as lowercase) of value "Logon User Name" of key "Software\Microsoft\Windows\CurrentVersion\Explorer" of it) of key "HKEY_USERS" of registry
 A: S-1-5-21-1214450339-2025729265-839522115-1013
 {% endqna %}
 

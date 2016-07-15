@@ -38,7 +38,7 @@ A: C:\Program Files (x86)\BigFix Enterprise\BES Client
 {% endqna %}
 
 On Windows systems you can use the predefined keywords **windows folder** and **system folder** that return a
-<folder> object corresponding to the windows or system folder. Since these folders are located in
+`<folder>` object corresponding to the windows or system folder. Since these folders are located in
 different locations for different operating systems, these commands are very useful.
 
 ## Files
