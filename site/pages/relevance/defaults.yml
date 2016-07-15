@@ -104,7 +104,7 @@ nav:
 
           - name: WMI
             href: /relevance/guide/client/wmi.html
-			
+
       - name: Session Relevance
         href: /relevance/guide/session/
         children:
@@ -132,10 +132,10 @@ nav:
 
           - name: BES Baseline
             href: /relevance/guide/session/baselineinspectors.html
-			
+
           - name: BES Comment
             href: /relevance/guide/session/commentinspectors.html
-            
+       
           - name: BES Computer
             href: /relevance/guide/session/computerinspectors.html
 
@@ -153,10 +153,10 @@ nav:
 
           - name: BES Filter
             href: /relevance/guide/session/filterinspectors.html
-			
+
           - name: BES Fixlet
             href: /relevance/guide/session/fixletinspectors.html
-			
+
           - name: Networking Inspectors
             href: /relevance/guide/session/networkinginspectors.html
 
