@@ -1,5 +1,5 @@
 ---
-title: Numbers
+title: Arithmetic Operations
 ---
 
 Integers are numbers (0-9) without a decimal place. Integers are not wrapped in quotes. We can write a relevance query whose answer is a number
