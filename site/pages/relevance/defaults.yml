@@ -50,9 +50,6 @@ nav:
           - name: It
             href: /relevance/guide/basics/it-expressions.html
 
-          - name: Sets
-            href: /relevance/guide/basics/sets.html
-
           - name: Indexing
             href: /relevance/guide/basics/indexing.html
 
