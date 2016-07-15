@@ -4,40 +4,59 @@ title: Core Inspectors
 
 Begin learning about the Relevance language.
 
+You can create and test your custom Relevance queries locally on the Client system using the Fixlet Debugger 
+<!-- [Fixlet Debugger](/relevance/tools/fixlet_debugger.html) --> or on the Linux CentOS interactive sandbox available under [Online Evaluator](/relevance/evaluate/).
+
+If you own an IBM BigFix Lifecycle or an IBM BigFix Compliance version 9.5 Patch 2 or later license, you can exercise your 
+Client Relevance Language queries on the  target clients also directly from the IBM WebUI using the IBM BigFix Query 
+Application. For more information, click [IBM BigFix Query](https://www.ibm.com/support/knowledgecenter/SSTK87_9.5.0/com.ibm.bigfix.webui.doc/WebUI/Users_Guide/c_bigfix_query.html). 
+
 <dl>
   <dt>[**Strings**](./strings.html)</dt>
-  <dd>Learn how to combine and manipulate strings.</dd>
+  <dd>To combine and manipulate strings.</dd>
+  
+  <dt>[**Introspectors**](./introspectors.html)</dt>
+  <dd>To see what you can query about inspectors.</dd>
 
   <dt>[**Properties**](./properties.html)</dt>
-  <dd>Learn how to query properties of objects.</dd>
+  <dd>To query properties of objects.</dd>
 
-  <dt>[**Numbers**](./numbers.html)</dt>
-  <dd>Learn about numbers, the most basic type.</dd>
+  <dt>[**Arithmetic Operations**](./numbers.html)</dt>
+  <dd>To manage numbers and the most basic operators.</dd>
 
-  <dt>[**Casts**](./casts.html)</dt>
-  <dd>Learn how to convert types into other types.</dd>
+  <dt>[**Cast**](./casts.html)</dt>
+  <dd>To convert types into other types.</dd>
 
   <dt>[**Errors**](./errors.html)</dt>
-  <dd>Learn what the different errors mean.</dd>
+  <dd>To learn what the different errors mean.</dd>
 
   <dt>[**Exists**](./exists.html)</dt>
-  <dd>Learn how to check whether something exists.</dd>
+  <dd>To check if an object or one of its properties exists.</dd>
 
-  <dt>[**If, Then, Else**](./if-then-else.html)</dt>
-  <dd>Learn how to create conditional relevance expressions.</dd>
+  <dt>[**If...Then...Else**](./if-then-else.html)</dt>
+  <dd>To create conditional relevance expressions.</dd>
 
-  <dt>[**It Expressions**](./it-expressions.html)</dt>
-  <dd>Learn how to use the `it` keyword to reduce duplication.</dd>
+  <dt>[**It**](./it-expressions.html)</dt>
+  <dd>To reduce duplication.</dd>
+  
+  <dt>[**Sets**](./sets.html)</dt>
+  <dd>To run operations such as union and intersection.</dd>
+  
+  <dt>[**Indexing**](./indexing.html)</dt>
+  <dd>To get specific entries in a list.</dd>
+  
+  <dt>[**ANDs and ORs**](./andsandors.html)</dt>
+  <dd>To see how `AND`s ans `OR`s binary operations apply to the Relevance Language.</dd>
 
-  <dt>[**Singular and Plural**](./singular-and-plural.html)</dt>
-  <dd>Learn what singular and plural means.</dd>
+  <dt>[**Plural**](./singular-and-plural.html)</dt>
+  <dd>To learn how to take advantages of using plurals to avoid errors.</dd>
 
   <dt>[**Tuples**](./tuples.html)</dt>
-  <dd>Learn how to create and use tuples. Tuples allow you to combine multiple values together.</dd>
+  <dd>To combine and manage compound of objects of multiple types together.</dd>
 
   <dt>[**Whose**](./whose.html)</dt>
-  <dd>Learn how to use the `whose` keyword to filter lists of values.</dd>
+  <dd>To filter lists of values.</dd>
 
   <dt>[**Parent Types**](./parent-types.html)</dt>
-  <dd>Learn about parent types.</dd>
+  <dd>To understand properties inheritance and how to address to an object starting from its child.</dd>
 </dl>
