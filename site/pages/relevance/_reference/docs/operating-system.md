@@ -297,7 +297,7 @@ Returns the release version of operating system.
 
 # releaseid of &lt;operating system&gt; : string
 
-Returns the "ReleaseId" of the Windows operating system which indicates the update level. This is also included in the base string representation of the &lt;operating system&gt; inspector.
+Returns the "ReleaseId" of the Windows operating system which indicates the update level. This is also included in the base string representation of the &lt;operating system&gt; inspector. A value is returned only if the "ReleaseId" is defined on the operating system.
 
 # service pack &lt;string&gt; of &lt;operating system&gt; : service pack
 
