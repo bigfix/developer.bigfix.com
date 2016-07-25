@@ -240,7 +240,7 @@ will return **This expression contained a character which is not allowed** becau
 
 ## No Inspector Context
 
-Certain inspectors can only be evaulated by the Endpoint Manager Client and therefore will not work in QNA.  If you try to evaluate one of these in QNA, you will recieve **No inspector context**.  A common example is:
+Certain inspectors can only be evaulated by the BigFix Client and therefore will not work in QNA.  If you try to evaluate one of these in QNA, you will recieve **No inspector context**.  A common example is:
 
 {% qna %}
 Q: pending restart
