@@ -14,9 +14,6 @@ Manage computer mailboxes and the files they contain.
 
 {% endrestapi %}
 
-{% restapi "mailbox/{computer id}", "PUT", "Not Supported" %}
-{% endrestapi %}
-
 {% restapi "mailbox/{computer id}", "POST", "Creates a new mailbox file." %}
 **Request:** The file(s) to be uploaded in multipart form encoding. 
 For uploading a single file you can specify the filename in the content-disposition header and send the file as the body.
@@ -25,9 +22,6 @@ For uploading a single file you can specify the filename in the content-disposit
 - HTTP 200 - Returns XML in body of response.
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "mailbox/{computer id}", "DELETE", "Not Supported" %}
 {% endrestapi %}
 
 {% restapi "mailbox/{computer id}/{file id}", "GET", "Fetches the details of the specified file in the specified computer's mailbox." %}
@@ -70,12 +64,6 @@ For uploading a single file you can specify the filename in the content-disposit
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "mailbox/", "GET", "Not Supported" %}
-{% endrestapi %}
-
-{% restapi "mailbox/", "PUT", "Not Supported" %}
-{% endrestapi %}
-
 {% restapi "mailbox/", "POST", "Creates a new mailbox file." %}
 **Request:** The file(s) to be uploaded in multipart form encoding. 
 
@@ -83,7 +71,4 @@ For uploading a single file you can specify the filename in the content-disposit
 - HTTP 200 - Returns XML in body of response.
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "mailbox/", "DELETE", "Not Supported" %}
 {% endrestapi %}

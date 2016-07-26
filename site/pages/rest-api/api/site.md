@@ -13,19 +13,19 @@ For example:
 **Response:** XML listing all visible sites to the authenticated operator. 
 For example:
 
-```
-    <?xml version="1.0" encoding="UTF-8"?>
-    <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-      <ExternalSite Resource="http://lab.bigfix.me:52311/api/site/external/BES%20Support">
-        <Name>BES Support</Name>
-      </ExternalSite>
-      <OperatorSite Resource="http://lab.bigfix.me:52311/api/site/operator/BigFixAdmin">
-        <Name>BigFixAdmin</Name>
-      </OperatorSite>
-      <ActionSite Resource="http://lab.bigfix.me:52311/api/site/master">
-        <Name>ActionSite</Name>
-      </ActionSite>
-    </BESAPI>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+  <ExternalSite Resource="http://lab.bigfix.me:52311/api/site/external/BES%20Support">
+    <Name>BES Support</Name>
+  </ExternalSite>
+  <OperatorSite Resource="http://lab.bigfix.me:52311/api/site/operator/BigFixAdmin">
+    <Name>BigFixAdmin</Name>
+  </OperatorSite>
+  <ActionSite Resource="http://lab.bigfix.me:52311/api/site/master">
+    <Name>ActionSite</Name>
+  </ActionSite>
+</BESAPI>
 ```
 
 **Response Schema:** BESAPI.xsd
@@ -55,16 +55,16 @@ For example:
 **Response:** BES XML representing a site.
 For example:
 
-```
-    <?xml version="1.0" encoding="UTF-8"?>
-    <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
-      <ActionSite>
-        <Name>ActionSite</Name>
-        <Description></Description>
-        <GlobalReadPermission>false</GlobalReadPermission>
-        <SubscriptionMode>All</SubscriptionMode>
-      </ActionSite>
-    </BES>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+  <ActionSite>
+    <Name>ActionSite</Name>
+    <Description></Description>
+    <GlobalReadPermission>false</GlobalReadPermission>
+    <SubscriptionMode>All</SubscriptionMode>
+  </ActionSite>
+</BES>
 ```
 
 **Response Schema:** BES.xsd
@@ -95,14 +95,14 @@ For example:
 **Response:** BESAPI XML response.
 For example:
 
-```
-    <?xml version="1.0" encoding="UTF-8"?>
-      <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-      <SitePermission Resource="http://lab.bigfix.me:52311/api/site/master/permission/operator/BigFixAdmin">
-        <Permission>Owner</Permission>
-        <Operator Resource="http://lab.bigfix.me:52311/api/operator/BigFixAdmin">BigFixAdmin</Operator>
-      </SitePermission>
-    </BESAPI>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+  <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+  <SitePermission Resource="http://lab.bigfix.me:52311/api/site/master/permission/operator/BigFixAdmin">
+    <Permission>Owner</Permission>
+    <Operator Resource="http://lab.bigfix.me:52311/api/operator/BigFixAdmin">BigFixAdmin</Operator>
+  </SitePermission>
+</BESAPI>
 ```
 
 **Response Schema:** BESAPI.xsd
@@ -139,14 +139,14 @@ For example:
 **Response:** BESAPI.XML file.
 For example:
 
-```
-    <?xml version="1.0" encoding="UTF-8"?>
-    <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-      <SitePermission Resource="http://lab.bigfix.me:52311/api/site/master/permission/operator/BigFixAdmin">
-        <Permission>Owner</Permission>
-        <Operator Resource="http://lab.bigfix.me:52311/api/operator/BigFixAdmin">BigFixAdmin</Operator>
-      </SitePermission>
-    </BESAPI>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+  <SitePermission Resource="http://lab.bigfix.me:52311/api/site/master/permission/operator/BigFixAdmin">
+    <Permission>Owner</Permission>
+    <Operator Resource="http://lab.bigfix.me:52311/api/operator/BigFixAdmin">BigFixAdmin</Operator>
+  </SitePermission>
+</BESAPI>
 ```
 	
 **Response Schema:** BESAPI.xsd
@@ -184,26 +184,26 @@ For example:
 **Response:** BESAPI.XML file.
 For example:
 
-```
-    <?xml version="1.0" encoding="UTF-8"?>
-    <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-      <Fixlet Resource="http://lab.bigfix.me:52311/api/fixlet/master/39" LastModified="Tue, 19 Mar 2013 20:41:37 +0000">
-        <Name>Custom Fixlet</Name>
-        <ID>39</ID>
-      </Fixlet>
-      <Analysis Resource="http://lab.bigfix.me:52311/api/analysis/master/40" LastModified="Tue, 19 Mar 2013 20:41:59 +0000">
-        <Name>Custom Analysis</Name>
-        <ID>40</ID>
-      </Analysis>
-      <Task Resource="http://lab.bigfix.me:52311/api/task/master/41" LastModified="Tue, 19 Mar 2013 20:43:42 +0000">
-        <Name>Custom Task</Name>
-        <ID>41</ID>
-      </Task>
-      <ComputerGroup Resource="http://lab.bigfix.me:52311/api/computergroup/master/47" LastModified="Tue, 19 Mar 2013 22:26:24 +0000">
-        <Name>Windows XP Computers</Name>
-        <ID>47</ID>
-      </ComputerGroup>
-    </BESAPI>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+  <Fixlet Resource="http://lab.bigfix.me:52311/api/fixlet/master/39" LastModified="Tue, 19 Mar 2013 20:41:37 +0000">
+    <Name>Custom Fixlet</Name>
+    <ID>39</ID>
+  </Fixlet>
+  <Analysis Resource="http://lab.bigfix.me:52311/api/analysis/master/40" LastModified="Tue, 19 Mar 2013 20:41:59 +0000">
+    <Name>Custom Analysis</Name>
+    <ID>40</ID>
+  </Analysis>
+  <Task Resource="http://lab.bigfix.me:52311/api/task/master/41" LastModified="Tue, 19 Mar 2013 20:43:42 +0000">
+    <Name>Custom Task</Name>
+    <ID>41</ID>
+  </Task>
+  <ComputerGroup Resource="http://lab.bigfix.me:52311/api/computergroup/master/47" LastModified="Tue, 19 Mar 2013 22:26:24 +0000">
+    <Name>Windows XP Computers</Name>
+    <ID>47</ID>
+  </ComputerGroup>
+</BESAPI>
 ```
 	
 **Response Schema:** BESAPI.xsd
@@ -220,24 +220,24 @@ For example:
 **Response:** BESAPI.XML file.
 For example:
 
-```
-    <?xml version="1.0" encoding="UTF-8"?>
-    <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-      <SiteFile Resource="http://lab.bigfix.me:52311/api/site/master/file/33">
-        <Name>Relays.dat</Name>
-        <ID>33</ID>
-        <LastModified>Fri, 15 Mar 2013 01:22:09 +0000</LastModified>
-        <FileSize></FileSize>
-        <IsClientFile>0</IsClientFile>
-      </SiteFile>
-      <SiteFile Resource="http://lab.bigfix.me:52311/api/site/master/file/50">
-        <Name>MyTextFile.txt</Name>
-        <ID>50</ID>
-        <LastModified>Wed, 20 Mar 2013 00:52:32 +0000</LastModified>
-        <FileSize>7</FileSize>
-        <IsClientFile>0</IsClientFile>
-      </SiteFile>
-    </BESAPI>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+  <SiteFile Resource="http://lab.bigfix.me:52311/api/site/master/file/33">
+    <Name>Relays.dat</Name>
+    <ID>33</ID>
+    <LastModified>Fri, 15 Mar 2013 01:22:09 +0000</LastModified>
+    <FileSize></FileSize>
+    <IsClientFile>0</IsClientFile>
+  </SiteFile>
+  <SiteFile Resource="http://lab.bigfix.me:52311/api/site/master/file/50">
+    <Name>MyTextFile.txt</Name>
+    <ID>50</ID>
+    <LastModified>Wed, 20 Mar 2013 00:52:32 +0000</LastModified>
+    <FileSize>7</FileSize>
+    <IsClientFile>0</IsClientFile>
+  </SiteFile>
+</BESAPI>
 ```
 	
 **Response Schema:** BESAPI.xsd

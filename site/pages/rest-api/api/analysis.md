@@ -10,18 +10,12 @@ title: Analysis
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "analyses/{site type}/{site name}", "PUT", "Not Supported" %}
-{% endrestapi %}
-
 {% restapi "analyses/{site type}/{site name}", "POST", "Create an analysis in the specified site." %}
 **Request:** Complete XML for the objects in the body of the request.
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "analyses/{site type}/{site name}", "DELETE", "Not Supported" %}
 {% endrestapi %}
 
 
@@ -61,9 +55,6 @@ title: Analysis
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "analysis/{site type}/{site name}/{analysis id}/activations", "PUT", "Not supported" %}
-{% endrestapi %}
-
 {% restapi "analysis/{site type}/{site name}/{analysis id}/activations", "POST", "Create a new activation for the current operator." %}
 **Request:** No body is required, the activation will be created as the operator making the request.
 
@@ -82,12 +73,6 @@ title: Analysis
 **Response:**  Activation details.
 
 **Response schema:** BESAPI.xsd.
-{% endrestapi %}
-
-{% restapi "analysis/{site type}/{site name}/{analysis id}/activation/{activation id}", "PUT", "Not supported" %}
-{% endrestapi %}
-
-{% restapi "analysis/{site type}/{site name}/{analysis id}/activation/{activation id}", "POST", "Not supported" %}
 {% endrestapi %}
 
 {% restapi "analysis/{site type}/{site name}/{analysis id}/activation/{activation id}", "DELETE", "Deactivates a specific analysis activation." %}

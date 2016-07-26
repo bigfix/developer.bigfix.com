@@ -10,18 +10,12 @@ title: Property
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "properties", "PUT", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "properties", "POST", "Creates a new property." %}
 **Request:** BES XML file for the property/properties.
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "properties", "DELETE", "Not supported." %}
 {% endrestapi %}
 
 {% restapi "property/{id}", "GET", "Fetches detailed information about a specific property." %}

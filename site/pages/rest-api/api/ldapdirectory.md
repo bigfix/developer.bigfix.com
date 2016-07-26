@@ -10,18 +10,12 @@ title: LDAP Directory
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "ldapdirectories", "PUT", "Not Supported" %}
-{% endrestapi %}
-
 {% restapi "ldapdirectories", "POST", "Creates LDAP Directory." %}
 **Request:** BESAPI XML file.
 
 **Response:** BESAPI.xsd
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "ldapdirectories", "DELETE", "Not Supported" %}
 {% endrestapi %}
 
 {% restapi "ldapdirectory/{id}", "GET", "Fetches detailed information for a directory." %}

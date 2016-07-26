@@ -10,18 +10,12 @@ title: Role
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "/api/roles", "PUT", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "/api/roles", "POST", "Creates a new role." %}
 **Request:** XML for the role.
 
 **Response Schema:** BESAPI.xsd
 
 **Request Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "/api/roles", "DELETE", "Not supported." %}
 {% endrestapi %}
 
 {% restapi "role/{role id}", "GET", "Fetches the XML for the specified role." %}

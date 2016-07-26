@@ -10,25 +10,12 @@ title: Dashboard Variables
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "dashboardvariables", "PUT", "Not Supported" %}
-{% endrestapi %}
-
-{% restapi "dashboardvariables", "POST", "Not Supported" %}
-{% endrestapi %}
-
-{% restapi "dashboardvariables", "DELETE", "Not Supported" %}
-{% endrestapi %}
-
-
 {% restapi "dashboardvariables/{dashboard ID}", "GET", "Lists variables for the specified dashboard." %}
 **Note:** If the variables are private only, the ones for the requesting operator will be shown.
 
 **Response:** List of Dashboard variables XML.
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "dashboardvariables/{dashboard ID}", "PUT", "Not Supported" %}
 {% endrestapi %}
 
 {% restapi "dashboardvariables/{dashboard ID}", "POST", "Creates new dashboard variable." %}

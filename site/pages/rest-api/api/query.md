@@ -2,17 +2,11 @@
 title: BigFix Query
 ---
 
-{% restapi "/api/clientquery", "GET", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/clientquery", "PUT", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "/api/clientquery", "POST", "Submits a new BigFix Query request." %}
 **Request:** Complete XML for the object in the body of the request.
 This is a sample **BESActionTarget.xsd** file:
 
-```
+```xml
 <?xml version="1.0"?>
 <xs:schema id="BESActionTarget" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:element name="BESActionTarget">
@@ -50,9 +44,6 @@ If you plan to address your query to a computer group, read carefully the inform
 
 {% endrestapi %}
 
-{% restapi "/api/clientquery", "DELETE", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "/api/clientquery/{id}", "GET", "Retrieves the submitted query that was assigned the identifier *{id}*." %}
 **Request:** URL is all that is required
 
@@ -64,7 +55,7 @@ $ ./iem get /api/clientquery/12 <?xml version="1.0" encoding="UTF-8"?>
 
 you can get the following response:
 
-```
+```xml
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
   <ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
   <ApplicabilityRelevance>true</ApplicabilityRelevance>
@@ -81,15 +72,6 @@ where *IP_address* is the IP address of the BigFix Server.
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "/api/clientquery/{id}", "PUT", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/clientquery/{id}", "POST", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/clientquery/{id}", "DELETE", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "/api/clientqueryresults/{id}?par1=value1&par2=value2&..", "GET", "Retrieves the result of a BigFix Query, optionally with paging options." %}
 **Request:** Complete XML for the object in the body of the request. You can specify up to 4 keys when invoking the API:
 - *filter=value* to filter the results based on the string specified as value.
@@ -104,15 +86,6 @@ where *IP_address* is the IP address of the BigFix Server.
 **Response Schema:** Results formatted as *QueryResults* in BESAPI.xsd.
 {% endrestapi %}
 
-{% restapi "/api/clientqueryresults/{id}?par1=value1&par2=value2&..", "PUT", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/clientqueryresults/{id}?par1=value1&par2=value2&..", "POST", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/clientqueryresults/{id}?par1=value1&par2=value2&..", "DELETE", "Not supported." %}
-{% endrestapi %}
-
 **Note:**
 1. If you are using the REST API, be aware that only the operator issuing the query can see its results.
 2. The BigFix Query feature does not support requests that require the inspector context.
@@ -122,7 +95,7 @@ where *IP_address* is the IP address of the BigFix Server.
 If you target your query by group, ensure to specify the *SiteName*.
 This is an example for a group named manual created by a master operator:
 
-```
+```xml
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
   <ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
   <ApplicabilityRelevance>true</ApplicabilityRelevance>

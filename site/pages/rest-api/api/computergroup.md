@@ -10,18 +10,12 @@ title: Computer Group
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computergroups/{site type}/{site name}", "PUT", "Not Supported" %}
-{% endrestapi %}
-
 {% restapi "computergroups/{site type}/{site name}", "POST", "Creates a computer group in the specified site as described in the posted XML document." %}
 **Request:** Complete XML for the computer groups in the body of the request.
 
 **Request Schema:** BES.xsd
 
 **Response:** Response BESAPI XML listing the created objects.
-{% endrestapi %}
-
-{% restapi "computergroups/{site type}/{site name}", "DELETE", "Not Supported" %}
 {% endrestapi %}
 
 
@@ -51,11 +45,3 @@ title: Computer Group
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computergroup/{site type}/{site name}/{id}/computers", "PUT", "Not supported" %}
-{% endrestapi %}
-
-{% restapi "computergroup/{site type}/{site name}/{id}/computers", "POST", "Not supported" %}
-{% endrestapi %}
-
-{% restapi "computergroup/{site type}/{site name}/{id}/computers", "DELETE", "Not supported" %}
-{% endrestapi %}

@@ -5,60 +5,60 @@ nav:
   - name: Home
     href: /rest-api/
 	
-  # - name: Resources
-  #   href: /rest-api/api/
-  #   children:
+  - name: Resources
+    href: /rest-api/api/
+    children:
 
-  #     - name: Action
-  #       href: /rest-api/api/action.html
+      - name: Action
+        href: /rest-api/api/action.html
 				
-  #     - name: Admin
-  #       href: /rest-api/api/admin.html
+      - name: Admin
+        href: /rest-api/api/admin.html
 		
-  #     - name: Analysis
-  #       href: /rest-api/api/analysis.html
+      - name: Analysis
+        href: /rest-api/api/analysis.html
 				
-  #     - name: Computer
-  #       href: /rest-api/api/computer.html
+      - name: Computer
+        href: /rest-api/api/computer.html
 
-  #     - name: Computer Group
-  #       href: /rest-api/api/computergroup.html
+      - name: Computer Group
+        href: /rest-api/api/computergroup.html
 				
-  #     - name: Fixlet
-  #       href: /rest-api/api/fixlet.html
+      - name: Fixlet
+        href: /rest-api/api/fixlet.html
 
-  #     - name: Help
-  #       href: /rest-api/api/help.html
+      - name: Help
+        href: /rest-api/api/help.html
 				
-  #     - name: Login
-  #       href: /rest-api/api/login.html
+      - name: Login
+        href: /rest-api/api/login.html
 		
-  #     - name: Mailbox
-  #       href: /rest-api/api/mailbox.html
+      - name: Mailbox
+        href: /rest-api/api/mailbox.html
 				
-  #     - name: Operator
-  #       href: /rest-api/api/operator.html
+      - name: Operator
+        href: /rest-api/api/operator.html
 		
-  #     - name: Property
-  #       href: /rest-api/api/property.html
+      - name: Property
+        href: /rest-api/api/property.html
 				
-  #     - name: Query
-  #       href: /rest-api/api/query.html
+      - name: Query
+        href: /rest-api/api/query.html
 
-  #     - name: Replication
-  #       href: /rest-api/api/replication.html
+      - name: Replication
+        href: /rest-api/api/replication.html
 				
-  #     - name: Role
-  #       href: /rest-api/api/role.html
+      - name: Role
+        href: /rest-api/api/role.html
 
-  #     - name: Site
-  #       href: /rest-api/api/site.html
+      - name: Site
+        href: /rest-api/api/site.html
 				
-  #     - name: Task
-  #       href: /rest-api/api/task.html
+      - name: Task
+        href: /rest-api/api/task.html
 
-  #     - name: Upload
-  #       href: /rest-api/api/upload.html
+      - name: Upload
+        href: /rest-api/api/upload.html
 		
   - name: Examples
     href: /rest-api/examples/

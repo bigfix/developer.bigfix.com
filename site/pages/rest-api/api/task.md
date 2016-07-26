@@ -10,18 +10,12 @@ title: Task
 **Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "/api/tasks/{site type}/{site name}", "PUT", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "/api/tasks/{site type}/{site name}", "POST", " Creates a task in the specified site." %}
 **Request:** Complete XML for the object in the body of the request
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "/api/tasks/{site type}/{site name}", "DELETE", "Not supported." %}
 {% endrestapi %}
 
 {% restapi "/api/task/{site type}/{site name}/{task id}", "GET", "Returns the details of the specified task." %}
@@ -58,13 +52,4 @@ title: Task
 **Response:** XML list of computers.
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "/api/task/{site type}/{site name}/{fixlet id}/computers", "PUT", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/task/{site type}/{site name}/{fixlet id}/computers", "POST", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "/api/task/{site type}/{site name}/{fixlet id}/computers", "DELETE", "Not supported." %}
 {% endrestapi %}

@@ -11,18 +11,12 @@ title: Operator
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "operators", "PUT", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "operators", "POST", "Creates an operator." %}
 **Request:** Operator XML file.
 
 **Request Schema:** BESAPI.xsd
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "operators", "DELETE", "Not supported." %}
 {% endrestapi %}
 
 {% restapi "operator/{operator id}", "GET", "Fetches detailed information about an operator." %}
@@ -64,13 +58,4 @@ title: Operator
 **Response:** XML listing roles.
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "operator/{operator id}/roles", "PUT", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "operator/{operator id}/roles", "POST", "Not supported." %}
-{% endrestapi %}
-
-{% restapi "operator/{operator id}/roles", "DELETE", "Not supported." %}
 {% endrestapi %}

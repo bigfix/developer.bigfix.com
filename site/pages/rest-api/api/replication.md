@@ -8,14 +8,11 @@ title: Replication
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "/api/replication/servers", "PUT", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "/api/replication/servers", "POST", "Posts settings for a single or all servers at once." %}
 **Request:** Supply the BESAPI xml for the DSA server settings you want to change.
 This is a sample:
 
-```
+```xml
  <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
    <ReplicationServer>
       <ServerID>0</ServerID>
@@ -44,9 +41,6 @@ This is a sample:
 
 {% endrestapi %}
 
-{% restapi "/api/replication/servers", "DELETE", "Not supported." %}
-{% endrestapi %}
-
 {% restapi "replication/server/{id}", "GET", "Fetches the XML for a specific replication server and it's link." %}
 **Request:** URL is all that is required
 
@@ -67,9 +61,6 @@ This is a sample:
 **Response:** Updated ReplicationServer XML.
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "replication/server/{id}", "DELETE", "Not supported." %}
 {% endrestapi %}
 
 {% restapi "replication/server/{source id}/link/{destination id}", "GET", "Fetches the XML for a specific replication server link." %}
