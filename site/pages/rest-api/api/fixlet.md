@@ -15,18 +15,12 @@ title: RESTAPI Fixlet
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "fixlets/{site type}/{site name}", "PUT", "Not Supported" %}
-{% endrestapi %}
-
 {% restapi "fixlets/{site type}/{site name}", "POST", "Creates a fixlet in the specified site." %}
 **Request:** Complete XML for the object in the body of the request
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "fixlets/{site type}/{site name}", "DELETE", "Not Supported" %}
 {% endrestapi %}
 
 {% restapi "fixlet/{site type}/{site name}/{fixlet id}", "GET", "Returns the details of the specified Fixlet." %}
@@ -68,13 +62,4 @@ The same command applies to a task if you specify the task ID in place of the Fi
 **Response:** XML  list of computers.
 	
 **Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "fixlet/{site type}/{site name}/{fixlet id}/computers", "PUT", "Not Supported" %}
-{% endrestapi %}
-
-{% restapi "fixlet/{site type}/{site name}/{fixlet id}/computers", "POST", "Not Supported" %}
-{% endrestapi %}
-
-{% restapi "fixlet/{site type}/{site name}/{fixlet id}/computers", "DELETE", "Not Supported" %}
 {% endrestapi %}
