@@ -8,23 +8,23 @@ Actions might report the following statuses back up to the BigFix Server while p
    <dt>**Not Reported**</dt>
    <dd>No report on this action yet. No report has yet been received from the endpoint for the action taken. We cannot confirm if the action has been propagated, mirrored, gathered, processed, or reported until this status changes to something else.</dd>
    <dt>**Fixed**</dt>
-   <dd>The action executed successfully. The TEM Client has run the action and the relevance is now false (meaning that not only did the action run, but it fixed the issue).</dd>
+   <dd>The action executed successfully. The BigFix Client has run the action and the relevance is now false (meaning that not only did the action run, but it fixed the issue).</dd>
    <dt>**Running**</dt>
    <dd>The action is currently running.</dd>
    <dt>**Evaluating**</dt>
-   <dd>Evaluating relevance and action constraints. The TEM Client has received the action targeted at it and will evaluate the action to see if it is time to run, the issue is still relevant, etc.</dd>
+   <dd>Evaluating relevance and action constraints. The BigFix Client has received the action targeted at it and will evaluate the action to see if it is time to run, the issue is still relevant, etc.</dd>
    <dt>**Completed**</dt>
    <dd>The action has completed and no other actions are required.</dd>
    <dt>**Failed**</dt>
-   <dd>The action failed. The TEM Client has run the action and the issue is still relevant (even if the action ran successfully). Note that in the cases of patches, 'Failed' usually means the patch file was run, but failed to actually patch the computer.</dd>
+   <dd>The action failed. The BigFix Client has run the action and the issue is still relevant (even if the action ran successfully). Note that in the cases of patches, 'Failed' usually means the patch file was run, but failed to actually patch the computer.</dd>
    <dt>**Cancelled**</dt>
    <dd>The action was canceled by the user. The user clicked the "cancel" button when prompted with a message box.</dd>
    <dt>**Download Failed**</dt>
    <dd>A required download failed.</dd>
    <dt>**Locked**</dt>
-   <dd>This computer is locked. The TEM Client is in the "Locked" state that prevents it from running actions until unlocked</dd>
+   <dd>This computer is locked. The BigFix Client is in the "Locked" state that prevents it from running actions until unlocked</dd>
    <dt>**Waiting**</dt>
-   <dd>The TEM Client is waiting for some condition to actually run the action. The waiting conditions include: waiting for user input, waiting to retry after failure, waiting for a time/date range, waiting for a distribution time, waiting for a user to login, and waiting until the custom constraints property becomes relevant.</dd>
+   <dd>The BigFix Client is waiting for some condition to actually run the action. The waiting conditions include: waiting for user input, waiting to retry after failure, waiting for a time/date range, waiting for a distribution time, waiting for a user to login, and waiting until the custom constraints property becomes relevant.</dd>
       <ul>  
 	  <li>Action has failed and is waiting before trying again.</li>
       <li>Waiting on action dependency.</li>
@@ -36,7 +36,7 @@ Actions might report the following statuses back up to the BigFix Server while p
       </ul>	  
    </dd>
    <dt>**Pending Downloads**</dt>
-   <dd>Waiting for downloads to be mirrored. The TEM Client is waiting to receive the complete file. This state will persist until the download makes it to the TEM Server -> TEM Relay -> TEM Client.</dd>
+   <dd>Waiting for downloads to be mirrored. The BigFix Client is waiting to receive the complete file. This state will persist until the download makes it to the BigFix Server -> BigFix Relay -> BigFix Client.</dd>
    <dt>**Pending Restart**</dt>
    <dd>Waiting for restart to complete action. The action was completed, but the action status of 'Fixed' or 'Failed' cannot be assessed until the computer is restarted.</dd>
    <dt>**Pending Message**</dt>
@@ -52,7 +52,7 @@ Actions might report the following statuses back up to the BigFix Server while p
    <dt>**Invalid Signature**</dt>
    <dd>The client was unable to verify the signature on this action.</dd>
    <dt>**Not Relevant**</dt>
-   <dd>The Fixlet which this action addresses is not relevant on this machine. Before running the action, the TEM Client checked the relevance for the action and it is no longer true.</dd>
+   <dd>The Fixlet which this action addresses is not relevant on this machine. Before running the action, the BigFix Client checked the relevance for the action and it is no longer true.</dd>
    <dt>**Pending Offer Acceptance**</dt>
    <dd>Waiting for user to accept this offer.</dd>
    <dt>**Offers Disabled**</dt>
