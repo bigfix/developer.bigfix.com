@@ -1,17 +1,25 @@
 ---
-title: REST-API
+title: The BigFix REST API
 ---
 
-This API allows you to implement and run the tasks available on the console from outside the console or to automate tasks. The server part of the REST-API is available on the BigFix server. Use your own REST-API client to interrogate the server part through HTML calls.
-
-The information about the REST-API is divided up in to the following sections:
-
-<dl>
-  <dt>**[Examples](./examples/)**</dt>
-  <dd>Which contains examples of common use cases.</dd>
-</dl>
+The goal of the BigFix REST API is to allow you to implement and run the tasks available on the BigFix console from outside the console using standardized and operating system independent methods. Use the REST API if you want to automate tasks in your BigFix environment. 
+The server part of the REST API is available on the BigFix server. You can use your preferred REST API client to interrogate the server part through HTML calls.
 
 {% note %}
+
+As a prerequisite, the WebReports service must be running to work with the BigFix REST API. The Web Reports server, local or remote, is selected from entries in the BigFix database [BFEnterprise].[dbo].[AGGREGATEDBY] in the order they appear in the table.
+
+{% endnote %}
+
+If you are new to the REST API, navigate the following [Tutorial](http://www.restapitutorial.com/).
+
+<!---If you are new to BigFix REST API, navigate the **Guide** [Guide](/rest-api/guide/) section to get oriented. --->
+
+In the [REST-API Resources](/rest-api/api/) section you find the description, the available methods and the syntax of each BigFix REST API resource.
+
+In the [Examples](/rest-api/examples/) section you find an usage sample for each BigFix REST API resource.
+ 
+<!--- {% note %}
 
 This project is implemented in stages. You can find the documentation and media that will be included in the next steps at the following links:
 
@@ -22,4 +30,4 @@ This project is implemented in stages. You can find the documentation and media 
  [Usage examples](https://github.com/bigfix/restapi-examples) |
  [Tutorial](http://www.restapitutorial.com/)
 
-{% endnote %}
+{% endnote %} --->
