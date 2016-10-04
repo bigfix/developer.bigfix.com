@@ -3,11 +3,11 @@ title: Relations
 ---
 
 You use relations to compare values in the Relevance language. There are the
-standard alpha and numeric comparators (*=*, *!=*, *<*, *>*, *>=*, *<=*) as well a few strictly
+standard alpha and numeric comparators (*=*, *!=*, *<*, *>*, *>=*, *<=*) as well as a few strictly
 string relations (*starts with*, *ends with*, *contains*, *is contained by*). 
 
 
-Relations return a boolean `TRUE` or `FALSE` depending on the outcome of the comparison.
+Relations return a Boolean `TRUE` or `FALSE` depending on the outcome of the comparison.
 
 
 Here are some examples of expressions that use relations:

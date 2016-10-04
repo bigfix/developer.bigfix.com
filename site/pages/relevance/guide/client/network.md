@@ -4,7 +4,7 @@ title: Network
 
 ## Addressing
 
-We can easily grab the IP Addresses assigned to adapters on the system
+You can easily get the IP Addresses assigned to adapters on the system
 
 {% qna %}
 Q: addresses whose (it as string != "0.0.0.0") of ip interfaces whose (loopback of it = false) of network as string
@@ -12,14 +12,14 @@ A: 192.168.1.102
 A: 9.80.109.49
 {% endqna %}
 
-We can also grab Mac Addresses of network adapters:
+You can also get Mac Addresses of network adapters:
 
 {% qna %}
 Q: (mac addresses of it, addresses of it) of ip interfaces of network as string
 A: 3c-15-c2-b7-c7-1a, 192.168.1.102
 {% endqna %}
 
-And we can grab the names of the network adapters:
+And you can get the names of the network adapters:
 
 {% qna %}
 Q: names of adapters of network
@@ -50,7 +50,7 @@ A: vmnet1
 A: vmnet8
 {% endqna %}
 
-Finally, we can get the names and IP addresses of the adapters that are online:
+Finally, you can get the names and IP addresses of the adapters that are online:
 
 {% qna %}
 Q: addresses of ipv4 interfaces whose (exists address of it) of adapters whose (up of it = true) of network
@@ -60,9 +60,9 @@ A: 192.168.235.1
 A: 192.168.181.1
 {% endqna %}
 
-Some adapters don't have associated ipv4 interfaces so we had to check to make sure they exist using a whose-it statement.
+Some adapters don't have associated ipv4 interfaces so you must check to make sure that they exist using a whose-it statement.
 
-Finally, we can get the names and addresses of all adapters:
+Finally, you can get the names and addresses of all adapters:
 
 {% qna %}
 Q: (name of adapter of it, addresses of it) of ipv4 interfaces of adapters whose (up of it = true) of network
@@ -72,7 +72,7 @@ A: vmnet1, 192.168.235.1
 A: vmnet8, 192.168.181.1
 {% endqna %}
 
-We can also get the cidr strings of our connected networks:
+You can also get the cidr strings of your connected networks:
 
 {% qna %}
 Q: (name of adapter of it, cidr string of it) of ipv4 interfaces of adapters whose (up of it = true) of network
@@ -81,7 +81,7 @@ A: lo0, 127.0.0.0/8
 A: vmnet1, 192.168.235.0/24
 {% endqna %}
 
-This is particularly useful for checking if an endpoint is on a certain network (Note one of my interfaces is on the 192.168.44.0/24 subnet):
+This is particularly useful for checking if an endpoint is on a certain network (Note one of the interfaces is on the 192.168.44.0/24 subnet):
 
 {% qna %}
 Q: exists (ipv4 interfaces of adapters whose (up of it = true) of network) whose (cidr string of it = "192.168.44.0/24")

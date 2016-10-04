@@ -1,45 +1,45 @@
 ---
-title: Casts
+title: Casting
 ---
 
-Values can be converted into other types, making it easy to create, concatenate and combine inspectors into complex expressions.
+Values can be converted into other types, making it easy to create, concatenate, and combine inspectors into complex expressions.
 
-We can convert strings into integers:
+You can convert strings into integers:
 
 {% qna %}
 Q: "500" as integer
 A: 500
 {% endqna %}
 
-We can use the converted integers in math:
+You can use the converted integers in math:
 
 {% qna %}
 Q: ("500" as integer) * 5
 A: 2500
 {% endqna %}
 
-We can convert integers to strings:
+You can convert integers to strings:
 
 {% qna %}
 Q: 500 as string
 A: 500
 {% endqna %}
 
-... and we can use concatenate to add text to our integers that we converted to strings:
+... and you can use concatenate to add text to your integers that you converted to strings:
 
 {% qna %}
 Q: 500 as string & " hertz"
 A: 500 hertz
 {% endqna %}
 
-We can work with dates:
+You can work with dates:
 
 {% qna %}
 Q: "01 Apr 2020" as date
 A: Wed, 01 Apr 2020
 {% endqna %}
 
-We can turn the number of a month back into the name of the month:
+You can turn the number of a month back into the name of the month:
 
 {% qna %}
 Q: 5 as month

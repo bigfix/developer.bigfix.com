@@ -2,36 +2,13 @@
 title: Guides
 ---
 
-{% section %}
-
 The relevance guides on this site provide you with self-lead training on the relevance language.
 
-It is divided in three different parts:
+It is divided into three different parts:
 
-* Click [Core Inspectors](/relevance/guide/basics/) to access the part describing the syntaxes and the constructs that are common to both languages.
-* Click [Client Relevance](/relevance/guide/client/) to access the part dedicated to the client relevance language.
-* Click [Session Relevance](/relevance/guide/session/) to access the part dedicated to the Session Relevance language.
+* Click [Core Inspectors](/relevance/guide/basics/) to access the syntax and constructs of the inspectors that are common to both languages.
+* Click [Client Relevance](/relevance/guide/client/) to access the part dedicated to the Client Relevance Inspectors.
+* Click [Session Relevance](/relevance/guide/session/) to access the part dedicated to the Session Relevance Inspectors.
 
-**Note:** If you are new to the relevance language, first view the following video [Exploring the Relevance Language](https://www.youtube.com/watch?v=vRoZhvShPeY).
+**Note:** To follow along with these guides and with the [Tutorial](/relevance/tutorial.html), download and use either the [Fixlet Debugger](../../tools/fixlet_debugger.html) for Windows platforms or the [QnA](../../tools/qna.html) for other platforms.
 
-{% endsection %}
-
-## Useful tools
-
-To follow along with these guides you will need to download and use either the Fixlet Debugger for Windows platforms or the QnA for other platforms.
-
-### Fixlet Debugger
-
-It is a graphical based relevance and action script tester and debugger and is available only on the Windows platform. It is installed automatically with the BigFix console. A shortcut is automatically added in the Windows start menu.
-
-Click [here](http://support.bigfix.com/bes/release/) to download the Fixlet Debugger independently from the BigFix console installation.
-
-### QnA
-
-It is a terminal-like environment for non-Windows platforms and allows testing of relevance and action script expressions from a terminal session. 
-
-Click [here](http://support.bigfix.com/bes/install/besclients-nonwindows.html) to download QnA for BigFix UNIX, Linux, and Mac clients.
-
-You can find the QnA client for Mac OS in Utilities DMG.
-
-The QnA client for Linux and other platforms is available with the BESClient executable in the installation package.

@@ -2,7 +2,7 @@
 title: Exists
 ---
 
-Exists is an important keyword that returns `True` or `False` based upon the
+Exists is an important keyword that returns `True` or `False` based on the
 existence of the specified object. This is an important technique that lets you
 test for existence before you test for a value and possibly incur an error. The
 keyword has two slightly different typical uses. The first is to determine
@@ -31,7 +31,7 @@ Q: exists (files of folder "c:")
 A: True
 {% endqna %}
 
-This expression returns `True`, since files exist on drive `c:`. Note that using
+This expression returns `True`, because files exist in drive `c:`. Note that using
 the plural property `files` is a safe way to refer to something that may or may
 not exist. For instance:
 
@@ -47,7 +47,7 @@ computer. If you ask for a plural answer:
 files of folder "z:"
 ````
 
-It doesn’t give you an answer, but it also doesn’t throw an error. Nevertheless,
+It doesn’t give you an answer, but it also doesn’t cause an error. Nevertheless,
 both of these constructs can be examined with the `exists` keyword without
 causing an error:
 

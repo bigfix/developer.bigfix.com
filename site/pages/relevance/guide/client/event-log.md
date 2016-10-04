@@ -25,4 +25,4 @@ Q:  exists event log "Application"
 returns TRUE if that application log exists.
 
 
-You can query the security event log which records global or local group policy events.
+You can query the security event log, which records global or local group policy events.

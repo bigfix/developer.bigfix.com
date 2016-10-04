@@ -2,32 +2,49 @@
 title: The BigFix REST API
 ---
 
-The goal of the BigFix REST API is to allow you to implement and run the tasks available on the BigFix console from outside the console using standardized and operating system independent methods. Use the REST API if you want to automate tasks in your BigFix environment. 
-The server part of the REST API is available on the BigFix server. You can use your preferred REST API client to interrogate the server part through HTML calls.
+{% section %}
 
-{% note %}
+The REST API is the primary programming interface to the BigFix Server. It allows you to perform the majority of the tasks available in the BigFix console using a set of standardized and operating system independent methods.
+This API is also key if you want to automate activities, implement your custom BigFix user interface, or integrate with other applications.
 
-As a prerequisite, the WebReports service must be running to work with the BigFix REST API. The Web Reports server, local or remote, is selected from entries in the BigFix database [BFEnterprise].[dbo].[AGGREGATEDBY] in the order they appear in the table.
+{% endsection %}
 
-{% endnote %}
+**Note:** If you are new to the REST API in general, navigate the following [REST API Tutorial](http://www.restapitutorial.com/ ).
 
-If you are new to the REST API, navigate the following [Tutorial](http://www.restapitutorial.com/).
+Navigate the REST API subtree on the right to access the following information: 
 
-<!---If you are new to BigFix REST API, navigate the **Guide** [Guide](/rest-api/guide/) section to get oriented. --->
+<dl>
+  <dt>[Overview](./overview.html/)</dt>
+  <dd>An introduction that describes the BigFix REST API architecture.</dd>
+  
+  <dt>[Prerequisites](./prerequisites.html)</dt>
+  <dd>The list of requirements and conditions for using the BigFix REST API.</dd>
 
-In the [REST-API Resources](/rest-api/api/) section you find the description, the available methods and the syntax of each BigFix REST API resource.
+  <dt>[User Authentication](./authentication.html)</dt>
+  <dd>The information needed for setting up and doing user authentication.</dd>
+  
+  <dt>[Hints about BigFix REST API requests](./restapi_request_new.html)</dt>
+  <dd>An overview about how to issue BigFix REST API requests. If you are new to the BigFix REST API, read this part and then run the [Quick Tutorial](../gettingstarted.html).</dd>
 
-In the [Examples](/rest-api/examples/) section you find an usage sample for each BigFix REST API resource.
+  <dt>[REST API resources](./api/)</dt>
+  <dd>A container listing, for each resource and for each supported method, the form to represent that resource in the REST API request.</dd>
+    
+  <dt>[Schema files](./schema_files.html)</dt>
+  <dd>The information about the two XSD files, [BESAPI.xsd](/rest-api/besapi_xsd.html) and [BES.xsd](/rest-api/bes_xsd.html). The contents of these files describe how to represent each BigFix object type in XML format.</dd>
+  
+  <dt>[Quick Tutorial](../gettingstarted.html)</dt>
+  <dd>A tutorial to get started with the methods and resources made available by the BigFix REST API.</dd>
+    
+  <dt>[Examples using cURL and python](./examples/)</dt>
+  <dd>A list of samples showing how to implement common use cases.</dd>
+  
+  <dt>[IEM Command-Line Interface](./iem_cli/)</dt>
+  <dd>The information about the lightweight command-line tool, included in the IBM BigFix Platform, that you can use as a REST Client.</dd>
+  
+</dl>
+
+
+
+
  
-<!--- {% note %}
 
-This project is implemented in stages. You can find the documentation and media that will be included in the next steps at the following links:
-
-* **Documentation:**
- [Introduction](https://developer.bigfix.com/rest-api/) |
- [Documentation](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/REST%20API) |
- [Examples](https://github.com/jpsthecelt/bfReSTexamplesInstructions?cm_mc_uid=63332368808014350632302&amp;cm_mc_sid_50200000=1440718187) |
- [Usage examples](https://github.com/bigfix/restapi-examples) |
- [Tutorial](http://www.restapitutorial.com/)
-
-{% endnote %} --->

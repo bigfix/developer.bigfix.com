@@ -17,13 +17,13 @@ extent, and with APIs.
 Using these languages and APIs you can:
 
 <dl>
-  <dt>**[Manage custom content defined on clients](/get-started/custom-content/)**</dt>
+  <dt>[Manage custom content defined on clients](/get-started/custom-content/)</dt>
   <dd>To enforce custom policies, run commands to manage personalized content, and collect custom data and display it on the console.</dd>
 
-  <dt>**[Customize user interfaces](/get-started/customize-user-interfaces.html)**</dt>
+  <dt>[Customize user interfaces](/get-started/customize-user-interfaces.html)</dt>
   <dd>To create your personalized interface to implement, for example, your custom dashboards and reports.</dd>
 
-  <dt>**[Integrate with external applications](/get-started/integrate-external-applications.html)**</dt>
+  <dt>[Integrate with external applications](/get-started/integrate-external-applications.html)</dt>
   <dd>To interact with proprietary or third party applications located on the server or clients.</dd>
   <!--  <dd>To interact with proprietary or third party applications located on the server or clients and aggregate data sources to run reports.</dd> -->
   </dl>

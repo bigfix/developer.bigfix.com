@@ -26,7 +26,7 @@ A: ProviderName
 A: ProviderName=\\Plato\shared docs
 {% endqna %}
 
-Using a WMI Inspector like the one above shows that the last drive is mapped to a shared docs folder. You can correlate the drive names to the shared names as well:
+The WMI Inspector used in the example above shows that the last drive is mapped to a shared docs folder. You can correlate the drive names to the shared names as well:
 
 {% qna %}
 Q: (if property "ProviderName" of it as string contains "=" then (substring after "=" of (property "Name" of it as string) &" -- " & substring after "=" of (property "ProviderName" of it as string)) else nothing) of select objects ("Name,ProviderName from win32_LogicalDisk")of WMI

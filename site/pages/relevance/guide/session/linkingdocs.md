@@ -38,6 +38,6 @@ returns `<A href="linkid:openfixlet(2,1)"><b>Click Here</b></A>`, which creates 
 
 
 Web Reports doesn't use the linkid: protocol, but instead interprets the code to generate its own-style links. 
-Therefore, for portability reasons, you should try to use the link Inspector to automatically generate the proper link styles 
+Therefore, for portability reasons, use the link Inspector to automatically generate the proper link styles 
 whenever possible.
 

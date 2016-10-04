@@ -6,12 +6,12 @@ Substitution allows the Fixlet author to include relevance expressions in an act
 This is accomplished by placing the relevance expression in curly braces. 
 
 For example, this example runs a program without knowing where it is located. 
-A relevance expression evaluates the pathname automatically using the ‘regapp’ inspector:
+A relevance expression evaluates the path name automatically using the ‘regapp’ inspector:
 
 ```actionscript
 run "{pathname of regapp "excel.exe"}"
 ```
-In this example, instead, the action pauses until a program completes running:
+In this example, instead, the action pauses until a program finishes running:
 
 ```actionscript
 pause while {exists running application "c:\updater.exe"}

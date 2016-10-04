@@ -2,17 +2,17 @@
 title: Action Status Messages
 ---
 
-Actions might report the following statuses back up to the BigFix Server while processing on the client: 
+Actions might report the following statuses back to the BigFix Server while processing on the client: 
 
 <dl>
    <dt>**Not Reported**</dt>
    <dd>No report on this action yet. No report has yet been received from the endpoint for the action taken. We cannot confirm if the action has been propagated, mirrored, gathered, processed, or reported until this status changes to something else.</dd>
    <dt>**Fixed**</dt>
-   <dd>The action executed successfully. The BigFix Client has run the action and the relevance is now false (meaning that not only did the action run, but it fixed the issue).</dd>
+   <dd>The action executed successfully. The BigFix Client has run the action and the relevance is now false (meaning that the action ran and fixed the issue).</dd>
    <dt>**Running**</dt>
    <dd>The action is currently running.</dd>
    <dt>**Evaluating**</dt>
-   <dd>Evaluating relevance and action constraints. The BigFix Client has received the action targeted at it and will evaluate the action to see if it is time to run, the issue is still relevant, etc.</dd>
+   <dd>Evaluating relevance and action constraints. The BigFix Client has received the action targeted at it and will evaluate the action to see if it is time to run, the issue is still relevant, and so on.</dd>
    <dt>**Completed**</dt>
    <dd>The action has completed and no other actions are required.</dd>
    <dt>**Failed**</dt>
@@ -24,7 +24,7 @@ Actions might report the following statuses back up to the BigFix Server while p
    <dt>**Locked**</dt>
    <dd>This computer is locked. The BigFix Client is in the "Locked" state that prevents it from running actions until unlocked</dd>
    <dt>**Waiting**</dt>
-   <dd>The BigFix Client is waiting for some condition to actually run the action. The waiting conditions include: waiting for user input, waiting to retry after failure, waiting for a time/date range, waiting for a distribution time, waiting for a user to login, and waiting until the custom constraints property becomes relevant.</dd>
+   <dd>The BigFix Client is waiting for some condition to be able to run the action. The waiting conditions include: waiting for user input, waiting to retry after failure, waiting for a time/date range, waiting for a distribution time, waiting for a user to log in, and waiting until the custom constraints property becomes relevant.</dd>
       <ul>  
 	  <li>Action has failed and is waiting before trying again.</li>
       <li>Waiting on action dependency.</li>
@@ -36,7 +36,7 @@ Actions might report the following statuses back up to the BigFix Server while p
       </ul>	  
    </dd>
    <dt>**Pending Downloads**</dt>
-   <dd>Waiting for downloads to be mirrored. The BigFix Client is waiting to receive the complete file. This state will persist until the download makes it to the BigFix Server -> BigFix Relay -> BigFix Client.</dd>
+   <dd>Waiting for downloads to be mirrored. The BigFix Client is waiting to receive the complete file. This state will persist until the download is available on the BigFix Server -> BigFix Relay -> BigFix Client.</dd>
    <dt>**Pending Restart**</dt>
    <dd>Waiting for restart to complete action. The action was completed, but the action status of 'Fixed' or 'Failed' cannot be assessed until the computer is restarted.</dd>
    <dt>**Pending Message**</dt>
@@ -52,17 +52,17 @@ Actions might report the following statuses back up to the BigFix Server while p
    <dt>**Invalid Signature**</dt>
    <dd>The client was unable to verify the signature on this action.</dd>
    <dt>**Not Relevant**</dt>
-   <dd>The Fixlet which this action addresses is not relevant on this machine. Before running the action, the BigFix Client checked the relevance for the action and it is no longer true.</dd>
+   <dd>The Fixlet that this action addresses is not relevant on this machine. Before running the action, the BigFix Client checked the relevance for the action and it is no longer true.</dd>
    <dt>**Pending Offer Acceptance**</dt>
    <dd>Waiting for user to accept this offer.</dd>
    <dt>**Offers Disabled**</dt>
    <dd>No user is able to accept this offer.</dd>
    <dt>**Disk Limited**</dt>
-   <dd>The download size exceeds the maximum value set in the client setting _BESClient_Download_PreCacheStageDiskLimitMB, which can be modified through the Edit Computer Settings dialog.</dd>
+   <dd>The download size exceeds the maximum value set in the client setting *_BESClient_Download_PreCacheStageDiskLimitMB*, which can be modified through the Edit Computer Settings dialog.</dd>
    <dt>**Disk Free Limited**</dt>
-   <dd>The remaining disk space is smaller than the value set in the client setting _BESClient_Download_MinimumDiskFreeMB. In order for the download to complete, space must be cleared on the endpoint, or the client setting must be changed using the Edit Computer Settings dialog.</dd>
+   <dd>The remaining disk space is smaller than the value set in the client setting *_BESClient_Download_MinimumDiskFreeMB*. For the download to complete, space must be cleared on the endpoint, or the client setting must be changed using the Edit Computer Settings dialog.</dd>
    <dt>**Hash Mismatch**</dt>
-   <dd>The download completed but the file failed a hash comparison. To troubleshoot, investigate the network between the agent and its parent to eliminate network problems.</dd>
+   <dd>The download completed, but the file failed a hash comparison. To troubleshoot, investigate the network between the agent and its parent to eliminate network problems.</dd>
    <dt>**Transcoding Error**</dt>
    <dd>The action failed transcoding from the deployment codepage.</dd>
    <dt>**Pending Client Restart**</dt>
@@ -71,18 +71,18 @@ Actions might report the following statuses back up to the BigFix Server while p
    <dd><ul>
 	 <li>An unknown error occurred.</li>
 	 <li>The Fixlet context is missing or invalid.</li>
-     <li>Invalid site context. The Fixlet site may no longer exist.</li>
+     <li>Invalid site context. The Fixlet site might no longer exist.</li>
      <li>Invalid action content: the action is empty.</li>
      <li>Invalid action content: the action type is invalid.</li>
      <li>Invalid action content: the action script contains a syntax error.</li>
      <li>This action contained invalid download syntax.</li>
      <li>The download manager encountered a configuration error.</li>
      <li>This action was not executed for unknown reasons.</li>
-     <li>This action was run but could not be restarted due to a client UI translation error.</li>
+     <li>This action was run, but could not be restarted due to a client UI translation error.</li>
      <li>This action was not executed due to an error encountered while translating the client UI elements.</li>
      <li>This action was not executed due to an error showing the client UI.</li>
-     <li>This action failed to complete because the Management Extender plugin reported an error.</li>
-     <li>This action was not executed because the operator who created it is not an administrator of this client</li>
+     <li>This action failed to complete because the Management Extender plug-in reported an error.</li>
+     <li>This action was not executed because the operator who created it is not an administrator of this client.</li>
    </ul></dd>
 </dl>
 

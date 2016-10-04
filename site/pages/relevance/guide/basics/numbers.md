@@ -2,37 +2,45 @@
 title: Arithmetic Operations
 ---
 
-Integers are numbers (0-9) without a decimal place. Integers are not wrapped in quotes. We can write a relevance query whose answer is a number
+Integers are numbers (0-9) without a decimal place. Integers are not wrapped in quotes. You can write a relevance query whose answer is a number
 {% qna %}
 Q: 6000
 A: 6000
 {% endqna %}
 
 ## Simple Operators
-The normal operators you'd expect to be able to use with numbers work in the Relevance Language. Addition and multiplication are valid operations for integers so this works.
+The normal operators you'd expect to be able to use with numbers work in the Relevance Language. These are a few samples:
 
 {% qna %}
 Q: (8+3)*6
 A: 66
 {% endqna %}
 
-However, plus and times are not valid operations for strings so this does not work.
+Operations are run in sequence from left to right, ensure you use parentheses to group operations that must be run before others.
 
-The other thing we will notice right away is that you can't mix strings and integers:
+Pay attention to not mix strings and integers, for example:
+
 {% qna %}
 Q: ("8" + "3") * 6
-E: The operator "times" is not defined.
-{% endqna %}
-
-Besides, how would you multiply two strings together anyway?! You might be asking, why can't I add strings together?
-
-{% qna %}
-Q: "8" + "3"
 E: The operator "plus" is not defined.
 {% endqna %}
 
-The answer is that combining strings is not called, "adding", it's "concatenating" and the operator is, "&"
+This happens because "8" and "3" are strings and the **+** symbol is not a valid operator for strings.
+To *add strings* or *create time ranges*, use the [Concatenation](./concatenations.html) and the *&* symbol. 
+
 {% qna %}
 Q: "8" & "3"
 A: 83
+{% endqna %}
+
+You can ue arithmetic operators also with data types, for example:
+
+{% qna %}
+Q: 36*month/2
+A: 1 year, 6 months
+{% endqna %}
+
+{% qna %}
+Q: december - current month
+A: 3 months
 {% endqna %}

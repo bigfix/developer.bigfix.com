@@ -2,7 +2,7 @@
 title: HTML Inspectors
 ---
 
-This type of Inspectors helps you to author HTML commands to create customized content for the BigFix Console and Web Reports. 
+This type of Inspector helps you to author HTML commands to create customized content for the BigFix Console and Web Reports. 
 They allow construction of HTML snippets that can be used to display BigFix data elements in a browser.
 
 When generating HTML, you will be working with the *html* type. 
@@ -11,7 +11,7 @@ This automatically keeps track of normal string characters that have special mea
 
 An HTML inspector automatically converts:
 - The reserved characters to the appropriate HTML entities.
-- The results of evaluated relevance instructions to HTML before inserting them in the presentation HTML.
+- The results of evaluated relevance instructions to HTML before inserting them into the presentation HTML.
 This means that you can write Relevance expressions just as you would expect and simply use the html Inspector to convert them, for example:
 
 ```relevance
@@ -28,7 +28,7 @@ Or you can cast a string as an html type explicitly to achieve the same results 
 
 returns: `&lt;h1&gt;Heading&lt;/h1&gt;`
 
-If you actually want HTML code to be output you can use an indexed HTML command such as:
+If you actually want HTML code to be output, you can use an indexed HTML command such as:
 
 ```relevance
 html "<h1>Heading</h1>"
@@ -37,7 +37,7 @@ html "<h1>Heading</h1>"
 which returns: `<h1>Heading</h1>`
 
 
-As an alternative to HTML formatted retrieved properties, consider reporting the results in plain text and doing the formatting from within the presentation.
+As an alternative to HTML-formatted retrieved properties, consider reporting the results in plain text and doing the formatting from within the presentation.
 
 ## Concatenation samples
 
@@ -191,7 +191,7 @@ The following tags are supported:
     </tr>
 </table>
 
-Since "a" is ignored by the relevance evaluator, the "a" shorthand property is replaced by "anchor".
+Because "a" is ignored by the relevance evaluator, the "a" shorthand property is replaced by "anchor".
 
 ```relevance
 anchor "href='http://www.ibm.com'" of "ibm"
@@ -219,7 +219,7 @@ unordered list of ("<"; ">"; "&")
 
 returns: `<ul><li>&lt;</li><li>&gt;</li><li>&amp;</li></ul>`
 
-The definition list command alternates between dt and dd elements. It is meant to be used where you have a natural set of name/value pairs:
+The definition list command alternates between dt and dd elements. Use it where you have a natural set of name/value pairs:
 
 ```relevance
 definition list of (name of it; free space of it as string) of drives whose (exists free space of it)

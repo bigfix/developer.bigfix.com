@@ -1,0 +1,27 @@
+section: tools
+sectionName: Tools
+layout: page-with-nav
+nav:
+  - name: Home
+    href: /tools/
+	
+  - name: Fixlet Debugger
+    href: /tools/fixlet_debugger.html
+
+  - name: QnA
+    href: /tools/qna.html	
+
+  - name: Session Relevance Tester
+    href: /tools/session_relevance_tester.html
+	
+  - name: Presentation Debugger
+    href: /tools/presentation_debugger.html
+	
+  - name: Excel Connector
+    href: /tools/excel_connector.html
+	
+  - name: QnA for Web Reports
+    href: /tools/qna_wr.html
+
+  - name: Client API Tester
+    href: /tools/cc_tester.html

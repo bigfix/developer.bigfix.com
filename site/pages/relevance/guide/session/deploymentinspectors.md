@@ -2,7 +2,7 @@
 title: Deployment Option Inspectors
 ---
 
-Use these Inspectors to manage the deployment options set in BigFix Administrators Tool.
+Use these Inspectors to manage the deployment options set in the BigFix Administrators Tool.
 
 ---
 

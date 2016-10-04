@@ -8,7 +8,7 @@ Use these Inspectors to query and manage the computers that can be listed on the
 
 ## BES Computer
 
-These Inspectors return lists of the computers currently visible through the BES Console.
+These Inspectors return lists of the computers currently visible from the BES Console.
 
 Click [here](/relevance/reference/bes-computer.html) to access the page describing these inspectors.
 
@@ -48,7 +48,7 @@ Returns the detailed status of the specified action on the given computer.
 size of (set of bes computers) 
 ```
 
-This Inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
+This Inspector returns the date the action was issued, a parameter which is added to each action by the BigFix Console.
 
 ```relevance
 detailed status of result from (bes computer whose (id of it is 1234567)) of (bes action whose (id of it is 1234)) 
@@ -67,7 +67,7 @@ Returns the current number of BES computers.
 
 ## BES Computer Set
 
-These Inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions and other mathematical operations on them.
+These Inspectors convert an iterated list of computers into a set, which allows you to perform intersections, unions, and other mathematical operations on them.
 
 Click [here](/relevance/reference/bes-computer-set.html) to access the page describing these inspectors.
 
@@ -77,7 +77,7 @@ Click [here](/relevance/reference/bes-computer-set.html) to access the page desc
 size of union of applicable computer sets of bes fixlets whose ((source severity of it is "Critical") and (current date - source release date of it > 7 * day)) as floating point / size of bes computer set as floating point
 ```
 
-Computes the ratio of computers which have at least one relevant critical fixlet released more than 1 week ago.
+Calculates the ratio of computers that have at least one relevant critical Fixlet released more than 1 week ago.
 
 
 ---
@@ -85,7 +85,7 @@ Computes the ratio of computers which have at least one relevant critical fixlet
 
 ## BES Computer with Multiplicity
 
-These Inspectors deal with arrays of BES computers, allowing you to extract unique computers and count them.
+These Inspectors handle arrays of BES computers, allowing you to extract unique computers and count them.
 This object type is derived from the `<bes computer>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-computer-with-multiplicity.html) to access the page describing these inspectors.
@@ -117,7 +117,7 @@ Returns the current number of computer groups.
 
 ## BES Computer Group Set
 
-These Inspectors convert an iterated list of computer groups into a set, which allows you to perform intersections, unions and other mathematical operations on them.
+These Inspectors convert an iterated list of computer groups into a set, which allows you to perform intersections, unions, and other mathematical operations on them.
 
 Click [here](/relevance/reference/bes-computer-group-set.html) to access the page describing these inspectors.
 
@@ -133,7 +133,7 @@ Returns a list of the names of those computers administered by both Sue and Joe.
 
 ## BES Computer Group with Multiplicity
 
-These Inspectors deal with arrays of BES computer groups, allowing you to extract unique computer groups and count them.
+These Inspectors handle arrays of BES computer groups, allowing you to extract unique computer groups and count them.
 This object type is derived from the <bes computer group> type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-computer-group-with-multiplicity.html) to access the page describing these inspectors.

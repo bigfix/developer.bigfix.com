@@ -2,8 +2,8 @@
 title: Services
 ---
 
-The service inspector allows you to query installed services on a computer. You can query about installed services using the **service** inspector, 
-or you can query about the installed services that are currently running using the inspector **running service**.
+The service inspector allows you to query installed services on a computer. You can query installed services using the 
+**service** inspector, or you can query the installed services that are currently running using the inspector **running service**.
 
 If the BESClient service is installed but not active at the time you run the inspector you will get:
 
@@ -19,7 +19,7 @@ Q: exists running service "BesClient"
 A: False
 {% endqna %}
 
-You can use the plural **services** to get the list of services, each with its service name, display name and status.
+You can use the plural **services** to get the list of services, each with its service name, display name, and status.
 
 {% qna %}
 Q: services

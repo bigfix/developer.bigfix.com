@@ -52,7 +52,7 @@ categories:
       - waithidden
   - title: File Commands
     section: file
-    description: The [file commands](./file/) allow you copy, move, and delete files.
+    description: The [file commands](./file/) allow you to copy, move, and delete files.
     commands:
       - appendfile
       - archive now
@@ -79,7 +79,7 @@ categories:
       - pause while
   - title: Registry Commands
     section: registry
-    description: The [registry commands](./registry/) allow you edit the Windows Registry.
+    description: The [registry commands](./registry/) allow you toedit the Windows Registry.
     commands:
       - regdelete
       - regdelete64

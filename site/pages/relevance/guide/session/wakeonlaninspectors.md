@@ -6,11 +6,11 @@ Use these Inspectors to query information about the Wake-on-lan capability on th
 
 ---
 
-## BES Wakeonlan Status
+## BES WakeOnlan Status
 
 These Windows Inspectors return the status of the BES WakeOnLan feature.
 
-Click [here](/relevance/reference/bes-wakeonlan-status.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-wakeonlan-status.html) to access the page describing these inspectors.
 
 **Examples**
 

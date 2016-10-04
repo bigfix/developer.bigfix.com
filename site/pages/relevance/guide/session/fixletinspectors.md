@@ -2,18 +2,18 @@
 title: Fixlet Inspectors
 ---
 
-These Inspectors return information about Fixlets messages.
+These Inspectors return information about Fixlet messages.
 
 ---
 
 ## BES Fixlet Field
 
 In addition to the Relevance and Action fields, Fixlet messages and Tasks can contain various additional fields. 
-If the content is developed in BDE, these fields may be specified by the Fixlet templates you use. 
-Depending on the site or the template, fields may have different interpretations.
+If the content is developed in BDE, these fields might be specified by the Fixlet templates you use. 
+Depending on the site or the template, fields might have different interpretations.
 Field names and their meanings are variable and context-specific.
 
-Click [here](/relevance/reference/bes-fixlet-field.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet-field.html) to access the page describing these inspectors.
 
 ---
 
@@ -22,7 +22,7 @@ Click [here](/relevance/reference/bes-fixlet-field.html) to access the page desc
 These Inspectors provide access to the values of informational fields that are included with some Fixlet messages and Tasks. 
 For more Information, see the BES Fixlet field Inspectors.
 
-Click [here](/relevance/reference/bes-fixlet-field-value.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet-field-value.html) to access the page describing these inspectors.
 
 ---
 
@@ -44,7 +44,7 @@ mime fields "x-fixlet-cve" of bes fixlets
 
 These Inspectors allow you to iterate over the BES Fixlet messages to create lists of various Fixlet properties such as name, ID, site, and more.
 
-Click [here](/relevance/reference/bes-fixlet.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet.html) to access the page describing these inspectors.
 
 **Examples**
 
@@ -64,13 +64,13 @@ Returns an HTML string that will print the name and ID of the Fixlet message ins
 (br & html "Click <A href='" & link href of it & html "'>here</A> to open fixlet " & id of it as string) of bes fixlets 
 ```
 
-Returns an html string such as 'Click here to open fixlet 12345' message that, when clicked, will open the corresponding BES Fixlet document.
+Returns an html string such as 'Click here to open Fixlet 12345' message that, when clicked, will open the corresponding BES Fixlet document.
 
 ```relevance
 links of bes fixlets 
 ```
 
-Returns a list of all the BES Fixlets formated as links in an HTML string.
+Returns a list of all the BES Fixlets formatted as links in an HTML string.
 
 ```relevance
 (id of it, mime fields "x-fixlet-sans" of it) of bes fixlets
@@ -96,24 +96,24 @@ Returns a list of the names of the critical Fixlets. Note that the quoted severi
 
 These Inspectors iterate over the current set of BES Fixlets and package them as a mathematical set, suitable for further set manipulation.
 
-Click [here](/relevance/reference/bes-fixlet-set.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet-set.html) to access the page describing these inspectors.
 
 ---
 
 ## BES Fixlet with Multiplicity
 
-These Inspectors deal with arrays of BES fixlets, allowing you to extract unique fixlets and count them.
+These Inspectors handle arrays of BES fixlets, allowing you to extract unique Fixlets and count them.
 This object type is derived from the <bes fixlet> type and therefore shares the same properties as that type.
 
-Click [here](/relevance/reference/bes-fixlet-with-multiplicity.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet-with-multiplicity.html) to access the page describing these inspectors.
 
 ---
 
 ## BES Fixlet Action
 
-These Inspectors let you examine BES Actions that are attached to Fixlet messages.
+These Inspectors allow you examine BES Actions that are attached to Fixlet messages.
 
-Click [here](/relevance/reference/bes-fixlet-action.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-fixlet-action.html) to access the page describing these inspectors.
 
 ---
 
@@ -121,5 +121,5 @@ Click [here](/relevance/reference/bes-fixlet-action.html) to access the page des
 
 These Inspectors allow you to inspect the results of BES Fixlet messages, including relevance and affected computers.
 
-Click [here](/relevance/reference/bes-result.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-result.html) to access the page describing these inspectors.
 

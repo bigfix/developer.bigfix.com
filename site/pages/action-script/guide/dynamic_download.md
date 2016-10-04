@@ -9,7 +9,7 @@ The prefetch block structure ensures that the file is successfully downloaded be
 **Note:** Only one prefetch block is allowed per action.
 
 
-Following you find some examples of using the **prefetch block** to run dynamic downloads.
+The following examples show how to use the **prefetch block** to run dynamic downloads.
 
 ---
 
@@ -41,8 +41,8 @@ new version becomes available.
 
 Another popular technique is to use a data file, or *manifest*, containing a list of
 multiple downloads, each with its own URL, SHA hash algorithm, and size. This is useful 
-when the files to download change often, as it would be for updated spy ware or
-anti-virus definitions. This is an example of manifest file:
+when the files to download change often, as in updated spy ware or
+anti-virus definitions. This is an example of a manifest file:
 
 ```actionscript
 name=patch1.exe sha1=123 sha256=347 size=456 url=http://site.com/download/patch1.exe
@@ -62,7 +62,7 @@ end prefetch block
 
 ---
 
-You can also use the **execute prefetch plug-in** command to use small executable to process 
+You can also use the **execute prefetch plug-in** command to use small executables to process 
 files into a fresh manifest, for example:
 
 ```actionscript
@@ -90,8 +90,8 @@ a plain-text manifest.
 
 Dynamic downloads must specify files with the confirmation of a size or SHA hash
 algorithm. The URL, size, and SHA hash algorithm can come from a source outside
-of the action script. For dynamic downloading BigFix uses a white-list of URL to 
-ensure that only authorized URL can download files. This is the path
+of the action script. For dynamic downloading, BigFix uses a white-list of URLs to 
+ensure that only authorized URLs can download files. This is the path
 to the white list: 
 
 ```
@@ -99,7 +99,7 @@ to the white list:
 ```
 
 This file contains a newline-separated list of regular
-expressions using a Perl regex format, such as the following:
+expressions using a Perl regex format, such as:
 
 ```
 http://.*\.sitename\.com/.*
@@ -109,7 +109,7 @@ http://download\.sitename\.com/patches/JustThisOneFile\.qfx
 
 The first line is the least restrictive, allowing any file at the *sitename*
 domain to be downloaded. The second line requires a specific domain host
-and the third is the most restrictive, limiting the URL to a single file
+and the third line is the most restrictive, limiting the URL to a single file
 named "JustThisOneFile.qfx". 
 
 An empty or non-existent white-list causes all dynamic downloads to fail.
@@ -136,8 +136,8 @@ download the particular items they need, all the static files are downloaded to 
 and relays as soon as they are requested. 
 
 
-Dynamic downloads can improve on this situation because only those files actually 
-needed by clients are fetched to the server and relay in the first place. 
+Dynamic downloads can improve this situation because only those files actually 
+needed by clients are retrieved by to the server and relay in the first place. 
 Here's an example using dynamic downloading:
 
 ```actionscript
@@ -151,7 +151,7 @@ end prefetch block
 wait "{download path "up.exe"}"
 ```
 
-By using relevance substitution in the prefetch block, with a properly configured white list 
+By using relevance substitution in the prefetch block, with a properly configured white-list 
 file on the server, this code only fetches the necessary file, potentially improving bandwidth 
 requirements and efficiency.
 
@@ -159,8 +159,8 @@ requirements and efficiency.
 
 You can also branch execution based on the contents of a file, allowing you to
 automate updates. This can be especially useful for dealing with changing version
-numbers. For instance, you could create a file named 'manifest.txt' containing two
-named variables such as:
+numbers. For example, you could create a file named 'manifest.txt' containing two
+named variables, such as:
 
 ```actionscript
 version=1234
@@ -172,7 +172,7 @@ Note that the download variable contains the name, sha1, sha2, size and URL
 of the patch file.
 
 You can then use relevance substitution to extract these variables with
-an expression such as:
+an expression, such as:
 
 ```actionscript
 parameter "ver"="{key "version" of file "{download path "manifest.txt"}"}"
@@ -186,9 +186,9 @@ patches and full replacement updates.
 
 ---
 
-No matter which technique is used, once the files have been downloaded, they can
+No matter which technique is used, after the files have been downloaded, they can
 be examined with various Inspectors. Before the action runs, these files are collected
-in a prefetch folder. While the action is running, they reside in the __Download folder.
+in a prefetch folder. While the action is running, they are located in the __Download folder.
 
 These Inspectors can be used to locate the files before or while the action runs:
 * **download folder:** During the prefetch parsing, this Inspector returns a folder
@@ -202,11 +202,11 @@ folder or another named folder. The download filename is equivalent to `file
 
 ---
 
-It is up to the action script author to protect users of these actions and ensure 
-that downloads and their checksums have not been compromised. An end-to-end authentication 
+The action script author must protect users from these actions and ensure 
+that downloads and their checksums are not been compromised. An end-to-end authentication 
 mechanism resistant to man-in-the-middle attacks is the best defense. When authoring 
-a dynamic download action it is critical to craft the action so that it authenticates 
+a dynamic download action, it is critical to craft the action so that it authenticates 
 information before using it, typically by using a plug-in as described above. 
-It is also wise to explicitly identify those steps in the action script that perform 
+It is also a good practice to explicitly identify those steps in the action script that perform 
 this authentication so that users of your action can audit the mechanism before deciding 
 to trust it.

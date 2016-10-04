@@ -10,7 +10,7 @@ section: home
     <section>
       <p>This is the official IBM repository of information for developing IBM BigFix content, and it is tailored to satisfy the needs of both beginner and expert content developers.</p>
 
-      <p>If you are new to BigFix customization, start your navigation by clicking <a href="/get-started/">Getting started.</a></p>
+      <p>If you are new to BigFix customization, start your navigation by clicking <a href="/get-started/">Getting Started.</a></p>
     </section>
 
     <section>
@@ -21,10 +21,11 @@ section: home
 
         <li>The <a href="/action-script/">Action Script Language</a> for running configuration activities on clients and remediating lack of compliance.</li>
 
-        <li>The <a href="/rest-api/">REST-API</a> for running operations available on the BigFix console from outside the console.</li>
+        <li>The <a href="/rest-api/">REST API</a> for running operations available on the BigFix console from outside the console.</li>
 
         <li><a href="/other/">Other APIs</a> for creating custom dashboards, implementing your reporting solution, and integrating with external applications on client systems.</li>
-      </ul>
+        <li>The <a href="/tools/">Tools</a>, available with IBM BigFix, useful for developing your custom BigFix solution.</li>
+	  </ul>
     </section>
 
   <!---  <section>
@@ -67,9 +68,6 @@ section: home
 <div class="container-right">
   <aside class="side-nav">
     
-  
-    <!--- <h3>This site is hosted on GitHub. Feel free to contribute your input using <a href="https://help.github.com/articles/using-pull-requests/">pull requests</a>.</h3> --->
-  
     <h3>Complete your 360-degree view of the BigFix development world!</h3>
 
     <dl>

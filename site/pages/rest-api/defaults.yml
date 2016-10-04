@@ -1,11 +1,23 @@
 section: rest-api
-sectionName: REST-API
+sectionName: REST API
 layout: page-with-nav
 nav:
   - name: Home
     href: /rest-api/
 	
-  - name: Resources
+  - name: Overview
+    href: /rest-api/overview.html
+	
+  - name: Prerequisites
+    href: /rest-api/prerequisites.html
+		
+  - name: User Authentication
+    href: /rest-api/authentication.html
+	   
+  - name: Hints about BigFix REST API requests
+    href: /rest-api/restapi_request_new.html
+		
+  - name: REST API Resources
     href: /rest-api/api/
     children:
 
@@ -17,18 +29,30 @@ nav:
 		
       - name: Analysis
         href: /rest-api/api/analysis.html
+		   
+      - name: BigFix Query
+        href: /rest-api/api/bigfix_query.html
 				
       - name: Computer
         href: /rest-api/api/computer.html
 
       - name: Computer Group
         href: /rest-api/api/computergroup.html
+		   
+      - name: Dashboard Variable
+        href: /rest-api/api/dashboardvariable.html
 				
       - name: Fixlet
         href: /rest-api/api/fixlet.html
 
       - name: Help
         href: /rest-api/api/help.html
+		   
+      - name: Import
+        href: /rest-api/api/import.html
+				
+      - name: LDAP Directory
+        href: /rest-api/api/ldapdirectory.html
 				
       - name: Login
         href: /rest-api/api/login.html
@@ -59,8 +83,14 @@ nav:
 
       - name: Upload
         href: /rest-api/api/upload.html
+		   
+  - name: Schema files BES.xsd and BESAPI.xsd 
+    href: /rest-api/schema_files.html
+  
+  - name: Quick Tutorial
+    href: /rest-api/gettingstarted.html
 		
-  - name: Examples
+  - name: Examples using cURL and python
     href: /rest-api/examples/
     children:
 
@@ -111,3 +141,19 @@ nav:
 
       - name: Upload Files
         href: /rest-api/examples/upload-files.html
+		
+  - name: IEM Command-Line Interface
+    href: /rest-api/iem_cli/
+    children:
+	
+      - name: Executable Files and Directories
+        href: /rest-api/iem_cli/location.html
+
+      - name: User Authentication and Session Management
+        href: /rest-api/iem_cli/logging.html
+
+      - name: Running Requests from the IEM CLI
+        href: /rest-api/iem_cli/iem_requests.html
+		
+      - name: IEM CLI Samples
+        href: /rest-api/iem_cli/iem_samples.html

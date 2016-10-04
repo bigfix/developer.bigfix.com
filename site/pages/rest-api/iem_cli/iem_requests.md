@@ -1,0 +1,58 @@
+---
+title: Running Requests from the IEM CLI
+---
+This is the basic syntax for constructing requests using the IEM CLI:
+
+```
+iem <METHOD> <RESOURCE> [-q] [--param <value>]
+```
+
+where:
+<dl>
+   <dt>** *METHOD* **</dt>
+   <dd>Is one of the HTTP methods supported by that specific REST API resource. In particular, depending on the methods the form of the request can be:
+   <p>
+   
+```
+iem <GET|DELETE> <RESOURCE> [-q] [--outFile FILE] [--param value]
+```  
+
+```  
+iem <POST|PUT> [inputFile] <RESOURCE> [-q] [--outFile FILE] [--param value]
+```   
+
+```   
+iem admin <COMMAND> [-q] <--pkey=KEYFILE> [--pkeypwd=PASS][--param value]   
+```
+</p>
+       where *inputFile* and the file referenced by *--outFile* are XML files containing resources descriptions as documented in the [schema files](../schema_files.html). In particular, POST and PUT requests require a body in their HTTP Requests. You can specify the body either as an input file on the command line, such as:
+<p>
+```   
+iem POST inputfile.xml operator/bigfix   
+```
+</p>
+       or, you can enter it manually when prompted, for example:
+<p>
+```   
+iem POST query
+```
+</p><p>
+```
+Input: relevance=now   
+```
+</p>
+       Because the IEM CLI does not do any pre-parsing or sanity checking on the requests issued, you must ensure that the input uses the format specified in the RESTAPI resource description.
+   </dd>
+   <dt>** *RESOURCE* **</dt>
+   <dd>Is one of the [REST API Resources](../api/).</dd>
+   <dt>** -q **</dt>
+   <dd>Stands for *quiet mode*. If you set it the input prompts are disabled.
+   <dt>** --param **</dt>
+   <dd>Is used to specify optional parameters that might be requested by that specific *RESOURCE* and *METHOD*. For example,
+    if you want to use the RESTAPI resource **/api/query**, which requires the parameter **relevance=<relevance_expression>**, 
+	 you can write:</dd>
+</dl>
+
+```
+iem GET query --relevance "names of bes computers"
+```

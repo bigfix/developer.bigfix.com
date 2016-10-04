@@ -1,5 +1,5 @@
 ---
-title: Whose
+title: Whose...It
 ---
 
 The `whose` clause allows you to filter a result or set of results based on
@@ -9,7 +9,7 @@ specified relevance criteria. It has the form:
 <expression> whose <condition>
 ````
 
-For instance:
+For example:
 
 {% qna %}
 Q: (1;2;3;5;8;17) whose (it mod 2 = 1)
@@ -39,7 +39,7 @@ Here, `it` takes on the values in the list, one at a time.
 
 You can also use parentheses to define the scope of the whose-it objects. A
 judicious use of parentheses can ensure proper results while improving
-readability. For instance, the following examples show how subtle rearrangement
+readability. For example, the following examples show how subtle rearrangement
 of whose clauses can change the output significantly:
 
 {% qna %}
@@ -66,8 +66,8 @@ These expressions both go character-by-character through the word 'banana' and
 return the text preceding each character. Because it returns the text before the
 character, it returns the blank before 'b' and stops at the final 'a' with
 'banan'. The expressions both return the same values, but the second one makes
-it more clear what `it` refers to, namely 'banana'. Since 'banana' will always
-have an 'n', this expression will return all the specified substrings.
+it more clear what `it` refers to, namely 'banana'. Since 'banana' always
+has an 'n', this expression returns all the specified substrings.
 
 {% qna %}
 Q: preceding texts of characters whose (it contains "n") of "banana"
@@ -113,7 +113,7 @@ A: pagefile.sys...
 {% endqna %}
 
 Or you can put the `whose` clause at the end of the expression, which makes the
-object of `it` more explicit and may be easier to read:
+object of `it` more explicit and might be easier to read:
 
 {% qna %}
 Q: (names of files of folder "c:") whose (it contains "a")
@@ -143,8 +143,8 @@ A: "xcopy.exe" "5.1.2600.2180" "Extended Copy Utility" "5.1.2600.2180 (xpsp_sp2_
 This plural expression returns a list of system files whose names start with
 'x'.
 
-As it loops through the plural values, the expression in the filter may attempt
-to evaluate a non-existent object. By itself, such an expression would throw an
+As it loops through the plural values, the expression in the filter might attempt
+to evaluate a non-existent object. By itself, such an expression would cause an
 error such as:
 
 ````
@@ -154,7 +154,7 @@ Singular expression refers to nonexistent object.
 But in the case of a `whose` clause, the non-existent value is simply ignored
 and gets excluded from the resulting set. As a side effect, this feature allows
 you to examine an object for existence before you attempt to inspect it (and
-throw an error). As an example, here's a Relevance clause that will trigger an
+cause an error). As an example, here's a Relevance clause that triggers an
 existence error:
 
 {% qna %}
@@ -168,3 +168,5 @@ But, by placing this clause inside a `whose` statement, you can avoid the error:
 Q: exists true whose ( exists file of folder "z:\bar" )
 A: False
 {% endqna %}
+
+Watch the video about the [Whose-It in Relevance Language](https://www.youtube.com/watch?v=LwQADuUzhDY) to have more information about this clause.

@@ -12,7 +12,7 @@ A: ( Fri, 22 Sep 2006 15:25:43 -0400 to Fri, 22 Sep 2006 16:25:43 -0400 ), True
 {% endqna %}
 
 This expression returns a compound object including a time range and an
-associated boolean `True`/`False`. Notice the use of the concatenation operator
+associated Boolean `True`/`False`. Note the use of the concatenation operator
 `&`, used here to create a time range.
 
 Tuples can also be explicitly generated using the comma `,` keyword. Any mix of
@@ -39,7 +39,7 @@ tuples of type `<integer, string>` in one case and `<string, integer>` in
 another.
 
 Tuples can also be indexed by using the `item` keyword (indices start at 0). For
-instance:
+example:
 
 {% qna %}
 Q: item 0 of ("foo", 3, free space of drive of system folder)
@@ -53,7 +53,7 @@ A: 18105667584
 {% endqna %}
 
 Tuples provide a way for a relevance expression to return several related
-properties. For instance, you could generate a set of filenames and
+properties. For example, you could generate a set of file names and
 corresponding file sizes for all files that meet a specific criteria with a
 Relevance statement like this:
 
@@ -74,8 +74,8 @@ A: 1, 2
 A: 3, 4
 {% endqna %}
 
-However, attempting to form a plural of tuples of different types yields an
-error. As we've already seen, plurals must always be of the same type:
+However, attempting to form a plural of tuples of different types causes an
+error. As you have already seen, plurals must always be of the same type:
 
 {% qna %}
 Q: (1,2);("a","b")
@@ -98,9 +98,9 @@ A: 2, b, $
 {% endqna %}
 
 Tuples of plurals can also be used to search two lists for commonality. For
-example, suppose we have two lists of integers, and want to know what numbers
-are in the intersection of the lists. We can do this by using a nested `whose`,
-and then we refer to the outer list by wrapping it in a tuple:
+example, suppose you have two lists of integers, and want to know what numbers
+are in the intersection of the lists. You can do this by using a nested `whose`,
+and then you refer to the outer list by wrapping it in a tuple:
 
 {% qna %}
 Q: (1;2;3;4) whose (exists (it, (2;4;6;8)) whose (item 0 of it is item 1 of it))
@@ -109,7 +109,7 @@ A: 4
 {% endqna %}
 
 The downside of this method is that the second list is bound within the `whose`
-clause and must be recreated for every iteration. To maintain responsiveness,
+clause and must be re-created for every iteration. To maintain responsiveness,
 you should keep lists like this short.
 
 Tuples of plurals can also be used to compare two sets of data:

@@ -15,9 +15,6 @@ Refer also to the [Core Inspectors](/relevance/guide/basics/), which define the 
   <dt>**[Basic Concepts](./basics.html)**</dt>
   <dd>Explains the basic concepts and categories of session relevance inspectors.</dd>
   
-  <dt>**[Running the Presentation Debugger](./presentationdebugger.html)**</dt>
-  <dd>Describes how to develop and test your Session Relevance expressions .</dd>
-
   <dt>**[Adding Relevance to Presentations](./presentationrelevance.html)**</dt>
   <dd>Shows how to evaluate relevance in presentations.</dd>
 
@@ -54,7 +51,7 @@ They allow you to access information in the BigFix databases and display it in t
   <dd>To query and manage the computers that can be listed on the BigFix Console.</dd> 
   
   <dt>**[Client Inspectors](./clientinspectors.html)**</dt>
-  <dd>To return the name, value and scope of BES Client settings.</dd> 
+  <dd>To return the name, value, and scope of BES Client settings.</dd> 
   
   <dt>**[UTF-8 String Inspectors](./utf8string.html)**</dt>
   <dd>8-bit Unicode Transformation Format inspectors used by the EvaluateRelevance API.</dd> 
@@ -66,7 +63,7 @@ They allow you to access information in the BigFix databases and display it in t
   <dd>To manage BigFix domains.</dd>
 
   <dt>**[Filter Inspectors](./filterinspectors.html)**</dt> 
-  <dd>To get information about filters criteria.</dd>
+  <dd>To get information about filter criteria.</dd>
 
   <dt>**[Fixlet Inspectors](./fixletinspectors.html)**</dt>
   <dd>To get information about individual Fixlets.</dd> 
@@ -99,7 +96,7 @@ They allow you to access information in the BigFix databases and display it in t
   <dd>To retrieve information about BigFix Wizard. These Inspectors apply only to the BigFix Console.</dd> 
   
   <dt>**[World Inspectors](./worldinspectors.html)**</dt>
-  <dd>Plain, named, numbered or indexed global objects.</dd>
+  <dd>Plain, named, numbered, or indexed global objects.</dd>
   
 </dl>
 
@@ -122,21 +119,11 @@ This part explains how to retrieve such data and lists the Session Statistics In
 
 <dl>
   <dt>**[Statistical Aggregation](./stataggregation.html)**</dt>
-  <dd>Explains how to expose the data saved in historical databases.</dd>
+  <dd>Explains how to display the data saved in historical databases.</dd>
 
   <dt>**[Statistics Inspectors](./statisticsinspectors.html)**</dt> 
-  <dd>Provides a list of Inspectors that allow to perform statistics during a session.</dd>
+  <dd>Provides a list of Inspectors that allow you to perform statistics during a session.</dd>
   
 </dl>
 
-<!---  {% note %}
 
-This project is implemented in stages. Currently, the information about this part are available:
-
-* In the [Reference](/relevance/reference) section under **Session**.
-
-* In the [Session inspectors guide](http://support.bigfix.com/fixlet/documents/Session%20Inspectors%2081_110719.pdf)
-
-* In the following [example](https://www.ibm.com/developerworks/community/blogs/a1a33778-88b7-452a-9133-c955812f8910/entry/session_relevance_analyses_results_and_the_rest_api?lang=en)
-
-{% endnote %} --->

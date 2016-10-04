@@ -2,12 +2,11 @@
 title: Folders and Files
 ---
 
-Folders and Files are two out of the most commonly used client inspectors. You can use them both as plurals.
+Folders and files are two out of the most commonly used client inspectors. You can use them both as plurals.
 
 ## Folders
  
-The `folder` object refers to a folder in the Windows operating system or to a directory in the Unix and Linux operating systems. As for several other inspectors, 
-you cannot 
+The `folder` object refers to a folder in the Windows operating system or to a directory in the UNIX and Linux operating systems.
 
 You can query the parent folder of a specific file:
 
@@ -37,13 +36,14 @@ Q: pathname of folder "C:\Program Files (x86)\BigFix Enterprise\BES Client"
 A: C:\Program Files (x86)\BigFix Enterprise\BES Client
 {% endqna %}
 
-On Windows systems you can use the predefined keywords **windows folder** and **system folder** that return a
-`<folder>` object corresponding to the windows or system folder. Since these folders are located in
+On Windows systems you can use the predefined keywords **windows folder** and **system folder** that return a 
+`folder` object corresponding to the windows or system folder. Because these folders are located in
 different locations for different operating systems, these commands are very useful.
 
 ## Files
 
-You can identify a file to query either by specifying its name and the name of the folder that contains the file or by specifying the complete path to the file, as follows:
+You can identify a file to query either by specifying its name and the name of the folder that contains the file or by specifying 
+the complete path to the file, as follows:
 
 {% qna %}
 Q: exists file "passwd" of folder "/etc"
@@ -55,8 +55,8 @@ Q: exists file "c:\windows\notepad.exe"
 A: True
 {% endqna %}
 
-Another way to identify files on a Windows computer, if they are the executable files of registered applications, is using the regapp inspector. For example,
-if you are looking for the path to the Firefox executable file, you can query:
+Another way to identify files on a Windows computer, if they are the executable files of registered applications, is using the 
+regapp inspector. For example, if you are looking for the path to the Firefox executable file, you can query:
 
 {% qna %}
 Q: pathname of regapp "firefox.exe"
@@ -108,7 +108,8 @@ A: 3e32ddbf41d96e72c041248ca8f69f98ba99a6f0
 T: 264.912 ms
 {% endqna %}
 
-The `sha1` inspector stands for *Secure Hash Algorithm*, and it is a simple checksum that is used to verify the integrity of downloaded files.
+The `sha1` inspector stands for *Secure Hash Algorithm*, and it is a simple checksum that is used to verify the integrity of 
+downloaded files.
 You will use it along with the `size` inspector to manage downloads in a Fixlet action.
 
 You can also query the content of the lines included in a specific file as follows:

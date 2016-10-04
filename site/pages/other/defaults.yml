@@ -4,3 +4,51 @@ layout: page-with-nav
 nav:
   - name: Home
     href: /other/
+
+  - name: Web Reports API
+    href: /other/web-reports-api/
+    children:
+
+    - name: Prova
+      href: /other/web-reports-api/prova.html
+	  
+  - name: SOAP API
+    href: /other/soap-api/
+    children:
+
+    - name: Prova
+      href: /other/soap-api/prova.html
+	  
+  - name: Client Compliance API
+    href: /other/cc-api/
+    children:
+
+    - name: Sample Use Cases
+      href: /other/cc-api/cc_use_cases.html
+	  
+    - name: Terminology
+      href: /other/cc-api/cc_terminology.html
+	
+    - name: Software Developer Kit
+      href: /other/cc-api/cc_sdk.html	
+	  
+  - name: Dashboard API
+    href: /other/dashboard-api/
+    children:
+
+    - name: Prova
+      href: /other/dashboard-api/prova.html
+	  
+  - name: Platform API
+    href: /other/platform-api/
+    children:
+
+    - name: Prova
+      href: /other/platform-api/prova.html
+	  
+  - name: Database API
+    href: /other/database-api/
+    children:
+
+    - name: Prova
+      href: /other/database-api/prova.html

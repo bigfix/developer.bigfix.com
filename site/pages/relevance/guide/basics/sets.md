@@ -16,7 +16,7 @@ A: be
 A: to
 {% endqna %}
 
-Sets also allow subtraction. For example, the following query returns the set composed of the elements 2,3 and 4. Note that subtracting a
+Sets also allow subtraction. For example, the following query returns the set composed of the elements 2, 3, and 4. Note that subtracting a
 number not in the original set doesn’t affect the result. You can convert the set back to a printable list, using the `elements` command:
  command.
 

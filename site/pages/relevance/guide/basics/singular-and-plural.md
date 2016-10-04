@@ -20,8 +20,8 @@ Q: substrings separated by " " whose (it contains "o") of "a short string"
 A: short
 {% endqna %}
 
-Although the result is a plural substring type, there is only a single value. In
-fact, as you saw in the last section, a plural expression can return no value at
+Although the result is a plural substring type, there is only a single value. As 
+you saw in the last section, a plural expression can return no value at
 all, without incurring an error.
 
 ````
@@ -68,7 +68,7 @@ E: Singular expression refers to non-unique object.
 
 But as you can see, even though it returns an answer, it also generates an
 error. This is because there are multiple folders in the specified location, and
-this command only retrieves the first one. To see the complete list, you need to
+this command only retrieves the first one. To see the complete list, you must
 use the plural version:
 
 {% qna %}
@@ -79,7 +79,7 @@ A: LocalService
 A: NetworkService
 {% endqna %}
 
-You can explicitly create plurals using a semi-colon `;` to separate the items.
+You can explicitly create plurals using a semicolon `;` to separate the items.
 These are called "collections".
 
 {% qna %}

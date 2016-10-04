@@ -1,26 +1,9 @@
 ---
-title: Who Can Manage Custom Content
+title: User Permissions and Guidelines
 ---
 
-{% section %}
-
-The generic term **content** can represent:
-
-* Data to distribute to targets.
-* Instructions or queries to run on targets.
-* Information retrieved from targets.
-
-Depending on your needs and objectives, you can decide to use only the content available by default from the external
-content sites that you are licensed for, or you can decide to create your custom BigFix implementation by
-*copying and editing existing content* or creating new contents from scratch.
-
-For example, if you want to manage a proprietary application through BigFix, you
-create custom content to deploy, manage, and monitor it.
-
-In general, the content gathered from external content sites consists of [Fixlets](/get-started/custom-content/fixlet-structure.html), 
-[tasks](/get-started/custom-content/task-structure.html), [analyses](/get-started/custom-content/analysis-structure.html), [baselines](/get-started/custom-content/baseline-structure.html), and dashboards. Click the content type to learn about its structure and which parts of it you can customize.
-
-{% endsection %}
+Before starting to develop your custom BigFix solution, ensure you read the information provided in these topics.
+They explain which are the user requirements and how to share your content with other operators.
 {% section %}
 
 ## Who can create custom content?
@@ -28,7 +11,11 @@ In general, the content gathered from external content sites consists of [Fixlet
 Custom content can be created by:
 
 * Master operators (MO).
-* Non-master operators (NMO) authorized by a master operator using the [Custom Content](http://www-01.ibm.com/support/knowledgecenter/SS6MER_9.2.0/com.ibm.tivoli.tem.doc_9.2/Platform/Console/Dialogs/console_operator_details_tab.html) attribute.
+* Non-master operators (NMO) authorized with following [permissions](http://www.ibm.com/support/knowledgecenter/SSQL82_9.5.0/com.ibm.bigfix.doc/Platform/Console/Dialogs/console_operator_details_tab.html ) set to **YES**:
+   * **Custom Content** for creating any kind of Custom Content
+   * **Can Submit Query** for running the [REST API Query](../rest-api/guide/api/query.html) or the [BigFix Query WebUI App]
+   * **Can use REST API** for using the [REST API](../rest-api/) and the [Web Reports API](../other/web_reports_api/)
+   * **Can use WebUI** for using the WebUI web-base interface
 
 {% endsection %}
 {% section %}
@@ -47,7 +34,7 @@ save it to the domain in which that custom content will be used.
 
 {% endsection %}
 
-# Who can access my custom content?
+## Who can access my custom content?
 
 The list of operators that can access custom content depends on the site where
 that custom content is stored.

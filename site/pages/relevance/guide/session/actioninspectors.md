@@ -8,7 +8,7 @@ Use these Inspectors to query and manage the properties of the actions issued by
 
 ## BES Action
 
-Each action may have several properties that can be examined using these Inspectors.
+Each action might have several properties that can be examined using these Inspectors.
 You can iterate over the actions to create lists.
 
 Click [here](/relevance/reference/bes-action.html) to access the page describing these inspectors.
@@ -53,7 +53,7 @@ Returns a set of `<A>` tags enclosing all the BES Actions in html format, creati
 parameter "action issue date" of action 
 ```
 
-This Inspector returns the date the action was issued, a parameter added to each action by the BigFix Console.
+This Inspector returns the date the action was issued, a parameter is added to each action by the BigFix Console.
 
 ```relevance
 detailed status of result from (bes computer whose (id of it is 1234567)) of (bes action whose (id of it is 1234)) 
@@ -65,7 +65,7 @@ Returns the detailed status of the specified action on the given computer.
 detailed statuses of results of (bes action whose (id of it is 1234)) 
 ```
 
-Returns a detailed status list containing the results of bes actions with the specified id.
+Returns a detailed status list containing the results of BES Actions with the specified ID.
 
 ```relevance
 size of (set of bes actions) 
@@ -99,7 +99,7 @@ Returns the names of all the BES Actions.
 
 ## BES Action with Multiplicity
 
-These Inspectors deal with arrays of BES actions, allowing you to extract unique actions and count them.
+These Inspectors handle arrays of BES actions, allowing you to extract unique actions and count them.
 This object type is derived from the `<bes action>` type and therefore shares the same properties as that type.
 
 Click [here](/relevance/reference/bes-action-with-multiplicity.html) to access the page describing these inspectors.
@@ -136,11 +136,11 @@ Click [here](/relevance/reference/bes-action-status.html) to access the page des
 
 ## BES Action Parameter
 
-A Fixlet can incorporate parameters in its associated Action(s). 
+A Fixlet can incorporate parameters into its associated Action. 
 When the Fixlet becomes relevant to the network, the BES Console will prompt the user for the value of the parameter. 
 For example, a Fixlet Action might need to start a Windows service specified by the Console user. 
-When the the Action is taken, the Console would prompt for the name of the service. 
-That value would then be passed down to the BES Client and substituted into the local Action script upon execution.
+When the Action is taken, the Console prompts for the name of the service. 
+That value is then passed down to the BES Client and substituted in the local Action script when the script runs.
 
 Click [here](/relevance/reference/bes-action-parameter.html) to access the page describing these inspectors.
 
@@ -150,7 +150,7 @@ Click [here](/relevance/reference/bes-action-parameter.html) to access the page 
 names of parameters of bes action whose (name of it contains "Download")
 ```
 
-Returns the parameter names of bes actions with `"Download"` in the name.
+Returns the parameter names of BES Actions with `"Download"` in the name.
 
 ---
 

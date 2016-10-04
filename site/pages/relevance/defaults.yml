@@ -5,13 +5,6 @@ nav:
   - name: Home
     href: /relevance/
 
-  - name: Tutorial
-    href: /relevance/tutorial/
-    children:
-
-      - name: Introduction to Relevance language
-        href: /relevance/tutorial/client/
-
   - name: Guides
     href: /relevance/guide/
     children:
@@ -22,7 +15,7 @@ nav:
 
           - name: Strings
             href: /relevance/guide/basics/strings.html
-
+			
           - name: Introspectors
             href: /relevance/guide/basics/introspectors.html
 
@@ -38,11 +31,8 @@ nav:
           - name: Relations
             href: /relevance/guide/basics/relations.html
 
-          - name: Cast
+          - name: Castings
             href: /relevance/guide/basics/casts.html
-
-          - name: Errors
-            href: /relevance/guide/basics/errors.html
 
           - name: Exists
             href: /relevance/guide/basics/exists.html
@@ -52,7 +42,7 @@ nav:
 
           - name: It
             href: /relevance/guide/basics/it-expressions.html
-
+			
           - name: Sets
             href: /relevance/guide/basics/sets.html
 
@@ -81,7 +71,7 @@ nav:
           - name: System Information
             href: /relevance/guide/client/system-information.html
 
-          - name: Folders and Files
+          - name: Files
             href: /relevance/guide/client/files.html
 
           - name: Registry
@@ -112,15 +102,12 @@ nav:
           - name: Basics
             href: /relevance/guide/session/basics.html
 
-          - name: Running the Presentation Debugger
-            href: /relevance/guide/session/presentationdebugger.html
-
           - name: Linking to other documents
             href: /relevance/guide/session/linkingdocs.html
-
+			
           - name: Adding Relevance to Presentations
             href: /relevance/guide/session/presentationrelevance.html	
-
+			
           - name: Refreshing Relevance
             href: /relevance/guide/session/refreshingrelevance.html		
 
@@ -134,16 +121,16 @@ nav:
             href: /relevance/guide/session/baselineinspectors.html
 			
           - name: BES Comment
-            href: /relevance/guide/session/commentinspectors.html
-            
+            href: /relevance/guide/session/commentinspectors.html	
+
           - name: BES Computer
             href: /relevance/guide/session/computerinspectors.html
 
-          - name: BES Client
+          - name: BES Client 
             href: /relevance/guide/session/clientinspectors.html
-
-          - name: UTF-8 String
-            href: /relevance/guide/session/utf8string.html
+			
+          - name: Utf8 String
+            href: /relevance/guide/session/utf8string.html	
 
           - name: BES Deployment
             href: /relevance/guide/session/deploymentinspectors.html
@@ -191,7 +178,13 @@ nav:
             href: /relevance/guide/session/stataggregation.html
 
           - name: Statistics Inspectors 
-            href: /relevance/guide/session/statisticsinspectors.html  
+            href: /relevance/guide/session/statisticsinspectors.html
+	
+      - name: Error Messages
+        href: /relevance/guide/errors.html
+
+  - name: Tutorial
+    href: /relevance/tutorial.html
 
   - name: Reference
     href: /relevance/reference/
@@ -201,3 +194,10 @@ nav:
 
   - name: Online Evaluator
     href: /relevance/evaluate/
+	
+  - name: Examples
+    href: /relevance/examples/
+    children: 
+
+      - name: Creating a Computer Group
+        href: /relevance/examples/custom-computer-group.html

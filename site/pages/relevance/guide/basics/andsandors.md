@@ -18,7 +18,7 @@ A: True
 {% endqna %}
 
 
-You can also logically negate a boolean expression with the ‘not’ keyword. This query returns `TRUE` if the "z:" drive doesn’t exist. 
+You can also logically negate a Boolean expression with the ‘not’ keyword. This query returns `TRUE` if the "z:" drive doesn’t exist. 
 
 {% qna %}
 Q: not exists drive "z:"
@@ -28,7 +28,7 @@ A: True
 This is a unary operation (`not`) being used to negate another unary operator (`exists`).
 
 
-Using existence with boolean logic even lets you check for things that might otherwise return an error, for example:
+Using existence with Boolean logic even lets you check for things that might otherwise return an error, for example:
 
 {% qna %}
 Q: Exists folder "C:\doesn’t exist" AND Exists files "this should normally break" of folder "c:\doesn’t exist"

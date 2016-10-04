@@ -1,34 +1,43 @@
 section: get-started
-sectionName: Get Started
+sectionName: Getting Started
 layout: page-with-nav
 nav:
   - name: Home
     href: /get-started/
 
-  - name: Manage custom content
+  - name: Managing Custom Content
     href: /get-started/custom-content/
     children:
 
-    - name: Fixlet structure
+    - name: Customizing Fixlets
       href: /get-started/custom-content/fixlet-structure.html
 
-    - name: Task structure
+    - name: Customizing Tasks
       href: /get-started/custom-content/task-structure.html
 
-    - name: Analysis structure
+    - name: Customizing Analyses
       href: /get-started/custom-content/analysis-structure.html
 
-    - name: Baseline structure
+    - name: Customizing Baselines
       href: /get-started/custom-content/baseline-structure.html
 
-  - name: Customize user interfaces
+  - name: Customizing User Interfaces
     href: /get-started/customize-user-interfaces.html
-
-  - name: Integrate with external applications
+	
+  - name: Integrating with External Applications
     href: /get-started/integrate-external-applications.html
 
-  - name: Who can manage custom content
+  - name: Available Languages
+    href: /get-started/languages.html
+
+  - name: Available APIs
+    href: /get-started/api.html
+
+  - name: User Permissions and Guidelines
     href: /get-started/who-can-manage.html
 
-  - name: Known best practices
+  - name: Known Best Practices
     href: /get-started/best-practices.html
+	
+  - name: Your next step
+    href: /get-started/next-step.html

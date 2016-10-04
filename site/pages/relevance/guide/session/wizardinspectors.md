@@ -2,7 +2,7 @@
 title: Wizard Inspectors
 ---
 
-Use these Inspectors to retrieve information about BES Wizard. These Inspectors apply only to the BigFix Console.
+Use these Inspectors to retrieve information about the BES Wizard. These Inspectors apply only to the BigFix Console.
 
 ---
 
@@ -10,7 +10,7 @@ Use these Inspectors to retrieve information about BES Wizard. These Inspectors 
 
 These are Console-only Inspectors that return a list of the available BES Wizards.
 
-Click [here](/relevance/reference/bes-wizard.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-wizard.html) to access the page describing these inspectors.
 
 **Examples**
 
@@ -38,7 +38,7 @@ Returns an html string such as 'Click here to open wizard Windows Registry Wizar
 
 These are Console-only Inspectors that return a list of the available BES Wizard variables.
 
-Click [here](/relevance/reference/bes-wizard-variable.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-wizard-variable.html) to access the page describing these inspectors.
 
 ---
 
@@ -46,15 +46,15 @@ Click [here](/relevance/reference/bes-wizard-variable.html) to access the page d
 
 These Inspectors iterate over the BES Wizards and return a set of such wizards.
 
-Click [here](/relevance/reference/bes-wizard-set.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-wizard-set.html) to access the page describing these inspectors.
 
 ---
 
 
 ## BES Wizard with Multiplicity
 
-These Inspectors deal with arrays of BES Wizards, allowing you to extract unique properties and count them.
+These Inspectors handle arrays of BES Wizards, allowing you to extract unique properties and count them.
 This object type is derived from the `<bes wizard>` type and therefore shares the same properties as that type.
 
-Click [here](/relevance/reference/bes-wizard-with-multiplicity.html) to access the page describing to these inspectors.
+Click [here](/relevance/reference/bes-wizard-with-multiplicity.html) to access the page describing these inspectors.
 

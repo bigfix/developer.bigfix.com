@@ -1,10 +1,11 @@
 ---
 title: User Inspectors
 ---
+we
+Use these Inspectors to return information about local and current user accounts, including names, logins, and passwords and whether 
+they are logged in or not. 
 
-Use these Inspectors to return information about local and current user accounts, including names, logins and passwords and whether they are logged in or not. 
-
-As of BigFix version 9.5, these are the currently available Inspectors for users: 
+In BigFix version 9.5, these are the currently available Inspectors for users: 
 
 - [**active directory local user**](./../../reference/active-directory-local-user.html) to query Active Directory local users. They include the distinguished name and groups.
 - [**user**](./../../reference/user.html) to list properties of all users, whether they are logged in or not.
@@ -30,7 +31,7 @@ A. ......
 A: ....
 {% endqna %}
 
-or to filter for specific properties satisfying a criteria, for example:
+or to filter for specific properties satisfying a criterion, for example:
 
 {% qna %}
 Q: properties whose (it as string contains "password") of type "user"
@@ -44,10 +45,12 @@ A: password expired of <user>: boolean
 
 ----
 
-Use the Inspectors Search to get additional information about the Inspectors and their properties. For example, in the Search field enter **user** to get to list and the details of its creation methods and properties.
+Use the Inspectors Search to get additional information about the Inspectors and their properties. For example, in the Search field 
+enter **user** to get list and details of its creation methods and properties.
 
 {% note %}
-Some queries about **logged on user** might require additional authorizations to run within the Fixlet Debugger. If you get the following error xxx ensure to: 
+Some queries about a **logged on user** might require additional authorizations to run within the Fixlet Debugger. If you get the 
+following error xxx, ensure that you: 
 - Run the query on a system where the BigFix agent is installed.
 - Select Debug -> Evaluate using -> Local Client Evaluator in the Fixlet Debugger tool, before evaluating the query.
 {% endnote %}

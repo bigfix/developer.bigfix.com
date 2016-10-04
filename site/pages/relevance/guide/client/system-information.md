@@ -6,9 +6,9 @@ The system information inspectors are particularly useful for identifying attrib
 
 ## Hardware
 
-There are a large number of properties of the underlying hardware that we can query.
+There is a large number of properties of the underlying hardware that you can query.
 
-We'll start with processor information:
+You can start with processor information:
 
 {% qna %}
 Q: vendor names of processors
@@ -18,7 +18,8 @@ A: GenuineIntel
 A: GenuineIntel
 {% endqna %}
 
-You'll notice quickly that this will return a bunch of identical entries even on single processor systems. That is because each CPU core is referenced as its own processor. 
+You see that the query returns several identical entries even on a single processor systems. 
+That is because each CPU core is referenced as its own processor. 
 
 You can collapse these identical results into a single one using the `unique values` inspector, like this:
 
@@ -27,7 +28,7 @@ Q: unique values of vendor names of processors
 A: GenuineIntel
 {% endqna %}
 
-Continuing, we can reference the speed of the processors:
+Continuing, you can reference the speed of the processors:
 
 {% qna %}
 Q: speeds of processors
@@ -49,7 +50,7 @@ A: Core i7-3720QM
 
 ## Operating System
 
-We can easily pull the name of the operating system:
+You can pull the name of the operating system:
 
 {% qna %}
 Q: name of operating system
@@ -73,7 +74,7 @@ Q: (name of it, version of it) of operating system
 A: Win2008R2, 6.1.7601
 {% endqna %}
 
-We can also pull the architecture:
+You can also pull the architecture:
 
 {% qna %}
 Q: (name of it, architecture of it) of operating system
@@ -102,14 +103,14 @@ Q: mac of operating system
 A: True
 {% endqna %}
 
-Under Windows we can also query the service pack version:
+On Windows systems you can also query the service pack version:
 
 {% qna %}
 Q: service pack major version of operating system
 A: 1
 {% endqna %}
 
-Finally we can query uptime
+Finally you can query uptime
 
 {% qna %}
 Q: uptime of operating system
@@ -118,16 +119,16 @@ A: 28 days, 20:20:22.496818
 
 ## Drives
 
-We can also query information related to mounted disk drives.
+You can also query information related to mounted disk drives.
 
-On a Mac:
+On a Mac systems:
 
 {% qna %}
 Q: free space of volume "Macintosh HD"
 A: 402534928384
 {% endqna %}
 
-On Windows:
+On Windows systems:
 
 {% qna %}
 Q: (free spaces of it, names of it) of drives

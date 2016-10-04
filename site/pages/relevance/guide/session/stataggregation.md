@@ -2,11 +2,19 @@
 title: Statistical Aggregation	
 ---
 
-BigFix maintains a set of historical databases, allowing you to display and archive long-term statistical data about your networked computers.
+BigFix maintains a set of historical databases, allowing you to display and archive long-term 
+statistical data about your networked computers.
 
-Property data has three dimensions: property, computer and time. By doing so, selected properties can be set up to track changes over time. To keep the size of the data manageable, statistics are aggregated over all the computers reporting on a specific property in a particular time period.
+Property data has three dimensions: property, computer, and time. By doing so, selected properties 
+can be set up to track changes over time. To keep the size of the data manageable, statistics are 
+aggregated over all the computers reporting on a specific property in a particular time period.
 
-You can envision the resulting data set as another two dimensional table. Again, each column represents a single property, but now each row represents a interval of time, for example the five minute interval between 12:00 and 12:05 AM on Jan 1 2006. Each cell in this table contains a statistical summary of all the clients reporting on the given property during the specified time period. These cells are called **statistical bins**. The Inspectors which expose this data work with statistical bins as well as **ranges** of statistical bins.
+You can see the resulting data set as a two dimensional table. Each column represents a single 
+property, and each row represents a interval of time, for example the five minute interval between 
+12:00 and 12:05 AM on Jan 1 2016. Each cell in this table contains a statistical summary of all the 
+clients reporting on the given property during the specified time period. 
+These cells are called **statistical bins**. The Inspectors that display expose this data work with 
+statistical bins as well as with **ranges** of statistical bins.
 
 
 ## Creating Statistical Properties
@@ -14,7 +22,7 @@ You can envision the resulting data set as another two dimensional table. Again,
 You can use the following methods to get statistical properties into your deployment:
 * Import an existing analysis containing properties with the KeepStatistics attribute set to TRUE.
 * Author an analysis in a Fixlet site using hand-edited action script MIME. Add the header X-Keep-Statistics:true to the property headers.
-The property of interest must return an integer, floating point or Boolean type in order to compile statistics. If you attempt to set the KeepStatistics attribute on a property that does not return one of these types, it will be ignored.
+The property of interest must return an integer, floating point, or Boolean type to compile statistics. If you attempt to set the KeepStatistics attribute on a property that does not return one of these types, it will be ignored.
 
 
 ## Accessing Statistics
@@ -49,7 +57,7 @@ For time range = (t0, t1), returns a sub-range of bins beginning with the earlie
 bin at <time> of <statistic range>
 ```
 
-Returns the bin in the statistical range which starts before and ends after the specified time range. If no such bin exists, it throws NoSuchObject.
+Returns the bin in the statistical range that starts before and ends after the specified time range. If no such bin exists, it throws NoSuchObject.
 
 ```relevance
 total of <statistic range>
@@ -61,7 +69,11 @@ Statistically totals the bins in the specified range, producing a single bin cov
 totals <time interval> of <statistic range>
 ```
 
-Used for downsampling (condensing) bins. Totals over the specified range, producing a new series of bins with length determined by the time interval. The resulting range will start and end on a multiple of the time interval. For example if you ask for day bins, the result will start and end at midnight. If the time interval is not a multiple of the the length of the starting bin of the range, this Inspector throws NoSuchObject.
+Used for downsampling (condensing) bins. Totals over the specified range, producing a new series of 
+bins with length determined by the time interval. The resulting range will start and end on a multiple 
+of the time interval. For example, if you ask for day bins, the result will start and end at midnight. 
+If the time interval is not a multiple of the length of the starting bin of the range, this 
+Inspector throws NoSuchObject.
 
 ## Using Linear Projections
 A bin represents two-dimensional data: values collected over a range of time. When the time range for a bin is large, we can look for trends in the way the values change over time. The "linear fit of <statistical bin>" Inspector uses the least-squares method to fit a line through the data in the bin. The linear projection it returns has the following floating-point properties:

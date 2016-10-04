@@ -1,5 +1,5 @@
 ---
-title: It Expressions
+title: It
 ---
 
 There are two contexts in which `it` has a meaning:
@@ -63,8 +63,8 @@ These are two equivalent (and wrong) statements where the `it` refers to the
 closest object, which is the folder, not the files.
 
 There can be more than one `it` in an expression. The rule is that each one
-refers to the objects listed to the left of the associated `whose`. For
-instance:
+refers to the object listed to the left of the associated `whose`. For
+example:
 
 {% qna %}
 Q: preceding texts whose (it contains "n") of characters whose (it is "a") of "banana"
@@ -86,9 +86,9 @@ A: a
 
 This expression illustrates two nested whose-it clauses. The inner one finds
 leading substrings that contain an 'n'. The outer one returns the characters
-following those substrings.
+following those substrings. 
 
-Since `it` represents a value, you can operate on it like any other variable:
+Because `it` represents a value, you can operate on it like any other variable:
 
 {% qna %}
 Q: (it * it) of (1;2;3;4)
@@ -112,3 +112,5 @@ instance of `it` for comparison.
 The `it` keyword never stands for an expression, but rather for a single value.
 Often it stands, in turn, for the serial values of a plural expression. But it
 can only stand for one value at a time.
+
+Watch the video about the [It-without-Whose construct](https://www.youtube.com/watch?v=yz0V4Si849E&list=PLiD3_RDV00JfbODj7IAXC0jfP7BKSj6Yr&index=5) to have more information about this clause.
