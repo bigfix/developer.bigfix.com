@@ -55,7 +55,7 @@ https://<bigfix_server>:52311/api/computers
 
 This list shows, for each computer, the last time that the computer reported and its ID, for example:
 
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <Computer Resource="api/computer/2785212">
@@ -86,7 +86,7 @@ https://<bigfix_server>:52311/api/query?relevance=(ids of it, last report time o
 
 The result that you get is similar to the following:
 
-```xml
+```
  <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <Query Resource="(ids of it, last report time of it) of bes computers">
@@ -118,7 +118,7 @@ https://<bigfix_server>:52311/api/action
 ```
 
 Content to send:
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
   <SourcedFixletAction>  
@@ -136,7 +136,7 @@ Content to send:
 
 In return you get the ID of the action that was created and triggered, action ID 42 in this example:
 
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <Action Resource="http://{server}:52311/api/action/42" LastModified="Fri, 21 Nov 2014 16:49:04 +0000">
@@ -161,7 +161,7 @@ URL:
 ```
 
 Content to send:
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <ActionResults Resource="http://{server}:52311/api/action/42/status">
@@ -180,7 +180,7 @@ https://{server}:52311/api/query?relevance=(id of it, state of it, time issued o
 
 In return you get the ID of the action, its state and time it was issued, as follows:
 
-```xml
+```
  <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <Query Resource="(id of it, state of it, time issued of it) of bes action whose (id of it = 42)">

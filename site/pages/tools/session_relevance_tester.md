@@ -12,7 +12,8 @@ These are the main features in the BigFix Session Relevance Tester:
 
 Click [Session Relevance](/relevance/guide/session/) to access the part dedicated to the Session Relevance language.
 
-It also includes modules such as the Session Relevance Editor module, the Inspector Reference module, and the Web Reports module. which simply returns the values from the Properties inspector. It provides a fast and efficient way to browse through available inspectors and their corresponding creation methods and properties.
+It also includes modules such as the Session Relevance Editor module, the Inspector Reference module, 
+and the Web Reports module, which simply returns the values from the Properties inspector. It provides a fast and efficient way to browse through available inspectors and their corresponding creation methods and properties.
 
 {% endsection %}
 
@@ -26,11 +27,11 @@ These are the main capabilities of the Session Relevance Editor module:
 * Automatically split tuples into columns.
 * Output results as Grid or HTML.
 * Export to Excel.
-* Support for printing (preview, page setup, other options).
+* Support for printing (preview, page setup, additional options).
 * Supports saving the documents (.bsr extension is associated with this app).
 * Line numbering, word wrapping within the editor.
 * Start multiple editors in different tabs.
-* Indent and Flatten the relevance statements.
+* Indent and flatten the relevance statements.
 
 ![Session Relevance Editor on SRT](/static/img/session_relevance_editor_onsrt.jpg)
 

@@ -5,40 +5,101 @@ nav:
   - name: Home
     href: /other/
 
-  - name: Web Reports API
-    href: /other/web-reports-api/
-    children:
-
-    - name: Prova
-      href: /other/web-reports-api/prova.html
-	  
   - name: SOAP API
     href: /other/soap-api/
     children:
 
-    - name: Prova
-      href: /other/soap-api/prova.html
+    - name: About SOAP
+      href: /other/soap-api/soap_protocol.html
 	  
-  - name: Client Compliance API
-    href: /other/cc-api/
-    children:
+    - name: Configuring SOAP
+      href: /other/soap-api/soap_configuration.html
+	  
+    - name: SOAP URL
+      href: /other/soap-api/soap_url.html
+	  
+    - name: SOAP Headers
+      href: /other/soap-api/soap_headers.html
+	  
+    - name: SOAP Methods
+      href: /other/soap-api/soap_methods.html
+      children:
 
-    - name: Sample Use Cases
-      href: /other/cc-api/cc_use_cases.html
+       - name: GetRelevanceResult
+         href: /other/soap-api/GetRelevanceResult.html
 	  
-    - name: Terminology
-      href: /other/cc-api/cc_terminology.html
-	
-    - name: Software Developer Kit
-      href: /other/cc-api/cc_sdk.html	
+       - name: GetStructuredRelevanceResult
+         href: /other/soap-api/GetStructuredRelevanceResult.html
 	  
+       - name: CreateUser
+         href: /other/soap-api/CreateUser.html
+	  
+       - name: StoreSharedVariable
+         href: /other/soap-api/StoreSharedVariable.html	  
+	  
+       - name: DeleteSharedVariable
+         href: /other/soap-api/DeleteSharedVariable.html	  
+		 
+    - name: SOAP Examples
+      href: /other/soap-api/soap_examples.html
+      children:
+
+       - name: Shell Script
+         href: /other/soap-api/shell_script.html
+	  
+       - name: Create User Example
+         href: /other/soap-api/create_user_example.html
+	  
+       - name: SOAP Error Handling
+         href: /other/soap-api/soap_error_handling.html		 
+		 
   - name: Dashboard API
     href: /other/dashboard-api/
     children:
 
-    - name: Prova
-      href: /other/dashboard-api/prova.html
+    - name: Content structure
+      href: /other/dashboard-api/dashboard_content.html
+
+    - name: Linking
+      href: /other/dashboard-api/linking.html
+
+    - name: Relevance in dashboards
+      href: /other/dashboard-api/relevance_in_dashboards.html
 	  
+  - name: Web Reports API
+    href: /other/web-reports-api/
+    children:
+
+    - name: Content Structure
+      href: /other/web-reports-api/wr_content.html
+
+    - name: Web Reports vs Dashboard
+      href: /other/web-reports-api/wr_vs_dashboard.html
+
+    - name: Converting a Dashboard
+      href: /other/web-reports-api/converting_dashboard.html
+
+    - name: Propagating Web Reports
+      href: /other/web-reports-api/wr_propagating.html
+
+    - name: Template report
+      href: /other/web-reports-api/template_report.html
+
+    - name: Custom report
+      href: /other/web-reports-api/custom_report.html
+	
+    - name: External report
+      href: /other/web-reports-api/external_report.html
+
+    - name: Exporting to PDF
+      href: /other/web-reports-api/exporting_to_pdf.html
+
+    - name: Setting a title
+      href: /other/web-reports-api/setting_title.html
+
+    - name: Setting OnLoad events
+      href: /other/web-reports-api/setting_onload.html
+	    
   - name: Platform API
     href: /other/platform-api/
     children:
@@ -52,3 +113,16 @@ nav:
 
     - name: Prova
       href: /other/database-api/prova.html
+	  
+  - name: Client Compliance API
+    href: /other/cc-api/
+    children:
+
+    - name: Sample Use Cases
+      href: /other/cc-api/cc_use_cases.html
+	  
+    - name: Terminology
+      href: /other/cc-api/cc_terminology.html
+	
+    - name: Software Developer Kit
+      href: /other/cc-api/cc_sdk.html	

@@ -47,7 +47,8 @@ If you plan to address your query to a computer group, read carefully the inform
 {% restapi "/api/clientquery/{id}", "GET", "Retrieves the submitted query that was assigned the identifier *{id}*." %}
 **Request:** URL is all that is required
 
-**Response:** Submitted query in XML format. For example, if you request:
+**Response:** Submitted query in XML format. 
+For example, if you request:
 
 ```
 $ ./iem get /api/clientquery/12 <?xml version="1.0" encoding="UTF-8"?>
@@ -69,6 +70,9 @@ you can get the following response:
 ```
 
 where *IP_address* is the IP address of the BigFix Server.
+
+**Response:** Submitted query in XML format.
+
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 

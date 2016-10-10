@@ -1,14 +1,20 @@
 ---
-title: WEB Reports API
+title: The WEB Reports API
 ---
 
-Runs queries using session relevance to extract data from the Web Reports DB.
+The Web Reports API allows you to extract data from the Web Reports DB. and to author 
+your own Web Reports, granting you the power to create customized views into whatever 
+aspect of your network that you want to monitor. 
 
-[Documentation](http://www-01.ibm.com/support/knowledgecenter/SS63NW_9.1.0/com.ibm.tivoli.tem.doc_9.1/Platform/API_Reference/WebReportsAPI/WebReportsAPIIntro.html)
+It is based on the [Dashboard API](../dashboard-api/) , but it operates with static 
+web-facing views of your data. These views have a file extension of *BESWRPT*.
 
-![WEB reports graphics](/static/img/webreports_graphic.png)
+This is a sample output of a custom report generated using the Web Reports API:
 
-![WEB reports panel 1](/static/img/web_reports_1.png)
+![WEB reports panel 2](/static/img/web_reports_1.png)
 
-![WEB reports panel 2](/static/img/web_reports_2.png)
+
+
+
+
 

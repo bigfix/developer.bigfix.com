@@ -10,6 +10,9 @@ nav:
 
   - name: QnA
     href: /tools/qna.html	
+	
+  - name: QnA for Web Reports
+    href: /tools/qna_wr.html
 
   - name: Session Relevance Tester
     href: /tools/session_relevance_tester.html
@@ -20,8 +23,8 @@ nav:
   - name: Excel Connector
     href: /tools/excel_connector.html
 	
-  - name: QnA for Web Reports
-    href: /tools/qna_wr.html
+  - name: BES SOAP API Tester
+    href: /tools/soap_api_tester.html
 
   - name: Client API Tester
     href: /tools/cc_tester.html

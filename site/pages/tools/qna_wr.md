@@ -10,6 +10,8 @@ This is the QnA for Web Reports user interface:
 
 ![QnA for Web Reports](/static/img/web_reports_qna.jpg)
 
+The same behavior and considerations that apply to the [QnA](./qna.html) tool, apply to the QnA for Web Reports as well.
+
 You can run simple queries such as the following:
 
 ```
