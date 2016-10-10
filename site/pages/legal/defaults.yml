@@ -1,0 +1,9 @@
+section: legal
+sectionName:
+layout: page-with-nav
+nav:
+  - name: Terms of Use
+    href: /legal/terms.html
+
+  - name: How Google uses data when you use our partners' sites or apps
+    href: https://www.google.com/policies/privacy/partners/
