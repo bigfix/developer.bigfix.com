@@ -20,9 +20,8 @@ Action object.  See the section on [Working with Fields XML Data](./working_with
 | OriginSequence | BINARY(8) | If the value is NULL, then this action was created on this DSA server, otherwise this action was replicated from another DSA server, and the value is the rowversion value of the Sequence column of this action on the DSA server on which the action was originally created. |
 
 Example:
-```
-select ID, Name, dbo.fn_ExtractField(‘Source Fixlet’,0,Fields) from 
-BES_ACTION_DEFS where ParentID = 0 and dbo.fn_IsActionExpired( Fields, 
-GetUTCDate() ) = 0 
+```sql
+select ID, Name, dbo.fn_ExtractField('Source Fixlet',0,Fields) from 
+BES_ACTION_DEFS where ParentID = 0 and dbo.fn_IsActionExpired( Fields, GetUTCDate() ) = 0 
 ```
 

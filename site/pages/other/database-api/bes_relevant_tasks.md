@@ -13,7 +13,7 @@ in which the task is relevant on that computer.
 | Version | int | Number of times the task is modified |
 
 Example:
-```
+```sql
 select T.Sitename, T.ID, T.Name, R.ComputerID from BES_TASKS T, BES_RELEVANT_TASKS R
 where T.Sitename = R.Sitename AND T.ID = R.ID
 ```

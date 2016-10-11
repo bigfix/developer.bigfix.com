@@ -14,7 +14,7 @@ sitename.
 | Name      | varchar(255) | Fixlet name |
 
 Example:
-```
+```sql
 select Sitename, ID, Name from BES_FIXLETS where Sitename = 'Enterprise Security'
 order by Sitename, ID
 ```

@@ -17,7 +17,7 @@ received by the computer.
 | ActionStatus | text | A brief summary of the state of the action for this computer |
 
 Example:
-```
+```sql
 select * from BES_ACTIONS where ActionStatus = 'Executed'
 ```
 

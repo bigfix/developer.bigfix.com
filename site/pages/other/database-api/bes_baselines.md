@@ -13,7 +13,7 @@ get the baseline name.
 | Name      | varchar(255) | Baseline name |
 
 Example:
-```
+```sql
 select Sitename, ID, Name from BES_BASELINES where Sitename = 'Enterprise Security'
 order by Sitename, ID
 ```

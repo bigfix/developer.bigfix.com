@@ -13,7 +13,7 @@ is relevant on that computer.
 | Version | int | Number of times the baseline is modified |
 
 Example:
-```
+```sql
 select B.Sitename, B.ID, B.Name, R.ComputerID from BES_BASELINES B, BES_RELEVANT_BASELINES R
 where B.Sitename = R.Sitename AND B.ID = R.ID
 ```

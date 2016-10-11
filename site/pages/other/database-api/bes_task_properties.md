@@ -13,10 +13,10 @@ custom tasks), such as the severity.
 | PropertyValue | text | Property Value |
 
 Example:
-```
-select BT.Sitename, BT.ID, BT.Name, BTP.PropertyValue AS ’Severity’
+```sql
+select BT.Sitename, BT.ID, BT.Name, BTP.PropertyValue AS 'Severity'
 from BES_TASKS BT, BES_TASK_PROPERTIES BTP
 where BT.Sitename = BTP.Sitename AND BT.ID = BTP.ID
-and BTP.PropertyName = ’Source Severity’
+and BTP.PropertyName = 'Source Severity'
 ```
 

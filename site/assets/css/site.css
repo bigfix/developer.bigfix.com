@@ -55,6 +55,7 @@ img {
 th, td {
   padding: 7px 0 4px 40px;
   text-align: left;
+  vertical-align: top;
   border-bottom: 1px solid #eee;
 }
 
@@ -432,6 +433,10 @@ h1.relevance-type-description {
 
 .hljs-value {
   color: #734098;
+}
+
+.hljs-comment {
+  color: #999999;
 }
 
 .relevance-reference-category {

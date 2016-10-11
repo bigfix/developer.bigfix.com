@@ -10,7 +10,7 @@ The BES_SITEVERSIONS view lists all of Fixlet sites that are currently subscribe
 | Version | int | The version of the fixlet site contents that is currently in the database. If the version is 0, then the site has been subscribed, but the contents of the site have not yet been imported into the database |
 
 Example:
-```
+```sql
 select * from BES_SITEVERSIONS where Version = 0
 ```
 

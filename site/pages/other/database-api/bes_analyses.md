@@ -12,7 +12,7 @@ Database.
 | Name      | varchar(255) | Analysis name |
 
 Example:
-```
+```sql
 select Sitename, ID, Name from BES_ANALYSES where Sitename = 'BES Support'
 order by Sitename, ID
 ```

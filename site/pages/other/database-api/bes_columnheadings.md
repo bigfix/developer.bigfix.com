@@ -16,7 +16,7 @@ than 8000 characters are truncated to 8000 characters in this view.
 | IsFailure | Tinyint | Nonzero if the retrieved property failed to evaluate on the BES Client |
 
 Example:
-```
+```sql
 select ComputerID, Name, Value, IsFailure from BES_COLUMN_HEADINGS where
 Name = 'Total HD Space' order by ComputerID
 ```

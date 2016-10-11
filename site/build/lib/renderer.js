@@ -69,7 +69,7 @@ function createMarkdownRenderer() {
       return wrapCodeBlock(highlightActionScript(code));
     }
 
-    hljsLangs = ['sql', 'xml', 'python', 'perl', 'js', 'javascript'];
+    hljsLangs = ['sql', 'xml', 'python', 'perl', 'js', 'javascript', 'sql'];
     if (hljsLangs.indexOf(language) >= 0) {
       return wrapCodeBlock(hljs.highlight(language, code).value);
     }

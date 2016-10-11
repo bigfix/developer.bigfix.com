@@ -13,7 +13,7 @@ BES_ACTIONS table to get the task name.
 | Name      | varchar(255) | Task name |
 
 Example:
-```
+```sql
 select Sitename, ID, Name from BES_TASKS where Sitename = 'Enterprise Security'
 order by Sitename, ID
 ```

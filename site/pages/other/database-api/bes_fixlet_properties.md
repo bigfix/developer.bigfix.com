@@ -13,10 +13,10 @@ custom Fixlets), such as the severity.
 | PropertyValue | text | Property Value |
 
 Example:
-```
-select BF.Sitename, BF.ID, BF.Name, BFP.PropertyValue AS ’Severity’
+```sql
+select BF.Sitename, BF.ID, BF.Name, BFP.PropertyValue AS 'Severity'
 from BES_FIXLETS BF, BES_FIXLET_PROPERTIES BFP
 where BF.Sitename = BFP.Sitename
-and BF.ID = BFP.ID AND BFP.PropertyName = ’Source Severity’
+and BF.ID = BFP.ID AND BFP.PropertyName = 'Source Severity'
 ```
 

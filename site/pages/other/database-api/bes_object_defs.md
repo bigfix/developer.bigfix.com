@@ -12,7 +12,7 @@ The actual binary contents of the file are stored in a separate table, not in th
 
 | Column        | Type           |  Description  |
 | ------------- | ------------- | ----- |
-| Sitename  | Varchar(128) | For custom-authored objects, the value in the Sitename column is always ‘ActionSite’, even if the object is propagated in a different site (e.g. a custom site). For objects gathered from fixlet sites, the Sitename is the name of the fixlet site followed by ‘__XXX’ where XXX is the version number of the fixlet site. |
+| Sitename  | Varchar(128) | For custom-authored objects, the value in the Sitename column is always 'ActionSite', even if the object is propagated in a different site (e.g. a custom site). For objects gathered from fixlet sites, the Sitename is the name of the fixlet site followed by '__XXX' where XXX is the version number of the fixlet site. |
 | ID      | int | Object ID |
 | Is Fixlet | smallint | True for fixlets, tasks, analyses, baselines, and computer groups. |
 | Version     | Varbinary(512)  | The ManyVersion of this action.  See the section on [Working with ManyVersion Data](./working_with_manyversions.html) for details. Only the latest version of each action is contained in this view. |
@@ -27,9 +27,8 @@ The actual binary contents of the file are stored in a separate table, not in th
 | OriginSequence | BINARY(8) | If the value is NULL, then this action was created on this DSA server, otherwise this action was replicated from another DSA server, and the value is the rowversion value of the Sequence column of this action on the DSA server on which the action was originally created. |
 
 Example:
-```
-select ID, Name, dbo.fn_ExtractField(‘Source Fixlet’,0,Fields) from 
-BES_ACTION_DEFS where ParentID = 0 and dbo.fn_IsActionExpired( Fields, 
-GetUTCDate() ) = 0 
+```sql
+select ID, Name, dbo.fn_ExtractField('Source Fixlet',0,Fields) from 
+BES_ACTION_DEFS where ParentID = 0 and dbo.fn_IsActionExpired( Fields, GetUTCDate() ) = 0
 ```
 

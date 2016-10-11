@@ -13,7 +13,7 @@ relevant on that computer. This view includes custom Fixlet content.
 | Version | int | Number of times the Fixlet is modified |
 
 Example:
-```
+```sql
 select F.Sitename, F.ID, F.Name, R.ComputerID from BES_FIXLETS F, BES_RELEVANT_FIXLETS R
 where F.Sitename = R.Sitename AND F.ID = R.ID
 ```
