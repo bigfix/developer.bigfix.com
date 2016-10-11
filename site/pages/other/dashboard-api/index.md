@@ -2,7 +2,7 @@
 title: The Dashboard API
 ---
 
-Dashboards, wizards and [Web Reports](../web-reports-api/) are three different manifestations of the same underlying concept. 
+Dashboards, wizards and Web Reports are three different manifestations of the same underlying concept. 
 The main differences are:
 - **Dashboards:** typically open in a document window and provide for easily
 updated views. They usually consist of a collection of tabular and graphical
