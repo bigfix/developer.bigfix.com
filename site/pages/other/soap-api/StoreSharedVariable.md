@@ -22,22 +22,18 @@ requires request and response headers to authenticate.
 
 {% endsection %}
 
-{% section %}
-
 ### Parameters
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | dashboardVariableIdentifier      | DashboardVariableIdentifier | 1 |  A dashboard ID, variable name, and optional database ID that identify the dashboard variable to be inserted. |
 | variableValue | string | 1 | The value to insert for the variable. |
-
-{% endsection %}
 
 
 ### Return Values
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | success      | boolean | 1 |  True if variable was successfully inserted, otherwise false. |
 
 

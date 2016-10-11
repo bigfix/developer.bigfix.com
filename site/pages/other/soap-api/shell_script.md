@@ -7,15 +7,15 @@ evaluation. This example requires the **SOAP::Lite** module, version 0.71 or lat
 uses the **GetRelevanceResult** SOAP method.
 
 
-```xml
+```perl
 use SOAP::Lite;
 #arguments: [hostname] [username] [password] [relevance expression]
-#hostname only, e.g. ’example.com’ rather than ’http://example.com/webreports’
+#hostname only, e.g. 'example.com' rather than 'http://example.com/webreports'
 my $host = $ARGV[0];
-my $username = SOAP::Data->name(’username’ => $ARGV[1] );
-my $password = SOAP::Data->name(’password’ => $ARGV[2] );
-my $expr = SOAP::Data->name(’relevanceExpr’ => $ARGV[3] );
-my $service = SOAP::Lite -> uri( ’http://’ . $host . ’/webreports?wsdl’ ) -> proxy( $host );
+my $username = SOAP::Data->name('username' => $ARGV[1] );
+my $password = SOAP::Data->name('password' => $ARGV[2] );
+my $expr = SOAP::Data->name('relevanceExpr' => $ARGV[3] );
+my $service = SOAP::Lite -> uri( 'http://' . $host . '/webreports?wsdl' ) -> proxy( $host );
 my $result = $service -> GetRelevanceResult( $expr, $username, $password );
 if( $result->fault ) {
    print "faultcode: " . $result->faultcode . "\n";
@@ -37,12 +37,12 @@ an error, it can be parsed here. Otherwise, the results of the relevance evaluat
 
 Add the following line at the top of the file to help with debugging:
 
-```
-use SOAP::Lite +trace => ’debug’;
+```perl
+use SOAP::Lite +trace => 'debug';
 ```
 
 The following line might be required to avoid a bug in **SOAP:Lite**:
 
-```
+```perl
 $SOAP::Constants::DO_NOT_CHECK_CONTENT_TYPE = 1;
 ```

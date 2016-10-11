@@ -17,12 +17,10 @@ an authentication header that requires a username and the provided session token
 
 {% endsection %}
 
-{% section %}
-
 ### Request Header
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | RequestHeaderElement      | LoginHeader or AuthenticationHeader | 1 |  Login information to verify that a user has permission to perform this action. |
 
 
@@ -45,12 +43,10 @@ Request example:
 </s:Envelope>
 ```
 
-{% endsection %}
-
 ### Response Header
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | RequestHeaderElement      | ResponseHeader | 1 |  Contains a session token passed back by the server so that subsequent requests do not need to pass the user's password to the server. |
 
 

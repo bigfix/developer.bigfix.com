@@ -53,8 +53,15 @@ img {
 }
 
 th, td {
-  padding: 5px 10px;
+  padding: 7px 0 4px 40px;
   text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  color: #09679f;
+  border-top: 1px solid #eee;
+  border-bottom: 3px solid #eee;
 }
 
 th:first-child, td:first-child {
@@ -141,6 +148,7 @@ ul.footer-items li {
 .container-left {
   padding: 20px;
   background-color: #fff;
+  min-height: 700px;
 }
 
 .container-right {
@@ -400,6 +408,10 @@ h1.relevance-type-description {
 
 .hljs-keyword {
   color: #4178BE;
+}
+
+.hljs-variable, .hljs-built_in {
+  color: #B72D9F;
 }
 
 .hljs-string {

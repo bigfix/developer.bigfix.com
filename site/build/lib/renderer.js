@@ -69,16 +69,9 @@ function createMarkdownRenderer() {
       return wrapCodeBlock(highlightActionScript(code));
     }
 
-    if (language === 'sql') {
-      return wrapCodeBlock(hljs.highlight('sql', code).value);
-    }
-
-    if (language === 'python') {
-      return wrapCodeBlock(hljs.highlight('python', code).value);
-    }
-
-    if (language === 'xml') {
-      return wrapCodeBlock(hljs.highlight('xml', code).value);
+    hljsLangs = ['sql', 'xml', 'python', 'perl', 'js', 'javascript'];
+    if (hljsLangs.indexOf(language) >= 0) {
+      return wrapCodeBlock(hljs.highlight(language, code).value);
     }
 
     return marked.Renderer.prototype.code.apply(this, arguments);

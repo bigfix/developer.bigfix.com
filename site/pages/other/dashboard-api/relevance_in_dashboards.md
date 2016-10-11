@@ -37,7 +37,7 @@ external definition is somewhat different, but it works the same way.
 
 From any script code, you can evaluate a relevance expression and get the results
 back as a string, with a statement like this:
-```
+```js
 myDiv.innerText = EvaluateRelevance( "expression" );
 ```
 The expression is a relevance expression string just like in the ```<?relevance ?>``` case.
@@ -58,11 +58,11 @@ escaped unless you use the ```"as html"``` cast explicitly.
 
 If an error is encountered, **EvaluateRelevance** throws an exception. 
 You can get a descriptive error string as follows:
-```
+```js
 try {
-myDiv.innerText = EvaluateRelevance( "expression" );
+    myDiv.innerText = EvaluateRelevance( "expression" );
 }
 catch (e){
-window.alert( "Error encountered evaluating relevance: " + e.description );
+    window.alert( "Error encountered evaluating relevance: " + e.description );
 }
 ```

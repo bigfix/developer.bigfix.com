@@ -10,21 +10,17 @@ method requires request and response headers to authenticate.
 
 {% endsection %}
 
-{% section %}
-
 ### Parameters
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | user      | UserAccount | 1 |  The new Web Reports user account to be created. |
-
-{% endsection %}
 
 
 ### Return Values
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | success      | boolean | 1 |  True if the user was successfully created, otherwise false. |
 
 

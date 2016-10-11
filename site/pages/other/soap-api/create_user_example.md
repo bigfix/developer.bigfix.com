@@ -6,22 +6,22 @@ This code creates a new user. All the required information about the new user is
 embedded in the code:
 
 
-```xml
+```perl
 use SOAP::Lite;
 
 my $host = "http://localhost/webreports";
 
 # The login credentials for an existing admin user
-my $username = ’name’;
-my $password = ’password’;
+my $username = 'name';
+my $password = 'password';
 
 # The new user information
-my $newUserLogin = ’new_admin’;
-my $newUserFullName = ’Mr. New User’;
-my $newUserPassword = ’new_password’;
-my $newUserRole = ’Administrator’;
+my $newUserLogin = 'new_admin';
+my $newUserFullName = 'Mr. New User';
+my $newUserPassword = 'new_password';
+my $newUserRole = 'Administrator';
 
-my $service = SOAP::Lite->uri( $host . ’?wsdl’ )->proxy( $host );
+my $service = SOAP::Lite->uri( $host . '?wsdl' )->proxy( $host );
 # this string includes embedded quotes by using backslash characters (\")
 my $loginXML = "<h:RequestHeaderElement xsi:type=\"LoginHeader\" " .
 " xmlns:h=\"http://schemas.example.com/webreports\
@@ -32,13 +32,13 @@ my $loginXML = "<h:RequestHeaderElement xsi:type=\"LoginHeader\" " .
 " <password>$password</password>" .
 "</h:RequestHeaderElement>";
 
-my $loginHeaders = SOAP::Header->type( ’xml’ => $loginXML );
+my $loginHeaders = SOAP::Header->type( 'xml' => $loginXML );
 
-my $newUserInfo = SOAP::Data->name( ’user’ => \SOAP::Data->value(
-SOAP::Data->name( ’logonName’ => $newUserLogin ),
-SOAP::Data->name( ’fullName’ => $newUserFullName ),
-SOAP::Data->name( ’password’ => $newUserPassword ),
-SOAP::Data->name( ’role’ => $newUserRole ) ) );
+my $newUserInfo = SOAP::Data->name( 'user' => \SOAP::Data->value(
+SOAP::Data->name( 'logonName' => $newUserLogin ),
+SOAP::Data->name( 'fullName' => $newUserFullName ),
+SOAP::Data->name( 'password' => $newUserPassword ),
+SOAP::Data->name( 'role' => $newUserRole ) ) );
 
 my $result = $service->CreateUser( $newUserInfo, $loginHeaders );
 PrintResult( $result, "CreateUserResponse" );

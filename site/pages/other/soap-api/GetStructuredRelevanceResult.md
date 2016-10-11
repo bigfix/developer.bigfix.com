@@ -12,21 +12,17 @@ response headers.
 
 {% endsection %}
 
-{% section %}
-
 ### Parameters
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | relevanceExpr      | string | 1 |  The relevance expression to be evaluated. |
-
-{% endsection %}
 
 
 ### Return Values
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | StructuredRelevanceResult      | StructuredRelevanceResult | 1 |  An object containing information about the result of the relevance query, along with a list of results. |
 
 

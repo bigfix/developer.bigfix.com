@@ -10,25 +10,20 @@ not require request and response headers.
 
 {% endsection %}
 
-{% section %}
-
 ### Parameters
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | relevanceExpr      | string | 1 |  The relevance expression to be evaluated. |
 | username | string | 1 | Login name of Web Reports user used to evaluate relevance. |
 | password | string | 1 | Password of Web Reports user used to evaluate relevance. |
 
 
-{% endsection %}
-
 ### Return Values
 
 | Name        | Type           | Occurs  |  Description  |
-| ------------- | ------------- | ----- | ---- |
+| ------------- | :-------------: | :-----: | ---- |
 | a      | string | 0+ |  If there is only 1 occurrence, it represents the singular result from the expression. If there are 0 occurrences, it represents an empty plural result. If there are 2 or more occurrences, each occurrence represents one element of a plural result. |
-
 
 
 Request example:
