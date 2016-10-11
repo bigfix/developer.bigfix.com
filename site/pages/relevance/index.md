@@ -8,7 +8,7 @@ The scope of the Relevance Language is to retrieve and manipulate information by
 <p>There are two types of relevance language:
 
 <dl>
-  <dt>[Client Relevance Language](/relevance/documentation/guide/client)</dt>
+  <dt>[Client Relevance Language](/relevance/guide/client)</dt>
   <dd>Used to interrogate locally the client system to retrieve information. Such information can be used to run analysis, to substitute variables in action scripts, <!--or, combined and correlated with other information in a Boolean expression, -->to determine applicability relevance and success criteria, and to generate automatic computer groups.</dd>
   
   <dt>[Session Relevance Language](/relevance/guide/session)</dt>
