@@ -13,4 +13,5 @@ The Simple Object Access Protocol (SOAP) specifies a protocol for exchanging str
 </dl>
 
 Most client libraries require a Web Services Description Language (WSDL) file as well as the method name and parameters to pass into the method. The WSDL file describes the network endpoints required to query the database by using Web Reports.
+
 ![Excel Connector](/static/img/soap_api_in session_relevance_tester_resized.png) 
