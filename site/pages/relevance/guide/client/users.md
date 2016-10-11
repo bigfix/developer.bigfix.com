@@ -48,12 +48,9 @@ A: password expired of <user>: boolean
 Use the Inspectors Search to get additional information about the Inspectors and their properties. For example, in the Search field 
 enter **user** to get list and details of its creation methods and properties.
 
-{% note %}
-Some queries about a **logged on user** might require additional authorizations to run within the Fixlet Debugger. If you get the 
-following error xxx, ensure that you: 
+**Note:** Some queries about a **logged on user** might require additional authorizations to run within the Fixlet Debugger. If you get an error, ensure that you: 
 - Run the query on a system where the BigFix agent is installed.
 - Select Debug -> Evaluate using -> Local Client Evaluator in the Fixlet Debugger tool, before evaluating the query.
-{% endnote %}
 
 
 
