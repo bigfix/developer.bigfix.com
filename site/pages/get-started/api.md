@@ -18,7 +18,7 @@ In this list you find a quick description of what each API allows you to do. If 
    <dd>Query objects in the BES Web Reports using an XML based SOAP API.</dd>
    <dt>[Dashboard API](../other/dashboard-api/)</dt>
    <dd>Author own dashboard, and wizards, and to create customize views.</dd>
-   <dt>[Platform API](../other/platform-api/)</dt>
+   <dt>[Server API](../other/platform-api/)</dt>
    <dd>Create Fixlets/Tasks/Properties/Actions/Analysis using Microsoft COM-based API.</dd>
    <dt>[Database API](../other/database-api/)</dt>
    <dd>A published schema describing Views to the underlying tables containing all the information collected from managed endpoints and available in the database.</dd>

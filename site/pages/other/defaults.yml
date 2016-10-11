@@ -100,29 +100,162 @@ nav:
     - name: Setting OnLoad events
       href: /other/web-reports-api/setting_onload.html
 	    
-  - name: Platform API
+  - name: Server API
     href: /other/platform-api/
     children:
 
-    - name: Prova
-      href: /other/platform-api/prova.html
+    - name: Installing the API
+      href: /other/platform-api/installation.html
 	  
+    - name: Connecting to the server
+      href: /other/platform-api/connecting_to_api.html
+	  
+    - name: BES XML documents
+      href: /other/platform-api/bes_xml.html
+      children:
+
+       - name: BES Schema Structure 
+         href: /other/platform-api/bes_structure.html
+         		 
+       - name: Fixlet or Task 
+         href: /other/platform-api/fixlet_task.html
+		 
+       - name: Baseline 
+         href: /other/platform-api/baseline.html
+	  	 		 
+       - name: Single actions 
+         href: /other/platform-api/single_actions.html
+	  	 		 
+       - name: Multiple action groups 
+         href: /other/platform-api/multiple_action.html
+	  	 		 
+       - name: Analyses 
+         href: /other/platform-api/analyses.html
+	  	 		 
+       - name: Computer groups 
+         href: /other/platform-api/computer_groups.html
+	  	 		 
+       - name: Properties 
+         href: /other/platform-api/properties.html
+	  	 		 
+       - name: Shared BES Elements 
+         href: /other/platform-api/shared_bes.html
+         children:		 
+		 
+          - name: FixletAction 
+            href: /other/platform-api/fixletaction.html
+			
+          - name: ActionScript 
+            href: /other/platform-api/actionscript.html
+		 
+          - name: ActionSuccessCriteria 
+            href: /other/platform-api/actionsuccesscriteria.html
+			
+          - name: ActionSettings 
+            href: /other/platform-api/actionsettings.html
+			 
+          - name: ActionSettingsLocks 
+            href: /other/platform-api/actionsettingslocks.html
+			
+          - name: Search Components 
+            href: /other/platform-api/searchcomponents.html
+			 
+    - name: Miscellaneous types 
+      href: /other/platform-api/miscellaneous.html
+		 
+    - name: BES API Objects 
+      href: /other/platform-api/besapiobject.html	 
+		  	 	  	  		  	 	  	  
   - name: Database API
     href: /other/database-api/
     children:
+	
+    - name: BES_FIXLETS
+      href: /other/database-api/bes_fixlets.html
+	  
+    - name: BES_TASKS
+      href: /other/database-api/bes_tasks.html
+	  
+    - name: BES_ANALYSES
+      href: /other/database-api/bes_analyses.html
+	  
+    - name: BES_BASELINES
+      href: /other/database-api/bes_baselines.html
+	  
+    - name: BES_COMPUTERGROUPS
+      href: /other/database-api/bes_computergroups.html
+	
+    - name: BES_COLUMN_HEADINGS
+      href: /other/database-api/bes_columnheadings.html
+	  
+    - name: BES_RELEVANT_FIXLETS
+      href: /other/database-api/bes_relevant_fixlets.html
+	  
+    - name: BES_RELEVANT_TASKS
+      href: /other/database-api/bes_relevant_tasks.html
+	  
+    - name: BES_RELEVANT_BASELINES
+      href: /other/database-api/bes_relevant_baselines.html
+	  
+    - name: BES_ACTIONS
+      href: /other/database-api/bes_actions.html
+	
+    - name: BES_RELEVANT_FIXLET_HISTORY
+      href: /other/database-api/bes_relevant_fixlet_history.html
+	  
+    - name: BES_RELEVANT_TASK_HISTORY
+      href: /other/database-api/bes_relevant_task_history.html
+	  
+    - name: BES_RELEVANT_BASELINE_HISTORY
+      href: /other/database-api/bes_relevant_baseline_history.html
+	  
+    - name: BES_FIXLET_PROPERTIES
+      href: /other/database-api/bes_fixlet_properties.html
+	  
+    - name: BES_TASK_PROPERTIES
+      href: /other/database-api/bes_task_properties.html
+	
+    - name: BES_BASELINE_PROPERTIES
+      href: /other/database-api/bes_baseline_properties.html
+	  	  
+    - name: BES_ACTION_DEFS
+      href: /other/database-api/bes_action_defs.html
+	  
+    - name: BES_OBJECT_DEFS
+      href: /other/database-api/bes_object_defs.html
+	
+    - name: BES_SITEVERSIONS
+      href: /other/database-api/bes_siteversions.html
 
-    - name: Prova
-      href: /other/database-api/prova.html
+    - name: Working with Fields XML Data
+      href: /other/database-api/working_with_xml.html
+
+    - name: Working with ManyVersion Data
+      href: /other/database-api/working_with_manyversion.html
+
+    - name: Example report generator
+      href: /other/database-api/example_report.html
 	  
   - name: Client Compliance API
     href: /other/cc-api/
     children:
 
+    - name: Terminology
+      href: /other/cc-api/cc_terminology.html
+    
     - name: Sample Use Cases
       href: /other/cc-api/cc_use_cases.html
 	  
-    - name: Terminology
-      href: /other/cc-api/cc_terminology.html
-	
+    - name: Configuring the components
+      href: /other/cc-api/cc_configuration_steps.html
+	  
     - name: Software Developer Kit
-      href: /other/cc-api/cc_sdk.html	
+      href: /other/cc-api/cc_sdk.html
+	
+    - name: API Constants and Error codes
+      href: /other/cc-api/cc_errors.html
+
+    - name: Examples of Client Documents
+      href: /other/cc-api/cc_an_example.html	
+	  
+

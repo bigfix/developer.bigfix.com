@@ -8,5 +8,7 @@ The following table lists the available APIs and gives you a few more details ab
 
 Click on the API names listed in the navigation tree on the right to access all the documentation about that specific API.
 The [REST API](../rest-api/) is documented in a dedicated subtree.
+
+**Note:** The only encoding format supported is UTF-8.
     
 
