@@ -24,7 +24,7 @@ Navigate the REST API subtree on the right to access the following information:
   <dd>The information needed for setting up and doing user authentication.</dd>
   
   <dt>[Hints about BigFix REST API requests](./restapi_request_new.html)</dt>
-  <dd>An overview about how to issue BigFix REST API requests. If you are new to the BigFix REST API, read this part and then run the [Quick Tutorial](../gettingstarted.html).</dd>
+  <dd>An overview about how to issue BigFix REST API requests. If you are new to the BigFix REST API, read this part and then run the [Quick Tutorial](./gettingstarted.html).</dd>
 
   <dt>[REST API resources](./api/)</dt>
   <dd>A container listing, for each resource and for each supported method, the form to represent that resource in the REST API request.</dd>
