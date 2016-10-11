@@ -1,5 +1,5 @@
 ---
-title: BES_ACTION_DEFS
+title: BES_OBJECT_DEFS
 ---
 
 The BES_OBJECT_DEFS view lists all of the data associated with the latest version of each BES object 
