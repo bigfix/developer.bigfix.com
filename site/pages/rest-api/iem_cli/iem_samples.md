@@ -14,7 +14,7 @@ Here you find usage samples showing how to run requests against REST API resourc
 - [DSA Replication](#dsa-replication)
 - [Master Server Switch](#master-server-switch)
 - [Role](#role)
-- [System Options](#system-option)
+- [System Options](#system-options)
 
 
 ## Actions
