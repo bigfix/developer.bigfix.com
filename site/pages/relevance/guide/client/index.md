@@ -4,8 +4,7 @@ title: Client Relevance Guide
 
 Here you find the information about the Inspectors that you can use to get information from the Clients in your deployment.
 
-You can create and test your custom queries locally on the Client system using the Fixlet Debugger 
-<!-- [Fixlet Debugger](/relevance/tools/fixlet_debugger.html) --> or on the Linux CentOS interactive sandbox available under [Online Evaluator](/relevance/evaluate/).
+You can create and test your custom queries locally on the Client system using the [Fixlet Debugger](/relevance/tools/fixlet_debugger.html) or on the Linux CentOS interactive sandbox available under [Online Evaluator](/relevance/evaluate/).
 
 If you own an IBM BigFix Lifecycle or an IBM BigFix Compliance version 9.5 Patch 2 or later license, you can exercise your 
 Client Relevance Language queries on the  target clients also directly from the IBM WebUI using the IBM BigFix Query 
