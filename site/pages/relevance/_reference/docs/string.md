@@ -1412,6 +1412,10 @@ Returns an HTML snippet with the specified string enclosed in a &lt;tt&gt; (tele
 
 Returns an HTML snippet containing the specified string enclosed in a &lt;tt&gt; (teletype font) tag.
 
+# tuple item of &lt;string&gt; : tuple item
+
+No documentation exists.
+
 # tuple string item &lt;integer&gt; of &lt;string&gt; : string
 
 Parses the given string as if it were a tuple result string and returns the string which is the nth item of the tuple. The tuple inspectors used to be session-only, but as of version 8.0, they are core inspectors, available to all platforms at all times.
@@ -1419,6 +1423,10 @@ Parses the given string as if it were a tuple result string and returns the stri
 # tuple string item of &lt;string&gt; : string
 
 Parses the given string as if it were a tuple result string and iterates over the &lt;string&gt; objects that make up the tuple. The tuple inspectors used to be session-only, but as of version 8.0, they are core inspectors, available to all platforms at all times.
+
+# tuple string of &lt;string&gt; : string
+
+No documentation exists.
 
 # type &lt;string&gt; : type
 

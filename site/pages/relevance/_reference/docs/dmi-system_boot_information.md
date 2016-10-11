@@ -6,6 +6,10 @@ No documentation exists.
 
 No documentation exists.
 
+# reserved of &lt;dmi system_boot_information&gt; : binary_string
+
+No documentation exists.
+
 # reserved of &lt;dmi system_boot_information&gt; : string
 
 No documentation exists.

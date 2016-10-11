@@ -22,6 +22,10 @@ Returns the parent smbios structure(s) containing the specified value.Example: n
 
 Returns the data type of the specified smbios value. This can be one of:ByteWordDwordQwordStringBinaryStringMultipleString.
 
+# &lt;smbios value&gt; as hexadecimal : string
+
+No documentation exists.
+
 # &lt;smbios value&gt; as string : string
 
 Casts a smbios value as a string type.

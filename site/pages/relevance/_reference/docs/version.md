@@ -34,6 +34,10 @@ The number immediately after the first period in the version string. If absent, 
 
 Returns a version object which is padded with zero values.
 
+# patch revision of &lt;version&gt; : integer
+
+No documentation exists.
+
 # stage of &lt;version&gt; : stage
 
 The stage is represented by the letter in the version string. It may be &#39;a&#39; for alpha, &#39;b&#39; for beta, &#39;d&#39; for development or &#39;f&#39; for final. If absent, final is implied.

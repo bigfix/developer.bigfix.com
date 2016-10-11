@@ -26,6 +26,10 @@ No documentation exists.
 
 No documentation exists.
 
+# uuid of &lt;dmi system_information&gt; : binary_string
+
+No documentation exists.
+
 # uuid of &lt;dmi system_information&gt; : string
 
 No documentation exists.

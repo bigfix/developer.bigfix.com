@@ -22,6 +22,10 @@ Get, from an array, a dictionary keyed by the specified integer.
 
 Get, from an array, an integer keyed by the specified integer.
 
+# real &lt;integer&gt; of &lt;array&gt; : floating point
+
+No documentation exists.
+
 # size of &lt;array&gt; : integer
 
 Returns the number of unique elements in the given array.Example: size of array "persistent-apps" of preference "com.apple.dock" - Returns the number of unique elements in the specified array.

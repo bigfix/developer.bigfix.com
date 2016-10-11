@@ -387,6 +387,10 @@ Returns a processor object for the numbered processor. Processors are numbered f
 
 Multiplies a list of integers, returning the product.
 
+# random integer of &lt;integer&gt; : integer
+
+No documentation exists.
+
 # scsibus &lt;integer&gt; : scsibus
 
 Returns a SCSI bus with the given number.

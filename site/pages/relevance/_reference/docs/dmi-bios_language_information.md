@@ -18,6 +18,10 @@ No documentation exists.
 
 No documentation exists.
 
+# reserved of &lt;dmi bios_language_information&gt; : binary_string
+
+No documentation exists.
+
 # reserved of &lt;dmi bios_language_information&gt; : string
 
 No documentation exists.

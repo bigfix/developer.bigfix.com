@@ -6,7 +6,7 @@ If you want to add an onload event, make sure that you call the original Web
 Reports onload event at some point. This is how you would typically create an
 onload event:
 
-```xml
+```js
 window.onload = function() {
      hourglass(document.body);
      RetrieveData();
@@ -17,7 +17,7 @@ window.onload = function() {
 To work with Web Reports, make sure that you include the original onload event
 as follows:
 
-```
+```js
 var oldonload = window.onload;
 window.onload = function() {
      hourglass(document.body);

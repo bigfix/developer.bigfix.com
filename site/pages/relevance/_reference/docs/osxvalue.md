@@ -14,6 +14,10 @@ Casts the osxvalue (which is essentially untyped) to a boolean.
 
 Strips off any trailing null from an osxvalue, returning a proper string from the dictionary.Note: In Version 6.0.9.54, the plural inspector is misspelled as csrings.
 
+# data of &lt;osxvalue&gt; : binary_string
+
+No documentation exists.
+
 # data of &lt;osxvalue&gt; : string
 
 Casts the specified osxvalue to a string.
@@ -29,6 +33,10 @@ Casts the osxvalue (essentially untyped) to a dictionary.
 # integer of &lt;osxvalue&gt; : integer
 
 Casts the osxvalue (essentially untyped) to an integer.
+
+# real of &lt;osxvalue&gt; : floating point
+
+No documentation exists.
 
 # string of &lt;osxvalue&gt; : string
 

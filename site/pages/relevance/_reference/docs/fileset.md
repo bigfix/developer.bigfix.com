@@ -22,6 +22,10 @@ Returns the machine-specific portions of the specified fileset (the root part), 
 
 Returns the share part of the specified fileset.
 
+# state of &lt;fileset&gt; : string
+
+No documentation exists.
+
 # update of &lt;fileset&gt; : integer
 
 Returns the update number for the specified fileset.Example: updates of filesets matching "lpp_name = &#39;bos.terminfo.rte&#39;" of object repository - Returns the update numbers of the specified filesets.

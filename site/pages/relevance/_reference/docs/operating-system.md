@@ -126,6 +126,10 @@ Q: embedded of operating system
 A: False
 {% endqna %}
 
+# hypervisor of &lt;operating system&gt; : string
+
+No documentation exists.
+
 # ia64 of &lt;operating system&gt; : boolean
 
 Returns `True` if the computer is running on [Itanium](http://en.wikipedia.org/wiki/Itanium).
@@ -384,6 +388,10 @@ Returns the version of the operating system.
 Q: (version of it, name of it) of operating system
 A: 10.10.2, Mac OS X
 {% endqna %}
+
+# virtual machine of &lt;operating system&gt; : boolean
+
+No documentation exists.
 
 # windows of &lt;operating system&gt; : boolean
 

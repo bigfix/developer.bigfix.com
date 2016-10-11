@@ -14,6 +14,10 @@ Get, from a dictionary, a boolean keyed by the string.Example: boolean "trash-fu
 
 Get, from a dictionary, the string keyed by the specified string. Works for objects in a dictionary of type String or Data. If the type is Data, any null terminator will be stripped.Example: string "device_type" of dictionary of node "cpus/CPU0@0" of devicetree plane of iokit registry  - Returns a null terminated string from the specified data field, such as &#39;processor%00&#39;.Example: cstring "device_type" of dictionary of node "cpus/CPU0@0" of devicetree plane of iokit registry  - Returns &#39;processor&#39;, stripping off the final null from the specified data field.
 
+# data &lt;string&gt; of &lt;dictionary&gt; : binary_string
+
+No documentation exists.
+
 # data &lt;string&gt; of &lt;dictionary&gt; : string
 
 Returns the specified dictionary data as a string.
@@ -37,6 +41,10 @@ Get, from a dictionary, an integer keyed by the specified string.Example: intege
 # key of &lt;dictionary&gt; : string
 
 The keys of a dictionary.Example: keys of global dictionary of bundle of folder "iTunes.app" of applications folder - Returns a list of the specified keys, for example: CFBundlePackageType, CFBundleVersion, CFBundleHelpBookName, CFBundleName, CSResourcesFileMapped, LSMulitpleInstancesProhibted, CFBundleDocumentTypes, etc....
+
+# real &lt;string&gt; of &lt;dictionary&gt; : floating point
+
+No documentation exists.
 
 # size of &lt;dictionary&gt; : integer
 

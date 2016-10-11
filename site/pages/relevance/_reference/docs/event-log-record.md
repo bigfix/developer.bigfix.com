@@ -45,3 +45,7 @@ Returns the time that the specified event record was written to the log.
 # user sid of &lt;event log record&gt; : security identifier
 
 Returns the user security ID for the specified record in the event log.
+
+# xml of &lt;event log record&gt; : xml dom node
+
+No documentation exists.

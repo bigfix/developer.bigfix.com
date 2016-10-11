@@ -302,6 +302,10 @@ Returns the current list of BES computer groups in the form of a set, which can 
 
 Returns the current list of BES computers in the form of a set, which can be arithmetically manipulated.
 
+# bes current wruser : string
+
+No documentation exists.
+
 # bes custom site : bes site
 
 Returns a list of all custom sites. Deprecated as of version 7.0; instead use "all bes sites whose (custom site flag of it)".
@@ -397,6 +401,10 @@ Returns the current list of BES Users in the form of a set, which can be arithme
 # bes wakeonlan status : bes wakeonlan status
 
 Returns the current BES WakeOnLan status.
+
+# bes webui : bes webui
+
+No documentation exists.
 
 # bes webui app : bes webui app
 
@@ -844,7 +852,7 @@ Returns the developer help folder of the system domain
 
 # device type : string
 
-Returns the type of the device (desktop, laptop or server, in case of VMWare virtual systems). The evaluation is determined by the hardware installed, not by the operating system definitions. The result is returned by the WMI, if it is active on the device, otherwise it is determined by the type of battery installed on the device. 
+Returns the type of the device (desktop, laptop or server, in case of VMWare virtual systems). The evaluation is determined by the hardware installed, not by the operating system definitions. The result is returned by the WMI, if it is active on the device, otherwise it is determined by the type of battery installed on the device.
 
 # dialup group : security account
 
@@ -1877,6 +1885,14 @@ Returns a ram object for inspecting the properties of random access memory insta
 
 Returns a ram object for inspecting the properties of random access memory installed on the machine.
 
+# random floating point : floating point
+
+No documentation exists.
+
+# random integer : integer
+
+No documentation exists.
+
 # realtime priority : priority class
 
 Returns a priority class object with &#39;realtime&#39; priority. These threads should be sparingly used, since they may interrupt user input and some disk operations. They are typically used for short, time-sensitive communication with low level hardware.
@@ -2375,6 +2391,10 @@ Returns an object corresponding to a warning in the event log. Warnings can be u
 # webui enabled : boolean
 
 Returns `True` if the WebUI is enabled.
+
+# webui service : service
+
+No documentation exists.
 
 # wednesday : day of week
 
