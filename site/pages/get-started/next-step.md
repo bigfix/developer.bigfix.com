@@ -8,7 +8,7 @@ The information contained in this Getting Started provided you with an overview 
 customize your BigFix environment and how, a quick description of the proprietary languages and APIs that 
 you can use, the list of authorizations needed to manage your custom content and the guidelines to follow.
 
-You might already thinking about what you'd like to implement or customize in your BigFix environmnet. 
+You might already be thinking about what you'd like to implement or customize in your BigFix environmnet. 
 
 Well, it's time for you to move to the next sections of this web site and experience yourself! 
 
@@ -19,7 +19,7 @@ Start exploring new languages or APIs by reading the information in their Guides
 watch the suggested videos and test your knowledge using the Online Evaluator, for the Relevance Language, and 
 the Tutorials.
 
-The examples will help you to familiarize with the concept and syntax.
+The examples will help you to familiarize with the concepts and the syntax.
 
 {% endsection %}
 
