@@ -12,12 +12,12 @@ In this list you find a quick description of what each API allows you to do. If 
 <dl>
    <dt>[REST API](../rest-api/)</dt>
    <dd>Run the majority of tasks present in the console via a standardized and operating system independent method.</dd>
-   <dt>[Web Reports API](../other/web-reports-api/)</dt>
-   <dd>Author own custom reports.</dd>
    <dt>[SOAP API](../other/soap-api/)</dt>
    <dd>Query objects in the BES Web Reports using an XML based SOAP API.</dd>
    <dt>[Dashboard API](../other/dashboard-api/)</dt>
    <dd>Author own dashboard, and wizards, and to create customize views.</dd>
+   <dt>[Web Reports API](../other/web-reports-api/)</dt>
+   <dd>Author own custom reports.</dd>
    <dt>[Server API](../other/platform-api/)</dt>
    <dd>Create Fixlets/Tasks/Properties/Actions/Analysis using Microsoft COM-based API.</dd>
    <dt>[Database API](../other/database-api/)</dt>
