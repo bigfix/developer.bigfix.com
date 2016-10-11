@@ -4,8 +4,7 @@ title: Core Inspectors
 
 Begin learning about the syntax and constructs that are common to both the Client and the Session Relevance languages.
 
-You can create and test your custom Relevance queries locally on the Client system using the Fixlet Debugger 
-<!-- [Fixlet Debugger](/relevance/tools/fixlet_debugger.html) --> or on the Linux CentOS interactive sandbox available under [Online Evaluator](/relevance/evaluate/).
+You can create and test your custom Relevance queries locally on the Client system using the [Fixlet Debugger](/relevance/tools/fixlet_debugger.html) or on the Linux CentOS interactive sandbox available under [Online Evaluator](/relevance/evaluate/).
 
 If you own an IBM BigFix Lifecycle or an IBM BigFix Compliance version 9.5 Patch 2 or later license, you can run your 
 Client Relevance Language queries on the  target clients also directly from the IBM WebUI using the IBM BigFix Query 
@@ -26,9 +25,6 @@ Application. For more information, click [IBM BigFix Query](https://www.ibm.com/
 
   <dt>[**Cast**](./casts.html)</dt>
   <dd>To convert types into other types.</dd>
-
-  <dt>[**Errors**](./errors.html)</dt>
-  <dd>To learn what the different errors mean.</dd>
 
   <dt>[**Exists**](./exists.html)</dt>
   <dd>To check if an object or one of its properties exists.</dd>
