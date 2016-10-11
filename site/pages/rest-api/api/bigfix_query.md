@@ -38,8 +38,6 @@ You can address the request to one of these types of targets:
 
 If you plan to address your query to a computer group, read carefully the information contained in the **Targeting by group** criteria topic.
 
-**Note:** Targeting for automatic computer groups is not supported.
-
 **Response Schema:** BESAPI.xsd
 
 {% endrestapi %}
@@ -121,5 +119,4 @@ You can change this value by editing the **_Enterprise Server_BigFix Query_MaxTa
 This is how the **_Enterprise Server_BigFix Query_MaxTargetsForGroups** settings works:
 - If the number of targets in a group exceeds the value of **_Enterprise Server_BigFix Query_MaxTargetsForGroups**, the BigFix Query request is sent to all the clients and each client determines whether or not it is a member of the targeted group.
 - If the number of targets does not exceed the value of **_Enterprise Server_BigFix Query_MaxTargetsForGroups**, the BigFix server determines which clients are members of the targeted group and the BigFix Query request is sent only to those clients.
-
-**Note:** Targeting to automatic computer groups is not supported.
+- If the list of specified groups contains at least one automatic computer group or one client-evaluated static computer group, this settings is ignored and the BigFix Query request is sent to all the clients. Each client determines whether or not it is a member of the targeted group.
