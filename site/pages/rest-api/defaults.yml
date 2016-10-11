@@ -16,6 +16,9 @@ nav:
 	   
   - name: Hints about BigFix REST API requests
     href: /rest-api/restapi_request_new.html
+
+  - name: Quick Tutorial
+    href: /rest-api/gettingstarted.html
 		
   - name: REST API Resources
     href: /rest-api/api/
@@ -86,9 +89,6 @@ nav:
 		   
   - name: Schema files BES.xsd and BESAPI.xsd 
     href: /rest-api/schema_files.html
-  
-  - name: Quick Tutorial
-    href: /rest-api/gettingstarted.html
 		
   - name: Examples using cURL and python
     href: /rest-api/examples/

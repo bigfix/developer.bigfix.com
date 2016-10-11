@@ -22,36 +22,36 @@ nav:
       href: /other/soap-api/soap_headers.html
 	  
     - name: SOAP Methods
-      href: /other/soap-api/soap_methods.html
+      href: /other/soap-api/methods/
       children:
 
        - name: GetRelevanceResult
-         href: /other/soap-api/GetRelevanceResult.html
+         href: /other/soap-api/methods/GetRelevanceResult.html
 	  
        - name: GetStructuredRelevanceResult
-         href: /other/soap-api/GetStructuredRelevanceResult.html
+         href: /other/soap-api/methods/GetStructuredRelevanceResult.html
 	  
        - name: CreateUser
-         href: /other/soap-api/CreateUser.html
+         href: /other/soap-api/methods/CreateUser.html
 	  
        - name: StoreSharedVariable
-         href: /other/soap-api/StoreSharedVariable.html	  
+         href: /other/soap-api/methods/StoreSharedVariable.html
 	  
        - name: DeleteSharedVariable
-         href: /other/soap-api/DeleteSharedVariable.html	  
+         href: /other/soap-api/methods/DeleteSharedVariable.html
 		 
     - name: SOAP Examples
-      href: /other/soap-api/soap_examples.html
+      href: /other/soap-api/examples/
       children:
 
        - name: Shell Script
-         href: /other/soap-api/shell_script.html
+         href: /other/soap-api/examples/shell_script.html
 	  
        - name: Create User Example
-         href: /other/soap-api/create_user_example.html
+         href: /other/soap-api/examples/create_user_example.html
 	  
        - name: SOAP Error Handling
-         href: /other/soap-api/soap_error_handling.html		 
+         href: /other/soap-api/examples/soap_error_handling.html
 		 
   - name: Dashboard API
     href: /other/dashboard-api/
@@ -111,54 +111,54 @@ nav:
       href: /other/platform-api/connecting_to_api.html
 	  
     - name: BES XML documents
-      href: /other/platform-api/bes_xml.html
+      href: /other/platform-api/bes-xml/
       children:
 
        - name: BES Schema Structure 
-         href: /other/platform-api/bes_structure.html
+         href: /other/platform-api/bes-xml/bes_structure.html
          		 
        - name: Fixlet or Task 
-         href: /other/platform-api/fixlet_task.html
+         href: /other/platform-api/bes-xml/fixlet_task.html
 		 
        - name: Baseline 
-         href: /other/platform-api/baseline.html
+         href: /other/platform-api/bes-xml/baseline.html
 	  	 		 
        - name: Single actions 
-         href: /other/platform-api/single_actions.html
+         href: /other/platform-api/bes-xml/single_actions.html
 	  	 		 
        - name: Multiple action groups 
-         href: /other/platform-api/multiple_action.html
+         href: /other/platform-api/bes-xml/multiple_action.html
 	  	 		 
        - name: Analyses 
-         href: /other/platform-api/analyses.html
+         href: /other/platform-api/bes-xml/analyses.html
 	  	 		 
        - name: Computer groups 
-         href: /other/platform-api/computer_groups.html
+         href: /other/platform-api/bes-xml/computer_groups.html
 	  	 		 
        - name: Properties 
-         href: /other/platform-api/properties.html
+         href: /other/platform-api/bes-xml/properties.html
 	  	 		 
        - name: Shared BES Elements 
-         href: /other/platform-api/shared_bes.html
+         href: /other/platform-api/bes-xml/shared/
          children:		 
 		 
           - name: FixletAction 
-            href: /other/platform-api/fixletaction.html
+            href: /other/platform-api/bes-xml/shared/fixletaction.html
 			
           - name: ActionScript 
-            href: /other/platform-api/actionscript.html
+            href: /other/platform-api/bes-xml/shared/actionscript.html
 		 
           - name: ActionSuccessCriteria 
-            href: /other/platform-api/actionsuccesscriteria.html
+            href: /other/platform-api/bes-xml/shared/actionsuccesscriteria.html
 			
           - name: ActionSettings 
-            href: /other/platform-api/actionsettings.html
+            href: /other/platform-api/bes-xml/shared/actionsettings.html
 			 
           - name: ActionSettingsLocks 
-            href: /other/platform-api/actionsettingslocks.html
+            href: /other/platform-api/bes-xml/shared/actionsettingslocks.html
 			
           - name: Search Components 
-            href: /other/platform-api/searchcomponents.html
+            href: /other/platform-api/bes-xml/shared/searchcomponents.html
 			 
     - name: Miscellaneous types 
       href: /other/platform-api/miscellaneous.html

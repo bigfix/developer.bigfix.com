@@ -46,7 +46,7 @@ xsi:noNamespaceSchemaLocation="BES.xsd">
 ```
 
 The format and the fields to specify for each element in the BES XML file is documented in the 
-BES Schema file [BES.xsd](../../rest-api/bes_xsd.html). You can find this file in the *Program
+BES Schema file [BES.xsd](/rest-api/bes_xsd.html). You can find this file in the *Program
 Files\BigFix Enterprise\BES Console\Reference* folder on your console computer.
 
 Specifically, the BES.xsd file contains the definitions for all the content that you can submit to the Server API. 

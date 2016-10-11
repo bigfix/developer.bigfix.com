@@ -8,7 +8,7 @@ Java, VBScript, JavaScript, Perl, C, C++, .NET, and so on.
 
 The Server API allows you to import content into the BigFix Console so that you can create and automate your 
 Fixlets, tasks, actions, baselines, properties, and analyses. The content to import is contained in a 
-[BES XML document](./bes_xml.html) with extension ```.bes```.
+[BES XML document](./bes-xml/) with extension ```.bes```.
 
 To use the API, the calling application uses [BESAPI objects](./besapiobject.html). Each BESAPI object is assigned 
 set of methods and properties. There are different BESAPI objects for each activity that can be undertaken 
