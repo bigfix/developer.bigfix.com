@@ -13,8 +13,8 @@ Custom content can be created by:
 * Master operators (MO).
 * Non-master operators (NMO) authorized with following [permissions](http://www.ibm.com/support/knowledgecenter/SSQL82_9.5.0/com.ibm.bigfix.doc/Platform/Console/Dialogs/console_operator_details_tab.html ) set to **YES**:
    * **Custom Content** for creating any kind of Custom Content
-   * **Can Submit Query** for running the [REST API Query](../rest-api/guide/api/query.html) or the [BigFix Query WebUI App]
-   * **Can use REST API** for using the [REST API](../rest-api/) and the [Web Reports API](../other/web_reports_api/)
+   * **Can Submit Query** for running the [REST API Query](../rest-api/api/bigfix_query.html) or the [BigFix Query WebUI App]
+   * **Can use REST API** for using the [REST API](../rest-api/) and the [Web Reports API](../other/web-reports-api/)
    * **Can use WebUI** for using the WebUI web-base interface
 
 {% endsection %}
