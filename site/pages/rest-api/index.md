@@ -25,16 +25,16 @@ Navigate the REST API subtree on the right to access the following information:
   
   <dt>[Hints about BigFix REST API requests](./restapi_request_new.html)</dt>
   <dd>An overview about how to issue BigFix REST API requests. If you are new to the BigFix REST API, read this part and then run the [Quick Tutorial](../gettingstarted.html).</dd>
-
+  
+  <dt>[Quick Tutorial](../gettingstarted.html)</dt>
+  <dd>A tutorial to get started with the methods and resources made available by the BigFix REST API.</dd>
+    
   <dt>[REST API resources](./api/)</dt>
   <dd>A container listing, for each resource and for each supported method, the form to represent that resource in the REST API request.</dd>
     
   <dt>[Schema files](./schema_files.html)</dt>
   <dd>The information about the two XSD files, [BESAPI.xsd](/rest-api/besapi_xsd.html) and [BES.xsd](/rest-api/bes_xsd.html). The contents of these files describe how to represent each BigFix object type in XML format.</dd>
   
-  <dt>[Quick Tutorial](../gettingstarted.html)</dt>
-  <dd>A tutorial to get started with the methods and resources made available by the BigFix REST API.</dd>
-    
   <dt>[Examples using cURL and python](./examples/)</dt>
   <dd>A list of samples showing how to implement common use cases.</dd>
   
