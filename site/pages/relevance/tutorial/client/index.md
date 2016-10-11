@@ -61,7 +61,7 @@ for {{'environment' | linkType}} object, and look at the Creation section. As it
 object by just writing "environment".
 
 Notice the difference in plurality of `variable` between the two relevance clauses. Use the *singular form* when expect exactly one 
-result, and use the *plural form* otherwise. See the guide on [Singular and Plural](/guide/basics/singular-and-plural.html/) for more 
+result, and use the *plural form* otherwise. See the guide on [Singular and Plural](./guide/basics/singular-and-plural.html/) for more 
 details.
 
 You can query the various properties of the `environment variable` object. To return the name or value of the environment variable, 
@@ -250,9 +250,9 @@ This query also makes use of a new object type called "tuple". A tuple is a comp
 Evaluate the relevance above and notice its returned type. For more information about tuples, read its [Guide](/relevance/guide/basics/tuples.html) 
 and watch the following [video](https://www.youtube.com/watch?v=yz0V4Si849E).
 
-### If/Then/Else
+### If...Then...Else
 
-The Relevance langauge also supports [If/Then/Else](/relevance/guide/basics/if-then-else.html) clause to return different objects 
+The Relevance langauge also supports [If...Then...Else](/relevance/guide/basics/if-then-else.html) clause to return different objects 
 depending on whether a condition evaluates to `True` or `False`. The general syntax is:
 
 ````
@@ -260,7 +260,7 @@ if <conditional-expression> then <expression1> else <expression2>
 ````
 
 Both `<expression1>` and `<expression2>` must have the same type, and `<conditional-expression>` must be a singular boolean. 
-For more information, see the [If/Then/Else](/relevance/guide/basics/if-then-else.html) guide and watch the following [video](https://www.youtube.com/watch?v=vRoZhvShPeY).
+For more information, see the [If...Then...Else](/relevance/guide/basics/if-then-else.html) guide and watch the following [video](https://www.youtube.com/watch?v=vRoZhvShPeY).
 
 The following query returns the string "Yes" if the rpm package "libxml2" exists, and "No" otherwise:
 
