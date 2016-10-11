@@ -14,7 +14,7 @@ This API is also key if you want to automate activities, implement your custom B
 Navigate the REST API subtree on the right to access the following information: 
 
 <dl>
-  <dt>[Overview](./overview.html/)</dt>
+  <dt>[Overview](./overview.html)</dt>
   <dd>An introduction that describes the BigFix REST API architecture.</dd>
   
   <dt>[Prerequisites](./prerequisites.html)</dt>
