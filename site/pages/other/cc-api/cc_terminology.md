@@ -18,7 +18,7 @@ Compliance Result items.</dd>
    <dt>**Compliance Result item**</dt> 
    <dd>Contains a designator, relevance result, description, and a comment.</dd>
    <dt>**Designator**</dt>
-   <dd>A string up to 64 characters in length, composed of alphanumeric characters, underscores, or periods.</dd>
+   <dd>The name/ID of the query. A string up to 64 characters in length, composed of alphanumeric characters, underscores, or periods.</dd>
    <dt>**Relevance Expression**</dt> 
    <dd>Arbitrary relevance expression to be evaluated by the client and reported to the API with the corresponding designator.</dd>
    <dt>**Relevance Result**</dt> 
