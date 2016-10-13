@@ -240,15 +240,18 @@ nav:
     href: /other/cc-api/
     children:
 
-    - name: Terminology
-      href: /other/cc-api/cc_terminology.html
-    
     - name: Sample Use Cases
       href: /other/cc-api/cc_use_cases.html
 	  
+    - name: Terminology
+      href: /other/cc-api/cc_terminology.html
+	  
     - name: Configuring the components
       href: /other/cc-api/cc_configuration_steps.html
-	  
+    
+    - name: Running the API calls
+      href: /other/cc-api/cc_calls.html
+	  	  
     - name: Software Developer Kit
       href: /other/cc-api/cc_sdk.html
 	
@@ -256,6 +259,5 @@ nav:
       href: /other/cc-api/cc_errors.html
 
     - name: Examples of Client Documents
-      href: /other/cc-api/cc_an_example.html	
-	  
+      href: /other/cc-api/cc_an_example.html
 
