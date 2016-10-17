@@ -2394,7 +2394,7 @@ Returns `True` if the WebUI is enabled.
 
 # webui service : service
 
-No documentation exists.
+Returns a service object for the &#39;BESWebUI&#39; service, if available on the local system.
 
 # wednesday : day of week
 
