@@ -12,6 +12,7 @@ var docs = JSON.parse(fs.readFileSync(docsFile));
 var properties = [];
 var casts = [];
 var platforms = {};
+var versions = {};
 
 Object.keys(language.properties).forEach(function(key) {
   var property = language.properties[key];
@@ -50,15 +51,19 @@ function escapeQuery(query){
 function collectPlatforms(availability) {
   for (var version in availability) {
     var versionAvail = availability[version];
+    versions[version] = true;
     for (var i = 0; i < versionAvail.length; i++) {
       platforms[versionAvail[i].toLowerCase().replace(' ', '')] = versionAvail[i];
     }
   }
 }
 
-function includeVersion(availability, platforms, minVersion) {
+function includeVersion(availability, platforms, minVersion, exactVersion) {
   for (var version in availability) {
     if (minVersion && (compareVersion(version, minVersion) == 1)) {
+      continue;
+    }
+    if (exactVersion && (exactVersion !== version)) {
       continue;
     }
     if (platforms && platforms.length) {
@@ -100,9 +105,10 @@ function searchForWord(word, opts) {
   // To filter the results based on target platforms and minimum version
   var platforms = opts['platform'];
   var minVersion = opts['version'];
+  var exactVersion = opts['exactVersion'];
 
   properties.forEach(function(property) {
-    if (!includeVersion(property.availability, platforms, minVersion)) {
+    if (!includeVersion(property.availability, platforms, minVersion, exactVersion)) {
       return;
     }
     
@@ -216,5 +222,6 @@ function search(query, limit, offset, opts) {
 
 module.exports = {
   platforms: platforms,
+  versions: Object.keys(versions),
   search: search
 };

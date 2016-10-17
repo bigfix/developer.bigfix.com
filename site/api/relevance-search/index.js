@@ -1,7 +1,9 @@
 var express = require('express'),
   Joi = require('joi'),
-  platforms = require('./search').platforms,
-  search = require('./search').search;
+  search_utils = require('./search'),
+  platforms = search_utils.platforms,
+  versions = search_utils.versions,
+  search = search_utils.search;
 
 var app = express();
 
@@ -11,6 +13,7 @@ var schema = Joi.object({
   query: Joi.string().required(),
   platform: Joi.string(),
   version: Joi.string(),
+  exactVersion: Joi.string(),
   page: Joi.number().positive().integer().min(1).max(10000).default(1)
 });
 
@@ -23,15 +26,18 @@ app.get('/api/relevance/search', function(req, res) {
     if (value.platform) {
       opts['platform'] = value.platform.split(','); 
     }
-    if (value.version) {
-      opts['version'] = value.version;
-    }
+    opts['version'] = value.version;
+    opts['exactVersion'] = value.exactVersion;
     res.json(search(value.query, 25, (value.page - 1) * 25, opts));
   });
 });
 
 app.get('/api/relevance/search/platforms', function (req, res) {
   res.json(platforms);
+});
+
+app.get('/api/relevance/search/versions', function (req, res) {
+  res.json(versions);
 });
 
 app.listen(process.env.PORT || 8000);
