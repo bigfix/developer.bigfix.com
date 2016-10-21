@@ -77,6 +77,14 @@ function createMarkdownRenderer() {
     return marked.Renderer.prototype.code.apply(this, arguments);
   };
 
+  renderer.link = function(href, title, text) {
+    // ignore broken links such as http://<server>:52311/api
+    if (href.indexOf('&lt;') >= 0) {
+      return text;
+    }
+    return marked.Renderer.prototype.link.apply(this, arguments);
+  };
+
   var options = {
     renderer: renderer
   };
