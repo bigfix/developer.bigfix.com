@@ -62,15 +62,10 @@ If duplicate keywords are listed, the last value will be used. The entire comman
   <dd>Default value: `agent`
     <ul>
       <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands.</li>
-      <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken.</li>
-      <li>`RunAs=localuser` specifies an user different from the logged on user. The username specified must be either local or listed in local accounts. On Windows operating systems, you can use the option password as:
-      <ul>
-         <li>`required` if the Take Action Dialog must ask for the password and pass it to the agent as a SecureParameter.</li>
-         <li>`impersonate` if the agent must search for a session running with the user specified with option user, and run the command in that session.</li>
-         </ul>
-On other operating systems, option password is ignored.</li>
-   </ul>
-         <p>On UNIX/Linux, you cannot universally get the appropriate user environment variables, so there is no attempt to apply environment variables at all, with the exception of required Xauthority variables. On UNIX/Linux a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent test which requires the user to be logged on at the local console and running X Windows.</p>
+      <li><p>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken.</p>
+
+      <p>On UNIX/Linux, you cannot universally get the appropriate user environment variables, so there is no attempt to apply environment variables at all, with the exception of required Xauthority variables. On UNIX/Linux a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent test which requires the user to be logged on at the local console and running X Windows.</p></li>
+    </ul>
   </dd>
 
 </dl>
