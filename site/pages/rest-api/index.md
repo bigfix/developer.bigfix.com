@@ -4,18 +4,18 @@ title: The BigFix REST API
 
 {% section %}
 
-The REST API is the primary programming interface to the BigFix Server. It allows you to perform the majority of the tasks available in the BigFix console using a set of standardized and operating system independent methods.
+The REST API is the primary programming interface to the BigFix Server. It allows you to perform the majority of the tasks available in the BigFix console by using a set of standardized and operating system independent methods.
 This API is also key if you want to automate activities, implement your custom BigFix user interface, or integrate with other applications.
 
 {% endsection %}
 
-**Note:** If you are new to the REST API in general, navigate the following [REST API Tutorial](http://www.restapitutorial.com/ ).
+**Note:** If you are new to REST API, navigate the following [REST API Tutorial](http://www.restapitutorial.com/ ).
 
 Navigate the REST API subtree on the right to access the following information: 
 
 <dl>
   <dt>[Overview](./overview.html)</dt>
-  <dd>An introduction that describes the BigFix REST API architecture.</dd>
+  <dd>An introduction to the BigFix REST API architecture.</dd>
   
   <dt>[Prerequisites](./prerequisites.html)</dt>
   <dd>The list of requirements and conditions for using the BigFix REST API.</dd>
@@ -24,7 +24,7 @@ Navigate the REST API subtree on the right to access the following information:
   <dd>The information needed for setting up and doing user authentication.</dd>
   
   <dt>[Hints about BigFix REST API requests](./restapi_request_new.html)</dt>
-  <dd>An overview about how to issue BigFix REST API requests. If you are new to the BigFix REST API, read this part and then run the [Quick Tutorial](./gettingstarted.html).</dd>
+  <dd>An overview about how to issue BigFix REST API requests. If you are new to BigFix REST API, read this part and then run the [Quick Tutorial](./gettingstarted.html).</dd>
   
   <dt>[Quick Tutorial](../gettingstarted.html)</dt>
   <dd>A tutorial to get started with the methods and resources made available by the BigFix REST API.</dd>
