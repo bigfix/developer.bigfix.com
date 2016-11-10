@@ -9,11 +9,10 @@ iem LOGIN --server <bigfix_server> --user <operator_name> --password <operator_p
 
 If the server uses a self-signed certificate for HTTPS interactions, at the first login you are prompted to accept or decline the certificate. 
 If you choose to trust it, the certificate is cached in the local data directory and used to validate all future interactions with the server.
-You can use the *--masthead* argument to prevent displaying the certificate trust prompt. If you do so, the masthead file is copied into the 
-local cache directory and used for all future interactions with the server as well.
+You can use the *--masthead* argument to prevent displaying the certificate trust prompt. In this case, the masthead file is copied into the local cache directory and used for all future interactions with the server.
 
-Upon a successful login, the server provides the IEM CLI utility with a session token that lasts, by default 5 minutes. After 5 minutes inactivity, 
-the session token expires and the you must login again to the IEM CLI. You can customize the duration of the session token by configuring the 
+Upon a successful login, the server provides the IEM CLI utility with a session token that lasts, by default, 5 minutes. After 5 minutes of inactivity, 
+the session token expires and you must log in again to the IEM CLI. You can customize the duration of the session token by configuring the 
 **_BESDataServer_APIAuthenticationTimeoutMinutes** setting on the server and then restarting the server.
 
 ## Updating the root server certificate
