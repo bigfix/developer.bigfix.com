@@ -4,7 +4,7 @@ title: Authentication
 
 {% section %}
 
-The login from the REST API Client to the BigFix REST API server uses the [basic access authentication](http://en.wikipedia.org/wiki/Basic_access_authentication ).
+The login from the REST API Client to the BigFix REST API server uses [basic access authentication](http://en.wikipedia.org/wiki/Basic_access_authentication ).
 
 The credentials are the credentials of a valid BigFix Console operator.
 
@@ -27,7 +27,7 @@ The default HTTP Authentication Realm is:
 * *IBM BigFix Server* for BigFix Server V9.2.6 and later
 * *IBM Endpoint Manager Server* for BigFix Server with version earlier than 9.2.6.
 
-As a best practice you are suggested not to depend on a hard-coded definition of HTTP Authentication Realm.
+As a best practice try not to depend on a hard-coded definition of HTTP Authentication Realm.
 
 {% endsection %}
 
