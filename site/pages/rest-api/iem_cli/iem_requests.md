@@ -10,7 +10,7 @@ iem <METHOD> <RESOURCE> [-q] [--param <value>]
 where:
 <dl>
    <dt>** *METHOD* **</dt>
-   <dd>Is one of the HTTP methods supported by that specific REST API resource. In particular, depending on the methods the form of the request can be:
+   <dd>Is one of the HTTP methods supported by that specific REST API resource. Depending on the method, the form of the request can be:
    <p>
    
 ```
@@ -25,7 +25,7 @@ iem <POST|PUT> [inputFile] <RESOURCE> [-q] [--outFile FILE] [--param value]
 iem admin <COMMAND> [-q] <--pkey=KEYFILE> [--pkeypwd=PASS][--param value]   
 ```
 </p>
-       where *inputFile* and the file referenced by *--outFile* are XML files containing resources descriptions as documented in the [schema files](../schema_files.html). In particular, POST and PUT requests require a body in their HTTP Requests. You can specify the body either as an input file on the command line, such as:
+       where *inputFile* and the file referenced by *--outFile* are XML files containing resources descriptions as described in the [schema files](../schema_files.html). POST and PUT requests require a body in their HTTP Requests. You can specify the body either as an input file on the command line, such as:
 <p>
 ```   
 iem POST inputfile.xml operator/bigfix   
@@ -46,9 +46,9 @@ Input: relevance=now
    <dt>** *RESOURCE* **</dt>
    <dd>Is one of the [REST API Resources](../api/).</dd>
    <dt>** -q **</dt>
-   <dd>Stands for *quiet mode*. If you set it the input prompts are disabled.
+   <dd>Means *quiet mode*. Set it to disable the input prompts.
    <dt>** --param **</dt>
-   <dd>Is used to specify optional parameters that might be requested by that specific *RESOURCE* and *METHOD*. For example,
+   <dd>Is used to specify optional parameters that might be requested by the specific *RESOURCE* and *METHOD*. For example,
     if you want to use the RESTAPI resource **/api/query**, which requires the parameter **relevance=<relevance_expression>**, 
 	 you can write:</dd>
 </dl>
