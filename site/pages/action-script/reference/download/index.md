@@ -2,7 +2,7 @@
 title: Download Commands
 ---
 
-These commands allow you to download files to the client machine.
+These commands allow you to download files to the BigFix client system.
 
 <dl>
 
