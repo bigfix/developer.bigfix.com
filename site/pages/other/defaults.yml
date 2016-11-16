@@ -248,12 +248,15 @@ nav:
 	  
     - name: Configuring the components
       href: /other/cc-api/cc_configuration_steps.html
+      
+    - name: Software Developer Kit for Windows
+      href: /other/cc-api/cc_sdk.html
     
     - name: Running the API calls
       href: /other/cc-api/cc_calls.html
-	  	  
-    - name: Software Developer Kit
-      href: /other/cc-api/cc_sdk.html
+      
+    - name: Logical Flow of an API call
+      href: /other/cc-api/cc_flow.html
 	
     - name: API Constants and Error codes
       href: /other/cc-api/cc_errors.html
