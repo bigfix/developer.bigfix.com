@@ -1,5 +1,5 @@
 ---
-title: Software Developer Kit
+title: Software Developer Kit for Windows
 ---
 
 IBM BigFix makes available a software developer kit to help you set up and use your Client Compliance API solution on Windows systems. 
