@@ -2,6 +2,10 @@
 
 The source for [developer.bigfix.com](https://developer.bigfix.com).
 
+```
+Please do not push to this branch. It's used as a place holder for another private branch.
+```
+
 # Contributing
 
 The easiest way to contribute is to edit the markdown files in the [site/pages](./site/pages)
