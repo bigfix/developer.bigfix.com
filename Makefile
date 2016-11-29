@@ -78,7 +78,7 @@ $(STAGING)/build/package.json: $(wildcard $(SOURCE)/site/build/**/*)
 	rsync --acls --xattrs --archive --delete --exclude=node_modules \
 		$(SOURCE)/site/build/ \
 		$(STAGING)/build
-	cd $(STAGING)/build && npm install
+	cd $(STAGING)/build && npm install --unsafe-perm
 	touch $@
 
 PAGES_DEPS := \
