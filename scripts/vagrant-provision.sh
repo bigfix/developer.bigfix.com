@@ -12,13 +12,17 @@ setsebool -P httpd_can_network_connect 1
 echo 127.0.0.1 sandbox.bigfix.com >> /etc/hosts
 
 # Add node yum repo
-curl -sL https://rpm.nodesource.com/setup_5.x | bash -
+curl -sL https://rpm.nodesource.com/setup_6.x | bash -
 
 # Add epel for nginx
 yum install -y epel-release
 
 # Install all the things
 yum install -y nginx nodejs rsync gcc-c++
+
+# Use older version of npm to prevent the following bug:
+# https://github.com/npm/npm/issues/14042
+npm install -g npm@3.10.7
 
 # Install and start docker
 curl -sL https://get.docker.com | bash -
