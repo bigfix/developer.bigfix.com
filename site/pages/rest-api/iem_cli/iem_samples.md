@@ -2,7 +2,7 @@
 title: IEM Command-Line Interface Samples
 ---
 
-Here you find usage samples showing how to run requests against REST API resources from the IEM CLI.
+Here you find usage samples showing how to run requests on REST API resources from the IEM CLI.
 
 - [Actions](#actions)
 - [Advanced Options](#advanced-options)
@@ -217,14 +217,14 @@ To convert a local operator into an LDAP operator, run the following command:
    BESAdmin.exe /convertToLDAPOperators [/mappingFile:<file>]
 ```
 
-where <file> is the mapping file containing the matching between Windows local operators and LDAP operators.
+where `<file>` is the mapping file containing the match between Windows local operators and LDAP operators.
  Each line of the file must contain the name of the user to convert, followed by a tab and the name of the user in 
  LDAP or Active Directory. The LDAP name must have the same format used to log into the console, such as domain\user, 
  user@domain, or user. If the file is not available, BESAdmin converts all local users assuming their name in LDAP or 
  Active Directory is the same as their local user name.
  
 ## Login
-To log in run the command:
+To log in, run the command:
 
 ```
 ./iem login --server=ServerName:ServerPort --user=master --password=Mypassword
@@ -268,10 +268,10 @@ To remove an operator (local and LDAP), run the following command:
 ```
 
 ## DSA Replication
-You can change the replication interval and the master server of your replication servers using the command line.
+You can change the replication interval and the master server of your replication servers by using the command line.
 
 #### Replication interval changes
-To change the replication interval, perform the following steps:
+To change the replication interval, complete the following steps:
 
 1. Start the command line:
 
@@ -332,11 +332,11 @@ iem get replication/server/0 > c:\temp\replicationServer0.xml
 ```
 4. Upload the modified file by running the following command:
 	
-    On Windows:
+    On Windows systems:
 ```
     iem post c:\temp\replicationServer0.xml  replication/server/0
 ```
-    On Linux:
+    On Linux systems:
 ```
     ./iem post /appo/replicationServer0.xml  replication/server/0
 ```
@@ -344,6 +344,7 @@ iem get replication/server/0 > c:\temp\replicationServer0.xml
 #### Master Server Switch
 By default, server 0 (zero) is the master server. To switch the master to another server, set the deployment option masterDatabaseServerID to the other server ID as follows:
 1. Start the command line:
+
     On Windows systems:
 ```
     iem login --server=servername:serverport --user=username --password=password
@@ -402,7 +403,7 @@ To create a new role, run the following command:
 ```
 ./iem post Example.xml roles
 ```
-Where Example.xml contains role configuration data in a XML format.
+Where Example.xml contains role configuration data in XML format.
 
 ## System Options
 To display MinimumRefreshSeconds (seconds), and DefaultFixletVisibility (Visible, Hidden) run the following command:
@@ -419,7 +420,7 @@ The command returns the list of options in XML format as follows:
        </SystemOptions>
 </BESAPI>
 ```
-To set the system option MinimumRefreshSeconds create an XML file (SystemOptions.xml) as follows:
+To set the system option MinimumRefreshSeconds, create an XML file (SystemOptions.xml) as follows:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
