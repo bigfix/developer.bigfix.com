@@ -8,10 +8,17 @@ This is a sample **BES.xsd** schema file made available with the IBM BigFix Plat
 - C:\Program Files (x86)\BigFix Enterprise\BigFix server\Reference for Windows systems
 - /opt/BESServer/reference for Linux Red Hat Enterprise V.5.0 or later systems
 
+Note that the XSD schema files are also available via HTTP/HTTPS from the BigFix Root Server to facilitate automated XML validation:
+
+* https://root server:port/xmlschema/BES.xsd
+* https://root server:port/xmlschema/BESAPI.xsd
+
+(where port is 52311 by default)
+
 
 ```xml
 <?xml version="1.0"?>
-<xs:schema id="BES" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" version="9.5.3.35">
+<xs:schema id="BES" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" version="9.5.3.211">
 
   <xs:element name="BES">
     <xs:complexType>
@@ -172,6 +179,7 @@ This is a sample **BES.xsd** schema file made available with the IBM BigFix Plat
       <xs:element name="SecureParameter" type="BESActionParameter" minOccurs="0" maxOccurs="unbounded" />      
       <xs:element name="Settings" type="ActionSettings" minOccurs="0" />
       <xs:element name="IsUrgent" type="xs:boolean" minOccurs="0" />
+      <xs:element name="Title" type="ObjectName" minOccurs="0" />
     </xs:sequence>
       <xs:attribute name="SkipUI" type="xs:boolean"/>
   </xs:complexType>
@@ -974,6 +982,7 @@ This is a sample **BES.xsd** schema file made available with the IBM BigFix Plat
 	</xs:simpleType>
 
 </xs:schema>
+
 
 ```
 
