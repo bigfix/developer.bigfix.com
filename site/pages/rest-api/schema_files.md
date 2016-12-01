@@ -16,9 +16,11 @@ To ensure consistency, use the version of the schema files available on your Big
 
 * */opt/BESServer/reference* for Linux Red Hat Enterprise V.5.0 or later systems
 
-Note that the XSD schema files are also available via HTTP/HTTPS from the BigFix Root Server to facilitate automated XML validation:
+The schema files are also available via HTTP/HTTPS from the BigFix Root Server to facilitate automated XML validation:
 
-* https://root server:port/xmlschema/BES.xsd
-* https://root server:port/xmlschema/BESAPI.xsd
+```
+https://<bigfix_server>:<port>/xmlschema/BES.xsd
+https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
+```
 
 (where port is 52311 by default)
