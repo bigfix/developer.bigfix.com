@@ -8,10 +8,16 @@ This is a sample **BESAPI.xsd** schema file made available with the IBM BigFix P
 - C:\Program Files (x86)\BigFix Enterprise\BigFix server\Reference for Windows systems
 - /opt/BESServer/reference for Linux Red Hat Enterprise V.5.0 or later systems
 
+Note that the XSD schema files are also available via HTTP/HTTPS from the BigFix Root Server to facilitate automated XML validation:
+
+* https://root server:port/xmlschema/BES.xsd
+* https://root server:port/xmlschema/BESAPI.xsd
+
+(where port is 52311 by default)
 
 ```xml
 <?xml version="1.0"?>
-<xs:schema id="BESAPI" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" version="9.5.3.35">
+<xs:schema id="BESAPI" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" version="9.5.3.211">
 
 	<xs:element name="BESAPI">
 		<xs:complexType>
@@ -481,24 +487,6 @@ This is a sample **BESAPI.xsd** schema file made available with the IBM BigFix P
 					</xs:complexType>
 				</xs:element>
 				
-				<xs:element name="BESClientQueryTarget">
-					<xs:complexType>
-						<xs:choice>
-							<xs:element name="ComputerName" type="xs:normalizedString" maxOccurs="unbounded" />
-							<xs:element name="ComputerID" type="xs:nonNegativeInteger" maxOccurs="unbounded" />
-							<xs:element name="CustomRelevance" type="xs:normalizedString" />
-							<xs:element name="ComputerGroup" maxOccurs="unbounded">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Name"     type="xs:normalizedString" minOccurs="1" />
-										<xs:element name="SiteName" type="xs:normalizedString" minOccurs="1" />
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:choice>
-					</xs:complexType>
-				</xs:element>
-
 				<xs:element name="ClientQuery">
 					<xs:complexType>
 						<xs:sequence>
@@ -811,7 +799,7 @@ This is a sample **BESAPI.xsd** schema file made available with the IBM BigFix P
 			<xs:element name="InterfaceLogins" type="InterfaceLogins" minOccurs="0" />
 			<xs:element name="Operators" minOccurs="0">
 				<xs:complexType>
-					<xs:choice maxOccurs="unbounded">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
 						<xs:element name="Explicit" type="xs:normalizedString"/>
 						<xs:element name="Inherited" type="xs:normalizedString"/>
 					</xs:choice>
@@ -967,6 +955,28 @@ This is a sample **BESAPI.xsd** schema file made available with the IBM BigFix P
 	  <xs:simpleContent>
 	    <xs:extension base="xs:string" />
 	  </xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="BESClientQueryString">
+		<xs:restriction base="xs:normalizedString">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="BESClientQueryTarget">
+		<xs:choice>
+			<xs:element name="ComputerName" type="xs:normalizedString" maxOccurs="unbounded" />
+			<xs:element name="ComputerID" type="xs:nonNegativeInteger" maxOccurs="unbounded" />
+			<xs:element name="CustomRelevance" type="xs:normalizedString" />
+			<xs:element name="ComputerGroup" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Name"     type="BESClientQueryString" minOccurs="1" />
+						<xs:element name="SiteName" type="BESClientQueryString" minOccurs="1" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
 	</xs:complexType>
 
 </xs:schema>
