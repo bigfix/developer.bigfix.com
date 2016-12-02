@@ -123,7 +123,7 @@ notice participants who are "repeat infringers" of copyrights.</li>
 Terms of
 Use including, copyright infringement, abusive language or
 inappropriate discussion. To report such violations to IBM, you will
-need to submit a <a href="contact">Report
+need to submit a <a href="https://github.com/bigfix/developer.bigfix.com/issues/new">Report
 Abuse</a> notice.</li>
 </ul>
 <h3 id="N100B7"> No Commitment as to Future
@@ -151,10 +151,10 @@ same or similar functionality.</li>
 submit
 or retrieve on the Site. When you upload code, you are agreeing to be
 bound by the <a
-href=/terms/submitUpload>Submission
+href=submit-upload.html>Submission
 of Content Agreement</a>. When you download code, you are
 agreeing to be bound by the <a
-href=/terms/downloaderAgreement>Download
+href=downloader-agreement.html>Download
 of Content Agreement</a>, unless the code is accompanied by
 another license or agreement, in which case such code is governed
 solely by the license or agreement which accompanies the code. </li>
@@ -169,11 +169,11 @@ confidential, and you will be presented with the applicable NDA prior
 to being granted access to a confidential area. For IBM only
 confidential discussion or materials, you may be required to agree to
 be bound by the <a
-href=/terms/ibmconfidentiality>IBM
+href=ibm-confidentiality.html>IBM
 Confidential Disclosure Agreement</a>. For mutual confidential
 discussion or materials between IBM and third parties, you may be
 required to agree to be bound by the <a
-href=/terms/mutualconfidentiality>Mutual
+href=mutual-confidentiality.html>Mutual
 Confidential Disclosure Agreement</a>. </li>
 <li>If an existing NDA exists
 between you and IBM or your company and IBM that governs any
