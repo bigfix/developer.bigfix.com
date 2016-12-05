@@ -2,7 +2,7 @@
 title: BESAPI.xsd schema file
 ---
 
-This is a sample **BESAPI.xsd** schema file made available with the IBM BigFix Platform V9.5.3.
+This is a sample **BESAPI.xsd** schema file made available with the IBM BigFix Platform V9.5.5.
 
 **Important:** To ensure consistency, use the version of the schema files available on your BigFix server under the path:
 - C:\Program Files (x86)\BigFix Enterprise\BigFix server\Reference for Windows systems
@@ -18,7 +18,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 
 ```xml
 <?xml version="1.0"?>
-<xs:schema id="BESAPI" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" version="9.5.3.211">
+<xs:schema id="BESAPI" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" version="99.95.0.178">
 
 	<xs:element name="BESAPI">
 		<xs:complexType>
@@ -39,7 +39,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Name" type="xs:normalizedString" minOccurs="0"/>
-							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>							
+							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>						    
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:normalizedString"/>  
 						<xs:attribute name="LastModified" type="xs:normalizedString"/>
@@ -49,21 +49,21 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 				<xs:element name="ReplicationServer">
 					<xs:complexType>
 						<xs:sequence>
-				   			<xs:element name="ServerID" type="xs:nonNegativeInteger" minOccurs="0"/>
-				   			<xs:element name="URL" type="xs:normalizedString" minOccurs="0"/>
-				   			<xs:element name="DNS" type="xs:normalizedString" minOccurs="0"/>
-				   			<xs:element name="ReplicationIntervalSeconds" type="xs:nonNegativeInteger" minOccurs="0"/>
-				   			<xs:element name="ReplicationLink" type="ReplicationLinkType" minOccurs="0" maxOccurs="unbounded"/>
-			   			</xs:sequence>
-			   			<xs:attribute name="Resource" type="xs:normalizedString"/> 
+							<xs:element name="ServerID" type="xs:nonNegativeInteger" minOccurs="0"/>
+							<xs:element name="URL" type="xs:normalizedString" minOccurs="0"/>
+							<xs:element name="DNS" type="xs:normalizedString" minOccurs="0"/>
+							<xs:element name="ReplicationIntervalSeconds" type="xs:nonNegativeInteger" minOccurs="0"/>
+							<xs:element name="ReplicationLink" type="ReplicationLinkType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+						<xs:attribute name="Resource" type="xs:normalizedString"/> 
 					</xs:complexType>
 				</xs:element>
 
 				<xs:element name="WebReports">
 					<xs:complexType>
 						<xs:sequence>
-				   			<xs:element name="URL" type="xs:normalizedString"/>
-			   			</xs:sequence>
+							<xs:element name="URL" type="xs:normalizedString"/>
+						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 
@@ -124,7 +124,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
-						<xs:attribute name="Resource" type="xs:normalizedString"/>  						
+						<xs:attribute name="Resource" type="xs:normalizedString"/>					     
 					</xs:complexType>
 				</xs:element>
 
@@ -132,7 +132,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Name" type="xs:normalizedString"/>
-							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>							
+							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>						    
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:normalizedString"/>  
 						<xs:attribute name="LastModified" type="xs:normalizedString"/>
@@ -150,13 +150,13 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						<xs:attribute name="Resource" type="xs:normalizedString"/>  
 						<xs:attribute name="LastModified" type="xs:normalizedString"/>
 					</xs:complexType>
-				</xs:element>				
+				</xs:element>			 
 
 				<xs:element name="Task">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Name" type="xs:normalizedString" minOccurs="0"/>
-							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>							
+							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>						    
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:normalizedString"/>  
 						<xs:attribute name="LastModified" type="xs:normalizedString"/>
@@ -216,7 +216,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						<xs:attribute name="Resource" type="xs:string"/>  
 						<xs:attribute name="LastModified" type="xs:normalizedString"/>
 					</xs:complexType>
-				</xs:element>	
+				</xs:element> 
 
 				<xs:element name="Computer">
 					<xs:complexType>
@@ -231,14 +231,14 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 												<xs:attribute name="Name" type="ObjectName" use="required" />
 											</xs:extension>
 										</xs:simpleContent>
-									</xs:complexType>              
+									</xs:complexType>		
 								</xs:element>
 								<xs:element name="Setting" type="ComputerSetting" minOccurs="0" maxOccurs="unbounded"/>
 							</xs:choice>
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:string"/>  
 					</xs:complexType>
-				</xs:element>	
+				</xs:element> 
 
 				<xs:element name="ComputerSettings">
 					<xs:complexType>
@@ -254,7 +254,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:string"/>  
 					</xs:complexType>
-				</xs:element>	
+				</xs:element> 
 
 				<xs:element name="AdminField">
 					<xs:complexType>
@@ -264,7 +264,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:string"/>  
 					</xs:complexType>
-				</xs:element>	
+				</xs:element> 
 
 				<xs:element name="DashboardData">
 					<xs:complexType>
@@ -289,7 +289,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 							<xs:element name="IsClientFile" type="xs:boolean" minOccurs="0"/>
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:string"/>  
-						<xs:attribute name="LastModified" type="xs:normalizedString"/>						
+						<xs:attribute name="LastModified" type="xs:normalizedString"/>					 
 					</xs:complexType>
 				</xs:element>
 
@@ -311,7 +311,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 							<xs:element name="DefaultFixletVisibility" type="DefaultFixletVisibilityType" minOccurs="0"/>
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:normalizedString" use="required"/>  
-					</xs:complexType>					
+					</xs:complexType>				    
 				</xs:element>
 
 				<xs:element name="ComputerGroup">
@@ -323,7 +323,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						<xs:attribute name="Resource" type="xs:normalizedString" use="required"/>  
 						<xs:attribute name="LastModified" type="xs:normalizedString"/>
 					</xs:complexType>
-				</xs:element>	
+				</xs:element> 
 
 				<xs:element name="Operator" type="Operator"/>
 
@@ -397,12 +397,12 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						</xs:sequence>
 						<xs:attribute name="Resource" type="xs:normalizedString"/>
 					</xs:complexType>
-				</xs:element>				
+				</xs:element>			 
 
 				<xs:element name="LDAPDirectory">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>							
+							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>						    
 							<xs:element name="Name" type="xs:normalizedString" minOccurs="0"/>
 							<xs:element name="IsActiveDirectory" type="xs:boolean" minOccurs="0"/>
 							<xs:element name="IsGlobalCatalog" type="xs:boolean" minOccurs="0"/>
@@ -417,7 +417,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 							<xs:element name="Servers" minOccurs="0" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="Server" type="LDAPServer" minOccurs="1" maxOccurs="4"/>	
+										<xs:element name="Server" type="LDAPServer" minOccurs="1" maxOccurs="4"/>    
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -429,7 +429,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 				<xs:element name="SAMLProvider">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>							
+							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>						    
 							<xs:element name="Issuer" type="xs:normalizedString"/>
 							<xs:element name="EntryPoint" type="xs:normalizedString"/>
 							<xs:element name="IsDisabled" type="xs:boolean"/>
@@ -442,8 +442,8 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 				<xs:element name="ComputerMailboxFile">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="Name" type="xs:normalizedString" minOccurs="0"/>	
-							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>						
+							<xs:element name="Name" type="xs:normalizedString" minOccurs="0"/>    
+							<xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>					    
 							<xs:element name="SHA1" type="xs:normalizedString" minOccurs="0"/>
 							<xs:element name="Size" type="xs:normalizedString" minOccurs="0"/>
 							<xs:element name="Timestamp" type="xs:normalizedString" minOccurs="0"/>
@@ -493,7 +493,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						<xs:sequence>
 							<xs:element name="ApplicabilityRelevance" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
 							<xs:element name="QueryText" type="xs:normalizedString" minOccurs="1" maxOccurs="1" />
-                            <xs:element name="Target" type="BESClientQueryTarget" minOccurs="0" />
+				<xs:element name="Target" type="BESClientQueryTarget" minOccurs="0" />
 						</xs:sequence>						
 					</xs:complexType>
 				</xs:element>
@@ -509,9 +509,9 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 										<xs:element name="ComputerID"    type="xs:nonNegativeInteger"   minOccurs="1"/>
 										<xs:element name="ComputerName"  type="xs:normalizedString"     minOccurs="1"/>
 										<xs:element name="SubQueryID"    type="xs:nonNegativeInteger"   minOccurs="1"/>
-										<xs:element name="IsFailure"     type="xs:boolean"              minOccurs="1"/>
+										<xs:element name="IsFailure"     type="xs:boolean"		minOccurs="1"/>
 										<xs:element name="ResponseTime"  type="xs:normalizedString"     minOccurs="1"/>
-										<xs:element name="Result"        type="xs:normalizedString"     minOccurs="1"/>
+										<xs:element name="Result"	 type="xs:normalizedString"     minOccurs="1"/>
 										<xs:element name="ErrorMessage"  type="xs:normalizedString"/>
 									</xs:sequence>						
 								</xs:complexType>
@@ -559,15 +559,16 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 			<xs:element name="MasterOperator" type="xs:boolean"/>
 			<xs:element name="CustomContent" type="xs:boolean"/>
 			<xs:element name="ShowOtherActions" type="xs:boolean"/>
+			<xs:element name="StopOtherActions" type="xs:boolean"/>
 			<xs:element name="CanCreateActions" type="xs:boolean"/>
 			<xs:element name="CanLock" type="xs:boolean"/>
 			<xs:element name="CanSendMultipleRefresh" type="xs:boolean"/>
-            <xs:element name="CanSubmitQueries" type="xs:boolean"/>
+	     <xs:element name="CanSubmitQueries" type="xs:boolean"/>
 			<xs:element name="PostActionBehaviorPrivilege">
 				<xs:simpleType>
 					 <xs:restriction base="xs:normalizedString">
 						 <xs:enumeration value="AllowRestartAndShutdown"/>
-						 <xs:enumeration value="AllowRestartOnly"/>            
+						 <xs:enumeration value="AllowRestartOnly"/>	     
 						 <xs:enumeration value="None"/>
 					</xs:restriction>
 				 </xs:simpleType>
@@ -576,7 +577,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 				<xs:simpleType>
 					 <xs:restriction base="xs:normalizedString">
 						 <xs:enumeration value="AllowRestartAndShutdown"/>
-						 <xs:enumeration value="AllowRestartOnly"/>            
+						 <xs:enumeration value="AllowRestartOnly"/>	     
 						 <xs:enumeration value="None"/>
 					</xs:restriction>
 				 </xs:simpleType>
@@ -625,15 +626,15 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 	</xs:complexType>
 
    <xs:complexType name="ReplicationLinkType">
-   		<xs:sequence>
-   			<xs:element name="SourceServerID" type="xs:nonNegativeInteger"/>
-   			<xs:element name="DestinationServerID" type="xs:nonNegativeInteger"/>
-   			<xs:element name="Weight" type="xs:nonNegativeInteger"/>
-   			<xs:element name="IsConnected" type="xs:boolean" minOccurs="0"/>
-   			<xs:element name="LastReplication" type="xs:normalizedString" minOccurs="0"/>
-   			<xs:element name="LastError" type="xs:normalizedString" minOccurs="0"/>
-   		</xs:sequence>
-   		<xs:attribute name="Resource" type="xs:normalizedString"/> 
+		<xs:sequence>
+			<xs:element name="SourceServerID" type="xs:nonNegativeInteger"/>
+			<xs:element name="DestinationServerID" type="xs:nonNegativeInteger"/>
+			<xs:element name="Weight" type="xs:nonNegativeInteger"/>
+			<xs:element name="IsConnected" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="LastReplication" type="xs:normalizedString" minOccurs="0"/>
+			<xs:element name="LastError" type="xs:normalizedString" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Resource" type="xs:normalizedString"/> 
    </xs:complexType>
 
 	<xs:complexType name="StringWithReference">
@@ -671,12 +672,13 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 			<xs:element name="MasterOperator" type="xs:boolean" minOccurs="0" />
 			<xs:element name="CustomContent" type="xs:boolean" minOccurs="0" />
 			<xs:element name="ShowOtherActions" type="xs:boolean" minOccurs="0" />
+			<xs:element name="StopOtherActions" type="xs:boolean" minOccurs="0" />
 			<xs:element name="CanCreateActions" type="xs:boolean" minOccurs="0" />
 			<xs:element name="PostActionBehaviorPrivilege" minOccurs="0">
 				<xs:simpleType>
 					 <xs:restriction base="xs:normalizedString">
 						 <xs:enumeration value="AllowRestartAndShutdown" />
-						 <xs:enumeration value="AllowRestartOnly" />            
+						 <xs:enumeration value="AllowRestartOnly" />	     
 						 <xs:enumeration value="None" />
 					</xs:restriction>
 				 </xs:simpleType>
@@ -685,14 +687,14 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 				<xs:simpleType>
 					 <xs:restriction base="xs:normalizedString">
 						 <xs:enumeration value="AllowRestartAndShutdown" />
-						 <xs:enumeration value="AllowRestartOnly" />            
+						 <xs:enumeration value="AllowRestartOnly" />	     
 						 <xs:enumeration value="None" />
 					</xs:restriction>
 				 </xs:simpleType>
 			 </xs:element>
 			<xs:element name="CanLock" type="xs:boolean" minOccurs="0" />
 			<xs:element name="CanSendMultipleRefresh" type="xs:boolean" minOccurs="0" />
-            <xs:element name="CanSubmitQueries" type="xs:boolean" minOccurs="0" />
+	     <xs:element name="CanSubmitQueries" type="xs:boolean" minOccurs="0" />
 			<xs:element name="LoginPermission" minOccurs="0">
 				<xs:simpleType>
 					<xs:restriction base="xs:normalizedString">
@@ -766,6 +768,7 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 			<xs:element name="MasterOperator" type="xs:boolean" minOccurs="0" />
 			<xs:element name="CustomContent" type="xs:boolean" minOccurs="0" />
 			<xs:element name="ShowOtherActions" type="xs:boolean" minOccurs="0" />
+			<xs:element name="StopOtherActions" type="xs:boolean" minOccurs="0" />
 			<xs:element name="CanCreateActions" type="xs:boolean" minOccurs="0" />
 			<xs:element name="PostActionBehaviorPrivilege" minOccurs="0">
 			    <xs:simpleType>
@@ -775,18 +778,18 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 						<xs:enumeration value="None" />
 					</xs:restriction>
 				</xs:simpleType>
-            </xs:element>
-            <xs:element name="ActionScriptCommandsPrivilege" minOccurs="0">
-                <xs:simpleType>
-                    <xs:restriction base="xs:normalizedString">
-                        <xs:enumeration value="AllowRestartAndShutdown" />
-                        <xs:enumeration value="AllowRestartOnly" />
-                        <xs:enumeration value="None" />
-                    </xs:restriction>
-                </xs:simpleType>
-        	</xs:element>
+	     </xs:element>
+	     <xs:element name="ActionScriptCommandsPrivilege" minOccurs="0">
+		  <xs:simpleType>
+		      <xs:restriction base="xs:normalizedString">
+			   <xs:enumeration value="AllowRestartAndShutdown" />
+			   <xs:enumeration value="AllowRestartOnly" />
+			   <xs:enumeration value="None" />
+		      </xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
 			<xs:element name="CanSendMultipleRefresh" type="xs:boolean" minOccurs="0" />
-            <xs:element name="CanSubmitQueries" type="xs:boolean" minOccurs="0" />
+	     <xs:element name="CanSubmitQueries" type="xs:boolean" minOccurs="0" />
 			<xs:element name="CanLock" type="xs:boolean" minOccurs="0" />
 			<xs:element name="UnmanagedAssetPrivilege" minOccurs="0" >
 				<xs:simpleType>
@@ -866,8 +869,8 @@ https://<bigfix_server>:<port>/xmlschema/BESAPI.xsd
 
 	<xs:complexType name="RelevanceResult">
 		<xs:choice maxOccurs="unbounded" minOccurs="0">
-		 	<xs:element name="Answer" type="RelevanceAnswer"/>
-		 	<xs:element name="Tuple" type="RelevanceResult"/>
+			<xs:element name="Answer" type="RelevanceAnswer"/>
+			<xs:element name="Tuple" type="RelevanceResult"/>
 		</xs:choice>
 	</xs:complexType>
 
