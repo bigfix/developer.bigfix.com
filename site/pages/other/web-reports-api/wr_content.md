@@ -20,7 +20,7 @@ hooks available to provide access to various functions.
 The content that is embedded in the HTML section is typically a mix of JavaScript,
 HTML, Flex, and Relevance expressions that are evaluated with the JavaScript
 function **EvaluateRelevance**. As soon as they are received, the results of the
-evaluation are embedded directly into the page and it is redrawn.
+evaluation are embedded directly into the page and shown in the custom Web Report.
 
 ![WEB reports graphics](/static/img/webreports_graphic.png)
 
