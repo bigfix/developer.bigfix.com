@@ -2,12 +2,12 @@
 title: Available APIs
 ---
 
-BigFix provides you with a set of APIs that allows you interact and customize your solution.
-The brown boxes in this graphic highlight the available BigFix APIs and where they plug into the BigFix topology:
+BigFix provides you with a set of APIs that allows you to interact and customize your solution.
+The brown boxes in this graphic highlight the available BigFix APIs and where they fit into the BigFix topology:
 
 ![All API](/static/img/all_api.png)
 
-In this list you find a quick description of what each API allows you to do. If you click on the API name you access the section that contains all the information and resources available about that API.
+The following list gives you a quick description of what each API allows you to do. Click the API name to access the section that contains all the information and resources available about that API.
 
 <dl>
    <dt>[REST API](../rest-api/)</dt>
@@ -23,7 +23,7 @@ In this list you find a quick description of what each API allows you to do. If 
    <dt>[Database API](../other/database-api/)</dt>
    <dd>A published schema describing Views to the underlying tables containing all the information collected from managed endpoints and available in the database.</dd>
    <dt>[Client Compliance API](../other/cc-api/)</dt>
-   <dd>Expose the results of an BigFix Client inspection to in 3rd-party clients running on the client system using a Microsoft COM-based API.</dd>
+   <dd>Show the results of an BigFix Client inspection to 3rd-party clients running on the client system using a Microsoft COM-based API.</dd>
 </dl>
 
 
