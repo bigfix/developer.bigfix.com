@@ -6,7 +6,7 @@ A template report provides arguments for, and then runs, a previously existing
 Web Report. The URL for the report is specified in the ```<URLParameters>``` tag. The
 Data tag does not exist for this report.
 
-For example, to create a particular *Issue Assessment* report you might create a
+For example, to create a particular *Issue Assessment* report, you might create a
 template report like the following:
 
 
