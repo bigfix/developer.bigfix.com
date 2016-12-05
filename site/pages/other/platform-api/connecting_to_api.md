@@ -2,9 +2,9 @@
 title: Connecting to the server through the API
 ---
 
-When connecting, you must specify the BigFix server hostname and login credentials
+When connecting, you must specify the BigFix server host name and login credentials
 that you use to connect to the BigFix Console.
-If might set the server by running:
+You can  set the server by running:
 ```
 SetServer( $Hostname )
 ```
@@ -20,7 +20,7 @@ The ApplicationName is set from any BESAPI object by using:
 ```
 SetAppName( $ApplicationName )
 ```
-That location contains also the information fetched from the server such as site exports.
+This location also contains the information fetched from the server such as site exports.
 
 If the SSL Certificate on the server changes, you might need to delete the old certificate 
 from this location to get a new one.
