@@ -3,7 +3,7 @@ title: Shell script
 ---
 
 Web Reports has a generalized report format that can incorporate reports from
-content sites, allowing new reports to be added, edite, or removed. The report file
+content sites, allowing new reports to be added, edited, or removed. The report file
 must have the extension .beswrpt, and is written in XML:
 
 
@@ -37,7 +37,7 @@ The .beswrpt file can also contain multiple reports in one xml file:
 ```
 
 The *Name*, *Category*, and *Source* are listed in the basic report list, and *Description*
-shows up if the question mark (?) next to it is clicked. If the category is blank, a
+shows if the question mark (?) next to it is clicked. If the category is blank, a
 suitable default is filled in, depending on the type of the report. A blank source
 just appears blank.
 URLParameters and Data depend on the Type tag. The type tag can be one of three
