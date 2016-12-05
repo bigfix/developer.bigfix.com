@@ -6,14 +6,14 @@ title: The SOAP Headers
 
 Web Reports uses request and response headers in all SOAP methods except for **GetRelevanceResult**. 
 Headers are used to send login information to verify that the user associated with the SOAP request has 
-the correct permissions to run it. The data that are returned from the SOAP call is filtered by those 
+the correct permissions to run it. The data that is returned from the SOAP call is filtered by those 
 permissions.
 
 Two kinds of headers are used, login or authentication. 
-A login header takes a username and a password to authenticate. 
+A login header takes a user name and a password to authenticate. 
 The server replies to the request with a response header that contains a session token. 
 In subsequent requests, until the user's session times out, SOAP requests can be authenticated by using 
-an authentication header that requires a username and the provided session token.
+an authentication header that requires a user name and the provided session token.
 
 {% endsection %}
 
