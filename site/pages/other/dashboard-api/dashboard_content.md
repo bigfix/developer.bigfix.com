@@ -17,7 +17,7 @@ hooks available to provide access to various functions.
 The content that is embedded in the HTML section is typically a mix of JavaScript-Dojo-jQuery
 or Adobe Flex, and Relevance expressions that are evaluated with the JavaScript
 function **EvaluateRelevance** or with the ```<?relevance expression ?>``` tag. As soon as they are received, the results of the
-evaluation are embedded directly into the page and it is redrawn. For more information, access [Relevance in dashboards](./relevance_in_dashboards.html).
+evaluation are embedded directly into the page and displayed on the BigFix Console. For more information, access [Relevance in dashboards](./relevance_in_dashboards.html).
 
 The document can also specify how your dashboard is attached to the console UI,
 for example as a menu, a list, or an item on the navigation bar. Dashboard
