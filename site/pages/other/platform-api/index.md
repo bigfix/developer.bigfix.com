@@ -10,7 +10,7 @@ The Server API allows you to import content into the BigFix Console so that you 
 Fixlets, tasks, actions, baselines, properties, and analyses. The content to import is contained in a 
 [BES XML document](./bes-xml/) with extension ```.bes```.
 
-To use the API, the calling application uses [BESAPI objects](./besapiobject.html). Each BESAPI object is assigned 
+To use the API, the calling application uses [BESAPI objects](./besapiobject.html). Each BESAPI object is assigned a 
 set of methods and properties. There are different BESAPI objects for each activity that can be undertaken 
 by using the BigFix console, for example, for creating an action or a task (**BESAPI.XMLImporter**)<!--([BESAPI.XMLImporter](./xmlimporter.html))-->, or 
 for managing site subscriptions (**BESAPI.SiteManager**<!--[BESAPI.SiteManager](./sitemanager.html)-->).

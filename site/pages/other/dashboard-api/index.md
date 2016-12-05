@@ -21,12 +21,12 @@ The Dashboard API allows you to author your own dashboards,
 granting you the power to create customized views into whatever aspect of your
 network you want to monitor. 
 
-You can create and edit custom dashboars using the [Presentation Debugger](../../tools/presentation_debugger.html).
+You can create and edit custom dashboards using the [Presentation Debugger](../../tools/presentation_debugger.html).
 
 Navigate this subtree about the Dashboard API to learn how Relevance language elements work within the Dashboard API, letting you analyze,
 aggregate, and visualize multiple facets of your networked clients.
 
-You might want also to watch the following [video](https://www.youtube.com/watch?v=uS_dL4CxCY0) explaining how to create and share dashboards.
+You might also want to watch the following [video](https://www.youtube.com/watch?v=uS_dL4CxCY0) explaining how to create and share dashboards.
 
 
 

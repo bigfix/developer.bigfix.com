@@ -20,12 +20,12 @@ AttributeName=”AttributeType”>
 This XML element has an attribute named AttributeName of type AttributeType.
 
 There might be multiple entries for these objects. For each element and attribute,
-there is a stated range. That represents the number of objects of the specified type
+there is a stated range which represents the number of objects of the specified type
 that is expected. These values are represented by numbers in square brackets, as
 follows:
-- [x] This element or attribute must occur exactly x times.
-- [x..y] This element or attribute occurs a minimum of x times and a maximum of times.
-- [x..*] This element or attribute occurs a minimum of x times and has no
+- ```[x]``` This element or attribute must occur exactly x times.
+- ```[x..y]``` This element or attribute occurs a minimum of x times and a maximum of times.
+- ```[x..*]``` This element or attribute occurs a minimum of x times and has no
 maximum.
 The following example indicates that the schema allows zero or more Relevance
 elements of type RelevanceString:

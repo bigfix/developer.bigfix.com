@@ -4,13 +4,13 @@ title: The QnA for Web Reports
 
 You can run the QnA tool through the Web Reports Server.  This allows you to run a QnA session that can view data on all computers.
 
-To access the QnA for Web Reports, log into the Web Reports server and navigate to **/webreports?page=QNA**.
+To access the QnA for Web Reports, log in to the Web Reports server and navigate to **/webreports?page=QNA**.
 
 This is the QnA for Web Reports user interface:
 
 ![QnA for Web Reports](/static/img/web_reports_qna.jpg)
 
-The same behavior and considerations that apply to the [QnA](./qna.html) tool, apply to the QnA for Web Reports as well.
+The same behavior and considerations that apply to the [QnA](./qna.html) tool, also apply to the QnA for Web Reports.
 
 You can run simple queries such as the following:
 
