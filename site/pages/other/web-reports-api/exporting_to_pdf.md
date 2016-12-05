@@ -3,8 +3,8 @@ title: Exporting to PDF
 ---
 
 You can export content reports by using **EvaluateRelevance** to PDF. By default,
-Web Reports allows only ten seconds for generating the PDF. If your reports are
-taking longer than that, you can adjust the wait, by performing the following
+Web Reports allows only 10 seconds for generating the PDF. If your reports are
+taking longer than that, you can adjust the wait, by completing the following
 steps:
 1. Include an element with ```id='wr_content_will_signal_completion'``` to your report,
 like this:
