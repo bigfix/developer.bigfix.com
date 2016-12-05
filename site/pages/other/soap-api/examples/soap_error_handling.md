@@ -9,7 +9,7 @@ errors from the **GetStructuredRelevanceResult** method. Relevance errors from
 **GetStructuredRelevanceResult** are listed in the **StructuredRelevanceResult** object
 returned from the server. For more information, see **GetStructuredRelevanceResult**.
 
-The following demonstrates a request that results in an “invalid user name or
+The following example demonstrates a request that results in an “invalid user name or
 password” error:
 
 Request:
