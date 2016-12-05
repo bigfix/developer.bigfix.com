@@ -22,7 +22,7 @@ The tool includes four tabs:
    <dt>*qna*</dt>
    <dd>Where you can enter your queries, preceded by **Q:**, and evaluate them all again whenever you click the **Evaluate** button.</dd>
    <dt>*single clause*</dt>
-   <dd>Where you can enter and evaluate one query at the time. There is no need, in this case, to write **Q:**. Obtain detailed error information</dd>
+   <dd>Where you can enter and evaluate one query at a time. There is no need, in this case, to write **Q:**. Obtain detailed error information</dd>
    <dt>*graphical*</dt>
    <dd>Where the result of your query is split to display the evaluation of each single inspector involved in the query.</dd>
    <dt>*action*</dt>
