@@ -46,15 +46,15 @@ properties whose (it as string contains "computer group")
 
 ## Web Reports Editor
 
- This module interacts directly with the Web Reports. If you click the **Evaluate** button and have the code run against the Web Reports. 
+ This module interacts directly with the Web Reports. Click the **Evaluate** button to run the code against the Web Reports. 
  The Web Reports Editor can switch between HTML syntax highlight and JavaScript syntax highlight.
  
 ![Web Reports Editor](/static/img/web_reports_editor.jpg) 
  
 ## Session Relevance Tester Requirements
 
-* IBM BigFix 7.2 or above is required.
-* The app is written in C#, and requires .NET Framework 2.0 or above. 
+* IBM BigFix V7.2 or later is required.
+* The app is written in C#, and requires .NET Framework 2.0 or later. 
 
 ## Download
 
