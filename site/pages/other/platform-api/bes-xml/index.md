@@ -2,7 +2,7 @@
 title: BES XML document
 ---
 
-The easiest way to learn about BES XML documents is to create one instance of that type of content on the BigFix console 
+An easy way to learn about BES XML documents is to create one instance of that type of content on the BigFix console 
 and then export it as follows:
 1. To export a Fixlet, task, baseline, action, analysis or computer group, right-click one from the 
 console list panel and select **Export** from the pop-up menu.
@@ -45,8 +45,8 @@ xsi:noNamespaceSchemaLocation="BES.xsd">
 </BES>
 ```
 
-The format and the fields to specify for each element in the BES XML file is documented in the 
-BES Schema file [BES.xsd](/rest-api/bes_xsd.html). You can find this file in the *Program
+The format and the fields to specify for each element in the BES XML file is described in the 
+BES Schema file [BES.xsd](/rest-api/bes_xsd.html). This file is located in the *Program
 Files\BigFix Enterprise\BES Console\Reference* folder on your console computer.
 
 Specifically, the BES.xsd file contains the definitions for all the content that you can submit to the Server API. 
