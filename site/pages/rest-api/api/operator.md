@@ -28,7 +28,36 @@ title: Operator
 {% endrestapi %}
 
 {% restapi "operator/{operator id}", "PUT", "Updates an operator." %}
-**Request:** Complete or partial XML for Operator..
+**Request:** Complete or partial XML for Operator.
+
+For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+	<Operator Resource="https://w2k12x64backup:52311/api/operator/nmo3">
+		<Name>nmo3</Name>
+		<MasterOperator>false</MasterOperator>
+		<CustomContent>true</CustomContent>
+		<ShowOtherActions>true</ShowOtherActions>
+		<StopOtherActions>false</StopOtherActions>
+		<CanCreateActions>true</CanCreateActions>
+		<PostActionBehaviorPrivilege>AllowRestartAndShutdown</PostActionBehaviorPrivilege>
+		<ActionScriptCommandsPrivilege>AllowRestartAndShutdown</ActionScriptCommandsPrivilege>
+		<CanLock>true</CanLock>
+		<CanSendMultipleRefresh>true</CanSendMultipleRefresh>
+		<CanSubmitQueries>false</CanSubmitQueries>
+		<LoginPermission>Unrestricted</LoginPermission>
+		<UnmanagedAssetPrivilege>ShowAll</UnmanagedAssetPrivilege>
+		<InterfaceLogins>
+			<Console>true</Console>
+			<WebUI>true</WebUI>
+			<API>true</API>
+		</InterfaceLogins>
+		<ComputerAssignments></ComputerAssignments>
+	</Operator>
+</BESAPI>
+```
 
 **Request Schema:** BESAPI.xsd
 
