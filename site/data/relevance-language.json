@@ -103471,6 +103471,19 @@
           "Windows"
         ]
       }
+    },
+    "normalized date of <fixlet_header> : date": {
+      "key": "normalized date of <fixlet_header> : date",
+      "type": "property",
+      "resultType": "date",
+      "singularPhrase": "normalized date",
+      "pluralPhrase": "normalized dates",
+      "directObjectType": "fixlet_header",
+      "availability": {
+        "9.5.4.38": [
+          "Windows"
+        ]
+      }
     }
   }
 }
