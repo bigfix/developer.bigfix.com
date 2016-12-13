@@ -29,12 +29,14 @@ Red Hat:
   - i386_rhe4
   - i386_rhe5
   - i686_rhe5
+  - i686_rhe6
   - ppc64_rhe5
   - s390x_rhe4
   - s390x_rhe5
   - x86_64_rhe3
   - x86_64_rhe4
   - x86_64_rhe5
+  - x86_64_rhe6
   - ppc64le_rhe7
 
 Session:

@@ -6053,6 +6053,46 @@
           "Session"
         ]
       }
+    },
+    "encoding": {
+      "name": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "wifi network": {
+      "name": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "agent interface": {
+      "name": "agent interface",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "agent interface capability": {
+      "name": "agent interface capability",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
     }
   },
   "properties": {
@@ -77919,6 +77959,13 @@
         ],
         "9.5.3.211": [
           "Mac"
+        ],
+        "99.95.0.194": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -103417,6 +103464,9 @@
       "availability": {
         "9.5.3.211": [
           "Mac"
+        ],
+        "99.95.0.194": [
+          "Windows"
         ]
       }
     },
@@ -103481,6 +103531,560 @@
       "directObjectType": "fixlet_header",
       "availability": {
         "9.5.4.38": [
+          "Windows"
+        ]
+      }
+    },
+    "image path of <application usage summary instance> : string": {
+      "key": "image path of <application usage summary instance> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "image path",
+      "pluralPhrase": "image paths",
+      "directObjectType": "application usage summary instance",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "download file <string> of <encoding> : file": {
+      "key": "download file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "download file",
+      "pluralPhrase": "download files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "download folder of <encoding> : folder": {
+      "key": "download folder of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "download folder",
+      "pluralPhrase": "download folders",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "file <string> of <encoding> : file": {
+      "key": "file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "file",
+      "pluralPhrase": "files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "folder <string> of <encoding> : folder": {
+      "key": "folder <string> of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "folder",
+      "pluralPhrase": "folders",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "symlink <string> of <encoding> : symlink": {
+      "key": "symlink <string> of <encoding> : symlink",
+      "type": "property",
+      "resultType": "symlink",
+      "singularPhrase": "symlink",
+      "pluralPhrase": "symlinks",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "encoding <string> : encoding": {
+      "key": "encoding <string> : encoding",
+      "type": "property",
+      "resultType": "encoding",
+      "singularPhrase": "encoding",
+      "pluralPhrase": "encodings",
+      "indexType": "string",
+      "availability": {
+        "99.95.0.194": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "stop other actions flag of <bes user> : boolean": {
+      "key": "stop other actions flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "stop other actions flag",
+      "pluralPhrase": "stop other actions flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "99.95.0.194": [
+          "Session"
+        ]
+      }
+    },
+    "hfs file <string> of <encoding> : file": {
+      "key": "hfs file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "hfs file",
+      "pluralPhrase": "hfs files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Mac"
+        ]
+      }
+    },
+    "hfs folder <string> of <encoding> : folder": {
+      "key": "hfs folder <string> of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "hfs folder",
+      "pluralPhrase": "hfs folders",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Mac"
+        ]
+      }
+    },
+    "posix file <string> of <encoding> : file": {
+      "key": "posix file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "posix file",
+      "pluralPhrase": "posix files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Mac"
+        ]
+      }
+    },
+    "posix folder <string> of <encoding> : folder": {
+      "key": "posix folder <string> of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "posix folder",
+      "pluralPhrase": "posix folders",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Mac"
+        ]
+      }
+    },
+    "current network of <wifi> : wifi network": {
+      "key": "current network of <wifi> : wifi network",
+      "type": "property",
+      "resultType": "wifi network",
+      "singularPhrase": "current network",
+      "pluralPhrase": "current networks",
+      "directObjectType": "wifi",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "enabled of <wifi> : boolean": {
+      "key": "enabled of <wifi> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "enabled",
+      "pluralPhrase": "enableds",
+      "directObjectType": "wifi",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "visible network of <wifi> : wifi network": {
+      "key": "visible network of <wifi> : wifi network",
+      "type": "property",
+      "resultType": "wifi network",
+      "singularPhrase": "visible network",
+      "pluralPhrase": "visible networks",
+      "directObjectType": "wifi",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "bssid of <wifi network> : string": {
+      "key": "bssid of <wifi network> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "bssid",
+      "pluralPhrase": "bssids",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "channel band of <wifi network> : string": {
+      "key": "channel band of <wifi network> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "channel band",
+      "pluralPhrase": "channel bands",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "channel number of <wifi network> : integer": {
+      "key": "channel number of <wifi network> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "channel number",
+      "pluralPhrase": "channel numbers",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "ibss of <wifi network> : boolean": {
+      "key": "ibss of <wifi network> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "ibss",
+      "pluralPhrase": "ibsss",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "rssi of <wifi network> : integer": {
+      "key": "rssi of <wifi network> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "rssi",
+      "pluralPhrase": "rssis",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "secured of <wifi network> : boolean": {
+      "key": "secured of <wifi network> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "secured",
+      "pluralPhrase": "secureds",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "signal strength of <wifi network> : integer": {
+      "key": "signal strength of <wifi network> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "signal strength",
+      "pluralPhrase": "signal strengths",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "ssid of <wifi network> : string": {
+      "key": "ssid of <wifi network> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "ssid",
+      "pluralPhrase": "ssids",
+      "directObjectType": "wifi network",
+      "availability": {
+        "99.95.0.194": [
+          "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "capability <string> of <agent interface> : agent interface capability": {
+      "key": "capability <string> of <agent interface> : agent interface capability",
+      "type": "property",
+      "resultType": "agent interface capability",
+      "singularPhrase": "capability",
+      "pluralPhrase": "capabilities",
+      "indexType": "string",
+      "directObjectType": "agent interface",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "capability of <agent interface> : agent interface capability": {
+      "key": "capability of <agent interface> : agent interface capability",
+      "type": "property",
+      "resultType": "agent interface capability",
+      "singularPhrase": "capability",
+      "pluralPhrase": "capabilities",
+      "directObjectType": "agent interface",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "client product of <agent interface> : string": {
+      "key": "client product of <agent interface> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "client product",
+      "pluralPhrase": "client products",
+      "directObjectType": "agent interface",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "<agent interface capability> as string : string": {
+      "key": "<agent interface capability> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "agent interface capability",
+      "phrase": "string",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "name of <agent interface capability> : string": {
+      "key": "name of <agent interface capability> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "agent interface capability",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "state of <agent interface capability> : string": {
+      "key": "state of <agent interface capability> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "state",
+      "pluralPhrase": "states",
+      "directObjectType": "agent interface capability",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "agent interface <string> of <client> : agent interface": {
+      "key": "agent interface <string> of <client> : agent interface",
+      "type": "property",
+      "resultType": "agent interface",
+      "singularPhrase": "agent interface",
+      "pluralPhrase": "agent interfaces",
+      "indexType": "string",
+      "directObjectType": "client",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "agent interface of <client> : agent interface": {
+      "key": "agent interface of <client> : agent interface",
+      "type": "property",
+      "resultType": "agent interface",
+      "singularPhrase": "agent interface",
+      "pluralPhrase": "agent interfaces",
+      "directObjectType": "client",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "native file <string> of <encoding> : file": {
+      "key": "native file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "native file",
+      "pluralPhrase": "native files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "native folder <string> of <encoding> : folder": {
+      "key": "native folder <string> of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "native folder",
+      "pluralPhrase": "native folders",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "x32 file <string> of <encoding> : file": {
+      "key": "x32 file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "x32 file",
+      "pluralPhrase": "x32 files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "x32 folder <string> of <encoding> : folder": {
+      "key": "x32 folder <string> of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "x32 folder",
+      "pluralPhrase": "x32 folders",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "x64 file <string> of <encoding> : file": {
+      "key": "x64 file <string> of <encoding> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "x64 file",
+      "pluralPhrase": "x64 files",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
+          "Windows"
+        ]
+      }
+    },
+    "x64 folder <string> of <encoding> : folder": {
+      "key": "x64 folder <string> of <encoding> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "x64 folder",
+      "pluralPhrase": "x64 folders",
+      "indexType": "string",
+      "directObjectType": "encoding",
+      "availability": {
+        "99.95.0.194": [
           "Windows"
         ]
       }
