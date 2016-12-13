@@ -14,6 +14,14 @@ If the administrator named in the &lt;string&gt; is enabled on the given &lt;cli
 
 Returns one or more settings each representing an administrator of the client.
 
+# agent interface &lt;string&gt; of &lt;client&gt; : agent interface
+
+No documentation exists.
+
+# agent interface of &lt;client&gt; : agent interface
+
+No documentation exists.
+
 # authenticating of &lt;client&gt; : boolean
 
 Returns `True` when client is performing client authentication to the relay

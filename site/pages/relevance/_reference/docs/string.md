@@ -465,6 +465,10 @@ No documentation exists.
 
 No documentation exists.
 
+# encoding &lt;string&gt; : encoding
+
+No documentation exists.
+
 # error &lt;string&gt; : undefined
 
 This expression allows you to output your own user-defined error message, typically in the &#39;else&#39; clause of an &#39;if/then/else&#39; statement.

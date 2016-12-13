@@ -154,6 +154,10 @@ Converts the specified BES User list to a set that can be arithmetically manipul
 
 No documentation exists.
 
+# stop other actions flag of &lt;bes user&gt; : boolean
+
+No documentation exists.
+
 # unique value of &lt;bes user&gt; : bes user with multiplicity
 
 Returns the unique values and counts of a given list of &lt;bes user&gt; types, removing duplicates and sorting by value.

@@ -6,6 +6,10 @@ The &lt;application usage summary instance&gt; inspectors return information abo
 
 Returns the start time of the specified application instance since the computer was configured to track it, regardless of reboots.
 
+# image path of &lt;application usage summary instance&gt; : string
+
+No documentation exists.
+
 # last start time of &lt;application usage summary instance&gt; : time
 
 Returns the last time this specified application was started.
