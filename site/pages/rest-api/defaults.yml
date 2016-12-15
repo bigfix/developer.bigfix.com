@@ -32,6 +32,9 @@ nav:
 		
       - name: Analysis
         href: /rest-api/api/analysis.html
+       
+      - name: Baseline
+        href: /rest-api/api/baseline.html
 		   
       - name: BigFix Query
         href: /rest-api/api/bigfix_query.html
