@@ -2,142 +2,149 @@
 title: Baseline
 ---
 
+
+{% restapi "/api/baselines/{site type}/{site name}", "GET", "Lists the baselines belonging to the site {site name}." %}
+**Request:** URL is all that is required
+ - /api/baselines/master --> returns baselines from the master action site
+ - /api/baselines/custom/MyCustomSite --> returns baselines from your MyCustomSite custom site.
+ - /api/baselines/external/BES Support --> returns baselines from the external site "BES Support"
+ - /api/baselines/operator/Daniel --> returns baselines from Daniel's operator site
+
+**Request Schema:** BES.xsd
+
+**Response:** BESAPI description of contained baselines resources. 
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
 {% restapi "/api/baseline/{site type}/{site name}", "POST", "Creates a new baseline." %}
 **Request:** Complete XML for the object in the body of the request.
-This is a XML file for creating a new baseline:
+This is a sample XML file for creating a new baseline:
 
 ```xml
-<?xml version="1.0"?>
-<xs:schema id="BESActionTarget" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
-  <xs:element name="BESActionTarget">
-    <xs:complexType>
-      <xs:choice>
-        <xs:element name="ComputerName" type="xs:normalizedString" maxOccurs="unbounded" />
-        <xs:element name="ComputerID" type="xs:nonNegativeInteger" maxOccurs="unbounded" />
-        <xs:element name="CustomRelevance" type="xs:normalizedString" />
-        <xs:element name="ComputerGroup" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Name" type="xs:normalizedString" minOccurs="1" />
-              <xs:element name="SiteName" type="xs:normalizedString" minOccurs="1" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:choice>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Baseline>
+		<Title>CustomBaseline-iltest</Title>
+		<Description><![CDATA[&lt;enter a description of the baseline here&gt; ]]></Description>
+		<Relevance>true</Relevance>
+		<Category></Category>
+		<Source></Source>
+		<SourceID></SourceID>
+		<SourceSeverity></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Mon, 19 Dec 2016 19:38:28 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<BaselineComponentCollection>
+			<BaselineComponentGroup>
+				<BaselineComponent Name="CustomFixlet1" IncludeInRelevance="true" SourceSiteURL="http://SAMLRootServ-92.saml.ilwolf.sfolab.ibm.com:52311/cgi-bin/bfgather.exe/actionsite" 
+				SourceID="40" SyncStatus="synchronized" ActionName="Action1">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here // fixlet 1</ActionScript>
+					<SuccessCriteria Option="OriginalRelevance"></SuccessCriteria>
+					<Relevance>true</Relevance>
+				</BaselineComponent>
+				<BaselineComponent Name="CustomFixlet0" IncludeInRelevance="true" SourceSiteURL="http://SAMLRootServ-92.saml.ilwolf.sfolab.ibm.com:52311/cgi-bin/bfgather.exe/actionsite" SourceID="39" SyncStatus="source fixlet differs" ActionName="Action1">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here // fixlet 0// edit</ActionScript>
+					<SuccessCriteria Option="OriginalRelevance"></SuccessCriteria>
+					<Relevance>true</Relevance>
+				</BaselineComponent>
+			</BaselineComponentGroup>
+		</BaselineComponentCollection>
+	</Baseline>
+</BES>
+
 ```
 
 **Request Schema:** BES.xsd
+
+**Response:** An XML file returning the {id} of the newly created baseline.
+
+This is a sample response file:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+   <Baseline Resource="https://dw001:52311/api/baseline/master/42" LastModified="Fri, 16 Dec 2016 01:12:59 +0000">
+      <Name>Custom Baseline made for REST API</Name>
+      <ID>42</ID>
+   </Baseline>
+</BESAPI>
+```
 
 **Response Schema:** BESAPI.xsd
 
 {% endrestapi %}
 
-{% restapi "/api/baselines/{site type}/{site name}", "GET", "Lists the baselines belonging to {site name}." %}
+{% restapi "/api/baseline/{site type}/{site name}/{id}", "GET", "Retrieves from the site {site name} the baseline with the specified {id}." %}
 **Request:** URL is all that is required
 
-**Response:** Submitted query in XML format. 
-For example, if you request:
-
-```
-$ ./iem get /api/clientquery/12 <?xml version="1.0" encoding="UTF-8"?>
-```
-
-you can get the following response:
-
-```xml
-<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-  <ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
-  <ApplicabilityRelevance>true</ApplicabilityRelevance>
-  <QueryText>version of operating system</QueryText>
-    <Target>
-      <ComputerName>Magicbox</ComputerName>
-      <ComputerName>Mercury</ComputerName>
-    </Target>
-  </ClientQuery>
-</BESAPI>
-```
-
-where *IP_address* is the IP address of the BigFix Server.
-
-**Response:** Submitted query in XML format.
-
-**Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "/api/baseline/{site type}/{site name}/{id}", "GET", "Retrieves from site {site name} the baseline with the specified {id}." %}
-**Request:** Complete XML for the object in the body of the request. You can specify up to 4 keys when invoking the API:
-- *filter=value* to filter the results based on the string specified as value.
-- *output=json* to request to generate a result in JSON format. If not specified, the result will be in XML format.
-- *stats=1* to display the total number of results and the number of agents that responded.
-- *start=x, count=y* to display y results starting from result number x.
-
 **Request Schema:** BES.xsd
 
-**Response:** JSON or XML query results.
+**Response:** The XML representation of the baseline with the specified {id}.
 
-**Response Schema:** Results formatted as *QueryResults* in BESAPI.xsd.
+**Response Schema:** BES.xsd.
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}/computers", "GET", "Lists the computers that are relevant for the baseline with ID {id}." %}
-**Request:** Complete XML for the object in the body of the request. You can specify up to 4 keys when invoking the API:
-- *filter=value* to filter the results based on the string specified as value.
-- *output=json* to request to generate a result in JSON format. If not specified, the result will be in XML format.
-- *stats=1* to display the total number of results and the number of agents that responded.
-- *start=x, count=y* to display y results starting from result number x.
+{% restapi "/api/baseline/{site type}/{site name}/{id}", "DELETE", "Deletes a baseline with the specified {id}." %}
+**Request:** URL is all that is required
 
-**Request Schema:** BES.xsd
-
-**Response:** JSON or XML query results.
-
-**Response Schema:** Results formatted as *QueryResults* in BESAPI.xsd.
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}", "DELETE", "Deletes a baseline with ID {id}." %}
-**Request:** Complete XML for the object in the body of the request. You can specify up to 4 keys when invoking the API:
-- *filter=value* to filter the results based on the string specified as value.
-- *output=json* to request to generate a result in JSON format. If not specified, the result will be in XML format.
-- *stats=1* to display the total number of results and the number of agents that responded.
-- *start=x, count=y* to display y results starting from result number x.
+{% restapi "/api/baseline/{site type}/{site name}/{id}/computers", "GET", "Lists the computers that are relevant for the baseline with the specified {id}." %}
+**Request:** URL is all that is required
 
-**Request Schema:** BES.xsd
+**Response:** The list of XML representations of the computers that are relevant for the baseline with the specified {id}.
 
-**Response:** JSON or XML query results.
-
-**Response Schema:** Results formatted as *QueryResults* in BESAPI.xsd.
+**Response Schema:** BESAPI.xsd.
 {% endrestapi %}
 
-**Note:**
-1. If you are using the REST API, be aware that only the operator issuing the query can see its results.
-2. The BigFix Query feature does not support requests that require the inspector context.
+{% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "GET", "Responds with a synchronized version of the baseline with the specified {id}." %}
+**Request:** URL is all that is required
 
-## Syncing out-of-sync baselines
+**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the `SyncStatus` attribute is set to `Synchronized` in all the baseline's components. the suynchronized baseline XML representation can be then used with the POST method to update the original copy of the baseline stored in the database. If the request fails for any reason, no baseline component is syncronized and the value of the SyncStatus attribute is not updated.
 
-If you target your query by group, ensure to specify the *SiteName*.
-This is an example for a group named manual created by a master operator:
+**Response Schema:** BES.xsd.
+{% endrestapi %}
 
-```xml
-<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-  <ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
-  <ApplicabilityRelevance>true</ApplicabilityRelevance>
-  <QueryText>names of processes</QueryText>
-    <Target>
-      <ComputerGroup>
-        <Name>manual</Name>
-        <SiteName>ActionSite</SiteName>
-      </ComputerGroup>
-    </Target>
-  </ClientQuery>
-</BESAPI>
-```
+{% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "POST", "Ovewrites the baseline definition in the database with the synchronized version." %}
+**Request:** Complete XML representation of the synchronized baseline obtained running the GET method against the "/api/baseline/{site type}/{site name}/{id}/sync" resource.
 
-By default, the highest number of targets for each group is 100.
+**Request Schema:** BES.xsd.
 
-You can change this value by editing the **_Enterprise Server_BigFix Query_MaxTargetsForGroups** computer setting.
+**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the SyncStatus attribute is set to Synchronized in all the baseline's components. If the request fails for any reason, no baseline component is syncronized and the value of the SyncStatus attribute is not updated.
+ If the request fails for any reason, no baseline component is syncronized, the value of the SyncStatus attribute is not updated and an HTTP 400 or HTTP 500 response is returned.
 
-This is how the **_Enterprise Server_BigFix Query_MaxTargetsForGroups** settings works:
-- If the number of targets in a group exceeds the value of **_Enterprise Server_BigFix Query_MaxTargetsForGroups**, the BigFix Query request is sent to all the clients and each client determines whether or not it is a member of the targeted group.
-- If the number of targets does not exceed the value of **_Enterprise Server_BigFix Query_MaxTargetsForGroups**, the BigFix server determines which clients are members of the targeted group and the BigFix Query request is sent only to those clients.
-- If the list of specified groups contains at least one automatic computer group or one client-evaluated static computer group, this settings is ignored and the BigFix Query request is sent to all the clients. Each client determines whether or not it is a member of the targeted group.
+ **Response Schema:** BESAPI.xsd.
+{% endrestapi %}
+
+## Components manipulation
+You can manupulate components or component groups defined in baseline by: 
+1. Getting the XML representation of the baseline using the GET method.
+2. Editing the content of the XML file to modify the baseline definition.
+3. Updating the existing baseline with the new definition using the PUT method of the XML file to the baseline's resource `/api/baseline/{site type}/{site name}/{id}`. 
+
+Following this procedue you can:
+- Delete components.
+- Create components or component groups. 
+- Reordering components or components groups.
+
+## Baseline synchronization
+The source of a baseline component is the Fixlet or the task that was added to the baseline as a component. 
+The following considerations apply if the REST API XML representation of the baseline component is part of the baseline XML representation that is returned by the `GET /api/baseline/{site type}/{site name}/{id}` request, assuming that {id} is the baseline identifier.
+
+It might happen that, after a baseline started to run, one or more than one source of its components are modified.
+To update the components within the processing baseline with the current definitions you must do a synchronization.
+The `SyncStatus` attribute and value, specified in the XML representation of each baseline components, identifies the synchronization status of that component.
+The `SyncStatus` value is case sensitive.
+
+
+These are the possible scenarios: 
+- The source does not exist anymore: `<SyncStatus>"source unavailable"</SyncStatus>`
+- The source exists but the applicability relevance differs: `<SyncStatus>"source fixlet differs"</SyncStatus>`
+- The source exists but it does not contain anymore an Action with the ID matching the baseline's component Action ID: `<SyncStatus>"source unavailable"</SyncStatus>`
+- The source exists and contains an Action with the ID matching the baseline's component Action ID, but either the action script or success criteria specified in the action, or both, differ: `<SyncStatus>"source fixlet differs"</SyncStatus>`
+- None of the difference listed above applies to the component and its source: `<SyncStatus>"synchronized"</SyncStatus>`
