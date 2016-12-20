@@ -106,6 +106,8 @@ No documentation exists.
 
 This Mac inspector recursively finds all applications (bundles) and executables under the /Applications directory, as well as all of those under the Applications directories of all local users of the machine.
 
+**Note:** Starting from IBM BigFix V9.5 Patch 5, this Mac inspector finds all applications bundles and executables anywhere on the local hard drives and matches an application bundle to the path of the actual executable inside the bundle. For example, both queries `Q: application "/Applications/iTunes.app"` and `Q: application "/Applications/iTunes.app/Contents/MacOS/iTunes"` now recognize correctly the iTunes application package. This version of Inspector requires OS X Spotlight service to be enabled.
+
 # application event log : event log
 
 Returns the object corresponding to the application event log, which records certain application events, such as the failure of MS SQL to access a database.
