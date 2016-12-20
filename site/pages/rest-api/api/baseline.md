@@ -89,6 +89,22 @@ This is a sample response file:
 **Response Schema:** BES.xsd.
 {% endrestapi %}
 
+{% restapi "/api/baseline/{site type}/{site name}/{id}", "PUT", "Updates the baseline with the specified {id}." %}
+**Request:** The updated XML representation of the baseline with the specified {id}.
+ Based on how you manually modify the content of the XML file, you can:
+ - Delete components by removing the components' XML elements from the baseline's XML.
+ - Create new components by creating the components' XML elements in the baseline's XML.
+ - Create new component groups by creating the components groups' XML elements in the baseline's XML.
+ - Reorder components by reordering the components' XML elements from the baseline's XML.
+ - Reorder component groups by reordering the components groups' XML elements in the baseline's XML.
+
+**Request Schema:** BES.xsd
+
+**Response:** The baseline {id}.
+
+**Response Schema:** Plain text.
+{% endrestapi %}
+
 {% restapi "/api/baseline/{site type}/{site name}/{id}", "DELETE", "Deletes a baseline with the specified {id}." %}
 **Request:** URL is all that is required
 
