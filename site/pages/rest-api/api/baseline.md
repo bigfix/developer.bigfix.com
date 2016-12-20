@@ -136,7 +136,7 @@ Following this procedue you can:
 The source of a baseline component is the Fixlet or the task that was added to the baseline as a component. 
 The following considerations apply if the REST API XML representation of the baseline component is part of the baseline XML representation that is returned by the `GET /api/baseline/{site type}/{site name}/{id}` request, assuming that {id} is the baseline identifier.
 
-It might happen that, after a baseline started to run, one or more than one source of its components are modified.
+It might happen that, after a baseline has been authored, one or more than one source of its components are modified.
 To update the components within the processing baseline with the current definitions you must do a synchronization.
 The `SyncStatus` attribute and value, specified in the XML representation of each baseline components, identifies the synchronization status of that component.
 The `SyncStatus` value is case sensitive.
