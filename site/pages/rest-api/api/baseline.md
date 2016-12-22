@@ -121,29 +121,29 @@ This is a sample response file:
 {% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "GET", "Responds with a synchronized version of the baseline with the specified {id}." %}
 **Request:** URL is all that is required
 
-**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the `SyncStatus` attribute is set to `Synchronized` in all the baseline's components. the suynchronized baseline XML representation can be then used with the POST method to update the original copy of the baseline stored in the database. If the request fails for any reason, no baseline component is syncronized and the value of the SyncStatus attribute is not updated.
+**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the `SyncStatus` attribute is set to `Synchronized` in all the baseline's components. The synchronized baseline XML representation can be then used with the POST method to update the original copy of the baseline stored in the database. If the request fails for any reason, no baseline component is synchronized and the value of the SyncStatus attribute is not updated.
 
 **Response Schema:** BES.xsd.
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "POST", "Ovewrites the baseline definition in the database with the synchronized version." %}
+{% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "POST", "Overwrites the baseline definition in the database with the synchronized version." %}
 **Request:** Complete XML representation of the synchronized baseline obtained running the GET method against the "/api/baseline/{site type}/{site name}/{id}/sync" resource.
 
 **Request Schema:** BES.xsd.
 
-**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the SyncStatus attribute is set to Synchronized in all the baseline's components. If the request fails for any reason, no baseline component is syncronized and the value of the SyncStatus attribute is not updated.
- If the request fails for any reason, no baseline component is syncronized, the value of the SyncStatus attribute is not updated and an HTTP 400 or HTTP 500 response is returned.
+**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the SyncStatus attribute is set to Synchronized in all the baseline's components. If the request fails for any reason, no baseline component is synchronized and the value of the SyncStatus attribute is not updated.
+ If the request fails for any reason, no baseline component is synchronized, the value of the SyncStatus attribute is not updated and an HTTP 400 or HTTP 500 response is returned.
 
  **Response Schema:** BESAPI.xsd.
 {% endrestapi %}
 
 ## Components manipulation
-You can manupulate components or component groups defined in baseline by: 
+You can manipulate components or component groups defined in baseline by: 
 1. Getting the XML representation of the baseline using the GET method.
 2. Editing the content of the XML file to modify the baseline definition.
 3. Updating the existing baseline with the new definition using the PUT method of the XML file to the baseline's resource `/api/baseline/{site type}/{site name}/{id}`. 
 
-Following this procedue you can:
+Following this procedure you can:
 - Delete components.
 - Create components or component groups. 
 - Reordering components or components groups.
