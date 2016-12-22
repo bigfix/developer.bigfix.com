@@ -8,7 +8,7 @@ Returns the start time of the specified application instance since the computer 
 
 # image path of &lt;application usage summary instance&gt; : string
 
-No documentation exists.
+Returns the full path to the executable file that represents the instance of the specified application.
 
 # last start time of &lt;application usage summary instance&gt; : time
 
