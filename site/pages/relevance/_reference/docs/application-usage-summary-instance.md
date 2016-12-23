@@ -10,6 +10,8 @@ Returns the start time of the specified application instance since the computer 
 
 Returns the full path to the executable file that represents the instance of the specified application.
 
+**Note:** On AIX systems this inspector always returns the error *'expression refers to nonexistent object'* because the application path is not available on that platform.
+
 # last start time of &lt;application usage summary instance&gt; : time
 
 Returns the last time this specified application was started.
