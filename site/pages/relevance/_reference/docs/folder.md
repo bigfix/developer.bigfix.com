@@ -14,6 +14,8 @@ No documentation exists.
 
 Recursively finds executables in the supplied folder, returning a list of "application" objects, which are basically  filesystem_objects.Example: applications of folder "/Users/fizzle/bin" - Returns a list of applications in the specified directory, such as /Users/fizzle/bin/p4, /Users/fizzle/bin/mylocaltool.
 
+This Inspector was replaced by another Inspector returning an *application* type. 
+
 # bundle of &lt;folder&gt; : bundle
 
 Returns a bundle from a folder (if it has one like application folders do).Example: exists (bundle of applications folder) - Typically returns `True`.
