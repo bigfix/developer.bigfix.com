@@ -54,7 +54,7 @@ Returns the named applications (bundles) and executables as filesystem objects.
 
 # application &lt;string&gt; : filesystem object
 
-No documentation exists.
+This Inspector was replaced by another Inspector returning an *application* type.
 
 # application usage &lt;string&gt; : timed( time range, integer )
 
