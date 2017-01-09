@@ -3,23 +3,26 @@ title: Baseline
 ---
 
 
-{% restapi "/api/baselines/{site type}/{site name}", "GET", "Lists the baselines belonging to the site {site name}." %}
-**Request:** URL is all that is required
- - /api/baselines/master --> returns baselines from the master action site
- - /api/baselines/custom/MyCustomSite --> returns baselines from your MyCustomSite custom site.
- - /api/baselines/external/BES Support --> returns baselines from the external site "BES Support"
- - /api/baselines/operator/Daniel --> returns baselines from Daniel's operator site
+{% restapi "/api/baselines/{site type}/{site name}", "GET", "Lists all baselines in a site." %}
+
+**Request:** URL is all that is required.
+
+ - /api/baselines/master --> Returns baselines in the master action site.
+ - /api/baselines/custom/MyCustomSite --> Returns baselines in MyCustomSite custom site.
+ - /api/baselines/external/BES Support --> Returns baselines in the external site "BES Support".
+ - /api/baselines/operator/Daniel --> Returns baselines in Daniel's operator site.
 
 **Request Schema:** BES.xsd
 
-**Response:** BESAPI description of contained baselines resources. 
+**Response:** BESAPI XML list of baselines. 
 
 **Response Schema:** BESAPI.xsd
+
 {% endrestapi %}
 
 {% restapi "/api/baseline/{site type}/{site name}", "POST", "Creates a new baseline." %}
-**Request:** Complete XML for the object in the body of the request.
-This is a sample XML file for creating a new baseline:
+
+**Request:** The body must be the complete baseline XML. This is a sample XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -56,14 +59,11 @@ This is a sample XML file for creating a new baseline:
 		</BaselineComponentCollection>
 	</Baseline>
 </BES>
-
 ```
 
 **Request Schema:** BES.xsd
 
-**Response:** An XML file returning the {id} of the newly created baseline.
-
-This is a sample response file:
+**Response:** BES API XML containing the {id} of the created baseline. This is a sample XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -79,78 +79,81 @@ This is a sample response file:
 
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}", "GET", "Retrieves from the site {site name} the baseline with the specified {id}." %}
+{% restapi "/api/baseline/{site type}/{site name}/{id}", "GET", "Shows the baseline with the specified {id}." %}
+
 **Request:** URL is all that is required
 
 **Request Schema:** BES.xsd
 
-**Response:** The XML representation of the baseline with the specified {id}.
+**Response:** The BES XML baseline representation.
 
 **Response Schema:** BES.xsd.
+
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}", "PUT", "Updates the baseline with the specified {id}." %}
-**Request:** The updated XML representation of the baseline with the specified {id}.
+{% restapi "/api/baseline/{site type}/{site name}/{id}", "PUT", "Modifies the baseline with the specified {id}." %}
+See the section below for information about manipulating baseline components.
 
- Based on how you manually modify the content of the XML file, you can:
- - Delete components by removing the components' XML elements from the baseline's XML.
- - Create new components by creating the components' XML elements in the baseline's XML.
- - Create new component groups by creating the components groups' XML elements in the baseline's XML.
- - Reorder components by reordering the components' XML elements from the baseline's XML.
- - Reorder component groups by reordering the components groups' XML elements in the baseline's XML.
+**Request:** The body must be the modified XML representation of the baseline.
 
 **Request Schema:** BES.xsd
 
 **Response:** The baseline {id}.
 
 **Response Schema:** Plain text.
+
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}", "DELETE", "Deletes a baseline with the specified {id}." %}
+{% restapi "/api/baseline/{site type}/{site name}/{id}", "DELETE", "Deletes the baseline with the specified {id}." %}
+
 **Request:** URL is all that is required
 
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}/computers", "GET", "Lists the computers that are relevant for the baseline with the specified {id}." %}
+{% restapi "/api/baseline/{site type}/{site name}/{id}/computers", "GET", "Lists all relevant computers of the baseline with  the specified {id}." %}
+
 **Request:** URL is all that is required
 
-**Response:** The list of XML representations of the computers that are relevant for the baseline with the specified {id}.
+**Response:** BESAPI XML list of computers.
 
 **Response Schema:** BESAPI.xsd.
+
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "GET", "Responds with a synchronized version of the baseline with the specified {id}." %}
+{% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "GET", "Shows a synchronized version of the baseline with the specified {id}." %}
+The request can be used to synchronize a baseline by updating a baseline with its synced version.
+
 **Request:** URL is all that is required
 
-**Response:** If the request succeeds, the response is the XML synchronized representation of the baseline and the value of the `SyncStatus` attribute is set to `Synchronized` in all the baseline's components. <!--The synchronized baseline XML representation can be then used with the PUT method to update the original copy of the baseline stored in the database.-->If the request fails for any reason, no baseline component is syncronized and the value of the `SyncStatus` attribute is not updated.
+**Response:** BES XML baseline representation. 
 
 **Response Schema:** BES.xsd.
+
 {% endrestapi %}
 
-## Components manipulation
-You can manipulate components or component groups defined in baseline by: 
-1. Getting the XML representation of the baseline using the GET method.
-2. Editing the content of the XML file to modify the baseline definition.
-3. Updating the existing baseline with the new definition using the PUT method of the XML file to the baseline's resource `/api/baseline/{site type}/{site name}/{id}`. 
+## Manipulating Baseline Components
+Baseline components, or component groups, can be manipulated in several ways using the REST API. Because a baseline's component is completely specified in the baseline's XML, you can manipulate the component by manipulating the baseline's XML. 
 
-Following this procedure you can:
-- Delete components.
-- Create components or component groups. 
-- Reordering components or components groups.
+Run these three steps to manipulate a baseline's components:
 
-## Baseline synchronization
-The source of a baseline component is the Fixlet or the task that was added to the baseline as a component. 
-The following considerations apply if the REST API XML representation of the baseline component is part of the baseline XML representation that is returned by the `GET /api/baseline/{site type}/{site name}/{id}` request, assuming that {id} is the baseline identifier.
+1. Get the baseline XML using `GET /api/baseline/{site type}/{site name}/{id}` (see above).
 
-It might happen that, after a baseline has been authored, one or more than one source of its components are modified.
-To update the components within the processing baseline with the current definitions you must do a synchronization.
-The `SyncStatus` attribute and value, specified in the XML representation of each baseline components, identifies the synchronization status of that component.
+2. Manipulate the XML.
+
+3. Update the baseline using `PUT /api/baseline/{site type}/{site name}/{id}` (see above). 
+
+Following the procedure specified above you can:
+- Create components, or component groups, by creating their XML elements in the baseline's XML. 
+- Reorder components, or components groups, by reordering their XML elements in the baseline's XML.
+- Delete components, or components groups, by deleting their XML elements in the baseline's XML.
+
+## Baseline Components Synchronization Status
+A baseline component is created from a Fixlet or a task and one of its actions. The baseline component's source is made by that Fixlet or task and the selected action. If the source is modified, for example, the Fixlet is updated or the selected action is deleted, the component is not automatically updated. This is why baseline components can become out-of-sync with their sources.
+
+You can see if a baseline component is synchronized with its source by looking at the baseline XML returned by the REST API. Each component XML element has a SyncStatus attribute. These are its possible values:
+- `<SyncStatus>"synchronized"</SyncStatus>` - The component is synchronized.
+- `<SyncStatus>"source fixlet differs"</SyncStatus>` - Component is not synchronized because it differs from the source.
+- `<SyncStatus>"source fixlet differs (source action has been deleted)"</SyncStatus>` - Component is not synchronized because the source's action used to create the component no longer exists.
+- `<SyncStatus>"source unavailable"</SyncStatus>` - Component is not synchronized because the source does not exist anymore.
+
 The `SyncStatus` value is case sensitive.
-
-
-These are the possible scenarios: 
-- The source does not exist anymore: `<SyncStatus>"source unavailable"</SyncStatus>`
-- The source exists but the applicability relevance differs: `<SyncStatus>"source fixlet differs"</SyncStatus>`
-- The source exists but it does not contain anymore an Action with the ID matching the baseline's component Action ID: `<SyncStatus>"source unavailable (source action has been deleted)"</SyncStatus>`
-- The source exists and contains an Action with the ID matching the baseline's component Action ID, but either the action script or success criteria specified in the action, or both, differ: `<SyncStatus>"source fixlet differs"</SyncStatus>`
-- None of the difference listed above applies to the component and its source: `<SyncStatus>"synchronized"</SyncStatus>`
