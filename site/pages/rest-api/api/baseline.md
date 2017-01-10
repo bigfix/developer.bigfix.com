@@ -151,9 +151,9 @@ Following the procedure specified above you can:
 A baseline component is created from a Fixlet or a task and one of its actions. The baseline component's source is made by that Fixlet or task and the selected action. If the source is modified, for example, the Fixlet is updated or the selected action is deleted, the component is not automatically updated. This is why baseline components can become out-of-sync with their sources.
 
 You can see if a baseline component is synchronized with its source by looking at the baseline XML returned by the REST API. Each component XML element has a SyncStatus attribute. These are its possible values:
-- `<SyncStatus>"synchronized"</SyncStatus>` - The component is synchronized.
-- `<SyncStatus>"source fixlet differs"</SyncStatus>` - Component is not synchronized because it differs from the source.
-- `<SyncStatus>"source fixlet differs (source action has been deleted)"</SyncStatus>` - Component is not synchronized because the source's action used to create the component no longer exists.
-- `<SyncStatus>"source unavailable"</SyncStatus>` - Component is not synchronized because the source does not exist anymore.
+- `SyncStatus="synchronized"` - The component is synchronized.
+- `SyncStatus="source fixlet differs"` - The component is not synchronized because it differs from the source.
+- `SyncStatus="source fixlet differs (source action has been deleted)"` - The component is not synchronized because the source's action used to create the component no longer exists.
+- `SyncStatus="source unavailable"` - The component is not synchronized because the source does not exist anymore.
 
 The `SyncStatus` value is case sensitive.
