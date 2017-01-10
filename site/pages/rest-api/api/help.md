@@ -2,11 +2,11 @@
 title: RESTAPI Help
 ---
 
-{% restapi "help/", "GET", "Returns a list of top-level available resources." %}
+{% restapi "help", "GET", "Returns a list of top-level available resources." %}
 For example: 
 
 ```
-https://lab.bigfix.me:52311/api/help/
+https://lab.bigfix.me:52311/api/help
     /api/action
     /api/actions
     /api/admin
