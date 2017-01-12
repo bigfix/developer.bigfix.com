@@ -92,7 +92,7 @@ title: Baseline
 {% endrestapi %}
 
 {% restapi "/api/baseline/{site type}/{site name}/{id}", "PUT", "Modifies the baseline with the specified {id}." %}
-See the section below for information about manipulating baseline components.
+For more information, see the [*Manipulating Baseline Components*](#Manipulating Baseline Components) section.
 
 **Request:** The body must be the modified XML representation of the baseline.
 
@@ -136,11 +136,11 @@ Baseline components, or component groups, can be manipulated in several ways usi
 
 Run these three steps to manipulate a baseline's components:
 
-1. Get the baseline XML using `GET /api/baseline/{site type}/{site name}/{id}` (see above).
+1. Get the baseline XML using `GET /api/baseline/{site type}/{site name}/{id}` method.
 
 2. Manipulate the XML.
 
-3. Update the baseline using `PUT /api/baseline/{site type}/{site name}/{id}` (see above). 
+3. Update the baseline using `PUT /api/baseline/{site type}/{site name}/{id}` method. 
 
 Following the procedure specified above you can:
 - Create components, or component groups, by creating their XML elements in the baseline's XML. 
