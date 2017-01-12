@@ -8,7 +8,13 @@ Headers are name:value pairs, separated by a colon. This inspector returns the n
 
 # normalized date of &lt;fixlet_header&gt; : date
 
-No documentation exists.
+This inspector returns the date in the format that is displayed on the BigFix Console. This inspector applies only to Fixlets whose headers contain a date.
+
+{% qna %}
+Q: ( normalized date of header "X-Fixlet-source-release-date" of it) of fixlets of sites whose (name of  it = ("bug68508 custom site"))
+A: Thu, 06 Oct 2016 
+T: 5850
+{% endqna %}
 
 # value of &lt;fixlet_header&gt; : string
 
