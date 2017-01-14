@@ -20,7 +20,7 @@ title: Baseline
 
 {% endrestapi %}
 
-{% restapi "/api/baseline/{site type}/{site name}", "POST", "Creates a new baseline." %}
+{% restapi "/api/baseline/{site type}/{site name}", "POST", "Creates a baseline." %}
 
 **Request:** The body must be the complete baseline XML. This is a sample XML:
 
@@ -92,7 +92,7 @@ title: Baseline
 {% endrestapi %}
 
 {% restapi "/api/baseline/{site type}/{site name}/{id}", "PUT", "Modifies the baseline with the specified {id}." %}
-For more information, see the [*Manipulating Baseline Components*](#Manipulating Baseline Components) section.
+For more information, see section *Manipulating Baseline Components*.
 
 **Request:** The body must be the modified XML representation of the baseline.
 
@@ -121,7 +121,10 @@ For more information, see the [*Manipulating Baseline Components*](#Manipulating
 {% endrestapi %}
 
 {% restapi "/api/baseline/{site type}/{site name}/{id}/sync", "GET", "Shows a synchronized version of the baseline with the specified {id}." %}
-The request can be used to synchronize a baseline by updating a baseline with its synced version.
+You can use the above request to synchronize a baseline as follows:
+
+1. Retrieve and store a baseline's synchronized version using the above request.
+2. Replace the baseline with its synchronized version using a `PUT /api/baseline/{site type}/{site name}/{id}` request.
 
 **Request:** URL is all that is required
 
@@ -132,28 +135,25 @@ The request can be used to synchronize a baseline by updating a baseline with it
 {% endrestapi %}
 
 ## Manipulating Baseline Components
-Baseline components, or component groups, can be manipulated in several ways using the REST API. Because a baseline's component is completely specified in the baseline's XML, you can manipulate the component by manipulating the baseline's XML. 
+Baseline components, or component groups, can be manipulated in several ways using the REST API. Because a baseline's components are specified in the baseline's XML, you can manipulate the components by manipulating the XML. 
 
-Run these three steps to manipulate a baseline's components:
+Run these steps to manipulate a baseline's components:
 
-1. Get the baseline XML using `GET /api/baseline/{site type}/{site name}/{id}` method.
-
+1. Get the baseline XML using `GET /api/baseline/{site type}/{site name}/{id}` request.
 2. Manipulate the XML.
+3. Update the baseline using `PUT /api/baseline/{site type}/{site name}/{id}` request. 
 
-3. Update the baseline using `PUT /api/baseline/{site type}/{site name}/{id}` method. 
+Following the steps listed above you can:
+- Create components, or component groups, by creating their elements in the baseline's XML. 
+- Reorder components, or components groups, by reordering their elements in the baseline's XML.
+- Delete components, or components groups, by deleting their elements in the baseline's XML.
 
-Following the procedure specified above you can:
-- Create components, or component groups, by creating their XML elements in the baseline's XML. 
-- Reorder components, or components groups, by reordering their XML elements in the baseline's XML.
-- Delete components, or components groups, by deleting their XML elements in the baseline's XML.
+## Baseline Component Synchronization Status
+A baseline component is created from a Fixlet or a task and one of its actions. The Fixlet or task and the selected action are recorded as the component's source. If the source is modified, the component is not automatically updated. For example, if a source Fixlet is modified, or a source action is deleted, the corresponding component is not automatically updated. This is why components become out-of-sync.
 
-## Baseline Components Synchronization Status
-A baseline component is created from a Fixlet or a task and one of its actions. The baseline component's source is made by that Fixlet or task and the selected action. If the source is modified, for example, the Fixlet is updated or the selected action is deleted, the component is not automatically updated. This is why baseline components can become out-of-sync with their sources.
-
-You can see if a baseline component is synchronized with its source by looking at the baseline XML returned by the REST API. Each component XML element has a SyncStatus attribute. These are its possible values:
+You can determine if a component is out-of-sync by examining its XML element in the baseline XML. Each component's XML element has a `SyncStatus` attribute that describes the component's synchronization status. The possible values of this attribute are defined below:
 - `SyncStatus="synchronized"` - The component is synchronized.
 - `SyncStatus="source fixlet differs"` - The component is not synchronized because it differs from the source.
 - `SyncStatus="source fixlet differs (source action has been deleted)"` - The component is not synchronized because the source's action used to create the component no longer exists.
-- `SyncStatus="source unavailable"` - The component is not synchronized because the source does not exist anymore.
+- `SyncStatus="source unavailable"` - The component is not synchronized because the source no longer exists.
 
-The `SyncStatus` value is case sensitive.
