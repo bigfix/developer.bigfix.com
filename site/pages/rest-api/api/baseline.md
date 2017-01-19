@@ -92,7 +92,7 @@ title: Baseline
 {% endrestapi %}
 
 {% restapi "/api/baseline/{site type}/{site name}/{id}", "PUT", "Modifies the baseline with the specified {id}." %}
-For more information, see section *Manipulating Baseline Components*.
+For more information, see the *Manipulating Baseline Components* section below.
 
 **Request:** The body must be the modified XML representation of the baseline.
 
@@ -144,16 +144,15 @@ Run these steps to manipulate a baseline's components:
 3. Update the baseline using `PUT /api/baseline/{site type}/{site name}/{id}` request. 
 
 Following the steps listed above you can:
-- Create components, or component groups, by creating their elements in the baseline's XML. 
-- Reorder components, or components groups, by reordering their elements in the baseline's XML.
-- Delete components, or components groups, by deleting their elements in the baseline's XML.
+- Create components, or component groups, by creating their elements in the baseline XML. 
+- Reorder components, or components groups, by reordering their elements in the baseline XML.
+- Delete components, or components groups, by deleting their elements in the baseline XML.
 
 ## Baseline Component Synchronization Status
 A baseline component is created from a Fixlet or a task and one of its actions. The Fixlet or task and the selected action are recorded as the component's source. If the source is modified, the component is not automatically updated. For example, if a source Fixlet is modified, or a source action is deleted, the corresponding component is not automatically updated. This is why components become out-of-sync.
 
-You can determine if a component is out-of-sync by examining its XML element in the baseline XML. Each component's XML element has a `SyncStatus` attribute that describes the component's synchronization status. The possible values of this attribute are defined below:
+You can determine if a component is out-of-sync by examining its element in the baseline XML. Each component's element has a `SyncStatus` attribute that indicates the component's synchronization status. The possible values of this attribute are defined below:
 - `SyncStatus="synchronized"` - The component is synchronized.
 - `SyncStatus="source fixlet differs"` - The component is not synchronized because it differs from the source.
 - `SyncStatus="source fixlet differs (source action has been deleted)"` - The component is not synchronized because the source's action used to create the component no longer exists.
 - `SyncStatus="source unavailable"` - The component is not synchronized because the source no longer exists.
-
