@@ -20,39 +20,69 @@ title: Baseline
 
 {% endrestapi %}
 
+
 {% restapi "/api/baseline/{site type}/{site name}", "POST", "Creates a baseline." %}
 
-**Request:** The body must be the complete baseline XML. This is a sample XML:
+**Request:** The body must be the baseline XML.
+
+Baseline components can be created directly from their source, or they can be created from a full specification in the XML.
+
+#### Creating Baseline Components Directly From Source
+To create a component directly from source, the baseline component XML needs to contain the location of the source. This is specified with the SourceSiteURL and SourceID XML attributes.
+
+
+**Selecting Source Action: **
+The component can be created with an action taken from the source. The desired action is specified with the ActionName XML attribute. If you desire to take no action from the source, do not include ActionName attribute.
+
+
+**Baseline Can Be Relevant When Component Is Relevant: **
+If you want the entire baseline to be considered relevant when the baseline component is relevant, set the IncludeInRelevance XML attribute to `true`. Otherwise set it to `false`.
+
+
+**Example: **
+Below is an example of creating a baseline with one component being created directly from a custom fixlet and its action named "Action1". Additionally, the baseline will be relevant when the component is relevant.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+    <Baseline>
+       <Title>Custom Baseline</Title>
+       <Description />
+       <Relevance>true</Relevance>
+       <BaselineComponentCollection>
+          <BaselineComponentGroup>
+             <BaselineComponent IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="40" ActionName="Action1" />
+       </BaselineComponentCollection>
+    </Baseline>
+</BES>
+```
+
+#### Creating Baseline Components From XML
+To create a component from XML, all details must be specified in the component XML. These include the details from above and the below details.
+- Component name should be defined in the Name XML attribute.
+- Action script should be defined in the ActionScript child XML element.
+- The success criteria should be defined in the SuccessCriteria child XML element.
+- The relevance should be defined in the Relevance child XML element.
+
+This creation format is the same format returned by using GET to view a baseline, or from the Console when performing a BES XML export. This can be useful when learning to properly format a baseline component in XML and using it to create a baseline.
+
+
+**Example: **
+Below is an example of creating a baseline with one component entirely specified in the XML.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Baseline>
-		<Title>CustomBaseline-iltest</Title>
-		<Description><![CDATA[&lt;enter a description of the baseline here&gt; ]]></Description>
+		<Title>Custom Baseline</Title>
+		<Description />
 		<Relevance>true</Relevance>
-		<Category></Category>
-		<Source></Source>
-		<SourceID></SourceID>
-		<SourceSeverity></SourceSeverity>
-		<CVENames></CVENames>
-		<SANSID></SANSID>
-		<MIMEField>
-			<Name>x-fixlet-modification-time</Name>
-			<Value>Mon, 19 Dec 2016 19:38:28 +0000</Value>
-		</MIMEField>
-		<Domain>BESC</Domain>
 		<BaselineComponentCollection>
 			<BaselineComponentGroup>
-				<BaselineComponent Name="CustomFixlet1" IncludeInRelevance="true" SourceSiteURL="http://SAMLRootServ-92.saml.ilwolf.sfolab.ibm.com:52311/cgi-bin/bfgather.exe/actionsite" 
-				SourceID="40" SyncStatus="synchronized" ActionName="Action1">
-					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here // fixlet 1</ActionScript>
-					<SuccessCriteria Option="OriginalRelevance"></SuccessCriteria>
-					<Relevance>true</Relevance>
-				</BaselineComponent>
-				<BaselineComponent Name="CustomFixlet0" IncludeInRelevance="true" SourceSiteURL="http://SAMLRootServ-92.saml.ilwolf.sfolab.ibm.com:52311/cgi-bin/bfgather.exe/actionsite" SourceID="39" SyncStatus="source fixlet differs" ActionName="Action1">
-					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here // fixlet 0// edit</ActionScript>
-					<SuccessCriteria Option="OriginalRelevance"></SuccessCriteria>
+				<BaselineComponent Name="CustomFixlet1" IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" 
+				SourceID="40" ActionName="Action1">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here</ActionScript>
+					<SuccessCriteria Option="OriginalRelevance" />
 					<Relevance>true</Relevance>
 				</BaselineComponent>
 			</BaselineComponentGroup>
