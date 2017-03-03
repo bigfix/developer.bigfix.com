@@ -18,7 +18,7 @@ curl -sL https://rpm.nodesource.com/setup_5.x | bash -
 yum install -y epel-release
 
 # Install all the things
-yum install -y nginx nodejs rsync gcc-c++
+yum install -y nginx nodejs rsync gcc-c++ git-all
 
 # Install and start docker
 curl -sL https://get.docker.com | bash -
