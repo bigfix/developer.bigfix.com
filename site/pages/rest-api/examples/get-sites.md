@@ -12,6 +12,6 @@ curl -X GET --user {username}:{password} https://{server}:{port}/api/sites
 # python
 ```python
 import requests
-r = requests.get('https://{server}:{port}/api/sites)
+r = requests.get('https://{server}:{port}/api/sites', auth=('{username}', '{password}'))
 print(r.text)
 ```
