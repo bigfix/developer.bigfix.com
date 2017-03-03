@@ -18,7 +18,7 @@ curl -sL https://rpm.nodesource.com/setup_6.x | bash -
 yum install -y epel-release
 
 # Install all the things
-yum install -y nginx nodejs rsync gcc-c++
+yum install -y nginx nodejs rsync gcc-c++ git-all
 
 # Use older version of npm to prevent the following bug:
 # https://github.com/npm/npm/issues/14042
