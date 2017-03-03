@@ -164,7 +164,8 @@
     },
     "highlight-bigfix-actionscript": {
       "version": "1.0.3",
-      "from": "highlight-bigfix-actionscript@>=1.0.2 <2.0.0"
+      "from": "highlight-bigfix-actionscript@1.0.3",
+      "resolved": "https://registry.npmjs.org/highlight-bigfix-actionscript/-/highlight-bigfix-actionscript-1.0.3.tgz"
     },
     "highlight.js": {
       "version": "8.9.1",
@@ -173,7 +174,8 @@
     },
     "hljs-bigfix-relevance": {
       "version": "1.0.1",
-      "from": "hljs-bigfix-relevance@>=1.0.0 <2.0.0"
+      "from": "hljs-bigfix-relevance@1.0.1",
+      "resolved": "https://registry.npmjs.org/hljs-bigfix-relevance/-/hljs-bigfix-relevance-1.0.1.tgz"
     },
     "inflight": {
       "version": "1.0.4",
@@ -286,9 +288,9 @@
       "resolved": "https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz"
     },
     "marked": {
-      "version": "0.3.5",
-      "from": "marked@>=0.3.5 <0.4.0",
-      "resolved": "https://registry.npmjs.org/marked/-/marked-0.3.5.tgz"
+      "version": "0.3.6",
+      "from": "baonhan/marked",
+      "resolved": "git://github.com/baonhan/marked.git#a502dab003b944fea17c5179c6865089c8287eeb"
     },
     "micromatch": {
       "version": "2.3.2",
@@ -311,9 +313,10 @@
       "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz"
     },
     "nan": {
-      "version": "2.1.0",
-      "from": "nan@>=2.0.2 <3.0.0",
-      "resolved": "https://registry.npmjs.org/nan/-/nan-2.1.0.tgz"
+      "version": "2.5.1",
+      "from": "nan@>=2.3.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/nan/-/nan-2.5.1.tgz",
+      "optional": true
     },
     "normalize-path": {
       "version": "2.0.0",
