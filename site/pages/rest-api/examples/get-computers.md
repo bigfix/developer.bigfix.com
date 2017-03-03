@@ -14,7 +14,7 @@ curl -X GET --user {username}:{password} https://{server}:{port}/api/computers
 
 ```python
 import requests
-r = requests.get('https://{server}:{port}/api/computers)
+r = requests.get('https://{server}:{port}/api/computers', auth=('{username}', '{password}'))
 print(r.text)
 ```
 
