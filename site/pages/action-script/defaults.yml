@@ -123,6 +123,9 @@ nav:
 
           - name: action launch preference normal-priority
             href: /action-script/reference/execution/action-launch-preference-normal-priority.html
+            
+          - name: action uses wow64 redirection
+            href: /action-script/reference/execution/action-uses-wow64-redirection.html
 
           - name: dos
             href: /action-script/reference/execution/dos.html
