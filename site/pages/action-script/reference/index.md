@@ -40,6 +40,7 @@ categories:
     commands:
       - action launch preference low-priority
       - action launch preference normal-priority
+      - action uses wow64 redirection
       - dos
       - override
       - run
