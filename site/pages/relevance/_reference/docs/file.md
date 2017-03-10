@@ -93,7 +93,7 @@ Returns all lines from the given file that contain the specified string.
 
 # line of &lt;file&gt; : file line
 
-Iterates over all the lines of the specified file. Note that the lines are truncated to 1023 characters.
+Iterates over all the lines of the specified file. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line.
 
 # line starting with &lt;string&gt; of &lt;file&gt; : file line
 
