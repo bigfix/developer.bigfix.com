@@ -164,6 +164,15 @@ You can use the above request to synchronize a baseline as follows:
 
 {% endrestapi %}
 
+## Baseline Component Synchronization Status
+A baseline component is created from a Fixlet or a task and one of its actions. The Fixlet or task and the selected action are recorded as the component's source. If the source is modified, the component is not automatically updated. For example, if a source Fixlet is modified, or a source action is deleted, the corresponding component is not automatically updated. This is why components become out-of-sync.
+
+You can determine if a component is out-of-sync by examining its element in the baseline XML. Each component's element has a `SyncStatus` attribute that indicates the component's synchronization status. The possible values of this attribute are defined below:
+- `SyncStatus="synchronized"` - The component is synchronized.
+- `SyncStatus="source fixlet differs"` - The component is not synchronized because it differs from the source.
+- `SyncStatus="source fixlet differs (source action has been deleted)"` - The component is not synchronized because the source's action used to create the component no longer exists.
+- `SyncStatus="source unavailable"` - The component is not synchronized because the source no longer exists.
+
 ## Manipulating Baseline Components
 Baseline components, or component groups, can be manipulated in several ways using the REST API. Because a baseline's components are specified in the baseline's XML, you can manipulate the components by manipulating the XML. 
 
@@ -177,12 +186,91 @@ Following the steps listed above you can:
 - Create components, or component groups, by creating their elements in the baseline XML. 
 - Reorder components, or components groups, by reordering their elements in the baseline XML.
 - Delete components, or components groups, by deleting their elements in the baseline XML.
+- Selectively synchronize components: See the section below for how to do this.
 
-## Baseline Component Synchronization Status
-A baseline component is created from a Fixlet or a task and one of its actions. The Fixlet or task and the selected action are recorded as the component's source. If the source is modified, the component is not automatically updated. For example, if a source Fixlet is modified, or a source action is deleted, the corresponding component is not automatically updated. This is why components become out-of-sync.
+### Selectively Synchronizing Baseline Components
+It is possible for you to synchronize all of a baseline's components using the two step process described for the request `GET /api/baseline/{site type}/{site name}/{id}/sync`.
 
-You can determine if a component is out-of-sync by examining its element in the baseline XML. Each component's element has a `SyncStatus` attribute that indicates the component's synchronization status. The possible values of this attribute are defined below:
-- `SyncStatus="synchronized"` - The component is synchronized.
-- `SyncStatus="source fixlet differs"` - The component is not synchronized because it differs from the source.
-- `SyncStatus="source fixlet differs (source action has been deleted)"` - The component is not synchronized because the source's action used to create the component no longer exists.
-- `SyncStatus="source unavailable"` - The component is not synchronized because the source no longer exists.
+However, it is also possible to selectively synchronize only some components. You can do this by modifying their elements to have the same format as when creating a component from source. This format is described in the *Creating Baseline Components Directly From Source* section for the request `POST /api/baseline/{site type}/{site name}`.
+
+Specifically, to get this format, you will need to manipulate the XML by manipulating each BaselineComponent XML element that corresponds to a component that you want synchronize. The manipulation is described as follows:
+- Delete the Name XML attribute.
+- Delete all the children XML elements, making sure that no ActionScript, Relevance, SuccessCriteria, or Delay child elements exist.
+
+#### Example
+Let's say that you want to synchronize only the first component of the below baseline:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Baseline>
+		<Title>Custom Baseline</Title>
+		<Description />
+		<Relevance>true</Relevance>
+		<BaselineComponentCollection>
+			<BaselineComponentGroup>
+				<BaselineComponent Name="CustomFixlet1" IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="40" ActionName="Action1" SyncStatus="source fixlet differs">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Unsynchronized action script</ActionScript>
+					<SuccessCriteria Option="CustomRelevance">"unsynchronized custom relevance"</SuccessCriteria>
+					<Relevance>"unsynchronized relevance"</Relevance>
+				</BaselineComponent>
+				<BaselineComponent Name="CustomFixlet2" IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="41" ActionName="Action1" SyncStatus="source fixlet differs">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Unsynchronized action script</ActionScript>
+					<SuccessCriteria Option="OriginalRelevance" />
+					<Relevance>true</Relevance>
+				</BaselineComponent>
+			</BaselineComponentGroup>
+		</BaselineComponentCollection>
+	</Baseline>
+</BES>
+```
+
+You would accomplish the synchronization by first manipulating the above XML to produce the below XML, and then updating the baseline by performing the PUT request using the below XML:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Baseline>
+		<Title>Custom Baseline</Title>
+		<Description />
+		<Relevance>true</Relevance>
+		<BaselineComponentCollection>
+			<BaselineComponentGroup>
+				<BaselineComponent IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="40" ActionName="Action1" SyncStatus="source fixlet differs" />
+				<BaselineComponent Name="CustomFixlet2" IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="41" ActionName="Action1" SyncStatus="source fixlet differs">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Unsynchronized action script</ActionScript>
+					<SuccessCriteria Option="OriginalRelevance" />
+					<Relevance>true</Relevance>
+				</BaselineComponent>
+			</BaselineComponentGroup>
+		</BaselineComponentCollection>
+	</Baseline>
+</BES>
+```
+
+After the baseline is synchronized, showing it using GET request should return the below XML, which has the first component synchronized:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Baseline>
+		<Title>Custom Baseline</Title>
+		<Description />
+		<Relevance>true</Relevance>
+		<BaselineComponentCollection>
+			<BaselineComponentGroup>
+				<BaselineComponent Name="CustomFixlet1" IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="40" ActionName="Action1" SyncStatus="synchronized">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Synchronized action script</ActionScript>
+					<SuccessCriteria Option="CustomRelevance">"synchronized custom relevance"</SuccessCriteria>
+					<Relevance>"synchronized relevance"</Relevance>
+				</BaselineComponent>
+				<BaselineComponent Name="CustomFixlet2" IncludeInRelevance="true" SourceSiteURL="http://{root-server}:52311/cgi-bin/bfgather.exe/actionsite" SourceID="41" ActionName="Action1" SyncStatus="source fixlet differs">
+					<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Unsynchronized action script</ActionScript>
+					<SuccessCriteria Option="OriginalRelevance" />
+					<Relevance>true</Relevance>
+				</BaselineComponent>
+			</BaselineComponentGroup>
+		</BaselineComponentCollection>
+	</Baseline>
+</BES>
+```
