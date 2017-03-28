@@ -42,6 +42,10 @@ No documentation exists.
 
 No documentation exists.
 
+# symlink &lt;binary_string&gt; of &lt;encoding&gt; : symlink
+
+No documentation exists.
+
 # symlink &lt;string&gt; of &lt;encoding&gt; : symlink
 
 No documentation exists.

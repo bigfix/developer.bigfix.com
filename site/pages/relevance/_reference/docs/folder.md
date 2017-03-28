@@ -14,7 +14,15 @@ No documentation exists.
 
 Recursively finds executables in the supplied folder, returning a list of "application" objects, which are basically  filesystem_objects.Example: applications of folder "/Users/fizzle/bin" - Returns a list of applications in the specified directory, such as /Users/fizzle/bin/p4, /Users/fizzle/bin/mylocaltool.
 
-This Inspector was replaced by another Inspector returning an *application* type. 
+This Inspector was replaced by another Inspector returning an *application* type.
+
+# binary named file of &lt;folder&gt; : file
+
+No documentation exists.
+
+# binary named folder of &lt;folder&gt; : folder
+
+No documentation exists.
 
 # bundle of &lt;folder&gt; : bundle
 
@@ -55,6 +63,10 @@ Returns the FIFO file (named pipe) with the given name in the specified folder.
 # fifo file of &lt;folder&gt; : fifo file
 
 Returns the list of FIFO file in the given folder.
+
+# file &lt;binary_string&gt; of &lt;folder&gt; : file
+
+No documentation exists.
 
 # file &lt;string&gt; of &lt;folder&gt; : file
 
@@ -124,6 +136,10 @@ Returns a filesystem object with the given relative item name from the specified
 
 Returns the file with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.Example: relative file "Safari.app/Contents/MacOS/Safari" of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
 
+# relative folder &lt;binary_string&gt; of &lt;folder&gt; : folder
+
+No documentation exists.
+
 # relative folder &lt;string&gt; of &lt;folder&gt; : folder
 
 Returns the folder with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.
@@ -159,6 +175,18 @@ Returns the socket file with the given name in the specified folder.
 # socket file of &lt;folder&gt; : socket file
 
 Returns the socket file(s) in the specified folder.
+
+# string named file of &lt;folder&gt; : file
+
+No documentation exists.
+
+# string named folder of &lt;folder&gt; : folder
+
+No documentation exists.
+
+# symlink &lt;binary_string&gt; of &lt;folder&gt; : symlink
+
+No documentation exists.
 
 # symlink &lt;string&gt; of &lt;folder&gt; : symlink
 

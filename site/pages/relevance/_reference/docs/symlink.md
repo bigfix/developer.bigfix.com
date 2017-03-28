@@ -94,6 +94,10 @@ Returns `True` if the pathname pointed to by the specified symlink is available.
 
 Returns the pathname that the symlink points to.
 
+# &lt;symlink&gt; as binary_string : binary_string
+
+No documentation exists.
+
 # &lt;symlink&gt; as device file : device file
 
 Casts a symlink type as a device file type.

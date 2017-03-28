@@ -5532,6 +5532,14 @@
         ]
       }
     },
+    "bes ldap directory server": {
+      "name": "bes ldap directory server",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
     "json key": {
       "name": "json key",
       "availability": {
@@ -5659,14 +5667,6 @@
           "Solaris",
           "Ubuntu",
           "Windows"
-        ]
-      }
-    },
-    "bes ldap directory server": {
-      "name": "bes ldap directory server",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
         ]
       }
     },
@@ -6014,6 +6014,14 @@
         ]
       }
     },
+    "bes webui": {
+      "name": "bes webui",
+      "availability": {
+        "9.5.3.211": [
+          "Session"
+        ]
+      }
+    },
     "binary_string": {
       "name": "binary_string",
       "availability": {
@@ -6046,18 +6054,44 @@
         ]
       }
     },
-    "bes webui": {
-      "name": "bes webui",
+    "binary position": {
+      "name": "binary position",
+      "parent": "integer",
       "availability": {
-        "9.5.3.211": [
-          "Session"
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "binary_substring": {
+      "name": "binary_substring",
+      "parent": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
     "encoding": {
       "name": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -6072,7 +6106,7 @@
     "wifi network": {
       "name": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -6081,7 +6115,7 @@
     "agent interface": {
       "name": "agent interface",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -6089,7 +6123,7 @@
     "agent interface capability": {
       "name": "agent interface capability",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -77960,7 +77994,7 @@
         "9.5.3.211": [
           "Mac"
         ],
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Debian",
           "Red Hat",
           "SUSE",
@@ -85637,6 +85671,9 @@
           "SUSE",
           "Solaris",
           "Ubuntu"
+        ],
+        "9.5.5.193": [
+          "Mac"
         ]
       }
     },
@@ -92592,6 +92629,227 @@
         ]
       }
     },
+    "day_of_week constraint of <bes action> : day of week": {
+      "key": "day_of_week constraint of <bes action> : day of week",
+      "type": "property",
+      "resultType": "day of week",
+      "singularPhrase": "day_of_week constraint",
+      "pluralPhrase": "day_of_week constraints",
+      "directObjectType": "bes action",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "secure parameter flag of <bes action> : boolean": {
+      "key": "secure parameter flag of <bes action> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "secure parameter flag",
+      "pluralPhrase": "secure parameter flags",
+      "directObjectType": "bes action",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "parent relevance of <bes fixlet> : string": {
+      "key": "parent relevance of <bes fixlet> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "parent relevance",
+      "pluralPhrase": "parent relevances",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "active directory of <bes ldap directory> : boolean": {
+      "key": "active directory of <bes ldap directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "active directory",
+      "pluralPhrase": "active directories",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "base distinguished name of <bes ldap directory> : string": {
+      "key": "base distinguished name of <bes ldap directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "base distinguished name",
+      "pluralPhrase": "base distinguished namse",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "global catalog of <bes ldap directory> : boolean": {
+      "key": "global catalog of <bes ldap directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "global catalog",
+      "pluralPhrase": "global catalogs",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "group filter of <bes ldap directory> : string": {
+      "key": "group filter of <bes ldap directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "group filter",
+      "pluralPhrase": "group filters",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "id of <bes ldap directory> : integer": {
+      "key": "id of <bes ldap directory> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "login user of <bes ldap directory> : string": {
+      "key": "login user of <bes ldap directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "login user",
+      "pluralPhrase": "login users",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "name of <bes ldap directory> : string": {
+      "key": "name of <bes ldap directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "server of <bes ldap directory> : bes ldap directory server": {
+      "key": "server of <bes ldap directory> : bes ldap directory server",
+      "type": "property",
+      "resultType": "bes ldap directory server",
+      "singularPhrase": "server",
+      "pluralPhrase": "servers",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "uid attribute of <bes ldap directory> : string": {
+      "key": "uid attribute of <bes ldap directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "uid attribute",
+      "pluralPhrase": "uid attributes",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "use ssl of <bes ldap directory> : boolean": {
+      "key": "use ssl of <bes ldap directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "use ssl",
+      "pluralPhrase": "use ssls",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "user filter of <bes ldap directory> : string": {
+      "key": "user filter of <bes ldap directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "user filter",
+      "pluralPhrase": "user filters",
+      "directObjectType": "bes ldap directory",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "host of <bes ldap directory server> : string": {
+      "key": "host of <bes ldap directory server> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "host",
+      "pluralPhrase": "hosts",
+      "directObjectType": "bes ldap directory server",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "port of <bes ldap directory server> : integer": {
+      "key": "port of <bes ldap directory server> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "port",
+      "pluralPhrase": "ports",
+      "directObjectType": "bes ldap directory server",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "priority of <bes ldap directory server> : integer": {
+      "key": "priority of <bes ldap directory server> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "priority",
+      "pluralPhrase": "priorities",
+      "directObjectType": "bes ldap directory server",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
     "legacy of <bes product> : boolean": {
       "key": "legacy of <bes product> : boolean",
       "type": "property",
@@ -92680,6 +92938,45 @@
         ]
       }
     },
+    "approver role of <bes user> : bes role": {
+      "key": "approver role of <bes user> : bes role",
+      "type": "property",
+      "resultType": "bes role",
+      "singularPhrase": "approver role",
+      "pluralPhrase": "approver roles",
+      "directObjectType": "bes user",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "distinguished name of <bes user> : string": {
+      "key": "distinguished name of <bes user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "distinguished name",
+      "pluralPhrase": "distinguished names",
+      "directObjectType": "bes user",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "ldap directory of <bes user> : bes ldap directory": {
+      "key": "ldap directory of <bes user> : bes ldap directory",
+      "type": "property",
+      "resultType": "bes ldap directory",
+      "singularPhrase": "ldap directory",
+      "pluralPhrase": "ldap directories",
+      "directObjectType": "bes user",
+      "availability": {
+        "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
     "padded string of <bit set> : string": {
       "key": "padded string of <bit set> : string",
       "type": "property",
@@ -92687,6 +92984,466 @@
       "singularPhrase": "padded string",
       "pluralPhrase": "padded strings",
       "directObjectType": "bit set",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json key> = <json key> : boolean": {
+      "key": "<json key> = <json key> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "json key",
+      "op": "=",
+      "rightType": "json key",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json key> as string : string": {
+      "key": "<json key> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "json key",
+      "phrase": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "name of <json key> : string": {
+      "key": "name of <json key> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "json key",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "value of <json key> : json value": {
+      "key": "value of <json key> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "value",
+      "pluralPhrase": "values",
+      "directObjectType": "json key",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json value> = <json value> : boolean": {
+      "key": "<json value> = <json value> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "json value",
+      "op": "=",
+      "rightType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json value> as boolean : boolean": {
+      "key": "<json value> as boolean : boolean",
+      "type": "cast",
+      "resultType": "boolean",
+      "argType": "json value",
+      "phrase": "boolean",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json value> as float : floating point": {
+      "key": "<json value> as float : floating point",
+      "type": "cast",
+      "resultType": "floating point",
+      "argType": "json value",
+      "phrase": "float",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json value> as integer : integer": {
+      "key": "<json value> as integer : integer",
+      "type": "cast",
+      "resultType": "integer",
+      "argType": "json value",
+      "phrase": "integer",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<json value> as string : string": {
+      "key": "<json value> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "json value",
+      "phrase": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "element <integer> of <json value> : json value": {
+      "key": "element <integer> of <json value> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "indexType": "integer",
+      "directObjectType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "element of <json value> : json value": {
+      "key": "element of <json value> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "directObjectType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key <string> of <json value> : json key": {
+      "key": "key <string> of <json value> : json key",
+      "type": "property",
+      "resultType": "json key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
+      "directObjectType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key of <json value> : json key": {
+      "key": "key of <json value> : json key",
+      "type": "property",
+      "resultType": "json key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "path <string> of <json value> : json value": {
+      "key": "path <string> of <json value> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "path",
+      "pluralPhrase": "paths",
+      "indexType": "string",
+      "directObjectType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "type of <json value> : string": {
+      "key": "type of <json value> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "type",
+      "pluralPhrase": "types",
+      "directObjectType": "json value",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "json of <string> : json value": {
+      "key": "json of <string> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "json",
+      "pluralPhrase": "jsons",
+      "directObjectType": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "md5 of <string> : string": {
+      "key": "md5 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "md5",
+      "pluralPhrase": "md5s",
+      "directObjectType": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha2_224 of <string> : string": {
+      "key": "sha2_224 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha2_224",
+      "pluralPhrase": "sha2_224s",
+      "directObjectType": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha2_256 of <string> : string": {
+      "key": "sha2_256 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha2_256",
+      "pluralPhrase": "sha2_256s",
+      "directObjectType": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha2_384 of <string> : string": {
+      "key": "sha2_384 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha2_384",
+      "pluralPhrase": "sha2_384s",
+      "directObjectType": "string",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha2_512 of <string> : string": {
+      "key": "sha2_512 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha2_512",
+      "pluralPhrase": "sha2_512s",
+      "directObjectType": "string",
       "availability": {
         "9.0.586.0": [
           "AIX",
@@ -93519,334 +94276,6 @@
         ]
       }
     },
-    "<json key> = <json key> : boolean": {
-      "key": "<json key> = <json key> : boolean",
-      "type": "binaryOp",
-      "resultType": "boolean",
-      "leftType": "json key",
-      "op": "=",
-      "rightType": "json key",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<json key> as string : string": {
-      "key": "<json key> as string : string",
-      "type": "cast",
-      "resultType": "string",
-      "argType": "json key",
-      "phrase": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "name of <json key> : string": {
-      "key": "name of <json key> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "name",
-      "pluralPhrase": "names",
-      "directObjectType": "json key",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "value of <json key> : json value": {
-      "key": "value of <json key> : json value",
-      "type": "property",
-      "resultType": "json value",
-      "singularPhrase": "value",
-      "pluralPhrase": "values",
-      "directObjectType": "json key",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<json value> = <json value> : boolean": {
-      "key": "<json value> = <json value> : boolean",
-      "type": "binaryOp",
-      "resultType": "boolean",
-      "leftType": "json value",
-      "op": "=",
-      "rightType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<json value> as boolean : boolean": {
-      "key": "<json value> as boolean : boolean",
-      "type": "cast",
-      "resultType": "boolean",
-      "argType": "json value",
-      "phrase": "boolean",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<json value> as float : floating point": {
-      "key": "<json value> as float : floating point",
-      "type": "cast",
-      "resultType": "floating point",
-      "argType": "json value",
-      "phrase": "float",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<json value> as integer : integer": {
-      "key": "<json value> as integer : integer",
-      "type": "cast",
-      "resultType": "integer",
-      "argType": "json value",
-      "phrase": "integer",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<json value> as string : string": {
-      "key": "<json value> as string : string",
-      "type": "cast",
-      "resultType": "string",
-      "argType": "json value",
-      "phrase": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "element <integer> of <json value> : json value": {
-      "key": "element <integer> of <json value> : json value",
-      "type": "property",
-      "resultType": "json value",
-      "singularPhrase": "element",
-      "pluralPhrase": "elements",
-      "indexType": "integer",
-      "directObjectType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "element of <json value> : json value": {
-      "key": "element of <json value> : json value",
-      "type": "property",
-      "resultType": "json value",
-      "singularPhrase": "element",
-      "pluralPhrase": "elements",
-      "directObjectType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "key <string> of <json value> : json key": {
-      "key": "key <string> of <json value> : json key",
-      "type": "property",
-      "resultType": "json key",
-      "singularPhrase": "key",
-      "pluralPhrase": "keys",
-      "indexType": "string",
-      "directObjectType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "key of <json value> : json key": {
-      "key": "key of <json value> : json key",
-      "type": "property",
-      "resultType": "json key",
-      "singularPhrase": "key",
-      "pluralPhrase": "keys",
-      "directObjectType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "path <string> of <json value> : json value": {
-      "key": "path <string> of <json value> : json value",
-      "type": "property",
-      "resultType": "json value",
-      "singularPhrase": "path",
-      "pluralPhrase": "paths",
-      "indexType": "string",
-      "directObjectType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "type of <json value> : string": {
-      "key": "type of <json value> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "type",
-      "pluralPhrase": "types",
-      "directObjectType": "json value",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "primary codeset of <language> : string": {
       "key": "primary codeset of <language> : string",
       "type": "property",
@@ -94553,138 +94982,6 @@
         ]
       }
     },
-    "json of <string> : json value": {
-      "key": "json of <string> : json value",
-      "type": "property",
-      "resultType": "json value",
-      "singularPhrase": "json",
-      "pluralPhrase": "jsons",
-      "directObjectType": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "md5 of <string> : string": {
-      "key": "md5 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "md5",
-      "pluralPhrase": "md5s",
-      "directObjectType": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha2_224 of <string> : string": {
-      "key": "sha2_224 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha2_224",
-      "pluralPhrase": "sha2_224s",
-      "directObjectType": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha2_256 of <string> : string": {
-      "key": "sha2_256 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha2_256",
-      "pluralPhrase": "sha2_256s",
-      "directObjectType": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha2_384 of <string> : string": {
-      "key": "sha2_384 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha2_384",
-      "pluralPhrase": "sha2_384s",
-      "directObjectType": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha2_512 of <string> : string": {
-      "key": "sha2_512 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha2_512",
-      "pluralPhrase": "sha2_512s",
-      "directObjectType": "string",
-      "availability": {
-        "9.0.586.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "id of <user> : integer": {
       "key": "id of <user> : integer",
       "type": "property",
@@ -94768,266 +95065,6 @@
           "Solaris",
           "Ubuntu",
           "Windows"
-        ]
-      }
-    },
-    "day_of_week constraint of <bes action> : day of week": {
-      "key": "day_of_week constraint of <bes action> : day of week",
-      "type": "property",
-      "resultType": "day of week",
-      "singularPhrase": "day_of_week constraint",
-      "pluralPhrase": "day_of_week constraints",
-      "directObjectType": "bes action",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "secure parameter flag of <bes action> : boolean": {
-      "key": "secure parameter flag of <bes action> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "secure parameter flag",
-      "pluralPhrase": "secure parameter flags",
-      "directObjectType": "bes action",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "parent relevance of <bes fixlet> : string": {
-      "key": "parent relevance of <bes fixlet> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "parent relevance",
-      "pluralPhrase": "parent relevances",
-      "directObjectType": "bes fixlet",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "active directory of <bes ldap directory> : boolean": {
-      "key": "active directory of <bes ldap directory> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "active directory",
-      "pluralPhrase": "active directories",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "base distinguished name of <bes ldap directory> : string": {
-      "key": "base distinguished name of <bes ldap directory> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "base distinguished name",
-      "pluralPhrase": "base distinguished namse",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "global catalog of <bes ldap directory> : boolean": {
-      "key": "global catalog of <bes ldap directory> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "global catalog",
-      "pluralPhrase": "global catalogs",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "group filter of <bes ldap directory> : string": {
-      "key": "group filter of <bes ldap directory> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "group filter",
-      "pluralPhrase": "group filters",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "id of <bes ldap directory> : integer": {
-      "key": "id of <bes ldap directory> : integer",
-      "type": "property",
-      "resultType": "integer",
-      "singularPhrase": "id",
-      "pluralPhrase": "ids",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "login user of <bes ldap directory> : string": {
-      "key": "login user of <bes ldap directory> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "login user",
-      "pluralPhrase": "login users",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "name of <bes ldap directory> : string": {
-      "key": "name of <bes ldap directory> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "name",
-      "pluralPhrase": "names",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "server of <bes ldap directory> : bes ldap directory server": {
-      "key": "server of <bes ldap directory> : bes ldap directory server",
-      "type": "property",
-      "resultType": "bes ldap directory server",
-      "singularPhrase": "server",
-      "pluralPhrase": "servers",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "uid attribute of <bes ldap directory> : string": {
-      "key": "uid attribute of <bes ldap directory> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "uid attribute",
-      "pluralPhrase": "uid attributes",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "use ssl of <bes ldap directory> : boolean": {
-      "key": "use ssl of <bes ldap directory> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "use ssl",
-      "pluralPhrase": "use ssls",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "user filter of <bes ldap directory> : string": {
-      "key": "user filter of <bes ldap directory> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "user filter",
-      "pluralPhrase": "user filters",
-      "directObjectType": "bes ldap directory",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "host of <bes ldap directory server> : string": {
-      "key": "host of <bes ldap directory server> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "host",
-      "pluralPhrase": "hosts",
-      "directObjectType": "bes ldap directory server",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "port of <bes ldap directory server> : integer": {
-      "key": "port of <bes ldap directory server> : integer",
-      "type": "property",
-      "resultType": "integer",
-      "singularPhrase": "port",
-      "pluralPhrase": "ports",
-      "directObjectType": "bes ldap directory server",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "priority of <bes ldap directory server> : integer": {
-      "key": "priority of <bes ldap directory server> : integer",
-      "type": "property",
-      "resultType": "integer",
-      "singularPhrase": "priority",
-      "pluralPhrase": "priorities",
-      "directObjectType": "bes ldap directory server",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "approver role of <bes user> : bes role": {
-      "key": "approver role of <bes user> : bes role",
-      "type": "property",
-      "resultType": "bes role",
-      "singularPhrase": "approver role",
-      "pluralPhrase": "approver roles",
-      "directObjectType": "bes user",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "distinguished name of <bes user> : string": {
-      "key": "distinguished name of <bes user> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "distinguished name",
-      "pluralPhrase": "distinguished names",
-      "directObjectType": "bes user",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
-        ]
-      }
-    },
-    "ldap directory of <bes user> : bes ldap directory": {
-      "key": "ldap directory of <bes user> : bes ldap directory",
-      "type": "property",
-      "resultType": "bes ldap directory",
-      "singularPhrase": "ldap directory",
-      "pluralPhrase": "ldap directories",
-      "directObjectType": "bes user",
-      "availability": {
-        "9.0.586.0": [
-          "Session"
         ]
       }
     },
@@ -96183,6 +96220,72 @@
         ]
       }
     },
+    "mime field <string> of <bes action> : string": {
+      "key": "mime field <string> of <bes action> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "mime field",
+      "pluralPhrase": "mime fields",
+      "indexType": "string",
+      "directObjectType": "bes action",
+      "availability": {
+        "9.1.1065.0": [
+          "Session"
+        ]
+      }
+    },
+    "mime field of <bes action> : mime field": {
+      "key": "mime field of <bes action> : mime field",
+      "type": "property",
+      "resultType": "mime field",
+      "singularPhrase": "mime field",
+      "pluralPhrase": "mime fields",
+      "directObjectType": "bes action",
+      "availability": {
+        "9.1.1065.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes computer group of <bes computer> : bes computer group": {
+      "key": "bes computer group of <bes computer> : bes computer group",
+      "type": "property",
+      "resultType": "bes computer group",
+      "singularPhrase": "bes computer group",
+      "pluralPhrase": "bes computer groups",
+      "directObjectType": "bes computer",
+      "availability": {
+        "9.1.1065.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes computer group set of <bes computer> : bes computer group set": {
+      "key": "bes computer group set of <bes computer> : bes computer group set",
+      "type": "property",
+      "resultType": "bes computer group set",
+      "singularPhrase": "bes computer group set",
+      "pluralPhrase": "bes computer group sets",
+      "directObjectType": "bes computer",
+      "availability": {
+        "9.1.1065.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated flag of <bes fixlet result> : boolean": {
+      "key": "remediated flag of <bes fixlet result> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated flag",
+      "pluralPhrase": "remediated flags",
+      "directObjectType": "bes fixlet result",
+      "availability": {
+        "9.1.1065.0": [
+          "Session"
+        ]
+      }
+    },
     "mvs count of <bes product> : integer": {
       "key": "mvs count of <bes product> : integer",
       "type": "property",
@@ -96205,130 +96308,16 @@
         ]
       }
     },
-    "manual group <string> of <client> : manual group": {
-      "key": "manual group <string> of <client> : manual group",
+    "show other action flag of <bes user> : boolean": {
+      "key": "show other action flag of <bes user> : boolean",
       "type": "property",
-      "resultType": "manual group",
-      "singularPhrase": "manual group",
-      "pluralPhrase": "manual groups",
-      "indexType": "string",
-      "directObjectType": "client",
+      "resultType": "boolean",
+      "singularPhrase": "show other action flag",
+      "pluralPhrase": "show other action flags",
+      "directObjectType": "bes user",
       "availability": {
         "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "manual group of <client> : manual group": {
-      "key": "manual group of <client> : manual group",
-      "type": "property",
-      "resultType": "manual group",
-      "singularPhrase": "manual group",
-      "pluralPhrase": "manual groups",
-      "directObjectType": "client",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha224 of <file> : string": {
-      "key": "sha224 of <file> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha224",
-      "pluralPhrase": "sha224s",
-      "directObjectType": "file",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha256 of <file> : string": {
-      "key": "sha256 of <file> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha256",
-      "pluralPhrase": "sha256s",
-      "directObjectType": "file",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha384 of <file> : string": {
-      "key": "sha384 of <file> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha384",
-      "pluralPhrase": "sha384s",
-      "directObjectType": "file",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha512 of <file> : string": {
-      "key": "sha512 of <file> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha512",
-      "pluralPhrase": "sha512s",
-      "directObjectType": "file",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
+          "Session"
         ]
       }
     },
@@ -96502,6 +96491,322 @@
           "Red Hat",
           "SUSE",
           "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha224 of <string> : string": {
+      "key": "sha224 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha224",
+      "pluralPhrase": "sha224s",
+      "directObjectType": "string",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha256 of <string> : string": {
+      "key": "sha256 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha256",
+      "pluralPhrase": "sha256s",
+      "directObjectType": "string",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha384 of <string> : string": {
+      "key": "sha384 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha384",
+      "pluralPhrase": "sha384s",
+      "directObjectType": "string",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha512 of <string> : string": {
+      "key": "sha512 of <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha512",
+      "pluralPhrase": "sha512s",
+      "directObjectType": "string",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<time of day with time zone> < <time of day with time zone> : boolean": {
+      "key": "<time of day with time zone> < <time of day with time zone> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "time of day with time zone",
+      "op": "<",
+      "rightType": "time of day with time zone",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<time of day with time zone> <= <time of day with time zone> : boolean": {
+      "key": "<time of day with time zone> <= <time of day with time zone> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "time of day with time zone",
+      "op": "<=",
+      "rightType": "time of day with time zone",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "bes computer <integer> : bes computer": {
+      "key": "bes computer <integer> : bes computer",
+      "type": "property",
+      "resultType": "bes computer",
+      "singularPhrase": "bes computer",
+      "pluralPhrase": "bes computers",
+      "indexType": "integer",
+      "availability": {
+        "9.1.1065.0": [
+          "Session"
+        ]
+      }
+    },
+    "percent decode <string> : string": {
+      "key": "percent decode <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "percent decode",
+      "pluralPhrase": "percent decodes",
+      "indexType": "string",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "percent encode <string> : string": {
+      "key": "percent encode <string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "percent encode",
+      "pluralPhrase": "percent encodes",
+      "indexType": "string",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "manual group <string> of <client> : manual group": {
+      "key": "manual group <string> of <client> : manual group",
+      "type": "property",
+      "resultType": "manual group",
+      "singularPhrase": "manual group",
+      "pluralPhrase": "manual groups",
+      "indexType": "string",
+      "directObjectType": "client",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "manual group of <client> : manual group": {
+      "key": "manual group of <client> : manual group",
+      "type": "property",
+      "resultType": "manual group",
+      "singularPhrase": "manual group",
+      "pluralPhrase": "manual groups",
+      "directObjectType": "client",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha224 of <file> : string": {
+      "key": "sha224 of <file> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha224",
+      "pluralPhrase": "sha224s",
+      "directObjectType": "file",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha256 of <file> : string": {
+      "key": "sha256 of <file> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha256",
+      "pluralPhrase": "sha256s",
+      "directObjectType": "file",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha384 of <file> : string": {
+      "key": "sha384 of <file> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha384",
+      "pluralPhrase": "sha384s",
+      "directObjectType": "file",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sha512 of <file> : string": {
+      "key": "sha512 of <file> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha512",
+      "pluralPhrase": "sha512s",
+      "directObjectType": "file",
+      "availability": {
+        "9.1.1065.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
           "Solaris",
           "Ubuntu",
           "Windows"
@@ -96826,138 +97131,6 @@
         ]
       }
     },
-    "sha224 of <string> : string": {
-      "key": "sha224 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha224",
-      "pluralPhrase": "sha224s",
-      "directObjectType": "string",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha256 of <string> : string": {
-      "key": "sha256 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha256",
-      "pluralPhrase": "sha256s",
-      "directObjectType": "string",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha384 of <string> : string": {
-      "key": "sha384 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha384",
-      "pluralPhrase": "sha384s",
-      "directObjectType": "string",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "sha512 of <string> : string": {
-      "key": "sha512 of <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha512",
-      "pluralPhrase": "sha512s",
-      "directObjectType": "string",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<time of day with time zone> < <time of day with time zone> : boolean": {
-      "key": "<time of day with time zone> < <time of day with time zone> : boolean",
-      "type": "binaryOp",
-      "resultType": "boolean",
-      "leftType": "time of day with time zone",
-      "op": "<",
-      "rightType": "time of day with time zone",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "<time of day with time zone> <= <time of day with time zone> : boolean": {
-      "key": "<time of day with time zone> <= <time of day with time zone> : boolean",
-      "type": "binaryOp",
-      "resultType": "boolean",
-      "leftType": "time of day with time zone",
-      "op": "<=",
-      "rightType": "time of day with time zone",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "ipv4 routing table : routing table": {
       "key": "ipv4 routing table : routing table",
       "type": "property",
@@ -96974,50 +97147,6 @@
         ]
       }
     },
-    "percent decode <string> : string": {
-      "key": "percent decode <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "percent decode",
-      "pluralPhrase": "percent decodes",
-      "indexType": "string",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "percent encode <string> : string": {
-      "key": "percent encode <string> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "percent encode",
-      "pluralPhrase": "percent encodes",
-      "indexType": "string",
-      "availability": {
-        "9.1.1065.0": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "routing table : routing table": {
       "key": "routing table : routing table",
       "type": "property",
@@ -97031,98 +97160,6 @@
           "Red Hat",
           "SUSE",
           "Ubuntu"
-        ]
-      }
-    },
-    "mime field <string> of <bes action> : string": {
-      "key": "mime field <string> of <bes action> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "mime field",
-      "pluralPhrase": "mime fields",
-      "indexType": "string",
-      "directObjectType": "bes action",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
-        ]
-      }
-    },
-    "mime field of <bes action> : mime field": {
-      "key": "mime field of <bes action> : mime field",
-      "type": "property",
-      "resultType": "mime field",
-      "singularPhrase": "mime field",
-      "pluralPhrase": "mime fields",
-      "directObjectType": "bes action",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
-        ]
-      }
-    },
-    "bes computer group of <bes computer> : bes computer group": {
-      "key": "bes computer group of <bes computer> : bes computer group",
-      "type": "property",
-      "resultType": "bes computer group",
-      "singularPhrase": "bes computer group",
-      "pluralPhrase": "bes computer groups",
-      "directObjectType": "bes computer",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
-        ]
-      }
-    },
-    "bes computer group set of <bes computer> : bes computer group set": {
-      "key": "bes computer group set of <bes computer> : bes computer group set",
-      "type": "property",
-      "resultType": "bes computer group set",
-      "singularPhrase": "bes computer group set",
-      "pluralPhrase": "bes computer group sets",
-      "directObjectType": "bes computer",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
-        ]
-      }
-    },
-    "remediated flag of <bes fixlet result> : boolean": {
-      "key": "remediated flag of <bes fixlet result> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "remediated flag",
-      "pluralPhrase": "remediated flags",
-      "directObjectType": "bes fixlet result",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
-        ]
-      }
-    },
-    "show other action flag of <bes user> : boolean": {
-      "key": "show other action flag of <bes user> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "show other action flag",
-      "pluralPhrase": "show other action flags",
-      "directObjectType": "bes user",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
-        ]
-      }
-    },
-    "bes computer <integer> : bes computer": {
-      "key": "bes computer <integer> : bes computer",
-      "type": "property",
-      "resultType": "bes computer",
-      "singularPhrase": "bes computer",
-      "pluralPhrase": "bes computers",
-      "indexType": "integer",
-      "availability": {
-        "9.1.1065.0": [
-          "Session"
         ]
       }
     },
@@ -98146,85 +98183,6 @@
         ]
       }
     },
-    "fxf character set of <client> : string": {
-      "key": "fxf character set of <client> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "fxf character set",
-      "pluralPhrase": "fxf character sets",
-      "directObjectType": "client",
-      "availability": {
-        "9.2.0.363": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "report character set of <client> : string": {
-      "key": "report character set of <client> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "report character set",
-      "pluralPhrase": "report character sets",
-      "directObjectType": "client",
-      "availability": {
-        "9.2.0.363": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "selinux context of <process> : string": {
-      "key": "selinux context of <process> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "selinux context",
-      "pluralPhrase": "selinux contexts",
-      "directObjectType": "process",
-      "availability": {
-        "9.2.0.363": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Ubuntu"
-        ]
-      }
-    },
-    "sha256 of <setting> : string": {
-      "key": "sha256 of <setting> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "sha256",
-      "pluralPhrase": "sha256s",
-      "directObjectType": "setting",
-      "availability": {
-        "9.2.0.363": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "can create actions flag of <bes user> : boolean": {
       "key": "can create actions flag of <bes user> : boolean",
       "type": "property",
@@ -98339,6 +98297,85 @@
       "availability": {
         "9.2.0.363": [
           "Session"
+        ]
+      }
+    },
+    "fxf character set of <client> : string": {
+      "key": "fxf character set of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "fxf character set",
+      "pluralPhrase": "fxf character sets",
+      "directObjectType": "client",
+      "availability": {
+        "9.2.0.363": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "report character set of <client> : string": {
+      "key": "report character set of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "report character set",
+      "pluralPhrase": "report character sets",
+      "directObjectType": "client",
+      "availability": {
+        "9.2.0.363": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "selinux context of <process> : string": {
+      "key": "selinux context of <process> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "selinux context",
+      "pluralPhrase": "selinux contexts",
+      "directObjectType": "process",
+      "availability": {
+        "9.2.0.363": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu"
+        ]
+      }
+    },
+    "sha256 of <setting> : string": {
+      "key": "sha256 of <setting> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sha256",
+      "pluralPhrase": "sha256s",
+      "directObjectType": "setting",
+      "availability": {
+        "9.2.0.363": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -102712,6 +102749,19 @@
         ]
       }
     },
+    "fxf character set of <bes server> : string": {
+      "key": "fxf character set of <bes server> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "fxf character set",
+      "pluralPhrase": "fxf character sets",
+      "directObjectType": "bes server",
+      "availability": {
+        "9.5.0.311": [
+          "Session"
+        ]
+      }
+    },
     "version of <cryptography> : string": {
       "key": "version of <cryptography> : string",
       "type": "property",
@@ -102748,41 +102798,6 @@
           "SUSE",
           "Session",
           "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "hexadecimal <string> of <smbios structure> : string": {
-      "key": "hexadecimal <string> of <smbios structure> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "hexadecimal",
-      "pluralPhrase": "hexadecimals",
-      "indexType": "string",
-      "directObjectType": "smbios structure",
-      "availability": {
-        "9.5.0.311": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "hexadecimal of <smbios value> : string": {
-      "key": "hexadecimal of <smbios value> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "hexadecimal",
-      "pluralPhrase": "hexadecimals",
-      "directObjectType": "smbios value",
-      "availability": {
-        "9.5.0.311": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
           "Ubuntu",
           "Windows"
         ]
@@ -102954,6 +102969,41 @@
         ]
       }
     },
+    "hexadecimal <string> of <smbios structure> : string": {
+      "key": "hexadecimal <string> of <smbios structure> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "hexadecimal",
+      "pluralPhrase": "hexadecimals",
+      "indexType": "string",
+      "directObjectType": "smbios structure",
+      "availability": {
+        "9.5.0.311": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "hexadecimal of <smbios value> : string": {
+      "key": "hexadecimal of <smbios value> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "hexadecimal",
+      "pluralPhrase": "hexadecimals",
+      "directObjectType": "smbios value",
+      "availability": {
+        "9.5.0.311": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "sqlite version : version": {
       "key": "sqlite version : version",
       "type": "property",
@@ -102970,19 +103020,6 @@
           "Solaris",
           "Ubuntu",
           "Windows"
-        ]
-      }
-    },
-    "fxf character set of <bes server> : string": {
-      "key": "fxf character set of <bes server> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "fxf character set",
-      "pluralPhrase": "fxf character sets",
-      "directObjectType": "bes server",
-      "availability": {
-        "9.5.0.311": [
-          "Session"
         ]
       }
     },
@@ -103094,57 +103131,6 @@
         ]
       }
     },
-    "reserved of <dmi bios_language_information> : binary_string": {
-      "key": "reserved of <dmi bios_language_information> : binary_string",
-      "type": "property",
-      "resultType": "binary_string",
-      "singularPhrase": "reserved",
-      "pluralPhrase": "reserveds",
-      "directObjectType": "dmi bios_language_information",
-      "availability": {
-        "9.5.3.211": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "reserved of <dmi system_boot_information> : binary_string": {
-      "key": "reserved of <dmi system_boot_information> : binary_string",
-      "type": "property",
-      "resultType": "binary_string",
-      "singularPhrase": "reserved",
-      "pluralPhrase": "reserveds",
-      "directObjectType": "dmi system_boot_information",
-      "availability": {
-        "9.5.3.211": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "uuid of <dmi system_information> : binary_string": {
-      "key": "uuid of <dmi system_information> : binary_string",
-      "type": "property",
-      "resultType": "binary_string",
-      "singularPhrase": "uuid",
-      "pluralPhrase": "uuids",
-      "directObjectType": "dmi system_information",
-      "availability": {
-        "9.5.3.211": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "random integer of <integer> : integer": {
       "key": "random integer of <integer> : integer",
       "type": "property",
@@ -103162,22 +103148,9 @@
           "Solaris",
           "Ubuntu",
           "Windows"
-        ]
-      }
-    },
-    "<smbios value> as hexadecimal : string": {
-      "key": "<smbios value> as hexadecimal : string",
-      "type": "cast",
-      "resultType": "string",
-      "argType": "smbios value",
-      "phrase": "hexadecimal",
-      "availability": {
-        "9.5.3.211": [
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Ubuntu",
-          "Windows"
+        ],
+        "9.5.5.193": [
+          "Mac"
         ]
       }
     },
@@ -103306,62 +103279,6 @@
         ]
       }
     },
-    "random floating point : floating point": {
-      "key": "random floating point : floating point",
-      "type": "property",
-      "resultType": "floating point",
-      "singularPhrase": "random floating point",
-      "pluralPhrase": "random floating points",
-      "availability": {
-        "9.5.3.211": [
-          "AIX",
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "random integer : integer": {
-      "key": "random integer : integer",
-      "type": "property",
-      "resultType": "integer",
-      "singularPhrase": "random integer",
-      "pluralPhrase": "random integers",
-      "availability": {
-        "9.5.3.211": [
-          "AIX",
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Session",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "webui service : service": {
-      "key": "webui service : service",
-      "type": "property",
-      "resultType": "service",
-      "singularPhrase": "webui service",
-      "pluralPhrase": "webui services",
-      "availability": {
-        "9.5.3.211": [
-          "AIX",
-          "Debian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "bes current wruser : string": {
       "key": "bes current wruser : string",
       "type": "property",
@@ -103383,6 +103300,135 @@
       "availability": {
         "9.5.3.211": [
           "Session"
+        ]
+      }
+    },
+    "random floating point : floating point": {
+      "key": "random floating point : floating point",
+      "type": "property",
+      "resultType": "floating point",
+      "singularPhrase": "random floating point",
+      "pluralPhrase": "random floating points",
+      "availability": {
+        "9.5.3.211": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "random integer : integer": {
+      "key": "random integer : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "random integer",
+      "pluralPhrase": "random integers",
+      "availability": {
+        "9.5.3.211": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "reserved of <dmi bios_language_information> : binary_string": {
+      "key": "reserved of <dmi bios_language_information> : binary_string",
+      "type": "property",
+      "resultType": "binary_string",
+      "singularPhrase": "reserved",
+      "pluralPhrase": "reserveds",
+      "directObjectType": "dmi bios_language_information",
+      "availability": {
+        "9.5.3.211": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "reserved of <dmi system_boot_information> : binary_string": {
+      "key": "reserved of <dmi system_boot_information> : binary_string",
+      "type": "property",
+      "resultType": "binary_string",
+      "singularPhrase": "reserved",
+      "pluralPhrase": "reserveds",
+      "directObjectType": "dmi system_boot_information",
+      "availability": {
+        "9.5.3.211": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "uuid of <dmi system_information> : binary_string": {
+      "key": "uuid of <dmi system_information> : binary_string",
+      "type": "property",
+      "resultType": "binary_string",
+      "singularPhrase": "uuid",
+      "pluralPhrase": "uuids",
+      "directObjectType": "dmi system_information",
+      "availability": {
+        "9.5.3.211": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<smbios value> as hexadecimal : string": {
+      "key": "<smbios value> as hexadecimal : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "smbios value",
+      "phrase": "hexadecimal",
+      "availability": {
+        "9.5.3.211": [
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "webui service : service": {
+      "key": "webui service : service",
+      "type": "property",
+      "resultType": "service",
+      "singularPhrase": "webui service",
+      "pluralPhrase": "webui services",
+      "availability": {
+        "9.5.3.211": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -103465,7 +103511,7 @@
         "9.5.3.211": [
           "Mac"
         ],
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103535,6 +103581,480 @@
         ]
       }
     },
+    "stop other actions flag of <bes user> : boolean": {
+      "key": "stop other actions flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "stop other actions flag",
+      "pluralPhrase": "stop other actions flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "9.5.5.193": [
+          "Session"
+        ]
+      }
+    },
+    "following binary_string of <binary position> : binary_substring": {
+      "key": "following binary_string of <binary position> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "following binary_string",
+      "pluralPhrase": "following binary_strings",
+      "directObjectType": "binary position",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "preceding binary_string of <binary position> : binary_substring": {
+      "key": "preceding binary_string of <binary position> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "preceding binary_string",
+      "pluralPhrase": "preceding binary_strings",
+      "directObjectType": "binary position",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "binary_substring <( integer, integer )> of <binary_string> : binary_substring": {
+      "key": "binary_substring <( integer, integer )> of <binary_string> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "binary_substring",
+      "pluralPhrase": "binary_substrings",
+      "indexType": "( integer, integer )",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "binary_substring <binary_string> of <binary_string> : binary_substring": {
+      "key": "binary_substring <binary_string> of <binary_string> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "binary_substring",
+      "pluralPhrase": "binary_substrings",
+      "indexType": "binary_string",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "byte <integer> of <binary_string> : binary_substring": {
+      "key": "byte <integer> of <binary_string> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "byte",
+      "pluralPhrase": "bytes",
+      "indexType": "integer",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "byte of <binary_string> : binary_substring": {
+      "key": "byte of <binary_string> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "byte",
+      "pluralPhrase": "bytes",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "first <integer> of <binary_string> : binary_substring": {
+      "key": "first <integer> of <binary_string> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "first",
+      "pluralPhrase": "firsts",
+      "indexType": "integer",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "last <integer> of <binary_string> : binary_substring": {
+      "key": "last <integer> of <binary_string> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "last",
+      "pluralPhrase": "lasts",
+      "indexType": "integer",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "position <integer> of <binary_string> : binary position": {
+      "key": "position <integer> of <binary_string> : binary position",
+      "type": "property",
+      "resultType": "binary position",
+      "singularPhrase": "position",
+      "pluralPhrase": "positions",
+      "indexType": "integer",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "position of <binary_string> : binary position": {
+      "key": "position of <binary_string> : binary position",
+      "type": "property",
+      "resultType": "binary position",
+      "singularPhrase": "position",
+      "pluralPhrase": "positions",
+      "directObjectType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<binary_substring> as binary_substring : binary_substring": {
+      "key": "<binary_substring> as binary_substring : binary_substring",
+      "type": "cast",
+      "resultType": "binary_substring",
+      "argType": "binary_substring",
+      "phrase": "binary_substring",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<binary_substring> as string : string": {
+      "key": "<binary_substring> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "binary_substring",
+      "phrase": "string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "end of <binary_substring> : binary position": {
+      "key": "end of <binary_substring> : binary position",
+      "type": "property",
+      "resultType": "binary position",
+      "singularPhrase": "end",
+      "pluralPhrase": "ends",
+      "directObjectType": "binary_substring",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "following binary_string of <binary_substring> : binary_substring": {
+      "key": "following binary_string of <binary_substring> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "following binary_string",
+      "pluralPhrase": "following binary_strings",
+      "directObjectType": "binary_substring",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "preceding binary_string of <binary_substring> : binary_substring": {
+      "key": "preceding binary_string of <binary_substring> : binary_substring",
+      "type": "property",
+      "resultType": "binary_substring",
+      "singularPhrase": "preceding binary_string",
+      "pluralPhrase": "preceding binary_strings",
+      "directObjectType": "binary_substring",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "start of <binary_substring> : binary position": {
+      "key": "start of <binary_substring> : binary position",
+      "type": "property",
+      "resultType": "binary position",
+      "singularPhrase": "start",
+      "pluralPhrase": "starts",
+      "directObjectType": "binary_substring",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> as binary_string : binary_string": {
+      "key": "<string> as binary_string : binary_string",
+      "type": "cast",
+      "resultType": "binary_string",
+      "argType": "string",
+      "phrase": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> as fxf binary_string : binary_string": {
+      "key": "<string> as fxf binary_string : binary_string",
+      "type": "cast",
+      "resultType": "binary_string",
+      "argType": "string",
+      "phrase": "fxf binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> as local binary_string : binary_string": {
+      "key": "<string> as local binary_string : binary_string",
+      "type": "cast",
+      "resultType": "binary_string",
+      "argType": "string",
+      "phrase": "local binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> as utf16 binary_string : binary_string": {
+      "key": "<string> as utf16 binary_string : binary_string",
+      "type": "cast",
+      "resultType": "binary_string",
+      "argType": "string",
+      "phrase": "utf16 binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> as utf8 binary_string : binary_string": {
+      "key": "<string> as utf8 binary_string : binary_string",
+      "type": "cast",
+      "resultType": "binary_string",
+      "argType": "string",
+      "phrase": "utf8 binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "percent encode <binary_string> : string": {
+      "key": "percent encode <binary_string> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "percent encode",
+      "pluralPhrase": "percent encodes",
+      "indexType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "image path of <application usage summary instance> : string": {
       "key": "image path of <application usage summary instance> : string",
       "type": "property",
@@ -103543,7 +104063,7 @@
       "pluralPhrase": "image paths",
       "directObjectType": "application usage summary instance",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -103564,7 +104084,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -103584,7 +104104,7 @@
       "pluralPhrase": "download folders",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -103605,7 +104125,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -103626,7 +104146,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -103635,6 +104155,25 @@
           "Solaris",
           "Ubuntu",
           "Windows"
+        ]
+      }
+    },
+    "symlink <binary_string> of <encoding> : symlink": {
+      "key": "symlink <binary_string> of <encoding> : symlink",
+      "type": "property",
+      "resultType": "symlink",
+      "singularPhrase": "symlink",
+      "pluralPhrase": "symlinks",
+      "indexType": "binary_string",
+      "directObjectType": "encoding",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -103647,7 +104186,43 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "symlink <binary_string> of <folder> : symlink": {
+      "key": "symlink <binary_string> of <folder> : symlink",
+      "type": "property",
+      "resultType": "symlink",
+      "singularPhrase": "symlink",
+      "pluralPhrase": "symlinks",
+      "indexType": "binary_string",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
+      }
+    },
+    "<symlink> as binary_string : binary_string": {
+      "key": "<symlink> as binary_string : binary_string",
+      "type": "cast",
+      "resultType": "binary_string",
+      "argType": "symlink",
+      "phrase": "binary_string",
+      "availability": {
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -103665,7 +104240,7 @@
       "pluralPhrase": "encodings",
       "indexType": "string",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "AIX",
           "Debian",
           "Mac",
@@ -103677,16 +104252,21 @@
         ]
       }
     },
-    "stop other actions flag of <bes user> : boolean": {
-      "key": "stop other actions flag of <bes user> : boolean",
+    "symlink <binary_string> : symlink": {
+      "key": "symlink <binary_string> : symlink",
       "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "stop other actions flag",
-      "pluralPhrase": "stop other actions flags",
-      "directObjectType": "bes user",
+      "resultType": "symlink",
+      "singularPhrase": "symlink",
+      "pluralPhrase": "symlinks",
+      "indexType": "binary_string",
       "availability": {
-        "99.95.0.194": [
-          "Session"
+        "9.5.5.193": [
+          "AIX",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -103699,7 +104279,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac"
         ]
       }
@@ -103713,7 +104293,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac"
         ]
       }
@@ -103727,7 +104307,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac"
         ]
       }
@@ -103741,7 +104321,114 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "binary name of <filesystem object> : binary_string": {
+      "key": "binary name of <filesystem object> : binary_string",
+      "type": "property",
+      "resultType": "binary_string",
+      "singularPhrase": "binary name",
+      "pluralPhrase": "binary names",
+      "directObjectType": "filesystem object",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "sibling file <binary_string> of <filesystem object> : file": {
+      "key": "sibling file <binary_string> of <filesystem object> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "sibling file",
+      "pluralPhrase": "sibling files",
+      "indexType": "binary_string",
+      "directObjectType": "filesystem object",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "binary named file of <folder> : file": {
+      "key": "binary named file of <folder> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "binary named file",
+      "pluralPhrase": "binary named files",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "binary named folder of <folder> : folder": {
+      "key": "binary named folder of <folder> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "binary named folder",
+      "pluralPhrase": "binary named folders",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "file <binary_string> of <folder> : file": {
+      "key": "file <binary_string> of <folder> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "file",
+      "pluralPhrase": "files",
+      "indexType": "binary_string",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "relative folder <binary_string> of <folder> : folder": {
+      "key": "relative folder <binary_string> of <folder> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "relative folder",
+      "pluralPhrase": "relative folders",
+      "indexType": "binary_string",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "string named file of <folder> : file": {
+      "key": "string named file of <folder> : file",
+      "type": "property",
+      "resultType": "file",
+      "singularPhrase": "string named file",
+      "pluralPhrase": "string named files",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "string named folder of <folder> : folder": {
+      "key": "string named folder of <folder> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "string named folder",
+      "pluralPhrase": "string named folders",
+      "directObjectType": "folder",
+      "availability": {
+        "9.5.5.193": [
           "Mac"
         ]
       }
@@ -103754,7 +104441,7 @@
       "pluralPhrase": "current networks",
       "directObjectType": "wifi",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103768,7 +104455,7 @@
       "pluralPhrase": "enableds",
       "directObjectType": "wifi",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103782,7 +104469,7 @@
       "pluralPhrase": "visible networks",
       "directObjectType": "wifi",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103796,7 +104483,7 @@
       "pluralPhrase": "bssids",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103810,7 +104497,7 @@
       "pluralPhrase": "channel bands",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103824,7 +104511,7 @@
       "pluralPhrase": "channel numbers",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103838,7 +104525,7 @@
       "pluralPhrase": "ibsss",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103852,7 +104539,7 @@
       "pluralPhrase": "rssis",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103866,7 +104553,7 @@
       "pluralPhrase": "secureds",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103880,7 +104567,7 @@
       "pluralPhrase": "signal strengths",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
         ]
@@ -103894,9 +104581,35 @@
       "pluralPhrase": "ssids",
       "directObjectType": "wifi network",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Mac",
           "Windows"
+        ]
+      }
+    },
+    "application <binary_string> : application": {
+      "key": "application <binary_string> : application",
+      "type": "property",
+      "resultType": "application",
+      "singularPhrase": "application",
+      "pluralPhrase": "applications",
+      "indexType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
+        ]
+      }
+    },
+    "folder <binary_string> : folder": {
+      "key": "folder <binary_string> : folder",
+      "type": "property",
+      "resultType": "folder",
+      "singularPhrase": "folder",
+      "pluralPhrase": "folders",
+      "indexType": "binary_string",
+      "availability": {
+        "9.5.5.193": [
+          "Mac"
         ]
       }
     },
@@ -103909,7 +104622,7 @@
       "indexType": "string",
       "directObjectType": "agent interface",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103922,7 +104635,7 @@
       "pluralPhrase": "capabilities",
       "directObjectType": "agent interface",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103935,7 +104648,7 @@
       "pluralPhrase": "client products",
       "directObjectType": "agent interface",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103947,7 +104660,7 @@
       "argType": "agent interface capability",
       "phrase": "string",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103960,7 +104673,7 @@
       "pluralPhrase": "names",
       "directObjectType": "agent interface capability",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103973,7 +104686,7 @@
       "pluralPhrase": "states",
       "directObjectType": "agent interface capability",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -103987,7 +104700,7 @@
       "indexType": "string",
       "directObjectType": "client",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104000,7 +104713,7 @@
       "pluralPhrase": "agent interfaces",
       "directObjectType": "client",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104014,7 +104727,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104028,7 +104741,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104042,7 +104755,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104056,7 +104769,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104070,7 +104783,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }
@@ -104084,7 +104797,7 @@
       "indexType": "string",
       "directObjectType": "encoding",
       "availability": {
-        "99.95.0.194": [
+        "9.5.5.193": [
           "Windows"
         ]
       }

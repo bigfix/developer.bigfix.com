@@ -1548,6 +1548,10 @@ Returns the named global Solaris zone.
 
 Returns a &#39;time of day with time zone&#39; object from the specified string.
 
+# &lt;string&gt; as binary_string : binary_string
+
+No documentation exists.
+
 # &lt;string&gt; as boolean : boolean
 
 Returns a boolean value for the string. All possible capitalization&#39;s of "TRUE" and "FALSE" will convert successfully.
@@ -1567,6 +1571,10 @@ Casts a string as a day of the week.
 # &lt;string&gt; as floating point : floating point
 
 Converts the contents of a string into a floating point number.Example: "4.5" as floating point - Returns 4.5.
+
+# &lt;string&gt; as fxf binary_string : binary_string
+
+No documentation exists.
 
 # &lt;string&gt; as hexadecimal : string
 
@@ -1591,6 +1599,10 @@ Converts a string representations of an IPv6 address (with colons and/or dots) a
 # &lt;string&gt; as left trimmed string : string
 
 Trims the leading spaces from a string.
+
+# &lt;string&gt; as local binary_string : binary_string
+
+No documentation exists.
 
 # &lt;string&gt; as local time : time
 
@@ -1655,6 +1667,14 @@ Converts a string into a universal zoned time of day.
 # &lt;string&gt; as uppercase : string
 
 Returns an uppercase version of the string provided.
+
+# &lt;string&gt; as utf16 binary_string : binary_string
+
+No documentation exists.
+
+# &lt;string&gt; as utf8 binary_string : binary_string
+
+No documentation exists.
 
 # &lt;string&gt; as version : version
 

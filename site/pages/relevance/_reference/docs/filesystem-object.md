@@ -29,6 +29,10 @@ Returns `True` if the Archive bit is turned on for the specified file or folder 
 
 The date of the last backup of the specified filesystem object (such as a file or folder). This corresponds to what is shown in the "Get Info" box for this object.
 
+# binary name of &lt;filesystem object&gt; : binary_string
+
+No documentation exists.
+
 # bundle version of &lt;filesystem object&gt; : version
 
 Returns the version of the filesystem object corresponding to the CFBundleVersion string, as distinct from the CFBundleShortVersionString.
@@ -259,6 +263,10 @@ Returns `True` if the [setuid](https://en.wikipedia.org/wiki/Setuid) bit is set 
 Q: setuid of file "/etc/passwd"
 A: False
 {% endqna %}
+
+# sibling file &lt;binary_string&gt; of &lt;filesystem object&gt; : file
+
+No documentation exists.
 
 # sibling file &lt;string&gt; of &lt;filesystem object&gt; : file
 
