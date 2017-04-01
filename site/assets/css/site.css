@@ -177,6 +177,10 @@ ul.footer-items li {
   header.nav-header ul li:hover > ul {
     display:block
   }
+
+  header.nav-header ul li:hover > a {
+    opacity: 1.0;
+  }
 }
 
 .main:after {
@@ -275,6 +279,10 @@ header.nav-header ul ul {
   padding: 0;
   min-width: 150px;
   z-index: 10000;
+}
+
+header.nav-header ul li.tools ul {
+  left: -100px;
 }
 
 header.nav-header ul ul li {
