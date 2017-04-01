@@ -17,31 +17,41 @@
   <div class="wrapper">
     <header class="nav-header">
       <div class="container">
-        <div class="nav-header-logo">
-          <a href="/">
-            <svg class="bigfix-logo" width="32" height="64" viewBox="0 0 256 256">
-              <defs>
-                <mask id="inner-b">
-                  <circle fill="#fff" cx="128" cy="128" r="128"/>
-                  <circle fill="#000" cx="128" cy="128" r="72"/>
-                  <circle fill="#fff" cx="128" cy="128" r="32"/>
-                  <rect fill="#000" x="56" y="0" width="40" height="128"/>
-                </mask>
-              </defs>
-              <rect fill="#fff" x="0" y="0" width="256" height="256" mask="url(#inner-b)"/>
-            </svg>
-            <span>BigFix <strong>Developer</strong></span>
-          </a>
+        <input type="checkbox" id="nav-checkbox" style="display:none;">
+        <div class="nav-bar">
+          <div class="nav-header-logo">
+            <a href="/">
+              <svg class="bigfix-logo" width="32" height="64" viewBox="0 0 256 256">
+                <defs>
+                  <mask id="inner-b">
+                    <circle fill="#fff" cx="128" cy="128" r="128"/>
+                    <circle fill="#000" cx="128" cy="128" r="72"/>
+                    <circle fill="#fff" cx="128" cy="128" r="32"/>
+                    <rect fill="#000" x="56" y="0" width="40" height="128"/>
+                  </mask>
+                </defs>
+                <rect fill="#fff" x="0" y="0" width="256" height="256" mask="url(#inner-b)"/>
+              </svg>
+              <span>BigFix <strong>Developer</strong></span>
+            </a>
+          </div>
+          <div class="nav-button mobile-visible"><label for="nav-checkbox"><i class="fa fa-bars" aria-hidden="true"></i></label></div>
         </div>
         <nav class="nav-header-links nav-{{section}}">
           <ul>
             {% for item in siteNav %}
               <li class="nav {{item['folder']}}">
-                <a href="{{item['href']}}">{{item['name']}}</a>
+                <input type="checkbox" id="nav-checkbox-{{item['folder']}}" style="display:none;">
+                <a href="{{item['href']}}" class="mobile-invisible">{{item['name']}}</a>
+                <label for="nav-checkbox-{{item['folder']}}" class="mobile-visible">{{item['name']}}</label>
                 {% if item['children'] %}
-                  <ul>
+                  <ul style="max-height:{{item['children'].length * 57}}px;">
                     {% for subitem in item['children'] %}
-                      {% if subitem['name'] != "Home" %}<li><a href="{{subitem['href']}}">{{subitem['name']}}</a></li>{% endif %}
+                      {% if subitem['name'] != "Home" %}
+                        <li><a href="{{subitem['href']}}">{{subitem['name']}}</a></li>
+                      {% else %}
+                        <li class="mobile-visible"><a href="{{subitem['href']}}">{{subitem['name']}}</a></li>
+                      {% endif %}
                     {% endfor %}
                   </ul>
                 {% endif %}
