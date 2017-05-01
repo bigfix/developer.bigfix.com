@@ -24,8 +24,10 @@ Returns the share part of the specified fileset.
 
 # state of &lt;fileset&gt; : string
 
-Returns,  as a string, the state of a fileset on AIX systems. 
-The state is the same as the one displayed in the output of the AIX command "lslpp". Possible values returned by this inspector are: APPLYING, APPLIED, COMMITTING, COMMITTED, REJECTING, BROKEN, DEINSTALLING, APPLY-HOLD, COMMIT-HOLD, OBSOLETE, EFIXLOCKED, UNKNOWN.
+Returns, as a string, the state of a fileset on AIX systems. The state is the same as the one displayed in the output of the AIX command "lslpp". Possible values returned by this inspector are: APPLYING, APPLIED, COMMITTING, COMMITTED, CONFLICTING, REJECTING, BROKEN, DEINSTALLING, APPLY-HOLD, COMMIT-HOLD, OBSOLETE, EFIXLOCKED, UNKNOWN.
+
+CONFLICTING indicates a state mismatch of the string returned for any &lt;fileset part&gt;.
+
 
 # update of &lt;fileset&gt; : integer
 
