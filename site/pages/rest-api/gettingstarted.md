@@ -114,7 +114,7 @@ Enter the following URL in Poster, making sure that you substitute your computer
 
 URL:
 ```
-https://<bigfix_server>:52311/api/action
+https://<bigfix_server>:52311/api/actions
 ```
 
 Content to send:
