@@ -108,6 +108,10 @@ Q: bit 1 of 2
 A: True
 {% endqna %}
 
+# byte &lt;integer&gt; : binary_string
+
+No documentation exists.
+
 # character &lt;integer&gt; : string
 
 Returns a string containing a single ASCII character.

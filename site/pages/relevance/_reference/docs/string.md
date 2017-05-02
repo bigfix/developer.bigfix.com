@@ -130,6 +130,10 @@ A: <string> starts with <regular expression>: boolean
 A: <string> starts with <string>: boolean
 {% endqna %}
 
+# binary_string &lt;string&gt; : binary_string
+
+No documentation exists.
+
 # bit set &lt;string&gt; : bit set
 
 Returns the bits of the binary number given by the string.

@@ -2,6 +2,10 @@
 
 For every folder that exists in the file system, you can create a folder object. These inspectors allow you to examine dozens of properties of folder objects. On the Macintosh, there are dozens of specialized folders; access to them depends on the domain. If the domain is not specified, it defaults to the system domain.
 
+# application &lt;binary_string&gt; of &lt;folder&gt; : application
+
+No documentation exists.
+
 # application &lt;string&gt; of &lt;folder&gt; : application
 
 Returns an application object for the named file located in the folder. See application.Example: exists application "notepad.exe" of the windows folder - Using the application of folder creation method, this example locates the notepad application provided it exists in the Windows folder.
@@ -99,6 +103,10 @@ Finds the folder with the given wildcard name inside another folder. A wildcard 
 # find item &lt;string&gt; of &lt;folder&gt; : filesystem object
 
 Returns the filesystem objects matching the item wildcard string of the given folder. Macintosh &#39;items&#39; are analogous to files and folders on other systems. A wildcard string uses an asterisk to stand for any number of characters (incuding zero), and a question mark to stand for exactly one character. Thus A??.txt would match All.txt and AXE.txt but not all.txt or a.txt.
+
+# folder &lt;binary_string&gt; of &lt;folder&gt; : folder
+
+No documentation exists.
 
 # folder &lt;string&gt; of &lt;folder&gt; : folder
 

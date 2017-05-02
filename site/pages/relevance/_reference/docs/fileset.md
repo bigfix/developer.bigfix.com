@@ -28,7 +28,6 @@ Returns, as a string, the state of a fileset on AIX systems. The state is the sa
 
 CONFLICTING indicates a state mismatch of the string returned for any &lt;fileset part&gt;.
 
-
 # update of &lt;fileset&gt; : integer
 
 Returns the update number for the specified fileset.Example: updates of filesets matching "lpp_name = &#39;bos.terminfo.rte&#39;" of object repository - Returns the update numbers of the specified filesets.

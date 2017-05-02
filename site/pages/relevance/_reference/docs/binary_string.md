@@ -22,6 +22,10 @@ No documentation exists.
 
 No documentation exists.
 
+# file &lt;binary_string&gt; : file
+
+No documentation exists.
+
 # first &lt;integer&gt; of &lt;binary_string&gt; : binary_substring
 
 No documentation exists.
@@ -31,6 +35,10 @@ No documentation exists.
 No documentation exists.
 
 # last &lt;integer&gt; of &lt;binary_string&gt; : binary_substring
+
+No documentation exists.
+
+# length of &lt;binary_string&gt; : integer
 
 No documentation exists.
 
@@ -46,7 +54,31 @@ No documentation exists.
 
 No documentation exists.
 
+# representable in &lt;string&gt; of &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# representable in utf16 of &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# representable in utf8 of &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# representable of &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# representation in &lt;string&gt; of &lt;binary_string&gt; : string
+
+No documentation exists.
+
 # symlink &lt;binary_string&gt; : symlink
+
+No documentation exists.
+
+# &lt;binary_string&gt; as fxf string : string
 
 No documentation exists.
 
@@ -54,6 +86,46 @@ No documentation exists.
 
 No documentation exists.
 
+# &lt;binary_string&gt; as local string : string
+
+No documentation exists.
+
 # &lt;binary_string&gt; as string : string
+
+No documentation exists.
+
+# &lt;binary_string&gt; as utf16 string : string
+
+No documentation exists.
+
+# &lt;binary_string&gt; as utf8 string : string
+
+No documentation exists.
+
+# &lt;binary_string&gt; &amp; &lt;binary_string&gt; : binary_string
+
+No documentation exists.
+
+# &lt;binary_string&gt; &lt; &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# &lt;binary_string&gt; &lt;= &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# &lt;binary_string&gt; = &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# &lt;binary_string&gt; contains &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# &lt;binary_string&gt; ends with &lt;binary_string&gt; : boolean
+
+No documentation exists.
+
+# &lt;binary_string&gt; starts with &lt;binary_string&gt; : boolean
 
 No documentation exists.

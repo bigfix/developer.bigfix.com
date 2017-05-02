@@ -10,7 +10,15 @@ No documentation exists.
 
 No documentation exists.
 
+# file &lt;binary_string&gt; of &lt;encoding&gt; : file
+
+No documentation exists.
+
 # file &lt;string&gt; of &lt;encoding&gt; : file
+
+No documentation exists.
+
+# folder &lt;binary_string&gt; of &lt;encoding&gt; : folder
 
 No documentation exists.
 

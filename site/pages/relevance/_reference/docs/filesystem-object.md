@@ -29,7 +29,15 @@ Returns `True` if the Archive bit is turned on for the specified file or folder 
 
 The date of the last backup of the specified filesystem object (such as a file or folder). This corresponds to what is shown in the "Get Info" box for this object.
 
+# binary location of &lt;filesystem object&gt; : binary_string
+
+No documentation exists.
+
 # binary name of &lt;filesystem object&gt; : binary_string
+
+No documentation exists.
+
+# binary pathname of &lt;filesystem object&gt; : binary_string
 
 No documentation exists.
 
