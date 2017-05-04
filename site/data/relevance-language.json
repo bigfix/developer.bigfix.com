@@ -104337,7 +104337,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104373,7 +104373,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104395,7 +104395,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104418,7 +104418,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104454,7 +104454,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104476,7 +104476,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104652,7 +104652,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104674,7 +104674,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104882,7 +104882,7 @@
       "op": "&",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -104903,7 +104903,7 @@
       "op": "<",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -104924,7 +104924,7 @@
       "op": "<=",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -104945,7 +104945,7 @@
       "op": "=",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -104965,7 +104965,7 @@
       "argType": "binary_string",
       "phrase": "fxf string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -104985,7 +104985,7 @@
       "argType": "binary_string",
       "phrase": "local string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105005,7 +105005,7 @@
       "argType": "binary_string",
       "phrase": "utf16 string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105025,7 +105025,7 @@
       "argType": "binary_string",
       "phrase": "utf8 string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105046,7 +105046,7 @@
       "op": "contains",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105067,7 +105067,7 @@
       "op": "ends with",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105088,7 +105088,7 @@
       "op": "starts with",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105109,7 +105109,7 @@
       "pluralPhrase": "lengths",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105131,7 +105131,7 @@
       "indexType": "string",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105152,7 +105152,7 @@
       "pluralPhrase": "representables in utf16",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105173,7 +105173,7 @@
       "pluralPhrase": "representables in utf8",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105194,7 +105194,7 @@
       "pluralPhrase": "representables",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105216,7 +105216,7 @@
       "indexType": "string",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105238,7 +105238,7 @@
       "indexType": "binary_string",
       "directObjectType": "encoding",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105258,9 +105258,154 @@
       "indexType": "binary_string",
       "directObjectType": "encoding",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log content of <file> : file content": {
+      "key": "log content of <file> : file content",
+      "type": "property",
+      "resultType": "file content",
+      "singularPhrase": "log content",
+      "pluralPhrase": "log contents",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log key <string> of <file> : string": {
+      "key": "log key <string> of <file> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "log key",
+      "pluralPhrase": "log keys",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log line <integer> of <file> : file line": {
+      "key": "log line <integer> of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "log line",
+      "pluralPhrase": "log lines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log line containing <string> of <file> : file line": {
+      "key": "log line containing <string> of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "log line containing",
+      "pluralPhrase": "log lines containing",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log line of <file> : file line": {
+      "key": "log line of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "log line",
+      "pluralPhrase": "log lines",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log line starting with <string> of <file> : file line": {
+      "key": "log line starting with <string> of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "log line starting with",
+      "pluralPhrase": "log lines starting with",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "log section <string> of <file> : file section": {
+      "key": "log section <string> of <file> : file section",
+      "type": "property",
+      "resultType": "file section",
+      "singularPhrase": "log section",
+      "pluralPhrase": "log sections",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "99.99.0.110": [
+          "AIX",
+          "Debian",
+          "Mac",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -105277,7 +105422,7 @@
       "pluralPhrase": "binary locations",
       "directObjectType": "filesystem object",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105296,7 +105441,7 @@
       "pluralPhrase": "binary pathnames",
       "directObjectType": "filesystem object",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105316,7 +105461,7 @@
       "indexType": "binary_string",
       "directObjectType": "folder",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105336,7 +105481,7 @@
       "indexType": "binary_string",
       "directObjectType": "folder",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105355,7 +105500,7 @@
       "pluralPhrase": "binary_strings",
       "indexType": "string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105376,7 +105521,7 @@
       "pluralPhrase": "bytes",
       "indexType": "integer",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105397,7 +105542,7 @@
       "pluralPhrase": "files",
       "indexType": "binary_string",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX",
           "Debian",
           "Mac",
@@ -105417,7 +105562,7 @@
       "pluralPhrase": "states",
       "directObjectType": "fileset part",
       "availability": {
-        "99.99.0.104": [
+        "99.99.0.110": [
           "AIX"
         ]
       }

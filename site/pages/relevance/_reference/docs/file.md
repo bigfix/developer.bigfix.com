@@ -103,6 +103,34 @@ Same as line &lt;string&gt; of &lt;file&gt;, returns the lines of the given file
 
 Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
 
+# log content of &lt;file&gt; : file content
+
+No documentation exists.
+
+# log key &lt;string&gt; of &lt;file&gt; : string
+
+No documentation exists.
+
+# log line &lt;integer&gt; of &lt;file&gt; : file line
+
+No documentation exists.
+
+# log line containing &lt;string&gt; of &lt;file&gt; : file line
+
+No documentation exists.
+
+# log line of &lt;file&gt; : file line
+
+No documentation exists.
+
+# log line starting with &lt;string&gt; of &lt;file&gt; : file line
+
+No documentation exists.
+
+# log section &lt;string&gt; of &lt;file&gt; : file section
+
+No documentation exists.
+
 # md5 of &lt;file&gt; : string
 
 Returns the md5 of the file. This inspector is not available in FIPS mode.
