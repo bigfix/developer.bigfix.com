@@ -68,6 +68,15 @@ If duplicate keywords are listed, the last value will be used. The entire comman
     </ul>
   </dd>
 
+<dt>**Elevation (Windows Only)**</dt>
+  <dd>Default value: `false`
+    <ul>
+      <li>`Elevation=true` runs the specified command with 'elevated' token and works only if the specified user is a member of the Administrators group. It must be used together with keywords RunAs=LocalUser, and password=required or impersonate.
+</li>
+      <li>`Elevation=false`.</li>
+    </ul>
+  </dd>
+
 </dl>
 
 ## Limitations on Completion=job
