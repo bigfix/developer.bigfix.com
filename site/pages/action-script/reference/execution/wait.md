@@ -21,3 +21,5 @@ wait "scandskw.exe"
 On a Windows computer, this command has the same effect as calling the [CreateProcess](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682425%28v=vs.85%29.aspx) function with `<command-line>`. This is also the same as using `<command-line>` in the Windows Run dialog.
 
 See the Windows documentation on [CreateProcess](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682425%28v=vs.85%29.aspx) for a discussion of the method used to locate the executable from a `<command-line>`.
+
+The `wait` command has two available override keywords: `timeout_seconds`, and `disposition`.  See the [override](./override.html) documentation for details.
