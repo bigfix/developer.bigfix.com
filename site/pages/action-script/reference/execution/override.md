@@ -23,6 +23,8 @@ Keywords are case-insensitive, and the values can be enclosed in {curly brackets
 
 If duplicate keywords are listed, the last value will be used. The entire command fails if any of the keywords or values are invalid. Platform-specific keywords that are not meaningful on a given platform will be silently ignored.
 
+The action command overrides *timeout_seconds* and *disposition* only modify the behavior of the `wait` and `waithidden` action commands.
+
 <dl>
 
   <dt>**Completion**</dt>
@@ -76,6 +78,24 @@ If duplicate keywords are listed, the last value will be used. The entire comman
     </ul>
          <p>On UNIX/Linux, you cannot universally get the appropriate user environment variables, so there is no attempt to apply environment variables at all, with the exception of required Xauthority variables. On UNIX/Linux a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent test which requires the user to be logged on at the local console and running X Windows.</p>
   </dd>
+
+  <dt>**timeout_seconds**</dt>
+  <dd> Default value: 0
+	<ul>
+      <li>`timeout_seconds=*integer*` makes the client wait the specified number of seconds during a [wait](./wait.html) and [waithidden](./waithidden.html) commands before assuming that those commands failed. The supported values for the command are 0-4294967295 seconds.</li>
+      <li>`timeout_seconds=0` is the default value, and means that the [wait](./wait.html) and [waithidden](./waithidden.html) commands never assume that those commands have failed.</li>
+    </ul>
+  </dd>
+
+  <dt>**disposition**</dt>
+  <dd> Default value: `abandon`
+	<ul>
+		<li>`disposition` tells the client what to do with a [wait](./wait.html) or [waithidden](./waithidden.html) process once the command has failed.</li>
+		<li>`disposition=terminate` tells the client to kill the child process when the commands have failed. Killing the process can have negative consequences, and should be used with extreme caution.</li>
+		<li>`disposition=abandon` is the default value, and means that the [wait](./wait.html) and [waithidden](./waithidden.html) commands are  disassociated or disowned from the parent process.</li>
+    </ul>
+</dd>
+
 
 </dl>
 
