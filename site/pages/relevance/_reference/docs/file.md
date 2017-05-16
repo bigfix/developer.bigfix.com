@@ -143,7 +143,7 @@ Use this inspector to access files that might be locked because they are concurr
 
 Returns a named section of the specified file. It is useful for locating sections of &#39;ini&#39; files. Section names are delimited by square bracket characters &#39;[section name]&#39;.
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications. 
+Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
 # md5 of &lt;file&gt; : string
 
