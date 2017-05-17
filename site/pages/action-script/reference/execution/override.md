@@ -79,6 +79,14 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
          <p>On UNIX/Linux, you cannot universally get the appropriate user environment variables, so there is no attempt to apply environment variables at all, with the exception of required Xauthority variables. On UNIX/Linux a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent test which requires the user to be logged on at the local console and running X Windows.</p>
   </dd>
 
+ <dt>**Elevation (Windows Only)**</dt>
+  <dd>Default value: `false`
+    <ul>
+      <li>`Elevation=true` the specified command runs with "elevated" token and it works only if the specified user is a member of the  Administrators group. It can be used only with RunAs=LocalUser, and password=required or impersonate</li>
+      <li>`Elevation=false`.</li>
+    </ul>
+  </dd>
+
   <dt>**timeout_seconds**</dt>
   <dd> Default value: 0
 	<ul>
