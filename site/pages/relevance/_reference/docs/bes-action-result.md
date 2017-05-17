@@ -18,6 +18,14 @@ Returns the computer(s) that the specified action result applies to.
 
 Returns a string describing the detailed status of the specified action result on this computer.
 
+# end time of &lt;bes action result&gt; : time
+
+No documentation exists.
+
+# exit code of &lt;bes action result&gt; : integer
+
+No documentation exists.
+
 # line number of &lt;bes action result&gt; : integer
 
 Returns the current line number of the action script that is being executed on the client computer.
@@ -25,6 +33,10 @@ Returns the current line number of the action script that is being executed on t
 # retry count of &lt;bes action result&gt; : integer
 
 Returns the number of times (as an integer) that the specified BES Action result has been retried on the client.
+
+# start time of &lt;bes action result&gt; : time
+
+No documentation exists.
 
 # status of &lt;bes action result&gt; : bes action status
 
