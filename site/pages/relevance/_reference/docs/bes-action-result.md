@@ -20,11 +20,11 @@ Returns a string describing the detailed status of the specified action result o
 
 # end time of &lt;bes action result&gt; : time
 
-No documentation exists.
+Returns the time when the action finished running on the specified clients. The format of the string is defined by the MIME standard. If the action has not yet completed the inspector returns: "Singular expression refers to nonexistent object.".
 
 # exit code of &lt;bes action result&gt; : integer
 
-No documentation exists.
+Returns the exit code set for the specified action by the exit &lt;code&gt; action script command. If no exit code was set, this inspector returns: "Singular expression refers to nonexistent object.".
 
 # line number of &lt;bes action result&gt; : integer
 
@@ -36,7 +36,7 @@ Returns the number of times (as an integer) that the specified BES Action result
 
 # start time of &lt;bes action result&gt; : time
 
-No documentation exists.
+Returns the time when the action started on the specified clients. The format of the string is defined by the MIME standard. If the action has not yet started the inspector returns: "Singular expression refers to nonexistent object.".
 
 # status of &lt;bes action result&gt; : bes action status
 
