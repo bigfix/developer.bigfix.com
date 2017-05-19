@@ -67,24 +67,20 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
       <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken.</li>
       <li>`RunAs=localuser` specifies a user different from the logged on user. 
       <ul>
-         <li>`user=<username>` or `{relevance to describe the username}` where the username specified must be either local or listed in local accounts.</li>
-      </ul>
+         <li>`user=&lt;username&gt;` or `{relevance to describe the username}` where the username specified must be either local or listed in local accounts.</li>
+      </ul>      
       <p>On Windows operating systems, you can use the option password as:
       <ul>
          <li>`password=required` if the Take Action Dialog must ask for the password and pass it to the agent as a SecureParameter.</li>
          <li>`password=impersonate` if the agent must search for a session running with the user specified with option user, and run the command in that session.</li>
       </ul>
-      On other operating systems, option password is ignored.</p></li>
+      On other operating systems, option password is ignored.</p>
+      <ul>
+         <li>`elevation=&lt;Boolean_value&gt;` when set to `true` runs the specified command with "elevated" token. You can use this setting on Windows systems only and if the specified user is a member of the  Administrators group. The default value is `false`.</li>
+      </ul>
+      </li>
     </ul>
          <p>On UNIX/Linux, you cannot universally get the appropriate user environment variables, so there is no attempt to apply environment variables at all, with the exception of required Xauthority variables. On UNIX/Linux a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent test which requires the user to be logged on at the local console and running X Windows.</p>
-  </dd>
-
- <dt>**Elevation (Windows Only)**</dt>
-  <dd>Default value: `false`
-    <ul>
-      <li>`Elevation=true` the specified command runs with "elevated" token and it works only if the specified user is a member of the  Administrators group. It can be used only with RunAs=LocalUser, and password=required or impersonate</li>
-      <li>`Elevation=false`.</li>
-    </ul>
   </dd>
 
   <dt>**timeout_seconds**</dt>
