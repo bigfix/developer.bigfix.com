@@ -67,7 +67,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
       <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken.</li>
       <li>`RunAs=localuser` specifies a user different from the logged on user. 
       <ul>
-         <li>`user=&lt;username&gt;` or `{relevance to describe the username}` where the username specified must be either local or listed in local accounts.</li>
+         <li>`user=<username>` or `{relevance to describe the username}` where the username specified must be either local or listed in local accounts.</li>
       </ul>      
       <p>On Windows operating systems, you can use the option password as:
       <ul>
@@ -76,7 +76,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
       </ul>
       On other operating systems, option password is ignored.</p>
       <ul>
-         <li>`elevation=&lt;Boolean_value&gt;` when set to `true` runs the specified command with "elevated" token. You can use this setting on Windows systems only and if the specified user is a member of the  Administrators group. The default value is `false`.</li>
+         <li>`elevation=<Boolean_value>` when set to `true` runs the specified command with "elevated" token. You can use this setting on Windows systems only and if the specified user is a member of the  Administrators group. The default value is `false`.</li>
       </ul>
       </li>
     </ul>
