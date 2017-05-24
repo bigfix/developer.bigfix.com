@@ -46,4 +46,4 @@ For example, "C=US, ST=California, O=John Doe".
 
 # version of &lt;x509 certificate&gt; : integer
 
-Returns a value (1, 2 or 3) that describes the version of the encoded certificate. 
+Returns a value (1, 2 or 3) that describes the version of the encoded certificate.
