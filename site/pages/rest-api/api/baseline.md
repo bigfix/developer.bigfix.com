@@ -21,7 +21,7 @@ title: Baseline
 {% endrestapi %}
 
 
-{% restapi "/api/baseline/{site type}/{site name}", "POST", "Creates a baseline." %}
+{% restapi "/api/baselines/{site type}/{site name}", "POST", "Creates a baseline." %}
 
 **Request:** The body must be the baseline XML.
 
