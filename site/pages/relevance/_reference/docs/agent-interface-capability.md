@@ -13,7 +13,7 @@ A: 0
 
 These are the available codes:
 
-{% qna %}
+```
     a2a_ok               =  0
     a2a_inProcess        = -1024
     a2a_noSession        = -1025
@@ -25,7 +25,7 @@ These are the available codes:
     a2a_generalException = -1031
     a2a_resourceExceeded = -1032
     a2a_StateUnknown     = -1033 
-{% endqna %}
+```
 
 # name of &lt;agent interface capability&gt; : string
 
