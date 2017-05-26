@@ -1,6 +1,6 @@
 # type: agent interface
 
-No documentation exists.
+It is a specific usage of the A2A dll which is an inter-agent communication channel.
 
 # capability &lt;string&gt; of &lt;agent interface&gt; : agent interface capability
 
