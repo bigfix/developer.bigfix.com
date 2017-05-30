@@ -1,31 +1,17 @@
 # type: agent interface capability
 
-The name and the state of a specific capability of a specific agent interface. 
+The specific command or capability that is done over the A2A Api interface. name and the state of a specific capability of a specific agent interface. 
 
 # error code of &lt;agent interface capability&gt; : integer
 
-Returns the last quarantine result from the BigFix Detect agent. For example:
+If available, returns the last result from the capability specified. For example:
 
 {% qna %}
 Q: error code of capability "quarantine" of agent interface "EDR" of client
 A: 0
 {% endqna %}
 
-These are the available codes:
-
-```
-    a2a_ok               =  0
-    a2a_inProcess        = -1024
-    a2a_noSession        = -1025
-    a2a_timeout          = -1026
-    a2a_noMemory         = -1027
-    a2a_ReqRspMismatch   = -1028
-    a2a_NoSuchCapability = -1029
-    a2a_invalidParameter = -1030
-    a2a_generalException = -1031
-    a2a_resourceExceeded = -1032
-    a2a_StateUnknown     = -1033 
-```
+where "quarantine" is one of the capabilities of the EDR angent.
 
 # name of &lt;agent interface capability&gt; : string
 
