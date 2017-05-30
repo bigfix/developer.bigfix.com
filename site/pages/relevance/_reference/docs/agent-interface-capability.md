@@ -2,6 +2,10 @@
 
 No documentation exists.
 
+# error code of &lt;agent interface capability&gt; : integer
+
+No documentation exists.
+
 # name of &lt;agent interface capability&gt; : string
 
 No documentation exists.
