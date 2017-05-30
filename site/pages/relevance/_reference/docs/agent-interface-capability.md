@@ -13,10 +13,6 @@ A: 0
 
 where "quarantine" is one of the capabilities of the EDR angent.
 
-# error code of &lt;agent interface capability&gt; : integer
-
-No documentation exists.
-
 # name of &lt;agent interface capability&gt; : string
 
 Returns the name of a specific capability of a specific agent interface. For example:
