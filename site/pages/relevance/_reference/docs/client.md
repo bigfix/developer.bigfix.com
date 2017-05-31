@@ -16,11 +16,11 @@ Returns one or more settings each representing an administrator of the client.
 
 # agent interface &lt;string&gt; of &lt;client&gt; : agent interface
 
-No documentation exists.
+Returns a specific product interface.
 
 # agent interface of &lt;client&gt; : agent interface
 
-No documentation exists.
+Enumerates the product interfaces for a specific client.
 
 # authenticating of &lt;client&gt; : boolean
 
