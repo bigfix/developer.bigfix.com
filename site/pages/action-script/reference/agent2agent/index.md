@@ -1,5 +1,5 @@
 ---
-title: Agent to Agent Commands
+title: Agent to Agent Communication
 ---
 
 These commands can be used to pass instructions to a specific agent, other than the BigFix agent, though an Agent to Agent channel implemented by a dll.
