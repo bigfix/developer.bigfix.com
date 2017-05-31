@@ -255,8 +255,8 @@ nav:
         href: /action-script/reference/agent2agent/
         children:
 
-          - name: agent interface
+          - name: quarantine
             href: /action-script/reference/agent2agent/quarantine_device.html
 
-          - name: agent interface capability 
+          - name: agent interface 
             href: /action-script/reference/agent2agent/agent_interface_action.html
