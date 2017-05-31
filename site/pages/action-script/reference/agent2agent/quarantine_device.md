@@ -24,12 +24,12 @@ When disabled, the quarantine command reverts the relay selection back to DNS-ba
 ## Syntax
 To enable quarantine:
 ```actionscript
-    quarantine "ProductID" -bigfix -in "<port> <protocol> <IP address>" -out "<port> <protocol> <IP address>" ...
+quarantine "ProductID" -bigfix -in "<port> <protocol> <IP address>" -out "<port> <protocol> <IP address>" ...
 ```
 
 To disable quarantine:	
 ```actionscript
-    quarantine "ProductID" -off 
+quarantine "ProductID" -off 
 ```
 
 ## Examples
