@@ -1,6 +1,6 @@
 # type: agent interface capability
 
-The specific command or capability that is done over the A2A Api interface. name and the state of a specific capability of a specific agent interface. 
+The specific command or capability that is done over the Agent to Agent Api interface. name and the state of a specific capability of a specific agent interface.
 
 # error code of &lt;agent interface capability&gt; : integer
 

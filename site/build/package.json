@@ -6,7 +6,7 @@
   "dependencies": {
     "escape-html": "^1.0.3",
     "front-matter": "^2.0.0",
-    "highlight-bigfix-actionscript": "^1.0.2",
+    "highlight-bigfix-actionscript": "bigfix/highlight-bigfix-actionscript",
     "highlight.js": "^8.9.1",
     "hljs-bigfix-relevance": "^1.0.0",
     "js-yaml": "^3.4.3",
