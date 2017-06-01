@@ -13,7 +13,7 @@ BigFix runs the following steps to enforce quarantine:
 3. Blocks network connections using DNS lookups.
 4. Makes the list of IP addresses of the available relays active for future relay selection to avoid DNS lookups. 
 
-   
+
 When disabled, the quarantine command reverts the relay selection back to DNS-based lists and restores the original communications.
 
 
@@ -23,6 +23,7 @@ The list of error codes that might be returned by the quarantine command is avai
 To enable quarantine:
 ```actionscript
 quarantine "ProductID" -bigfix
+```
 
 To disable quarantine:	
 ```actionscript

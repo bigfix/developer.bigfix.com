@@ -76,7 +76,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
       </ul>
       On other operating systems, option password is ignored.</p>
       <ul>
-         <li>`elevation=<Boolean_value>` when set to `true` runs the specified command with "elevated" token. You can use this setting on Windows systems only and if the specified user is a member of the  Administrators group. The default value is `false`.</li>
+         <li>`elevation=<Boolean_value>` when set to `true` runs the specified command with "elevated" token. If elevation=true, the user must be a member of the Administrators group to run the action successfully. If elevation=false or the option is not specified, the action succeeds only if it does not require administrative privilege. The default value is `false`.</li>
       </ul>
       </li>
     </ul>
