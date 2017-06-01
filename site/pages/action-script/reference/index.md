@@ -80,7 +80,7 @@ categories:
       - pause while
   - title: Registry Commands
     section: registry
-    description: The [registry commands](./registry/) allow you toedit the Windows Registry.
+    description: The [registry commands](./registry/) allow you to edit the Windows Registry.
     commands:
       - regdelete
       - regdelete64
@@ -93,6 +93,12 @@ categories:
       - site force evaluation
       - subscribe
       - unsubscribe
+  - title: Agent to Agent Communication Commands
+    section: agent2agent
+    description: The [Agent to Agent Communication commands](./agent2agent/) allow you to pass instructions to a specific agent.
+    commands:
+      - quarantine
+      - agent interface
 ---
 
 {% for category in categories %}
