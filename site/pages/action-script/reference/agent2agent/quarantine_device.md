@@ -17,8 +17,7 @@ BigFix runs the following steps to enforce quarantine:
 When disabled, the quarantine command reverts the relay selection back to DNS-based lists and restores the original communications.
 
 
-The list of error codes that might be returned by the quarantine command is available <a href="http://www.ibm.com/support/knowledgecenter/SSMNRU_9.5.0/com.ibm.bigfix.detect.doc/BigFixDetectionandResponse/SecurityAnalystUserGuide/EDR_TroubleshootingSAG.html">here</a>. 
-
+The list of error codes that might be returned by the quarantine command is available <a href="http://www.ibm.com/support/knowledgecenter/SSMNRU_9.5.0/com.ibm.bigfix.detect.doc/BigFixDetectionandResponse/SecurityAnalystUserGuide/EDR_TroubleshootingSAG.html">here</a>.
 
 ## Syntax
 To enable quarantine:
