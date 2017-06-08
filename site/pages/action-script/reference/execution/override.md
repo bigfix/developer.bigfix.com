@@ -86,17 +86,17 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
   <dt>**timeout_seconds**</dt>
   <dd> Default value: 0
 	<ul>
-      <li>`timeout_seconds=*integer*` makes the client wait the specified number of seconds during a [wait](./wait.html) and [waithidden](./waithidden.html) commands before assuming that those commands failed. The supported values for the command are 0-4294967295 seconds.</li>
-      <li>`timeout_seconds=0` is the default value, and means that the [wait](./wait.html) and [waithidden](./waithidden.html) commands never assume that those commands have failed.</li>
+      <li>`timeout_seconds=*positive integer*` makes the client wait the specified number of seconds during a [wait](./wait.html) or [waithidden](./waithidden.html) command before the action script continues without waiting for the completion of the command's process. The supported values for the timeout are all positive integers to the maximum supported by the computer architecture.</li>
+      <li>`timeout_seconds=0` is the default value, and makes the [wait](./wait.html) or [waithidden](./waithidden.html) commands act as if the `timeout_seconds` override were not set.</li>
     </ul>
   </dd>
 
   <dt>**disposition**</dt>
   <dd> Default value: `abandon`
 	<ul>
-		<li>`disposition` tells the client what to do with a [wait](./wait.html) or [waithidden](./waithidden.html) process once the command has failed.</li>
-		<li>`disposition=terminate` tells the client to kill the child process when the commands have failed. Killing the process can have negative consequences, and should be used with extreme caution.</li>
-		<li>`disposition=abandon` is the default value, and means that the [wait](./wait.html) and [waithidden](./waithidden.html) commands are  disassociated or disowned from the parent process.</li>
+		<li>`disposition` tells the client what to do with the process under the [wait](./wait.html) or [waithidden](./waithidden.html) command once the timeout is finished.</li>
+		<li>`disposition=terminate` tells the client to kill the [wait](./wait.html) and [waithidden](./waithidden.html) command's process when the timeout is reached. Killing the process can have negative consequences, and should be used with extreme caution.</li>
+		<li>`disposition=abandon` is the default value, and tells the client to disassociate the [wait](./wait.html) or [waithidden](./waithidden.html) command's process from the remainder of the actions.</li>
     </ul>
 </dd>
 
@@ -135,4 +135,13 @@ completion=job
 hidden=true
 runas=currentuser
 wait __Download\patch.exe arg1 arg2 arg3
+```
+
+This example shows how you might run a maintenance application, but kill the maintenance process if it isn't finished by the time 1 hour has passed:
+
+```actionscript
+override wait
+timeout_seconds=3600
+disposition=terminate
+wait "__Example\maintenance.exe" arg1 arg2 arg3
 ```
