@@ -30,4 +30,4 @@ On a Windows computer, this command has the same effect as calling the [CreatePr
 
 See the Windows documentation on [CreateProcess](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682425%28v=vs.85%29.aspx) for a discussion of the method used to locate the executable from a `<command-line>`.
 
-The `waithidden` command has override keywords.See the [override](./override.html) documentation for details.
+The `waithidden` command has override keywords. See the [override](./override.html) documentation for details.
