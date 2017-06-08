@@ -380,6 +380,10 @@ Q: uptime of operating system
 A: 12 days, 18:10:01.642793
 {% endqna %}
 
+# uuid of &lt;operating system&gt; : string
+
+No documentation exists.
+
 # version of &lt;operating system&gt; : version
 
 Returns the version of the operating system.

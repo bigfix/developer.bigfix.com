@@ -1,6 +1,6 @@
 # type: agent interface capability
 
-The specific command or capability that is done over the Agent to Agent interface. 
+The specific command or capability that is done over the Agent to Agent interface.
 
 # error code of &lt;agent interface capability&gt; : integer
 
