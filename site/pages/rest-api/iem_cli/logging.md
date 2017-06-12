@@ -23,10 +23,11 @@ If the root server certificate has changed, for example because the server signi
 The server's SSL certificate is not trusted.
 ```
 
-In this case, to update the certificate, delete the IEM CLI data directory folder and then authenticate again. 
+In this case, to update the certificate, delete the IEM CLI data directory folder and then authenticate again.
+
 The IEM CLI data directory folder is:
-- /root/.iem on Linux systems
-- %LOCALAPPDATA%\BigFix on Windows systems
+- `/root/.iem` on Linux systems
+- `%LOCALAPPDATA%\BigFix` on Windows systems
 
 
 **Warning:** If the certificate was not rotated, this error might indicate that a man-in-the-middle attack is trying to compromise your password.
