@@ -13,6 +13,8 @@ down. In this case, the UI will have a *Shutdown Now* button instead of a
 *Cancel* button. If the delay parameter is not specified, the user is prompted
 to press a button to shut down the computer
 
+The command is available on all platforms starting from the first versions of IBM BigFix.
+
 ## Syntax
 
     shutdown [delay-seconds]
