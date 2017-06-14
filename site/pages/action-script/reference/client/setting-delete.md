@@ -7,6 +7,8 @@ includes a timestamp which will be compared to the timestamp on the original
 setting. If the delete date is later than the setting date, the setting will be
 deleted. Otherwise, the delete command will be ignored.
 
+The command is available on all platforms starting from the first versions of IBM BigFix.
+
 ## Syntax
 
     setting delete "<name>" on "<date>" for client
