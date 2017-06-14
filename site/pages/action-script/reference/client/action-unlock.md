@@ -6,6 +6,8 @@ This command unlocks the client. The effective date field is used to ensure that
 locking and unlocking actions take place in the order in which they were
 created.
 
+The command is available on all platforms starting from the first versions of IBM BigFix.
+
 ## Syntax
 
     action unlock <date>
