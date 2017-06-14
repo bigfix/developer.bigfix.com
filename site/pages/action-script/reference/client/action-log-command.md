@@ -10,6 +10,8 @@ parameters. The parameters may contain information about establishing private
 keys or decrypting passwords. This command can be used to avoid logging such
 sensitive information.
 
+The command is available on all platforms starting from IBM BigFix build 8.2.474.0.
+
 ## Syntax
 
     action log command
