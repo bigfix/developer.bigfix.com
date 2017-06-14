@@ -6,6 +6,8 @@ This command tells the client to log all commands along with their parameters.
 This is the default behavior. This can be used to undo a previous [action log
 command](./action-log-command.html).
 
+The command is available on all platforms starting from IBM BigFix build 8.2.474.0.
+
 ## Syntax
 
     action log all
