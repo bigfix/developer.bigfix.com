@@ -2,6 +2,7 @@
 title: Baseline
 ---
 
+Available starting from IBM BigFix version 9.5.5
 
 {% restapi "/api/baselines/{site type}/{site name}", "GET", "Lists all baselines in a site." %}
 
