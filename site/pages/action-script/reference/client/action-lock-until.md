@@ -5,6 +5,10 @@ title: action lock until
 This command locks the client starting on the effective date, and unlocks the
 client when the expiration date occurs.
 
+Version | Platforms
+--- | ---
+Initial version | All
+
 ## Syntax
 
     action lock until <expire-date> <effective-date>

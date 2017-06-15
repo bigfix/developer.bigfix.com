@@ -10,6 +10,10 @@ parameters. The parameters may contain information about establishing private
 keys or decrypting passwords. This command can be used to avoid logging such
 sensitive information.
 
+Version | Platforms
+--- | ---
+8.2.474.0 | All
+
 ## Syntax
 
     action log command

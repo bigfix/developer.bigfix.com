@@ -4,8 +4,10 @@ title: agent interface
 
 This command allows to pass instructions to the other end of the Agent to Agent communication channel, addressing a specific agent. 
 
-The command is available on Windows systems starting from IBM BigFix version 9.5.5.
-.
+Version | Platforms
+--- | ---
+9.5.5.0 | All
+
 ## Syntax
 
 ```actionscript

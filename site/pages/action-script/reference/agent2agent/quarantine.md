@@ -22,6 +22,9 @@ The list of error codes that might be returned by the quarantine command is avai
 
 The command is available on Windows systems starting from IBM BigFix version 9.5.5.
 
+Version | Platforms
+--- | ---
+9.5.5.0 | All
 
 ## Syntax
 To enable quarantine:

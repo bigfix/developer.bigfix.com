@@ -8,6 +8,8 @@ Settings are named values that can be applied to individual sites or to client
 computers. Each setting has a timestamp associated with it. This timestamp is
 used to establish priority -- the latest setting will trump any earlier ones.
 
+The command is available on all platforms starting from the first versions of IBM BigFix.
+
 ## Syntax
 
     setting "<name>"="value" on "<date>" for client
