@@ -9,6 +9,11 @@ works like a [here document](https://en.wikipedia.org/wiki/Here_document).
 
 This command is typically used to create a config file or a script.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     createfile until delimiter
