@@ -12,6 +12,11 @@ Unlike [add prefetch item](./add-prefetch-item.html), it can only specify one
 download and relevance substitution is not allowed within the arguments of this
 command.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     add nohash prefetch item [name=<name>] [size=<size>] url=<url>
