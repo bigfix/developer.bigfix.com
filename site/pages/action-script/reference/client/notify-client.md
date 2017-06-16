@@ -4,7 +4,10 @@ title: notify client
 
 This command is equivalent to right clicking on a computer in the BigFix Console and selecting **Send Refresh**. This command may be necessary if the client is unable to receive notifications, which might happen if it can't receive UDP messages.
 
-The command is available on all platforms starting from IBM BigFix build 6.0.14.0.
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu.
 
 ## Syntax
 
