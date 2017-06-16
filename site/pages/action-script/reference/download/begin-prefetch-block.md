@@ -4,6 +4,11 @@ title: begin prefetch block
 
 This command starts a set of commands to download files.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     begin prefetch block
