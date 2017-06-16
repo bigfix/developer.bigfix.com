@@ -6,6 +6,11 @@ Executes the indicated program. If the process can't be created, the action scri
 
 If you wish to wait for one program to finish before starting another one, use the [wait](./wait.html) command.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     run <command-line>
