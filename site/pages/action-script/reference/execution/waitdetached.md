@@ -8,6 +8,10 @@ This command modifies the [wait](./wait.html) command by setting the [DETACHED_P
 
 This command should not be used for running interactive programs. If this is done, the interactive program will not be able to show its user interface and may appear to be hung. This command is provided strictly for running programs that do not display a user interface.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     waitdetached <command-line>
