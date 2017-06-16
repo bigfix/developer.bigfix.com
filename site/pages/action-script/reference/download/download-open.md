@@ -6,6 +6,11 @@ This command downloads a file from a URL and then runs
 [ShellExecute](https://msdn.microsoft.com/en-us/library/windows/desktop/bb762153%28v=vs.85%29.aspx)
 on the resulting file.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     download open <url>
