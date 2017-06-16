@@ -10,6 +10,11 @@ the [download](./download.html) command.
 To easily create prefetch commands, the
 [make-prefetch](https://github.com/bigfix/make-prefetch) utility can be used.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     prefetch <name> sha1:<sha1> size:<size> <url> [sha256:<sha256>]
