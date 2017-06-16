@@ -11,6 +11,11 @@ client will mark `name` as needing a restart. The [pending
 restart](/relevance/reference/string.html#pending-restart-string-boolean)
 inspector can then be used to see which actions require a restart.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     action may require restart [name]
