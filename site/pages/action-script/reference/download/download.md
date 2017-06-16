@@ -9,6 +9,11 @@ the URL after the last slash.
 
 If the download fails, the action script terminates.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     download <url>
