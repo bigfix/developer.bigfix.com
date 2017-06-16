@@ -5,6 +5,11 @@ title: continue if
 This command stops running an action script if a relevance expression evaluates
 to `False`.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     continue if <condition>
