@@ -6,6 +6,10 @@ This command uses [CreateProcess](https://msdn.microsoft.com/en-us/library/windo
 
 After launching, the following action command line is immediately executed. To wait for the launch to complete before continuing the action, use the [waithidden](./waithidden.html) command.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     runhidden <command-line>

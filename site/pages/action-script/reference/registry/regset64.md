@@ -11,6 +11,10 @@ native 64-bit registry to set a registry key to the given name and value.
 If the key doesn't already exist, this command creates the key with this initial
 value.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     regset64 <key> <name>=<value>

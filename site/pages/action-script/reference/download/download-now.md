@@ -7,6 +7,11 @@ This command downloads a file from a URL. It is simliar to the
 will download directly from the specified URL at that point in the action
 script without using the relay hierarchy.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     download now <url>

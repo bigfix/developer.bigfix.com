@@ -5,6 +5,11 @@ title: exit
 This command terminates the action and sets the action exit code. Relevance
 substitution can be used to set the exit code.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     exit <code>

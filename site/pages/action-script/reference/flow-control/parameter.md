@@ -9,6 +9,11 @@ a variable, the value can be accessed using the
 A parameter can only have one value. Trying to set an existing parameter to a
 different value will result in an error.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     parameter "<name>"="<value>"

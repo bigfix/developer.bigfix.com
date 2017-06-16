@@ -20,6 +20,11 @@ This command, when accompanied by a
 [continue if](../flow-control/continue-if.html) with a sha1 value, allows the
 file to be pre-fetched.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     download as <name> <url>

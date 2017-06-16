@@ -4,6 +4,10 @@ title: dos
 
 Runs a Windows command. If the command fails, the action script that contains it is terminated.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     dos <command-line>

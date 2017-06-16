@@ -11,6 +11,10 @@ This command executes an external script with the given name. This can be used t
 
 The action containing the `script64` keyword will terminate if the appropriate scripting engine is not installed or if the script cannot be executed. The next line of the action is not executed until the specified script terminates.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     script64 <script-name>

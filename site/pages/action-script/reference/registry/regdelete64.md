@@ -12,6 +12,10 @@ This command deletes a registry key value of the given name. If the value
 doesn’t already exist, this command will fail and all subsequent commands will
 not be executed.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     regdelete64 <key> <value-name>

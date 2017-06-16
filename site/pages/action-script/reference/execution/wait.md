@@ -4,6 +4,11 @@ title: wait
 
 This command behaves the same as the [run](./run.html) command, except that it waits for the completion of the process or program before continuing.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     wait <command-line>

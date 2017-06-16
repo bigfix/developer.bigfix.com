@@ -5,6 +5,10 @@ title: regdelete
 Deletes a registry key value of the given name, regardless of whether it
 currently exists or not.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     regdelete <key> <value-name>

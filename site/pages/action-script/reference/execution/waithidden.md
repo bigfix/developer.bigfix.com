@@ -6,6 +6,10 @@ This command uses [CreateProcess](https://msdn.microsoft.com/en-us/library/windo
 
 This command waits for the completion of the process before continuing with subsequent action commands.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     waithidden <command-line>

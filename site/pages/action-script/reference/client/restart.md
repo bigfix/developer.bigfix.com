@@ -13,7 +13,10 @@ down. In this case, the interface will have a *Restart Now* button instead of a
 If the `delay-seconds` parameter is not specified, the user is prompted to press
 a button to restart the computer.
 
-The command is available on all platforms starting from the first versions of IBM BigFix.
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
 
 ## Syntax
 
