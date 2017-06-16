@@ -26,6 +26,11 @@ The [end prefetch block](./end-prefetch-block.html) command does an automatic
 collection, ensuring that subsequent action commands will have the necessary
 files available.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     collect prefetch items
