@@ -9,6 +9,11 @@ locations, or service names.
 Parameter names may include blanks, and are case sensitive. The parameter name,
 description, and value must each be enclosed inside double quotation marks `"`.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     action parameter query "<name>" [with description "<description>"] [and] [with default [value] "<value>"]
