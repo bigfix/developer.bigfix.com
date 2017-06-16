@@ -6,6 +6,10 @@ When this command is run, subsequent action commands that launch programs will d
 
 Low-priority preference only affects the launch priority of applications launched from the current action. This preference is maintained until the action completes or the client executes the [action launch preference normal-priority](./action-launch-preference-normal-priority.html) command.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     action launch preference low-priority
