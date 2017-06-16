@@ -11,6 +11,11 @@ item](./add-prefetch-item.html) commands.
 It is not intended for a lengthy executable and the client will only wait 60
 seconds for its completion. 
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     execute prefetch plug-in <executable-path> [args]
