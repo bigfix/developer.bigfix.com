@@ -28,6 +28,11 @@ be moved into the utility cache.
 A least-recently used scheme is used to keep the cache within its size limits.
 For short intervals only, the cache limit may be exceeded by single files.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     utility <pathname>
