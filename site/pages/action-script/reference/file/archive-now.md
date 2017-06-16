@@ -11,6 +11,11 @@ set of files. To set the appropriate archive mode to manual, use this setting:
 The `archive now` command will fail if the operating mode is not set to manual.
 It will also fail if an existing archive is currently being uploaded.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     archive now
