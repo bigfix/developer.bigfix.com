@@ -14,6 +14,9 @@ The <i>action uses wow64 redirection</i> command affects the behavior of the fol
 
 dos, delete, copy, move, open, run, wait (and their variants such as waithidden)
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
 
 ## Syntax
 
