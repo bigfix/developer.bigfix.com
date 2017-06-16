@@ -14,6 +14,11 @@ On a typical Windows install this file will be created in:
 The `__appendfile` is automatically deleted before the action script starts
 running.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     appendfile <text>
