@@ -9,6 +9,10 @@ specified. This command automatically performs a
 all the files added to the prefetch list will be available when the block is
 ended.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
 
 ## Syntax
 
