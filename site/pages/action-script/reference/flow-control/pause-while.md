@@ -8,6 +8,11 @@ evaluates to `False` or the expression fails to evaluate.
 
 Use relevance substitution to define the condition.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     pause while <condition>
