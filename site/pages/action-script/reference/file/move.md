@@ -7,6 +7,11 @@ can be used to rename a file. The `move` command
 fails if the destination already exists, if the source file doesn’t exist, or if
 the move fails for any other reason.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     move <source> <destination>
