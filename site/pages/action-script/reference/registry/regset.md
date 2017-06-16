@@ -5,6 +5,10 @@ title: regset
 Sets a registry key to the given name and value. If the key doesn’t already
 exist, this command creates the key with this starting value.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | Windows
+
 ## Syntax
 
     regset <key> <name>=<value>
