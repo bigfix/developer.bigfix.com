@@ -7,7 +7,7 @@ Deletes a registry key and all of its contents.
 
 Version |	Platforms
 --- | ---
-9.5.12.xxx | Windows
+9.5.13.130 | Windows
 
 ## Syntax
 
