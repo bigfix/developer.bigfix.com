@@ -7,6 +7,11 @@ if the file exists but cannot be deleted. This can happen due to write
 protection or an attempt to delete from a CD-ROM, for instance. If the file does
 not exist at all, however, the action script will continue to execute.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     delete <filename>
