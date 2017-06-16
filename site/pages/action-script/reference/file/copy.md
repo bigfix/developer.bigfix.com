@@ -6,6 +6,11 @@ This command copies the source file to the named destination file. The `copy` co
 if the destination already exists or if the copy fails for any other reason such
 as when the destination file is busy.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     copy <source> <destination>
