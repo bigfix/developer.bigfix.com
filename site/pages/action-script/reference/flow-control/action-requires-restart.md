@@ -9,6 +9,11 @@ If the optional `name` is specified, then the [pending
 restart](/relevance/reference/string.html#pending-restart-string-boolean)
 inspector will report that `name` requires a restart.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     action requires restart [name]
