@@ -7,6 +7,11 @@ reside between a [begin prefetch block](./begin-prefetch-block.html) and an
 [end prefetch block ](./end-prefetch-block.html) command. This command can
 specify multiple downloads separated by semicolons.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     add prefetch item [name=<name>] [sha1=<sha1>] [sha256=<sha256>] size=<size> url=<url> [; ...] 
