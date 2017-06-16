@@ -8,6 +8,10 @@ This powerful compound command allows you to create your own custom combination 
 
 To add constraints to an existing command, you add predefined keyword/value pairs within the body of the command.
 
+Version | Platforms
+--- | ---
+8.2.531.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows, Debian, Ubuntu
+
 ## Syntax
 
     override <cmd>
