@@ -7,6 +7,11 @@ computer. This is accomplished by using a setting with an an effective date
 passed as a parameter. The date is not optional. The effective date tests are
 the same as for the [setting](./setting.html) command.
 
+Version | Platforms
+--- | ---
+8.0.584.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows
+8.1.535.0 | Debian, Ubuntu
+
 ## Syntax
 
     administrator delete <operator-name> on <date>
