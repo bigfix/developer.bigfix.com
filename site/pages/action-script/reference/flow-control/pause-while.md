@@ -22,8 +22,16 @@ Pause action script evaluation while `updater.exe` is running.
 pause while {exists running application "updater.exe"}
 ```
 
+Pause action script evaulation while `updater.exe` is running, with a 5 minute timeout.
+
+```actionscript
+parameter "PauseTimer1" = "{now}"
+pause while {(exists running application "updater.exe") AND (now < ((parameter "PauseTimer1" of action as time) + (5 * minute)))}
+```
+
 Pause action script evaluation while the file `C:\result.txt` does not exist.
 
 ```actionscript
 pause while {not exists file "C:\result.txt"}
 ```
+
