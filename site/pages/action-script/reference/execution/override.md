@@ -35,7 +35,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
   <dd>Default value: `none` for run, `process` for wait.
     <ul>
       <li>`Completion=none` acts the same as the current run command variants.</li>
-      <li>`Completion=process` acts the same as the current wait command variants.</li>
+      <li>`Completion=process` acts the same as the current wait command variants. When this value is used for run, the command result it is not displayed.</li>
       <li>`Completion=job` on Windows makes use of [Windows Job Objects](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684161%28v=vs.85%29.aspx) which imposes some limitations on the target process and some potential failure points for the command. See [below](#limitations-on-completion-job) for details.</li>
     </ul>
   </dd>
@@ -69,7 +69,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
     <ul>
       <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands.</li>
       <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken.</li>
-      <li>`RunAs=localuser` specifies a user different from the logged on user. 
+      <li>`RunAs=localuser` specifies a user different from the logged on user. It works only with `Completion=process` and with `Completion=job`.
       <ul>
          <li>`user=<username>` or `{relevance to describe the username}` where the username specified must be either local or listed in local accounts.</li>
       </ul>      
@@ -80,7 +80,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
       </ul>
       On other operating systems, option password is ignored.</p>
       <ul>
-         <li>`elevation=<Boolean_value>` when set to `true` runs the specified command with "elevated" token. If elevation=true, the user must be a member of the Administrators group to run the action successfully. If elevation=false or the option is not specified, the action succeeds only if it does not require administrative privilege. The default value is `false`.</li>
+         <li>`elevation=<Boolean_value>` when set to `true` runs the specified command with "elevated" token. If elevation=true, the user must be a member of the Administrators group to run the action successfully. If elevation=false or the option is not specified, the action succeeds only if it does not require administrative privilege. When set to `false`, evey file must be specified with its full path. The default value is `false`.</li>
       </ul>
       </li>
     </ul>
