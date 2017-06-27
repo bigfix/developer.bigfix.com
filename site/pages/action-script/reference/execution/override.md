@@ -65,13 +65,15 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
   </dd>
 
   <dt>**RunAs**</dt>
-  <dd>Default value: `agent`
+  <dd>Use this keyword to specify the user and the context to use when running the command specified in the action.
+  
+  Default value: `agent`
     <ul>
-      <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands.</li>
+      <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands. The user and the context are the same as those used to with the current [wait](./wait.html) and [run](./run.html) commands</li>
       <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken. 
       <note>On UNIX and Linux the environment variables are not applied with the exception of required Xauthority variables. On such platforms a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent scenario which requires the user to be logged on at the local console and running X Windows.</note>
       </li>
-      <li>`RunAs=localuser` specifies a user different from the logged on user. It works only with `Completion=process` and with `Completion=job`.
+      <li>`RunAs=localuser` specifies a user different from the logged on user. It works only with the keyword `Completion=process` or `Completion=job` and uses the following options:
       <ul>
          <li>`user=<username>` or `user={relevance to describe the username}` to allow a parameterized input.The specified user must be either local or listed in local accounts, in other words:
 	 <ul>
@@ -79,47 +81,47 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
 	    <li>On Unix or Linux the user must be specified in the /etc/passwd file.</li>
 	    <li>On Mac the user must be one of the locally defined users.</li>
 	 </ul>	 
-	 <p>The following considerations apply to users defined on Windows systems only: 
+	 <p>The following considerations about the `RunAs=localuser` keyword apply to users defined on Windows systems only: 
 	 <ul>
-	    <li>You can specify a domain user in one of the following formats:
+	    <li>You can specify a domain user by using one of the following formats:
 	    <ul>
 	       <li>"user@domain" where domain is an active directory domain, for example john@tem.test.com.</li>
 	       <li>"domain\user" where domain is specified in the short domain name notation, for example "TEM\john".</li>
 	    </ul>
 	    </li>
-	    <li>You can use the option password as follows:
+	    <li>You can specify the option `password` as follows:
 	    <ul>
                <li>`password=required` if the Take Action Dialog must ask for the password and pass it to the agent as a SecureParameter.</li>
-               <li>`password=impersonate` if the agent must search for a session running with the user specified with the user option, and run the command in that session.</li>
-	       <li>`password=system` to run the with the Local System account and without an user contex. The command requires the specified user to be logged on when the override runs on the system. Any UI will be presented to the session of the specified user.
-	       <note>Use the asadmin option if you want the command to write to HKEY_CURRENT_USER registry hive.</note> 
+               <li>`password=impersonate` if the agent must search for a session running with the user specified in the `user` option, and run the command in that session.</li>
+	       <li>`password=system` to run the command the with the Local System account and without an user contex. The command requires the specified user to be logged on when the `override` runs on the system. Any UI will be displayed in the session of the specified user.
+	       <note>Use the `asadmin` option if you want the command to write to *HKEY_CURRENT_USER* registry hive.</note> 
 	       </li>
             </ul>
-	    <note>On other operating systems, the option password is ignored because the agent runs with *root* authority.</note>
+	    <note>On other operating systems, the option `password` is ignored because the agent runs with *root* authority.</note>
 	    </li>
-	    <li>You can use the option asadmin as follows:
+	    <li>You can use the option `asadmin` as follows:
 	    <ul>
-	       <li>`asadmin=true` to run the specified command in the context of specified user, but as if user were a member of builtin Administrators group. In this case you must:
+	       <li>`asadmin=true` to run the specified command in the context of the specified user as if user were a member of builtin Administrators group. In this case you must:
 	       <ul>
 	          <li>Specify `password=required`.</li>
-		  <li>Omit the targetuser keyword</li>
+		  <li>Omit the `targetuser` keyword.</li>
 	       </ul>
 	       </li>
-	       <li>`asadmin=interactive` to run the specified command in the context of the user specified by "user" keyword and as if that user were a member of builtin Administrators group. The following rules apply if you use this value:
+	       <li>`asadmin=interactive` to run the specified command in the context of the user specified in the `user` keyword  as if that user were a member of builtin Administrators group. The following rules apply if you use this value:
                <ul>
-	          <li>If you use the "targetuser" keyword, the UI launched by the command is displayed in the session of the currently logged on user, which is different from the user who runs the command.</li>
-		  <li>If you omit the "targetuser" keyword, the UI launched by the command is displayed in the session of the user specified by the "user" keyword. The command fails if user is not logged on when override is run.</li>
+	          <li>If you use the `targetuser` keyword, the UI launched by the command is displayed in the session of the currently logged on user, which is different from the user who runs the command.</li>
+		  <li>If you omit the `targetuser` keyword, the UI launched by the command is displayed in the session of the user specified in the `user` keyword. The command fails if the user is not logged on when override is run.</li>
 		  <li>You must specify the keyword `password=required`, when using an existing account, or the `password="password"` keyword, if you want to create a temporary account in the action. You use the `password="password"` keyword, specifying the actual password surrounded with double quotes, with a relevance expression for password and the "action log command" to hide parameter values."</li>
 	       </ul>
 	       </li>
 	    </ul>
 	    </li>
-	    <li>You can use the option elevation as follows:
+	    <li>You can use the option `elevation` as follows:
 	    <ul>
 	       <li>`elevation=true` to run the specified command with "elevated" token. In this case the user must be a member of the Administrators group to run the action successfully.</li>
-	       <li>`elevation=false` if the action succeeds only if it does not require administrative privilege. In this case you must specify every file with its full path.</li>
+	       <li>`elevation=false` to specify that the action succeeds only if it does not require administrative privilege for running. In this case you must specify every file with its full path.</li>
 	    </ul>
-	    <note>If omitted the value of the elevation option defaults to `false`.</note>
+	    <note>If omitted the value of the `elevation` option defaults to `false`.</note>
 	    </li>
 	 </ul> 
          </li>
