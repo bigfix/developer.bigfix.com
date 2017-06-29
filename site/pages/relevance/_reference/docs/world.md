@@ -1115,6 +1115,10 @@ A: 106751991 days, 04:00:54.775807
 
 Returns the grub config file from the default location, either "/boot/grub/menu.lst" or "/boot/grub/grub.conf".
 
+# hardware : hardware
+
+No documentation exists.
+
 # help folder : folder
 
 Returns the help folder of the system domain

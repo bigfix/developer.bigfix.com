@@ -22,6 +22,14 @@ Returns the unique values of a given list of &lt;uuid&gt; types, removing duplic
 
 Returns the named global Solaris zone as specified by the UUID.
 
+# &lt;uuid&gt; as binary_string : binary_string
+
+No documentation exists.
+
+# &lt;uuid&gt; as hexadecimal : string
+
+No documentation exists.
+
 # &lt;uuid&gt; as string : string
 
 Casts a UUID as a string type.

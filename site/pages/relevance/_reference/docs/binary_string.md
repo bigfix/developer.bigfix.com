@@ -78,6 +78,10 @@ No documentation exists.
 
 No documentation exists.
 
+# uuid &lt;binary_string&gt; : uuid
+
+No documentation exists.
+
 # &lt;binary_string&gt; as fxf string : string
 
 No documentation exists.

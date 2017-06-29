@@ -380,10 +380,10 @@ Q: uptime of operating system
 A: 12 days, 18:10:01.642793
 {% endqna %}
 
-# uuid of &lt;operating system&gt; : string
+# uuid of &lt;operating system&gt; : uuid
 
-Returns the UUID (Universally Unique IDdentifier) of the operating system.
- 
+Returns the UUID (Universally Unique Identifier) of the operating system.
+
 # version of &lt;operating system&gt; : version
 
 Returns the version of the operating system.
