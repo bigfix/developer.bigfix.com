@@ -74,9 +74,9 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
       <note>On UNIX and Linux the environment variables are not applied with the exception of required Xauthority variables. On such platforms a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent scenario which requires the user to be logged on at the local console and running X Windows.</note>
       </li>
       <li>`RunAs=localuser` specifies a user who can be different from the logged on user. 
-      <p>Use the following options: user=<username> or user={relevance to describe the username} to allow a parametrized input.</p>
-      This keyword requires the BigFix Agent to run successfully, for this reason it does not work when run from the Fixlet Debugger.
-<p>On Windows systems, if you use the keyword `Completion=process` or `Completion=job`, you can specify any local or domain account. If you use the keyword `Completion=none`, the user must be logged in on the system in advance and must have a registry hive.</p> 
+      <p>Specify the mandatory option `user` in one of these two formats: `user=<username>`, or `user={relevance to describe the username}` to allow a parametrized input.</p>
+      <p>This keyword requires the BigFix Agent to run successfully, for this reason it does not work when run from the Fixlet Debugger.</p>
+<p>On Windows systems you can specify any local or domain account. If you use the keyword `Completion=process` or `Completion=job`, there is no need for the specified user to be logged on the system in advance. If you use the keyword `Completion=none`, the user must be logged on the system in advance and must have a registry hive.</p> 
 On other operating systems, the specified user must be either local or listed in local accounts, in other words:
       <ul>
          <li>On Unix or Linux the user must be specified in the */etc/passwd* file.</li>
