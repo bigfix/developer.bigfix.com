@@ -248,6 +248,7 @@ For example:
 **Request:** To post to 'files' instead of 'file' you need to supply the files in a MIME document. In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
 - **isClient=true** to make the file available for download by Clients.
+
 You can also concatenate the two options using the semi-colon ";" as separator.
 
 The simplest example of this would be the curl command:
@@ -307,11 +308,15 @@ For example:
 **Request:** File contents. In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
 - **isClient=true** to make the file available for download by Clients.
+
 These are examples of adding a file to a custom site:
+
    https://lab.bigfix.me:52311/api/site/custom/test/file/101?isClientFile=true
+   
    https://lab.bigfix.me:52311/api/site/custom/test/file/101?force=true
    
 You can also concatenate the two options as follows:
+   
    https://lab.bigfix.me:52311/api/site/custom/test/file/101?isClientFile=true;force=true
 
 **Response Schema:** BESAPI.xsd
@@ -323,16 +328,21 @@ You can also concatenate the two options as follows:
 
 {% restapi "site/{site type}/{site name}/file/{file name}", "POST", "Creates a site file with the specified name." %}
 The parameter "isClientFile" with value 1 can be set in the request to send the file to clients.
+
 **Note:** This method is applicable only to IBM Enpdoint Manager V9.2 and later versions. 
 
 **Request:** File contents. In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
 - **isClient=true** to make the file available for download by Clients.
+
 These are examples of adding a file to a custom site:
+
    https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?isClientFile=true
+   
    https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?force=true
    
 You can also concatenate the two options as follows:
+
    https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?isClientFile=true;force=true
 
 **Response Schema:** BESAPI.xsd
