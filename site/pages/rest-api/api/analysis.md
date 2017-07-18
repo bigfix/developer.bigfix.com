@@ -78,3 +78,5 @@ title: Analysis
 {% restapi "analysis/{site type}/{site name}/{analysis id}/activation/{activation id}", "DELETE", "Deactivates a specific analysis activation." %}
 **Request:** URL is all that is required.
 {% endrestapi %}
+
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
