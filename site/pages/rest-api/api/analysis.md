@@ -1,6 +1,7 @@
 ---
 title: Analysis
 ---
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
 {% restapi "analyses/{site type}/{site name}", "GET", "Fetches a list of analyses in the specified site." %}
 **Request:** URL is all that is required.
@@ -79,4 +80,3 @@ title: Analysis
 **Request:** URL is all that is required.
 {% endrestapi %}
 
-**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
