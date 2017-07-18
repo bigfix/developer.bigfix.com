@@ -1,6 +1,7 @@
 ---
 title: RESTAPI Site
 ---
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
 {% restapi "sites", "GET", "Fetches a list of sites and their types." %}
 **Request:** URL is all that is required.
