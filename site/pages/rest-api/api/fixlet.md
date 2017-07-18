@@ -1,6 +1,7 @@
 ---
 title: RESTAPI Fixlet
 ---
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
 {% restapi "fixlets/{site type}/{site name}", "GET", "Fetches a list of Fixlets of a particular site." %}
  - /api/fixlets/master --> returns fixlets from the master action site

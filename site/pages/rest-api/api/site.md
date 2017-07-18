@@ -1,6 +1,7 @@
 ---
 title: RESTAPI Site
 ---
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
 {% restapi "sites", "GET", "Fetches a list of sites and their types." %}
 **Request:** URL is all that is required.
@@ -125,6 +126,7 @@ For example:
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/permission", "DELETE", "Removes the permissions for a site." %}
+
 **Request:**  URL is all that is required.
 {% endrestapi %}
 
@@ -169,7 +171,6 @@ For example:
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/permission/{operator/role}/{name/id}", "DELETE", "Removes permission from site." %}
-
 **Request:** URL is all that is required
 {% endrestapi %}
 
@@ -244,7 +245,12 @@ For example:
 {% endrestapi %}
 
 {% restapi "/api/site/{site}/files", "POST", "Adds files to a site." %}
-**Request:** To post to 'files' instead of 'file' you need to supply the files in a MIME document. The simplest example of this would be the curl command:
+**Request:** To post to 'files' instead of 'file' you need to supply the files in a MIME document. In the request you can specify:
+- **force=true** to overwrite the file, if already existing in the specified site.
+- **isClient=true** to make the file available for download by Clients.
+You can also concatenate the two options using the semi-colon ";" as separator.
+
+The simplest example of this would be the curl command:
 
 ```
 curl -k -u mo -X POST -F "file=@/temp/file.xml" "https://spiffy:52311/api/site/custom/TestSite/files"
@@ -256,7 +262,7 @@ To send the file to clients, set the "IsClientFile" header to 1. The simplest ex
 curl -k -u master -H "ISClientFile: 1" -X POST -F "file=@/home/test/file.txt" "https://localhost:52311/api/site/custom/master/files"
 ```
 
-More than one file can be included i this way in a single post.
+More than one file can be included in this way in a single post.
 
 **Request Schema:** BESAPI.xsd
 
@@ -290,27 +296,44 @@ For example:
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/file/{file id}", "PUT", "Updates a site file." %}
-**Request:** File contents.
+**Request:** File contents. In the request you can specify **force=true** to overwrite the file, if already existing in the specified site.
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/file/{file id}", "POST", "Update a site file." %}
 **Note:** This method is applicable only to IBM Enpdoint Manager V9.1 and earlier versions. 
-**Request:** File contents.
+
+**Request:** File contents. In the request you can specify:
+- **force=true** to overwrite the file, if already existing in the specified site.
+- **isClient=true** to make the file available for download by Clients.
+These are examples of adding a file to a custom site:
+   https://lab.bigfix.me:52311/api/site/custom/test/file/101?isClientFile=true
+   https://lab.bigfix.me:52311/api/site/custom/test/file/101?force=true
+   
+You can also concatenate the two options as follows:
+   https://lab.bigfix.me:52311/api/site/custom/test/file/101?isClientFile=true;force=true
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/file/{file id}", "DELETE", "Deletes the specified file." %}
-
 **Request:** URL is all that is required
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/file/{file name}", "POST", "Creates a site file with the specified name." %}
 The parameter "isClientFile" with value 1 can be set in the request to send the file to clients.
 **Note:** This method is applicable only to IBM Enpdoint Manager V9.2 and later versions. 
-**Request:** File contents.
+
+**Request:** File contents. In the request you can specify:
+- **force=true** to overwrite the file, if already existing in the specified site.
+- **isClient=true** to make the file available for download by Clients.
+These are examples of adding a file to a custom site:
+   https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?isClientFile=true
+   https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?force=true
+   
+You can also concatenate the two options as follows:
+   https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?isClientFile=true;force=true
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
