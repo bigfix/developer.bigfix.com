@@ -1,6 +1,7 @@
 ---
 title: Computer Group
 ---
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
 {% restapi "computergroups/{site type}/{site name}", "GET", "Fetches the list of computer groups in the specified site." %}
 **Request:** URL is all that is required.
