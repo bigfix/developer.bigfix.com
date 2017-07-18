@@ -1117,7 +1117,7 @@ Returns the grub config file from the default location, either "/boot/grub/menu.
 
 # hardware : hardware
 
-No documentation exists.
+Returns an object containing properties of the hardware.
 
 # help folder : folder
 
