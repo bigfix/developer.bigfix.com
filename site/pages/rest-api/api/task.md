@@ -1,6 +1,7 @@
 ---
 title: Task
 ---
+**Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
 {% restapi "/api/tasks/{site type}/{site name}", "GET", "Fetches a list of tasks of a particular site." %}
 **Request:** URL is all that is required
