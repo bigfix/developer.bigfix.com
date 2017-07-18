@@ -4073,7 +4073,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -4090,7 +4090,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -6147,7 +6147,7 @@
     "hardware": {
       "name": "hardware",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Windows"
         ]
       }
@@ -69747,7 +69747,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69768,7 +69768,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69789,7 +69789,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69810,7 +69810,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69831,7 +69831,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69852,7 +69852,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69873,7 +69873,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69894,7 +69894,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69915,7 +69915,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69935,7 +69935,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69956,7 +69956,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69977,7 +69977,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -69998,7 +69998,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -70019,7 +70019,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -70040,7 +70040,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -70359,7 +70359,7 @@
         "8.0.584.0": [
           "Solaris"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104489,7 +104489,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104525,7 +104525,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104547,7 +104547,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104570,7 +104570,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104606,7 +104606,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104628,7 +104628,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104804,7 +104804,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -104826,7 +104826,7 @@
         "9.5.5.193": [
           "Mac"
         ],
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105047,7 +105047,7 @@
       "op": "&",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105068,7 +105068,7 @@
       "op": "<",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105089,7 +105089,7 @@
       "op": "<=",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105110,7 +105110,7 @@
       "op": "=",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105130,7 +105130,7 @@
       "argType": "binary_string",
       "phrase": "fxf string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105150,7 +105150,7 @@
       "argType": "binary_string",
       "phrase": "local string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105170,7 +105170,7 @@
       "argType": "binary_string",
       "phrase": "utf16 string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105190,7 +105190,7 @@
       "argType": "binary_string",
       "phrase": "utf8 string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105211,7 +105211,7 @@
       "op": "contains",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105232,7 +105232,7 @@
       "op": "ends with",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105253,7 +105253,7 @@
       "op": "starts with",
       "rightType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105274,7 +105274,7 @@
       "pluralPhrase": "lengths",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105296,7 +105296,7 @@
       "indexType": "string",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105317,7 +105317,7 @@
       "pluralPhrase": "representables in utf16",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105338,7 +105338,7 @@
       "pluralPhrase": "representables in utf8",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105359,7 +105359,7 @@
       "pluralPhrase": "representables",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105381,7 +105381,7 @@
       "indexType": "string",
       "directObjectType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105403,7 +105403,7 @@
       "indexType": "binary_string",
       "directObjectType": "encoding",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105423,7 +105423,7 @@
       "indexType": "binary_string",
       "directObjectType": "encoding",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105442,7 +105442,7 @@
       "pluralPhrase": "log contents",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105463,7 +105463,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105484,7 +105484,7 @@
       "indexType": "integer",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105505,7 +105505,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105525,7 +105525,7 @@
       "pluralPhrase": "log lines",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105546,7 +105546,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105567,7 +105567,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105587,7 +105587,7 @@
       "pluralPhrase": "binary locations",
       "directObjectType": "filesystem object",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105606,7 +105606,7 @@
       "pluralPhrase": "binary pathnames",
       "directObjectType": "filesystem object",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105626,7 +105626,7 @@
       "indexType": "binary_string",
       "directObjectType": "folder",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105646,7 +105646,7 @@
       "indexType": "binary_string",
       "directObjectType": "folder",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105665,10 +105665,12 @@
       "pluralPhrase": "uuids",
       "directObjectType": "operating system",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
+          "AIX",
           "Debian",
           "Red Hat",
           "SUSE",
+          "Solaris",
           "Ubuntu",
           "Windows"
         ]
@@ -105681,7 +105683,7 @@
       "argType": "uuid",
       "phrase": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105699,7 +105701,7 @@
       "argType": "uuid",
       "phrase": "hexadecimal",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105718,7 +105720,7 @@
       "pluralPhrase": "invalid afters",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105739,7 +105741,7 @@
       "pluralPhrase": "issuers",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105760,7 +105762,7 @@
       "pluralPhrase": "public key algorithms",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105781,7 +105783,7 @@
       "pluralPhrase": "serial numbers",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105802,7 +105804,7 @@
       "pluralPhrase": "signature algorithms",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105823,7 +105825,7 @@
       "pluralPhrase": "subject common names",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105844,7 +105846,7 @@
       "pluralPhrase": "subjects",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105865,7 +105867,7 @@
       "pluralPhrase": "versions",
       "directObjectType": "x509 certificate",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105886,7 +105888,7 @@
       "pluralPhrase": "binary_strings",
       "indexType": "string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105907,7 +105909,7 @@
       "pluralPhrase": "bytes",
       "indexType": "integer",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105928,7 +105930,7 @@
       "pluralPhrase": "files",
       "indexType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Mac",
@@ -105948,7 +105950,7 @@
       "pluralPhrase": "uuids",
       "indexType": "binary_string",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX",
           "Debian",
           "Red Hat",
@@ -105967,7 +105969,7 @@
       "pluralPhrase": "end times",
       "directObjectType": "bes action result",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Session"
         ]
       }
@@ -105980,7 +105982,7 @@
       "pluralPhrase": "exit codes",
       "directObjectType": "bes action result",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Session"
         ]
       }
@@ -105993,7 +105995,7 @@
       "pluralPhrase": "start times",
       "directObjectType": "bes action result",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Session"
         ]
       }
@@ -106006,8 +106008,21 @@
       "pluralPhrase": "states",
       "directObjectType": "fileset part",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "AIX"
+        ]
+      }
+    },
+    "encrypted info of <client> : string": {
+      "key": "encrypted info of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "encrypted info",
+      "pluralPhrase": "encrypted infos",
+      "directObjectType": "client",
+      "availability": {
+        "99.99.0.228": [
+          "Windows"
         ]
       }
     },
@@ -106019,7 +106034,7 @@
       "pluralPhrase": "proxieds",
       "directObjectType": "hardware",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Windows"
         ]
       }
@@ -106032,7 +106047,7 @@
       "pluralPhrase": "serials",
       "directObjectType": "hardware",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Windows"
         ]
       }
@@ -106045,7 +106060,7 @@
       "pluralPhrase": "uuids",
       "directObjectType": "hardware",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Windows"
         ]
       }
@@ -106058,7 +106073,7 @@
       "pluralPhrase": "virtuals",
       "directObjectType": "hardware",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Windows"
         ]
       }
@@ -106070,7 +106085,7 @@
       "singularPhrase": "hardware",
       "pluralPhrase": "hardwares",
       "availability": {
-        "99.99.0.200": [
+        "99.99.0.228": [
           "Windows"
         ]
       }

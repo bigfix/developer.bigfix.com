@@ -67,6 +67,10 @@ Returns the __BESData folder
 
 No documentation exists.
 
+# encrypted info of &lt;client&gt; : string
+
+No documentation exists.
+
 # evaluationcycle of &lt;client&gt; : evaluation cycle
 
 Returns an object corresponding to the time it takes to evaluate the content set on the specified BigFix Client.
