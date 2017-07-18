@@ -1,6 +1,6 @@
 # type: hardware
 
-No documentation exists.
+This inspector holds various identifiers and information about the hardware on which the agent is running.
 
 # proxied of &lt;hardware&gt; : boolean
 
