@@ -57,5 +57,5 @@ A: false
 
 ### For AIX
 
-Returns **true** if the operating system is hosted on a virtualized LPAR (determined if a virtual SCSI adapter or birtual Fibre Channel adapter is found).
+Returns **true** if the operating system is hosted on a virtualized LPAR (determined by finding a virtual SCSI adapter or virtual Fibre Channel adapter).
 Returns **false** if the operating system is hosted on a physical LPAR.
