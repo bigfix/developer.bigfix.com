@@ -14,6 +14,7 @@ Here you find usage samples showing how to run requests on REST API resources fr
 - [DSA Replication](#dsa-replication)
 - [Master Server Switch](#master-server-switch)
 - [Role](#role)
+- [Site](#site)
 - [System Options](#system-options)
 
 
@@ -404,6 +405,23 @@ To create a new role, run the following command:
 ./iem post Example.xml roles
 ```
 Where Example.xml contains role configuration data in XML format.
+
+## Site
+To add a file to a custom site as master operator, run the following command:
+```
+./iem post /tmp/file.my /api/site/custom/test/file/file.my
+```
+To add a file to the master action site as master operator, run the following command:
+```
+iem post /tmp/file.my /api/site/master/file/file.my --force=yes
+```
+Where the option `--force=yes` allows to override the file it if already exists in the site.
+To add a file to the operator site as non master operator, run the following command:
+```
+iem post /tmp/file.my /api/site/operator/nmo/file/file.my
+```
+Where the option `--isClient=yes` allows to make the file available for download by Clients.
+**Note:** The options `--force` and `--isClient` apply when running post and put requests against files, both as master and as non master operator. For more details, see [Site](../api/site.html).
 
 ## System Options
 To display MinimumRefreshSeconds (seconds), and DefaultFixletVisibility (Visible, Hidden) run the following command:
