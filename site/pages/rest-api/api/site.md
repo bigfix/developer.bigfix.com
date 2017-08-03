@@ -1,5 +1,5 @@
 ---
-title: RESTAPI Site
+title: Site
 ---
 **Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
