@@ -1,5 +1,5 @@
 ---
-title: RESTAPI Site
+title: Site
 ---
 **Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 
@@ -245,7 +245,9 @@ For example:
 {% endrestapi %}
 
 {% restapi "/api/site/{site}/files", "POST", "Adds files to a site." %}
-**Request:** To post to 'files' instead of 'file' you need to supply the files in a MIME document. In the request you can specify:
+**Request:** To post to 'files' instead of 'file' you need to supply the files in a MIME document. 
+
+In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
 - **isClient=true** to make the file available for download by Clients.
 
@@ -288,8 +290,10 @@ More than one file can be included in this way in a single post.
 For example: 
       https://lab.bigfix.me:52311/api/site/master/file/50
 	 
-**Response:** application/octet-stream of the file.
+**Response:** The application/octet-stream of the file.
+
 This text file returns the contents as below. If it were an image, it'd return the image, etc...
+
 For example: 
     Testing
 	
@@ -297,24 +301,22 @@ For example:
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/file/{file id}", "PUT", "Updates a site file." %}
-**Request:** File contents. In the request you can specify **force=true** to overwrite the file, if already existing in the specified site.
+**Request:** File contents. 
+
+In the request you can specify **force=true** to overwrite the file, if already existing in the specified site.
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "site/{site type}/{site name}/file/{file id}", "POST", "Update a site file." %}
+{% restapi "site/{site type}/{site name}/file/{file id}", "POST", "Updates a site file." %}
 **Note:** This method is applicable only to IBM Enpdoint Manager V9.1 and earlier versions. 
 
-**Request:** File contents. In the request you can specify:
+**Request:** File contents. 
+
+In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
 - **isClient=true** to make the file available for download by Clients.
 
-These are examples of adding a file to a custom site:
-
-   https://lab.bigfix.me:52311/api/site/custom/test/file/101?isClientFile=true
-   
-   https://lab.bigfix.me:52311/api/site/custom/test/file/101?force=true
-   
 You can also concatenate the two options as follows:
    
    https://lab.bigfix.me:52311/api/site/custom/test/file/101?isClientFile=true;force=true
@@ -331,16 +333,12 @@ The parameter "isClientFile" with value 1 can be set in the request to send the 
 
 **Note:** This method is applicable only to IBM Enpdoint Manager V9.2 and later versions. 
 
-**Request:** File contents. In the request you can specify:
+**Request:** File contents. 
+
+In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
 - **isClient=true** to make the file available for download by Clients.
 
-These are examples of adding a file to a custom site:
-
-   https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?isClientFile=true
-   
-   https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?force=true
-   
 You can also concatenate the two options as follows:
 
    https://lab.bigfix.me:52311/api/site/custom/test/file/file.my?isClientFile=true;force=true
