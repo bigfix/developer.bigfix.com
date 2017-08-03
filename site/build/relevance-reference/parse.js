@@ -105,7 +105,7 @@ function parseFile(file, docsDir, language, docs) {
   var githubIDs = {};
 
   fs.readFileSync(file).toString().split('\n').forEach(function(line, index) {
-    if (line[0] === '#') {
+    if (line.substr(0, 2) === '# ') {
       if (key) {
         processLines(file, docsDir, githubIDs, lineNumber, key, lines, language,
                      docs);

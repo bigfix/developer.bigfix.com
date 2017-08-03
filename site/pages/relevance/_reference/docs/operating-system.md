@@ -384,7 +384,7 @@ A: 12 days, 18:10:01.642793
 
 Returns the UUID (Universally Unique Identifier) of the operating system.
 
-### For AIX
+#### For AIX
 
 This property returns a UUID in the AIX Object Data Manager (ODM) Customized Attribute entry. You can get the attribute by performing the ODM query ``attribute=os_uuid and name=sys0``.
 
@@ -392,7 +392,7 @@ Alternatively, you can use the ODM inspector with the Relevance ``uuid (attribut
 
 If the AIX installation does not have an operating system UUID already set, then a Relevance check of ``exists uuid of operating system`` evaluates to false.
 
-### For Solaris
+#### For Solaris
 
 For Solaris, the operating system UUID is associated with a zone. Every configured zone has a UUID that is returned by the inspector.
 
@@ -400,7 +400,6 @@ A Relevance check of ``exists uuid of operating system`` evaluates to false, if:
 
 - the Solaris installation does not have a configured zone
 - the Relevance check is done in the global zone
-
 
 # version of &lt;operating system&gt; : version
 
