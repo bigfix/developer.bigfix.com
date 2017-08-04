@@ -421,6 +421,7 @@ To add a file to the operator site as non master operator, run the following com
 iem post /tmp/file.my /api/site/operator/nmo/file/file.my
 ```
 Where the option `--isClient=yes` allows to make the file available for download by Clients.
+
 **Note:** The options `--force` and `--isClient` apply when running post and put requests against files, both as master and as non master operator. For more details, see [Site](../api/site.html).
 
 ## System Options
