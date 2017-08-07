@@ -106,6 +106,9 @@ nav:
       - name: Create Dashboard Variable
         href: /rest-api/examples/create-dashvar.html
 
+      - name: Create File in a Site
+        href: /rest-api/examples/create-file.html
+     
       - name: Create Fixlet
         href: /rest-api/examples/create-fixlet.html
 
