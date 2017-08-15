@@ -79,6 +79,6 @@ Returns **true** only if the operating system is running in a guest Logical Doma
 
 **For Solaris x86**
 
-Returns **true** only if the operating system is running in a guest virtual machine that is provided by Oracle VM Server for x86.
+Returns **true** only if the operating system is running in a guest virtual machine.
 
 If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value. 
