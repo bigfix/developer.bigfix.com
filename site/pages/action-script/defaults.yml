@@ -55,6 +55,9 @@ nav:
 
           - name: administrator delete
             href: /action-script/reference/client/administrator-delete.html
+            
+          - name: client restart
+            href: /action-script/reference/client/client-restart.html
 
           - name: notify client
             href: /action-script/reference/client/notify-client.html
