@@ -19,7 +19,7 @@ title: Operator
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "operator/{operator id}", "GET", "Fetches detailed information about an operator." %}
+{% restapi "operator/{operator name}", "GET", "Fetches detailed information about an operator." %}
 **Request:** URL is all that is required
 
 **Response:** XML for operator.
@@ -27,7 +27,7 @@ title: Operator
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "operator/{operator id}", "PUT", "Updates an operator." %}
+{% restapi "operator/{operator name}", "PUT", "Updates an operator." %}
 **Request:** Complete or partial XML for Operator.
 
 For example:
@@ -66,7 +66,7 @@ For example:
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "operator/{operator id}", "POST", "Updates an operator." %}
+{% restapi "operator/{operator name}", "POST", "Updates an operator." %}
 **Request:** Complete or partial XML for Operator..
 
 **Request Schema:** BESAPI.xsd
@@ -76,12 +76,12 @@ For example:
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "operator/{operator id}", "DELETE", "Deletes an operator." %}
+{% restapi "operator/{operator name}", "DELETE", "Deletes an operator." %}
 
 **Request:** URL is all that is required
 {% endrestapi %}
 
-{% restapi "operator/{operator id}/roles", "GET", "Shows a list of roles the operator is a member of." %}
+{% restapi "operator/{operator name}/roles", "GET", "Shows a list of roles the operator is a member of." %}
 **Request:** URL is all that is required
 
 **Response:** XML listing roles.
