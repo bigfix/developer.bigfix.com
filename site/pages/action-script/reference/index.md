@@ -12,6 +12,7 @@ categories:
       - action unlock
       - administrator add
       - administrator delete
+      - client restart
       - notify client
       - relay select
       - restart
