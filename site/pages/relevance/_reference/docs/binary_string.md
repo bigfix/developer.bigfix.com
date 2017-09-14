@@ -35,7 +35,7 @@ A: d
 Iterates through the binary string returning all the binary substrings matching the name given.
 
 {% qna %}
-Q: number of binary_substrings (binary_string “11”) of (binary_string “11225511225511”)
+Q: number of binary_substrings (binary_string "11") of (binary_string "11225511225511")
 A: 3
 {% endqna %}
 
@@ -44,7 +44,7 @@ A: 3
 Returns the binary substring value of the byte located at the offset specified by number within the file. Number is zero origin. 
 
 {% qna %}
-Q: (byte 0 of (binary_string “11223344555”)) as hexadecimal 
+Q: (byte 0 of (binary_string "11223344555")) as hexadecimal 
 A: 11
 {% endqna %}
 
@@ -53,7 +53,7 @@ A: 11
 Returns  each byte of `binary_string` as separate data.
 
 {% qna %}
-Q: (bytes of (binary_string “1122ee33ff”)) as hexadecimal
+Q: (bytes of (binary_string "1122ee33ff")) as hexadecimal
 A: 11
 22
 ee
@@ -129,8 +129,8 @@ Returns the positions of the binary string.
 Tries to transcode binary data in `binary_string` from the specified encoding to UTF-8. If the conversion succeeds, returns the converted data, if the conversion does not succeed, tries next encodings.
 
 {% qna %}
-Q: representations in “UTF-8;euc_jp;Shift_JIS” of (binary_string “e3838fe383ad”)
-A: “ハロ”
+Q: representations in "UTF-8;euc_jp;Shift_JIS" of (binary_string "e3838fe383ad")
+A: "ハロ"
 {% endqna %}
 
 # symlink &lt;binary_string&gt; : symlink
@@ -186,12 +186,12 @@ No documentation exists.
 Returns a boolean TRUE if the first `binary_string` contains with the second `binary_string`.
 
 {% qna %}
-Q: (binary_string “11ee22”) contains (binary_string “ee”) 
+Q: (binary_string "11ee22") contains (binary_string "ee") 
 A: true
 {% endqna %}
 
 {% qna %}
-Q: (binary_string “11ee22”) contains (binary_string “1e”) 
+Q: (binary_string "11ee22") contains (binary_string "1e") 
 A: false
 {% endqna %}
 
