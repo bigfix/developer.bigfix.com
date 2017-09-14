@@ -26,7 +26,9 @@ No documentation exists.
 
 # binary named folder of &lt;folder&gt; : folder
 
-No documentation exists.
+Iterates through the folders of a folder returning folder objects.  
+On Unix operating system, this is similar to "folder of <folder>", except this method returns all folders regardless of its names.   
+On other operating systems, same as "folder of <folder>"
 
 # bundle of &lt;folder&gt; : bundle
 
@@ -142,7 +144,7 @@ Returns a filesystem object with the given relative item name from the specified
 
 # relative file &lt;string&gt; of &lt;folder&gt; : file
 
-Returns the file with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;.Example: relative file "Safari.app/Contents/MacOS/Safari" of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
+Returns the file with the path specified by &lt;string&gt; relative to the given &lt;folder&gt;. For example: relative file "Safari.app/Contents/MacOS/Safari" of applications folder - Returns the concatenation of the specified folder and the given path, /Applications/Safari.app/Contents/MacOS/Safari.
 
 # relative folder &lt;binary_string&gt; of &lt;folder&gt; : folder
 
@@ -190,7 +192,9 @@ No documentation exists.
 
 # string named folder of &lt;folder&gt; : folder
 
-No documentation exists.
+Iterates through the folders of a folder returning folder objects.  
+On Unix operating system, this is similar to "folder of <folder>", except that this method returns folders only if its name is valid in local character set.   
+On other operating systems, same as "folder of <folder>"
 
 # symlink &lt;binary_string&gt; of &lt;folder&gt; : symlink
 
