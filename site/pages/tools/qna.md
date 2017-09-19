@@ -15,6 +15,10 @@ Although most relevance clauses take only a fraction of a second to evaluate, th
 ones that might take a significant amount of time to evaluate. When creating these clauses, it’s
 important to use syntax that will minimize the amount of time needed to evaluate the clause.
 
+**On Windows systems:**
+
+To run the QnA tool on Windows, it must be run by a user with local admin privileges.
+
 **On Linux systems:**
 
 The QnA client for Linux and other platforms is available with the BESClient executable in the installation package. 

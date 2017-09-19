@@ -6,7 +6,7 @@ The Fixlet Debugger is a graphical-based Client Relevance and Action Script lang
 Relevance statements and Action scripts on the system where the tool runs. 
 Use it to fine-tune your Relevance Expressions and Action Scripts before deploying them to your production environment.
 
-The Fixlet Debugger is available only on Windows platforms. 
+The Fixlet Debugger is available only on Windows platforms. It must be run by a Windows user with local admin privileges.
 
 The tool is installed automatically with the BigFix Console and, during the installation, a shortcut is automatically added in the Windows start menu.
 You can also download a [stand-alone version](http://support.bigfix.com/bes/release/ ) of the Fixlet Debugger. 
