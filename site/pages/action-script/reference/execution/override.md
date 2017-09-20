@@ -94,7 +94,7 @@ On other operating systems, the specified user must be either local or listed in
 	 <ul>
             <li>`password=required` if the Take Action Dialog must ask for the password and pass it to the agent as a SecureParameter.</li>
             <li>`password=impersonate` if the agent must search for a session running with the user specified in the `user` option, and run the command in that session.</li>
-	    <li>`password=system` to run the command the with the Local System account and without an user contex. The command requires the specified user to be logged on when the `override` runs on the system. Any UI will be displayed in the session of the specified user.
+	    <li>`password=system` to run the command the with the Local System account and without an user context. The command requires the specified user to be logged on when the `override` runs on the system. Any UI will be displayed in the session of the specified user.
 	    <note>Use the `asadmin` option if you want the command to write to *HKEY_CURRENT_USER* registry hive.</note> 
 	    </li>
          </ul>
@@ -111,7 +111,7 @@ On other operating systems, the specified user must be either local or listed in
 	    <li>`asadmin=interactive` to run the specified command in the context of the user specified in the `user` keyword  as if that user were a member of builtin Administrators group. The following rules apply if you use this value:
             <ul>
 	       <li>If you use the `targetuser` keyword, the UI launched by the command is displayed in the session of the user specified with `targetuser`. The command fails if the user specified with the `targetuser` keyword is not logged on when the override command runs.</li>
-	       <li>You must specify the keyword `password=required`, when using an existing account, or the `password="password"` keyword, if you want to create a temporary account in the action. You use the `password="password"` keyword, specifying the actual password surrounded with double quotes, with a relevance expression for password and the "action log command" to hide parameter values."</li>
+	       <li>You must specify the keyword `password=required`, when using an existing account, or the `password="password"` keyword, if you want to create a temporary account in the action. You use the `password="password"` keyword, specifying the actual password surrounded with double quotes, with a relevance expression for password and the "action log command" to hide parameter values.</li>
 	    </ul>
 	    </li>
 	 </ul>
