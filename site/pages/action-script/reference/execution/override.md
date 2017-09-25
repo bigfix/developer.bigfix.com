@@ -15,9 +15,9 @@ Version | Platforms
 ## Syntax
 
     override <cmd>
-    <name1>=<value2>
-    <name2>=<value2>
-    <cmd> <command-line>
+    <keyword>=<value>
+    <keyword>=<value>
+    <cmd> <rest of command-line>
 
 ## Keywords
 
@@ -87,12 +87,13 @@ On other operating systems, the specified user must be either local or listed in
 	 <li>You can specify a domain user by using one of the following formats:
          <ul>
 	    <li>"user@domain" where domain is an active directory domain, for example "john@tem.test.com".</li>
-	    <li>"domain\user" where domain is specified in the short domain name notation, for example "TEM\john".</li>
+	    <li>"domain\user" where domain is specified in the short domain name notation, for example "TEM\john".
+	    <p><b>Note:</b> The action runs even if the specified domain user has never logged on the target system before then.</li>
 	 </ul>
 	 </li>
 	 <li>You can specify the option `password` as follows:
 	 <ul>
-            <li>`password=required` if the Take Action Dialog must ask for the password and pass it to the agent as a SecureParameter.</li>
+            <li>`password=required` if specified, a Take Action Dialog requiring to enter the user's password is displayed on the Console. That password is then passed to the agent as a SecureParameter.</li>
             <li>`password=impersonate` if the agent must search for a session running with the user specified in the `user` option, and run the command in that session.</li>
 	    <li>`password=system` to run the command the with the Local System account and without an user context. The command requires the specified user to be logged on when the `override` runs on the system. Any UI will be displayed in the session of the specified user.
 	    <note>Use the `asadmin` option if you want the command to write to *HKEY_CURRENT_USER* registry hive.</note> 
@@ -102,7 +103,7 @@ On other operating systems, the specified user must be either local or listed in
 	 </li>
 	 <li>You can use the option `asadmin` as follows:
 	 <ul>
-	    <li>`asadmin=true` to run the specified command in the context of the specified user as if user were a member of builtin Administrators group. In this case you must:
+	    <li>`asadmin=true` to run the specified command in the context of the specified user as if user is a member of builtin Administrators group. In this case you must:
 	    <ul>
 	       <li>Specify `password=required`.</li>
 	       <li>Omit the `targetuser` keyword.</li>
@@ -111,7 +112,7 @@ On other operating systems, the specified user must be either local or listed in
 	    <li>`asadmin=interactive` to run the specified command in the context of the user specified in the `user` keyword  as if that user were a member of builtin Administrators group. The following rules apply if you use this value:
             <ul>
 	       <li>If you use the `targetuser` keyword, the UI launched by the command is displayed in the session of the user specified with `targetuser`. The command fails if the user specified with the `targetuser` keyword is not logged on when the override command runs.</li>
-	       <li>You must specify the keyword `password=required`, when using an existing account, or the `password="password"` keyword, if you want to create a temporary account in the action. You use the `password="password"` keyword, specifying the actual password surrounded with double quotes, with a relevance expression for password and the "action log command" to hide parameter values.</li>
+	       <li>You must specify the keyword `password=required`, when using an existing account, or the `password="password"` keyword, if you want to use a temporary user and you have to specify the user's password in the action in clear text. If you use the `password="password"` keyword, specify the actual password surrounded with double quotes.</li>
 	    </ul>
 	    </li>
 	 </ul>
@@ -182,4 +183,15 @@ override wait
 timeout_seconds=3600
 disposition=terminate
 wait "__Example\maintenance.exe" arg1 arg2 arg3
+```
+
+This example shows how you might install a software application on a Windows machine using the context of a domain user who doesn't belong to the Administraor group. A Take Action Dialog, asking for the user's password, will appear on the console . The password will be passed to the agent as a SecureParameter:
+
+```actionscript
+override wait
+    	runas=localuser
+	asadmin=true
+	user=TEM\User1
+	password=required
+wait c:\IMAGE\SWD\application.exe /SILENT
 ```
