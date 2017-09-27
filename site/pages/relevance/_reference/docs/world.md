@@ -256,6 +256,10 @@ Returns the BES Action status corresponding to postponements. This result can be
 
 Returns the BES Action status corresponding to whether or not it is running. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
+# bes action status timeout reached : bes action status
+
+No documentation exists.
+
 # bes action status unreported : bes action status
 
 Returns a constant representing an action status of &#39;not reported&#39;.

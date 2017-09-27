@@ -36,7 +36,7 @@ If Logical Domains aren't enabled, this returns a string with the *hostid*.
 
 The UUID is from the global zone of the running operating system.
 
-If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value. 
+If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value.
 
 # uuid of &lt;hardware&gt; : uuid
 
@@ -61,7 +61,7 @@ The UUID is for the Logical Domain of the running operating system.  If Logical 
 
 The UUID is from the global zone of the running operating system.
 
-If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value. 
+If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value.
 
 # virtual of &lt;hardware&gt; : boolean
 
@@ -87,4 +87,4 @@ Returns **true** only if the operating system is running in a guest Logical Doma
 
 Returns **true** only if the operating system is running in a guest virtual machine.
 
-If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value. 
+If zones are configured, this can only return its value if the zone has access to /dev/smbios.  The global zone always returns a value.

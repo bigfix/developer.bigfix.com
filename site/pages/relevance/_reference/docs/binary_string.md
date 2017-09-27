@@ -59,7 +59,7 @@ A: 11
 ee
 33
 ff
-{% endqna %} 
+{% endqna %}
 
 # file &lt;binary_string&gt; : file
 
