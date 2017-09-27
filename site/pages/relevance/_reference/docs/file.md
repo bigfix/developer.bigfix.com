@@ -103,43 +103,43 @@ Same as line &lt;string&gt; of &lt;file&gt;, returns the lines of the given file
 
 Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
 
-# log content of &lt;file&gt; : file content
+# locked content of &lt;file&gt; : file content
 
 Returns an object that can be used to search for a string in the specified file. 
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
-# log key &lt;string&gt; of &lt;file&gt; : string
+# locked key &lt;string&gt; of &lt;file&gt; : string
 
 Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &lt;string&gt;) followed by an = or : character. When searching, white space is ignored.
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
-# log line &lt;integer&gt; of &lt;file&gt; : file line
+# locked line &lt;integer&gt; of &lt;file&gt; : file line
 
 Returns the nth line (specified by &lt;integer&gt;) from the given file. 
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
-# log line containing &lt;string&gt; of &lt;file&gt; : file line
+# locked line containing &lt;string&gt; of &lt;file&gt; : file line
 
 Returns all the lines containing the specified string and belonging to the given file. 
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
-# log line of &lt;file&gt; : file line
+# locked line of &lt;file&gt; : file line
 
 Iterates over all the lines of the specified file. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line. 
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
-# log line starting with &lt;string&gt; of &lt;file&gt; : file line
+# locked line starting with &lt;string&gt; of &lt;file&gt; : file line
 
 Same as line &lt;string&gt; of &lt;file&gt;, returns the lines starting with the specified string and belonging to the given file. 
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
 
-# log section &lt;string&gt; of &lt;file&gt; : file section
+# locked section &lt;string&gt; of &lt;file&gt; : file section
 
 Returns a named section of the specified file. It is useful for locating sections of &#39;ini&#39; files. Section names are delimited by square bracket characters &#39;[section name]&#39;.
 
