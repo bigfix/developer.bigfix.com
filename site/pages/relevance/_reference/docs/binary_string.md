@@ -39,9 +39,20 @@ Q: number of binary_substrings (binary_string "11") of (binary_string "112255112
 A: 3
 {% endqna %}
 
+{% qna %}
+Q: number of bynary_substrings "be" of "to be or not to be"
+A: 2
+{% endqna %}
+
+{% qna %}
+Q: preceding texts of binary_substrings "be" of "to be or not to be"
+A: to
+A: to be or not to
+{% endqna %}
+
 # byte &lt;integer&gt; of &lt;binary_string&gt; : binary_substring
 
-Returns the binary substring value of the byte located at the offset specified by number within the file. Number is zero origin. 
+Returns the binary substring value of the byte located at the offset specified by number. Number is zero origin.  
 
 {% qna %}
 Q: (byte 0 of (binary_string "11223344555")) as hexadecimal 
@@ -50,7 +61,7 @@ A: 11
 
 # byte of &lt;binary_string&gt; : binary_substring
 
-Returns  each byte of `binary_string` as separate data.
+Returns each byte of `binary_string` as separate data. 
 
 {% qna %}
 Q: (bytes of (binary_string "1122ee33ff")) as hexadecimal
@@ -70,13 +81,18 @@ No documentation exists.
 Returns a binary substring containing first `integer` bytes of `binary_string`.
 
 {% qna %}
-Q: (first 3 of (binary_string "112233445566778899")) as hexadecimal  
+Q: first 3 of (binary_string "112233445566778899") as hexadecimal  
 A: 112233
+{% endqna %}
+
+{% qna %}
+Q: first 5 of "To be or not to be"  
+A: To be
 {% endqna %}
 
 # folder &lt;binary_string&gt; : folder
 
-Returns a folder object for the binary name provided. See drive.
+Returns a folder object for the binary name provided.
 
 # last &lt;integer&gt; of &lt;binary_string&gt; : binary_substring
 
@@ -85,6 +101,11 @@ Returns a binary substring containing last `integer` bytes of `binary_string`.
 {% qna %}
 Q: (last 2 of (binary_string "112233445566778899")) as hexadecimal  
 A: 8899
+{% endqna %}
+
+{% qna %}
+Q: last 5 of "Hello Kitty"
+A: Kitty
 {% endqna %}
 
 # length of &lt;binary_string&gt; : integer
@@ -102,11 +123,11 @@ A: "%25001%2582"
 
 # position &lt;integer&gt; of &lt;binary_string&gt; : binary position
 
-Returns the positions of the binary string.
+Returns the position of a binary string. 
 
 # position of &lt;binary_string&gt; : binary position
 
-No documentation exists.
+Returns the binary positions of the binary string.
 
 # representable in &lt;string&gt; of &lt;binary_string&gt; : boolean
 
@@ -122,7 +143,7 @@ Returns true if binary data in `binary_string` is valid UTF-8 data.
 
 # representable of &lt;binary_string&gt; : boolean
 
-Returns the positions of the binary string.
+Returns true if binary data in `binary_string` is valid UTF-16 data on Windows systems. Returns true if binary data in `binary_string` is valid UTF-8 data on non-Windows systems.
 
 # representation in &lt;string&gt; of &lt;binary_string&gt; : string
 
@@ -135,7 +156,7 @@ A: "ハロ"
 
 # symlink &lt;binary_string&gt; : symlink
 
-Returns a symlink from the specified binary string.
+Returns a symbolic link from the specified binary string.
 
 # uuid &lt;binary_string&gt; : uuid
 
@@ -155,7 +176,7 @@ Interprets binary data in `binary_string` as local character set and converts to
 
 # &lt;binary_string&gt; as string : string
 
-Same as as utf16 string on Windows operating system, same as utf8 string on other operating systems.
+Interprets binary data in binary_string as UTF-16 and converts to string on Windows systems. Interprets binary data in binary_string as UTF-8 and converts to string on non-Windows systems.
 
 # &lt;binary_string&gt; as utf16 string : string
 
@@ -183,7 +204,7 @@ No documentation exists.
 
 # &lt;binary_string&gt; contains &lt;binary_string&gt; : boolean
 
-Returns a boolean TRUE if the first `binary_string` contains with the second `binary_string`.
+Returns a boolean TRUE if the first `binary_string` contains with the second `binary_string`. The value is checked on byte basis.
 
 {% qna %}
 Q: (binary_string "11ee22") contains (binary_string "ee") 
