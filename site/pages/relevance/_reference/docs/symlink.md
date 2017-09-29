@@ -96,7 +96,7 @@ Returns the pathname that the symlink points to.
 
 # &lt;symlink&gt; as binary_string : binary_string
 
-No documentation exists.
+Returns a binary string for a full path of symbolic link.
 
 # &lt;symlink&gt; as device file : device file
 
