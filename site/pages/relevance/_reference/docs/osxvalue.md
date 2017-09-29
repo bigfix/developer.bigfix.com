@@ -16,7 +16,7 @@ Strips off any trailing null from an osxvalue, returning a proper string from th
 
 # data of &lt;osxvalue&gt; : binary_string
 
-No documentation exists.
+Casts the specified osxvalue to a binary string.
 
 # data of &lt;osxvalue&gt; : string
 
