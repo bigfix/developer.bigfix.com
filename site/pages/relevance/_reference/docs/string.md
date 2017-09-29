@@ -1554,7 +1554,7 @@ Returns a &#39;time of day with time zone&#39; object from the specified string.
 
 # &lt;string&gt; as binary_string : binary_string
 
-No documentation exists.
+Works as "&lt;var&gt; as utf16 binary_string" on Windows systems, and as "&lt;var&gt; as utf8 binary_string" on other operating systems.
 
 # &lt;string&gt; as boolean : boolean
 
@@ -1578,7 +1578,7 @@ Converts the contents of a string into a floating point number.Example: "4.5" as
 
 # &lt;string&gt; as fxf binary_string : binary_string
 
-No documentation exists.
+First transcodes the string into the fxf character set, and then converts the binary data transcoded into a binary_string.
 
 # &lt;string&gt; as hexadecimal : string
 
@@ -1606,7 +1606,7 @@ Trims the leading spaces from a string.
 
 # &lt;string&gt; as local binary_string : binary_string
 
-No documentation exists.
+First transcodes the string into the local character set, and then converts the binary data transcoded into a binary_string.
 
 # &lt;string&gt; as local time : time
 
@@ -1674,11 +1674,11 @@ Returns an uppercase version of the string provided.
 
 # &lt;string&gt; as utf16 binary_string : binary_string
 
-No documentation exists.
+First transcodes the string into the utf16 character set, and then converts the binary data transcoded into a binary_string.
 
 # &lt;string&gt; as utf8 binary_string : binary_string
 
-No documentation exists.
+First transcodes the string into the utf8 character set, and then converts the binary data transcoded into a binary_string.
 
 # &lt;string&gt; as version : version
 
