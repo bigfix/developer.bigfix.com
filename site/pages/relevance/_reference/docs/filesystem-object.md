@@ -31,15 +31,15 @@ The date of the last backup of the specified filesystem object (such as a file o
 
 # binary location of &lt;filesystem object&gt; : binary_string
 
-No documentation exists.
+Returns the location of the specified file or folder as a `binary_string`.
 
 # binary name of &lt;filesystem object&gt; : binary_string
 
-No documentation exists.
+Returns the name of the specified file or folder as a `binary_string`.
 
 # binary pathname of &lt;filesystem object&gt; : binary_string
 
-No documentation exists.
+Returns the pathname of the specified file or folder as a `binary_string`.
 
 # bundle version of &lt;filesystem object&gt; : version
 
