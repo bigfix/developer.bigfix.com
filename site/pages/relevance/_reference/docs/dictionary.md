@@ -16,7 +16,7 @@ Get, from a dictionary, the string keyed by the specified string. Works for obje
 
 # data &lt;string&gt; of &lt;dictionary&gt; : binary_string
 
-No documentation exists.
+Returns the specified dictionary data as a binary string.
 
 # data &lt;string&gt; of &lt;dictionary&gt; : string
 
