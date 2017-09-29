@@ -21,6 +21,18 @@ Create the `C:\test` folder.
 folder create "C:\test"
 ```
 
+Under the current folder create folder "ハロ" in UTF-8 encoding.
+
+```actionscript
+binary name folder create e3838fe383ad
+```
+
+Under /tmp/ folder create folder "ハロ" in UTF-8 encoding.
+
+```actionscript
+binary name folder create {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
+```
+
 ## Notes
 
 It’s good practice to enclose file paths in quotes to preserve spaces. Without
