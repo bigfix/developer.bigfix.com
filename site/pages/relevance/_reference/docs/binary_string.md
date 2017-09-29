@@ -1,6 +1,12 @@
 # type: binary_string
 
-No documentation exists.
+Creates a binary string from the hexadecimal notation. The string must contain only the characters 0-9 and a-f. For example:
+
+{% qna %}
+Q: binary_string "82a4"
+{% endqna %}
+
+returns binary string of 2 bytes, the first byte contains 0x82, second byte contains 0xa4.
 
 # application &lt;binary_string&gt; : application
 
@@ -39,17 +45,6 @@ Q: number of binary_substrings (binary_string "11") of (binary_string "112255112
 A: 3
 {% endqna %}
 
-{% qna %}
-Q: number of bynary_substrings "be" of "to be or not to be"
-A: 2
-{% endqna %}
-
-{% qna %}
-Q: preceding texts of binary_substrings "be" of "to be or not to be"
-A: to
-A: to be or not to
-{% endqna %}
-
 # byte &lt;integer&gt; of &lt;binary_string&gt; : binary_substring
 
 Returns the binary substring value of the byte located at the offset specified by number. Number is zero origin.  
@@ -74,7 +69,7 @@ ff
 
 # file &lt;binary_string&gt; : file
 
-No documentation exists.
+Returns a file object for the binary name provided.
 
 # first &lt;integer&gt; of &lt;binary_string&gt; : binary_substring
 
@@ -103,14 +98,9 @@ Q: (last 2 of (binary_string "112233445566778899")) as hexadecimal
 A: 8899
 {% endqna %}
 
-{% qna %}
-Q: last 5 of "Hello Kitty"
-A: Kitty
-{% endqna %}
-
 # length of &lt;binary_string&gt; : integer
 
-No documentation exists.
+Returns the length of the binary string in number of bytes.
 
 # percent encode &lt;binary_string&gt; : string
 
@@ -131,7 +121,13 @@ Returns the binary positions of the binary string.
 
 # representable in &lt;string&gt; of &lt;binary_string&gt; : boolean
 
-No documentation exists.
+Checks if the binary value in the binary string is valid in one or more encodings.
+To specify multiple encodings, separate them with a semicolon. The binary value is tested with the first encoding, and if it is not valid, it is tested against next encoding until a valid encoding, among those specified, if found or untile the list of encodings to test ends. The inspector returns true if binary value is valid in any of specified encodings, returns false otherwise.
+
+{% qna %}
+Q: representable in "UTF-8;Shift_JIS" of (binary_string "82a082a2")  
+A: true
+{% endqna %}
 
 # representable in utf16 of &lt;binary_string&gt; : boolean
 
