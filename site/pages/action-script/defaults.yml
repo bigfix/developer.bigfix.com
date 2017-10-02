@@ -130,6 +130,9 @@ nav:
           - name: action uses wow64 redirection
             href: /action-script/reference/execution/action-uses-wow64-redirection.html
 
+          - name: action uses file encoding
+            href: /action-script/reference/execution/action-uses-file-encoding.html
+
           - name: dos
             href: /action-script/reference/execution/dos.html
 
