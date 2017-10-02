@@ -30,6 +30,12 @@ Delete the `win.com` file.
 delete "{name of drive of windows folder}\win.com"
 ```
 
+Delete file `/temp/ハロ` in UTF-8 encoding.
+
+```actionscript
+binary name delete {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
+```
+
 ## Notes
 
 It’s good practice to enclose file paths in quotes to preserve spaces. Without
