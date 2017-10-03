@@ -24,7 +24,6 @@ Q: (preceding binary_string of position 3 of binary_string "001122334455") as he
 A: 001122
 {% endqna %}
 
-
 # start of &lt;binary_substring&gt; : binary position
 
 Returns the first position of the binary_substring.

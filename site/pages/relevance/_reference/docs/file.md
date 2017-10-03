@@ -99,10 +99,6 @@ Iterates over all the lines of the specified file. Note that each line is trunca
 
 Same as line &lt;string&gt; of &lt;file&gt;, returns the lines of the given file that start with the specified string.
 
-# locked of &lt;file&gt; : boolean
-
-Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
-
 # locked content of &lt;file&gt; : file content
 
 Returns an object that can be used to search for a string in the specified file. 
@@ -138,6 +134,10 @@ Use this inspector to access files that might be locked because they are concurr
 Same as line &lt;string&gt; of &lt;file&gt;, returns the lines starting with the specified string and belonging to the given file. 
 
 Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+
+# locked of &lt;file&gt; : boolean
+
+Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
 
 # locked section &lt;string&gt; of &lt;file&gt; : file section
 

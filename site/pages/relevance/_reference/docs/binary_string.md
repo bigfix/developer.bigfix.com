@@ -113,7 +113,7 @@ A: "%25001%2582"
 
 # position &lt;integer&gt; of &lt;binary_string&gt; : binary position
 
-Returns the position of a binary string. 
+Returns the position of a binary string.
 
 # position of &lt;binary_string&gt; : binary position
 
