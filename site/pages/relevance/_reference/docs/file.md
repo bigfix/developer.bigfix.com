@@ -101,39 +101,63 @@ Same as line &lt;string&gt; of &lt;file&gt;, returns the lines of the given file
 
 # locked content of &lt;file&gt; : file content
 
-Returns an object that can be used to search for a string in the specified file. 
+Returns an object that can be used to search for a string in the specified file that might be locked because it is concurrently opened for writing by another application. 
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # locked key &lt;string&gt; of &lt;file&gt; : string
 
-Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &lt;string&gt;) followed by an = or : character. When searching, white space is ignored.
+Returns a key and its value from the given structured text file that might be locked because it is concurrently opened for writing by another application. It iterates over lines that start with the key name (as specified by &lt;string&gt;) followed by an = or : character. When searching, white space is ignored.
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # locked line &lt;integer&gt; of &lt;file&gt; : file line
 
-Returns the nth line (specified by &lt;integer&gt;) from the given file. 
+Returns the nth line (specified by &lt;integer&gt;) from the given file that might be locked because it is concurrently opened for writing by another application. 
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # locked line containing &lt;string&gt; of &lt;file&gt; : file line
 
-Returns all the lines containing the specified string and belonging to the given file. 
+Returns all the lines containing the specified string and belonging to the given file that might be locked because it is concurrently opened for writing by another application. 
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # locked line of &lt;file&gt; : file line
 
-Iterates over all the lines of the specified file. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line. 
+Iterates over all the lines of the specified file that might be locked because it is concurrently opened for writing by another application. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line. 
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # locked line starting with &lt;string&gt; of &lt;file&gt; : file line
 
-Same as line &lt;string&gt; of &lt;file&gt;, returns the lines starting with the specified string and belonging to the given file. 
+Same as line &lt;string&gt; of &lt;file&gt;, returns the lines starting with the specified string and belonging to the given file that might be locked because it is concurrently opened for writing by another application. 
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # locked of &lt;file&gt; : boolean
 
@@ -141,9 +165,13 @@ Returns `True` if the file is locked.Example: locked of file "this file" of fold
 
 # locked section &lt;string&gt; of &lt;file&gt; : file section
 
-Returns a named section of the specified file. It is useful for locating sections of &#39;ini&#39; files. Section names are delimited by square bracket characters &#39;[section name]&#39;.
+Returns a named section of the specified file that might be locked because it is concurrently opened for writing by another application. It is useful for locating sections of &#39;ini&#39; files. Section names are delimited by square bracket characters &#39;[section name]&#39;.
 
-Use this inspector to access files that might be locked because they are concurrently opened for writing by other applications.
+You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
+
+This inspector cannot read all kinds of *locked files*. It fails to open a file if another application has opened the file in an *exclusive mode*, that is, without allowing others to read the file.
+
+The inspector does not override the access mode or the sharing flag specified to open the file by another application.
 
 # md5 of &lt;file&gt; : string
 
