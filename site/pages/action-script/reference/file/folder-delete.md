@@ -23,6 +23,12 @@ Delete the directory `C:\test`.
 folder delete "C:\test"
 ```
 
+Remove the folder `/temp/ハロ` in UTF-8 encoding.
+
+```actionscript
+binary name folder delete {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
+```
+
 ## Notes
 
 It’s good practice to enclose file paths in quotes to preserve spaces. Without
