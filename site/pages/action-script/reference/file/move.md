@@ -33,6 +33,10 @@ delete "c:\updates\q312456.exe"
 move "__Download\q312456.exe" "c:\updates\q312456.exe"
 ```
 
+This command moves the file `/test/my-file`.txt into the file `/temp/ハロ` in UTF-8 encoding.
+
+binary name move {"/test/my-file.txt" as binary_string as hexadecimal} {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
+
 ## Notes
 
 It’s good practice to enclose file paths in quotes to preserve spaces. Without
