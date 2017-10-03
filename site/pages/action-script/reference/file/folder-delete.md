@@ -23,7 +23,7 @@ Delete the directory `C:\test`.
 folder delete "C:\test"
 ```
 
-Remove the folder `/temp/ハロ` in UTF-8 encoding.
+Remove the folder `/temp/ハロー` in UTF-8 encoding.
 
 ```actionscript
 binary name folder delete {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
