@@ -42,6 +42,7 @@ categories:
       - action launch preference low-priority
       - action launch preference normal-priority
       - action uses wow64 redirection
+      - action uses file encoding
       - dos
       - override
       - run
