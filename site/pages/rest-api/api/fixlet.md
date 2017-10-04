@@ -43,12 +43,14 @@ title: RESTAPI Fixlet
 **Response Schema:** Plain text.
 {% endrestapi %}
 
-{% restapi "fixlet/{site type}/{site name}/{fixlet id}", "POST", "Creates a Fixlet in the specified site." %}
+{% restapi "fixlet/{site type}/{site name}", "POST", "Creates a Fixlet in the specified site." %}
 **Request:** Complete XML for the object in the body of the request
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BESAPI.xsd
+
+**Note:** For backward compatibility, this action still accepts an id but ignore it even if referencing a non-existing object.
 {% endrestapi %}
 
 {% restapi "fixlet/{site type}/{site name}/{fixlet id}", "DELETE", "Deletes a Fixlet." %}
