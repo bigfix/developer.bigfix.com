@@ -1,7 +1,7 @@
 # type: encoding
 
 Specifies an encoding to use when reading a file in a relevance expression.
-The `encoding` could be any name that ICU can recognize, such as "ISO-8859-1", "Shift_JIS", and "UTF-8". Once created, the `file` objects can be used as regular `file` objects and you can apply any operation applicable to text files. If no encoding is specified, the files are read in the local encoding.
+The `encoding` could be any name that the [International Components for Unicode (ICU)](http://demo.icu-project.org/icu-bin/convexp) can recognize, such as "ISO-8859-1", "Shift_JIS", and "UTF-8". Once created, the `file` objects can be used as regular `file` objects and you can apply any operation applicable to text files. If no encoding is specified, the files are read in the local encoding.
 
 These are some examples:
 
@@ -25,28 +25,27 @@ returns  Returns the value of the "やま" key in the "其之弐" section of the
 
 # download file &lt;string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+Returns a file object with the given name from the client's download folder, which is to be read in the specified encoding.
 
 # download folder of &lt;encoding&gt; : folder
 
-No documentation exists.
+Returns a folder object for the client's download folder. File objects created by deriving the folder object will be read in the specified encoding.
 
 # file &lt;binary_string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+This is equivalent to `file &lt;binary_string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # file &lt;string&gt; of &lt;encoding&gt; : file
 
-Opens the specified file in the specified encoding.
+Returns a file object, corresponding to the full pathname provided in &lt;string&gt;, to be read in the specified encoding.
 
-Ensure not to specify any encoding for `file` objects already created in previous steps of the relevance expression. For example, in the following expression:
+Ensure not to specify any encoding for `file` objects already created in previous steps of the relevance expression. For example, the following expression:
 
 {% qna %}
 Q: (file "aaa.txt" of folder "c:\test") of encoding "Windows-1252"
 {% endqna %} 
 
-the file object "C:\test\aaa.txt" is set to be read using the local encoding when the expression enclosed parenthesis runs.
-Because encoded files cannot be re-encoded, the subsequent request to encode the file in "Windows-1252" is ignored. 
+does not work as expected and the specified encoding will be ignored because the file object representing "C:\test\aaa.txt" s created first in the local encoding with the expression enclosed parenthesis, and so the subsequent `encoding` expression makes no sense and is ignored. 
 The correct expression to evaluate to read the file "C:\test\aaa.txt" in "Windows-1252" encoding is:
 
  {% qna %}
@@ -57,56 +56,56 @@ The correct expression to evaluate to read the file "C:\test\aaa.txt" in "Window
 
 # folder &lt;binary_string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+This is equivalent to folder &lt;binary_string&gt; inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+Returns a folder object for the name provided in &lt;string&gt;, associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # hfs file &lt;string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+This is equivalent to `hfs file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # hfs folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+This is equivalent to `hfs folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # native file &lt;string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+This is equivalent to `native file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # native folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+This is equivalent to `native folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # posix file &lt;string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+This is equivalent to `posix file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # posix folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+This is equivalent to `posix folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # symlink &lt;binary_string&gt; of &lt;encoding&gt; : symlink
 
-No documentation exists.
+This is equivalent to `symlink &lt;binary_string&gt;` inspector, but this returns a symlink object which is associated with the specified encoding. File objects created by deriving the symlink object will be read in the specified encoding.
 
 # symlink &lt;string&gt; of &lt;encoding&gt; : symlink
 
-No documentation exists.
+This is equivalent to `symlink &lt;string&gt;` inspector, but this returns a symlink object which is to be read in the specified encoding. File objects created by deriving the symlink object will be read in the specified encoding.
 
 # x32 file &lt;string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+This is equivalent to `x32 file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # x32 folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+This is equivalent to `x32 folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # x64 file &lt;string&gt; of &lt;encoding&gt; : file
 
-No documentation exists.
+This is equivalent to `x64 file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # x64 folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-No documentation exists.
+This is equivalent to `x64 folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
