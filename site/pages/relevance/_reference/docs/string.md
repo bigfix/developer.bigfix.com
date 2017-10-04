@@ -471,7 +471,8 @@ No documentation exists.
 
 # encoding &lt;string&gt; : encoding
 
-No documentation exists.
+Returns an encoding object corresponding to the name provided in *string*. The name should be a name of encoding defined by the [International Components for Unicode (ICU)](http://demo.icu-project.org/icu-bin/convexp).
+An encoding object can be used with a file object to read it in the specified encoding.
 
 # error &lt;string&gt; : undefined
 
