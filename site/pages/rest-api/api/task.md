@@ -35,12 +35,14 @@ title: Task
 **Response:** Task ID.
 {% endrestapi %}
 
-{% restapi "/api/task/{site type}/{site name}/{task id}", "POST", "Creates a task in the specified site." %}
+{% restapi "/api/task/{site type}/{site name}", "POST", "Creates a task in the specified site." %}
 **Request:** Complete XML for the object in the body of the request.
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BESAPI.xsd
+
+**Note:** For backward compatibility, this action still accepts an id but ignore it even if referencing a non-existing object.
 {% endrestapi %}
 
 {% restapi "/api/task/{site type}/{site name}/{task id}", "DELETE", "Deletes a task." %}
