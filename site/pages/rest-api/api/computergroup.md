@@ -27,7 +27,7 @@ title: Computer Group
 {% restapi "computergroup/{site type}/{site name}/{id}", "PUT", "Updates the specified computer group." %}
 {% endrestapi %}
 
-{% restapi "computergroup/{site type}/{site name}/{id}", "POST", "Create a computer group in the specified site." %}
+{% restapi "computergroup/{site type}/{site name}", "POST", "Create a computer group in the specified site." %}
 **Request:** XML file describing the computer group.
 
 **Request Schema:** BES.xsd
@@ -35,6 +35,8 @@ title: Computer Group
 **Response:** New BESAPI XML for the computer group.
 
 **Response Schema:** BESAPI.xsd
+
+**Note:** For backward compatibility, this action still accepts an id but ignore it even if referencing a non-existing object.
 {% endrestapi %}
 
 {% restapi "computergroup/{site type}/{site name}/{id}", "DELETE", "Deletes the indicated computer group." %}
