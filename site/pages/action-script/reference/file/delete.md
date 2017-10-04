@@ -30,7 +30,7 @@ Delete the `win.com` file.
 delete "{name of drive of windows folder}\win.com"
 ```
 
-Delete file `/temp/ハロ` in UTF-8 encoding.
+Delete file `/temp/ハロー` in UTF-8 encoding.
 
 ```actionscript
 binary name delete {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
