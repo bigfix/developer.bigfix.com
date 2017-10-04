@@ -27,7 +27,7 @@ Under the current folder create folder "ハロ" in UTF-8 encoding.
 binary name folder create e3838fe383ad
 ```
 
-Under /tmp/ folder create folder "ハロ" in UTF-8 encoding.
+Under /tmp/ folder create folder "ハロー" in UTF-8 encoding.
 
 ```actionscript
 binary name folder create {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
