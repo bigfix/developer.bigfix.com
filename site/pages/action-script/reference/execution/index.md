@@ -12,6 +12,9 @@ These commands allow you to run external commands, and to change the behavior of
   <dt>[**action launch preference normal-priority**](./action-launch-preference-normal-priority.html)</dt>
   <dd>Run external commands at normal priority.</dd>
   
+  <dt>[**action uses file encoding**](./action-uses-file-encoding.html)</dt>
+  <dd>Commands to use a specific encoding when creating files.</dd>
+  
   <dt>[**action uses wow64 redirection**](./action-uses-wow64-redirection.html)</dt>
   <dd>Run specific Windows based actions in a 32-bit context.</dd>
 
