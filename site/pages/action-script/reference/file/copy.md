@@ -31,13 +31,13 @@ it performs the copy action.
 delete "c:\windows\system\windir.dll"
 copy " __Download\windir.dll" "c:\windows\system\windir.dll" 
 ```
-This command copies the file `/test/my-file.txt` into the file `/temp/ハロ` in UTF-8 encoding.
+This command copies the file `/test/my-file.txt` to a file named `/temp/ハロー` in UTF-8 encoding under the site context.
 
 ```actionscript
 binary name copy {"/test/my-file.txt" as binary_string as hexadecimal} {("/temp/" as binary_string as hexadecimal) & "e3838fe383ade383bc"}
 ```
 
-This command copies the file `/test/my-file.txt` into `/var/opt/BESClient/__BESData/CustomSite_Fabio/ハロ` in UTF-8 encoding.
+This command copies the file `/test/my-file.txt` into `/var/opt/BESClient/__BESData/CustomSite_Fabio/ハロー` in UTF-8 encoding.
 
 ```actionscript
 binary name copy {"/test/my-file.txt" as binary_string as hexadecimal} e3838fe383ade383bc
