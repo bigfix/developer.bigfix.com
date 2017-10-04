@@ -36,12 +36,14 @@ title: Analysis
 **Response:** Analysis ID number.
 {% endrestapi %}
 
-{% restapi "analysis/{site type}/{site name}/{analysis id}", "POST", "Create an analysis with the supplied XML in the specified site." %}
+{% restapi "analysis/{site type}/{site name}", "POST", "Create an analysis with the supplied XML in the specified site." %}
 **Request:** Complete XML for the object in the body of the request.
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BES.xsd
+
+**Note:** For backward compatibility, this action still accepts an id but ignore it even if referencing a non-existing object.
 {% endrestapi %}
 
 {% restapi "analysis/{site type}/{site name}/{analysis id}", "DELETE", "Delete and deactivate an analysis." %}
