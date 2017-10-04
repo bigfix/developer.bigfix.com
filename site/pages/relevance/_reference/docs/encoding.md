@@ -33,7 +33,7 @@ Returns a folder object for the client's download folder. File objects created b
 
 # file &lt;binary_string&gt; of &lt;encoding&gt; : file
 
-This is equivalent to `file &lt;binary_string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
+This is equivalent to `file <binary_string>` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # file &lt;string&gt; of &lt;encoding&gt; : file
 
@@ -64,48 +64,48 @@ Returns a folder object for the name provided in &lt;string&gt;, associated with
 
 # hfs file &lt;string&gt; of &lt;encoding&gt; : file
 
-This is equivalent to `hfs file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
+This is equivalent to `hfs file <string>` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # hfs folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-This is equivalent to `hfs folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
+This is equivalent to `hfs folder <string>` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # native file &lt;string&gt; of &lt;encoding&gt; : file
 
-This is equivalent to `native file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
+This is equivalent to `native file <string>` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # native folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-This is equivalent to `native folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
+This is equivalent to `native folder <string>` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # posix file &lt;string&gt; of &lt;encoding&gt; : file
 
-This is equivalent to `posix file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
+This is equivalent to `posix file <string>` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # posix folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-This is equivalent to `posix folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
+This is equivalent to `posix folder <string>` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # symlink &lt;binary_string&gt; of &lt;encoding&gt; : symlink
 
-This is equivalent to `symlink &lt;binary_string&gt;` inspector, but this returns a symlink object which is associated with the specified encoding. File objects created by deriving the symlink object will be read in the specified encoding.
+This is equivalent to `symlink <binary_string>` inspector, but this returns a symlink object which is associated with the specified encoding. File objects created by deriving the symlink object will be read in the specified encoding.
 
 # symlink &lt;string&gt; of &lt;encoding&gt; : symlink
 
-This is equivalent to `symlink &lt;string&gt;` inspector, but this returns a symlink object which is to be read in the specified encoding. File objects created by deriving the symlink object will be read in the specified encoding.
+This is equivalent to `symlink <string>` inspector, but this returns a symlink object which is to be read in the specified encoding. File objects created by deriving the symlink object will be read in the specified encoding.
 
 # x32 file &lt;string&gt; of &lt;encoding&gt; : file
 
-This is equivalent to `x32 file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
+This is equivalent to `x32 file <string>` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # x32 folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-This is equivalent to `x32 folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
+This is equivalent to `x32 folder <string>` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
 
 # x64 file &lt;string&gt; of &lt;encoding&gt; : file
 
-This is equivalent to `x64 file &lt;string&gt;` inspector, but this returns a file object which is to be read in the specified encoding.
+This is equivalent to `x64 file <string>` inspector, but this returns a file object which is to be read in the specified encoding.
 
 # x64 folder &lt;string&gt; of &lt;encoding&gt; : folder
 
-This is equivalent to `x64 folder &lt;string&gt;` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
+This is equivalent to `x64 folder <string>` inspector, but this returns a folder object which is associated with the specified encoding. File objects created by deriving the folder object will be read in the specified encoding.
