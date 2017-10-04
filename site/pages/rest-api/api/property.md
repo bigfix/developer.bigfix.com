@@ -32,12 +32,14 @@ title: Property
 **Response Schema:** BES.xsd
 {% endrestapi %}
 
-{% restapi "property/{id}", "POST", "Updates the specified property." %}
+{% restapi "property", "POST", "Updates the specified property." %}
 **Request:** Complete XML for property..
 
 **Request Schema:** BES.xsd
 
 **Response Schema:** BES.xsd
+
+**Note:** For backward compatibility, this action still accepts an id but ignore it even if referencing a non-existing object.
 {% endrestapi %}
 
 {% restapi "property/{id}", "DELETE", "Deletes the specified property." %}
