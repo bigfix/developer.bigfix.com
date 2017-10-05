@@ -8,7 +8,7 @@ This powerful compound command allows you to create your own custom combination 
 
 To add constraints to an existing command, you add predefined keyword/value pairs within the body of the command.
 
-<p><b>Warning: </b>Do not launch long run programs directly from the <i>__Download</i> folder using [run](./run.html), [rundetached](./rundetached.html), [runhidden](./runhidden.html), Override with completion=none, or Override with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>__Download folder</i> and launch the programs from there.</p>
+<p><b>Warning: </b>Do not launch long run programs directly from the <i>__Download</i> folder using any of the following commands: [run](./run.html), [rundetached](./rundetached.html), [runhidden](./runhidden.html), <b>override</b> with completion=none, or <b>override</b> with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>__Download folder</i> and launch the programs from there.</p>
 
 Version | Platforms
 --- | ---
