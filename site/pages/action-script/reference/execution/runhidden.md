@@ -6,6 +6,8 @@ This command uses [CreateProcess](https://msdn.microsoft.com/en-us/library/windo
 
 After launching, the following action command line is immediately executed. To wait for the launch to complete before continuing the action, use the [waithidden](./waithidden.html) command.
 
+<p><b>Warning: </b>Do not launch long run programs directly from the <i>__Download</i> folder using any of these commands: [run](./run.html), [rundetached](./rundetached.html), <b>runhidden</b>, [override](./override.html) with completion=none, or [override](./override.html) with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>__Download folder</i> and launch the programs from there.</p>
+
 Version | Platforms
 --- | ---
 8.0.584.0 | Windows
