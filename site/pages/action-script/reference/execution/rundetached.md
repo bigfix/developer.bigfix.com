@@ -8,6 +8,8 @@ This command modifies the [run](./run.html) command by setting the [DETACHED_PRO
 
 This command should not be used for running interactive programs. If this is done, the interactive program will not be able to show its user interface and may appear to be hung. This command is provided strictly for running programs that do not display a user interface.
 
+<p><b>Warning: </b>Do not launch long run programs directly from the <i>__Download</i> folder using any of these commands: [run](./run.html), <b>rundetached</b>, [runhidden](./runhidden.html), [override](./override.html) with completion=none, or [override](./override.html) with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>__Download folder</i> and launch the programs from there.</p>
+
 Version | Platforms
 --- | ---
 8.0.584.0 | Windows
