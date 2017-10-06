@@ -6,7 +6,7 @@ Executes the indicated program. If the process can't be created, the action scri
 
 If you wish to wait for one program to finish before starting another one, use the [wait](./wait.html) command.
 
-<p><b>Warning: </b>Do not launch long run programs directly from the <i>__Download</i> folder using any of these commands:<b>run</b>, [rundetached](./rundetached.html), [runhidden](./runhidden.html), [override](./override.html) with completion=none, or [override](./override.html) with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>__Download folder</i> and launch the programs from there.</p>
+<p><b>Warning: </b>Do not launch long run programs directly from the <i>`__Download`</i> folder using any of these commands:<b>run</b>, [rundetached](./rundetached.html), [runhidden](./runhidden.html), [override](./override.html) with completion=none, or [override](./override.html) with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>`__Download`</i> folder and launch the programs from there.</p>
 
 Version | Platforms
 --- | ---
