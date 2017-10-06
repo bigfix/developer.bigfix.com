@@ -8,6 +8,8 @@ This powerful compound command allows you to create your own custom combination 
 
 To add constraints to an existing command, you add predefined keyword/value pairs within the body of the command.
 
+<p><b>Warning: </b>Do not launch long run programs directly from the <i>__Download</i> folder using any of the following commands: [run](./run.html), [rundetached](./rundetached.html), [runhidden](./runhidden.html), <b>override</b> with completion=none, or <b>override</b> with timeout, disposition=abandon. Instead, add an action to copy the programs to a location different from the <i>__Download folder</i> and launch the programs from there.</p>
+
 Version | Platforms
 --- | ---
 8.2.531.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows, Debian, Ubuntu
@@ -71,7 +73,7 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
     <ul>
       <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands. The user and the context are the same as those used to with the current [wait](./wait.html) and [run](./run.html) commands</li>
       <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken. 
-      <note>On UNIX and Linux the environment variables are not applied with the exception of required Xauthority variables. On such platforms a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent scenario which requires the user to be logged on at the local console and running X Windows.</note>
+      <p><b>Note: </b>On UNIX and Linux the environment variables are not applied with the exception of required Xauthority variables. On such platforms a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent scenario which requires the user to be logged on at the local console and running X Windows.</p>
       </li>
       <li>`RunAs=localuser` specifies a user who can be different from the logged on user. 
       <p>Specify the mandatory option `user` in one of these two formats: `user=<username>`, or `user={relevance to describe the username}` to allow a parametrized input.</p>
@@ -88,18 +90,19 @@ On other operating systems, the specified user must be either local or listed in
          <ul>
 	    <li>"user@domain" where domain is an active directory domain, for example "john@tem.test.com".</li>
 	    <li>"domain\user" where domain is specified in the short domain name notation, for example "TEM\john".
-	    <p><b>Note:</b> The action runs even if the specified domain user has never logged on the target system before then.</li>
+	    <p><b>Note:</b> The action runs even if the specified domain user has never logged on the target system before then.</p></li>
 	 </ul>
 	 </li>
 	 <li>You can specify the option `password` as follows:
 	 <ul>
-            <li>`password=required` if specified, a Take Action Dialog requiring to enter the user's password is displayed on the Console. That password is then passed to the agent as a SecureParameter.</li>
+            <li>`password=required` if specified, a Take Action Dialog requiring to enter the user's password is displayed on the Console. That password is then passed to the agent as a SecureParameter.
+	    <p><b>Note:</b> Only one password can be passed to the action using the override command. An action with more than one override command, with different users specified, fails unless the specified users use the same password. To bypass this constraint, you might want to create different Fixlets or tasks, each one with an action containing one of the override commands to run, and include them in a baseline.</p></li>
             <li>`password=impersonate` if the agent must search for a session running with the user specified in the `user` option, and run the command in that session.</li>
 	    <li>`password=system` to run the command the with the Local System account and without an user context. The command requires the specified user to be logged on when the `override` runs on the system. Any UI will be displayed in the session of the specified user.
-	    <note>Use the `asadmin` option if you want the command to write to *HKEY_CURRENT_USER* registry hive.</note> 
+	    <p><b>Note:</b> Use the `asadmin` option if you want the command to write to *HKEY_CURRENT_USER* registry hive.</p> 
 	    </li>
          </ul>
-	 <note>On other operating systems, the option `password` is ignored because the agent runs with *root* authority.</note>
+	 <p><b>Note: </b>On other operating systems, the option `password` is ignored because the agent runs with *root* authority.</p>
 	 </li>
 	 <li>You can use the option `asadmin` as follows:
 	 <ul>
