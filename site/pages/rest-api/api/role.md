@@ -69,4 +69,4 @@ For example:
 
 In a BigFix Distributed Server Architecture (DSA) environment, where multiple servers are installed, you can perform actions related to roles only on primary servers. When on a secondary server, you cannot create, modify, or delete roles. Any attempt to perform these actions is prevented and you get the following error message: 
 
-This operation requires a role change that can be performed only on the main server.
+"This operation requires a role change that can be performed only on the main server."
