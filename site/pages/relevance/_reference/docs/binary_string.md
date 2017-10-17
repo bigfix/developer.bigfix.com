@@ -50,7 +50,7 @@ A: 3
 Returns the binary substring value of the byte located at the offset specified by number. Number is zero origin.  
 
 {% qna %}
-Q: (byte 0 of (binary_string "11223344555")) as hexadecimal 
+Q: (byte 0 of (binary_string "1122334455")) as hexadecimal 
 A: 11
 {% endqna %}
 
@@ -61,10 +61,10 @@ Returns each byte of `binary_string` as separate data.
 {% qna %}
 Q: (bytes of (binary_string "1122ee33ff")) as hexadecimal
 A: 11
-22
-ee
-33
-ff
+A: 22
+A: ee
+A: 33
+A: ff
 {% endqna %}
 
 # file &lt;binary_string&gt; : file
@@ -94,7 +94,7 @@ Returns a folder object for the binary name provided.
 Returns a binary substring containing last `integer` bytes of `binary_string`.
 
 {% qna %}
-Q: (last 2 of (binary_string "112233445566778899")) as hexadecimal  
+Q: (last 2 of (binary_string "112233445566778899")) as hexadecimal
 A: 8899
 {% endqna %}
 
@@ -108,7 +108,7 @@ Provides percent encoded format of binary data of `binary_string`.
 
 {% qna %}
 Q: percent encode (binary_string "003182")  
-A: "%25001%2582"
+A: %25001%2582
 {% endqna %}
 
 # position &lt;integer&gt; of &lt;binary_string&gt; : binary position
@@ -126,7 +126,7 @@ To specify multiple encodings, separate them with a semicolon. The binary value 
 
 {% qna %}
 Q: representable in "UTF-8;Shift_JIS" of (binary_string "82a082a2")  
-A: true
+A: True
 {% endqna %}
 
 # representable in utf16 of &lt;binary_string&gt; : boolean
@@ -204,12 +204,12 @@ Returns a boolean TRUE if the first `binary_string` contains with the second `bi
 
 {% qna %}
 Q: (binary_string "11ee22") contains (binary_string "ee") 
-A: true
+A: True
 {% endqna %}
 
 {% qna %}
 Q: (binary_string "11ee22") contains (binary_string "1e") 
-A: false
+A: False
 {% endqna %}
 
 # &lt;binary_string&gt; ends with &lt;binary_string&gt; : boolean
