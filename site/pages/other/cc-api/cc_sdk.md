@@ -3,7 +3,7 @@ title: Software Developer Kit for Windows
 ---
 
 IBM BigFix makes available a software developer kit to help you set up and use your Client Compliance API solution on Windows systems. 
-Click [here](http://software.bigfix.com/download/bes/misc/BESClientSDK-6.0.21.5.zip ) to download it.
+Starting from versions 9.2.12 and 9.5.7, the kit is available for download from the [BigFix Enterprise Suite Download Center](http://support.bigfix.com/bes/release/) in the platform release **Utilities** section.
 
 The kit contains the following files:
 
