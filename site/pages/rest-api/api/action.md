@@ -66,7 +66,7 @@ For example:
    <SourceFixlet>
      <Sitename>TestSite</Sitename>
      <FixletID>83</FixletID>
-     <Action>Action1</Action
+     <Action>Action1</Action>
    </SourceFixlet>
    <Target>
      <ComputerID>13863357</ComputerID>
