@@ -2935,6 +2935,9 @@
         "8.1.535.0": [
           "Debian",
           "Ubuntu"
+        ],
+        "99.99.0.390": [
+          "Mac"
         ]
       }
     },
@@ -53495,6 +53498,9 @@
         "8.1.535.0": [
           "Debian",
           "Ubuntu"
+        ],
+        "99.99.0.390": [
+          "Mac"
         ]
       }
     },
@@ -66476,7 +66482,8 @@
         "8.0.584.0": [
           "Mac"
         ]
-      }
+      },
+      "deprecated": "99.99.0.390"
     },
     "<filesystem object> as file : file": {
       "key": "<filesystem object> as file : file",
