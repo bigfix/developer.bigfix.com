@@ -3,7 +3,7 @@ title: Computer
 ---
 
 {% restapi "computers", "GET", "Fetches a list of computers." %}
-**Request:** URL is all that is required.
+**Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** List of computers and Last Report time.
 
@@ -11,48 +11,7 @@ title: Computer
 {% endrestapi %}
 
 {% restapi "computer/{computer id}", "GET", "Gets a computer's core properties." %}
-**Request:** URL is all that is required.
-
-
-#### Filtering Response Fields
-You can use the ```?fields=``` parameter to limit the fields returned for a given resource. 
-The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. These are some example of filtering results using ```?fields=```:
-
-Use ```,``` to denote multiple fields, for example:
-
-```xml
-/api/action/<id>/status?fields=Status,Computer
-```
-
-Use the following syntax ```:(...)``` to denote children within a field, for example:  
-
-```xml
-/api/action/<id>/status?fields=Computer:(Status)
-```
-
-Use ```,``` within the parenthesis to denote multiple children, for example:
-
-```xml
-/api/action/<id>/status?fields=Computer:(Status,State,StartTime)
-```
-
-You can denote children recursively, for example:
-
-```xml
-/api/operators?fields=Operator:(InterfaceLogins:(Console,API))
-```
-
-Use ```:[...]``` to denote attributes, for example:
-
-```xml
-/api/computer/<id>?fields=Property:[Name=Computer%20Name,OS]
-```
-
-Use both formats separated by ```,``` to denote both children and attributes, for example:
-
-```xml
-/api/operators?fields=Operator:[Resource=<operator resource location>],Operator:(Name,LastLoginTime)
-```
+**Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** Lists all of a computer's properties.
 
@@ -141,3 +100,20 @@ Use both formats separated by ```,``` to denote both children and attributes, fo
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+#### Filtering Response Fields
+You can use the ```?fields=``` parameter to limit the fields returned for a given resource when using the API resources ```/api/computers``` and ```/api/computer/{computer id}```.
+The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. 
+
+Use these characters to define the filter:
+- ```,``` to separate elements, children, and attribute pairs
+- ```,``` within the parenthesis to denote multiple children
+- ```&```as pairing marker for attributes
+- ```<...>``` to denote attributes
+- ```=``` to mark LHS and RHS of attributes
+
+These are some example of filtering results using ```?fields=```:
+
+```xml
+/api/computer/1234?fields=Property<Name=Computer%20Name,OS,Last%20Report%20Time>
+/api/computer/1234?fields=Property<Analysis&Name=Analysis1&Computer%20Name,&OS,Analysis2&Last%20Report%20Time> 
+```
