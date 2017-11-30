@@ -2936,7 +2936,7 @@
           "Debian",
           "Ubuntu"
         ],
-        "99.99.0.390": [
+        "99.99.0.409": [
           "Mac"
         ]
       }
@@ -53501,7 +53501,7 @@
           "Debian",
           "Ubuntu"
         ],
-        "99.99.0.390": [
+        "99.99.0.409": [
           "Mac"
         ]
       }
@@ -66485,7 +66485,7 @@
           "Mac"
         ]
       },
-      "deprecated": "99.99.0.390"
+      "deprecated": "99.99.0.409"
     },
     "<filesystem object> as file : file": {
       "key": "<filesystem object> as file : file",
@@ -107606,6 +107606,18 @@
       "availability": {
         "9.5.7.90": [
           "AIX"
+        ]
+      }
+    },
+    "bes action status download size limited : bes action status": {
+      "key": "bes action status download size limited : bes action status",
+      "type": "property",
+      "resultType": "bes action status",
+      "singularPhrase": "bes action status download size limited",
+      "pluralPhrase": "bes action statuses download size limited",
+      "availability": {
+        "99.99.0.409": [
+          "Session"
         ]
       }
     }

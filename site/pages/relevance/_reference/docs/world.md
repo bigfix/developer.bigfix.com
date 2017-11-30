@@ -188,6 +188,10 @@ No documentation exists.
 
 Returns the BES Action status corresponding to failed downloads. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
+# bes action status download size limited : bes action status
+
+No documentation exists.
+
 # bes action status error : bes action status
 
 Returns the BES Action status corresponding to errors. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
