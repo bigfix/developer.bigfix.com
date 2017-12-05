@@ -51,3 +51,5 @@ Follow this path to run a relevance statement on the remote target:
 4. From now on you can run queries on the selected target and see the results as if you were running the queries on your local system.
 
 You get a session timeout error if the timeout set to run BigFix queries elapsed before getting a response from the remote Agent. Log in again to access your working session. The default timeout is 60 seconds and, if you want, you can change it by customizing the <i>_BESClient_Query_MOMaxQueryTime</i> setting. Beware that this timeout setting affects also the queries run from the WebUI BigFix Query application and the queries triggered by the /api/clientquery REST API. 
+
+Once you log in, if you decide to exit the query channel mode, select the **Logout** option in the **Evaluate** drop down menu.
