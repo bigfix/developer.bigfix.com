@@ -121,5 +121,5 @@ Click [here](/relevance/reference/bes-fixlet-action.html) to access the page des
 
 These Inspectors allow you to inspect the results of BES Fixlet messages, including relevance and affected computers.
 
-Click [here](/relevance/reference/bes-result.html) to access the page describing these inspectors.
+Click [here](/relevance/reference/bes-fixlet-result.html) to access the page describing these inspectors.
 
