@@ -3,13 +3,32 @@ title: Admin
 ---
 
 {% restapi "/api/admin/fields", "GET", "Returns the list of admin fields." %}
+
+**Request:** URL is all that is required
+
+For example: ```https://server.bigfix.com:52311/api/admin/fields```
+
 **Response:** XML results.
+
+For example: 
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <AdminField Resource="http://server.bigfix.com:52311/api/admin/field/usePre70ClientCompatibleMIME">
+        <Name>usePre70ClientCompatibleMIME</Name>
+        <Value>false</Value>
+    </AdminField>
+</BESAPI>
+``` 
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
 {% restapi "/api/admin/fields", "POST", "Sets one or more admin fields." %}
 **Request:** One or more admin fields in a XML document.
+
+For example: 
 
 **Request Schema:** BESAPI.xsd
 
@@ -20,7 +39,23 @@ title: Admin
 
 
 {% restapi "/api/admin/field/{field}", "GET", "Fetches specific admin field value." %}
+**Request:** URL is all that is required
+
+For example: ```https://server.bigfix.com:52311/api/admin/field/usePre70ClientCompatibleMIME```
+
 **Response:** XML results
+
+For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <AdminField Resource="http://server.bigfix.com:52311/api/admin/field/usePre70ClientCompatibleMIME">
+        <Name>usePre70ClientCompatibleMIME</Name>
+        <Value>false</Value>
+    </AdminField>
+</BESAPI>
+```
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
@@ -48,6 +83,8 @@ title: Admin
 {% restapi "/api/admin/field/{field}", "DELETE", "Deletes the specific admin field." %}
 **Request:** Send XML with the admin field value.
 
+For example: ```https://server.bigfix.com:52311/api/admin/field/usePre70ClientCompatibleMIME```
+
 **Request Schema:** BESAPI.xsd
 
 **Response:** Details of the admin field after update.
@@ -69,6 +106,21 @@ title: Admin
 
 {% restapi "/api/admin/masthead/parameters", "GET", "Returns the list of the masthead configuration parameters and values." %}
 **Response:** XML results.
+
+For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <MastheadParameters Resource="http://server.bigfix.com:52311/api/admin/masthead/parameters">
+        <PortNumber>52311</PortNumber>
+        <GatherInterval>Half Day</GatherInterval>
+        <Controller>console</Controller>
+        <InitialLockState>Unlocked</InitialLockState>
+        <RequireFIPSCompliantCrypto>false</RequireFIPSCompliantCrypto>
+    </MastheadParameters>
+</BESAPI>
+```
 
 **Response schema:** BESAPI.xsd.
 {% endrestapi %}
@@ -127,12 +179,37 @@ title: Admin
 **Request:** URL Only.
 
 **Response:** HTTP 200, BESAPI XML of admin options.
+
+For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <SystemOptions Resource="http://server.bigfix.com:52311/api/admin/options">
+        <MinimumRefreshSeconds>15</MinimumRefreshSeconds>
+        <DefaultFixletVisibility>Visible</DefaultFixletVisibility>
+    </SystemOptions>
+</BESAPI>
+```
+
 {% endrestapi %}
 
 {% restapi "/api/admin/options", "POST", "Updates the admin options from the provided BESAPI XML." %}
 **Request:** BESAPI representation of 1 or more admin options.
 
 **Response:** HTTP 200 on success, BESAPI XML of admin options.
+
+For example: 
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <ClientReports Resource="http://server.bigfix.com:52311/api/admin/reports">
+        <EncryptionStatus>Disabled</EncryptionStatus>
+        <Details>Report encryption is currently DISABLED.</Details>
+    </ClientReports>
+</BESAPI>
+```
 
 **Response schema:** BESAPI.xsd
 {% endrestapi %}

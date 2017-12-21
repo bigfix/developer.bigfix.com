@@ -9,6 +9,8 @@ title: Action
 https://<bigfix_server>:52311/api/actions
 ```
 
+For example: ```https://server.bigfix.com:52311/api/actions```
+
 You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** List of actions in XML format.
@@ -18,11 +20,11 @@ For example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-    <Action Resource="http://lab.bigfix.me:52311/api/action/44" LastModified="Tue, 19 Mar 2013 21:23:10 +0000">
+    <Action Resource="http://server.bigfix.com:52311/api/action/44" LastModified="Tue, 19 Mar 2013 21:23:10 +0000">
         <Name>Updated Windows Relay - IBM Endpoint Manager version 9.0.586.0 Now Available!</Name>
         <ID>44</ID>
     </Action>
-    <Action Resource="http://lab.bigfix.me:52311/api/action/45" LastModified="Tue, 19 Mar 2013 21:23:57 +0000">
+    <Action Resource="http://server.bigfix.com:52311/api/action/45" LastModified="Tue, 19 Mar 2013 21:23:57 +0000">
         <Name>POLICY: Updated Windows Client - IBM Endpoint Manager version 9.0.586.0 Now Available!</Name>
         <ID>45</ID>
     </Action>
@@ -90,7 +92,7 @@ The SourceFixlet can contain SiteID or Sitename. If using Sitename and it's an e
 {% restapi "/api/action/{action id}", "GET", "Fetches the BES XML representation of the specified action." %}
 **Request:** URL is all that is required
 
-For example: https://<bigfix_server>:52311/api/action/44
+For example: ```https://server.bigfix.com:52311/api/action/44```
 
 **Response:** 
 - HTTP 200 - Returns XML in body of response.
@@ -211,7 +213,7 @@ Response Schema: BES.XSD
 
 **Request:** URL is all that is required
 
-For example: https://<bigfix_server>:52311/api/action/53
+For example: ```https://server.bigfix.com:52311/api/action/53```
 
 **Note:** You cannot delete actions that are members of a Multiple Action Group. This note applies to IBM BigFix V9.2 and later.
 {% endrestapi %}
@@ -223,6 +225,8 @@ For example: https://<bigfix_server>:52311/api/action/53
 https://<bigfix_server>:52311/api/action/44/status
 ```
 
+For example: ```https://server.bigfix.com:52311/api/action/44/status```
+
 You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** The information about the status of the action in XML format.
@@ -232,7 +236,7 @@ For example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-    <ActionResults Resource="http://lab.bigfix.me:52311/api/action/44/status">
+    <ActionResults Resource="http://server.bigfix.com:52311/api/action/44/status">
         <ActionID>44</ActionID>
         <Status>Open</Status>
     </ActionResults>
@@ -245,7 +249,7 @@ For example:
 {% restapi "/api/action/{action id}/stop", "POST", "Stops the specified action." %}
 **Request:** URL is all that is required
 
-For example: https://<bigfix_server>:52311/api/action/44/stop
+For example: ```https://server.bigfix.com:52311/api/action/44/stop```
 
 {% endrestapi %}
 
