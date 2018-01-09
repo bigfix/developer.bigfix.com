@@ -3,8 +3,8 @@ title: Operator
 ---
 **Note:** The following information applies also to LDAP operators.
 
-{% restapi "operators*", "GET", "Fetches all operators." %}
-**Request:** URL is all that is required
+{% restapi "operators", "GET", "Fetches all operators." %}
+**Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** XML list of operators.
 
@@ -20,7 +20,7 @@ title: Operator
 {% endrestapi %}
 
 {% restapi "operator/{operator name}", "GET", "Fetches detailed information about an operator." %}
-**Request:** URL is all that is required
+**Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** XML for operator.
 
@@ -88,3 +88,23 @@ For example:
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
+
+
+#### Filtering Response Fields
+You can use the ```?fields=``` parameter to limit the fields returned for a given resource when using the API resources ```/api/operators``` and ```/api/operator/{operator name}```.
+The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. 
+
+Use these characters to define the filter:
+- ```,``` to separate elements, children, and attribute pairs
+- ```(...)``` to denote children within a field
+- ```&```as pairing marker for attributes
+- ```<...>``` to denote attributes
+- ```=``` to mark LHS and RHS of attributes
+
+These are some example of filtering results using ```?fields=```:
+
+```xml
+/api/operators?fields=Name,MasterOperator,InterfaceLogins(WebUI),InterfaceLogins(Applications)
+/api/operator/mo1?fields=LastLoginTime,CanSubmitQueries,InterfaceLogins(API,Console)
+/api/operator/nmo1?fields=ShowOtherActions,StopOtherActions,CanCreateActions,LoginPermission,Name
+```
