@@ -6,7 +6,7 @@ Deployment metrics documents are very simple objects that have three fields:
 
 - *tag* that is used to identify metrics.
 - *metrics* that is a collection of metric.
-- *lastChanged that is a time-stamp of when metrics have been updated.
+- *lastChanged* that is a time-stamp of when metrics have been updated.
 
 **Note:** The platform tag is reserved to the server collected metrics via DeploymentMetricsCollectorTask, and cannot be updated via REST API.
 
