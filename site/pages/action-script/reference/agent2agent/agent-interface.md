@@ -16,12 +16,12 @@ agent interface "ProductID" command
 
 ## Examples
 
-These are examples using the ProductID "EDR":
+These are examples using the ProductID "My_Prod":
 
 ```actionscript
-agent interface "EDR" quarantine file -filepath "C:\myfolder\myfile.exe"
+agent interface "My_Prod" quarantine file -filepath "C:\myfolder\myfile.exe"
 ```
 
 ```actionscript
-agent interface "EDR" kill 10567
+agent interface "My_Prod" kill 10567
 ```
