@@ -99,7 +99,6 @@ categories:
     section: agent2agent
     description: The [Agent to Agent Communication commands](./agent2agent/) allow you to pass instructions to a specific agent.
     commands:
-      - quarantine
       - agent interface
 ---
 
