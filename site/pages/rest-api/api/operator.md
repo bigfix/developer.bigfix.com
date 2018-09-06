@@ -27,6 +27,18 @@ title: Operator
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+{% restapi "operator/{operator ID}", "GET", "Fetches detailed information about a specific operator." %}
+**Request:** URL is all that is required. 
+
+**Response:** XML list of operators.
+
+**Response Schema:** BESAPI.xsd
+
+**Note:** Before using this option, you must enable the deployment option, enableRESTAPIOperatorID.
+
+{% endrestapi %}
+
+
 {% restapi "operator/{operator name}", "PUT", "Updates an operator." %}
 **Request:** Complete or partial XML for Operator.
 
