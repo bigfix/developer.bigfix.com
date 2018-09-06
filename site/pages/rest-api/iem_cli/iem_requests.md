@@ -10,7 +10,7 @@ iem <METHOD> <RESOURCE> [-q] [--param <value>]
 where:
 <dl>
    <dt>** *METHOD* **</dt>
-   <dd>Is one of the HTTP methods supported by that specific REST API resource. Depending on the method, the form of the request can be:
+   <dd>Is one of the HTTP methods supported by that specific REST API resource. Depending on the method, the form of the request can be any of the following:
    <p>
    
 ```
@@ -20,6 +20,14 @@ iem <GET|DELETE> <RESOURCE> [-q] [--outFile FILE] [--param value]
 ```  
 iem <POST|PUT> [inputFile] <RESOURCE> [-q] [--outFile FILE] [--param value]
 ```   
+
+```   
+iem admin  login [-q] [--server=SERVER] [--user=USER] [--password=PASS] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
+```
+
+```   
+iem login [-q] [--server=SERVER] [--windowsAuthentication] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
+```
 
 ```   
 iem admin <COMMAND> [-q] <--pkey=KEYFILE> [--pkeypwd=PASS][--param value]   
