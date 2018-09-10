@@ -21,9 +21,6 @@ iem <GET|DELETE> <RESOURCE> [-q] [--outFile FILE] [--param value]
 iem <POST|PUT> [inputFile] <RESOURCE> [-q] [--outFile FILE] [--param value]
 ```   
 
-```   
-iem admin <COMMAND> [-q] <--pkey=KEYFILE> [--pkeypwd=PASS][--param value]   
-```
 </p>
        where *inputFile* and the file referenced by *--outFile* are XML files containing resources descriptions as described in the [schema files](../schema_files.html). POST and PUT requests require a body in their HTTP Requests. You can specify the body either as an input file on the command line, such as:
 <p>
