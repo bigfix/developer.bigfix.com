@@ -34,7 +34,10 @@ title: Operator
 
 **Response Schema:** BESAPI.xsd
 
-**Note:** Before using this option, you must enable the deployment option, enableRESTAPIOperatorID.
+**Notes:** 
+- Enabling this option renders the "operator/{operator name}" APIs unusable.
+- Before using this option, you must enable the deployment option, "enableRESTAPIOperatorID". The enableRESTAPIOperatorID option disables all the REST APIs that use the operator name and replaces them with the equivalent REST APIs that use the operator id.
+
 
 {% endrestapi %}
 
