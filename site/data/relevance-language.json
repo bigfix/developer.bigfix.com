@@ -13867,6 +13867,19 @@
         ]
       }
     },
+    "id of <bes user> : integer": {
+      "key": "id of <bes user> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "bes user",
+      "availability": {
+        "9.5.10.66": [
+          "Session"
+        ]
+      }
+    },
     "operator site of <bes user> : bes site": {
       "key": "operator site of <bes user> : bes site",
       "type": "property",
