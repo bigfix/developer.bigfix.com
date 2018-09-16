@@ -21,6 +21,12 @@ Runs the `scandskw.exe` program and waits for the program to complete before con
 wait "scandskw.exe"
 ```
 
+On non-Windows platforms:
+
+```actionscript
+wait chmod 555 inventory.sh
+```
+
 ## Notes
 
 On a Windows computer, this command has the same effect as calling the [CreateProcess](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682425%28v=vs.85%29.aspx) function with `<command-line>`. This is also the same as using `<command-line>` in the Windows Run dialog.
