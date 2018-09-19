@@ -8,7 +8,7 @@ No documentation exists.
 
 # core_count of &lt;dmi processor_information&gt; : integer
 
-No documentation exists.
+The number of cores per socket.
 
 # core_enabled of &lt;dmi processor_information&gt; : integer
 
@@ -92,7 +92,7 @@ No documentation exists.
 
 # thread_count of &lt;dmi processor_information&gt; : integer
 
-No documentation exists.
+The number of threads per socket.
 
 # voltage of &lt;dmi processor_information&gt; : integer
 
