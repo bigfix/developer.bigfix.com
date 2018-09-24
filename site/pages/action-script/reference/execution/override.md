@@ -161,6 +161,8 @@ The exit code returned with the command is always that of the leader process, no
 
 ## Examples
 
+<b>On Windows platforms</b>
+
 This example provides the same functionality as `waithidden notepad.exe`:
 
 ```actionscript
@@ -197,4 +199,11 @@ override wait
 	user=TEM\User1
 	password=required
 wait c:\IMAGE\SWD\application.exe /SILENT
+```
+<b>On non-Windows platforms</b>
+
+```actionscript
+override wait
+completion=job
+wait tar --directory=/tmp -zxvf __Download/myFile.tgz
 ```
