@@ -13875,7 +13875,7 @@
       "pluralPhrase": "ids",
       "directObjectType": "bes user",
       "availability": {
-        "9.5.10.66": [
+        "9.5.10.76": [
           "Session"
         ]
       }
