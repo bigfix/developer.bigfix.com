@@ -37,13 +37,3 @@ To revert using the local encoding, run the following command:
 ```actionscript
 action uses file encoding local
 ```
-
-On non-Windows platforms:
-
-```actionscript
-delete "{(client folder of current site as string) & "/__appendfile"}"
-action uses file encoding UTF-8 noBOM	
-appendfile Hello world !!
-delete /tmp/encode_test.txt
-move __appendfile /tmp/encode_test.txt
-```

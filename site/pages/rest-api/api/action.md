@@ -3,15 +3,9 @@ title: Action
 ---
 
 {% restapi "/api/actions", "GET", "Returns a list of actions." %}
-**Request:** URL is all that is required, for example:
-
-```xml
-https://<bigfix_server>:52311/api/actions
-```
+**Request:** URL is all that is required
 
 For example: ```https://server.bigfix.com:52311/api/actions```
-
-You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** List of actions in XML format.
 
@@ -219,15 +213,9 @@ For example: ```https://server.bigfix.com:52311/api/action/53```
 {% endrestapi %}
 
 {% restapi "/api/action/{action id}/status", "GET", "Gets the status of an action against it's targets." %}
-**Request:** URL is all that is required, for example: 
-
-```xml
-https://<bigfix_server>:52311/api/action/44/status
-```
+**Request:** URL is all that is required
 
 For example: ```https://server.bigfix.com:52311/api/action/44/status```
-
-You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** The information about the status of the action in XML format.
 
@@ -252,22 +240,3 @@ For example:
 For example: ```https://server.bigfix.com:52311/api/action/44/stop```
 
 {% endrestapi %}
-
-#### Filtering Response Fields
-You can use the ```?fields=``` parameter to limit the fields returned for a given resource when using the API resources ```/api/actions``` and ```/api/action/{action id}/status```.
-The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. 
-
-Use these characters to define the filter:
-- ```,``` to separate elements, children, and attribute pairs
-- ```(...)``` to denote children within a field
-- ```&```as pairing marker for attributes
-- ```<...>``` to denote attributes
-- ```=``` to mark LHS and RHS of attributes
-
-These are some example of filtering results using ```?fields=```:
-
-```xml
-/api/action/<action id>/status?fields=Status,Computer
-/api/action/<action id>/status?fields=Computer(Status,State,StartTime) 
-/api/action/<action id>/status?fields=Computer<ID=11111>,Computer(Status,StartTime) 
-```

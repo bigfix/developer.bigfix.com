@@ -49,7 +49,7 @@ If you plan to address your query to a computer group, read carefully the inform
 For example, if you request:
 
 ```
-$ ./iem get /api/clientquery/12
+$ ./iem get /api/clientquery/12 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
 you can get the following response:

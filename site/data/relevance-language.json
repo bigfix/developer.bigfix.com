@@ -4079,8 +4079,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "scsidevice": {
       "name": "scsidevice",
@@ -4088,8 +4087,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "stage": {
       "name": "stage",
@@ -13860,19 +13858,6 @@
       "directObjectType": "bes user",
       "availability": {
         "8.0.584.0": [
-          "Session"
-        ]
-      }
-    },
-    "id of <bes user> : integer": {
-      "key": "id of <bes user> : integer",
-      "type": "property",
-      "resultType": "integer",
-      "singularPhrase": "id",
-      "pluralPhrase": "ids",
-      "directObjectType": "bes user",
-      "availability": {
-        "9.5.10.79": [
           "Session"
         ]
       }
@@ -66491,8 +66476,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10.79"
+      }
     },
     "<filesystem object> as file : file": {
       "key": "<filesystem object> as file : file",
@@ -67676,8 +67660,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "scsidevice <integer> of <scsibus> : scsidevice": {
       "key": "scsidevice <integer> of <scsibus> : scsidevice",
@@ -67691,8 +67674,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "scsidevice of <scsibus> : scsidevice": {
       "key": "scsidevice of <scsibus> : scsidevice",
@@ -67705,8 +67687,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "version of <scsibus> : version": {
       "key": "version of <scsibus> : version",
@@ -67719,8 +67700,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "wide16 scsi of <scsibus> : boolean": {
       "key": "wide16 scsi of <scsibus> : boolean",
@@ -67733,8 +67713,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "wide32 scsi of <scsibus> : boolean": {
       "key": "wide32 scsi of <scsibus> : boolean",
@@ -67747,8 +67726,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "product of <scsidevice> : string": {
       "key": "product of <scsidevice> : string",
@@ -67761,8 +67739,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "revision of <scsidevice> : string": {
       "key": "revision of <scsidevice> : string",
@@ -67775,8 +67752,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "type of <scsidevice> : string": {
       "key": "type of <scsidevice> : string",
@@ -67789,8 +67765,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "vendor of <scsidevice> : string": {
       "key": "vendor of <scsidevice> : string",
@@ -67803,8 +67778,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "<stage> = <stage> : boolean": {
       "key": "<stage> = <stage> : boolean",
@@ -69781,8 +69755,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "scsibus : scsibus": {
       "key": "scsibus : scsibus",
@@ -69794,8 +69767,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "scsidevice <integer> : scsidevice": {
       "key": "scsidevice <integer> : scsidevice",
@@ -69808,8 +69780,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "scsidevice : scsidevice": {
       "key": "scsidevice : scsidevice",
@@ -69821,8 +69792,7 @@
         "8.0.584.0": [
           "Mac"
         ]
-      },
-      "deprecated": "9.5.10"
+      }
     },
     "service <string> : dummy": {
       "key": "service <string> : dummy",
@@ -107613,18 +107583,6 @@
       "availability": {
         "9.5.7.90": [
           "AIX"
-        ]
-      }
-    },
-    "bes action status download size limited : bes action status": {
-      "key": "bes action status download size limited : bes action status",
-      "type": "property",
-      "resultType": "bes action status",
-      "singularPhrase": "bes action status download size limited",
-      "pluralPhrase": "bes action statuses download size limited",
-      "availability": {
-        "9.5.7.90": [
-          "Session"
         ]
       }
     }

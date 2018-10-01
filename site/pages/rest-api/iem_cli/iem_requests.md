@@ -10,7 +10,7 @@ iem <METHOD> <RESOURCE> [-q] [--param <value>]
 where:
 <dl>
    <dt>** *METHOD* **</dt>
-   <dd>Is one of the HTTP methods supported by that specific REST API resource. Depending on the method, the form of the request can be any of the following:
+   <dd>Is one of the HTTP methods supported by that specific REST API resource. Depending on the method, the form of the request can be:
    <p>
    
 ```
@@ -22,12 +22,8 @@ iem <POST|PUT> [inputFile] <RESOURCE> [-q] [--outFile FILE] [--param value]
 ```   
 
 ```   
-iem login [-q] [--server=SERVER] [--windowsAuthentication] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
+iem admin <COMMAND> [-q] <--pkey=KEYFILE> [--pkeypwd=PASS][--param value]   
 ```
-```   
-iem login [-q] [--server=SERVER] [--user=USER] [--password=PASS] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
-```
-
 </p>
        where *inputFile* and the file referenced by *--outFile* are XML files containing resources descriptions as described in the [schema files](../schema_files.html). POST and PUT requests require a body in their HTTP Requests. You can specify the body either as an input file on the command line, such as:
 <p>

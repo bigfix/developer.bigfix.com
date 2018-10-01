@@ -21,16 +21,10 @@ Version | Platforms
 
 These examples show how you might run a script and pass it some arguments. Quotes around the command line are recommended, and necessary if there are spaces in file names.
 
-<b>On Windows platforms</b>
 ```actionscript
 run "{pathname of regapp "wordpad.exe"}"
 run "c:\winnt\ftp.exe" ftp.mycorp.net
 run wscript /e:vbs x.vbs arg1 arg2
-```
-
-<b>On non-Windows platforms</b>
-```actionscript
-run sudo touch "/tmp/example.txt"
 ```
 
 ## Notes

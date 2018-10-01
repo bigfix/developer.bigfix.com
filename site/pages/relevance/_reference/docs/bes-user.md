@@ -110,10 +110,6 @@ No documentation exists.
 
 Returns the name of the specified BES user (database login name).
 
-# id of &lt;bes user&gt; : integer
-
-Returns the numeric ID (operator ID) unique to the specified BES user.
-
 # operator site of &lt;bes user&gt; : bes site
 
 This inspector returns the BES site object for the given (non-master) user. If the user is a Master Operator, this inspector will throw NoSuchObject.

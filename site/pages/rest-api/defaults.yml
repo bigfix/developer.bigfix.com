@@ -48,9 +48,6 @@ nav:
       - name: Dashboard Variable
         href: /rest-api/api/dashboardvariable.html
 				
-      - name: Deployment Metrics
-        href: /rest-api/api/deploymentmetrics.html
-				
       - name: Fixlet
         href: /rest-api/api/fixlet.html
 
