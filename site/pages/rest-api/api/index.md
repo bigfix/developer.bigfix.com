@@ -13,6 +13,7 @@ Begin learning about the available REST API resources and how to use them.
   <li>[Computer](./computer.html)</li>
   <li>[Computer Group](./computergroup.html)</li>
   <li>[Dashboard Variable](./dashboardvariable.html)</li>
+  <li>[Deployment Metrics](./deploymentmetrics.html)</li>
   <li>[Fixlet](./fixlet.html)</li>
   <li>[Help](./help.html)</li>
   <li>[Import](./import.html)</li>

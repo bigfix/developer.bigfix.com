@@ -2,7 +2,8 @@ var fs = require('fs'),
   parse = require('./parse'),
   path = require('path'),
   yaml = require('js-yaml'),
-  compareVersion = require('compare-version');
+  deepExtend = require('deep-extend'),
+  languageExtension = require('./language-extension.json');
 
 /**
  * Compare two versions that look like 'a.b.c.d'.
@@ -103,9 +104,6 @@ function getSupport(platformToVersion) {
   return versionToPlatforms;
 }
 
-var deprecatedPlatforms =
-  yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'deprecated.yml')));
-
 /**
  * Parse 'target' out of 'Language.target.txt', and return the pretty name for
  * it specified in platforms.yml.
@@ -140,12 +138,6 @@ function parseLanguageReports(languageReports, platformNames) {
       var reportPath = path.join(versionPath, reportFile);
       var filenamePlatform = path.basename(reportPath).match(/Language\.(.+)\.txt$/)[1];
       var platform = getPlatform(reportPath, platformNames);
-      
-      if (deprecatedPlatforms[filenamePlatform] && 
-          (compareVersion(version, deprecatedPlatforms[filenamePlatform]) >= 0)) {
-        console.log("ignored");
-        return;
-      }
       
       console.error(version + ' - ' + platform);
 
@@ -232,6 +224,8 @@ function main() {
   }
 
   var language = parseLanguageReports(process.argv[2], getPlatformNames());
+  deepExtend(language, languageExtension);
+  
   fs.writeFileSync('relevance-language.json',
                    JSON.stringify(language, null, 2));
 }

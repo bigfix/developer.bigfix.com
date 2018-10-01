@@ -188,6 +188,10 @@ No documentation exists.
 
 Returns the BES Action status corresponding to failed downloads. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
 
+# bes action status download size limited : bes action status
+
+Returns the BES Action status as unable to download data because the size of the data to download exceeds the threshold specified in `_BESClient_Download_SizeLimitMB`. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
+
 # bes action status error : bes action status
 
 Returns the BES Action status corresponding to errors. This result can be cast to a &lt;string&gt; format to give the text as shown in the console.
