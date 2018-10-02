@@ -1,54 +1,54 @@
 {
   "types": {
     "scsibus": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     }
   },
   "properties": {
     "fast scsi of <scsibus> : boolean": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice <integer> of <scsibus> : scsidevice": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice of <scsibus> : scsidevice": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "version of <scsibus> : version": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "wide16 scsi of <scsibus> : boolean": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "wide32 scsi of <scsibus> : boolean": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "product of <scsidevice> : string": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "revision of <scsidevice> : string": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "type of <scsidevice> : string": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "vendor of <scsidevice> : string": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsibus <integer> : scsibus": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsibus : scsibus": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice <integer> : scsidevice": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice : scsidevice": {
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     }
   }
 }

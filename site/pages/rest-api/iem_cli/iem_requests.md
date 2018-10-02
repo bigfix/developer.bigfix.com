@@ -22,11 +22,11 @@ iem <POST|PUT> [inputFile] <RESOURCE> [-q] [--outFile FILE] [--param value]
 ```   
 
 ```   
-iem admin  login [-q] [--server=SERVER] [--user=USER] [--password=PASS] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
-```
-
+iem login [-q] [--server=SERVER] [--windowsAuthentication] [--masthead=PATH_TO_TRUSTED_MASTHEAD]
 ```   
-iem login [-q] [--server=SERVER] [--windowsAuthentication] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
+
+```  
+iem login [-q] [--server=SERVER] [--user=USER] [--password=PASS] [--masthead=PATH_TO_TRUSTED_MASTHEAD]   
 ```
 
 </p>
