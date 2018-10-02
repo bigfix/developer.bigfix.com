@@ -4080,7 +4080,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice": {
       "name": "scsidevice",
@@ -4089,7 +4089,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "stage": {
       "name": "stage",
@@ -67677,7 +67677,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice <integer> of <scsibus> : scsidevice": {
       "key": "scsidevice <integer> of <scsibus> : scsidevice",
@@ -67692,7 +67692,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice of <scsibus> : scsidevice": {
       "key": "scsidevice of <scsibus> : scsidevice",
@@ -67706,7 +67706,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "version of <scsibus> : version": {
       "key": "version of <scsibus> : version",
@@ -67720,7 +67720,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "wide16 scsi of <scsibus> : boolean": {
       "key": "wide16 scsi of <scsibus> : boolean",
@@ -67734,7 +67734,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "wide32 scsi of <scsibus> : boolean": {
       "key": "wide32 scsi of <scsibus> : boolean",
@@ -67748,7 +67748,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "product of <scsidevice> : string": {
       "key": "product of <scsidevice> : string",
@@ -67762,7 +67762,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "revision of <scsidevice> : string": {
       "key": "revision of <scsidevice> : string",
@@ -67776,7 +67776,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "type of <scsidevice> : string": {
       "key": "type of <scsidevice> : string",
@@ -67790,7 +67790,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "vendor of <scsidevice> : string": {
       "key": "vendor of <scsidevice> : string",
@@ -67804,7 +67804,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "<stage> = <stage> : boolean": {
       "key": "<stage> = <stage> : boolean",
@@ -69782,7 +69782,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsibus : scsibus": {
       "key": "scsibus : scsibus",
@@ -69795,7 +69795,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice <integer> : scsidevice": {
       "key": "scsidevice <integer> : scsidevice",
@@ -69809,7 +69809,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "scsidevice : scsidevice": {
       "key": "scsidevice : scsidevice",
@@ -69822,7 +69822,7 @@
           "Mac"
         ]
       },
-      "deprecated": "9.5.10"
+      "deprecated": "9.5.10.79"
     },
     "service <string> : dummy": {
       "key": "service <string> : dummy",
