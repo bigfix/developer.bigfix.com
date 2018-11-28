@@ -22,7 +22,10 @@ Double click the **FixletDebugger.exe** file to open the Fixlet Debugger user in
 The tool includes four tabs:
 <dl>
    <dt>*qna*</dt>
-   <dd>Where you can enter your queries, preceded by **Q:**, and evaluate them all again whenever you click the **Evaluate** button.</dd>
+   <dd>Where you can enter your queries, preceded by **Q:**, and evaluate them all again whenever you click the **Evaluate** button.
+  <p>If the expression evaluates successfully, an answer to your query is displayed as an **A:** followed by the result of the expression. If an error occurs when evaluating the expression, or if the result does not exist on the current system, the result is an **E:** followed by the appropriate error message. All other lines are passed through unchanged. You can also obtain the number of microseconds it takes to calculate each relevance expression (T:). 
+Each time that you press the Evaluate button, all existing lines that begin with A:, E:, or T: are removed before processing the next query.</p>
+</dd>
    <dt>*single clause*</dt>
    <dd>Where you can enter and evaluate one query at a time. There is no need, in this case, to write **Q:**. Obtain detailed error information</dd>
    <dt>*graphical*</dt>
@@ -30,14 +33,6 @@ The tool includes four tabs:
    <dt>*action*</dt>
    <dd>Where you can test your action script on the local system.</dd>
    </dl>
-   
-If the expression evaluates successfully, an answer to your query is displayed as an **A:** followed by the result of the expression. 
-
-If an error occurs when evaluating the expression, or if the result does not exist on the current system, the result is an **E:** 
-followed by the appropriate error message. All other lines are passed through unchanged. 
-
-You can also obtain the number of microseconds it takes to calculate each relevance expression (T:). 
-Each time that you press the Evaluate button, all existing lines that begin with A:, E:, or T: are removed before processing the next query.
 
 For more information about this tool, view the following [video](https://www.youtube.com/watch?v=sujEc4HqXew).
 
