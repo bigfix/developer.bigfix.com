@@ -31,7 +31,8 @@ For more information about this tool, view the following [video](https://www.you
 
 ## How to run queries against remote targets using Query Channel
 
-Starting from version 9.5.10 you can use the Fixlet Debugger to run relevance statements, and see their results, on one remote endpoint at a time. The BigFix Agent running on the remote endpoint must be v9.5 or later.
+You can use the Fixlet Debugger to run relevance statements and see their results, on one remote endpoint at a time. The BigFix Agent running on the remote endpoint must be v9.5 or later.
+
 Follow these steps to run a relevance statement on the remote target:
 1. Enter the Query Channel mode: click **Evaluate** > **Evaluate Using** > **Query Channel**.
 2. In the login window opened by the Fixlet Debugger, enter the credentials to connect to a BigFix environment. Ensure that the specified user has both the **Can use WebUI** and the **Can Submit Queries** permissions set to YES to run the query on the remote target.
