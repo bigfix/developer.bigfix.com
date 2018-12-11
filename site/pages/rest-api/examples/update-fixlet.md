@@ -11,7 +11,7 @@ This command will genereate a PUT request to update the fixlet found with the id
 
 # cURL
 ```
-curl -X PUT --data-binary @update.xml --user {username}:{password} https://{server}:{port}/api/actions
+curl -X PUT --data-binary @update.xml --user {username}:{password} https://{server}:{port}/api/fixlet/{site type}/{site name}/{fixlet id}
 
 ```
 
