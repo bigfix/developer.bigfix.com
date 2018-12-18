@@ -2,7 +2,7 @@
 title: Update Fixlet
 ---
 
-This command will genereate a PUT request to update the fixlet found with the id of `fixlet id` under `site type/site name`, replacing it with an updated fixlet specified in `update.xml`.
+This command will generate a PUT request to update the fixlet found with the id of `fixlet id` under `site type/site name`, replacing it with an updated fixlet specified in `update.xml`.
 
 * `site type` is the type of the site containing the fixlet to be updated.
 * `site name` is the the name of the site containing the fixlet to be updated.
@@ -11,7 +11,7 @@ This command will genereate a PUT request to update the fixlet found with the id
 
 # cURL
 ```
-curl -X PUT --data-binary @update.xml --user {username}:{password} https://{server}:{port}/api/actions
+curl -X PUT --data-binary @update.xml --user {username}:{password} https://{server}:{port}/api/fixlet/{site type}/{site name}/{fixlet id}
 
 ```
 
@@ -19,7 +19,7 @@ curl -X PUT --data-binary @update.xml --user {username}:{password} https://{serv
 ```python
 import requests
 with open('update.xml', 'rb') as xml:
-	r = requests.put('https://{server}:{port}/api/fixlets/{site type}/{site name}/{fixlet id}', auth=('{username}', '{password}'), data=xml)
+	r = requests.put('https://{server}:{port}/api/fixlet/{site type}/{site name}/{fixlet id}', auth=('{username}', '{password}'), data=xml)
 print(r.text)
 ```
 
