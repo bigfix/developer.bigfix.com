@@ -29,6 +29,7 @@ Where:
 
 The arguments may be in any order, but unrecognized arguments will generate a
 syntax error.
+**Note**: The downloaded file can be cached only once per action.
 
 ## Examples
 
