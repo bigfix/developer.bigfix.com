@@ -117,14 +117,6 @@ For example:
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "site/{site type}/{site name}/permissions", "POST", "Sets the permissions for a site." %}
-**Request:**  BESAPI SitePermission XML.
-
-**Request Schema:**  BESAPI.xsd
-
-**Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
 {% restapi "site/{site type}/{site name}/permission", "DELETE", "Removes the permissions for a site." %}
 
 **Request:**  URL is all that is required.
