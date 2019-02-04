@@ -18,4 +18,10 @@ These commands allow you to edit the [Windows Registry](https://en.wikipedia.org
   <dt>[**regset64**](./regset64.html)</dt>
   <dd>Set a registry key value in the 64-bit registry.</dd>
 
+  <dt>[**regkeydelete**](./regkeydelete.html)</dt>
+  <dd>Delete a registry key with all of its content.</dd>
+  
+  <dt>[**regkeydelete64**](./regkeydelete64.html)</dt>
+  <dd>Delete a registry key with all of its content in the 64-bit registry.</dd>
+
 </dl>
