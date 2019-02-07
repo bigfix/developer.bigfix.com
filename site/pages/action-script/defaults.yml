@@ -243,6 +243,13 @@ nav:
 
           - name: regset64
             href: /action-script/reference/registry/regset64.html
+            
+          - name: regkeydelete
+            href: /action-script/reference/registry/regkeydelete.html
+
+          - name: regkeydelete64
+            href: /action-script/reference/registry/regkeydelete64.html
+
 
       - name: Site Commands
         href: /action-script/reference/site/
