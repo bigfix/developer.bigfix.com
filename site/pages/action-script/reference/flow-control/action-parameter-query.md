@@ -36,10 +36,6 @@ regset "[HKEY_CURRENT_USER\Software\BigFix]" "tips"="{parameter "tips"}"
 
 ## Notes
 
-The parameter values input by the user may include %xx where xx stands for a
-two-digit hexadecimal number to specify the character you want to embed. To
-embed a percent sign, use `%25`. To embed a double quote, use `%22`.
-
 While the action is executing, you can retrieve the action parameter value
 entered by the user with the [parameter](/relevance/reference/string.html#parameter-string-string)
 inspector. For example, in your action you could use relevance substitution:
