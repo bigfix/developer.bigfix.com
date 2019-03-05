@@ -236,11 +236,20 @@ Returns the stepping number of the processor. This item can be helpful in identi
 
 # type of &lt;processor&gt; : integer
 
-No documentation exists.
+Numeric type of the CPU. Values include: 
+- 0 - standard
+- 1 - overdrive
+- 2 - dual CPU capable
+- 3 - reserved
+<p>Note: This inspector returns an &lt;integer&gt; type as on Windows platforms.</p>
 
 # type of &lt;processor&gt; : string
 
-Numeric type of the CPU. Values include: 0 - standard1 - overdrive2 - dual CPU capable3 - reservedNote: this inspector returns an &lt;integer&gt; type as on Windows platforms.
+String type of the CPU. Values include:
+- i386
+- sparc
+
+<p>Note: This inspector returns a &lt;string&gt; type as on AIX, Mac and Solaris platform.</p>
 
 # vendor name of &lt;processor&gt; : string
 
