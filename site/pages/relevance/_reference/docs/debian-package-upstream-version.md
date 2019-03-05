@@ -1,11 +1,11 @@
 # type: debian package version upstream
 
-The upstream_version of a Debian package is the main version number. Along with the epoch and revision, it is one of the components of the Debian versioning scheme. 
+The upstream_version of a Debian package is the main version number. Along with the epoch and revision, it is one of the components of the Debian versioning scheme. <b>Objects of type "debian package upstream version" are created with the "debian package version upstream" call.</b>
 
 # debian package version upstream &lt;debian package version upstream &gt; : debian package version upstream
 
 A reflexive typing of the specified debian package upstream version.
-<p><b>Note</b>:</p> Objects of type "debian package version upstream" are created with the "debian package version upstream" call. The version upstream is treated the same as the upstream version.
+<p><b>Note</b>:</p> The version upstream is treated the same as the upstream version.
 
 # extrema of &lt;debian package version upstream &gt; : ( debian package version upstream, debian package version upstream)
 
