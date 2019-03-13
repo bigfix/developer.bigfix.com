@@ -40,7 +40,7 @@ Returns the minimum and maximum extreme values of the given list of &lt;version&
 
 # major revision of &lt;version&gt; : integer
 
-The number before the first period in the version string.Example: major revision of version of file "name" &gt; 4 - Returns `True` if the major revision number is greater than the specified number.
+The number before the first period in the version string.
 
 <strong>Example</strong>
 ```
