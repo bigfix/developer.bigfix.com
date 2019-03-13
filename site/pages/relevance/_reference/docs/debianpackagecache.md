@@ -1,6 +1,8 @@
 # type: debianpackagecache
 
-The &lt;debianpackagecache&gt; inspectors refer to the cache directory set up for Debian packages. <b>Objects of type "debianpackagecache" are created with the "debianpackage" call.</b>
+The &lt;debianpackagecache&gt; inspectors refer to the cache directory set up for Debian packages.
+
+Objects of type &lt;debianpackagecache&gt; are created with the "**debianpackage**" creation function.</b>
 
 # base package &lt;string&gt; of &lt;debianpackagecache&gt; : debian base package
 
