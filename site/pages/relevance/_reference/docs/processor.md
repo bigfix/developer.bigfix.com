@@ -241,7 +241,8 @@ Numeric type of the CPU. Values include:
 - 1 - overdrive
 - 2 - dual CPU capable
 - 3 - reserved
-<p>Note: This inspector returns an &lt;integer&gt; type as on Windows platforms.</p>
+
+<strong>Note</strong>: This inspector returns an &lt;integer&gt; type as on Windows platforms.</p>
 
 # type of &lt;processor&gt; : string
 
@@ -249,7 +250,7 @@ String type of the CPU. Values include:
 - i386
 - sparc
 
-<p>Note: This inspector returns a &lt;string&gt; type as on AIX, Mac and Solaris platform.</p>
+<strong>Note</strong>: This inspector returns a &lt;string&gt; type as on AIX, Mac and Solaris platform.
 
 # vendor name of &lt;processor&gt; : string
 
