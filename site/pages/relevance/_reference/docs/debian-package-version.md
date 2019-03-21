@@ -2,7 +2,7 @@
 
 The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`.
 
-For example, following is a valid Debian package version string: `1:9.10.3.dfsg.P4-12.3+deb9u4`.
+For example, the following is a valid Debian package version string: `1:9.10.3.dfsg.P4-12.3+deb9u4`.
 
 It is composed of:
 - `1` - The epoch version
