@@ -1,14 +1,12 @@
 # type: debian package upstream version
 
-The version string of a Debian package, as displayed by the ```dpkg -l``` command, follows this format: ```<epoch>:<upstream-version>-<debian.version>```.
+The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`.
+Only the `<upstream-version>` part is required, and the other parts are optional.
+See the description of the [debian-package-version] inspector for more information.
 
-Only the ```<upstream-version>``` is required, and the other parts are optional. The name structure of Debian packages is documented [Debian package file names](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names).
+The inspector `debian package upstream version` returns the `<upstream-version>` part of the version string.
 
-The inspector ```debian package upstream version``` returns the ```<upstream-version>``` part of the version string.
-
-<strong>Note</strong>: The official Debian documentation refers to ```<debian.version.revision>``` simply as ```<debian.version>```. The extended name is used to distinguish this part of the version string from the full Debian package version string.
-
-The upstream_version of a Debian package is the main version number. Along with the epoch and revision, it is one of the components of the Debian versioning scheme.
+The name structure of Debian packages is [documented here](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names). The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
 
 Objects of type &lt;debian package upstream version&gt; can be created by calling the "debian package version upstream" creation functions. Note that the order of the last two words in the type name (**upstream** version) is reversed in the case of creation function names (version **upstream**).
 
