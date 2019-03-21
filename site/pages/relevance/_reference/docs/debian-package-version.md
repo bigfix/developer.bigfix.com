@@ -1,12 +1,19 @@
 # type: debian package version
 
-The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version>`.
+The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`.
 
-Only the `<upstream-version>` is required, and the other parts are optional. The name structure of Debian packages is documented [here](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names).
+For example, following is a valid Debian package version string: `1:9.10.3.dfsg.P4-12.3+deb9u4`.
 
-The inspector `debian package version` returns the whole version string: `<epoch>:<upstream-version>-<debian.version.revision>`.
+It is composed of:
+- `1` - The epoch version
+- `:` - Separator
+- `9.10.3.dfsg.P4` - The upstream version
+- `-` - Separator 
+- `12.3+deb9u4`- The revision version
 
-<strong>Note</strong>: The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
+Only the `<upstream-version>` is required, and the other parts are optional. The inspector `debian package version` returns the whole version string: `<epoch>:<upstream-version>-<debian.version.revision>`.
+
+The name structure of Debian packages is [documented here](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names). The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
 
 # debian package version &lt;debian package version&gt; : debian package version
 
