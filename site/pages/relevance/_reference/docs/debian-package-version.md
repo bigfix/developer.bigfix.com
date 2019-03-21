@@ -11,7 +11,9 @@ It is composed of:
 - `-` - Separator 
 - `12.3+deb9u4`- The revision version
 
-Only the `<upstream-version>` is required, and the other parts are optional. The inspector `debian package version` returns the whole version string: `<epoch>:<upstream-version>-<debian.version.revision>`.
+Only the `<upstream-version>` is required, and the other parts are optional. That means `1.0.1` is also a valid Debian package version string, composed only of the upstream version part.
+
+The inspector `debian package version` returns the whole version string: `<epoch>:<upstream-version>-<debian.version.revision>`.
 
 The name structure of Debian packages is [documented here](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names). The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
 
