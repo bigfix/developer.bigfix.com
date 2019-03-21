@@ -8,9 +8,6 @@ The inspector `debian package version` returns the whole version string: `<epoch
 
 <strong>Note</strong>: The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
 
-
-For Tivoli inspectors, a Debian package is considered to include both the package and the version. This allows the inspectors to home in on specific versioned packages and not just the package itself, which may have numerous versions. These version inspectors return just the version(s) of a given Debian package. A version is composed of three parts: an epoch, an upstream_version and a debian_revision.
-
 # debian package version &lt;debian package version&gt; : debian package version
 
 A reflexive typing of the specified debian package version.
