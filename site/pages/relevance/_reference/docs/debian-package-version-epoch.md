@@ -1,6 +1,6 @@
 # type: debian package version epoch
 
-The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`. Only the `<upstream-version>` part is required, and the other parts are optional. See the description of the [debian-package-version](debian-package-version.md) inspector for more information.
+The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`. Only the `<upstream-version>` part is required, and the other parts are optional. See the description of the [debian-package-version](https://developer.bigfix.com/relevance/reference/debian-package-version.html) inspector for more information.
 
 The inspector `debian package version epoch` returns the `<epoch>` part of the string or an empty string, if that part is absent. The epoch is an unsigned integer, typically a small number. The epoch allows the package provider to create a fresh start with version numbering schemes.
 
