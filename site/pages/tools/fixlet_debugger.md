@@ -38,7 +38,9 @@ Follow these steps to run a relevance statement on the remote target:
 2. In the login window opened by the Fixlet Debugger, enter the credentials to connect to a BigFix environment. Ensure that the specified user has both the **Can use WebUI** and the **Can Submit Queries** permissions set to YES to run the query on the remote target.
 3. After having logged in successfully, you can select the computer ID or computer name of the target where you want to run the query.
 
-Your Query Channel session will be invalidated by the server after 5 minutes of inactivity. If this happens, Fixlet Debugger will ask you to reauthenticate again. You can change the timeout by customizing the <code>_BESDataServer_APIAuthenticationTimeoutMinutes</code> setting on the server machine.
+To run queries in client context, click **Evaluate** > **Evaluate Using** > **Query Channel in Client Context**.
+
+Your Query Channel session will be invalidated by the server after 5 minutes of inactivity. If this happens, Fixlet Debugger prompts you to authenticate again. You can change the timeout by customizing the <code>_BESDataServer_APIAuthenticationTimeoutMinutes</code> setting on the server machine.
 
 From now on you can run queries on the selected target and see the results as if you were running the queries on your local system.
 
