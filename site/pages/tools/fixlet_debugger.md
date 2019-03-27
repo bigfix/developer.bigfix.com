@@ -34,11 +34,11 @@ For more information about this tool, view the following [video](https://www.you
 You can use the Fixlet Debugger to run relevance statements and see their results, on one remote endpoint at a time. The BigFix Agent running on the remote endpoint must be v9.5 or later.
 
 Follow these steps to run a relevance statement on the remote target:
-1. Enter the Query Channel mode: click **Evaluate** > **Evaluate Using** > **Query Channel**.
+1. Enter the Query Channel mode: 
+* To query by using QnA, click **Evaluate** > **Evaluate Using** > **Query Channel using QnA**.
+* To query in client context, click **Evaluate** > **Evaluate Using** > **Query Channel using Client**.
 2. In the login window opened by the Fixlet Debugger, enter the credentials to connect to a BigFix environment. Ensure that the specified user has both the **Can use WebUI** and the **Can Submit Queries** permissions set to YES to run the query on the remote target.
 3. After having logged in successfully, you can select the computer ID or computer name of the target where you want to run the query.
-
-To run queries in client context, click **Evaluate** > **Evaluate Using** > **Query Channel in Client Context**.
 
 Your Query Channel session will be invalidated by the server after 5 minutes of inactivity. If this happens, Fixlet Debugger prompts you to authenticate again. You can change the timeout by customizing the <code>_BESDataServer_APIAuthenticationTimeoutMinutes</code> setting on the server machine.
 
