@@ -90106,13 +90106,6 @@
       "availability": {
         "8.2.1078.0": [
           "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -90128,7 +90121,6 @@
         "8.2.1078.0": [
           "AIX",
           "Debian",
-          "HP-UX",
           "Mac",
           "Red Hat",
           "SUSE",
@@ -90149,7 +90141,6 @@
         "8.2.1078.0": [
           "AIX",
           "Debian",
-          "HP-UX",
           "Mac",
           "Red Hat",
           "SUSE",
