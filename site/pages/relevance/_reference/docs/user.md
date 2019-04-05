@@ -1,6 +1,7 @@
 # type: user
 
-The &lt;user&gt; inspectors allow you to list properties of all users, whether they are logged in or not.
+- On Windows, returns objects for all users of the computer, logged-in or not.
+- On Linux, returns logged-in users only. If a user is logged in from multiple terminals, the object appears multiple times in the returned results.
 
 # account disabled flag of &lt;user&gt; : boolean
 
