@@ -95294,6 +95294,48 @@
         ]
       }
     },
+    "client query duration of <evaluation cycle> : time interval": {
+      "key": "client query duration of <evaluation cycle> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "client query duration",
+      "pluralPhrase": "client query durations",
+      "directObjectType": "evaluation cycle",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "client query percent of <evaluation cycle> : floating point": {
+      "key": "client query percent of <evaluation cycle> : floating point",
+      "type": "property",
+      "resultType": "floating point",
+      "singularPhrase": "client query percent",
+      "pluralPhrase": "client query percents",
+      "directObjectType": "evaluation cycle",
+      "availability": {
+        "9.0.586.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "gather duration of <evaluation cycle> : time interval": {
       "key": "gather duration of <evaluation cycle> : time interval",
       "type": "property",
