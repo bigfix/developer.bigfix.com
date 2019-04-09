@@ -8,20 +8,20 @@ This is a sample **BESAPI.xsd** file:
 
 ```xml
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-<ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
-<ApplicabilityRelevance>true</ApplicabilityRelevance>
-<QueryText>version of operating system</QueryText>
-<Target>
-<ComputerName>Magicbox</ComputerName> <ComputerName>Mercury</ComputerName> 
-</Target>
-</ClientQuery>
+	<ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
+		<ApplicabilityRelevance>true</ApplicabilityRelevance>
+			<QueryText>version of operating system</QueryText>
+				<Target>
+					<ComputerName>Magicbox</ComputerName> <ComputerName>Mercury</ComputerName> 
+				</Target>
+	</ClientQuery>
 </BESAPI>
 ```
 
-- The <QueryText> element contains the text of the query
--	The <ApplicabilityRelevance> element contains relevance that should be verified before processing the query. 
--	The <UseClientContext> element that is Boolean, and when set to “true” causes the query to run in client context.
-- The <Target> element is built accordingly to the following schema (BESActionTarget.xsd):
+- The `QueryText` element contains the text of the query
+- The `ApplicabilityRelevance` element contains relevance that should be verified before processing the query. 
+- The `UseClientContext` element that is Boolean, and when set to “true” causes the query to run in client context.
+- The `Target` element is built accordingly to the following schema (BESActionTarget.xsd):
 
 ```xml
 <?xml version="1.0"?>
@@ -50,14 +50,14 @@ The following is the schema for building a request file:
 
 ```xml
 <xs:element name="ClientQuery">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="ApplicabilityRelevance" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
-<xs:element name="QueryText" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
-<xs:element name="Target" type="BESClientQueryTarget" minOccurs="0"/>
-<xs:element name="UseClientContext" type="xs:boolean" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="ApplicabilityRelevance" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="QueryText" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Target" type="BESClientQueryTarget" minOccurs="0"/>
+			<xs:element name="UseClientContext" type="xs:boolean" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
 </xs:element>
 ```
 
