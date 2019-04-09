@@ -3,8 +3,25 @@ title: BigFix Query
 ---
 
 {% restapi "/api/clientquery", "POST", "Submits a new BigFix Query request." %}
-**Request:** Complete XML for the object in the body of the request.
-This is a sample **BESActionTarget.xsd** file:
+**Request:** The XML file that contains the query to be sent. This is the HTTP POST request that is sent to the REST API of the Bigfix Server.
+This is a sample **BESAPI.xsd** file:
+
+```xml
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+<ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
+<ApplicabilityRelevance>true</ApplicabilityRelevance>
+<QueryText>version of operating system</QueryText>
+<Target>
+<ComputerName>Magicbox</ComputerName> <ComputerName>Mercury</ComputerName> 
+</Target>
+</ClientQuery>
+</BESAPI>
+```
+
+- The <QueryText> element contains the text of the query
+-	The <ApplicabilityRelevance> element contains relevance that should be verified before processing the query. 
+-	The <UseClientContext> element that is Boolean, and when set to “true” causes the query to run in client context.
+- The <Target> element is built accordingly to the following schema (BESActionTarget.xsd):
 
 ```xml
 <?xml version="1.0"?>
@@ -27,6 +44,21 @@ This is a sample **BESActionTarget.xsd** file:
     </xs:complexType>
   </xs:element>
 </xs:schema>
+```
+
+The following is the schema for building a request file:
+
+```xml
+<xs:element name="ClientQuery">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ApplicabilityRelevance" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
+<xs:element name="QueryText" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
+<xs:element name="Target" type="BESClientQueryTarget" minOccurs="0"/>
+<xs:element name="UseClientContext" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
 ```
 
 You can address the request to one of these types of targets:
@@ -66,10 +98,7 @@ you can get the following response:
   </ClientQuery>
 </BESAPI>
 ```
-
 where *IP_address* is the IP address of the BigFix Server.
-
-**Response:** Submitted query in XML format.
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
@@ -81,11 +110,28 @@ where *IP_address* is the IP address of the BigFix Server.
 - *stats=1* to display the total number of results and the number of agents that responded.
 - *start=x, count=y* to display y results starting from result number x.
 
+For example:
+```xml
+<BESAPI xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xsi:noNamespaceSchemaLocation=”BESAPI.xsd”>
+	<ClientQueryResults>
+		<QueryResult>
+			<ComputerID>549239</ComputerID>
+			<ComputerName>theName</ComputerName>
+			<SubQueryID>1</SubQueryID>
+			<IsFailure>0</IsFailure>
+			<Result>True</Result>
+			<ResponseTime>4000</ResponseTime>
+		</QueryResult>
+	</ClientQueryResults>
+</BESAPI>
+```
+
 **Request Schema:** BES.xsd
 
 **Response:** JSON or XML query results.
 
 **Response Schema:** Results formatted as *QueryResults* in BESAPI.xsd.
+
 {% endrestapi %}
 
 **Note:**
