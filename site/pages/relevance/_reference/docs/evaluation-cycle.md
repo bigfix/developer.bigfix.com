@@ -34,6 +34,14 @@ No documentation exists.
 
 Returns the average time, in milliseconds, that it takes to evaluate a given BigFix Client content set. The average is based on the last ten cycles.Example: average of evaluationcycle of client - Returns the average evaluation cycle time in milliseconds.
 
+# client query duration of &lt;evaluation cycle&gt; : time interval
+
+Time taken evaluating a BigFix query in client context since agent start.
+
+# client query percent of &lt;evaluation cycle&gt; : floating point
+
+Percentage of total time taken evaluating a BigFix query in client context since agent start.
+
 # gather duration of &lt;evaluation cycle&gt; : time interval
 
 Time taken performing gather processing since agent start
