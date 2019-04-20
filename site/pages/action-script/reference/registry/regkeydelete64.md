@@ -33,5 +33,6 @@ regkeydelete64 "[HKEY_LOCAL_MACHINE\SOFTWARE\MyKey]"
 
 - This command is Windows-only. It will cause an action script to terminate on a
 Unix agent.
+- Both your BigFix client and console should be at version 9.5.13 or later for the commmand to work.
 - If the specified key doesn't already exist, it will be created by this command.
 - You cannot delete root keys (for example, HKEY_LOCAL_MACHINE).
