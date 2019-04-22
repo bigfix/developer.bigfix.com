@@ -1,19 +1,11 @@
 # type: debian package version epoch
 
-Returns the Debian package version epoch object created parsing the specified string.
+The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `[epoch:]upstream_version[-debian_revision]`. Only the `upstream_version` part is required, and the other parts are optional.
+See the description of the [debian-package-version](https://developer.bigfix.com/relevance/reference/debian-package-version.html) inspector for more information.
 
-The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`. Only the `<upstream-version>` part is required, and the other parts are optional. See the description of the [debian-package-version](https://developer.bigfix.com/relevance/reference/debian-package-version.html) inspector for more information.
+The inspector `debian package version epoch` returns the `epoch` part of the string or an empty string, if that part is absent. The epoch is an unsigned integer, typically a small number. The epoch allows the package provider to create a fresh start with version numbering schemes.
 
-The inspector `debian package version epoch` returns the `<epoch>` part of the string or an empty string, if that part is absent. The epoch is an unsigned integer, typically a small number. The epoch allows the package provider to create a fresh start with version numbering schemes.
-
-**Example**
-
-```
-Q: debian package version epoch "1"
-A: 1
-```
-
-The name structure of Debian packages is [documented here](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names). The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
+The name structure of Debian package versions is [documented here](https://www.debian.org/doc/debian-policy/ch-controlfields.html#version).
 
 # debian package version epoch &lt;debian package version epoch&gt; : debian package version epoch
 
