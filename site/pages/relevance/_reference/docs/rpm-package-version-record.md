@@ -38,6 +38,13 @@ Strips the epoch from the specified RPM package version record.
 
 Returns the RPM Package release for the specified version record.
 
+**Example**
+
+```
+Q: release of (rpm package version record "1:2.28.4-4.el6")
+A: 4.el6
+```
+
 # rpm package version record &lt;rpm package version record&gt; : rpm package version record
 
 Iterates through the RPM package version record objects.
