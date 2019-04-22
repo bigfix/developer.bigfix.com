@@ -49,6 +49,12 @@ Returns the unique values and counts of a given list of &lt;debian package versi
 
 Returns the Debian package upstream_version from the specified Debian package version.
 
+**Example**
+```
+Q: upstream of (debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4")
+A: 9.10.3.dfsg.P4
+```
+
 # &lt;debian package version&gt; as debian package version : debian package version
 
 Reflexive cast for completeness.
