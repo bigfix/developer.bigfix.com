@@ -1,6 +1,18 @@
 # type: rpm package version record
 
-The &lt;rpm package version record&gt; inspectors provide version-related information, such as Epoch, Version and Release, for an RPM package. inspectors of this type are sorted according to an RPM-specific ordering mechanism defined by the rpmVersionCompare() function of the RPM library.Note: Requires the presence of the RPM library and librpminfo (an open source library created by BigFix containing modified RPM library code) on the client machine. librpminfo is installed on the client as part of the normal BES client RPM installation procedure.
+Returns the RPM package version record object created parsing the specified string.
+
+**Note**: Requires the presence of the RPM library and 'librpminfo` (an open source library created by BigFix containing modified RPM library code) on the client machine. `librpminfo` is installed on the client as part of the normal BES client RPM installation procedure.
+
+**Examples**
+```
+Q: rpm package version record "1.0.5-7.el6_0"
+A: 1.0.5-7.el6_0
+```
+```
+Q: rpm package version record "1:2.28.4-4.el6"
+A: 1:2.28.4-4.el6
+```
 
 # epoch of &lt;rpm package version record&gt; : integer
 
