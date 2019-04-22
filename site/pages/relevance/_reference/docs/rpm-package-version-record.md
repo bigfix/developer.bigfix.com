@@ -44,7 +44,18 @@ Iterates through the RPM package version record objects.
 
 # short form of &lt;rpm package version record&gt; : short rpm package version record
 
-This inspector strips of the Epoch information from the specified RPM package version record object.
+Strips the epoch from the RPM package version record object, if present, and returns a "short RPM package version record" object.
+
+**Examples**
+
+```
+Q: short form of (rpm package version record "1:2.28.4-4.el6")
+A: 2.28.4-4.el6
+```
+```
+Q: short form of (rpm package version record "1.0.5-7.el6_0")
+A: 1.0.5-7.el6_0
+```
 
 # short rpm package version record &lt;rpm package version record&gt; : short rpm package version record
 
