@@ -34,6 +34,17 @@ Returns capability objects for each capability that this package requires.
 
 Returns the RPM version records of the specified package.
 
+**Examples**
+
+```
+Q: rpm version record of (package "bzip2" of rpm)
+A: 1.0.5-7.el6_0
+```
+```
+Q: rpm version record of (package "gedit" of rpm)
+A: 1:2.28.4-4.el6
+```
+
 # signature keyid of &lt;package&gt; : string
 
 No documentation exists.
