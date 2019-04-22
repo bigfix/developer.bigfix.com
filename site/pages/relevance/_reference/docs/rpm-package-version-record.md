@@ -69,6 +69,13 @@ Returns the unique values of a given list of &lt;rpm package version record&gt; 
 
 Returns the version of the specified RPM package version record.
 
+**Example**
+
+```
+Q: version of (rpm package version record "1:2.28.4-4.el6")
+A: 2.28.4
+```
+
 # &lt;rpm package version record&gt; as rpm package version record : rpm package version record
 
 No documentation exists.
