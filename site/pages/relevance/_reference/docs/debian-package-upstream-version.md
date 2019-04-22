@@ -1,10 +1,24 @@
 # type: debian package upstream version
 
+Returns the Debian package upstream version object created parsing the specified string.
+
 The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `<epoch>:<upstream-version>-<debian.version.revision>`.
 Only the `<upstream-version>` part is required, and the other parts are optional.
 See the description of the [debian-package-version](https://developer.bigfix.com/relevance/reference/debian-package-version.html) inspector for more information.
 
 The inspector `debian package upstream version` returns the `<upstream-version>` part of the version string.
+
+**Examples**
+
+```
+Q: debian package version upstream "1.10.1"
+A: 1.10.1
+```
+
+```
+Q: debian package version upstream "9.10.3.dfsg.P4"
+A: 9.10.3.dfsg.P4
+```
 
 The name structure of Debian packages is [documented here](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_debian_package_file_names). The official Debian documentation refers to `<debian.version.revision>` simply as `<debian.version>`. The extended name is used to distinguish this part of the version string from the full Debian package version string.
 
