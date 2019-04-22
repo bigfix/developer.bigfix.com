@@ -25,6 +25,13 @@ A reflexive typing of the specified debian package version.
 
 Returns the epoch component of the specified debian package version. This is primarily used to correct for mistaken version numbers.
 
+**Example**
+
+```
+Q: epoch of (debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4")
+A: 1
+```
+
 # extrema of &lt;debian package version&gt; : ( debian package version, debian package version )
 
 Returns the minimum and maximum extreme values of the given list of &lt;debian package version&gt; types.
@@ -40,6 +47,13 @@ Returns the minimum value from the specified list of Debian package versions. Se
 # revision of &lt;debian package version&gt; : debian package version revision
 
 Returns the Debian revision from the specified package version.
+
+**Example**
+
+```
+Q: revision of (debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4")
+A: 12.3+deb9u4
+```
 
 # unique value of &lt;debian package version&gt; : debian package version with multiplicity
 
