@@ -1,15 +1,8 @@
 # type: rpm package release
 
-Returns the RPM package release object created parsing the specified string.
+The &lt;rpm package release&gt; inspectors disclose properties of the RPM package version record inspector. They are collected from the 'Release' component of the Epoch, Version and Release fields associated with an RPM package. The behavior of this inspector differs from a string, because they are sorted according to RPM rules defined by the `rpmvercmp()` function of the RPM library. Do not create an &lt;rpm package release&gt; inspector with embedded '-' or whitespace characters. These characters are disallowed in RPM, and will cause the statement to fail.
 
 **Note**: Requires the presence of the RPM library and `librpminfo` (an open source library created by BigFix containing modified RPM library code) on the client machine. `librpminfo` is installed on the client as part of the normal BES client RPM installation procedure.
-
-**Example**
-
-```
-Q: rpm package release "4.el6"
-A: 4.el6
-```
 
 # extrema of &lt;rpm package release&gt; : ( rpm package release, rpm package release )
 
