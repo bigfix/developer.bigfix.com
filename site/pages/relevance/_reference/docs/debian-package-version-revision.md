@@ -1,6 +1,6 @@
 # type: debian package version revision
 
-The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `[epoch:]upstream_version[-debian_revision]`. Only the `upstream_version` part is required, and the other parts are optional.
+The version string of a Debian package, as displayed by the `dpkg -l` command, follows this format: `[epoch:]upstream_version[-debian_revision]`. Only the `upstream_version` part is required, and the other parts are optional. 
 See the description of the [debian-package-version](https://developer.bigfix.com/relevance/reference/debian-package-version.html) inspector for more information.
 
 The inspector `debian package version revision` returns the `debian_revision` part of the string, or an empty string, if that part is absent.
