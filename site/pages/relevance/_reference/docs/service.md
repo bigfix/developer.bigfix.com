@@ -1,6 +1,18 @@
 # type: service
 
-The &lt;service&gt; inspectors provide access to all services configured on Windows NT, 2K and XP systems. On a non-Windows system, expressions using these objects will fail gracefully instead of generating an error.
+The <service> inspectors provide access to all services configured on supported operating systems. Using an inspector for which there is no service results in an error referring to a nonexistent object.
+
+{% qna %}
+Q: relay service
+E: Singular expression refers to nonexistent object.
+{% endqna %}
+
+To avoid errors, check if the service exists before trying to use its inspector.
+
+{% qna %}
+Q: exists relay service
+A: False
+{% endqna %}
 
 # can interact with desktop of &lt;service&gt; : boolean
 
