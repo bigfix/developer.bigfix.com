@@ -322,54 +322,52 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;dd&gt;
 
 Returns the Debian package version object created parsing the specified version string.
 
-**Examples**
-```
+{% qna %}
 Q: debian package version "1.10.1"
 A: 1.10.1
-```
-```
+{% endqna %}
+
+{% qna %}
 Q: debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4"
 A: 1:9.10.3.dfsg.P4-12.3+deb9u4``
-```
+{% endqna %}
 
 # debian package version epoch &lt;string&gt; : debian package version epoch
 
 Returns the Debian package version epoch object created parsing the specified string.
 
-**Example**
-
-```
+{% qna %}
 Q: debian package version epoch "1"
 A: 1
-```
+{% endqna %}
 
 # debian package version revision &lt;string&gt; : debian package version revision
 
 Returns the Debian package version revision object created parsing the specified string.
 
-**Examples**
-```
+{% qna %}
 Q: debian package version revision "2"
 A: 2
-```
-```
+{% endqna %}
+
+{% qna %}
 Q: debian package version revision "12.3+deb9u4"
 A: 12.3+deb9u4
-```
+{% endqna %}
 
 # debian package version upstream &lt;string&gt; : debian package upstream version
 
 Returns the Debian package upstream version object created parsing the specified string.
 
-**Examples**
-```
+{% qna %}
 Q: debian package version upstream "1.10.1"
 A: 1.10.1
-```
-```
+{% endqna %}
+
+{% qna %}
 Q: debian package version upstream "9.10.3.dfsg.P4"
 A: 9.10.3.dfsg.P4
-```
+{% endqna %}
 
 # definition list &lt;string&gt; of &lt;string&gt; : html
 
@@ -1067,37 +1065,33 @@ Returns an object corresponding to the database named by &lt;string&gt;.
 
 Returns the RPM package release object created parsing the specified string.
 
-**Example**
-
-```
+{% qna %}
 Q: rpm package release "4.el6"
 A: 4.el6
-```
+{% endqna %}
 
 # rpm package version &lt;string&gt; : rpm package version
 
 Returns the RPM package version object created parsing the specified version string.
 
-**Examples**
-
-```
+{% qna %}
 Q: rpm package version "1.0.5"
 A: 1.0.5
-```
+{% endqna %}
 
 # rpm package version record &lt;string&gt; : rpm package version record
 
 Returns the RPM package version record object created parsing the specified string.
 
-**Examples**
-```
+{% qna %}
 Q: rpm package version record "1.0.5-7.el6_0"
 A: 1.0.5-7.el6_0
-```
-```
+{% endqna %}
+
+{% qna %}
 Q: rpm package version record "1:2.28.4-4.el6"
 A: 1:2.28.4-4.el6
-```
+{% endqna %}
 
 # running application &lt;string&gt; : application
 
