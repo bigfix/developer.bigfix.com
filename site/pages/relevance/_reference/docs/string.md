@@ -320,19 +320,56 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;dd&gt;
 
 # debian package version &lt;string&gt; : debian package version
 
-Returns a Debian package version object from the given string.
+Returns the Debian package version object created parsing the specified version string.
+
+**Examples**
+```
+Q: debian package version "1.10.1"
+A: 1.10.1
+```
+```
+Q: debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4"
+A: 1:9.10.3.dfsg.P4-12.3+deb9u4``
+```
 
 # debian package version epoch &lt;string&gt; : debian package version epoch
 
-Returns a Debian package version &#39;epoch&#39; object from the given string.
+Returns the Debian package version epoch object created parsing the specified string.
+
+**Example**
+
+```
+Q: debian package version epoch "1"
+A: 1
+```
 
 # debian package version revision &lt;string&gt; : debian package version revision
 
-Returns a Debian package version revision object from the given string.
+Returns the Debian package version revision object created parsing the specified string.
+
+**Examples**
+```
+Q: debian package version revision "2"
+A: 2
+```
+```
+Q: debian package version revision "12.3+deb9u4"
+A: 12.3+deb9u4
+```
 
 # debian package version upstream &lt;string&gt; : debian package upstream version
 
-Returns a Debian package upstream_version object from the supplied string.
+Returns the Debian package upstream version object created parsing the specified string.
+
+**Examples**
+```
+Q: debian package version upstream "1.10.1"
+A: 1.10.1
+```
+```
+Q: debian package version upstream "9.10.3.dfsg.P4"
+A: 9.10.3.dfsg.P4
+```
 
 # definition list &lt;string&gt; of &lt;string&gt; : html
 
@@ -1028,15 +1065,39 @@ Returns an object corresponding to the database named by &lt;string&gt;.
 
 # rpm package release &lt;string&gt; : rpm package release
 
-Returns the named RPM package release.
+Returns the RPM package release object created parsing the specified string.
+
+**Example**
+
+```
+Q: rpm package release "4.el6"
+A: 4.el6
+```
 
 # rpm package version &lt;string&gt; : rpm package version
 
-Returns the named RPM package version.
+Returns the RPM package version object created parsing the specified version string.
+
+**Examples**
+
+```
+Q: rpm package version "1.0.5"
+A: 1.0.5
+```
 
 # rpm package version record &lt;string&gt; : rpm package version record
 
-Returns the named RPM package version record.
+Returns the RPM package version record object created parsing the specified string.
+
+**Examples**
+```
+Q: rpm package version record "1.0.5-7.el6_0"
+A: 1.0.5-7.el6_0
+```
+```
+Q: rpm package version record "1:2.28.4-4.el6"
+A: 1:2.28.4-4.el6
+```
 
 # running application &lt;string&gt; : application
 
