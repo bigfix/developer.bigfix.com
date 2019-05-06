@@ -271,6 +271,9 @@
           "Debian",
           "Ubuntu"
         ]
+	"9.5.13.0": [
+          "Raspbian"
+	]
       }
     },
     "bes property": {
