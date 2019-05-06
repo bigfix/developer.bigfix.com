@@ -25,12 +25,10 @@ A reflexive typing of the specified debian package version.
 
 Returns the epoch component of the specified debian package version. This is primarily used to correct for mistaken version numbers.
 
-**Example**
-
-```
+{% qna %}
 Q: epoch of (debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4")
 A: 1
-```
+{% endqna %}
 
 # extrema of &lt;debian package version&gt; : ( debian package version, debian package version )
 
@@ -48,12 +46,10 @@ Returns the minimum value from the specified list of Debian package versions. Se
 
 Returns the Debian revision from the specified package version.
 
-**Example**
-
-```
+{% qna %}
 Q: revision of (debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4")
 A: 12.3+deb9u4
-```
+{% endqna %}
 
 # unique value of &lt;debian package version&gt; : debian package version with multiplicity
 
@@ -63,11 +59,10 @@ Returns the unique values and counts of a given list of &lt;debian package versi
 
 Returns the Debian package upstream_version from the specified Debian package version.
 
-**Example**
-```
+{% qna %}
 Q: upstream of (debian package version "1:9.10.3.dfsg.P4-12.3+deb9u4")
 A: 9.10.3.dfsg.P4
-```
+{% endqna %}
 
 # &lt;debian package version&gt; as debian package version : debian package version
 
