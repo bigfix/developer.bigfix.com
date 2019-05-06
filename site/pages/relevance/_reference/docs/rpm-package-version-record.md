@@ -28,12 +28,10 @@ Strips the epoch from the specified RPM package version record.
 
 Returns the RPM Package release for the specified version record.
 
-**Example**
-
-```
+{% qna %}
 Q: release of (rpm package version record "1:2.28.4-4.el6")
 A: 4.el6
-```
+{% endqna %}
 
 # rpm package version record &lt;rpm package version record&gt; : rpm package version record
 
@@ -43,16 +41,15 @@ Iterates through the RPM package version record objects.
 
 Strips the epoch from the RPM package version record object, if present, and returns a "short RPM package version record" object.
 
-**Examples**
-
-```
+{% qna %}
 Q: short form of (rpm package version record "1:2.28.4-4.el6")
 A: 2.28.4-4.el6
-```
-```
+{% endqna %}
+
+{% qna %}
 Q: short form of (rpm package version record "1.0.5-7.el6_0")
 A: 1.0.5-7.el6_0
-```
+{% endqna %}
 
 # short rpm package version record &lt;rpm package version record&gt; : short rpm package version record
 
@@ -66,12 +63,10 @@ Returns the unique values of a given list of &lt;rpm package version record&gt; 
 
 Returns the version of the specified RPM package version record.
 
-**Example**
-
-```
+{% qna %}
 Q: version of (rpm package version record "1:2.28.4-4.el6")
 A: 2.28.4
-```
+{% endqna %}
 
 # &lt;rpm package version record&gt; as rpm package version record : rpm package version record
 
