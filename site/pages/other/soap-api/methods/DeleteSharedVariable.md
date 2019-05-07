@@ -4,7 +4,7 @@ title: DeleteSharedVariable
 
 {% section %}
 
-**DeleteSharedVariable** is a Web Reports SOAP method that deletes a variable from
+**DeleteSharedVariable** is a Web Reports SOAP method that allows a Web Reports administrator to delete a variable from
 the dashboard datastore of one or more databases being aggregated by Web
 Reports. Note that this method requires request and response headers to
 authenticate.
