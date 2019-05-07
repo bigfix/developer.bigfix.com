@@ -103,6 +103,8 @@ you can get the following response:
 ```
 where *IP_address* is the IP address of the BigFix Server.
 
+**Note**: On Windows and Linux, the result of a fast query retrieved using this request is always truncated to 1024 bytes.
+
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
