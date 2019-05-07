@@ -4,7 +4,7 @@ title: StoreSharedVariable
 
 {% section %}
 
-**StoreSharedVariable** is a SOAP method that inserts a variable into the dashboard
+**StoreSharedVariable** is a SOAP method that allows a Web Reports administrator to insert a variable into the dashboard
 datastore of one or more databases being aggregated by Web Reports. You can save
 data into the database by using a script function, and retrieve that data with a
 session inspector. Each dashboard has its own name space, so it can use common
