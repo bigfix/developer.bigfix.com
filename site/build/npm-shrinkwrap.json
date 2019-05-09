@@ -165,7 +165,7 @@
     "highlight-bigfix-actionscript": {
       "version": "1.0.4",
       "from": "bigfix/highlight-bigfix-actionscript",
-      "resolved": "git://github.com/bigfix/highlight-bigfix-actionscript.git#001b6be1d83d5d3dcc1546c7a73af91eb711d97b"
+      "resolved": "https://github.com/bigfix/highlight-bigfix-actionscript.git"
     },
     "highlight.js": {
       "version": "8.9.1",
@@ -289,8 +289,8 @@
     },
     "marked": {
       "version": "0.3.6",
-      "from": "baonhan/marked",
-      "resolved": "git://github.com/baonhan/marked.git#a502dab003b944fea17c5179c6865089c8287eeb"
+      "from": "elia-tufarolo/marked",
+      "resolved": "https://github.com/elia-tufarolo/marked.git"
     },
     "micromatch": {
       "version": "2.3.2",

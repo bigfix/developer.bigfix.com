@@ -10,7 +10,7 @@
     "highlight.js": "^8.9.1",
     "hljs-bigfix-relevance": "^1.0.0",
     "js-yaml": "^3.4.3",
-    "marked": "baonhan/marked",
+    "marked": "elia-tufarolo/marked",
     "mkdirp": "^0.5.1",
     "nunjucks": "^2.1.0",
     "rimraf": "^2.4.3",
