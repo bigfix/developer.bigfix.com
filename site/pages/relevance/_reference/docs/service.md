@@ -1,6 +1,6 @@
 # type: service
 
-The <service> inspectors provide access to all services configured on supported operating systems. Using an inspector for which there is no service results in an error referring to a nonexistent object.
+The &lt;service&gt; inspectors provide access to all services configured on supported operating systems. Using an inspector for which there is no service results in an error referring to a nonexistent object.
 
 {% qna %}
 Q: relay service
