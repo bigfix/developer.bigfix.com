@@ -11,7 +11,7 @@ If the value doesn’t already exist, this command fails and all subsequent comm
 
 Version | Platforms
 --- | ---
-9.5.12.xxx | Windows
+9.5.13.130 | Windows
 
 ## Syntax
 
