@@ -10,6 +10,7 @@ https://<bigfix_server>:52311/api/actions
 ```
 
 For example: ```https://server.bigfix.com:52311/api/actions```
+
 You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** List of actions in XML format.

@@ -18,7 +18,10 @@ You can also download a [stand-alone version](http://support.bigfix.com/bes/rele
 The Fixlet Debugger user interface includes four tabs:
 <dl>
    <dt>The qna tab</dt>
-   <dd>Where you can enter your queries, preceded by **Q: **, and evaluate them all again whenever you click the **Evaluate** button.</dd>
+   <dd>Where you can enter your queries, preceded by **Q:**, and evaluate them all again whenever you click the **Evaluate** button.
+   <p>If the expression evaluates successfully, an answer to your query is displayed as an **A:** followed by the result of the expression. If an error occurs when evaluating the expression, or if the result does not exist on the current system, the result is an **E:** 
+followed by the appropriate error message. All other lines are passed through unchanged. You can also obtain the number of microseconds it takes to calculate each relevance expression (**T:**). 
+After every evaluation, all existing lines that begin with **A:**, **E:**, or **T:** are removed before processing the next query.</p></dd>
    <dt>The single clause tab</dt>
    <dd>Where you can enter and evaluate one query at a time. There is no need, in this case, to write **Q:**. Obtain detailed error information</dd>
    <dt>The graphical tab</dt>
