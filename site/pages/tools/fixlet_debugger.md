@@ -17,6 +17,7 @@ You can also download a [stand-alone version](http://support.bigfix.com/bes/rele
 
 The Fixlet Debugger user interface includes four tabs:
 <dl>
+
    <dt>The qna tab</dt>
    <dd>Where you can enter your queries, preceded by **Q:**, and evaluate them all again whenever you click the **Evaluate** button.
    <p>If the expression evaluates successfully, an answer to your query is displayed as an **A:** followed by the result of the expression. If an error occurs when evaluating the expression, or if the result does not exist on the current system, the result is an **E:** 

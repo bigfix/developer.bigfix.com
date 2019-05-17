@@ -226,6 +226,7 @@ https://<bigfix_server>:52311/api/action/44/status
 ```
 
 For example: ```https://server.bigfix.com:52311/api/action/44/status```
+
 You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** The information about the status of the action in XML format.
