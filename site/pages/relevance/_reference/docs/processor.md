@@ -1,6 +1,6 @@
 # type: processor
 
-The &lt;processor&gt; object is used to identify the number and properties of processors in the system. You can identify the manufacturer of the CPU as well as the speed and other features. Many operating systems provide for multiple processors. You can inspect any one of them by their ordinal number.For more information on Windows processors, see the Resource section at the end of this guide.
+The &lt;processor&gt; inspector is used to identify the number and properties of processors in the system. Many operating systems support multiple CPUs and processors. You can inspect any one of them by their ordinal number. On Linux, most of these inspector properties look into the /proc/cpuinfo file to find the requested information.
 
 # adjustment &lt;integer&gt; of &lt;processor&gt; : integer
 
@@ -8,11 +8,11 @@ s390 processors only. Returns the processor Adjustment Way (guest performance)
 
 # altivec of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor supports the AltiVec instruction set.
 
 # architected of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor is running in architected mode.
 
 # bogomips of &lt;processor&gt; : integer
 
@@ -56,7 +56,7 @@ s390 processors only. Returns the number of total processors for the system
 
 # decimal fpu of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns True if the specified processor has a decimal floating point unit.
 
 # extended family of &lt;processor&gt; : integer
 
@@ -80,11 +80,11 @@ Returns the family name of the CPU, dependent on the type of client computer, fo
 
 # family of &lt;processor&gt; : integer
 
-Returns an integer representing the family of the CPU. See the notes for the meaning of these numbers. As of BES 6.0, this inspector returns a string on Solaris and AIX computers.
+Linux, Mac and Windows only. Returns an integer representing the family of the specified processor.
 
 # family of &lt;processor&gt; : string
 
-No documentation exists.
+Solaris and AIX only. Returns a string representing the family of the specified processor.
 
 # fdiv bug of &lt;processor&gt; : boolean
 
@@ -116,7 +116,7 @@ Returns `True` if the specified processor is afflicted by the hlt bug.
 
 # ic snoop of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor supports icache snooping capabilities.
 
 # id of &lt;processor&gt; : integer
 
@@ -168,7 +168,12 @@ s390 processors only. Returns the LPAR number for this processor
 
 # machine name of &lt;processor&gt; : string
 
-No documentation exists.
+PPC64 processors only. Returns a string representing the machine name of the specified processor.
+
+{% qna %}
+Q: machine name of main processor
+A: 8247-22l
+{% endqna %}
 
 # machine serial number of &lt;processor&gt; : string
 
@@ -176,7 +181,7 @@ s390 processors only. Returns the serial number of the processor
 
 # mmu of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor has a memory management unit.
 
 # model name of &lt;processor&gt; : string
 
@@ -184,19 +189,29 @@ Returns a string containing the name of the processor model.
 
 # model of &lt;processor&gt; : integer
 
-Returns the model number of the CPU as a string.Note: On Windows and Linux platforms, this inspector returns an integer.
+Linux, Mac and Windows only. Returns an integer representing the model number of the specified processor.
 
 # model of &lt;processor&gt; : string
 
-No documentation exists.
+AIX, HP-UX and Solaris only. Returns a string representing the model number of the specified processor.
 
 # revision of &lt;processor&gt; : string
 
-No documentation exists.
+PPC64 processors only. Returns a string representing the revision number of the specified processor.
+
+{% qna %}
+Q: revision of main processor
+A: 2.1
+{% endqna %}
 
 # run mode of &lt;processor&gt; : string
 
-No documentation exists.
+PPC64 processors only. Returns a string representing what mode the specified processor is running in. If you specifically want to know whether the processor is running in "architected" mode or in "raw" mode, check the "architected" processor property also.
+
+{% qna %}
+Q: run mode of main processor
+A: power8
+{% endqna %}
 
 # sep bug of &lt;processor&gt; : boolean
 
@@ -208,19 +223,19 @@ s390 processors only. Returns the Sequence Code for the processor.
 
 # smt of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor supports simultaneous multi-threading. 
 
 # spe double of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor has a SPE double precision floating point unit.
 
 # spe float of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor has a SPE single precision floating point unit. 
 
 # spe of &lt;processor&gt; : boolean
 
-No documentation exists.
+PPC64 processors only. Returns `True` if the specified processor has a SPE (Signal Processing Engine) unit.
 
 # speed of &lt;processor&gt; : hertz
 
@@ -236,17 +251,16 @@ Returns the stepping number of the processor. This item can be helpful in identi
 
 # type of &lt;processor&gt; : integer
 
-Numeric type of the CPU. Values include: 
+Windows only. Returns an integer representing the type of specified processor. Values include: 
+
 - 0 - standard
 - 1 - overdrive
 - 2 - dual CPU capable
 - 3 - reserved
 
-<strong>Note</strong>: This inspector returns an &lt;integer&gt; type as on Windows platforms.</p>
-
 # type of &lt;processor&gt; : string
 
-String type of the CPU. Values include:
+AIX, Mac and Solaris only. Returns a string representing the type of the CPU. Values include:
 - i386
 - sparc
 
