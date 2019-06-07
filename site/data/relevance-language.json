@@ -6779,6 +6779,20 @@
       }
     }
   },
+  "cloud provider": {
+    "name": "cloud provider",
+    "availability": {
+      "10.0.0.0": [
+        "Debian",
+        "Mac",
+        "Red Hat",
+        "SUSE",
+        "Solaris",
+        "Ubuntu",
+        "Windows"
+      ]
+    }
+  },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
       "key": "<bes action set> contains <bes action> : boolean",
