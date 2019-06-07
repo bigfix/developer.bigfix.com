@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: Action Script Language Reference
 categories:
   - title: Client Commands
     section: client
