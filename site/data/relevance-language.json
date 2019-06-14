@@ -114069,6 +114069,120 @@
         ]
       }
     },
+    "name of <cloud provider> : string": {
+      "key": "name of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "unique id of <cloud provider> : string": {
+      "key": "unique id of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "unique id",
+      "pluralPhrase": "unique ids",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "private id of <cloud provider> : string": {
+      "key": "private id of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "private id",
+      "pluralPhrase": "private ids",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "version of <cloud provider> : string": {
+      "key": "version of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "version",
+      "pluralPhrase": "versions",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "region of <cloud provider> : string": {
+      "key": "region of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "region",
+      "pluralPhrase": "regions",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "instance data of <cloud provider> : json value": {
+      "key": "instance data of <cloud provider> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "instance data",
+      "pluralPhrase": "instance datas",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "uuid of <operating system> : uuid": {
       "key": "uuid of <operating system> : uuid",
       "type": "property",
