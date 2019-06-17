@@ -6777,22 +6777,22 @@
           "Raspbian"
         ]
       }
-    }
-  },
-  "cloud provider": {
-    "name": "cloud provider",
-    "availability": {
-      "10.0.0.0": [
-        "Debian",
-        "Mac",
-        "Red Hat",
-        "SUSE",
-        "Solaris",
-        "Ubuntu",
-        "Windows"
+    },
+    "cloud provider": {
+      "name": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
       ]
     }
   },
+},
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
       "key": "<bes action set> contains <bes action> : boolean",
@@ -114107,12 +114107,12 @@
         ]
       }
     },
-    "private id of <cloud provider> : string": {
-      "key": "private id of <cloud provider> : string",
+    "private ip of <cloud provider> : string": {
+      "key": "private ip of <cloud provider> : string",
       "type": "property",
       "resultType": "string",
-      "singularPhrase": "private id",
-      "pluralPhrase": "private ids",
+      "singularPhrase": "private ip",
+      "pluralPhrase": "private ips",
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
