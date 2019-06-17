@@ -6791,7 +6791,7 @@
           "Windows"
       ]
     }
-  },
+  }
 },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
