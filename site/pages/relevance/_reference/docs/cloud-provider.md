@@ -26,7 +26,7 @@ Returns the private IP of the cloud provider, or an empty string if the client m
 
 # version of &lt;cloud provider&gt; : string
 
-Returns the version of the instance metadata, or an empty string if the client machine is not a VM, or if it is a VM hosted on an unrecognized cloud provider.
+Returns the version of the instance image, or an empty string if the client machine is not a VM, or if it is a VM hosted on an unrecognized cloud provider.
 
 # region of &lt;cloud provider&gt; : string
 
