@@ -2,6 +2,8 @@
 
 This inspector retrieves specific cloud provider data from a client that is installed on a machine hosted on a cloud provider. You can deactivate the inspector by setting `_BESClient_Inspector_DisableCloudProvider` to 1. In this case, the output of the inspector calls will be `cloud provider inspector is disabled`.
 
+**Note**: The cloud inspectors support virtual environments for AWS and Azure only.
+
 # name of &lt;cloud provider&gt; : string
 
 Returns one of the following:
