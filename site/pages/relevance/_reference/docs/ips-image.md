@@ -68,7 +68,7 @@ Returns the ordered catalog from ips image.
 
 # package &lt;string&gt; of &lt;ips image&gt; : ips package
 
-Returns the snamed package from ips image.
+Returns the named package from ips image.
 
 # package of &lt;ips image&gt; : ips package
 
