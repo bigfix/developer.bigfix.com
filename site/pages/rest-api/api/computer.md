@@ -118,6 +118,18 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+{% restapi "computer/{id}/baselines", "GET", " Gets the list of relevant baselines and their ID." %}
+**Request:** URL is all that is required.
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
+{% restapi "computer/{id}/analyses", "GET", " Gets the list of relevant analyses and their ID." %}
+**Request:** URL is all that is required.
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
 #### Filtering Response Fields
 You can use the ```?fields=``` parameter to limit the fields returned for a given resource when using the API resources ```/api/computers``` and ```/api/computer/{computer id}```.
 The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. 
