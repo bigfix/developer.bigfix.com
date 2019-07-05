@@ -11,10 +11,8 @@ These files are automatically updated, during the product upgrade, whenever fiel
 
 To ensure consistency, use the version of the schema files available on your BigFix server under the path:
 
-
-* *C:\Program Files (x86)\BigFix Enterprise\BigFix server\Reference* for Windows systems (by default)
-
-* */opt/BESServer/reference* for Linux Red Hat Enterprise V.5.0 or later systems
+- On Windows systems: `C:\Program Files (x86)\BigFix Enterprise\BigFix server\Reference`
+- On RedHat Linux Enterprise version 5.0 or later: `/opt/BESServer/reference`
 
 The schema files are also available via HTTP/HTTPS from the BigFix Root Server to facilitate automated XML validation:
 
