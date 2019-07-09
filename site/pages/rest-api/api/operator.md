@@ -12,9 +12,6 @@ The following information applies also to LDAP operators.
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-**Note:**
-The operator name to use for retrieving operator information (especially when the name contains special characters) must be the same as that returned by the get/operators API in the `resource name` field for the same operator.
-
 {% restapi "operators", "POST", "Creates an operator." %}
 **Request:** Operator XML file.
 
@@ -35,6 +32,8 @@ If the deployment option, "enableRESTAPIOperatorID" is enabled, all the REST API
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+**Note:**
+The operator name to use for retrieving operator information (especially when the name contains special characters) must be the same as that returned by the get/operators API.
 
 {% restapi "operator/{operator name}", "PUT", "Updates an operator." %}
 **Request:** Complete or partial XML for Operator.
