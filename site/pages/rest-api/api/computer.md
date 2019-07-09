@@ -95,7 +95,7 @@ title: Computer
 {% endrestapi %}
 
 
-{% restapi "computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses." %}
+{% restapi "computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses and their ID." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant analyses and their ID.
@@ -104,7 +104,7 @@ title: Computer
 {% endrestapi %}
 
 
-{% restapi "computer/{computer id}/baselines", "GET", "Gets the list of relevant baselines." %}
+{% restapi "computer/{computer id}/baselines", "GET", "Gets the list of relevant baselines and their ID." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant baselines and their ID.
@@ -113,18 +113,6 @@ title: Computer
 {% endrestapi %}
 
 {% restapi "computer/{computer id}/mailbox", "GET", "Gets contents of the computer's mailbox" %}
-**Request:** URL is all that is required.
-
-**Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "computer/{id}/baselines", "GET", " Gets the list of relevant baselines and their ID." %}
-**Request:** URL is all that is required.
-
-**Response Schema:** BESAPI.xsd
-{% endrestapi %}
-
-{% restapi "computer/{id}/analyses", "GET", " Gets the list of relevant analyses and their ID." %}
 **Request:** URL is all that is required.
 
 **Response Schema:** BESAPI.xsd
