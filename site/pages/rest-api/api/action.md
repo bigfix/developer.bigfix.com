@@ -264,6 +264,8 @@ Use these characters to define the filter:
 - ```<...>``` to denote attributes
 - ```=``` to mark LHS and RHS of attributes
 
+**Note:** These are reserved characters. By default, they are not allowed in the name of the filter.
+
 These are some example of filtering results using ```?fields=```:
 
 ```xml
