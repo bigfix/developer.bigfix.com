@@ -1309,7 +1309,7 @@ Returns the root of the registry; the place to start with the registry.
 
 # ips image : ips image
 
-No documentation exists.
+A top-level object containing a list of all IPS packages and configuration.
 
 # ipv4 : ip version
 
