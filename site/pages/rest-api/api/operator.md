@@ -20,7 +20,7 @@ The following information applies also to LDAP operators.
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-**Notes:**
+**Note:**
 The following REST APIs use operator name.
 If the deployment option, "enableRESTAPIOperatorID" is enabled, all the REST APIs that use the operator name are disabled and replaced with the equivalent REST APIs that use the operator id, which means enabling any REST API that uses operator ID renders all the REST APIs that use operator name unusable.
 
@@ -32,6 +32,8 @@ If the deployment option, "enableRESTAPIOperatorID" is enabled, all the REST API
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+**Note:**
+The operator name to use for retrieving operator information (especially when the name contains special characters) must be the same as that returned by the get/operators API.
 
 {% restapi "operator/{operator name}", "PUT", "Updates an operator." %}
 **Request:** Complete or partial XML for Operator.
@@ -95,7 +97,7 @@ For example:
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-**Notes:**
+**Note:**
 The following APIs use operator ID. Before using any of these APIs, you must enable the deployment option, "enableRESTAPIOperatorID". The enableRESTAPIOperatorID option disables all the REST APIs that use the operator name and replaces them with the equivalent REST APIs that use the operator id, which means enabling any REST APIs that use operator ID renders the REST APIs that use operator name unusable.
 
 
@@ -173,6 +175,8 @@ Use these characters to define the filter:
 - ```&```as pairing marker for attributes
 - ```<...>``` to denote attributes
 - ```=``` to mark LHS and RHS of attributes
+
+**Note:** These are reserved characters. By default, they are not allowed in the name of the filter.
 
 These are some example of filtering results using ```?fields=```:
 

@@ -95,7 +95,7 @@ title: Computer
 {% endrestapi %}
 
 
-{% restapi "computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses." %}
+{% restapi "computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses and their ID." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant analyses and their ID.
@@ -104,7 +104,7 @@ title: Computer
 {% endrestapi %}
 
 
-{% restapi "computer/{computer id}/baselines", "GET", "Gets the list of relevant baselines." %}
+{% restapi "computer/{computer id}/baselines", "GET", "Gets the list of relevant baselines and their ID." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant baselines and their ID.
@@ -128,6 +128,8 @@ Use these characters to define the filter:
 - ```&```as pairing marker for attributes
 - ```<...>``` to denote attributes
 - ```=``` to mark LHS and RHS of attributes
+
+**Note:** These are reserved characters. By default, they are not allowed in the name of the filter.
 
 These are some example of filtering results using ```?fields=```:
 
