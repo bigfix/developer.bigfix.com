@@ -45,8 +45,6 @@ Actions might report the following statuses back to the BigFix Server while proc
    <dd>Waiting for user to log in.</dd>
    <dt>**Constrained**</dt>
    <dd>The computer doesn't meet the specified retrieved property constraint.</dd>
-   <dt>**Expired**</dt>
-   <dd>This action expired before it could be executed.</dd>
    <dt>**Postponed**</dt>
    <dd>The user postponed execution of this action.</dd>
    <dt>**Invalid Signature**</dt>
