@@ -7,12 +7,13 @@ title: BigFix Query
 
 ```xml
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-	<ClientQuery Resource="http://IP_address:52311/api/clientquery/12">
+	<ClientQuery>
 		<ApplicabilityRelevance>true</ApplicabilityRelevance>
-			<QueryText>version of operating system</QueryText>
-				<Target>
-					<ComputerName>Magicbox</ComputerName> <ComputerName>Mercury</ComputerName> 
-				</Target>
+		<QueryText>version of operating system</QueryText>
+		<Target>
+			<ComputerName>Magicbox</ComputerName>
+			<ComputerName>Mercury</ComputerName> 
+		</Target>
 	</ClientQuery>
 </BESAPI>
 ```
