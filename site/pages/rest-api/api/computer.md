@@ -94,6 +94,13 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+{% restapi "computer/{computer id}/fixletsandtasks", "GET", "Gets the list of all the relevant fixlets and tasks." %}
+**Request:** URL is all that is required.
+
+**Response:** List of relevant fixlets and tasks and their ID.
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
 
 {% restapi "computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses and their ID." %}
 **Request:** URL is all that is required.
