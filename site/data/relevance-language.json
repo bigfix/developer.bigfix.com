@@ -8972,6 +8972,32 @@
         ]
       }
     },
+    "correlation of <bes computer> : bes correlation": {
+      "key": "correlation of <bes computer> : bes correlation",
+      "type": "property",
+      "resultType": "bes correlation",
+      "singularPhrase": "correlation",
+      "pluralPhrase": "correlations",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
+    "correlation flag of <bes computer> : boolean": {
+      "key": "correlation flag of <bes computer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "correlation flag",
+      "pluralPhrase": "correlation flags",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
     "cpu of <bes computer> : string": {
       "key": "cpu of <bes computer> : string",
       "type": "property",
@@ -9007,6 +9033,19 @@
       "directObjectType": "bes computer",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+     "extension flag of <bes computer> : boolean": {
+      "key": "extension flag of <bes computer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "extension flag",
+      "pluralPhrase": "extension flags",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
           "Session"
         ]
       }
@@ -9139,6 +9178,19 @@
       "directObjectType": "bes computer",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "management extensions of <bes computer> : string": {
+      "key": "management extensions of <bes computer> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "extension",
+      "pluralPhrase": "extensions",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
           "Session"
         ]
       }
