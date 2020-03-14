@@ -11,9 +11,11 @@ title: Computer
 {% endrestapi %}
 
 {% restapi "computer/{computer id}", "GET", "Gets a computer's core properties." %}
-**Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
+**Request:** URL is all that is required. You can use a computer id or a correlation id as {computer id}. You can reduce the amount of information returned in the response using the ?fields= parameter (use --fields in the IEM cli), as described in **Filtering Response Fields**.
 
-**Response:** Lists all of a computer's properties.
+**Response:** 
+- If it is a computer, it lists all of the computer's properties.
+- If it is a correlation, it lists all of the master representation's properties and all of the other representations' properties in different `ManagementExtension` nodes.
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
