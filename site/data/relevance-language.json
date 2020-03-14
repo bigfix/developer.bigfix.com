@@ -139,6 +139,24 @@
         ]
       }
     },
+    "bes computer with extensions": {
+      "name": "bes computer with extensions",
+      "parent": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes computer with extensions set": {
+      "name": "bes computer with extensions set",
+      "parent": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
     "bes deployment option": {
       "name": "bes deployment option",
       "availability": {
