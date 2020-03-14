@@ -13,9 +13,6 @@ nav:
 	
   - name: QnA for Web Reports
     href: /tools/qna_wr.html
-
-  - name: Session Relevance Tester
-    href: /tools/session_relevance_tester.html
 	
   - name: Presentation Debugger
     href: /tools/presentation_debugger.html
