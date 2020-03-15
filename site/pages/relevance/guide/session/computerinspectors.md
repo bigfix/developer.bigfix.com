@@ -106,7 +106,7 @@ To access the page describing these inspectors, click [here](/relevance/referenc
 
 Add some description.
 
-to access the page describing these inspectors, click [here](/relevance/reference/bes-computer-with-extensions-set.html).
+To access the page describing these inspectors, click [here](/relevance/reference/bes-computer-with-extensions-set.html).
 
 ---
 
