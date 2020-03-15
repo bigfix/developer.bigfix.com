@@ -95,18 +95,18 @@ Click [here](/relevance/reference/bes-computer-with-multiplicity.html) to access
 
 ## BES Computer with Extensions
 
-All work and no play makes Jack a dull boy.
+Add some description.
 
-Click [here](/relevance/reference/bes-computer-with-extensions.html) to access the page describing these inspectors.
+To access the page describing these inspectors, click [here](/relevance/reference/bes-computer-with-extensions.html).
 
 ---
 
 
 ## BES Computer with Extensions Set
 
-All work and no play makes Jack a dull boy.
+Add some description.
 
-Click [here](/relevance/reference/bes-computer-with-extensions-set.html) to access the page describing these inspectors.
+to access the page describing these inspectors, click [here](/relevance/reference/bes-computer-with-extensions-set.html).
 
 ---
 
