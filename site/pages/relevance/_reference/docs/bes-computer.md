@@ -46,6 +46,14 @@ Returns the client setting(s) for the specified computer.
 
 Returns the comments assigned to the specified BES Computer.
 
+# correlation of &lt;bes computer&gt; : bes computer with extensions
+
+Returns the correlated BES computer from an extension BES computer.
+
+# correlation flag of &lt;bes computer&gt; : boolean
+
+Returns `true` if the specified BES computer is correlated.
+
 # cpu of &lt;bes computer&gt; : string
 
 Returns the result of the &#39;CPU&#39; Property for the specified computer.
@@ -61,6 +69,10 @@ In a Web Reports context, this inspector returns the name (as a string) of the d
 # device type of &lt;bes computer&gt; : string
 
 No documentation exists.
+
+# extension flag of &lt;bes computer&gt; : boolean
+
+Returns `true` if the specified BES computer has extensions.
 
 # hostname of &lt;bes computer&gt; : string
 
@@ -102,6 +114,10 @@ Returns an HTML string containing an &lt;A&gt; tag that when clicked will open t
 
 Returns the result of the &#39;Locked&#39; property of the specified computer.
 
+# management extensions of &lt;bes computer&gt; : bes computer with extensions set
+
+Returns the extensions of a BES computer.
+
 # name of &lt;bes computer&gt; : string
 
 Returns the value of the specified &#39;Computer Name&#39; property for the specified BES computer.
@@ -128,7 +144,7 @@ Returns the result of the &#39;BES Relay Selection Method&#39; property for the 
 
 # relay server flag of &lt;bes computer&gt; : boolean
 
-Returns `True` iff the result of the &#39;BES Relay Server Installed&#39; property for the specified computer indicates that the BES Relay is installed.
+Returns `True` if the result of the &#39;BES Relay Server Installed&#39; property for the specified computer indicates that the BES Relay is installed.
 
 # relay server of &lt;bes computer&gt; : string
 
