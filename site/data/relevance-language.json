@@ -8972,10 +8972,10 @@
         ]
       }
     },
-    "correlation of <bes computer> : bes correlation": {
-      "key": "correlation of <bes computer> : bes correlation",
+    "correlation of <bes computer> : bes computer": {
+      "key": "correlation of <bes computer> : bes computer",
       "type": "property",
-      "resultType": "bes correlation",
+      "resultType": "bes computer",
       "singularPhrase": "correlation",
       "pluralPhrase": "correlations",
       "directObjectType": "bes computer",

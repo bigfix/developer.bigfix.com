@@ -93,6 +93,24 @@ Click [here](/relevance/reference/bes-computer-with-multiplicity.html) to access
 ---
 
 
+## BES Computer with Extensions
+
+All work and no play makes Jack a dull boy.
+
+Click [here](/relevance/reference/bes-computer-with-extensions.html) to access the page describing these inspectors.
+
+---
+
+
+## BES Computer with Extensions Set
+
+All work and no play makes Jack a dull boy.
+
+Click [here](/relevance/reference/bes-computer-with-extensions-set.html) to access the page describing these inspectors.
+
+---
+
+
 ## BES Computer Group
 
 These Inspectors return an iterated list of computer groups, as defined in the BES Console.

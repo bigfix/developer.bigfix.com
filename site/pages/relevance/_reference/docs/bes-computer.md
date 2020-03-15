@@ -46,7 +46,7 @@ Returns the client setting(s) for the specified computer.
 
 Returns the comments assigned to the specified BES Computer.
 
-# correlation of &lt;bes computer&gt; : bes computer with extensions
+# correlation of &lt;bes computer&gt; : bes computer
 
 Returns the correlated BES computer from an extension BES computer.
 
@@ -114,7 +114,7 @@ Returns an HTML string containing an &lt;A&gt; tag that when clicked will open t
 
 Returns the result of the &#39;Locked&#39; property of the specified computer.
 
-# management extensions of &lt;bes computer&gt; : bes computer with extensions set
+# management extensions of &lt;bes computer&gt; : string
 
 Returns the extensions of a BES computer.
 
