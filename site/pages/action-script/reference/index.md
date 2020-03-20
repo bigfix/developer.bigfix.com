@@ -14,6 +14,7 @@ categories:
       - administrator delete
       - client restart
       - notify client
+      - plugin store
       - relay select
       - restart
       - set clock

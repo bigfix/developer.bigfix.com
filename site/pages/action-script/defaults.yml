@@ -61,6 +61,9 @@ nav:
 
           - name: notify client
             href: /action-script/reference/client/notify-client.html
+            
+          - name: plugin store
+            href: /action-script/reference/client/plugin-store.html
 
           - name: relay select
             href: /action-script/reference/client/relay-select.html
