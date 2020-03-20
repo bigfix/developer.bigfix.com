@@ -6809,7 +6809,21 @@
           "Windows"
       ]
     }
-  }
+  },
+  "plugin store key": {
+      "name": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+      ]
+    }
+  } 
 },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
@@ -114241,6 +114255,120 @@
       "singularPhrase": "instance data",
       "pluralPhrase": "instance datas",
       "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key <string> of <plugin store object> : string": {
+      "key": "key <string> of <plugin store object> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "plugin store",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "name of <plugin store key> of <plugin store object> : string": {
+      "key": "name of <plugin store key> of <plugin store object> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "plugin store",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "effective date of <plugin store key> of <plugin store object> : time": {
+      "key": "effective date of <plugin store key> of <plugin store object> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "effective date",
+      "pluralPhrase": "effective dates",
+      "directObjectType": "plugin store",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "encrypted of <plugin store key> of <plugin store object> : boolean": {
+      "key": "encrypted of <plugin store key> of <plugin store object> : boolean",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "encrypted of",
+      "pluralPhrase": "encrypted ofs",
+      "directObjectType": "plugin store",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "value of <plugin store key> of <plugin store object> : string": {
+      "key": "value of <plugin store key> of <plugin store object> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "value",
+      "pluralPhrase": "values",
+      "directObjectType": "plugin store",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<plugin store key> as string : string": {
+      "key": "value of <plugin store key> of <plugin store object> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "plugin store",
       "availability": {
         "10.0.0.0": [
           "Debian",
