@@ -6824,7 +6824,7 @@
       ]
     }
   }
-"plugin store object": {
+  "plugin store object": {
       "name": "plugin store object",
       "availability": {
         "10.0.0.0": [
