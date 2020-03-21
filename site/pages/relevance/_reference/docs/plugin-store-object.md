@@ -1,6 +1,6 @@
 # type: plugin store object
 
-The `plugin store object` type represents a plugin store value. It is a name and value property.
+The &lt;plugin store object&gt; type represents a plugin store value. It is a name and value property.
 
 # plugin store &lt;string&gt; : &lt;plugin store object&gt;
 
@@ -35,7 +35,7 @@ A: secureCustomKey3
 {% endqna %}
 
 
-# &lt;plugin store &gt; as string : string
+# &lt;plugin store object&gt; as string : string
 
 Returns a plugin store object as string.
 

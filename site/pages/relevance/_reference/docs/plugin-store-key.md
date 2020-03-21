@@ -1,6 +1,6 @@
 # type: plugin store key
 
-The `plugin store key` type represents a key name in a plugin store object.
+The &lt;plugin store key&gt; type represents a key name in a plugin store object.
 
 For example:
 
@@ -26,7 +26,7 @@ Q: name of key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
 A: NOsecureCustomKey1
 {% endqna %}
 
-# value of &lt;plugin store key&gt; : string
+# value of &lt;plugin store key&gt; of &lt;plugin store object&gt; : string
 
 Returns a value of a plugin store key in a plugin store object.
 
@@ -44,12 +44,12 @@ Q: effective date of key "NOsecureCustomKey1" of plugin store "AWSAssetDiscovery
 A: 31 Jan 2007 21:09:36 gmt
 {% endqna %}
 
-# encrypted of  &lt;plugin store key&gt; of &lt;plugin store object&gt; : boolean
+# encrypted of &lt;plugin store key&gt; of &lt;plugin store object&gt; : boolean
 
 Returns `True` if a specific plugin store key in a plugin store object is encrypted.
 
 {% qna %}
-Q: encrypted of key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
+Q: encrypted of "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
 A: False
 {% endqna %}
 

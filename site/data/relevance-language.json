@@ -6823,7 +6823,7 @@
           "Windows"
       ]
     }
-  }
+  },
   "plugin store object": {
       "name": "plugin store object",
       "availability": {
@@ -6837,7 +6837,7 @@
           "Windows"
       ]
     }
-  }  
+  }
 },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
@@ -114287,7 +114287,7 @@
       "resultType": "string",
       "singularPhrase": "key",
       "pluralPhrase": "keys",
-      "directObjectType": "plugin store",
+      "directObjectType": "plugin store object",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114306,7 +114306,7 @@
       "resultType": "string",
       "singularPhrase": "name",
       "pluralPhrase": "names",
-      "directObjectType": "plugin store",
+      "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114325,7 +114325,7 @@
       "resultType": "time",
       "singularPhrase": "effective date",
       "pluralPhrase": "effective dates",
-      "directObjectType": "plugin store",
+      "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114341,10 +114341,10 @@
     "encrypted of <plugin store key> of <plugin store object> : boolean": {
       "key": "encrypted of <plugin store key> of <plugin store object> : boolean",
       "type": "property",
-      "resultType": "time",
+      "resultType": "boolean",
       "singularPhrase": "encrypted of",
-      "pluralPhrase": "encrypted ofs",
-      "directObjectType": "plugin store",
+      "pluralPhrase": "encrypteds of",
+      "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114363,7 +114363,7 @@
       "resultType": "string",
       "singularPhrase": "value",
       "pluralPhrase": "values",
-      "directObjectType": "plugin store",
+      "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114377,12 +114377,12 @@
       }
     },
     "<plugin store key> as string : string": {
-      "key": "value of <plugin store key> of <plugin store object> : string",
+      "key": "<plugin store key> as string : string",
       "type": "property",
       "resultType": "string",
       "singularPhrase": "name",
       "pluralPhrase": "names",
-      "directObjectType": "plugin store",
+      "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114395,7 +114395,7 @@
         ]
       }
     },
-    "<plugin store <string> : <plugin store object>": {
+    "plugin store <string> : <plugin store object>": {
       "key": "plugin store <string> : <plugin store object>",
       "type": "property",
       "resultType": "plugin store object",
@@ -114439,7 +114439,7 @@
       "resultType": "plugin store key",
       "singularPhrase": "key",
       "pluralPhrase": "keys",
-      "directObjectType": "plugin store key",
+      "directObjectType": "plugin store object",
       "availability": {
         "10.0.0.0": [
           "Debian",
@@ -114452,13 +114452,13 @@
         ]
       }
     },
-    "<plugin store> as string : string": {
-      "key": "<plugin store> as string: string",
+    "<plugin store object> as string : string": {
+      "key": "<plugin store object> as string : string",
       "type": "property",
       "resultType": "string",
       "singularPhrase": "name",
       "pluralPhrase": "names",
-      "directObjectType": "string",
+      "directObjectType": "plugin store object",
       "availability": {
         "10.0.0.0": [
           "Debian",
