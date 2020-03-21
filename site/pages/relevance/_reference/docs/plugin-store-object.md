@@ -1,0 +1,45 @@
+# type: plugin store object
+
+The `plugin store object` type represents a plugin store value. It is a name and value property.
+
+# plugin store &lt;string&gt; : &lt;plugin store object&gt;
+
+Returns a plugin store object whose name matches the string provided.
+
+{% qna %}
+Q: plugin store "AWSAssetDiscoveryPlugin"
+A: AWSAssetDiscoveryPlugin
+{% endqna %}
+
+# key of &lt;plugin store key&gt; of &lt;plugin store object&gt; : &lt;plugin store key&gt;
+
+Returns a key object whose name matches the string provided.
+
+{% qna %}
+Q: key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
+A: NOsecureCustomKey1
+{% endqna %}
+
+# key of &lt;plugin store object&gt; : &lt;plugin store key&gt;
+
+Returns a key object whose name matches the string provided.
+
+{% qna %}
+Q: keys of plugin store "AWSAssetDiscoveryPlugin"
+A: NOsecureCustomKey1
+A: NOsecureCustomKey2
+A: NOsecureCustomKey3
+A: secureCustomKey1
+A: secureCustomKey2
+A: secureCustomKey3
+{% endqna %}
+
+
+# &lt;plugin store &gt; as string : string
+
+Returns a plugin store object as string.
+
+{% qna %}
+Q: plugin store "AWSAssetDiscoveryPlugin"
+A: AWSAssetDiscoveryPlugin
+{% endqna %}

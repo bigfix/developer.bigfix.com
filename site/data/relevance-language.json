@@ -6823,7 +6823,21 @@
           "Windows"
       ]
     }
-  } 
+  }
+"plugin store object": {
+      "name": "plugin store object",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+      ]
+    }
+  }  
 },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
@@ -114369,6 +114383,82 @@
       "singularPhrase": "name",
       "pluralPhrase": "names",
       "directObjectType": "plugin store",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<plugin store <string> : <plugin store object>": {
+      "key": "plugin store <string> : <plugin store object>",
+      "type": "property",
+      "resultType": "plugin store object",
+      "singularPhrase": "plugin store",
+      "pluralPhrase": "plugin stores",
+      "directObjectType": "plugin store object",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key of <plugin store key> of <plugin store object> : <plugin store key>": {
+      "key": "key of <plugin store key> of <plugin store object> : <plugin store key>",
+      "type": "property",
+      "resultType": "plugin store key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key of <plugin store object> : <plugin store key>": {
+      "key": "key of <plugin store object> : <plugin store key>",
+      "type": "property",
+      "resultType": "plugin store key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<plugin store> as string : string": {
+      "key": "<plugin store> as string: string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "string",
       "availability": {
         "10.0.0.0": [
           "Debian",
