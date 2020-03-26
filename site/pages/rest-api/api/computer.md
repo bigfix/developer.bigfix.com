@@ -17,6 +17,9 @@ title: Computer
 - If it is a computer, it lists all of the computer's properties.
 - If it is a correlation, it lists all of the master representation's properties and all of the other representations' properties in different `ManagementExtension` nodes.
 
+The reported properties belong to the master representation. A new xml node called `ManagementExtension` is present for each correlated device, the `Type` attribute of which is set to the AgentType of that specific device. 
+All the properties defined for the device are reported within this node. 
+
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
