@@ -89,6 +89,9 @@ nav:
 
       - name: Upload
         href: /rest-api/api/upload.html
+        
+      - name: Web Reports
+        href: /rest-api/api/webreports.html
 		   
   - name: Schema files BES.xsd and BESAPI.xsd 
     href: /rest-api/schema_files.html
