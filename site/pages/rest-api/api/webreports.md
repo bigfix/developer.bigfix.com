@@ -17,8 +17,6 @@ title: Web Reports
 {% restapi "/api/webreports/{id}", "PUT", "Updates the priority of a Web Reports server based on its unique ID​" %}
 **Request:** BES API XML.
 
-**Response:** ok
-
 This is a sample XML:
 
 ```xml
