@@ -8,7 +8,7 @@ title: Web Reports
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "/api/webreports/details", "GET", "Fetches details of the Web Reports servers." %}
+{% restapi "/api/webreports/details", "GET", "Fetches details of the Web Reports servers in terms of ID, priority and server URL." %}
 **Request:** URL is all that is required
 
 **Response Schema:** BESAPI.xsd
@@ -17,7 +17,20 @@ title: Web Reports
 {% restapi "/api/webreports/{id}", "PUT", "Updates the priority of a Web Reports server based on its unique ID​" %}
 **Request:** BES API XML.
 
-**Response:** Updated ...
+**Response:** ok
+
+This is a sample XML:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <WebReportsPriority>
+        <Priority>15</Priority>
+    </WebReportsPriority>
+</BESAPI>
+```
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
+
+The preferred Web Reports server is the one with the highest value set for `Priority`.
