@@ -2,7 +2,7 @@
 title: plugin store
 ---
 
-This command inserts, updates or deletes a BigFix cloud plugin settings.
+This command inserts, updates or deletes a BigFix cloud plugin setting.
 Plugin store settings are named values that can be encrypted or otherwise. Each plugin store setting has a timestamp associated with it. 
 
 
@@ -38,7 +38,7 @@ plugin store "AWSPlugin" set "UName" value "JUser" on "31 Jan 2007 21:09:36 gmt"
 ```
 
 ```actionscript
-plugin store "AWSPlugin" set encrypted "UPassword" value "W34dfT_ghy7" on"{now}"
+plugin store "AWSPlugin" set encrypted "UPassword" value "W34dfT_ghy7" on "{now}"
 ```
 
 ```actionscript

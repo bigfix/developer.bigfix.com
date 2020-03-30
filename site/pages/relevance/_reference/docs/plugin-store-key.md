@@ -8,16 +8,7 @@ For example:
       "UName"
     }
 
-# key &lt;string&gt; of &lt;plugin store object&gt; : string 
-
-Returns a key string object in a plugin store object.
-
-{% qna %}
-Q: key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
-A: NOsecureCustomKey1
-{% endqna %}
-
-# name of &lt;plugin store key&gt; of &lt;plugin store object&gt; : string
+# name of &lt;plugin store key&gt; : string
 
 Returns a key string object in a plugin store object.
 
@@ -26,7 +17,7 @@ Q: name of key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
 A: NOsecureCustomKey1
 {% endqna %}
 
-# value of &lt;plugin store key&gt; of &lt;plugin store object&gt; : string
+# value of &lt;plugin store key&gt; : string
 
 Returns a value of a plugin store key in a plugin store object.
 
@@ -35,7 +26,7 @@ Q: value of key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
 A: value_1
 {% endqna %}
 
-# effective date of &lt;plugin store key&gt; of &lt;plugin store object&gt; : time
+# effective date of &lt;plugin store key&gt; : time
 
 Returns the date when the key was last modified.
 
@@ -44,7 +35,7 @@ Q: effective date of key "NOsecureCustomKey1" of plugin store "AWSAssetDiscovery
 A: 31 Jan 2007 21:09:36 gmt
 {% endqna %}
 
-# encrypted of &lt;plugin store key&gt; of &lt;plugin store object&gt; : boolean
+# encrypted of &lt;plugin store key&gt; : boolean
 
 Returns `True` if a specific plugin store key in a plugin store object is encrypted.
 
