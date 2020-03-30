@@ -114,7 +114,7 @@ Returns an HTML string containing an &lt;A&gt; tag that when clicked will open t
 
 Returns the result of the &#39;Locked&#39; property of the specified computer.
 
-# management extensions of &lt;bes computer&gt; : string
+# management extension of &lt;bes computer&gt; : string
 
 Returns the extensions of a BES computer.
 
