@@ -5,6 +5,10 @@ The &lt;plugin store object&gt; type represents a plugin store value. It contain
 # plugin store &lt;string&gt; : plugin store object
 
 Returns the plugin store object whose name matches the provided string.
+You can use the following asset discovery plugins:
+* `AWSAssetDiscoveryPlugin` to inspect AWS assets
+* `AzureAssetDiscoveryPlugin` to inspect Azure assets
+* `VMwareAssetDiscoveryPlugin` to inspect VMware assets
 
 {% qna %}
 Q: plugin store "AWSAssetDiscoveryPlugin"
@@ -18,6 +22,11 @@ Returns the plugin store key object whose name matches the provided string.
 {% qna %}
 Q: key "NOsecureCustomKey1" of plugin store "AWSAssetDiscoveryPlugin"
 A: NOsecureCustomKey1
+{% endqna %}
+
+{% qna %}
+Q: key "Base_Version" of plugin store "VMwareAssetDiscoveryPlugin"
+A: Base_Version
 {% endqna %}
 
 # key of &lt;plugin store object&gt; : plugin store key
