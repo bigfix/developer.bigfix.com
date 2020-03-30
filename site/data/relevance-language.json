@@ -9210,12 +9210,12 @@
         ]
       }
     },
-    "management extensions of <bes computer> : string": {
-      "key": "management extensions of <bes computer> : string",
+    "management extension of <bes computer> : string": {
+      "key": "management extension of <bes computer> : string",
       "type": "property",
       "resultType": "string",
-      "singularPhrase": "extension",
-      "pluralPhrase": "extensions",
+      "singularPhrase": "management extension",
+      "pluralPhrase": "management extensions",
       "directObjectType": "bes computer",
       "availability": {
         "10.0.0.0": [
