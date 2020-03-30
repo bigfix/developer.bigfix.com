@@ -114300,8 +114300,8 @@
         ]
       }
     },
-    "name of <plugin store key> of <plugin store object> : string": {
-      "key": "name of <plugin store key> of <plugin store object> : string",
+    "name of <plugin store key> : string": {
+      "key": "name of <plugin store key> : string",
       "type": "property",
       "resultType": "string",
       "singularPhrase": "name",
@@ -114319,8 +114319,8 @@
         ]
       }
     },
-    "effective date of <plugin store key> of <plugin store object> : time": {
-      "key": "effective date of <plugin store key> of <plugin store object> : time",
+    "effective date of <plugin store key> : time": {
+      "key": "effective date of <plugin store key> : time",
       "type": "property",
       "resultType": "time",
       "singularPhrase": "effective date",
@@ -114338,8 +114338,8 @@
         ]
       }
     },
-    "encrypted of <plugin store key> of <plugin store object> : boolean": {
-      "key": "encrypted of <plugin store key> of <plugin store object> : boolean",
+    "encrypted of <plugin store key> : boolean": {
+      "key": "encrypted of <plugin store key> : boolean",
       "type": "property",
       "resultType": "boolean",
       "singularPhrase": "encrypted of",
@@ -114357,8 +114357,8 @@
         ]
       }
     },
-    "value of <plugin store key> of <plugin store object> : string": {
-      "key": "value of <plugin store key> of <plugin store object> : string",
+    "value of <plugin store key> : string": {
+      "key": "value of <plugin store key> : string",
       "type": "property",
       "resultType": "string",
       "singularPhrase": "value",
@@ -114395,8 +114395,8 @@
         ]
       }
     },
-    "plugin store <string> : <plugin store object>": {
-      "key": "plugin store <string> : <plugin store object>",
+    "plugin store <string> : plugin store object": {
+      "key": "plugin store <string> : plugin store object",
       "type": "property",
       "resultType": "plugin store object",
       "singularPhrase": "plugin store",
@@ -114414,27 +114414,8 @@
         ]
       }
     },
-    "key of <plugin store key> of <plugin store object> : <plugin store key>": {
-      "key": "key of <plugin store key> of <plugin store object> : <plugin store key>",
-      "type": "property",
-      "resultType": "plugin store key",
-      "singularPhrase": "key",
-      "pluralPhrase": "keys",
-      "directObjectType": "plugin store key",
-      "availability": {
-        "10.0.0.0": [
-          "Debian",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "key of <plugin store object> : <plugin store key>": {
-      "key": "key of <plugin store object> : <plugin store key>",
+    "key of <plugin store object> : plugin store key": {
+      "key": "key of <plugin store object> : plugin store key",
       "type": "property",
       "resultType": "plugin store key",
       "singularPhrase": "key",
