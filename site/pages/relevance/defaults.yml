@@ -15,7 +15,7 @@ nav:
 
           - name: Strings
             href: /relevance/guide/basics/strings.html
-			
+
           - name: Introspectors
             href: /relevance/guide/basics/introspectors.html
 
@@ -42,7 +42,7 @@ nav:
 
           - name: It
             href: /relevance/guide/basics/it-expressions.html
-			
+
           - name: Sets
             href: /relevance/guide/basics/sets.html
 
@@ -94,7 +94,7 @@ nav:
 
           - name: WMI
             href: /relevance/guide/client/wmi.html
-			
+
       - name: Session Relevance
         href: /relevance/guide/session/
         children:
@@ -104,12 +104,12 @@ nav:
 
           - name: Linking to other documents
             href: /relevance/guide/session/linkingdocs.html
-			
+
           - name: Adding Relevance to Presentations
-            href: /relevance/guide/session/presentationrelevance.html	
-			
+            href: /relevance/guide/session/presentationrelevance.html
+
           - name: Refreshing Relevance
-            href: /relevance/guide/session/refreshingrelevance.html		
+            href: /relevance/guide/session/refreshingrelevance.html
 
           - name: BES Action
             href: /relevance/guide/session/actioninspectors.html
@@ -119,18 +119,18 @@ nav:
 
           - name: BES Baseline
             href: /relevance/guide/session/baselineinspectors.html
-			
+
           - name: BES Comment
-            href: /relevance/guide/session/commentinspectors.html	
+            href: /relevance/guide/session/commentinspectors.html
 
           - name: BES Computer
             href: /relevance/guide/session/computerinspectors.html
 
-          - name: BES Client 
+          - name: BES Client
             href: /relevance/guide/session/clientinspectors.html
-			
+
           - name: Utf8 String
-            href: /relevance/guide/session/utf8string.html	
+            href: /relevance/guide/session/utf8string.html
 
           - name: BES Deployment
             href: /relevance/guide/session/deploymentinspectors.html
@@ -140,10 +140,10 @@ nav:
 
           - name: BES Filter
             href: /relevance/guide/session/filterinspectors.html
-			
+
           - name: BES Fixlet
             href: /relevance/guide/session/fixletinspectors.html
-			
+
           - name: Networking Inspectors
             href: /relevance/guide/session/networkinginspectors.html
 
@@ -168,18 +168,18 @@ nav:
           - name: BES Wizard
             href: /relevance/guide/session/wizardinspectors.html
 
-          - name: World Inspectors 
+          - name: World Inspectors
             href: /relevance/guide/session/worldinspectors.html
-			
+
           - name: HTML Inspectors
             href: /relevance/guide/session/htmlinspectors.html
 
           - name: Statistical Aggregation
             href: /relevance/guide/session/stataggregation.html
 
-          - name: Statistics Inspectors 
+          - name: Statistics Inspectors
             href: /relevance/guide/session/statisticsinspectors.html
-	
+
       - name: Error Messages
         href: /relevance/guide/errors.html
 
@@ -194,10 +194,10 @@ nav:
 
   - name: Online Evaluator
     href: /relevance/evaluate/
-	
+
   - name: Examples
     href: /relevance/examples/
-    children: 
+    children:
 
       - name: Creating a Computer Group
         href: /relevance/examples/custom-computer-group.html
