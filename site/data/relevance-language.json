@@ -114343,8 +114343,8 @@
       "key": "encrypted of <plugin store key> : boolean",
       "type": "property",
       "resultType": "boolean",
-      "singularPhrase": "encrypted of",
-      "pluralPhrase": "encrypteds of",
+      "singularPhrase": "encrypted",
+      "pluralPhrase": "encrypteds",
       "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
