@@ -11,21 +11,21 @@ nav:
 
       - name: Creating a Custom Action
         href: /action-script/guide/running_c_action.html
-        
+
       - name: Using Substitution Variables
         href: /action-script/guide/substitution.html
 
       - name: The Prefetch Block Structure
-        href: /action-script/guide/prefetch_block.html	
+        href: /action-script/guide/prefetch_block.html
 
       - name: Static Download
         href: /action-script/guide/static_download.html
-      
+
       - name: Dynamic Download
         href: /action-script/guide/dynamic_download.html
 
       - name: Action Status Messages
-        href: /action-script/guide/action_statuses.html				
+        href: /action-script/guide/action_statuses.html
 
   - name: Reference
     href: /action-script/reference/
@@ -55,12 +55,15 @@ nav:
 
           - name: administrator delete
             href: /action-script/reference/client/administrator-delete.html
-            
+
           - name: client restart
             href: /action-script/reference/client/client-restart.html
 
           - name: notify client
             href: /action-script/reference/client/notify-client.html
+
+          - name: plugin store
+            href: /action-script/reference/client/plugin-store.html
 
           - name: relay select
             href: /action-script/reference/client/relay-select.html
@@ -126,7 +129,7 @@ nav:
 
           - name: action launch preference normal-priority
             href: /action-script/reference/execution/action-launch-preference-normal-priority.html
-            
+
           - name: action uses wow64 redirection
             href: /action-script/reference/execution/action-uses-wow64-redirection.html
 
@@ -234,7 +237,7 @@ nav:
 
           - name: regdelete
             href: /action-script/reference/registry/regdelete.html
-            
+
           - name: regdelete64
             href: /action-script/reference/registry/regdelete64.html
 
@@ -243,7 +246,7 @@ nav:
 
           - name: regset64
             href: /action-script/reference/registry/regset64.html
-            
+
           - name: regkeydelete
             href: /action-script/reference/registry/regkeydelete.html
 
@@ -263,10 +266,10 @@ nav:
 
           - name: unsubscribe
             href: /action-script/reference/site/unsubscribe.html
-            
+
       - name: Agent to Agent Communication
         href: /action-script/reference/agent2agent/
         children:
 
-          - name: agent interface 
+          - name: agent interface
             href: /action-script/reference/agent2agent/agent-interface.html

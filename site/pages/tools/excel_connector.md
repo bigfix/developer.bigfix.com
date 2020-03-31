@@ -12,8 +12,6 @@ It has a Wizard-like interface that makes it easier to extract data from the Big
 
 In addition, the Connector has a** *built-in Session Relevance Editor* **to query Web Reports.
 
-**Note:** The Session Relevance Editor is also included in the [Session Relevance Tester]((./session_relevance_tester.html), an additional BigFix tool dedicated to the development of custom Web Reports.
-
 ## Features
 
 The BigFix Excel Connector has te following features:
