@@ -538,6 +538,10 @@ This inspector is similar to the core cryptography object except that it returns
 
 Global object containing client licensing information.
 
+# cloud provider : cloud provider
+
+Returns the cloud provider of the client.
+
 # color sync folder : folder
 
 Returns the color sync folder of the system domain
