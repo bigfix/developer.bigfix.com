@@ -14,6 +14,9 @@ Returns one of the following:
 {% qna %}
 Q: name of cloud provider
 A: Amazon Web Services
+{% endqna %}
+
+{% qna %}
 Q: name of cloud provider
 A: Microsoft Azure
 {% endqna %}

@@ -6800,44 +6800,36 @@
       "name": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
           "Ubuntu",
           "Windows"
-      ]
-    }
-  },
-  "plugin store key": {
+        ]
+      }
+    },
+    "plugin store key": {
       "name": "plugin store key",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
-      ]
-    }
-  },
-  "plugin store object": {
+        ]
+      }
+    },
+    "plugin store object": {
       "name": "plugin store object",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
-      ]
+        ]
+      }
     }
-  }
 },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
@@ -114176,8 +114168,10 @@
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -114195,8 +114189,10 @@
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -114214,8 +114210,10 @@
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -114233,8 +114231,10 @@
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -114252,8 +114252,10 @@
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -114271,8 +114273,10 @@
       "directObjectType": "cloud provider",
       "availability": {
         "10.0.0.0": [
+          "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
@@ -114291,12 +114295,7 @@
       "directObjectType": "plugin store object",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114310,12 +114309,7 @@
       "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114329,12 +114323,7 @@
       "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114348,12 +114337,7 @@
       "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114367,12 +114351,7 @@
       "directObjectType": "plugin store key",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114385,12 +114364,7 @@
       "phrase": "string",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114404,12 +114378,7 @@
       "indexType": "string",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114423,12 +114392,7 @@
       "directObjectType": "plugin store object",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
@@ -114441,12 +114405,7 @@
       "phrase": "string",
       "availability": {
         "10.0.0.0": [
-          "Debian",
-          "Mac",
           "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
           "Windows"
         ]
       }
