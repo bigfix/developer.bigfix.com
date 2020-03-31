@@ -92,11 +92,11 @@ Shorthand for &#39;now of registration server&#39;. When the client registers wi
 
 # apple extras folder : folder
 
-Returns the apple extras folder of the system domain
+Returns the apple extras folder of the system domain.
 
 # apple menu items folder : folder
 
-Returns the apple menu items folder of the system domain
+Returns the apple menu items folder of the system domain.
 
 # application : application
 
@@ -114,7 +114,7 @@ Returns the object corresponding to the application event log, which records cer
 
 # application support folder : folder
 
-Returns the application support folder of the system domain
+Returns the application support folder of the system domain.
 
 # application usage summary : application usage summary
 
@@ -122,7 +122,7 @@ Returns an application usage summary containing information including the start 
 
 # applications folder : folder
 
-Returns the applications folder of the system domain
+Returns the applications folder of the system domain.
 
 # april : month
 
@@ -130,11 +130,11 @@ Returns april as an object of type month.
 
 # assistants folder : folder
 
-Returns the assistants folder of the system domain
+Returns the assistants folder of the system domain.
 
 # audio folder : folder
 
-Returns the audio folder of the system domain
+Returns the audio folder of the system domain.
 
 # audit failure event log event type : event log event type
 
@@ -504,11 +504,11 @@ This refers to a built-in group. After the initial installation of the OS, the f
 
 # cache folder : folder
 
-Returns the cache folder of the system domain
+Returns the cache folder of the system domain.
 
 # carbon folder : folder
 
-Returns the carbon folder of the system domain
+Returns the carbon folder of the system domain.
 
 # cast : cast
 
@@ -516,7 +516,7 @@ No documentation exists.
 
 # chewable items folder : folder
 
-Returns the chewable items folder of the system domain
+Returns the chewable items folder of the system domain.
 
 # classic domain : domain
 
@@ -524,7 +524,7 @@ Returns a classic domain object.
 
 # classic folder : folder
 
-Returns the classic folder of the system domain
+Returns the classic folder of the system domain.
 
 # client : client
 
@@ -544,11 +544,11 @@ Returns the cloud provider of the client.
 
 # color sync folder : folder
 
-Returns the color sync folder of the system domain
+Returns the color sync folder of the system domain.
 
 # colorsync profiles folder : folder
 
-Returns the colorsync folder folder of the system domain
+Returns the colorsync folder folder of the system domain.
 
 # com handler task action type : task action type
 
@@ -560,7 +560,7 @@ Is an iterated property. The MacOS supports software "components", for example Q
 
 # component folder : folder
 
-Returns the component folder of the system domain
+Returns the component folder of the system domain.
 
 # computer : computer
 
@@ -620,7 +620,7 @@ Returns the value NCS_NO_HARDWARE_PRESENT: The hardware for the connection, for 
 
 # contextual menu items folder : folder
 
-Returns the contextual menu items folder of the system domain
+Returns the contextual menu items folder of the system domain.
 
 # control panel : enableable_file
 
@@ -628,15 +628,15 @@ No documentation exists.
 
 # control panels folder : folder
 
-Returns the control panels folder of the system domain
+Returns the control panels folder of the system domain.
 
 # control strip modules folder : folder
 
-Returns the control strip modules folder of the system domain
+Returns the control strip modules folder of the system domain.
 
 # core services folder : folder
 
-Returns the core services folder of the system domain
+Returns the core services folder of the system domain.
 
 # cpu speed : integer
 
@@ -788,7 +788,7 @@ A: greenb
 
 # current user folder : folder
 
-Returns the current user folder of the system domain
+Returns the current user folder of the system domain.
 
 # current wizard : bes wizard
 
@@ -850,19 +850,19 @@ Returns a global object corresponding to the WinCE web browser installed on the 
 
 # desktop folder : folder
 
-Returns the desktop folder of the system domain
+Returns the desktop folder of the system domain.
 
 # developer docs folder : folder
 
-Returns the developer docs folder of the system domain
+Returns the developer docs folder of the system domain.
 
 # developer folder : folder
 
-Returns the developer folder of the system domain
+Returns the developer folder of the system domain.
 
 # developer help folder : folder
 
-Returns the developer help folder of the system domain
+Returns the developer help folder of the system domain.
 
 # device type : string
 
@@ -878,7 +878,7 @@ No documentation exists.
 
 # disabled control panels folder : folder
 
-Returns the dsiabled control panels folder of the system domain
+Returns the dsiabled control panels folder of the system domain.
 
 # disabled extension : enableable_file
 
@@ -886,7 +886,7 @@ No documentation exists.
 
 # disabled extensions folder : folder
 
-Returns the disabled extensions folder of the system domain
+Returns the disabled extensions folder of the system domain.
 
 # disabled shutdown item : enableable_file
 
@@ -894,7 +894,7 @@ No documentation exists.
 
 # disabled shutdown items folder : folder
 
-Returns the disabled shutdown items folder of the system domain
+Returns the disabled shutdown items folder of the system domain.
 
 # disabled startup item : enableable_file
 
@@ -902,11 +902,11 @@ No documentation exists.
 
 # disabled startup items folder : folder
 
-Returns the disabled startup items folder of the system domain
+Returns the disabled startup items folder of the system domain.
 
 # disabled system extensions folder : folder
 
-Returns the disabled system extensions folder of the system domain
+Returns the disabled system extensions folder of the system domain.
 
 # dmi : dmi
 
@@ -918,11 +918,11 @@ Returns the DNS name of the computer.
 
 # documentation folder : folder
 
-Returns the documentation folder of the system domain
+Returns the documentation folder of the system domain.
 
 # documents folder : folder
 
-Returns the documents folder of the system domain
+Returns the documents folder of the system domain.
 
 # domain firewall profile type : firewall profile type
 
@@ -930,7 +930,7 @@ Creates a domain firewall profile type for comparison.
 
 # domain library folder : folder
 
-Returns the domain library folder of the system domain
+Returns the domain library folder of the system domain.
 
 # domain name : string
 
@@ -938,7 +938,7 @@ Returns the fully qualified domain name of the machine.
 
 # domain top folder : folder
 
-Returns the domain top folder of the system domain
+Returns the domain top folder of the system domain.
 
 # domain user : local user
 
@@ -1032,7 +1032,7 @@ No documentation exists.
 
 # extensions folder : folder
 
-Returns the extensions folder of the system domain
+Returns the extensions folder of the system domain.
 
 # false : boolean
 
@@ -1045,7 +1045,7 @@ A: Looks false to me
 
 # favorites folder : folder
 
-Returns the favorites folder of the system domain
+Returns the favorites folder of the system domain.
 
 # february : month
 
@@ -1073,11 +1073,11 @@ Returns a list of all the scheduled tasks.1.0 interface only.
 
 # fonts folder : folder
 
-Returns the fonts folder of the system domain
+Returns the fonts folder of the system domain.
 
 # framework folder : folder
 
-Returns the framework folder of the system domain
+Returns the framework folder of the system domain.
 
 # friday : day of week
 
@@ -1133,7 +1133,7 @@ Returns an object containing properties of the hardware.
 
 # help folder : folder
 
-Returns the help folder of the system domain
+Returns the help folder of the system domain.
 
 # hidden bes action : bes action
 
@@ -1357,11 +1357,11 @@ Returns all the kernel extensions objects.
 
 # kernel extensions folder : folder
 
-Returns the kernel extensions folder of the system domain
+Returns the kernel extensions folder of the system domain.
 
 # keyboard type : integer
 
-Returns an integer representing the keyboard type
+Returns an integer representing the keyboard type.
 
 # khz : hertz
 
@@ -1440,19 +1440,19 @@ On Unix/Linux platform with Bigfix client version below 9.5, this returns only l
 
 # locales folder : folder
 
-Returns the locales folder of the system domain
+Returns the locales folder of the system domain.
 
 # location manager modules folder : folder
 
-Returns the location manager modules folder of the system domain
+Returns the location manager modules folder of the system domain.
 
 # location manager preferences folder : folder
 
-Returns the location manager preferences folder of the system domain
+Returns the location manager preferences folder of the system domain.
 
 # locations folder : folder
 
-Returns the locations folder of the system domain
+Returns the locations folder of the system domain.
 
 # logged off state : power state
 
@@ -1484,11 +1484,11 @@ Returns the machine name. The value is from a long enumeration of all Mac platfo
 
 # machine type : integer
 
-Returns an integer representing the machine type
+Returns an integer representing the machine type.
 
 # macos read me folder : folder
 
-Returns the macos read me folder of the system domain
+Returns the macos read me folder of the system domain.
 
 # main gather service : nothing
 
@@ -1580,7 +1580,7 @@ Returns the model of the computer.
 
 # modem scripts folder : folder
 
-Returns the modem scripts folder of the system domain
+Returns the modem scripts folder of the system domain.
 
 # module : module
 
@@ -1811,7 +1811,7 @@ Returns `True` if the cpu is a PowerPC, FALSE if it is a 68000 chip.
 
 # preferences folder : folder
 
-Returns the preferences folder of the system domain
+Returns the preferences folder of the system domain.
 
 # preferred bes language : string
 
@@ -1823,19 +1823,19 @@ This contains information about the current internet connection.
 
 # printer descriptions folder : folder
 
-Returns the preinter descriptions folder of the system domain
+Returns the preinter descriptions folder of the system domain.
 
 # printer drivers folder : folder
 
-Returns the printer drivers folder of the system domain
+Returns the printer drivers folder of the system domain.
 
 # printers folder : folder
 
-Returns the printers folder of the system domain
+Returns the printers folder of the system domain.
 
 # printmonitor documents folder : folder
 
-Returns the printmonitor documents folder of the system domain
+Returns the printmonitor documents folder of the system domain.
 
 # private firewall profile type : firewall profile type
 
@@ -1843,7 +1843,7 @@ Retrieves the enumerated variable corresponding to private profile type. For mor
 
 # private framework folder : folder
 
-Returns the private framework folder of the system domain
+Returns the private framework folder of the system domain.
 
 # private variable &lt;( string, string )&gt; : string
 
@@ -1865,11 +1865,11 @@ Returns all the processor objects defined on the machine. See processor.
 
 # program files folder : folder
 
-Returns the 32 bit program folder correct for the OS. On 64 bit this is C:\Program Files (x86) and 32 bit it is C:\Program Files
+Returns the 32 bit program folder correct for the OS. On 64 bit this is C:\Program Files (x86) and 32 bit it is C:\Program Files.
 
 # program files x32 folder : folder
 
-Returns the 32 bit program folder correct for the OS. On 64 bit this is C:\Program Files (x86) and 32 bit it is C:\Program Files
+Returns the 32 bit program folder correct for the OS. On 64 bit this is C:\Program Files (x86) and 32 bit it is C:\Program Files.
 
 # program files x64 folder : folder
 
@@ -1881,7 +1881,7 @@ No documentation exists.
 
 # proxy agent service : service
 
-Returns a service object of the BESProxyAgent if one is present
+Returns a service object of the BESProxyAgent if one is present.
 
 # public firewall profile type : firewall profile type
 
@@ -1893,7 +1893,7 @@ Returns the version of QuickDraw installed.
 
 # quicktime folder : folder
 
-Returns the quicktime folder of the system domain
+Returns the quicktime folder of the system domain.
 
 # ram : ram
 
@@ -1917,7 +1917,7 @@ Returns a priority class object with &#39;realtime&#39; priority. These threads 
 
 # receipts folder : folder
 
-Returns the receipts folder of the system domain
+Returns the receipts folder of the system domain.
 
 # recent application : application
 
@@ -2049,7 +2049,7 @@ This inspector is typically used to return a list of all scheduled tasks. It att
 
 # scripting additions folder : folder
 
-Returns the scripting additions folder of the system domain
+Returns the scripting additions folder of the system domain.
 
 # scsibus : scsibus
 
@@ -2097,11 +2097,11 @@ Creates a task trigger type corresponding to a session state change trigger, whi
 
 # shared folder : folder
 
-Returns the shared folder of the system domain
+Returns the shared folder of the system domain.
 
 # shared libraries folder : folder
 
-Returns the shared libraries folder of the system domain
+Returns the shared libraries folder of the system domain.
 
 # shared variable &lt;( string, string )&gt; : string
 
@@ -2117,7 +2117,7 @@ No documentation exists.
 
 # shutdown items folder : folder
 
-Returns the shutdown items folder of the system domain
+Returns the shutdown items folder of the system domain.
 
 # site : site
 
@@ -2137,11 +2137,11 @@ Accesses the set of installed software and products.
 
 # sound folder : folder
 
-Returns the sound folder of the system domain
+Returns the sound folder of the system domain.
 
 # speech folder : folder
 
-Returns the speech folder of the system domain
+Returns the speech folder of the system domain.
 
 # sqlite version : version
 
@@ -2161,7 +2161,7 @@ No documentation exists.
 
 # startup items folder : folder
 
-Returns the startup items folder of the system domain
+Returns the startup items folder of the system domain.
 
 # subscribed &lt;( bes computer, bes site )&gt; : boolean
 
@@ -2189,7 +2189,7 @@ Returns a system event log, which records OS or component events, such as the fa
 
 # system folder : folder
 
-Windows systems, returns the 32 bit "System32" folder. eg: C:\Windows\System32 or C:\Windows\SysWow64. Platforms other than Windows this is a synonym for &lt;root folder&gt;
+Windows systems, returns the 32 bit "System32" folder. eg: C:\Windows\System32 or C:\Windows\SysWow64. Platforms other than Windows this is a synonym for &lt;root folder&gt;.
 
 # system group : security account
 
@@ -2258,7 +2258,7 @@ Returns an internet protocol corresponding to the Microsoft enumerated type: NET
 
 # temporary items folder : folder
 
-Returns the temporary items folder of the system domain
+Returns the temporary items folder of the system domain.
 
 # terminal server user group : security account
 
@@ -2266,11 +2266,11 @@ Refers to a group including all users who have logged on to a Terminal Services 
 
 # text encodings folder : folder
 
-Returns the text encodings folder of the system domain
+Returns the text encodings folder of the system domain.
 
 # themes folder : folder
 
-Returns the themes folder of the system domain
+Returns the themes folder of the system domain.
 
 # thursday : day of week
 
@@ -2363,7 +2363,7 @@ Determines which settings are used for formatting dates, times, currency, and nu
 
 # user temp folder : folder
 
-Returns the user temp folder of the system domain
+Returns the user temp folder of the system domain.
 
 # user ui language : language
 
@@ -2376,11 +2376,11 @@ A: English (United States)
 
 # users folder : folder
 
-Returns the users folder of the system domain
+Returns the users folder of the system domain.
 
 # utilities folder : folder
 
-Returns the utilities folder of the system domain
+Returns the utilities folder of the system domain.
 
 # virtual memory : boolean
 
@@ -2388,7 +2388,7 @@ Returns `True` if virtual memory is turned on.
 
 # voices folder : folder
 
-Returns the voices folder of the system domain
+Returns the voices folder of the system domain.
 
 # volume : volume
 
@@ -2396,7 +2396,7 @@ An iterated property. Examines all currently mounted volumes which will include 
 
 # volume settings folder : folder
 
-Returns the volume settings folder of the system domain
+Returns the volume settings folder of the system domain.
 
 # wake on lan subnet cidr string : string
 
