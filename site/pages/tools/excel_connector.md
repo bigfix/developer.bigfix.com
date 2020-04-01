@@ -2,10 +2,10 @@
 title: The Excel Connector
 ---
 
-IBM BigFix operators might find it useful to extract data on the BigFix Server for analysis and reporting. 
+BigFix operators might find it useful to extract data on the BigFix Server for analysis and reporting. 
 They either process the data themselves, or will often send the information to other consumers in Excel format.
 
-The IBM BigFix Excel Connector is created to simplify the data extraction process.
+The BigFix Excel Connector is created to simplify the data extraction process.
 It has a Wizard-like interface that makes it easier to extract data from the BigFix Server without the need to write Session Relevance language.
 
 ![Excel Connector](/static/img/excel_connector.png) 

@@ -112,92 +112,92 @@ returns: `<h1 id='P&G' class='header'>P&amp;G</h1>`
 The following tags are supported:
 
 <table>
-    <tr>
-        <td>abbr</td>
+	<tr>
+		<td>abbr</td>
 		<td>acronym</td>
 		<td>address</td>
 		<td>anchor</td>
 		<td>b</td>
-    </tr>
+	</tr>
 	<tr>
-        <td>base</td>
+		<td>base</td>
 		<td>big</td>
 		<td>blockquote</td>
 		<td>body</td>
 		<td>caption</td>
-    </tr>
-    <tr>
-        <td>cite</td>
+	</tr>
+	<tr>
+		<td>cite</td>
 		<td>code</td>
 		<td>col</td>
 		<td>colgroup</td>
 		<td>dd</td>
-    </tr>
+	</tr>
 	<tr>
-        <td>del</td>
+		<td>del</td>
 		<td>dfn</td>
 		<td>div</td>
 		<td>dt</td>
 		<td>em</td>
-    </tr>
-    <tr>
-        <td>h1</td>
+	</tr>
+	<tr>
+		<td>h1</td>
 		<td>h2</td>
 		<td>h3</td>
 		<td>h4</td>
 		<td>h5</td>
-    </tr>
+	</tr>
 	<tr>
-        <td>h6</td>
+		<td>h6</td>
 		<td>head</td>
 		<td>html</td>
 		<td>i</td>
 		<td>ins</td>
-    </tr>
-    <tr>
-        <td>kbd</td>
+	</tr>
+	<tr>
+		<td>kbd</td>
 		<td>li</td>
 		<td>link</td>
 		<td>meta</td>
 		<td>ol</td>
-    </tr>
+	</tr>
 	<tr>
-        <td>p</td>
+		<td>p</td>
 		<td>pre</td>
 		<td>q</td>
 		<td>samp</td>
 		<td>small</td>
-    </tr>	
+	</tr>	
 	<tr>
-        <td>span</td>
+		<td>span</td>
 		<td>strong</td>
 		<td>sub</td>
 		<td>sup</td>
 		<td>table</td>
-    </tr>
-    <tr>
-        <td>tbody</td>
+	</tr>
+	<tr>
+		<td>tbody</td>
 		<td>td</td>
 		<td>tfoot</td>
 		<td>th</td>
 		<td>thead</td>
-    </tr>
+	</tr>
 	<tr>
-        <td>title</td>
+		<td>title</td>
 		<td>tr</td>
 		<td>tt</td>
 		<td>ul</td>
 		<td>var</td>
-    </tr>
+	</tr>
 </table>
 
 Because "a" is ignored by the relevance evaluator, the "a" shorthand property is replaced by "anchor".
 
 ```relevance
-anchor "href='http://www.ibm.com'" of "ibm"
+anchor "href='https://www.hcltechsw.com/'" of "HCL"
 ```
 
-returns: `<a href='http://www.ibm.com'>ibm</a>`
+returns: `<a href='https://www.hcltechsw.com/'>HCL</a>`
 
 Finally, there are a few special purpose aggregating properties:
 - **ordered** list
@@ -235,6 +235,4 @@ returns: `<dl><dt>C:</dt><dd>32183602176</dd> <dt>G:</dt><dd>4845355008</dd></dl
 javascript array "myArray" of ("a"; "b"; "c")
 ```
 
-Creates the javascript snippet: `var myArray = new Array();myArray[0] = "a";myArray[1] = "b";myArray[2] = "c";`.
-
-
+Creates the JavaScript snippet: `var myArray = new Array();myArray[0] = "a";myArray[1] = "b";myArray[2] = "c";`.

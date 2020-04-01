@@ -386,7 +386,7 @@ Returns the list (formatted as a set) of targeted computers associated with the 
 
 If the specified action is targeted by list, then this returns the relevant BES computer names, concatenated into a single string.
 
-**Note:** Starting from IBM BigFix version 9.0, this inspector returns no value because, due to an internal code change, actions targeted by computer name became targeted by computer ID.
+**Note:** Starting from BigFix version 9.0, this inspector returns no value because, due to an internal code change, actions targeted by computer name became targeted by computer ID.
 
 # targeted name of &lt;bes action&gt; : string
 

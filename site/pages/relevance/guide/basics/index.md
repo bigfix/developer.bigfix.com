@@ -6,14 +6,14 @@ Begin learning about the syntax and constructs that are common to both the Clien
 
 You can create and test your custom Relevance queries locally on the Client system using the [Fixlet Debugger](/relevance/tools/fixlet_debugger.html) or on the Linux CentOS interactive sandbox available under [Online Evaluator](/relevance/evaluate/).
 
-If you own an IBM BigFix Lifecycle or an IBM BigFix Compliance version 9.5 Patch 2 or later license, you can run your 
-Client Relevance Language queries on the  target clients also directly from the IBM WebUI using the IBM BigFix Query 
-Application. For more information, click [IBM BigFix Query](https://www.ibm.com/support/knowledgecenter/SSTK87_9.5.0/com.ibm.bigfix.webui.doc/WebUI/Users_Guide/c_bigfix_query.html). 
+If you own a BigFix Lifecycle or a BigFix Compliance version 9.5 Patch 2 or later license, you can run your
+Client Relevance Language queries on the  target clients also directly from the WebUI using the BigFix Query
+Application. For more information, click [BigFix Query](https://www.ibm.com/support/knowledgecenter/SSTK87_9.5.0/com.ibm.bigfix.webui.doc/WebUI/Users_Guide/c_bigfix_query.html).
 
 <dl>
   <dt>[**Strings**](./strings.html)</dt>
   <dd>To combine and manipulate strings.</dd>
-  
+
   <dt>[**Introspectors**](./introspectors.html)</dt>
   <dd>To see what you can query about inspectors.</dd>
 
@@ -34,13 +34,13 @@ Application. For more information, click [IBM BigFix Query](https://www.ibm.com/
 
   <dt>[**It**](./it-expressions.html)</dt>
   <dd>To reduce duplication.</dd>
-  
+
   <dt>[**Sets**](./sets.html)</dt>
   <dd>To run operations such as union and intersection.</dd>
-  
+
   <dt>[**Indexing**](./indexing.html)</dt>
   <dd>To get specific entries in a list.</dd>
-  
+
   <dt>[**ANDs and ORs**](./andsandors.html)</dt>
   <dd>To see how `AND`s ans `OR`s binary operations apply to the Relevance Language.</dd>
 

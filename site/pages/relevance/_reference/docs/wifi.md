@@ -8,7 +8,7 @@ Returns the details about the network to which the adapter has joined to, if any
 
 {% qna %}
 Q: (ssid of it | "no ssid", bssid of it | "no base station id", secured of it) of current networks of wifis of adapters of network
-A: IBM, d4:d7:48:b0:d4:a0, True
+A: Net, d4:d7:48:b0:d4:a0, True
 T: 6882
 {% endqna %}
 

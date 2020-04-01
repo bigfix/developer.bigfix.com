@@ -100,7 +100,7 @@ Returns the apple menu items folder of the system domain.
 
 # application : application
 
-Starting from IBM BigFix V9.5 Patch 5, the inspector for Mac systems finds all applications bundles and executables anywhere on the local hard drives and matches an application bundle to the path of the actual executable inside the bundle. For example, both queries `Q: application "/Applications/iTunes.app"` and `Q: application "/Applications/iTunes.app/Contents/MacOS/iTunes"` now recognize correctly the iTunes application package. This version of Inspector for Mac systems requires OS X Spotlight service to be enabled.
+Starting from BigFix 9.5 Patch 5, the inspector for Mac systems finds all applications bundles and executables anywhere on the local hard drives and matches an application bundle to the path of the actual executable inside the bundle. For example, both queries `Q: application "/Applications/iTunes.app"` and `Q: application "/Applications/iTunes.app/Contents/MacOS/iTunes"` now recognize correctly the iTunes application package. This version of Inspector for Mac systems requires OS X Spotlight service to be enabled.
 
 # application : filesystem object
 
