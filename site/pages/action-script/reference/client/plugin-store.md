@@ -8,7 +8,7 @@ Plugin store settings are named values that can be encrypted or otherwise. Each 
 
 Version | Platforms
 --- | ---
-10.0.0.0 | AIX, HP-UX, Mac, Red Hat, SUSE, Solaris, Windows, Debian, Ubuntu
+10.0.0.0 | Red Hat, Windows
 
 ## Syntax
 

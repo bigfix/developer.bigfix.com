@@ -3,12 +3,11 @@ title: Template report
 ---
 
 A template report provides arguments for, and then runs, a previously existing
-Web Report. The URL for the report is specified in the ```<URLParameters>``` tag. The
-Data tag does not exist for this report.
+Web Report. The URL for the report is specified in the ```<URLParameters>``` tag.
+The Data tag does not exist for this report.
 
 For example, to create a particular *Issue Assessment* report, you might create a
 template report like the following:
-
 
 ```xml
 <BESWebReport>
@@ -19,7 +18,7 @@ template report like the following:
 </Description>
 <Type>TemplateReport</Type>
 <Category>Issue Assessment</Category>
-<Source>IBM</Source>
+<Source>HCL</Source>
 <URLParameters>
  FixletParam=BES Support%2f129&amp;FixletParam=BES Support%2f173&amp;page=VAReport
 </URLParameters>

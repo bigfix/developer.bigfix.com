@@ -8,7 +8,7 @@ section: home
     <h1>BigFix Developer</h1>
 
     <section>
-      <p>This is the official IBM repository of information for developing IBM BigFix content, and it is tailored to satisfy the needs of both beginner and expert content developers.</p>
+      <p>This is the official repository of information for developing BigFix content, and it is tailored to satisfy the needs of both beginner and expert content developers.</p>
 
       <p>If you are new to BigFix customization, start your navigation by clicking <a href="/get-started/">Getting Started.</a></p>
     </section>
@@ -24,7 +24,7 @@ section: home
         <li>The <a href="/rest-api/">REST API</a> for running operations available on the BigFix console from outside the console.</li>
 
         <li><a href="/other/">Other APIs</a> for creating custom dashboards, implementing your reporting solution, and integrating with external applications on client systems.</li>
-        <li>The <a href="/tools/">Tools</a>, available with IBM BigFix, useful for developing your custom BigFix solution.</li>
+        <li>The <a href="/tools/">Tools</a>, available with BigFix, useful for developing your custom BigFix solution.</li>
 	  </ul>
     </section>
 

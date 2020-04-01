@@ -7,19 +7,15 @@ valid web page. It allows, among other things, linking to another reporting engi
 or service. The Data tag contains the full external URL and must start with http or
 https.
 
-This is an example report that displays the IBM home page:
+This is an example report that displays the HCL Software home page:
 
 ```xml
 <BESWebReport>
- <Name>Example External Report</Name>
- <Description>
-  Home Page
- </Description>
- <Type>ExternalReport</Type>
- <Category>External Report</Category>
- <Source>IBM</Source>
- <Data>
-  http://www.ibm.com
- </Data>
+  <Name>Example External Report</Name>
+  <Description>Home Page</Description>
+  <Type>ExternalReport</Type>
+  <Category>External Report</Category>
+  <Source>HCL</Source>
+  <Data>https://www.hcltechsw.com/</Data>
 </BESWebReport>
 ```

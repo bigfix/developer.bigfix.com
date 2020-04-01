@@ -22,7 +22,6 @@ By default, the session times out after 5 minutes of idle time. You can modify t
 
 {% section %}
 
-
 The default HTTP Authentication Realm is:
 * *IBM BigFix Server* for BigFix Server V9.2.6 and later
 * *IBM Endpoint Manager Server* for BigFix Server with version earlier than 9.2.6.
@@ -32,4 +31,3 @@ As a best practice try not to depend on a hard-coded definition of HTTP Authenti
 {% endsection %}
 
 You can use the header field *SessionToken* supplied by the server as an authentication token by returning it in the same header until it expires on the server.
-

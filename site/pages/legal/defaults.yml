@@ -2,8 +2,17 @@ section: legal
 sectionName:
 layout: page-with-nav
 nav:
-  - name: Terms of Use
+  - name: Terms of Use of this site
     href: /legal/terms.html
+
+  - name: HCL Terms of Use
+    href: https://www.hcltech.com/terms-use
+
+  - name: HCL Technologies Disclaimer
+    href: https://www.hcltech.com/disclaimer
+
+  - name: HCL Privacy Statement
+    href: https://www.hcltech.com/privacy-statement
 
   - name: How Google uses data when you use our partners' sites or apps
     href: https://www.google.com/policies/privacy/partners/

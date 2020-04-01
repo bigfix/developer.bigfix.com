@@ -61,7 +61,7 @@ title: Analysis
 {% restapi "analysis/{site type}/{site name}/{analysis id}/activations", "POST", "Create a new activation for the current operator." %}
 **Request:** No body is required, the activation will be created as the operator making the request.
 
-**Response:** XML for the activation. This is relevant to IBM BigFix V9.2 and later.
+**Response:** XML for the activation. This is relevant to BigFix 9.2 and later.
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}

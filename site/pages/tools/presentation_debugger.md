@@ -10,7 +10,7 @@ The Presentation Debugger tool allows you to create and debug Session Relevance 
 
 You can access the Presentation Debugger tool from the optional Debug menu on the BigFix Console. 
 Run these steps on the BigFix Console to display the Debug menu and open the Presentation Debugger:
-1. While the IBM BigFix Console is running, press Ctrl-Shift-Alt-D to display the Debug window.
+1. While the BigFix Console is running, press Ctrl-Shift-Alt-D to display the Debug window.
 2. Click the check box next to Show Debug Menu at the top of the window. This installs a new menu in the Console called Debug that contains several handy debugging tools.
 3. From the Debug menu, click **Presentation Debugger** to open the Presentation Debugger window.
 
@@ -57,6 +57,3 @@ You might want to follow this guideline to prevent this inconvenience when devel
 * Put the content in a Fixlet site and subscribe to it. In this way the replacement with the new content occurs automatically.
 * Select **Web Reports > Create Report > Advanced: Blank Report** to create, edit, and view your implementation, for example a dashboard, as a Web Report.
 * Create a Document Wizard *.ojo* file on your local drive, and then select **Debug > Load Wizard** to load and view it. The file will be reloaded each time you close and reopen the document.
-
-
-
