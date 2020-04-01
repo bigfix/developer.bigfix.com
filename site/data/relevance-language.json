@@ -114159,6 +114159,26 @@
         ]
       }
     },
+    "cloud provider : cloud provider": {
+      "key": "cloud provider : cloud provider",
+      "type": "property",
+      "resultType": "cloud provider",
+      "singularPhrase": "cloud provider",
+      "pluralPhrase": "cloud providers",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "name of <cloud provider> : string": {
       "key": "name of <cloud provider> : string",
       "type": "property",
