@@ -79671,6 +79671,14 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+	"10.0.0.0": [
+          "Linux"
+	  "Debian"
+	  "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Raspbian"
         ]
       }
     },
