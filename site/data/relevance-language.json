@@ -79673,12 +79673,12 @@
           "Windows"
         ],
 	"10.0.0.0": [
-          "Linux"
-	  "Debian"
+	  "Linux",
+	  "Debian",
 	  "Red Hat",
-          "SUSE",
-          "Ubuntu",
-          "Raspbian"
+	  "SUSE",
+	  "Ubuntu",
+	  "Raspbian"
         ]
       }
     },
