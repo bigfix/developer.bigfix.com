@@ -113783,7 +113783,10 @@
         ],
         "9.5.13.130": [
           "Raspbian"
-        ]
+        ],
+	"10.0.1.x": [
+	"Mac"
+	]
       }
     },
     "file <binary_string> of <encoding> : file": {
