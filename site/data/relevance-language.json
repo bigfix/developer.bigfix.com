@@ -3368,19 +3368,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0":[
-          "Raspbian"
         ]
       }
     },
@@ -57995,19 +57990,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -58049,19 +58039,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -58101,19 +58086,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -58155,19 +58135,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -58390,19 +58365,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -58442,19 +58412,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -58494,19 +58459,14 @@
       "availability": {
         "10.0.0.0": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Debian",
-          "Ubuntu"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -114114,7 +114074,7 @@
       }
     },
     "locked rawline <integer> of <file> : file rawline": {
-      "key": "locked line <integer> of <file> : file rawline",
+      "key": "locked rawline <integer> of <file> : file rawline",
       "type": "property",
       "resultType": "file rawline",
       "singularPhrase": "locked rawline",
@@ -114126,14 +114086,12 @@
           "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
           "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -114162,7 +114120,7 @@
       }
     },
     "locked rawline containing <string> of <file> : file rawline": {
-      "key": "locked line containing <string> of <file> : file rawline",
+      "key": "locked rawline containing <string> of <file> : file rawline",
       "type": "property",
       "resultType": "file rawline",
       "singularPhrase": "locked rawline containing",
@@ -114174,14 +114132,12 @@
           "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
           "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -114220,14 +114176,12 @@
           "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
           "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
@@ -114268,14 +114222,12 @@
           "AIX",
           "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
           "Ubuntu",
           "Windows"
-        ],
-        "10.0.0.0": [
-          "Raspbian"
         ]
       }
     },
