@@ -3362,6 +3362,28 @@
         ]
       }
     },
+    "file rawline": {
+      "name": "file rawline",
+      "parent": "string",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0":[
+          "Raspbian"
+        ]
+      }
+    },
     "file section": {
       "name": "file section",
       "availability": {
@@ -57962,6 +57984,33 @@
         ]
       }
     },
+    "rawline <integer> of <file> : file rawline": {
+      "key": "rawline <integer> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline",
+      "pluralPhrase": "rawlines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
+          "Raspbian"
+        ]
+      }
+    },
     "line containing <string> of <file> : file line": {
       "key": "line containing <string> of <file> : file line",
       "type": "property",
@@ -57985,6 +58034,33 @@
           "Ubuntu"
         ],
         "9.5.13.130": [
+          "Raspbian"
+        ]
+      }
+    },
+    "rawline containing <string> of <file> : file rawline": {
+      "key": "rawline containing <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline containing",
+      "pluralPhrase": "rawlines containing",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
           "Raspbian"
         ]
       }
@@ -58015,6 +58091,32 @@
         ]
       }
     },
+    "rawline of <file> : file rawline": {
+      "key": "rawline of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline",
+      "pluralPhrase": "rawlines",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
+          "Raspbian"
+        ]
+      }
+    },
     "line starting with <string> of <file> : file line": {
       "key": "line starting with <string> of <file> : file line",
       "type": "property",
@@ -58038,6 +58140,33 @@
           "Ubuntu"
         ],
         "9.5.13.130": [
+          "Raspbian"
+        ]
+      }
+    },
+    "rawline starting with <string> of <file> : file rawline": {
+      "key": "rawline starting with <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline starting with",
+      "pluralPhrase": "rawlines starting with",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
           "Raspbian"
         ]
       }
@@ -58251,6 +58380,32 @@
         ]
       }
     },
+    "rawline number of <file rawline> : integer": {
+      "key": "rawline number of <file rawline> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "rawline number",
+      "pluralPhrase": "rawline numbers",
+      "directObjectType": "file rawline",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
+          "Raspbian"
+        ]
+      }
+    },
     "next line of <file line> : file line": {
       "key": "next line of <file line> : file line",
       "type": "property",
@@ -58277,6 +58432,32 @@
         ]
       }
     },
+    "next rawline of <file rawline> : file rawline": {
+      "key": "next rawline of <file rawline> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "next rawline",
+      "pluralPhrase": "next rawlines",
+      "directObjectType": "file rawline",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
+          "Raspbian"
+        ]
+      }
+    },
     "previous line of <file line> : file line": {
       "key": "previous line of <file line> : file line",
       "type": "property",
@@ -58299,6 +58480,32 @@
           "Ubuntu"
         ],
         "9.5.13.130": [
+          "Raspbian"
+        ]
+      }
+    },
+    "previous rawline of <file rawline> : file rawline": {
+      "key": "previous rawline of <file rawline> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "previous rawline",
+      "pluralPhrase": "previous rawlines",
+      "directObjectType": "file rawline",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "10.0.0.0": [
           "Raspbian"
         ]
       }
@@ -113906,6 +114113,30 @@
         ]
       }
     },
+    "locked rawline <integer> of <file> : file rawline": {
+      "key": "locked line <integer> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline",
+      "pluralPhrase": "locked rawlines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Raspbian"
+        ]
+      }
+    },
     "locked line containing <string> of <file> : file line": {
       "key": "locked line containing <string> of <file> : file line",
       "type": "property",
@@ -113926,6 +114157,30 @@
           "Windows"
         ],
         "9.5.13.130": [
+          "Raspbian"
+        ]
+      }
+    },
+    "locked rawline containing <string> of <file> : file rawline": {
+      "key": "locked line containing <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline containing",
+      "pluralPhrase": "locked rawlines containing",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "10.0.0.0": [
           "Raspbian"
         ]
       }
@@ -113953,6 +114208,29 @@
         ]
       }
     },
+    "locked rawline of <file> : file rawline": {
+      "key": "locked rawline of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline",
+      "pluralPhrase": "locked rawlines",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "10.0.0.0": [
+          "Raspbian"
+        ]
+      }
+    },
     "locked line starting with <string> of <file> : file line": {
       "key": "locked line starting with <string> of <file> : file line",
       "type": "property",
@@ -113973,6 +114251,30 @@
           "Windows"
         ],
         "9.5.13.130": [
+          "Raspbian"
+        ]
+      }
+    },
+    "locked rawline starting with <string> of <file> : file rawline": {
+      "key": "locked rawline starting with <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline starting with",
+      "pluralPhrase": "locked rawlines starting with",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "10.0.0.0": [
           "Raspbian"
         ]
       }
