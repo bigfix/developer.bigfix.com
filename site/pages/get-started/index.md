@@ -2,7 +2,7 @@
 title: Getting started
 ---
 
-IBM BigFix is a system-management suite of products that allows you to manage
+BigFix is a system-management suite of products that allows you to manage
 heterogeneous environments.
 
 Such environments might already be personalized and can include proprietary data
@@ -26,4 +26,4 @@ Using these languages and APIs you can:
   <dt>[Integrate with external applications](/get-started/integrate-external-applications.html)</dt>
   <dd>To interact with proprietary or third party applications located on the server or clients.</dd>
   <!--  <dd>To interact with proprietary or third party applications located on the server or clients and aggregate data sources to run reports.</dd> -->
-  </dl>
+</dl>

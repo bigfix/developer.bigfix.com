@@ -1,7 +1,7 @@
 ---
 title: Baseline
 ---
-Available starting from IBM BigFix version 9.5.5
+Available starting from BigFix version 9.5.5
 
 **Note:** For information about how to specify a *site*, see <a href="../restapi_request_new.html">Hints about BigFix REST API requests</a>.
 

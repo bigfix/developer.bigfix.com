@@ -72,9 +72,11 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
   Default value: `agent`
     <ul>
       <li>`RunAs=agent` applies the same process ownership characteristics as the current [wait](./wait.html) and [run](./run.html) commands. The user and the context are the same as those used to with the current [wait](./wait.html) and [run](./run.html) commands</li>
-      <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken. 
-      <p><b>Note: </b>On UNIX and Linux the environment variables are not applied with the exception of required Xauthority variables. On such platforms a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent scenario which requires the user to be logged on at the local console and running X Windows.</p>
-      </li>
+      <li>`RunAs=currentuser` mimics `RunAsCurrentUser.exe` on Windows, using the same logic to identify the current user and similar code to create the process with an environment block sourced by the userToken. In case of multiple logged-on users, the BES agent chooses the console session if active, or the first logged-on user returned from the operating system.
+      <p><b>Note: </b> 
+	<ul><li>On UNIX and Linux the environment variables are not applied with the exception of required Xauthority variables. On such platforms a call is made to [setuid](https://en.wikipedia.org/wiki/Setuid) to the id of the user identified as the current user for the XBESClientUI. This is a very specific and platform dependent scenario which requires the user to be logged on at the local console and running X Windows.</li>
+		<li>In the case of an Offer, there is no relationship between the user who has accepted the Offer and the current user identified by the BES agent at the time of action execution.</li></p>
+      </li></ul>
       <li>`RunAs=localuser` specifies a user who can be different from the logged on user. 
       <p>Specify the mandatory option `user` in one of these two formats: `user=<username>`, or `user={relevance to describe the username}` to allow a parametrized input.</p>
       <p>This keyword requires the BigFix Agent to run successfully, for this reason it does not work when run from the Fixlet Debugger.</p>

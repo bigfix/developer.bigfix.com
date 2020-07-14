@@ -2,7 +2,7 @@
 title: Computer
 ---
 
-{% restapi "computers", "GET", "Fetches a list of computers." %}
+{% restapi "api/computers", "GET", "Fetches a list of computers." %}
 **Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
 
 **Response:** List of computers and Last Report time.
@@ -10,19 +10,24 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}", "GET", "Gets a computer's core properties." %}
-**Request:** URL is all that is required. You can reduce the amount of information returned in the response using the ```?fields=``` parameter, as described in **Filtering Response Fields**.
+{% restapi "api/computer/{computer id}", "GET", "Gets a computer's core properties." %}
+**Request:** URL is all that is required. You can use a computer id or a correlation id as {computer id}. You can reduce the amount of information returned in the response using the ?fields= parameter (use --fields in the IEM cli), as described in **Filtering Response Fields**.
 
-**Response:** Lists all of a computer's properties.
+**Response:** 
+- If it is a computer, it lists all of the computer's properties.
+- If it is a correlation, it lists all of the master representation's properties and all of the other representations' properties in different `ManagementExtension` nodes.
+
+The reported properties belong to the master representation. A new xml node called `ManagementExtension` is present for each correlated device, the `Type` attribute of which is set to the AgentType of that specific device. 
+All the properties defined for the device are reported within this node. 
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}", "DELETE", "Marks a computer as deleted in the database." %}
+{% restapi "api/computer/{computer id}", "DELETE", "Marks a computer as deleted in the database." %}
 **Request:** URL is all that is required.
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/settings", "GET", "Gets a computer's settings." %}
+{% restapi "api/computer/{computer id}/settings", "GET", "Gets a computer's settings." %}
 **Request:** URL is all that is required.
 
 **Response:** Lists client settings for a computer. 
@@ -30,7 +35,7 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/settings", "POST", "Updates or creates the value of a setting." %}
+{% restapi "api/computer/{computer id}/settings", "POST", "Updates or creates the value of a setting." %}
 **Request:** XML for setting.
 
 **Request Schema:** BESAPI.xsd
@@ -38,11 +43,11 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/settings", "DELETE", "Deletes all activations for the specified analysis." %}
+{% restapi "api/computer/{computer id}/settings", "DELETE", "Deletes all activations for the specified analysis." %}
 **Request:** URL is all that is required.
 {% endrestapi %}
 
-{% restapi "computers/settings", "POST", "Updates or creates settings for multiple computers." %}
+{% restapi "api/computers/settings", "POST", "Updates or creates settings for multiple computers." %}
 **Request:** XML for setting.
 
 **Request Schema:** BESAPI.xsd
@@ -50,7 +55,7 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/setting/{setting name}", "GET", "Gets the setting value." %}
+{% restapi "api/computer/{computer id}/setting/{setting name}", "GET", "Gets the setting value." %}
 **Request:** URL is all that is required.
 
 **Response:** Returns setting value.
@@ -58,7 +63,7 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/setting/{setting name}", "PUT", "Updates the setting value." %}
+{% restapi "api/computer/{computer id}/setting/{setting name}", "PUT", "Updates the setting value." %}
 **Request:** XML for setting.
 
 **Request Schema:** BESAPI.xsd
@@ -66,7 +71,7 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/setting/{setting name}", "POST", "Updates or creates the setting value." %}
+{% restapi "api/computer/{computer id}/setting/{setting name}", "POST", "Updates or creates the setting value." %}
 **Request:** XML for setting.
 
 **Request Schema:** BESAPI.xsd
@@ -74,11 +79,11 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/setting/{setting name}", "DELETE", "Delete computer setting." %}
+{% restapi "api/computer/{computer id}/setting/{setting name}", "DELETE", "Delete computer setting." %}
 **Request:** URL is all that is required.
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/fixlets", "GET", "Gets the list of relevant Fixlets." %}
+{% restapi "api/computer/{computer id}/fixlets", "GET", "Gets the list of relevant Fixlets." %}
 **Request:** URL is all that is required.
 
 **Response:** The list of relevant Fixlets and their ID.
@@ -86,7 +91,7 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/tasks", "GET", "Gets the list of relevant tasks." %}
+{% restapi "api/computer/{computer id}/tasks", "GET", "Gets the list of relevant tasks." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant tasks and their ID.
@@ -94,8 +99,15 @@ title: Computer
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+{% restapi "api/computer/{computer id}/fixletsandtasks", "GET", "Gets the list of all the relevant fixlets and tasks." %}
+**Request:** URL is all that is required.
 
-{% restapi "computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses and their ID." %}
+**Response:** List of relevant fixlets and tasks and their ID.
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
+{% restapi "api/computer/{computer id}/analyses", "GET", "Gets the list of relevant analyses and their ID." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant analyses and their ID.
@@ -104,7 +116,7 @@ title: Computer
 {% endrestapi %}
 
 
-{% restapi "computer/{computer id}/baselines", "GET", "Gets the list of relevant baselines and their ID." %}
+{% restapi "api/computer/{computer id}/baselines", "GET", "Gets the list of relevant baselines and their ID." %}
 **Request:** URL is all that is required.
 
 **Response:** List of relevant baselines and their ID.
@@ -112,7 +124,7 @@ title: Computer
 **Response Schema:** BESAPI.xsd 
 {% endrestapi %}
 
-{% restapi "computer/{computer id}/mailbox", "GET", "Gets contents of the computer's mailbox" %}
+{% restapi "api/computer/{computer id}/mailbox", "GET", "Gets contents of the computer's mailbox" %}
 **Request:** URL is all that is required.
 
 **Response Schema:** BESAPI.xsd

@@ -93,6 +93,24 @@ Click [here](/relevance/reference/bes-computer-with-multiplicity.html) to access
 ---
 
 
+## BES Computer with Extensions
+
+These Inspectors return an iterated list of computers along with their management extensions.
+
+Click [here](/relevance/reference/bes-computer-with-extensions.html) to access the page describing these inspectors.
+
+---
+
+
+## BES Computer with Extensions Set
+
+These Inspectors convert an iterated list of computers and their extensions into a set, which allows you to perform intersections, unions, and other mathematical operations on them.
+
+Click [here](/relevance/reference/bes-computer-with-extensions-set.html) to access the page describing these inspectors.
+
+---
+
+
 ## BES Computer Group
 
 These Inspectors return an iterated list of computer groups, as defined in the BES Console.

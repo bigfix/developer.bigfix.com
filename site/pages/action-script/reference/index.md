@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: Action Script Language Reference
 categories:
   - title: Client Commands
     section: client
@@ -14,6 +14,7 @@ categories:
       - administrator delete
       - client restart
       - notify client
+      - plugin store
       - relay select
       - restart
       - set clock

@@ -2,17 +2,15 @@
 title: The Excel Connector
 ---
 
-IBM BigFix operators might find it useful to extract data on the BigFix Server for analysis and reporting. 
+BigFix operators might find it useful to extract data on the BigFix Server for analysis and reporting.
 They either process the data themselves, or will often send the information to other consumers in Excel format.
 
-The IBM BigFix Excel Connector is created to simplify the data extraction process.
+The BigFix Excel Connector is created to simplify the data extraction process.
 It has a Wizard-like interface that makes it easier to extract data from the BigFix Server without the need to write Session Relevance language.
 
 ![Excel Connector](/static/img/excel_connector.png) 
 
 In addition, the Connector has a** *built-in Session Relevance Editor* **to query Web Reports.
-
-**Note:** The Session Relevance Editor is also included in the [Session Relevance Tester]((./session_relevance_tester.html), an additional BigFix tool dedicated to the development of custom Web Reports.
 
 ## Features
 
@@ -23,7 +21,7 @@ The BigFix Excel Connector has te following features:
    - Highlights Relevance Language syntax. 
    ![Session Relevance Editor](/static/img/session_relevance_editor.jpg)
 - The Query Wizard supports the extraction of data from some common BigFix objects such as Fixlets, Actions, Computer properties, and so on.
-- Users can choose the available properties for the target objects. This makes extracting computer properties particularly easy.  
+- Users can choose the available properties for the target objects. This makes extracting computer properties particularly easy.
 ![Query Wizard](/static/img/query_wizard.jpg)
 - Filters can be created to limit and hone in on a particular data set.
 

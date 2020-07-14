@@ -215,7 +215,7 @@ Response Schema: BES.XSD
 
 For example: ```https://server.bigfix.com:52311/api/action/53```
 
-**Note:** You cannot delete actions that are members of a Multiple Action Group. This note applies to IBM BigFix V9.2 and later.
+**Note:** You cannot delete actions that are members of a Multiple Action Group. This note applies to BigFix 9.2 and later.
 {% endrestapi %}
 
 {% restapi "/api/action/{action id}/status", "GET", "Gets the status of an action against it's targets." %}

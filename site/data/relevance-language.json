@@ -139,6 +139,24 @@
         ]
       }
     },
+    "bes computer with extensions": {
+      "name": "bes computer with extensions",
+      "parent": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes computer with extensions set": {
+      "name": "bes computer with extensions set",
+      "parent": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
     "bes deployment option": {
       "name": "bes deployment option",
       "availability": {
@@ -6777,8 +6795,42 @@
           "Raspbian"
         ]
       }
+    },
+    "cloud provider": {
+      "name": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "plugin store key": {
+      "name": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "plugin store object": {
+      "name": "plugin store object",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
     }
-  },
+},
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
       "key": "<bes action set> contains <bes action> : boolean",
@@ -8940,6 +8992,32 @@
         ]
       }
     },
+    "correlation of <bes computer> : bes computer": {
+      "key": "correlation of <bes computer> : bes computer",
+      "type": "property",
+      "resultType": "bes computer",
+      "singularPhrase": "correlation",
+      "pluralPhrase": "correlations",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
+    "correlation flag of <bes computer> : boolean": {
+      "key": "correlation flag of <bes computer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "correlation flag",
+      "pluralPhrase": "correlation flags",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
+          "Session"
+        ]
+      }
+    },
     "cpu of <bes computer> : string": {
       "key": "cpu of <bes computer> : string",
       "type": "property",
@@ -8975,6 +9053,19 @@
       "directObjectType": "bes computer",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+     "extension flag of <bes computer> : boolean": {
+      "key": "extension flag of <bes computer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "extension flag",
+      "pluralPhrase": "extension flags",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
           "Session"
         ]
       }
@@ -9107,6 +9198,19 @@
       "directObjectType": "bes computer",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "management extension of <bes computer> : string": {
+      "key": "management extension of <bes computer> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "management extension",
+      "pluralPhrase": "management extensions",
+      "directObjectType": "bes computer",
+      "availability": {
+        "10.0.0.0": [
           "Session"
         ]
       }
@@ -114051,6 +114155,277 @@
           "SUSE",
           "Solaris",
           "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "cloud provider : cloud provider": {
+      "key": "cloud provider : cloud provider",
+      "type": "property",
+      "resultType": "cloud provider",
+      "singularPhrase": "cloud provider",
+      "pluralPhrase": "cloud providers",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "name of <cloud provider> : string": {
+      "key": "name of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "unique id of <cloud provider> : string": {
+      "key": "unique id of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "unique id",
+      "pluralPhrase": "unique ids",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "private ip of <cloud provider> : string": {
+      "key": "private ip of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "private ip",
+      "pluralPhrase": "private ips",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "version of <cloud provider> : string": {
+      "key": "version of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "version",
+      "pluralPhrase": "versions",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "region of <cloud provider> : string": {
+      "key": "region of <cloud provider> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "region",
+      "pluralPhrase": "regions",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "instance data of <cloud provider> : json value": {
+      "key": "instance data of <cloud provider> : json value",
+      "type": "property",
+      "resultType": "json value",
+      "singularPhrase": "instance data",
+      "pluralPhrase": "instance datas",
+      "directObjectType": "cloud provider",
+      "availability": {
+        "10.0.0.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key <string> of <plugin store object> : plugin store key": {
+      "key": "key <string> of <plugin store object> : plugin store key",
+      "type": "property",
+      "resultType": "plugin store key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
+      "directObjectType": "plugin store object",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "name of <plugin store key> : string": {
+      "key": "name of <plugin store key> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "effective date of <plugin store key> : time": {
+      "key": "effective date of <plugin store key> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "effective date",
+      "pluralPhrase": "effective dates",
+      "directObjectType": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "encrypted of <plugin store key> : boolean": {
+      "key": "encrypted of <plugin store key> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "encrypted",
+      "pluralPhrase": "encrypteds",
+      "directObjectType": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "value of <plugin store key> : string": {
+      "key": "value of <plugin store key> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "value",
+      "pluralPhrase": "values",
+      "directObjectType": "plugin store key",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "<plugin store key> as string : string": {
+      "key": "<plugin store key> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "plugin store key",
+      "phrase": "string",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "plugin store <string> : plugin store object": {
+      "key": "plugin store <string> : plugin store object",
+      "type": "property",
+      "resultType": "plugin store object",
+      "singularPhrase": "plugin store",
+      "pluralPhrase": "plugin stores",
+      "indexType": "string",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "key of <plugin store object> : plugin store key": {
+      "key": "key of <plugin store object> : plugin store key",
+      "type": "property",
+      "resultType": "plugin store key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "plugin store object",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
+          "Windows"
+        ]
+      }
+    },
+    "<plugin store object> as string : string": {
+      "key": "<plugin store object> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "plugin store object",
+      "phrase": "string",
+      "availability": {
+        "10.0.0.0": [
+          "Red Hat",
           "Windows"
         ]
       }

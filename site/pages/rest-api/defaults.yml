@@ -4,95 +4,98 @@ layout: page-with-nav
 nav:
   - name: Home
     href: /rest-api/
-	
+
   - name: Overview
     href: /rest-api/overview.html
-	
+
   - name: Prerequisites
     href: /rest-api/prerequisites.html
-		
+
   - name: User Authentication
     href: /rest-api/authentication.html
-	   
+
   - name: Hints about BigFix REST API requests
     href: /rest-api/restapi_request_new.html
 
   - name: Quick Tutorial
     href: /rest-api/gettingstarted.html
-		
+
   - name: REST API Resources
     href: /rest-api/api/
     children:
 
       - name: Action
         href: /rest-api/api/action.html
-				
+
       - name: Admin
         href: /rest-api/api/admin.html
-		
+
       - name: Analysis
         href: /rest-api/api/analysis.html
-       
+
       - name: Baseline
         href: /rest-api/api/baseline.html
-		   
+
       - name: BigFix Query
         href: /rest-api/api/bigfix_query.html
-				
+
       - name: Computer
         href: /rest-api/api/computer.html
 
       - name: Computer Group
         href: /rest-api/api/computergroup.html
-		   
+
       - name: Dashboard Variable
         href: /rest-api/api/dashboardvariable.html
-				
+
       - name: Fixlet
         href: /rest-api/api/fixlet.html
 
       - name: Help
         href: /rest-api/api/help.html
-		   
+
       - name: Import
         href: /rest-api/api/import.html
-				
+
       - name: LDAP Directory
         href: /rest-api/api/ldapdirectory.html
-				
+
       - name: Login
         href: /rest-api/api/login.html
-		
+
       - name: Mailbox
         href: /rest-api/api/mailbox.html
-				
+
       - name: Operator
         href: /rest-api/api/operator.html
-		
+
       - name: Property
         href: /rest-api/api/property.html
-				
+
       - name: Query
         href: /rest-api/api/query.html
 
       - name: Replication
         href: /rest-api/api/replication.html
-				
+
       - name: Role
         href: /rest-api/api/role.html
 
       - name: Site
         href: /rest-api/api/site.html
-				
+
       - name: Task
         href: /rest-api/api/task.html
 
       - name: Upload
         href: /rest-api/api/upload.html
-		   
-  - name: Schema files BES.xsd and BESAPI.xsd 
+
+      - name: Web Reports
+        href: /rest-api/api/webreports.html
+
+  - name: Schema files BES.xsd and BESAPI.xsd
     href: /rest-api/schema_files.html
-		
+
   - name: Examples using cURL and python
     href: /rest-api/examples/
     children:
@@ -102,13 +105,13 @@ nav:
 
       - name: Create Analysis
         href: /rest-api/examples/create-analysis.html
-        
+
       - name: Create Dashboard Variable
         href: /rest-api/examples/create-dashvar.html
 
       - name: Create File in a Site
         href: /rest-api/examples/create-file.html
-     
+
       - name: Create Fixlet
         href: /rest-api/examples/create-fixlet.html
 
@@ -147,11 +150,11 @@ nav:
 
       - name: Upload Files
         href: /rest-api/examples/upload-files.html
-		
+
   - name: IEM Command-Line Interface
     href: /rest-api/iem_cli/
     children:
-	
+
       - name: Executable Files and Directories
         href: /rest-api/iem_cli/location.html
 
@@ -160,6 +163,6 @@ nav:
 
       - name: Running Requests from the IEM CLI
         href: /rest-api/iem_cli/iem_requests.html
-		
+
       - name: IEM CLI Samples
         href: /rest-api/iem_cli/iem_samples.html

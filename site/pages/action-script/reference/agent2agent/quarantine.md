@@ -20,7 +20,7 @@ When disabled, the quarantine command reverts the relay selection back to DNS-ba
 The list of error codes that might be returned by the quarantine command is available <a href="http://www.ibm.com/support/knowledgecenter/SSMNRU_9.5.0/com.ibm.bigfix.detect.doc/BigFixDetectionandResponse/SecurityAnalystUserGuide/EDR_TroubleshootingSAG.html">here</a>.
 
 
-The command is available on Windows systems starting from IBM BigFix version 9.5.5.
+The command is available on Windows systems starting from BigFix version 9.5.5.
 
 Version | Platforms
 --- | ---
@@ -44,4 +44,3 @@ This command sets to quarantine the endpoint where the BigFix Detect agent is in
 ```actionscript
 quarantine "EDR" -bigfix
 ```
-
