@@ -33,7 +33,8 @@ If the deployment option, "enableRESTAPIOperatorID" is enabled, all the REST API
 {% endrestapi %}
 
 **Note:**
-The operator name to use for retrieving operator information (especially when the name contains special characters) must be the same as that returned by the get/operators API.
+The operator name to use for retrieving operator information (especially when the name contains special characters) must be the same as that returned by the get/operators API. 
+The field ```PostActionBehaviorPrivilege``` in the XML response is always referred at the "Explicit Permissions" value.
 
 {% restapi "operator/{operator name}", "PUT", "Updates an operator." %}
 **Request:** Complete or partial XML for Operator.

@@ -30,9 +30,9 @@ The following is the schema for building a request file:
 	<xs:complexType>
 		<xs:sequence>
 			<xs:element name="ApplicabilityRelevance" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="QueryText" type="xs:normalizedString" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="Target" type="BESClientQueryTarget" minOccurs="0"/>
-			<xs:element name="UseClientContext" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="QueryText" type="xs:normalizedString" minOccurs="1" maxOccurs="1" />
+			<xs:element name="UseClientContext" type="xs:boolean" minOccurs="0" />
+			<xs:element name="Target" type="BESClientQueryTarget" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:element>
