@@ -163,6 +163,14 @@ The inspector does not override the access mode or the sharing flag specified to
 
 Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
 
+# locked rawline &lt;integer&gt; of &lt;file&gt; : file rawline
+
+Same as "locked line &lt;integer&gt; of &lt;file&gt;" but ignoring encoding errors.
+
+# locked rawline containing &lt;string&gt; of &lt;file&gt; : file rawline
+
+Same as "locked line containing &lt;string&gt; of &lt;file&gt;" but ignoring encoding errors.
+
 # locked rawline of &lt;file&gt; : file rawline
 
 Same as "locked line of &lt;file&gt;" but ignoring encoding errors.
