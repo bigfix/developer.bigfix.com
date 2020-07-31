@@ -143,7 +143,7 @@
       "name": "bes computer with extensions",
       "parent": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -152,7 +152,7 @@
       "name": "bes computer with extensions set",
       "parent": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -3366,7 +3366,7 @@
       "name": "file rawline",
       "parent": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -6816,7 +6816,7 @@
     "cloud provider": {
       "name": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -6832,7 +6832,7 @@
     "plugin store key": {
       "name": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -6841,7 +6841,7 @@
     "plugin store object": {
       "name": "plugin store object",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -9017,7 +9017,7 @@
       "pluralPhrase": "correlations",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -9030,7 +9030,7 @@
       "pluralPhrase": "correlation flags",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -9082,7 +9082,7 @@
       "pluralPhrase": "extension flags",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -9227,7 +9227,7 @@
       "pluralPhrase": "management extensions",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -57988,7 +57988,7 @@
       "indexType": "integer",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -58037,7 +58037,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -58084,7 +58084,7 @@
       "pluralPhrase": "rawlines",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -58133,7 +58133,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -58363,7 +58363,7 @@
       "pluralPhrase": "rawline numbers",
       "directObjectType": "file rawline",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -58410,7 +58410,7 @@
       "pluralPhrase": "next rawlines",
       "directObjectType": "file rawline",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -58457,7 +58457,7 @@
       "pluralPhrase": "previous rawlines",
       "directObjectType": "file rawline",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -79839,13 +79839,13 @@
         "8.0.584.0": [
           "Windows"
         ],
-	"10.0.1": [
-	  "Linux",
-	  "Debian",
-	  "Red Hat",
-	  "SUSE",
-	  "Ubuntu",
-	  "Raspbian"
+        "10.0.1": [
+          "Linux",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Raspbian"
         ]
       }
     },
@@ -110369,7 +110369,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -110413,7 +110412,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -110435,7 +110433,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -113951,9 +113948,9 @@
         "9.5.13.130": [
           "Raspbian"
         ],
-	"10.0.1": [
-	"Mac"
-	]
+        "10.0.1": [
+          "Mac"
+        ]
       }
     },
     "file <binary_string> of <encoding> : file": {
@@ -114082,7 +114079,7 @@
       "indexType": "integer",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114128,7 +114125,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114172,7 +114169,7 @@
       "pluralPhrase": "locked rawlines",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114218,7 +114215,7 @@
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114431,7 +114428,7 @@
       "singularPhrase": "cloud provider",
       "pluralPhrase": "cloud providers",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114452,7 +114449,7 @@
       "pluralPhrase": "names",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114473,7 +114470,7 @@
       "pluralPhrase": "unique ids",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114494,7 +114491,7 @@
       "pluralPhrase": "private ips",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114515,7 +114512,7 @@
       "pluralPhrase": "versions",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114536,7 +114533,7 @@
       "pluralPhrase": "regions",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114557,7 +114554,7 @@
       "pluralPhrase": "instance datas",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114579,7 +114576,7 @@
       "indexType": "string",
       "directObjectType": "plugin store object",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114593,7 +114590,7 @@
       "pluralPhrase": "names",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114607,7 +114604,7 @@
       "pluralPhrase": "effective dates",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114621,7 +114618,7 @@
       "pluralPhrase": "encrypteds",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114635,7 +114632,7 @@
       "pluralPhrase": "values",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114648,7 +114645,7 @@
       "argType": "plugin store key",
       "phrase": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114662,7 +114659,7 @@
       "pluralPhrase": "plugin stores",
       "indexType": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114676,7 +114673,7 @@
       "pluralPhrase": "keys",
       "directObjectType": "plugin store object",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114689,7 +114686,7 @@
       "argType": "plugin store object",
       "phrase": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
