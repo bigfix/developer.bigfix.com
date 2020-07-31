@@ -143,7 +143,7 @@
       "name": "bes computer with extensions",
       "parent": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -152,7 +152,7 @@
       "name": "bes computer with extensions set",
       "parent": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -3359,6 +3359,23 @@
         ],
         "9.5.13.130":[
           "Raspbian"
+        ]
+      }
+    },
+    "file rawline": {
+      "name": "file rawline",
+      "parent": "string",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -6799,7 +6816,7 @@
     "cloud provider": {
       "name": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -6815,7 +6832,7 @@
     "plugin store key": {
       "name": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -6824,7 +6841,7 @@
     "plugin store object": {
       "name": "plugin store object",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -9000,7 +9017,7 @@
       "pluralPhrase": "correlations",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -9013,7 +9030,7 @@
       "pluralPhrase": "correlation flags",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -9065,7 +9082,7 @@
       "pluralPhrase": "extension flags",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -9210,7 +9227,7 @@
       "pluralPhrase": "management extensions",
       "directObjectType": "bes computer",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Session"
         ]
       }
@@ -57962,6 +57979,28 @@
         ]
       }
     },
+    "rawline <integer> of <file> : file rawline": {
+      "key": "rawline <integer> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline",
+      "pluralPhrase": "rawlines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "line containing <string> of <file> : file line": {
       "key": "line containing <string> of <file> : file line",
       "type": "property",
@@ -57986,6 +58025,28 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "rawline containing <string> of <file> : file rawline": {
+      "key": "rawline containing <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline containing",
+      "pluralPhrase": "rawlines containing",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -58015,6 +58076,27 @@
         ]
       }
     },
+    "rawline of <file> : file rawline": {
+      "key": "rawline of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline",
+      "pluralPhrase": "rawlines",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "line starting with <string> of <file> : file line": {
       "key": "line starting with <string> of <file> : file line",
       "type": "property",
@@ -58039,6 +58121,28 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "rawline starting with <string> of <file> : file rawline": {
+      "key": "rawline starting with <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline starting with",
+      "pluralPhrase": "rawlines starting with",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -58251,6 +58355,27 @@
         ]
       }
     },
+    "rawline number of <file rawline> : integer": {
+      "key": "rawline number of <file rawline> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "rawline number",
+      "pluralPhrase": "rawline numbers",
+      "directObjectType": "file rawline",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "next line of <file line> : file line": {
       "key": "next line of <file line> : file line",
       "type": "property",
@@ -58277,6 +58402,27 @@
         ]
       }
     },
+    "next rawline of <file rawline> : file rawline": {
+      "key": "next rawline of <file rawline> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "next rawline",
+      "pluralPhrase": "next rawlines",
+      "directObjectType": "file rawline",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "previous line of <file line> : file line": {
       "key": "previous line of <file line> : file line",
       "type": "property",
@@ -58300,6 +58446,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "previous rawline of <file rawline> : file rawline": {
+      "key": "previous rawline of <file rawline> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "previous rawline",
+      "pluralPhrase": "previous rawlines",
+      "directObjectType": "file rawline",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -79671,6 +79838,14 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "10.0.1": [
+          "Linux",
+          "Debian",
+          "Red Hat",
+          "SUSE",
+          "Ubuntu",
+          "Raspbian"
         ]
       }
     },
@@ -110194,7 +110369,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -110238,7 +110412,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -110260,7 +110433,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -113775,6 +113947,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "10.0.1": [
+          "Mac"
         ]
       }
     },
@@ -113895,6 +114070,28 @@
         ]
       }
     },
+    "locked rawline <integer> of <file> : file rawline": {
+      "key": "locked rawline <integer> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline",
+      "pluralPhrase": "locked rawlines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "locked line containing <string> of <file> : file line": {
       "key": "locked line containing <string> of <file> : file line",
       "type": "property",
@@ -113916,6 +114113,28 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "locked rawline containing <string> of <file> : file rawline": {
+      "key": "locked rawline containing <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline containing",
+      "pluralPhrase": "locked rawlines containing",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -113942,6 +114161,27 @@
         ]
       }
     },
+    "locked rawline of <file> : file rawline": {
+      "key": "locked rawline of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline",
+      "pluralPhrase": "locked rawlines",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "locked line starting with <string> of <file> : file line": {
       "key": "locked line starting with <string> of <file> : file line",
       "type": "property",
@@ -113963,6 +114203,28 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "locked rawline starting with <string> of <file> : file rawline": {
+      "key": "locked rawline starting with <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "locked rawline starting with",
+      "pluralPhrase": "locked rawlines starting with",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -114166,7 +114428,7 @@
       "singularPhrase": "cloud provider",
       "pluralPhrase": "cloud providers",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114187,7 +114449,7 @@
       "pluralPhrase": "names",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114208,7 +114470,7 @@
       "pluralPhrase": "unique ids",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114229,7 +114491,7 @@
       "pluralPhrase": "private ips",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114250,7 +114512,7 @@
       "pluralPhrase": "versions",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114271,7 +114533,7 @@
       "pluralPhrase": "regions",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114292,7 +114554,7 @@
       "pluralPhrase": "instance datas",
       "directObjectType": "cloud provider",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "AIX",
           "Debian",
           "Mac",
@@ -114314,7 +114576,7 @@
       "indexType": "string",
       "directObjectType": "plugin store object",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114328,7 +114590,7 @@
       "pluralPhrase": "names",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114342,7 +114604,7 @@
       "pluralPhrase": "effective dates",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114356,7 +114618,7 @@
       "pluralPhrase": "encrypteds",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114370,7 +114632,7 @@
       "pluralPhrase": "values",
       "directObjectType": "plugin store key",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114383,7 +114645,7 @@
       "argType": "plugin store key",
       "phrase": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114397,7 +114659,7 @@
       "pluralPhrase": "plugin stores",
       "indexType": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114411,7 +114673,7 @@
       "pluralPhrase": "keys",
       "directObjectType": "plugin store object",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
@@ -114424,7 +114686,7 @@
       "argType": "plugin store object",
       "phrase": "string",
       "availability": {
-        "10.0.0.0": [
+        "10.0.0.133": [
           "Red Hat",
           "Windows"
         ]
