@@ -93,11 +93,11 @@ Returns all lines from the given file that contain the specified string.
 
 # line of &lt;file&gt; : file line
 
-Iterates over all the lines of the specified file. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line.
+Iterates over all the lines of the given file. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line.
 
 # line starting with &lt;string&gt; of &lt;file&gt; : file line
 
-Same as line &lt;string&gt; of &lt;file&gt;, returns the lines of the given file that start with the specified string.
+Returns the lines of the given file that start with the specified string.
 
 # locked content of &lt;file&gt; : file content
 
@@ -151,7 +151,7 @@ The inspector does not override the access mode or the sharing flag specified to
 
 # locked line starting with &lt;string&gt; of &lt;file&gt; : file line
 
-Same as line &lt;string&gt; of &lt;file&gt;, returns the lines starting with the specified string and belonging to the given file that might be locked because it is concurrently opened for writing by another application. 
+Returns the lines starting with the specified string and belonging to the given file that might be locked because it is concurrently opened for writing by another application. 
 
 You are supposed to use this inspector to access files that are only being appended to, such as log files, because the files can be changed while the inspector reads them. Otherwise the results can be unpredictable.
 
@@ -162,6 +162,22 @@ The inspector does not override the access mode or the sharing flag specified to
 # locked of &lt;file&gt; : boolean
 
 Returns `True` if the file is locked.Example: locked of file "this file" of folder "this folder" - Returns `True` if the specified file is locked.
+
+# locked rawline &lt;integer&gt; of &lt;file&gt; : file rawline
+
+Same as "locked line &lt;integer&gt; of &lt;file&gt;" but ignoring encoding errors.
+
+# locked rawline containing &lt;string&gt; of &lt;file&gt; : file rawline
+
+Same as "locked line containing &lt;string&gt; of &lt;file&gt;" but ignoring encoding errors.
+
+# locked rawline of &lt;file&gt; : file rawline
+
+Same as "locked line of &lt;file&gt;" but ignoring encoding errors.
+
+# locked rawline starting with &lt;string&gt; of &lt;file&gt; : file rawline
+
+Same as "locked line starting with &lt;string&gt; of &lt;file&gt;" but ignoring encoding errors.
 
 # locked section &lt;string&gt; of &lt;file&gt; : file section
 
@@ -221,6 +237,22 @@ Returns the version block directly from a PE file.
 # raw version of &lt;file&gt; : version
 
 Returns the version directly from a PE file.
+
+# rawline &lt;integer&gt; of &lt;file&gt; : file rawline
+
+Returns the nth line (specified by &lt;integer&gt;) from the given file, ignoring encoding errors.
+
+# rawline containing &lt;string&gt; of &lt;file&gt; : file rawline
+
+Returns all lines from the given file that contain the specified string, ignoring encoding errors.
+
+# rawline of &lt;file&gt; : file rawline
+
+Iterates over all the lines of the given file, ignoring encoding errors. Note that each line is truncated to 2048 bytes and the remaining characters are moved to the next line.
+
+# rawline starting with &lt;string&gt; of &lt;file&gt; : file rawline
+
+Returns the lines of the given file that start with the specified string, ignoring encoding errors.
 
 # resource fork of &lt;file&gt; : resfork
 
