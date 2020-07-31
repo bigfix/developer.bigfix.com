@@ -106432,19 +106432,6 @@
         ]
       }
     },
-    "device name of <customized_attribute> : string": {
-      "key": "device name of <customized_attribute> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "device name",
-      "pluralPhrase": "device names",
-      "directObjectType": "customized_attribute",
-      "availability": {
-        "9.2.0.363": [
-          "AIX"
-        ]
-      }
-    },
     "generic flag of <customized_attribute> : string": {
       "key": "generic flag of <customized_attribute> : string",
       "type": "property",
@@ -110369,7 +110356,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -110413,7 +110399,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
@@ -110435,7 +110420,6 @@
       "directObjectType": "filesystem",
       "availability": {
         "9.2.7.53": [
-          "AIX",
           "Debian",
           "HP-UX",
           "Red Hat",
