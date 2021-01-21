@@ -49,7 +49,7 @@ title: Task
 **Request:** URL is all that is required.
 {% endrestapi %}
 
-{% restapi "/api/task/{site type}/{site name}/{fixlet id}/computers", "GET", "Retrieves the list of computers that are relevant for this task." %}
+{% restapi "/api/task/{site type}/{site name}/{task id}/computers", "GET", "Retrieves the list of computers that are relevant for this task." %}
 **Request:** URL is all that is required. 
 
 **Response:** XML list of computers.

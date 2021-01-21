@@ -4,6 +4,7 @@ title: action lock until
 
 This command locks the client starting on the effective date, and unlocks the
 client when the expiration date occurs.
+Both the effective date and the expiration date must be `time` objects.
 
 Version | Platforms
 --- | ---
@@ -16,10 +17,12 @@ Version | Platforms
 
 ## Examples
 
-Lock the client immediately, unlocking in three days.
+Lock the client immediately, unlocking in three days. In this example, we set our intended expiration 
+date by summing a [time](/relevance/reference/time.html) object representing the current time with a 
+[time-interval](/relevance/reference/time-interval.html) object representing a three days period.
 
 ```actionscript
-action lock until "{now + 3*days}" "{now}"
+action lock until "{now + 3*day}" "{now}"
 ```
 
 Lock the client for 10 minutes using the current [apparent registration server
@@ -27,5 +30,5 @@ time](/relevance/reference/time.html#apparent-registration-server-time-time),
 which is based on the last time the client registered with the server.
 
 ```actionscript
-action lock until "{apparent registration server time + 10 * minutes}" "{apparent registration server time}"
+action lock until "{apparent registration server time + 10*minute}" "{apparent registration server time}"
 ```
