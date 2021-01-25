@@ -237,6 +237,12 @@ To perform an https login:
 ./iem login --server=https://my_computer.my_domain.com:52311 --user=master --password=Mypassword
 ```
 
+To perform a login using the Windows authentication:
+
+```
+iem.exe login --server=mybfserver.mydomain --windowsAuthentication
+```
+
 ## Operators
 To display a list of operators (local and LDAP), run the following command:
 

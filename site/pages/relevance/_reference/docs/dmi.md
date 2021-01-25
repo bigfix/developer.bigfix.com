@@ -1,6 +1,7 @@
 # type: dmi
 
-No documentation exists.
+The DMI inspector exposes system data made available by the Desktop Management Interface.
+It does not return information for the Solaris local zones and paravirtuals.
 
 # additional_information &lt;integer&gt; of &lt;dmi&gt; : dmi additional_information
 

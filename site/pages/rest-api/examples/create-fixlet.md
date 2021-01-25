@@ -9,7 +9,7 @@ This command will genereate a POST request to create a fixlet specified by `new.
 
 `site type` and `site name` can be inpsected via GET `/api/sites`
 
-Fixlet's XML schema can be found [here](https://www.ibm.com/support/knowledgecenter/?lang=en#!/SS6MCG_9.5.0/com.ibm.bigfix.doc/Platform/API_Reference/c_fixlet_or_task.html).
+Fixlet's XML schema can be found in the Input section.
 
 # cURL
 ```

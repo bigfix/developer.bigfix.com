@@ -56,5 +56,5 @@ Generally speaking, a REST API request includes:
 <ol>
 <li>GET requests are idempotent because they do not change any underlying resource data. You can do measurements and tracking on retrieved data, but the resource data identified by the URI does not change.</li>
 <li>The time fields returned in the REST API response are expressed in the GMT time zone. If another time zone is required, the REST API client must convert the time zone.</li>
-<li>At the following [link](http://blog.mashape.com/30-ways-to-make-rest-calls-in-node-js-php-python/) you find useful information to make REST calls in different languages.</li> 
+<li>At the following [link](https://konghq.com/blog/30-ways-to-make-rest-calls-in-node-js-php-python/) you find useful information to make REST calls in different languages.</li> 
 </ol>
