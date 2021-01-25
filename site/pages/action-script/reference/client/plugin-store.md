@@ -34,17 +34,17 @@ and
 ## Examples
 
 ```actionscript
-plugin store "AWSPlugin" set "UName" value "JUser" on "31 Jan 2007 21:09:36 gmt"
+plugin store "AWSAssetDiscoveryPlugin" set "UName" value "JUser" on "31 Jan 2007 21:09:36 gmt"
 ```
 
 ```actionscript
-plugin store "AWSPlugin" set encrypted "UPassword" value "W34dfT_ghy7" on "{now}"
+plugin store "AWSAssetDiscoveryPlugin" set encrypted "UPassword" value "W34dfT_ghy7" on "{now}"
 ```
 
 ```actionscript
-plugin store "AWSPlugin" delete "UPassword"
+plugin store "AWSAssetDiscoveryPlugin" delete "UPassword"
 ```
 
 ```actionscript
-plugin store "AWSPlugin" delete all
+plugin store "AWSAssetDiscoveryPlugin" delete all
 ```

@@ -2,7 +2,7 @@
 title: Property
 ---
 
-{% restapi "properties*", "GET", "Fetches a list of all properties." %}
+{% restapi "properties", "GET", "Fetches a list of all properties." %}
 **Request:** URL is all that is required
 
 **Response:** XML file containing all properties.
