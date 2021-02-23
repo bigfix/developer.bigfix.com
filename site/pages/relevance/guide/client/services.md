@@ -24,7 +24,6 @@ You can use the plural **services** to get the list of services, each with its s
 {% qna %}
 Q: services
 A: "AdobeARMservice" "Adobe Acrobat Update Service" "Running"
-A: "AdobeFlashPlayerUpdateSvc" "Adobe Flash Player Update Service" "Stopped"
 A: "AeLookupSvc" "Application Experience" "Stopped"
 A: "ALG" "Application Layer Gateway Service" "Stopped"
 ....
@@ -36,7 +35,6 @@ service is configured to run, the status and the ‘imagepath’:
 {% qna %}
 Q: (display name of it, login account of it, state of it, image paths of it) of services
 A: Adobe Acrobat Update Service, LocalSystem, Running, "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe"
-A: Adobe Flash Player Update Service, LocalSystem, Stopped, C:\windows\SysWOW64\Macromed\Flash\FlashPlayerUpdateService.exe
 A: Application Experience, localSystem, Running, C:\windows\system32\svchost.exe -k netsvcs
 ...
 {% endqna %}

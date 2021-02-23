@@ -2,6 +2,7 @@
 
 The DMI inspector exposes system data made available by the Desktop Management Interface.
 It does not return information for the Solaris local zones and paravirtuals.
+This inspector is not available on S/390 architectures.
 
 # additional_information &lt;integer&gt; of &lt;dmi&gt; : dmi additional_information
 
