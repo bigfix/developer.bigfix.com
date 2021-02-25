@@ -1,6 +1,7 @@
 # type: hardware
 
 This inspector holds various identifiers and information about the hardware on which the agent is running.
+This inspector is not available on S/390 architectures.
 
 # proxied of &lt;hardware&gt; : boolean
 
