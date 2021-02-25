@@ -18,10 +18,24 @@ Q: line 3 of file "eee.txt" of folder "/ccc/ddd" of encoding "Windows-1252"
 returns the third line of the file "/ccc/ddd/eee.log" in Windows-1252.
 
 {% qna %}
+Q: lines of file "/fff/ggg.txt" of encoding "UTF8"
+{% endqna %}
+
+returns the lines of the file "/fff/ggg.txt" in UTF8.
+
+{% qna %}
+Q: lines of file "/hhh/iii.txt" of encoding "ISO-8859-1"
+{% endqna %}
+
+returns the lines of the file "/hhh/iii.txt" in ISO-8859-1.
+
+{% qna %}
 Q: key "やま" of section "其之弐" of file "f:\ggg\hhh.ini" of encoding "UTF-8" 
 {% endqna %}
 
-returns  Returns the value of the "やま" key in the "其之弐" section of the file "f:\ggg\hhh.ini" that is written in UTF-8.
+returns the value of the "やま" key in the "其之弐" section of the file "f:\ggg\hhh.ini" that is written in UTF-8.
+
+Note: If the file starts with a BOM character that is not expected by the specified encoding, the line file inspector fails with `U_INVALID_CHAR_FOUND`.
 
 # download file &lt;string&gt; of &lt;encoding&gt; : file
 

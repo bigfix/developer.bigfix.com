@@ -19,11 +19,6 @@ security information, recent actions, and so on, from the BES Web Reports into o
 
 In a few words, the BigFix SOAP API can be useful in any situation where you might want to see data outside of the BigFix Console or Web Reports.
 
-## A video about BigFix SOAP API
-The Camtasia Studio video content presented here requires JavaScript to be enabled and the latest version 
-of the Macromedia Flash Player. 
-If you are using a browser with JavaScript disabled, enable it now, otherwise, please update your version of the free Flash Player by downloading here.
 
-When ready, [watch this instructional video](http://support.bigfix.com/bes/misc/soapapi/DeveloperVideo.html ) to learn more about how to use the BigFix SOAP API (Flash video, 3 min 55 sec).
 
 <!--To access the WSDL file that can be used to make the SOAP API call, you can access http://[webreports_url]/webreports?wsdl for your BigFix 7.0+ Web Reports.-->
