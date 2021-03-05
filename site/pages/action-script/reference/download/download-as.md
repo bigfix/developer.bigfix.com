@@ -9,7 +9,7 @@ local folder of the site that issued the `download as` command.
 For instance, consider the command:
 
 ```actionscript
-download as intro.txt ftp://ftp.microsoft.com/deskapps/readme.txt
+download as myprog.exe http://www.website.com/update/prog555.exe
 ```
 
 The example downloads the `readme.txt` file from the Microsoft site and saves it
