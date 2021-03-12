@@ -62,6 +62,11 @@ size of (set of bes computers)
 
 Returns the current number of BES computers.
 
+```relevance
+(id of it, name of it) of management extensions of bes computers whose (correlation flag of it)
+```
+
+Gets the ID and the name of all the extensions of all the correlated devices.
 
 ---
 
@@ -98,6 +103,22 @@ Click [here](/relevance/reference/bes-computer-with-multiplicity.html) to access
 These Inspectors return an iterated list of computers along with their management extensions.
 
 Click [here](/relevance/reference/bes-computer-with-extensions.html) to access the page describing these inspectors.
+
+**Examples**
+
+```relevance
+(name of it, correlation id of it) of bes computer with extensions whose (extension flag of it)
+```
+
+Gets the extension name and the correlation ID of each extension of correlated devices.
+From all computers and extensions, this relevance only picks the extensions and returns
+their name paired with the correlation ID of their correlated device.
+
+```relevance
+(name of it, id of it) of bes computer with extensions whose (not correlation flag of it and agent type of it = "Native")
+```
+
+Gets the name and the ID of all the native devices in the deployment, excluding the correlated devices.
 
 ---
 
