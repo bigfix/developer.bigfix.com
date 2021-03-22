@@ -194,6 +194,10 @@ Returns all the MIME fields for the specified Fixlet.
 
 Returns the time when the given BES Fixlet was last modified.
 
+# modification user of &lt;bes fixlet&gt; : bes user
+
+Returns the user who last modified the BES Fixlet.
+
 # name of &lt;bes fixlet&gt; : string
 
 Returns the name of the specified BES Fixlet.
