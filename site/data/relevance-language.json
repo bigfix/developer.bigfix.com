@@ -102096,7 +102096,7 @@
       "pluralPhrase": "display versions",
       "directObjectType": "operating system",
       "availability": {
-        "10.0.3.0": [
+        "10.0.0.3": [
           "Windows"
         ]
       }
