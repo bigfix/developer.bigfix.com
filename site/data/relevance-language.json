@@ -101972,6 +101972,19 @@
         ]
       }
     },
+    "display version of <operating system> : string": {
+      "key": "display version of <operating system> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "display version",
+      "pluralPhrase": "display versions",
+      "directObjectType": "operating system",
+      "availability": {
+        "10.0.0.3": [
+          "Windows"
+        ]
+      }
+    },
     "embedded of <operating system> : boolean": {
       "key": "embedded of <operating system> : boolean",
       "type": "property",

@@ -117,6 +117,15 @@ Returns the current service pack, or no such object if none have been applied at
 
 Returns the current technology level. This also includes the base level information, similar to &#39;oslevel -r&#39;.
 
+# display version of &lt;operating system&gt; : string
+
+Returns the operating system version. It applies to Windows only.
+
+{% qna %}
+Q: display version of operating system
+A: 21H1
+{% endqna %}
+
 # embedded of &lt;operating system&gt; : boolean
 
 Returns whether the operating system is an embedded version, such as Windows XP Embedded.
