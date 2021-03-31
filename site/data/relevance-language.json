@@ -11621,6 +11621,19 @@
         ]
       }
     },
+    "modification user of <bes fixlet> : bes user": {
+      "key": "modification user of <bes fixlet> : bes user",
+      "type": "property",
+      "resultType": "bes user",
+      "singularPhrase": "modification user",
+      "pluralPhrase": "modification users",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "10.0.4.0": [
+          "Session"
+        ]
+      }
+    },
     "name of <bes fixlet> : string": {
       "key": "name of <bes fixlet> : string",
       "type": "property",

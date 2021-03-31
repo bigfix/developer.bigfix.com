@@ -196,7 +196,12 @@ Returns the time when the given BES Fixlet was last modified.
 
 # modification user of &lt;bes fixlet&gt; : bes user
 
-Returns the user who last modified the BES Fixlet.
+Returns the `bes user` object corresponding to the user who last modified the BES Fixlet. This inspector is valid only for custom Fixlets.
+
+{% qna %} 
+Q: name of modification user of bes fixlet whose (name of it = "My Fixlet")
+A: BFAdmin
+{% endqna %}
 
 # name of &lt;bes fixlet&gt; : string
 
