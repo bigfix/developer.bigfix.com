@@ -3,7 +3,7 @@
 The `odm` type corresponds to the AIX Object Data Manager.
 The properties of the `odm` inspector return objects of a type matching the object classes of the AIX [odmget command](https://www.ibm.com/support/knowledgecenter/ssw_aix_71/o_commands/odmget.html).
 
-This is the correspondence table of BigFix object types to AIX omdget object class.
+This is the correspondence table of BigFix object types to AIX odmget object classes.
 
 | BigFix object type    | AIX object class |
 | --------------        | -----------      |
