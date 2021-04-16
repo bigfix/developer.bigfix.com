@@ -239,7 +239,7 @@ PPC64 processors only. Returns `True` if the specified processor has a SPE (Sign
 
 # speed of &lt;processor&gt; : hertz
 
-Returns the speed of the processor in Hertz.
+Returns the speed of the processor in Hertz. This property is not available on macOS Big Sur (Apple M1 chip).
 
 # state of &lt;processor&gt; : string
 
