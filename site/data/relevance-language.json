@@ -102825,6 +102825,25 @@
       },
       "deprecated": "9.1.1134.0"
     },
+    "plugin portal service : service": {
+      "key": "plugin portal service : service",
+      "type": "property",
+      "resultType": "service",
+      "singularPhrase": "plugin portal service",
+      "pluralPhrase": "plugin portal services",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "proxy agent service : service": {
       "key": "proxy agent service : service",
       "type": "property",
