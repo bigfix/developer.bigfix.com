@@ -119,7 +119,9 @@ Returns the current technology level. This also includes the base level informat
 
 # display version of &lt;operating system&gt; : string
 
-Returns the operating system version. It applies to Windows only.
+Returns the Windows operating system version. This inspector returns a valid information only for Windows 10 and later Windows versions. Running this inspector on other Windows operating systems results in an error referring to a nonexistent object.
+
+Running the inspector on Windows 10, OS Build 19043.396:
 
 {% qna %}
 Q: display version of operating system
