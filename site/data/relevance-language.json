@@ -2310,17 +2310,8 @@
       "name": "bios",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -47921,17 +47912,8 @@
       "phrase": "string",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -47944,17 +47926,7 @@
       "directObjectType": "bios",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -47967,17 +47939,8 @@
       "directObjectType": "bios",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -67842,17 +67805,8 @@
       "pluralPhrase": "bioses",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
