@@ -1797,6 +1797,10 @@ This inspector returns all of the plain fixlet objects. This is equivalent to "b
 
 This inspector returns all of the plain fixlet objects as a set. This is equivalent to "bes fixlets whose ( fixlet flag of it )".
 
+# plugin portal service : service
+
+Returns a service object for the 'BESPluginPortal' service, if available on the local system.
+
 # power history : power history
 
 Returns the power history of the client computer. This points to historical information (the default is 14 days) about the power usage of the client computer and its attached monitor.
