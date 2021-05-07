@@ -2310,17 +2310,8 @@
       "name": "bios",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -3722,6 +3713,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -47912,17 +47912,8 @@
       "phrase": "string",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -47935,17 +47926,7 @@
       "directObjectType": "bios",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
-          "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -47958,17 +47939,8 @@
       "directObjectType": "bios",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -62264,6 +62236,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62281,6 +62262,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62298,6 +62288,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62315,6 +62314,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62332,6 +62340,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62349,6 +62366,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62366,6 +62392,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62383,6 +62418,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62400,6 +62444,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62417,6 +62470,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -62434,6 +62496,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -64615,6 +64686,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -64633,6 +64713,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -64651,6 +64740,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -64668,6 +64766,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -64686,6 +64793,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -64704,6 +64820,15 @@
         ],
         "8.2.1078.0": [
           "AIX"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },
@@ -67680,17 +67805,8 @@
       "pluralPhrase": "bioses",
       "availability": {
         "8.0.584.0": [
-          "AIX",
-          "HP-UX",
           "Mac",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
           "Windows"
-        ],
-        "8.1.535.0": [
-          "Debian",
-          "Ubuntu"
         ]
       }
     },
@@ -101972,6 +102088,19 @@
         ]
       }
     },
+    "display version of <operating system> : string": {
+      "key": "display version of <operating system> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "display version",
+      "pluralPhrase": "display versions",
+      "directObjectType": "operating system",
+      "availability": {
+        "10.0.3.0": [
+          "Windows"
+        ]
+      }
+    },
     "embedded of <operating system> : boolean": {
       "key": "embedded of <operating system> : boolean",
       "type": "property",
@@ -102811,6 +102940,25 @@
         ]
       },
       "deprecated": "9.1.1134.0"
+    },
+    "plugin portal service : service": {
+      "key": "plugin portal service : service",
+      "type": "property",
+      "resultType": "service",
+      "singularPhrase": "plugin portal service",
+      "pluralPhrase": "plugin portal services",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
     },
     "proxy agent service : service": {
       "key": "proxy agent service : service",
@@ -110839,6 +110987,15 @@
           "AIX",
           "Red Hat",
           "SUSE"
+        ],
+        "9.2.6.94": [
+          "CentOS"
+        ],
+        "9.5.0.311": [
+          "Oracle Enterprise Linux"
+        ],
+        "10.0.0.133": [
+          "Amazon Linux 2"
         ]
       }
     },

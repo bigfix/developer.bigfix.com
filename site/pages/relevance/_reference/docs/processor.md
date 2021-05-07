@@ -239,7 +239,21 @@ PPC64 processors only. Returns `True` if the specified processor has a SPE (Sign
 
 # speed of &lt;processor&gt; : hertz
 
-Returns the speed of the processor in Hertz.
+Returns the speed of the processor in Hertz. As of macOS Big Sur, this property is not available on computers using the Apple M1 chip.
+
+For example, running the inspector on a computer with an Intel Core i7-4770HQ CPU (4 cores, 8 threads) returns:
+
+{% qna %}
+Q: speeds of processors
+A: 2200000000 hertz
+A: 2200000000 hertz
+A: 2200000000 hertz
+A: 2200000000 hertz
+A: 2200000000 hertz
+A: 2200000000 hertz
+A: 2200000000 hertz
+A: 2200000000 hertz
+{% endqna %}
 
 # state of &lt;processor&gt; : string
 

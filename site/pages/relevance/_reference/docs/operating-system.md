@@ -117,6 +117,17 @@ Returns the current service pack, or no such object if none have been applied at
 
 Returns the current technology level. This also includes the base level information, similar to &#39;oslevel -r&#39;.
 
+# display version of &lt;operating system&gt; : string
+
+Returns the Windows operating system version. This inspector returns a valid information only for Windows 10 and later Windows versions. Running this inspector on other Windows operating systems results in an error referring to a nonexistent object.
+
+Running the inspector on Windows 10, OS Build 19043.396:
+
+{% qna %}
+Q: display version of operating system
+A: 21H1
+{% endqna %}
+
 # embedded of &lt;operating system&gt; : boolean
 
 Returns whether the operating system is an embedded version, such as Windows XP Embedded.
