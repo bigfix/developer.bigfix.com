@@ -9717,6 +9717,19 @@
         ]
       }
     },
+    "server based flag of <bes computer group> : boolean": {
+      "key": "server based flag of <bes computer group> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "server based flag",
+      "pluralPhrase": "server based flags",
+      "directObjectType": "bes computer group",
+      "availability": {
+        "10.0.4.0": [
+          "Session"
+        ]
+      }
+    },
     "set of <bes computer group> : bes computer group set": {
       "key": "set of <bes computer group> : bes computer group set",
       "type": "property",
