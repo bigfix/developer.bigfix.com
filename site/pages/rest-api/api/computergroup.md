@@ -49,7 +49,7 @@ This group will contain all the correlation devices administered by `admin@examp
 {% restapi "computergroup/{site type}/{site name}/{id}", "PUT", "Updates the specified computer group." %}
 {% endrestapi %}
 
-{% restapi "computergroup/{site type}/{site name}", "POST", "Create a computer group in the specified site." %}
+{% restapi "computergroup/{site type}/{site name}", "POST", "Creates a computer group in the specified site." %}
 **Request:** XML file describing the computer group.
 
 **Request Schema:** BES.xsd
@@ -70,3 +70,7 @@ This group will contain all the correlation devices administered by `admin@examp
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
 
+{% restapi "computergroup/{site type}/{site name}/{id}/refresh", "POST", "Refreshes a computer group of the server based type." %}
+**Request:** URL is all that is required. For example: https://server.bigfix.com:52311/api/computergroup/44/refresh
+
+**Request Schema:** BES.xsd
