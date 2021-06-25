@@ -6405,6 +6405,22 @@
         ]
       }
     },
+    "server based group": {
+      "name": "server based group",
+      "availability": {
+        "10.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "route": {
       "name": "route",
       "availability": {
@@ -104771,6 +104787,28 @@
         ]
       }
     },
+    "server based group <string> of <client> : server based group": {
+      "key": "server based group <string> of <client> : server based group",
+      "type": "property",
+      "resultType": "server based group",
+      "singularPhrase": "server based group",
+      "pluralPhrase": "server based groups",
+      "indexType": "string",
+      "directObjectType": "client",
+      "availability": {
+        "10.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "manual group of <client> : manual group": {
       "key": "manual group of <client> : manual group",
       "type": "property",
@@ -104792,6 +104830,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "server based group of <client> : server based group": {
+      "key": "server based group of <client> : server based group",
+      "type": "property",
+      "resultType": "server based group",
+      "singularPhrase": "server based group",
+      "pluralPhrase": "server based groups",
+      "directObjectType": "client",
+      "availability": {
+        "10.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -104914,6 +104973,26 @@
         ]
       }
     },
+    "<server based group> as string : string": {
+      "key": "<server based group> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "server based group",
+      "phrase": "string",
+      "availability": {
+        "10.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "member of <manual group> : boolean": {
       "key": "member of <manual group> : boolean",
       "type": "property",
@@ -104938,6 +105017,27 @@
         ]
       }
     },
+   "member of <server based group> : boolean": {
+      "key": "member of <server based group> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "member",
+      "pluralPhrase": "members",
+      "directObjectType": "server based group",
+      "availability": {
+        "10.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "setting of <manual group> : setting": {
       "key": "setting of <manual group> : setting",
       "type": "property",
@@ -104959,6 +105059,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "setting of <server based group> : setting": {
+      "key": "setting of <server based group> : setting",
+      "type": "property",
+      "resultType": "setting",
+      "singularPhrase": "setting",
+      "pluralPhrase": "settings",
+      "directObjectType": "server based group",
+      "availability": {
+        "10.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
