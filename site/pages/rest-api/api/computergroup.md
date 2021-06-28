@@ -74,3 +74,4 @@ This group will contain all the correlation devices administered by `admin@examp
 **Request:** URL is all that is required. For example: https://server.bigfix.com:52311/api/computergroup/44/refresh
 
 **Request Schema:** BES.xsd
+{% endrestapi %}
