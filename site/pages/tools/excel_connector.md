@@ -30,8 +30,8 @@ This product is provided "as is".
 ## Requirements
 - BigFix 9.x, 10.x.
 - .NET Framework 4.5.2.
-- Excel 2003, 2007, 2010, 2013, or 2016 (since version 3.3.4).
-- Windows XP, Windows Vista, Windows 7, Windows Server 2008 R2, Windows 8, Windows Server 2012 R2, Windows 10.
+- Excel 2003, 2007, 2010, 2013, or 2016.
+- Windows Vista, Windows 7, Windows Server 2008 R2, Windows 8, Windows Server 2012 R2, Windows 10.
 
 ## Download
 For more details, refer to [this link](https://bigfix-wiki.hcltechsw.com/wikis/home?lang=en-us#!/wiki/BigFix%20Wiki/page/Excel%20Connector). You can also download the BigFix Excel Connector from this web site.
