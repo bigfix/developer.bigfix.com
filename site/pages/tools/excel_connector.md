@@ -14,7 +14,7 @@ In addition, the Connector has a** *built-in Session Relevance Editor* **to quer
 
 ## Features
 
-The BigFix Excel Connector has te following features:
+The BigFix Excel Connector has the following features:
 - The built-in Session Relevance Editor, which:
    - Allows free form session relevance.
    - Returns results automatically split into Excel columns.
@@ -25,10 +25,13 @@ The BigFix Excel Connector has te following features:
 ![Query Wizard](/static/img/query_wizard.jpg)
 - Filters can be created to limit and hone in on a particular data set.
 
+This product is provided "as is".
+
 ## Requirements
-- BigFix 7.2 and later.
-- Supports Excel 2003, Excel 2007 and Excel 2010.
-- Tested against Windows XP, Vista, Windows 7, and Windows 2008, on 32 and 64-bit variants.
+- BigFix 9.x, 10.x.
+- .NET Framework 4.5.2.
+- Excel 2003, 2007, 2010, 2013, or 2016.
+- Windows Vista, Windows 7, Windows Server 2008 R2, Windows 8, Windows Server 2012 R2, Windows 10.
 
 ## Download
-Click [this link](http://support.bigfix.com/labs/license.html ) and accept the license agreement to download the BigFix Excel Connector tool.
+For more details, refer to [this link](https://bigfix-wiki.hcltechsw.com/wikis/home?lang=en-us#!/wiki/BigFix%20Wiki/page/Excel%20Connector). You can also download the BigFix Excel Connector from this web site.
