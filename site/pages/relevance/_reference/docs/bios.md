@@ -6,7 +6,7 @@ Running the inspector on Windows:
 
 {% qna %}
 Q: bios
-A: 12/12/2018
+A: 12/30/2020
 {% endqna %}
 
 Running the inspector on macOS on an Intel CPU:
@@ -30,7 +30,7 @@ Running the inspector on Windows:
 
 {% qna %}
 Q: date of bios
-A: 12/12/2018
+A: 12/30/2020
 {% endqna %}
 
 # version of &lt;bios&gt; : string

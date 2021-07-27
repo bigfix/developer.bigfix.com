@@ -93,11 +93,22 @@ No documentation exists.
 
 # manual group &lt;string&gt; of &lt;client&gt; : manual group
 
-No documentation exists.
+Returns information on the manual groups the client is member of.
+
+{% qna %}
+Q: manual group "Windows systems"of client
+A: Windows systems
+{% endqna %}
 
 # manual group of &lt;client&gt; : manual group
 
-No documentation exists.
+Returns information on the manual groups the client is member of.
+
+{% qna %}
+Q: manual groups of client
+A: Physical Only
+A: Windows_only
+{% endqna %}
 
 # process owner of &lt;client&gt; : client process owner
 
@@ -122,6 +133,25 @@ This inspector returns the subnet address (as an &lt;ipv4or6 address&gt; type) f
 # report character set of &lt;client&gt; : string
 
 No documentation exists.
+
+# server based group &lt;string&gt; of &lt;client&gt; : server based group
+
+Returns information on the server based groups the client is member of.
+
+{% qna %}
+Q: server based group "Windows systems"of client
+A: Windows systems
+{% endqna %}
+
+# server based group of &lt;client&gt; : server based group
+
+Returns information on the server based groups the client is member of.
+
+{% qna %}
+Q: server based groups of client
+A: Dev_version
+A: Windows_only
+{% endqna %}
 
 # setting &lt;string&gt; of &lt;client&gt; : setting
 

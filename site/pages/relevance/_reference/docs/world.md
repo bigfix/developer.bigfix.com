@@ -456,7 +456,7 @@ A: <ipv6 address> <= <ipv6 address>: boolean
 
 # bios : bios
 
-No documentation exists.
+Returns information about the BIOS.
 
 # block firewall action : firewall action
 
