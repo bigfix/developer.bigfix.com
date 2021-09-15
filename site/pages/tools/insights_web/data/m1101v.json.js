@@ -1,0 +1,1 @@
+window.repositoryObject = {"title_prefix":"IVR Reporting","custom_fields":[],"views":[{"id":"m1101v4850","name":"dbo.fixlet_dimensions","type":"VIEW","subtype":"VIEW","is_user_defined":false,"custom_fields":{"Table Description":{"value":"","type":"TEXT"}}}],"object_id":"m1101v"};
