@@ -4,24 +4,28 @@ layout: page-with-nav
 nav:
   - name: Home
     href: /tools/
-	
+
   - name: Fixlet Debugger
     href: /tools/fixlet_debugger.html
 
   - name: QnA
-    href: /tools/qna.html	
-	
+    href: /tools/qna.html
+
   - name: QnA for Web Reports
     href: /tools/qna_wr.html
-	
+
   - name: Presentation Debugger
     href: /tools/presentation_debugger.html
-	
+
   - name: Excel Connector
     href: /tools/excel_connector.html
-	
+
   - name: BES SOAP API Tester
     href: /tools/soap_api_tester.html
 
   - name: Client API Tester
     href: /tools/cc_tester.html
+
+  - name: Insights Schema
+    href: /tools/insights_web.html
+

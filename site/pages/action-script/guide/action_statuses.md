@@ -50,7 +50,7 @@ Actions might report the following statuses back to the BigFix Server while proc
    <dt>**Invalid Signature**</dt>
    <dd>The client was unable to verify the signature on this action.</dd>
    <dt>**Not Relevant**</dt>
-   <dd>The Fixlet that this action addresses is not relevant on this machine. Before running the action, the BigFix Client checked the relevance for the action and it is no longer true.</dd>
+   <dd>The Fixlet that this action addresses is not relevant on this machine. Before running the action, the BigFix Client checked the relevance for the action and it is no longer true or the BigFix Client checked the expiration time for the action and it is passed. Note that any intermediate status reported by a client for the actions that were not started is overwritten with "Not Relevant" at the expiration time. This is also true for a multiple action group and its component actions. For instance, if a component action of a multiple action group that was not started has reported the status of "Disk Job Limited", then, at the expiration time the final status of the multiple action group and its component actions becomes "Not Relevant".</dd>
    <dt>**Pending Offer Acceptance**</dt>
    <dd>Waiting for user to accept this offer.</dd>
    <dt>**Offers Disabled**</dt>

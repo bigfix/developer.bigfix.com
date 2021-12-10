@@ -21,11 +21,11 @@ For example:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <Action Resource="http://server.bigfix.com:52311/api/action/44" LastModified="Tue, 19 Mar 2013 21:23:10 +0000">
-        <Name>Updated Windows Relay - IBM Endpoint Manager version 9.0.586.0 Now Available!</Name>
+        <Name>Updated Windows Relay - BigFix version 9.0.586.0 Now Available!</Name>
         <ID>44</ID>
     </Action>
     <Action Resource="http://server.bigfix.com:52311/api/action/45" LastModified="Tue, 19 Mar 2013 21:23:57 +0000">
-        <Name>POLICY: Updated Windows Client - IBM Endpoint Manager version 9.0.586.0 Now Available!</Name>
+        <Name>POLICY: Updated Windows Client - BigFix version 9.0.586.0 Now Available!</Name>
         <ID>45</ID>
     </Action>
 </BESAPI>
@@ -37,7 +37,12 @@ For example:
 {% restapi "/api/actions", "POST", "Creates a new action." %}
 **Request:** BES XML for the action.
 
-For example:
+The following example:
+- Creates an action from scratch, using the SingleAction tag.
+- Stores the action script code in the ActionScript tag.
+- Uses the default success criteria by leaving the SuccessCriteria tag empty.
+- Targets all computers using the AllComputers tag.
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -63,22 +68,30 @@ POST Example from Source Fixlet:
 In the target section of the XML file, specify the "ComputerID" if you want the action to be sent to the client 
 mailbox. 
 
-For example:
+The following example:
+- Creates an action by running an existing Fixlet (or a task), using the SourcedFixletAction tag.
+- Specifies the site of the Fixlet/task to pick in the Sitename tag.
+- Targets specific computers using (one or more) the ComputerID tag(s).
+- Passes a parameter value using the Parameter tag.
+- Passes a secure parameter value using the SecureParameter tag.
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
- <SourcedFixletAction>
-   <SourceFixlet>
-     <Sitename>TestSite</Sitename>
-     <FixletID>83</FixletID>
-     <Action>Action1</Action
-   </SourceFixlet>
-   <Target>
-     <ComputerID>13863357</ComputerID>
-   </Target>
-  <Parameter Name="_BESClient_EMsg_Detail">1000</Parameter>
- </SourcedFixletAction>
+    <SourcedFixletAction>
+        <SourceFixlet>
+            <Sitename>TestSite</Sitename>
+            <FixletID>83</FixletID>
+            <Action>Action1</Action>
+        </SourceFixlet>
+        <Target>
+            <ComputerID>13863357</ComputerID>
+            <ComputerID>13863358</ComputerID>
+        </Target>
+        <Parameter Name="paramName">123</Parameter>
+        <SecureParameter Name="secureParamName">some value</SecureParameter>
+    </SourcedFixletAction>
 </BES>
 ```
 
@@ -104,7 +117,7 @@ For example:
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
     <SingleAction>
-        <Title>Updated Windows Relay - IBM Endpoint Manager version 9.0.586.0 Now Available!</Title>
+        <Title>Updated Windows Relay - BigFix version 9.0.586.0 Now Available!</Title>
         <Relevance><![CDATA["|7950711|" contains "|" & computer id as string & "|"]]></Relevance>
         <ActionScript MIMEType="application/x-Fixlet-Windows-Shell"><![CDATA[prefetch BESRelayUpgrade.exe sha1:6102c4871f470fe57325b2f9514ac94cca0a2f6a size:7678744 http://software.bigfix.com/download/bes/90/BigFix-BES-Relay-9.0.586.0.exe
 delete __Local\Get\BESRelayUpgrade.exe
