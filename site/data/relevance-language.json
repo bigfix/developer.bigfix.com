@@ -97321,6 +97321,27 @@
         ]
       }
     },
+    "in plugin portal context : boolean": {
+      "key": "in plugin portal context : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "in plugin portal context",
+      "pluralPhrase": "in plugin portal contexts",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "in proxy agent context : boolean": {
       "key": "in proxy agent context : boolean",
       "type": "property",
