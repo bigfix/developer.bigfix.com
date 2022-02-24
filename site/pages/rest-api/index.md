@@ -42,6 +42,6 @@ Navigate the REST API subtree on the right to access the following information:
   <dd>The information about the lightweight command-line tool, included in the BigFix Platform, that you can use as a REST Client.</dd>
 
   <dt>[Relevance queries output](./relevance_queries.html/)</dt>
-  <dd>How to generate an output for the relevance queries in JSON format.</dd>
+  <dd>How to generate an output for the relevance queries.</dd>
 
 </dl>
