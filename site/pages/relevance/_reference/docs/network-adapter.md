@@ -196,7 +196,7 @@ Returns the interface type of the specified adapter as defined by the Internet A
 
 # up of &lt;network adapter&gt; : boolean
 
-Returns `True` if the specified network adaoter is currently working. Interfaces like wifi may be turned it off to save power, but this inspector will still tell you if it is active.
+Returns `True` if the specified network adapter is currently working. Interfaces like wifi may be turned it off to save power, but this inspector will still tell you if it is active.
 
 # wakeonlan enabled of &lt;network adapter&gt; : boolean
 
