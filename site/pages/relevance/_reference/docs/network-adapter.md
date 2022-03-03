@@ -188,7 +188,7 @@ Returns the subnet mask (IPv4) of the specified network adapter.
 
 # tunnel of &lt;network adapter&gt; : boolean
 
-Returns `True` if the specidfied adapter is a tunnel.
+Returns `True` if the specified adapter is a tunnel.
 
 # type of &lt;network adapter&gt; : integer
 
