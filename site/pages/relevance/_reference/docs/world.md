@@ -1239,6 +1239,10 @@ Returns `True` if this inspector is being evaluated in the BigFix Agent.
 
 Returns `True` if this inspector is being evaluated in the BigFix Console.
 
+# in hcl now context : boolean
+
+Returns `True` if this inspector is being evaluated in an HCL Now deployment.
+
 # in plugin portal context : boolean
 
 Returns `True` if this inspector is being evaluated in the BigFix Plugin Portal.
