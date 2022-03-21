@@ -14,6 +14,10 @@ Returns the database name (as a &lt;string&gt;) corresponding to the specified B
 
 Returns the FXF Encoding IANA name of the encoding for your deployment. This encoding represents all FXF files that the server generates.
 
+# hcl deployment flag of &lt;bes server&gt; : boolean
+
+Returns True if the specified BES Server is deployed on HCL Now.
+
 # url of &lt;bes server&gt; : string
 
 Returns the URL of the specified BES Server, providing access to any files hosted on that server.
