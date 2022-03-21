@@ -97304,6 +97304,7 @@
       "resultType": "boolean",
       "singularPhrase": "hcl deployment flag",
       "pluralPhrase": "hcl deployment flags",
+      "directObjectType": "bes server",
       "availability": {
         "10.0.7": [
           "Session"

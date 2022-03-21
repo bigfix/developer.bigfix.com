@@ -1131,10 +1131,6 @@ Returns the grub config file from the default location, either "/boot/grub/menu.
 
 Returns an object containing properties of the hardware.
 
-# hcl deployment flag : boolean
-
-Returns `True` if the specified BES Server is deployed on HCL Now.
-
 # help folder : folder
 
 Returns the help folder of the system domain.
