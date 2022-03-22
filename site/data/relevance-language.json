@@ -97298,7 +97298,7 @@
         ]
       }
     },
-    "hcl deployment flag of <bes server>: boolean": {
+    "hcl deployment flag of <bes server> : boolean": {
       "key": "hcl deployment flag of <bes server> : boolean",
       "type": "property",
       "resultType": "boolean",
