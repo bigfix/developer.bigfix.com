@@ -64,7 +64,22 @@ Uses an Xpath string to specify an XML DOM node. For instance, to select all ele
 
 # xpath &lt;( string, string )&gt; of &lt;xml dom node&gt; : xml dom node
 
-The iterated named property xpaths (&lt;namespace&gt;, &lt;query&gt;) provides a way of specifying the namespaces for the query. If the XML document you are querying over uses namespaces, you must use them in the query and use this property.
+The iterated named property xpaths (&lt;namespace&gt;, &lt;query&gt;) provides a way of specifying the namespaces for the query. If the XML document you are querying over uses namespaces, you must use them in the query and use this property. You create the namespace with `xmlns:a='https://namespace'` and leverage the namespace in your query with `a:`. 
+
+This example pulls commands from Windows Scheduled tasks and uses the `a:` identifier for the namespace
+{% qna %}
+q: node values of xpaths ("xmlns:a='http://schemas.microsoft.com/windows/2004/02/mit/task'","/a:Task/a:Actions/a:Exec/a:Command/text()") of xml documents of xmls of scheduled tasks
+A: C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+A: C:\Program Files (x86)\Google\Update\GoogleUpdate.exe
+{% endqna %}
+
+This example pulls details from the Windows system event log and uses a `b:` as the namespace identifier. 
+{% qna %}
+q: node values of xpaths ("xmlns:b='http://schemas.microsoft.com/win/2004/08/events/event'","/b:Event/b:System/b:Computer/text()") of XML of record (oldest record number of it) of system event log
+A: COMPUTER-123
+{% endqna %}
+
+You could have several namespaces in the same xpath query, although this is rare. Two namespaces would appear as `xpath ("xmlns:a='https://namespaceA' xmlns:b='https://namespaceB'", "/a:Node1/a:Node2/b:Node3") of &ltxml dom node&gt`
 
 # xpath &lt;string&gt; of &lt;xml dom node&gt; : xml dom node
 
