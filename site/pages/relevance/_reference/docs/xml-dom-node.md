@@ -64,7 +64,7 @@ Uses an Xpath string to specify an XML DOM node. For instance, to select all ele
 
 # xpath &lt;( string, string )&gt; of &lt;xml dom node&gt; : xml dom node
 
-The iterated named property xpaths (&lt;namespace&gt;, &lt;query&gt;) provides a way of specifying the namespaces for the query. If the XML document you are querying over uses namespaces, you must use them in the query and use this property.
+The iterated named property xpaths (&lt;namespace&gt;, &lt;query&gt;) provides a way of specifying the namespaces for the query. If the XML document you are querying over uses namespaces, you must use them in the query and use this property. Example: node names of xpaths ("xmlns:a='http://schemas.microsoft.com/windows/2004/02/mit/task'","/a:Task/a:Actions/a:Exec/a:Command") of xml documents of xmls of scheduled tasks
 
 # xpath &lt;string&gt; of &lt;xml dom node&gt; : xml dom node
 
