@@ -166,3 +166,6 @@ nav:
 
       - name: IEM CLI Samples
         href: /rest-api/iem_cli/iem_samples.html
+
+  - name: Relevance queries output
+    href: /rest-api/relevance_queries.html

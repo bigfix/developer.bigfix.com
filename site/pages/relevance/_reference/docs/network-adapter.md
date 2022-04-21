@@ -188,7 +188,7 @@ Returns the subnet mask (IPv4) of the specified network adapter.
 
 # tunnel of &lt;network adapter&gt; : boolean
 
-Returns `True` if the specidfied adapter is a tunnel.
+Returns `True` if the specified adapter is a tunnel.
 
 # type of &lt;network adapter&gt; : integer
 
@@ -196,7 +196,7 @@ Returns the interface type of the specified adapter as defined by the Internet A
 
 # up of &lt;network adapter&gt; : boolean
 
-Returns `True` if the specified network adaoter is currently working. Interfaces like wifi may be turned it off to save power, but this inspector will still tell you if it is active.
+Returns `True` if the specified network adapter is currently working. Interfaces like Wi-Fi may be turned it off to save power, but this inspector will still tell you if it is active.
 
 # wakeonlan enabled of &lt;network adapter&gt; : boolean
 
@@ -204,7 +204,7 @@ Returns `True` if the specified network adapter is configured to react to Wake-O
 
 # wifi of &lt;network adapter&gt; : wifi
 
-Filters the network adapter object by WiFi type and creates the &lt;wifi&gt; object(s)
+Filters the network adapter object by Wi-Fi type and creates the &lt;wifi&gt; object(s)
 
 # wins enabled of &lt;network adapter&gt; : boolean
 
