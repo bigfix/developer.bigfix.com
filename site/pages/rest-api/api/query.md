@@ -23,15 +23,21 @@ relevance=names+of+bes+computers
 {% restapi "/api/query", "GET", "Evaluate a relevance expression and get the result." %}
 This runs request is processed through the server to WebReports.
 
-**Request:**  URL with a relevance paramter. 
+**Request:**  URL with a relevance parameter. 
 
-For example: 
+For example to get XML query results: 
 
 ```
-/api/query?relevance=names+of+bes+computers.
+/api/query?relevance=names+of+bes+computers
 ```
 
-**Response:** XML query results.
+For example to get JSON query results: 
+
+```
+/api/query?relevance=names+of+bes+computers&output=json
+```
+
+**Response:** XML or JSON query results.
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
