@@ -6,16 +6,6 @@ This command downloads a file from a URL and allows you to rename it. After
 downloading, the file is saved in a folder named `__Download` relative to the
 local folder of the site that issued the `download as` command.
 
-For instance, consider the command:
-
-```actionscript
-download as myprog.exe http://www.website.com/update/prog555.exe
-```
-
-The example downloads the `readme.txt` file from the Microsoft site and saves it
-in the local `__Download` folder as `intro.txt`. If the download fails, the
-action script terminates.
-
 This command, when accompanied by a
 [continue if](../flow-control/continue-if.html) with a sha1 value, allows the
 file to be pre-fetched.
