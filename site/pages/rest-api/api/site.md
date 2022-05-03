@@ -19,6 +19,7 @@ For example:
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
   <ExternalSite Resource="http://lab.bigfix.me:52311/api/site/external/BES%20Support">
     <Name>BES Support</Name>
+    <DisplayName>BES Support</DisplayName>
   </ExternalSite>
   <OperatorSite Resource="http://lab.bigfix.me:52311/api/site/operator/BigFixAdmin">
     <Name>BigFixAdmin</Name>
@@ -61,6 +62,7 @@ For example:
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
   <ActionSite>
     <Name>ActionSite</Name>
+    <DisplayName>ActionSite</DisplayName>
     <Description></Description>
     <GlobalReadPermission>false</GlobalReadPermission>
     <SubscriptionMode>All</SubscriptionMode>
