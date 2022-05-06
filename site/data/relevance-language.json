@@ -97298,19 +97298,6 @@
         ]
       }
     },
-    "hcl deployment flag of <bes server> : boolean": {
-      "key": "hcl deployment flag of <bes server> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "hcl deployment flag",
-      "pluralPhrase": "hcl deployment flags",
-      "directObjectType": "bes server",
-      "availability": {
-        "10.0.7": [
-          "Session"
-        ]
-      }
-    },
     "in agent context : boolean": {
       "key": "in agent context : boolean",
       "type": "property",
