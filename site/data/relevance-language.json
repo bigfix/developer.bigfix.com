@@ -97334,27 +97334,6 @@
         ]
       }
     },
-    "in hcl now context : boolean": {
-      "key": "in hcl now context : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "in hcl now context",
-      "pluralPhrase": "in hcl now contexts",
-      "availability": {
-        "10.0.7": [
-          "AIX",
-          "Debian",
-          "HP-UX",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "in plugin portal context : boolean": {
       "key": "in plugin portal context : boolean",
       "type": "property",
