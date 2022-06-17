@@ -23,9 +23,11 @@ For example:
   </ExternalSite>
   <OperatorSite Resource="http://lab.bigfix.me:52311/api/site/operator/BigFixAdmin">
     <Name>BigFixAdmin</Name>
+    <DisplayName>BigFixAdmin's Operator Site</DisplayName>
   </OperatorSite>
   <ActionSite Resource="http://lab.bigfix.me:52311/api/site/master">
     <Name>ActionSite</Name>
+    <DisplayName>Master Action Site</DisplayName>
   </ActionSite>
 </BESAPI>
 ```
