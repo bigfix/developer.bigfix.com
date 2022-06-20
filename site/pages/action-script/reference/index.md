@@ -12,6 +12,7 @@ categories:
       - action unlock
       - administrator add
       - administrator delete
+      - client certificate refresh
       - client restart
       - notify client
       - plugin store

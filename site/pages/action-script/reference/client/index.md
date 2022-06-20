@@ -27,8 +27,17 @@ These commands can be used to control the behavior of the BigFix client.
   <dt>[**administrator delete**](./administrator-delete.html)</dt>
   <dd>Remove a BigFix user as an administrator of the computer.</dd>
 
+  <dt>[**client certificate refresh**](./client-certificate-refresh.html)</dt>
+  <dd>Force an update of the client certificate.</dd>
+
+  <dt>[**client restart**](./client-restart.html)</dt>
+  <dd>Restart the BES Client.</dd>
+
   <dt>[**notify client**](./notify-client.html)</dt>
   <dd>Make the client send a full refresh.</dd>
+
+  <dt>[**plugin store**](./plugin-store.html)</dt>
+  <dd>Insert, update or delete a BigFix cloud plugin setting.</dd>
 
   <dt>[**relay select**](./relay-select.html)</dt>
   <dd>Make the BigFix client start a relay selection.</dd>
