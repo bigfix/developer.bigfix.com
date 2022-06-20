@@ -2,7 +2,10 @@
 title: download now
 ---
 
-This command downloads a file from a URL. It is simliar to the
+**This command is deprecated.**
+Use [download](./download.html) or [download as](./download-as.html) instead.
+
+This command downloads a file from a URL. It is similar to the
 [download](./download.html) command. However, unlike that command, the client
 will download directly from the specified URL at that point in the action
 script without using the relay hierarchy.
