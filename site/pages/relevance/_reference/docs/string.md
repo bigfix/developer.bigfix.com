@@ -192,6 +192,14 @@ Returns a case-insensitive regular expression from the supplied string.
 
 Same as case insensitive regex &lt;string&gt;.
 
+# case insensitive perl regex &lt;string&gt; : regular expression
+
+Returns a case-insensitive Perl regular expression from the supplied string.
+
+# case insensitive perl regular expression &lt;string&gt; : regular expression
+
+Same as case insensitive perl regex &lt;string&gt;.
+
 # cast &lt;string&gt; : cast
 
 Returns a list of the objects that can be cast into the type specified by &lt;string&gt;.
@@ -979,6 +987,14 @@ No documentation exists.
 # percent encode &lt;string&gt; : string
 
 No documentation exists.
+
+# perl regex &lt;string&gt; : regular expression
+
+Creates a Perl regex object from the given string.
+
+# perl regular expression &lt;string&gt; : regular expression
+
+Same as perl regex &lt;string&gt;.
 
 # position &lt;integer&gt; of &lt;string&gt; : string position
 
