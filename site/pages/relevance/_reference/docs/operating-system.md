@@ -139,7 +139,18 @@ A: False
 
 # hypervisor of &lt;operating system&gt; : string
 
-No documentation exists.
+This inspector returns one of the following hypervisors:
+
+- "Google Cloud Engine"
+- "Hyper-V"
+- "KVM"
+- "QEMU"
+- "VIOS"
+- "VMware"
+- "VirtualBox"
+- "Xen"
+
+Running this inspector on an operating system with a different hypervisor or without an hypervisor results in an error referring to a nonexistent object.
 
 # ia64 of &lt;operating system&gt; : boolean
 
