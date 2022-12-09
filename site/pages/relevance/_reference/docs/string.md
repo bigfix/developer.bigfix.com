@@ -1116,6 +1116,7 @@ Returns an application for the name provided it is currently executing. The name
 # running service &lt;string&gt; : service
 
 Returns the running service object matching the name provided.
+For Debian, Ubuntu, Raspbian, AIX, HP-UX and Solaris platforms, the inspector works only if the service name is a BES service. The accepted service names are: BESClient, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
 # samp &lt;string&gt; of &lt;string&gt; : html
 
@@ -1148,6 +1149,7 @@ No documentation exists.
 # service &lt;string&gt; : service
 
 Returns the service object matching the name provided, regardless of its running state.On a Macintosh, returns a &lt;dummy&gt; type.
+For Debian, Ubuntu, Raspbian, AIX, HP-UX and Solaris platforms, the inspector works only if the service name is a BES service. The accepted service names are: BESClient, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
 # set of &lt;string&gt; : string set
 
