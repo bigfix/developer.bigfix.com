@@ -43,7 +43,9 @@ If you need to wait for a series of commands to complete:
 * you can create a shell script and run it
 
 If you want to run inline shell commands, you can do as follows
+```actionscript
 wait /bin/sh -c "your command"
+```
 
 However, compared to typing your command in the terminal, the following differences apply:
 * your command string must start with double quotes ("), not with single quotes (')
@@ -55,22 +57,32 @@ Examples:
 To create a file with a bit of text.
 Note that you must start the command string with double quotes, but can use single quotes inside it.
 Quote escaping works as expected.
+```actionscript
 /bin/sh -c "echo 'my text' > \"/root/Desktop/my file.txt\""
+```
 
 
 To initialize an environment variable and print it to a file, the command in the terminal would be
+```actionscript
 /bin/sh -c 'export MY_ENV_VAR="my value"; /bin/echo "$MY_ENV_VAR" > /root/Desktop/myFile.txt'
+```
 or
+```actionscript
 /bin/sh -c "export MY_ENV_VAR='my value'; /bin/echo \$MY_ENV_VAR > /root/Desktop/myFile.txt"
+```
+
 
 But to run it with the wait command, you would write it as follows
+```actionscript
 /bin/sh -c "export MY_ENV_VAR='my value'; /bin/echo $MY_ENV_VAR > /root/Desktop/myFile.txt"
+```
 
 Just remember that, after the command ends, changes to MY_ENV_VAR will be discarded.
 
 
 To create a shell script and run it.
 
+```actionscript
 delete __createfile
 createfile until END_OF_FILE
 #!/bin/sh
@@ -84,4 +96,5 @@ move __createfile my_script.sh
 wait chmod +x ./my_script.sh
 wait /bin/sh -c "./my_script.sh"
 delete my_script.sh
+```
 
