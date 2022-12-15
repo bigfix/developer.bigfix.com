@@ -192,6 +192,14 @@ Returns a case-insensitive regular expression from the supplied string.
 
 Same as case insensitive regex &lt;string&gt;.
 
+# case insensitive perl regex &lt;string&gt; : regular expression
+
+Returns a case-insensitive Perl regular expression from the supplied string.
+
+# case insensitive perl regular expression &lt;string&gt; : regular expression
+
+Same as case insensitive perl regex &lt;string&gt;.
+
 # cast &lt;string&gt; : cast
 
 Returns a list of the objects that can be cast into the type specified by &lt;string&gt;.
@@ -980,6 +988,14 @@ No documentation exists.
 
 No documentation exists.
 
+# perl regex &lt;string&gt; : regular expression
+
+Creates a Perl regex object from the given string.
+
+# perl regular expression &lt;string&gt; : regular expression
+
+Same as perl regex &lt;string&gt;.
+
 # position &lt;integer&gt; of &lt;string&gt; : string position
 
 Returns a string position pointing to the character position specified. The first character is at position 0.
@@ -1100,6 +1116,7 @@ Returns an application for the name provided it is currently executing. The name
 # running service &lt;string&gt; : service
 
 Returns the running service object matching the name provided.
+The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
 # samp &lt;string&gt; of &lt;string&gt; : html
 
@@ -1132,6 +1149,7 @@ No documentation exists.
 # service &lt;string&gt; : service
 
 Returns the service object matching the name provided, regardless of its running state.On a Macintosh, returns a &lt;dummy&gt; type.
+The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
 # set of &lt;string&gt; : string set
 

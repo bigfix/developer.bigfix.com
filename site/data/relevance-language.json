@@ -42748,6 +42748,19 @@
         ]
       }
     },
+    "case insensitive perl regex <string> : regular expression": {
+      "key": "case insensitive perl regex <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "case insensitive perl regex",
+      "pluralPhrase": "case insensitive perl regexes",
+      "indexType": "string",
+      "availability": {
+        "10.0.8": [
+          "Windows"
+         ]
+       }
+    },
     "case insensitive regular expression <string> : regular expression": {
       "key": "case insensitive regular expression <string> : regular expression",
       "type": "property",
@@ -42774,6 +42787,19 @@
           "Raspbian"
         ]
       }
+    },
+    "case insensitive perl regular expression <string> : regular expression": {
+      "key": "case insensitive perl regular expression <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "case insensitive perl regular expression",
+      "pluralPhrase": "case insensitive perl regular expressions",
+      "indexType": "string",
+      "availability": {
+        "10.0.8": [
+          "Windows"
+         ]
+       }
     },
     "cast <string> : cast": {
       "key": "cast <string> : cast",
@@ -45594,6 +45620,19 @@
         ]
       }
     },
+    "perl regex <string> : regular expression": {
+      "key": "perl regex <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "perl regex",
+      "pluralPhrase": "perl regexes",
+      "indexType": "string",
+      "availability": {
+        "10.0.8": [
+          "Windows"
+        ]
+      }
+    },
     "regular expression <string> : regular expression": {
       "key": "regular expression <string> : regular expression",
       "type": "property",
@@ -45618,6 +45657,19 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "perl regular expression <string> : regular expression": {
+      "key": "perl regular expression <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "perl regular expression",
+      "pluralPhrase": "perl regular expressions",
+      "indexType": "string",
+      "availability": {
+        "10.0.8": [
+          "Windows"
         ]
       }
     },
