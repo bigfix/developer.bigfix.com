@@ -7,7 +7,7 @@ The supported cloud providers are:
 * Microsoft Azure
 * VMWare Cloud
 
-**Note**: Amazon Web Services metadata are retrieved using Amazon IMDSv2 protocol.
+**Note**: Up to BigFix Platform 10.0.8, Amazon Web Services metadata are retrieved using Amazon IMDSv1 protocol. Starting from BigFix Platform 10.0.9, Amazon Web Services metadata are retrieved using Amazon IMDSv2 protocol.
 
 # name of &lt;cloud provider&gt; : string
 
