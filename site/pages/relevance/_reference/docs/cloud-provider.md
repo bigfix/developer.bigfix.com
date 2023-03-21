@@ -1,8 +1,13 @@
 # type: cloud provider
 
 This inspector retrieves specific cloud provider data from a client that is installed on a machine hosted on a cloud provider. You can deactivate the inspector by setting `_BESClient_Inspector_DisableCloudProvider` to 1. In this case, the output of the inspector calls will be `cloud provider inspector is disabled`.
+The supported cloud providers are:
+* Amazon Web Services
+* Google Cloud Platform
+* Microsoft Azure
+* VMWare Cloud
 
-**Note**: The cloud inspectors support virtual environments for AWS and Azure only.
+**Note**: Up to BigFix Platform 10.0.8, Amazon Web Services metadata are retrieved using Amazon IMDSv1 protocol. Starting from BigFix Platform 10.0.9, Amazon Web Services metadata are retrieved using Amazon IMDSv2 protocol.
 
 # name of &lt;cloud provider&gt; : string
 
@@ -39,4 +44,4 @@ Returns the region where the instance is deployed, or an empty string if the cli
 
 # instance data of &lt;cloud provider&gt; : json value
 
-Returns the instance metadata document in as a JSON value object. The returned json can be queried with the json inspector. It will be an empty json if the virtual machine is not on cloud or if the cloud provider is not supported.
+Returns the instance metadata of the virtual machine as an object that can be queried using the JSON inspector. If the client machine is not a VM, or if the cloud provider is not supported, the returned object represents an empty JSON document.

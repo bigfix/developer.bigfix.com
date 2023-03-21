@@ -6,7 +6,7 @@ Creates the specified site on the server with the contents of `site.xml`. In thi
 
 # cURL
 ```
-curl -X POST --data-binary @site.xml --user {username}:{password} https://{server}:{port}/api/sites/
+curl -X POST --data-binary @site.xml --user {username}:{password} https://{server}:{port}/api/sites
 ```
 
 # python
