@@ -42758,7 +42758,16 @@
       "availability": {
         "10.0.8": [
           "Windows"
-         ]
+         ],
+        "11.0.0": [
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
        }
     },
     "case insensitive regular expression <string> : regular expression": {
@@ -42798,7 +42807,16 @@
       "availability": {
         "10.0.8": [
           "Windows"
-         ]
+         ],
+        "11.0.0": [
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
+        ]
        }
     },
     "cast <string> : cast": {
@@ -45630,6 +45648,15 @@
       "availability": {
         "10.0.8": [
           "Windows"
+        ],
+        "11.0.0": [
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -45670,6 +45697,15 @@
       "availability": {
         "10.0.8": [
           "Windows"
+        ],
+        "11.0.0": [
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
