@@ -277,29 +277,48 @@ https://<bigfix_server>:52311/api/action/44/downloads
 
 For example:
 
-<?xml version="1.0" encoding="UTF-8"?>
-<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
-    <ActionDownloads Resource="https://localhost:52311/api/action">
+```xml
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <ActionResults Resource="https://gbwindev:52311/api/action/41/downloads">
         <ActionDownload>
             <DownloadRequestTarget>
-                <ActionID>38</ActionID>
+                <ActionID>41</ActionID>
                 <Index>1</Index>
-                <Hashes hashAlgorithm="sha1">716dd662996960b028135e92906c8936e537263e</Hashes>
-                <Size>2629729</Size>
-                <URL>http://software.bigfix.com/download/bes/util/BESClientHelper-3.0.0.80.exe</URL>
+                <Hashes hashAlgorithm="sha1">9d3e61a1f0434beb33d9d6dbb0b42a3ae39da696</Hashes>
+                <Size>1851</Size>
+                <URL>http://software.bigfix.com/download/bes/100/AzureAssetDiscoveryPlugin.1.9.5.inspectors</URL>
             </DownloadRequestTarget>
             <Status>
                 <State>COMPLETED</State>
-                <Timestamp>Wed, 22 Mar 2023 14:06:23 +0000</Timestamp>
+                <Timestamp>Wed, 22 Mar 2023 14:19:42 +0000</Timestamp>
                 <RetryCount>0</RetryCount>
             </Status>
             <Available>true</Available>
-            <BytesDownloaded>2629729</BytesDownloaded>
-            <TotalBytes>2629729</TotalBytes>
+            <BytesDownloaded>1851</BytesDownloaded>
+            <TotalBytes>1851</TotalBytes>
             <RetryLimit>5</RetryLimit>
         </ActionDownload>
-    </ActionDownloads>
-</BES>
+        <ActionDownload>
+            <DownloadRequestTarget>
+                <ActionID>41</ActionID>
+                <Index>2</Index>
+                <Hashes hashAlgorithm="sha1">973dd18aa9db0415fcbfac8029eea17a035d0df7</Hashes>
+                <Size>27286192</Size>
+                <URL>http://software.bigfix.com/download/bes/100/AzureAssetDiscoveryPlugin.1.9.5.dll</URL>
+            </DownloadRequestTarget>
+            <Status>
+                <State>COMPLETED</State>
+                <Timestamp>Wed, 22 Mar 2023 14:19:50 +0000</Timestamp>
+                <RetryCount>0</RetryCount>
+            </Status>
+            <Available>true</Available>
+            <BytesDownloaded>27286192</BytesDownloaded>
+            <TotalBytes>27286192</TotalBytes>
+            <RetryLimit>5</RetryLimit>
+        </ActionDownload>
+    </ActionResults>
+</BESAPI>
+```
 
 You can retrieve the same data in a JSON format, adding the `output=json` in the URL.
 For example, this call:
@@ -483,7 +502,7 @@ https://<bigfix_server>:52311/api/action/44/download/1/retry
 For example:
 
 ```xml
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <RetryDownload Resource="https://localhost:52311/api/action/38/download/1/retry">
         <Response Value="That download has not failed."/>
