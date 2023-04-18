@@ -194,11 +194,11 @@ Same as case insensitive regex &lt;string&gt;.
 
 # case insensitive perl regex &lt;string&gt; : regular expression
 
-Returns a case-insensitive Perl regular expression from the supplied string.
+Returns a case-insensitive Perl regular expression from the supplied string. This inspector is available on Solaris but only on x86 and x64 architectures.
 
 # case insensitive perl regular expression &lt;string&gt; : regular expression
 
-Same as case insensitive perl regex &lt;string&gt;.
+Same as case insensitive perl regex &lt;string&gt;. This inspector is available on Solaris but only on x86 and x64 architectures.
 
 # cast &lt;string&gt; : cast
 
@@ -990,11 +990,11 @@ No documentation exists.
 
 # perl regex &lt;string&gt; : regular expression
 
-Creates a Perl regex object from the given string.
+Creates a Perl regex object from the given string. This inspector is available on Solaris but only on x86 and x64 architectures.
 
 # perl regular expression &lt;string&gt; : regular expression
 
-Same as perl regex &lt;string&gt;.
+Same as perl regex &lt;string&gt;. This inspector is available on Solaris but only on x86 and x64 architectures.
 
 # position &lt;integer&gt; of &lt;string&gt; : string position
 
