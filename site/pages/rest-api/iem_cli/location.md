@@ -1,11 +1,19 @@
 ---
-title: Executable Files and Directories
+title: Location
 ---
 The IEM CLI installed with the BigFix server installer as:
 * %PROGRAM FILES%\BigFix Enterprise\BES Server\IEM CLI\iem.exe on Windows systems
 * /opt/BESServer/bin/iem on Linux Red Hat Enterprise V.5.0 (or later) systems
 
-To run the IEM CLI executable on a system different from the BigFix server, copy the IEM CLI executable and the libBEScrypto_1_0_0_4 library into the same directory on the target machine.
+To run the IEM CLI on a computer different from the BigFix Server, copy the folder that contains the IEM CLI executable to that computer.
+
+## IEM CLI Standalone
+
+The standalone IEM CLI is available for Windows systems and can be downloaded from the BigFix Enterprise Suite Download Center. It is found in the Utilities section and it is named RESTAPI Command-line interface (CLI).
+
+**Note:** If the IEM CLI is installed on a computer with the BigFix Client, the IEM CLI reads the FIPS configuration from the Client masthead.
+Otherwise, the IEM CLI looks for a masthead file in its own installation folder. You can manually copy the Server masthead into its folder.
+If no masthead is found, the IEM CLI uses FIPS by default. 
 
 ## IEM CLI Data Directory
 The IEM CLI uses a local directory, named *.iem* for local caching. This directory contains:
