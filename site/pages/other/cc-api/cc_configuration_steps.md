@@ -17,7 +17,7 @@ Before using the Client Compliance API you must ensure that the following config
 
 - On Windows systems, the registry key 
     ```
-    HKEY_LOCAL_MACHINE\SOFTWARE\BigFix\ClientComplianceAPI
+    HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\BigFix\ClientComplianceAPI
     ``` 
   must exist and must contain the following strings
     - *RequestDir* – set to the full path where configuration requests are written. The protections on this directory must permit anyone to write files to it and the client to read and delete files.

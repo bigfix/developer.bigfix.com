@@ -1,7 +1,7 @@
 # type: encoding
 
 Specifies an encoding to use when reading a file in a relevance expression.
-The `encoding` could be any name that the [International Components for Unicode (ICU)](http://demo.icu-project.org/icu-bin/convexp) can recognize, such as "ISO-8859-1", "Shift_JIS", and "UTF-8". Once created, the `file` objects can be used as regular `file` objects and you can apply any operation applicable to text files. If no encoding is specified, the files are read in the local encoding.
+The `encoding` could be any name that the [International Components for Unicode (ICU)](https://icu4c-demos.unicode.org/icu-bin/convexp) can recognize, such as "ISO-8859-1", "Shift_JIS", and "UTF-8". Once created, the `file` objects can be used as regular `file` objects and you can apply any operation applicable to text files. If no encoding is specified, the files are read in the local encoding.
 
 These are some examples:
 
@@ -18,10 +18,10 @@ Q: line 3 of file "eee.txt" of folder "/ccc/ddd" of encoding "Windows-1252"
 returns the third line of the file "/ccc/ddd/eee.log" in Windows-1252.
 
 {% qna %}
-Q: lines of file "/fff/ggg.txt" of encoding "UTF8"
+Q: lines of file "/fff/ggg.txt" of encoding "UTF-8"
 {% endqna %}
 
-returns the lines of the file "/fff/ggg.txt" in UTF8.
+returns the lines of the file "/fff/ggg.txt" in UTF-8.
 
 {% qna %}
 Q: lines of file "/hhh/iii.txt" of encoding "ISO-8859-1"
