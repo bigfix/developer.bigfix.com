@@ -468,7 +468,7 @@ For example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-    <RetryDownload Resource="https://localhost:52311/api/action/38/downloads/retry">
+    <RetryDownload Resource="https://localhost:52311/api/action/44/downloads/retry">
         <Response Value="That download has not failed."/>
     </RetryDownload>
 </BESAPI>
@@ -504,7 +504,7 @@ For example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-    <RetryDownload Resource="https://localhost:52311/api/action/38/download/1/retry">
+    <RetryDownload Resource="https://localhost:52311/api/action/44/download/1/retry">
         <Response Value="That download has not failed."/>
     </RetryDownload>
 </BESAPI>
