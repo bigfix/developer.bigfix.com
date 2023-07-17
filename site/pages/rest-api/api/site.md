@@ -292,7 +292,7 @@ For example:
 
 **Response:** The application/octet-stream of the file.
 
-This text file returns the contents as below. If it were an image, it'd return the image, etc...
+This text file returns the contents as below. If it were an image, it would return the image, etc...
 
 For example: 
     Testing
@@ -309,13 +309,12 @@ In the request you can specify **force=true** to overwrite the file, if already 
 {% endrestapi %}
 
 {% restapi "site/{site type}/{site name}/file/{file id}", "POST", "Updates a site file." %}
-**Note:** This method is applicable only to IBM Enpdoint Manager V9.1 and earlier versions. 
 
 **Request:** File contents. 
 
 In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
-- **isClient=true** to make the file available for download by Clients.
+- **isClientFile=true** to make the file available for download by Clients.
 
 You can also concatenate the two options as follows:
    
@@ -331,13 +330,11 @@ You can also concatenate the two options as follows:
 {% restapi "site/{site type}/{site name}/file/{file name}", "POST", "Creates a site file with the specified name." %}
 The parameter "isClientFile" with value 1 can be set in the request to send the file to clients.
 
-**Note:** This method is applicable only to IBM Enpdoint Manager V9.2 and later versions. 
-
 **Request:** File contents. 
 
 In the request you can specify:
 - **force=true** to overwrite the file, if already existing in the specified site.
-- **isClient=true** to make the file available for download by Clients.
+- **isClientFile=true** to make the file available for download by Clients.
 
 You can also concatenate the two options as follows:
 

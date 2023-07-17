@@ -110,16 +110,17 @@ The action command overrides *timeout_seconds* and *disposition* only modify the
           </li>
           <li>You can use the option `asadmin` as follows:
             <ul>
-              <li>`asadmin=true` to run the specified command in the context of the specified user as if user is a member of builtin Administrators group. In this case you must:
+              <li>`asadmin=true` to run the specified command in the context of the defined user as if that user were a member of the builtin Administrators group. In this case you must:
                 <ul>
                   <li>Specify `password=required`.</li>
                   <li>Omit the `targetuser` keyword.</li>
                 </ul>
               </li>
-              <li>`asadmin=interactive` to run the specified command in the context of the user specified in the `user` keyword  as if that user were a member of builtin Administrators group. The following rules apply if you use this value:
+              <li>`asadmin=interactive` to run the specified command in the context of the user defined in the `targetuser` keyword as if that user were a member of the builtin Administrators group. The following rules apply if you use this value:
                 <ul>
                   <li>If you use the `targetuser` keyword, the UI launched by the command is displayed in the session of the user specified with `targetuser`. The command fails if the user specified with the `targetuser` keyword is not logged on when the override command runs.</li>
-                  <li>If you want to use an existing account, set `password=required`. If the specified user has no password, set `password=empty`. If you want to use a temporary user, set `password="password"` and specify the user's password in the action in clear text, surrounded with double quotes.</li>
+                  <li>If you want to run the command as a user known to BigFix operators, set `password=required`, otherwise set `password="password"` with the password value in clear text, surrounded with double quotes. If the specified user has no password, set `password=empty`.</li>
+                  <li>If the `targetuser` keyword is not used, the `user` keyword will be used by default.</li>
                 </ul>
               </li>
             </ul>

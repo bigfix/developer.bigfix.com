@@ -155,7 +155,7 @@ nav:
     href: /rest-api/iem_cli/
     children:
 
-      - name: Executable Files and Directories
+      - name: Location
         href: /rest-api/iem_cli/location.html
 
       - name: User Authentication and Session Management
