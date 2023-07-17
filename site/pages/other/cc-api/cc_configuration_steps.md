@@ -11,14 +11,20 @@ Before using the Client Compliance API you must ensure that the following config
 - The BigFix agent must be running.
 
 - on Windows systems, if you plan to use a COM implementation, install COM modules with the command:
-	```
-	Regsvr32.exe BESClientComplianceMOD.dll
-	```
+    ```
+    Regsvr32.exe BESClientComplianceMOD.dll
+    ```
 
-- On Windows systems, the registry key 
+- On 64-bit Windows computers, the registry key
+    ```
+    HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\BigFix\ClientComplianceAPI
+    ```
+
+  On 32-bit Windows computers, the registry key
     ```
     HKEY_LOCAL_MACHINE\SOFTWARE\BigFix\ClientComplianceAPI
-    ``` 
+    ```
+
   must exist and must contain the following strings
     - *RequestDir* – set to the full path where configuration requests are written. The protections on this directory must permit anyone to write files to it and the client to read and delete files.
     - *ResponseDir* – set to the full path where configuration responses are written. The protections on this directory must permit anyone to read files from it and the client to write to it.

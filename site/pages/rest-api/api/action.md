@@ -266,6 +266,266 @@ For example: ```https://server.bigfix.com:52311/api/action/44/stop```
 
 {% endrestapi %}
 
+{% restapi "/api/action/{action id}/downloads", "GET", "Gets the download file information list." %}
+**Request:**  URL is all that is required, for example:  
+
+```
+https://<bigfix_server>:52311/api/action/44/downloads
+```
+
+**Response:** The information about the status of the action in XML format.
+
+For example:
+
+```xml
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <ActionResults Resource="https://gbwindev:52311/api/action/41/downloads">
+        <ActionDownload>
+            <DownloadRequestTarget>
+                <ActionID>41</ActionID>
+                <Index>1</Index>
+                <Hashes hashAlgorithm="sha1">9d3e61a1f0434beb33d9d6dbb0b42a3ae39da696</Hashes>
+                <Size>1851</Size>
+                <URL>http://software.bigfix.com/download/bes/100/AzureAssetDiscoveryPlugin.1.9.5.inspectors</URL>
+            </DownloadRequestTarget>
+            <Status>
+                <State>COMPLETED</State>
+                <Timestamp>Wed, 22 Mar 2023 14:19:42 +0000</Timestamp>
+                <RetryCount>0</RetryCount>
+            </Status>
+            <Available>true</Available>
+            <BytesDownloaded>1851</BytesDownloaded>
+            <TotalBytes>1851</TotalBytes>
+            <RetryLimit>5</RetryLimit>
+        </ActionDownload>
+        <ActionDownload>
+            <DownloadRequestTarget>
+                <ActionID>41</ActionID>
+                <Index>2</Index>
+                <Hashes hashAlgorithm="sha1">973dd18aa9db0415fcbfac8029eea17a035d0df7</Hashes>
+                <Size>27286192</Size>
+                <URL>http://software.bigfix.com/download/bes/100/AzureAssetDiscoveryPlugin.1.9.5.dll</URL>
+            </DownloadRequestTarget>
+            <Status>
+                <State>COMPLETED</State>
+                <Timestamp>Wed, 22 Mar 2023 14:19:50 +0000</Timestamp>
+                <RetryCount>0</RetryCount>
+            </Status>
+            <Available>true</Available>
+            <BytesDownloaded>27286192</BytesDownloaded>
+            <TotalBytes>27286192</TotalBytes>
+            <RetryLimit>5</RetryLimit>
+        </ActionDownload>
+    </ActionResults>
+</BESAPI>
+```
+
+You can retrieve the same data in a JSON format, adding the `output=json` in the URL.
+For example, this call:
+
+```
+https://<bigfix_server>:52311/api/action/44/downloads?output=json
+```
+
+May return this:
+
+```json
+{
+  "ActionID": 50,
+  "State": "Pending",
+  "Error": "",
+  "IsActive": false,
+  "Date": 1674579607000000,
+  "Downloads": [
+    {
+      "DownloadRequestTarget": {
+        "actionID": 50,
+        "index": 1,
+        "hashes": [
+          {
+            "algorithm": "sha1",
+            "value": "60a213a177ebafb74e82b1ff76d38188c75ee84e"
+          }
+        ],
+        "size": null,
+        "url": "https:\u002f\u002fgithub.com\u002fArtifexSoftware\u002fghostpdl-downloads\u002freleases\u002fdownload\u002fgs9550\u002fgs9550w64.exe"
+      },
+      "Status": {
+        "State": "COMPLETED",
+        "Timestamp": 1674579607000000,
+        "RetryCount": 0,
+        "Error": null
+      },
+      "Available": false,
+      "BytesDownloaded": null,
+      "TotalBytes": null,
+      "MinutesToNextRetry": null,
+      "RetryLimit": 5
+    }
+  ]
+}
+```
+
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
+{% restapi "/api/action/{action id}/download/{download_index}", "GET", "Gets a single download information." %}
+**Request:**  URL is all that is required, for example:  
+
+```
+https://<bigfix_server>:52311/api/action/44/download/2
+```
+
+
+**Response:** The information about the status of the action in XML format.
+
+For example:
+
+```xml
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+    <ActionDownload>
+        <DownloadRequestTarget>
+            <ActionID>41</ActionID>
+            <Index>3</Index>
+            <Hashes hashAlgorithm="sha1">44128e3567a83f79b74daec3398da7b7748b98fe</Hashes>
+            <Size>19662080</Size>
+            <URL>http://software.bigfix.com/download/bes/100/AzureAssetDiscoveryPlugin.1.9.5.so</URL>
+        </DownloadRequestTarget>
+        <Status>
+            <State>COMPLETED</State>
+            <Timestamp>Wed, 22 Mar 2023 14:19:53 +0000</Timestamp>
+            <RetryCount>0</RetryCount>
+        </Status>
+        <Available>true</Available>
+        <BytesDownloaded>19662080</BytesDownloaded>
+        <TotalBytes>19662080</TotalBytes>
+        <RetryLimit>5</RetryLimit>
+    </ActionDownload>
+</BES>
+```
+
+You can retrieve the same data in a JSON format, adding the output=json in the URL. 
+For example, this call:
+
+```
+https://<bigfix_server>:52311/api/action/44/download/2?output=json
+```
+
+May return this:
+
+```json
+{
+  "ActionID": 50,
+  "State": "Pending",
+  "Error": "",
+  "IsActive": false,
+  "Date": 1674579607000000,
+  "Downloads": [
+    {
+      "DownloadRequestTarget": {
+        "actionID": 50,
+        "index": 1,
+        "hashes": [
+          {
+            "algorithm": "sha1",
+            "value": "60a213a177ebafb74e82b1ff76d38188c75ee84e"
+          }
+        ],
+        "size": null,
+        "url": "https:\u002f\u002fgithub.com\u002fArtifexSoftware\u002fghostpdl-downloads\u002freleases\u002fdownload\u002fgs9550\u002fgs9550w64.exe"
+      },
+      "Status": {
+        "State": "COMPLETED",
+        "Timestamp": 1674579607000000,
+        "RetryCount": 0,
+        "Error": null
+      },
+      "Available": false,
+      "BytesDownloaded": null,
+      "TotalBytes": null,
+      "MinutesToNextRetry": null,
+      "RetryLimit": 5
+    }
+  ]
+}
+```
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
+{% restapi "/api/action/{action id}/downloads/retry", "POST", "Retries all the downloads." %}
+**Request:**  URL is all that is required, for example:  
+
+``` 
+https://<bigfix_server>:52311/api/action/44/downloads/retry
+```
+
+**Response:** The information about the status of the action in XML format.
+
+For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <RetryDownload Resource="https://localhost:52311/api/action/44/downloads/retry">
+        <Response Value="That download has not failed."/>
+    </RetryDownload>
+</BESAPI>
+```
+
+You can retrieve the same data in a JSON format, adding the output=json in the URL.
+For example, this call: 
+
+```
+https://<bigfix_server>:52311/api/action/44/downloads/retry?output=json
+```
+
+May return this:
+
+```json
+{ "result": "That download has not failed." } 
+```
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
+{% restapi "/api/action/{action id}/download/{download_index}/retry", "POST", "Retries a specific download." %}
+**Request:**  URL is all that is required, for example:  
+
+```
+https://<bigfix_server>:52311/api/action/44/download/1/retry
+```
+
+**Response:** The information about the status of the action in XML format.
+
+For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <RetryDownload Resource="https://localhost:52311/api/action/44/download/1/retry">
+        <Response Value="That download has not failed."/>
+    </RetryDownload>
+</BESAPI>
+```
+
+You can retrieve the same data in a JSON format, adding the `output=json` in the URL.
+For example, this call:
+
+```
+https://<bigfix_server>:52311/api/action/44/download/2/retry?output=json
+```
+
+May return this:
+
+```json
+{ "result": "That download has not failed." } 
+```
+
+**Response Schema:** BESAPI.xsd
+{% endrestapi %}
+
 #### Filtering Response Fields
 You can use the ```?fields=``` parameter to limit the fields returned for a given resource when using the API resources ```/api/actions``` and ```/api/action/{action id}/status```.
 The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. 
