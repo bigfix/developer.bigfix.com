@@ -1,6 +1,6 @@
 # type: smbios value
 
-Information about the SMBIOS (System Management BIOS) is contained in a set of data values stored in collections of individual smbios structures.
+Information about the SMBIOS (System Management BIOS) is contained in a set of data values stored in collections of individual smbios structures. This set of data is not available on Solaris SPARC.
 
 # hexadecimal of &lt;smbios value&gt; : string
 
