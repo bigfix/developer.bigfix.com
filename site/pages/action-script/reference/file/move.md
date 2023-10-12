@@ -6,6 +6,7 @@ This command moves the source file to the named destination file. This command
 can be used to rename a file. The `move` command
 fails if the destination already exists, if the source file doesn’t exist, or if
 the move fails for any other reason.
+
 On Windows, to ensure the file inherits the permissions of the destination folder, we recommend using the `copy` command (or `copy` and `delete`) instead
 of the `move` command.
 
