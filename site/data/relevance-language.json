@@ -12627,6 +12627,29 @@
         ]
       }
     },
+    "user count of <bes product> : integer": {
+      "key": "user count of <bes product> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "user count",
+      "pluralPhrase": "user counts",
+      "directObjectType": "bes product",
+      "availability": {
+        "11.0.1": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "windows server count of <bes product> : integer": {
       "key": "windows server count of <bes product> : integer",
       "type": "property",

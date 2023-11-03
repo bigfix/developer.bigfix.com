@@ -54,6 +54,10 @@ Returns a list of the URLs associated with the specified BES product.
 
 Returns `True` if license is of Term type
 
+# user count of &lt;bes product&gt; : integer
+
+Returns the number of User licenses for the specified licensed BES product.
+
 # windows server count of &lt;bes product&gt; : integer
 
 Returns the number of Windows Servers licensed for the specified product.
