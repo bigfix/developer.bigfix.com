@@ -516,40 +516,76 @@ Converts an integer to a string.
 
 # &lt;integer&gt; as year : year
 
-Casts an integer as a year type.
+Casts an integer to a year type.
+
+# &lt;integer&gt; as uinteger : uinteger
+
+Casts an integer to an unsigned integer.
 
 # &lt;integer&gt; &lt; &lt;integer&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than the value of the right operand.
 
 # &lt;integer&gt; &lt;= &lt;integer&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than or equal to the value of the right operand.
 
 # &lt;integer&gt; * &lt;integer&gt; : integer
 
-No documentation exists.
+Returns the multiplication of the operands.
 
 # &lt;integer&gt; + &lt;integer&gt; : integer
 
-No documentation exists.
+Returns the sum of the operands.
 
 # &lt;integer&gt; - &lt;integer&gt; : integer
 
-No documentation exists.
+Returns the difference between the operands.
 
 # &lt;integer&gt; / &lt;integer&gt; : integer
 
-No documentation exists.
+Returns the division of the left operand by the right operand.
 
 # &lt;integer&gt; = &lt;integer&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is equal to the value of the right operand.
 
 # &lt;integer&gt; mod &lt;integer&gt; : integer
 
-No documentation exists.
+Returns the remainder of the division of the left operand by the right operand.
 
 # - &lt;integer&gt; : integer
 
 Creates the negative of the integer provided.
+
+# &lt;integer&gt; &lt; &lt;uinteger&gt; : boolean
+
+Returns true if the value of the left operand is less than the value of the right operand.
+
+# &lt;integer&gt; &lt;= &lt;uinteger&gt; : boolean
+
+Returns true if the value of the left operand is less than or equal to the value of the right operand.
+
+# &lt;integer&gt; = &lt;uinteger&gt; : boolean
+
+Returns true if the value of the left operand is equal to the value of the right operand.
+
+# &lt;integer&gt; + &lt;uinteger&gt; : uinteger
+
+Returns the sum of the operands.
+
+# &lt;integer&gt; - &lt;uinteger&gt; : uinteger
+
+Returns the difference between the operands.
+
+# &lt;integer&gt; * &lt;uinteger&gt; : uinteger
+
+Returns the multiplication of the operands.
+
+# &lt;integer&gt; / &lt;uinteger&gt; : uinteger
+
+Returns the division of the left operand by the right operand.
+
+# &lt;integer&gt; mod &lt;uinteger&gt; : uinteger
+
+Returns the remainder of the division of the left operand by the right operand.

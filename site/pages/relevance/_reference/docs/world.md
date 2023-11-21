@@ -1114,6 +1114,15 @@ Q: greatest integer
 A: 9223372036854775807
 {% endqna %}
 
+# greatest uinteger : uinteger
+
+Returns the largest unsigned 64-bit integer.
+
+{% qna %}
+Q: greatest uinteger
+A: 18446744073709551615
+{% endqna %}
+
 # greatest time interval : time interval
 
 Returns the greatest time interval representable.
@@ -1391,6 +1400,15 @@ Returns the least 64-bit integer value.
 {% qna %}
 Q: least integer
 A: -9223372036854775808
+{% endqna %}
+
+# least uinteger : uinteger
+
+Returns the least unsigned 64-bit integer value.
+
+{% qna %}
+Q: least uinteger
+A: 0
 {% endqna %}
 
 # least time interval : time interval

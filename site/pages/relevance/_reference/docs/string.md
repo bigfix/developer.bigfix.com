@@ -720,6 +720,10 @@ Creates an integer from the provided hexadecimal value.
 
 Creates a string from the given hexadecimal value.
 
+# hexadecimal uinteger &lt;string&gt; : uinteger
+
+Creates an unsigned integer from the provided hexadecimal value.
+
 # hfs file &lt;string&gt; : file
 
 Returns the hierachical file system (HFS) file specified by &lt;string&gt;.
@@ -762,7 +766,15 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;ins&gt
 
 # integer &lt;string&gt; : integer
 
-Returns integer for name provided.
+Returns the integer value of the provided string.
+
+{% qna %}
+Q: integer "5"
+A: 5
+
+Q: integer "-5"
+A: -5
+{% endqna %}
 
 # ips repo &lt;string&gt; : ips repo
 
@@ -1514,6 +1526,15 @@ No documentation exists.
 
 No documentation exists.
 
+# uinteger &lt;string&gt; : uinteger
+
+Returns the unsigned integer value of the provided string.
+
+{% qna %}
+Q: uinteger "5"
+A: 5
+{% endqna %}
+
 # ul &lt;string&gt; of &lt;string&gt; : html
 
 Returns an HTML snippet with the specified string enclosed in a &lt;ul&gt; (unordered list) tag modified by the first given string.
@@ -1664,7 +1685,7 @@ Casts a string into html.
 
 # &lt;string&gt; as integer : integer
 
-Returns an integer value for the string provided. If the string contains anything but ASCII digits, the conversion will fail. Use numeric value for more liberal parsing rules.
+Converts the provided string into the corresponding integer value. If the string contains anything but a number, the conversion will fail. Use `numeric value` for more liberal parsing rules.
 
 # &lt;string&gt; as ipv4or6 address : ipv4or6 address
 
@@ -1734,6 +1755,10 @@ Converts a string to a time_of_day type.
 
 Trims the leading and trailing spaces off of the specified string.
 
+# &lt;string&gt; as uinteger : uinteger
+
+Converts the provided string into the corresponding unsigned integer value. If the string contains anything but a number, the conversion will fail. Use `numeric value` for more liberal parsing rules.
+
 # &lt;string&gt; as universal time : time
 
 Returns a universal time object from a properly formatted string.
@@ -1744,7 +1769,7 @@ Converts a string into a universal zoned time of day.
 
 # &lt;string&gt; as uppercase : string
 
-Returns an uppercase version of the string provided.
+Returns the uppercase version of the provided string.
 
 # &lt;string&gt; as utf16 binary_string : binary_string
 
@@ -1776,15 +1801,15 @@ Concatenates two strings, producing a new string.
 
 # &lt;string&gt; &lt; &lt;string&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than the value of the right operand.
 
 # &lt;string&gt; &lt;= &lt;string&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than or equal to the value of the right operand.
 
 # &lt;string&gt; = &lt;string&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is equal to the value of the right operand.
 
 # &lt;string&gt; contains &lt;string&gt; : boolean
 

@@ -178,32 +178,32 @@ Converts a floating point number into a string with standard notation.
 
 # &lt;floating point&gt; &lt; &lt;floating point&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than the value of the right operand.
 
 # &lt;floating point&gt; &lt;= &lt;floating point&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than or equal to the value of the right operand.
 
 # &lt;floating point&gt; * &lt;floating point&gt; : floating point
 
-No documentation exists.
+Returns the multiplication of the operands.
 
 # &lt;floating point&gt; + &lt;floating point&gt; : floating point
 
-No documentation exists.
+Returns the sum of the operands.
 
 # &lt;floating point&gt; - &lt;floating point&gt; : floating point
 
-No documentation exists.
+Returns the difference between the operands.
 
 # &lt;floating point&gt; / &lt;floating point&gt; : floating point
 
-No documentation exists.
+Returns the division of the left operand by the right operand.
 
 # &lt;floating point&gt; = &lt;floating point&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is equal to the value of the right operand.
 
 # - &lt;floating point&gt; : floating point
 
-Change the sign of a floating point number.
+Changes the sign of a floating point number.
