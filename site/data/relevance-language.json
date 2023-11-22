@@ -25877,6 +25877,28 @@
         ]
       }
     },
+    "bit <integer> of <uinteger> : boolean": {
+      "key": "bit <integer> of <uinteger> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "bit",
+      "pluralPhrase": "bits",
+      "indexType": "integer",
+      "directObjectType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "december <integer> of <integer> : date": {
       "key": "december <integer> of <integer> : date",
       "type": "property",
