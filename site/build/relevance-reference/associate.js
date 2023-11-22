@@ -147,7 +147,13 @@ function associateProperty(property, creation, methods, references) {
     return;
   }
 
-  creation[property.resultType].properties.push(property.key);
+  try {
+    creation[property.resultType].properties.push(property.key);
+  } catch (err) {
+    console.error('Error in "associateProperty" function using "property" object:\n'
+                  + JSON.stringify(property, null, 2));
+    throw err;
+  }
 }
 
 /**
