@@ -40,16 +40,6 @@ Q: multiplicity of unique values of (uinteger "2"; uinteger "5"; uinteger "2")
 A: 2
 {% endqna %}
 
-# unique value of &lt;uinteger&gt; : uinteger with multiplicity
-
-Returns the unique values of a given list of &lt;uinteger&gt; types, removing duplicates and sorting by value.
-
-{% qna %}
-Q: unique values of (uinteger "2"; uinteger "5"; uinteger "2")
-A: 2
-A: 5
-{% endqna %}
-
 # &lt;uinteger&gt; as integer : integer
 
 Converts an unsigned integer into an integer.

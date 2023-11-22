@@ -26817,27 +26817,6 @@
         ]
       }
     },
-    "unique value of <uinteger> : uinteger with multiplicity": {
-      "key": "unique value of <uinteger> : uinteger with multiplicity",
-      "type": "property",
-      "resultType": "uinteger with multiplicity",
-      "singularPhrase": "unique value",
-      "pluralPhrase": "unique values",
-      "directObjectType": "uinteger",
-      "availability": {
-        "11.0.1.0": [
-          "AIX",
-          "Debian",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "<integer set> * <integer set> : integer set": {
       "key": "<integer set> * <integer set> : integer set",
       "type": "binaryOp",
