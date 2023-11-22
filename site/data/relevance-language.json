@@ -27087,27 +27087,6 @@
         ]
       }
     },
-    "multiplicity of <uinteger with multiplicity> : integer": {
-      "key": "multiplicity of <uinteger with multiplicity> : integer",
-      "type": "property",
-      "resultType": "integer",
-      "singularPhrase": "multiplicity",
-      "pluralPhrase": "multiplicities",
-      "directObjectType": "uinteger with multiplicity",
-      "availability": {
-        "11.0.1.0": [
-          "AIX",
-          "Debian",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "<ip version> = <ip version> : boolean": {
       "key": "<ip version> = <ip version> : boolean",
       "type": "binaryOp",

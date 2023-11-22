@@ -31,15 +31,6 @@ Returns the maximum of a list of unsigned integers.
 
 Returns the minimum of a list of unsigned integers.
 
-# multiplicity of &lt;uinteger with multiplicity&gt; : integer
-
-Returns the number of times each element occurs in a list of unsigned integers.
-
-{% qna %}
-Q: multiplicity of unique values of (uinteger "2"; uinteger "5"; uinteger "2")
-A: 2
-{% endqna %}
-
 # &lt;uinteger&gt; as integer : integer
 
 Converts an unsigned integer into an integer.
