@@ -25524,6 +25524,26 @@
         ]
       }
     },
+    "<uinteger> as uinteger : uinteger": {
+      "key": "<uinteger> as uinteger : uinteger",
+      "type": "cast",
+      "resultType": "uinteger",
+      "argType": "uinteger",
+      "phrase": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "<integer> as year : year": {
       "key": "<integer> as year : year",
       "type": "cast",
