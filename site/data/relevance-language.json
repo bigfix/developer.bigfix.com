@@ -79798,19 +79798,6 @@
         ]
       }
     },
-    "maximum allowed permission of <access control entry> : boolean": {
-      "key": "maximum allowed permission of <access control entry> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "maximum allowed permission",
-      "pluralPhrase": "maximum allowed permissions",
-      "directObjectType": "access control entry",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
     "query value permission of <access control entry> : boolean": {
       "key": "query value permission of <access control entry> : boolean",
       "type": "property",
@@ -80026,34 +80013,6 @@
       "resultType": "integer",
       "singularPhrase": "effective access mode for",
       "pluralPhrase": "effective access modes for",
-      "indexType": "string",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective access system security permission for <security account> of <access control list> : boolean": {
-      "key": "effective access system security permission for <security account> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective access system security permission for",
-      "pluralPhrase": "effective access system security permissions for",
-      "indexType": "security account",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective access system security permission for <string> of <access control list> : boolean": {
-      "key": "effective access system security permission for <string> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective access system security permission for",
-      "pluralPhrase": "effective access system security permissions for",
       "indexType": "string",
       "directObjectType": "access control list",
       "availability": {
@@ -80474,34 +80433,6 @@
       "resultType": "boolean",
       "singularPhrase": "effective list permission for",
       "pluralPhrase": "effective list permissions for",
-      "indexType": "string",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective maximum allowed permission for <security account> of <access control list> : boolean": {
-      "key": "effective maximum allowed permission for <security account> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective maximum allowed permission for",
-      "pluralPhrase": "effective maximum allowed permissions for",
-      "indexType": "security account",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective maximum allowed permission for <string> of <access control list> : boolean": {
-      "key": "effective maximum allowed permission for <string> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective maximum allowed permission for",
-      "pluralPhrase": "effective maximum allowed permissions for",
       "indexType": "string",
       "directObjectType": "access control list",
       "availability": {
@@ -108164,19 +108095,6 @@
       "availability": {
         "9.1.1065.0": [
           "Mac"
-        ]
-      }
-    },
-    "access system security permission of <access control entry> : boolean": {
-      "key": "access system security permission of <access control entry> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "access system security permission",
-      "pluralPhrase": "access system security permissions",
-      "directObjectType": "access control entry",
-      "availability": {
-        "9.1.1065.0": [
-          "Windows"
         ]
       }
     },

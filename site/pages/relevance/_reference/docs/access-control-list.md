@@ -10,14 +10,6 @@ Returns an integer corresponding to the access mode for the trustee specified by
 
 Returns an integer corresponding to the access mode for the trustee specified by &lt;string&gt; of the given access control list.Example: effective access mode for "Administrators" of dacls of security descriptors of system folder as hexadecimal - Returns a hex value corresponding to the access mode of the system folder for users logged in as Administrators.
 
-# effective access system security permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
-
-Returns `True` if the trustee specified by the security account has access system security permissions on the given access control list.
-
-# effective access system security permission for &lt;string&gt; of &lt;access control list&gt; : boolean
-
-Returns `True` if the trustee specified by &lt;string&gt; has access system security permissions on the given access control list.
-
 # effective append permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
 Returns `True` if the trustee specified by the security account has append permissions on the given access control list.
@@ -137,14 +129,6 @@ Returns `True` if the trustee specified by the security account has list permiss
 # effective list permission for &lt;string&gt; of &lt;access control list&gt; : boolean
 
 Returns `True` if the trustee specified by &lt;string&gt; has list permissions on the given access control list.
-
-# effective maximum allowed permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
-
-Returns `True` if the trustee specified by the security account has maximum allowed permissions on the given access control list.
-
-# effective maximum allowed permission for &lt;string&gt; of &lt;access control list&gt; : boolean
-
-Returns `True` if the trustee specified by the security account has maximum allowed permissions on the given access control list.
 
 # effective query value permission for &lt;security account&gt; of &lt;access control list&gt; : boolean
 
