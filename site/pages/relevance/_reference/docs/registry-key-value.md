@@ -54,14 +54,18 @@ If the value contains a string and the string points to an file, a file object i
 
 If the data stored in the value is a string in MIME compliant date format, this property will return a time object. If the data stored is a binary value and is 16 or more bytes in length, its first 16 bytes are interpreted as a SYSTEMTIME and the corresponding time object is returned. See time.
 
+# &lt;registry key value&gt; as uinteger : uinteger
+
+Returns the value stored in the registry entry, provided it can be fully represented as an unsigned integer.
+
 # &lt;registry key value&gt; &lt; &lt;registry key value&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than the value of the right operand.
 
 # &lt;registry key value&gt; &lt;= &lt;registry key value&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is less than or equal to the value of the right operand.
 
 # &lt;registry key value&gt; = &lt;registry key value&gt; : boolean
 
-No documentation exists.
+Returns true if the value of the left operand is equal to the value of the right operand.

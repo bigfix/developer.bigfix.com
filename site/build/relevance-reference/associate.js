@@ -99,55 +99,60 @@ function associateCast(property, creation, methods, references) {
 }
 
 function associateProperty(property, creation, methods, references) {
-  
-  if (property.directObjectType) {
-    // This is a 'property of <directObjectType>'. Associate it with that type.
-    assertNotTuple(property.directObjectType);
-    methods[property.directObjectType].properties.push(property.key);
+  try {
+    if (property.directObjectType) {
+      // This is a 'property of <directObjectType>'. Associate it with that type.
+      assertNotTuple(property.directObjectType);
+      methods[property.directObjectType].properties.push(property.key);
 
-    // In search results, link to this property on the page for
-    // 'directObjectType'.
-    references[property.key] = property.directObjectType;
-  } else if (property.indexType) {
-    // This is a 'property <indexType>', but it doesn't have an 'of'. In this
-    // case, 'indexType' might be a tuple type. Associate it with every distinct
-    // index type.
-    var indexTypes = unique(types(property.indexType));
+      // In search results, link to this property on the page for
+      // 'directObjectType'.
+      references[property.key] = property.directObjectType;
+    } else if (property.indexType) {
+      // This is a 'property <indexType>', but it doesn't have an 'of'. In this
+      // case, 'indexType' might be a tuple type. Associate it with every distinct
+      // index type.
+      var indexTypes = unique(types(property.indexType));
+
+      indexTypes.forEach(function(type) {
+        assertNotTuple(type);
+        methods[type].properties.push(property.key);
+      });
+
+      // In search results, link to this property on the first tuple type in the
+      // 'indexType'.
+      references[property.key] = indexTypes[0];
+    } else {
+      // This is a 'property' that doesn't have any other argument types.
+      assertNotTuple(property.resultType);
+
+      // In search results, link to this property on the page for its
+      // 'resultType'.
+      references[property.key] = property.resultType;
+    }
     
-    indexTypes.forEach(function(type) {
-      assertNotTuple(type);
-      methods[type].properties.push(property.key);
-    });
+    // We don't handle creation properties for tuple types.
+    if (isTupleType(property.resultType)) {
+      return;
+    }
 
-    // In search results, link to this property on the first tuple type in the
-    // 'indexType'.
-    references[property.key] = indexTypes[0];
-  } else {
-    // This is a 'property' that doesn't have any other argument types.
-    assertNotTuple(property.resultType);
+    // This is a creation property for 'resultType' if 'resultType' isn't any of
+    // the argument types.
+    if (property.directObjectType === property.resultType) {
+      return;
+    }
 
-    // In search results, link to this property on the page for its
-    // 'resultType'.
-    references[property.key] = property.resultType;
+    if (!property.directObjectType && property.indexType &&
+        property.indexType.indexOf(property.resultType) !== -1) {
+      return;
+    }
+
+    creation[property.resultType].properties.push(property.key);
+  } catch (err) {
+    console.error('Error in "associateProperty" function using "property" object:\n'
+                  + JSON.stringify(property, null, 2));
+    throw err;
   }
-
-  // We don't handle creation properties for tuple types.
-  if (isTupleType(property.resultType)) {
-    return;
-  }
-
-  // This is a creation property for 'resultType' if 'resultType' isn't any of
-  // the argument types.
-  if (property.directObjectType === property.resultType) {
-    return;
-  }
-
-  if (!property.directObjectType && property.indexType &&
-      property.indexType.indexOf(property.resultType) !== -1) {
-    return;
-  }
-
-  creation[property.resultType].properties.push(property.key);
 }
 
 /**

@@ -6,10 +6,6 @@ An Access Control Entity, or ACE, is an entry in an access control list (ACL). A
 
 For a discretionary ACL (DACL), this flag indicates whether the ACL allows (1) or denies (3) the specified access rights.
 
-# access system security permission of &lt;access control entry&gt; : boolean
-
-No documentation exists.
-
 # ace flag of &lt;access control entry&gt; : integer
 
 Returns the Access Control Entry (ACE) flag, an unsigned 8-bit integer containing a set of one-bit control flags related to inheritance and auditing. The values include:0x01 - OBJECT_INHERIT_ACE0x02 - CONTAINER_INHERIT_ACE0x04 - NO_PROPAGATE_INHERIT_ACE 0x08 - INHERIT_ONLY_ACE0x10 - INHERITED_ACE0x40 - SUCCESSFUL_ACCESS_ACE_FLAG  0x80 - FAILED_ACCESS_ACE_FLAG
@@ -109,10 +105,6 @@ Returns `True` if the ACE header flag has the value 0x10, indicating that the IN
 # list permission of &lt;access control entry&gt; : boolean
 
 For a folder ACE, returns `True` if the ACE grants or denies list permissions.
-
-# maximum allowed permission of &lt;access control entry&gt; : boolean
-
-For any ACE, returns `True` if the ACE grants or denies maximum allowed permissions.
 
 # no propagate inherit of &lt;access control entry&gt; : boolean
 

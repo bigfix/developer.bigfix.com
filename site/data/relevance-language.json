@@ -986,6 +986,22 @@
         ]
       }
     },
+    "uinteger": {
+      "name": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+         ]
+      }
+    },
     "integer set": {
       "name": "integer set",
       "availability": {
@@ -12624,6 +12640,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "user count of <bes product> : integer": {
+      "key": "user count of <bes product> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "user count",
+      "pluralPhrase": "user counts",
+      "directObjectType": "bes product",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -24753,6 +24790,510 @@
         ]
       }
     },
+    "<uinteger> * <uinteger> : uinteger": {
+      "key": "<uinteger> * <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "*",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> + <uinteger> : uinteger": {
+      "key": "<uinteger> + <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "+",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> - <uinteger> : uinteger": {
+      "key": "<uinteger> - <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "-",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> / <uinteger> : uinteger": {
+      "key": "<uinteger> / <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "/",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> < <uinteger> : boolean": {
+      "key": "<uinteger> < <uinteger> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "uinteger",
+      "op": "<",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> <= <uinteger> : boolean": {
+      "key": "<uinteger> <= <uinteger> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "uinteger",
+      "op": "<=",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> = <uinteger> : boolean": {
+      "key": "<uinteger> = <uinteger> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "uinteger",
+      "op": "=",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> mod <uinteger> : uinteger": {
+      "key": "<uinteger> mod <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "mod",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> * <integer> : uinteger": {
+      "key": "<uinteger> * <integer> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "*",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> + <integer> : uinteger": {
+      "key": "<uinteger> + <integer> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "+",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> - <integer> : uinteger": {
+      "key": "<uinteger> - <integer> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "-",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> / <integer> : uinteger": {
+      "key": "<uinteger> / <integer> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "/",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> < <integer> : boolean": {
+      "key": "<uinteger> < <integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "uinteger",
+      "op": "<",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> <= <integer> : boolean": {
+      "key": "<uinteger> <= <integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "uinteger",
+      "op": "<=",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> = <integer> : boolean": {
+      "key": "<uinteger> = <integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "uinteger",
+      "op": "=",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> mod <integer> : uinteger": {
+      "key": "<uinteger> mod <integer> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "uinteger",
+      "op": "mod",
+      "rightType": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> * <uinteger> : uinteger": {
+      "key": "<integer> * <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "integer",
+      "op": "*",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> + <uinteger> : uinteger": {
+      "key": "<integer> + <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "integer",
+      "op": "+",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> - <uinteger> : uinteger": {
+      "key": "<integer> - <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "integer",
+      "op": "-",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> / <uinteger> : uinteger": {
+      "key": "<integer> / <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "integer",
+      "op": "/",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> < <uinteger> : boolean": {
+      "key": "<integer> < <uinteger> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "integer",
+      "op": "<",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> <= <uinteger> : boolean": {
+      "key": "<integer> <= <uinteger> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "integer",
+      "op": "<=",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> = <uinteger> : boolean": {
+      "key": "<integer> = <uinteger> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "integer",
+      "op": "=",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> mod <uinteger> : uinteger": {
+      "key": "<integer> mod <uinteger> : uinteger",
+      "type": "binaryOp",
+      "resultType": "uinteger",
+      "leftType": "integer",
+      "op": "mod",
+      "rightType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "<integer> as bit set : bit set": {
       "key": "<integer> as bit set : bit set",
       "type": "cast",
@@ -24960,6 +25501,46 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "<uinteger> as string : string": {
+      "key": "<uinteger> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "uinteger",
+      "phrase": "string",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> as uinteger : uinteger": {
+      "key": "<uinteger> as uinteger : uinteger",
+      "type": "cast",
+      "resultType": "uinteger",
+      "argType": "uinteger",
+      "phrase": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -25316,6 +25897,28 @@
         ]
       }
     },
+    "bit <integer> of <uinteger> : boolean": {
+      "key": "bit <integer> of <uinteger> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "bit",
+      "pluralPhrase": "bits",
+      "indexType": "integer",
+      "directObjectType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "december <integer> of <integer> : date": {
       "key": "december <integer> of <integer> : date",
       "type": "property",
@@ -25396,6 +25999,27 @@
         "9.5.13.130": [
           "Raspbian"
         ]
+      }
+    },
+    "extrema of <uinteger> : ( uinteger, uinteger )": {
+      "key": "extrema of <uinteger> : ( uinteger, uinteger )",
+      "type": "property",
+      "resultType": "( uinteger, uinteger )",
+      "singularPhrase": "extrema",
+      "pluralPhrase": "extremas",
+      "directObjectType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+         ]
       }
     },
     "february <integer> of <integer> : date": {
@@ -25714,6 +26338,27 @@
         ]
       }
     },
+    "maximum of <uinteger> : uinteger": {
+      "key": "maximum of <uinteger> : uinteger",
+      "type": "property",
+      "resultType": "uinteger",
+      "singularPhrase": "maximum",
+      "pluralPhrase": "maxima",
+      "directObjectType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "may <integer> of <integer> : date": {
       "key": "may <integer> of <integer> : date",
       "type": "property",
@@ -25820,6 +26465,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "minimum of <uinteger> : uinteger": {
+      "key": "minimum of <uinteger> : uinteger",
+      "type": "property",
+      "resultType": "uinteger",
+      "singularPhrase": "minimum",
+      "pluralPhrase": "minima",
+      "directObjectType": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -32352,6 +33018,86 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "<string> as uinteger : uinteger": {
+      "key": "<string> as uinteger : uinteger",
+      "type": "cast",
+      "resultType": "uinteger",
+      "argType": "string",
+      "phrase": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> as uinteger : uinteger": {
+      "key": "<integer> as uinteger : uinteger",
+      "type": "cast",
+      "resultType": "uinteger",
+      "argType": "integer",
+      "phrase": "uinteger",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> as integer : integer": {
+      "key": "<uinteger> as integer : integer",
+      "type": "cast",
+      "resultType": "integer",
+      "argType": "uinteger",
+      "phrase": "integer",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<uinteger> as hexadecimal : string": {
+      "key": "<uinteger> as hexadecimal : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "uinteger",
+      "phrase": "hexadecimal",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -43996,6 +44742,26 @@
         ]
       }
     },
+    "greatest uinteger : uinteger": {
+      "key": "greatest uinteger : uinteger",
+      "type": "property",
+      "resultType": "uinteger",
+      "singularPhrase": "greatest uinteger",
+      "pluralPhrase": "greatest uintegers",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "greatest time interval : time interval": {
       "key": "greatest time interval : time interval",
       "type": "property",
@@ -44046,6 +44812,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "hexadecimal uinteger <string> : uinteger": {
+      "key": "hexadecimal uinteger <string> : uinteger",
+      "type": "property",
+      "resultType": "uinteger",
+      "singularPhrase": "hexadecimal uinteger",
+      "pluralPhrase": "hexadecimal uintegers",
+      "indexType": "string",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -44442,6 +45229,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "uinteger <string> : uinteger": {
+      "key": "uinteger <string> : uinteger",
+      "type": "property",
+      "resultType": "uinteger",
+      "singularPhrase": "uinteger",
+      "pluralPhrase": "uintegers",
+      "indexType": "string",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -44920,6 +45728,26 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "least uinteger : uinteger": {
+      "key": "least uinteger : uinteger",
+      "type": "property",
+      "resultType": "uinteger",
+      "singularPhrase": "least uinteger",
+      "pluralPhrase": "least uintegers",
+      "availability": {
+        "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -78970,19 +79798,6 @@
         ]
       }
     },
-    "maximum allowed permission of <access control entry> : boolean": {
-      "key": "maximum allowed permission of <access control entry> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "maximum allowed permission",
-      "pluralPhrase": "maximum allowed permissions",
-      "directObjectType": "access control entry",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
     "query value permission of <access control entry> : boolean": {
       "key": "query value permission of <access control entry> : boolean",
       "type": "property",
@@ -79198,34 +80013,6 @@
       "resultType": "integer",
       "singularPhrase": "effective access mode for",
       "pluralPhrase": "effective access modes for",
-      "indexType": "string",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective access system security permission for <security account> of <access control list> : boolean": {
-      "key": "effective access system security permission for <security account> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective access system security permission for",
-      "pluralPhrase": "effective access system security permissions for",
-      "indexType": "security account",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective access system security permission for <string> of <access control list> : boolean": {
-      "key": "effective access system security permission for <string> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective access system security permission for",
-      "pluralPhrase": "effective access system security permissions for",
       "indexType": "string",
       "directObjectType": "access control list",
       "availability": {
@@ -79646,34 +80433,6 @@
       "resultType": "boolean",
       "singularPhrase": "effective list permission for",
       "pluralPhrase": "effective list permissions for",
-      "indexType": "string",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective maximum allowed permission for <security account> of <access control list> : boolean": {
-      "key": "effective maximum allowed permission for <security account> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective maximum allowed permission for",
-      "pluralPhrase": "effective maximum allowed permissions for",
-      "indexType": "security account",
-      "directObjectType": "access control list",
-      "availability": {
-        "8.0.584.0": [
-          "Windows"
-        ]
-      }
-    },
-    "effective maximum allowed permission for <string> of <access control list> : boolean": {
-      "key": "effective maximum allowed permission for <string> of <access control list> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "effective maximum allowed permission for",
-      "pluralPhrase": "effective maximum allowed permissions for",
       "indexType": "string",
       "directObjectType": "access control list",
       "availability": {
@@ -87375,6 +88134,18 @@
       "phrase": "time",
       "availability": {
         "8.0.584.0": [
+          "Windows"
+        ]
+      }
+    },
+    "<registry key value> as uinteger : uinteger": {
+      "key": "<registry key value> as uinteger : uinteger",
+      "type": "cast",
+      "resultType": "uinteger",
+      "argType": "registry key value",
+      "phrase": "uinteger",
+      "availability": {
+        "11.0.1.0": [
           "Windows"
         ]
       }
@@ -107324,19 +108095,6 @@
       "availability": {
         "9.1.1065.0": [
           "Mac"
-        ]
-      }
-    },
-    "access system security permission of <access control entry> : boolean": {
-      "key": "access system security permission of <access control entry> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "access system security permission",
-      "pluralPhrase": "access system security permissions",
-      "directObjectType": "access control entry",
-      "availability": {
-        "9.1.1065.0": [
-          "Windows"
         ]
       }
     },
