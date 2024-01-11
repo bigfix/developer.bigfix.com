@@ -1026,6 +1026,10 @@ This refers to a group including all users, even anonymous users and guests. Mem
 
 Returns a &#39;task action type&#39; corresponding to a task that runs a program.
 
+# explorer service : service
+
+Returns a service object for the 'BESExplorer' service, if available on the local system.
+
 # extension : enableable_file
 
 No documentation exists.

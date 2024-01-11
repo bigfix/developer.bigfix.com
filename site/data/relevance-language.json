@@ -97054,6 +97054,25 @@
         ]
       }
     },
+    "explorer service : service": {
+      "key": "explorer service : service",
+      "type": "property",
+      "resultType": "service",
+      "singularPhrase": "explorer service",
+      "pluralPhrase": "explorer services",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "local user <string> : user": {
       "key": "local user <string> : user",
       "type": "property",
