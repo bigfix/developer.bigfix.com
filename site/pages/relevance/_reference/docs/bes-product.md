@@ -10,6 +10,10 @@ No documentation exists.
 
 Returns the number of computers allowed under the license terms of the specified BES product.
 
+# device count of &lt;bes product&gt; : integer
+
+Returns the number of device licenses for the specified licensed BES product.
+
 # eula accepted of &lt;bes product&gt; : boolean
 
 No documentation exists.
