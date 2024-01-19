@@ -22,7 +22,7 @@ Both types of relevance language share the same basic syntax and constructs, nam
   <dt>[What is New in the BigFix Version 11 Inspectors](/relevance/whatisnew.html)</dt>
   <dd>A page where you can find listed the added or modified inspectors starting from BigFix Version 11.</dd>
  </dl>
-.</p>
+</p>
 {% endsection %}
 
 **Note:** If you are new to this language, first watch the introductory video [Exploring the Relevance Language](https://www.youtube.com/watch?v=7fyGn3Inw1s ).
