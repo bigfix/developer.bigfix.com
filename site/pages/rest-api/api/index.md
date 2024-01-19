@@ -8,6 +8,7 @@ Begin learning about the available REST API resources and how to use them.
   <li>[Action](./action.html)</li>
   <li>[Admin](./admin.html)</li>
   <li>[Analysis](./analysis.html)</li>
+  <li>[Archive Manager](./archivemanager.html)</li>
   <li>[Baseline](./baseline.html)</li>
   <li>[BigFix Query](./bigfix_query.html)</li>
   <li>[Computer](./computer.html)</li>

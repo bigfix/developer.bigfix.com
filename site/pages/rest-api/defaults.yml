@@ -33,6 +33,9 @@ nav:
       - name: Analysis
         href: /rest-api/api/analysis.html
 
+      - name: Archive Manager
+        href: /rest-api/api/archivemanager.html
+
       - name: Baseline
         href: /rest-api/api/baseline.html
 
