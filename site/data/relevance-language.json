@@ -108372,6 +108372,27 @@
         ]
       }
     },
+    "linux of <operating system> : boolean": {
+      "key": "linux of <operating system> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "linux",
+      "pluralPhrase": "linuxes",
+      "directObjectType": "operating system",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "Solaris",
+          "SUSE",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "x32 of <operating system> : boolean": {
       "key": "x32 of <operating system> : boolean",
       "type": "property",

@@ -170,6 +170,24 @@ Q: little endian of operating system
 A: True
 {% endqna %}
 
+# linux of &lt;operating system&gt; : boolean
+
+Returns `True` if the computer is running Linux.
+
+Example of QnA ran on Linux Ubuntu 20.04.4 LTS.
+
+{% qna %}
+Q: linux of of operating system
+A: True
+{% endqna %}
+
+Example of QnA ran on Windows Server 2022.
+
+{% qna %}
+Q: linux of of operating system
+A: False
+{% endqna %}
+
 # mac of &lt;operating system&gt; : boolean
 
 Returns `True` if the computer is a Macintosh.
