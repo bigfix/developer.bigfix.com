@@ -51,6 +51,9 @@ nav:
       - name: Dashboard Variable
         href: /rest-api/api/dashboardvariable.html
 
+      - name: Explorer
+        href: /rest-api/api/explorer.html
+
       - name: Fixlet
         href: /rest-api/api/fixlet.html
 
