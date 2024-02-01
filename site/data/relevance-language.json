@@ -12535,6 +12535,19 @@
         ]
       }
     },
+    "device count of <bes product> : integer": {
+      "key": "device count of <bes product> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "device count",
+      "pluralPhrase": "device counts",
+      "directObjectType": "bes product",
+      "availability": {
+        "11.0.1.0": [
+          "Session"
+        ]
+      }
+    },
     "expiration date of <bes product> : date": {
       "key": "expiration date of <bes product> : date",
       "type": "property",
@@ -12652,15 +12665,7 @@
       "directObjectType": "bes product",
       "availability": {
         "11.0.1.0": [
-          "AIX",
-          "Debian",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
+          "Session"
         ]
       }
     },

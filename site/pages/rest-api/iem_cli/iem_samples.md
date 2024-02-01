@@ -419,16 +419,16 @@ To add a file to a custom site as master operator, run the following command:
 ```
 To add a file to the master action site as master operator, run the following command:
 ```
-iem post /tmp/file.my /api/site/master/file/file.my --force=yes
+iem post /tmp/file.my /api/site/master/file/file.my --force=true
 ```
-Where the option `--force=yes` allows to override the file it if already exists in the site.
+Where the option `--force=true` allows to override the file it if already exists in the site.
 To add a file to the operator site as non master operator, run the following command:
 ```
-iem post /tmp/file.my /api/site/operator/nmo/file/file.my
+iem post /tmp/file.my /api/site/operator/nmo/file/file.my --isClientFile=true
 ```
-Where the option `--isClient=yes` allows to make the file available for download by Clients.
+Where the option `--isClientFile=true` allows to make the file available for download by Clients.
 
-The options `--force` and `--isClient` apply when running post and put requests against files, both as master and as non master operator. For more details, see [Site](../api/site.html).
+The options `--force` and `--isClientFile` apply when running post and put requests against files, both as master and as non master operator. For more details, see [Site](../api/site.html).
 
 ## System Options
 To display MinimumRefreshSeconds (seconds), and DefaultFixletVisibility (Visible, Hidden) run the following command:

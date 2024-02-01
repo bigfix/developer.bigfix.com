@@ -20,11 +20,11 @@ Where the option `force=true` allows to override the file it if already exists i
 
 To add a file to the operator site as non master operator, run the following command:
 ```
-curl -k --user nmo:{password} -X POST -F "file=@/tmp/file.my" "https://{server}:{port}/api/site/operator/nmo/file/file.my?isClient=true"
+curl -k --user nmo:{password} -X POST -F "file=@/tmp/file.my" "https://{server}:{port}/api/site/operator/nmo/file/file.my?isClientFile=true"
 ```
-Where the option `isClient=true` allows to make the file available for download by Clients.
+Where the option `isClientFile=true` allows to make the file available for download by Clients.
 
-The options `force` and `isClient` apply when running post and put requests against files, both as master and as non master operator. For these two options values different from false are managed as true.
+The options `force` and `isClientFile` apply when running post and put requests against files, both as master and as non master operator. For these two options values different from false are managed as true.
 
 Use the syntax `?key1=value1;key2=value2` to specify multiple options, for example:
 ```
