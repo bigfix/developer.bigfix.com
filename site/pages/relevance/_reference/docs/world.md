@@ -1118,6 +1118,15 @@ Q: greatest integer
 A: 9223372036854775807
 {% endqna %}
 
+# greatest large integer : large integer
+
+Returns the largest signed 128-bit integer.
+
+{% qna %}
+Q: greatest large integer
+A: 170141183460469231731687303715884105727
+{% endqna %}
+
 # greatest uinteger : uinteger
 
 Returns the largest unsigned 64-bit integer.
@@ -1404,6 +1413,15 @@ Returns the least 64-bit integer value.
 {% qna %}
 Q: least integer
 A: -9223372036854775808
+{% endqna %}
+
+# least large integer : large integer
+
+Returns the least signed 128-bit integer value.
+
+{% qna %}
+Q: least large integer
+A: -170141183460469231731687303715884105728
 {% endqna %}
 
 # least uinteger : uinteger

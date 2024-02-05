@@ -1002,6 +1002,22 @@
          ]
       }
     },
+    "large integer": {
+      "name": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+         ]
+      }
+    },
     "integer set": {
       "name": "integer set",
       "availability": {
@@ -25299,6 +25315,510 @@
         ]
       }
     },
+    "<large integer> * <large integer> : large integer": {
+      "key": "<large integer> * <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "*",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> + <large integer> : large integer": {
+      "key": "<large integer> + <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "+",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> - <large integer> : large integer": {
+      "key": "<large integer> - <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "-",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> / <large integer> : large integer": {
+      "key": "<large integer> / <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "/",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> < <large integer> : boolean": {
+      "key": "<large integer> < <large integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "large integer",
+      "op": "<",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> <= <large integer> : boolean": {
+      "key": "<large integer> <= <large integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "large integer",
+      "op": "<=",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> = <large integer> : boolean": {
+      "key": "<large integer> = <large integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "large integer",
+      "op": "=",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> mod <large integer> : large integer": {
+      "key": "<large integer> mod <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "mod",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> * <integer> : large integer": {
+      "key": "<large integer> * <integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "*",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> + <integer> : large integer": {
+      "key": "<large integer> + <integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "+",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> - <integer> : large integer": {
+      "key": "<large integer> - <integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "-",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> / <integer> : large integer": {
+      "key": "<large integer> / <integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "/",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> < <integer> : boolean": {
+      "key": "<large integer> < <integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "large integer",
+      "op": "<",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> <= <integer> : boolean": {
+      "key": "<large integer> <= <integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "large integer",
+      "op": "<=",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> = <integer> : boolean": {
+      "key": "<large integer> = <integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "large integer",
+      "op": "=",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> mod <integer> : large integer": {
+      "key": "<large integer> mod <integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "large integer",
+      "op": "mod",
+      "rightType": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> * <large integer> : large integer": {
+      "key": "<integer> * <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "integer",
+      "op": "*",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> + <large integer> : large integer": {
+      "key": "<integer> + <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "integer",
+      "op": "+",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> - <large integer> : large integer": {
+      "key": "<integer> - <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "integer",
+      "op": "-",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> / <large integer> : large integer": {
+      "key": "<integer> / <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "integer",
+      "op": "/",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> < <large integer> : boolean": {
+      "key": "<integer> < <large integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "integer",
+      "op": "<",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> <= <large integer> : boolean": {
+      "key": "<integer> <= <large integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "integer",
+      "op": "<=",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> = <large integer> : boolean": {
+      "key": "<integer> = <large integer> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "integer",
+      "op": "=",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> mod <large integer> : large integer": {
+      "key": "<integer> mod <large integer> : large integer",
+      "type": "binaryOp",
+      "resultType": "large integer",
+      "leftType": "integer",
+      "op": "mod",
+      "rightType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "<integer> as bit set : bit set": {
       "key": "<integer> as bit set : bit set",
       "type": "cast",
@@ -25529,6 +26049,26 @@
         ]
       }
     },
+    "<uinteger> as large integer : large integer": {
+      "key": "<uinteger> as large integer : large integer",
+      "type": "cast",
+      "resultType": "large integer",
+      "argType": "uinteger",
+      "phrase": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "<uinteger> as uinteger : uinteger": {
       "key": "<uinteger> as uinteger : uinteger",
       "type": "cast",
@@ -25537,6 +26077,46 @@
       "phrase": "uinteger",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> as string : string": {
+      "key": "<large integer> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "large integer",
+      "phrase": "string",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> as large integer : large integer": {
+      "key": "<large integer> as large integer : large integer",
+      "type": "cast",
+      "resultType": "large integer",
+      "argType": "large integer",
+      "phrase": "large integer",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -25924,6 +26504,28 @@
         ]
       }
     },
+    "bit <integer> of <large integer> : boolean": {
+      "key": "bit <integer> of <large integer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "bit",
+      "pluralPhrase": "bits",
+      "indexType": "integer",
+      "directObjectType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "december <integer> of <integer> : date": {
       "key": "december <integer> of <integer> : date",
       "type": "property",
@@ -26015,6 +26617,27 @@
       "directObjectType": "uinteger",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+         ]
+      }
+    },
+    "extrema of <large integer> : ( large integer, large integer )": {
+      "key": "extrema of <large integer> : ( large integer, large integer )",
+      "type": "property",
+      "resultType": "( large integer, large integer )",
+      "singularPhrase": "extrema",
+      "pluralPhrase": "extremas",
+      "directObjectType": "large integer",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -26364,6 +26987,27 @@
         ]
       }
     },
+    "maximum of <large integer> : large integer": {
+      "key": "maximum of <large integer> : large integer",
+      "type": "property",
+      "resultType": "large integer",
+      "singularPhrase": "maximum",
+      "pluralPhrase": "maxima",
+      "directObjectType": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "may <integer> of <integer> : date": {
       "key": "may <integer> of <integer> : date",
       "type": "property",
@@ -26482,6 +27126,27 @@
       "directObjectType": "uinteger",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "minimum of <large integer> : large integer": {
+      "key": "minimum of <large integer> : large integer",
+      "type": "property",
+      "resultType": "large integer",
+      "singularPhrase": "minimum",
+      "pluralPhrase": "minima",
+      "directObjectType": "large integer",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -33094,6 +33759,106 @@
       "phrase": "hexadecimal",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> as large integer : large integer": {
+      "key": "<string> as large integer : large integer",
+      "type": "cast",
+      "resultType": "large integer",
+      "argType": "string",
+      "phrase": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<integer> as large integer : large integer": {
+      "key": "<integer> as large integer : large integer",
+      "type": "cast",
+      "resultType": "large integer",
+      "argType": "integer",
+      "phrase": "large integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> as integer : integer": {
+      "key": "<large integer> as integer : integer",
+      "type": "cast",
+      "resultType": "integer",
+      "argType": "large integer",
+      "phrase": "integer",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> as hexadecimal : string": {
+      "key": "<large integer> as hexadecimal : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "large integer",
+      "phrase": "hexadecimal",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<large integer> as uinteger : uinteger": {
+      "key": "<large integer> as uinteger : uinteger",
+      "type": "cast",
+      "resultType": "uinteger",
+      "argType": "large integer",
+      "phrase": "uinteger",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -44767,6 +45532,26 @@
         ]
       }
     },
+    "greatest large integer : large integer": {
+      "key": "greatest large integer : large integer",
+      "type": "property",
+      "resultType": "large integer",
+      "singularPhrase": "greatest large integer",
+      "pluralPhrase": "greatest large integers",
+      "availability": {
+        "11.0.2.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "greatest time interval : time interval": {
       "key": "greatest time interval : time interval",
       "type": "property",
@@ -44829,6 +45614,27 @@
       "indexType": "string",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "hexadecimal large integer <string> : large integer": {
+      "key": "hexadecimal large integer <string> : large integer",
+      "type": "property",
+      "resultType": "large integer",
+      "singularPhrase": "hexadecimal large integer",
+      "pluralPhrase": "hexadecimal large integers",
+      "indexType": "string",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -45246,6 +46052,27 @@
       "indexType": "string",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "large integer <string> : large integer": {
+      "key": "large integer <string> : large integer",
+      "type": "property",
+      "resultType": "large integer",
+      "singularPhrase": "large integer",
+      "pluralPhrase": "large integers",
+      "indexType": "string",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -45744,6 +46571,26 @@
       "pluralPhrase": "least uintegers",
       "availability": {
         "11.0.1.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "least large integer : large integer": {
+      "key": "least large integer : large integer",
+      "type": "property",
+      "resultType": "large integer",
+      "singularPhrase": "least large integer",
+      "pluralPhrase": "least large integers",
+      "availability": {
+        "11.0.2.0": [
           "AIX",
           "Debian",
           "Mac",
@@ -88151,6 +88998,18 @@
       "phrase": "uinteger",
       "availability": {
         "11.0.1.0": [
+          "Windows"
+        ]
+      }
+    },
+    "<registry key value> as large integer : large integer": {
+      "key": "<registry key value> as large integer : large integer",
+      "type": "cast",
+      "resultType": "large integer",
+      "argType": "registry key value",
+      "phrase": "large integer",
+      "availability": {
+        "11.0.2.0": [
           "Windows"
         ]
       }

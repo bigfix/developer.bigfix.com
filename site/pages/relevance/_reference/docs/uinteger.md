@@ -39,6 +39,10 @@ Converts an unsigned integer into an integer.
 
 Converts an unsigned integer into a hexadecimal string.
 
+# &lt;uinteger&gt; as large integer : large integer
+
+Converts an unsigned integer to a 128-bit signed integer.
+
 # &lt;uinteger&gt; as string : string
 
 Converts an unsigned integer to a string.
