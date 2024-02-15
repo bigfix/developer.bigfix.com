@@ -9,7 +9,7 @@ This family of REST APIs lets you interact with the BigFix Explorer servers to r
 {% restapi "/api/explorers", "GET", "Fetches a list of BigFix Explorer servers." %}
 **Request:** URL is all that is required.
 By default, the information will be returned in XML format.
-If you need the information in JSON format, set the request header `Accept: application/json`.
+If you need the information in JSON format, set the request header `Accept: application/json` or use the `output=json` parameter in the request URL to get a JSON response.
 
 **Response:** An XML or a JSON text with a list of the BigFix Explorer servers connected to the BigFix Server, each represented with its own details.
 
@@ -27,7 +27,7 @@ For each object:
 
 For example, this call:
 ```
-https://server.bigfix.com:52311/api/explorers
+https://server.bigfix.com:52311/api/explorers?output=json
 ```
 
 May return this XML:
@@ -59,13 +59,14 @@ Or this JSON, if the header `Accept: application/json` is set in the request:
     ]
 }
 ```
+
 {% endrestapi %}
 
 {% restapi "/api/explorer/{name}", "GET", "Retrieves details about the Explorer server {name}." %}
 **Request:** This API requires the unique {name} of a BigFix Explorer to be passed as part of the URL.
 The complete URL for this REST API request can be found in the `Resource` attribute of each `Explorer` node returned by the `/api/explorers` request.
 By default, the information will be returned in XML format.
-If you need the information in JSON format, set the request header `Accept: application/json`.
+If you need the information in JSON format, set the request header `Accept: application/json` or use the `output=json` parameter in the request URL to get a JSON response.
 
 **Response:** An XML containing a set of data regarding the specified Explorer server (URL, Name and Priority).
 
@@ -73,7 +74,7 @@ If you need the information in JSON format, set the request header `Accept: appl
 
 For example, this call:
 ```
-https://server.bigfix.com:52311/api/explorer/ddefefbe1a8b
+https://server.bigfix.com:52311/api/explorer/ddefefbe1a8b?output=json
 ```
 
 May return this XML:
@@ -98,6 +99,7 @@ Or this JSON, if the header `Accept: application/json` is set in the request:
     "priority": 77
 }
 ```
+
 {% endrestapi %}
 
 {% restapi "/api/explorer/{name}", "PUT", "​Updates the priority of the BigFix Explorer server {name}." %}
