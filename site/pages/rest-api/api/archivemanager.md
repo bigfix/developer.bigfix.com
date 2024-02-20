@@ -27,7 +27,7 @@ May return this XML:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-    <ArchiveManagerFile>
+    <ArchiveManagerFile Resource="https://server.bigfix.com:52311/api/archivemanager/file/93/1085412093/(LOG)_0_dexreports_copy.json">
         <FileName>(LOG)_0_dexreports_copy.json</FileName>
         <FileLocation>/93/1085412093/(LOG)_0_dexreports_copy.json</FileLocation>
         <FileSize>1737</FileSize>
@@ -36,7 +36,7 @@ May return this XML:
         <Sequence>196234</Sequence>
         <FileReceivedAt>1704877670000000</FileReceivedAt>
     </ArchiveManagerFile>
-    <ArchiveManagerFile>
+    <ArchiveManagerFile Resource="https://server.bigfix.com:52311/api/archivemanager/file/93/1085412093/(LOG)_0_dexreports.json">
         <FileName>(LOG)_0_dexreports.json</FileName>
         <FileLocation>/93/1085412093/(LOG)_0_dexreports.json</FileLocation>
         <FileSize>1737</FileSize>
@@ -99,7 +99,7 @@ May return this XML:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-    <ArchiveManagerFile>
+    <ArchiveManagerFile Resource="https://server.bigfix.com:52311/api/archivemanager/file/93/1085412093/(LOG)_0_dexreports_copy.json">
         <FileName>(LOG)_0_dexreports_copy.json</FileName>
         <FileLocation>/93/1085412093/(LOG)_0_dexreports_copy.json</FileLocation>
         <FileSize>1737</FileSize>
@@ -141,7 +141,7 @@ You can reduce the number of files returned in the response using the filter que
 
 You can delete the requested files by adding the `deleteFiles=true` in the URL. The files will be automatically deleted from the BigFix Server and DB after the request completed successfully.
 
-**Response:** The response consists of files contained in messages with `Content-Type: multipart/mixed`. See the [Multipart Content-Type W3C definition](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html).
+**Response:** The response is a message with `Content-Type: multipart/mixed`, which consists of one or more parts separated by a boundary. Each part starts with a set of header fields, followed by the contents of a file. The `Content-ID` field contains the computer ID associated with the computer from which the file was uploaded to the BigFix server. See the [Multipart Content-Type W3C definition](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html).
 
 For example, this call:
 ```
@@ -155,10 +155,18 @@ Content-Type: multipart/mixed; boundary="YsY2JDKvhN7JqX'(N?xf/wseczPT49R_"
 
 
 --YsY2JDKvhN7JqX'(N?xf/wseczPT49R_
-Content-Disposition: attachment; filename="(LOG)_0_example.txt"; size=39
+Content-ID: 1085412093
+Content-Disposition: attachment; filename="(LOG)_0_example1.txt"; size=39
 
-file line 1
-file line 2
+file 1 line 1
+file 1 line 2
+end file line
+--YsY2JDKvhN7JqX'(N?xf/wseczPT49R_
+Content-ID: 1085412093
+Content-Disposition: attachment; filename="(LOG)_0_example2.txt"; size=39
+
+file 2 line 1
+file 2 line 2
 end file line
 --YsY2JDKvhN7JqX'(N?xf/wseczPT49R_--
 ```
@@ -167,6 +175,12 @@ end file line
 {% restapi "archivemanager/file/{filelocation}", "GET", "Returns the file uploaded by the Archive Manager at {filelocation}." %}
 **Request:** URL is all that is required.
 
+{filelocation} is represented by the last 2 digits of ComputerId/ComputerId/FileName for example: 
+
+```
+93/1085412093/(LOG)_0_example.txt
+```
+If the ComputerId last two digits start with zero, only the second digit is part of the {filelocation}.
 You can delete the requested file, adding the `deleteFiles=true` in the URL. The file will be automatically deleted from the BigFix Server and DB after the request completed successfully.
 
 **Response:** 
@@ -242,7 +256,7 @@ Use these query parameters to define the filter:
 - `fileLocationContains` is a parameter with a string value that represents a piece of file location. When used, the request will only return files whose location contains that string. For example, setting `fileLocationContains=dexreports` makes the REST API only return files with `dexreports` in their location.
 - `fileLocationStartsWith` is a parameter with a string value that represents a piece of file location. When used, the request will only return files whose location starts with that string. For example, setting `fileLocationStartsWith=/13/1616782313/dex` makes the REST API only return files with a location that starts with `/13/1616782313/dex`.
 - `computerId` is a parameter with an integer value that represents a computer ID. When used, the request will only return files uploaded by the computer with that ID.
-- `sequenceGreaterThan` and `sequenceLessOrEqualTo` are two parameters with integer values that delimitate the exclusive start and the inclusive end of a linear sequence of numbers. They can only be used together. When used, the response will only return files whose IDs are within that range. For example, setting `sequenceGreaterThan=5` and `sequenceLessOrEqualTo=10` makes the REST API only return files with an ID in the sequence `6,7,8,9,10`.
+- `sequenceGreaterThan` and `sequenceLessOrEqualTo` are two parameters with integer values that delimitate the exclusive start and the inclusive end of a linear sequence of numbers. When used, the response will only return files whose IDs are within that range. For example, setting `sequenceGreaterThan=5` and `sequenceLessOrEqualTo=10` makes the REST API only return files with an ID in the sequence `6,7,8,9,10`.
 
 These are some example of filtering results using the above parameters:
 ```
