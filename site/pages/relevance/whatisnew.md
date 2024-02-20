@@ -9,6 +9,22 @@ This page lists the added or extended inspectors starting from BigFix Version 11
 {% endsection %}
 
 
+#### Version 11 Patch 2 Added Inspectors
+
+A new client inspector named *large integer* was created to support 128-bit signed integers.
+
+For details, see [large integer](https://developer.bigfix.com/relevance/reference/large-integer.html)
+
+#### Version 11 Patch 2 Extended Inspectors
+
+A new client inspector named *explorer service* was added to provide access to the 'BESExplorer' service, if present.
+
+For details, see [service](https://developer.bigfix.com/relevance/reference/service.html)
+
+A new client inspector named *linux of* was added to verify if the computer is running Linux.
+
+For details, see [operating system](https://developer.bigfix.com/relevance/reference/operating-system.html)
+
 #### Version 11 Patch 1 Added Inspectors
 
 A new client inspector named *uinteger* was created to support the unsigned integers.
@@ -17,7 +33,7 @@ For details, see [uinteger](https://developer.bigfix.com/relevance/reference/uin
 
 #### Version 11 Patch 1 Extended Inspectors
 
-A new client inspector named *user count* was added to support the new "User" metric available for BigFix Workspace licenses.
+Two new client inspectors named *device count* and *user count* were added to support the new "User" metric available for BigFix Workspace licenses.
 
 For details, see [bes product](https://developer.bigfix.com/relevance/reference/bes-product.html)
 
