@@ -94,9 +94,9 @@ May return this XML:
 Or this JSON, if the header `Accept: application/json` is set in the request:
 ```json
 {
-    "url": "https://explorer1.bigfix.com:9080",
-    "name": "ddefefbe1a8b",
-    "priority": 77
+    "URL": "https://explorer1.bigfix.com:9080",
+    "Name": "ddefefbe1a8b",
+    "Priority": 77
 }
 ```
 
@@ -137,7 +137,7 @@ ok
 If you prefer using a JSON file as input, create a file named, for example, `priority.json`.
 The priority value must be an integer, do not quote it.
 ```
-{ "priority": 15 }
+{ "Priority": 15 }
 ```
 
 Then, from the terminal, run the following command (note that the `Content-Type` header is specified):
