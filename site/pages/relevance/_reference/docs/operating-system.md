@@ -117,6 +117,34 @@ Returns the current service pack, or no such object if none have been applied at
 
 Returns the current technology level. This also includes the base level information, similar to &#39;oslevel -r&#39;.
 
+# display name of &lt;operating system&gt; : string
+
+Returns the OS name in a human readable format following different rules for each OS.
+
+On Windows, it returns the value in the `ProductName` key.
+Example of QnA ran on Windows.
+
+{% qna %}
+Q: display name of operating system
+A: Windows Server 2022 Datacenter
+{% endqna %}
+
+On Unix systems, it returns the value of the `PRETTY_NAME` key in the os-release file.
+Example of QnA ran on Linux.
+
+{% qna %}
+Q: display name of operating system
+A: Oracle Linux Server 7.8
+{% endqna %}
+
+On Mac, it returns the macOS `codename`.
+Example of QnA ran on macOS.
+
+{% qna %}
+Q: display name of operating system
+A: macOS Monterey
+{% endqna %}
+
 # display version of &lt;operating system&gt; : string
 
 Returns the Windows operating system version. This inspector returns valid information only on Windows 10 20H2 and later Windows 10 versions. Running this inspector on other Windows operating systems results in an error referring to a nonexistent object.

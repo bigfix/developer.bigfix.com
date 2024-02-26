@@ -109207,27 +109207,24 @@
         ]
       }
     },
-    "little endian of <operating system> : boolean": {
-      "key": "little endian of <operating system> : boolean",
+    "display name of <operating system> : string": {
+      "key": "display name of <operating system> : string",
       "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "little endian",
-      "pluralPhrase": "little endians",
+      "resultType": "string",
+      "singularPhrase": "display name",
+      "pluralPhrase": "display names",
       "directObjectType": "operating system",
       "availability": {
-        "9.1.1117.0": [
+        "11.0.2.0": [
           "AIX",
           "Debian",
-          "HP-UX",
           "Mac",
+          "Raspbian",
           "Red Hat",
-          "SUSE",
           "Solaris",
+          "SUSE",
           "Ubuntu",
           "Windows"
-        ],
-        "9.5.13.130": [
-          "Raspbian"
         ]
       }
     },
@@ -109249,6 +109246,30 @@
           "SUSE",
           "Ubuntu",
           "Windows"
+        ]
+      }
+    },
+    "little endian of <operating system> : boolean": {
+      "key": "little endian of <operating system> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "little endian",
+      "pluralPhrase": "little endians",
+      "directObjectType": "operating system",
+      "availability": {
+        "9.1.1117.0": [
+          "AIX",
+          "Debian",
+          "HP-UX",
+          "Mac",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ],
+        "9.5.13.130": [
+          "Raspbian"
         ]
       }
     },
