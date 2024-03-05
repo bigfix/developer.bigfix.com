@@ -60,6 +60,9 @@ nav:
       - name: Help
         href: /rest-api/api/help.html
 
+      - name: Identity Provider Directory
+        href: /rest-api/api/idpdirectory.html
+
       - name: Import
         href: /rest-api/api/import.html
 
