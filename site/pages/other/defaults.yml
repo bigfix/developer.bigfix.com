@@ -11,48 +11,48 @@ nav:
 
     - name: About SOAP
       href: /other/soap-api/soap_protocol.html
-	  
+
     - name: Configuring SOAP
       href: /other/soap-api/soap_configuration.html
-	  
+
     - name: SOAP URL
       href: /other/soap-api/soap_url.html
-	  
+
     - name: SOAP Headers
       href: /other/soap-api/soap_headers.html
-	  
+
     - name: SOAP Methods
       href: /other/soap-api/methods/
       children:
 
        - name: GetRelevanceResult
          href: /other/soap-api/methods/GetRelevanceResult.html
-	  
+
        - name: GetStructuredRelevanceResult
          href: /other/soap-api/methods/GetStructuredRelevanceResult.html
-	  
+
        - name: CreateUser
          href: /other/soap-api/methods/CreateUser.html
-	  
+
        - name: StoreSharedVariable
          href: /other/soap-api/methods/StoreSharedVariable.html
-	  
+
        - name: DeleteSharedVariable
          href: /other/soap-api/methods/DeleteSharedVariable.html
-		 
+
     - name: SOAP Examples
       href: /other/soap-api/examples/
       children:
 
        - name: Shell Script
          href: /other/soap-api/examples/shell_script.html
-	  
+
        - name: Create User Example
          href: /other/soap-api/examples/create_user_example.html
-	  
+
        - name: SOAP Error Handling
          href: /other/soap-api/examples/soap_error_handling.html
-		 
+
   - name: Dashboard API
     href: /other/dashboard-api/
     children:
@@ -65,7 +65,17 @@ nav:
 
     - name: Relevance in dashboards
       href: /other/dashboard-api/relevance_in_dashboards.html
-	  
+
+  - name: BigFix Explorer API
+    href: /other/explorer-api/
+    children:
+
+    - name: Status
+      href: /other/explorer-api/status.html
+
+    - name: Session Relevance
+      href: /other/explorer-api/session_relevance.html
+
   - name: Web Reports API
     href: /other/web-reports-api/
     children:
@@ -87,7 +97,7 @@ nav:
 
     - name: Custom report
       href: /other/web-reports-api/custom_report.html
-	
+
     - name: External report
       href: /other/web-reports-api/external_report.html
 
@@ -99,131 +109,131 @@ nav:
 
     - name: Setting OnLoad events
       href: /other/web-reports-api/setting_onload.html
-	    
+
   - name: Server API
     href: /other/platform-api/
     children:
 
     - name: Installing the API
       href: /other/platform-api/installation.html
-	  
+
     - name: Connecting to the server
       href: /other/platform-api/connecting_to_api.html
-	  
+
     - name: BES XML documents
       href: /other/platform-api/bes-xml/
       children:
 
-       - name: BES Schema Structure 
+       - name: BES Schema Structure
          href: /other/platform-api/bes-xml/bes_structure.html
-         		 
-       - name: Fixlet or Task 
+
+       - name: Fixlet or Task
          href: /other/platform-api/bes-xml/fixlet_task.html
-		 
-       - name: Baseline 
+
+       - name: Baseline
          href: /other/platform-api/bes-xml/baseline.html
-	  	 		 
-       - name: Single actions 
+
+       - name: Single actions
          href: /other/platform-api/bes-xml/single_actions.html
-	  	 		 
-       - name: Multiple action groups 
+
+       - name: Multiple action groups
          href: /other/platform-api/bes-xml/multiple_action.html
-	  	 		 
-       - name: Analyses 
+
+       - name: Analyses
          href: /other/platform-api/bes-xml/analyses.html
-	  	 		 
-       - name: Computer groups 
+
+       - name: Computer groups
          href: /other/platform-api/bes-xml/computer_groups.html
-	  	 		 
-       - name: Properties 
+
+       - name: Properties
          href: /other/platform-api/bes-xml/properties.html
-	  	 		 
-       - name: Shared BES Elements 
+
+       - name: Shared BES Elements
          href: /other/platform-api/bes-xml/shared/
-         children:		 
-		 
-          - name: FixletAction 
+         children:
+
+          - name: FixletAction
             href: /other/platform-api/bes-xml/shared/fixletaction.html
-			
-          - name: ActionScript 
+
+          - name: ActionScript
             href: /other/platform-api/bes-xml/shared/actionscript.html
-		 
-          - name: ActionSuccessCriteria 
+
+          - name: ActionSuccessCriteria
             href: /other/platform-api/bes-xml/shared/actionsuccesscriteria.html
-			
-          - name: ActionSettings 
+
+          - name: ActionSettings
             href: /other/platform-api/bes-xml/shared/actionsettings.html
-			 
-          - name: ActionSettingsLocks 
+
+          - name: ActionSettingsLocks
             href: /other/platform-api/bes-xml/shared/actionsettingslocks.html
-			
-          - name: Search Components 
+
+          - name: Search Components
             href: /other/platform-api/bes-xml/shared/searchcomponents.html
-			 
-    - name: Miscellaneous types 
+
+    - name: Miscellaneous types
       href: /other/platform-api/miscellaneous.html
-		 
-    - name: BES API Objects 
-      href: /other/platform-api/besapiobject.html	 
-		  	 	  	  		  	 	  	  
+
+    - name: BES API Objects
+      href: /other/platform-api/besapiobject.html
+
   - name: Database API
     href: /other/database-api/
     children:
-	
+
     - name: BES_FIXLETS
       href: /other/database-api/bes_fixlets.html
-	  
+
     - name: BES_TASKS
       href: /other/database-api/bes_tasks.html
-	  
+
     - name: BES_ANALYSES
       href: /other/database-api/bes_analyses.html
-	  
+
     - name: BES_BASELINES
       href: /other/database-api/bes_baselines.html
-	  
+
     - name: BES_COMPUTERGROUPS
       href: /other/database-api/bes_computergroups.html
-	
+
     - name: BES_COLUMN_HEADINGS
       href: /other/database-api/bes_columnheadings.html
-	  
+
     - name: BES_RELEVANT_FIXLETS
       href: /other/database-api/bes_relevant_fixlets.html
-	  
+
     - name: BES_RELEVANT_TASKS
       href: /other/database-api/bes_relevant_tasks.html
-	  
+
     - name: BES_RELEVANT_BASELINES
       href: /other/database-api/bes_relevant_baselines.html
-	  
+
     - name: BES_ACTIONS
       href: /other/database-api/bes_actions.html
-	
+
     - name: BES_RELEVANT_FIXLET_HISTORY
       href: /other/database-api/bes_relevant_fixlet_history.html
-	  
+
     - name: BES_RELEVANT_TASK_HISTORY
       href: /other/database-api/bes_relevant_task_history.html
-	  
+
     - name: BES_RELEVANT_BASELINE_HISTORY
       href: /other/database-api/bes_relevant_baseline_history.html
-	  
+
     - name: BES_FIXLET_PROPERTIES
       href: /other/database-api/bes_fixlet_properties.html
-	  
+
     - name: BES_TASK_PROPERTIES
       href: /other/database-api/bes_task_properties.html
-	
+
     - name: BES_BASELINE_PROPERTIES
       href: /other/database-api/bes_baseline_properties.html
-	  	  
+
     - name: BES_ACTION_DEFS
       href: /other/database-api/bes_action_defs.html
-	  
+
     - name: BES_OBJECT_DEFS
       href: /other/database-api/bes_object_defs.html
-	
+
     - name: BES_SITEVERSIONS
       href: /other/database-api/bes_siteversions.html
 
@@ -235,29 +245,29 @@ nav:
 
     - name: Example report generator
       href: /other/database-api/example_report.html
-	  
+
   - name: Client Compliance API
     href: /other/cc-api/
     children:
 
     - name: Sample Use Cases
       href: /other/cc-api/cc_use_cases.html
-	  
+
     - name: Terminology
       href: /other/cc-api/cc_terminology.html
-	  
+
     - name: Configuring the components
       href: /other/cc-api/cc_configuration_steps.html
-      
+
     - name: Software Developer Kit for Windows
       href: /other/cc-api/cc_sdk.html
-    
+
     - name: Running the API calls
       href: /other/cc-api/cc_calls.html
-      
+
     - name: Logical Flow of an API call
       href: /other/cc-api/cc_flow.html
-	
+
     - name: API Constants and Error codes
       href: /other/cc-api/cc_errors.html
 
