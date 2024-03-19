@@ -247,16 +247,20 @@ https://server.bigfix.com:52311/api/archivemanager/file/93/1085412093/(LOG)_0_de
 Will delete the uploaded file whose location contains `dexreports`.
 {% endrestapi %}
 
-#### Privileges required to run the Archive Manager APIs
+## Privileges required to run the Archive Manager APIs
 These REST APIs can be run only if you are logged on as Master Operator (MO).
 
-#### Filtering Response Parameters
+## Sorting Response
+The response always returns the items of the resource collection in an ascending order, ordered by sequence number.
+
+## Filtering Response Parameters
 You can use the query parameters to limit the items returned for a given resource when using the API resources `/api/archivemanager`, `/api/archivemanager/latestFile` and `/api/archivemanager/files`.
 Use these query parameters to define the filter:
 - `fileLocationContains` is a parameter with a string value that represents a piece of file location. When used, the request will only return files whose location contains that string. For example, setting `fileLocationContains=dexreports` makes the REST API only return files with `dexreports` in their location.
 - `fileLocationStartsWith` is a parameter with a string value that represents a piece of file location. When used, the request will only return files whose location starts with that string. For example, setting `fileLocationStartsWith=/13/1616782313/dex` makes the REST API only return files with a location that starts with `/13/1616782313/dex`.
 - `computerId` is a parameter with an integer value that represents a computer ID. When used, the request will only return files uploaded by the computer with that ID.
 - `sequenceGreaterThan` and `sequenceLessOrEqualTo` are two parameters with integer values that delimitate the exclusive start and the inclusive end of a linear sequence of numbers. When used, the response will only return files whose IDs are within that range. For example, setting `sequenceGreaterThan=5` and `sequenceLessOrEqualTo=10` makes the REST API only return files with an ID in the sequence `6,7,8,9,10`.
+- `maxResults` is a parameter with an integer value used to include in a response only the first N items of a resource collection.
 
 These are some example of filtering results using the above parameters:
 ```
