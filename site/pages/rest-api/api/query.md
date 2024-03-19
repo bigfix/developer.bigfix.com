@@ -124,3 +124,43 @@ May return this JSON:
 ```
 
 {% endrestapi %}
+
+## Response Headers
+In the response of this API, you will find the following headers. They provide additional information about the BigFix Explorer or the Web Reports server that evaluated the Session Relevance query:
+
+- `x-bes-relevance-engine-id` represents the id of the server that evaluated the query. Its value can be:
+  - an integer, the id of a Web Reports server that evaluated the query. It is the same id used by the `/api/webreports` REST API.
+  - a string, the hostname of the BigFix Explorer server that evaluated the query. It is the same id used by the `/api/explorer` REST API.
+- `x-bes-relevance-engine-type` represents the type of server that evaluated the session relevance. Its value can be either `BigFix Explorer` or `BigFix Web Reports Server`.
+
+For example, this request:
+```
+curl -i -k -X GET -u {username}:{password} 'https://localhost:52311/api/query?relevance=ids+of+bes+computers'
+```
+
+Will return a response that starts like this:
+```
+HTTP/1.1 200 OK
+Content-Type: application/xml
+...
+x-bes-relevance-engine-id: explorer
+x-bes-relevance-engine-type: BigFix Explorer
+```
+
+The response body will be like this:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
+    <Query Resource="ids of bes computers">
+        <Result>
+            <Answer type="integer">538222075</Answer>
+            <Answer type="integer">538770876</Answer>
+            <Answer type="integer">542712582</Answer>
+        </Result>
+        <Evaluation>
+            <Time>0.22ms</Time>
+            <Plurality>Plural</Plurality>
+        </Evaluation>
+    </Query>
+</BESAPI>
+```
