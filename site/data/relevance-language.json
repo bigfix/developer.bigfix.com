@@ -98095,19 +98095,6 @@
         ]
       }
     },
-    "<bes idp directory set> contains <bes idp directory> : boolean": {
-      "key": "<bes idp directory set> contains <bes idp directory> : boolean",
-      "type": "binaryOp",
-      "resultType": "boolean",
-      "leftType": "bes idp directory set",
-      "op": "contains",
-      "rightType": "bes idp directory",
-      "availability": {
-        "11.0.2.0": [
-          "Session"
-        ]
-      }
-    },
     "<bes ldap directory set> contains <bes ldap directory> : boolean": {
       "key": "<bes ldap directory set> contains <bes ldap directory> : boolean",
       "type": "binaryOp",
