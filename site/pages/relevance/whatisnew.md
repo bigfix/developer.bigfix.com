@@ -9,7 +9,11 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 {% endsection %}
 
 
-#### Version 11 Patch 2 Added Inspector Type
+#### Version 11 Patch 2 Added Inspector Types
+
+New inspector types named *bes idp directory*, *bes idp directory server*, *bes idp directory set* and *bes idp directory with multiplicity* were added to provide information about all identity providers added to the BigFix Server. The new inspectors also provide information about the new identity provider Microsoft Entra ID, introduced with BigFix Platform 11.0.2.
+
+For details, see [bes idp directory](https://developer.bigfix.com/relevance/reference/bes-idp-directory.html), [bes idp directory server](https://developer.bigfix.com/relevance/reference/bes-idp-directory-server.html), [bes idp directory set](https://developer.bigfix.com/relevance/reference/bes-idp-directory-set.html) and [bes idp directory with multiplicity](https://developer.bigfix.com/relevance/reference/bes-idp-directory-with-multiplicity.html)
 
 A new inspector type named *large integer* was added to the existing *boolean* inspector to support 128-bit signed integers.
 

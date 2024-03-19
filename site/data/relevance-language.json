@@ -5879,6 +5879,31 @@
         ]
       }
     },
+    "bes idp directory": {
+      "name": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes idp directory set": {
+      "name": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes idp directory with multiplicity": {
+      "name": "bes idp directory with multiplicity",
+      "parent": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "bes ldap directory": {
       "name": "bes ldap directory",
       "availability": {
@@ -6295,6 +6320,14 @@
       "availability": {
         "8.2.1078.0": [
           "Solaris"
+        ]
+      }
+    },
+    "bes idp directory server": {
+      "name": "bes idp directory server",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
         ]
       }
     },
@@ -98023,6 +98056,58 @@
         ]
       }
     },
+    "client id of <bes idp directory> : string": {
+      "key": "client id of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "client id",
+      "pluralPhrase": "client ids",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "tenant id of <bes idp directory> : string": {
+      "key": "tenant id of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "tenant id",
+      "pluralPhrase": "tenant ids",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "generic ldap of <bes idp directory> : boolean": {
+      "key": "generic ldap of <bes idp directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "generic ldap",
+      "pluralPhrase": "generic ldaps",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes idp directory set> contains <bes idp directory> : boolean": {
+      "key": "<bes idp directory set> contains <bes idp directory> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes idp directory set",
+      "op": "contains",
+      "rightType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "<bes ldap directory set> contains <bes ldap directory> : boolean": {
       "key": "<bes ldap directory set> contains <bes ldap directory> : boolean",
       "type": "binaryOp",
@@ -98032,6 +98117,19 @@
       "rightType": "bes ldap directory",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes idp directory> = <bes idp directory> : boolean": {
+      "key": "<bes idp directory> = <bes idp directory> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes idp directory",
+      "op": "=",
+      "rightType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -98049,6 +98147,19 @@
         ]
       }
     },
+    "set of <bes idp directory> : bes idp directory set": {
+      "key": "set of <bes idp directory> : bes idp directory set",
+      "type": "property",
+      "resultType": "bes idp directory set",
+      "singularPhrase": "set",
+      "pluralPhrase": "sets",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "set of <bes ldap directory> : bes ldap directory set": {
       "key": "set of <bes ldap directory> : bes ldap directory set",
       "type": "property",
@@ -98058,6 +98169,19 @@
       "directObjectType": "bes ldap directory",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "unique value of <bes idp directory> : bes idp directory with multiplicity": {
+      "key": "unique value of <bes idp directory> : bes idp directory with multiplicity",
+      "type": "property",
+      "resultType": "bes idp directory with multiplicity",
+      "singularPhrase": "unique value",
+      "pluralPhrase": "unique values",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -98075,6 +98199,19 @@
         ]
       }
     },
+    "<bes idp directory set> * <bes idp directory set> : bes idp directory set": {
+      "key": "<bes idp directory set> * <bes idp directory set> : bes idp directory set",
+      "type": "binaryOp",
+      "resultType": "bes idp directory set",
+      "leftType": "bes idp directory set",
+      "op": "*",
+      "rightType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "<bes ldap directory set> * <bes ldap directory set> : bes ldap directory set": {
       "key": "<bes ldap directory set> * <bes ldap directory set> : bes ldap directory set",
       "type": "binaryOp",
@@ -98084,6 +98221,19 @@
       "rightType": "bes ldap directory set",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes idp directory set> + <bes idp directory set> : bes idp directory set": {
+      "key": "<bes idp directory set> + <bes idp directory set> : bes idp directory set",
+      "type": "binaryOp",
+      "resultType": "bes idp directory set",
+      "leftType": "bes idp directory set",
+      "op": "+",
+      "rightType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -98101,6 +98251,19 @@
         ]
       }
     },
+    "<bes idp directory set> - <bes idp directory set> : bes idp directory set": {
+      "key": "<bes idp directory set> - <bes idp directory set> : bes idp directory set",
+      "type": "binaryOp",
+      "resultType": "bes idp directory set",
+      "leftType": "bes idp directory set",
+      "op": "-",
+      "rightType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "<bes ldap directory set> - <bes ldap directory set> : bes ldap directory set": {
       "key": "<bes ldap directory set> - <bes ldap directory set> : bes ldap directory set",
       "type": "binaryOp",
@@ -98110,6 +98273,19 @@
       "rightType": "bes ldap directory set",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes idp directory set> = <bes idp directory set> : boolean": {
+      "key": "<bes idp directory set> = <bes idp directory set> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes idp directory set",
+      "op": "=",
+      "rightType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -98127,6 +98303,19 @@
         ]
       }
     },
+    "<bes idp directory set> contains <bes idp directory set> : boolean": {
+      "key": "<bes idp directory set> contains <bes idp directory set> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes idp directory set",
+      "op": "contains",
+      "rightType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "<bes ldap directory set> contains <bes ldap directory set> : boolean": {
       "key": "<bes ldap directory set> contains <bes ldap directory set> : boolean",
       "type": "binaryOp",
@@ -98136,6 +98325,19 @@
       "rightType": "bes ldap directory set",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "element of <bes idp directory set> : bes idp directory": {
+      "key": "element of <bes idp directory set> : bes idp directory",
+      "type": "property",
+      "resultType": "bes idp directory",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "directObjectType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -98153,6 +98355,19 @@
         ]
       }
     },
+    "intersection of <bes idp directory set> : bes idp directory set": {
+      "key": "intersection of <bes idp directory set> : bes idp directory set",
+      "type": "property",
+      "resultType": "bes idp directory set",
+      "singularPhrase": "intersection",
+      "pluralPhrase": "intersections",
+      "directObjectType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "intersection of <bes ldap directory set> : bes ldap directory set": {
       "key": "intersection of <bes ldap directory set> : bes ldap directory set",
       "type": "property",
@@ -98162,6 +98377,19 @@
       "directObjectType": "bes ldap directory set",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "size of <bes idp directory set> : integer": {
+      "key": "size of <bes idp directory set> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "size",
+      "pluralPhrase": "sizes",
+      "directObjectType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -98179,6 +98407,19 @@
         ]
       }
     },
+    "union of <bes idp directory set> : bes idp directory set": {
+      "key": "union of <bes idp directory set> : bes idp directory set",
+      "type": "property",
+      "resultType": "bes idp directory set",
+      "singularPhrase": "union",
+      "pluralPhrase": "unions",
+      "directObjectType": "bes idp directory set",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "union of <bes ldap directory set> : bes ldap directory set": {
       "key": "union of <bes ldap directory set> : bes ldap directory set",
       "type": "property",
@@ -98188,6 +98429,19 @@
       "directObjectType": "bes ldap directory set",
       "availability": {
         "8.2.1078.0": [
+          "Session"
+        ]
+      }
+    },
+    "multiplicity of <bes idp directory with multiplicity> : integer": {
+      "key": "multiplicity of <bes idp directory with multiplicity> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "multiplicity",
+      "pluralPhrase": "multiplicities",
+      "directObjectType": "bes idp directory with multiplicity",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }
@@ -103492,6 +103746,201 @@
       "directObjectType": "bes ldap directory server",
       "availability": {
         "9.0.586.0": [
+          "Session"
+        ]
+      }
+    },
+    "active directory of <bes idp directory> : boolean": {
+      "key": "active directory of <bes idp directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "active directory",
+      "pluralPhrase": "active directories",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "azure entra id of <bes idp directory> : boolean": {
+      "key": "azure entra id of <bes idp directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "azure entra id",
+      "pluralPhrase": "azure entra ids",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "base distinguished name of <bes idp directory> : string": {
+      "key": "base distinguished name of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "base distinguished name",
+      "pluralPhrase": "base distinguished namse",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "global catalog of <bes idp directory> : boolean": {
+      "key": "global catalog of <bes idp directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "global catalog",
+      "pluralPhrase": "global catalogs",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "group filter of <bes idp directory> : string": {
+      "key": "group filter of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "group filter",
+      "pluralPhrase": "group filters",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "id of <bes idp directory> : integer": {
+      "key": "id of <bes idp directory> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "login user of <bes idp directory> : string": {
+      "key": "login user of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "login user",
+      "pluralPhrase": "login users",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "name of <bes idp directory> : string": {
+      "key": "name of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "server of <bes idp directory> : bes idp directory server": {
+      "key": "server of <bes idp directory> : bes idp directory server",
+      "type": "property",
+      "resultType": "bes idp directory server",
+      "singularPhrase": "server",
+      "pluralPhrase": "servers",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "uid attribute of <bes idp directory> : string": {
+      "key": "uid attribute of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "uid attribute",
+      "pluralPhrase": "uid attributes",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "use ssl of <bes idp directory> : boolean": {
+      "key": "use ssl of <bes idp directory> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "use ssl",
+      "pluralPhrase": "use ssls",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "user filter of <bes idp directory> : string": {
+      "key": "user filter of <bes idp directory> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "user filter",
+      "pluralPhrase": "user filters",
+      "directObjectType": "bes idp directory",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "host of <bes idp directory server> : string": {
+      "key": "host of <bes idp directory server> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "host",
+      "pluralPhrase": "hosts",
+      "directObjectType": "bes idp directory server",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "port of <bes idp directory server> : integer": {
+      "key": "port of <bes idp directory server> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "port",
+      "pluralPhrase": "ports",
+      "directObjectType": "bes idp directory server",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "priority of <bes idp directory server> : integer": {
+      "key": "priority of <bes idp directory server> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "priority",
+      "pluralPhrase": "priorities",
+      "directObjectType": "bes idp directory server",
+      "availability": {
+        "11.0.2.0": [
           "Session"
         ]
       }

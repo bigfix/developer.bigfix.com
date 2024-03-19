@@ -352,6 +352,14 @@ Returns the current list of BES fixlets in the form of a set, which can be arith
 
 Returns a string corresponding to the national language of the program, such as ENU for English or ESP for Spanish.
 
+# bes idp directory : bes idp directory
+
+Returns the Identity Provider Directory (IDPD), the set of information required to connect to an identity provider that stores user credentials used for authentication in BigFix.
+
+# bes idp directory set : bes idp directory set
+
+Iterates over the current set of BES Identity Provider Directories and represents them as a mathematical set, suitable for further manipulation.
+
 # bes ldap directory : bes ldap directory
 
 No documentation exists.
