@@ -99183,6 +99183,30 @@
         ]
       }
     },
+    "bes idp directory set : bes idp directory set": {
+      "key": "bes idp directory set : bes idp directory set",
+      "type": "property",
+      "resultType": "bes idp directory set",
+      "singularPhrase": "bes idp directory set",
+      "pluralPhrase": "bes idp directory sets",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
+    "bes idp directory : bes idp directory": {
+      "key": "bes idp directory : bes idp directory",
+      "type": "property",
+      "resultType": "bes idp directory",
+      "singularPhrase": "bes idp directory",
+      "pluralPhrase": "bes idp directories",
+      "availability": {
+        "11.0.2.0": [
+          "Session"
+        ]
+      }
+    },
     "bes ldap directory set : bes ldap directory set": {
       "key": "bes ldap directory set : bes ldap directory set",
       "type": "property",
