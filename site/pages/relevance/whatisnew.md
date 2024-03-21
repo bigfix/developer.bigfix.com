@@ -41,16 +41,15 @@ A new inspector type named *uinteger* was added to the existing *boolean* inspec
 
 For details, see [uinteger](https://developer.bigfix.com/relevance/reference/uinteger.html)
 
-#### Version 11 Added Inspector Constructors
-
-The Perl Compatible Regular Expressions syntaxes, introduced with BigFix Platform 10.0.8 and available on the Windows client, are now also supported on several Linux platforms.
-New inspector constructors named *case insensitive perl regex*, *case insensitive perl regular expression*, *perl regex* and *perl regular expression* were added to the existing *regular expression* inspector to support the Perl Compatible Regular Expressions syntaxes.
-
-For details, see [regular expression](https://developer.bigfix.com/relevance/reference/regular-expression.html)
-
 #### Version 11 Patch 1 Added Inspector Properties
 
 New inspector properties named *device count* and *user count* were added to the existing *bes product* inspector to support the new "User" metric available for BigFix Workspace licenses.
 
 For details, see [bes product](https://developer.bigfix.com/relevance/reference/bes-product.html)
 
+#### Version 11 Added Inspector Constructors
+
+The Perl Compatible Regular Expressions syntaxes, introduced with BigFix Platform 10.0.8 and available on the Windows client, are now also supported on several Linux platforms.
+New inspector constructors named *case insensitive perl regex*, *case insensitive perl regular expression*, *perl regex* and *perl regular expression* were added to the existing *regular expression* inspector to support the Perl Compatible Regular Expressions syntaxes.
+
+For details, see [regular expression](https://developer.bigfix.com/relevance/reference/regular-expression.html)

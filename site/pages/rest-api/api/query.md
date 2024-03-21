@@ -129,8 +129,8 @@ May return this JSON:
 In the response of this API, you will find the following headers. They provide additional information about the BigFix Explorer or the Web Reports server that evaluated the Session Relevance query:
 
 - `x-bes-relevance-engine-id` represents the id of the server that evaluated the query. Its value can be:
-  - an integer, the id of a Web Reports server that evaluated the query. It is the same id used by the `/api/webreports` REST API.
-  - a string, the hostname of the BigFix Explorer server that evaluated the query. It is the same id used by the `/api/explorer` REST API.
+  - an integer, the id of a Web Reports server that evaluated the query. It is the same parameter {id} used by the `/api/webreports` REST API.
+  - a string, the hostname of the BigFix Explorer server that evaluated the query. It is the same parameter {name} used by the `/api/explorer` REST API.
 - `x-bes-relevance-engine-type` represents the type of server that evaluated the session relevance. Its value can be either `BigFix Explorer` or `BigFix Web Reports Server`.
 
 For example, this request:
