@@ -70,11 +70,11 @@ nav:
     href: /other/explorer-api/
     children:
 
-    - name: Status
-      href: /other/explorer-api/status.html
-
     - name: Session Relevance
       href: /other/explorer-api/session_relevance.html
+
+    - name: Status
+      href: /other/explorer-api/status.html
 
   - name: Web Reports API
     href: /other/web-reports-api/
