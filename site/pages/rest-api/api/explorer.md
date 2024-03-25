@@ -27,7 +27,7 @@ For each object:
 
 For example, this call:
 ```
-https://server.bigfix.com:52311/api/explorers?output=json
+https://server.bigfix.com:52311/api/explorers
 ```
 
 May return this XML:
@@ -35,25 +35,25 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <Explorer Resource="https://server.bigfix.com:52311/api/explorer/ddefefbe1a8b">
-        <URL>https://explorer1.bigfix.com:9080</URL>
+        <URL>https://explorer1.bigfix.com:9383</URL>
     </Explorer>
     <Explorer Resource="https://server.bigfix.com:52311/api/explorer/1a8b4decafbd">
-        <URL>https://explorer2.bigfix.com:9080</URL>
+        <URL>https://explorer2.bigfix.com:9383</URL>
     </Explorer>
 </BESAPI>
 ```
 
-Or this JSON, if the header `Accept: application/json` is set in the request:
+Or this JSON, if the header `Accept: application/json` is set in the request or the `output=json` parameter is used in the request URL:
 ```json
 {
     "explorers":
     [
         {
-            "url": "https://explorer1.bigfix.com:9080",
+            "url": "https://explorer1.bigfix.com:9383",
             "resource": "https://server.bigfix.com:52311/api/explorer/ddefefbe1a8b"
         },
         {
-            "url": "https://explorer2.bigfix.com:9080",
+            "url": "https://explorer2.bigfix.com:9383",
             "resource": "https://server.bigfix.com:52311/api/explorer/1a8b4decafbd"
         }
     ]
@@ -74,7 +74,7 @@ If you need the information in JSON format, set the request header `Accept: appl
 
 For example, this call:
 ```
-https://server.bigfix.com:52311/api/explorer/ddefefbe1a8b?output=json
+https://server.bigfix.com:52311/api/explorer/ddefefbe1a8b
 ```
 
 May return this XML:
@@ -91,10 +91,10 @@ May return this XML:
 </BESAPI>
 ```
 
-Or this JSON, if the header `Accept: application/json` is set in the request:
+Or this JSON, if the header `Accept: application/json` is set in the request or the `output=json` parameter is used in the request URL:
 ```json
 {
-    "URL": "https://explorer1.bigfix.com:9080",
+    "URL": "https://explorer1.bigfix.com:9383",
     "Name": "ddefefbe1a8b",
     "Priority": 77
 }
@@ -105,6 +105,7 @@ Or this JSON, if the header `Accept: application/json` is set in the request:
 {% restapi "/api/explorer/{name}", "PUT", "​Updates the priority of the BigFix Explorer server {name}." %}
 **Request:** This API requires the unique {name} of a BigFix Explorer to be passed as part of the URL and an XML or JSON text describing the priority to assign to that server.
 The preferred BigFix Explorer server is the one with the highest priority value.
+The possible values to set for the priority are integers ranging from 0 to 255.
 
 **Response:** In case of success, `ok` is returned.
 

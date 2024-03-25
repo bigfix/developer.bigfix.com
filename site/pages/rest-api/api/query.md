@@ -50,7 +50,7 @@ If you prefer using a JSON file as input, create a file named, for example, `que
 
 Then, from the terminal, run the following command by also specifying the `Content-Type` header:
 ```
-curl -X PUT --data-binary @query.json --user {username}:{password} -H "Content-Type: application/json+relevance" https://bf-server:52311/api/query
+curl -X POST --data-binary @query.json --user {username}:{password} -H "Content-Type: application/json+relevance" https://bf-server:52311/api/query
 ```
 
 If the operation ran successfully, the REST API will return a response like this:
