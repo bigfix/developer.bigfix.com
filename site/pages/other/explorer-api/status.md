@@ -22,14 +22,13 @@ The response contains the following fields:
 * rootServerConnection, a string representing the status of the connection between the BigFix Explorer instance and the BigFix Server.
 
 The following is an example of request made using cURL:
-
 ```
 curl -X GET https://bf-explorer:9383/api/status
 ```
 
 The following are examples of responses, depending on the different statuses.
 
-While BigFix Explorer is loading the datastores, the `status` response field will be `Starting`, while the `rootServerConnection` field will be either `Connecting` or `Online`. For example
+While BigFix Explorer is loading the datastores, the `status` response field will be `Starting`, while the `rootServerConnection` field will be either `Connecting` or `Online`. For example:
 ```json
 {
     "instanceName": "explorer",
@@ -38,7 +37,8 @@ While BigFix Explorer is loading the datastores, the `status` response field wil
 }
 ```
 
-This response will be returned when BigFix Explorer finished loading the datastores and is ready to answer queries.```json
+This response will be returned when BigFix Explorer finished loading the datastores and is ready to answer queries.
+```json
 {
     "instanceName": "explorer",
     "status": "Online",
