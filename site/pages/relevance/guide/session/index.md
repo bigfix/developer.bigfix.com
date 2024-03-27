@@ -37,28 +37,25 @@ They allow you to access information in the BigFix databases and display it in t
 
   <dt>**[Action Inspectors](./actioninspectors.html)**</dt>
   <dd>To query and manage the properties of the actions issued by the BigFix Operators.</dd>
-  
+
   <dt>**[Activation Inspectors](./activationinspectors.html)**</dt>
   <dd>To examine the various Analyses that have been activated.</dd>
 
   <dt>**[Baseline Inspectors](./baselineinspectors.html)**</dt> 
   <dd>To retrieve information about deployed baselines.</dd>
 
+  <dt>**[Client Inspectors](./clientinspectors.html)**</dt>
+  <dd>To return the name, value, and scope of BES Client settings.</dd> 
+
   <dt>**[Comment Inspectors](./commentinspectors.html)**</dt>
   <dd>To query information about issued comments.</dd> 
 
   <dt>**[Computer Inspectors](./computerinspectors.html)**</dt>
   <dd>To query and manage the computers that can be listed on the BigFix Console.</dd> 
-  
-  <dt>**[Client Inspectors](./clientinspectors.html)**</dt>
-  <dd>To return the name, value, and scope of BES Client settings.</dd> 
-  
-  <dt>**[UTF-8 String Inspectors](./utf8string.html)**</dt>
-  <dd>8-bit Unicode Transformation Format inspectors used by the EvaluateRelevance API.</dd> 
 
   <dt>**[Deployment Options Inspectors](./deploymentinspectors.html)**</dt>
   <dd>To manage the advanced deployment options set in BigFix Administrators Tool.</dd>
-  
+
   <dt>**[Domain Inspectors](./domaininspectors.html)**</dt>
   <dd>To manage BigFix domains.</dd>
 
@@ -83,11 +80,11 @@ They allow you to access information in the BigFix databases and display it in t
   <dt>**[Unmanaged Asset Inspectors](./unmanagedassetinspectors.html)**</dt>
   <dd>To monitor and report on mobile or hand-held devices that are not traditional BigFix Clients.</dd> 
 
-  <dt>**[Site Inspectors](./siteinspectors.html)**</dt> 
-  <dd>To query the properties of Fixlet sites to which the client is subscribed.</dd>
-
   <dt>**[User Inspectors](./userinspectors.html)**</dt>
   <dd>To query information about BigFix users.</dd> 
+
+  <dt>**[UTF-8 String Inspectors](./utf8string.html)**</dt>
+  <dd>8-bit Unicode Transformation Format inspectors used by the EvaluateRelevance API.</dd> 
 
   <dt>**[Wake-on-lan Inspectors](./wakeonlaninspectors.html)**</dt> 
   <dd>To query information about the Wake-on-lan capability on the Client.</dd>

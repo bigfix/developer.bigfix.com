@@ -34,6 +34,15 @@ If the data stored in the value is a string and it is the full pathname of a fol
 
 Returns the value stored in the registry entry provided it can be fully represented as an integer.
 
+# &lt;registry key value&gt; as large integer : large integer
+
+Returns the value stored in the registry entry, provided it can be fully represented as a 128-bit signed integer.
+
+{% qna %}
+Q: value of key "HKLM\Software\TestCase" of registry as large integer
+A: 9223372036854775807
+{% endqna %}
+
 # &lt;registry key value&gt; as string : string
 
 Returns a string if the data of the value is of type REG_SZ.

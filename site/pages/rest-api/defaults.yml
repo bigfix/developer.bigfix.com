@@ -33,6 +33,9 @@ nav:
       - name: Analysis
         href: /rest-api/api/analysis.html
 
+      - name: Archive Manager
+        href: /rest-api/api/archivemanager.html
+
       - name: Baseline
         href: /rest-api/api/baseline.html
 
@@ -48,11 +51,17 @@ nav:
       - name: Dashboard Variable
         href: /rest-api/api/dashboardvariable.html
 
+      - name: Explorer
+        href: /rest-api/api/explorer.html
+
       - name: Fixlet
         href: /rest-api/api/fixlet.html
 
       - name: Help
         href: /rest-api/api/help.html
+
+      - name: Identity Provider Directory
+        href: /rest-api/api/idpdirectory.html
 
       - name: Import
         href: /rest-api/api/import.html

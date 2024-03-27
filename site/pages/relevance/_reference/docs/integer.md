@@ -506,6 +506,10 @@ Converts an integer into a hexadecimal string.
 
 Reflexive cast for completeness.
 
+# &lt;integer&gt; as large integer : large integer
+
+Casts an integer to a 128-bit signed integer.
+
 # &lt;integer&gt; as month : month
 
 Returns the name of the nth month of the year.
@@ -557,6 +561,38 @@ Returns the remainder of the division of the left operand by the right operand.
 # - &lt;integer&gt; : integer
 
 Creates the negative of the integer provided.
+
+# &lt;integer&gt; &lt; &lt;large integer&gt; : boolean
+
+Returns true if the value of the left operand is less than the value of the right operand.
+
+# &lt;integer&gt; &lt;= &lt;large integer&gt; : boolean
+
+Returns true if the value of the left operand is less than or equal to the value of the right operand.
+
+# &lt;integer&gt; = &lt;large integer&gt; : boolean
+
+Returns true if the value of the left operand is equal to the value of the right operand.
+
+# &lt;integer&gt; + &lt;large integer&gt; : large integer
+
+Returns the sum of the operands.
+
+# &lt;integer&gt; - &lt;large integer&gt; : large integer
+
+Returns the difference between the operands.
+
+# &lt;integer&gt; * &lt;large integer&gt; : large integer
+
+Returns the multiplication of the operands.
+
+# &lt;integer&gt; / &lt;large integer&gt; : large integer
+
+Returns the division of the left operand by the right operand.
+
+# &lt;integer&gt; mod &lt;large integer&gt; : large integer
+
+Returns the remainder of the division of the left operand by the right operand.
 
 # &lt;integer&gt; &lt; &lt;uinteger&gt; : boolean
 

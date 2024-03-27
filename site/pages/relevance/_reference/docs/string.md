@@ -716,6 +716,10 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;head&g
 
 Creates an integer from the provided hexadecimal value.
 
+# hexadecimal large integer &lt;string&gt; : large integer
+
+Creates a 128-bit signed integer from the provided hexadecimal value.
+
 # hexadecimal string &lt;string&gt; : string
 
 Creates a string from the given hexadecimal value.
@@ -824,6 +828,15 @@ Returns an HTML snippet with the specified string enclosed in a &lt;kbd&gt; (key
 # kbd of &lt;string&gt; : html
 
 Returns an HTML snippet containing the specified string enclosed in a &lt;kbd&gt; (keyboard entry) tag.
+
+# large integer &lt;string&gt; : large integer
+
+Returns the 128-bit signed integer corresponding to the provided string.
+
+{% qna %}
+Q: large integer "5"
+A: 5
+{% endqna %}
 
 # last &lt;integer&gt; of &lt;string&gt; : substring
 
@@ -1128,7 +1141,7 @@ Returns an application for the name provided it is currently executing. The name
 # running service &lt;string&gt; : service
 
 Returns the running service object matching the name provided.
-The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
+The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESExplorer, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
 # samp &lt;string&gt; of &lt;string&gt; : html
 
@@ -1161,7 +1174,7 @@ No documentation exists.
 # service &lt;string&gt; : service
 
 Returns the service object matching the name provided, regardless of its running state.On a Macintosh, returns a &lt;dummy&gt; type.
-The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
+The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESExplorer, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
 # set of &lt;string&gt; : string set
 
@@ -1694,6 +1707,10 @@ Converts a string version of an IP address into the flexible ipv4or6 address for
 # &lt;string&gt; as ipv6 address : ipv6 address
 
 Converts a string representations of an IPv6 address (with colons and/or dots) as an IPv6 address type.
+
+# &lt;string&gt; as large integer : large integer
+
+Converts the provided string into the corresponding 128-bit signed integer value. If the string contains anything but a number, the conversion will fail. Use `numeric value` for more liberal parsing rules.
 
 # &lt;string&gt; as left trimmed string : string
 

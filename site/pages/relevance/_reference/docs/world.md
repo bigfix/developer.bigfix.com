@@ -352,6 +352,14 @@ Returns the current list of BES fixlets in the form of a set, which can be arith
 
 Returns a string corresponding to the national language of the program, such as ENU for English or ESP for Spanish.
 
+# bes idp directory : bes idp directory
+
+Returns the Identity Provider Directory (IDPD), the set of information required to connect to an identity provider that stores user credentials used for authentication in BigFix.
+
+# bes idp directory set : bes idp directory set
+
+Iterates over the current set of BES Identity Provider Directories and represents them as a mathematical set, suitable for further manipulation.
+
 # bes ldap directory : bes ldap directory
 
 No documentation exists.
@@ -1026,6 +1034,10 @@ This refers to a group including all users, even anonymous users and guests. Mem
 
 Returns a &#39;task action type&#39; corresponding to a task that runs a program.
 
+# explorer service : service
+
+Returns a service object for the 'BESExplorer' service, if available on the local system.
+
 # extension : enableable_file
 
 No documentation exists.
@@ -1112,6 +1124,15 @@ Returns the largest signed 64-bit integer.
 {% qna %}
 Q: greatest integer
 A: 9223372036854775807
+{% endqna %}
+
+# greatest large integer : large integer
+
+Returns the largest signed 128-bit integer.
+
+{% qna %}
+Q: greatest large integer
+A: 170141183460469231731687303715884105727
 {% endqna %}
 
 # greatest uinteger : uinteger
@@ -1400,6 +1421,15 @@ Returns the least 64-bit integer value.
 {% qna %}
 Q: least integer
 A: -9223372036854775808
+{% endqna %}
+
+# least large integer : large integer
+
+Returns the least signed 128-bit integer value.
+
+{% qna %}
+Q: least large integer
+A: -170141183460469231731687303715884105728
 {% endqna %}
 
 # least uinteger : uinteger
