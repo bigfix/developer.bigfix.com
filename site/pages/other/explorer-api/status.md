@@ -55,7 +55,7 @@ This response will be returned when the connection between BigFix Explorer and t
 }
 ```
 
-If the connection between BigFix Explorer and the BigFix Root Server cannot be established because of an invalid BigFix Explorer certificate, the `status` response field will be `Starting` or `Online`, while the `rootServerConnection` field will be `Invalid Explorer Certificate`. For example
+If the connection between BigFix Explorer and the BigFix Root Server cannot be established because of an invalid BigFix Explorer certificate, the `status` response field will be `Starting` or `Online`, while the `rootServerConnection` field will be `Invalid Explorer Certificate`. For example:
 ```json
 {
     "instanceName": "explorer",

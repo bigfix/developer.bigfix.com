@@ -3,7 +3,7 @@ title: BigFix Explorer APIs
 ---
 
 The BigFix Explorer implements an HTTP server and provides a set of REST APIs.
-Any BigFix Operator with sufficient authorization can use these REST APIS.
+Any BigFix Operator with sufficient authorization can use these REST APIs.
 
 ## How to connect to BigFix Explorer
 The HTTP Server of BigFix Explorer, deployed by default on port 9383, will enable HTTPs with a self-signed certificate by default.
