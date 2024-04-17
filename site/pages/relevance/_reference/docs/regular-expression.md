@@ -8,7 +8,6 @@ The supported regular expression syntaxes and the libraries used to interpret th
 
 | BigFix Version | Windows<br/>regex | Windows<br/>perl regex | UNIX<br/>regex | UNIX<br/>perl regex |
 |--------------------------------|----------------|---------------|--------------|--------------|
-|                                | regex          | perl regex    | regex        | perl regex   |
 | From 11.0.0 to 11.0.2 included | Boost 1.78.0   | Boost 1.78.0  | Boost 1.78.0 | Boost 1.78.0 |
 | From 10.0.8 to 11.0.0 excluded | Boost 1.36.0   | Boost 1.36.0  | Native       | N/A          |
 | Earlier than 10.0.8            | Boost 1.36.0   | N/A           | Native       | N/A          |
