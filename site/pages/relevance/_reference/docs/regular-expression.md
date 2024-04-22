@@ -9,18 +9,34 @@ The supported regular expression syntaxes and the libraries used to interpret th
 | BigFix Version | Windows<br/>regex | Windows<br/>perl regex | UNIX<br/>regex | UNIX<br/>perl regex |
 |--------------------------------|----------------|---------------|--------------|-----------------|
 | From 11.0.0 to 11.0.2 included | Boost 1.78.0   | Boost 1.78.0  | Boost 1.78.0 \* | Boost 1.78.0 \* |
-| From 10.0.8 to 11.0.0 excluded | Boost 1.36.0   | Boost 1.36.0  | Native       | N/A             |
-| Earlier than 10.0.8            | Boost 1.36.0   | N/A           | Native       | N/A             |
+| From 10.0.8 or later           | Boost 1.36.0   | Boost 1.36.0  | OS Native       | N/A             |
+| 10.0.7 or earlier              | Boost 1.36.0   | N/A           | OS Native       | N/A             |
 
-\* The exception to this are Tiny Core Linux (all versions) and Solaris 11 SPARC. On those operating systems, the `regex` inspectors use the native library, while the `perl regex` inspectors are not available.
+\* Exceptions are Tiny Core Linux (all versions) and Solaris 11 SPARC. On those operating systems, the `regex` inspectors use the OS Native library, while the `perl regex` inspectors are not available.
 
 Starting from BigFix Version 11.0.0, both on Windows and UNIX operating systems, the `regex` and the `perl regex` inspectors use the Boost library version 1.78.0, which supports their respective regular expression syntaxes.
 
-Starting from BigFix Version 10.0.8, both the `regex` and the `perl regex` inspectors used Boost 1.36.0, but the `perl regex` inspectors were only available on Windows. The same Boost library version is also used by the `regex` inspectors, on Windows, in the earlier BigFix versions.
+Starting from BigFix Version 10.0.8, both the `regex` and the `perl regex` inspectors use the Boost library version 1.36.0 on Windows systems. On UNIX systems,the `regex` inspectors use the OS Native library while the `perl regex` inspectors are not available.
 
-BigFix Versions 10.0.7 and earlier, on UNIX platforms, do not use the Boost library and the `regex` inspectors use a native library instead. For those BigFix versions, we recommend writing "POSIX-compliant regular expressions", so that they work across different operating systems.
+For BigFix Versions 10.0.7 and earlier, only the `regex` inspectors are available, on Windows systems they use the Boost library version 1.36.0 and on UNIX systems they use the OS Native library.
 
-POSIX defines a set of character classes, marked with the syntax `[:className:]`, that can be used within brackets (i.e. `[[:className:]]`) to match a character of that class.
-For example, you can write `[[:alpha:]]` to match alphabetic characters, `[[:digit:]]` to match digits, and `[[:space:]]` to match whitespaces. You can find a table with equivalent character classes in 
-https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions#Character_classes
+Additionally, be aware that, the inspectors could elaborate POSIX regular expressions differently if a Boost library applies or if the OS Native library applies. While Boost is declared to be POSIX-Extended compliant, some Native libraries are not fully POSIX compliant.
 
+One of the known differences is the POSIX standard leftmost longest rule, Boost is compliant to the rule while the Native glibc library is not.
+
+An example is the following regular expression:
+```
+parenthesized parts of match (regex "^D?(.+)(F)") of "DEFG"
+```
+
+When the Native library applies, it would return:
+```
+E
+F
+```
+
+When the Boost library applies, it would return:
+```
+DE
+F
+```
