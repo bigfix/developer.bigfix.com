@@ -724,6 +724,9 @@ Creates a 128-bit signed integer from the provided hexadecimal value.
 
 Creates a string from the given hexadecimal value.
 
+The output depends on the locale of the computer where the inspector is executed.
+If the hexadecimal string cannot be converted, it displays an error message stating "Input is not valid hexadecimal.".
+
 # hexadecimal uinteger &lt;string&gt; : uinteger
 
 Creates an unsigned integer from the provided hexadecimal value.
