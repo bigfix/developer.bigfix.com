@@ -200,6 +200,14 @@ Returns a case-insensitive Perl regular expression from the supplied string. Thi
 
 Same as case insensitive perl regex &lt;string&gt;. This inspector is available on Solaris but only on x86 and x64 architectures.
 
+# case insensitive posix regex &lt;string&gt; : regular expression
+
+Returns an object representing a POSIX compliant, case-insensitive, regular expression corresponding to the supplied string. This inspector is available on Solaris but only on x86 and x64 architectures.
+
+# case insensitive posix regular expression &lt;string&gt; : regular expression
+
+Same as case insensitive posix regex &lt;string&gt;. This inspector is available on Solaris but only on x86 and x64 architectures.
+
 # cast &lt;string&gt; : cast
 
 Returns a list of the objects that can be cast into the type specified by &lt;string&gt;.
@@ -1043,6 +1051,14 @@ Returns the POSIX folder specified by &lt;string&gt;.
 # posix item &lt;string&gt; : filesystem object
 
 Returns a filesystem object with the given name, either a file or a folder, using POSIX formatting.
+
+# posix regex &lt;string&gt; : regular expression
+
+Returns an object representing a POSIX compliant regular expression corresponding to the supplied string. This inspector is available on Solaris but only on x86 and x64 architectures.
+
+# posix regular expression &lt;string&gt; : regular expression
+
+Same as posix regex &lt;string&gt;. This inspector is available on Solaris but only on x86 and x64 architectures.
 
 # pre &lt;string&gt; of &lt;string&gt; : html
 
