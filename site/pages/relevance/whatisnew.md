@@ -9,6 +9,12 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 {% endsection %}
 
 
+#### Version 11 Patch 3 Added Inspector Types
+
+New inspector types named *case insensitive posix regex*, *case insensitive posix regular expression*, *posix regex* and *posix regular expression* were added to fully support POSIX compliant Regular Expressions.
+
+For details, see [regular expression](https://developer.bigfix.com/relevance/reference/regular-expression.html)
+
 #### Version 11 Patch 2 Added Inspector Types
 
 New inspector types named *bes idp directory*, *bes idp directory server*, *bes idp directory set* and *bes idp directory with multiplicity* were added to provide information about all identity providers added to the BigFix Server. The new inspectors also provide information about the new identity provider Microsoft Entra ID, introduced with BigFix Platform 11.0.2.

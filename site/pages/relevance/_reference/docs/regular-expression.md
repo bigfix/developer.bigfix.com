@@ -8,7 +8,7 @@ The supported regular expression syntaxes and the libraries used to interpret th
 
 | BigFix Version | Windows<br/>regex | Windows<br/>perl regex | Windows<br/>posix regex | UNIX<br/>regex | UNIX<br/>perl regex | UNIX<br/>posix regex |
 |----------------------------|-------------|-------------|-------------|-------------|-------------|-------------|
-| From 11.0.3 | Boost 1.78.0 | Boost 1.78.0 | Boost 1.78.0 | Boost 1.78.0 \* | Boost 1.78.0 \* | Boost 1.78.0 \* |
+| From 11.0.3 | Boost 1.78.0 | Boost 1.78.0 | Boost 1.78.0 | OS Native | Boost 1.78.0 \* | Boost 1.78.0 \* |
 | From 11.0.0 to 11.0.2 included | Boost 1.78.0 | Boost 1.78.0 | N/A | Boost 1.78.0 \* | Boost 1.78.0 \* | N/A |
 | From 10.0.8 or later | Boost 1.36.0 | Boost 1.36.0 |  N/A | OS Native | N/A | N/A |
 | 10.0.7 or earlier | Boost 1.36.0 | N/A | N/A | OS Native | N/A | N/A |
@@ -19,7 +19,7 @@ Starting from BigFix Version 11.0.3, only on UNIX systems, the `regex` inspector
 
 Starting from BigFix Version 11.0.0 to Version 11.0.2, both on Windows and UNIX operating systems, the `regex` and the `perl regex` inspectors use the Boost library version 1.78.0, which supports their respective regular expression syntaxes.
 
-Starting from BigFix Version 10.0.8, both the `regex` and the `perl regex` inspectors use the Boost library version 1.36.0 on Windows systems. On UNIX systems,the `regex` inspectors use the OS Native library while the `perl regex` inspectors are not available.
+Starting from BigFix Version 10.0.8, both the `regex` and the `perl regex` inspectors use the Boost library version 1.36.0 on Windows systems. On UNIX systems, the `regex` inspectors use the OS Native library while the `perl regex` inspectors are not available.
 
 For BigFix Versions 10.0.7 and earlier, only the `regex` inspectors are available, on Windows systems they use the Boost library version 1.36.0 and on UNIX systems they use the OS Native library.
 
