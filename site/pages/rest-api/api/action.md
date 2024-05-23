@@ -527,22 +527,25 @@ May return this:
 {% endrestapi %}
 
 #### Filtering Response Fields
-You can use the ```?fields=``` parameter to limit the fields returned for a given resource when using the API resources ```/api/actions``` and ```/api/action/{action id}/status```.
-The value following the ```?fields=``` parameter is the filter. Because the XML is case sensitive, ensure that you specify the correct case to avoid errors. 
+You can use the `?fields=` parameter to limit the fields returned for a given resource when using the API resources `/api/actions` and `/api/action/{action id}/status`.
+The value following the `?fields=` parameter is the filter. Because the URL is case sensitive, ensure that you specify the correct case to avoid errors.
 
 Use these characters to define the filter:
-- ```,``` to separate elements, children, and attribute pairs
-- ```(...)``` to denote children within a field
-- ```&```as pairing marker for attributes
-- ```<...>``` to denote attributes
-- ```=``` to mark LHS and RHS of attributes
+- `,` to separate elements, children, and attribute pairs
+- `(...)` to denote children within a field
+- `&` as pairing marker for attributes
+- `<...>` to denote attributes
+- `=` to mark LHS and RHS of attributes
 
 **Note:** These are reserved characters. By default, they are not allowed in the name of the filter.
 
-These are some example of filtering results using ```?fields=```:
+Here are a few examples of filtering results using `?fields=`:
 
 ```xml
 /api/action/<action id>/status?fields=Status,Computer
 /api/action/<action id>/status?fields=Computer(Status,State,StartTime) 
 /api/action/<action id>/status?fields=Computer<ID=11111>,Computer(Status,StartTime) 
 ```
+
+#### Submitting a Request that exceeds the limits set on the Server
+When you submit an action REST API request targeting more than 10000 computers, the HTTP `413 Content Too Large` error response is returned. This indicates that the request went over a limit defined on the BigFix Server.
