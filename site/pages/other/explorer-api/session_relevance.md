@@ -2,7 +2,7 @@
 title: Session Relevance
 ---
 
-This REST API allows you, as BigFix Operator, to evaluate the session relevance using the BigFix Explorer, a BigFix Platform component introduced in 11.0.2.
+This REST API allows you, as BigFix Operator, to evaluate the Session Relevance using the BigFix Explorer, a BigFix Platform component introduced in 11.0.2.
 The BigFix Operator will send a JSON to the REST API "/api/relevance" of the BigFix Explorer to evaluate the Session Relevance. 
 The BigFix Operator can also specify, in the same JSON, the keys to be used to populate the result of the Session Relevance evaluation.
 This API only supports JSON format. XML format is not supported. If you need to use the XML format, you can use the Server API named query.
@@ -16,13 +16,14 @@ When this method is invoked, BigFix Explorer evaluates the session relevance in 
 The request can contain the following fields:
 * relevance, a string representing the Session Relevance to be evaluated.
 * keys, an optional string that can be used to rename and restructure the fields of the answer/answers to the query that is/are returned in the response.
+* filters, an optional field that contains elements that can be used to filter the Session Relevance results. This field is available starting from BigFix Version 11.0.3.
 
 The syntax used in the `keys` field is a subset of [GraphQL](https://graphql.org/learn/), a query language for APIs. The name of a key can contain only letters, numbers and underscores. A space separates the name of a key from the name of the following one. If you want one or more keys to be children of another, write the name of the parent key, then write a `{`, then the name of the child keys, and finally write a `}`.
 
-**Response:** The result of the session relevance query. The response format is JSON.
+**Response:** The result of the Session Relevance query. The response format is JSON.
 
 The response contains the following fields:
-* result, represents the result of the submitted session relevance.
+* result, represents the result of the submitted Session Relevance.
 * count, is an integer representing the number of tuples in the returned list.
 * plural, indicates the plurality of the returned expression. It can be true or false.
 * type, is a string that represents each object type contained in the expression.
@@ -81,3 +82,73 @@ The following is an example of request using the cURL command directly:
 ```
 curl -X POST -u BFAdmin:BFPass01 --data '{"relevance": "(id of it, name of it, (agent version of it, agent type of it)) of bes computers", "keys": "{id computer_name agent {version type}}"}' https://bf-explorer:9383/api/relevance
 ```
+
+#### Filtering the Session Relevance results
+Starting from BigFix Version 11.0.3, you can filter the results by providing a Session Relevance that they must satisfy.
+You must define the filter specifications within the request body of the API. There is no other way to interact with the filters.
+
+The filter should be a single condition for a specific BigFix object type. The supported BigFix objects that can be filtered are:
+- actions, any `[bes action](https://developer.bigfix.com/relevance/reference/bes-action.html)` object
+- analyses, a 'bes fixlet' object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Analysis'
+- baselines, a 'bes fixlet' object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Baseline'
+- computer groups, any `[bes computer group](https://developer.bigfix.com/relevance/reference/bes-computer-group.html)` object
+- computers, any `[bes computer](https://developer.bigfix.com/relevance/reference/bes-computer.html)` object
+- content, a 'bes fixlet' object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Analysis', 'Baseline', 'ComputerGroup', 'Fixlet', or 'Task'
+- fixlets, a `[bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html)` object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Fixlet' or 'Task'
+- sites, any `[bes site](https://developer.bigfix.com/relevance/reference/bes-site.html)` object
+
+The `keys` and `filters` fields are options.
+Take into account that you can use one filter object type at a time.
+```json
+{
+    "relevance": "string",
+    "keys": "string",
+    "filters": {
+        "computers": "a Session Relevance string that returns a single object representing a bes computer set",
+        "computergroups": "a Session Relevance string that returns a single object representing a bes computer group set ",
+        "content": "a Session Relevance string that returns a single object representing BigFix content [bes fixlet set, bes baseline set, bes analysis set]",
+        "fixlets": "a Session Relevance string that returns a single object representing a bes fixlet set",
+        "baselines": "a Session Relevance string that returns a single object representing a bes baseline set",
+        "analyses": "a Session Relevance string that returns a single object representing a bes analysis set",
+        "actions": "a Session Relevance string that returns a single object representing a bes action set",
+        "sites": "a Session Relevance string that returns a single object representing a bes site set"
+    }
+}
+```
+
+In this example, we have a Session Relevance query that would return details of all the reported actions of any computers. The filter will make the query return only results relative to Windows computers.
+```json
+{
+    "relevance":"(((id of it, name of it) of elements of it) of reported action set of it, name of it) of bes computers",
+    "keys": "{ reported_action {id name} computer_name }",
+    "filters": {
+        "computers": "set of (bes computers whose (operating system of it contains \"Win\"))"
+    }
+}
+```
+
+where: 
+- 'reported_action' is the label we assign to the pair of properties `id` and `name` of the `elements` of the `reported action set`.
+- 'computer_name' is the label we assign to the `name` property of the `bes computers`.
+
+In this example, we have a Session Relevance that would return certain details of all bes fixlets objects (of any type). The filter will make the query return only results relative to bes fixlet objects whose name contains "Restart Needed". This is only applied to the "bes fixlet" objects of type "Fixlet".
+```json
+{
+    "relevance": "(name of it, id of it, name of site of it) of bes fixlets",
+    "filters": {
+        "fixlets": "set of bes fixlets whose (name of it contains \"Restart Needed\")"
+    }
+}
+```
+
+If you want to filter across all types, namely "Fixlet", "Task", "Analysis", "ComputerGroup", and "Baseline", you should use the `content` filter instead. The content filter can handle the objects of type "bes fixlet set", "bes baseline set", and "bes analyses set".
+```json
+{
+    "relevance": "(names of it, ids of it, names of elements of applicable computer sets of it, type of it) of bes fixlets",
+    "filters": {
+        "content": "set of (bes fixlets whose (name of it contains \"Restart Needed\"))"
+    }
+}
+```
+
+Each filter, in terms of its Session Relevance and the associated BigFix object results, is kept in memory as long as the data used to calculate its results is not changed. Each filter is identified by the associated Session Relevance. Reusing a filter means passing a filter with the same Session Relevance.
