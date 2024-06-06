@@ -107020,6 +107020,19 @@
         ]
       }
     },
+    "rtt of <socket> : time interval": {
+      "key": "rtt of <socket> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "rtt",
+      "pluralPhrase": "rtts",
+      "directObjectType": "socket",
+      "availability": {
+        "11.0.3.0": [
+          "Windows"
+        ]
+      }
+    },
     "tcp of <socket> : boolean": {
       "key": "tcp of <socket> : boolean",
       "type": "property",
