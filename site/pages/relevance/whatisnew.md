@@ -21,6 +21,14 @@ A new inspector property named *rtt of* was added to the existing *socket* inspe
 
 For details, see [socket](https://developer.bigfix.com/relevance/reference/socket.html)
 
+A new inspector property named *network response time of* was added to the existing *application* inspector to return the network response time of a specific application, which is calculated as the average round-trip time (RTT) of the application's TCP connections in the ESTABLISHED status. Such time is expressed in the "hh.mm.ss.us" format.
+
+For details, see [application](https://developer.bigfix.com/relevance/reference/application.html)
+
+A new inspector property named *web response time of* was added to the existing *application* inspector to return the web response time of a specific application, which is calculated as the average round-trip time (RTT) of the application's TCP connections in the ESTABLISHED status with remote port 80 (HTTP) or 443 (HTTPS). Such time is expressed in the "hh.mm.ss.us" format.
+
+For details, see [application](https://developer.bigfix.com/relevance/reference/application.html)
+
 #### Version 11 Patch 2 Added Inspector Types
 
 New inspector types named *bes idp directory*, *bes idp directory server*, *bes idp directory set* and *bes idp directory with multiplicity* were added to provide information about all identity providers added to the BigFix Server. The new inspectors also provide information about the new identity provider Microsoft Entra ID, introduced with BigFix Platform 11.0.2.
