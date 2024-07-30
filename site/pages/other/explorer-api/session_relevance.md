@@ -88,14 +88,11 @@ Starting from BigFix Version 11.0.3, you can filter the results by providing a S
 You must define the filter specifications within the request body of the API. There is no other way to interact with the filters.
 
 The filter should be a single condition for a specific BigFix object type. The supported BigFix objects that can be filtered are:
-- actions, any `[bes action](https://developer.bigfix.com/relevance/reference/bes-action.html)` object
-- analyses, a 'bes fixlet' object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Analysis'
-- baselines, a 'bes fixlet' object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Baseline'
-- computer groups, any `[bes computer group](https://developer.bigfix.com/relevance/reference/bes-computer-group.html)` object
-- computers, any `[bes computer](https://developer.bigfix.com/relevance/reference/bes-computer.html)` object
-- content, a 'bes fixlet' object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Analysis', 'Baseline', 'ComputerGroup', 'Fixlet', or 'Task'
-- fixlets, a `[bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html)` object whose `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returns 'Fixlet' or 'Task'
-- sites, any `[bes site](https://developer.bigfix.com/relevance/reference/bes-site.html)` object
+- actions, a `[bes action set](https://developer.bigfix.com/relevance/reference/bes-action-set.html)` object
+- computers, a `[bes computer set](https://developer.bigfix.com/relevance/reference/bes-computer-set.html)` object
+- computer groups, a `[bes computer group set](https://developer.bigfix.com/relevance/reference/bes-computer-group-set.html)` object
+- content, a `[bes fixlet set](https://developer.bigfix.com/relevance/reference/bes-fixlet-set.html)` object whose 'bes fixlet' elements have the property `[type of] (https://developer.bigfix.com/relevance/reference/bes-fixlet.html#type-of-bes-fixlet-string)` returning 'Analysis', 'Baseline', 'ComputerGroup', 'Fixlet', or 'Task'
+- sites, a `[bes site set](https://developer.bigfix.com/relevance/reference/bes-site-set.html)` object
 
 The `keys` and `filters` fields are options.
 Take into account that you can use one filter object type at a time.
@@ -104,13 +101,10 @@ Take into account that you can use one filter object type at a time.
     "relevance": "string",
     "keys": "string",
     "filters": {
+        "actions": "a Session Relevance string that returns a single object representing a bes action set",
         "computers": "a Session Relevance string that returns a single object representing a bes computer set",
         "computergroups": "a Session Relevance string that returns a single object representing a bes computer group set ",
         "content": "a Session Relevance string that returns a single object representing BigFix content [bes fixlet set, bes baseline set, bes analysis set]",
-        "fixlets": "a Session Relevance string that returns a single object representing a bes fixlet set",
-        "baselines": "a Session Relevance string that returns a single object representing a bes baseline set",
-        "analyses": "a Session Relevance string that returns a single object representing a bes analysis set",
-        "actions": "a Session Relevance string that returns a single object representing a bes action set",
         "sites": "a Session Relevance string that returns a single object representing a bes site set"
     }
 }
@@ -131,17 +125,7 @@ where:
 - 'reported_action' is the label we assign to the pair of properties `id` and `name` of the `elements` of the `reported action set`.
 - 'computer_name' is the label we assign to the `name` property of the `bes computers`.
 
-In this example, we have a Session Relevance that would return certain details of all bes fixlets objects (of any type). The filter will make the query return only results relative to bes fixlet objects whose name contains "Restart Needed". This is only applied to the "bes fixlet" objects of type "Fixlet".
-```json
-{
-    "relevance": "(name of it, id of it, name of site of it) of bes fixlets",
-    "filters": {
-        "fixlets": "set of bes fixlets whose (name of it contains \"Restart Needed\")"
-    }
-}
-```
-
-If you want to filter across all types, namely "Fixlet", "Task", "Analysis", "ComputerGroup", and "Baseline", you should use the `content` filter instead. The content filter can handle the objects of type "bes fixlet set", "bes baseline set", and "bes analyses set".
+In this example, we have a Session Relevance that would return certain details of all bes fixlets objects (of any type). The filter will make the query return only results relative to bes fixlet objects whose name contains "Restart Needed".
 ```json
 {
     "relevance": "(names of it, ids of it, names of elements of applicable computer sets of it, type of it) of bes fixlets",
