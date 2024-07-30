@@ -8,7 +8,7 @@ You can create and test your custom queries locally on the Client system using t
 
 If you own a BigFix Lifecycle or a BigFix Compliance version 9.5 Patch 2 or later license, you can exercise your
 Client Relevance Language queries on the  target clients also directly from the WebUI using the BigFix Query
-Application. For more information, click [BigFix Query](https://www.ibm.com/support/knowledgecenter/SSTK87_9.5.0/com.ibm.bigfix.webui.doc/WebUI/Users_Guide/c_bigfix_query.html).
+Application. For more information, click [Get Started with BigFix Query](https://help.hcl-software.com/bigfix/11.0/webui/WebUI/Users_Guide/c_bigfix_query.html).
 
 <dl>
   <dt>[**System Information**](./system-information.html)</dt>
