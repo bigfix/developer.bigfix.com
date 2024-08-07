@@ -24,7 +24,7 @@ By default, the session times out after 5 minutes of idle time. You can modify t
 
 Starting from BigFix Version 10.0.8, you can disable local operators from logging into the BigFix REST API and only allow LDAP operators to use them.
 
-When local operators are disabled, several REST API that perform changes on the operators, will be disabled according to the BigFix Console behavior described in [Disabling local operators](https://help.hcltechsw.com/bigfix/10.0/platform/Platform/Config/c_disabling_local_operators.html).
+When local operators are disabled, several REST API that perform changes on the operators, will be disabled according to the BigFix Console behavior described in [Disabling local operators](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_disabling_local_operators.html).
 
 {% endsection %}
 

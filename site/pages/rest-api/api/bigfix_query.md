@@ -141,7 +141,7 @@ For example:
 {% endrestapi %}
 
 **Note:**
-1. The BigFix Query requests and their results are stored in the BigFix database. To avoid using too much space in the database, you can customize the BigFix Query advanced options in the BigFix Administration Tool [as described here](https://help.hcltechsw.com/bigfix/11.0/platform/Platform/Config/c_list_of_advanced_options.html#advanced_opt_bfquery).
+1. The BigFix Query requests and their results are stored in the BigFix database. To avoid using too much space in the database, you can customize the BigFix Query advanced options in the BigFix Administration Tool [as described here](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_list_of_advanced_options.html#advanced_opt_bfquery).
 2. If you are using the REST API, be aware that only the operator issuing the query can see its results.
 3. BigFix now supports queries with inspector context when you set the `UseClientContext` element to `true` in the REST API requests.
 
