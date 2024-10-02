@@ -130,9 +130,11 @@ First, prepare the XML that will be passed to the REST API:
 </BESAPI>
 ```
 
-Note: When you want to create a Microsoft Entity provider using a certificate instead of the client secret, you must use one of the following elements:
+If you want to create a Microsoft Entity provider using a certificate instead of the client secret, you must specify either of the following elements:
 * `<JwtCertificate><![CDATA[MyJWTCertificate]]></JwtCertificate>`, where `MyJWTCertificate` is the content of the `.pem` file containing the private key and the public certificate.
 * `<JwtCertificateServerPath>MyCertificateServerPath</JwtCertificateServerPath>`, where `MyCertificateServerPath` is the path of the `.pem` file containing the private key and the public certificate located on the computer where the BigFix Server is installed.
+
+If the private key is password-protected, you must also pass this element:
 * `<PrivateKeyPassword>MyPrivateKeyPassword</PrivateKeyPassword>`, where `MyPrivateKeyPassword` is the password for the private key, if it is password-protected.
 
 Save the XML to a file named, for example, `idpdirectories.xml`.
