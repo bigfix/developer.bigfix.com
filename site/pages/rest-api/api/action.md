@@ -548,4 +548,4 @@ Here are a few examples of filtering results using `?fields=`:
 ```
 
 #### Submitting a Request that exceeds the limits set on the Server
-When you submit an action REST API request targeting more than 10000 computers, the HTTP `413 Content Too Large` error response is returned. This indicates that the request went over a limit defined on the BigFix Server.
+When you submit an `action` REST API request targeting more computers than the ones set in the `targetBySpecificListLimit` parameter (default value: 10000), the HTTP `413 Content Too Large` error response is returned. This indicates that the request went over a limit defined on the BigFix Server.
