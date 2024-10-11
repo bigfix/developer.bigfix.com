@@ -103053,19 +103053,6 @@
         ]
       }
     },
-    "network response time of <application> : time interval": {
-      "key": "network response time of <application> : time interval",
-      "type": "property",
-      "resultType": "time interval",
-      "singularPhrase": "network response time",
-      "pluralPhrase": "network response times",
-      "directObjectType": "application",
-      "availability": {
-        "11.0.3.0": [
-          "Windows"
-        ]
-      }
-    },
     "task name of <application> : string": {
       "key": "task name of <application> : string",
       "type": "property",
@@ -103088,19 +103075,6 @@
       "directObjectType": "application",
       "availability": {
         "8.2.1078.0": [
-          "Windows"
-        ]
-      }
-    },
-    "web response time of <application> : time interval": {
-      "key": "web response time of <application> : time interval",
-      "type": "property",
-      "resultType": "time interval",
-      "singularPhrase": "web response time",
-      "pluralPhrase": "web response times",
-      "directObjectType": "application",
-      "availability": {
-        "11.0.3.0": [
           "Windows"
         ]
       }

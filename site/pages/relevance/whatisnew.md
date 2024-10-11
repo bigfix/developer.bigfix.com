@@ -15,19 +15,11 @@ New inspector types named *case insensitive posix regex*, *case insensitive posi
 
 For details, see [regular expression](https://developer.bigfix.com/relevance/reference/regular-expression.html)
 
-#### Version 11 Patch 3 Added Inspector Properties
+#### Version 11 Patch 3 Added Inspector Property
 
 A new inspector property named *rtt of* was added to the existing *socket* inspector to return the round-trip time (RTT) of the TCP socket connections in the "ESTABLISHED" state. Such time is expressed in the "hh.mm.ss.us" format.
 
 For details, see [socket](https://developer.bigfix.com/relevance/reference/socket.html)
-
-A new inspector property named *network response time of* was added to the existing *application* inspector to return the network response time of a specific application, which is calculated as the average round-trip time (RTT) of the application's TCP connections in the ESTABLISHED status. Such time is expressed in the "hh.mm.ss.us" format.
-
-For details, see [application](https://developer.bigfix.com/relevance/reference/application.html)
-
-A new inspector property named *web response time of* was added to the existing *application* inspector to return the web response time of a specific application, which is calculated as the average round-trip time (RTT) of the application's TCP connections in the ESTABLISHED status with remote port 80 (HTTP) or 443 (HTTPS). Such time is expressed in the "hh.mm.ss.us" format.
-
-For details, see [application](https://developer.bigfix.com/relevance/reference/application.html)
 
 #### Version 11 Patch 2 Added Inspector Types
 
