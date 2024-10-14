@@ -8,7 +8,7 @@ The examples have been implemented for the following tools. See section for usag
 - [cURL](#cURL)
 - [python](#python)
 
-For these tools to establish a secure connection to the server, you must install a [custom HTTPS certificate](https://help.hcltechsw.com/bigfix/10.0/platform/Platform/Config/c_config_custom_certificates.html). Alternatively, you can provide a *disable HTTPS connection* option to the tool you are using. This is described below for every tool.
+For these tools to establish a secure connection to the server, you must install a [custom HTTPS certificate](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_config_custom_certificates.html). Alternatively, you can provide a *disable HTTPS connection* option to the tool you are using. This is described below for every tool.
 
 For the following examples to work successfully:
 * `username` must be your user name.

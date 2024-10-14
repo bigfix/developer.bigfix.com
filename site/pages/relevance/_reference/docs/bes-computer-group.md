@@ -1,6 +1,6 @@
 # type: bes computer group
 
-The &lt;bes computer group&gt; inspectors return an iterated list of computer groups, as defined in the BES Console. The types of computer groups can be: manual, automatic, server based or ad-hoc. Ad-hoc computer groups are temporary and cannot be queried through session relevance. For more information about computer groups, see [Computer Groups](https://help.hcltechsw.com/bigfix/10.0/platform/Platform/Console/c_computer_groups.html).
+The &lt;bes computer group&gt; inspectors return an iterated list of computer groups, as defined in the BES Console. The types of computer groups can be: manual, automatic, server based or ad-hoc. Ad-hoc computer groups are temporary and cannot be queried through session relevance. For more information about computer groups, see [Computer Groups](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Console/c_computer_groups.html).
 
 # automatic flag of &lt;bes computer group&gt; : boolean
 

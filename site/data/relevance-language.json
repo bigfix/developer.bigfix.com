@@ -44445,6 +44445,30 @@
           "SUSE",
           "Solaris",
           "Ubuntu"
+        ],
+        "11.0.3": [
+          "AIX"
+        ]
+       }
+    },
+    "case insensitive posix regex <string> : regular expression": {
+      "key": "case insensitive posix regex <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "case insensitive posix regex",
+      "pluralPhrase": "case insensitive posix regexes",
+      "indexType": "string",
+      "availability": {
+        "11.0.3": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
        }
     },
@@ -44494,6 +44518,30 @@
           "SUSE",
           "Solaris",
           "Ubuntu"
+        ],
+        "11.0.3": [
+          "AIX"
+        ]
+       }
+    },
+    "case insensitive posix regular expression <string> : regular expression": {
+      "key": "case insensitive posix regular expression <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "case insensitive posix regular expression",
+      "pluralPhrase": "case insensitive posix regular expressions",
+      "indexType": "string",
+      "availability": {
+        "11.0.3": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
        }
     },
@@ -47499,8 +47547,32 @@
           "SUSE",
           "Solaris",
           "Ubuntu"
+        ],
+        "11.0.3": [
+          "AIX"
         ]
       }
+    },
+    "posix regex <string> : regular expression": {
+      "key": "posix regex <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "posix regex",
+      "pluralPhrase": "posix regexes",
+      "indexType": "string",
+      "availability": {
+        "11.0.3": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+       }
     },
     "regular expression <string> : regular expression": {
       "key": "regular expression <string> : regular expression",
@@ -47548,8 +47620,32 @@
           "SUSE",
           "Solaris",
           "Ubuntu"
+        ],
+        "11.0.3": [
+          "AIX"
         ]
       }
+    },
+    "posix regular expression <string> : regular expression": {
+      "key": "posix regular expression <string> : regular expression",
+      "type": "property",
+      "resultType": "regular expression",
+      "singularPhrase": "posix regular expression",
+      "pluralPhrase": "posix regular expressions",
+      "indexType": "string",
+      "availability": {
+        "11.0.3": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+       }
     },
     "relevant <( bes computer, bes fixlet )> : boolean": {
       "key": "relevant <( bes computer, bes fixlet )> : boolean",
@@ -106921,6 +107017,19 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "rtt of <socket> : time interval": {
+      "key": "rtt of <socket> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "rtt",
+      "pluralPhrase": "rtts",
+      "directObjectType": "socket",
+      "availability": {
+        "11.0.3.0": [
+          "Windows"
         ]
       }
     },

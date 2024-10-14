@@ -3,7 +3,7 @@ title: The BES SOAP API Tester
 ---
 
 The BES SOAP Tester utility allows you to run session relevance against the Web Reports server of your choice. 
-It is a read-only utility that uses the SOAP API.
+It is a read-only utility that uses the SOAP API. The utility only works with the HTTP protocol, not with the HTTPS protocol.
 
 Click [this link](http://files.bigfix.me/bigfixsoap.zip) to download the SOAP API Tester and then double-click the EXE file to start the utility.
 

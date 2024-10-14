@@ -7,7 +7,7 @@ in an action script or the command will fail.
 
 Version | Platforms
 --- | ---
-9.0 | Windows
+9.0 | AIX, Debian, Mac, Raspbian, Red Hat, SUSE, Solaris, Ubuntu, Windows
 
 ## Syntax
 

@@ -20,10 +20,7 @@ or using a [Linux CentOS interactive sandbox](/relevance/evaluate/).
 Debugger and the interactive sandbox, the [Online Evaluator] (/evaluate/), that 
 you can use to develop and test your custom solution. -->
 
-If you own a BigFix Lifecycle or a BigFix Compliance version 9.5 Patch 2
-or later license, you can exercise your Client Relevance Language queries on the
-target clients also directly from the WebUI using the BigFix Query
-Application. For more information, click [BigFix Query](https://help.hcltechsw.com/bigfix/9.5/webui/WebUI/Users_Guide/c_bigfix_query.html).
+If you own a BigFix Lifecycle or a BigFix Compliance license, you can exercise your Client Relevance Language queries on the target clients also directly from the WebUI using the BigFix Query Application. For more information, click [Get Started with BigFix Query](https://help.hcl-software.com/bigfix/11.0/webui/WebUI/Users_Guide/c_bigfix_query.html).
 
 Select [Examples](/examples/) in the main toolbar and then the name
 of the scenario shown in the graphic to  see the steps to run to implement it.

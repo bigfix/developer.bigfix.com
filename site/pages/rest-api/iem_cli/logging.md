@@ -17,7 +17,7 @@ the session token expires and you must log in again to the IEM CLI. You can cust
 
 ## Updating the root server certificate
 If the root server certificate has changed, for example because the server signing certificate was rotated, as described in 
-[Generating a new encryption key](https://help.hcltechsw.com/bigfix/10.0/platform/Platform/Config/c_generating_a_new_encryption_ke.html), the authentication might fail with the following error message:
+[Generating a new encryption key](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_generating_a_new_encryption_ke.html), the authentication might fail with the following error message:
 
 ```
 The server's SSL certificate is not trusted.

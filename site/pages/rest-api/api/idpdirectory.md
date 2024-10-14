@@ -34,6 +34,20 @@ May return this XML:
         <TenantID>h3g43h4g-fb3e-4d5c-b203-df710afd029d</TenantID>
         <ClientID>klk24h2h-8677-4a53-95f8-7d3gfhid8d9d</ClientID>
     </IDPDirectory>
+    <IDPDirectory Resource="https://server.bigfix.com:52311/idpdirectory/57">
+        <ID>57</ID>
+        <Name>Microsoft Entra ID With Certificate</Name>
+        <IdpType>3</IdpType>
+        <TenantID>t5g4gg598-fb3e-4d5c-b203-df710afd029d</TenantID>
+        <ClientID>klk57l3h-8677-4a53-95f8-7d3gfhif5f6f</ClientID>
+    </IDPDirectory>
+    <IDPDirectory Resource="https://server.bigfix.com:52311/idpdirectory/58">
+        <ID>58</ID>
+        <Name>Microsoft Entra ID With Server Certificate Path</Name>
+        <IdpType>3</IdpType>
+        <TenantID>n99u6tr33-fb3e-4d5c-b203-df710afd029d</TenantID>
+        <ClientID>dch92l3h-8677-4a53-95f8-7d3gfhi8e5fgh</ClientID>
+    </IDPDirectory>
     <IDPDirectory Resource="https://server.bigfix.com:52311/api/idpdirectory/59">
         <ID>59</ID>
         <Name>Generic LDAP server</Name>
@@ -64,8 +78,9 @@ The XML text is a list of `IDPDirectory` elements, one for each Identity Provide
 
 **Response Schema:** BESAPI.xsd
 
-The following example shows the steps to take to add two new Identity Provider Directories:
+The following example shows the steps to take to add three new Identity Provider Directories:
 * a Microsoft Entra ID named `Microsoft Entra ID`
+* a Microsoft Entra ID named `Microsoft Entra ID With Certificate`
 * a generic LDAP server named `Generic LDAP server`.
 
 First, prepare the XML that will be passed to the REST API:
@@ -78,6 +93,21 @@ First, prepare the XML that will be passed to the REST API:
         <TenantID>h3g43h4g-fb3e-4d5c-b203-df710afd029d</TenantID>
         <ClientID>klk24h2h-8677-4a53-95f8-7d3gfhid8d9d</ClientID>
         <ClientSecret>3Hp6Q~HNBO3Z8gAOY_VOXTydsAsfHeeIofUIecbz</ClientSecret>
+    </IDPDirectory>
+    <IDPDirectory>
+        <Name>Microsoft Entra ID With Certificate</Name>
+        <IdpType>3</IdpType>
+        <TenantID>t5g4gg598-fb3e-4d5c-b203-df710afd029d</TenantID>
+        <ClientID>klk57l3h-8677-4a53-95f8-7d3gfhif5f6f</ClientID>
+        <JwtCertificate><![CDATA[MyJWTCertificate]]></JwtCertificate>
+    </IDPDirectory>
+    <IDPDirectory>
+        <Name>Microsoft Entra ID With Server Certificate Path</Name>
+        <IdpType>3</IdpType>
+        <TenantID>n99u6tr33-fb3e-4d5c-b203-df710afd029d</TenantID>
+        <ClientID>dch92l3h-8677-4a53-95f8-7d3gfhi8e5fgh</ClientID>
+        <JwtCertificateServerPath>MyCertificateServerPath</JwtCertificateServerPath>
+        <PrivateKeyPassword>MyPrivateKeyPassword</PrivateKeyPassword>
     </IDPDirectory>
     <IDPDirectory>
         <Name>Generic LDAP server</Name>
@@ -100,6 +130,13 @@ First, prepare the XML that will be passed to the REST API:
 </BESAPI>
 ```
 
+If you want to create a Microsoft Entity provider using a certificate instead of the client secret, you must specify either of the following elements:
+* `<JwtCertificate><![CDATA[MyJWTCertificate]]></JwtCertificate>`, where `MyJWTCertificate` is the content of the `.pem` file containing the private key and the public certificate.
+* `<JwtCertificateServerPath>MyCertificateServerPath</JwtCertificateServerPath>`, where `MyCertificateServerPath` is the path of the `.pem` file containing the private key and the public certificate located on the computer where the BigFix Server is installed.
+
+If the private key is password-protected, you must also pass this element:
+* `<PrivateKeyPassword>MyPrivateKeyPassword</PrivateKeyPassword>`, where `MyPrivateKeyPassword` is the password for the private key, if it is password-protected.
+
 Save the XML to a file named, for example, `idpdirectories.xml`.
 
 Then, from the terminal, run following command:
@@ -117,6 +154,20 @@ If the operation ran succesfully, the REST API will return a response like this:
         <IdpType>2</IdpType>
         <TenantID>h3g43h4g-fb3e-4d5c-b203-df710afd029d</TenantID>
         <ClientID>klk24h2h-8677-4a53-95f8-7d3gfhid8d9d</ClientID>
+    </IDPDirectory>
+    <IDPDirectory Resource="https://server.bigfix.com:52311/idpdirectory/57">
+        <ID>57</ID>
+        <Name>Microsoft Entra ID With Certificate</Name>
+        <IdpType>3</IdpType>
+        <TenantID>t5g4gg598-fb3e-4d5c-b203-df710afd029d</TenantID>
+        <ClientID>klk57l3h-8677-4a53-95f8-7d3gfhif5f6f</ClientID>
+    </IDPDirectory>
+    <IDPDirectory Resource="https://server.bigfix.com:52311/idpdirectory/58">
+        <ID>58</ID>
+        <Name>Microsoft Entra ID With Server Certificate Path</Name>
+        <IdpType>3</IdpType>
+        <TenantID>n99u6tr33-fb3e-4d5c-b203-df710afd029d</TenantID>
+        <ClientID>dch92l3h-8677-4a53-95f8-7d3gfhi8e5fgh</ClientID>
     </IDPDirectory>
     <IDPDirectory Resource="https://server.bigfix.com:52311/api/idpdirectory/59">
         <ID>59</ID>
@@ -298,14 +349,14 @@ Upon successful execution, the command will return a HTTP 200 OK success status 
 
 ### Commonly used elements
 
-Description of the `IDPDirectory` XML element.
-`IDPDirectory` contains the following elements:
+The `IDPDirectory` XML element contains the following elements:
 * `ID` contains the ID of the corresponding Identity Provider Directory.
 * `Name` contains the Name of the corresponding Identity Provider Directory.
 * `IdpType` contains the type of the corresponding Identity Provider Directory. The `IdpType` value is a numeric value that identifies the type of identity provider. The possible values are:
     * 0 Generic LDAP servers
     * 1 Active Directory LDAP servers
     * 2 Microsoft Entra ID
+    * 3 Microsoft Entra ID with certificate
 
 The other XML elements differ depending on the value of `IdpType`.
 If `IdpType` is 0 or 1, the following elements are present:
@@ -325,7 +376,7 @@ For each `Server` element:
 * `Port` contains the Port of the server.
 * `Priority` contains the priority assigned to the server.
  
-If `IdpType` is 2, the following elements are present for Microsoft Entra ID:
+If `IdpType` is 2 or 3, the following elements are present for Microsoft Entra ID:
 * `TenantID` contains the tenant ID of the corresponding Identity Provider Directory. It is a unique identifier for an Microsoft Entra ID tenant. It is used to identify the tenant when communicating with Microsoft services.
 * `ClientID` contains the client ID of the corresponding Identity Provider Directory. It is a unique identifier for an application that has been registered with Microsoft Entra ID. It is used to identify the application when communicating with Microsoft Entra ID.
 

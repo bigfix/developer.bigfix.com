@@ -125,6 +125,34 @@ May return this JSON:
 
 {% endrestapi %}
 
+## Request Headers
+If you want to:
+- forward the evaluation request only towards the BigFix Explorer instances
+- leverage both the BigFix Explorer API `/api/relevance` optional parameters `keys` and `filters` described in [Session Relevance](https://developer.bigfix.com/other/explorer-api/session_relevance.html)
+then, you must add this request header `Content-Type: application/json+relevance` to the request body of the POST `/api/query`. Passing this header is needed for leveraging both `keys` and `filters` optional parameters of the BigFix Explorer API `/api/relevance`.
+
+Request example:
+This example shows how to submit a query with `Content-Type: application/json+relevance` header leveraging also the `keys` and `filters` optional parameters.
+
+Create a JSON file named, for example, query.json:
+```json
+{
+    "relevance":"(((id of it, name of it) of elements of it) of reported action set of it, name of it) of bes computers",
+    "keys": "{ reported_action {id name} computer_name }",
+    "filters": {
+        "computers": "set of (bes computers whose (operating system of it contains \"Win\"))"
+    }
+}
+```
+where: 
+- 'reported_action' is the label we assign to the pair of properties `id` and `name` of the `elements` of the `reported action set`.
+- 'computer_name' is the label we assign to the `name` property of the `bes computers`.
+
+Then, from the terminal, run the following command:
+```
+curl -X POST --data-binary @query.json --user {username}:{password} -H "Content-Type: application/json+relevance" https://bf-server:52311/api/query
+```
+
 ## Response Headers
 In the response of this API, you will find the following headers. They provide additional information about the BigFix Explorer or the Web Reports server that evaluated the Session Relevance query:
 
