@@ -9,6 +9,18 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 {% endsection %}
 
 
+#### Version 11 Patch 4 Added Inspector Types
+
+New inspector types named *first lines &lt;integer&gt; of file*, *last lines &lt;integer&gt; of file*, *first rawline &lt;integer&gt; of &lt;file&gt;* and *last rawline &lt;integer&gt; of &lt;file&gt;* were added to return specific lines of a given file.
+
+For details, see [file line](https://developer.bigfix.com/relevance/reference/file-line.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)
+
+#### Version 11 Patch 4 Added Inspector Properties
+
+New inspector properties named *first line of file*, *last line of file*, *first rawline of* and *last rawline of* were added to the existing *file line* and *file rawline* inspectors to return specific lines of a given file.
+
+For details, see [file line](https://developer.bigfix.com/relevance/reference/file-line.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)
+
 #### Version 11 Patch 3 Added Inspector Types
 
 New inspector types named *case insensitive posix regex*, *case insensitive posix regular expression*, *posix regex* and *posix regular expression* were added to fully support POSIX compliant Regular Expressions.

@@ -62,6 +62,44 @@ Returns the UNIX filesystem flag for the given file. On a Macintosh, this return
 
 No documentation exists.
 
+# first line of &lt;file&gt; : file line
+
+Returns the first line of the given file.
+
+{% qna %}
+Q: first line of file "C:\Users\user\Desktop\text.txt"
+A: This is first line.
+{% endqna %}
+
+# first line &lt;integer&gt; of &lt;file&gt; : file line
+
+This inspector is meant to be used in its plural form. Returns the first n lines (specified by &lt;integer&gt;) of the given file.
+
+{% qna %}
+Q: first lines 2 of file "C:\Users\user\Desktop\text.txt"
+A: This is the first line.
+A: This is the second line.
+{% endqna %}
+
+# first rawline of &lt;file&gt; : file rawline
+
+Returns the first line of a given file, ignoring encoding errors.
+
+{% qna %}
+Q: first rawline of file "C:\Users\user\Desktop\text.txt"
+A: This is the first line.
+{% endqna %}
+
+# first rawline &lt;integer&gt; of &lt;file&gt; : file rawline
+
+This inspector is meant to be used in its plural form. Returns the first n lines (specified by &lt;integer&gt;) of the given file, ignoring encoding errors.
+
+{% qna %}
+Q: first rawlines 2 of file "C:\Users\user\Desktop\text.txt"
+A: This is the first line.
+A: This is the second line.
+{% endqna %}
+
 # first raw version block of &lt;file&gt; : file version block
 
 Returns the first version block directly from a PE file. If the first block is sufficient for your purposes, use this version inspector for best speed.
@@ -79,9 +117,47 @@ A: ^4.13.3
 
 Returns a key and its value from the given structured text file. It iterates over lines that start with the key name (as specified by &lt;string&gt;) followed by an = or : character. When searching, white space is ignored.
 
+# last line of &lt;file&gt; : file line
+
+Returns the last line of the given file.
+
+{% qna %}
+Q: last line of file "C:\Users\user\Desktop\text.txt"
+A: This the last line.
+{% endqna %}
+
+# last line &lt;integer&gt; of &lt;file&gt; : file line
+
+This inspector is meant to be used in its plural form. Returns the last n lines (specified by &lt;integer&gt;) of the given file.
+
+{% qna %}
+Q: last lines 2 of file "C:\Users\user\Desktop\text.txt"
+A: This is the penultimate line.
+A: This is the last line.
+{% endqna %}
+
+# last rawline of &lt;file&gt; : file rawline
+
+Returns the last line of a given file, ignoring encoding errors.
+
+{% qna %}
+Q: last rawline of file "C:\Users\user\Desktop\text.txt"
+A: This is the last line.
+{% endqna %}
+
+# last rawline &lt;integer&gt; of &lt;file&gt; : file rawline
+
+This inspector is meant to be used in its plural form. Returns the last n lines (specified by &lt;integer&gt;) of the given file, ignoring encoding errors.
+
+{% qna %}
+Q: last rawlines 2 of file "C:\Users\user\Desktop\text.txt"
+A: This is the penultimate line.
+A: This is the last line.
+{% endqna %}
+
 # length of &lt;file&gt; : integer
 
-The total length of the data and resource forks.Example: Length of data fork of file "Microsoft Word" of folder "Microsoft Office X" of Applications folder is greater than 100000 - Returns `True` if the data fork of the system file is greater than the specified amount.
+The total length of the data and resource forks. Example: Length of data fork of file "Microsoft Word" of folder "Microsoft Office X" of Applications folder is greater than 100000 - Returns `True` if the data fork of the system file is greater than the specified amount.
 
 # line &lt;integer&gt; of &lt;file&gt; : file line
 
