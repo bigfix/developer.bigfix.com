@@ -205,14 +205,14 @@ Returns `True` if the computer is running Linux.
 Example of QnA ran on Linux Ubuntu 20.04.4 LTS.
 
 {% qna %}
-Q: linux of of operating system
+Q: linux of operating system
 A: True
 {% endqna %}
 
 Example of QnA ran on Windows Server 2022.
 
 {% qna %}
-Q: linux of of operating system
+Q: linux of operating system
 A: False
 {% endqna %}
 
