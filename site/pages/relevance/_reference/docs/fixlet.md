@@ -4,11 +4,11 @@ The &lt;fixlet&gt; inspectors can provide important information about the fixlet
 
 # header &lt;string&gt; of &lt;fixlet&gt; : fixlet_header
 
-Returns the named header (case insensitive) of the specified fixlet. Fixlet headers are name:value pairs.
+Returns the named header (case insensitive) of the specified fixlet. Fixlet headers are name:value pairs. Note that only ASCII characters are supported. If you use non-ASCII characters, an error message is thrown.
 
 # header of &lt;fixlet&gt; : fixlet_header
 
-Iterates over all the headers of the fixlet.
+Iterates over all the headers of the fixlet. Note that only ASCII characters are supported. If you use non-ASCII characters, an error message is thrown.
 
 # id of &lt;fixlet&gt; : integer
 
