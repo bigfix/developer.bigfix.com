@@ -68667,6 +68667,20 @@
         ]
       }
     },
+    "target of <service> : string": {
+      "key": "target of <service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "target",
+      "pluralPhrase": "targets",
+      "directObjectType": "service",
+      "availability": {
+        "11.0.4.0": [
+          "Red Hat",
+          "SUSE"
+        ]
+      }
+    },
     "version of <service> : version": {
       "key": "version of <service> : version",
       "type": "property",
