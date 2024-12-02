@@ -85,7 +85,7 @@ Returns a string that represents the service startup configuration. It describes
 Returns one of Continuing, Pausing, Paused, Running, Starting, Stopping, Stopped, Unknown.
 The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESExplorer, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
 
-#target of &lt;service&gt; : string
+# target of &lt;service&gt; : string
 
 Returns all the targets list of systemd services.
 Note: For SystemV services, use the `runlevel` property.
