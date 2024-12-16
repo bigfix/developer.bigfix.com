@@ -154,6 +154,11 @@ function renderProperties(language, docs, references, renderer) {
       throw new Error('Unknown property type: ' + property.type);
     }
 
+    if (key !== property.key) {
+      throw new Error('The key is different from the property key.\n' +
+        'key: ' + key + '\nproperty.key: ' + property.key);
+    }
+
     data.id = makeHtmlId(property.key);
     data.body = renderer.renderMarkdown(docs.properties[key].text);
     data.source = docs.properties[key].source;
@@ -168,7 +173,7 @@ function renderProperties(language, docs, references, renderer) {
     }
 
     if (uniqueIDs[data.id]) {
-      throw new Error('Duplicate html id for key: ' + property.key + 'and' +
+      throw new Error('Duplicate html id for key: ' + property.key + ' and ' +
                       uniqueIDs[data.id]);
     }
     uniqueIDs[data.id] = property.key;
