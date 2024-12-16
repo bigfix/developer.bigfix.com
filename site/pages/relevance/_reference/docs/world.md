@@ -2454,6 +2454,15 @@ An iterated property. Examines all currently mounted volumes which will include 
 
 Returns the volume settings folder of the system domain.
 
+# wake on lan cidr subnet : cidr subnet
+
+Returns the subnet the client is in for Wake on Lan (WoL) purposes. The client sends information to the relay during registration that is used to decide which subnet the client is in. The relay returns the subnet to the client, which is the value this inspector exposes. This value is used to send WoL commands to forwarders. To wake a machine by computer ID, the server looks up the mac address and subnet of that machine. It then tries to identify clients that have been configured as WoL forwarders within the same subnet and routes WoL commands to those forwarders, sending them the mac address of the machine that needs to be awoken.
+
+{% qna %}
+Q: wake on lan cidr subnet
+A: 192.14.77.0/25
+{% endqna %}
+
 # wake on lan subnet cidr string : string
 
 Returns the subnet the client is in for Wake on Lan (WoL) purposes. The client sends information to the relay during registration that is used to decide which subnet the client is in. The relay returns the subnet to the client, which is the value this inspector exposes. This value is used to send WoL commands to forwarders. To wake a machine by computer ID, the server looks up the mac address and subnet of that machine. It then tries to identify clients that have been configured as WoL forwarders within the same subnet and routes WoL commands to those forwarders, sending them the mac address of the machine that needs to be awoken.

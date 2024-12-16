@@ -240,6 +240,20 @@ A: o
 I: plural substring
 {% endqna %}
 
+# cidr subnet &lt;string&gt; : cidr subnet
+
+Returns the CIDR subnet corresponding to the given string.
+
+{% qna %}
+Q: cidr subnet "192.185.10.0/24"
+A: 192.185.10.0/24
+{% endqna %}
+
+{% qna %}
+Q: cidr subnet "C665:4BF6:F578:BA18:153D:F3AD:6270:52C6/64"
+A: c665:4bf6:f578:ba18::/64
+{% endqna %}
+
 # cite &lt;string&gt; of &lt;string&gt; : html
 
 Returns an HTML snippet with the specified string enclosed in a &lt;cite&gt; (citation) tag modified by the first given string.

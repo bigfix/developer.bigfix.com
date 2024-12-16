@@ -11,6 +11,10 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 #### Version 11 Patch 4 Added Inspector Types
 
+New inspector type named *cidr subnet* was added to represent a Classless Inter-Domain Routing (CIDR) subnet.
+
+For details, see [cidr subnet](https://developer.bigfix.com/relevance/reference/cidr-subnet.html)
+
 New inspector types named *first lines &lt;integer&gt; of file*, *last lines &lt;integer&gt; of file*, *first rawline &lt;integer&gt; of &lt;file&gt;* and *last rawline &lt;integer&gt; of &lt;file&gt;* were added to return specific lines of a given file.
 
 For details, see [file line](https://developer.bigfix.com/relevance/reference/file-line.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)

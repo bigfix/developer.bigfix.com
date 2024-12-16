@@ -62,6 +62,60 @@ Returns `True` if the specified set of BES Wizards contains all of the following
 
 No documentation exists.
 
+# &lt;cidr subnet&gt; = &lt;cidr subnet&gt; : boolean
+
+Returns `True` if the specified CIDR subnets are equal.
+
+{% qna %}
+Q: cidr subnet "192.168.1.1/24" = cidr subnet "192.168.1.2/24"
+A: False
+{% endqna %}
+
+# &lt;cidr subnet&gt; = &lt;string&gt; : boolean
+
+Returns `True` if the given CIDR subnet is equal to the CIDR subnet defined by the given string.
+
+{% qna %}
+Q: cidr subnet "192.168.1.2/24" = "192.168.1.2/24" 
+A: True
+{% endqna %}
+
+# &lt;string&gt; = &lt;cidr subnet&gt; : boolean
+
+Returns `True` if the CIDR subnet defined by the given string is equal to the given CIDR subnet.
+
+{% qna %}
+Q: "192.168.1.2/24" = cidr subnet "192.168.1.2/24"
+A: True
+{% endqna %}
+
+# &lt;cidr subnet&gt; contains &lt;ipv4 address&gt; : boolean
+
+Returns `True` if the IP address range represented by the CIDR subnet contains the specified IPv4 address.
+
+{% qna %}
+Q: cidr subnet "192.14.86.0/24" contains ipv4 address "192.14.86.1"
+A: True
+{% endqna %}
+
+# &lt;cidr subnet&gt; contains &lt;ipv6 address&gt; : boolean
+
+Returns `True` if the IP address range represented by the CIDR subnet contains the specified IPv6 address.
+
+{% qna %}
+Q: cidr subnet "C665:4BF6:F578:BA18:153D:F3AD:6270:52C6/128" contains ipv6 address "C665:4BF6:F578:BA18:153D:F3AD:6270:52C6"
+A: True
+{% endqna %}
+
+# &lt;cidr subnet&gt; contains &lt;ipv4or6 address&gt; : boolean
+
+Returns `True` if the IP address range represented by the CIDR subnet contains the specified IP address.
+
+{% qna %}
+Q: cidr subnet "192.14.86.0/24" contains ipv4or6 address "192.14.86.1"
+A: True
+{% endqna %}
+
 # &lt;date&gt; &amp; &lt;time of day with time zone&gt; : time
 
 Concatenates a date with a time and a time zone for a complete time stamp.

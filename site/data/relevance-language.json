@@ -547,6 +547,22 @@
         ]
       }
     },
+    "cidr subnet": {
+      "name": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+         ]
+      }
+    },
     "cryptography": {
       "name": "cryptography",
       "availability": {
@@ -16376,6 +16392,134 @@
         ]
       }
     },
+    "<cidr subnet> as string : string": {
+      "key": "<cidr subnet> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "cidr subnet",
+      "phrase": "string",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<cidr subnet> = <cidr subnet> : boolean": {
+      "key": "<cidr subnet> = <cidr subnet> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "=",
+      "rightType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<cidr subnet> = <string> : boolean": {
+      "key": "<cidr subnet> = <string> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "=",
+      "rightType": "string",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> = <cidr subnet> : boolean": {
+      "key": "<string> = <cidr subnet> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "string",
+      "op": "=",
+      "rightType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "cidr subnet <string> : cidr subnet": {
+      "key": "cidr subnet <string> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "indexType": "string",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "subnet mask of <cidr subnet> : ipv4or6 address": {
+      "key": "subnet mask of <cidr subnet> : ipv4or6 address",
+      "type": "property",
+      "resultType": "ipv4or6 address",
+      "singularPhrase": "subnet mask",
+      "pluralPhrase": "subnet masks",
+      "directObjectType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "desired fips mode of <cryptography> : boolean": {
       "key": "desired fips mode of <cryptography> : boolean",
       "type": "property",
@@ -28170,6 +28314,28 @@
         ]
       }
     },
+    "<cidr subnet> contains <ipv4 address> : boolean": {
+      "key": "<cidr subnet> contains <ipv4 address> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "ipv4 address",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "extrema of <ipv4 address> : ( ipv4 address, ipv4 address )": {
       "key": "extrema of <ipv4 address> : ( ipv4 address, ipv4 address )",
       "type": "property",
@@ -28808,6 +28974,28 @@
         ]
       }
     },
+    "<cidr subnet> contains <ipv4or6 address> : boolean": {
+      "key": "<cidr subnet> contains <ipv4or6 address> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "ipv4or6 address",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "extrema of <ipv4or6 address> : ( ipv4or6 address, ipv4or6 address )": {
       "key": "extrema of <ipv4or6 address> : ( ipv4or6 address, ipv4or6 address )",
       "type": "property",
@@ -29389,6 +29577,28 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "<cidr subnet> contains <ipv6 address> : boolean": {
+      "key": "<cidr subnet> contains <ipv6 address> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "ipv6 address",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -64823,6 +65033,27 @@
         ]
       }
     },
+    "cidr subnet of <network adapter interface> : cidr subnet": {
+      "key": "cidr subnet of <network adapter interface> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network adapter interface",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "loopback of <network adapter interface> : boolean": {
       "key": "loopback of <network adapter interface> : boolean",
       "type": "property",
@@ -65183,6 +65414,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "cidr subnet of <network ip interface> : cidr subnet": {
+      "key": "cidr subnet of <network ip interface> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network ip interface",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -73522,6 +73774,26 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "wake on lan cidr subnet : cidr subnet": {
+      "key": "wake on lan cidr subnet : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "wake on lan cidr subnet",
+      "pluralPhrase": "wake on lan cidr subnets",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -86579,6 +86851,27 @@
         ]
       }
     },
+    "cidr subnet of <network adapter> : cidr subnet": {
+      "key": "cidr subnet of <network adapter> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network adapter",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "description of <network adapter> : string": {
       "key": "description of <network adapter> : string",
       "type": "property",
@@ -86900,6 +87193,19 @@
       "directObjectType": "network address list",
       "availability": {
         "8.0.584.0": [
+          "Windows"
+        ]
+      }
+    },
+    "cidr subnet of <network address list> : cidr subnet": {
+      "key": "cidr subnet of <network address list> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network address list",
+      "availability": {
+        "11.0.4.0": [
           "Windows"
         ]
       }

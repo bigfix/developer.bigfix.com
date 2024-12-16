@@ -26,6 +26,16 @@ Returns the Classless Inter-Domain Routing address for the specified network ip 
 
 Returns the Classless Inter-Domain Routing value for the specified network ip interface as a string type.
 
+# cidr subnet of &lt;network ip interface&gt; : cidr subnet
+
+Returns the CIDR subnet of the specified network IP interface.
+
+{% qna %}
+Q: cidr subnets of ip interfaces of network
+A: 127.0.0.0/8
+A: 192.14.85.0/24
+{% endqna %}
+
 # loopback of &lt;network ip interface&gt; : boolean
 
 Indicates that the particular network ip interface is a loopback interface.Example: address of ip interface whose (loopback of it = false) of network = "192.168.127.127" - Returns `True` if the given IP address doesn&#39;t have loopback.
