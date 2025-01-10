@@ -28314,6 +28314,28 @@
         ]
       }
     },
+    "<cidr subnet> contains <cidr subnet> : boolean": {
+      "key": "<cidr subnet> contains <cidr subnet> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "<cidr subnet> contains <ipv4 address> : boolean": {
       "key": "<cidr subnet> contains <ipv4 address> : boolean",
       "type": "binaryOp",

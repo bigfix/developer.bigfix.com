@@ -89,6 +89,20 @@ Q: "192.168.1.2/24" = cidr subnet "192.168.1.2/24"
 A: True
 {% endqna %}
 
+# &lt;cidr subnet&gt; contains &lt;cidr subnet&gt; : boolean
+
+Returns `True` if the IP address range represented by the CIDR subnet given on the left side contains the one found on the right side.
+
+{% qna %}
+Q: cidr subnet "10.14.77.100/24" contains cidr subnet "10.14.77.50/32"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: cidr subnet "fe80::/16" contains cidr subnet of ipv6 interface 1 of adapter 1 of network
+A: True
+{% endqna %}
+
 # &lt;cidr subnet&gt; contains &lt;ipv4 address&gt; : boolean
 
 Returns `True` if the IP address range represented by the CIDR subnet contains the specified IPv4 address.
