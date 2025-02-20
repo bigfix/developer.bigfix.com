@@ -21,6 +21,14 @@ For details, see [file line](https://developer.bigfix.com/relevance/reference/fi
 
 #### Version 11 Patch 4 Added Inspector Properties
 
+New inspector properties named *enabled of*, *global state of*, and *stealth enabled of* were added to the existing *firewall* inspector to return specific firewall information.
+
+For details, see [firewall](https://developer.bigfix.com/relevance/reference/firewall.html)
+
+New inspector property named *action of* was added to the existing *firewall rule* inspector to return specific firewall rule information.
+
+For details, see [firewall rule](https://developer.bigfix.com/relevance/reference/firewall-rule.html)
+
 New inspector properties named *first line of file*, *last line of file*, *first rawline of* and *last rawline of* were added to the existing *file line* and *file rawline* inspectors to return specific lines of a given file.
 
 For details, see [file line](https://developer.bigfix.com/relevance/reference/file-line.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)

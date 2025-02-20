@@ -5033,6 +5033,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84099,6 +84102,32 @@
         ]
       }
     },
+    "enabled of <firewall> : boolean": {
+      "key": "enabled of <firewall> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "enabled",
+      "pluralPhrase": "enableds",
+      "directObjectType": "firewall",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
+        ]
+      }
+    },
+    "global state of <firewall> : string": {
+      "key": "global state of <firewall> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "global state",
+      "pluralPhrase": "global states",
+      "directObjectType": "firewall",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
+        ]
+      }
+    },
     "local policy modify state of <firewall> : firewall local policy modify state": {
       "key": "local policy modify state of <firewall> : firewall local policy modify state",
       "type": "property",
@@ -84149,6 +84178,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84162,6 +84194,19 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ]
+      }
+    },
+    "stealth enabled of <firewall> : boolean": {
+      "key": "stealth enabled of <firewall> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "stealth enabled",
+      "pluralPhrase": "stealth enableds",
+      "directObjectType": "firewall",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84777,6 +84822,19 @@
         ]
       }
     },
+    "action of <firewall rule> : string": {
+      "key": "action of <firewall rule> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "action",
+      "pluralPhrase": "actions",
+      "directObjectType": "firewall rule",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
+        ]
+      }
+    },
     "application name of <firewall rule> : string": {
       "key": "application name of <firewall rule> : string",
       "type": "property",
@@ -84787,6 +84845,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -85022,6 +85083,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -93424,6 +93488,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
