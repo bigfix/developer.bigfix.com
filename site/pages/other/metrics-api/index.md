@@ -11,7 +11,7 @@ In Bigfix Version 11.0.4, the BigFix Relay is able to expose metrics related to 
 
 [Grafana](https://grafana.com/grafana/) is an open source analytics and interactive visualization web application.
 
-The collected metrics are exposed by the BigFix Relay using a new REST API /metrics in a format which is supported by Prometheus. The format guidelines followed by the BigFix Relay are described in [Open Metrics standard](https://openmetrics.io/) and in [Text-based format] (https://prometheus.io/docs/instrumenting/exposition_formats/#text-based-format).
+The collected metrics are exposed by the BigFix Relay using a new REST API /metrics in a format which is supported by Prometheus. The format guidelines followed by the BigFix Relay are described in [Open Metrics standard](https://openmetrics.io/) and in [Text-based format](https://prometheus.io/docs/instrumenting/exposition_formats/#text-based-format).
 
 The following image shows how Prometheus and Grafana interact with the BigFix Relay in a sample environment to provide this additional functionality.
 
