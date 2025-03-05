@@ -274,3 +274,9 @@ nav:
     - name: Examples of Client Documents
       href: /other/cc-api/cc_an_example.html
 
+  - name: Metrics API
+    href: /other/metrics-api/
+    children:
+
+    - name: Exported Metrics
+      href: /other/metrics-api/metrics.html
