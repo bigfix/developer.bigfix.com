@@ -8,30 +8,25 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
-
 #### Version 11 Patch 4 Added Inspector Types
 
 New inspector type named *cidr subnet* was added to represent a Classless Inter-Domain Routing (CIDR) subnet.
 
 For details, see [cidr subnet](https://developer.bigfix.com/relevance/reference/cidr-subnet.html)
 
-New inspector types named *first lines &lt;integer&gt; of file*, *last lines &lt;integer&gt; of file*, *first rawline &lt;integer&gt; of &lt;file&gt;* and *last rawline &lt;integer&gt; of &lt;file&gt;* were added to return specific lines of a given file.
-
-For details, see [file line](https://developer.bigfix.com/relevance/reference/file-line.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)
-
 #### Version 11 Patch 4 Added Inspector Properties
+
+New inspector properties named *first line of*, *first line &lt;integer&gt; of*, *last line of* and *last line &lt;integer&gt; of* were added to the existing *file* inspector to return specific lines of a given file.
+
+For details, see [file](https://developer.bigfix.com/relevance/reference/file.html) and [file line](https://developer.bigfix.com/relevance/reference/file-line.html)
+
+New inspector properties named *first rawline of*, *first rawline &lt;integer&gt; of*, *last rawline of* and *last rawline &lt;integer&gt; of* were added to the existing *file* inspector to return specific raw lines of a given file.
+
+For details, see [file](https://developer.bigfix.com/relevance/reference/file.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)
 
 New inspector properties named *enabled of*, *global state of*, and *stealth enabled of* were added to the existing *firewall* inspector to return specific firewall information.
 
 For details, see [firewall](https://developer.bigfix.com/relevance/reference/firewall.html)
-
-New inspector property named *action of* was added to the existing *firewall rule* inspector to return specific firewall rule information.
-
-For details, see [firewall rule](https://developer.bigfix.com/relevance/reference/firewall-rule.html)
-
-New inspector properties named *first line of file*, *last line of file*, *first rawline of* and *last rawline of* were added to the existing *file line* and *file rawline* inspectors to return specific lines of a given file.
-
-For details, see [file line](https://developer.bigfix.com/relevance/reference/file-line.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)
 
 #### Version 11 Patch 3 Added Inspector Types
 

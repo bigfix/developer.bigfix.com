@@ -5044,6 +5044,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84220,6 +84223,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84819,17 +84825,7 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
-        ]
-      }
-    },
-    "action of <firewall rule> : string": {
-      "key": "action of <firewall rule> : string",
-      "type": "property",
-      "resultType": "string",
-      "singularPhrase": "action",
-      "pluralPhrase": "actions",
-      "directObjectType": "firewall rule",
-      "availability": {
+        ],
         "11.0.4.0": [
           "Mac"
         ]
@@ -92676,6 +92672,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -92822,6 +92821,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -93424,6 +93426,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },

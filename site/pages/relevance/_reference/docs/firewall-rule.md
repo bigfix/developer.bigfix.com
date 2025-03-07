@@ -4,9 +4,9 @@ The &lt;firewall rule&gt; inspectors are implemented as a wrapper of the firewal
 
 # action of &lt;firewall rule&gt; : firewall action
 
-Retrieves the Action property for the specified firewall rule. This property is implemented as a wrapper around the Windows Firewall API. For more information, see the Microsoft documentation for the INetFwRule interface.
+Retrieves the type of action that the specified firewall rule is set to perform (e.g. blocking network traffic). On Windows, this property is implemented as a wrapper around the Windows Firewall API. For more information, see the Microsoft documentation for the INetFwRule interface and the NET_FW_ACTION enumeration.
 
-Example running the QnA on a Windows computer showing enabled firewall rule actions. Only the first 3 answers are shown.
+Example running the QnA on a Windows computer showing the target application of each firewall rule that allows network traffic. Only the first 3 answers are shown.
 
 {% qna %}
 Q: names of rules whose (action of it = firewall action 1) of firewall
@@ -15,19 +15,13 @@ A: BES Client (ICMPv6)
 A: BES Client (ICMPv4)
 {% endqna %}
 
-# action of &lt;firewall rule&gt; : string
-
-Returns the action that the firewall rule performs on incoming connections that match its criteria. The possible return values are:
-* `Allow`
-* `Block`
-
-Example running the QnA on a Mac computer showing the firewall rule actions. Only the first 3 answers are shown.
+Example running the QnA on a Mac computer showing the target application of each firewall rule that allows network traffic. Only the first 3 answers are shown.
 
 {% qna %}
-Q: actions of rules of firewall
-A: Block
-A: Allow
-A: Allow
+Q: (application name of it) of rules whose (action of it = firewall action 1) of firewall
+A: com.apple.iBooksX
+A:
+A:
 {% endqna %}
 
 # application name of &lt;firewall rule&gt; : string
