@@ -2219,10 +2219,6 @@ Returns a basic smbios object, a function formerly served by the Desktop Managem
 
 Returns the smf object. Use &#39;services of smf&#39; for more information.
 
-# software depot : software_depot
-
-Accesses the set of installed software and products.
-
 # sound folder : folder
 
 Returns the sound folder of the system domain.

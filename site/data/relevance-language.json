@@ -4708,15 +4708,6 @@
         ]
       }
     },
-    "software_depot": {
-      "name": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
     "fileset": {
       "name": "fileset",
       "availability": {
@@ -79487,83 +79478,12 @@
       },
       "deprecated": "9.5.0.311"
     },
-    "bundle <string> of <software_depot> : bundle": {
-      "key": "bundle <string> of <software_depot> : bundle",
-      "type": "property",
-      "resultType": "bundle",
-      "singularPhrase": "bundle",
-      "pluralPhrase": "bundles",
-      "indexType": "string",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "bundle of <software_depot> : bundle": {
-      "key": "bundle of <software_depot> : bundle",
-      "type": "property",
-      "resultType": "bundle",
-      "singularPhrase": "bundle",
-      "pluralPhrase": "bundles",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "product <string> of <software_depot> : product": {
-      "key": "product <string> of <software_depot> : product",
-      "type": "property",
-      "resultType": "product",
-      "singularPhrase": "product",
-      "pluralPhrase": "products",
-      "indexType": "string",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "product of <software_depot> : product": {
-      "key": "product of <software_depot> : product",
-      "type": "property",
-      "resultType": "product",
-      "singularPhrase": "product",
-      "pluralPhrase": "products",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
     "model : string": {
       "key": "model : string",
       "type": "property",
       "resultType": "string",
       "singularPhrase": "model",
       "pluralPhrase": "models",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "software depot : software_depot": {
-      "key": "software depot : software_depot",
-      "type": "property",
-      "resultType": "software_depot",
-      "singularPhrase": "software depot",
-      "pluralPhrase": "software depots",
       "availability": {
         "8.0.584.0": [
           "HP-UX"
