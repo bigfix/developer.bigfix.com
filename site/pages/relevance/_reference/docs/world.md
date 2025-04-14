@@ -68,7 +68,24 @@ Returns a list of all Windows 32 services, including the BESRelay.
 
 # allow firewall action : firewall action
 
-Returns a value corresponding to the NET_FW_ACTION enumerated type, which specifies the action for a rule or default setting. This is a Vista inspector. For more information, see the MSDN Library entry for NET_FW_ACTION.
+Returns an object that represents the action of allowing network traffic through a firewall.
+
+Example running the QnA on a Windows computer showing the target application of each firewall rule that allows network traffic. Only the first 3 answers are shown.
+{% qna %}
+Q: application names of rules whose (action of it = allow firewall action) of firewall
+A: C:\Program Files\Google\Chrome\Application\chrome.exe
+A: C:\Program Files (x86)\BigFix Enterprise\BES Server\BESWebReportsServer.exe
+A:
+{% endqna %}
+
+Example running the QnA on a Mac computer showing the target application of each firewall rule that allows network traffic. Only the first 3 answers are shown.
+
+{% qna %}
+Q: application names of rules whose (action of it = allow firewall action) of firewall
+A: com.apple.iBooksX
+A:
+A:
+{% endqna %}
 
 # analysis : analysis
 
@@ -468,7 +485,22 @@ Returns information about the BIOS.
 
 # block firewall action : firewall action
 
-Returns a value corresponding to the NET_FW_ACTION enumerated type, which specifies the action for a rule or default setting. This is a Vista inspector. For more information, see the MSDN Library entry for NET_FW_ACTION.
+Returns an object that represents the action of blocking network traffic through a firewall.
+
+Example running the QnA on a Windows computer showing the target application of each firewall rule that blocks network traffic. Only the first 2 answers are shown.
+{% qna %}
+Q: application names of rules whose (action of it = block firewall action) of firewall
+A: C:\Program Files (x86)\BigFix Enterprise\BES Server\BESWebReportsServer.exe
+A:
+{% endqna %}
+
+Example running the QnA on a Mac computer showing the target application of each firewall rule that blocks network traffic. Only the first 2 answers are shown.
+
+{% qna %}
+Q: application names of rules whose (action of it = block firewall action) of firewall
+A: com.apple.Chess
+A:
+{% endqna %}
 
 # boot task trigger type : task trigger type
 
@@ -2187,10 +2219,6 @@ Returns a basic smbios object, a function formerly served by the Desktop Managem
 
 Returns the smf object. Use &#39;services of smf&#39; for more information.
 
-# software depot : software_depot
-
-Accesses the set of installed software and products.
-
 # sound folder : folder
 
 Returns the sound folder of the system domain.
@@ -2453,6 +2481,15 @@ An iterated property. Examines all currently mounted volumes which will include 
 # volume settings folder : folder
 
 Returns the volume settings folder of the system domain.
+
+# wake on lan cidr subnet : cidr subnet
+
+Returns the subnet the client is in for Wake on Lan (WoL) purposes. The client sends information to the relay during registration that is used to decide which subnet the client is in. The relay returns the subnet to the client, which is the value this inspector exposes. This value is used to send WoL commands to forwarders. To wake a machine by computer ID, the server looks up the mac address and subnet of that machine. It then tries to identify clients that have been configured as WoL forwarders within the same subnet and routes WoL commands to those forwarders, sending them the mac address of the machine that needs to be awoken.
+
+{% qna %}
+Q: wake on lan cidr subnet
+A: 192.14.77.0/25
+{% endqna %}
 
 # wake on lan subnet cidr string : string
 

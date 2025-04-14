@@ -547,6 +547,22 @@
         ]
       }
     },
+    "cidr subnet": {
+      "name": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+         ]
+      }
+    },
     "cryptography": {
       "name": "cryptography",
       "availability": {
@@ -4370,6 +4386,12 @@
         ],
         "9.0.586.0": [
           "Solaris"
+        ],
+        "9.5.13.130": [
+          "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -4685,15 +4707,6 @@
           "HP-UX"
         ]
       }
-    },
-    "software_depot": {
-      "name": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
     },
     "fileset": {
       "name": "fileset",
@@ -5011,6 +5024,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -5019,6 +5035,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -16367,6 +16386,134 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "<cidr subnet> as string : string": {
+      "key": "<cidr subnet> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "cidr subnet",
+      "phrase": "string",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<cidr subnet> = <cidr subnet> : boolean": {
+      "key": "<cidr subnet> = <cidr subnet> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "=",
+      "rightType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<cidr subnet> = <string> : boolean": {
+      "key": "<cidr subnet> = <string> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "=",
+      "rightType": "string",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<string> = <cidr subnet> : boolean": {
+      "key": "<string> = <cidr subnet> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "string",
+      "op": "=",
+      "rightType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "cidr subnet <string> : cidr subnet": {
+      "key": "cidr subnet <string> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "indexType": "string",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "subnet mask of <cidr subnet> : ipv4or6 address": {
+      "key": "subnet mask of <cidr subnet> : ipv4or6 address",
+      "type": "property",
+      "resultType": "ipv4or6 address",
+      "singularPhrase": "subnet mask",
+      "pluralPhrase": "subnet masks",
+      "directObjectType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -28164,6 +28311,50 @@
         ]
       }
     },
+    "<cidr subnet> contains <cidr subnet> : boolean": {
+      "key": "<cidr subnet> contains <cidr subnet> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "cidr subnet",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<cidr subnet> contains <ipv4 address> : boolean": {
+      "key": "<cidr subnet> contains <ipv4 address> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "ipv4 address",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "extrema of <ipv4 address> : ( ipv4 address, ipv4 address )": {
       "key": "extrema of <ipv4 address> : ( ipv4 address, ipv4 address )",
       "type": "property",
@@ -28802,6 +28993,28 @@
         ]
       }
     },
+    "<cidr subnet> contains <ipv4or6 address> : boolean": {
+      "key": "<cidr subnet> contains <ipv4or6 address> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "ipv4or6 address",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "extrema of <ipv4or6 address> : ( ipv4or6 address, ipv4or6 address )": {
       "key": "extrema of <ipv4or6 address> : ( ipv4or6 address, ipv4or6 address )",
       "type": "property",
@@ -29383,6 +29596,28 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "<cidr subnet> contains <ipv6 address> : boolean": {
+      "key": "<cidr subnet> contains <ipv6 address> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "cidr subnet",
+      "op": "contains",
+      "rightType": "ipv6 address",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -61150,13 +61385,184 @@
         ]
       }
     },
-    "key <string> of <file> : string": {
-      "key": "key <string> of <file> : string",
+    "first line of <file> : file line": {
+      "key": "first line of <file> : file line",
       "type": "property",
-      "resultType": "string",
-      "singularPhrase": "key",
-      "pluralPhrase": "keys",
-      "indexType": "string",
+      "resultType": "file line",
+      "singularPhrase": "first line",
+      "pluralPhrase": "first lines",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "first line <integer> of <file> : file line": {
+      "key": "first line <integer> of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "first line",
+      "pluralPhrase": "first lines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "first rawline of <file> : file rawline": {
+      "key": "first rawline of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "first rawline",
+      "pluralPhrase": "first rawlines",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "first rawline <integer> of <file> : file rawline": {
+      "key": "first rawline <integer> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "first rawline",
+      "pluralPhrase": "first rawlines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "last line of <file> : file line": {
+      "key": "last line of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "last line",
+      "pluralPhrase": "last lines",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "last line <integer> of <file> : file line": {
+      "key": "last line <integer> of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "last line",
+      "pluralPhrase": "last lines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "last rawline of <file> : file rawline": {
+      "key": "last rawline of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "last rawline",
+      "pluralPhrase": "last rawlines",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "last rawline <integer> of <file> : file rawline": {
+      "key": "last rawline <integer> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "last rawline",
+      "pluralPhrase": "last rawlines",
+      "indexType": "integer",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "line of <file> : file line": {
+      "key": "line of <file> : file line",
+      "type": "property",
+      "resultType": "file line",
+      "singularPhrase": "line",
+      "pluralPhrase": "lines",
       "directObjectType": "file",
       "availability": {
         "8.0.584.0": [
@@ -61204,28 +61610,6 @@
         ]
       }
     },
-    "rawline <integer> of <file> : file rawline": {
-      "key": "rawline <integer> of <file> : file rawline",
-      "type": "property",
-      "resultType": "file rawline",
-      "singularPhrase": "rawline",
-      "pluralPhrase": "rawlines",
-      "indexType": "integer",
-      "directObjectType": "file",
-      "availability": {
-        "10.0.0.133": [
-          "AIX",
-          "Debian",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
     "line containing <string> of <file> : file line": {
       "key": "line containing <string> of <file> : file line",
       "type": "property",
@@ -61253,34 +61637,40 @@
         ]
       }
     },
-    "rawline containing <string> of <file> : file rawline": {
-      "key": "rawline containing <string> of <file> : file rawline",
+    "line starting with <string> of <file> : file line": {
+      "key": "line starting with <string> of <file> : file line",
       "type": "property",
-      "resultType": "file rawline",
-      "singularPhrase": "rawline containing",
-      "pluralPhrase": "rawlines containing",
+      "resultType": "file line",
+      "singularPhrase": "line starting with",
+      "pluralPhrase": "lines starting with",
       "indexType": "string",
       "directObjectType": "file",
       "availability": {
-        "10.0.0.133": [
+        "8.0.584.0": [
           "AIX",
-          "Debian",
+          "HP-UX",
           "Mac",
-          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
-          "Ubuntu",
           "Windows"
+        ],
+        "8.1.535.0": [
+          "Debian",
+          "Ubuntu"
+        ],
+        "9.5.13.130": [
+          "Raspbian"
         ]
       }
     },
-    "line of <file> : file line": {
-      "key": "line of <file> : file line",
+    "key <string> of <file> : string": {
+      "key": "key <string> of <file> : string",
       "type": "property",
-      "resultType": "file line",
-      "singularPhrase": "line",
-      "pluralPhrase": "lines",
+      "resultType": "string",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
       "directObjectType": "file",
       "availability": {
         "8.0.584.0": [
@@ -61322,30 +61712,47 @@
         ]
       }
     },
-    "line starting with <string> of <file> : file line": {
-      "key": "line starting with <string> of <file> : file line",
+    "rawline <integer> of <file> : file rawline": {
+      "key": "rawline <integer> of <file> : file rawline",
       "type": "property",
-      "resultType": "file line",
-      "singularPhrase": "line starting with",
-      "pluralPhrase": "lines starting with",
-      "indexType": "string",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline",
+      "pluralPhrase": "rawlines",
+      "indexType": "integer",
       "directObjectType": "file",
       "availability": {
-        "8.0.584.0": [
+        "10.0.0.133": [
           "AIX",
-          "HP-UX",
+          "Debian",
           "Mac",
+          "Raspbian",
           "Red Hat",
           "SUSE",
           "Solaris",
+          "Ubuntu",
           "Windows"
-        ],
-        "8.1.535.0": [
+        ]
+      }
+    },
+    "rawline containing <string> of <file> : file rawline": {
+      "key": "rawline containing <string> of <file> : file rawline",
+      "type": "property",
+      "resultType": "file rawline",
+      "singularPhrase": "rawline containing",
+      "pluralPhrase": "rawlines containing",
+      "indexType": "string",
+      "directObjectType": "file",
+      "availability": {
+        "10.0.0.133": [
+          "AIX",
           "Debian",
-          "Ubuntu"
-        ],
-        "9.5.13.130": [
-          "Raspbian"
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -64645,6 +65052,27 @@
         ]
       }
     },
+    "cidr subnet of <network adapter interface> : cidr subnet": {
+      "key": "cidr subnet of <network adapter interface> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network adapter interface",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "loopback of <network adapter interface> : boolean": {
       "key": "loopback of <network adapter interface> : boolean",
       "type": "property",
@@ -65005,6 +65433,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "cidr subnet of <network ip interface> : cidr subnet": {
+      "key": "cidr subnet of <network ip interface> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network ip interface",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -68489,6 +68938,20 @@
         ]
       }
     },
+    "target of <service> : string": {
+      "key": "target of <service> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "target",
+      "pluralPhrase": "targets",
+      "directObjectType": "service",
+      "availability": {
+        "11.0.4.0": [
+          "Red Hat",
+          "SUSE"
+        ]
+      }
+    },
     "version of <service> : version": {
       "key": "version of <service> : version",
       "type": "property",
@@ -70094,6 +70557,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -70120,6 +70586,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -70146,6 +70615,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -70172,6 +70644,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -72289,6 +72764,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -73092,6 +73570,9 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -73312,6 +73793,26 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "wake on lan cidr subnet : cidr subnet": {
+      "key": "wake on lan cidr subnet : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "wake on lan cidr subnet",
+      "pluralPhrase": "wake on lan cidr subnets",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -78977,83 +79478,12 @@
       },
       "deprecated": "9.5.0.311"
     },
-    "bundle <string> of <software_depot> : bundle": {
-      "key": "bundle <string> of <software_depot> : bundle",
-      "type": "property",
-      "resultType": "bundle",
-      "singularPhrase": "bundle",
-      "pluralPhrase": "bundles",
-      "indexType": "string",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "bundle of <software_depot> : bundle": {
-      "key": "bundle of <software_depot> : bundle",
-      "type": "property",
-      "resultType": "bundle",
-      "singularPhrase": "bundle",
-      "pluralPhrase": "bundles",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "product <string> of <software_depot> : product": {
-      "key": "product <string> of <software_depot> : product",
-      "type": "property",
-      "resultType": "product",
-      "singularPhrase": "product",
-      "pluralPhrase": "products",
-      "indexType": "string",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "product of <software_depot> : product": {
-      "key": "product of <software_depot> : product",
-      "type": "property",
-      "resultType": "product",
-      "singularPhrase": "product",
-      "pluralPhrase": "products",
-      "directObjectType": "software_depot",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
     "model : string": {
       "key": "model : string",
       "type": "property",
       "resultType": "string",
       "singularPhrase": "model",
       "pluralPhrase": "models",
-      "availability": {
-        "8.0.584.0": [
-          "HP-UX"
-        ]
-      },
-      "deprecated": "9.5.0.311"
-    },
-    "software depot : software_depot": {
-      "key": "software depot : software_depot",
-      "type": "property",
-      "resultType": "software_depot",
-      "singularPhrase": "software depot",
-      "pluralPhrase": "software depots",
       "availability": {
         "8.0.584.0": [
           "HP-UX"
@@ -83595,6 +84025,32 @@
         ]
       }
     },
+    "enabled of <firewall> : boolean": {
+      "key": "enabled of <firewall> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "enabled",
+      "pluralPhrase": "enableds",
+      "directObjectType": "firewall",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
+        ]
+      }
+    },
+    "global state of <firewall> : string": {
+      "key": "global state of <firewall> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "global state",
+      "pluralPhrase": "global states",
+      "directObjectType": "firewall",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
+        ]
+      }
+    },
     "local policy modify state of <firewall> : firewall local policy modify state": {
       "key": "local policy modify state of <firewall> : firewall local policy modify state",
       "type": "property",
@@ -83645,6 +84101,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -83661,6 +84120,19 @@
         ]
       }
     },
+    "stealth enabled of <firewall> : boolean": {
+      "key": "stealth enabled of <firewall> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "stealth enabled",
+      "pluralPhrase": "stealth enableds",
+      "directObjectType": "firewall",
+      "availability": {
+        "11.0.4.0": [
+          "Mac"
+        ]
+      }
+    },
     "<firewall action> = <firewall action> : boolean": {
       "key": "<firewall action> = <firewall action> : boolean",
       "type": "binaryOp",
@@ -83671,6 +84143,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84270,6 +84745,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84283,6 +84761,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -84518,6 +84999,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -86369,6 +86853,27 @@
         ]
       }
     },
+    "cidr subnet of <network adapter> : cidr subnet": {
+      "key": "cidr subnet of <network adapter> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network adapter",
+      "availability": {
+        "11.0.4.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "description of <network adapter> : string": {
       "key": "description of <network adapter> : string",
       "type": "property",
@@ -86690,6 +87195,19 @@
       "directObjectType": "network address list",
       "availability": {
         "8.0.584.0": [
+          "Windows"
+        ]
+      }
+    },
+    "cidr subnet of <network address list> : cidr subnet": {
+      "key": "cidr subnet of <network address list> : cidr subnet",
+      "type": "property",
+      "resultType": "cidr subnet",
+      "singularPhrase": "cidr subnet",
+      "pluralPhrase": "cidr subnets",
+      "directObjectType": "network address list",
+      "availability": {
+        "11.0.4.0": [
           "Windows"
         ]
       }
@@ -92074,6 +92592,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -92220,6 +92741,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -92822,6 +93346,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },
@@ -92886,6 +93413,9 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.4.0": [
+          "Mac"
         ]
       }
     },

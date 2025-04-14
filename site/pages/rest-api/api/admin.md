@@ -2,6 +2,8 @@
 title: Admin
 ---
 
+In order to run the Admin APIs, you must be logged in as Master Operator (MO).
+
 {% restapi "/api/admin/fields", "GET", "Returns the list of admin fields." %}
 
 **Request:** URL is all that is required
@@ -27,8 +29,6 @@ For example:
 
 {% restapi "/api/admin/fields", "POST", "Sets one or more admin fields." %}
 **Request:** One or more admin fields in a XML document.
-
-For example: 
 
 **Request Schema:** BESAPI.xsd
 

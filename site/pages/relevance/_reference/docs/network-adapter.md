@@ -31,6 +31,15 @@ Returns the CIDR address of the specified network adapter as a string type, for 
 
 Returns the Classless Inter-Domain Routing value for the specified network adapter as a string value.
 
+# cidr subnet of &lt;network adapter&gt; : cidr subnet
+
+Returns the CIDR subnet of the specified network adapter.
+
+{% qna %}
+Q: cidr subnets of adapters of network
+A: 192.14.85.0/24
+{% endqna %}
+
 # description of &lt;network adapter&gt; : string
 
 Returns the description of the network adapter.

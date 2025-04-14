@@ -26,6 +26,20 @@ Returns the CIDR address of the specified interface as a string type, for exampl
 
 A cidr string (see CIDR_notation at Wikipedia) is a string representation of a cidr address.  It looks like an ip address followed by a slash and then the number of leading non-zero bits of the routing prefix. For example, 192.168.0.0/16 for IPv4, and 2001:db8::/32 for IPv6.
 
+# cidr subnet of &lt;network adapter interface&gt; : cidr subnet
+
+Returns the CIDR of the specified network interface.
+
+{% qna %}
+Q: cidr subnets of ipv4 interfaces of adapters of network
+A: 192.14.35.0/24
+{% endqna %}
+
+{% qna %}
+Q: cidr subnets of ipv6 interfaces of adapters of network
+A: fe80::/64
+{% endqna %}
+
 # loopback of &lt;network adapter interface&gt; : boolean
 
 Returns `True` if the specified interface supports loopbacks.

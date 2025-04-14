@@ -29,6 +29,15 @@ Q: (address of it, cidr string of it) of adapter 1 of network
 A: 10.0.2.15, 10.0.2.0/24
 {% endqna %}
 
+# cidr subnet of &lt;network address list&gt; : cidr subnet
+
+Returns the CIDR subnet of the specified network address list.
+
+{% qna %}
+Q: cidr subnets of address lists of adapters of network
+A: 192.14.25.0/24
+{% endqna %}
+
 # subnet address of &lt;network address list&gt; : ipv4 address
 
 Returns the subnet address (IPv4) of the specified network address list.

@@ -220,7 +220,32 @@ Returns the volume corresponding to the numbered filesystem.
 
 # firewall action &lt;integer&gt; : firewall action
 
-Returns the Nth enumerated type from the Firewall Action interface. This provides an alternative way to access the firewall action variables and requires Vista. For more information, see the MSDN Library entry for NET_FW_ACTION.
+Returns the Nth enumerated type of the `firewall action` type. On Windows, this type is a wrapper around the NET_FW_ACTION enumerated type.
+
+The **"firewall action"** type can have the following values:  
+- **0**: Block traffic.
+- **1**: Allow traffic.
+- **2**: Maximum traffic.
+
+On Windows, all three values are valid. On macOS only the first two values are valid.
+
+Example running the QnA on a Windows computer showing the target application of each firewall rule that allows network traffic. Only the first 3 answers are shown.
+
+{% qna %}
+Q: application names of rules whose (action of it = firewall action 1) of firewall
+A: C:\Program Files\Google\Chrome\Application\chrome.exe
+A: C:\Program Files (x86)\BigFix Enterprise\BES Server\BESWebReportsServer.exe
+A:
+{% endqna %}
+
+Example running the QnA on a Mac computer showing the target application of each firewall rule that allows network traffic. Only the first 3 answers are shown.
+
+{% qna %}
+Q: application names of rules whose (action of it = firewall action 1) of firewall
+A: com.apple.iBooksX
+A:
+A:
+{% endqna %} 
 
 # firewall local policy modify state &lt;integer&gt; : firewall local policy modify state
 

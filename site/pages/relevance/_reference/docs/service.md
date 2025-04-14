@@ -50,11 +50,14 @@ No documentation exists.
 
 Returns the list of runlevels for which the service is active.
 
-Note: On RedHat 7, this also lists the targets of systemd services.
+Note: For Systemd services, use the `target` property.
 
 {% qna %}
-Q: (it as string, runlevels of it) of services whose (it as string contains "ssh")
-A: "sshd.service" "sshd" "Stopped", multi-user.target
+Q: runlevels of service "network"
+A: 2
+A: 3
+A: 4
+A: 5
 {% endqna %}
 
 # running of &lt;service&gt; : boolean
@@ -81,6 +84,16 @@ Returns a string that represents the service startup configuration. It describes
 
 Returns one of Continuing, Pausing, Paused, Running, Starting, Stopping, Stopped, Unknown.
 The service name must be passed between double quotes (e.g. "BESClient"). On Debian, Raspbian, Ubuntu, AIX, HP-UX and Solaris, the inspector only works for BigFix services. The BigFix service names are: BESClient, BESExplorer, BESFillDB, BESGatherDB, BESPluginPortal, BESRelay, BESRootServer, BESWebReportsServer and BESWebUI.
+
+# target of &lt;service&gt; : string
+
+Returns all the targets list of systemd services.
+Note: For SystemV services, use the `runlevel` property.
+
+{% qna %}
+Q: target of service "postfix"
+A: multi-user.target
+{% endqna %}
 
 # version of &lt;service&gt; : version
 

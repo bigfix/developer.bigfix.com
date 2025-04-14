@@ -8,6 +8,25 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 4 Added Inspector Types
+
+New inspector type named *cidr subnet* was added to represent a Classless Inter-Domain Routing (CIDR) subnet.
+
+For details, see [cidr subnet](https://developer.bigfix.com/relevance/reference/cidr-subnet.html)
+
+#### Version 11 Patch 4 Added Inspector Properties
+
+New inspector properties named *first line of*, *first line &lt;integer&gt; of*, *last line of* and *last line &lt;integer&gt; of* were added to the existing *file* inspector to return specific lines of a given file.
+
+For details, see [file](https://developer.bigfix.com/relevance/reference/file.html) and [file line](https://developer.bigfix.com/relevance/reference/file-line.html)
+
+New inspector properties named *first rawline of*, *first rawline &lt;integer&gt; of*, *last rawline of* and *last rawline &lt;integer&gt; of* were added to the existing *file* inspector to return specific raw lines of a given file.
+
+For details, see [file](https://developer.bigfix.com/relevance/reference/file.html) and [file rawline](https://developer.bigfix.com/relevance/reference/file-rawline.html)
+
+New inspector properties named *enabled of*, *global state of*, and *stealth enabled of* were added to the existing *firewall* inspector to return specific firewall information.
+
+For details, see [firewall](https://developer.bigfix.com/relevance/reference/firewall.html)
 
 #### Version 11 Patch 3 Added Inspector Types
 
