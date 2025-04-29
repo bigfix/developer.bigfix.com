@@ -6398,6 +6398,38 @@
         ]
       }
     },
+    "yaml key": {
+      "name": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml value": {
+      "name": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "sqlite column": {
       "name": "sqlite column",
       "availability": {
@@ -7077,38 +7109,6 @@
       }
     }
 },
-    "yaml key": {
-      "name": "yaml key",
-      "availability": {
-        "11.0.5.0": [
-          "AIX",
-          "Debian",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
-    "yaml value": {
-      "name": "yaml value",
-      "availability": {
-        "11.0.5.0": [
-          "AIX",
-          "Debian",
-          "Mac",
-          "Raspbian",
-          "Red Hat",
-          "SUSE",
-          "Solaris",
-          "Ubuntu",
-          "Windows"
-        ]
-      }
-    },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
       "key": "<bes action set> contains <bes action> : boolean",
