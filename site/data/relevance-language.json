@@ -7077,6 +7077,38 @@
       }
     }
 },
+    "yaml key": {
+      "name": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml value": {
+      "name": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
   "properties": {
     "<bes action set> contains <bes action> : boolean": {
       "key": "<bes action set> contains <bes action> : boolean",
@@ -104820,6 +104852,361 @@
         ]
       }
     },
+    "name of <yaml key> : string": {
+      "key": "name of <yaml key> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "value of <yaml key> : yaml value": {
+      "key": "value of <yaml key> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "value",
+      "pluralPhrase": "values",
+      "directObjectType": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml of <file> : yaml value": {
+      "key": "yaml of <file> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "yaml",
+      "pluralPhrase": "yamls",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml of <string> : yaml value": {
+      "key": "yaml of <string> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "yaml",
+      "pluralPhrase": "yamls",
+      "directObjectType": "string",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml key> as string : string": {
+      "key": "<yaml key> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "yaml key",
+      "phrase": "string",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "element <integer> of <yaml value> : yaml value": {
+      "key": "element <integer> of <yaml value> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "indexType": "integer",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "element of <yaml value> : yaml value": {
+      "key": "element of <yaml value> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+     "key <string> of <yaml value> : yaml key": {
+       "key": "key <string> of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key of <yaml value> : yaml key": {
+      "key": "key of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "path <string> of <yaml value> : yaml value": {
+      "key": "path <string> of <yaml value> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "path",
+      "pluralPhrase": "paths",
+      "indexType": "string",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "type of <yaml value> : string": {
+      "key": "type of <yaml value> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "type",
+      "pluralPhrase": "types",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as boolean : boolean": {
+      "key": "<yaml value> as boolean : boolean",
+      "type": "cast",
+      "resultType": "boolean",
+      "argType": "yaml value",
+      "phrase": "boolean",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as float : floating point": {
+      "key": "<yaml value> as float : floating point",
+      "type": "cast",
+      "resultType": "floating point",
+      "argType": "yaml value",
+      "phrase": "float",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as integer : integer": {
+      "key": "<yaml value> as integer : integer",
+      "type": "cast",
+      "resultType": "integer",
+      "argType": "yaml value",
+      "phrase": "integer",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as string : string": {
+      "key": "<yaml value> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "yaml value",
+      "phrase": "string",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> = <yaml value> : boolean": {
+      "key": "<yaml value> = <yaml value> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "yaml value",
+      "op": "=",
+      "rightType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml key> = <yaml key> : boolean": {
+      "key": "<yaml key> = <yaml key> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "yaml key",
+      "op": "=",
+      "rightType": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "value of <json key> : json value": {
       "key": "value of <json key> : json value",
       "type": "property",
@@ -105017,6 +105404,29 @@
         ]
       }
     },
+    "key <string> of <yaml value> : yaml key": {
+      "key": "key <string> of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "key <string> of <json value> : json key": {
       "key": "key <string> of <json value> : json key",
       "type": "property",
@@ -105040,6 +105450,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "key of <yaml value> : yaml key": {
+      "key": "key of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },

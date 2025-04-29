@@ -493,6 +493,70 @@ No documentation exists.
 
 Returns an XML Document Object Model (DOM) for the specified file.
 
+# yaml of &lt;file&gt; : yaml value
+
+Returns a YAML value for the content of the file.
+
+The following is the content of a test file named "test.yaml".
+
+```
+published: true
+domain:
+  - devops
+  - devsecops
+tutorial:
+  - yaml:
+      name: YAML Ain't Markup Language
+      type: awesome
+      born: 2001
+  - xml:
+      name: Extensible Markup Language
+      type: good
+      born: 1996
+```
+
+This example shows how to create a `yaml value` representing the content of the file "test.yaml".
+Note that newline `\n` characters have been "percent-encoded" as `%0a`.
+
+{% qna %}
+Q: yaml of file "./test.yaml"
+A: domain:%0a  - devops%0a  - devsecops%0apublished: true%0atutorial:%0a  - yaml:%0a      name: YAML Ain't Markup Language%0a      type: awesome%0a      born: 2001%0a  - xml:%0a      name: Extensible Markup Language%0a      type: good%0a      born: 1996
+{% endqna %}
+
+The following is the content of a test file named "complex.yaml".
+
+```
+my_boolean: true
+my_number: 3
+my_float: 3.14
+my_string_1: "foo bar"
+my-string-2: foo bar
+my_list_1:
+  - A
+  - B
+my-list-2: ['A', 'B']
+my_dict_1:
+  field_a: A
+  field_b: B
+  sub_dict:
+    sub_field: C1
+my-dict-2: { field_a: A, field_b: B, sub_dict: { sub_field: C1 } }
+my_obj_list_1:
+  -
+    obj_1_field: 1A
+  -
+    obj_2_field: 2A
+my-obj-list-2: [ { obj_1_field: 1A }, { obj_2_field: 2A } ]
+```
+
+This example shows how to create a `yaml value` representing the content of the file "complex.yaml".
+Note that certain characters have been "percent-encoded".
+
+{% qna %}
+Q: yaml of file "./complex.yaml"
+A: my_dict_1:%0a  field_a: A%0a  field_b: B%0a  sub_dict:%0a    sub_field: C1%0amy_list_1:%0a  - A%0a  - B%0amy-string-2: foo bar%0amy_boolean: true%0amy_string_1: foo bar%0amy_number: 3%0amy_float: 3.14%0amy-list-2: [A, B]%0amy-dict-2:%0a  field_a: A%0a  field_b: B%0a  sub_dict:%0a    sub_field: C1%0amy_obj_list_1:%0a  - obj_1_field: 1A%0a  - obj_2_field: 2A%0amy-obj-list-2: [{obj_1_field: 1A}, {obj_2_field: 2A}]
+{% endqna %}
+
 # &lt;file&gt; as string : string
 
 Creates a string containing the full pathname of the specified file. See &lt;file&gt;.

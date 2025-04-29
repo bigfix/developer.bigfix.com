@@ -10,6 +10,10 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 #### Version 11 Patch 4 Added Inspector Types
 
+New inspector types named *yaml key* and *yaml value* were added to represent YAML keys and values.
+
+For details, see [yaml key](https://developer.bigfix.com/relevance/reference/yaml-key.html) and [yaml value](https://developer.bigfix.com/relevance/reference/yaml-value.html).
+
 New inspector type named *cidr subnet* was added to represent a Classless Inter-Domain Routing (CIDR) subnet.
 
 For details, see [cidr subnet](https://developer.bigfix.com/relevance/reference/cidr-subnet.html)
