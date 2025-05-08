@@ -68,8 +68,7 @@ for {{'environment' | linkType}} object, and look at the Creation section. As it
 object by just writing "environment".
 
 Notice the difference in plurality of `variable` between the two relevance clauses. Use the *singular form* when expect exactly one 
-result, and use the *plural form* otherwise. See the guide on [Singular and Plural](/guide/basics/singular-and-plural.html/) for more 
-details.
+result, and use the *plural form* otherwise. See the guide on [Plurals](/relevance/guide/basics/singular-and-plural.html) for more details.
 
 You can query the various properties of the `environment variable` object. To return the name or value of the environment variable, 
 use the following commands respectively:
