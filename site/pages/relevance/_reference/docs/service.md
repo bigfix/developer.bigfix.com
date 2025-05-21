@@ -44,7 +44,19 @@ Returns the login account under which the service is configured to run.
 
 # pid of &lt;service&gt; : integer
 
-No documentation exists.
+Returns the process ID(s) of the active service.
+
+Note: On Red Hat and SUSE, this property applies to services managed by systemd. 
+
+{% qna %}
+Q:pid of service "sshd"
+A: 1104
+{% endqna %}
+
+{% qna %}
+Q: pid of service "EventLog"
+A: 1208
+{% endqna %}
 
 # runlevel of &lt;service&gt; : string
 
