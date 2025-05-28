@@ -32,11 +32,45 @@ Returns `True` if the specified service is a driver type.
 
 # file of &lt;service&gt; : file
 
-Returns a file object corresponding to the specified &lt;service&gt;.
+Returns the file object that corresponds to the executable of the specified &lt;service&gt;.
+
+{% qna %}
+Q: file of service "BESRootServer"
+A: "BESRootServer.exe" "99.99.5.878" "Server component of BigFix" "99.99.5.878" "HCL Technologies Limited"
+{% endqna %}
+
+{% qna %}
+Q: file of service "BESClient
+A: /opt/BESClient/bin/BESClient
+{% endqna %}
+
+# folder of &lt;service&gt; : folder
+
+Returns the folder object representing the directory where the executable of the specified &lt;service&gt; is located.
+
+{% qna %}
+Q: folder of service "BESRootServer"
+A: C:\Program Files (x86)\BigFix Enterprise\BES Server
+{% endqna %}
+
+{% qna %}
+Q: folder of service "BESClient
+A: /opt/BESClient/bin
+{% endqna %}
 
 # image path of &lt;service&gt; : string
 
-Returns the full path to the service executable.
+Returns the full file system path to the executable image associated with the specified &lt;service&gt;.
+
+{% qna %}
+Q: image path of service "BESRootServer"
+A: "C:\Program Files (x86)\BigFix Enterprise\BES Server\BESRootServer.exe"
+{% endqna %}
+
+{% qna %}
+Q: image path of service "BESClient"
+A: /opt/BESClient/bin/BESClient
+{% endqna %}
 
 # login account of &lt;service&gt; : string
 
