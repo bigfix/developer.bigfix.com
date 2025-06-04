@@ -90598,7 +90598,7 @@
         ]
       }
     },
-	"folder of <service> : folder": {
+    "folder of <service> : folder": {
       "key": "folder of <service> : folder",
       "type": "property",
       "resultType": "folder",
@@ -90608,7 +90608,7 @@
       "availability": {
         "11.0.5.0": [
           "Windows",
-		  "Red Hat",
+          "Red Hat",
           "SUSE"
         ]
       }
