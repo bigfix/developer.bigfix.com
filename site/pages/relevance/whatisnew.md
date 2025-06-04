@@ -14,7 +14,9 @@ New inspector types named *yaml key* and *yaml value* were added to represent YA
 
 For details, see [yaml key](https://developer.bigfix.com/relevance/reference/yaml-key.html) and [yaml value](https://developer.bigfix.com/relevance/reference/yaml-value.html).
 
-A new inspector property named *Folder of* was added to the existing *service* inspector to return the folder object representing the directory where the executable of the specified service is located.
+#### Version 11 Patch 5 Added Inspector Properties
+
+New inspector property named *folder of* was added to the existing *service* inspector to return the folder object representing the directory where the executable of the specified service is located.
 
 For details, see [service](https://developer.bigfix.com/relevance/reference/service.html)
 
