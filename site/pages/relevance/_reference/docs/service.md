@@ -34,10 +34,14 @@ Returns `True` if the specified service is a driver type.
 
 Returns the file object that corresponds to the executable of the specified &lt;service&gt;.
 
+Example running the QnA on a Windows computer.
+
 {% qna %}
 Q: file of service "BESRootServer"
 A: "BESRootServer.exe" "99.99.5.878" "Server component of BigFix" "99.99.5.878" "HCL Technologies Limited"
 {% endqna %}
+
+Example running the QnA on a Linux computer.
 
 {% qna %}
 Q: file of service "BESClient
@@ -48,10 +52,14 @@ A: /opt/BESClient/bin/BESClient
 
 Returns the folder object representing the directory where the executable of the specified &lt;service&gt; is located.
 
+Example running the QnA on a Windows computer.
+
 {% qna %}
 Q: folder of service "BESRootServer"
 A: C:\Program Files (x86)\BigFix Enterprise\BES Server
 {% endqna %}
+
+Example running the QnA on a Linux computer.
 
 {% qna %}
 Q: folder of service "BESClient
@@ -62,10 +70,14 @@ A: /opt/BESClient/bin
 
 Returns the full file system path to the executable image associated with the specified &lt;service&gt;.
 
+Example running the QnA on a Windows computer.
+
 {% qna %}
 Q: image path of service "BESRootServer"
 A: "C:\Program Files (x86)\BigFix Enterprise\BES Server\BESRootServer.exe"
 {% endqna %}
+
+Example running the QnA on a Linux computer.
 
 {% qna %}
 Q: image path of service "BESClient"
