@@ -90593,13 +90593,13 @@
           "Windows"
         ],
         "11.0.5.0": [
-		  "AIX",
+          "AIX",
           "Debian",
+          "Raspbian",
           "Red Hat",
           "SUSE",
-		  "Solaris",
-		  "Ubuntu",
-		  "Raspbian"
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -90612,14 +90612,14 @@
       "directObjectType": "service",
       "availability": {
         "11.0.5.0": [
-          "Windows"
-		  "AIX",
+          "Windows",
+          "AIX",
           "Debian",
+          "Raspbian",
           "Red Hat",
           "SUSE",
-		  "Solaris",
-		  "Ubuntu",
-		  "Raspbian"
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
@@ -90635,13 +90635,13 @@
           "Windows"
         ],
         "11.0.5.0": [
-		  "AIX",
+          "AIX",
           "Debian",
+          "Raspbian",
           "Red Hat",
           "SUSE",
-		  "Solaris",
-		  "Ubuntu",
-		  "Raspbian"
+          "Solaris",
+          "Ubuntu"
         ]
       }
     },
