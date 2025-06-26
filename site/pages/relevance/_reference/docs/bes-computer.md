@@ -212,4 +212,4 @@ Returns the unique values of a given list of &lt;bes computer&gt; types, removin
 
 # &lt;bes computer&gt; = &lt;bes computer&gt; : boolean
 
-Compares two BES Computer types and returns `True` if they are equal.
+Compares two `bes computer` objects and returns `True` if they are equal.

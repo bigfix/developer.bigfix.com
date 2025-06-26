@@ -68,4 +68,4 @@ Converts the specified BES computer group to XML format, for submission to the E
 
 # &lt;bes computer group&gt; = &lt;bes computer group&gt; : boolean
 
-Compares two BES Computer Group types and returns `True` if they are equal.
+Compares two `bes computer group` objects and returns `True` if they are equal.

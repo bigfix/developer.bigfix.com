@@ -12,4 +12,4 @@ This is a Casting Operator that takes a &lt;metabase identifier&gt; type and ret
 
 # &lt;metabase identifier&gt; = &lt;metabase identifier&gt; : boolean
 
-Compares two metabase identifiers for equality.
+Compares two `metabase identifier` objects and returns `True` if they are equal.

@@ -4,4 +4,4 @@ The &lt;firewall scope&gt; inspectors provide access to the firewall scope. The 
 
 # &lt;firewall scope&gt; = &lt;firewall scope&gt; : boolean
 
-Compares two firewall scopes for equality only.
+Compares two `firewall scope` objects and returns `True` if they are equal.

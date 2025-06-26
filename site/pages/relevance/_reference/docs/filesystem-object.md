@@ -392,4 +392,4 @@ Casts a link in the form of a file into a symlink.
 
 # &lt;filesystem object&gt; = &lt;filesystem object&gt; : boolean
 
-Compares two Macintosh file system objects.
+Compares two `filesystem object` objects and returns `True` if they are equal.

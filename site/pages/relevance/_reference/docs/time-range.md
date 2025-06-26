@@ -52,7 +52,7 @@ Returns the smallest range that contains both ot the specified ranges (same as &
 
 # &lt;time range&gt; = &lt;time range&gt; : boolean
 
-Compares two time range types and returns `True` if they are equal.
+Compares two `time range` objects and returns `True` if they are equal.
 
 # &lt;time range&gt; contains &lt;time range&gt; : boolean
 

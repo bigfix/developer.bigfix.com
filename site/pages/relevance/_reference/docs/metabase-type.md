@@ -12,4 +12,4 @@ Returns metabase types as strings:"DWord""String""Binary""ExpandSz""MultiSz".
 
 # &lt;metabase type&gt; = &lt;metabase type&gt; : boolean
 
-Compares two metabase types for equality.
+Compares two `metabase type` objects and returns `True` if they are equal.

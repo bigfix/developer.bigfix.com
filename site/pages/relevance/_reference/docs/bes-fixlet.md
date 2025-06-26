@@ -321,4 +321,4 @@ Converts the specified BES Fixlet to XML format, for submission to the EvaluateR
 
 # &lt;bes fixlet&gt; = &lt;bes fixlet&gt; : boolean
 
-Compares two BES Fixlet types and returns `True` if they are equal.
+Compares two `bes fixlet` objects and returns `True` if they are equal.

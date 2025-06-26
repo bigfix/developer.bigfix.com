@@ -160,7 +160,7 @@ A: (objectclass=account)
 
 # &lt;bes idp directory&gt; = &lt;bes idp directory&gt; : boolean
 
-Compares two BES Identity Provider Directory types and returns `True` if they are equal.
+Compares two `bes idp directory` objects and returns `True` if they are equal.
 
 {% qna %}
 Q: bes idp directory whose( id of it = 59 ) = bes idp directory whose( name of it = "My Identity Provider Directory" )
