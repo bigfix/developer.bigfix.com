@@ -28,6 +28,8 @@ The value `"foo"` is returned as the `value of` the `yaml key` and it is represe
 
 The parser also supports the inline (non-indented) versions of **objects** and **arrays**, allowing YAML structures to be defined in a more compact format.
 
+The YAML Inspector uses the external library `yaml-cpp` (version 0.8.0), available at [https://github.com/jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp), for parsing YAML content.
+
 **Note:** For certain characters, such as double quotes, newline characters, and others, we use URL encoding (or percent encoding) to ensure proper handling within the text.
 
 For more details about how the `yaml value` is represented, refer to the [YAML value page](https://developer.bigfix.com/relevance/reference/yaml-value.html).

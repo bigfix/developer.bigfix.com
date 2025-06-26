@@ -9,6 +9,8 @@ The `yaml value` type represents a [YAML](https://en.wikipedia.org/wiki/YAML) va
 - **Array (Sequence):** A sequence of values, represented as a list with each item prefixed by a dash `-` and aligned at the same indentation level. The values do not need to be of the same type.
 - **Object (Mapping):** A collection of key-value pairs, where keys are strings and values can be any valid YAML value. These mappings are separated by a colon `:` and structured using indentation to denote hierarchy. Keys must be unique within a mapping.
 
+The YAML Inspector uses the external library `yaml-cpp` (version 0.8.0), available at [https://github.com/jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp), for parsing YAML content.
+
 In our implementation, we use our own definitions of the terms "key" and "value".
 
 We store the entire "YAML object" in a `yaml value`.
