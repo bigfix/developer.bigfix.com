@@ -117889,6 +117889,19 @@
         ]
       }
     },
+    "protocol type of <wifi network> : string": {
+      "key": "protocol type of <wifi network> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "protocol type",
+      "pluralPhrase": "protocol types",
+      "directObjectType": "wifi network",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
     "rssi of <wifi network> : integer": {
       "key": "rssi of <wifi network> : integer",
       "type": "property",
