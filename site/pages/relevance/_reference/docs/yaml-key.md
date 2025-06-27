@@ -26,9 +26,9 @@ The key-pair `"foo": "bar"` inside it is represented as a `yaml key`.
 The key `"foo"` is returned as the `name of` the `yaml key` and it is represented as a `string`.
 The value `"foo"` is returned as the `value of` the `yaml key` and it is represented as `yaml key`, but it can be cast to `string` because that is what it contains.
 
-The parser also supports the inline (non-indented) versions of **objects** and **arrays**, allowing YAML structures to be defined in a more compact format.
+Our YAML parser is implemented using the `yaml-cpp` library, available at [https://github.com/jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp).
 
-The YAML Inspector uses the external library `yaml-cpp` (version 0.8.0), available at [https://github.com/jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp), for parsing YAML content.
+The parser also supports the inline (non-indented) versions of **objects** and **arrays**, allowing YAML structures to be defined in a more compact format.
 
 **Note:** For certain characters, such as double quotes, newline characters, and others, we use URL encoding (or percent encoding) to ensure proper handling within the text.
 
