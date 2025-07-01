@@ -9,16 +9,16 @@ The `yaml value` type represents a [YAML](https://en.wikipedia.org/wiki/YAML) va
 - **Array (Sequence):** A sequence of values, represented as a list with each item prefixed by a dash `-` and aligned at the same indentation level. The values do not need to be of the same type.
 - **Object (Mapping):** A collection of key-value pairs, where keys are strings and values can be any valid YAML value. These mappings are separated by a colon `:` and structured using indentation to denote hierarchy. Keys must be unique within a mapping.
 
-Our YAML parser is implemented using the `yaml-cpp` library, available at [https://github.com/jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp).
-
-For more information, see the [YAML key page](https://developer.bigfix.com/relevance/reference/yaml-key.html).
-
 In our implementation, we use our own definitions of the terms "key" and "value".
 
 We store the entire "YAML object" in a `yaml value`.
 Each key-value pair inside it is a `yaml key`.
 The "key" in a key-value pair is just a `string` and we refer to it as the "name of the key".
 The "value" in a key-value pair is another `yaml value`.
+
+Our YAML parser is implemented using the `yaml-cpp` library, available at [https://github.com/jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp).
+
+For more information, see the [YAML key page](https://developer.bigfix.com/relevance/reference/yaml-key.html).
 
 # element &lt;integer&gt; of &lt;yaml value&gt; : yaml value
 
