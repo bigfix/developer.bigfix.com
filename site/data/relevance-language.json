@@ -86219,6 +86219,97 @@
         ]
       }
     },
+    "last logon time of <logged on user> : time": {
+      "key": "last logon time of <logged on user> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "last logon time",
+      "pluralPhrase": "last logon times",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "last logon type of <logged on user> : string": {
+      "key": "last logon type of <logged on user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "last logon type",
+      "pluralPhrase": "last logon types",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "last logon type number of <logged on user> : integer": {
+      "key": "last logon type number of <logged on user> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "last logon type number",
+      "pluralPhrase": "last logon type numbers",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon completion time of <logged on user> : time interval": {
+      "key": "logon completion time of <logged on user> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "logon completion time",
+      "pluralPhrase": "logon completion times",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon session time of <logged on user> : time": {
+      "key": "logon session time of <logged on user> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "logon session time",
+      "pluralPhrase": "logon session times",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon session type of <logged on user> : string": {
+      "key": "logon session type of <logged on user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "logon session type",
+      "pluralPhrase": "logon session types",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon session type number of <logged on user> : integer": {
+      "key": "logon session type number of <logged on user> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "logon session type number",
+      "pluralPhrase": "logon session type numbers",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
     "name of <logged on user> : string": {
       "key": "name of <logged on user> : string",
       "type": "property",

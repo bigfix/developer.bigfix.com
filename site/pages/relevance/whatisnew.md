@@ -16,6 +16,10 @@ For details, see [yaml key](https://developer.bigfix.com/relevance/reference/yam
 
 #### Version 11 Patch 5 Added Inspector Properties
 
+New inspector properties named *last logon time of*, *last logon type of*, *last logon type number of*, *logon completion time of*, *logon session time of*, *logon session type of* and *logon session type number of* were added to the existing *logged on user* inspector to return information about the logon that started a Windows session.
+
+For details, see [logged on user](https://developer.bigfix.com/relevance/reference/logged-on-user.html)
+
 New inspector property named *folder of* was added to the existing *service* inspector to return the folder object representing the directory where the executable of the specified service is located.
 
 For details, see [service](https://developer.bigfix.com/relevance/reference/service.html)
