@@ -20,6 +20,10 @@ New inspector properties named *last logon time of*, *last logon type of*, *last
 
 For details, see [logged on user](https://developer.bigfix.com/relevance/reference/logged-on-user.html)
 
+New inspector property named *protocol type of* was added to the existing *wifi network* inspector to return the protocol type of the connected Wi-Fi network.
+
+For details, see [wifi network](https://developer.bigfix.com/relevance/reference/wifi-network.html)
+
 New inspector property named *folder of* was added to the existing *service* inspector to return the folder object representing the directory where the executable of the specified service is located.
 
 For details, see [service](https://developer.bigfix.com/relevance/reference/service.html)
