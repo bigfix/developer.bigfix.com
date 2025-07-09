@@ -1,7 +1,8 @@
 # type: user
 
-- On Windows, returns objects for all users of the computer, logged-in or not.
-- On Linux, returns logged-in users only. If a user is logged in from multiple terminals, the object appears multiple times in the returned results.
+This object represents a computer user, with a slightly different meaning that depends on the OS.
+- On Windows, it can represent local and domain users computer, but not Entra ID users.
+- On Linux, it represents a user in the context of an active session. If a user is currently logged-in from multiple terminals, there are just as many active user sessions and each will be represented by a different user object.
 
 # account disabled flag of &lt;user&gt; : boolean
 
