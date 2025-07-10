@@ -14,6 +14,10 @@ New inspector types named *yaml key* and *yaml value* were added to represent YA
 
 For details, see [yaml key](https://developer.bigfix.com/relevance/reference/yaml-key.html) and [yaml value](https://developer.bigfix.com/relevance/reference/yaml-value.html).
 
+New inspector types named *os log store* and *os log entry log* were added to allow querying log entries from the local OS log store on macOS.
+
+For details, see [os log store](https://developer.bigfix.com/relevance/reference/os-log-store.html) and [os log entry log](https://developer.bigfix.com/relevance/reference/os-log-entry-log.html).
+
 #### Version 11 Patch 5 Added Inspector Properties
 
 New inspector properties named *last logon time of*, *last logon type of*, *last logon type number of*, *logon completion time of*, *logon session time of*, *logon session type of* and *logon session type number of* were added to the existing *logged on user* inspector to return information about the logon that started a Windows session.

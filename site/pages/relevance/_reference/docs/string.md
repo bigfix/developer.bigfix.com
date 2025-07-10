@@ -1000,6 +1000,10 @@ Returns an HTML snippet with the specified string enclosed in an &lt;ol&gt;&lt;l
 
 Returns an HTML snippet containing the specified string enclosed in an &lt;ol&gt;&lt;li&gt; tag.
 
+# os log store &lt;string&gt; : os log store
+
+Creates an `os log store` object that provides access to the unified log store on macOS. The `string` specifies what log store to access. Currently, only the local log store is supported, so the `string` must be "Local".
+
 # p &lt;string&gt; of &lt;string&gt; : html
 
 Returns an HTML snippet with the specified string enclosed in an &lt;p&gt; tag modified by the first given string.

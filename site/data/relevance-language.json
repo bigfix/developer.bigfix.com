@@ -1436,6 +1436,22 @@
         ]
       }
     },
+    "os log entry log": {
+      "name": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "os log store": {
+      "name": "os log store",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
     "property": {
       "name": "property",
       "availability": {
@@ -65954,6 +65970,189 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "os log store <string> : os log store": {
+      "key": "os log store <string> : os log store",
+      "type": "property",
+      "resultType": "os log store",
+      "singularPhrase": "os log store",
+      "pluralPhrase": "os log stores",
+      "directObjectType": "string",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "local os log store : os log store": {
+      "key": "local os log store : os log store",
+      "type": "property",
+      "resultType": "os log store",
+      "singularPhrase": "local os log store",
+      "pluralPhrase": "local os log stores",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "search since boot <string> of <os log store> : os log entry log": {
+      "key": "search since boot <string> of <os log store> : os log entry log",
+      "type": "property",
+      "resultType": "os log entry log",
+      "singularPhrase": "search since boot",
+      "pluralPhrase": "searches since boot",
+      "indexType": "string",
+      "directObjectType": "os log store",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "search since days <string> of <os log store> : os log entry log": {
+      "key": "search since days <string> of <os log store> : os log entry log",
+      "type": "property",
+      "resultType": "os log entry log",
+      "singularPhrase": "search since days",
+      "pluralPhrase": "searches since days",
+      "indexType": "string",
+      "directObjectType": "os log store",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "activity identifier of <os log entry log> : integer": {
+      "key": "activity identifier of <os log entry log> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "activity identifier",
+      "pluralPhrase": "activity identifiers",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "category of <os log entry log> : string": {
+      "key": "category of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "category",
+      "pluralPhrase": "categories",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "composed message of <os log entry log> : string": {
+      "key": "composed message of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "composed message",
+      "pluralPhrase": "composed messages",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "log level of <os log entry log> : string": {
+      "key": "log level of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "log level",
+      "pluralPhrase": "log levels",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "process identifier of <os log entry log> : integer": {
+      "key": "process identifier of <os log entry log> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "process identifier",
+      "pluralPhrase": "process identifiers",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "process name of <os log entry log> : string": {
+      "key": "process name of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "process name",
+      "pluralPhrase": "process names",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "sender of <os log entry log> : string": {
+      "key": "sender of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sender",
+      "pluralPhrase": "senders",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "subsystem of <os log entry log> : string": {
+      "key": "subsystem of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "subsystem",
+      "pluralPhrase": "subsystems",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "thread identifier of <os log entry log> : integer": {
+      "key": "thread identifier of <os log entry log> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "thread identifier",
+      "pluralPhrase": "thread identifiers",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "time generated of <os log entry log> : time": {
+      "key": "time generated of <os log entry log> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "time generated",
+      "pluralPhrase": "times generated",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
         ]
       }
     },

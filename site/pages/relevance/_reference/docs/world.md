@@ -1498,6 +1498,10 @@ Returns local groups defined on the local computer using the windows NetLocalGro
 
 Returns local MSSQL database objects.
 
+# local os log store : os log store
+
+Creates an `os log store` object that provides access to the local unified log store of a macOS computer. This is a convenience constructor for querying logs from the local machine.
+
 # local service group : security account
 
 Returns a security account constant corresponding to a &#39;local service group&#39;.
