@@ -15,5 +15,3 @@ The REST APIs made available by the BigFix Explorer are:
 
 ## User Authentication
 The REST APIs of the BigFix Explorer will require the basic authentication with the BigFix Operator credentials. The target BigFix Explorer will use the provided user credentials to authenticate to the BigFix Server on the user behalf.
-
-You cannot use remote (AD/LDAP) operators to send `api/relevance` REST API requests to the BigFix Explorer, but you can use such operators to send equivalent `api/query` REST API requests directly to the BigFix Server.
