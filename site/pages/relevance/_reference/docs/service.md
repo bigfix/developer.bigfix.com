@@ -34,6 +34,8 @@ Returns `True` if the specified service is a driver type.
 
 Returns the file object that corresponds to the executable of the specified &lt;service&gt;.
 
+Note: On Debian, Raspbian, Ubuntu, AIX and Solaris, this inspector only works for BigFix services.
+
 Example running the QnA on a Windows computer.
 
 {% qna %}
@@ -52,6 +54,8 @@ A: /opt/BESClient/bin/BESClient
 
 Returns the folder object representing the directory where the executable of the specified &lt;service&gt; is located.
 
+Note: On Debian, Raspbian, Ubuntu, AIX and Solaris, this inspector only works for BigFix services.
+
 Example running the QnA on a Windows computer.
 
 {% qna %}
@@ -69,6 +73,8 @@ A: /opt/BESClient/bin
 # image path of &lt;service&gt; : string
 
 Returns the full file system path to the executable image associated with the specified &lt;service&gt;.
+
+Note: On Debian, Raspbian, Ubuntu, AIX and Solaris, this inspector only works for BigFix services.
 
 Example running the QnA on a Windows computer.
 
