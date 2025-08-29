@@ -46,7 +46,7 @@ A: "BESRootServer.exe" "99.99.5.878" "Server component of BigFix" "99.99.5.878" 
 Example running the QnA on a Linux computer.
 
 {% qna %}
-Q: file of service "BESClient
+Q: file of service "BESClient"
 A: /opt/BESClient/bin/BESClient
 {% endqna %}
 
@@ -54,7 +54,7 @@ A: /opt/BESClient/bin/BESClient
 
 Returns the folder object representing the directory where the executable of the specified &lt;service&gt; is located.
 
-Note: On Debian, Raspbian, Ubuntu, AIX and Solaris, this inspector only works for BigFix services.
+Note: On UNIX systems, this inspector only works for BigFix services and it returns the parent folder of the folder containing the service executable.
 
 Example running the QnA on a Windows computer.
 
@@ -66,8 +66,8 @@ A: C:\Program Files (x86)\BigFix Enterprise\BES Server
 Example running the QnA on a Linux computer.
 
 {% qna %}
-Q: folder of service "BESClient
-A: /opt/BESClient/bin
+Q: folder of service "BESClient"
+A: /opt/BESClient
 {% endqna %}
 
 # image path of &lt;service&gt; : string
