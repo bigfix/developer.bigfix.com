@@ -61,10 +61,10 @@ A:
 Example running the QnA on a Mac computer showing rules of firwall. Only the first 3 answers are shown.
 
 {% qna %}
-Q: (application name of it, service name of it, action of it) of rules of firewall
-A: com.apple.iBooksX, , Allow
-A: com.apple.WebKit.Networking, , Allow
-A: , Screen Sharing, Allow
+Q: (application name of it, service name of it) of rules of firewall
+A: com.apple.cupsd,
+A: com.apple.remoted,
+A: , Remote Login - SSH
 {% endqna %}
 
 # service restriction of &lt;firewall&gt; : firewall service restriction
