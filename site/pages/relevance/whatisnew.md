@@ -28,10 +28,6 @@ New inspector property named *protocol type of* was added to the existing *wifi 
 
 For details, see [wifi network](https://developer.bigfix.com/relevance/reference/wifi-network.html)
 
-New inspector property named *folder of* was added to the existing *service* inspector to return the folder object representing the directory where the executable of the specified service is located.
-
-For details, see [service](https://developer.bigfix.com/relevance/reference/service.html)
-
 #### Version 11 Patch 4 Added Inspector Type
 
 New inspector type named *cidr subnet* was added to represent a Classless Inter-Domain Routing (CIDR) subnet.

@@ -90888,21 +90888,6 @@
         ]
       }
     },
-    "folder of <service> : folder": {
-      "key": "folder of <service> : folder",
-      "type": "property",
-      "resultType": "folder",
-      "singularPhrase": "folder",
-      "pluralPhrase": "folders",
-      "directObjectType": "service",
-      "availability": {
-        "11.0.5.0": [
-          "Windows",
-          "Red Hat",
-          "SUSE"
-        ]
-      }
-    },
     "image path of <service> : string": {
       "key": "image path of <service> : string",
       "type": "property",
