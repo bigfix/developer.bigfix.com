@@ -162,7 +162,22 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;body&g
 
 # boolean &lt;string&gt; : boolean
 
-Returns a boolean. For example, boolean "TRUE".
+Returns a boolean value for the string. All possible capitalizations of `True` and `False` will convert successfully. Any other value will cause an error.
+
+{% qna %}
+Q: boolean "True"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: boolean "true"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: boolean "yes"
+E: Singular expression refers to nonexistent object.
+{% endqna %}
 
 # br &lt;string&gt; : html
 
@@ -1767,7 +1782,22 @@ Works as "&lt;var&gt; as utf16 binary_string" on Windows systems, and as "&lt;va
 
 # &lt;string&gt; as boolean : boolean
 
-Returns a boolean value for the string. All possible capitalization&#39;s of "TRUE" and "FALSE" will convert successfully.
+Returns a boolean value for the string. All possible capitalizations of `True` and `False` will convert successfully. Any other value will cause an error.
+
+{% qna %}
+Q: "True" as boolean
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "true" as boolean
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "yes" as boolean
+E: Singular expression refers to nonexistent object.
+{% endqna %}
 
 # &lt;string&gt; as date : date
 
@@ -1919,24 +1949,64 @@ Concatenates two strings, producing a new string.
 
 # &lt;string&gt; &lt; &lt;string&gt; : boolean
 
-Returns true if the value of the left operand is less than the value of the right operand.
+Returns `True` if the value of the left operand is less than the value of the right operand.
 
 # &lt;string&gt; &lt;= &lt;string&gt; : boolean
 
-Returns true if the value of the left operand is less than or equal to the value of the right operand.
+Returns `True` if the value of the left operand is less than or equal to the value of the right operand.
 
 # &lt;string&gt; = &lt;string&gt; : boolean
 
-Returns true if the value of the left operand is equal to the value of the right operand.
+Returns `True` if the string on the left equals the string on the right. This comparison is case sensitive.
+
+{% qna %}
+Q: "foo" = "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo" = "Foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; contains &lt;string&gt; : boolean
 
-Returns a boolean TRUE if the first string contains the second string.
+Returns `True` if the first string contains the second string. This text search is case sensitive.
+
+{% qna %}
+Q: "foo bar" contains "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo bar" contains "Foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; ends with &lt;string&gt; : boolean
 
-Returns a boolean TRUE if the first string ends with the second string.
+Returns `True` if the first string ends with the second string. This text search is case sensitive.
+
+{% qna %}
+Q: "foo bar" starts with "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo bar" starts with "Foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; starts with &lt;string&gt; : boolean
 
-Returns a boolean TRUE if the first string starts with the second string.
+Returns `True` if the first string starts with the second string. This text search is case sensitive.
+
+{% qna %}
+Q: "foo bar" ends with "bar"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo bar" ends with "Bar"
+A: False
+{% endqna %}

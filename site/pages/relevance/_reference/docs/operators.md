@@ -258,7 +258,19 @@ No documentation exists.
 
 # &lt;file content&gt; contains &lt;string&gt; : boolean
 
-Returns `True` if the string is located in the content provided.
+Returns `True` if the string can be found in the file content. This text search is case sensitive.
+
+Examples for a file named "example.txt" whose content is "foo bar".
+
+{% qna %}
+Q: content of file "example.txt" contains "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: content of file "example.txt" contains "Foo"
+A: False
+{% endqna %}
 
 # &lt;fileset version record&gt; &lt; &lt;string&gt; : boolean
 
@@ -639,7 +651,17 @@ Concatenates a rope and a string, producing a rope.
 
 # &lt;rope&gt; contains &lt;string&gt; : boolean
 
-Returns `True` if the rope contains the string.
+Returns `True` if the rope contains the string. This text search is case sensitive.
+
+{% qna %}
+Q: rope "foo bar" contains "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: rope "foo bar" contains "Foo"
+A: False
+{% endqna %}
 
 # &lt;rpm package release&gt; &lt; &lt;string&gt; : boolean
 
@@ -715,7 +737,22 @@ No documentation exists.
 
 # &lt;string set&gt; contains &lt;string&gt; : boolean
 
-Returns `True` if the specified set of strings contains the given string.Example: set of ("foo";"bar") contains "foo" - Returns `True`.
+Returns `True` if the specified set of strings contains the given string. This text search is case sensitive.
+
+{% qna %}
+Q: set of ("foo"; "bar") contains "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: set of ("foo"; "bar") contains "Foo"
+A: False
+{% endqna %}
+
+{% qna %}
+Q: set of ("foo bar"; "bar") contains "foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; &amp; &lt;html&gt; : html
 
