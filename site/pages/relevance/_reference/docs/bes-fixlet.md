@@ -1,6 +1,6 @@
 # type: bes fixlet
 
-The &lt;bes fixlet&gt; inspectors allow you to iterate over the BES fixlets to create lists of various Fixlet properties such as name, ID, site, and more.
+A `bes fixlet` represents a Fixlet or a Task. It provides a way to read the name, ID, BigFix site, and other details of that BigFix content item. It can be used to determine on what computers it became relevant on. If a Fixlet (or Task) that was relevant on a computer has become non relevant, it is said to have been "remediated" on that computer. This information can also be retrieved.
 
 # action &lt;integer&gt; of &lt;bes fixlet&gt; : bes fixlet action
 
@@ -237,15 +237,69 @@ Returns the relevance expression used to determine if the specified fixlet is ap
 
 # relevant &lt;bes computer&gt; of &lt;bes fixlet&gt; : boolean
 
-Returns `True` if the given fixlet is relevant on the specified computer.
+Returns `True` if the Fixlet is relevant on the specified computer.
+
+{% qna %}
+Q: relevant (bes computer whose (id of it is 2746378)) of (bes fixlet whose (name of it is "Install Chrome"))
+A: False
+{% endqna %}
+
+# remediated &lt;bes computer&gt; of &lt;bes fixlet&gt; : boolean
+
+Returns `True` if the Fixlet has been remediated on the specified computer. Returns `False` otherwise.
+
+{% qna %}
+Q: remediated (bes computer whose (id of it is 2746378)) of (bes fixlet whose (name of it is "Install Chrome"))
+A: True
+{% endqna %}
+
+# remediated computer of &lt;bes fixlet&gt; : bes computer
+
+Returns a computer that the Fixlet has been remediated on.
+Note: This inspector applies only to BigFix Explorer.
+
+{% qna %}
+Q: names of remediated computers of (bes fixlet whose (name of it is "Install Chrome"))
+A: PC-01
+{% endqna %}
+
+# remediated computer count of &lt;bes fixlet&gt; : integer
+
+Returns the number of computers that the Fixlet has been remediated on.
+Note: This inspector is only implemented on BigFix Explorer.
+
+{% qna %}
+Q: remediated computer count of bes fixlet whose (name of it is "Install Chrome")
+A: 5
+{% endqna %}
+
+# remediated computer set of &lt;bes fixlet&gt; : bes computer set
+
+Returns the set of computers that the Fixlet has been remediated on.
+Note: This inspector is only implemented on BigFix Explorer.
+
+{% qna %}
+Q: names of elements of remediated computer set of bes fixlet whose (name of it is "Install Chrome")
+A: PC-01
+{% endqna %}
 
 # result from &lt;bes computer&gt; of &lt;bes fixlet&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet.
+Returns a Fixlet result representing how the specified computer evaluated the Fixlet.
+
+{% qna %}
+Q: exists result from (bes computer whose (id of it = 2746378)) of bes fixlet whose (name of it = "Install Chrome")
+A: True
+{% endqna %}
 
 # result of &lt;bes fixlet&gt; : bes fixlet result
 
-Returns a list of all &lt;bes fixlet result&gt; objects for all computers that have reported on the specified fixlet.
+Returns a Fixlet result representing how the Fixlet was evaluated on a computer.
+
+{% qna %}
+Q: exists result of bes fixlets whose (name of it = "Install Chrome")
+A: True
+{% endqna %}
 
 # sans id list of &lt;bes fixlet&gt; : string
 

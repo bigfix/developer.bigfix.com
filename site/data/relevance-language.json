@@ -9640,6 +9640,19 @@
         ]
       }
     },
+    "relevant fixlet count of <bes computer> : integer": {
+      "key": "relevant fixlet count of <bes computer> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "relevant fixlet count",
+      "pluralPhrase": "relevant fixlet counts",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
     "relevant fixlet set of <bes computer> : bes fixlet set": {
       "key": "relevant fixlet set of <bes computer> : bes fixlet set",
       "type": "property",
@@ -9649,6 +9662,59 @@
       "directObjectType": "bes computer",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <bes fixlet> of <bes computer> : boolean": {
+      "key": "remediated <bes fixlet> of <bes computer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "bes fixlet",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated fixlet of <bes computer> : bes fixlet": {
+      "key": "remediated fixlet of <bes computer> : bes fixlet",
+      "type": "property",
+      "resultType": "bes fixlet",
+      "singularPhrase": "remediated fixlet",
+      "pluralPhrase": "remediated fixlets",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated fixlet count of <bes computer> : integer": {
+      "key": "remediated fixlet count of <bes computer> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "remediated fixlet count",
+      "pluralPhrase": "remediated fixlet counts",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated fixlet set of <bes computer> : bes fixlet": {
+      "key": "remediated fixlet set of <bes computer> : bes fixlet",
+      "type": "property",
+      "resultType": "bes fixlet",
+      "singularPhrase": "remediated fixlet set",
+      "pluralPhrase": "remediated fixlet sets",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
           "Session"
         ]
       }
@@ -11387,6 +11453,45 @@
         ]
       }
     },
+    "remediated computer of <bes fixlet> : bes computer": {
+      "key": "remediated computer of <bes fixlet> : bes computer",
+      "type": "property",
+      "resultType": "bes computer",
+      "singularPhrase": "remediated computer",
+      "pluralPhrase": "remediated computers",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated computer count of <bes fixlet> : integer": {
+      "key": "remediated computer count of <bes fixlet> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "remediated computer count",
+      "pluralPhrase": "remediated computer counts",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated computer set of <bes fixlet> : bes computer set": {
+      "key": "remediated computer set of <bes fixlet> : bes computer set",
+      "type": "property",
+      "resultType": "bes computer set",
+      "singularPhrase": "remediated computer set",
+      "pluralPhrase": "remediated computer sets",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
     "baseline flag of <bes fixlet> : boolean": {
       "key": "baseline flag of <bes fixlet> : boolean",
       "type": "property",
@@ -12026,6 +12131,20 @@
       "directObjectType": "bes fixlet",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <bes computer> of <bes fixlet> : boolean": {
+      "key": "remediated <bes computer> of <bes fixlet> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "bes computer",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
           "Session"
         ]
       }
@@ -47952,6 +48071,32 @@
       "indexType": "( bes fixlet, bes computer )",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <( bes computer, bes fixlet )> : boolean": {
+      "key": "remediated <( bes computer, bes fixlet )> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "( bes computer, bes fixlet )",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <( bes fixlet, bes computer )> : boolean": {
+      "key": "remediated <( bes fixlet, bes computer )> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "( bes fixlet, bes computer )",
+      "availability": {
+        "11.0.5.0": [
           "Session"
         ]
       }
