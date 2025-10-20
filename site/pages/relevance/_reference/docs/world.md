@@ -2093,15 +2093,15 @@ Refers to the group of users who log on using an RDP connection.
 
 # result &lt;( bes action, bes computer )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as "result from &lt;bes action&gt; of &lt;bes computer&gt;".
 
 # result &lt;( bes computer, bes action )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as "result from &lt;bes action&gt; of &lt;bes computer&gt;".
 
 # result &lt;( bes computer, bes fixlet )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as `result from &lt;bes computer&gt; of &lt;bes fixlet&gt;`.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as "result from &lt;bes computer&gt; of &lt;bes fixlet&gt;".
 
 {% qna %}
 Q: exists result (bes computer whose (id of it = 2746378), bes fixlet whose (name of it = "Install Chrome"))
@@ -2114,7 +2114,7 @@ Returns the result of the specified BES property and computer.
 
 # result &lt;( bes fixlet, bes computer )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as `result from &lt;bes computer&gt; of &lt;bes fixlet&gt;`.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as "result from &lt;bes computer&gt; of &lt;bes fixlet&gt;".
 
 {% qna %}
 Q: exists result (bes fixlet whose (name of it = "Install Chrome"), bes computer whose (id of it = 2746378))
