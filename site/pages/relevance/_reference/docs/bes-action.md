@@ -446,4 +446,4 @@ Converts the specified BES Action to XML format, for submission to the EvaluateR
 
 # &lt;bes action&gt; = &lt;bes action&gt; : boolean
 
-Compares two BES Actions and returns `True` if they are equal.
+Compares two `bes action` objects and returns `True` if they are equal.

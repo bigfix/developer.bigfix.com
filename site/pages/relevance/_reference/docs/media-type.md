@@ -4,4 +4,4 @@ The &lt;media type&gt; objects allow you to inspect the media type of your Inter
 
 # &lt;media type&gt; = &lt;media type&gt; : boolean
 
-Compares two media types.
+Compares two `media type` objects and returns `True` if they are equal.

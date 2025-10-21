@@ -8,4 +8,4 @@ Converts an IP version to a string.
 
 # &lt;ip version&gt; = &lt;ip version&gt; : boolean
 
-Compares two IP versions for equality.
+Compares two `ip version` objects and returns `True` if they are equal.

@@ -4,4 +4,4 @@ Returns the firewall internet protocol corresponding to the Microsoft enumerated
 
 # &lt;internet protocol&gt; = &lt;internet protocol&gt; : boolean
 
-Compares two firewall internet protocols for equality only.
+Compares two `internet protocol` objects and returns `True` if they are equal.

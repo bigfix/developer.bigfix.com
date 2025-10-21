@@ -152,15 +152,83 @@ Returns the result of the &#39;Relay&#39; property of the specified computer.
 
 # relevant &lt;bes fixlet&gt; of &lt;bes computer&gt; : boolean
 
-Returns `True` if the given fixlet is relevant on the specified computer.
+Returns `True` if the specified Fixlet is relevant on the computer. Returns `False` otherwise.
+
+{% qna %}
+Q: relevant (bes fixlet whose (name of it is "Install Chrome")) of (bes computer whose (id of it is 2746378))
+A: False
+{% endqna %}
 
 # relevant fixlet of &lt;bes computer&gt; : bes fixlet
 
-Returns a list of all the &lt;bes fixlet&gt; objects that the specified computer has reported are relevant.
+Returns a Fixlet that the computer has reported as relevant.
+
+{% qna %}
+Q: (ids of relevant fixlets of it, names of it) of bes computer whose (id of it is 2746378)
+A: 674, PC-01
+A: 23, PC-01
+{% endqna %}
+
+# relevant fixlet count of &lt;bes computer&gt; : integer
+
+Returns the number of Fixlets that the computer has reported as relevant.
+Note: This inspector is only implemented on BigFix Explorer.
+
+{% qna %}
+Q: (relevant fixlet count of it, name of it) of bes computers
+A: 5, PC-04
+{% endqna %}
 
 # relevant fixlet set of &lt;bes computer&gt; : bes fixlet set
 
-Returns a list of all the &lt;bes fixlet&gt; objects that the specified computer has reported are relevant. The list is formatted as a mathematical set.
+Returns a Fixlets that the computer has reported as relevant. The plural version of this inspector returns the list of all Fixlets that the computer reported as relevant, formatted as a mathematical set.
+
+{% qna %}
+Q: ids of elements of relevant fixlet set of bes computer whose (id of it is 2746378)
+A: 674
+A: 23
+{% endqna %}
+
+# remediated &lt;bes fixlet&gt; of &lt;bes computer&gt; : boolean
+
+Returns `True` if the specified Fixlet has been remediated on the computer. Returns `False` otherwise.
+
+{% qna %}
+Q: remediated (bes fixlet whose (name of it is "Install Chrome")) of (bes computer whose (id of it is 2746378))
+A: True
+{% endqna %}
+
+# remediated fixlet of &lt;bes computer&gt; : bes fixlet
+
+Returns a Fixlet that has been remediated on the computer.
+Note: This inspector is only implemented on BigFix Explorer.
+
+{% qna %}
+Q: (ids of remediated fixlets of it, names of it) of bes computer whose (id of it is 2746378)
+A: 1243, PC-01
+A: 31, PC-01
+{% endqna %}
+
+# remediated fixlet count of &lt;bes computer&gt; : integer
+
+Returns the number of Fixlets that have been remediated on the computer.
+Note: This inspector is only implemented on BigFix Explorer.
+
+{% qna %}
+Q: remediated fixlet count of bes computer whose (id of it is 2746378)
+A: 2
+{% endqna %}
+
+# remediated fixlet set of &lt;bes computer&gt; : bes fixlet
+
+Returns the set of all Fixlets that have been remediated on the computer.
+Note: This inspector is only implemented on BigFix Explorer.
+
+{% qna %}
+Q: ids of elements of remediated fixlet set of bes computer whose (id of it is 2746378)
+A: 1243
+A: 31
+{% endqna %}
 
 # reported action set of &lt;bes computer&gt; : bes action set
 
@@ -176,7 +244,12 @@ Returns a bes action result object for the given computer and action. This comma
 
 # result from &lt;bes fixlet&gt; of &lt;bes computer&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet.
+Returns a Fixlet result representing how the specified Fixlet was evaluated by the computer.
+
+{% qna %}
+Q: exists result from (bes fixlet whose (name of it = "Install Chrome")) of bes computer whose (id of it = 2746378)
+A: True
+{% endqna %}
 
 # result from &lt;bes property&gt; of &lt;bes computer&gt; : bes property result
 
@@ -212,4 +285,4 @@ Returns the unique values of a given list of &lt;bes computer&gt; types, removin
 
 # &lt;bes computer&gt; = &lt;bes computer&gt; : boolean
 
-Compares two BES Computer types and returns `True` if they are equal.
+Compares two `bes computer` objects and returns `True` if they are equal.

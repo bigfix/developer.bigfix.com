@@ -162,7 +162,22 @@ Returns an HTML snippet containing the specified string enclosed in a &lt;body&g
 
 # boolean &lt;string&gt; : boolean
 
-Returns a boolean. For example, boolean "TRUE".
+Returns a boolean value for the string. All possible capitalizations of `True` and `False` will convert successfully. Any other value will cause an error.
+
+{% qna %}
+Q: boolean "True"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: boolean "true"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: boolean "yes"
+E: Singular expression refers to nonexistent object.
+{% endqna %}
 
 # br &lt;string&gt; : html
 
@@ -1000,6 +1015,10 @@ Returns an HTML snippet with the specified string enclosed in an &lt;ol&gt;&lt;l
 
 Returns an HTML snippet containing the specified string enclosed in an &lt;ol&gt;&lt;li&gt; tag.
 
+# os log store &lt;string&gt; : os log store
+
+Creates an `os log store` object that provides access to the unified log store on macOS. The `string` specifies what log store to access. Currently, only the local log store is supported, so the `string` must be "Local".
+
 # p &lt;string&gt; of &lt;string&gt; : html
 
 Returns an HTML snippet with the specified string enclosed in an &lt;p&gt; tag modified by the first given string.
@@ -1681,6 +1700,70 @@ Retrurns the xinetd service corresponding to the name provided.
 
 Converts the provided string to an xml dom document object.
 
+# yaml of &lt;string&gt; : yaml value
+
+Returns a YAML object for the string.
+
+The following is the content of a test file named "test.yaml".
+
+```
+published: true
+domain:
+  - devops
+  - devsecops
+tutorial:
+  - yaml:
+      name: YAML Ain't Markup Language
+      type: awesome
+      born: 2001
+  - xml:
+      name: Extensible Markup Language
+      type: good
+      born: 1996
+```
+
+This example shows how to create a `yaml value` representing the content of the file "test.yaml" turned into a string.
+Note that newline `\n` characters have been "percent-encoded" as `%0a`.
+
+{% qna %}
+Q: yaml of "published: true%0adomain:%0a  - devops%0a  - devsecops%0atutorial:%0a  - yaml:%0a      name: YAML Ain't Markup Language%0a      type: awesome%0a      born: 2001%0a  - xml:%0a      name: Extensible Markup Language%0a      type: good%0a      born: 1996"
+A: domain:%0a  - devops%0a  - devsecops%0apublished: true%0atutorial:%0a  - yaml:%0a      name: YAML Ain't Markup Language%0a      type: awesome%0a      born: 2001%0a  - xml:%0a      name: Extensible Markup Language%0a      type: good%0a      born: 1996
+{% endqna %}
+
+The following is the content of a test file named "complex.yaml".
+
+```
+my_boolean: true
+my_number: 3
+my_float: 3.14
+my_string_1: "foo bar"
+my-string-2: foo bar
+my_list_1:
+  - A
+  - B
+my-list-2: ['A', 'B']
+my_dict_1:
+  field_a: A
+  field_b: B
+  sub_dict:
+    sub_field: C1
+my-dict-2: { field_a: A, field_b: B, sub_dict: { sub_field: C1 } }
+my_obj_list_1:
+  -
+    obj_1_field: 1A
+  -
+    obj_2_field: 2A
+my-obj-list-2: [ { obj_1_field: 1A }, { obj_2_field: 2A } ]
+```
+
+This example shows how to create a `yaml value` representing the content of the file "complex.yaml" turned into a string.
+Note that certain characters have been "percent-encoded".
+
+{% qna %}
+Q: yaml of "my_boolean: true%0amy_number: 3%0amy_float: 3.14%0amy_string_1: %22foo bar%22%0amy-string-2: foo bar%0amy_list_1:%0a  - A%0a  - B%0amy-list-2: ['A', 'B']%0amy_dict_1:%0a  field_a: A%0a  field_b: B%0a  sub_dict:%0a    sub_field: C1%0amy-dict-2: { field_a: A, field_b: B, sub_dict: { sub_field: C1 } }%0amy_obj_list_1:%0a  -%0a    obj_1_field: 1A%0a  -%0a    obj_2_field: 2A%0amy-obj-list-2: [ { obj_1_field: 1A }, { obj_2_field: 2A } ]"
+A: my_dict_1:%0a  field_a: A%0a  field_b: B%0a  sub_dict:%0a    sub_field: C1%0amy_list_1:%0a  - A%0a  - B%0amy-string-2: foo bar%0amy_boolean: true%0amy_string_1: foo bar%0amy_number: 3%0amy_float: 3.14%0amy-list-2: [A, B]%0amy-dict-2:%0a  field_a: A%0a  field_b: B%0a  sub_dict:%0a    sub_field: C1%0amy_obj_list_1:%0a  - obj_1_field: 1A%0a  - obj_2_field: 2A%0amy-obj-list-2: [{obj_1_field: 1A}, {obj_2_field: 2A}]
+{% endqna %}
+
 # year &lt;string&gt; : year
 
 Creates a year object from the specified string.
@@ -1699,7 +1782,22 @@ Works as "&lt;var&gt; as utf16 binary_string" on Windows systems, and as "&lt;va
 
 # &lt;string&gt; as boolean : boolean
 
-Returns a boolean value for the string. All possible capitalization&#39;s of "TRUE" and "FALSE" will convert successfully.
+Returns a boolean value for the string. All possible capitalizations of `True` and `False` will convert successfully. Any other value will cause an error.
+
+{% qna %}
+Q: "True" as boolean
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "true" as boolean
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "yes" as boolean
+E: Singular expression refers to nonexistent object.
+{% endqna %}
 
 # &lt;string&gt; as date : date
 
@@ -1851,24 +1949,64 @@ Concatenates two strings, producing a new string.
 
 # &lt;string&gt; &lt; &lt;string&gt; : boolean
 
-Returns true if the value of the left operand is less than the value of the right operand.
+Returns `True` if the value of the left operand is less than the value of the right operand.
 
 # &lt;string&gt; &lt;= &lt;string&gt; : boolean
 
-Returns true if the value of the left operand is less than or equal to the value of the right operand.
+Returns `True` if the value of the left operand is less than or equal to the value of the right operand.
 
 # &lt;string&gt; = &lt;string&gt; : boolean
 
-Returns true if the value of the left operand is equal to the value of the right operand.
+Returns `True` if the string on the left equals the string on the right. This comparison is case sensitive.
+
+{% qna %}
+Q: "foo" = "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo" = "Foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; contains &lt;string&gt; : boolean
 
-Returns a boolean TRUE if the first string contains the second string.
+Returns `True` if the first string contains the second string. This text search is case sensitive.
+
+{% qna %}
+Q: "foo bar" contains "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo bar" contains "Foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; ends with &lt;string&gt; : boolean
 
-Returns a boolean TRUE if the first string ends with the second string.
+Returns `True` if the first string ends with the second string. This text search is case sensitive.
+
+{% qna %}
+Q: "foo bar" starts with "foo"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo bar" starts with "Foo"
+A: False
+{% endqna %}
 
 # &lt;string&gt; starts with &lt;string&gt; : boolean
 
-Returns a boolean TRUE if the first string starts with the second string.
+Returns `True` if the first string starts with the second string. This text search is case sensitive.
+
+{% qna %}
+Q: "foo bar" ends with "bar"
+A: True
+{% endqna %}
+
+{% qna %}
+Q: "foo bar" ends with "Bar"
+A: False
+{% endqna %}

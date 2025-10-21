@@ -100,4 +100,4 @@ Returns a filtered set of Console Operators. Given a Console Operator filter tha
 
 # &lt;bes filter&gt; = &lt;bes filter&gt; : boolean
 
-Compares two BES Filter types and returns `True` if they are equal.
+Compares two `bes filter` objects and returns `True` if they are equal.

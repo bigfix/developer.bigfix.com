@@ -180,4 +180,4 @@ When you create or edit a user, you specify whether they can see all unmanaged a
 
 # &lt;bes user&gt; = &lt;bes user&gt; : boolean
 
-Compares two BES Users.
+Compares two `bes user` objects and returns `True` if they are equal.

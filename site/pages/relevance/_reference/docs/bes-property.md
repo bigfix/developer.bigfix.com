@@ -116,4 +116,4 @@ Converts the specified BES Property to XML format, for submission to the Evaluat
 
 # &lt;bes property&gt; = &lt;bes property&gt; : boolean
 
-Compares two BES Property types and returns `True` if they are equal.
+Compares two `bes property` objects and returns `True` if they are equal.

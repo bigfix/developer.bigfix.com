@@ -12,4 +12,4 @@ Returns the metabase user type as a string:"Server""File""WAM""ASP App""(Other)"
 
 # &lt;metabase user type&gt; = &lt;metabase user type&gt; : boolean
 
-Compares two metabase user types for equality.
+Compares two `metabase user type` objects and returns `True` if they are equal.

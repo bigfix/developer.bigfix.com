@@ -4,4 +4,4 @@ The &lt;file signature&gt; inspectors provide access to each of the four charact
 
 # &lt;file signature&gt; = &lt;file signature&gt; : boolean
 
-Compares two Macintosh file signatures.
+Compares two `file signature` objects and returns `True` if they are equal.

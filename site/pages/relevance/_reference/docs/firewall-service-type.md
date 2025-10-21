@@ -4,4 +4,4 @@ The &lt;firewall service type&gt; inspectors provide access to the firewall serv
 
 # &lt;firewall service type&gt; = &lt;firewall service type&gt; : boolean
 
-Compares two firewall service types for equality only.
+Compares two `firewall service type` objects and returns `True` if they are equal.

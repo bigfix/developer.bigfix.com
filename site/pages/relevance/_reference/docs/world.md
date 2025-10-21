@@ -1498,6 +1498,10 @@ Returns local groups defined on the local computer using the windows NetLocalGro
 
 Returns local MSSQL database objects.
 
+# local os log store : os log store
+
+Creates an `os log store` object that provides access to the local unified log store of a macOS computer. This is a convenience constructor for querying logs from the local machine.
+
 # local service group : security account
 
 Returns a security account constant corresponding to a &#39;local service group&#39;.
@@ -2045,11 +2049,39 @@ Returns a service object for the relay component of BES. Note: On a Macintosh, t
 
 # relevant &lt;( bes computer, bes fixlet )&gt; : boolean
 
-Returns `True` if the given fixlet is relevant on the specified computer.
+Returns `True` if the specified Fixlet is relevant on the specified computer. Returns `False` otherwise.
+
+{% qna %}
+Q: relevant (bes computer whose (id of it is 2746378), bes fixlet whose (name of it is "Install Chrome"))
+A: False
+{% endqna %}
 
 # relevant &lt;( bes fixlet, bes computer )&gt; : boolean
 
-Returns `True` if the given fixlet is relevant on the specified computer.
+Returns `True` if the specified Fixlet is relevant on the specified computer. Returns `False` otherwise.
+
+{% qna %}
+Q: relevant (bes fixlet whose (name of it is "Install Chrome"), bes computer whose (id of it is 2746378))
+A: False
+{% endqna %}
+
+# remediated &lt;( bes computer, bes fixlet )&gt; : boolean
+
+Returns `True` if the specified Fixlet has been remediated on the specified computer. Returns `False` otherwise.
+
+{% qna %}
+Q: remediated (bes computer whose (id of it is 2746378), bes fixlet whose (name of it is "Install Chrome"))
+A: True
+{% endqna %}
+
+# remediated &lt;( bes fixlet, bes computer )&gt; : boolean
+
+Returns `True` if the specified Fixlet has been remediated on the specified computer. Returns `False` otherwise.
+
+{% qna %}
+Q: remediated (bes fixlet whose (name of it is "Install Chrome"), bes computer whose (id of it is 2746378))
+A: True
+{% endqna %}
 
 # remote desktop firewall service type : firewall service type
 
@@ -2061,15 +2093,20 @@ Refers to the group of users who log on using an RDP connection.
 
 # result &lt;( bes action, bes computer )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as "result from &lt;bes action&gt; of &lt;bes computer&gt;".
 
 # result &lt;( bes computer, bes action )&gt; : bes action result
 
-Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as result from &lt;bes action&gt; of &lt;bes computer&gt;.
+Returns a bes action result object for the given computer and action. This command is a variant of other result inspectors, such as "result from &lt;bes action&gt; of &lt;bes computer&gt;".
 
 # result &lt;( bes computer, bes fixlet )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&gt; of &lt;bes computer&gt;.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as "result from &lt;bes computer&gt; of &lt;bes fixlet&gt;".
+
+{% qna %}
+Q: exists result (bes computer whose (id of it = 2746378), bes fixlet whose (name of it = "Install Chrome"))
+A: True
+{% endqna %}
 
 # result &lt;( bes computer, bes property )&gt; : bes property result
 
@@ -2077,7 +2114,12 @@ Returns the result of the specified BES property and computer.
 
 # result &lt;( bes fixlet, bes computer )&gt; : bes fixlet result
 
-Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as result from &lt;bes fixlet&gt; of &lt;bes computer&gt;.
+Returns a Fixlet result for the given computer and Fixlet. This command is a variant of other result inspectors, such as "result from &lt;bes computer&gt; of &lt;bes fixlet&gt;".
+
+{% qna %}
+Q: exists result (bes fixlet whose (name of it = "Install Chrome"), bes computer whose (id of it = 2746378))
+A: True
+{% endqna %}
 
 # result &lt;( bes property, bes computer )&gt; : bes property result
 

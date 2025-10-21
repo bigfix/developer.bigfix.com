@@ -8,4 +8,4 @@ Casts an action status as a string.
 
 # &lt;bes action status&gt; = &lt;bes action status&gt; : boolean
 
-Compares two action status objects, and returns a boolean TRUE or FALSE.
+Compares two `bes action status` objects and returns `True` if they are equal.

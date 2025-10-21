@@ -8,4 +8,4 @@ No documentation exists.
 
 # &lt;firewall profile type&gt; = &lt;firewall profile type&gt; : boolean
 
-Compares two firewall policies for equality only.
+Compares two `firewall profile type` objects and returns `True` if they are equal.

@@ -8,7 +8,31 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
-#### Version 11 Patch 4 Added Inspector Types
+#### Version 11 Patch 5 Added Inspector Types
+
+New inspector types named *yaml key* and *yaml value* were added to represent YAML keys and values.
+
+For details, see [yaml key](https://developer.bigfix.com/relevance/reference/yaml-key.html) and [yaml value](https://developer.bigfix.com/relevance/reference/yaml-value.html).
+
+New inspector types named *os log store* and *os log entry log* were added to allow querying log entries from the local OS log store on macOS.
+
+For details, see [os log store](https://developer.bigfix.com/relevance/reference/os-log-store.html) and [os log entry log](https://developer.bigfix.com/relevance/reference/os-log-entry-log.html).
+
+#### Version 11 Patch 5 Added Inspector Properties
+
+New inspector properties named *relevant fixlet count of*, *remediated <bes fixlet> of*, *remediated <bes computer> of*, *remediated <( bes computer, bes fixlet )>*, *remediated <( bes fixlet, bes computer )>*, *remediated computer count of*, *remediated computer of*, *remediated computer set of*, *remediated fixlet count of*, *remediated fixlet of*, *remediated fixlet set of* were added to the existing *bes computer* and *bes fixlet* inspectors to return information about the remediated Fixlets and computers.
+
+For details, see [bes computer](https://developer.bigfix.com/relevance/reference/bes-computer.html) and [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html).
+
+New inspector properties named *last logon time of*, *last logon type of*, *last logon type number of*, *logon completion time of*, *logon session time of*, *logon session type of* and *logon session type number of* were added to the existing *logged on user* inspector to return information about the logon that started a Windows session.
+
+For details, see [logged on user](https://developer.bigfix.com/relevance/reference/logged-on-user.html)
+
+New inspector property named *protocol type of* was added to the existing *wifi network* inspector to return the protocol type of the connected Wi-Fi network.
+
+For details, see [wifi network](https://developer.bigfix.com/relevance/reference/wifi-network.html)
+
+#### Version 11 Patch 4 Added Inspector Type
 
 New inspector type named *cidr subnet* was added to represent a Classless Inter-Domain Routing (CIDR) subnet.
 

@@ -1436,6 +1436,22 @@
         ]
       }
     },
+    "os log entry log": {
+      "name": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "os log store": {
+      "name": "os log store",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
     "property": {
       "name": "property",
       "availability": {
@@ -6398,6 +6414,38 @@
         ]
       }
     },
+    "yaml key": {
+      "name": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml value": {
+      "name": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "sqlite column": {
       "name": "sqlite column",
       "availability": {
@@ -9592,6 +9640,19 @@
         ]
       }
     },
+    "relevant fixlet count of <bes computer> : integer": {
+      "key": "relevant fixlet count of <bes computer> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "relevant fixlet count",
+      "pluralPhrase": "relevant fixlet counts",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
     "relevant fixlet set of <bes computer> : bes fixlet set": {
       "key": "relevant fixlet set of <bes computer> : bes fixlet set",
       "type": "property",
@@ -9601,6 +9662,59 @@
       "directObjectType": "bes computer",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <bes fixlet> of <bes computer> : boolean": {
+      "key": "remediated <bes fixlet> of <bes computer> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "bes fixlet",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated fixlet of <bes computer> : bes fixlet": {
+      "key": "remediated fixlet of <bes computer> : bes fixlet",
+      "type": "property",
+      "resultType": "bes fixlet",
+      "singularPhrase": "remediated fixlet",
+      "pluralPhrase": "remediated fixlets",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated fixlet count of <bes computer> : integer": {
+      "key": "remediated fixlet count of <bes computer> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "remediated fixlet count",
+      "pluralPhrase": "remediated fixlet counts",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated fixlet set of <bes computer> : bes fixlet": {
+      "key": "remediated fixlet set of <bes computer> : bes fixlet",
+      "type": "property",
+      "resultType": "bes fixlet",
+      "singularPhrase": "remediated fixlet set",
+      "pluralPhrase": "remediated fixlet sets",
+      "directObjectType": "bes computer",
+      "availability": {
+        "11.0.5.0": [
           "Session"
         ]
       }
@@ -11339,6 +11453,45 @@
         ]
       }
     },
+    "remediated computer of <bes fixlet> : bes computer": {
+      "key": "remediated computer of <bes fixlet> : bes computer",
+      "type": "property",
+      "resultType": "bes computer",
+      "singularPhrase": "remediated computer",
+      "pluralPhrase": "remediated computers",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated computer count of <bes fixlet> : integer": {
+      "key": "remediated computer count of <bes fixlet> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "remediated computer count",
+      "pluralPhrase": "remediated computer counts",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated computer set of <bes fixlet> : bes computer set": {
+      "key": "remediated computer set of <bes fixlet> : bes computer set",
+      "type": "property",
+      "resultType": "bes computer set",
+      "singularPhrase": "remediated computer set",
+      "pluralPhrase": "remediated computer sets",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
     "baseline flag of <bes fixlet> : boolean": {
       "key": "baseline flag of <bes fixlet> : boolean",
       "type": "property",
@@ -11978,6 +12131,20 @@
       "directObjectType": "bes fixlet",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <bes computer> of <bes fixlet> : boolean": {
+      "key": "remediated <bes computer> of <bes fixlet> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "bes computer",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.5.0": [
           "Session"
         ]
       }
@@ -47908,6 +48075,32 @@
         ]
       }
     },
+    "remediated <( bes computer, bes fixlet )> : boolean": {
+      "key": "remediated <( bes computer, bes fixlet )> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "( bes computer, bes fixlet )",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
+    "remediated <( bes fixlet, bes computer )> : boolean": {
+      "key": "remediated <( bes fixlet, bes computer )> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "remediated",
+      "pluralPhrase": "remediateds",
+      "indexType": "( bes fixlet, bes computer )",
+      "availability": {
+        "11.0.5.0": [
+          "Session"
+        ]
+      }
+    },
     "result <( bes action, bes computer )> : bes action result": {
       "key": "result <( bes action, bes computer )> : bes action result",
       "type": "property",
@@ -65922,6 +66115,189 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "os log store <string> : os log store": {
+      "key": "os log store <string> : os log store",
+      "type": "property",
+      "resultType": "os log store",
+      "singularPhrase": "os log store",
+      "pluralPhrase": "os log stores",
+      "directObjectType": "string",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "local os log store : os log store": {
+      "key": "local os log store : os log store",
+      "type": "property",
+      "resultType": "os log store",
+      "singularPhrase": "local os log store",
+      "pluralPhrase": "local os log stores",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "search since boot <string> of <os log store> : os log entry log": {
+      "key": "search since boot <string> of <os log store> : os log entry log",
+      "type": "property",
+      "resultType": "os log entry log",
+      "singularPhrase": "search since boot",
+      "pluralPhrase": "searches since boot",
+      "indexType": "string",
+      "directObjectType": "os log store",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "search since days <string> of <os log store> : os log entry log": {
+      "key": "search since days <string> of <os log store> : os log entry log",
+      "type": "property",
+      "resultType": "os log entry log",
+      "singularPhrase": "search since days",
+      "pluralPhrase": "searches since days",
+      "indexType": "string",
+      "directObjectType": "os log store",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "activity identifier of <os log entry log> : integer": {
+      "key": "activity identifier of <os log entry log> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "activity identifier",
+      "pluralPhrase": "activity identifiers",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "category of <os log entry log> : string": {
+      "key": "category of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "category",
+      "pluralPhrase": "categories",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "composed message of <os log entry log> : string": {
+      "key": "composed message of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "composed message",
+      "pluralPhrase": "composed messages",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "log level of <os log entry log> : string": {
+      "key": "log level of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "log level",
+      "pluralPhrase": "log levels",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "process identifier of <os log entry log> : integer": {
+      "key": "process identifier of <os log entry log> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "process identifier",
+      "pluralPhrase": "process identifiers",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "process name of <os log entry log> : string": {
+      "key": "process name of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "process name",
+      "pluralPhrase": "process names",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "sender of <os log entry log> : string": {
+      "key": "sender of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sender",
+      "pluralPhrase": "senders",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "subsystem of <os log entry log> : string": {
+      "key": "subsystem of <os log entry log> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "subsystem",
+      "pluralPhrase": "subsystems",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "thread identifier of <os log entry log> : integer": {
+      "key": "thread identifier of <os log entry log> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "thread identifier",
+      "pluralPhrase": "thread identifiers",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
+        ]
+      }
+    },
+    "time generated of <os log entry log> : time": {
+      "key": "time generated of <os log entry log> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "time generated",
+      "pluralPhrase": "times generated",
+      "directObjectType": "os log entry log",
+      "availability": {
+        "11.0.5.0": [
+          "Mac"
         ]
       }
     },
@@ -86187,6 +86563,97 @@
         ]
       }
     },
+    "last logon time of <logged on user> : time": {
+      "key": "last logon time of <logged on user> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "last logon time",
+      "pluralPhrase": "last logon times",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "last logon type of <logged on user> : string": {
+      "key": "last logon type of <logged on user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "last logon type",
+      "pluralPhrase": "last logon types",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "last logon type number of <logged on user> : integer": {
+      "key": "last logon type number of <logged on user> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "last logon type number",
+      "pluralPhrase": "last logon type numbers",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon completion time of <logged on user> : time interval": {
+      "key": "logon completion time of <logged on user> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "logon completion time",
+      "pluralPhrase": "logon completion times",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon session time of <logged on user> : time": {
+      "key": "logon session time of <logged on user> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "logon session time",
+      "pluralPhrase": "logon session times",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon session type of <logged on user> : string": {
+      "key": "logon session type of <logged on user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "logon session type",
+      "pluralPhrase": "logon session types",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
+    "logon session type number of <logged on user> : integer": {
+      "key": "logon session type number of <logged on user> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "logon session type number",
+      "pluralPhrase": "logon session type numbers",
+      "directObjectType": "logged on user",
+      "availability": {
+        "11.0.5.0": [
+          "Windows"
+        ]
+      }
+    },
     "name of <logged on user> : string": {
       "key": "name of <logged on user> : string",
       "type": "property",
@@ -90559,6 +91026,10 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.5.0": [
+          "Red Hat",
+          "SUSE"
         ]
       }
     },
@@ -90572,6 +91043,10 @@
       "availability": {
         "8.0.584.0": [
           "Windows"
+        ],
+        "11.0.5.0": [
+          "Red Hat",
+          "SUSE"
         ]
       }
     },
@@ -104820,6 +105295,361 @@
         ]
       }
     },
+    "name of <yaml key> : string": {
+      "key": "name of <yaml key> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "value of <yaml key> : yaml value": {
+      "key": "value of <yaml key> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "value",
+      "pluralPhrase": "values",
+      "directObjectType": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml of <file> : yaml value": {
+      "key": "yaml of <file> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "yaml",
+      "pluralPhrase": "yamls",
+      "directObjectType": "file",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "yaml of <string> : yaml value": {
+      "key": "yaml of <string> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "yaml",
+      "pluralPhrase": "yamls",
+      "directObjectType": "string",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml key> as string : string": {
+      "key": "<yaml key> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "yaml key",
+      "phrase": "string",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "element <integer> of <yaml value> : yaml value": {
+      "key": "element <integer> of <yaml value> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "indexType": "integer",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "element of <yaml value> : yaml value": {
+      "key": "element of <yaml value> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "element",
+      "pluralPhrase": "elements",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+     "key <string> of <yaml value> : yaml key": {
+       "key": "key <string> of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "key of <yaml value> : yaml key": {
+      "key": "key of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "path <string> of <yaml value> : yaml value": {
+      "key": "path <string> of <yaml value> : yaml value",
+      "type": "property",
+      "resultType": "yaml value",
+      "singularPhrase": "path",
+      "pluralPhrase": "paths",
+      "indexType": "string",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "type of <yaml value> : string": {
+      "key": "type of <yaml value> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "type",
+      "pluralPhrase": "types",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as boolean : boolean": {
+      "key": "<yaml value> as boolean : boolean",
+      "type": "cast",
+      "resultType": "boolean",
+      "argType": "yaml value",
+      "phrase": "boolean",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as float : floating point": {
+      "key": "<yaml value> as float : floating point",
+      "type": "cast",
+      "resultType": "floating point",
+      "argType": "yaml value",
+      "phrase": "float",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as integer : integer": {
+      "key": "<yaml value> as integer : integer",
+      "type": "cast",
+      "resultType": "integer",
+      "argType": "yaml value",
+      "phrase": "integer",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> as string : string": {
+      "key": "<yaml value> as string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "yaml value",
+      "phrase": "string",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml value> = <yaml value> : boolean": {
+      "key": "<yaml value> = <yaml value> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "yaml value",
+      "op": "=",
+      "rightType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "<yaml key> = <yaml key> : boolean": {
+      "key": "<yaml key> = <yaml key> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "yaml key",
+      "op": "=",
+      "rightType": "yaml key",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "value of <json key> : json value": {
       "key": "value of <json key> : json value",
       "type": "property",
@@ -105017,6 +105847,29 @@
         ]
       }
     },
+    "key <string> of <yaml value> : yaml key": {
+      "key": "key <string> of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "indexType": "string",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "key <string> of <json value> : json key": {
       "key": "key <string> of <json value> : json key",
       "type": "property",
@@ -105040,6 +105893,27 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "key of <yaml value> : yaml key": {
+      "key": "key of <yaml value> : yaml key",
+      "type": "property",
+      "resultType": "yaml key",
+      "singularPhrase": "key",
+      "pluralPhrase": "keys",
+      "directObjectType": "yaml value",
+      "availability": {
+        "11.0.5.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
@@ -110240,6 +111114,10 @@
       "availability": {
         "9.1.1065.0": [
           "Windows"
+        ],
+        "11.0.5.0": [
+          "Red Hat",
+          "SUSE"
         ]
       }
     },
@@ -117412,6 +118290,19 @@
       "availability": {
         "9.5.5.193": [
           "Mac",
+          "Windows"
+        ]
+      }
+    },
+    "protocol type of <wifi network> : string": {
+      "key": "protocol type of <wifi network> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "protocol type",
+      "pluralPhrase": "protocol types",
+      "directObjectType": "wifi network",
+      "availability": {
+        "11.0.5.0": [
           "Windows"
         ]
       }

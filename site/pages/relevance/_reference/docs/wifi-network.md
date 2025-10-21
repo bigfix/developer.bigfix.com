@@ -42,6 +42,15 @@ A: VISITORS, False, False
 T: 5954
 {% endqna %}
 
+# protocol type of &lt;wifi network&gt; : string
+
+Returns the protocol type of the connected WiFi network.
+
+{% qna %}
+Q: protocol type of current networks of wifis of adapters of network
+A: 802.11ax
+{% endqna %}
+
 # rssi of &lt;wifi network&gt; : integer
 
 Returns the received signal strength indicator.

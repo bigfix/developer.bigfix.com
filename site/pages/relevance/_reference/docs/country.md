@@ -1,7 +1,7 @@
 # type: country
 
-The &lt;country&gt; inspectors allow comparing countries (as seen in version numbers).
+The &lt;country&gt; type represents a country in the context of a Macintosh version string.
 
 # &lt;country&gt; = &lt;country&gt; : boolean
 
-Compares two countries, as found in a Macintosh version.
+Compares two `country` objects and returns `True` if they are equal.
