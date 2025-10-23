@@ -8,6 +8,12 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 6 Added Inspector Property
+
+New inspector property named *evaluation period of* was added to the existing *bes fixlet* inspector to return information about the frequency with which clients must re-evaluate the Fixlet.
+
+For details, see [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html).
+
 #### Version 11 Patch 5 Added Inspector Types
 
 New inspector types named *yaml key* and *yaml value* were added to represent YAML keys and values.

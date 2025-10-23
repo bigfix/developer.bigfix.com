@@ -11791,6 +11791,19 @@
         ]
       }
     },
+    "evaluation period of <bes fixlet> : time interval": {
+      "key": "evaluation period of <bes fixlet> : time interval",
+      "type": "property",
+      "resultType": "time interval",
+      "singularPhrase": "evaluation period",
+      "pluralPhrase": "evaluation periods",
+      "directObjectType": "bes fixlet",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "field <string> of <bes fixlet> : bes fixlet field": {
       "key": "field <string> of <bes fixlet> : bes fixlet field",
       "type": "property",

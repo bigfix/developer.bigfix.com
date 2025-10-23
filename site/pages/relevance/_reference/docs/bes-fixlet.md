@@ -126,6 +126,15 @@ A domain is attached to a fixlet when it is created. This inspector returns the 
 
 Returns the size of the download associated with this fixlet, in bytes.
 
+# evaluation period of &lt;bes fixlet&gt; : time interval
+
+Returns a time interval indicating the frequency with which clients must re-evaluate the Fixlet.
+
+{% qna %}
+Q: evaluation period of bes fixlet whose (name of it = "Automatically Restart Stopped")
+A: 00:05:00
+{% endqna %}
+
 # field &lt;string&gt; of &lt;bes fixlet&gt; : bes fixlet field
 
 Returns a BES Fixlet field with the given name in the specified Fixlet.
