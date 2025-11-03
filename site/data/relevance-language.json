@@ -87445,6 +87445,19 @@
         ]
       }
     },
+    "has metered description of <network adapter> : boolean": {
+      "key": "has metered description of <network adapter> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "has metered description",
+      "pluralPhrase": "has metered descriptions",
+      "directObjectType": "network adapter",
+      "availability": {
+        "11.0.6.0": [
+          "Windows"
+        ]
+      }
+    },
     "internet connection firewall of <network adapter> : internet connection firewall": {
       "key": "internet connection firewall of <network adapter> : internet connection firewall",
       "type": "property",
@@ -87545,6 +87558,19 @@
       "directObjectType": "network adapter",
       "availability": {
         "8.0.584.0": [
+          "Windows"
+        ]
+      }
+    },
+    "metered connection of <network adapter> : boolean": {
+      "key": "metered connection of <network adapter> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "metered connection",
+      "pluralPhrase": "metered connections",
+      "directObjectType": "network adapter",
+      "availability": {
+        "11.0.6.0": [
           "Windows"
         ]
       }

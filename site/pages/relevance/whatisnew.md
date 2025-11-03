@@ -8,11 +8,15 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
-#### Version 11 Patch 6 Added Inspector Property
+#### Version 11 Patch 6 Added Inspector Properties
 
 New inspector property named *evaluation period of* was added to the existing *bes fixlet* inspector to return information about the frequency with which clients must re-evaluate the Fixlet.
 
 For details, see [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html).
+
+New inspector properties named *has metered description of* and *metered connection of* were added to the existing *network adapter* inspector to return information about the network adapters that are configured as metered connections.
+
+For details, see [network adapter](https://developer.bigfix.com/relevance/reference/network-adapter.html).
 
 #### Version 11 Patch 5 Added Inspector Types
 

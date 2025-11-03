@@ -1,6 +1,6 @@
 # type: network adapter
 
-One or more network adapters may be inspected using this property of the network object. Each network adapter has a number of interesting properties such as the MAC address.
+This inspector represents a network adapter, such as an Ethernet port, or a Wi-Fi card, or a Bluetooth card. Each network adapter provides access to several properties, such as the MAC address.
 
 # address list of &lt;network adapter&gt; : network address list
 
@@ -87,6 +87,42 @@ A: 10.0.2.2
 
 Returns the ip address of the gateway of the network adapter.
 
+# has metered description of &lt;network adapter&gt; : boolean
+
+Returns `True` if the network adapter is connected to a network and it has a metered flag that can be configured. Returns `False` otherwise.
+Note: this inspector is available only on Windows 10 and later, but not on Windows Server.
+
+In the following example, a Windows computer has three network adapters:
+
+1) Ethernet0, not connected to a network
+2) Ethernet1, connected to a network and not metered
+3) Ethernet2, connected to a network and metered
+
+{% qna %}
+Q: (friendly names of it, has metered descriptions of it) of adapters of network
+A: Ethernet0, False
+A: Ethernet1, True
+A: Ethernet2, True
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is not connected to a network.
+{% qna %}
+Q: (friendly names of it, has metered descriptions of it) of adapters of networks
+A: Wi-Fi, False
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is connected to a network and not metered.
+{% qna %}
+Q: (friendly names of it, has metered descriptions of it) of adapters of networks
+A: Wi-Fi, True
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is connected to a network and metered.
+{% qna %}
+Q: (friendly names of it, has metered descriptions of it) of adapters of networks
+A: Wi-Fi, True
+{% endqna %}
+
 # interface of &lt;network adapter&gt; : network interface
 
 Returns a network interface object from the specified network adapter.
@@ -162,6 +198,42 @@ Returns the mac address of the network adapter.
 # maximum transmission unit of &lt;network adapter&gt; : integer
 
 The maximum transmission unit (MTU) size, in bytes, of the specified adapter.
+
+# metered connection of &lt;network adapter&gt; : boolean
+
+Returns `True` if the network adapter is connected to a network and has the Windows flag named `Set as metered connection` set to On. Returns `False` otherwise.
+The `metered connection of <network_adapter>` property only provides an answer for network adapters for which the `has metered description of <network_adapter>` property returns `True`.
+Note: this inspector is available only on Windows 10 and later, but not on Windows Server.
+
+In the following example, a Windows computer has three network adapters:
+
+1) Ethernet0, not connected to a network
+2) Ethernet1, connected to a network and not metered
+3) Ethernet2, connected to a network and metered
+
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of network
+A: Ethernet1, False
+A: Ethernet2, True
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is not connected to a network.
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of networks
+A: Wi-Fi, False
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is connected to a network and not metered.
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of networks
+A: Wi-Fi, False
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is connected to a network and metered.
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of networks
+A: Wi-Fi, True
+{% endqna %}
 
 # multicast support of &lt;network adapter&gt; : boolean
 
