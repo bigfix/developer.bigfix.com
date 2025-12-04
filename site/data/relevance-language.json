@@ -87445,19 +87445,6 @@
         ]
       }
     },
-    "has metered description of <network adapter> : boolean": {
-      "key": "has metered description of <network adapter> : boolean",
-      "type": "property",
-      "resultType": "boolean",
-      "singularPhrase": "has metered description",
-      "pluralPhrase": "has metered descriptions",
-      "directObjectType": "network adapter",
-      "availability": {
-        "11.0.6.0": [
-          "Windows"
-        ]
-      }
-    },
     "internet connection firewall of <network adapter> : internet connection firewall": {
       "key": "internet connection firewall of <network adapter> : internet connection firewall",
       "type": "property",

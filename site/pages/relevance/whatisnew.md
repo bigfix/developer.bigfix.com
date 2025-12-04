@@ -14,7 +14,7 @@ New inspector property named *evaluation period of* was added to the existing *b
 
 For details, see [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html).
 
-New inspector properties named *has metered description of* and *metered connection of* were added to the existing *network adapter* inspector to return information about the network adapters that are configured as metered connections.
+New inspector property named *metered connection of* was added to the existing *network adapter* inspector to return information about the network adapters that are configured as metered connections.
 
 For details, see [network adapter](https://developer.bigfix.com/relevance/reference/network-adapter.html).
 
