@@ -78,6 +78,9 @@ nav:
       - name: Operator
         href: /rest-api/api/operator.html
 
+      - name: PeerNest
+        href: /rest-api/api/peernest.html
+
       - name: Property
         href: /rest-api/api/property.html
 
