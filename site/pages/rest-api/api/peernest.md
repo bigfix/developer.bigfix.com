@@ -5,6 +5,7 @@ title: PeerNest
 PeerNest is a BigFix feature that allows you to share binary files among BigFix Clients located in the same subnet. In this context, a "peer host" is a BigFix Client that can serve files to other Clients.
 
 This family of REST APIs lets you retrieve aggregated metrics to monitor the PeerNest activity.
+The BigFix Server collects the PeerNest activity information from BigFix Client version 11.0.6 or newer.
 
 {% restapi "/api/peernestmetrics/relays", "GET", "Retrieves metrics about the PeerNest activity under each Relay." %}
 **Request:** URL is all that is required.
@@ -159,3 +160,15 @@ https://server.bigfix.com:52311/api/peernestmetrics/peerHosts?subnet=10.14.77.0/
 ```
 
 {% endrestapi %}
+
+## Filtering Response Parameters
+You can add the following query parameters to filter the data by time:
+- `dateFrom`, containing a date in the format `yyyy-mm-dd`, to only consider data collected since that day (included).
+- `dateTo`, containing a date in the format `yyyy-mm-dd`, to only consider data collected before that day (excluded).
+
+The time parameters can be used together or separately.
+
+This example shows the URL for a `GET` request that uses the aforementioned parameters to only aggregate data collected between two dates:
+```
+https://server.bigfix.com:52311/api/peernestmetrics/subnets?dateFrom=2025-11-19&dateTo=2025-12-30
+```
