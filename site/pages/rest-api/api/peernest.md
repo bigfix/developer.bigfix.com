@@ -4,8 +4,9 @@ title: PeerNest
 
 PeerNest is a BigFix feature that allows you to share binary files among BigFix Clients located in the same subnet. In this context, a "peer host" is a BigFix Client that can serve files to other Clients.
 
-This family of REST APIs lets you retrieve aggregated metrics to monitor the PeerNest activity.
-The BigFix Server collects the PeerNest activity information from BigFix Client version 11.0.6 or newer.
+This family of REST APIs provides metrics that can help you monitor the PeerNest activity. The BigFix Server collects the PeerNest activity information from BigFix Client version 11.0.6 or newer.
+
+By default, the reported metrics are calculated on all available data. These APIs accept optional parameters to filter by date, but older data may not be available anymore, because it is periodically discarded. You can configure the amount of time that PeerNest performance data should be kept for. For more information, see the [Client settings](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/r_client_set.html) page.
 
 {% restapi "/api/peernestmetrics/relays", "GET", "Retrieves metrics about the PeerNest activity under each Relay." %}
 **Request:** URL is all that is required.
@@ -123,7 +124,7 @@ Will return the following JSON:
 
 {% restapi "/api/peernestmetrics/peerHosts", "GET", "Retrieves statistics about the PeerNest activity for peers acting as hosts." %}
 **Request:** URL is all that is required.
-You can add one of the following optional parameters to filter the results:
+You **must** add at least one of the following parameters to filter the results:
 * `hostList`, containing the IDs of the desired peer hosts, separated by commas
 * `subnet`, containing the address of the subnet with the desired peer hosts
 
