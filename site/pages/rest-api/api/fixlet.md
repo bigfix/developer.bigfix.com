@@ -33,7 +33,6 @@ title: RESTAPI Fixlet
 {% endrestapi %}
 
 {% restapi "/api/fixlet/{site type}/{site name}/{fixlet id}", "PUT", "Updates a Fixlet." %}
-
 **Request:** Complete XML for the object in the body of the request
 
 **Request Schema:** BES.xsd
@@ -66,6 +65,7 @@ The same command applies to a task if you specify the task ID in place of the Fi
 
 **Response Schema:** BESAPI.xsd
 {% endrestapi %}
+
 {% restapi "/api/fixlet/{site type}/{site name}/{fixlet id}/visibility", "GET", "Gets the global visibility of a Fixlet." %}
 **Request:** This API lets you query the global visibility of a Fixlet. The `{fixlet id}` parameter identifies the target Fixlet.
 The caller must be authenticated and a BigFix Master Operator (MO).
@@ -97,8 +97,9 @@ May return this XML:
 Or this JSON, if the header `Accept: application/json` is set in the request or the `output=json` parameter is used in the request URL:
 ```json
 {"Visibility":true}
-
 ```
+{% endrestapi %}
+
 {% restapi "/api/fixlet/{site type}/{site name}/{fixlet id}/visibility", "PUT", "Sets the global visibility of a Fixlet." %}
 **Request:** This API allows you to toggle the global visibility of a Fixlet, hiding or showing it. The `{fixlet id}` parameter identifies the target Fixlet.
 The request body can be a JSON or an XML and specifies the desired Fixlet visibility in the `Visibility` field, which must contain a boolean value (`true` or `false`).
@@ -156,3 +157,10 @@ On success, the API will return:
 {"Visibility":true}
 ```
 {% endrestapi %}
+
+## Common Parameters
+
+The following parameters appear as placeholders in the URL of most of the above APIs:
+- `{site type}`, represents the site type (custom, external or master)
+- `{site name}`, represents the site name (e.g. BES Support). Skip this part when the site type is "master".
+- `{fixlet id}`, represents the Fixlet ID.
