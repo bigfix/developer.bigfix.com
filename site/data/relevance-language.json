@@ -99659,12 +99659,12 @@
         ]
       }
     },
-    "last report time of <bes peer download> : time": {
-      "key": "last report time of <bes peer download> : time",
+    "report time of <bes peer download> : time": {
+      "key": "report time of <bes peer download> : time",
       "type": "property",
       "resultType": "time",
-      "singularPhrase": "last report time",
-      "pluralPhrase": "last report times",
+      "singularPhrase": "report time",
+      "pluralPhrase": "report times",
       "directObjectType": "bes peer download",
       "availability": {
         "11.0.6.0": [
