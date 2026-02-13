@@ -106442,12 +106442,12 @@
         ]
       }
     },
-    "report time of <client> : time": {
-      "key": "report time of <client> : time",
+    "last report time of <client> : time": {
+      "key": "last report time of <client> : time",
       "type": "property",
       "resultType": "time",
-      "singularPhrase": "report time",
-      "pluralPhrase": "report times",
+      "singularPhrase": "last report time",
+      "pluralPhrase": "last report times",
       "directObjectType": "client",
       "availability": {
         "9.0.586.0": [
