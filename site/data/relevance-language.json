@@ -44476,6 +44476,18 @@
         ]
       }
     },
+    "bes peer download : bes peer download": {
+      "key": "bes peer download : bes peer download",
+      "type": "property",
+      "resultType": "bes peer download",
+      "singularPhrase": "bes peer download",
+      "pluralPhrase": "bes peer downloads",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "bes property : bes property": {
       "key": "bes property : bes property",
       "type": "property",
