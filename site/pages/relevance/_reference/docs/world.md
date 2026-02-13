@@ -389,6 +389,10 @@ No documentation exists.
 
 Synonym for &#39;client license&#39;.
 
+# bes peer download : bes peer download
+
+Returns a list of all peer download events collected within the deployment.
+
 # bes property : bes property
 
 Returns a list of all the BES custom site objects.

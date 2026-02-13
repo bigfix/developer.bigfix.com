@@ -272,6 +272,14 @@
         ]
       }
     },
+    "bes peer download": {
+      "name": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "bes product": {
       "name": "bes product",
       "availability": {
@@ -99573,6 +99581,175 @@
         ]
       }
     },
+    "action of <bes peer download> : bes action": {
+      "key": "action of <bes peer download> : bes action",
+      "type": "property",
+      "resultType": "bes action",
+      "singularPhrase": "action",
+      "pluralPhrase": "actions",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "action id of <bes peer download> : integer": {
+      "key": "action id of <bes peer download> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "action id",
+      "pluralPhrase": "action ids",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "downloader computer id of <bes peer download> : integer": {
+      "key": "downloader computer id of <bes peer download> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "downloader computer id",
+      "pluralPhrase": "downloader computer ids",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "database id of <bes peer download> : integer": {
+      "key": "database id of <bes peer download> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "database id",
+      "pluralPhrase": "database ids",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "database name of <bes peer download> : string": {
+      "key": "database name of <bes peer download> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "database name",
+      "pluralPhrase": "database names",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "hash of <bes peer download> : string": {
+      "key": "hash of <bes peer download> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "hash",
+      "pluralPhrase": "hashes",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "last report time of <bes peer download> : time": {
+      "key": "last report time of <bes peer download> : time",
+      "type": "property",
+      "resultType": "time",
+      "singularPhrase": "last report time",
+      "pluralPhrase": "last report times",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "peer flag of <bes peer download> : boolean": {
+      "key": "peer flag of <bes peer download> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "peer flag",
+      "pluralPhrase": "peer flags",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "size of <bes peer download> : integer": {
+      "key": "size of <bes peer download> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "size",
+      "pluralPhrase": "sizes",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "source host of <bes peer download> : string": {
+      "key": "source host of <bes peer download> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "source host",
+      "pluralPhrase": "source hosts",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "subnet of <bes peer download> : string": {
+      "key": "subnet of <bes peer download> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "subnet",
+      "pluralPhrase": "subnets",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes peer download> = <bes peer download> : boolean": {
+      "key": "<bes peer download> = <bes peer download> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes peer download",
+      "op": "=",
+      "rightType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes peer download> < <bes peer download> : boolean": {
+      "key": "<bes peer download> < <bes peer download> : boolean",
+      "type": "binaryOp",
+      "resultType": "boolean",
+      "leftType": "bes peer download",
+      "op": "<",
+      "rightType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "client device count of <bes product> : integer": {
       "key": "client device count of <bes product> : integer",
       "type": "property",
@@ -106265,12 +106442,12 @@
         ]
       }
     },
-    "last report time of <client> : time": {
-      "key": "last report time of <client> : time",
+    "report time of <client> : time": {
+      "key": "report time of <client> : time",
       "type": "property",
       "resultType": "time",
-      "singularPhrase": "last report time",
-      "pluralPhrase": "last report times",
+      "singularPhrase": "report time",
+      "pluralPhrase": "report times",
       "directObjectType": "client",
       "availability": {
         "9.0.586.0": [

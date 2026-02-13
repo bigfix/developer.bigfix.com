@@ -8,6 +8,12 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 6 Added Inspector Type
+
+New inspector type named *bes peer download* was added to return information about files that were downloaded via the PeerNest feature.
+
+For details, see [bes peer download](https://developer.bigfix.com/relevance/reference/bes-peer-download.html).
+
 #### Version 11 Patch 6 Added Inspector Properties
 
 New inspector property named *evaluation period of* was added to the existing *bes fixlet* inspector to return information about the frequency with which clients must re-evaluate the Fixlet.
