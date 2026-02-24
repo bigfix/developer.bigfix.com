@@ -29,6 +29,7 @@ Begin learning about the available REST API resources and how to use them.
   <li>[Role](./role.html)</li>
   <li>[Site](./site.html)</li>
   <li>[Task](./task.html)</li>
+  <li>[Token](./token.html)</li>
   <li>[Upload](./upload.html)</li>
   <li>[Web Reports](./webreports.html)</li>
 </ul>

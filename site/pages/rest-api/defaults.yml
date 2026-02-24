@@ -102,6 +102,9 @@ nav:
       - name: Task
         href: /rest-api/api/task.html
 
+      - name: Token
+        href: /rest-api/api/token.html
+
       - name: Upload
         href: /rest-api/api/upload.html
 
