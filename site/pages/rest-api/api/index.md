@@ -23,6 +23,7 @@ Begin learning about the available REST API resources and how to use them.
   <li>[Login](./login.html)</li>
   <li>[Mailbox](./mailbox.html)</li>
   <li>[Operator](./operator.html)</li>
+  <li>[PeerNest](./peernest.html)</li>
   <li>[Property](./property.html)</li>
   <li>[Query](./query.html)</li>
   <li>[Replication](./replication.html)</li>
