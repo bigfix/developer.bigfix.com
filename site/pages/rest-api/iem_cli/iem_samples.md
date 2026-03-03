@@ -243,6 +243,12 @@ To perform a login using the Windows authentication:
 iem.exe login --server=mybfserver.mydomain --windowsAuthentication
 ```
 
+To perform a login using the authentication token as a text parameter:
+
+```
+./iem login --server=https://server.bigfix.com:52311 --token="Gm8t4RSBfjsfQ7Ni7Po7rY+iw4hUXw1M3AqoJOLJH9W4TVzmQNQEZ78wlgRfBxeQfNIvEDo0A0fMbI7x6pb3rQ=="
+```
+
 ## Operators
 To display a list of operators (local and LDAP), run the following command:
 

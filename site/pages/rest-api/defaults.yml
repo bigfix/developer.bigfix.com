@@ -177,7 +177,7 @@ nav:
         href: /rest-api/iem_cli/location.html
 
       - name: User Authentication and Session Management
-        href: /rest-api/iem_cli/logging.html
+        href: /rest-api/iem_cli/user_authentication.html
 
       - name: Running Requests from the IEM CLI
         href: /rest-api/iem_cli/iem_requests.html
