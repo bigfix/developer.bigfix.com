@@ -2,7 +2,7 @@
 title: Token
 ---
 
-Up to version 11.0.5, BigFix REST API only supports Basic Authentication. Starting from version 11.0.6, BigFix will also issue tokens which can be used to access REST APIs, BigFix Explorer and the IEM CLI, in addition to Basic Authentication. The token name is shown only to its owner and it has a specific validity period.
+Up to version 11.0.5, the BigFix REST APIs only supported HTTP(S) Basic Authentication. Starting from version 11.0.6, BigFix also supports token-based authentication, which can be used to access the BigFix Server REST APIs, the BigFix Explorer REST APIs and the IEM CLI tool, as an alternative to Basic Authentication. The token name is shown only to its owner and it has a specific validity period.
 
 This family of REST APIs allow you to create, modify and delete the tokens.
 
