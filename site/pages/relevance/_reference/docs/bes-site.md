@@ -22,6 +22,12 @@ Returns the &lt;bes user&gt; who created the specified custom site. Does not exi
 
 Returns `True` if and only if the specified site is a custom site.
 
+{% qna %}
+Q: names of all bes sites whose (custom site flag of it = true)
+A: Custom Site 1
+A: Custom Site 2
+{% endqna %}
+
 # description of &lt;bes site&gt; : string
 
 For a custom site, this is the description of the site that was specified by the creator. For External, Master or Operator sites, the description does not exist.
@@ -101,6 +107,13 @@ No documentation exists.
 # operator site flag of &lt;bes site&gt; : boolean
 
 Returns `True` if and only if the specified site is an operator site.
+
+{% qna %}
+Q: names of all bes sites whose (operator site flag of it = true)
+A: BFAdmin
+A: NMO 1
+A: NMO 2
+{% endqna %}
 
 # owner flag &lt;bes user&gt; of &lt;bes site&gt; : boolean
 
