@@ -411,7 +411,7 @@ No documentation exists.
 
 # bes site : bes site
 
-Returns a list of all the BES sites.
+Returns a list of all the external and master action sites. For the complete list of BigFix sites, use `all bes sites` instead.
 
 # bes task : bes fixlet
 
