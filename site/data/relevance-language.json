@@ -99852,6 +99852,19 @@
         ]
       }
     },
+    "id of <bes role> : integer": {
+      "key": "id of <bes role> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "bes role",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "master flag of <bes role> : boolean": {
       "key": "master flag of <bes role> : boolean",
       "type": "property",
