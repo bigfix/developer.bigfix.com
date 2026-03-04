@@ -198,7 +198,7 @@ curl -X POST --user {username}:{password} https://server.bigfix.com:52311/api/to
 Which may return this output:
 ```
 {
-    "Token": "CcZv3xTcSxkFQBLQ+56RmIeaJPaZyUZ0c746XiCMihcmyBsPlL2B6tJWsxWq3S/hNbFmL7t1/bMzf9Jh+wL5AQ=="
+    "Token": "cGt2PxRXAX-v4N2tTUQr-NNUSV8jN3v_R7VNnQAAAAE"
     "Id": 1,
     "Name": "my_first_token",
     "Expiration": 1772191430000000,

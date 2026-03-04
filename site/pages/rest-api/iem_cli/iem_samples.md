@@ -246,7 +246,7 @@ iem.exe login --server=mybfserver.mydomain --windowsAuthentication
 To perform a login using the authentication token as a text parameter:
 
 ```
-./iem login --server=https://server.bigfix.com:52311 --token="Gm8t4RSBfjsfQ7Ni7Po7rY+iw4hUXw1M3AqoJOLJH9W4TVzmQNQEZ78wlgRfBxeQfNIvEDo0A0fMbI7x6pb3rQ=="
+./iem login --server=https://server.bigfix.com:52311 --token="cGt2PxRXAX-v4N2tTUQr-NNUSV8jN3v_R7VNnQAAAAE"
 ```
 
 ## Operators
