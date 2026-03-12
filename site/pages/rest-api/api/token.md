@@ -2,7 +2,7 @@
 title: Token
 ---
 
-Up to version 11.0.5, the BigFix REST APIs only supported HTTP(S) Basic Authentication. Starting from version 11.0.6, BigFix also supports token-based authentication, which can be used to access the BigFix Server REST APIs, the BigFix Explorer REST APIs and the IEM CLI tool, as an alternative to Basic Authentication. The token name is shown only to its owner and it has a specific validity period.
+Up to version 11.0.5, the BigFix REST APIs only supported HTTP(S) Basic Authentication. Starting from version 11.0.6, BigFix also supports token-based authentication, which can be used to access the BigFix Server REST APIs, the BigFix Explorer REST APIs and the IEM CLI tool, as an alternative to Basic Authentication. The token name is shown only to its owner and it has a specific validity period. To learn more about bearer token authentication, see [Configuring bearer token authentication](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_token_authentication.html).
 
 This family of REST APIs allow you to create, modify and delete the tokens.
 

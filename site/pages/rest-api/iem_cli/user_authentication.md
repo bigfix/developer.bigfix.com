@@ -25,6 +25,8 @@ iem login --server=<bigfix_server> --token=<token>
 
 In the above, `<token>` is the base64-encoded token.
 
+To learn more about bearer token authentication, see [Configuring bearer token authentication](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_token_authentication.html).
+
 ## Updating the root server certificate
 If the root server certificate has changed, for example because the server signing certificate was rotated, as described in 
 [Generating a new encryption key](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_generating_a_new_encryption_ke.html), the authentication might fail with the following error message:
