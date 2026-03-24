@@ -99658,6 +99658,19 @@
         ]
       }
     },
+    "gather flag of <bes peer download> : boolean": {
+      "key": "gather flag of <bes peer download> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "gather flag",
+      "pluralPhrase": "gather flags",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "hash of <bes peer download> : string": {
       "key": "hash of <bes peer download> : string",
       "type": "property",
@@ -99690,6 +99703,58 @@
       "resultType": "boolean",
       "singularPhrase": "peer flag",
       "pluralPhrase": "peer flags",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "prefetch flag of <bes peer download> : boolean": {
+      "key": "prefetch flag of <bes peer download> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "prefetch flag",
+      "pluralPhrase": "prefetch flags",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "site of <bes peer download> : bes site": {
+      "key": "site of <bes peer download> : bes site",
+      "type": "property",
+      "resultType": "bes site",
+      "singularPhrase": "site",
+      "pluralPhrase": "sites",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "site id of <bes peer download> : integer": {
+      "key": "site id of <bes peer download> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "site id",
+      "pluralPhrase": "site ids",
+      "directObjectType": "bes peer download",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "site version of <bes peer download> : integer": {
+      "key": "site version of <bes peer download> : integer",
+      "type": "property",
+      "resultType": "integer",
+      "singularPhrase": "site version",
+      "pluralPhrase": "site versions",
       "directObjectType": "bes peer download",
       "availability": {
         "11.0.6.0": [
