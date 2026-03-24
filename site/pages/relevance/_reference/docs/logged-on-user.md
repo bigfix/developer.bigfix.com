@@ -76,7 +76,6 @@ A: RemoteInteractive
 
 Returns the logon type that initiated the Windows session as an integer:
 - **2** for Interactive
-- **7** for Unlock
 - **10** for RemoteInteractive
 - **11** for CachedInteractive
 
