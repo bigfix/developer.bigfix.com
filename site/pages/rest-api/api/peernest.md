@@ -4,7 +4,8 @@ title: PeerNest
 
 PeerNest is a BigFix feature that allows you to share binary files among BigFix Clients located in the same subnet. In this context, a "peer host" is a BigFix Client that can serve files to other Clients.
 
-This family of REST APIs provides metrics that can help you monitor the PeerNest activity. The BigFix Server collects the PeerNest activity information from BigFix Client version 11.0.6 or newer.
+BigFix Clients version 11.0.6 and newer communicate information about their PeerNest activity to the BigFix Server, if that feature is enabled. The BigFix Server uses that information to calculate several metrics that can help you monitor the PeerNest activity.
+This family of REST APIs provides access to those metrics.
 
 By default, the reported metrics are calculated on all available data. These APIs accept optional parameters to filter by date, but older data may not be available anymore, because it is periodically discarded. You can configure the amount of time that PeerNest performance data should be kept for. For more information, see the [Client settings](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/r_client_set.html) page.
 
@@ -23,30 +24,43 @@ https://server.bigfix.com:52311/api/peernestmetrics/relays
 May return this JSON:
 ```json
 {
-    "relay2": {
-        "NumberOfDownloadsFromRelay": 1,
-        "NumberOfDownloadsFromPeers": 2,
-        "BytesDownloadedFromRelay": 11674,
-        "BytesDownloadedFromPeers": 23348,
-        "PercentageOfDataViaRelay": 33.333,
-        "PercentageOfDataViaPeers": 66.667,
-        "NumberOfPeersThatServedPeers": 2,
-        "NumberOfUniqueFilesServedByPeers": 1,
-        "TotalBytesOfUniqueFilesServedByPeers": 11674,
-        "NumberOfSubnetsServedByRelay": 2
+  "relay1": {
+    "Prefetch": {
+      "NumberOfUniqueFilesServedByPeers": 2,
+      "TotalBytesOfUniqueFilesServedByPeers": 26801939,
+      "NumberOfDownloadsFromRelay": 2,
+      "NumberOfDownloadsFromPeers": 2,
+      "BytesDownloadedFromRelay": 26801939,
+      "BytesDownloadedFromPeers": 26801939,
+      "PercentageOfDataViaRelay": 50,
+      "PercentageOfDataViaPeers": 50,
+      "NumberOfPeersThatServedPeers": 1,
+      "NumberOfSubnetsServedByRelay": 1
     },
-    "winserver2019": {
-        "NumberOfDownloadsFromRelay": 14,
-        "NumberOfDownloadsFromPeers": 20,
-        "BytesDownloadedFromRelay": 68960197,
-        "BytesDownloadedFromPeers": 78680947,
-        "PercentageOfDataViaRelay": 46.708,
-        "PercentageOfDataViaPeers": 53.292,
-        "NumberOfPeersThatServedPeers": 4,
-        "NumberOfUniqueFilesServedByPeers": 11,
-        "TotalBytesOfUniqueFilesServedByPeers": 59773295,
-        "NumberOfSubnetsServedByRelay": 2
+    "Gather": {
+      "NumberOfDistinctSiteVersionsDistributed": 3,
+      "NumberOfSiteVersionsGatheredOnceFromRelay": 2,
+      "NumberOfSiteVersionsGatheredMultipleTimesFromRelay": 1,
+      "NumberOfDownloadsFromRelay": 8,
+      "NumberOfDownloadsFromPeers": 0,
+      "BytesDownloadedFromRelay": 3176040,
+      "BytesDownloadedFromPeers": 0,
+      "PercentageOfDataViaRelay": 100,
+      "PercentageOfDataViaPeers": 0,
+      "NumberOfPeersThatServedPeers": 0,
+      "NumberOfSubnetsServedByRelay": 2
+    },
+    "All": {
+      "NumberOfDownloadsFromRelay": 10,
+      "NumberOfDownloadsFromPeers": 2,
+      "BytesDownloadedFromRelay": 29977979,
+      "BytesDownloadedFromPeers": 26801939,
+      "PercentageOfDataViaRelay": 52.797,
+      "PercentageOfDataViaPeers": 47.203,
+      "NumberOfPeersThatServedPeers": 1,
+      "NumberOfSubnetsServedByRelay": 2
     }
+  }
 }
 ```
 {% endrestapi %}
@@ -69,34 +83,48 @@ https://server.bigfix.test:com/api/peernestmetrics/subnets
 May return this JSON:
 ```json
 {
-    "10.14.74.0/25": {
-        "NumberOfPeersThatServedPeers": 1,
-        "NumberOfPeersThatRequestedFromPeers": 2,
-        "RequestingPeersToServingPeersRatio": 2,
-        "NumberOfPeersThatRequestedFiles": 3,
-        "NumberOfUniqueFilesServedByPeers": 1,
-        "PeerIDThatServedFilesTheMost": 99,
-        "PeerIDThatServedFilesTheLeast": 99,
-        "TotalBytesServedByPeers": 23348,
-        "TotalBytesServedByRelays": 11674
+  "10.14.77.0/25": {
+    "Prefetch": {
+      "NumberOfUniqueFilesServedByPeers": 2,
+      "NumberOfPeersThatServedPeers": 1,
+      "NumberOfPeersThatRequestedFromPeers": 1,
+      "RequestingPeersToServingPeersRatio": 1,
+      "NumberOfPeersThatRequestedFiles": 2,
+      "PeerIDThatServedFilesTheMost": 1088993101,
+      "PeerIDThatServedFilesTheLeast": 1088993101,
+      "TotalBytesServedByPeers": 26801939,
+      "TotalBytesServedByRelays": 26801939
     },
-    "10.14.77.0/25": {
-        "NumberOfPeersThatServedPeers": 3,
-        "NumberOfPeersThatRequestedFromPeers": 4,
-        "RequestingPeersToServingPeersRatio": 1.333,
-        "NumberOfPeersThatRequestedFiles": 4,
-        "NumberOfUniqueFilesServedByPeers": 11,
-        "PeerIDThatServedFilesTheMost": 10747714,
-        "PeerIDThatServedFilesTheLeast": 537509916,
-        "TotalBytesServedByPeers": 78680947,
-        "TotalBytesServedByRelays": 68960197
+    "Gather": {
+      "NumberOfDistinctSiteVersionsGathered": 3,
+      "NumberOfSiteVersionsGatheredOnce": 0,
+      "NumberOfSiteVersionsGatheredMultipleTimes": 3,
+      "NumberOfPeersThatServedPeers": 0,
+      "NumberOfPeersThatRequestedFromPeers": 0,
+      "RequestingPeersToServingPeersRatio": 0,
+      "NumberOfPeersThatRequestedFiles": 1,
+      "PeerIDThatServedFilesTheMost": 0,
+      "PeerIDThatServedFilesTheLeast": 0,
+      "TotalBytesServedByPeers": 0,
+      "TotalBytesServedByRelays": 3123498
+    },
+    "All": {
+      "NumberOfPeersThatServedPeers": 1,
+      "NumberOfPeersThatRequestedFromPeers": 29925437,
+      "RequestingPeersToServingPeersRatio": 29925437,
+      "NumberOfPeersThatRequestedFiles": 26801939,
+      "PeerIDThatServedFilesTheMost": 1088993101,
+      "PeerIDThatServedFilesTheLeast": 1088993101,
+      "TotalBytesServedByPeers": 2,
+      "TotalBytesServedByRelays": 1
     }
+  }
 }
 ```
 
 We can get the same response if we call the API and specify the list of all subnets, as follows.
 ```
-https://server.bigfix.com:52311/api/peernestmetrics/subnets?subnetList=10.14.77.0/25,10.14.74.0/25
+https://server.bigfix.com:52311/api/peernestmetrics/subnets?subnetList=10.14.74.0/25
 ```
 
 In the following example, let us assume that the list of subnets served by the relay named "relay2" is just one subnet (10.14.74.0/25). In this case, this call:
@@ -134,24 +162,31 @@ You **must** add at least one of the following parameters to filter the results:
 
 For example, this call:
 ```
-https://server.bigfix.com:52311/api/peernestmetrics/peerHosts?hostList=10747714,1611855877
+https://server.bigfix.com:52311/api/peernestmetrics/peerHosts?hostList=1088993101
 ```
 
 May return this JSON:
 ```json
 {
-    "10747714": {
-        "NumberOfRequestsServed": 10,
-        "NumberOfUniqueFilesServed": 6,
-        "TotalBytesServed": 39180321,
-        "NumberOfPeersServed": 2
+  "1088993101": {
+    "Prefetch": {
+      "NumberOfUniqueFilesServed": 2,
+      "NumberOfRequestsServed": 2,
+      "TotalBytesServed": 26801939,
+      "NumberOfPeersServed": 1
     },
-    "1611855877": {
-        "NumberOfRequestsServed": 7,
-        "NumberOfUniqueFilesServed": 5,
-        "TotalBytesServed": 34328890,
-        "NumberOfPeersServed": 3
+    "Gather": {
+      "NumberOfDistinctSiteVersionServed": 7,
+      "NumberOfRequestsServed": 53,
+      "TotalBytesServed": 5049501,
+      "NumberOfPeersServed": 2
+    },
+    "All": {
+      "NumberOfRequestsServed": 55,
+      "TotalBytesServed": 31851440,
+      "NumberOfPeersServed": 2
     }
+  }
 }
 ```
 
