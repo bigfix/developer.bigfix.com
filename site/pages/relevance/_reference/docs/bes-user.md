@@ -1,6 +1,8 @@
 # type: bes user
 
-The &lt;bes user&gt; inspectors let you keep track of the users authorized to use the BES Console. You can iterate over the users, producing lists containing information such as the name and authorization level.
+The `bes user` inspectors let you keep track of the users authorized to use the BigFix Console. You can iterate over the users, producing lists containing information such as the name and authorization level.
+
+The permission-related `bes user` inspectors let you read the explicit and effective permissions of a BigFix Operator, matching the values surfaced by BigFix Explorer, the BigFix Console Presentation Debugger, and the Web Reports Server. The legacy non-prefixed permission inspectors remain available for backward compatibility reasons.
 
 # action site of &lt;bes user&gt; : bes site
 
@@ -49,6 +51,312 @@ Returns `True` if the user has been granted the privilege to author custom conte
 # distinguished name of &lt;bes user&gt; : string
 
 No documentation exists.
+
+# effective can create actions flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to create actions on computers.
+
+{% qna %}
+Q: (name of it, effective can create actions flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective can lock flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to lock computers.
+
+{% qna %}
+Q: (name of it, effective can lock flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective can send multiple refresh flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to send multiple refresh commands to computers.
+
+{% qna %}
+Q: (name of it, effective can send multiple refresh flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective can submit queries flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to use BigFix Query.
+
+{% qna %}
+Q: (name of it, effective can submit queries flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective custom content flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to author custom content and actions.
+
+{% qna %}
+Q: (name of it, effective custom content flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective master flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions make the user a Master Operator.
+
+{% qna %}
+Q: (name of it, effective master flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective restartandshutdown actionscript privilege allowboth flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to both restart and shutdown computers via the Action Script of a Fixlet or a Task.
+
+{% qna %}
+Q: (name of it, effective restartandshutdown actionscript privilege allowboth flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective restartandshutdown actionscript privilege allowrestartonly flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to only restart, but not to shutdown, computers via the Action Script of a Fixlet or a Task.
+
+{% qna %}
+Q: (name of it, effective restartandshutdown actionscript privilege allowrestartonly flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# effective restartandshutdown actionscript privilege none flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions do not allow the user to restart or shutdown computers via the Action Script of a Fixlet or a Task.
+
+{% qna %}
+Q: (name of it, effective restartandshutdown actionscript privilege none flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# effective restartandshutdown postaction privilege allowboth flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to both restart and shutdown computers via the post-action settings of an Action.
+
+{% qna %}
+Q: (name of it, effective restartandshutdown postaction privilege allowboth flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective restartandshutdown postaction privilege allowrestartonly flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to only restart, but not to shutdown, computers via the post-action settings of an Action.
+
+{% qna %}
+Q: (name of it, effective restartandshutdown postaction privilege allowrestartonly flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# effective restartandshutdown postaction privilege none flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions do not allow the user to restart or shutdown computers via the post-action settings of an Action.
+
+{% qna %}
+Q: (name of it, effective restartandshutdown postaction privilege none flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# effective show other action flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to view actions issued by other operators.
+
+{% qna %}
+Q: (name of it, effective show other action flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective stop other actions flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to stop actions issued by other operators.
+
+{% qna %}
+Q: (name of it, effective stop other actions flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective unmanagedasset privilege scanpoint flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to view only unmanaged asset scanned by computers managed by that user.
+
+{% qna %}
+Q: (name of it, effective unmanagedasset privilege scanpoint flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# effective unmanagedasset privilege showall flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the currently effective permissions allow the user to view all unmanaged assets.
+
+{% qna %}
+Q: (name of it, effective unmanagedasset privilege showall flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# effective unmanagedasset privilege shownone flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the effective permissions do not allow the user to see any unmanaged assets.
+
+{% qna %}
+Q: (name of it, effective unmanagedasset privilege shownone flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# explicit can create actions flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to create actions on computers.
+
+{% qna %}
+Q: (name of it, explicit can create actions flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit can lock flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to lock computers.
+
+{% qna %}
+Q: (name of it, explicit can lock flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit can send multiple refresh flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to send multiple refresh commands to computers.
+
+{% qna %}
+Q: (name of it, explicit can send multiple refresh flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit can submit queries flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to use BigFix Query.
+
+{% qna %}
+Q: (name of it, explicit can submit queries flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit custom content flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to author custom content and actions.
+
+{% qna %}
+Q: (name of it, explicit custom content flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit master flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly marked as a Master Operator.
+
+{% qna %}
+Q: (name of it, explicit master flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit restartandshutdown actionscript privilege allowboth flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to both restart and shutdown computers via the Action Script of a Fixlet or a Task.
+
+{% qna %}
+Q: (name of it, explicit restartandshutdown actionscript privilege allowboth flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit restartandshutdown actionscript privilege allowrestartonly flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to only restart, but not to shutdown, computers via the Action Script of a Fixlet or a Task.
+
+{% qna %}
+Q: (name of it, explicit restartandshutdown actionscript privilege allowrestartonly flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# explicit restartandshutdown actionscript privilege none flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly denied the privilege to restart or shutdown computers via the Action Script of a Fixlet or a Task.
+
+{% qna %}
+Q: (name of it, explicit restartandshutdown actionscript privilege none flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# explicit restartandshutdown postaction privilege allowboth flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to both restart and shutdown computers via the post-action settings of an Action.
+
+{% qna %}
+Q: (name of it, explicit restartandshutdown postaction privilege allowboth flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit restartandshutdown postaction privilege allowrestartonly flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to only restart, but not to shutdown, computers via the post-action settings of an Action.
+
+{% qna %}
+Q: (name of it, explicit restartandshutdown postaction privilege allowrestartonly flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# explicit restartandshutdown postaction privilege none flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly denied the privilege to restart or shutdown computers via the post-action settings of an Action.
+
+{% qna %}
+Q: (name of it, explicit restartandshutdown postaction privilege none flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# explicit show other action flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to view actions issued by other operators.
+
+{% qna %}
+Q: (name of it, explicit show other action flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit stop other actions flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly granted the privilege to stop actions issued by other operators.
+
+{% qna %}
+Q: (name of it, explicit stop other actions flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit unmanagedasset privilege scanpoint flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly assigned the permission to view only unmanaged assets scanned by computers managed by that user.
+
+{% qna %}
+Q: (name of it, explicit unmanagedasset privilege scanpoint flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
+
+# explicit unmanagedasset privilege showall flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly assigned the permission to view all unmanaged assets.
+
+{% qna %}
+Q: (name of it, explicit unmanagedasset privilege showall flag of it) of bes users whose (id of it = 5)
+A: user, True
+{% endqna %}
+
+# explicit unmanagedasset privilege shownone flag of &lt;bes user&gt; : boolean
+
+Returns `True` if the user has been explicitly denied the permission to view unmanaged assets.
+
+{% qna %}
+Q: (name of it, explicit unmanagedasset privilege shownone flag of it) of bes users whose (id of it = 5)
+A: user, False
+{% endqna %}
 
 # issued action of &lt;bes user&gt; : bes action
 

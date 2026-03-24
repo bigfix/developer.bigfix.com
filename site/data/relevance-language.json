@@ -105476,6 +105476,448 @@
         ]
       }
     },
+    "effective can create actions flag of <bes user> : boolean": {
+      "key": "effective can create actions flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective can create actions flag",
+      "pluralPhrase": "effective can create actions flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective can lock flag of <bes user> : boolean": {
+      "key": "effective can lock flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective can lock flag",
+      "pluralPhrase": "effective can lock flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective can send multiple refresh flag of <bes user> : boolean": {
+      "key": "effective can send multiple refresh flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective can send multiple refresh flag",
+      "pluralPhrase": "effective can send multiple refresh flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective can submit queries flag of <bes user> : boolean": {
+      "key": "effective can submit queries flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective can submit queries flag",
+      "pluralPhrase": "effective can submit queries flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective custom content flag of <bes user> : boolean": {
+      "key": "effective custom content flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective custom content flag",
+      "pluralPhrase": "effective custom content flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective master flag of <bes user> : boolean": {
+      "key": "effective master flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective master flag",
+      "pluralPhrase": "effective master flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective restartandshutdown actionscript privilege allowboth flag of <bes user> : boolean": {
+      "key": "effective restartandshutdown actionscript privilege allowboth flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective restartandshutdown actionscript privilege allowboth flag",
+      "pluralPhrase": "effective restartandshutdown actionscript privilege allowboth flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective restartandshutdown actionscript privilege allowrestartonly flag of <bes user> : boolean": {
+      "key": "effective restartandshutdown actionscript privilege allowrestartonly flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective restartandshutdown actionscript privilege allowrestartonly flag",
+      "pluralPhrase": "effective restartandshutdown actionscript privilege allowrestartonly flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective restartandshutdown actionscript privilege none flag of <bes user> : boolean": {
+      "key": "effective restartandshutdown actionscript privilege none flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective restartandshutdown actionscript privilege none flag",
+      "pluralPhrase": "effective restartandshutdown actionscript privilege none flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective restartandshutdown postaction privilege allowboth flag of <bes user> : boolean": {
+      "key": "effective restartandshutdown postaction privilege allowboth flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective restartandshutdown postaction privilege allowboth flag",
+      "pluralPhrase": "effective restartandshutdown postaction privilege allowboth flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective restartandshutdown postaction privilege allowrestartonly flag of <bes user> : boolean": {
+      "key": "effective restartandshutdown postaction privilege allowrestartonly flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective restartandshutdown postaction privilege allowrestartonly flag",
+      "pluralPhrase": "effective restartandshutdown postaction privilege allowrestartonly flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective restartandshutdown postaction privilege none flag of <bes user> : boolean": {
+      "key": "effective restartandshutdown postaction privilege none flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective restartandshutdown postaction privilege none flag",
+      "pluralPhrase": "effective restartandshutdown postaction privilege none flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective show other action flag of <bes user> : boolean": {
+      "key": "effective show other action flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective show other action flag",
+      "pluralPhrase": "effective show other action flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective stop other actions flag of <bes user> : boolean": {
+      "key": "effective stop other actions flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective stop other actions flag",
+      "pluralPhrase": "effective stop other actions flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective unmanagedasset privilege scanpoint flag of <bes user> : boolean": {
+      "key": "effective unmanagedasset privilege scanpoint flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective unmanagedasset privilege scanpoint flag",
+      "pluralPhrase": "effective unmanagedasset privilege scanpoint flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective unmanagedasset privilege showall flag of <bes user> : boolean": {
+      "key": "effective unmanagedasset privilege showall flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective unmanagedasset privilege showall flag",
+      "pluralPhrase": "effective unmanagedasset privilege showall flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "effective unmanagedasset privilege shownone flag of <bes user> : boolean": {
+      "key": "effective unmanagedasset privilege shownone flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "effective unmanagedasset privilege shownone flag",
+      "pluralPhrase": "effective unmanagedasset privilege shownone flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit can create actions flag of <bes user> : boolean": {
+      "key": "explicit can create actions flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit can create actions flag",
+      "pluralPhrase": "explicit can create actions flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit can lock flag of <bes user> : boolean": {
+      "key": "explicit can lock flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit can lock flag",
+      "pluralPhrase": "explicit can lock flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit can send multiple refresh flag of <bes user> : boolean": {
+      "key": "explicit can send multiple refresh flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit can send multiple refresh flag",
+      "pluralPhrase": "explicit can send multiple refresh flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit can submit queries flag of <bes user> : boolean": {
+      "key": "explicit can submit queries flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit can submit queries flag",
+      "pluralPhrase": "explicit can submit queries flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit custom content flag of <bes user> : boolean": {
+      "key": "explicit custom content flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit custom content flag",
+      "pluralPhrase": "explicit custom content flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit master flag of <bes user> : boolean": {
+      "key": "explicit master flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit master flag",
+      "pluralPhrase": "explicit master flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit restartandshutdown actionscript privilege allowboth flag of <bes user> : boolean": {
+      "key": "explicit restartandshutdown actionscript privilege allowboth flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit restartandshutdown actionscript privilege allowboth flag",
+      "pluralPhrase": "explicit restartandshutdown actionscript privilege allowboth flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit restartandshutdown actionscript privilege allowrestartonly flag of <bes user> : boolean": {
+      "key": "explicit restartandshutdown actionscript privilege allowrestartonly flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit restartandshutdown actionscript privilege allowrestartonly flag",
+      "pluralPhrase": "explicit restartandshutdown actionscript privilege allowrestartonly flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit restartandshutdown actionscript privilege none flag of <bes user> : boolean": {
+      "key": "explicit restartandshutdown actionscript privilege none flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit restartandshutdown actionscript privilege none flag",
+      "pluralPhrase": "explicit restartandshutdown actionscript privilege none flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit restartandshutdown postaction privilege allowboth flag of <bes user> : boolean": {
+      "key": "explicit restartandshutdown postaction privilege allowboth flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit restartandshutdown postaction privilege allowboth flag",
+      "pluralPhrase": "explicit restartandshutdown postaction privilege allowboth flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit restartandshutdown postaction privilege allowrestartonly flag of <bes user> : boolean": {
+      "key": "explicit restartandshutdown postaction privilege allowrestartonly flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit restartandshutdown postaction privilege allowrestartonly flag",
+      "pluralPhrase": "explicit restartandshutdown postaction privilege allowrestartonly flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit restartandshutdown postaction privilege none flag of <bes user> : boolean": {
+      "key": "explicit restartandshutdown postaction privilege none flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit restartandshutdown postaction privilege none flag",
+      "pluralPhrase": "explicit restartandshutdown postaction privilege none flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit show other action flag of <bes user> : boolean": {
+      "key": "explicit show other action flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit show other action flag",
+      "pluralPhrase": "explicit show other action flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit stop other actions flag of <bes user> : boolean": {
+      "key": "explicit stop other actions flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit stop other actions flag",
+      "pluralPhrase": "explicit stop other actions flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit unmanagedasset privilege scanpoint flag of <bes user> : boolean": {
+      "key": "explicit unmanagedasset privilege scanpoint flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit unmanagedasset privilege scanpoint flag",
+      "pluralPhrase": "explicit unmanagedasset privilege scanpoint flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit unmanagedasset privilege showall flag of <bes user> : boolean": {
+      "key": "explicit unmanagedasset privilege showall flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit unmanagedasset privilege showall flag",
+      "pluralPhrase": "explicit unmanagedasset privilege showall flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
+    "explicit unmanagedasset privilege shownone flag of <bes user> : boolean": {
+      "key": "explicit unmanagedasset privilege shownone flag of <bes user> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "explicit unmanagedasset privilege shownone flag",
+      "pluralPhrase": "explicit unmanagedasset privilege shownone flags",
+      "directObjectType": "bes user",
+      "availability": {
+        "11.0.6.0": [
+          "Session"
+        ]
+      }
+    },
     "ldap directory of <bes user> : bes ldap directory": {
       "key": "ldap directory of <bes user> : bes ldap directory",
       "type": "property",
