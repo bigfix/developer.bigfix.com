@@ -2,9 +2,12 @@
 title: Token
 ---
 
-Up to version 11.0.5, the BigFix REST APIs only supported HTTP(S) Basic Authentication. Starting from version 11.0.6, BigFix also supports token-based authentication, which can be used to access the BigFix Server REST APIs, the BigFix Explorer REST APIs and the IEM CLI tool, as an alternative to Basic Authentication. The token name is shown only to its owner and it has a specific validity period. To learn more about bearer token authentication, see [Configuring bearer token authentication](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_token_authentication.html).
+Up to version 11.0.5, the BigFix REST APIs only supported HTTP(S) Basic Authentication. Starting from version 11.0.6, BigFix also supports token-based authentication, which can be used to access the BigFix Server REST APIs, the BigFix Explorer REST APIs and the IEM CLI tool, as an alternative to Basic Authentication. The token name is shown only to its owner and it has a specific validity period.
 
-This family of REST APIs allow you to create, modify and delete the tokens.
+To enable this feature, you must first create the token secret key using the BigFix Administration Tool `createtokenkey` command described in [BESAdmin Windows Command Line](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Installation/c_besadmin_windows_cli.html) and [BESAdmin Linux Command Line](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Installation/c_besadmin_linux_cli.html).
+To learn more about bearer token authentication, see [Configuring bearer token authentication](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_token_authentication.html).
+
+This family of REST APIs allows you to create, modify and delete the tokens.
 
 {% restapi "/api/tokens", "GET", "Returns the list of tokens of the currently logged on operator." %}
 
@@ -221,7 +224,7 @@ You can add the following parameters:
 The following example shows how edit the token with id `1`, changing its name to "my_edited_token" and its duration to 10 days.
 From the terminal, run following command:
 ```
-curl -X PUT --user {username}:{password} https://server.bigfix.com:52311/api/token/edit/1?name=my_edited_token&duration=10
+curl -X PUT --user {username}:{password} https://server.bigfix.com:52311/api/token/1?name=my_edited_token&duration=10
 ```
 
 Upon successful execution, the command will return a HTTP 200 OK success status response code.
@@ -238,7 +241,7 @@ Upon successful execution, the command will return a HTTP 200 OK success status 
 The following example shows how delete the token with id `1`.
 From the terminal, run following command:
 ```
-curl -X DEL --user {username}:{password} https://server.bigfix.com:52311/api/token/1
+curl -X DELETE --user {username}:{password} https://server.bigfix.com:52311/api/token/1
 ```
 
 Upon successful execution, the command will return a HTTP 200 OK success status response code.
