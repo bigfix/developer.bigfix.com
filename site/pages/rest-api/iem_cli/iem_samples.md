@@ -243,6 +243,13 @@ To perform a login using the Windows authentication:
 iem.exe login --server=mybfserver.mydomain --windowsAuthentication
 ```
 
+Starting with BigFix Platform 11.0.6, you can also use a token-based authentication.
+To perform a login using an authentication token, you can pass it as a text parameter:
+
+```
+./iem login --server=https://server.bigfix.com:52311 --token="cGt2PxRXAX-v4N2tTUQr-NNUSV8jN3v_R7VNnQAAAAE"
+```
+
 ## Operators
 To display a list of operators (local and LDAP), run the following command:
 

@@ -389,6 +389,10 @@ No documentation exists.
 
 Synonym for &#39;client license&#39;.
 
+# bes peer download : bes peer download
+
+Returns a list of all peer download events collected within the deployment.
+
 # bes property : bes property
 
 Returns a list of all the BES custom site objects.
@@ -407,7 +411,7 @@ No documentation exists.
 
 # bes site : bes site
 
-Returns a list of all the BES sites.
+Returns a list of all the external and master action sites. For the complete list of BigFix sites, use `all bes sites` instead.
 
 # bes task : bes fixlet
 

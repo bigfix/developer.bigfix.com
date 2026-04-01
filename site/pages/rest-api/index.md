@@ -26,6 +26,9 @@ Navigate the REST API subtree on the right to access the following information:
   <dt>[Hints about BigFix REST API requests](./restapi_request_new.html)</dt>
   <dd>An overview about how to issue BigFix REST API requests. If you are new to BigFix REST API, read this part and then run the [Quick Tutorial](./gettingstarted.html).</dd>
 
+  <dt>[Known limitations and workarounds](./restapi_limitations_workarounds.html)</dt>
+  <dd>An overview about the known limitations and possible workarounds for the REST APIs.</dd>
+
   <dt>[Quick Tutorial](./gettingstarted.html)</dt>
   <dd>A tutorial to get started with the methods and resources made available by the BigFix REST API.</dd>
 

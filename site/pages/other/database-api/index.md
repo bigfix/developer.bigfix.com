@@ -2,7 +2,12 @@
 title: Database API 
 ---
 
-The Database API consists of a set of SQL views that ship with the BigFix SQL database. 
+The Database API consists of a set of SQL views that ship with the BigFix SQL database.
+
+**Note:** Instead of directly querying the BigFix Server database, we recommend using the [BigFix Platform REST APIs](https://developer.bigfix.com/rest-api/api/), which provide a reliable way to retrieve data in an easy-to-use format.
+
+**Note:** The structure of the database may be subject to changes across BigFix versions, whereas the REST APIs are meant to remain backward compatible.
+
 These views enable applications to query the database directly by using
 MSSQL-compatible interfaces such as ADO or ODBC. A typical application might
 be a Perl cgi program that creates an HTML report for online viewing. Perl uses

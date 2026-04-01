@@ -17,6 +17,9 @@ nav:
   - name: Hints about BigFix REST API requests
     href: /rest-api/restapi_request_new.html
 
+  - name: Known limitations and workarounds
+    href: /rest-api/restapi_limitations_workarounds.html
+
   - name: Quick Tutorial
     href: /rest-api/gettingstarted.html
 
@@ -78,6 +81,9 @@ nav:
       - name: Operator
         href: /rest-api/api/operator.html
 
+      - name: PeerNest
+        href: /rest-api/api/peernest.html
+
       - name: Property
         href: /rest-api/api/property.html
 
@@ -95,6 +101,9 @@ nav:
 
       - name: Task
         href: /rest-api/api/task.html
+
+      - name: Token
+        href: /rest-api/api/token.html
 
       - name: Upload
         href: /rest-api/api/upload.html
@@ -168,7 +177,7 @@ nav:
         href: /rest-api/iem_cli/location.html
 
       - name: User Authentication and Session Management
-        href: /rest-api/iem_cli/logging.html
+        href: /rest-api/iem_cli/user_authentication.html
 
       - name: Running Requests from the IEM CLI
         href: /rest-api/iem_cli/iem_requests.html

@@ -6,6 +6,17 @@ No documentation exists.
 
 Returns `True` if the role has been granted the privilege to use BigFix Query.
 
+# id of &lt;bes role&gt; : integer
+
+Returns a natural number that uniquely identifies the role. It is supported on the BigFix Console, Web Reports Server and BigFix Explorer.
+
+{% qna %}
+Q: (id of it, name of it) of bes roles
+A: 77, role-a
+A: 101, role-b
+A: 107, role-c
+{% endqna %}
+
 # master flag of &lt;bes role&gt; : boolean
 
 No documentation exists.

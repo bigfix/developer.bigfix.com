@@ -342,7 +342,7 @@ The complete URL for this REST API request can be found in the `Resource` attrib
 
 For example, to delete the Identity Provider directory with ID `55`, run the following command:
 ```
-curl -X DEL --user {username}:{password} https://server.bigfix.com:52311/api/idpdirectory/55
+curl -X DELETE --user {username}:{password} https://server.bigfix.com:52311/api/idpdirectory/55
 ```
 Upon successful execution, the command will return a HTTP 200 OK success status response code, indicating that the Identity Provider Directory has been deleted.
 {% endrestapi %}

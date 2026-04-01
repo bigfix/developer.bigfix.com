@@ -1,6 +1,6 @@
 # type: network adapter
 
-One or more network adapters may be inspected using this property of the network object. Each network adapter has a number of interesting properties such as the MAC address.
+This inspector represents a network adapter, such as an Ethernet port, or a Wi-Fi card, or a Bluetooth card. Each network adapter provides access to several properties, such as the MAC address.
 
 # address list of &lt;network adapter&gt; : network address list
 
@@ -162,6 +162,43 @@ Returns the mac address of the network adapter.
 # maximum transmission unit of &lt;network adapter&gt; : integer
 
 The maximum transmission unit (MTU) size, in bytes, of the specified adapter.
+
+# metered connection of &lt;network adapter&gt; : boolean
+
+Returns `True` or `False` depending on whether the network adapter is currently connected and set as a metered connection. This corresponds to the status of the `Set as metered connection` checkbox in the connection properties displayed by the Windows Settings application.
+If the network adapter is not connected, this property is `False`.
+Note: On Windows Server, this property is always `False`, because Windows Server editions do not expose metered-connection cost information.
+
+In the following example, a Windows computer has three network adapters:
+
+* Ethernet0, not connected to a network
+* Ethernet1, connected to a network and not metered
+* Ethernet2, connected to a network and metered
+
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of network
+A: Ethernet0, False
+A: Ethernet1, False
+A: Ethernet2, True
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is not connected to a network.
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of networks
+A: Wi-Fi, False
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is connected to a network and not metered.
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of networks
+A: Wi-Fi, False
+{% endqna %}
+
+In the following example, a Windows computer has a Wi-Fi network adapter that is connected to a network and metered.
+{% qna %}
+Q: (friendly names of it, metered connections of it) of adapters of networks
+A: Wi-Fi, True
+{% endqna %}
 
 # multicast support of &lt;network adapter&gt; : boolean
 

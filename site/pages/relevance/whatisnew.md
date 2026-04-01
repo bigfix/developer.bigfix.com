@@ -8,6 +8,26 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 6 Added Inspector Type
+
+New inspector type named *bes peer download* was added to return information about files that were downloaded via the PeerNest feature.
+
+For details, see [bes peer download](https://developer.bigfix.com/relevance/reference/bes-peer-download.html).
+
+#### Version 11 Patch 6 Added Inspector Properties
+
+New inspector property named *evaluation period of* was added to the existing *bes fixlet* inspector to return information about the frequency with which clients must re-evaluate the Fixlet.
+
+For details, see [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html).
+
+New inspector property named *metered connection of* was added to the existing *network adapter* inspector to return information about the network adapters that are configured as metered connections.
+
+For details, see [network adapter](https://developer.bigfix.com/relevance/reference/network-adapter.html).
+
+New inspector properties named *effective can create actions flag of*, *effective can lock flag of*, *effective can send multiple refresh flag of*, *effective can submit queries flag of*, *effective custom content flag of*, *effective master flag of*, *effective restartandshutdown actionscript privilege allowboth flag of*, *effective restartandshutdown actionscript privilege allowrestartonly flag of*, *effective restartandshutdown actionscript privilege none flag of*, *effective restartandshutdown postaction privilege allowboth flag of*, *effective restartandshutdown postaction privilege allowrestartonly flag of*, *effective restartandshutdown postaction privilege none flag of*, *effective show other action flag of*, *effective stop other actions flag of*, *effective unmanagedasset privilege scanpoint flag of*, *effective unmanagedasset privilege showall flag of*, *effective unmanagedasset privilege shownone flag of*, *explicit can create actions flag of*, *explicit can lock flag of*, *explicit can send multiple refresh flag of*, *explicit can submit queries flag of*, *explicit custom content flag of*, *explicit master flag of*, *explicit restartandshutdown actionscript privilege allowboth flag of*, *explicit restartandshutdown actionscript privilege allowrestartonly flag of*, *explicit restartandshutdown actionscript privilege none flag of*, *explicit restartandshutdown postaction privilege allowboth flag of*, *explicit restartandshutdown postaction privilege allowrestartonly flag of*, *explicit restartandshutdown postaction privilege none flag of*, *explicit show other action flag of*, *explicit stop other actions flag of*, *explicit unmanagedasset privilege scanpoint flag of*, *explicit unmanagedasset privilege showall flag of* and *explicit unmanagedasset privilege shownone flag of* were added to the existing *bes user* inspector to return information about the explicit and effective permissions of a BigFix Operator.
+
+For details, see [bes user](https://developer.bigfix.com/relevance/reference/bes-user.html).
+
 #### Version 11 Patch 5 Added Inspector Types
 
 New inspector types named *yaml key* and *yaml value* were added to represent YAML keys and values.

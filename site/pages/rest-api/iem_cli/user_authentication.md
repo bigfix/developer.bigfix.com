@@ -4,8 +4,10 @@ title: User Authentication and Session Management
 To start the command line interface, first log in to the server with the following command from a command prompt:
 
 ```
-iem LOGIN --server <bigfix_server> --user <operator_name> --password <operator_password> [--masthead <path_to_masthead>]
+iem LOGIN --server=<bigfix_server> --user=<operator_name> --password=<operator_password> [--masthead=<path_to_masthead>]
 ```
+
+For more details, see [IEM Command-Line Interface Samples](/rest-api/iem_cli/iem_samples.html#login)
 
 If the server uses a self-signed certificate for HTTPS interactions, at the first login you are prompted to accept or decline the certificate. 
 If you choose to trust it, the certificate is cached in the local data directory and used to validate all future interactions with the server.
@@ -14,6 +16,16 @@ You can use the *--masthead* argument to prevent displaying the certificate trus
 Upon a successful login, the server provides the IEM CLI utility with a session token that lasts, by default, 5 minutes. After 5 minutes of inactivity, 
 the session token expires and you must log in again to the IEM CLI. You can customize the duration of the session token by configuring the 
 **_BESDataServer_APIAuthenticationTimeoutMinutes** setting on the server and then restarting the server.
+
+## Token Authentication
+Starting from BigFix Platform 11.0.6, you can authenticate to the IEM CLI by passing the authentication token as a text parameter, as follows:
+```
+iem login --server=<bigfix_server> --token=<token>
+```
+
+In the above, `<token>` is the base64-encoded token.
+
+To learn more about bearer token authentication, see [Configuring bearer token authentication](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_token_authentication.html).
 
 ## Updating the root server certificate
 If the root server certificate has changed, for example because the server signing certificate was rotated, as described in 
