@@ -7172,6 +7172,18 @@
         ]
       }
     },
+    "<bes action> as xml string : string": {
+      "key": "<bes action> as xml string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "bes action",
+      "phrase": "xml string",
+      "availability": {
+        "11.0.7.0": [
+          "Session"
+        ]
+      }
+    },
     "action dependency of <bes action> : bes action": {
       "key": "action dependency of <bes action> : bes action",
       "type": "property",
@@ -9925,6 +9937,18 @@
         ]
       }
     },
+    "<bes computer group> as xml string : string": {
+      "key": "<bes computer group> as xml string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "bes computer group",
+      "phrase": "xml string",
+      "availability": {
+        "11.0.7.0": [
+          "Session"
+        ]
+      }
+    },
     "automatic flag of <bes computer group> : boolean": {
       "key": "automatic flag of <bes computer group> : boolean",
       "type": "property",
@@ -11351,6 +11375,18 @@
       "phrase": "xml",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes fixlet> as xml string : string": {
+      "key": "<bes fixlet> as xml string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "bes fixlet",
+      "phrase": "xml string",
+      "availability": {
+        "11.0.7.0": [
           "Session"
         ]
       }
@@ -13013,6 +13049,18 @@
       "phrase": "xml",
       "availability": {
         "8.0.584.0": [
+          "Session"
+        ]
+      }
+    },
+    "<bes property> as xml string : string": {
+      "key": "<bes property> as xml string : string",
+      "type": "cast",
+      "resultType": "string",
+      "argType": "bes property",
+      "phrase": "xml string",
+      "availability": {
+        "11.0.7.0": [
           "Session"
         ]
       }

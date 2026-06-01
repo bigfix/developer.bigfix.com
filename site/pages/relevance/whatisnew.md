@@ -8,6 +8,12 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 7 Added Inspector Cast
+
+New inspector cast named *as xml string* was added to convert the specified BES object to an XML string.
+
+For details, see [bes action](https://developer.bigfix.com/relevance/reference/bes-action.html), [bes computer group](https://developer.bigfix.com/relevance/reference/bes-computer-group.html), [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html) and [bes property](https://developer.bigfix.com/relevance/reference/bes-property.html).
+
 #### Version 11 Patch 6 Added Inspector Type
 
 New inspector type named *bes peer download* was added to return information about files that were downloaded via the PeerNest feature.
