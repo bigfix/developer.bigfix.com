@@ -14,17 +14,18 @@ Version | Platforms
 
 ## Syntax
 
-    add prefetch item [name=<name>] [sha1=<sha1>] [sha256=<sha256>] size=<size> url=<url> [; ...] 
+    add prefetch item [name=<name>] [sha1=<sha1>] [sha256=<sha256>] [sha512:<sha512>] size=<size> url=<url> [; ...] 
 
 Where:
 
 * `name` is an optional file name for the download. If no name is specified, it will be automatically determined from the URL.
 * `sha1` is an optional [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
 * `sha256` is an optional [SHA-256](https://en.wikipedia.org/wiki/SHA-2) of the file.
+* `sha512` is an optional [SHA-512](https://en.wikipedia.org/wiki/SHA-2) of the file. This option is available starting with BigFix version 11.0.7.
 * `size` is the size of the file in bytes.
 * `url` is the URL of the file.
 
-At least one of `sha1` or `sha256` must be present. To download a file without
+At least one of hash (sha1, sha256, sha512) must be specified. To download a file without
 specifying a hash, use the [add nohash prefetch item](./add-nohash-prefetch-
 item.html) command.
 
@@ -45,6 +46,14 @@ add prefetch item {"name=up.exe sha1=12 size=45 url=http://ms.com/hot.exe"}
 endif
 end prefetch block
 wait {download path "up.exe"} 
+```
+
+This example demonstrates the add prefetch item command using SHA-512.
+
+```actionscript
+begin prefetch block
+add prefetch item {"name=hodor.jpg sha512=35aaf8fac5c0a1501e2df2b4a52aa3b5453853c6402b422f6057cae2826838f5c71c39ed53fca0ea64b715047863520e0902f935cd0ebaca126263458b65bec7 size=57656 url=https://i.imgur.com/YAUeUOG.jpeg "}
+end prefetch block
 ```
 
 ## Notes
