@@ -40,7 +40,13 @@ On an AIX system, returns the logical volume corresponding to the given filesyst
 
 # mount option of &lt;filesystem&gt; : string
 
-No documentation exists.
+Returns the mount options for the specified filesystem.
+
+The following example shows how to retrieve the mount options of a JFS2 file system on an AIX 7.2 installation.
+{% qna %}
+Q: mount option of filesystem of folder "/tmp"
+A: rw, log=/dev/hd8
+{% endqna %}
 
 # mount point of &lt;filesystem&gt; : string
 
