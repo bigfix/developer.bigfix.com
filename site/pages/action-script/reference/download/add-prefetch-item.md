@@ -25,7 +25,7 @@ Where:
 * `size` is the size of the file in bytes.
 * `url` is the URL of the file.
 
-At least one of hash (sha1, sha256, sha512) must be specified. To download a file without
+At least one hash option (`sha1`, `sha256`, `sha512`) must be specified. To download a file without
 specifying a hash, use the [add nohash prefetch item](./add-nohash-prefetch-
 item.html) command.
 

@@ -17,12 +17,12 @@ Version | Platforms
 
 ## Syntax
 
-    prefetch <name> sha1:<sha1> size:<size> <url> [sha256:<sha256>] [sha512:<sha512>]
+    prefetch <name> size:<size> <url> [sha1:<sha1>] [sha256:<sha256>] [sha512:<sha512>]
 
 Where:
 
 * `name` is the file name for the download.
-* `sha1` is the [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
+* `sha1` is an optional [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
 * `sha256` is an optional [SHA-256](https://en.wikipedia.org/wiki/SHA-2) of the file.
 * `sha512` is an optional [SHA-512](https://en.wikipedia.org/wiki/SHA-2) of the file. This option is available starting with BigFix version 11.0.7.
 * `size` is the size of the file in bytes.
@@ -35,6 +35,8 @@ command will fail:
 * Name must be 32 characters or less.
 * Name must only be composed of ASCII characters a-z, A-Z, 0-9, -, _, and
   non-leading periods.
+
+At least one hash option (`sha1`, `sha256`, `sha512`) must be specified.
 
 ## Examples
 
