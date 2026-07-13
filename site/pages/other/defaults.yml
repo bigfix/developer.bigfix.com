@@ -70,6 +70,9 @@ nav:
     href: /other/explorer-api/
     children:
 
+    - name: Role
+      href: /other/explorer-api/role.html
+
     - name: Session Relevance
       href: /other/explorer-api/session_relevance.html
 
