@@ -11,7 +11,6 @@ The HTTP Server of BigFix Explorer, deployed by default on port 9383, will enabl
 ## Available resources to evaluate session relevance
 The REST APIs made available by the BigFix Explorer are:
 - api/relevance used to evaluate the session relevance using the new BigFix Platform component which is BigFix Explorer.
-- api/role used to add (or remove) BigFix operators to (or from) a role. Available starting with 11.0.7.
 - api/status used to display the status of the target BigFix Explorer instance.
 
 ## User Authentication
