@@ -8,6 +8,18 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 7 Added Inspector Types
+
+New inspector types named *idp group* and *idp user* were added to return information about the groups and users associated with a computer joined to an Identity Provider (IdP).
+
+For details, see [idp group](https://developer.bigfix.com/relevance/reference/idp-group.html) and [idp user](https://developer.bigfix.com/relevance/reference/idp-user.html).
+
+#### Version 11 Patch 7 Added Inspector Properties
+
+New inspector properties named *idp directory type of*, *idp distinguished name of*, *idp group of*, *idp id of*, *idp name of*, *idp sam account name of* and *idp user of* were added to the existing *client* inspector to return various information if the computer is joined to an Identity Provider (IdP).
+
+For details, see [client](https://developer.bigfix.com/relevance/reference/client.html).
+
 #### Version 11 Patch 7 Added Inspector Cast
 
 New inspector cast named *as xml string* was added to convert the specified BES object to an XML string. The new cast was introduced exclusively for the BigFix Console and BigFix Explorer. It is not supported in Web Reports.

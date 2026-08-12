@@ -75,6 +75,73 @@ Returns an object corresponding to the time it takes to evaluate the content set
 
 Returns the FXF Encoding IANA name of the encoding for your deployment. This encoding represents all FXF files that the server generates.
 
+# idp directory type of &lt;client&gt; : string
+
+Returns the type of the identity provider that the computer is joined to. Otherwise, if no fallback client setting is set, returns an error. The possible return values are:
+* `ActiveDirectory`, if the computer is joined to Active Directory
+* `EntraID`, if the computer is joined to Entra ID
+* `Manual`, if the client settings `_BESClient_ManageBy_UserPrincipalName` or `_BESClient_ManageBy_MemberOf` are set.
+
+{% qna %}
+Q: idp directory type of client
+A: ActiveDirectory
+{% endqna %}
+
+# idp distinguished name of &lt;client&gt; : string
+
+If the computer is joined to an Active Directory, returns the computer's LDAP distinguished name. Otherwise, returns an error.
+
+{% qna %}
+Q: idp distinguished name of client
+A: cn=alima-ubuntu22,cn=computers,dc=hclima,dc=local
+{% endqna %}
+
+# idp group of &lt;client&gt; : idp group
+
+If the computer is joined to an identity provider, returns a list of objects representing the groups it belongs to. Otherwise, returns an error.
+
+{% qna %}
+Q: names of idp groups of client
+A: WinLaptop
+A: Rome Lab Computers
+{% endqna %}
+
+# idp id of &lt;client&gt; : string
+
+If the computer is joined to Entra ID, returns the GUID. Otherwise, returns an error.
+
+{% qna %}
+Q: idp id of client
+A: 12489374-008b-400f-bceb-a6b2c82c48da
+{% endqna %}
+
+# idp name of &lt;client&gt; : string
+
+If the computer is joined to an identity provider, returns its hostname or display name. Otherwise, returns an error.
+
+{% qna %}
+Q: idp name of client
+A: ALIMA-RELAY
+{% endqna %}
+
+# idp sam account name of &lt;client&gt; : string
+
+If the computer is joined to Active Directory, returns the computer's SAM account name. Otherwise, returns an error.
+
+{% qna %}
+Q: idp sam account name of client
+A: ALIMA-UBUNTU22$
+{% endqna %}
+
+# idp user of &lt;client&gt; : idp user
+
+If the computer is joined to an identity provider, returns an object representing the user that manages it. Otherwise, returns an error.
+
+{% qna %}
+Q: exists idp user of client
+A: True
+{% endqna %}
+
 # info of &lt;client&gt; : string
 
 No documentation exists.

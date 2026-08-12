@@ -3696,6 +3696,38 @@
         ]
       }
     },
+    "idp group": {
+      "name": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp user": {
+      "name": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "integer range": {
       "name": "integer range",
       "availability": {
@@ -120122,6 +120154,531 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "common name of <idp group> : string": {
+      "key": "common name of <idp group> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "common name",
+      "pluralPhrase": "common names",
+      "directObjectType": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "directory type of <idp group> : string": {
+      "key": "directory type of <idp group> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "directory type",
+      "pluralPhrase": "directory types",
+      "directObjectType": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "distinguished name of <idp group> : string": {
+      "key": "distinguished name of <idp group> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "distinguished name",
+      "pluralPhrase": "distinguished names",
+      "directObjectType": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "id of <idp group> : string": {
+      "key": "id of <idp group> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "name of <idp group> : string": {
+      "key": "name of <idp group> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sam account name of <idp group> : string": {
+      "key": "sam account name of <idp group> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sam account name",
+      "pluralPhrase": "sam account names",
+      "directObjectType": "idp group",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "city of <idp user> : string": {
+      "key": "city of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "city",
+      "pluralPhrase": "cities",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "common name of <idp user> : string": {
+      "key": "common name of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "common name",
+      "pluralPhrase": "common names",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "department of <idp user> : string": {
+      "key": "department of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "department",
+      "pluralPhrase": "departments",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "directory type of <idp user> : string": {
+      "key": "directory type of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "directory type",
+      "pluralPhrase": "directory types",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "distinguished name of <idp user> : string": {
+      "key": "distinguished name of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "distinguished name",
+      "pluralPhrase": "distinguished names",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "id of <idp user> : string": {
+      "key": "id of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "id",
+      "pluralPhrase": "ids",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp groups of <idp user> : idp groups": {
+      "key": "idp groups of <idp user> : idp groups",
+      "type": "property",
+      "resultType": "idp groups",
+      "singularPhrase": "idp groups",
+      "pluralPhrase": "idp groups",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "name of <idp user> : string": {
+      "key": "name of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "name",
+      "pluralPhrase": "names",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "office location of <idp user> : string": {
+      "key": "office location of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "office location",
+      "pluralPhrase": "office locations",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "sam account name of <idp user> : string": {
+      "key": "sam account name of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "sam account name",
+      "pluralPhrase": "sam account names",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "state of <idp user> : string": {
+      "key": "state of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "state",
+      "pluralPhrase": "states",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "user principal name of <idp user> : string": {
+      "key": "user principal name of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "user principal name",
+      "pluralPhrase": "user principal names",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp directory type of <client> : string": {
+      "key": "idp directory type of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "idp directory type",
+      "pluralPhrase": "idp directory types",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp distinguished name of <client> : string": {
+      "key": "idp distinguished name of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "idp distinguished name",
+      "pluralPhrase": "idp distinguished names",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp group of <client> : idp group": {
+      "key": "idp group of <client> : idp group",
+      "type": "property",
+      "resultType": "idp group",
+      "singularPhrase": "idp group",
+      "pluralPhrase": "idp groups",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp id of <client> : string": {
+      "key": "idp id of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "idp id",
+      "pluralPhrase": "idp ids",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp name of <client> : string": {
+      "key": "idp name of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "idp name",
+      "pluralPhrase": "idp names",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp sam account name of <client> : string": {
+      "key": "idp sam account name of <client> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "idp sam account name",
+      "pluralPhrase": "idp sam account names",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "idp user of <client> : idp user": {
+      "key": "idp user of <client> : idp user",
+      "type": "property",
+      "resultType": "idp user",
+      "singularPhrase": "idp user",
+      "pluralPhrase": "idp users",
+      "directObjectType": "client",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
