@@ -60,7 +60,7 @@ Q: id of idp user of client
 A: 7a4050c6-5a1a-4eab-80e6-6a0ed5730f5e
 {% endqna %}
 
-# idp groups of &lt;idp user&gt; : idp groups
+# idp group of &lt;idp user&gt; : idp group
 
 Returns a list of objects representing the groups that the IdP user belongs to. Returns an error if this information is not available.
 

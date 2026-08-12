@@ -120409,11 +120409,11 @@
         ]
       }
     },
-    "idp groups of <idp user> : idp groups": {
-      "key": "idp groups of <idp user> : idp groups",
+    "idp group of <idp user> : idp group": {
+      "key": "idp group of <idp user> : idp group",
       "type": "property",
-      "resultType": "idp groups",
-      "singularPhrase": "idp groups",
+      "resultType": "idp group",
+      "singularPhrase": "idp group",
       "pluralPhrase": "idp groups",
       "directObjectType": "idp user",
       "availability": {
