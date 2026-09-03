@@ -16,7 +16,7 @@ For details, see [idp group](https://developer.bigfix.com/relevance/reference/id
 
 #### Version 11 Patch 7 Added Inspector Properties
 
-New inspector properties named *idp directory type of*, *idp distinguished name of*, *idp group of*, *idp id of*, *idp name of*, *idp sam account name of* and *idp user of* were added to the existing *client* inspector to return various information if the computer is joined to an Identity Provider (IdP).
+New inspector properties named *idp directory type of*, *idp display name of*, *idp distinguished name of*, *idp group of*, *idp id of*, *idp sam account name of* and *idp user of* were added to the existing *client* inspector to return various information if the computer is joined to an Identity Provider (IdP).
 
 For details, see [client](https://developer.bigfix.com/relevance/reference/client.html).
 

@@ -26,6 +26,16 @@ A: ActiveDirectory
 A: ActiveDirectory
 {% endqna %}
 
+# display name of &lt;idp group&gt; : string
+
+Returns the display name of the IdP group. If the IdP group is an Active Directory group and has no display name, returns its name instead. Returns an error if this information is not available.
+
+{% qna %}
+Q: display names of idp groups of client
+A: WinLaptop
+A: Rome Lab Computers
+{% endqna %}
+
 # distinguished name of &lt;idp group&gt; : string
 
 If the group's identity provider is Active Directory, returns its distinguished name (DN). Otherwise, returns an error.
@@ -43,16 +53,6 @@ If the group's identity provider is Entra ID, returns group GUID. Otherwise, ret
 {% qna %}
 Q: ids of idp groups of client
 A: aa71ac1b-e6af-479f-90db-5511fa224dd3
-{% endqna %}
-
-# name of &lt;idp group&gt; : string
-
-Returns the display name of the IdP group.
-
-{% qna %}
-Q: names of idp groups of client
-A: WinLaptop
-A: Rome Lab Computers
 {% endqna %}
 
 # sam account name of &lt;idp group&gt; : string

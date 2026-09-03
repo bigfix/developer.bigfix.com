@@ -21,6 +21,15 @@ Q: common name of idp user of client
 A: Alberto Lima
 {% endqna %}
 
+# country of &lt;idp user&gt; : string
+
+Returns the country of the IdP user. Returns an error if this information is not available.
+
+{% qna %}
+Q: country of idp user of client
+A: Italy
+{% endqna %}
+
 # department of &lt;idp user&gt; : string
 
 Returns the department of the IdP user. Returns an error if this information is not available.
@@ -40,6 +49,15 @@ Returns the user's identity provider type. The possible return values are:
 {% qna %}
 Q: directory type of idp user of client
 A: ActiveDirectory
+{% endqna %}
+
+# display name of &lt;idp user&gt; : string
+
+Returns the display name of the IdP user. If the IdP user is an Active Directory account and has no display name, returns their name instead. Returns an error if this information is not available.
+
+{% qna %}
+Q: display name of idp user of client
+A: Test Name User
 {% endqna %}
 
 # distinguished name of &lt;idp user&gt; : string
@@ -70,15 +88,6 @@ A: Developers_Users
 A: Testers_Users
 {% endqna %}
 
-# name of &lt;idp user&gt; : string
-
-Returns the display name of the IdP user. Returns an error if this information is not available.
-
-{% qna %}
-Q: name of idp user of client
-A: Test Name User
-{% endqna %}
-
 # office location of &lt;idp user&gt; : string
 
 Returns information regarding the IdP user's office location. Returns an error if this information is not available.
@@ -99,11 +108,11 @@ A: alberto-lima
 
 # state of &lt;idp user&gt; : string
 
-Returns the State of the IdP user. Returns an error if this information is not available.
+Returns the state, province, or region of the IdP user. In this context, these terms refer to a subnational administrative division. For example, the state of California in the United States, the province of Ontario in Canada, or the region of Lazio in Italy. Returns an error if this information is unavailable.
 
 {% qna %}
 Q: state of idp user of client
-A: Italy
+A: Lazio
 {% endqna %}
 
 # user principal name of &lt;idp user&gt; : string

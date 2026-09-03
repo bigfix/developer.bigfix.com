@@ -120241,12 +120241,12 @@
         ]
       }
     },
-    "name of <idp group> : string": {
-      "key": "name of <idp group> : string",
+    "display name of <idp group> : string": {
+      "key": "display name of <idp group> : string",
       "type": "property",
       "resultType": "string",
-      "singularPhrase": "name",
-      "pluralPhrase": "names",
+      "singularPhrase": "display name",
+      "pluralPhrase": "display names",
       "directObjectType": "idp group",
       "availability": {
         "11.0.7.0": [
@@ -120310,6 +120310,27 @@
       "resultType": "string",
       "singularPhrase": "common name",
       "pluralPhrase": "common names",
+      "directObjectType": "idp user",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "country of <idp user> : string": {
+      "key": "country of <idp user> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "country",
+      "pluralPhrase": "countries",
       "directObjectType": "idp user",
       "availability": {
         "11.0.7.0": [
@@ -120430,12 +120451,12 @@
         ]
       }
     },
-    "name of <idp user> : string": {
-      "key": "name of <idp user> : string",
+    "display name of <idp user> : string": {
+      "key": "display name of <idp user> : string",
       "type": "property",
       "resultType": "string",
-      "singularPhrase": "name",
-      "pluralPhrase": "names",
+      "singularPhrase": "display name",
+      "pluralPhrase": "display names",
       "directObjectType": "idp user",
       "availability": {
         "11.0.7.0": [
@@ -120619,12 +120640,12 @@
         ]
       }
     },
-    "idp name of <client> : string": {
-      "key": "idp name of <client> : string",
+    "idp display name of <client> : string": {
+      "key": "idp display name of <client> : string",
       "type": "property",
       "resultType": "string",
-      "singularPhrase": "idp name",
-      "pluralPhrase": "idp names",
+      "singularPhrase": "idp display name",
+      "pluralPhrase": "idp display names",
       "directObjectType": "client",
       "availability": {
         "11.0.7.0": [

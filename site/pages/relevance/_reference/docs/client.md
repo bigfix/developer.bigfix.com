@@ -87,6 +87,15 @@ Q: idp directory type of client
 A: ActiveDirectory
 {% endqna %}
 
+# idp display name of &lt;client&gt; : string
+
+If the computer is joined to an Active Directory, returns the computer's display name or, if that field is empty, its NetBIOS computer name. If the computer is joined to Entra ID, returns the computer's display name. Returns an error if this information is not available.
+
+{% qna %}
+Q: idp display name of client
+A: ALIMA-RELAY
+{% endqna %}
+
 # idp distinguished name of &lt;client&gt; : string
 
 If the computer is joined to an Active Directory, returns the computer's LDAP distinguished name. Otherwise, returns an error.
@@ -113,15 +122,6 @@ If the computer is joined to Entra ID, returns the GUID. Otherwise, returns an e
 {% qna %}
 Q: idp id of client
 A: 12489374-008b-400f-bceb-a6b2c82c48da
-{% endqna %}
-
-# idp name of &lt;client&gt; : string
-
-If the computer is joined to an identity provider, returns its hostname or display name. Otherwise, returns an error.
-
-{% qna %}
-Q: idp name of client
-A: ALIMA-RELAY
 {% endqna %}
 
 # idp sam account name of &lt;client&gt; : string

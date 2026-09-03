@@ -23,7 +23,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <Name>john1</Name>
+        <DisplayName>john1</Name>
         <DistinguishedName>cn=john1,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
         <CommonName>john1</CommonName>
         <SAMAccountName>john1</SAMAccountName>
@@ -38,7 +38,8 @@ May return this XML:
         <Department>HCL</Department>
         <OfficeLocation>Rome</OfficeLocation>
         <City>Pordenone</City>
-        <State></State>
+        <State>Friuli</State>
+        <Country>Italy</Country>
     </IDPUser>
 </BESAPI>
 ```
@@ -53,7 +54,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <Name>Alberto Lima</Name>
+        <DisplayName>Alberto Lima</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -67,7 +68,8 @@ May return this XML:
         <Department>HCL BigFix Rome Lab</Department>
         <OfficeLocation>Rome, 7th floor</OfficeLocation>
         <City>Rome</City>
-        <State>Italy</State>
+        <State>Lazio</State>
+        <Country>Italy</Country>
     </IDPUser>
 </BESAPI>
 ```
@@ -147,7 +149,7 @@ May return this XML:
 **Response:** An XML text containing a single `IDPGroup` element with the properties of the specified IdP group.
 
 The `IDPGroup` element contains a set of elements representing the properties of an IdP group.
-* `Name`, the display name of the group.
+* `DisplayName`, the group's display name or, as a fallback on Active Directory, the group's name.
 * `DistinguishedName`, for an Active Directory group, its LDAP Distinguished Name, can be empty.
 * `CommonName`, for an Active Directory group, its common name (CN), can be empty.
 * `SAMAccountName`, for an Active Directory group, its SAM Account Name, can be empty.
@@ -166,7 +168,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPGroup>
-        <Name>domain admins</Name>
+        <DisplayName>domain admins</Name>
         <DistinguishedName>cn=domain admins,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
         <CommonName>domain admins</CommonName>
         <SAMAccountName>Domain Admins</SAMAccountName>
@@ -186,7 +188,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPGroup>
-        <Name>HCL Software</Name>
+        <DisplayName>HCL Software</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -214,7 +216,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <Name>john1</Name>
+        <DisplayName>john1</Name>
         <DistinguishedName>cn=john1,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
         <CommonName>john1</CommonName>
         <SAMAccountName>john1</SAMAccountName>
@@ -229,7 +231,8 @@ May return this XML:
         <Department>HCL</Department>
         <OfficeLocation>Rome</OfficeLocation>
         <City>Pordenone</City>
-        <State></State>
+        <State>Friuli</State>
+        <Country>Italy</Country>
     </IDPUser>
 </BESAPI>
 ```
@@ -244,7 +247,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <Name>Alberto Lima</Name>
+        <DisplayName>Alberto Lima</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -261,7 +264,7 @@ May return this XML:
         <State>Italy</State>
     </IDPUser>
     <IDPUser>
-        <Name>Alessandro Tari</Name>
+        <DisplayName>Alessandro Tari</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -275,7 +278,8 @@ May return this XML:
         <Department>HCL Rome</Department>
         <OfficeLocation>Roma</OfficeLocation>
         <City>Rome</City>
-        <State>Italy</State>
+        <State>Lazio</State>
+        <Country>Italy</Country>
     </IDPUser>
 </BESAPI>
 ```
@@ -510,7 +514,7 @@ It can be:
 * GET "/api/idp/group/{group_id}/users"
 
 Each `IDPUser` element contains a set of elements representing the properties of a user:
-* `Name`, the user name or display name.
+* `DisplayName`, the user's display name or, as a fallback on Active Directory, the user's name.
 * `DistinguishedName`, for an Active Directory user, their LDAP distinguished name (DN), can be empty.
 * `CommonName`, for an Active Directory user, their common name (CN), can be empty.
 * `SAMAccountName`, for an Active Directory user, their Security Account Manager (SAM) account name, can be empty.
@@ -522,7 +526,10 @@ Each `IDPUser` element contains a set of elements representing the properties of
 * `Department`, the user's department name, can be empty.
 * `OfficeLocation`, the user's office location, can be empty.
 * `City`, the user's city, can be empty.
-* `State`, the user's State or region, can be empty.
+* `State`, the user's state, province, or region of the IdP user, can be empty.
+* `Country`, the user's country, can be empty.
+
+In this context, the terms "state", "province", and "region" refer to a subnational administrative division. For example, the state of California in the United States, the province of Ontario in Canada, or the region of Lazio in Italy.
 
 `IDPComputer` elements returned by these REST APIs have the same format:
 * GET "/api/idp/user/{user_id}/computers"
@@ -531,7 +538,7 @@ Each `IDPUser` element contains a set of elements representing the properties of
 * GET "/api/idp/computer/{computer_id}"
 
 Each `IDPComputer` element contains a set of elements representing the properties of a computer managed by the user:
-* `Name`, the computer's hostname or display name.
+* `Name`, the computer's display name or, as a fallback on Active Directory, the computer's NETBIOS name.
 * `DistinguishedName`, for a computer joined to Active Directory, its LDAP Distinguished Name (DN), can be empty.
 * `CommonName`, for a computer joined to Active Directory, its common name (CN), can be empty.
 * `SAMAccountName`, for a computer joined to Active Directory, its Security Account Manager (SAM) account name, can be empty.
