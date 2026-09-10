@@ -15,7 +15,7 @@ Computers and users can be members members of multiple groups and of the same gr
 
 Example. On a deployment with computers joined to Active Directory, this call:
 ```
-https://server.bigfix.com:52311/api/idp/user/cn=john1,cn=users,dc=temx,dc=test,dc=com
+https://server.bigfix.com:52311/api/idp/user/cn=alice,cn=users,dc=temx,dc=test,dc=com
 ```
 
 May return this XML:
@@ -23,17 +23,17 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <DisplayName>john1</Name>
-        <DistinguishedName>cn=john1,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
-        <CommonName>john1</CommonName>
-        <SAMAccountName>john1</SAMAccountName>
+        <DisplayName>alice</Name>
+        <DistinguishedName>cn=alice,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
+        <CommonName>alice</CommonName>
+        <SAMAccountName>alice</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <UserPrincipalName>john1@temx.test.com</UserPrincipalName>
+        <UserPrincipalName>alice@temx.test.com</UserPrincipalName>
         <MemberOf>
             <Group>cn=administrators,cn=builtin,dc=temx,dc=test,dc=com</Group>
             <Group>cn=domain admins,cn=users,dc=temx,dc=test,dc=com</Group>
-            <Group>cn=local1,cn=users,dc=temx,dc=test,dc=com</Group>
+            <Group>cn=group1,dc=temx,dc=test,dc=com</Group>
         </MemberOf>
         <Department>HCL</Department>
         <OfficeLocation>Rome</OfficeLocation>
@@ -54,13 +54,13 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <DisplayName>Alberto Lima</Name>
+        <DisplayName>Bob Brown</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
         <ID>7a4050c6-5a1a-4eab-80e6-6a0ed5730f5e</ID>
         <DirectoryType>EntraID</DirectoryType>
-        <UserPrincipalName>alberto-lima-entra@hclimaentra.onmicrosoft.com</UserPrincipalName>
+        <UserPrincipalName>bob-entra@idptestentra.onmicrosoft.com</UserPrincipalName>
         <MemberOf>
             <Group>647329b2-f5a3-40be-8bd1-cd0f931cde50</Group>
             <Group>a7f5895d-5398-44ca-9794-b9637309c5f8</Group>
@@ -82,7 +82,7 @@ May return this XML:
 
 Example. On a deployment with computers joined to Active Directory, this call:
 ```
-https://server.bigfix.com:52311/api/idp/user/cn=john1,cn=users,dc=temx,dc=test,dc=com/computers
+https://server.bigfix.com:52311/api/idp/user/cn=alice,cn=users,dc=temx,dc=test,dc=com/computers
 ```
 
 May return this XML:
@@ -96,9 +96,9 @@ May return this XML:
         <SAMAccountName>WORKSTATION01$</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <ManagedBy>cn=john1,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
+        <ManagedBy>cn=alice,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
         <MemberOf>
-            <Group>cn=local1,cn=users,dc=temx,dc=test,dc=com</Group>
+            <Group>cn=group1,dc=temx,dc=test,dc=com</Group>
         </MemberOf>
     </IDPComputer>
 </BESAPI>
@@ -114,7 +114,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPComputer>
-        <Name>alima-portal</Name>
+        <Name>bob-portal</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -127,7 +127,7 @@ May return this XML:
         </MemberOf>
     </IDPComputer>
     <IDPComputer>
-        <Name>alima-ubuntu</Name>
+        <Name>bob-ubuntu</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -216,17 +216,17 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <DisplayName>john1</Name>
-        <DistinguishedName>cn=john1,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
-        <CommonName>john1</CommonName>
-        <SAMAccountName>john1</SAMAccountName>
+        <DisplayName>alice</Name>
+        <DistinguishedName>cn=alice,cn=users,dc=temx,dc=test,dc=com</DistinguishedName>
+        <CommonName>alice</CommonName>
+        <SAMAccountName>alice</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <UserPrincipalName>john1@temx.test.com</UserPrincipalName>
+        <UserPrincipalName>alice@temx.test.com</UserPrincipalName>
         <MemberOf>
             <Group>cn=administrators,cn=builtin,dc=temx,dc=test,dc=com</Group>
             <Group>cn=domain admins,cn=users,dc=temx,dc=test,dc=com</Group>
-            <Group>cn=local1,cn=users,dc=temx,dc=test,dc=com</Group>
+            <Group>cn=group1,dc=temx,dc=test,dc=com</Group>
         </MemberOf>
         <Department>HCL</Department>
         <OfficeLocation>Rome</OfficeLocation>
@@ -247,13 +247,13 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPUser>
-        <DisplayName>Alberto Lima</Name>
+        <DisplayName>Bob Brown</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
         <ID>7a4050c6-5a1a-4eab-80e6-6a0ed5730f5e</ID>
         <DirectoryType>EntraID</DirectoryType>
-        <UserPrincipalName>alberto-lima-entra@hclimaentra.onmicrosoft.com</UserPrincipalName>
+        <UserPrincipalName>bob-entra@idptestentra.onmicrosoft.com</UserPrincipalName>
         <MemberOf>
             <Group>647329b2-f5a3-40be-8bd1-cd0f931cde50</Group>
             <Group>a7f5895d-5398-44ca-9794-b9637309c5f8</Group>
@@ -264,13 +264,13 @@ May return this XML:
         <State>Italy</State>
     </IDPUser>
     <IDPUser>
-        <DisplayName>Alessandro Tari</Name>
+        <DisplayName>Carl Carter</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
         <ID>cd45aae5-eb18-487e-bbb4-350cbe0c15d4</ID>
         <DirectoryType>EntraID</DirectoryType>
-        <UserPrincipalName>alessandr.tari@hclimaentra.onmicrosoft.com</UserPrincipalName>
+        <UserPrincipalName>carl@idptestentra.onmicrosoft.com</UserPrincipalName>
         <MemberOf>
             <Group>647329b2-f5a3-40be-8bd1-cd0f931cde50</Group>
             <Group>a7f5895d-5398-44ca-9794-b9637309c5f8</Group>
@@ -294,7 +294,7 @@ May return this XML:
 
 Example. On a deployment with computers joined to Active Directory, this call:
 ```
-https://server.bigfix.com:52311/api/idp/group/cn=local1,cn=users,dc=temx,dc=test,dc=com/computers
+https://server.bigfix.com:52311/api/idp/group/cn=group1,dc=temx,dc=test,dc=com/computers
 ```
 
 May return this XML:
@@ -308,9 +308,9 @@ May return this XML:
         <SAMAccountName>WORKSTATION01$</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <ManagedBy>cn=john1,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
+        <ManagedBy>cn=alice,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
         <MemberOf>
-            <Group>cn=local1,cn=users,dc=temx,dc=test,dc=com</Group>
+            <Group>cn=group1,dc=temx,dc=test,dc=com</Group>
         </MemberOf>
     </IDPComputer>
 </BESAPI>
@@ -326,7 +326,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPComputer>
-        <Name>alima-portal</Name>
+        <Name>bob-portal</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -339,7 +339,7 @@ May return this XML:
         </MemberOf>
     </IDPComputer>
     <IDPComputer>
-        <Name>alima-ubuntu</Name>
+        <Name>bob-ubuntu</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -363,7 +363,7 @@ May return this XML:
 
 Example. On a deployment with computers joined to Active Directory, this call:
 ```
-https://server.bigfix.com:52311/api/idp/group/cn=local1,cn=users,dc=temx,dc=test,dc=com/usercomputers
+https://server.bigfix.com:52311/api/idp/group/cn=group1,dc=temx,dc=test,dc=com/usercomputers
 ```
 
 May return this XML:
@@ -377,9 +377,9 @@ May return this XML:
         <SAMAccountName>WORKSTATION01$</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <ManagedBy>cn=john1,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
+        <ManagedBy>cn=alice,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
         <MemberOf>
-            <Group>cn=local1,cn=users,dc=temx,dc=test,dc=com</Group>
+            <Group>cn=group1,dc=temx,dc=test,dc=com</Group>
         </MemberOf>
     </IDPComputer>
     <IDPComputer>
@@ -389,7 +389,7 @@ May return this XML:
         <SAMAccountName>WORKSTATION02$</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <ManagedBy>cn=john2,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
+        <ManagedBy>cn=john,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
     </IDPComputer>
 </BESAPI>
 ```
@@ -404,7 +404,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPComputer>
-        <Name>alima-portal</Name>
+        <Name>bob-portal</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -417,7 +417,7 @@ May return this XML:
         </MemberOf>
     </IDPComputer>
     <IDPComputer>
-        <Name>alima-ubuntu</Name>
+        <Name>bob-ubuntu</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -456,9 +456,9 @@ May return this XML:
         <SAMAccountName>WORKSTATION01$</SAMAccountName>
         <ID></ID>
         <DirectoryType>ActiveDirectory</DirectoryType>
-        <ManagedBy>cn=john1,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
+        <ManagedBy>cn=alice,cn=users,dc=temx,dc=test,dc=com</ManagedBy>
         <MemberOf>
-            <Group>cn=local1,cn=users,dc=temx,dc=test,dc=com</Group>
+            <Group>cn=group1,dc=temx,dc=test,dc=com</Group>
         </MemberOf>
     </IDPComputer>
 </BESAPI>
@@ -474,7 +474,7 @@ May return this XML:
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
     <IDPComputer>
-        <Name>alima-portal</Name>
+        <Name>bob-portal</Name>
         <DistinguishedName></DistinguishedName>
         <CommonName></CommonName>
         <SAMAccountName></SAMAccountName>
@@ -494,7 +494,7 @@ May return this XML:
 
 The `{user_id}` URL path parameter is a user's identifier as defined by the IdP.
 It can be:
-* for Active Directory, an LDAP Distinguished Name, e.g. `cn=john1,cn=users,dc=temx,dc=test,dc=com`.
+* for Active Directory, an LDAP Distinguished Name, e.g. `cn=alice,cn=users,dc=temx,dc=test,dc=com`.
 * for Entra ID, a GUID, e.g., `7a4050c6-5a1a-4eab-80e6-6a0ed5730f5e`.
 
 The `{group_id}` URL path parameter is a group's identifier as defined by the IdP.

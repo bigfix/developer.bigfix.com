@@ -93,7 +93,7 @@ If the computer is joined to an Active Directory, returns the computer's display
 
 {% qna %}
 Q: idp display name of client
-A: ALIMA-RELAY
+A: BOB-RELAY
 {% endqna %}
 
 # idp distinguished name of &lt;client&gt; : string
@@ -102,7 +102,7 @@ If the computer is joined to an Active Directory, returns the computer's LDAP di
 
 {% qna %}
 Q: idp distinguished name of client
-A: cn=alima-ubuntu22,cn=computers,dc=hclima,dc=local
+A: cn=bob-ubuntu22,cn=computers,dc=idptest,dc=local
 {% endqna %}
 
 # idp group of &lt;client&gt; : idp group
@@ -130,7 +130,7 @@ If the computer is joined to Active Directory, returns the computer's SAM accoun
 
 {% qna %}
 Q: idp sam account name of client
-A: ALIMA-UBUNTU22$
+A: BOB-UBUNTU22$
 {% endqna %}
 
 # idp user of &lt;client&gt; : idp user

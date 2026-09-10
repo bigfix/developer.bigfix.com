@@ -42,8 +42,8 @@ If the group's identity provider is Active Directory, returns its distinguished 
 
 {% qna %}
 Q: distinguished names of idp groups of client
-A: cn=winlaptop,ou=_computergroups,ou=_hclcerter,dc=hclima,dc=local
-A: cn=rome lab computers,ou=_computergroups,ou=_hclcerter,dc=hclima,dc=local
+A: cn=winlaptop,ou=_computergroups,ou=_hclcerter,dc=idptest,dc=local
+A: cn=rome lab computers,ou=_computergroups,ou=_hclcerter,dc=idptest,dc=local
 {% endqna %}
 
 # id of &lt;idp group&gt; : string

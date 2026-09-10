@@ -18,7 +18,7 @@ If the IdP user represents an Active Directory account, returns its LDAP Common 
 
 {% qna %}
 Q: common name of idp user of client
-A: Alberto Lima
+A: Bob Brown
 {% endqna %}
 
 # country of &lt;idp user&gt; : string
@@ -66,7 +66,7 @@ If the IdP user represents an Active Directory account, returns their distinguis
 
 {% qna %}
 Q: distinguished name of idp user of client
-A: cn=alberto lima,ou=developers,ou=_users,ou=_hclcerter,dc=hclima,dc=local
+A: cn=bob brown,ou=developers,ou=_users,ou=_hclcerter,dc=idptest,dc=local
 {% endqna %}
 
 # id of &lt;idp user&gt; : string
@@ -103,7 +103,7 @@ If the IdP user is an Active Directory account, returns their Security Account M
 
 {% qna %}
 Q: sam account name of idp user of client
-A: alberto-lima
+A: bob-brown
 {% endqna %}
 
 # state of &lt;idp user&gt; : string
@@ -121,5 +121,5 @@ Returns the user principal name (UPN) of the IdP user. Returns an error if this 
 
 {% qna %}
 Q: user principal name of idp user of client
-A: alberto-lima@hclima.local
+A: bob-brown@idptest.local
 {% endqna %}
