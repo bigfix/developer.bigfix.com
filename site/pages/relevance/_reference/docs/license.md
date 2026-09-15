@@ -48,7 +48,25 @@ Returns a string, one of "Unrestricted", "Grace" or "Restricted".
 
 # fips mode of &lt;license&gt; : boolean
 
-Returns `True` if the BES Action masthead specifies that applications (the client, console, or web reports, depending on the context) in the deployment should operate in FIPS 140-2 compliant mode.
+Returns `True` if the BigFix Action Site masthead specifies that the BigFix component in the deployment should operate in a FIPS compliant mode (any version).
+
+# fips_140_2 mode of &lt;license&gt; : boolean
+
+Returns `True` if the BigFix Action Site masthead specifies that BigFix components in the deployment should operate in FIPS 140-2 compliant mode specifically.
+
+{% qna %}
+Q: fips_140_2 mode of client license
+A: False
+{% endqna %}
+
+# fips_140_3 mode of &lt;license&gt; : boolean
+
+Returns `True` if the BigFix Action Site masthead specifies that BigFix components in the deployment should operate in FIPS 140-3 compliant mode specifically.
+
+{% qna %}
+Q: fips_140_3 mode of client license
+A: True
+{% endqna %}
 
 # gather url of &lt;license&gt; : string
 

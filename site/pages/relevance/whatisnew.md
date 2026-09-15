@@ -16,6 +16,14 @@ For details, see [idp group](https://developer.bigfix.com/relevance/reference/id
 
 #### Version 11 Patch 7 Added Inspector Properties
 
+New inspector properties named *fips_140_2 mode of* and *fips_140_3 mode of* were added to the existing *cryptography* inspector to return whether a BigFix component is operating in FIPS 140-2 or FIPS 140-3 mode.
+
+For details, see [cryptography](https://developer.bigfix.com/relevance/reference/cryptography.html).
+
+New inspector properties named *fips_140_2 mode of* and *fips_140_3 mode of* were added to the existing *license* inspector to return whether BigFix components in the deployment should operate in FIPS 140-2 or FIPS 140-3 mode.
+
+For details, see [license](https://developer.bigfix.com/relevance/reference/license.html).
+
 New inspector properties named *idp directory type of*, *idp display name of*, *idp distinguished name of*, *idp group of*, *idp id of*, *idp sam account name of* and *idp user of* were added to the existing *client* inspector to return various information if the computer is joined to an Identity Provider (IdP).
 
 For details, see [client](https://developer.bigfix.com/relevance/reference/client.html).

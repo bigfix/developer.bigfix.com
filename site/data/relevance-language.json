@@ -16866,6 +16866,50 @@
         ]
       }
     },
+    "fips_140_2 mode of <cryptography> : boolean": {
+      "key": "fips_140_2 mode of <cryptography> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "fips_140_2 mode",
+      "pluralPhrase": "fips_140_2 modes",
+      "directObjectType": "cryptography",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "fips_140_3 mode of <cryptography> : boolean": {
+      "key": "fips_140_3 mode of <cryptography> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "fips_140_3 mode",
+      "pluralPhrase": "fips_140_3 modes",
+      "directObjectType": "cryptography",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
     "<date> & <time of day with time zone> : time": {
       "key": "<date> & <time of day with time zone> : time",
       "type": "binaryOp",
@@ -30292,6 +30336,50 @@
         ],
         "9.5.13.130": [
           "Raspbian"
+        ]
+      }
+    },
+    "fips_140_2 mode of <license> : boolean": {
+      "key": "fips_140_2 mode of <license> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "fips_140_2 mode",
+      "pluralPhrase": "fips_140_2 modes",
+      "directObjectType": "license",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
+        ]
+      }
+    },
+    "fips_140_3 mode of <license> : boolean": {
+      "key": "fips_140_3 mode of <license> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "fips_140_3 mode",
+      "pluralPhrase": "fips_140_3 modes",
+      "directObjectType": "license",
+      "availability": {
+        "11.0.7.0": [
+          "AIX",
+          "Debian",
+          "Mac",
+          "Raspbian",
+          "Red Hat",
+          "SUSE",
+          "Session",
+          "Solaris",
+          "Ubuntu",
+          "Windows"
         ]
       }
     },
