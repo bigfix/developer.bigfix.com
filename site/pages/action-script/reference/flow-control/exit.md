@@ -20,11 +20,10 @@ Exit the action early if `foo.exe` returns a non-zero exit code.
 
 ```actionscript
 wait "foo.exe"
-parameter "error" = "{exit code of action}"
+parameter "error" = "{if exist exit code of action then exit code of action as string else "1"}"
 if {parameter "error" != "0"}
   exit {parameter "error"}
 endif
-// continue processing
 ```
 
 ## Notes
@@ -39,3 +38,5 @@ The other commands that can change the exit code are:
 For actions of type `sh` the exit code of the script is collected into the
 inspector value when the client finishes processing the shell script. Exit codes
 from Unix shell scripts are written to the client log.
+
+Before executing the ActionScript, the client evaluates the script in advance during the prefetch phase to process prefetch statements and URLs.
