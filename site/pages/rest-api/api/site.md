@@ -17,18 +17,27 @@ For example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <BESAPI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BESAPI.xsd">
-  <ExternalSite Resource="http://lab.bigfix.me:52311/api/site/external/BES%20Support">
-    <Name>BES Support</Name>
-    <DisplayName>BES Support</DisplayName>
-  </ExternalSite>
-  <OperatorSite Resource="http://lab.bigfix.me:52311/api/site/operator/BigFixAdmin">
-    <Name>BigFixAdmin</Name>
-    <DisplayName>BigFixAdmin's Operator Site</DisplayName>
-  </OperatorSite>
-  <ActionSite Resource="http://lab.bigfix.me:52311/api/site/master">
-    <Name>ActionSite</Name>
-    <DisplayName>Master Action Site</DisplayName>
-  </ActionSite>
+    <ExternalSite Resource="https://lab.bigfix.com:52311/api/site/external/BES%20Support">
+        <Name>BES Support</Name>
+        <DisplayName>BES Support</DisplayName>
+        <GatherURL>http://sync.bigfix.com/cgi-bin/bfgather/bessupport</GatherURL>
+    </ExternalSite>
+    <ExternalSite Resource="https://lab.bigfix.com:52311/api/site/external/BigFix%20Repository%20Site%20Test">
+        <Name>BigFix Repository Site Test</Name>
+        <DisplayName>BigFix Repository Site Test</DisplayName>
+        <GatherURL>bigfix://bigfix.com/repositorysite?repository_url=git@github.com:some-repo-owner/some-git-repo.git&amp;git_branch=some-git-branch</GatherURL>
+        <RepositorySiteFlag>true</RepositorySiteFlag>
+    </ExternalSite>
+    <OperatorSite Resource="https://lab.bigfix.com:52311/api/site/operator/BFAdmin">
+        <Name>BFAdmin</Name>
+        <DisplayName>Master Action Site</DisplayName>
+        <GatherURL>http://lab.bigfix.com:52311/cgi-bin/bfgather.exe/actionsite</GatherURL>
+    </OperatorSite>
+    <ActionSite Resource="https://lab.bigfix.com:52311/api/site/master">
+        <Name>ActionSite</Name>
+        <DisplayName>Master Action Site</DisplayName>
+        <GatherURL>http://lab.bigfix.com:52311/cgi-bin/bfgather.exe/actionsite</GatherURL>
+    </ActionSite>
 </BESAPI>
 ```
 
@@ -54,7 +63,11 @@ For example:
     https://lab.bigfix.me:52311/api/site/master
 ```
 
-**Request Schema:**  BES XML representing a site.
+Example request for an external repository site:
+
+```
+    https://lab.bigfix.com:52311/api/site/external/BigFix%20Repository%20Site%20Test
+```
 
 **Response:** BES XML representing a site.
 For example:
@@ -69,6 +82,27 @@ For example:
     <GlobalReadPermission>false</GlobalReadPermission>
     <SubscriptionMode>All</SubscriptionMode>
   </ActionSite>
+</BES>
+```
+
+Example of an XML response for an external repository site.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+    <ExternalSite>
+        <Name>BigFix Repository Site Test</Name>
+        <DisplayName>BigFix Repository Site Test</DisplayName>
+        <GatherURL><![CDATA[bigfix://bigfix.com/repositorysite?repository_url=git@github.com:some-repo-owner/some-git-repo.git&git_branch=some-git-branch]]></GatherURL>
+        <Description></Description>
+        <RepositorySiteFlag>true</RepositorySiteFlag>
+        <RepositoryURL>git@github.com:some-repo-owner/some-git-repo.git</RepositoryURL>
+        <RepositoryBranch>some-git-branch</RepositoryBranch>
+        <GlobalReadPermission>false</GlobalReadPermission>
+        <Subscription>
+            <Mode>None</Mode>
+        </Subscription>
+    </ExternalSite>
 </BES>
 ```
 

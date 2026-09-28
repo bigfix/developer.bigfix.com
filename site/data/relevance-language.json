@@ -14100,6 +14100,45 @@
         ]
       }
     },
+    "repository branch of <bes site> : string": {
+      "key": "repository branch of <bes site> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "repository branch",
+      "pluralPhrase": "repository branches",
+      "directObjectType": "bes site",
+      "availability": {
+        "11.0.7.0": [
+          "Session"
+        ]
+      }
+    },
+    "repository site flag of <bes site> : boolean": {
+      "key": "repository site flag of <bes site> : boolean",
+      "type": "property",
+      "resultType": "boolean",
+      "singularPhrase": "repository site flag",
+      "pluralPhrase": "repository site flags",
+      "directObjectType": "bes site",
+      "availability": {
+        "11.0.7.0": [
+          "Session"
+        ]
+      }
+    },
+    "repository url of <bes site> : string": {
+      "key": "repository url of <bes site> : string",
+      "type": "property",
+      "resultType": "string",
+      "singularPhrase": "repository url",
+      "pluralPhrase": "repository urls",
+      "directObjectType": "bes site",
+      "availability": {
+        "11.0.7.0": [
+          "Session"
+        ]
+      }
+    },
     "set of <bes site> : bes site set": {
       "key": "set of <bes site> : bes site set",
       "type": "property",

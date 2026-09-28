@@ -16,6 +16,10 @@ For details, see [idp group](https://developer.bigfix.com/relevance/reference/id
 
 #### Version 11 Patch 7 Added Inspector Properties
 
+New inspector properties named *repository branch of*, *repository site flag of* and *repository url of* were added to the existing *bes site* inspector to return various information about an external repository site.
+
+For details, see [bes site](https://developer.bigfix.com/relevance/reference/bes-site.html).
+
 New inspector properties named *fips_140_2 mode of* and *fips_140_3 mode of* were added to the existing *cryptography* inspector to return whether a BigFix component is operating in FIPS 140-2 or FIPS 140-3 mode.
 
 For details, see [cryptography](https://developer.bigfix.com/relevance/reference/cryptography.html).
