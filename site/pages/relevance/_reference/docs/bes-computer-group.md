@@ -66,6 +66,15 @@ Returns the unique values of a given list of &lt;bes computer group&gt; types, r
 
 Converts the specified BES computer group to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
 
+# &lt;bes computer group&gt; as xml string : string
+
+Converts the specified `bes computer group` to a string. It is available via the BigFix Console and the BigFix Explorer.
+
+{% qna %}
+Q: bes computer group whose (id of it = 52) as xml string
+A: <?xml version="1.0"?> <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd"> <ComputerGroup> <Title>Test_MO</Title> <Domain>BESC</Domain> <JoinByIntersection>true</JoinByIntersection> <SearchComponentPropertyReference PropertyName="Computer Name" Comparison="Equals"> <SearchText>nc</SearchText> <Relevance>exists (computer name) whose (it as string as lowercase = "nc" as lowercase)</Relevance> </SearchComponentPropertyReference> </ComputerGroup> </BES>
+{% endqna %}
+
 # &lt;bes computer group&gt; = &lt;bes computer group&gt; : boolean
 
 Compares two `bes computer group` objects and returns `True` if they are equal.

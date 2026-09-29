@@ -4,7 +4,7 @@ title: Authentication
 
 {% section %}
 
-The login from the REST API Client to the BigFix REST API server uses [basic access authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).
+The BigFix REST API server requires authentication to use certain APIs. It supports [basic access authentication](http://en.wikipedia.org/wiki/Basic_access_authentication) and, starting with BigFix Platform 11.0.6, a [token-based authentication](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_token_authentication.html).
 
 The credentials are the credentials of a valid BigFix Console operator.
 

@@ -8,6 +8,36 @@ This page lists, starting from BigFix Version 11, the added inspector types, and
 
 {% endsection %}
 
+#### Version 11 Patch 7 Added Inspector Types
+
+New inspector types named *idp group* and *idp user* were added to return information about the groups and users associated with a computer joined to an Identity Provider (IdP).
+
+For details, see [idp group](https://developer.bigfix.com/relevance/reference/idp-group.html) and [idp user](https://developer.bigfix.com/relevance/reference/idp-user.html).
+
+#### Version 11 Patch 7 Added Inspector Properties
+
+New inspector properties named *repository branch of*, *repository site flag of* and *repository url of* were added to the existing *bes site* inspector to return various information about an external repository site.
+
+For details, see [bes site](https://developer.bigfix.com/relevance/reference/bes-site.html).
+
+New inspector properties named *fips_140_2 mode of* and *fips_140_3 mode of* were added to the existing *cryptography* inspector to return whether a BigFix component is operating in FIPS 140-2 or FIPS 140-3 mode.
+
+For details, see [cryptography](https://developer.bigfix.com/relevance/reference/cryptography.html).
+
+New inspector properties named *fips_140_2 mode of* and *fips_140_3 mode of* were added to the existing *license* inspector to return whether BigFix components in the deployment should operate in FIPS 140-2 or FIPS 140-3 mode.
+
+For details, see [license](https://developer.bigfix.com/relevance/reference/license.html).
+
+New inspector properties named *idp directory type of*, *idp display name of*, *idp distinguished name of*, *idp group of*, *idp id of*, *idp sam account name of* and *idp user of* were added to the existing *client* inspector to return various information if the computer is joined to an Identity Provider (IdP).
+
+For details, see [client](https://developer.bigfix.com/relevance/reference/client.html).
+
+#### Version 11 Patch 7 Added Inspector Cast
+
+New inspector cast named *as xml string* was added to convert the specified BES object to an XML string. The new cast was introduced exclusively for the BigFix Console and BigFix Explorer. It is not supported in Web Reports.
+
+For details, see [bes action](https://developer.bigfix.com/relevance/reference/bes-action.html), [bes computer group](https://developer.bigfix.com/relevance/reference/bes-computer-group.html), [bes fixlet](https://developer.bigfix.com/relevance/reference/bes-fixlet.html) and [bes property](https://developer.bigfix.com/relevance/reference/bes-property.html).
+
 #### Version 11 Patch 6 Added Inspector Type
 
 New inspector type named *bes peer download* was added to return information about files that were downloaded via the PeerNest feature.

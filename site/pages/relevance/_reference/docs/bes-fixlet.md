@@ -382,6 +382,15 @@ If the specified fixlet was created with a Wizard then this inspector returns th
 
 Converts the specified BES Fixlet to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
 
+# &lt;bes fixlet&gt; as xml string : string
+
+Converts the specified `bes fixlet` to a string. It is available via the BigFix Console and the BigFix Explorer.
+
+{% qna %}
+Q: bes fixlet whose (id of it = 109) as xml string
+A: <?xml version="1.0"?> <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd"> <Fixlet> <Title>Custom Fixlet 2</Title> <Description><![CDATA[&lt;enter a description of the problem and the corrective action here&gt; ]]></Description> <Relevance>true</Relevance> <Category></Category> <Source>Internal</Source> <SourceID></SourceID> <SourceReleaseDate>2026-05-25</SourceReleaseDate> <SourceSeverity></SourceSeverity> <CVENames></CVENames> <SANSID></SANSID> <MIMEField> <Name>x-fixlet-modification-time</Name> <Value>Mon, 25 May 2026 04:39:17 +0000</Value> </MIMEField> <Domain>BESC</Domain> <DefaultAction ID="Action1"> <Description> <PreLink>Click </PreLink> <Link>here</Link> <PostLink> to deploy this action.</PostLink> </Description> <ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here</ActionScript> </DefaultAction> </Fixlet> </BES>
+{% endqna %}
+
 # &lt;bes fixlet&gt; = &lt;bes fixlet&gt; : boolean
 
 Compares two `bes fixlet` objects and returns `True` if they are equal.

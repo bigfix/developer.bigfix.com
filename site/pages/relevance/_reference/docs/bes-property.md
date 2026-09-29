@@ -114,6 +114,15 @@ Returns the unique values of a given list of &lt;bes property&gt; types, removin
 
 Converts the specified BES Property to XML format, for submission to the EvaluateRelevance API used by the BES Console and Web Reports.
 
+# &lt;bes property&gt; as xml string : string
+
+Converts the specified `bes property` to a string. It is available via the BigFix Console and the BigFix Explorer.
+
+{% qna %}
+Q: bes property whose (name of it = "User Name") as xml string
+A: <?xml version="1.0"?> <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd"> <Property Name="User Name"><![CDATA[if exists true whose (if true then exists logged on user else false) then names of logged on users else if exists current user then name of current user else "<none>"]]></Property> </BES>
+{% endqna %}
+
 # &lt;bes property&gt; = &lt;bes property&gt; : boolean
 
 Compares two `bes property` objects and returns `True` if they are equal.

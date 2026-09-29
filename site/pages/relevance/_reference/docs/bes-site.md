@@ -1,6 +1,8 @@
 # type: bes site
 
 The site inspectors return the names and IDs of the specified site objects. As of BES 7.0, the BES custom site type has been merged with BES site, which now represents all supported types, including external sites, master action sites, operator sites, and custom sites. All properties of BES custom site are now accessible via BES site. As a compatibility measure, BES sites still returns only external and master action sites.
+The "external repository site", introduced with BigFix 11.0.7, allows BigFix to treat Git repositories as "external sites" and gather BigFix content directly from them. For more details, see [External Repository Sites](https://help.hcl-software.com/bigfix/11.0/platform/Platform/Config/c_repository_site.html).
+The new external site type is recognized by a repository-specific gather URL, while the repository URL and branch define the source identity.
 
 # action of &lt;bes site&gt; : bes action
 
@@ -134,6 +136,33 @@ Returns a list of BES users that have been granted reading privileges on the spe
 # reader set of &lt;bes site&gt; : bes user set
 
 Returns the set of BES users who have read rights (the iterated list) on the specified BES custom site.
+
+# repository branch of &lt;bes site&gt; : string
+
+Returns the name of the tracked Git branch associated with the repository site.
+
+{% qna %}
+Q: (name of it, repository url of it, repository branch of it) of bes sites whose (repository site flag of it = true)
+A: BigFix Repository Site Test, git@github.com:some-repo-owner/some-git-repo.git, some-git-branch
+{% endqna %}
+
+# repository site flag of &lt;bes site&gt; : boolean
+
+Returns `True` if and only if the specified site is an external repository site.
+
+{% qna %}
+Q: names of all bes sites whose (repository site flag of it = true)
+A: BigFix Repository Site Test
+{% endqna %}
+
+# repository url of &lt;bes site&gt; : string
+
+Returns the configured Git SSH repository URL.
+
+{% qna %}
+Q: (name of it, repository url of it, repository branch of it) of bes sites whose (repository site flag of it = true)
+A: BigFix Repository Site Test, git@github.com:some-repo-owner/some-git-repo.git, some-git-branch
+{% endqna %}
 
 # set of &lt;bes site&gt; : bes site set
 

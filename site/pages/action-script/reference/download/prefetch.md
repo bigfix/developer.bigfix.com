@@ -17,15 +17,16 @@ Version | Platforms
 
 ## Syntax
 
-    prefetch <name> sha1:<sha1> size:<size> <url> [sha256:<sha256>]
+    prefetch <name> size:<size> <url> [sha1:<sha1>] [sha256:<sha256>] [sha512:<sha512>]
 
 Where:
 
 * `name` is the file name for the download.
-* `sha1` is the [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
+* `sha1` is an optional [SHA-1](https://en.wikipedia.org/wiki/SHA-1) of the file.
+* `sha256` is an optional [SHA-256](https://en.wikipedia.org/wiki/SHA-2) of the file.
+* `sha512` is an optional [SHA-512](https://en.wikipedia.org/wiki/SHA-2) of the file. This option is available starting with BigFix version 11.0.7.
 * `size` is the size of the file in bytes.
 * `url` is the url of the file.
-* `sha256` is an optional [SHA-256](https://en.wikipedia.org/wiki/SHA-2) of the file.
 
 The `name` must be a simple filename, without special characters or path
 delimiters. If the name violates any of the following rules, the download
@@ -35,12 +36,20 @@ command will fail:
 * Name must only be composed of ASCII characters a-z, A-Z, 0-9, -, _, and
   non-leading periods.
 
+At least one hash option (`sha1`, `sha256`, `sha512`) must be specified.
+
 ## Examples
 
 Prefetch a picture of Hodor.
 
 ```actionscript
 prefetch hodor.jpg sha1:ce842e0af799f2ba476511c8fbfdc3bf89612dd0 size:57656 http://i.imgur.com/YAUeUOG.jpg sha256:74f69205a016a3896290eae03627e15e8dfeba812a631b5e0afca140722a322b
+```
+
+This example demonstrates the prefetch command using SHA-512.
+
+```actionscript
+prefetch hodor.jpg sha1:ce842e0af799f2ba476511c8fbfdc3bf89612dd0 size:57656 https://i.imgur.com/YAUeUOG.jpeg sha512:35aaf8fac5c0a1501e2df2b4a52aa3b5453853c6402b422f6057cae2826838f5c71c39ed53fca0ea64b715047863520e0902f935cd0ebaca126263458b65bec7
 ```
 
 Prefetch and run a different patch depending on whether the operating system is
