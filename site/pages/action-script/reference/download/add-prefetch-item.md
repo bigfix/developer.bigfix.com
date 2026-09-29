@@ -14,7 +14,7 @@ Version | Platforms
 
 ## Syntax
 
-    add prefetch item [name=<name>] [sha1=<sha1>] [sha256=<sha256>] [sha512:<sha512>] size=<size> url=<url> [; ...] 
+    add prefetch item [name=<name>] [sha1=<sha1>] [sha256=<sha256>] [sha512=<sha512>] size=<size> url=<url> [; ...] 
 
 Where:
 
